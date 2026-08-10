@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Telugu · Lesson 4 — Family &amp; Kinship Names</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+Telugu:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#191915;--ink-2:#22221d;--ink-3:#2c2c25;
+  --cream:#f1ece0;--cream-dim:#b9b3a4;
+  --amber:#e8a33d;--moss:#8fa37e;--flame:#d96c47;
+  --line:rgba(241,236,224,.12);--radius:14px;--max:1000px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{background:var(--ink);color:var(--cream);font-family:'Inter',sans-serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.telugu{font-family:'Noto Sans Telugu','Inter',sans-serif}
+.mono{font-family:'JetBrains Mono',monospace}
+h1,h2,h3{font-family:'Young Serif',serif;font-weight:400;line-height:1.15}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+section{padding:72px 0;border-top:1px solid var(--line)}
+.eyebrow{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--amber);margin-bottom:14px;display:block}
+h2{font-size:clamp(26px,4.2vw,36px);margin-bottom:14px}
+.lede{color:var(--cream-dim);max-width:660px;font-size:16.5px}
+.lede b{color:var(--cream)}
+a{color:var(--amber)}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:4px}
+
+nav{position:sticky;top:0;z-index:50;background:rgba(25,25,21,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+.logo{font-family:'JetBrains Mono',monospace;font-size:13.5px;font-weight:700;color:var(--cream);text-decoration:none}
+.logo span{color:var(--amber)}
+nav ul{display:flex;gap:20px;list-style:none}
+nav ul a{color:var(--cream-dim);text-decoration:none;font-size:13px;font-weight:500}
+nav ul a:hover{color:var(--amber)}
+@media(max-width:720px){nav ul{display:none}}
+.home-crumb{display:inline-block;margin-bottom:18px;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--cream-dim);text-decoration:none}
+.home-crumb:hover{color:var(--amber)}
+
+header.hero{padding:80px 0 64px;position:relative;overflow:hidden}
+.hero-glyph{position:absolute;right:-30px;top:-70px;font-family:'Noto Sans Telugu',sans-serif;font-size:clamp(260px,40vw,480px);line-height:1;color:rgba(232,163,61,.05);user-select:none;pointer-events:none}
+.hero h1{font-size:clamp(34px,6vw,58px);margin:8px 0 10px;color:var(--cream)}
+.hero h1 em{color:var(--amber);font-style:normal}
+.hero p{max-width:620px;color:var(--cream-dim);font-size:17px}
+
+.note-box{background:rgba(217,108,71,.07);border:1px solid rgba(217,108,71,.3);border-radius:var(--radius);padding:20px 24px;margin-top:30px;max-width:720px}
+.note-box b{color:var(--flame);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;display:block;margin-bottom:8px}
+.note-box p{font-size:14px;color:var(--cream-dim)}
+.note-box p+p{margin-top:10px}
+.note-box.win{background:rgba(143,163,126,.08);border-color:rgba(143,163,126,.32)}
+.note-box.win b{color:var(--moss)}
+
+/* rule blocks */
+.rule{border-top:1px solid var(--line);padding:30px 0;display:grid;grid-template-columns:52px 1fr;gap:20px;counter-increment:r}
+.rules{counter-reset:r;margin-top:20px}
+.rule::before{content:counter(r,decimal-leading-zero);font-family:'JetBrains Mono',monospace;font-size:14px;color:var(--flame);padding-top:4px}
+.rule h3{font-size:19px;font-family:'Inter',sans-serif;font-weight:600;margin-bottom:8px;color:var(--cream)}
+.rule p{font-size:14.5px;color:var(--cream-dim);max-width:640px}
+.rule p+p{margin-top:10px}
+.rule b{color:var(--cream)}
+.rule-deep-link{display:inline-block;margin-top:13px;font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;text-decoration:none}
+.rule-deep-link::after{content:' →'}
+.ex{margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:14px;color:var(--moss);background:var(--ink-2);border:1px solid var(--line);border-radius:8px;padding:12px 16px;display:inline-block}
+.ex .en{color:var(--cream-dim);font-family:'Inter',sans-serif}
+.ex .tel{font-family:'Noto Sans Telugu',sans-serif;color:var(--cream)}
+.flag{margin-top:14px;border-left:3px solid var(--flame);background:rgba(217,108,71,.07);padding:11px 14px;font-size:13px;color:var(--cream-dim);border-radius:0 8px 8px 0}
+.flag b{color:var(--flame);font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;display:block;margin-bottom:5px}
+.flag.ok{border-left-color:var(--moss);background:rgba(143,163,126,.08)}
+.flag.ok b{color:var(--moss)}
+
+/* morpheme chips */
+.morph-row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:16px 0}
+.morph{border-radius:9px;padding:9px 14px;font-family:'JetBrains Mono',monospace;text-align:center;min-width:74px}
+.morph .p{font-size:16px;font-weight:700;display:block}
+.morph .r{font-size:9px;letter-spacing:.1em;text-transform:uppercase;opacity:.75;margin-top:3px;display:block}
+.morph.subj{background:rgba(232,163,61,.14);color:var(--amber);border:1px solid rgba(232,163,61,.35)}
+.morph.base{background:rgba(143,163,126,.14);color:var(--moss);border:1px solid rgba(143,163,126,.35)}
+.morph.mark{background:rgba(217,108,71,.14);color:var(--flame);border:1px solid rgba(217,108,71,.35)}
+.morph.op{background:none;border:none;color:var(--cream-dim);font-size:18px;min-width:auto;padding:0 2px}
+.morph.none{background:var(--ink-3);color:var(--cream-dim);border:1px dashed var(--line)}
+
+/* generic table */
+.tbl{width:100%;border-collapse:collapse;margin-top:22px;font-size:14.5px}
+.tbl th{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:11px 12px;color:var(--cream-dim);border-bottom:1px solid var(--line);vertical-align:bottom}
+.tbl td{padding:12px;border-bottom:1px solid var(--line);color:var(--cream-dim);vertical-align:top}
+.tbl td .rom{font-family:'JetBrains Mono',monospace;font-size:15px;color:var(--cream);font-weight:700}
+.tbl td .tel{font-family:'Noto Sans Telugu',sans-serif;font-size:15px;color:var(--cream-dim);opacity:.8}
+.tbl td small{display:block;font-size:12px;color:var(--cream-dim);margin-top:2px}
+.tbl .grp td{background:var(--ink-2);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--amber)}
+.tag{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:999px;margin-left:4px}
+.tag.mat{background:rgba(110,150,200,.18);color:#8fb6e0}
+.tag.pat{background:rgba(200,130,180,.16);color:#d9a2c8}
+.tag.eld{background:rgba(232,163,61,.16);color:var(--amber)}
+.tag.yng{background:rgba(143,163,126,.16);color:var(--moss)}
+
+/* anki table */
+.anki-wrap{overflow-x:auto;margin-top:26px;border:1px solid var(--line);border-radius:var(--radius)}
+.anki{width:100%;border-collapse:collapse;font-size:14px;min-width:720px}
+.anki th{background:var(--ink-3);font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:12px 14px;color:var(--amber);border-bottom:1px solid var(--line);white-space:nowrap}
+.anki td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--cream-dim);vertical-align:top}
+.anki tr:last-child td{border-bottom:none}
+.anki .f-en{color:var(--cream);width:31%}
+.anki .f-rom{font-family:'JetBrains Mono',monospace;color:var(--amber);font-weight:700;white-space:nowrap}
+.anki .f-tel{font-family:'Noto Sans Telugu',sans-serif;color:var(--cream)}
+.anki .f-aud{color:var(--cream-dim);opacity:.4;font-family:'JetBrains Mono',monospace;font-size:12px;text-align:center}
+.anki .f-ex{font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--moss)}
+.anki .sec td{background:var(--ink-2);font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--cream-dim)}
+.field-key{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--cream-dim)}
+.field-key span{background:var(--ink-2);border:1px solid var(--line);border-radius:6px;padding:5px 10px}
+.field-key b{color:var(--amber);font-weight:500}
+
+/* lesson questions */
+.question-link{display:grid;grid-template-columns:80px 1fr auto;align-items:center;gap:22px;margin-top:26px;border:1px dashed var(--line);border-radius:var(--radius);background:var(--ink-2);color:inherit;padding:22px;text-decoration:none}
+.question-link:hover{border-color:rgba(232,163,61,.4);background:var(--ink-3)}
+.question-mark{display:grid;width:60px;height:60px;place-items:center;border:1px solid rgba(143,163,126,.35);border-radius:50%;color:var(--moss);font-family:'Young Serif',serif;font-size:28px}
+.question-link h3{margin-bottom:5px;font-family:'Inter',sans-serif;font-size:17px;font-weight:600}
+.question-link p{margin:0;color:var(--cream-dim);font-size:13px}
+.question-open{color:var(--amber);font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;white-space:nowrap}
+.question-open::after{content:' →'}
+
+/* family map */
+.gen{margin-top:24px;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.gen-head{background:var(--ink-3);padding:12px 20px;font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--amber);border-bottom:1px solid var(--line)}
+.gen-row{display:grid;grid-template-columns:210px 1fr;gap:20px;padding:14px 20px;border-bottom:1px solid var(--line);background:var(--ink-2)}
+.gen-row:last-child{border-bottom:none}
+.gen-row>span{font-size:13px;color:var(--cream-dim);padding-top:3px}
+.gen-row .line{font-family:'JetBrains Mono',monospace;font-size:15px;color:var(--amber);font-weight:700}
+.gen-row .tel{font-family:'Noto Sans Telugu',sans-serif;font-size:15px;color:var(--cream);margin-left:8px}
+.gen-row .lit{font-size:12px;color:var(--cream-dim);display:block;margin-top:3px}
+
+footer{padding:52px 0 68px;border-top:1px solid var(--line)}
+footer p{font-size:13px;color:var(--cream-dim)}
+footer .mono{color:var(--amber)}
+.try{list-style:none;margin-top:18px;display:grid;gap:10px;max-width:640px}
+.try li{background:var(--ink-2);border:1px solid var(--line);border-radius:9px;padding:12px 16px;font-size:14px;color:var(--cream-dim)}
+.try li .q{color:var(--cream);font-weight:600}
+.try li .a{font-family:'JetBrains Mono',monospace;color:var(--moss);margin-top:4px;display:block}
+@media(max-width:720px){
+  .wrap{padding:0 16px}
+  .hero-glyph{right:0}
+  .rule{grid-template-columns:1fr;gap:8px}
+  .rule>div{min-width:0}
+  .tbl{display:block;width:100%;max-width:100%;overflow-x:auto;white-space:nowrap}
+  .question-link{grid-template-columns:52px 1fr;padding:18px 16px}
+  .question-mark{width:48px;height:48px}
+  .question-open{grid-column:2}
+  .gen-row{grid-template-columns:1fr;gap:5px}
+}
+</style>
+</head>
+<body>
+
+<nav aria-label="Main">
+  <div class="wrap">
+    <a class="logo" href="../index.html"><span>te</span> lesson-04 · family</a>
+    <ul>
+      <li><a href="../index.html">Course home</a></li>
+      <li><a href="../stories/index.html">Stories</a></li>
+      <li><a href="#rules">Rules</a></li>
+      <li><a href="#map">Family map</a></li>
+      <li><a href="#anki">Anki list</a></li>
+      <li><a href="#try">Self-test</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-glyph telugu" aria-hidden="true">అమ్మ</div>
+  <div class="wrap">
+    <a class="home-crumb" href="../index.html">← Foundational Telugu / Learning path</a>
+    <span class="eyebrow">Course extraction · Lesson 4</span>
+    <h1>Family &amp; <em>kinship names</em></h1>
+    <p>English collapses a dozen distinct relationships into "uncle," "aunt," and "cousin." Telugu does not. Kinship terms encode <b>which side of the family</b> and <b>relative age</b>, and the joint-family household is why that precision matters. The good news: most of these terms are <b>transparent compounds</b> you can build rather than memorise.</p>
+
+    <div class="note-box">
+      <b>How I processed this</b>
+      <p>Captions again — this one rendered <em>tammuḍu</em> as "Thammudu," <em>peddanāna</em> as "Pedergnana," <em>pillalu</em> as "Pilolo," and <em>manavalu</em> as "Manasulu." Reconstructed from the surrounding explanation and normalised to the site's diacritics.</p>
+      <p>One genuine variant to check: I've written the grandchild terms as <b>manavaḍu / manavarālu</b>, but <b>manumaḍu / manumarālu</b> is equally standard and may be what your wife's family uses. Both are correct Telugu.</p>
+    </div>
+
+    <div class="note-box win">
+      <b>This lesson closes an open flag</b>
+      <p>In <a href="lesson-02-introductions.html">Lesson 2</a> the course glossed <span class="mono">moguḍu</span> as "man," and I flagged that it almost certainly meant <em>husband</em>. This lesson confirms it: <span class="mono">moguḍu</span> is listed here as the colloquial word for <b>husband</b>. I've corrected the Lesson 2 entry and the vocabulary ledger.</p>
+    </div>
+  </div>
+</header>
+
+<section id="rules">
+  <div class="wrap">
+    <span class="eyebrow">The grammar engine</span>
+    <h2>Structures &amp; patterns introduced</h2>
+    <p class="lede">Colour code: <b style="color:var(--amber)">modifier</b> · <b style="color:var(--moss)">base kin term</b> · <b style="color:var(--flame)">honorific</b>. This is a vocabulary-heavy lesson, but rules 02–06 are generative — learn the building blocks and most of the list assembles itself.</p>
+
+    <div class="rules">
+
+      <div class="rule">
+        <div>
+          <h3>Two axes English throws away</h3>
+          <p>Telugu kinship terms are specified along two dimensions that English ignores entirely:</p>
+          <p><b>Which side?</b> Your mother's brother and your father's brother are different words. <b>Relative age?</b> Your mother's elder sister and younger sister are different words.</p>
+          <p>The lesson ties this to the joint family system — multiple generations under one roof means these distinctions carry real daily information about seniority, authority, and who you address how. A word like "uncle" would be uselessly vague in a household where the specific relationship determines the register you use.</p>
+          <div class="flag ok">
+            <b>Why this matters for you</b>
+            You do not need to produce all of these to benefit. Recognising <span class="mono">peddamma</span> versus <span class="mono">pinni</span> in a conversation tells you the family structure being described — that is comprehension value long before it is production value.
+          </div>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Siblings split by age — there is no generic "brother"</h3>
+          <p>Four words where English has two. You cannot say "sister" without committing to elder or younger.</p>
+          <table class="tbl">
+            <thead><tr><th></th><th>Elder</th><th>Younger</th></tr></thead>
+            <tbody>
+              <tr><td><b style="color:var(--cream)">sister</b></td><td><span class="rom">akka</span> <span class="tel">అక్క</span></td><td><span class="rom">chelli</span> <span class="tel">చెల్లి</span></td></tr>
+              <tr><td><b style="color:var(--cream)">brother</b></td><td><span class="rom">annayya</span> <span class="tel">అన్నయ్య</span><small>shortens to <span class="mono">anna</span></small></td><td><span class="rom">tammuḍu</span> <span class="tel">తమ్ముడు</span></td></tr>
+            </tbody>
+          </table>
+          <p>These are also used as <b>address terms</b> well beyond actual siblings — calling a slightly older man <em>anna</em> is common and warm. That's a Hyderabad street-level usage worth knowing, though this lesson only covers the literal family sense.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Grandmothers are transparent compounds</h3>
+          <p>You already know both halves from Lesson 2. The grandmother terms are literally <em>mother's mother</em> and <em>father's mother</em>, formed by sticking the words together.</p>
+          <div class="morph-row">
+            <span class="morph subj"><span class="p">amma</span><span class="r">mother</span></span>
+            <span class="morph op">+</span>
+            <span class="morph base"><span class="p">amma</span><span class="r">mother</span></span>
+            <span class="morph op">→</span>
+            <span class="morph"><span class="p mono" style="color:var(--cream)">ammamma</span></span>
+          </div>
+          <div class="morph-row">
+            <span class="morph subj"><span class="p">nāna</span><span class="r">father</span></span>
+            <span class="morph op">+</span>
+            <span class="morph base"><span class="p">amma</span><span class="r">mother</span></span>
+            <span class="morph op">→</span>
+            <span class="morph"><span class="p mono" style="color:var(--cream)">nānamma</span></span>
+          </div>
+          <span class="ex">ammamma <span class="tel">అమ్మమ్మ</span> <span class="en">— maternal grandmother (mother's mother)</span></span><br>
+          <span class="ex">nānamma <span class="tel">నానమ్మ</span> <span class="en">— paternal grandmother (father's mother)</span></span>
+          <p>Two words learned for free. This compounding logic is the single most useful thing in the lesson, and rule 05 extends it further.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Grandfather doesn't split</h3>
+          <p><b>tāta</b> <span class="telugu">తాత</span> covers both grandfathers. After the careful maternal/paternal distinction on the grandmother side, this asymmetry is worth noticing rather than assuming you missed something.</p>
+          <span class="ex">tāta <span class="tel">తాత</span> <span class="en">— grandfather, either side</span></span>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3><span class="mono">pedda</span> and <span class="mono">chinna</span> build "elder" and "younger" kin</h3>
+          <p>Two ordinary adjectives — <b>pedda</b> <span class="telugu">పెద్ద</span> ("big, elder") and <b>chinna</b> <span class="telugu">చిన్న</span> ("small, young") — attach to parent words to generate uncle and aunt terms. The literal translations are startling and make them easy to remember.</p>
+          <div class="morph-row">
+            <span class="morph subj"><span class="p">pedda</span><span class="r">elder</span></span>
+            <span class="morph op">+</span>
+            <span class="morph base"><span class="p">amma</span><span class="r">mother</span></span>
+            <span class="morph op">→</span>
+            <span class="morph"><span class="p mono" style="color:var(--cream)">peddamma</span></span>
+          </div>
+          <table class="tbl">
+            <thead><tr><th>Built form</th><th>Literally</th><th>Actually means</th></tr></thead>
+            <tbody>
+              <tr><td><span class="rom">peddamma</span> <span class="tel">పెద్దమ్మ</span></td><td>elder mother</td><td>Mother's <b>elder</b> sister</td></tr>
+              <tr><td><span class="rom">peddanāna</span> <span class="tel">పెద్దనాన్న</span></td><td>elder father</td><td>Father's <b>elder</b> brother</td></tr>
+              <tr><td><span class="rom">chinnāna</span> <span class="tel">చిన్నాన్న</span></td><td>younger father</td><td>Father's <b>younger</b> brother</td></tr>
+            </tbody>
+          </table>
+          <p>The logic is that your parent's same-sex sibling is a kind of secondary parent — which is exactly how a joint household functions. Note that the mother's <em>younger</em> sister breaks the pattern with its own word, <b>pinni</b> <span class="telugu">పిన్ని</span>, rather than a <em>chinna-</em> compound.</p>
+          <p><span class="mono">pedda</span> and <span class="mono">chinna</span> are general-purpose adjectives, not kinship-only. You'll meet them again for physical size.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>The maternal side</h3>
+          <p>Your mother's siblings. The brother has one word regardless of age; the sisters split.</p>
+          <table class="tbl">
+            <thead><tr><th>Relation</th><th>Term</th><th>Note</th></tr></thead>
+            <tbody>
+              <tr><td>Mother's brother <span class="tag mat">maternal</span></td><td><span class="rom">māmayya</span> <span class="tel">మామయ్య</span></td><td>Same word whether elder or younger</td></tr>
+              <tr><td>Mother's elder sister <span class="tag eld">elder</span></td><td><span class="rom">peddamma</span> <span class="tel">పెద్దమ్మ</span></td><td>"elder mother"</td></tr>
+              <tr><td>Mother's younger sister <span class="tag yng">younger</span></td><td><span class="rom">pinni</span> <span class="tel">పిన్ని</span></td><td>Its own word, not a compound</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>The paternal side</h3>
+          <p>Mirror image: here the <em>sister</em> has one word and the <em>brothers</em> split by age.</p>
+          <table class="tbl">
+            <thead><tr><th>Relation</th><th>Term</th><th>Note</th></tr></thead>
+            <tbody>
+              <tr><td>Father's sister <span class="tag pat">paternal</span></td><td><span class="rom">atta</span> <span class="tel">అత్త</span></td><td>Same word whether elder or younger</td></tr>
+              <tr><td>Father's elder brother <span class="tag eld">elder</span></td><td><span class="rom">peddanāna</span> <span class="tel">పెద్దనాన్న</span></td><td>"elder father"</td></tr>
+              <tr><td>Father's younger brother <span class="tag yng">younger</span></td><td><span class="rom">chinnāna</span> <span class="tel">చిన్నాన్న</span></td><td>"younger father"</td></tr>
+            </tbody>
+          </table>
+          <p>The symmetry is neat: on each side, the <b>opposite-sex</b> sibling of your parent gets one age-neutral word (<span class="mono">māmayya</span>, <span class="mono">atta</span>), while the <b>same-sex</b> sibling splits by age into a parent-compound.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3><span class="mono">gāru</span> — the honorific for people</h3>
+          <p>A new politeness tool, and importantly <b>not</b> the same as Lesson 3's <span class="mono">aṇḍi</span>. <b>gāru</b> <span class="telugu">గారు</span> attaches to a person's name or kinship term to mark respect.</p>
+          <div class="morph-row">
+            <span class="morph base"><span class="p">tāta</span><span class="r">grandfather</span></span>
+            <span class="morph op">+</span>
+            <span class="morph mark"><span class="p">gāru</span><span class="r">honorific</span></span>
+            <span class="morph op">→</span>
+            <span class="morph"><span class="p mono" style="color:var(--cream)">tāta gāru</span></span>
+          </div>
+          <p>The lesson gives a clean heuristic: <b>the older the family member, the more likely you use it.</b> Grandparents almost always take <span class="mono">gāru</span>; parents sometimes do; siblings generally don't.</p>
+          <table class="tbl">
+            <thead><tr><th>Suffix</th><th>Attaches to</th><th>Example</th></tr></thead>
+            <tbody>
+              <tr><td><span class="rom">gāru</span> <span class="tel">గారు</span></td><td>Names and person nouns</td><td><span class="mono">tāta gāru</span>, <span class="mono">amma gāru</span>, <span class="mono">atta gāru</span></td></tr>
+              <tr><td><span class="rom">aṇḍi</span> <span class="tel">అండి</span></td><td>Greetings, answers, phrases</td><td><span class="mono">avunandi</span>, <span class="mono">raṇḍi</span>, <span class="mono">vaddandi</span></td></tr>
+            </tbody>
+          </table>
+          <p>For your purposes this is high-value: <span class="mono">gāru</span> after a colleague's name is one of the simplest respect markers available to you, and it works in otherwise-English sentences.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3><span class="mono">atta</span> and <span class="mono">māma</span> do double duty</h3>
+          <p>Look carefully at the in-law terms and you'll notice the same words from rules 06–07 reappearing:</p>
+          <table class="tbl">
+            <thead><tr><th>Term</th><th>As blood relative</th><th>As in-law</th></tr></thead>
+            <tbody>
+              <tr><td><span class="rom">atta</span> <span class="tel">అత్త</span></td><td>Father's sister</td><td>Mother-in-law <span class="mono">(atta gāru)</span></td></tr>
+              <tr><td><span class="rom">māma</span> <span class="tel">మామ</span></td><td>Mother's brother <span class="mono">(māmayya)</span></td><td>Father-in-law <span class="mono">(māma gāru)</span></td></tr>
+            </tbody>
+          </table>
+          <p>This overlap is not a coincidence or an ambiguity. In traditional Dravidian kinship, marriage between cross-cousins was common, which would make your father's sister literally also your mother-in-law. The vocabulary preserves that older structure even where the practice has changed.</p>
+          <p>Practically: in-law terms take <span class="mono">gāru</span> essentially by default, which also disambiguates them in conversation.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Spouse terms: formal vs. colloquial</h3>
+          <p>Lesson 2 gave you the formal pair. This lesson adds the everyday pair — and confirms what <span class="mono">moguḍu</span> actually means.</p>
+          <table class="tbl">
+            <thead><tr><th></th><th>Formal</th><th>Colloquial / everyday</th></tr></thead>
+            <tbody>
+              <tr><td><b style="color:var(--cream)">wife</b></td><td><span class="rom">bhārya</span> <span class="tel">భార్య</span></td><td><span class="rom">pellām</span> <span class="tel">పెళ్ళాం</span></td></tr>
+              <tr><td><b style="color:var(--cream)">husband</b></td><td><span class="rom">bharta</span> <span class="tel">భర్త</span></td><td><span class="rom">moguḍu</span> <span class="tel">మొగుడు</span></td></tr>
+            </tbody>
+          </table>
+          <div class="flag ok">
+            <b>Flag resolved</b>
+            Lesson 2 presented <span class="mono">moguḍu</span> as "man," and I flagged it as suspicious. Confirmed here: it means <b>husband</b>. The colloquial pair is noticeably informal — with your in-laws or senior colleagues, the traditional <span class="mono">mā āyana</span> / <span class="mono">mā āviḍa</span> forms from Lesson 2 remain the safer choice.
+          </div>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>The <span class="mono">-ḍu</span> / <span class="mono">-rālu</span> pattern returns</h3>
+          <p>Lesson 2's gender pattern is all over this vocabulary. Once you spot it, the grandchild and in-law terms come in pairs.</p>
+          <table class="tbl">
+            <thead><tr><th>Male · -ḍu</th><th>Female · -rālu / -alu</th><th>Meaning</th></tr></thead>
+            <tbody>
+              <tr><td><span class="rom">manavaḍu</span> <span class="tel">మనవడు</span></td><td><span class="rom">manavarālu</span> <span class="tel">మనవరాలు</span></td><td>grandson / granddaughter</td></tr>
+              <tr><td><span class="rom">alluḍu</span> <span class="tel">అల్లుడు</span></td><td><span class="rom">kōḍalu</span> <span class="tel">కోడలు</span></td><td>son-in-law / daughter-in-law</td></tr>
+              <tr><td><span class="rom">tammuḍu</span> <span class="tel">తమ్ముడు</span></td><td>—</td><td>younger brother</td></tr>
+            </tbody>
+          </table>
+          <p>Note <span class="mono">kōḍalu</span> doesn't take the full <span class="mono">-rālu</span> ending — the pattern is a strong tendency, not an absolute rule. And remember from Lesson 2 that these <span class="mono">-ḍu</span> words shift to <span class="mono">-ḍi</span> before the person marker: <em>nēnu alluḍini</em>, "I am the son-in-law."</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="map">
+  <div class="wrap">
+    <span class="eyebrow">Reference</span>
+    <h2>The family map</h2>
+    <p class="lede">Organised by generation and by whose perspective you're speaking from. <span class="tag mat">maternal</span> <span class="tag pat">paternal</span> <span class="tag eld">elder</span> <span class="tag yng">younger</span></p>
+
+    <div class="gen">
+      <div class="gen-head">Generation +2 · Grandparents</div>
+      <div class="gen-row"><span>Maternal grandmother <span class="tag mat">mat</span></span><div><span class="line">ammamma</span><span class="tel">అమ్మమ్మ</span><span class="lit">amma + amma — "mother's mother" · usually <span class="mono">ammamma gāru</span></span></div></div>
+      <div class="gen-row"><span>Paternal grandmother <span class="tag pat">pat</span></span><div><span class="line">nānamma</span><span class="tel">నానమ్మ</span><span class="lit">nāna + amma — "father's mother"</span></div></div>
+      <div class="gen-row"><span>Grandfather, either side</span><div><span class="line">tāta</span><span class="tel">తాత</span><span class="lit">No maternal/paternal split · usually <span class="mono">tāta gāru</span></span></div></div>
+    </div>
+
+    <div class="gen">
+      <div class="gen-head">Generation +1 · Parents and their siblings</div>
+      <div class="gen-row"><span>Mother</span><div><span class="line">amma</span><span class="tel">అమ్మ</span><span class="lit">From Lesson 2 · remember: <span class="mono">mā amma</span>, never <span class="mono">nā amma</span></span></div></div>
+      <div class="gen-row"><span>Father</span><div><span class="line">nāna</span><span class="tel">నాన్న</span><span class="lit">From Lesson 2 · <span class="mono">mā nāna</span></span></div></div>
+      <div class="gen-row"><span>Mother's brother <span class="tag mat">mat</span></span><div><span class="line">māmayya</span><span class="tel">మామయ్య</span><span class="lit">Age-neutral</span></div></div>
+      <div class="gen-row"><span>Mother's elder sister <span class="tag mat">mat</span> <span class="tag eld">eld</span></span><div><span class="line">peddamma</span><span class="tel">పెద్దమ్మ</span><span class="lit">"elder mother"</span></div></div>
+      <div class="gen-row"><span>Mother's younger sister <span class="tag mat">mat</span> <span class="tag yng">yng</span></span><div><span class="line">pinni</span><span class="tel">పిన్ని</span><span class="lit">Its own word</span></div></div>
+      <div class="gen-row"><span>Father's sister <span class="tag pat">pat</span></span><div><span class="line">atta</span><span class="tel">అత్త</span><span class="lit">Age-neutral · also means mother-in-law</span></div></div>
+      <div class="gen-row"><span>Father's elder brother <span class="tag pat">pat</span> <span class="tag eld">eld</span></span><div><span class="line">peddanāna</span><span class="tel">పెద్దనాన్న</span><span class="lit">"elder father"</span></div></div>
+      <div class="gen-row"><span>Father's younger brother <span class="tag pat">pat</span> <span class="tag yng">yng</span></span><div><span class="line">chinnāna</span><span class="tel">చిన్నాన్న</span><span class="lit">"younger father"</span></div></div>
+    </div>
+
+    <div class="gen">
+      <div class="gen-head">Generation 0 · Siblings and spouse</div>
+      <div class="gen-row"><span>Elder sister <span class="tag eld">eld</span></span><div><span class="line">akka</span><span class="tel">అక్క</span></div></div>
+      <div class="gen-row"><span>Younger sister <span class="tag yng">yng</span></span><div><span class="line">chelli</span><span class="tel">చెల్లి</span></div></div>
+      <div class="gen-row"><span>Elder brother <span class="tag eld">eld</span></span><div><span class="line">annayya</span><span class="tel">అన్నయ్య</span><span class="lit">Shortens to <span class="mono">anna</span></span></div></div>
+      <div class="gen-row"><span>Younger brother <span class="tag yng">yng</span></span><div><span class="line">tammuḍu</span><span class="tel">తమ్ముడు</span></div></div>
+      <div class="gen-row"><span>Wife</span><div><span class="line">bhārya / pellām</span><span class="tel">భార్య / పెళ్ళాం</span><span class="lit">formal / colloquial</span></div></div>
+      <div class="gen-row"><span>Husband</span><div><span class="line">bharta / moguḍu</span><span class="tel">భర్త / మొగుడు</span><span class="lit">formal / colloquial</span></div></div>
+    </div>
+
+    <div class="gen">
+      <div class="gen-head">Generation 0 · In-laws</div>
+      <div class="gen-row"><span>Mother-in-law, either side</span><div><span class="line">atta gāru</span><span class="tel">అత్త గారు</span><span class="lit">Honorific effectively obligatory here</span></div></div>
+      <div class="gen-row"><span>Father-in-law, either side</span><div><span class="line">māma gāru</span><span class="tel">మామ గారు</span></div></div>
+    </div>
+
+    <div class="gen">
+      <div class="gen-head">Generation −1 · Children</div>
+      <div class="gen-row"><span>Children (collective)</span><div><span class="line">pillalu</span><span class="tel">పిల్లలు</span></div></div>
+      <div class="gen-row"><span>Daughter</span><div><span class="line">kūturu</span><span class="tel">కూతురు</span></div></div>
+      <div class="gen-row"><span>Son</span><div><span class="line">koḍuku</span><span class="tel">కొడుకు</span></div></div>
+      <div class="gen-row"><span>Son-in-law</span><div><span class="line">alluḍu</span><span class="tel">అల్లుడు</span></div></div>
+      <div class="gen-row"><span>Daughter-in-law</span><div><span class="line">kōḍalu</span><span class="tel">కోడలు</span></div></div>
+    </div>
+
+    <div class="gen">
+      <div class="gen-head">Generation −2 · Grandchildren</div>
+      <div class="gen-row"><span>Grandchildren (collective)</span><div><span class="line">manavalu</span><span class="tel">మనవలు</span></div></div>
+      <div class="gen-row"><span>Grandson</span><div><span class="line">manavaḍu</span><span class="tel">మనవడు</span><span class="lit">Variant: <span class="mono">manumaḍu</span></span></div></div>
+      <div class="gen-row"><span>Granddaughter</span><div><span class="line">manavarālu</span><span class="tel">మనవరాలు</span><span class="lit">Variant: <span class="mono">manumarālu</span></span></div></div>
+    </div>
+
+    <div class="note-box" style="margin-top:28px">
+      <b>How the lesson suggests learning these</b>
+      <p>Don't memorise the grid — <b>assign the names to your actual relatives</b>. Start with the people you'd genuinely mention: your wife, her parents, your own parents, siblings. The terms attach to real faces, which is far stickier than a table, and it front-loads exactly the vocabulary you'd use in a real conversation with her family.</p>
+    </div>
+  </div>
+</section>
+
+<section id="questions">
+  <div class="wrap">
+    <span class="eyebrow">From this lesson</span>
+    <h2>Question deep dives</h2>
+    <p class="lede">Add your questions from the video and I'll build them out the way we did for <span class="mono">oka</span>.</p>
+    <a class="question-link" href="../concepts/index.html">
+      <span class="question-mark">?</span>
+      <span><h3>No deep dives linked yet for Lesson 4</h3><p>Strong candidates: <span class="mono">gāru</span> versus <span class="mono">aṇḍi</span> versus <span class="mono">mīru</span> as three layers of respect; the <span class="mono">atta</span>/<span class="mono">māma</span> double duty and cross-cousin kinship; or which kin terms are used to address non-relatives.</p></span>
+      <span class="question-open">Open library</span>
+    </a>
+  </div>
+</section>
+
+<section id="anki">
+  <div class="wrap">
+    <span class="eyebrow">For import</span>
+    <h2>Anki word list — your 5 fields</h2>
+    <p class="lede">Same five-field format, <b>Audio</b> blank. The English field carries the full relationship spec, because "aunt" alone would make several of these cards unanswerable.</p>
+    <div class="field-key">
+      <span><b>1</b> English (+ cue)</span>
+      <span><b>2</b> Romanized</span>
+      <span><b>3</b> Telugu script</span>
+      <span><b>4</b> Audio (blank)</span>
+      <span><b>5</b> Example</span>
+    </div>
+
+    <div class="anki-wrap">
+      <table class="anki">
+        <thead>
+          <tr><th class="f-en">English (with cue)</th><th>Romanized</th><th>Telugu</th><th style="text-align:center">Audio</th><th>Example sentence</th></tr>
+        </thead>
+        <tbody>
+          <tr class="sec"><td colspan="5">Siblings</td></tr>
+          <tr><td class="f-en">elder sister</td><td class="f-rom">akka</td><td class="f-tel">అక్క</td><td class="f-aud">[ ]</td><td class="f-ex">mā akka vidyārthi.</td></tr>
+          <tr><td class="f-en">younger sister</td><td class="f-rom">chelli</td><td class="f-tel">చెల్లి</td><td class="f-aud">[ ]</td><td class="f-ex">mā chelli ammāyi.</td></tr>
+          <tr><td class="f-en">elder brother (shortens to anna)</td><td class="f-rom">annayya</td><td class="f-tel">అన్నయ్య</td><td class="f-aud">[ ]</td><td class="f-ex">mā annayya ḍākṭar.</td></tr>
+          <tr><td class="f-en">younger brother</td><td class="f-rom">tammuḍu</td><td class="f-tel">తమ్ముడు</td><td class="f-aud">[ ]</td><td class="f-ex">mā tammuḍu vidyārthi.</td></tr>
+
+          <tr class="sec"><td colspan="5">Grandparents &amp; the honorific</td></tr>
+          <tr><td class="f-en">maternal grandmother (mother's mother)</td><td class="f-rom">ammamma</td><td class="f-tel">అమ్మమ్మ</td><td class="f-aud">[ ]</td><td class="f-ex">mā ammamma gāru.</td></tr>
+          <tr><td class="f-en">paternal grandmother (father's mother)</td><td class="f-rom">nānamma</td><td class="f-tel">నానమ్మ</td><td class="f-aud">[ ]</td><td class="f-ex">mā nānamma gāru.</td></tr>
+          <tr><td class="f-en">grandfather (either side)</td><td class="f-rom">tāta</td><td class="f-tel">తాత</td><td class="f-aud">[ ]</td><td class="f-ex">mā tāta gāru.</td></tr>
+          <tr><td class="f-en">honorific suffix for people (respect)</td><td class="f-rom">gāru</td><td class="f-tel">గారు</td><td class="f-aud">[ ]</td><td class="f-ex">Raj gāru.</td></tr>
+
+          <tr class="sec"><td colspan="5">Building blocks</td></tr>
+          <tr><td class="f-en">big, elder</td><td class="f-rom">pedda</td><td class="f-tel">పెద్ద</td><td class="f-aud">[ ]</td><td class="f-ex">pedda + amma → peddamma</td></tr>
+          <tr><td class="f-en">small, young</td><td class="f-rom">chinna</td><td class="f-tel">చిన్న</td><td class="f-aud">[ ]</td><td class="f-ex">chinna + nāna → chinnāna</td></tr>
+
+          <tr class="sec"><td colspan="5">Uncles &amp; aunts — maternal side</td></tr>
+          <tr><td class="f-en">mother's brother (any age)</td><td class="f-rom">māmayya</td><td class="f-tel">మామయ్య</td><td class="f-aud">[ ]</td><td class="f-ex">mā māmayya enjinīr.</td></tr>
+          <tr><td class="f-en">mother's ELDER sister (lit. "elder mother")</td><td class="f-rom">peddamma</td><td class="f-tel">పెద్దమ్మ</td><td class="f-aud">[ ]</td><td class="f-ex">mā peddamma gāru.</td></tr>
+          <tr><td class="f-en">mother's YOUNGER sister</td><td class="f-rom">pinni</td><td class="f-tel">పిన్ని</td><td class="f-aud">[ ]</td><td class="f-ex">mā pinni ṭīcharu.</td></tr>
+
+          <tr class="sec"><td colspan="5">Uncles &amp; aunts — paternal side</td></tr>
+          <tr><td class="f-en">father's sister (any age) — also mother-in-law</td><td class="f-rom">atta</td><td class="f-tel">అత్త</td><td class="f-aud">[ ]</td><td class="f-ex">mā atta gāru.</td></tr>
+          <tr><td class="f-en">father's ELDER brother (lit. "elder father")</td><td class="f-rom">peddanāna</td><td class="f-tel">పెద్దనాన్న</td><td class="f-aud">[ ]</td><td class="f-ex">mā peddanāna gāru.</td></tr>
+          <tr><td class="f-en">father's YOUNGER brother (lit. "younger father")</td><td class="f-rom">chinnāna</td><td class="f-tel">చిన్నాన్న</td><td class="f-aud">[ ]</td><td class="f-ex">mā chinnāna vaidyuḍu.</td></tr>
+
+          <tr class="sec"><td colspan="5">Spouse &amp; in-laws</td></tr>
+          <tr><td class="f-en">wife (colloquial — bhārya is the formal word)</td><td class="f-rom">pellām</td><td class="f-tel">పెళ్ళాం</td><td class="f-aud">[ ]</td><td class="f-ex">nā pellām ṭīcharu.</td></tr>
+          <tr><td class="f-en">husband (colloquial — bharta is the formal word)</td><td class="f-rom">moguḍu</td><td class="f-tel">మొగుడు</td><td class="f-aud">[ ]</td><td class="f-ex">nā moguḍu enjinīr.</td></tr>
+          <tr><td class="f-en">father-in-law (either side)</td><td class="f-rom">māma gāru</td><td class="f-tel">మామ గారు</td><td class="f-aud">[ ]</td><td class="f-ex">mā māma gāru.</td></tr>
+
+          <tr class="sec"><td colspan="5">Children</td></tr>
+          <tr><td class="f-en">children (collective)</td><td class="f-rom">pillalu</td><td class="f-tel">పిల్లలు</td><td class="f-aud">[ ]</td><td class="f-ex">mā pillalu vidyārthulu.</td></tr>
+          <tr><td class="f-en">daughter</td><td class="f-rom">kūturu</td><td class="f-tel">కూతురు</td><td class="f-aud">[ ]</td><td class="f-ex">mā kūturu vidyārthi.</td></tr>
+          <tr><td class="f-en">son</td><td class="f-rom">koḍuku</td><td class="f-tel">కొడుకు</td><td class="f-aud">[ ]</td><td class="f-ex">mā koḍuku abbāyi.</td></tr>
+          <tr><td class="f-en">son-in-law</td><td class="f-rom">alluḍu</td><td class="f-tel">అల్లుడు</td><td class="f-aud">[ ]</td><td class="f-ex">nēnu alluḍini.</td></tr>
+          <tr><td class="f-en">daughter-in-law</td><td class="f-rom">kōḍalu</td><td class="f-tel">కోడలు</td><td class="f-aud">[ ]</td><td class="f-ex">mā kōḍalu ḍākṭar.</td></tr>
+
+          <tr class="sec"><td colspan="5">Grandchildren</td></tr>
+          <tr><td class="f-en">grandchildren (collective)</td><td class="f-rom">manavalu</td><td class="f-tel">మనవలు</td><td class="f-aud">[ ]</td><td class="f-ex">mā manavalu.</td></tr>
+          <tr><td class="f-en">grandson (variant: manumaḍu)</td><td class="f-rom">manavaḍu</td><td class="f-tel">మనవడు</td><td class="f-aud">[ ]</td><td class="f-ex">mā manavaḍu vidyārthi.</td></tr>
+          <tr><td class="f-en">granddaughter (variant: manumarālu)</td><td class="f-rom">manavarālu</td><td class="f-tel">మనవరాలు</td><td class="f-aud">[ ]</td><td class="f-ex">mā manavarālu ammāyi.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="lede" style="margin-top:20px;font-size:14px"><b>27 rows — 26 new.</b> <span class="mono">moguḍu</span> is re-listed from Lesson 2 with its corrected meaning, so replace that note rather than adding a second one. That's still over five days of your limit, and the lesson's own advice is the right sequencing rule: <b>add the ones that map to real people first.</b> For you that likely means <span class="mono">atta gāru</span>, <span class="mono">māma gāru</span>, <span class="mono">akka</span>/<span class="mono">chelli</span>, <span class="mono">annayya</span>/<span class="mono">tammuḍu</span>, and <span class="mono">gāru</span> itself. The full uncle/aunt grid can stay recognition-only until you meet those relatives.</p>
+  </div>
+</section>
+
+<section id="try">
+  <div class="wrap">
+    <span class="eyebrow">From the lesson</span>
+    <h2>Quick self-test</h2>
+    <p class="lede">Most of these require you to pick a <em>side</em> and an <em>age</em>, not just a word. Cover the green line first.</p>
+    <ul class="try">
+      <li><span class="q">Your mother's elder sister.</span><span class="a">peddamma. &nbsp; (pedda + amma — "elder mother")</span></li>
+      <li><span class="q">Your mother's younger sister.</span><span class="a">pinni. &nbsp; (not a compound — its own word)</span></li>
+      <li><span class="q">Your father's younger brother.</span><span class="a">chinnāna. &nbsp; (chinna + nāna — "younger father")</span></li>
+      <li><span class="q">Your father's sister — and does her age matter?</span><span class="a">atta. &nbsp; No — age-neutral, like māmayya on the other side.</span></li>
+      <li><span class="q">Your mother's mother, built from its parts.</span><span class="a">amma + amma → ammamma. &nbsp; Usually ammamma gāru.</span></li>
+      <li><span class="q">Elder sister and younger sister.</span><span class="a">akka / chelli.</span></li>
+      <li><span class="q">Address your grandfather respectfully.</span><span class="a">tāta gāru. &nbsp; (gāru attaches to people, aṇḍi to phrases)</span></li>
+      <li><span class="q">Your mother-in-law and father-in-law.</span><span class="a">atta gāru / māma gāru. &nbsp; Same roots as the paternal aunt and maternal uncle.</span></li>
+      <li><span class="q">Son-in-law and daughter-in-law.</span><span class="a">alluḍu / kōḍalu.</span></li>
+      <li><span class="q">"I am the son-in-law." — mind the Lesson 2 sound rule.</span><span class="a">nēnu alluḍini. &nbsp; (-ḍu → -ḍi before the person marker)</span></li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><span class="mono">pedda + amma → peddamma.</span> — the kinship system looks like a memorisation wall, but most of it is two adjectives and two parent words recombining. Assign the terms to real relatives and the grid collapses into a handful of facts.</p>
+    <p style="margin-top:12px"><a href="lesson-05-possessives.html">Lesson 5: Possessive pronouns →</a></p>
+    <p style="margin-top:12px"><a href="lesson-03-greetings.html">← Lesson 3: Greetings, politeness &amp; the three ways to say no</a></p>
+    <p style="margin-top:12px"><a href="../index.html">← Return to the Foundational Telugu learning path</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

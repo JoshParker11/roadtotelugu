@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saranga Dariya — Song Analysis | Foundational Telugu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+Telugu:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#191915;--ink-2:#22221d;--ink-3:#2c2c25;
+  --cream:#f1ece0;--cream-dim:#b9b3a4;
+  --amber:#e8a33d;--moss:#8fa37e;--flame:#d96c47;--violet:#a48cc4;
+  --line:rgba(241,236,224,.12);--radius:14px;--max:1000px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{background:var(--ink);color:var(--cream);font-family:'Inter',sans-serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.telugu{font-family:'Noto Sans Telugu','Inter',sans-serif}
+.mono{font-family:'JetBrains Mono',monospace}
+h1,h2,h3{font-family:'Young Serif',serif;font-weight:400;line-height:1.15}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+section{padding:70px 0;border-top:1px solid var(--line)}
+.eyebrow{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--amber);margin-bottom:14px;display:block}
+h2{font-size:clamp(26px,4.2vw,36px);margin-bottom:14px}
+.lede{color:var(--cream-dim);max-width:680px;font-size:16.5px}
+.lede b{color:var(--cream)}
+a{color:var(--amber)}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:4px}
+
+nav{position:sticky;top:0;z-index:50;background:rgba(25,25,21,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+.logo{font-family:'JetBrains Mono',monospace;font-size:13.5px;font-weight:700;color:var(--cream);text-decoration:none}
+.logo span{color:var(--amber)}
+nav ul{display:flex;gap:20px;list-style:none}
+nav ul a{color:var(--cream-dim);text-decoration:none;font-size:13px;font-weight:500}
+nav ul a:hover{color:var(--amber)}
+@media(max-width:760px){nav ul{display:none}}
+.crumb{display:inline-block;margin-bottom:18px;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--cream-dim);text-decoration:none}
+.crumb:hover{color:var(--amber)}
+
+header.hero{padding:78px 0 60px;position:relative;overflow:hidden}
+.hero-glyph{position:absolute;right:-24px;top:-60px;font-family:'Noto Sans Telugu',sans-serif;font-size:clamp(230px,36vw,420px);line-height:1;color:rgba(164,140,196,.06);user-select:none;pointer-events:none}
+.hero .wrap{position:relative;z-index:1}
+.hero h1{font-size:clamp(34px,6vw,56px);margin:8px 0 6px;color:var(--cream)}
+.hero .native{font-family:'Noto Sans Telugu',sans-serif;font-size:26px;color:var(--amber);margin-bottom:12px}
+.hero p{max-width:640px;color:var(--cream-dim);font-size:17px}
+
+.note-box{background:rgba(217,108,71,.07);border:1px solid rgba(217,108,71,.3);border-radius:var(--radius);padding:20px 24px;margin-top:28px;max-width:740px}
+.note-box b{color:var(--flame);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;display:block;margin-bottom:8px}
+.note-box p{font-size:14px;color:var(--cream-dim)}
+.note-box p+p{margin-top:10px}
+.note-box.win{background:rgba(143,163,126,.08);border-color:rgba(143,163,126,.32)}
+.note-box.win b{color:var(--moss)}
+.note-box.warn{background:rgba(164,140,196,.08);border-color:rgba(164,140,196,.32)}
+.note-box.warn b{color:var(--violet)}
+
+/* lyric block */
+.lyric{border-left:2px solid var(--amber);padding:14px 0 14px 18px;margin:18px 0}
+.lyric+.lyric{margin-top:-4px}
+.lyric .tel{display:block;font-family:'Noto Sans Telugu',sans-serif;font-size:20px;color:var(--cream);line-height:1.5}
+.lyric .rom{display:block;font-family:'JetBrains Mono',monospace;font-size:14px;color:var(--amber);margin-top:5px}
+.lyric .en{display:block;font-size:13px;color:var(--cream-dim);margin-top:6px;font-style:italic}
+.lyric mark{background:rgba(217,108,71,.22);color:var(--flame);padding:0 3px;border-radius:3px}
+.lyric .rom mark{background:rgba(217,108,71,.18)}
+
+.rule{border-top:1px solid var(--line);padding:30px 0;display:grid;grid-template-columns:52px 1fr;gap:20px;counter-increment:r}
+.rules{counter-reset:r;margin-top:20px}
+.rule::before{content:counter(r,decimal-leading-zero);font-family:'JetBrains Mono',monospace;font-size:14px;color:var(--flame);padding-top:4px}
+.rule h3{font-size:19px;font-family:'Inter',sans-serif;font-weight:600;margin-bottom:8px;color:var(--cream)}
+.rule p{font-size:14.5px;color:var(--cream-dim);max-width:640px}
+.rule p+p{margin-top:10px}
+.rule b{color:var(--cream)}
+
+.morph-row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:16px 0}
+.morph{border-radius:9px;padding:9px 14px;font-family:'JetBrains Mono',monospace;text-align:center;min-width:72px}
+.morph .p{font-size:16px;font-weight:700;display:block}
+.morph .r{font-size:9px;letter-spacing:.1em;text-transform:uppercase;opacity:.75;margin-top:3px;display:block}
+.morph.subj{background:rgba(232,163,61,.14);color:var(--amber);border:1px solid rgba(232,163,61,.35)}
+.morph.base{background:rgba(143,163,126,.14);color:var(--moss);border:1px solid rgba(143,163,126,.35)}
+.morph.mark{background:rgba(217,108,71,.14);color:var(--flame);border:1px solid rgba(217,108,71,.35)}
+.morph.op{background:none;border:none;color:var(--cream-dim);font-size:18px;min-width:auto;padding:0 2px}
+
+.tbl{width:100%;border-collapse:collapse;margin-top:22px;font-size:14.5px}
+.tbl th{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:11px 12px;color:var(--cream-dim);border-bottom:1px solid var(--line);vertical-align:bottom}
+.tbl td{padding:12px;border-bottom:1px solid var(--line);color:var(--cream-dim);vertical-align:top}
+.tbl td .rom{font-family:'JetBrains Mono',monospace;font-size:15px;color:var(--cream);font-weight:700}
+.tbl td .tel{font-family:'Noto Sans Telugu',sans-serif;font-size:15px;color:var(--cream-dim)}
+.tbl .grp td{background:var(--ink-2);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--amber)}
+
+.anki-wrap{overflow-x:auto;margin-top:26px;border:1px solid var(--line);border-radius:var(--radius)}
+.anki{width:100%;border-collapse:collapse;font-size:14px;min-width:760px}
+.anki th{background:var(--ink-3);font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:12px 14px;color:var(--amber);border-bottom:1px solid var(--line);white-space:nowrap}
+.anki td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--cream-dim);vertical-align:top}
+.anki tr:last-child td{border-bottom:none}
+.anki .f-en{color:var(--cream);width:28%}
+.anki .f-rom{font-family:'JetBrains Mono',monospace;color:var(--amber);font-weight:700;white-space:nowrap}
+.anki .f-tel{font-family:'Noto Sans Telugu',sans-serif;color:var(--cream)}
+.anki .f-aud{color:var(--cream-dim);opacity:.4;font-family:'JetBrains Mono',monospace;font-size:12px;text-align:center}
+.anki .f-ex{font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--moss)}
+.anki .sec td{background:var(--ink-2);font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--cream-dim)}
+.use{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.05em;text-transform:uppercase;padding:2px 7px;border-radius:999px;margin-left:5px}
+.use.daily{background:rgba(143,163,126,.18);color:var(--moss)}
+.use.limited{background:rgba(232,163,61,.16);color:var(--amber)}
+.use.poetic{background:rgba(164,140,196,.16);color:var(--violet)}
+.use.verify{background:rgba(217,108,71,.16);color:var(--flame)}
+.field-key{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--cream-dim)}
+.field-key span{background:var(--ink-2);border:1px solid var(--line);border-radius:6px;padding:5px 10px}
+.field-key b{color:var(--amber);font-weight:500}
+
+.idiom{border:1px solid var(--line);border-radius:var(--radius);background:var(--ink-2);padding:20px 22px;margin-top:14px}
+.idiom .pat{font-family:'JetBrains Mono',monospace;font-size:15px;color:var(--amber);font-weight:700}
+.idiom .pat .slot{color:var(--flame);border-bottom:1px dashed var(--flame)}
+.idiom h3{margin:0 0 8px;font-family:'Inter',sans-serif;font-size:16px;font-weight:600}
+.idiom p{margin:10px 0 0;color:var(--cream-dim);font-size:13.5px}
+.idiom ul{margin:10px 0 0;padding-left:18px}
+.idiom li{color:var(--cream-dim);font-size:13px;margin-top:5px}
+
+footer{padding:50px 0 66px;border-top:1px solid var(--line)}
+footer p{font-size:13px;color:var(--cream-dim)}
+footer .mono{color:var(--amber)}
+
+@media(max-width:760px){
+  .wrap{padding:0 16px}
+  .hero-glyph{right:-30px;font-size:190px}
+  .rule{grid-template-columns:1fr;gap:8px}
+  .rule>div{min-width:0}
+  .tbl{display:block;overflow-x:auto;white-space:nowrap}
+  .lyric .tel{font-size:18px}
+}
+</style>
+</head>
+<body>
+
+<nav aria-label="Main">
+  <div class="wrap">
+    <a class="logo" href="../index.html"><span>te</span> saranga-dariya</a>
+    <ul>
+      <li><a href="index.html">All songs</a></li>
+      <li><a href="#grammar">Grammar</a></li>
+      <li><a href="#dialect">Dialect</a></li>
+      <li><a href="#anki">Vocabulary</a></li>
+      <li><a href="#idioms">Idioms</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-glyph telugu" aria-hidden="true">సా</div>
+  <div class="wrap">
+    <a class="crumb" href="index.html">← Song analysis</a>
+    <span class="eyebrow">Telangana folk style · film adaptation, 2021</span>
+    <div class="native telugu">సారంగ దరియా</div>
+    <h1>Saranga Dariya</h1>
+    <p>A Telangana folk song reworked for cinema. For your purposes it does one thing exceptionally well: its refrain alternates <b>adi</b> and <b>dāni</b> in consecutive lines, which is the cleanest natural demonstration of Lesson 5's least predictable form you're likely to encounter.</p>
+
+    <div class="note-box">
+      <b>How this page is built</b>
+      <p>Rather than reproducing the full lyric sheet, this works from the refrain and the specific lines that carry grammar, dialect, or vocabulary worth having. That's a deliberate choice on two grounds — it stays on the right side of reproducing a copyrighted song, and forty lines of poetic dialect would bury the four that actually teach you something.</p>
+      <p>Several words here are Telangana dialect or older folk vocabulary with spellings that vary between versions. Those carry a <b>verify</b> tag. Your wife will place them instantly; a dictionary may not.</p>
+    </div>
+  </div>
+</header>
+
+<section id="grammar">
+  <div class="wrap">
+    <span class="eyebrow">Why you noticed this song</span>
+    <h2>The <span class="mono">adi</span> / <span class="mono">dāni</span> refrain</h2>
+    <p class="lede">Lesson 5 taught you that most possessives are predictable — unchanged, or a vowel shift. Two aren't. <b>adi → dāni</b> is one of them, and suppletive forms like that are exactly the kind of thing that won't stick from a table. Here it is doing real work, four lines in a row.</p>
+
+    <div class="lyric">
+      <span class="tel">దాని కుడీ భుజం మీద కడవా</span>
+      <span class="rom"><mark>dāni</mark> kuḍī bhujaṁ mīda kaḍavā</span>
+      <span class="en">A water pot balanced on her right shoulder</span>
+    </div>
+    <div class="lyric">
+      <span class="tel">అది రమ్మంటె రాదురా</span>
+      <span class="rom"><mark>adi</mark> rammaṇṭe rādurā</span>
+      <span class="en">Call her and she still won't come</span>
+    </div>
+    <div class="lyric">
+      <span class="tel">దాని పేరే సారంగ దరియా</span>
+      <span class="rom"><mark>dāni</mark> pērē Sāranga Dariyā</span>
+      <span class="en">Her name is Saranga Dariya</span>
+    </div>
+
+    <div class="note-box win">
+      <b>Look how much of this you already own</b>
+      <p><span class="mono">adi</span> and <span class="mono">dāni</span> from Lesson 5. <span class="mono">pēru</span> from Lesson 2. <span class="mono">mīda</span> ("on") and <span class="mono">kuḍi</span> ("right") from the postposition and position sets. And <span class="mono">rādu</span> — "doesn't come" — is the exact word you learned in Lesson 3 for <em>Telugu rādu</em>, "I don't know Telugu." Same word, transparent meaning: there it's the language that doesn't come to you, here it's the woman who won't.</p>
+    </div>
+
+    <div class="rules">
+      <div class="rule">
+        <div>
+          <h3>The subject / possessive alternation</h3>
+          <p>The song switches between the two forms depending on grammatical role, and does it often enough that the pairing becomes automatic if you sing along.</p>
+          <div class="morph-row">
+            <span class="morph subj"><span class="p">adi</span><span class="r">she — subject</span></span>
+            <span class="morph op">↔</span>
+            <span class="morph mark"><span class="p">dāni</span><span class="r">her — possessive</span></span>
+          </div>
+          <p>Lesson 5 called this <b>Pattern C</b> — the possessive is a completely different word rather than a modification. Only two forms behave this way, and both are the neuter/non-human set: <span class="mono">adi → dāni</span> and <span class="mono">avi → vāṭi</span>.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3><span class="mono">pērē</span> — the emphatic <span class="mono">-ē</span></h3>
+          <p>Not <span class="mono">pēru</span> but <span class="mono">pērē</span>. Adding <b>-ē</b> to a noun marks emphasis or exclusivity: <em>her very name</em>, <em>the name itself</em>.</p>
+          <div class="morph-row">
+            <span class="morph base"><span class="p">pēru</span><span class="r">name</span></span>
+            <span class="morph op">+</span>
+            <span class="morph mark"><span class="p">-ē</span><span class="r">emphatic</span></span>
+            <span class="morph op">→</span>
+            <span class="morph"><span class="p mono" style="color:var(--cream)">pērē</span></span>
+          </div>
+          <p>You've met this suffix before without it being named: <span class="mono">okka pustakamē</span> ("only one book") and <span class="mono">okē</span> ("the same") both use it. It's a small piece of machinery that turns up everywhere.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>The conditional <span class="mono">-tē</span></h3>
+          <p>All over this song, and worth recognising long before you can produce it. Attach <b>-tē</b> to a verb and you get "if / when [it happens]."</p>
+          <div class="lyric" style="margin-top:10px">
+            <span class="tel">నడిస్తే ఘల్ ఘల్</span>
+            <span class="rom">naḍis<mark>tē</mark> ghal ghal</span>
+            <span class="en">When she walks — that jingling sound</span>
+          </div>
+          <p>The verb underneath is <b>naḍuvu</b>, "walk" — already in your core list. <span class="mono">ghal ghal</span> is onomatopoeia for anklet bells, and Telugu uses paired sound-words like this far more than English does.</p>
+          <p><b>Why isn't it <span class="mono">naḍuvutē</span>?</b> Because <span class="mono">-tē</span> doesn't attach to the dictionary form — it attaches to a <b>stem</b>, and Telugu verbs change shape when they take endings. Here <span class="mono">naḍuvu</span> reduces to <span class="mono">naḍis-</span>, then <span class="mono">-tē</span> lands on that.</p>
+          <div class="morph-row">
+            <span class="morph base"><span class="p">naḍuvu</span><span class="r">dictionary</span></span>
+            <span class="morph op">→</span>
+            <span class="morph subj"><span class="p">naḍis-</span><span class="r">stem</span></span>
+            <span class="morph op">+</span>
+            <span class="morph mark"><span class="p">-tē</span><span class="r">if / when</span></span>
+            <span class="morph op">=</span>
+            <span class="morph base"><span class="p">naḍistē</span><span class="r">if she walks</span></span>
+          </div>
+          <p>This is the single biggest thing still ahead of you, and it's why Lessons 7–13 are all verbs. Every tense works this way: find the stem, add the ending. Right now just register that <b>the dictionary form is not the form you build on</b> — that one fact prevents a lot of confusion later.</p>
+          <p>The refrain's <span class="mono">rammaṇṭe</span> is the same idea built on <span class="mono">rā</span>: roughly "if [you] say come."</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3><span class="mono">lēkunnā</span> — "even without"</h3>
+          <p>This one is genuinely useful in speech, and it comes straight off <span class="mono">lēdu</span>, which you already know.</p>
+          <div class="lyric" style="margin-top:10px">
+            <span class="tel">గజ్జెల్ లేకున్నా</span>
+            <span class="rom">gajjel <mark>lēkunnā</mark></span>
+            <span class="en">Even without anklets</span>
+          </div>
+          <p>The song leans on this structure repeatedly as a rhetorical device — see the idioms section below. But the construction itself is ordinary and transfers directly: <em>even without X, Y is still true</em>.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="note-box warn">
+      <b>Do not carry this register into the office</b>
+      <p>The song refers to a woman throughout as <span class="mono">adi</span> / <span class="mono">dāni</span> — the <b>informal</b> third-person forms from Lesson 1. In a Telangana folk register that reads as affectionate and teasing. Applied to a colleague it would be plainly rude.</p>
+      <p>For any woman you work with, or any elder, the forms you want are <span class="mono">āme</span> (neutral) or <span class="mono">āviḍa</span> (respectful) — and their possessives are conveniently unchanged. Enjoy the song; don't borrow its pronouns.</p>
+    </div>
+  </div>
+</section>
+
+<section id="dialect">
+  <div class="wrap">
+    <span class="eyebrow">Regional features</span>
+    <h2>This is Telangana Telugu, not textbook Telugu</h2>
+    <p class="lede">Which makes it more useful to you than a standard-register song would be — you're targeting Hyderabad. Several consistent sound shifts run through this song, and once you know them you'll hear them everywhere in Telangana speech.</p>
+    <p class="lede" style="margin-top:12px"><a href="../concepts/registers-dialects-urdu.html">Deep dive: Telangana vs Hyderabadi, and which one to learn →</a> — including six markers for working out what your in-laws speak.</p>
+
+    <table class="tbl">
+      <thead><tr><th>Shift</th><th>Standard</th><th>In this song</th><th>Meaning</th></tr></thead>
+      <tbody>
+        <tr><td><b style="color:var(--cream)">cha → sa</b></td><td><span class="tel">చెంప</span> <span class="rom">chempa</span></td><td><span class="tel">సెంప</span> <span class="rom">sempa</span></td><td>cheek</td></tr>
+        <tr><td><b style="color:var(--cream)">cha → sa</b></td><td><span class="tel">చెవులు</span> <span class="rom">chevulu</span></td><td><span class="tel">సెవులు</span> <span class="rom">sevulu</span></td><td>ears</td></tr>
+        <tr><td><b style="color:var(--cream)">cha → sa</b></td><td><span class="tel">చెలియా</span> <span class="rom">cheliyā</span></td><td><span class="tel">సెలియా</span> <span class="rom">seliyā</span></td><td>dear one, friend</td></tr>
+        <tr><td><b style="color:var(--cream)">ve → e</b></td><td><span class="tel">వెన్నెల</span> <span class="rom">vennela</span></td><td><span class="tel">ఎన్నెల</span> <span class="rom">ennela</span></td><td>moonlight</td></tr>
+        <tr><td><b style="color:var(--cream)">contraction</b></td><td><span class="tel">మగవాళ్ళు</span> <span class="rom">magavāḷḷu</span></td><td><span class="tel">మొగోళ్ళు</span> <span class="rom">mogōḷḷu</span></td><td>men</td></tr>
+      </tbody>
+    </table>
+
+    <div class="note-box win" style="margin-top:26px">
+      <b>The mogōḷḷu thread</b>
+      <p>That last row connects back to something already flagged twice in the course. Lesson 2 glossed <span class="mono">moguḍu</span> as "man"; Lesson 4 confirmed it means <b>husband</b>. Here <span class="mono">mogōḷḷu</span> is the dialect plural for <b>men</b> generally — same root, and a reminder that this word family shifts meaning with form and region. Standard "a man" remains <span class="mono">magavāḍu</span>.</p>
+    </div>
+
+    <p class="lede" style="margin-top:26px">There's also the particle <b>-rā</b>, as in <span class="mono">rādurā</span>. It's an emphatic tag addressed to a male listener — roughly the force of "mate" or "man" in English, and common in casual Telangana speech. It has a feminine counterpart, <span class="mono">-vē</span>. Both are strictly informal.</p>
+  </div>
+</section>
+
+<section id="urdu">
+  <div class="wrap">
+    <span class="eyebrow">The Hyderabad layer</span>
+    <h2>Half the striking words here are Urdu</h2>
+    <p class="lede">This is the single most Hyderabad-relevant thing in the song. Telangana Telugu — and Hyderabad speech especially — carries a heavy layer of Dakhni Urdu vocabulary. The song is saturated with it, and these words will sound familiar to anyone who knows Hindi or Urdu.</p>
+    <p class="lede" style="margin-top:12px"><a href="../concepts/registers-dialects-urdu.html">Deep dive: which Urdu-origin words are actually worth learning →</a> — they split into three tiers, and only one of them belongs in your cards.</p>
+
+    <table class="tbl">
+      <thead><tr><th>Word</th><th>Telugu</th><th>Meaning</th><th>Note</th></tr></thead>
+      <tbody>
+        <tr><td><span class="rom">dil</span></td><td class="tel">దిల్</td><td>heart</td><td>Widely understood — but song register. Say <span class="mono">manasu</span></td></tr>
+        <tr><td><span class="rom">duniyā</span></td><td class="tel">దునియా</td><td>world</td><td>Song register. Say <span class="mono">prapanchaṁ</span></td></tr>
+        <tr><td><span class="rom">guḍiyā</span></td><td class="tel">గుడియా</td><td>doll</td><td>Affectionate</td></tr>
+        <tr><td><span class="rom">chiḍiyā</span></td><td class="tel">చిడియా</td><td>little bird</td><td>Affectionate</td></tr>
+        <tr><td><span class="rom">churiyā</span></td><td class="tel">చురియా</td><td>dagger, blade</td><td>Poetic here — a sharp glance</td></tr>
+        <tr><td><span class="rom">surmā</span></td><td class="tel">సుర్మా</td><td>kohl, eyeliner</td><td>Cosmetic term</td></tr>
+        <tr><td><span class="rom">phirangi</span></td><td class="tel">ఫిరంగి</td><td>cannon</td><td>Ultimately from Persian</td></tr>
+      </tbody>
+    </table>
+
+    <div class="note-box" style="margin-top:26px">
+      <b>Why this matters beyond the song</b>
+      <p>Lesson 3 introduced code-mixing with <span class="mono">thanks aṇḍi</span>. This is the older, deeper version of the same phenomenon — centuries of Deccan history sitting inside ordinary vocabulary. When a Hyderabad colleague uses <span class="mono">dil</span> or <span class="mono">duniyā</span> mid-sentence, that isn't borrowing from Hindi. It's their Telugu.</p>
+    </div>
+  </div>
+</section>
+
+<section id="idioms">
+  <div class="wrap">
+    <span class="eyebrow">Patterns to watch for</span>
+    <h2>Devices, images and things to collect later</h2>
+    <p class="lede">You asked for a place to note idioms and expressions worth recognising in future. Here's what this song offers, plus the running list to add to as you listen to more.</p>
+
+    <div class="idiom">
+      <h3>The "even without X" boast</h3>
+      <div class="pat"><span class="slot">X</span> lēkunnā <span class="slot">Y</span></div>
+      <p>The song's central rhetorical move, repeated four or five times: name a conventional ornament, deny she has it, then assert the effect happens anyway. No anklets — yet the jingling. No jasmine in her hair — yet her cheeks glow. No betel — yet her lips redden.</p>
+      <p>The device says her natural beauty exceeds every ornament that would normally produce it. This structure is common in Telugu folk poetry and praise songs, and worth recognising as a <em>form</em> rather than translating line by line.</p>
+    </div>
+
+    <div class="idiom">
+      <h3>Rhyming escalation</h3>
+      <div class="pat">lavangi → śivangi → sārangi → phirangi</div>
+      <p>A chain of rhyming nouns that escalate in intensity — clove, tigress, stringed instrument, cannon. Telugu lyrics love this: the rhyme carries the listener while the meaning ratchets upward. You aren't meant to parse each one so much as feel the climb.</p>
+    </div>
+
+    <div class="idiom">
+      <h3>Hyperbole of collapse</h3>
+      <div class="pat">paḍipōtadi <span class="slot">X</span> duniyā</div>
+      <p>Literally "the world of X falls." A stock construction for overwhelming effect — here, the world of men falling at her feet. You'll meet the same shape in film dialogue and praise contexts.</p>
+    </div>
+
+    <div class="idiom">
+      <h3>Paired sound-words</h3>
+      <div class="pat">ghal ghal · gil gil</div>
+      <p>Telugu uses reduplicated onomatopoeia far more freely than English. These aren't nonsense syllables — they're a real and productive word class covering sound, texture and movement. Worth starting a collection; they're common in ordinary speech, not just song.</p>
+    </div>
+
+    <div class="note-box" style="margin-top:28px">
+      <b>The running list</b>
+      <p>As you work through more songs, add anything that looks like a <em>reusable shape</em> rather than a one-off image — stock comparisons, fixed phrases, proverb fragments, sound-word pairs. Those are what recur across songs and eventually in conversation. Individual poetic metaphors are beautiful and almost never transfer.</p>
+    </div>
+  </div>
+</section>
+
+<section id="anki">
+  <div class="wrap">
+    <span class="eyebrow">For import</span>
+    <h2>Vocabulary — your 5 fields</h2>
+    <p class="lede">Tagged for how much use each word has outside the song. <b class="mono" style="color:var(--moss)">daily</b> is worth carding now; <b class="mono" style="color:var(--amber)">limited</b> is situational; <b class="mono" style="color:var(--violet)">poetic</b> is recognition-only. Don't card the poetic set — it's the trap that makes song study feel productive while teaching you nothing you can say.</p>
+    <div class="field-key">
+      <span><b>1</b> English (+ cue)</span>
+      <span><b>2</b> Romanized</span>
+      <span><b>3</b> Telugu script</span>
+      <span><b>4</b> Audio (blank)</span>
+      <span><b>5</b> Example</span>
+    </div>
+
+    <div class="anki-wrap">
+      <table class="anki">
+        <thead>
+          <tr><th class="f-en">English (with cue)</th><th>Romanized</th><th>Telugu</th><th style="text-align:center">Audio</th><th>Example</th></tr>
+        </thead>
+        <tbody>
+          <tr class="sec"><td colspan="5">Body — mostly worth having</td></tr>
+          <tr><td class="f-en">shoulder<span class="use daily">daily</span></td><td class="f-rom">bhujaṁ</td><td class="f-tel">భుజం</td><td class="f-aud">[ ]</td><td class="f-ex">kuḍi bhujaṁ mīda</td></tr>
+          <tr><td class="f-en">cheek (Telangana: sempa)<span class="use daily">daily</span></td><td class="f-rom">chempa</td><td class="f-tel">చెంప</td><td class="f-aud">[ ]</td><td class="f-ex">sempalu</td></tr>
+          <tr><td class="f-en">ears (Telangana: sevulu)<span class="use daily">daily</span></td><td class="f-rom">chevulu</td><td class="f-tel">చెవులు</td><td class="f-aud">[ ]</td><td class="f-ex">sevulaku duddulu</td></tr>
+          <tr><td class="f-en">lips<span class="use daily">daily</span></td><td class="f-rom">pedavulu</td><td class="f-tel">పెదవులు</td><td class="f-aud">[ ]</td><td class="f-ex">pedavul erragā</td></tr>
+          <tr><td class="f-en">waist<span class="use daily">daily</span></td><td class="f-rom">naḍumu</td><td class="f-tel">నడుము</td><td class="f-aud">[ ]</td><td class="f-ex">dāni naḍumu</td></tr>
+          <tr><td class="f-en">smile, laugh<span class="use daily">daily</span></td><td class="f-rom">navvu</td><td class="f-tel">నవ్వు</td><td class="f-aud">[ ]</td><td class="f-ex">adi navvitē</td></tr>
+          <tr><td class="f-en">braid, plait<span class="use limited">limited</span></td><td class="f-rom">jaḍa</td><td class="f-tel">జడ</td><td class="f-aud">[ ]</td><td class="f-ex">jaḍa tākitē</td></tr>
+          <tr><td class="f-en">hair bun<span class="use limited">limited</span></td><td class="f-rom">koppu</td><td class="f-tel">కొప్పు</td><td class="f-aud">[ ]</td><td class="f-ex">koppulō mallelu</td></tr>
+
+          <tr class="sec"><td colspan="5">Everyday objects &amp; nature</td></tr>
+          <tr><td class="f-en">jasmine — everywhere in Hyderabad<span class="use daily">daily</span></td><td class="f-rom">malle</td><td class="f-tel">మల్లె</td><td class="f-aud">[ ]</td><td class="f-ex">malle daṇḍa</td></tr>
+          <tr><td class="f-en">colour<span class="use daily">daily</span></td><td class="f-rom">rangu</td><td class="f-tel">రంగు</td><td class="f-aud">[ ]</td><td class="f-ex">rangu lēni</td></tr>
+          <tr><td class="f-en">water pot, large vessel<span class="use limited">limited</span></td><td class="f-rom">kaḍava</td><td class="f-tel">కడవ</td><td class="f-aud">[ ]</td><td class="f-ex">bhujaṁ mīda kaḍava</td></tr>
+          <tr><td class="f-en">garland<span class="use limited">limited</span></td><td class="f-rom">daṇḍa</td><td class="f-tel">దండ</td><td class="f-aud">[ ]</td><td class="f-ex">malle daṇḍa</td></tr>
+          <tr><td class="f-en">earrings<span class="use limited">limited</span></td><td class="f-rom">duddulu</td><td class="f-tel">దుద్దులు</td><td class="f-aud">[ ]</td><td class="f-ex">sevulaku duddulu</td></tr>
+          <tr><td class="f-en">shine, flash, lightning<span class="use limited">limited</span></td><td class="f-rom">merupu</td><td class="f-tel">మెరుపు</td><td class="f-aud">[ ]</td><td class="f-ex">meriyā (song form)</td></tr>
+          <tr><td class="f-en">pearls<span class="use limited">limited</span></td><td class="f-rom">mutyālu</td><td class="f-tel">ముత్యాలు</td><td class="f-aud">[ ]</td><td class="f-ex">navvula mutyāl</td></tr>
+          <tr><td class="f-en">blouse (Telangana term)<span class="use verify">verify</span></td><td class="f-rom">raika</td><td class="f-tel">రైక</td><td class="f-aud">[ ]</td><td class="f-ex">raikalu</td></tr>
+          <tr><td class="f-en">anklet bells<span class="use poetic">poetic</span></td><td class="f-rom">gajjelu</td><td class="f-tel">గజ్జెలు</td><td class="f-aud">[ ]</td><td class="f-ex">gajjel lēkunnā</td></tr>
+          <tr><td class="f-en">moonlight (Telangana: ennela)<span class="use poetic">poetic</span></td><td class="f-rom">vennela</td><td class="f-tel">వెన్నెల</td><td class="f-aud">[ ]</td><td class="f-ex">ennela kuriyā</td></tr>
+
+          <tr class="sec"><td colspan="5">Dakhni Urdu layer — the Hyderabad vocabulary</td></tr>
+          <tr><td class="f-en">heart (Urdu) — very common in Hyderabad<span class="use daily">daily</span></td><td class="f-rom">dil</td><td class="f-tel">దిల్</td><td class="f-aud">[ ]</td><td class="f-ex">mana dil</td></tr>
+          <tr><td class="f-en">world (Urdu)<span class="use daily">daily</span></td><td class="f-rom">duniyā</td><td class="f-tel">దునియా</td><td class="f-aud">[ ]</td><td class="f-ex">mogōḷḷa duniyā</td></tr>
+          <tr><td class="f-en">doll (Urdu) — affectionate<span class="use limited">limited</span></td><td class="f-rom">guḍiyā</td><td class="f-tel">గుడియా</td><td class="f-aud">[ ]</td><td class="f-ex">guḍiyā</td></tr>
+          <tr><td class="f-en">little bird (Urdu) — affectionate<span class="use limited">limited</span></td><td class="f-rom">chiḍiyā</td><td class="f-tel">చిడియా</td><td class="f-aud">[ ]</td><td class="f-ex">chikkani chiḍiyā</td></tr>
+          <tr><td class="f-en">kohl, eyeliner (Urdu)<span class="use limited">limited</span></td><td class="f-rom">surmā</td><td class="f-tel">సుర్మా</td><td class="f-aud">[ ]</td><td class="f-ex">surmā peṭṭina</td></tr>
+          <tr><td class="f-en">dagger, blade (Urdu)<span class="use poetic">poetic</span></td><td class="f-rom">churiyā</td><td class="f-tel">చురియా</td><td class="f-aud">[ ]</td><td class="f-ex">churiyā</td></tr>
+          <tr><td class="f-en">cannon (Persian via Urdu)<span class="use poetic">poetic</span></td><td class="f-rom">phirangi</td><td class="f-tel">ఫిరంగి</td><td class="f-aud">[ ]</td><td class="f-ex">adi phirangi</td></tr>
+
+          <tr class="sec"><td colspan="5">Grammar chunks worth keeping</td></tr>
+          <tr><td class="f-en">even without ___ (from lēdu)<span class="use daily">daily</span></td><td class="f-rom">lēkunnā</td><td class="f-tel">లేకున్నా</td><td class="f-aud">[ ]</td><td class="f-ex">gajjel lēkunnā</td></tr>
+          <tr><td class="f-en">men (Telangana dialect plural)<span class="use daily">daily</span></td><td class="f-rom">mogōḷḷu</td><td class="f-tel">మొగోళ్ళు</td><td class="f-aud">[ ]</td><td class="f-ex">mogōḷḷa duniyā</td></tr>
+          <tr><td class="f-en">redly, in a red way (from erupu)<span class="use limited">limited</span></td><td class="f-rom">erragā</td><td class="f-tel">ఎర్రగా</td><td class="f-aud">[ ]</td><td class="f-ex">erragā aitadi</td></tr>
+
+          <tr class="sec"><td colspan="5">Poetic — recognise, don't card</td></tr>
+          <tr><td class="f-en">dear one, beloved (Telangana: seliyā)<span class="use poetic">poetic</span></td><td class="f-rom">cheliyā</td><td class="f-tel">చెలియా</td><td class="f-aud">[ ]</td><td class="f-ex">rādurā seliyā</td></tr>
+          <tr><td class="f-en">charms, delights<span class="use poetic">poetic</span></td><td class="f-rom">muripālu</td><td class="f-tel">మురిపాలు</td><td class="f-aud">[ ]</td><td class="f-ex">vastāy muripāl</td></tr>
+          <tr><td class="f-en">lioness, tigress — a fierce woman<span class="use poetic">poetic</span></td><td class="f-rom">śivangi</td><td class="f-tel">శివంగి</td><td class="f-aud">[ ]</td><td class="f-ex">adi śivangi</td></tr>
+          <tr><td class="f-en">clove (also a sharpness metaphor)<span class="use poetic">poetic</span></td><td class="f-rom">lavangaṁ</td><td class="f-tel">లవంగం</td><td class="f-aud">[ ]</td><td class="f-ex">māṭala ghāṭu lavangi</td></tr>
+          <tr><td class="f-en">sarangi — bowed string instrument<span class="use poetic">poetic</span></td><td class="f-rom">sārangi</td><td class="f-tel">సారంగి</td><td class="f-aud">[ ]</td><td class="f-ex">tīgalu lēni sārangi</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="lede" style="margin-top:20px;font-size:14px"><b>33 words, but only about 12 are worth carding.</b> The <span class="mono" style="color:var(--moss)">daily</span> set — <span class="mono">bhujaṁ</span>, <span class="mono">chempa</span>, <span class="mono">chevulu</span>, <span class="mono">pedavulu</span>, <span class="mono">naḍumu</span>, <span class="mono">navvu</span>, <span class="mono">malle</span>, <span class="mono">dil</span>, <span class="mono">duniyā</span>, <span class="mono">lēkunnā</span>, <span class="mono">mogōḷḷu</span> — plus <span class="mono">rangu</span> which you already have. That's the honest yield, and it's a perfectly good return for a song you'd listen to anyway.</p>
+  </div>
+</section>
+
+<section id="practice">
+  <div class="wrap">
+    <span class="eyebrow">What to actually do with it</span>
+    <h2>Sing the refrain, not the verses</h2>
+    <p class="lede">Four lines, heavily repeated, containing the grammar point you came here for. That's your target — not the whole song.</p>
+
+    <div class="idiom" style="margin-top:24px">
+      <h3>The drill</h3>
+      <ul>
+        <li>Listen to the refrain until you can hum the shape without words.</li>
+        <li>Sing along with just <span class="mono">dāni … adi … dāni</span> — catch the alternation before anything else.</li>
+        <li>Add the full refrain lines. Don't chase the fast verses.</li>
+        <li>Away from the music, say: <span class="mono">dāni pēru ___</span> with real names. That's Lesson 5 grammar in a sentence you'd actually use.</li>
+        <li>Then flip it to the respectful register: <span class="mono">āme pēru ___</span> — the form you'd use about a colleague.</li>
+      </ul>
+      <p>That last step is the one that converts song exposure into usable language. The melody carries the pattern; you decide what register to put it in.</p>
+    </div>
+
+    <div class="note-box win" style="margin-top:26px">
+      <b>Ask your wife these three</b>
+      <p>Worth batching, since they're the genuinely uncertain items: the exact sense of <span class="mono">guttepu</span> and <span class="mono">yejeṇṭu</span> describing the blouse, whether <span class="mono">raika</span> is still current or sounds old-fashioned, and how strongly <span class="mono">adi</span> for a woman registers to her — teasing, rustic, or actually rude.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><span class="mono">adi → dāni.</span> — a suppletive form that no table was ever going to make stick, learned instead from a refrain you'll have stuck in your head for a week.</p>
+    <p style="margin-top:12px"><a href="index.html">← All songs</a> · <a href="gira-gira.html">Gira Gira →</a></p>
+    <p style="margin-top:12px"><a href="../lessons/lesson-05-possessives.html">← Lesson 5: Possessive pronouns</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

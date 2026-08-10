@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Telugu Verb Lab · study session</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+Telugu:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/lab.css">
+</head>
+<body>
+
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="wrap">
+    <a class="logo" href="index.html"><span>క్రి</span> verb-lab</a>
+    <ul>
+      <li><a href="index.html">Select &amp; study</a></li>
+      <li><a href="paradigms.html">Paradigms</a></li>
+      <li><a href="review.html">Native review</a></li>
+      <li><a href="index.html#method">Method</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="runner">
+  <div class="run-bar">
+    <div class="wrap">
+      <span class="run-meta" id="phase">Notice</span>
+      <div class="progress"><i id="bar"></i></div>
+      <span class="run-meta" id="counter"></span>
+      <span class="run-meta"><a href="index.html">end session</a></span>
+    </div>
+  </div>
+  <div class="stage" id="stage"></div>
+</div>
+
+<script src="data/verbs.js"></script>
+<script src="data/engine.js"></script>
+<script src="assets/app.js"></script>
+<script>
+const stage = document.getElementById('stage');
+const bar = document.getElementById('bar');
+const counter = document.getElementById('counter');
+const phaseEl = document.getElementById('phase');
+
+const selIds = Lab.getSel();
+const scope  = Lab.SCOPES[Lab.getScope()];
+const opts   = Lab.getOpts();
+
+if (!selIds.length) {
+  stage.innerHTML = `<div class="card"><h2>No verbs selected</h2>
+    <p class="lede" style="margin:12px auto 24px">Pick at least one verb to run a session.</p>
+    <a class="btn" href="index.html">Choose verbs</a></div>`;
+  throw new Error('no selection');
+}
+
+const verbs = selIds.map(verbById).filter(Boolean);
+let pool = [];
+verbs.forEach(v => { pool = pool.concat(cells(v, scope.forms)); });
+const queue = Lab.buildSession(pool, opts.len);
+
+const stats = { total: queue.length, done: 0, got: 0, shaky: 0, missed: 0 };
+const missedItems = [];
+let noticeIdx = 0;
+let idx = 0;
+let revealed = false;
+let live = queue.slice();
+
+/* ---------------- notice phase ---------------- */
+function showNotice() {
+  phaseEl.textContent = 'Notice · ' + (noticeIdx + 1) + '/' + verbs.length;
+  bar.style.width = ((noticeIdx / verbs.length) * 100) + '%';
+  counter.innerHTML = '<b>look, don\'t memorise</b> · 20 seconds is enough';
+  const v = verbs[noticeIdx];
+  stage.innerHTML = `<div class="notice-card">
+    <div class="verb-head">
+      <h3>${esc(v.en.base)}</h3>
+      <span class="rom">${esc(rootOf(v)[0])}</span>
+      <span class="tg">${esc(rootOf(v)[1])}</span>
+      <span class="cls${v.conf === 'check' ? ' warn' : ''}">${esc(v.cls)}${v.conf === 'check' ? ' · check' : ''}</span>
+    </div>
+    <p class="lede" style="font-size:14px">Amber is the stem, orange is the ending. The stem is the part you have to know per verb; the endings are the same for every verb in the language.</p>
+    ${stemStrip(v)}
+    ${paradigmTable(v, scope.forms)}
+    ${singleCards(v, scope.forms)}
+    ${v.note ? `<div class="note-box"><b>Worth knowing</b><p>${esc(v.note)}</p></div>` : ''}
+    <div class="start-row">
+      <button class="btn" id="nx">${noticeIdx + 1 < verbs.length ? 'Next verb' : 'Start drilling'} <span class="kbd" style="margin-left:8px">space</span></button>
+      <button class="btn ghost small" id="skipall">Skip the notice step</button>
+    </div>
+  </div>`;
+  document.getElementById('nx').onclick = () => { noticeIdx++; noticeIdx < verbs.length ? showNotice() : startDrill(); };
+  document.getElementById('skipall').onclick = startDrill;
+}
+
+/* ---------------- drill phase ---------------- */
+function startDrill() { phaseEl.textContent = 'Drill'; idx = 0; showItem(); }
+
+function showItem() {
+  if (idx >= live.length) return showSummary();
+  revealed = false;
+  const it = live[idx];
+  const v = verbById(it.verb);
+  const f = FORMS.find(x => x.id === it.form);
+  const p = it.person !== null ? PERSONS[it.person] : null;
+
+  bar.style.width = ((stats.done / stats.total) * 100) + '%';
+  counter.innerHTML = `<b>${stats.done}</b>/${stats.total} · ${stats.got} got · ${stats.missed} missed`;
+
+  const regChip = (p && p.reg) ? p.reg : (f.reg || '');
+  const chips = [
+    `<span class="cue-chip verb">${esc(v.en.base)} · ${esc(rootOf(v)[0])}</span>`,
+    `<span class="cue-chip">${esc(f.label)}</span>`,
+    regChip ? `<span class="cue-chip ${regChip === 'respectful' ? 'resp' : 'inf'}">${esc(regChip)}</span>` : '',
+    (it.conf === 'check') ? '<span class="cue-chip inf">unverified form</span>' : ''
+  ].join('');
+
+  stage.innerHTML = `<div class="card">
+    <div class="cue-chips">${chips}</div>
+    <div class="cue-main">${esc(it.cue)}</div>
+    <div class="cue-sub">Say the whole form out loud before you reveal it.</div>
+    <div class="answer-slot" id="slot">
+      ${opts.type ? '<input class="typebox" id="typed" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="type the romanization…">' : ''}
+      <div class="prompt-hint">press <span class="kbd">space</span> or tap to reveal</div>
+    </div>
+    <div class="grade-row" id="grades"></div>
+  </div>`;
+  const t = document.getElementById('typed');
+  if (t) { t.focus(); t.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); reveal(); } }); }
+  /* tapping anywhere on the card reveals too — the keyboard shortcut is a convenience,
+     not the only way in */
+  document.getElementById('slot').addEventListener('click', e => {
+    if (e.target.tagName !== 'INPUT') reveal();
+  });
+}
+
+function reveal() {
+  if (revealed) return;
+  revealed = true;
+  const it = live[idx];
+  const v = verbById(it.verb);
+  const f = FORMS.find(x => x.id === it.form);
+  const seg = segment(v, it.form, it.person ?? 0);
+  const typed = document.getElementById('typed');
+  const pron = it.person !== null ? PERSONS[it.person].pron : null;
+
+  let verdict = '';
+  if (typed) {
+    const ok = Lab.matches(typed.value, it.rom);
+    typed.classList.add(ok ? 'good' : 'bad');
+    typed.disabled = true;
+    verdict = typed.value.trim()
+      ? `<div class="verdict ${ok ? 'good' : 'bad'}">${ok ? 'typed answer matches' : 'typed answer differs'}</div>`
+      : '';
+  }
+
+  const build = seg.whole ? '<span class="ans-build">irregular — learn it whole</span>'
+    : `<span class="ans-build"><span class="stemtxt">${esc(seg.stem[0])}</span> + <span class="endtxt">${esc(seg.end[0])}</span></span>`;
+
+  document.getElementById('slot').innerHTML = `
+    ${typed ? typed.outerHTML.replace('<input', '<input disabled') : ''}
+    ${verdict}
+    <div class="ans-rom">${pron ? esc(pron[0]) + ' ' : ''}${esc(it.rom)}</div>
+    <div class="ans-tel">${pron ? esc(pron[1]) + ' ' : ''}${esc(it.tel)}</div>
+    ${build}
+    <div class="ans-note">${esc(f.gloss)}</div>`;
+
+  document.getElementById('grades').innerHTML = `
+    <button class="grade g1" data-g="0"><b>Missed</b><span>1</span></button>
+    <button class="grade g2" data-g="1"><b>Shaky</b><span>2</span></button>
+    <button class="grade g3" data-g="2"><b>Got it</b><span>3</span></button>`;
+  document.querySelectorAll('.grade').forEach(b => b.onclick = () => doGrade(+b.dataset.g));
+}
+
+function doGrade(g) {
+  const it = live[idx];
+  Lab.grade(it.key, g);
+  stats.done++;
+  if (g === 2) stats.got++; else if (g === 1) stats.shaky++; else stats.missed++;
+  if (g === 0) {
+    missedItems.push(it);
+    requeue(it);
+  }
+  idx++;
+  showItem();
+}
+
+/* Put a missed item back a few places downstream, but keep the interleaving promise:
+   land it where neither neighbour is the same verb. */
+function requeue(it) {
+  const from = idx + 4;
+  for (let at = from; at <= live.length; at++) {
+    const before = live[at - 1], after = live[at];
+    if ((!before || before.verb !== it.verb) && (!after || after.verb !== it.verb)) {
+      live.splice(at, 0, it); return;
+    }
+  }
+  live.push(it);
+}
+
+/* ---------------- summary ---------------- */
+function showSummary() {
+  phaseEl.textContent = 'Done';
+  bar.style.width = '100%';
+  counter.textContent = '';
+  const pct = stats.done ? Math.round((stats.got / stats.done) * 100) : 0;
+  const uniqueMissed = [...new Map(missedItems.map(m => [m.key, m])).values()];
+  Lab.saveLast({ when: Date.now(), ...stats });
+
+  stage.innerHTML = `<div class="notice-card" style="text-align:left">
+    <span class="eyebrow">Session complete</span>
+    <h2 style="font-size:36px;margin-bottom:8px">${pct}% first-pass</h2>
+    <p class="lede">${stats.done} answers across ${verbs.length} verb${verbs.length > 1 ? 's' : ''}. Missed items were repeated inside this session and are now scheduled to come back sooner.</p>
+    <div class="summary-grid">
+      <div class="sumstat ok"><span>Got it</span><b>${stats.got}</b></div>
+      <div class="sumstat mid"><span>Shaky</span><b>${stats.shaky}</b></div>
+      <div class="sumstat bad"><span>Missed</span><b>${stats.missed}</b></div>
+      <div class="sumstat"><span>Answers given</span><b>${stats.done}</b></div>
+    </div>
+    ${uniqueMissed.length ? `<h3 style="font-size:20px;margin:26px 0 4px">Worth saying out loud once more</h3>
+      <ul class="misslist">${uniqueMissed.map(m => `<li>
+        <span class="q">${esc(m.cue)}</span>
+        <span class="a">${esc(m.rom)}</span>
+        <span class="t">${esc(m.tel)}</span></li>`).join('')}</ul>` : ''}
+    <div class="start-row">
+      <a class="btn" href="study.html">Run another</a>
+      <a class="btn ghost small" href="index.html">Change verbs</a>
+      <a class="btn ghost small" href="paradigms.html">Review the tables</a>
+    </div>
+  </div>`;
+}
+
+/* keyboard */
+document.addEventListener('keydown', e => {
+  if (e.target.tagName === 'INPUT' && e.key !== 'Escape') return;
+  if (e.code === 'Space' || e.key === 'Enter') {
+    e.preventDefault();
+    const nx = document.getElementById('nx');
+    if (nx) return nx.click();
+    if (!revealed) reveal();
+  }
+  if (revealed && ['1','2','3'].includes(e.key)) doGrade(+e.key - 1);
+});
+
+opts.notice ? showNotice() : startDrill();
+</script>
+</body>
+</html>

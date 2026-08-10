@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Telugu Verb Lab · all paradigms</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+Telugu:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/lab.css">
+</head>
+<body>
+<a class="skip-link" href="#tables">Skip to the tables</a>
+
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="wrap">
+    <a class="logo" href="index.html"><span>క్రి</span> verb-lab</a>
+    <ul>
+      <li><a href="index.html">Select &amp; study</a></li>
+      <li><a href="paradigms.html" aria-current="page">Paradigms</a></li>
+      <li><a href="review.html">Native review</a></li>
+      <li><a href="index.html#method">Method</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="lab-header">
+  <div class="wrap">
+    <a class="home-crumb" href="index.html">← Select &amp; study</a>
+    <span class="eyebrow">Reference</span>
+    <h1>Every form, <em>with the seams showing</em></h1>
+    <p class="lede">Reference, not practice. Reading these tables will not teach you to produce the forms — that is what the drill is for. Come here to notice a pattern, settle an argument with yourself, or check what the drill just told you.</p>
+  </div>
+</header>
+
+<section class="page-section" id="how">
+  <div class="wrap">
+    <div class="section-heading">
+      <div><span class="eyebrow">How to read them</span><h2>Stem in amber, ending in orange</h2></div>
+      <p>Telugu builds a verb by choosing a stem and attaching an ending. The endings never change from verb to verb; the stems do. Splitting them apart makes the whole system about a dozen facts plus a stem list.</p>
+    </div>
+    <div class="method-grid">
+      <article class="method"><span>The stems</span><h3>Five per verb, at most</h3>
+        <p>Non-past, past, negative, short-a and infinitive. Every form on this page is one of those five plus a fixed ending. Where a verb is irregular, it is irregular in its stems, not in its endings.</p></article>
+      <article class="method"><span>The endings</span><h3>The same six, everywhere</h3>
+        <p><span class="mono">-nu -vu -ḍu -di -ṁ -ru</span> for the negative; <span class="mono">-ānu -āvu -āḍu -undi -āṁ -āru</span> after the tense marker. Learn them once and they apply to all 35 verbs.</p></article>
+      <article class="method"><span>The marker</span><h3>t or ṭ</h3>
+        <p>Non-past forms insert <span class="mono">-t-</span>, or <span class="mono">-ṭ-</span> after a nasal stem: <span class="mono">chēs·t·ānu</span> but <span class="mono">tin·ṭ·ānu</span>. That single choice accounts for most of what looks like irregularity at first.</p></article>
+      <article class="method"><span>The gaps</span><h3>Some cells are empty on purpose</h3>
+        <p>A dash means the form is not natural for that verb rather than missing — “let’s come” and “let’s fly” are not things people say. Better an honest gap than an invented form.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="page-section" id="tables" style="padding-bottom:20px">
+  <div class="wrap">
+    <div class="picker-bar">
+      <button class="chip on" data-filter="all">All 35</button>
+      <button class="chip" data-filter="sel">My selection</button>
+      <button class="chip" data-filter="check">Flagged for checking</button>
+      <label class="toggle" style="margin-left:12px"><input type="checkbox" id="wide"> Show every paradigm, not just the core five</label>
+      <span class="picker-count"><b id="shown">0</b> shown</span>
+    </div>
+  </div>
+  <div class="wrap" id="tablewrap"></div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p><span class="mono">Telugu Verb Lab</span> · generated from the stem inventory in <span class="mono">data/verbs.js</span></p>
+    <p><a href="index.html">Select &amp; study</a> · <a href="review.html">Native review</a></p>
+  </div>
+</footer>
+
+<script src="data/verbs.js"></script>
+<script src="data/engine.js"></script>
+<script src="assets/app.js"></script>
+<script>
+let filter = 'all';
+let wide = false;
+
+function list() {
+  if (filter === 'sel')   { const s = new Set(Lab.getSel()); return VERBS.filter(v => s.has(v.id)); }
+  if (filter === 'check') return VERBS.filter(v => v.conf === 'check');
+  return VERBS;
+}
+
+function draw() {
+  const vs = list();
+  const forms = wide ? null : Lab.SCOPES.moods.forms;
+  document.getElementById('shown').textContent = vs.length;
+  document.getElementById('tablewrap').innerHTML = vs.length ? vs.map(v => `
+    <div class="verb-block" id="v-${v.id}">
+      <div class="verb-head">
+        <h3>${esc(v.en.base)}</h3>
+        <span class="rom">${esc(rootOf(v)[0])}</span>
+        <span class="tg">${esc(rootOf(v)[1])}</span>
+        <span class="cls${v.conf === 'check' ? ' warn' : ''}">${esc(v.cls)}${v.conf === 'check' ? ' · check' : ''}</span>
+        ${Lab.getVerified()[v.id] ? '<span class="cls" style="color:var(--moss);border-color:rgba(143,163,126,.4)">native-verified</span>' : ''}
+      </div>
+      <p class="lede" style="font-size:14px;margin-bottom:0">${esc(v.gloss)}</p>
+      ${stemStrip(v)}
+      ${paradigmTable(v, forms)}
+      ${singleCards(v, forms)}
+      ${v.note ? `<div class="note-box"><b>Worth knowing</b><p>${esc(v.note)}</p></div>` : ''}
+    </div>`).join('')
+    : '<div class="empty">Nothing matches that filter.</div>';
+}
+
+document.querySelectorAll('[data-filter]').forEach(b => b.addEventListener('click', () => {
+  filter = b.dataset.filter;
+  document.querySelectorAll('[data-filter]').forEach(x => x.classList.toggle('on', x === b));
+  draw();
+}));
+document.getElementById('wide').addEventListener('change', e => { wide = e.target.checked; draw(); });
+
+draw();
+if (location.hash) { const el = document.querySelector(location.hash); if (el) el.scrollIntoView(); }
+</script>
+</body>
+</html>

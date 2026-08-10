@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An evidence-informed roadmap for developing comfortable spoken and listening ability in conversational Telugu.">
+  <title>Foundational Telugu | An Evidence-Informed Path to Conversation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&amp;family=IBM+Plex+Mono:wght@500;600&amp;family=Noto+Sans+Telugu:wght@500;600&amp;family=Source+Serif+4:opsz,wght@8..60,500;8..60,650&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #17211d;
+      --ink-soft: #35423c;
+      --paper: #f7f4eb;
+      --paper-deep: #eee9dc;
+      --white: #fffefa;
+      --line: #c9c6b9;
+      --green: #174f3b;
+      --green-soft: #dce9de;
+      --saffron: #d87821;
+      --saffron-soft: #f6e3c8;
+      --cyan: #137881;
+      --cyan-soft: #d8eaeb;
+      --red: #a43d35;
+      --red-soft: #f1dcd8;
+      --gold: #b58a25;
+      --serif: "Source Serif 4", Georgia, serif;
+      --sans: "Atkinson Hyperlegible", sans-serif;
+      --mono: "IBM Plex Mono", monospace;
+      --telugu: "Noto Sans Telugu", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); font-size: 17px; line-height: 1.62; }
+    a { color: var(--green); text-underline-offset: 3px; }
+    a:hover { color: var(--red); }
+    a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px solid var(--saffron); outline-offset: 4px; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1, h2, h3 { text-wrap: balance; }
+    p { max-width: 74ch; }
+    button { font: inherit; }
+    .telugu { font-family: var(--telugu); }
+    .mono { font-family: var(--mono); }
+    .skip-link { position: fixed; top: 1rem; left: 1rem; z-index: 100; transform: translateY(-180%); background: var(--ink); color: var(--white); padding: .7rem 1rem; }
+    .skip-link:focus { transform: none; }
+
+    .topbar { position: sticky; top: 0; z-index: 30; display: flex; min-height: 64px; align-items: center; justify-content: space-between; gap: 1rem; border-bottom: 1px solid color-mix(in srgb, var(--line) 75%, transparent); background: color-mix(in srgb, var(--paper) 94%, transparent); padding: .7rem clamp(1rem, 4vw, 4rem); backdrop-filter: blur(14px); }
+    .brand { display: flex; align-items: center; gap: .7rem; color: var(--ink); text-decoration: none; }
+    .brand-mark { display: grid; width: 38px; height: 38px; place-items: center; background: var(--green); color: var(--white); font-family: var(--telugu); font-weight: 600; }
+    .brand strong, .brand small { display: block; line-height: 1.1; }
+    .brand strong { font-family: var(--serif); font-size: 1.05rem; }
+    .brand small { margin-top: .2rem; color: var(--ink-soft); font-family: var(--mono); font-size: .57rem; text-transform: uppercase; }
+    .topnav { display: flex; gap: 1.1rem; }
+    .topnav a { color: var(--ink-soft); font-size: .72rem; font-weight: 700; text-decoration: none; }
+
+    .hero { position: relative; min-height: min(820px, calc(100vh - 64px)); overflow: hidden; border-bottom: 1px solid var(--line); background: var(--green); color: var(--white); }
+    .hero::before { position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,.055) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.055) 1px, transparent 1px); background-size: 54px 54px; content: ""; }
+    .hero-inner { position: relative; z-index: 1; display: grid; width: min(1500px, 100%); min-height: inherit; grid-template-columns: minmax(0, 1.15fr) minmax(360px, .85fr); align-items: center; gap: clamp(2rem, 7vw, 7rem); margin: 0 auto; padding: clamp(3rem, 5vw, 4rem) clamp(1.25rem, 6vw, 6rem); }
+    .eyebrow { display: block; margin-bottom: 1rem; color: #a8d7cb; font-family: var(--mono); font-size: .67rem; font-weight: 600; text-transform: uppercase; }
+    .hero h1 { max-width: 850px; margin-bottom: 1.4rem; font-family: var(--serif); font-size: clamp(3.5rem, 8.4vw, 7rem); font-weight: 650; line-height: .85; letter-spacing: 0; }
+    .hero-deck { max-width: 710px; margin-bottom: 2rem; color: #d9e8e1; font-family: var(--serif); font-size: clamp(1.12rem, 2.1vw, 1.45rem); line-height: 1.45; }
+    .hero-tags { display: flex; flex-wrap: wrap; gap: .65rem 1.25rem; color: #c0d9d0; font-family: var(--mono); font-size: .65rem; text-transform: uppercase; }
+    .hero-tags span::before { color: #f2ad62; content: "●"; margin-right: .45rem; }
+    .hero-visual { position: relative; display: grid; min-height: 520px; place-items: center; }
+    .orbit { position: absolute; border: 1px solid rgba(255,255,255,.22); border-radius: 50%; }
+    .orbit.one { width: min(36vw, 470px); aspect-ratio: 1; }
+    .orbit.two { width: min(27vw, 350px); aspect-ratio: 1; border-style: dashed; }
+    .hero-letter { position: relative; z-index: 2; color: #f5c27f; font-family: var(--telugu); font-size: clamp(8rem, 18vw, 16rem); line-height: 1; text-shadow: 14px 18px 0 rgba(0,0,0,.11); }
+    .orbit-label { position: absolute; z-index: 3; width: 112px; border-left: 2px solid #f2ad62; background: #174f3b; padding: .4rem .55rem; color: #d8ebe3; font-family: var(--mono); font-size: .58rem; text-transform: uppercase; }
+    .orbit-label.input { top: 11%; right: 6%; }
+    .orbit-label.pattern { bottom: 12%; right: 1%; }
+    .orbit-label.output { bottom: 18%; left: 0; }
+    .orbit-label.feedback { top: 18%; left: 3%; }
+
+    .page-shell { display: grid; width: min(1500px, 100%); grid-template-columns: 260px minmax(0, 1fr); align-items: start; margin: 0 auto; }
+    .side-nav { position: sticky; top: 64px; max-height: calc(100vh - 64px); overflow-y: auto; border-right: 1px solid var(--line); padding: 2rem 1.25rem 3rem; }
+    .side-nav span { display: block; margin: 0 .55rem .8rem; color: var(--red); font-family: var(--mono); font-size: .61rem; font-weight: 600; text-transform: uppercase; }
+    .side-nav a { display: grid; grid-template-columns: 25px 1fr; gap: .5rem; border-left: 2px solid transparent; color: var(--ink-soft); padding: .52rem .55rem; font-size: .72rem; font-weight: 700; text-decoration: none; }
+    .side-nav a:hover { border-left-color: var(--saffron); background: var(--white); color: var(--ink); }
+    .side-nav b { color: var(--saffron); font-family: var(--mono); font-size: .61rem; }
+    main { min-width: 0; }
+    .section { scroll-margin-top: 64px; border-bottom: 1px solid var(--line); padding: clamp(3.5rem, 7vw, 7rem) clamp(1.25rem, 6vw, 6rem); }
+    .section-inner { width: min(1050px, 100%); }
+    .section-number { color: var(--red); font-family: var(--mono); font-size: .65rem; font-weight: 600; }
+    .section h2 { max-width: 900px; margin: .6rem 0 1.25rem; font-family: var(--serif); font-size: clamp(2.8rem, 6vw, 5.6rem); font-weight: 650; line-height: .93; }
+    .section-lead { max-width: 820px; color: var(--ink-soft); font-family: var(--serif); font-size: clamp(1.1rem, 2vw, 1.34rem); line-height: 1.48; }
+    .rule { width: 70px; height: 4px; margin: 2rem 0; background: var(--saffron); }
+    .callout { margin: 2rem 0; border-left: 4px solid var(--saffron); background: var(--saffron-soft); padding: 1.25rem 1.4rem; }
+    .callout strong { display: block; margin-bottom: .35rem; font-family: var(--serif); font-size: 1.25rem; }
+    .callout p { margin-bottom: 0; }
+    .label { display: inline-block; margin-bottom: .55rem; color: var(--red); font-family: var(--mono); font-size: .61rem; font-weight: 600; text-transform: uppercase; }
+    .evidence-label, .heuristic-label, .decision-label { display: inline-flex; align-items: center; gap: .35rem; font-family: var(--mono); font-size: .57rem; font-weight: 600; text-transform: uppercase; }
+    .evidence-label::before, .heuristic-label::before, .decision-label::before { width: 9px; height: 9px; content: ""; }
+    .evidence-label::before { background: var(--green); }
+    .heuristic-label::before { background: var(--saffron); }
+    .decision-label::before { background: var(--cyan); }
+
+    .thesis-grid { display: grid; grid-template-columns: repeat(2, 1fr); border: 1px solid var(--line); background: var(--line); gap: 1px; margin-top: 2.5rem; }
+    .thesis-item { min-height: 230px; background: var(--white); padding: 1.35rem; }
+    .thesis-item:nth-child(2) { background: var(--green-soft); }
+    .thesis-item:nth-child(3) { background: var(--cyan-soft); }
+    .thesis-item:nth-child(4) { background: var(--saffron-soft); }
+    .thesis-item strong { display: block; margin: 2.1rem 0 .55rem; font-family: var(--serif); font-size: 1.55rem; line-height: 1.05; }
+    .thesis-item p { margin: 0; color: var(--ink-soft); font-size: .84rem; }
+
+    .myth-list { margin-top: 2.5rem; border-top: 1px solid var(--line); }
+    .myth { display: grid; grid-template-columns: minmax(220px, .7fr) minmax(0, 1.3fr); gap: clamp(1.5rem, 4vw, 4rem); border-bottom: 1px solid var(--line); padding: 1.5rem 0; }
+    .myth h3 { margin: 0; font-family: var(--serif); font-size: 1.45rem; line-height: 1.08; }
+    .myth p { margin: 0; color: var(--ink-soft); font-size: .89rem; }
+    .verdict { display: block; margin-bottom: .35rem; color: var(--red); font-family: var(--mono); font-size: .59rem; text-transform: uppercase; }
+
+    .braid { display: grid; grid-template-columns: repeat(4, 1fr); margin: 2.5rem 0; border: 1px solid var(--line); background: var(--line); gap: 1px; }
+    .braid-step { position: relative; min-height: 250px; background: var(--white); padding: 1.25rem; }
+    .braid-step::after { position: absolute; top: 51px; right: -13px; z-index: 2; width: 25px; height: 25px; transform: rotate(45deg); border-top: 1px solid var(--line); border-right: 1px solid var(--line); background: var(--white); content: ""; }
+    .braid-step:last-child::after { display: none; }
+    .braid-step .step-index { color: var(--saffron); font-family: var(--mono); font-size: .7rem; }
+    .braid-step h3 { margin: 2.2rem 0 .5rem; font-family: var(--serif); font-size: 1.4rem; }
+    .braid-step p { margin: 0; color: var(--ink-soft); font-size: .78rem; }
+
+    .telugu-map { display: grid; grid-template-columns: .8fr 1.2fr; gap: 0; margin-top: 2.5rem; border: 1px solid var(--line); background: var(--white); }
+    .word-machine { display: grid; align-content: center; border-right: 1px solid var(--line); background: var(--green); color: var(--white); padding: clamp(1.5rem, 4vw, 3rem); }
+    .word-machine > span { color: #a8d7cb; font-family: var(--mono); font-size: .61rem; text-transform: uppercase; }
+    .morpheme-line { display: flex; flex-wrap: wrap; align-items: center; gap: .45rem; margin: 2rem 0; }
+    .morpheme { border: 1px solid rgba(255,255,255,.35); padding: .55rem .7rem; font-family: var(--mono); font-size: .78rem; }
+    .morpheme.stem { color: #f5c27f; }
+    .morpheme.tense { color: #a8d7cb; }
+    .morpheme.agreement { color: #fff; }
+    .plus { color: #9db8ad; }
+    .word-machine p { margin: 0; color: #d6e4de; font-size: .82rem; }
+    .feature-list { display: grid; grid-template-columns: 1fr 1fr; background: var(--line); gap: 1px; }
+    .feature { background: var(--white); padding: 1.2rem; }
+    .feature strong { display: block; margin-bottom: .35rem; font-family: var(--serif); font-size: 1.15rem; }
+    .feature p { margin: 0; color: var(--ink-soft); font-size: .76rem; }
+
+    .stage-map { margin-top: 3rem; }
+    .stage { position: relative; display: grid; grid-template-columns: 130px minmax(230px, .7fr) minmax(0, 1.3fr); gap: clamp(1.5rem, 4vw, 4rem); border-top: 1px solid var(--line); padding: 2rem 0 2.4rem; }
+    .stage:last-child { border-bottom: 1px solid var(--line); }
+    .stage-index { color: var(--saffron); font-family: var(--mono); font-size: clamp(2.2rem, 5vw, 4rem); font-weight: 600; line-height: 1; }
+    .stage h3 { margin: 0 0 .45rem; font-family: var(--serif); font-size: clamp(1.6rem, 3vw, 2.25rem); line-height: 1; }
+    .stage-subtitle { color: var(--red); font-family: var(--mono); font-size: .61rem; text-transform: uppercase; }
+    .stage p { color: var(--ink-soft); font-size: .87rem; }
+    .stage ul { margin: .7rem 0 0; padding-left: 1.1rem; }
+    .stage li { margin-top: .4rem; font-size: .82rem; }
+    .gate { margin-top: 1rem; border-left: 3px solid var(--cyan); background: var(--cyan-soft); padding: .8rem 1rem; font-size: .78rem; }
+    .gate strong { display: block; color: var(--cyan); font-family: var(--mono); font-size: .57rem; text-transform: uppercase; }
+
+    .metrics-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2.5rem; }
+    .metric-figure { margin: 0; border-top: 4px solid var(--green); background: var(--white); padding: 1.35rem; }
+    .metric-figure h3 { margin-bottom: .35rem; font-family: var(--serif); font-size: 1.45rem; }
+    .metric-figure figcaption { color: var(--ink-soft); font-size: .72rem; }
+    .bars { display: grid; gap: 1rem; margin: 1.8rem 0 1rem; }
+    .bar-label { display: flex; justify-content: space-between; gap: 1rem; margin-bottom: .28rem; font-family: var(--mono); font-size: .6rem; text-transform: uppercase; }
+    .bar-track { height: 18px; background: var(--paper-deep); }
+    .bar-fill { display: block; height: 100%; background: var(--green); }
+    .bar-fill.orange { background: var(--saffron); }
+    .bar-fill.cyan { background: var(--cyan); }
+    .bar-fill.red { background: var(--red); }
+    .coverage-scale { display: grid; grid-template-columns: repeat(10, 1fr); gap: 3px; margin: 2.1rem 0 .6rem; }
+    .coverage-scale i { height: 55px; background: var(--green); }
+    .coverage-scale i:nth-last-child(-n+1) { background: var(--saffron); }
+    .coverage-scale.low i:nth-last-child(-n+2) { background: var(--saffron); }
+    .coverage-caption { display: flex; justify-content: space-between; color: var(--ink-soft); font-family: var(--mono); font-size: .56rem; text-transform: uppercase; }
+    .numbers-table-wrap { overflow-x: auto; margin-top: 2.5rem; border-top: 1px solid var(--line); }
+    table { width: 100%; border-collapse: collapse; font-size: .82rem; }
+    th { color: var(--red); font-family: var(--mono); font-size: .58rem; text-align: left; text-transform: uppercase; }
+    th, td { border-bottom: 1px solid var(--line); padding: .8rem .7rem; vertical-align: top; }
+    td:nth-child(2) { font-family: var(--mono); font-weight: 600; white-space: nowrap; }
+
+    .loop-grid { display: grid; grid-template-columns: repeat(6, 1fr); border: 1px solid var(--line); background: var(--line); gap: 1px; margin-top: 2.5rem; }
+    .loop-step { min-height: 220px; background: var(--white); padding: 1rem; }
+    .loop-step:nth-child(even) { background: var(--paper-deep); }
+    .loop-step b { color: var(--saffron); font-family: var(--mono); font-size: .7rem; }
+    .loop-step strong { display: block; margin: 2rem 0 .5rem; font-family: var(--serif); font-size: 1.1rem; line-height: 1.08; }
+    .loop-step p { margin: 0; color: var(--ink-soft); font-size: .7rem; }
+    .allocation { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 3rem; }
+    .allocation h3 { font-family: var(--serif); font-size: 1.7rem; }
+    .stacked-row { display: grid; grid-template-columns: 110px 1fr; align-items: center; gap: 1rem; margin-bottom: 1rem; }
+    .stacked-row > span { font-family: var(--mono); font-size: .6rem; text-transform: uppercase; }
+    .stacked-bar { display: flex; height: 32px; }
+    .stacked-bar i { display: block; height: 100%; }
+    .stacked-bar .input { background: var(--green); }
+    .stacked-bar .grammar { background: var(--gold); }
+    .stacked-bar .retrieval { background: var(--cyan); }
+    .stacked-bar .interaction { background: var(--red); }
+    .legend { display: flex; flex-wrap: wrap; gap: .6rem 1rem; margin-top: 1rem; color: var(--ink-soft); font-family: var(--mono); font-size: .54rem; text-transform: uppercase; }
+    .legend span::before { display: inline-block; width: 9px; height: 9px; margin-right: .35rem; background: var(--swatch); content: ""; }
+
+    .technique-list { margin-top: 2.5rem; border-top: 1px solid var(--line); }
+    details { border-bottom: 1px solid var(--line); }
+    summary { display: grid; grid-template-columns: 44px minmax(180px, .6fr) minmax(0, 1.4fr); align-items: center; gap: 1rem; padding: 1.2rem 0; cursor: pointer; list-style: none; }
+    summary::-webkit-details-marker { display: none; }
+    summary::before { display: grid; width: 32px; height: 32px; place-items: center; border: 1px solid var(--line); color: var(--green); content: "+"; font-family: var(--mono); }
+    details[open] summary::before { content: "−"; }
+    summary strong { font-family: var(--serif); font-size: 1.2rem; }
+    summary span { color: var(--ink-soft); font-size: .78rem; }
+    .detail-body { max-width: 820px; margin-left: 44px; padding: 0 0 1.5rem 1rem; }
+    .detail-body p, .detail-body li { color: var(--ink-soft); font-size: .85rem; }
+
+    .speaker-workflow { display: grid; grid-template-columns: repeat(3, 1fr); border: 1px solid var(--line); background: var(--line); gap: 1px; margin-top: 2.5rem; }
+    .speaker-step { min-height: 245px; background: var(--white); padding: 1.25rem; }
+    .speaker-step span { color: var(--saffron); font-family: var(--mono); font-size: .64rem; }
+    .speaker-step h3 { margin: 2.5rem 0 .5rem; font-family: var(--serif); font-size: 1.35rem; }
+    .speaker-step p { margin: 0; color: var(--ink-soft); font-size: .78rem; }
+    .prompt-box { margin-top: 2rem; border: 1px solid var(--line); background: var(--green); color: var(--white); padding: 1.3rem; }
+    .prompt-box code { color: #d7e9e1; font-family: var(--mono); font-size: .76rem; white-space: normal; }
+
+    .resource-grid { display: grid; grid-template-columns: repeat(2, 1fr); border: 1px solid var(--line); background: var(--line); gap: 1px; margin-top: 2.5rem; }
+    .resource { min-height: 190px; background: var(--white); padding: 1.25rem; }
+    .resource .resource-kind { color: var(--red); font-family: var(--mono); font-size: .58rem; text-transform: uppercase; }
+    .resource h3 { margin: 1.6rem 0 .4rem; font-family: var(--serif); font-size: 1.25rem; }
+    .resource p { margin-bottom: .65rem; color: var(--ink-soft); font-size: .76rem; }
+    .resource a { font-size: .72rem; font-weight: 700; }
+
+    .scorecard { display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid var(--line); background: var(--line); gap: 1px; margin-top: 2.5rem; }
+    .score { min-height: 220px; background: var(--white); padding: 1.2rem; }
+    .score strong { display: block; color: var(--green); font-family: var(--mono); font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1; }
+    .score h3 { margin: 2.2rem 0 .45rem; font-family: var(--serif); font-size: 1.12rem; }
+    .score p { margin: 0; color: var(--ink-soft); font-size: .72rem; }
+    .final-test { margin-top: 2rem; border: 1px solid var(--green); background: var(--green-soft); padding: 1.4rem; }
+    .final-test h3 { font-family: var(--serif); font-size: 1.5rem; }
+    .final-test ul { columns: 2; padding-left: 1.2rem; }
+    .final-test li { margin-bottom: .55rem; font-size: .84rem; break-inside: avoid; }
+
+    .sources { background: var(--ink); color: #e9eee9; }
+    .sources .section-number { color: #f2ad62; }
+    .sources .section-lead { color: #bdc9c2; }
+    .sources h2 { color: #fff; }
+    .source-list { display: grid; gap: 0; margin-top: 2.5rem; border-top: 1px solid #4e5a54; }
+    .source-item { display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: 1rem; border-bottom: 1px solid #4e5a54; padding: 1rem 0; }
+    .source-item > span { color: #f2ad62; font-family: var(--mono); font-size: .62rem; }
+    .source-item p { margin: 0; color: #c8d0cc; font-size: .78rem; }
+    .source-item a { color: #a8d7cb; }
+    .source-note { margin-top: 2rem; border-left: 3px solid #f2ad62; color: #c8d0cc; padding-left: 1rem; font-size: .8rem; }
+
+    footer { display: flex; justify-content: space-between; gap: 2rem; background: #101713; color: #b9c4be; padding: 2rem clamp(1.25rem, 6vw, 6rem); font-size: .72rem; }
+    footer p { margin: 0; }
+
+    @media (max-width: 1080px) {
+      .hero-inner { grid-template-columns: 1fr; }
+      .hero-visual { min-height: 380px; }
+      .orbit.one { width: 380px; }
+      .orbit.two { width: 280px; }
+      .page-shell { grid-template-columns: 1fr; }
+      .side-nav { display: none; }
+      .braid { grid-template-columns: 1fr 1fr; }
+      .braid-step:nth-child(2)::after { display: none; }
+      .loop-grid { grid-template-columns: repeat(3, 1fr); }
+      .scorecard { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 760px) {
+      body { font-size: 16px; }
+      .topbar { min-height: 60px; }
+      .topnav { display: none; }
+      .hero { min-height: calc(100svh - 100px); }
+      .hero-inner { display: block; min-height: inherit; padding-block: 2.8rem 7rem; }
+      .hero h1 { font-size: clamp(3.15rem, 15vw, 4.8rem); }
+      .hero-deck { font-size: 1rem; }
+      .hero-visual { position: absolute; right: -2rem; bottom: -7rem; min-height: 240px; width: 280px; opacity: .62; }
+      .orbit.one { width: 250px; }
+      .orbit.two { width: 180px; }
+      .hero-letter { font-size: 8rem; }
+      .orbit-label { display: none; }
+      .section { padding-block: 4rem; }
+      .section h2 { font-size: clamp(2.35rem, 11vw, 3.5rem); }
+      .thesis-grid, .metrics-grid, .allocation, .resource-grid, .telugu-map { grid-template-columns: 1fr; }
+      .word-machine { border-right: 0; border-bottom: 1px solid var(--line); }
+      .myth, .stage { grid-template-columns: 1fr; gap: 1rem; }
+      .stage-index { font-size: 2.2rem; }
+      .braid, .speaker-workflow, .scorecard { grid-template-columns: 1fr; }
+      .braid-step::after { display: none; }
+      .loop-grid { grid-template-columns: 1fr 1fr; }
+      summary { grid-template-columns: 36px 1fr; }
+      summary span { grid-column: 2; }
+      .detail-body { margin-left: 36px; }
+      .final-test ul { columns: 1; }
+      footer { display: block; }
+      footer p + p { margin-top: .7rem; }
+    }
+
+    @media (max-width: 420px) {
+      .loop-grid, .feature-list { grid-template-columns: 1fr; }
+      .hero-tags { display: grid; }
+      .orbit-label { width: 94px; font-size: .52rem; }
+      .stacked-row { grid-template-columns: 80px 1fr; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to the roadmap</a>
+
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Foundational Telugu home">
+      <span class="brand-mark">తె</span>
+      <span><strong>Foundational Telugu</strong><small>Research brief · July 2026</small></span>
+    </a>
+    <nav class="topnav" aria-label="Primary navigation">
+      <a href="#recommendation">Recommendation</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#metrics">Metrics</a>
+      <a href="#sources">Sources</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="top">
+    <div class="hero-inner">
+      <div>
+        <span class="eyebrow">An evidence-informed path to oral independence</span>
+        <h1>Learn Telugu as a system. Acquire it through use.</h1>
+        <p class="hero-deck">The best route is neither grammar-only nor immersion-only. Build a visible model of Telugu, then repeatedly connect that model to understandable speech, retrieval, interaction, and feedback.</p>
+        <div class="hero-tags" aria-label="Scope">
+          <span>Speaking first</span><span>Listening first</span><span>Hyderabad aware</span><span>Reading later</span>
+        </div>
+      </div>
+      <div class="hero-visual" role="img" aria-label="Telugu letter surrounded by the four reinforcing parts of acquisition: input, patterns, output, and feedback">
+        <div class="orbit one"></div><div class="orbit two"></div>
+        <span class="hero-letter">మా</span>
+        <span class="orbit-label input">Understandable input</span>
+        <span class="orbit-label pattern">Visible patterns</span>
+        <span class="orbit-label output">Retrieved output</span>
+        <span class="orbit-label feedback">Human feedback</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="page-shell">
+    <aside class="side-nav" aria-label="On this page">
+      <span>On this page</span>
+      <a href="#recommendation"><b>01</b> The recommendation</a>
+      <a href="#debates"><b>02</b> Resolve the debates</a>
+      <a href="#telugu"><b>03</b> Design for Telugu</a>
+      <a href="#roadmap"><b>04</b> Five-stage roadmap</a>
+      <a href="#metrics"><b>05</b> Numbers that help</a>
+      <a href="#loop"><b>06</b> Exact learning loop</a>
+      <a href="#techniques"><b>07</b> Technique toolkit</a>
+      <a href="#speakers"><b>08</b> Native-speaker role</a>
+      <a href="#resources"><b>09</b> Resource stack</a>
+      <a href="#milestones"><b>10</b> Conversation target</a>
+      <a href="#sources"><b>11</b> Evidence base</a>
+    </aside>
+
+    <main id="main">
+      <section class="section" id="recommendation">
+        <div class="section-inner">
+          <span class="section-number">01 / THE RECOMMENDATION</span>
+          <h2>Keep the grammar course. Change what surrounds it.</h2>
+          <p class="section-lead">Your observation is sound: explicit grammar is unusually useful when an adult learner is meeting a regular, suffix-rich language far from English. The mistake would be treating explanation as acquisition. Use the external course as the sequence and pattern map, but make every concept pass through listening, retrieval, personal speech, and feedback.</p>
+          <div class="rule"></div>
+          <div class="callout">
+            <strong>The operating principle</strong>
+            <p>Study a pattern briefly. Hear it many times in language you mostly understand. Retrieve it without looking. Use it to express something real. Get selective feedback. Meet it again after a delay.</p>
+          </div>
+          <div class="thesis-grid">
+            <article class="thesis-item"><span class="evidence-label">Strong evidence</span><strong>Instruction helps adults notice and retain form.</strong><p>Meta-analyses find substantial, durable benefits for focused L2 instruction, with explicit approaches often outperforming implicit-only ones. Transfer to spontaneous speech still requires meaningful use.</p></article>
+            <article class="thesis-item"><span class="evidence-label">Strong evidence</span><strong>Input is necessary, but opaque input is not a curriculum.</strong><p>Listening builds the fast, implicit system conversation needs. At the beginning, transcripts, repetition, known topics, and controlled vocabulary make input learnable instead of merely audible.</p></article>
+            <article class="thesis-item"><span class="evidence-label">Strong evidence</span><strong>Retrieval and production change what is accessible.</strong><p>Comprehension practice and production practice both work. Production has a particular advantage for later productive knowledge: the ability to find the form while speaking.</p></article>
+            <article class="thesis-item"><span class="decision-label">Telugu application</span><strong>Social accuracy belongs beside grammatical accuracy.</strong><p>Respect, familiarity, address terms, pronouns, and agreement choices are part of the message. For workplace Telugu, a socially suitable simple sentence is more valuable than a complex but misregistered one.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="debates">
+        <div class="section-inner">
+          <span class="section-number">02 / RESOLVING THE DEBATES</span>
+          <h2>Most camps are defending one necessary part.</h2>
+          <p class="section-lead">Language learning arguments often turn differences in emphasis into false choices. The literature is more useful when it tells us what each activity changes, and what it cannot change by itself.</p>
+          <div class="myth-list">
+            <article class="myth"><h3>“Grammar study prevents acquisition.”</h3><p><span class="verdict">Verdict · too strong</span>Focused instruction reliably helps. What fails is accumulating declarative rules without processing them in speech. Keep diagrams and paradigms, but ask of every rule: can you hear it, choose it, and use it under mild pressure?</p></article>
+            <article class="myth"><h3>“Comprehensible input is all you need.”</h3><p><span class="verdict">Verdict · necessary, not sufficient as a plan</span>Input is indispensable. But beginners cannot benefit efficiently from hours of language that remains noise. Comprehensibility must be engineered through narrow topics, visual context, transcripts, pre-taught words, replay, and increasing independence.</p></article>
+            <article class="myth"><h3>“Speak from day one” versus “stay silent.”</h3><p><span class="verdict">Verdict · use low-stakes output early</span>Early memorized and recombined speech trains retrieval and exposes gaps. It need not mean unsupported free conversation. Repeat, substitute, answer, describe, and record before expecting fluent improvisation.</p></article>
+            <article class="myth"><h3>“Never translate.”</h3><p><span class="verdict">Verdict · translation is a tool</span>A concise English meaning can establish an initial concept quickly. The danger is assuming one-to-one equivalence or constructing Telugu by replacing English words. Add literal glosses and contrasts where Telugu organizes meaning differently.</p></article>
+            <article class="myth"><h3>“Do not learn vocabulary lists.”</h3><p><span class="verdict">Verdict · learn useful words in usable frames</span>Deliberate vocabulary study is efficient, especially before rich input becomes accessible. Pair audio and meaning with a phrase, inflected example, or frequent collocation; count stems, not every suffix combination as a new word.</p></article>
+            <article class="myth"><h3>“You need a native-like accent.”</h3><p><span class="verdict">Verdict · target comprehensibility</span>Train distinctions that change recognition or meaning and features that repeatedly cause listener effort. Accent elimination is neither necessary nor a useful gate to conversation.</p></article>
+          </div>
+
+          <div class="braid" aria-label="The four-strand acquisition cycle">
+            <article class="braid-step"><span class="step-index">01</span><h3>Notice</h3><p>A short explanation or contrast directs attention to a meaningful Telugu pattern.</p></article>
+            <article class="braid-step"><span class="step-index">02</span><h3>Understand</h3><p>Supported listening connects the sound and form to a message many times.</p></article>
+            <article class="braid-step"><span class="step-index">03</span><h3>Retrieve</h3><p>Recall, transformation, and speaking make the pattern accessible without notes.</p></article>
+            <article class="braid-step"><span class="step-index">04</span><h3>Negotiate</h3><p>Interaction and feedback reveal what succeeds, what strains the listener, and what to repair.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="telugu">
+        <div class="section-inner">
+          <span class="section-number">03 / DESIGN FOR TELUGU</span>
+          <h2>Learn stems and decisions, not giant word lists.</h2>
+          <p class="section-lead">Telugu is agglutinative: grammatical information often appears as visible or audible pieces attached to a stem. This rewards your interest in diagrams. It also means English-derived vocabulary counts can mislead unless inflected forms are grouped under the same lexeme.</p>
+          <div class="telugu-map">
+            <div class="word-machine">
+              <span>Conceptual verb template</span>
+              <div class="morpheme-line"><span class="morpheme stem">STEM</span><span class="plus">+</span><span class="morpheme tense">TENSE / ASPECT</span><span class="plus">+</span><span class="morpheme agreement">AGREEMENT</span></div>
+              <p>Practice both directions: assemble a form to speak, then strip endings from a heard form to recover who did what and when.</p>
+            </div>
+            <div class="feature-list">
+              <article class="feature"><strong>Sound contrasts first</strong><p>Short/long vowels, dental/retroflex stops, single/doubled consonants, rhotics, aspiration where used, and natural reductions deserve perception training before correction becomes habitual.</p></article>
+              <article class="feature"><strong>Verb-final expectations</strong><p>Default SOV order, modifiers before nouns, postpositions after noun phrases, and recoverable argument omission require more than English word substitution.</p></article>
+              <article class="feature"><strong>Cases as functions</strong><p>Prioritize high-frequency accusative, dative, associative/instrumental, locative, source, and possessive patterns in complete phrases.</p></article>
+              <article class="feature"><strong>Agreement as information</strong><p>Hear tense, aspect, negation, person, number, gender, and respect in the whole verb form. Verify colloquial paradigms against Hyderabad speech.</p></article>
+              <article class="feature"><strong>Register from lesson one</strong><p>Learn <em>nuvvu</em>, respectful/plural <em>meeru</em>, <em>-gaaru</em>, respectful agreement, softened requests, and address terms as social choices.</p></article>
+              <article class="feature"><strong>Diglossia is real</strong><p>Textbook, literary, devotional, news, cinema, and family Telugu are not interchangeable. Label models by context and prefer educated colloquial Telangana speech for this goal.</p></article>
+              <article class="feature"><strong>Code-switching is data</strong><p>Hyderabad speech may mix Telugu with English and Urdu. Learn what local speakers naturally say rather than forcing a “pure” form into every workplace exchange.</p></article>
+              <article class="feature"><strong>Script can wait, not forever</strong><p>Use consistent, sound-faithful romanization temporarily. Add script after the sound system and core phrases are stable, before ad hoc English spelling hardens pronunciation errors.</p></article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="roadmap">
+        <div class="section-inner">
+          <span class="section-number">04 / FIVE-STAGE ROADMAP</span>
+          <h2>Advance by capability, not the calendar.</h2>
+          <p class="section-lead">The stages overlap. Vocabulary ranges and practice hours are planning heuristics, not validated Telugu thresholds. The gates matter more: move on when the skill is observable across several topics or speakers.</p>
+          <div class="stage-map">
+            <article class="stage">
+              <div class="stage-index">00</div>
+              <div><span class="stage-subtitle">Calibration</span><h3>Choose the Telugu you mean to learn</h3><p>Anchor pronunciation and register before scale creates expensive corrections.</p></div>
+              <div><ul><li>Select educated colloquial Hyderabad/Telangana Telugu as the primary model.</li><li>Choose two or three consistent model speakers and one romanization convention.</li><li>Train sound identification before demanding perfect production.</li><li>Build a repair kit: “again,” “slowly,” “what does that mean?” and “how do you say…?”</li></ul><div class="gate"><strong>Move-on evidence</strong>At least 85% identification on trained sound contrasts and 80% agreement from native listeners transcribing or identifying 30 recorded words and phrases.</div></div>
+            </article>
+            <article class="stage">
+              <div class="stage-index">01</div>
+              <div><span class="stage-subtitle">Formulaic foundation · roughly A1</span><h3>Become socially functional</h3><p>Build reliable short turns before open-ended conversation.</p></div>
+              <div><ul><li>Target 400–700 receptive lexemes, 40–60 verb stems, and 100–150 flexible formulas.</li><li>Cover greetings, introductions, family, possession, location, needs, food, numbers, directions, courtesy, and clarification.</li><li>Learn pronouns, questions, core cases, identity/existence, negation, and respectful choices.</li><li>Use substitution frames so memorized phrases become generative.</li></ul><div class="gate"><strong>Move-on evidence</strong>Complete three different five-minute supported conversations and score at least 80% on first-listen questions for 20 unseen, slow dialogues on familiar themes.</div></div>
+            </article>
+            <article class="stage">
+              <div class="stage-index">02</div>
+              <div><span class="stage-subtitle">Generative routines · roughly A2</span><h3>Connect ideas across time</h3><p>Shift from individual turns to short, self-directed exchanges.</p></div>
+              <div><ul><li>Reach 1,000–1,600 receptive and 500–900 productive lexemes, 80–120 verbs, and 200–300 formulas.</li><li>Add past and future reference, aspect, comparison, reasons, preferences, requests, and short narration.</li><li>Listen repeatedly to the same speakers and topics, then retell without text.</li><li>Practice circumlocution: describe an unknown word instead of switching immediately to English.</li></ul><div class="gate"><strong>Move-on evidence</strong>Sustain 15 minutes with English used only for repair, complete eight routine scenarios, and give a comprehensible two-minute unrehearsed account with clear time reference.</div></div>
+            </article>
+            <article class="stage">
+              <div class="stage-index">03</div>
+              <div><span class="stage-subtitle">Conversational independence · B1-like / ILR 2 routine social range</span><h3>Handle normal imperfection</h3><p>Conversation becomes comfortable when recovery works, not when errors disappear. CEFR and ILR describe proficiency differently; this is a functional comparison, not an exact conversion.</p></div>
+              <div><ul><li>Aim for 1,800–3,000 receptive and 900–1,600 productive lexemes, 120–200 verbs, and 300–500 formulas.</li><li>Train normal-rate familiar speech, multiple speakers, interruption, topic changes, anecdotes, and simple opinions.</li><li>Use workplace relationship topics: people, plans, travel, food, hometowns, celebrations, and shared experiences.</li><li>Collect recurring breakdowns and drill only those bottlenecks.</li></ul><div class="gate"><strong>Target evidence</strong>Complete three independently rated 30-minute conversations without listener strain on familiar topics and understand at least 80% of detail questions on ten unseen 2–5 minute Hyderabad clips.</div></div>
+            </article>
+            <article class="stage">
+              <div class="stage-index">04</div>
+              <div><span class="stage-subtitle">Robustness and literacy</span><h3>Widen the world</h3><p>Build resilience across medium, speaker, topic, and register.</p></div>
+              <div><ul><li>Add phone audio, unfamiliar speakers, denser code-switching, colloquial media, and less predictable topics.</li><li>Learn Telugu script systematically using already-known words and audio.</li><li>Use music for sound familiarity and enjoyment, while labeling poetic language.</li><li>Use familiar translated stories as context-rich extensive input, respecting access and copyright.</li></ul><div class="gate"><strong>Expansion evidence</strong>Decode mastered phrases accurately without audio, read short messages without damaging pronunciation, and maintain conversation through unfamiliar stretches using clarification and paraphrase.</div></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="metrics">
+        <div class="section-inner">
+          <span class="section-number">05 / NUMBERS THAT HELP</span>
+          <h2>Measure access and coverage, not collection.</h2>
+          <p class="section-lead">No study establishes a magic Telugu vocabulary count for conversation. These ranges are deliberately broad. A “known” word should be recognizable in connected speech and, for the productive count, retrievable in an appropriate phrase.</p>
+          <div class="metrics-grid">
+            <figure class="metric-figure">
+              <span class="heuristic-label">Planning heuristic</span><h3>Vocabulary at the target</h3>
+              <div class="bars">
+                <div><div class="bar-label"><span>Receptive stems</span><strong>1,800–3,000</strong></div><div class="bar-track"><i class="bar-fill" style="width: 100%"></i></div></div>
+                <div><div class="bar-label"><span>Productive stems</span><strong>900–1,600</strong></div><div class="bar-track"><i class="bar-fill orange" style="width: 55%"></i></div></div>
+                <div><div class="bar-label"><span>High-utility verbs</span><strong>120–200</strong></div><div class="bar-track"><i class="bar-fill cyan" style="width: 38%"></i></div></div>
+                <div><div class="bar-label"><span>Concrete / social nouns</span><strong>600–1,000</strong></div><div class="bar-track"><i class="bar-fill orange" style="width: 48%"></i></div></div>
+                <div><div class="bar-label"><span>Flexible formulas</span><strong>300–500</strong></div><div class="bar-track"><i class="bar-fill red" style="width: 66%"></i></div></div>
+                <div><div class="bar-label"><span>Reusable grammar patterns</span><strong>35–60</strong></div><div class="bar-track"><i class="bar-fill cyan" style="width: 30%"></i></div></div>
+              </div>
+              <figcaption>Widths compare practical emphasis, not like-for-like units. The noun and pattern ranges are planning categories within the larger lexeme system, not additive requirements. Telugu suffix combinations remain forms of a stem, not separate vocabulary items.</figcaption>
+            </figure>
+            <figure class="metric-figure">
+              <span class="evidence-label">Cross-language evidence</span><h3>Listening coverage</h3>
+              <div class="coverage-scale low" aria-label="About 80 percent known-token coverage leaves two in ten tokens unknown"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="coverage-caption"><span>~80% · often frustrating</span><span>2 in 10 unknown</span></div>
+              <div class="coverage-scale" aria-label="About 95 percent coverage leaves about one in twenty tokens unknown"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="coverage-caption"><span>~95% · supported comprehension</span><span>~1 in 20 unknown</span></div>
+              <p style="margin: 1.4rem 0 0; color: var(--ink-soft); font-size: .75rem;">English-language research often places supported comprehension around 95% known-token coverage and easier unassisted comprehension nearer 98%. Treat the percentages as orientation, not a proven Telugu conversion.</p>
+            </figure>
+          </div>
+
+          <div class="numbers-table-wrap">
+            <table>
+              <thead><tr><th>Measure</th><th>Useful target</th><th>How to interpret it</th><th>Basis</th></tr></thead>
+              <tbody>
+                <tr><td>Purposeful learning</td><td>~400–700 hours</td><td>A broad planning range to B1-like oral ability, not a promise or FSI figure. Prior knowledge, consistency, input quality, and interaction move it substantially.</td><td><span class="heuristic-label">Heuristic</span></td></tr>
+                <tr><td>Focused and narrow listening</td><td>~250–450 hours</td><td>Includes supported replay, micro-listening, and later extensive listening. Do not count background audio as equal practice.</td><td><span class="heuristic-label">Heuristic</span></td></tr>
+                <tr><td>Live or genuine interaction</td><td>~80–150 hours</td><td>Includes tutoring, exchanges, voice messages with response, and role-play where meaning must be negotiated.</td><td><span class="heuristic-label">Heuristic</span></td></tr>
+                <tr><td>First-listen comprehension</td><td>≥80%</td><td>Score factual and detail questions on unseen but level-appropriate familiar-topic clips. Replayed performance is a separate measure.</td><td><span class="decision-label">Progress gate</span></td></tr>
+                <tr><td>Mature SRS recall</td><td>80–90%</td><td>Below this, cards or material may need relearning; persistently above 95%, intervals may be consuming attention too conservatively.</td><td><span class="heuristic-label">Heuristic</span></td></tr>
+                <tr><td>Listener success</td><td>≥90%</td><td>Across three Hyderabad speakers, messages are understood on the first attempt without advance knowledge of the exact sentence.</td><td><span class="decision-label">Pronunciation gate</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p style="color:var(--ink-soft);font-size:.76rem;">Listening and interaction are components of purposeful learning and often happen in the same activity. Their ranges overlap the total and should not be added as independent quotas.</p>
+          <div class="callout"><strong>Do not optimize the dashboard.</strong><p>Track one receptive vocabulary estimate, one productive estimate, first-listen comprehension, unrehearsed speaking duration, and recurring breakdowns. The milestone tasks are more trustworthy than a large count of cards reviewed or lessons completed.</p></div>
+        </div>
+      </section>
+
+      <section class="section" id="loop">
+        <div class="section-inner">
+          <span class="section-number">06 / THE EXACT LEARNING LOOP</span>
+          <h2>One source section, six transformations.</h2>
+          <p class="section-lead">This loop preserves the external course’s sequence while preventing passive grammar consumption. It can operate at any stage; only the length and naturalness of the input change.</p>
+          <div class="loop-grid">
+            <article class="loop-step"><b>01</b><strong>Orient</strong><p>Read the goal. Preview a few essential words. Listen once without text and record the gist, even if incomplete.</p></article>
+            <article class="loop-step"><b>02</b><strong>Map</strong><p>Study the diagram or rule briefly. Mark stems, endings, order, meaning, register, and where the rule stops.</p></article>
+            <article class="loop-step"><b>03</b><strong>Decode</strong><p>Use transcript and audio together. Segment heard forms, answer meaning questions, replay difficult seconds, then remove the text.</p></article>
+            <article class="loop-step"><b>04</b><strong>Retrieve</strong><p>Recall whole phrases, choose forms by meaning, transform tense or participant, and reconstruct examples without notes.</p></article>
+            <article class="loop-step"><b>05</b><strong>Personalize</strong><p>Create several true sentences and one short spoken response using the pattern. Record, compare, and repair one target at a time.</p></article>
+            <article class="loop-step"><b>06</b><strong>Re-encounter</strong><p>Meet the pattern later in a new dialogue, story, conversation, or delayed retrieval prompt. Add only durable items to review.</p></article>
+          </div>
+
+          <div class="allocation">
+            <div>
+              <h3>Shift the mix as ability grows</h3>
+              <div class="stacked-row"><span>Foundation</span><div class="stacked-bar" aria-label="Foundation emphasis"><i class="input" style="width:40%"></i><i class="grammar" style="width:25%"></i><i class="retrieval" style="width:25%"></i><i class="interaction" style="width:10%"></i></div></div>
+              <div class="stacked-row"><span>Routines</span><div class="stacked-bar" aria-label="Routine emphasis"><i class="input" style="width:45%"></i><i class="grammar" style="width:15%"></i><i class="retrieval" style="width:20%"></i><i class="interaction" style="width:20%"></i></div></div>
+              <div class="stacked-row"><span>Independent</span><div class="stacked-bar" aria-label="Independent emphasis"><i class="input" style="width:50%"></i><i class="grammar" style="width:8%"></i><i class="retrieval" style="width:12%"></i><i class="interaction" style="width:30%"></i></div></div>
+              <div class="legend"><span style="--swatch:var(--green)">Input</span><span style="--swatch:var(--gold)">Grammar</span><span style="--swatch:var(--cyan)">Retrieval</span><span style="--swatch:var(--red)">Interaction</span></div>
+            </div>
+            <div>
+              <h3>What counts as progress</h3>
+              <p>At first, accuracy and clear contrasts deserve attention. Later, time spent understanding and negotiating meaning should dominate. Grammar shrinks as a share of activity, but remains available as a diagnostic tool when a recurring form blocks comprehension or expression.</p>
+              <p><span class="heuristic-label">Suggested proportions</span></p>
+              <p style="font-size:.78rem;color:var(--ink-soft)">The chart is a practical allocation, not an experimentally established optimum. Use it to detect imbalance: a month of only grammar, only flashcards, or incomprehensible media is a warning.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="techniques">
+        <div class="section-inner">
+          <span class="section-number">07 / TECHNIQUE TOOLKIT</span>
+          <h2>Choose a technique for the bottleneck.</h2>
+          <p class="section-lead">Methods are not identities. Use each for the learning problem it solves, and stop when it becomes ritual without transfer.</p>
+          <div class="technique-list">
+            <details open><summary><strong>Micro-listening</strong><span>Best for turning fast, fused speech into identifiable language.</span></summary><div class="detail-body"><p>Blind listen, write the gist, inspect an accurate transcript, mark morpheme boundaries, loop only the difficult seconds, listen to the full passage, then retell. Finish without text so reading support does not masquerade as listening.</p></div></details>
+            <details><summary><strong>Narrow listening</strong><span>Best for making input comprehensible before broad media is accessible.</span></summary><div class="detail-body"><p>Stay with one speaker, topic, or situation across several short clips. Repeated vocabulary and predictable context reduce the unknown load. Gradually add speakers and topics once first-listen scores stabilize.</p></div></details>
+            <details><summary><strong>Spaced retrieval + active recall</strong><span>Best for retaining high-value words, formulas, contrasts, and transformations.</span></summary><div class="detail-body"><p>Mix audio comprehension, whole-phrase recall, cloze, and form selection. Put audio on the front frequently. Suspend low-value or chronically ambiguous cards. An SRS schedules retrieval; it does not decide what deserves learning.</p></div></details>
+            <details><summary><strong>Sentence variation</strong><span>Best for converting a diagram into generative control.</span></summary><div class="detail-body"><p>Hold one meaning constant while changing participant, time, polarity, location, or respect level. Then hold the form constant and substitute personally meaningful content. This links morphology to decisions rather than recited tables.</p></div></details>
+            <details><summary><strong>Shadowing and imitation</strong><span>Best for rhythm, timing, reductions, and articulatory fluency.</span></summary><div class="detail-body"><p>Use short, fully understood audio. First imitate after the model with pauses; overlap only after accurate perception. Compare recordings. Shadowing opaque audio can rehearse an incorrect sound parse, so comprehension comes first.</p></div></details>
+            <details><summary><strong>Conversation and role-play</strong><span>Best for retrieval under pressure, repair, turn-taking, and social choices.</span></summary><div class="detail-body"><p>Begin with bounded scenarios and known goals, then introduce unscripted follow-ups. Ask for selective feedback on the one or two errors that most affected meaning, naturalness, or respect.</p></div></details>
+            <details><summary><strong>Generated N+1 material</strong><span>Best for bridging the beginner input gap around known vocabulary and desired situations.</span></summary><div class="detail-body"><p>Provide the model with a whitelist of known stems and grammar, a small novelty budget, topic, register, length, and target speaker. Require a vocabulary audit and native review before treating generated Telugu as authoritative. “N+1” is a design metaphor, not a precisely measurable unit.</p></div></details>
+            <details><summary><strong>Music and familiar stories</strong><span>Best for motivation, repeated exposure, memory, and cultural connection.</span></summary><div class="detail-body"><p>Music is excellent supplemental input but can contain poetic order, pronunciation, and vocabulary. Familiar stories supply unusually strong context even above level. Neither should become the sole model for colloquial workplace speech.</p></div></details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="speakers">
+        <div class="section-inner">
+          <span class="section-number">08 / USE NATIVE SPEAKERS WELL</span>
+          <h2>Ask for judgments only humans can give.</h2>
+          <p class="section-lead">You do not need native speakers to provide the whole curriculum. Use their scarce attention to calibrate sound, naturalness, register, and local usage—then turn each answer into reusable audio and notes.</p>
+          <div class="speaker-workflow">
+            <article class="speaker-step"><span>01 / Batch</span><h3>Prepare five to ten precise items</h3><p>Group pronunciation contrasts, translations, or variants. Include the intended relationship and situation so “correct” does not hide register.</p></article>
+            <article class="speaker-step"><span>02 / Elicit</span><h3>Ask for a natural Hyderabad version</h3><p>Request normal and careful audio, plus a label: natural, formal, literary, old-fashioned, Andhra-associated, Telangana-associated, or code-mixed.</p></article>
+            <article class="speaker-step"><span>03 / Reuse</span><h3>Archive the decision</h3><p>Add verified audio to the lesson, concept page, or review item. Note disagreements rather than forcing one speaker’s preference into a universal rule.</p></article>
+          </div>
+          <div class="prompt-box"><code>“In a friendly but respectful conversation with a Hyderabad colleague or senior leader, how would you naturally express this idea? Could you say it once normally and once slowly, and tell me whether my version sounds grammatical, natural, and appropriately respectful?”</code></div>
+          <div class="callout"><strong>Later, conversation becomes the resource.</strong><p>Once Stage 2 is stable, increase short voice-message exchanges and bounded conversations. Native-speaker time is then doing what recordings cannot: responding unpredictably, negotiating meaning, and revealing listener effort.</p></div>
+        </div>
+      </section>
+
+      <section class="section" id="resources">
+        <div class="section-inner">
+          <span class="section-number">09 / RESOURCE STACK</span>
+          <h2>Seek properties, not a perfect app.</h2>
+          <p class="section-lead">No single Telugu product is likely to provide enough colloquial Hyderabad audio, grammatical transparency, controlled input, and feedback. Build a small stack in which every resource has one job.</p>
+          <div class="resource-grid">
+            <article class="resource"><span class="resource-kind">Backbone</span><h3>Your current grammar-led external course</h3><p>Keep its order, diagrams, and explanations. Add audio decoding, productive tasks, question pages, and usage verification around it.</p></article>
+            <article class="resource"><span class="resource-kind">Reference grammar</span><h3><em>A Grammar of Modern Telugu</em></h3><p>Bh. Krishnamurti and J. P. L. Gwynn. Use as a reference when the course leaves a structural question open, not as a cover-to-cover beginner syllabus.</p><a href="https://openlibrary.org/works/OL394288W">View bibliographic record</a></article>
+            <article class="resource"><span class="resource-kind">Spoken foundation</span><h3><em>Introduction to Spoken Telugu</em></h3><p>Leigh Lisker (1963), and <em>A Basic Course in Modern Telugu</em> by Krishnamurti and Sarma (1968). Older register requires local checking, but the systematic spoken focus remains useful.</p></article>
+            <article class="resource"><span class="resource-kind">Dictionary</span><h3>Gwynn’s Telugu–English Dictionary</h3><p>A serious lookup reference hosted by the Digital South Asia Library. Confirm contemporary colloquial usage with context and speakers.</p><a href="https://dsal.uchicago.edu/dictionaries/gwynn/">Open the dictionary</a></article>
+            <article class="resource"><span class="resource-kind">Audio corpus</span><h3>Short, transcript-aligned Telangana speech</h3><p>Seek multiple speakers, clean downloadable or replayable audio, normal speed, accurate text, translation, and context labels. Build this from tutor recordings if no single corpus fits.</p></article>
+            <article class="resource"><span class="resource-kind">Interaction</span><h3>A Telangana tutor or exchange partner</h3><p>Prefer someone comfortable correcting pronunciation and explaining register. A structured 20-minute task can outperform an hour of aimless chat at early levels.</p></article>
+            <article class="resource"><span class="resource-kind">Memory</span><h3>Audio-capable spaced repetition</h3><p>Anki is suitable. Keep notes production-focused, use verified audio, include context, and avoid automatic reverse cards for every item.</p></article>
+            <article class="resource"><span class="resource-kind">Transliteration</span><h3>One consistent sound-faithful system</h3><p>ISO 15919 is reversible and precise but diacritic-heavy. A simplified pedagogical system can work if it preserves vowel length and crucial consonant contrasts consistently.</p><a href="https://www.iso.org/standard/28333.html">ISO 15919 overview</a></article>
+          </div>
+          <div class="callout"><strong>Resource acceptance test</strong><p>Prefer material that answers: Who is speaking? From where? To whom? In what register? At what speed? With what transcript? Can you replay one line? Can a local speaker verify it? A huge catalog without those answers is less valuable than 50 excellent dialogues.</p></div>
+        </div>
+      </section>
+
+      <section class="section" id="milestones">
+        <div class="section-inner">
+          <span class="section-number">10 / WHAT “COMFORTABLE” MEANS</span>
+          <h2>Define fluency as resilient communication.</h2>
+          <p class="section-lead">The useful near-term target is CEFR B1-like oral independence and the routine social range described at ILR 2—not professional ILR 3. The scales are not directly equivalent. Functionally, you can handle familiar social situations, connect simple ideas across time, understand the main points of clear everyday speech, and repair trouble without the conversation collapsing.</p>
+          <div class="scorecard">
+            <article class="score"><strong>30m</strong><h3>Sustained conversation</h3><p>Three conversations with different speakers on familiar topics, without significant listener strain or a prepared script.</p></article>
+            <article class="score"><strong>80%+</strong><h3>First-listen detail</h3><p>Across ten unseen 2–5 minute clips from Hyderabad/Telangana speakers on familiar subject matter.</p></article>
+            <article class="score"><strong>8/10</strong><h3>Routine scenarios</h3><p>Complete practical and social tasks while selecting respectful forms and repairing misunderstandings.</p></article>
+            <article class="score"><strong>3 ways</strong><h3>Repair repertoire</h3><p>Ask for repetition or clarification, confirm an interpretation, and paraphrase around a missing word.</p></article>
+          </div>
+          <div class="final-test">
+            <h3>The oral independence check</h3>
+            <ul>
+              <li>Introduce yourself and ask responsive follow-up questions.</li>
+              <li>Describe work, family, routines, interests, and Hyderabad experiences.</li>
+              <li>Narrate a recent event and explain a simple future plan.</li>
+              <li>Express preferences and give short reasons.</li>
+              <li>Make respectful requests and recognize common register shifts.</li>
+              <li>Follow clear everyday speech without translating every word.</li>
+              <li>Recover after missing a form, word, or sentence.</li>
+              <li>Continue despite errors instead of abandoning Telugu immediately.</li>
+            </ul>
+          </div>
+          <div class="callout"><strong>Then “fluency” becomes domain expansion.</strong><p>After this target, progress is less about unlocking a new universal stage and more about widening topics, speakers, speed, registers, and professional functions. Reading can then accelerate vocabulary growth and access to culture without having delayed the oral foundation.</p></div>
+        </div>
+      </section>
+
+      <section class="section sources" id="sources">
+        <div class="section-inner">
+          <span class="section-number">11 / EVIDENCE BASE</span>
+          <h2>What the claims rest on.</h2>
+          <p class="section-lead">The strongest conclusions here concern mixed instruction, retrieval, feedback, pronunciation training, and proficiency-based assessment. Telugu vocabulary totals, hour ranges, and Hyderabad-specific pedagogy are much less studied; they are labeled as adjustable heuristics.</p>
+          <div class="source-list">
+            <div class="source-item"><span>01</span><p>Norris, J. M., &amp; Ortega, L. (2000). “Effectiveness of L2 Instruction: A Research Synthesis and Quantitative Meta-analysis.” <a href="https://doi.org/10.1111/0023-8333.00136">DOI</a></p></div>
+            <div class="source-item"><span>02</span><p>Spada, N., &amp; Tomita, Y. (2010). “Interactions Between Type of Instruction and Type of Language Feature.” <a href="https://doi.org/10.1111/j.1467-9922.2010.00562.x">DOI</a></p></div>
+            <div class="source-item"><span>03</span><p>Shintani, N., Li, S., &amp; Ellis, R. (2013). “Comprehension-Based Versus Production-Based Grammar Instruction.” <a href="https://doi.org/10.1111/lang.12001">DOI</a></p></div>
+            <div class="source-item"><span>04</span><p>Li, S. (2010). “The Effectiveness of Corrective Feedback in SLA.” <a href="https://doi.org/10.1111/j.1467-9922.2010.00561.x">DOI</a> · Lyster, R., &amp; Saito, K. (2010). Classroom oral corrective feedback. <a href="https://doi.org/10.1017/S0272263109990520">DOI</a></p></div>
+            <div class="source-item"><span>05</span><p>Zhang, S., &amp; Zhang, X. (2022). “Vocabulary Knowledge and L2 Reading/Listening Comprehension.” <a href="https://doi.org/10.1177/1362168820913998">DOI</a></p></div>
+            <div class="source-item"><span>06</span><p>Nation, I. S. P. (2006). “How Large a Vocabulary Is Needed for Reading and Listening?” <a href="https://doi.org/10.3138/cmlr.63.1.59">DOI</a> · van Zeeland, H., &amp; Schmitt, N. (2013). Lexical coverage in L2 listening. <a href="https://doi.org/10.1093/applin/ams074">DOI</a></p></div>
+            <div class="source-item"><span>07</span><p>Uchihara, T., Webb, S., &amp; Yanagisawa, A. (2019). Repetition and incidental L2 vocabulary learning. <a href="https://doi.org/10.1111/lang.12343">DOI</a></p></div>
+            <div class="source-item"><span>08</span><p>Dalman, M. R., &amp; Plonsky, L. (2022). Listening strategy instruction meta-analysis. <a href="https://doi.org/10.1177/13621688211072981">DOI</a></p></div>
+            <div class="source-item"><span>09</span><p>Lee, J., Jang, J., &amp; Plonsky, L. (2015). Pronunciation instruction meta-analysis. <a href="https://doi.org/10.1093/applin/amu040">DOI</a> · Bassetti, B., Escudero, P., &amp; Hayes-Harb, R. (2015). Orthographic input and L2 phonology. <a href="https://doi.org/10.1017/S0142716414000393">DOI</a></p></div>
+            <div class="source-item"><span>10</span><p>Cepeda, N. J., et al. (2006). Distributed practice. <a href="https://doi.org/10.1037/0033-2909.132.3.354">DOI</a> · Adesope, O. O., et al. (2017). Practice testing. <a href="https://doi.org/10.3102/0034654316689306">DOI</a></p></div>
+            <div class="source-item"><span>11</span><p>Council of Europe (2020). <a href="https://www.coe.int/en/web/common-european-framework-reference-languages/level-descriptions">CEFR level descriptions</a> · Interagency Language Roundtable. <a href="https://www.govtilr.org/Skills/ILRscale2.htm">Speaking scale</a> and <a href="https://www.govtilr.org/Skills/ILRscale3.htm">Listening scale</a>.</p></div>
+            <div class="source-item"><span>12</span><p>Krishnamurti, Bh., &amp; Gwynn, J. P. L. (1985). <em>A Grammar of Modern Telugu</em>. · Krishnamurti, Bh. (2003). <em>The Dravidian Languages</em>. <a href="https://doi.org/10.1017/CBO9780511486876">DOI</a></p></div>
+          </div>
+          <p class="source-note">This page is a research-informed learning design, not a clinical or psychometric instrument. Numeric targets combine cross-language evidence with explicitly labeled planning heuristics and should be revised using actual performance data and Telangana-speaker feedback.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p><strong>Foundational Telugu</strong> · A living learning strategy</p>
+    <p>Primary aim: respectful, resilient conversation with Hyderabad colleagues.</p>
+  </footer>
+</body>
+</html>

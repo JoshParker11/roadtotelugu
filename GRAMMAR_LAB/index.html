@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Telugu Verb Lab · conjugation practice</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+Telugu:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/lab.css">
+</head>
+<body>
+<a class="skip-link" href="#pick">Skip to verb selection</a>
+
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="wrap">
+    <a class="logo" href="index.html"><span>క్రి</span> verb-lab</a>
+    <ul>
+      <li><a href="index.html" aria-current="page">Select &amp; study</a></li>
+      <li><a href="paradigms.html">Paradigms</a></li>
+      <li><a href="review.html">Native review</a></li>
+      <li><a href="#method">Method</a></li>
+      <li><a href="../LEARNING_GUIDE/index.html">Course</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="lab-header">
+  <div class="wrap">
+    <a class="home-crumb" href="../LEARNING_GUIDE/index.html">← Foundational Telugu</a>
+    <span class="eyebrow">Grammar practice · verbs</span>
+    <h1>35 root verbs, <em>conjugated and drilled</em></h1>
+    <p class="lede">Your hour at the desk, spent on the one part of Telugu that Anki cards cannot carry: putting the right ending on the right stem, fast enough to say it. Pick the verbs, run the session, speak every answer out loud.</p>
+  </div>
+</header>
+
+<section class="stats" aria-label="Contents">
+  <div class="wrap">
+    <div class="stat"><span>Root verbs</span><strong class="amber" id="s-verbs">35</strong></div>
+    <div class="stat"><span>Forms generated</span><strong id="s-forms">—</strong></div>
+    <div class="stat"><span>Paradigms</span><strong>14</strong></div>
+    <div class="stat"><span>Native-verified</span><strong id="s-ver">0 verbs</strong></div>
+    <div class="stat"><span>Cells practised</span><strong id="s-seen">0</strong></div>
+  </div>
+</section>
+
+<main id="main">
+
+<section class="page-section" id="pick">
+  <div class="wrap">
+    <div class="section-heading">
+      <div><span class="eyebrow">Step one</span><h2>Choose your verbs</h2></div>
+      <p>Five is a good session. The drill interleaves them deliberately, so five verbs at once is easier to sustain and harder — in the useful way — than five paradigms one after another.</p>
+    </div>
+
+    <div class="picker-bar">
+      <button class="chip" data-preset="core5">The essential 5</button>
+      <button class="chip" data-preset="random5">Random 5</button>
+      <button class="chip" data-preset="irregular">Irregulars</button>
+      <button class="chip" data-preset="ko">The -ko verbs</button>
+      <button class="chip" data-preset="weak">Weakest first</button>
+      <button class="chip" data-preset="none">Clear</button>
+      <span class="picker-count"><b id="count">0</b> selected</span>
+    </div>
+
+    <div class="verb-grid" id="grid"></div>
+  </div>
+</section>
+
+<section class="page-section" id="scope">
+  <div class="wrap">
+    <div class="section-heading">
+      <div><span class="eyebrow">Step two</span><h2>Choose how much of the verb</h2></div>
+      <p>Start with the core five paradigms. Widen once the endings arrive without hesitation — not once you can recognise them on a page.</p>
+    </div>
+    <div class="scope-row" id="scopes"></div>
+
+    <div class="start-row">
+      <a class="btn" id="go" href="study.html">Start session</a>
+      <a class="btn ghost small" id="peek" href="paradigms.html">See the tables first</a>
+      <label class="toggle"><input type="checkbox" id="opt-notice"> Show each paradigm before drilling it</label>
+      <label class="toggle"><input type="checkbox" id="opt-type"> Type the answer as well as saying it</label>
+    </div>
+    <p class="lede" id="sessionline" style="margin-top:16px;font-size:14px"></p>
+  </div>
+</section>
+
+<section class="page-section" id="method">
+  <div class="wrap">
+    <div class="section-heading">
+      <div><span class="eyebrow">Why it works this way</span><h2>Not a table you fill in</h2></div>
+      <p>You asked what the research says, so here it is, and here is what this site does with it.</p>
+    </div>
+
+    <div class="method-grid">
+      <article class="method">
+        <span>01 / The finding</span>
+        <h3>Retrieval beats completion</h3>
+        <p>Copying a conjugation table while the answer is visible produces almost no durable learning. Pulling the form out of memory does. This is the single most replicated result in the learning literature, and it is why there is no fill-in-the-grid exercise anywhere on this site.</p>
+        <p>So: every drill item hides the answer until you have committed to one.</p>
+      </article>
+      <article class="method">
+        <span>02 / The finding</span>
+        <h3>Production, not recognition</h3>
+        <p>Practice that makes you produce a form improves your ability to produce it later; practice that only makes you recognise one mostly improves recognition. Since the goal is speaking, multiple choice is the wrong instrument.</p>
+        <p>So: you say the whole form aloud, then grade yourself. Typing is optional and off by default.</p>
+      </article>
+      <article class="method">
+        <span>03 / The finding</span>
+        <h3>Interleaving beats blocking</h3>
+        <p>Drilling one verb's whole paradigm in order feels productive and tests poorly a week later. Mixing verbs and forms feels worse in the moment and holds up far better, because it forces you to choose the pattern rather than repeat it.</p>
+        <p>So: the session avoids putting two items from the same verb in a row, including when it re-queues something you missed. Right at the end of a queue there is sometimes nothing else left to serve.</p>
+      </article>
+      <article class="method">
+        <span>04 / The finding</span>
+        <h3>Spacing, and errors with immediate feedback</h3>
+        <p>Getting it wrong and being corrected at once beats being shown the right answer first. Items you miss come back inside the same session and again sooner on later days.</p>
+        <p>So: three grades — got it, shaky, missed — feed a spacing schedule kept in this browser.</p>
+      </article>
+    </div>
+
+    <div class="note-box" style="margin-top:26px">
+      <b>The one thing rote tables are good for</b>
+      <p>You cannot retrieve a pattern you have never seen. The optional <em>notice</em> step shows each paradigm once at the start of a session with the stem in amber and the ending in orange, so the morphology is visible before you are asked to produce it. Look at it for twenty seconds, not five minutes — then drill. Turn it off once a verb is familiar.</p>
+    </div>
+
+    <div class="note-box caution">
+      <b>An honest warning about the Telugu on this site</b>
+      <p>These paradigms are generated from a stem inventory I wrote. They are internally consistent, and a good number of individual forms cross-check against Telugu that already appears in your course — <span class="mono">undi</span>, <span class="mono">unnānu</span>, <span class="mono">raṇḍi</span>, <span class="mono">tinalēdu</span>, <span class="mono">ivvaṇḍi</span>, <span class="mono">āgaṇḍi</span>. None of it has been checked by a native speaker.</p>
+      <p>Four verbs are flagged <span class="mono" style="color:var(--flame)">check</span> where I am not confident — run, throw, drive and fly — and the conditional is the least settled form throughout. Because the site stores stems rather than finished forms, getting it verified is a short conversation, not a proofreading job: <a href="review.html">the review page</a> lays out roughly ten stems per verb, and one correction fixes that verb's entire paradigm at once.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p><span class="mono">Telugu Verb Lab</span> · 35 roots from English-Telugu-+RootVerbs.pdf (bhashafy.com)</p>
+    <p><a href="../LEARNING_GUIDE/index.html">Course home</a> · <a href="paradigms.html">All paradigms</a> · <a href="review.html">Native review</a> · <a href="#" id="reset">reset progress</a></p>
+  </div>
+</footer>
+
+<script src="data/verbs.js"></script>
+<script src="data/engine.js"></script>
+<script src="assets/app.js"></script>
+<script>
+const grid = document.getElementById('grid');
+let sel = new Set(Lab.getSel());
+
+function drawGrid(){
+  grid.innerHTML = VERBS.map(v => {
+    const on = sel.has(v.id) ? ' sel' : '';
+    const flag = v.conf === 'check' ? '<span class="flag">check</span>' : '';
+    const st = Lab.getVerified()[v.id] ? '<span class="flag" style="color:var(--moss)">verified</span>' : flag;
+    return `<label class="vcard${on}" data-id="${v.id}">
+      <input type="checkbox" ${sel.has(v.id)?'checked':''}>
+      <span class="mark"></span>
+      <span class="en">${esc(v.en.base)}</span>
+      <span class="rom">${esc(rootOf(v)[0])}</span>
+      <span class="tg">${esc(rootOf(v)[1])}</span>
+      <span class="cls">${esc(v.cls)}</span>
+      ${st}
+    </label>`;
+  }).join('');
+}
+
+function sync(){
+  document.getElementById('count').textContent = sel.size;
+  Lab.setSel([...sel]);
+  const scope = Lab.SCOPES[Lab.getScope()];
+  let n = 0;
+  sel.forEach(id => { n += cells(verbById(id), scope.forms).length; });
+  const len = Math.min(Lab.getOpts().len, n);
+  document.getElementById('go').classList.toggle('ghost', sel.size === 0);
+  document.getElementById('sessionline').innerHTML = sel.size
+    ? `${sel.size} verb${sel.size>1?'s':''} × <b>${scope.label.toLowerCase()}</b> = ${n} distinct cells. A session draws <b>${len}</b> of them, due and unseen items first.`
+    : 'Select at least one verb.';
+}
+
+grid.addEventListener('click', e => {
+  const card = e.target.closest('.vcard'); if (!card) return;
+  e.preventDefault();
+  const id = card.dataset.id;
+  sel.has(id) ? sel.delete(id) : sel.add(id);
+  drawGrid(); sync();
+});
+
+document.querySelectorAll('[data-preset]').forEach(b => b.addEventListener('click', () => {
+  const p = b.dataset.preset;
+  if (p === 'none') sel = new Set();
+  if (p === 'core5') sel = new Set(['cheyi','ra','vellu','tinu','undu']);
+  if (p === 'random5') sel = new Set(Lab.shuffle(VERBS.map(v => v.id)).slice(0,5));
+  if (p === 'irregular') sel = new Set(VERBS.filter(v => v.cls === 'irregular').map(v => v.id));
+  if (p === 'ko') sel = new Set(VERBS.filter(v => v.cls === '-ko reflexive').map(v => v.id));
+  if (p === 'weak') {
+    const prog = Lab.getProg();
+    const score = v => cells(v, null).reduce((a,c) => {
+      const r = prog[c.key]; return a + (r ? r.box - r.wrong * 2 : 0.5); }, 0) / 40;
+    sel = new Set(VERBS.slice().sort((a,b) => score(a) - score(b)).slice(0,5).map(v => v.id));
+  }
+  drawGrid(); sync();
+}));
+
+/* scopes */
+const scopes = document.getElementById('scopes');
+scopes.innerHTML = Object.entries(Lab.SCOPES).map(([k,s]) => {
+  const n = s.forms ? s.forms.length : FORMS.length;
+  return `<label class="scope${Lab.getScope()===k?' sel':''}" data-k="${k}">
+    <b>${esc(s.label)}</b><span>${esc(s.blurb)}</span><em>${n} paradigms</em></label>`;
+}).join('');
+scopes.addEventListener('click', e => {
+  const el = e.target.closest('.scope'); if (!el) return;
+  Lab.setScope(el.dataset.k);
+  scopes.querySelectorAll('.scope').forEach(s => s.classList.toggle('sel', s === el));
+  sync();
+});
+
+/* options */
+const oN = document.getElementById('opt-notice'), oT = document.getElementById('opt-type');
+oN.checked = Lab.getOpts().notice; oT.checked = Lab.getOpts().type;
+oN.addEventListener('change', () => Lab.setOpts({ notice:oN.checked }));
+oT.addEventListener('change', () => Lab.setOpts({ type:oT.checked }));
+
+document.getElementById('reset').addEventListener('click', e => {
+  e.preventDefault();
+  if (confirm('Clear selection, options, spacing history and verification marks?')) { Lab.resetAll(); location.reload(); }
+});
+
+/* header stats */
+const total = VERBS.reduce((a,v) => a + cells(v, null).length, 0);
+document.getElementById('s-forms').textContent = total;
+const prog = Lab.getProg();
+document.getElementById('s-seen').textContent = Object.keys(prog).length;
+const nver = Object.keys(Lab.getVerified()).length;
+document.getElementById('s-ver').textContent = nver + (nver === 1 ? ' verb' : ' verbs');
+if (!nver) document.getElementById('s-ver').classList.add('amber');
+
+drawGrid(); sync();
+</script>
+</body>
+</html>

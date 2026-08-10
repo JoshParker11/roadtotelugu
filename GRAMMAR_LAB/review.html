@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Telugu Verb Lab · native review</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+Telugu:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/lab.css">
+</head>
+<body>
+
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="wrap">
+    <a class="logo" href="index.html"><span>క్రి</span> verb-lab</a>
+    <ul>
+      <li><a href="index.html">Select &amp; study</a></li>
+      <li><a href="paradigms.html">Paradigms</a></li>
+      <li><a href="review.html" aria-current="page">Native review</a></li>
+      <li><a href="index.html#method">Method</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="lab-header">
+  <div class="wrap">
+    <a class="home-crumb" href="index.html">← Select &amp; study</a>
+    <span class="eyebrow">Verification</span>
+    <h1>Ten questions per verb, <em>not four hundred</em></h1>
+    <p class="lede">Because the site stores stems and generates the forms, a native speaker never has to read a full conjugation table. Confirm four or five stems and the whole paradigm for that verb is settled at once — one wrong stem is one correction, not forty.</p>
+  </div>
+</header>
+
+<section class="page-section">
+  <div class="wrap">
+    <div class="section-heading">
+      <div><span class="eyebrow">How to run it</span><h2>The four questions that settle a verb</h2></div>
+      <p>Ask them in Telugu-with-English, out loud, and write down what you actually hear rather than what you expected. Ten minutes covers five verbs.</p>
+    </div>
+    <div class="method-grid">
+      <article class="method"><span>01</span><h3>“I will ___”</h3><p>Gives you the non-past stem and the tense marker. If they say something other than what is printed, that one stem is wrong and every future, present-continuous and conditional form for the verb follows it.</p></article>
+      <article class="method"><span>02</span><h3>“I ___ed” / “yesterday I ___”</h3><p>Gives you the past stem — the one most likely to be irregular, and the one worth getting right first.</p></article>
+      <article class="method"><span>03</span><h3>“I won’t ___” and “I didn’t ___”</h3><p>Gives you the negative stem, which also drives both prohibitives.</p></article>
+      <article class="method"><span>04</span><h3>“Please ___” and “I must ___”</h3><p>Gives you the short-a stem and the infinitive. Between them these four questions pin down every cell on the site.</p></article>
+    </div>
+    <div class="note-box caution" style="margin-top:24px">
+      <b>Ask about register while you are there</b>
+      <p>These paradigms assume educated colloquial Hyderabad/Telangana speech, which is what your course targets and almost certainly what your family speaks. A coastal speaker or a textbook will give you <span class="mono">chebutānu</span> where this site prints <span class="mono">cheptānu</span>, and <span class="mono">-āmu</span> where it prints <span class="mono">-āṁ</span>. Neither is wrong. Note which one you are hearing at home and follow that.</p>
+    </div>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="wrap">
+    <div class="section-heading">
+      <div><span class="eyebrow">The queue</span><h2>Verbs awaiting confirmation</h2></div>
+      <p>Flagged verbs first — those are the ones I was least sure of. Tick a verb once someone has confirmed its stems; the tick is stored in this browser and shows up on the paradigm pages.</p>
+    </div>
+    <div class="picker-bar">
+      <button class="chip on" data-f="todo">Not yet verified</button>
+      <button class="chip" data-f="flag">Flagged only</button>
+      <button class="chip" data-f="all">All 35</button>
+      <span class="picker-count"><b id="cnt">0</b> shown · <b id="vcnt">0</b> verified</span>
+    </div>
+    <div id="rows"></div>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="wrap">
+    <div class="section-heading">
+      <div><span class="eyebrow">Take it with you</span><h2>Printable stem sheet</h2></div>
+      <p>Plain text, one line per verb, in the order the four questions above produce. Copy it into a note on your phone and work through it over chai.</p>
+    </div>
+    <div class="start-row" style="margin-top:0;margin-bottom:14px">
+      <button class="btn small" id="copy">Copy to clipboard</button>
+      <button class="chip" data-e="todo">Unverified only</button>
+      <button class="chip on" data-e="all">All verbs</button>
+    </div>
+    <textarea class="export" id="export" readonly></textarea>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p><span class="mono">Telugu Verb Lab</span> · corrections belong in <span class="mono">data/verbs.js</span> — change the stem, the paradigm regenerates</p>
+    <p><a href="index.html">Select &amp; study</a> · <a href="paradigms.html">Paradigms</a></p>
+  </div>
+</footer>
+
+<script src="data/verbs.js"></script>
+<script src="data/engine.js"></script>
+<script src="assets/app.js"></script>
+<script>
+let f = 'todo', ex = 'all';
+
+function queue() {
+  const ver = Lab.getVerified();
+  let vs = VERBS.slice().sort((a, b) => (a.conf === 'check' ? 0 : 1) - (b.conf === 'check' ? 0 : 1));
+  if (f === 'todo') vs = vs.filter(v => !ver[v.id]);
+  if (f === 'flag') vs = vs.filter(v => v.conf === 'check');
+  return vs;
+}
+
+/* The probe forms, in the order the questions above are asked. The English comes from the
+   engine's own cue text so it stays grammatical for irregular verbs ("I did", not "I did do"). */
+const PROBES = ['future', 'past', 'negFuture', 'negPast', 'impPol', 'must'];
+function probes(v) {
+  return PROBES
+    .map(id => [cue(v, id, 0).replace(/\s*\([^)]*\)/g, ''), conjugate(v, id, 0)])
+    .filter(p => p[1]);
+}
+
+function draw() {
+  const ver = Lab.getVerified();
+  const vs = queue();
+  document.getElementById('cnt').textContent = vs.length;
+  document.getElementById('vcnt').textContent = Object.keys(ver).length;
+  document.getElementById('rows').innerHTML = vs.length ? vs.map(v => `
+    <div class="rev-row${ver[v.id] ? ' done' : ''}">
+      <div>
+        <h4>${esc(v.en.base)} · <span class="mono" style="color:var(--amber)">${esc(rootOf(v)[0])}</span>
+          <span class="telugu">${esc(rootOf(v)[1])}</span>
+          ${v.conf === 'check' ? '<span class="tagreg chk">flagged</span>' : ''}</h4>
+        <div class="rev-forms">${probes(v).map(([lab, a]) =>
+          `${lab} <b>${esc(a[0])}</b> <span class="t">${esc(a[1])}</span>`).join(' &nbsp;·&nbsp; ')}</div>
+      </div>
+      <label class="toggle"><input type="checkbox" data-id="${v.id}" ${ver[v.id] ? 'checked' : ''}> verified</label>
+    </div>`).join('')
+    : '<div class="empty">Nothing left in this queue.</div>';
+  document.querySelectorAll('[data-id]').forEach(c => c.onchange = () => {
+    Lab.setVerified(c.dataset.id, c.checked); draw(); buildExport();
+  });
+}
+
+function buildExport() {
+  const ver = Lab.getVerified();
+  const vs = VERBS.filter(v => ex === 'all' || !ver[v.id]);
+  const lines = ['TELUGU VERB STEMS — please correct anything that sounds wrong',
+    'Target: everyday Hyderabad / Telangana speech, how you would actually say it.',
+    ''];
+  vs.forEach(v => {
+    lines.push(`${v.en.base.toUpperCase()}  —  ${rootOf(v)[0]}  ${rootOf(v)[1]}${v.conf === 'check' ? '   (** unsure **)' : ''}`);
+    probes(v).forEach(([lab, a]) => lines.push(`    ${lab.padEnd(24)} ${a[0].padEnd(24)} ${a[1]}`));
+    lines.push('');
+  });
+  document.getElementById('export').value = lines.join('\n');
+}
+
+document.querySelectorAll('[data-f]').forEach(b => b.onclick = () => {
+  f = b.dataset.f;
+  document.querySelectorAll('[data-f]').forEach(x => x.classList.toggle('on', x === b));
+  draw();
+});
+document.querySelectorAll('[data-e]').forEach(b => b.onclick = () => {
+  ex = b.dataset.e;
+  document.querySelectorAll('[data-e]').forEach(x => x.classList.toggle('on', x === b));
+  buildExport();
+});
+document.getElementById('copy').onclick = async () => {
+  const t = document.getElementById('export');
+  t.select();
+  try { await navigator.clipboard.writeText(t.value); } catch { document.execCommand('copy'); }
+  const b = document.getElementById('copy'); const o = b.textContent;
+  b.textContent = 'Copied'; setTimeout(() => b.textContent = o, 1400);
+};
+
+draw(); buildExport();
+</script>
+</body>
+</html>

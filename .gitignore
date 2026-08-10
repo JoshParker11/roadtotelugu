@@ -1,0 +1,21 @@
+# Third-party source material — kept locally, not redistributed.
+# GRAMMAR_LAB was built from this file; the 35 verbs it contains are recorded
+# in GRAMMAR_LAB/data/verbs.js, so nothing in the site depends on it being here.
+English-Telugu-+RootVerbs.pdf
+*.pdf
+
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Editor / tooling
+.claude/
+.vscode/
+.idea/
+*.swp
+
+# Python bytecode from anki/tools
+__pycache__/
+*.pyc

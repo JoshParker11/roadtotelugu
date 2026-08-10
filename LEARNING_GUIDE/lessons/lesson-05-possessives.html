@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Telugu · Lesson 5 — Possessive Pronouns</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+Telugu:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#191915;--ink-2:#22221d;--ink-3:#2c2c25;
+  --cream:#f1ece0;--cream-dim:#b9b3a4;
+  --amber:#e8a33d;--moss:#8fa37e;--flame:#d96c47;
+  --line:rgba(241,236,224,.12);--radius:14px;--max:1000px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{background:var(--ink);color:var(--cream);font-family:'Inter',sans-serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.telugu{font-family:'Noto Sans Telugu','Inter',sans-serif}
+.mono{font-family:'JetBrains Mono',monospace}
+h1,h2,h3{font-family:'Young Serif',serif;font-weight:400;line-height:1.15}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+section{padding:72px 0;border-top:1px solid var(--line)}
+.eyebrow{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--amber);margin-bottom:14px;display:block}
+h2{font-size:clamp(26px,4.2vw,36px);margin-bottom:14px}
+.lede{color:var(--cream-dim);max-width:660px;font-size:16.5px}
+.lede b{color:var(--cream)}
+a{color:var(--amber)}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:4px}
+
+nav{position:sticky;top:0;z-index:50;background:rgba(25,25,21,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+.logo{font-family:'JetBrains Mono',monospace;font-size:13.5px;font-weight:700;color:var(--cream);text-decoration:none}
+.logo span{color:var(--amber)}
+nav ul{display:flex;gap:20px;list-style:none}
+nav ul a{color:var(--cream-dim);text-decoration:none;font-size:13px;font-weight:500}
+nav ul a:hover{color:var(--amber)}
+@media(max-width:720px){nav ul{display:none}}
+.home-crumb{display:inline-block;margin-bottom:18px;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--cream-dim);text-decoration:none}
+.home-crumb:hover{color:var(--amber)}
+
+header.hero{padding:80px 0 64px;position:relative;overflow:hidden}
+.hero-glyph{position:absolute;right:-30px;top:-70px;font-family:'Noto Sans Telugu',sans-serif;font-size:clamp(260px,40vw,480px);line-height:1;color:rgba(232,163,61,.05);user-select:none;pointer-events:none}
+.hero h1{font-size:clamp(34px,6vw,58px);margin:8px 0 10px;color:var(--cream)}
+.hero h1 em{color:var(--amber);font-style:normal}
+.hero p{max-width:620px;color:var(--cream-dim);font-size:17px}
+
+.note-box{background:rgba(217,108,71,.07);border:1px solid rgba(217,108,71,.3);border-radius:var(--radius);padding:20px 24px;margin-top:30px;max-width:720px}
+.note-box b{color:var(--flame);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;display:block;margin-bottom:8px}
+.note-box p{font-size:14px;color:var(--cream-dim)}
+.note-box p+p{margin-top:10px}
+.note-box.win{background:rgba(143,163,126,.08);border-color:rgba(143,163,126,.32)}
+.note-box.win b{color:var(--moss)}
+
+/* rule blocks */
+.rule{border-top:1px solid var(--line);padding:30px 0;display:grid;grid-template-columns:52px 1fr;gap:20px;counter-increment:r}
+.rules{counter-reset:r;margin-top:20px}
+.rule::before{content:counter(r,decimal-leading-zero);font-family:'JetBrains Mono',monospace;font-size:14px;color:var(--flame);padding-top:4px}
+.rule h3{font-size:19px;font-family:'Inter',sans-serif;font-weight:600;margin-bottom:8px;color:var(--cream)}
+.rule p{font-size:14.5px;color:var(--cream-dim);max-width:640px}
+.rule p+p{margin-top:10px}
+.rule b{color:var(--cream)}
+.rule-deep-link{display:inline-block;margin-top:13px;font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;text-decoration:none}
+.rule-deep-link::after{content:' →'}
+.ex{margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:14px;color:var(--moss);background:var(--ink-2);border:1px solid var(--line);border-radius:8px;padding:12px 16px;display:inline-block}
+.ex .en{color:var(--cream-dim);font-family:'Inter',sans-serif}
+.ex .tel{font-family:'Noto Sans Telugu',sans-serif;color:var(--cream)}
+.flag{margin-top:14px;border-left:3px solid var(--flame);background:rgba(217,108,71,.07);padding:11px 14px;font-size:13px;color:var(--cream-dim);border-radius:0 8px 8px 0}
+.flag b{color:var(--flame);font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;display:block;margin-bottom:5px}
+.flag.ok{border-left-color:var(--moss);background:rgba(143,163,126,.08)}
+.flag.ok b{color:var(--moss)}
+
+/* morpheme chips */
+.morph-row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:16px 0}
+.morph{border-radius:9px;padding:9px 14px;font-family:'JetBrains Mono',monospace;text-align:center;min-width:74px}
+.morph .p{font-size:16px;font-weight:700;display:block}
+.morph .r{font-size:9px;letter-spacing:.1em;text-transform:uppercase;opacity:.75;margin-top:3px;display:block}
+.morph.subj{background:rgba(232,163,61,.14);color:var(--amber);border:1px solid rgba(232,163,61,.35)}
+.morph.base{background:rgba(143,163,126,.14);color:var(--moss);border:1px solid rgba(143,163,126,.35)}
+.morph.mark{background:rgba(217,108,71,.14);color:var(--flame);border:1px solid rgba(217,108,71,.35)}
+.morph.op{background:none;border:none;color:var(--cream-dim);font-size:18px;min-width:auto;padding:0 2px}
+.morph.none{background:var(--ink-3);color:var(--cream-dim);border:1px dashed var(--line)}
+
+/* generic table */
+.tbl{width:100%;border-collapse:collapse;margin-top:22px;font-size:14.5px}
+.tbl th{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:11px 12px;color:var(--cream-dim);border-bottom:1px solid var(--line);vertical-align:bottom}
+.tbl td{padding:12px;border-bottom:1px solid var(--line);color:var(--cream-dim);vertical-align:top}
+.tbl td .rom{font-family:'JetBrains Mono',monospace;font-size:15px;color:var(--cream);font-weight:700}
+.tbl td .tel{font-family:'Noto Sans Telugu',sans-serif;font-size:15px;color:var(--cream-dim);opacity:.8}
+.tbl td small{display:block;font-size:12px;color:var(--cream-dim);margin-top:2px}
+.tbl .grp td{background:var(--ink-2);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--amber)}
+.tag{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:999px;margin-left:4px}
+.tag.neu{background:rgba(143,163,126,.16);color:var(--moss)}
+.tag.for{background:rgba(232,163,61,.16);color:var(--amber)}
+.tag.inf{background:rgba(217,108,71,.16);color:var(--flame)}
+.tag.same{background:rgba(110,150,200,.18);color:#8fb6e0}
+.tag.shift{background:rgba(232,163,61,.16);color:var(--amber)}
+.tag.new{background:rgba(217,108,71,.16);color:var(--flame)}
+
+/* anki table */
+.anki-wrap{overflow-x:auto;margin-top:26px;border:1px solid var(--line);border-radius:var(--radius)}
+.anki{width:100%;border-collapse:collapse;font-size:14px;min-width:720px}
+.anki th{background:var(--ink-3);font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:12px 14px;color:var(--amber);border-bottom:1px solid var(--line);white-space:nowrap}
+.anki td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--cream-dim);vertical-align:top}
+.anki tr:last-child td{border-bottom:none}
+.anki .f-en{color:var(--cream);width:31%}
+.anki .f-rom{font-family:'JetBrains Mono',monospace;color:var(--amber);font-weight:700;white-space:nowrap}
+.anki .f-tel{font-family:'Noto Sans Telugu',sans-serif;color:var(--cream)}
+.anki .f-aud{color:var(--cream-dim);opacity:.4;font-family:'JetBrains Mono',monospace;font-size:12px;text-align:center}
+.anki .f-ex{font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--moss)}
+.anki .sec td{background:var(--ink-2);font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--cream-dim)}
+.field-key{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--cream-dim)}
+.field-key span{background:var(--ink-2);border:1px solid var(--line);border-radius:6px;padding:5px 10px}
+.field-key b{color:var(--amber);font-weight:500}
+
+/* lesson questions */
+.question-link{display:grid;grid-template-columns:80px 1fr auto;align-items:center;gap:22px;margin-top:26px;border:1px dashed var(--line);border-radius:var(--radius);background:var(--ink-2);color:inherit;padding:22px;text-decoration:none}
+.question-link:hover{border-color:rgba(232,163,61,.4);background:var(--ink-3)}
+.question-mark{display:grid;width:60px;height:60px;place-items:center;border:1px solid rgba(143,163,126,.35);border-radius:50%;color:var(--moss);font-family:'Young Serif',serif;font-size:28px}
+.question-link h3{margin-bottom:5px;font-family:'Inter',sans-serif;font-size:17px;font-weight:600}
+.question-link p{margin:0;color:var(--cream-dim);font-size:13px}
+.question-open{color:var(--amber);font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;white-space:nowrap}
+.question-open::after{content:' →'}
+
+/* story lines */
+.story{margin-top:24px;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.story-line{display:grid;grid-template-columns:1fr 260px;gap:20px;padding:14px 20px;border-bottom:1px solid var(--line);background:var(--ink-2)}
+.story-line:last-child{border-bottom:none}
+.story-line .tg{font-family:'Noto Sans Telugu',sans-serif;font-size:16px;color:var(--cream);display:block;margin-bottom:3px}
+.story-line .rm{font-family:'JetBrains Mono',monospace;font-size:14px;color:var(--amber);font-weight:700}
+.story-line .en{font-size:13px;color:var(--cream-dim);align-self:center}
+.story-line b{color:var(--moss)}
+
+footer{padding:52px 0 68px;border-top:1px solid var(--line)}
+footer p{font-size:13px;color:var(--cream-dim)}
+footer .mono{color:var(--amber)}
+.try{list-style:none;margin-top:18px;display:grid;gap:10px;max-width:640px}
+.try li{background:var(--ink-2);border:1px solid var(--line);border-radius:9px;padding:12px 16px;font-size:14px;color:var(--cream-dim)}
+.try li .q{color:var(--cream);font-weight:600}
+.try li .a{font-family:'JetBrains Mono',monospace;color:var(--moss);margin-top:4px;display:block}
+@media(max-width:720px){
+  .wrap{padding:0 16px}
+  .hero-glyph{right:0}
+  .rule{grid-template-columns:1fr;gap:8px}
+  .rule>div{min-width:0}
+  .tbl{display:block;width:100%;max-width:100%;overflow-x:auto;white-space:nowrap}
+  .question-link{grid-template-columns:52px 1fr;padding:18px 16px}
+  .question-mark{width:48px;height:48px}
+  .question-open{grid-column:2}
+  .story-line{grid-template-columns:1fr;gap:6px}
+}
+</style>
+</head>
+<body>
+
+<nav aria-label="Main">
+  <div class="wrap">
+    <a class="logo" href="../index.html"><span>te</span> lesson-05 · possessives</a>
+    <ul>
+      <li><a href="../index.html">Course home</a></li>
+      <li><a href="../stories/index.html">Stories</a></li>
+      <li><a href="#rules">Rules</a></li>
+      <li><a href="#map">Possessive map</a></li>
+      <li><a href="#story">Worked example</a></li>
+      <li><a href="#anki">Anki list</a></li>
+      <li><a href="#try">Self-test</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-glyph telugu" aria-hidden="true">మీ</div>
+  <div class="wrap">
+    <a class="home-crumb" href="../index.html">← Foundational Telugu / Learning path</a>
+    <span class="eyebrow">Course extraction · Lesson 5</span>
+    <h1>Possessive <em>pronouns</em></h1>
+    <p>Every pronoun from Lesson 1 has a matching possessive form, and the whole set follows three behaviours: <b>unchanged</b>, <b>final vowel shifts</b>, or <b>completely different word</b>. Once you know which pronoun does which, you get twelve possessives out of pronouns you already own.</p>
+
+    <div class="note-box">
+      <b>How I processed this</b>
+      <p>Captions were rough on the third-person forms — <em>atani</em> came through as "attorney," <em>dāni</em> as "Danny," <em>vāṭi</em> as "vaati," and <em>pērlu</em> as "Perilloux." Reconstructed from the surrounding explanation and normalised to the site's diacritics.</p>
+      <p>The word for "what" is written <b>ēmiṭi</b> <span class="telugu">ఏమిటి</span> but the transcript's pronunciation is the colloquial <b>ēnti</b> <span class="telugu">ఏంటి</span>. Both are given below; ask your wife which she uses in Hyderabad.</p>
+    </div>
+
+    <div class="note-box win">
+      <b>This lesson sharpens Lesson 2</b>
+      <p><a href="lesson-02-introductions.html">Lesson 2</a> taught <span class="mono">mā</span> as simply "our." This lesson reveals it's more precise than that: <span class="mono">mā</span> is the <b>exclusive</b> "our" and <span class="mono">mana</span> is the <b>inclusive</b> one — exactly mirroring the <span class="mono">mēmu</span>/<span class="mono">manamu</span> split from Lesson 1. See rule 03.</p>
+    </div>
+  </div>
+</header>
+
+<section id="rules">
+  <div class="wrap">
+    <span class="eyebrow">The grammar engine</span>
+    <h2>Structures &amp; rules introduced</h2>
+    <p class="lede">Colour code: <b style="color:var(--amber)">possessor</b> · <b style="color:var(--moss)">possessed noun</b> · <b style="color:var(--flame)">changed ending</b>. This lesson is one system with three sub-patterns — rules 05–08 are the whole engine.</p>
+
+    <div class="rules">
+
+      <div class="rule">
+        <div>
+          <h3>Every pronoun has a possessive partner</h3>
+          <p>Telugu doesn't build possession with a separate word like English <em>of</em>, or with an ending like <em>'s</em>. Each pronoun simply has a second form that means "belonging to that person," and it sits directly in front of the noun.</p>
+          <div class="morph-row">
+            <span class="morph subj"><span class="p">POSSESSIVE</span><span class="r">whose</span></span>
+            <span class="morph base"><span class="p">NOUN</span><span class="r">what</span></span>
+            <span class="morph op">→</span>
+            <span class="morph"><span class="p mono" style="color:var(--cream)">complete phrase</span></span>
+          </div>
+          <p>You already met two of these in Lesson 2: <b>nā</b> ("my") and <b>mā</b> ("our"). This lesson completes the set and shows the pattern behind it.</p>
+          <span class="ex">nā pēru <span class="tel">నా పేరు</span> <span class="en">— "my name"</span></span>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Still no apostrophe-s</h3>
+          <p>Worth restating because this lesson stacks a lot of possessives: the possessive form is the <em>only</em> marker. Nothing attaches to the noun that follows, and nothing joins them.</p>
+          <span class="ex">atani pēru <span class="tel">అతని పేరు</span> <span class="en">— "his name" — two words, no connector</span></span>
+          <p>This is the same rule from Lesson 2 that gave you <em>nā ḍākṭar pēru</em> ("my doctor's name"). Possession is expressed by adjacency, all the way down.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>"Our" splits inclusive vs. exclusive — just like "we"</h3>
+          <p>Lesson 1 gave you two words for "we": <b>manamu</b> (including the listener) and <b>mēmu</b> (excluding them). Their possessives split the same way.</p>
+          <table class="tbl">
+            <thead><tr><th>Pronoun</th><th>Possessive</th><th>Means</th></tr></thead>
+            <tbody>
+              <tr><td><span class="rom">manamu</span> <span class="tel">మనము</span></td><td><span class="rom">mana</span> <span class="tel">మన</span></td><td>our — <b>including</b> you, the listener</td></tr>
+              <tr><td><span class="rom">mēmu</span> <span class="tel">మేము</span></td><td><span class="rom">mā</span> <span class="tel">మా</span></td><td>our — <b>not</b> including you</td></tr>
+            </tbody>
+          </table>
+          <div class="flag ok">
+            <b>This explains a Lesson 2 detail</b>
+            Lesson 2 told you to say <span class="mono">mā amma</span> for "my mother." Now you can see <em>why</em> it's <span class="mono">mā</span> and not <span class="mono">mana</span> — you're excluding your listener, because they aren't part of your family. Talking to your own sibling, <span class="mono">mana amma</span> would be the natural choice. I'd verify that specific switch with your wife, but the logic follows directly from the inclusive/exclusive rule.
+          </div>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>"Your" splits by register: <span class="mono">mī</span> vs <span class="mono">nī</span></h3>
+          <p>The same formal/informal choice you learned for <em>mīru</em> and <em>nuvvu</em> in Lesson 1, carried into the possessive.</p>
+          <table class="tbl">
+            <thead><tr><th>Pronoun</th><th>Possessive</th><th>Use with</th></tr></thead>
+            <tbody>
+              <tr><td><span class="rom">mīru</span> <span class="tel">మీరు</span> <span class="tag for">formal</span></td><td><span class="rom">mī</span> <span class="tel">మీ</span></td><td>Elders, strangers, colleagues, groups</td></tr>
+              <tr><td><span class="rom">nuvvu</span> <span class="tel">నువ్వు</span> <span class="tag inf">informal</span></td><td><span class="rom">nī</span> <span class="tel">నీ</span></td><td>Close friends, people younger than you</td></tr>
+            </tbody>
+          </table>
+          <span class="ex">mī pēru <span class="tel">మీ పేరు</span> <span class="en">— "your name" (respectful)</span></span><br>
+          <span class="ex">nī pēru <span class="tel">నీ పేరు</span> <span class="en">— "your name" (familiar)</span></span>
+          <p>Note how short these are. The pronouns <em>mīru</em>/<em>nuvvu</em> shrink to a single syllable as possessives — easy to miss in fast speech, so worth training your ear on.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Pattern A — formal forms don't change at all</h3>
+          <p>The three respectful third-person pronouns are identical as possessives. No transformation to learn.</p>
+          <table class="tbl">
+            <thead><tr><th>Pronoun</th><th>Possessive</th><th></th></tr></thead>
+            <tbody>
+              <tr><td><span class="rom">āyana</span> <span class="tel">ఆయన</span> <small>he, formal</small></td><td><span class="rom">āyana</span> <span class="tel">ఆయన</span> <small>his</small></td><td><span class="tag same">unchanged</span></td></tr>
+              <tr><td><span class="rom">āviḍa</span> <span class="tel">ఆవిడ</span> <small>she, formal</small></td><td><span class="rom">āviḍa</span> <span class="tel">ఆవిడ</span> <small>her</small></td><td><span class="tag same">unchanged</span></td></tr>
+              <tr><td><span class="rom">āme</span> <span class="tel">ఆమె</span> <small>she, neutral</small></td><td><span class="rom">āme</span> <span class="tel">ఆమె</span> <small>her</small></td><td><span class="tag same">unchanged</span></td></tr>
+            </tbody>
+          </table>
+          <p>Note that <b>āme</b> is neutral rather than formal but still doesn't change — the "unchanged" group isn't strictly the formal register.</p>
+          <span class="ex">āyana pēru <span class="tel">ఆయన పేరు</span> <span class="en">— "his name" (respectful)</span></span>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Pattern B — the final vowel shifts</h3>
+          <p>The masculine neutral and informal pronouns end in <b>-u</b>, and that vowel becomes <b>-i</b>.</p>
+          <div class="morph-row">
+            <span class="morph subj"><span class="p">atan<s>u</s></span><span class="r">he, neutral</span></span>
+            <span class="morph op">→</span>
+            <span class="morph mark"><span class="p">atani</span><span class="r">his</span></span>
+          </div>
+          <table class="tbl">
+            <thead><tr><th>Pronoun</th><th>Possessive</th><th></th></tr></thead>
+            <tbody>
+              <tr><td><span class="rom">atanu</span> <span class="tel">అతను</span> <small>he, neutral</small></td><td><span class="rom">atani</span> <span class="tel">అతని</span> <small>his</small></td><td><span class="tag shift">u → i</span></td></tr>
+              <tr><td><span class="rom">vāḍu</span> <span class="tel">వాడు</span> <small>he, informal</small></td><td><span class="rom">vāḍi</span> <span class="tel">వాడి</span> <small>his</small></td><td><span class="tag shift">u → i</span></td></tr>
+              <tr><td><span class="rom">vāḷḷu</span> <span class="tel">వాళ్ళు</span> <small>they, people</small></td><td><span class="rom">vāḷḷa</span> <span class="tel">వాళ్ళ</span> <small>their</small></td><td><span class="tag shift">u → a</span></td></tr>
+            </tbody>
+          </table>
+          <p>You've seen this <b>-u → -i</b> shift before. Lesson 2's rule 04 did exactly the same thing when attaching the person marker: <em>bhāratīyuḍu → bhāratīyuḍini</em>. Telugu keeps reusing it, so it's worth treating as a general habit of the language rather than a one-off.</p>
+          <p>Watch out for <span class="mono">vāḷḷu → vāḷḷa</span> — it shifts to <b>-a</b>, not <b>-i</b>. That's the one exception in this group.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Pattern C — the word changes completely</h3>
+          <p>Two possessives are not derivable from their pronouns at all. These simply have to be memorised.</p>
+          <table class="tbl">
+            <thead><tr><th>Pronoun</th><th>Possessive</th><th></th></tr></thead>
+            <tbody>
+              <tr><td><span class="rom">adi</span> <span class="tel">అది</span> <small>she informal / it</small></td><td><span class="rom">dāni</span> <span class="tel">దాని</span> <small>her / its</small></td><td><span class="tag new">new form</span></td></tr>
+              <tr><td><span class="rom">avi</span> <span class="tel">అవి</span> <small>they, objects</small></td><td><span class="rom">vāṭi</span> <span class="tel">వాటి</span> <small>their</small></td><td><span class="tag new">new form</span></td></tr>
+            </tbody>
+          </table>
+          <p>Both are the non-human / neuter forms, which is a useful memory hook: <b>the object pronouns are the irregular ones.</b> Since <em>adi</em> doubles as the informal "she," <em>dāni</em> covers both "its" and informal "her."</p>
+          <a class="rule-deep-link" href="../songs/saranga-dariya.html">Hear this pair in a song: Saranga Dariya</a>
+          <span class="ex">dāni pēru <span class="tel">దాని పేరు</span> <span class="en">— "her name" (informal) or "its name"</span></span><br>
+          <span class="ex">vāṭi pēr<span style="opacity:.6">lu</span> <span class="tel">వాటి పేర్లు</span> <span class="en">— "their names" (objects)</span></span>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Near forms transform the same way</h3>
+          <p>Lesson 1 gave you the near/far pairs — <em>atanu</em>/<em>itanu</em>, <em>adi</em>/<em>idi</em>, and so on. The possessives follow suit, so you don't learn a second system.</p>
+          <span class="ex">itanu → itani <span class="en">— "this man's"</span></span><br>
+          <span class="ex">idi → dīni <span class="en">— "this one's" · mirrors adi → dāni</span></span><br>
+          <span class="ex">vīḷḷu → vīḷḷa <span class="en">— "these people's"</span></span>
+          <div class="flag">
+            <b>Worth confirming</b>
+            The lesson demonstrates the far forms in detail and states that the others follow the same pattern. I've extended it to the near forms above by applying the rule, which is how the language works — but these specific near-possessives weren't spelled out on screen. Quick sanity check with your wife before drilling them.
+          </div>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Plural possession: <span class="mono">pēru</span> → <span class="mono">pērlu</span></h3>
+          <p>When several people each have a name, the noun pluralises with the <b>-lu</b> ending you learned in Lesson 1.</p>
+          <div class="morph-row">
+            <span class="morph base"><span class="p">pēru</span><span class="r">name</span></span>
+            <span class="morph op">+</span>
+            <span class="morph mark"><span class="p">-lu</span><span class="r">plural</span></span>
+            <span class="morph op">→</span>
+            <span class="morph"><span class="p mono" style="color:var(--cream)">pērlu</span></span>
+          </div>
+          <span class="ex">vāḷḷa pērlu <span class="tel">వాళ్ళ పేర్లు</span> <span class="en">— "their names"</span></span><br>
+          <span class="ex">mā pērlu <span class="en">— "our names" (not including you)</span></span><br>
+          <span class="ex">mana pērlu <span class="en">— "our names" (including you)</span></span>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3><span class="mono">ēmiṭi</span> — "what," and the liaison it triggers</h3>
+          <p><b>ēmiṭi</b> <span class="telugu">ఏమిటి</span> means "what." Colloquially you'll hear <b>ēnti</b> <span class="telugu">ఏంటి</span>. Asking someone's name needs no verb — just possessive, noun, question word.</p>
+          <span class="ex">mī pēru ēmiṭi? <span class="tel">మీ పేరు ఏమిటి?</span> <span class="en">— "What is your name?" (respectful)</span></span>
+          <p>But <em>pēru</em> ends in a vowel and <em>ēmiṭi</em> starts with one — which triggers the fast-speech vowel deletion from <a href="lesson-02-introductions.html">Lesson 2's rule 03</a>. At conversational speed the two words fuse:</p>
+          <div class="morph-row">
+            <span class="morph base"><span class="p">pēr<s>u</s></span><span class="r">name</span></span>
+            <span class="morph op">+</span>
+            <span class="morph subj"><span class="p">ēnti</span><span class="r">what</span></span>
+            <span class="morph op">→</span>
+            <span class="morph"><span class="p mono" style="color:var(--cream)">pēreṇṭi</span></span>
+          </div>
+          <span class="ex">mī pēreṇṭi? <span class="en">— what you'll actually hear</span></span>
+          <p>This is the second time the same sound rule has shown up. If a Telugu phrase sounds like one long word, assume a vowel got deleted at a boundary and try separating it.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>With strangers, always default to <span class="mono">mī</span></h3>
+          <p>The lesson makes this explicit, and it matters for you specifically. If you're asking someone's name at all, you probably don't know them — which means the respectful form is the right call.</p>
+          <span class="ex">mī pēru ēmiṭi? <span class="en">— safe with anyone</span></span><br>
+          <span class="ex">nī pēru ēnti? <span class="en">— only for close friends or someone clearly younger</span></span>
+          <div class="flag ok">
+            <b>The pattern across three lessons</b>
+            <span class="mono">mīru</span> over <span class="mono">nuvvu</span>, <span class="mono">mī</span> over <span class="mono">nī</span>, <span class="mono">-aṇḍi</span> on your answers, <span class="mono">gāru</span> after names. Telugu gives you a respect choice at almost every turn, and for workplace use the answer is consistently the same one. When in doubt, take the formal option.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="map">
+  <div class="wrap">
+    <span class="eyebrow">Reference</span>
+    <h2>The complete possessive map</h2>
+    <p class="lede">Every pronoun from Lesson 1 with its possessive form and which pattern it follows. <span class="tag same">unchanged</span> <span class="tag shift">vowel shift</span> <span class="tag new">new form</span></p>
+    <table class="tbl">
+      <thead><tr><th>Pronoun</th><th>Possessive</th><th>English</th><th>Pattern</th></tr></thead>
+      <tbody>
+        <tr class="grp"><td colspan="4">First person</td></tr>
+        <tr><td><span class="rom">nēnu</span> <span class="tel">నేను</span> <small>I</small></td><td><span class="rom">nā</span> <span class="tel">నా</span></td><td>my</td><td><span class="tag new">new form</span></td></tr>
+        <tr><td><span class="rom">manamu</span> <span class="tel">మనము</span> <small>we, incl.</small></td><td><span class="rom">mana</span> <span class="tel">మన</span></td><td>our (with you)</td><td><span class="tag shift">shortened</span></td></tr>
+        <tr><td><span class="rom">mēmu</span> <span class="tel">మేము</span> <small>we, excl.</small></td><td><span class="rom">mā</span> <span class="tel">మా</span></td><td>our (not you)</td><td><span class="tag shift">shortened</span></td></tr>
+        <tr class="grp"><td colspan="4">Second person</td></tr>
+        <tr><td><span class="rom">mīru</span> <span class="tel">మీరు</span> <span class="tag for">formal</span></td><td><span class="rom">mī</span> <span class="tel">మీ</span></td><td>your</td><td><span class="tag shift">shortened</span></td></tr>
+        <tr><td><span class="rom">nuvvu</span> <span class="tel">నువ్వు</span> <span class="tag inf">informal</span></td><td><span class="rom">nī</span> <span class="tel">నీ</span></td><td>your</td><td><span class="tag shift">shortened</span></td></tr>
+        <tr class="grp"><td colspan="4">Third person — masculine</td></tr>
+        <tr><td><span class="rom">āyana</span> <span class="tel">ఆయన</span> <span class="tag for">formal</span></td><td><span class="rom">āyana</span> <span class="tel">ఆయన</span></td><td>his</td><td><span class="tag same">unchanged</span></td></tr>
+        <tr><td><span class="rom">atanu</span> <span class="tel">అతను</span> <span class="tag neu">neutral</span></td><td><span class="rom">atani</span> <span class="tel">అతని</span></td><td>his</td><td><span class="tag shift">u → i</span></td></tr>
+        <tr><td><span class="rom">vāḍu</span> <span class="tel">వాడు</span> <span class="tag inf">informal</span></td><td><span class="rom">vāḍi</span> <span class="tel">వాడి</span></td><td>his</td><td><span class="tag shift">u → i</span></td></tr>
+        <tr class="grp"><td colspan="4">Third person — feminine</td></tr>
+        <tr><td><span class="rom">āviḍa</span> <span class="tel">ఆవిడ</span> <span class="tag for">formal</span></td><td><span class="rom">āviḍa</span> <span class="tel">ఆవిడ</span></td><td>her</td><td><span class="tag same">unchanged</span></td></tr>
+        <tr><td><span class="rom">āme</span> <span class="tel">ఆమె</span> <span class="tag neu">neutral</span></td><td><span class="rom">āme</span> <span class="tel">ఆమె</span></td><td>her</td><td><span class="tag same">unchanged</span></td></tr>
+        <tr><td><span class="rom">adi</span> <span class="tel">అది</span> <span class="tag inf">informal</span></td><td><span class="rom">dāni</span> <span class="tel">దాని</span></td><td>her / its</td><td><span class="tag new">new form</span></td></tr>
+        <tr class="grp"><td colspan="4">Third person — plural</td></tr>
+        <tr><td><span class="rom">vāḷḷu</span> <span class="tel">వాళ్ళు</span> <small>they, people</small></td><td><span class="rom">vāḷḷa</span> <span class="tel">వాళ్ళ</span></td><td>their</td><td><span class="tag shift">u → a</span></td></tr>
+        <tr><td><span class="rom">avi</span> <span class="tel">అవి</span> <small>they, objects</small></td><td><span class="rom">vāṭi</span> <span class="tel">వాటి</span></td><td>their</td><td><span class="tag new">new form</span></td></tr>
+      </tbody>
+    </table>
+
+    <div class="note-box" style="margin-top:28px">
+      <b>The shortcut worth internalising</b>
+      <p>Only <b>four</b> forms are genuinely unpredictable: <span class="mono">nā</span>, <span class="mono">dāni</span>, <span class="mono">vāṭi</span>, and the <span class="mono">mana</span>/<span class="mono">mā</span> pair. Everything else is either identical to the pronoun or a single vowel shifting. Learn those four properly and the other eight fall out of rules you already know.</p>
+    </div>
+  </div>
+</section>
+
+<section id="story">
+  <div class="wrap">
+    <span class="eyebrow">Put it together</span>
+    <h2>Introducing several people</h2>
+    <p class="lede">The lesson closes with a short piece where a speaker introduces friends and family, cycling through every third-person possessive. Here's the same shape built from scratch, so you can see each form doing its job in context.</p>
+
+    <div class="story">
+      <div class="story-line"><div><span class="tg">నమస్కారం. నా పేరు రవి.</span><span class="rm">namaskāraṁ. <b>nā</b> pēru Ravi.</span></div><span class="en">Hello. My name is Ravi.</span></div>
+      <div class="story-line"><div><span class="tg">ఆయన మా నాన్న. ఆయన పేరు మూర్తి.</span><span class="rm">āyana mā nāna. <b>āyana</b> pēru Murthy.</span></div><span class="en">That is my father. His name is Murthy. <b>(formal — unchanged)</b></span></div>
+      <div class="story-line"><div><span class="tg">ఆవిడ మా అమ్మ. ఆవిడ పేరు సునీత.</span><span class="rm">āviḍa mā amma. <b>āviḍa</b> pēru Sunita.</span></div><span class="en">That is my mother. Her name is Sunita. <b>(formal — unchanged)</b></span></div>
+      <div class="story-line"><div><span class="tg">ఆమె మా అక్క. ఆమె పేరు దివ్య.</span><span class="rm">āme mā akka. <b>āme</b> pēru Divya.</span></div><span class="en">She is my elder sister. Her name is Divya. <b>(neutral — unchanged)</b></span></div>
+      <div class="story-line"><div><span class="tg">అతను మా చిన్నాన్న. అతని పేరు సంజయ్.</span><span class="rm">atanu mā chinnāna. <b>atani</b> pēru Sanjay.</span></div><span class="en">He is my father's younger brother. His name is Sanjay. <b>(neutral — u→i)</b></span></div>
+      <div class="story-line"><div><span class="tg">వాడు నా ఫ్రెండ్. వాడి పేరు పీటర్.</span><span class="rm">vāḍu nā friend. <b>vāḍi</b> pēru Peter.</span></div><span class="en">He is my friend. His name is Peter. <b>(informal — u→i)</b></span></div>
+      <div class="story-line"><div><span class="tg">అది నా క్లాస్‌మేట్. దాని పేరు గీత.</span><span class="rm">adi nā classmate. <b>dāni</b> pēru Gita.</span></div><span class="en">That's my classmate. Her name is Gita. <b>(informal — new form)</b></span></div>
+      <div class="story-line"><div><span class="tg">వాళ్ళ పేర్లు పీటర్, గీత.</span><span class="rm"><b>vāḷḷa</b> pērlu Peter, Gita.</span></div><span class="en">Their names are Peter and Gita. <b>(plural — u→a, noun takes -lu)</b></span></div>
+    </div>
+
+    <div class="note-box" style="margin-top:28px">
+      <b>What this demonstrates</b>
+      <p>Every sentence is <b>zero-copula</b> — no "is" anywhere. The kinship terms come from Lesson 4, <span class="mono">mā</span> for family from Lesson 2, the pronouns from Lesson 1, and the loanword <em>friend</em> is exactly the escape hatch Lesson 2 offered. Five lessons in, the pieces recombine into real description.</p>
+      <p>Note also that <span class="mono">dāni</span> for a female classmate is grammatically standard but <b>informal</b> — fine among peers, not something to use about a colleague. <span class="mono">āme</span> would be the neutral choice there.</p>
+    </div>
+  </div>
+</section>
+
+<section id="questions">
+  <div class="wrap">
+    <span class="eyebrow">From this lesson</span>
+    <h2>Question deep dives</h2>
+    <p class="lede">Add your questions from the video and I'll build them out the way we did for <span class="mono">oka</span>.</p>
+    <a class="question-link" href="../concepts/index.html">
+      <span class="question-mark">?</span>
+      <span><h3>No deep dives linked yet for Lesson 5</h3><p>Strong candidates: when <span class="mono">mana</span> versus <span class="mono">mā</span> actually changes with your audience; why the neuter pronouns are the irregular ones; or the full inventory of vowel-deletion liaisons now that it's appeared twice.</p></span>
+      <span class="question-open">Open library</span>
+    </a>
+  </div>
+</section>
+
+<section id="anki">
+  <div class="wrap">
+    <span class="eyebrow">For import</span>
+    <h2>Anki word list — your 5 fields</h2>
+    <p class="lede">Same five-field format, <b>Audio</b> blank. Forms identical to their pronouns (<span class="mono">āyana</span>, <span class="mono">āviḍa</span>, <span class="mono">āme</span>) aren't re-listed — you already have those cards, and the "unchanged" fact belongs to rule 05 rather than a new note.</p>
+    <div class="field-key">
+      <span><b>1</b> English (+ cue)</span>
+      <span><b>2</b> Romanized</span>
+      <span><b>3</b> Telugu script</span>
+      <span><b>4</b> Audio (blank)</span>
+      <span><b>5</b> Example</span>
+    </div>
+
+    <div class="anki-wrap">
+      <table class="anki">
+        <thead>
+          <tr><th class="f-en">English (with cue)</th><th>Romanized</th><th>Telugu</th><th style="text-align:center">Audio</th><th>Example sentence</th></tr>
+        </thead>
+        <tbody>
+          <tr class="sec"><td colspan="5">First &amp; second person possessives</td></tr>
+          <tr><td class="f-en">our — INCLUDING the listener</td><td class="f-rom">mana</td><td class="f-tel">మన</td><td class="f-aud">[ ]</td><td class="f-ex">mana pērlu.</td></tr>
+          <tr><td class="f-en">your (formal / plural — the safe default)</td><td class="f-rom">mī</td><td class="f-tel">మీ</td><td class="f-aud">[ ]</td><td class="f-ex">mī pēru ēmiṭi?</td></tr>
+          <tr><td class="f-en">your (informal — close friends, younger people)</td><td class="f-rom">nī</td><td class="f-tel">నీ</td><td class="f-aud">[ ]</td><td class="f-ex">nī pēru ēnti?</td></tr>
+
+          <tr class="sec"><td colspan="5">Third person possessives</td></tr>
+          <tr><td class="f-en">his (neutral — the default form)</td><td class="f-rom">atani</td><td class="f-tel">అతని</td><td class="f-aud">[ ]</td><td class="f-ex">atani pēru Sanjay.</td></tr>
+          <tr><td class="f-en">his (informal — intimates only)</td><td class="f-rom">vāḍi</td><td class="f-tel">వాడి</td><td class="f-aud">[ ]</td><td class="f-ex">vāḍi pēru Peter.</td></tr>
+          <tr><td class="f-en">her (informal) / its</td><td class="f-rom">dāni</td><td class="f-tel">దాని</td><td class="f-aud">[ ]</td><td class="f-ex">dāni pēru Gita.</td></tr>
+          <tr><td class="f-en">their (people)</td><td class="f-rom">vāḷḷa</td><td class="f-tel">వాళ్ళ</td><td class="f-aud">[ ]</td><td class="f-ex">vāḷḷa pērlu.</td></tr>
+          <tr><td class="f-en">their (objects / non-human)</td><td class="f-rom">vāṭi</td><td class="f-tel">వాటి</td><td class="f-aud">[ ]</td><td class="f-ex">vāṭi pērlu.</td></tr>
+
+          <tr class="sec"><td colspan="5">Asking, and plural nouns</td></tr>
+          <tr><td class="f-en">what (colloquially ēnti)</td><td class="f-rom">ēmiṭi</td><td class="f-tel">ఏమిటి</td><td class="f-aud">[ ]</td><td class="f-ex">mī pēru ēmiṭi?</td></tr>
+          <tr><td class="f-en">names (plural of pēru)</td><td class="f-rom">pērlu</td><td class="f-tel">పేర్లు</td><td class="f-aud">[ ]</td><td class="f-ex">vāḷḷa pērlu.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="lede" style="margin-top:20px;font-size:14px"><b>10 rows — 9 new lexemes.</b> <span class="mono">pērlu</span> is the plural of a word you already have, so it's tracked as a form rather than a separate entry. Still a light lesson, and two days of your limit. Priority order: <span class="mono">mī</span> and <span class="mono">ēmiṭi</span> first, since <em>mī pēru ēmiṭi?</em> is an immediately usable question. Then <span class="mono">atani</span> and <span class="mono">āme</span>-based phrases for talking about colleagues respectfully. <span class="mono">vāḍi</span> and <span class="mono">dāni</span> are recognition-first — you'll hear them long before you should use them.</p>
+  </div>
+</section>
+
+<section id="try">
+  <div class="wrap">
+    <span class="eyebrow">From the lesson</span>
+    <h2>Quick self-test</h2>
+    <p class="lede">Cover the green line first. Several of these ask you to pick a register, not just a form.</p>
+    <ul class="try">
+      <li><span class="q">Ask a stranger their name.</span><span class="a">mī pēru ēmiṭi? &nbsp; (stranger → always mī, never nī)</span></li>
+      <li><span class="q">Say that question the way it actually sounds at speed.</span><span class="a">mī pēreṇṭi? &nbsp; (pēru + ēnti — the vowel gets deleted)</span></li>
+      <li><span class="q">"His name is Sanjay" — neutral register.</span><span class="a">atani pēru Sanjay. &nbsp; (atanu → atani)</span></li>
+      <li><span class="q">"Her name is Divya" — neutral register.</span><span class="a">āme pēru Divya. &nbsp; (āme doesn't change)</span></li>
+      <li><span class="q">"His name" using the formal pronoun.</span><span class="a">āyana pēru. &nbsp; (unchanged)</span></li>
+      <li><span class="q">Which two possessives are completely new words?</span><span class="a">dāni (from adi) and vāṭi (from avi) — both neuter.</span></li>
+      <li><span class="q">"Their names" for a group of people.</span><span class="a">vāḷḷa pērlu. &nbsp; (vāḷḷu → vāḷḷa, and pēru → pērlu)</span></li>
+      <li><span class="q">"Our names" — you're telling someone outside your group.</span><span class="a">mā pērlu. &nbsp; (exclusive — they're not included)</span></li>
+      <li><span class="q">Now say it including your listener.</span><span class="a">mana pērlu. &nbsp; (inclusive)</span></li>
+      <li><span class="q">Which possessives are identical to their pronouns?</span><span class="a">āyana, āviḍa, āme.</span></li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><span class="mono">mī pēru ēmiṭi?</span> — you can now ask anyone's name respectfully, and describe a whole room of people using the right possessive for each relationship and register.</p>
+    <p style="margin-top:12px"><a href="lesson-06-numbers.html">Lesson 6: Numbers &amp; how they're built →</a></p>
+    <p style="margin-top:12px"><a href="lesson-04-family.html">← Lesson 4: Family &amp; kinship names</a></p>
+    <p style="margin-top:12px"><a href="../index.html">← Return to the Foundational Telugu learning path</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

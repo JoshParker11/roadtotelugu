@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Telugu · Lesson 6 — Numbers &amp; How They're Built</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+Telugu:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#191915;--ink-2:#22221d;--ink-3:#2c2c25;
+  --cream:#f1ece0;--cream-dim:#b9b3a4;
+  --amber:#e8a33d;--moss:#8fa37e;--flame:#d96c47;
+  --line:rgba(241,236,224,.12);--radius:14px;--max:1000px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{background:var(--ink);color:var(--cream);font-family:'Inter',sans-serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.telugu{font-family:'Noto Sans Telugu','Inter',sans-serif}
+.mono{font-family:'JetBrains Mono',monospace}
+h1,h2,h3{font-family:'Young Serif',serif;font-weight:400;line-height:1.15}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+section{padding:72px 0;border-top:1px solid var(--line)}
+.eyebrow{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--amber);margin-bottom:14px;display:block}
+h2{font-size:clamp(26px,4.2vw,36px);margin-bottom:14px}
+.lede{color:var(--cream-dim);max-width:660px;font-size:16.5px}
+.lede b{color:var(--cream)}
+a{color:var(--amber)}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:4px}
+
+nav{position:sticky;top:0;z-index:50;background:rgba(25,25,21,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+.logo{font-family:'JetBrains Mono',monospace;font-size:13.5px;font-weight:700;color:var(--cream);text-decoration:none}
+.logo span{color:var(--amber)}
+nav ul{display:flex;gap:20px;list-style:none}
+nav ul a{color:var(--cream-dim);text-decoration:none;font-size:13px;font-weight:500}
+nav ul a:hover{color:var(--amber)}
+@media(max-width:720px){nav ul{display:none}}
+.home-crumb{display:inline-block;margin-bottom:18px;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--cream-dim);text-decoration:none}
+.home-crumb:hover{color:var(--amber)}
+
+header.hero{padding:80px 0 64px;position:relative;overflow:hidden}
+.hero-glyph{position:absolute;right:-30px;top:-70px;font-family:'Noto Sans Telugu',sans-serif;font-size:clamp(260px,40vw,480px);line-height:1;color:rgba(232,163,61,.05);user-select:none;pointer-events:none}
+.hero h1{font-size:clamp(34px,6vw,58px);margin:8px 0 10px;color:var(--cream)}
+.hero h1 em{color:var(--amber);font-style:normal}
+.hero p{max-width:620px;color:var(--cream-dim);font-size:17px}
+
+.note-box{background:rgba(217,108,71,.07);border:1px solid rgba(217,108,71,.3);border-radius:var(--radius);padding:20px 24px;margin-top:30px;max-width:720px}
+.note-box b{color:var(--flame);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;display:block;margin-bottom:8px}
+.note-box p{font-size:14px;color:var(--cream-dim)}
+.note-box p+p{margin-top:10px}
+.note-box.win{background:rgba(143,163,126,.08);border-color:rgba(143,163,126,.32)}
+.note-box.win b{color:var(--moss)}
+
+/* rule blocks */
+.rule{border-top:1px solid var(--line);padding:30px 0;display:grid;grid-template-columns:52px 1fr;gap:20px;counter-increment:r}
+.rules{counter-reset:r;margin-top:20px}
+.rule::before{content:counter(r,decimal-leading-zero);font-family:'JetBrains Mono',monospace;font-size:14px;color:var(--flame);padding-top:4px}
+.rule h3{font-size:19px;font-family:'Inter',sans-serif;font-weight:600;margin-bottom:8px;color:var(--cream)}
+.rule p{font-size:14.5px;color:var(--cream-dim);max-width:640px}
+.rule p+p{margin-top:10px}
+.rule b{color:var(--cream)}
+.rule-deep-link{display:inline-block;margin-top:13px;font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;text-decoration:none}
+.rule-deep-link::after{content:' →'}
+.ex{margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:14px;color:var(--moss);background:var(--ink-2);border:1px solid var(--line);border-radius:8px;padding:12px 16px;display:inline-block}
+.ex .en{color:var(--cream-dim);font-family:'Inter',sans-serif}
+.ex .tel{font-family:'Noto Sans Telugu',sans-serif;color:var(--cream)}
+.flag{margin-top:14px;border-left:3px solid var(--flame);background:rgba(217,108,71,.07);padding:11px 14px;font-size:13px;color:var(--cream-dim);border-radius:0 8px 8px 0}
+.flag b{color:var(--flame);font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;display:block;margin-bottom:5px}
+.flag.ok{border-left-color:var(--moss);background:rgba(143,163,126,.08)}
+.flag.ok b{color:var(--moss)}
+
+/* morpheme chips */
+.morph-row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:16px 0}
+.morph{border-radius:9px;padding:9px 14px;font-family:'JetBrains Mono',monospace;text-align:center;min-width:74px}
+.morph .p{font-size:16px;font-weight:700;display:block}
+.morph .r{font-size:9px;letter-spacing:.1em;text-transform:uppercase;opacity:.75;margin-top:3px;display:block}
+.morph.subj{background:rgba(232,163,61,.14);color:var(--amber);border:1px solid rgba(232,163,61,.35)}
+.morph.base{background:rgba(143,163,126,.14);color:var(--moss);border:1px solid rgba(143,163,126,.35)}
+.morph.mark{background:rgba(217,108,71,.14);color:var(--flame);border:1px solid rgba(217,108,71,.35)}
+.morph.op{background:none;border:none;color:var(--cream-dim);font-size:18px;min-width:auto;padding:0 2px}
+.morph.none{background:var(--ink-3);color:var(--cream-dim);border:1px dashed var(--line)}
+
+/* generic table */
+.tbl{width:100%;border-collapse:collapse;margin-top:22px;font-size:14.5px}
+.tbl th{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:11px 12px;color:var(--cream-dim);border-bottom:1px solid var(--line);vertical-align:bottom}
+.tbl td{padding:12px;border-bottom:1px solid var(--line);color:var(--cream-dim);vertical-align:top}
+.tbl td .rom{font-family:'JetBrains Mono',monospace;font-size:15px;color:var(--cream);font-weight:700}
+.tbl td .tel{font-family:'Noto Sans Telugu',sans-serif;font-size:15px;color:var(--cream-dim);opacity:.8}
+.tbl td small{display:block;font-size:12px;color:var(--cream-dim);margin-top:2px}
+.tbl .grp td{background:var(--ink-2);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--amber)}
+.tag{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:999px;margin-left:4px}
+.tag.neu{background:rgba(143,163,126,.16);color:var(--moss)}
+.tag.for{background:rgba(232,163,61,.16);color:var(--amber)}
+.tag.inf{background:rgba(217,108,71,.16);color:var(--flame)}
+.num{font-family:'JetBrains Mono',monospace;color:var(--flame);font-weight:700;font-size:15px}
+
+/* number grid */
+.numgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-top:24px}
+.numcell{background:var(--ink-2);padding:14px 12px;text-align:center}
+.numcell .d{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--flame);font-weight:700}
+.numcell .t{font-family:'Noto Sans Telugu',sans-serif;font-size:18px;color:var(--cream);display:block;margin:5px 0 3px}
+.numcell .r{font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--amber)}
+
+/* anki table */
+.anki-wrap{overflow-x:auto;margin-top:26px;border:1px solid var(--line);border-radius:var(--radius)}
+.anki{width:100%;border-collapse:collapse;font-size:14px;min-width:720px}
+.anki th{background:var(--ink-3);font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:12px 14px;color:var(--amber);border-bottom:1px solid var(--line);white-space:nowrap}
+.anki td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--cream-dim);vertical-align:top}
+.anki tr:last-child td{border-bottom:none}
+.anki .f-en{color:var(--cream);width:31%}
+.anki .f-rom{font-family:'JetBrains Mono',monospace;color:var(--amber);font-weight:700;white-space:nowrap}
+.anki .f-tel{font-family:'Noto Sans Telugu',sans-serif;color:var(--cream)}
+.anki .f-aud{color:var(--cream-dim);opacity:.4;font-family:'JetBrains Mono',monospace;font-size:12px;text-align:center}
+.anki .f-ex{font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--moss)}
+.anki .sec td{background:var(--ink-2);font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--cream-dim)}
+.field-key{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--cream-dim)}
+.field-key span{background:var(--ink-2);border:1px solid var(--line);border-radius:6px;padding:5px 10px}
+.field-key b{color:var(--amber);font-weight:500}
+
+/* lesson questions */
+.question-link{display:grid;grid-template-columns:80px 1fr auto;align-items:center;gap:22px;margin-top:26px;border:1px dashed var(--line);border-radius:var(--radius);background:var(--ink-2);color:inherit;padding:22px;text-decoration:none}
+.question-link:hover{border-color:rgba(232,163,61,.4);background:var(--ink-3)}
+.question-mark{display:grid;width:60px;height:60px;place-items:center;border:1px solid rgba(143,163,126,.35);border-radius:50%;color:var(--moss);font-family:'Young Serif',serif;font-size:28px}
+.question-link h3{margin-bottom:5px;font-family:'Inter',sans-serif;font-size:17px;font-weight:600}
+.question-link p{margin:0;color:var(--cream-dim);font-size:13px}
+.question-open{color:var(--amber);font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;white-space:nowrap}
+.question-open::after{content:' →'}
+
+footer{padding:52px 0 68px;border-top:1px solid var(--line)}
+footer p{font-size:13px;color:var(--cream-dim)}
+footer .mono{color:var(--amber)}
+.try{list-style:none;margin-top:18px;display:grid;gap:10px;max-width:640px}
+.try li{background:var(--ink-2);border:1px solid var(--line);border-radius:9px;padding:12px 16px;font-size:14px;color:var(--cream-dim)}
+.try li .q{color:var(--cream);font-weight:600}
+.try li .a{font-family:'JetBrains Mono',monospace;color:var(--moss);margin-top:4px;display:block}
+@media(max-width:720px){
+  .wrap{padding:0 16px}
+  .hero-glyph{right:0}
+  .rule{grid-template-columns:1fr;gap:8px}
+  .rule>div{min-width:0}
+  .tbl{display:block;width:100%;max-width:100%;overflow-x:auto;white-space:nowrap}
+  .numgrid{grid-template-columns:repeat(3,1fr)}
+  .question-link{grid-template-columns:52px 1fr;padding:18px 16px}
+  .question-mark{width:48px;height:48px}
+  .question-open{grid-column:2}
+}
+</style>
+</head>
+<body>
+
+<nav aria-label="Main">
+  <div class="wrap">
+    <a class="logo" href="../index.html"><span>te</span> lesson-06 · numbers</a>
+    <ul>
+      <li><a href="../index.html">Course home</a></li>
+      <li><a href="../stories/index.html">Stories</a></li>
+      <li><a href="#rules">Rules</a></li>
+      <li><a href="#tables">Number tables</a></li>
+      <li><a href="#anki">Anki list</a></li>
+      <li><a href="#try">Self-test</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-glyph telugu" aria-hidden="true">పది</div>
+  <div class="wrap">
+    <a class="home-crumb" href="../index.html">← Foundational Telugu / Learning path</a>
+    <span class="eyebrow">Course extraction · Lesson 6 · expanded</span>
+    <h1>Numbers &amp; <em>how they're built</em></h1>
+    <p>Telugu numbers are unusually systematic. Learn <b>ten atoms</b> and <b>four construction rules</b> and you can produce any number you'll realistically need. This lesson also covers two things English speakers consistently trip on: the <b>lakh/crore</b> system and the fact that Telugu <b>counts people differently from things</b>.</p>
+
+    <div class="note-box">
+      <b>How I built this one</b>
+      <p>You said the source only counts a few numbers, so unlike Lessons 1–5 this isn't a transcript extraction — I've written it from general Telugu knowledge to give you the full system and its patterns. That changes the confidence level: <b>treat this lesson as a well-informed draft rather than course-verified material.</b></p>
+      <p>The core (1–10, the teens, the tens, hundreds and thousands) is standard and low-risk. The parts most worth checking with your wife are the <b>101–199 combining form</b> (rule 06), the <b>human counting forms</b> (rule 09), and which <b>ordinal</b> endings she actually uses (rule 10). I've flagged each inline.</p>
+    </div>
+  </div>
+</header>
+
+<section id="rules">
+  <div class="wrap">
+    <span class="eyebrow">The grammar engine</span>
+    <h2>Structures &amp; patterns</h2>
+    <p class="lede">Colour code: <b style="color:var(--amber)">number word</b> · <b style="color:var(--moss)">multiplier / base</b> · <b style="color:var(--flame)">changed or added part</b>. Rules 03–07 are the construction system — they're what turn ten memorised words into every number you need.</p>
+
+    <div class="rules">
+
+      <div class="rule">
+        <div>
+          <h3>Ten atoms — these must be memorised</h3>
+          <p>There's no pattern hiding in 1–10. Everything else in the language is built from these, so this is the one block that genuinely requires rote work.</p>
+          <div class="numgrid">
+            <div class="numcell"><span class="d">1</span><span class="t telugu">ఒకటి</span><span class="r">okaṭi</span></div>
+            <div class="numcell"><span class="d">2</span><span class="t telugu">రెండు</span><span class="r">reṇḍu</span></div>
+            <div class="numcell"><span class="d">3</span><span class="t telugu">మూడు</span><span class="r">mūḍu</span></div>
+            <div class="numcell"><span class="d">4</span><span class="t telugu">నాలుగు</span><span class="r">nālugu</span></div>
+            <div class="numcell"><span class="d">5</span><span class="t telugu">ఐదు</span><span class="r">aidu</span></div>
+            <div class="numcell"><span class="d">6</span><span class="t telugu">ఆరు</span><span class="r">āru</span></div>
+            <div class="numcell"><span class="d">7</span><span class="t telugu">ఏడు</span><span class="r">ēḍu</span></div>
+            <div class="numcell"><span class="d">8</span><span class="t telugu">ఎనిమిది</span><span class="r">enimidi</span></div>
+            <div class="numcell"><span class="d">9</span><span class="t telugu">తొమ్మిది</span><span class="r">tommidi</span></div>
+            <div class="numcell"><span class="d">10</span><span class="t telugu">పది</span><span class="r">padi</span></div>
+          </div>
+          <p>Zero is <b>sunnā</b> <span class="telugu">సున్నా</span> — the same word also means a circle or a nought.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>You already know <span class="mono">okaṭi</span> — and its other form</h3>
+          <p>This is the <a href="../concepts/oka-one-and-a.html">oka deep dive</a> resurfacing as a general rule. The number "one" has two shapes depending on whether it stands alone or sits before a noun.</p>
+          <table class="tbl">
+            <thead><tr><th>Form</th><th>Use</th><th>Example</th></tr></thead>
+            <tbody>
+              <tr><td><span class="rom">okaṭi</span> <span class="tel">ఒకటి</span></td><td>Standing alone — counting, answering "how many"</td><td><span class="mono">okaṭi, reṇḍu, mūḍu…</span></td></tr>
+              <tr><td><span class="rom">oka</span> <span class="tel">ఒక</span></td><td>Before a noun</td><td><span class="mono">oka pustakaṁ</span> — "one book"</td></tr>
+            </tbody>
+          </table>
+          <p>Crucially, <b>the other numbers don't do this.</b> <em>reṇḍu</em>, <em>mūḍu</em> and the rest keep one form in both positions — <em>reṇḍu kārlu</em>, "two cars." Only "one" splits, which is exactly why it developed its article-like uses.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Teens: <span class="mono">pada-</span> + the unit</h3>
+          <p>11–19 are transparently "ten-plus-something," using a combining form of <em>padi</em>. The joins involve some sound smoothing, but the logic is visible in every one.</p>
+          <div class="morph-row">
+            <span class="morph base"><span class="p">pada-</span><span class="r">ten</span></span>
+            <span class="morph op">+</span>
+            <span class="morph subj"><span class="p">mūḍu</span><span class="r">three</span></span>
+            <span class="morph op">→</span>
+            <span class="morph"><span class="p mono" style="color:var(--cream)">padamūḍu</span></span>
+          </div>
+          <table class="tbl">
+            <thead><tr><th></th><th>Telugu</th><th>Romanized</th><th>Built from</th></tr></thead>
+            <tbody>
+              <tr><td class="num">11</td><td class="telugu">పదకొండు</td><td><span class="rom">padakoṇḍu</span></td><td>pada + okaṭi <small>(irregular)</small></td></tr>
+              <tr><td class="num">12</td><td class="telugu">పన్నెండు</td><td><span class="rom">panneṇḍu</span></td><td>pada + reṇḍu <small>(fused)</small></td></tr>
+              <tr><td class="num">13</td><td class="telugu">పదమూడు</td><td><span class="rom">padamūḍu</span></td><td>pada + mūḍu <small>(clean)</small></td></tr>
+              <tr><td class="num">14</td><td class="telugu">పద్నాలుగు</td><td><span class="rom">padnālugu</span></td><td>pada + nālugu</td></tr>
+              <tr><td class="num">15</td><td class="telugu">పదిహేను</td><td><span class="rom">padihēnu</span></td><td>padi + aidu <small>(irregular)</small></td></tr>
+              <tr><td class="num">16</td><td class="telugu">పదహారు</td><td><span class="rom">padahāru</span></td><td>pada + āru</td></tr>
+              <tr><td class="num">17</td><td class="telugu">పదిహేడు</td><td><span class="rom">padihēḍu</span></td><td>padi + ēḍu</td></tr>
+              <tr><td class="num">18</td><td class="telugu">పద్దెనిమిది</td><td><span class="rom">paddenimidi</span></td><td>pada + enimidi</td></tr>
+              <tr><td class="num">19</td><td class="telugu">పంతొమ్మిది</td><td><span class="rom">pantommidi</span></td><td>pada + tommidi</td></tr>
+            </tbody>
+          </table>
+          <p>11, 12 and 15 have drifted furthest from their parts — much like English <em>eleven</em> and <em>twelve</em>. The rest you can more or less reconstruct if you know the unit.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Every ten from 20 to 90 ends in <span class="mono">-ai</span></h3>
+          <p>The single most useful pattern in the lesson. You already have two of these from Lesson 2 — <em>iravai</em> (20) and <em>muppai</em> (30).</p>
+          <table class="tbl">
+            <thead><tr><th></th><th>Telugu</th><th>Romanized</th><th>Echoes</th></tr></thead>
+            <tbody>
+              <tr><td class="num">20</td><td class="telugu">ఇరవై</td><td><span class="rom">iravai</span></td><td>—</td></tr>
+              <tr><td class="num">30</td><td class="telugu">ముప్పై</td><td><span class="rom">muppai</span></td><td><span class="mono">mūḍu</span> (3)</td></tr>
+              <tr><td class="num">40</td><td class="telugu">నలభై</td><td><span class="rom">nalabhai</span></td><td><span class="mono">nālugu</span> (4)</td></tr>
+              <tr><td class="num">50</td><td class="telugu">యాభై</td><td><span class="rom">yābhai</span></td><td>—</td></tr>
+              <tr><td class="num">60</td><td class="telugu">అరవై</td><td><span class="rom">aravai</span></td><td><span class="mono">āru</span> (6)</td></tr>
+              <tr><td class="num">70</td><td class="telugu">డెబ్బై</td><td><span class="rom">ḍebbhai</span></td><td>—</td></tr>
+              <tr><td class="num">80</td><td class="telugu">ఎనభై</td><td><span class="rom">enabhai</span></td><td><span class="mono">enimidi</span> (8)</td></tr>
+              <tr><td class="num">90</td><td class="telugu">తొంభై</td><td><span class="rom">tombhai</span></td><td><span class="mono">tommidi</span> (9)</td></tr>
+            </tbody>
+          </table>
+          <p>Several visibly echo their unit — <em>tommidi</em> → <em>tombhai</em>, <em>enimidi</em> → <em>enabhai</em>. That's a recognition aid rather than a production rule: don't try to derive them, but do let the resemblance help you remember which is which.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>21–99: just put the two words together</h3>
+          <p>No connector, no changes. Ten word followed by unit word. This is where the system pays off — eight tens plus nine units covers everything from 21 to 99.</p>
+          <div class="morph-row">
+            <span class="morph base"><span class="p">iravai</span><span class="r">20</span></span>
+            <span class="morph op">+</span>
+            <span class="morph subj"><span class="p">aidu</span><span class="r">5</span></span>
+            <span class="morph op">→</span>
+            <span class="morph"><span class="p mono" style="color:var(--cream)">iravai aidu</span></span>
+          </div>
+          <span class="ex">iravai okaṭi <span class="tel">ఇరవై ఒకటి</span> <span class="en">— 21</span></span><br>
+          <span class="ex">muppai ēḍu <span class="tel">ముప్పై ఏడు</span> <span class="en">— 37</span></span><br>
+          <span class="ex">tombhai tommidi <span class="tel">తొంభై తొమ్మిది</span> <span class="en">— 99</span></span>
+          <p>This makes your age from <a href="lesson-02-introductions.html">Lesson 2</a> immediately expressible at any value: <em>nā vayasu nalabhai reṇḍu</em>, "my age is 42."</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Hundreds and thousands: multiplier + base</h3>
+          <p>Same juxtaposition logic, one level up. The base word pluralises when multiplied.</p>
+          <table class="tbl">
+            <thead><tr><th>Value</th><th>Telugu</th><th>Romanized</th><th>Structure</th></tr></thead>
+            <tbody>
+              <tr><td class="num">100</td><td class="telugu">వంద</td><td><span class="rom">vanda</span></td><td>base word</td></tr>
+              <tr><td class="num">200</td><td class="telugu">రెండు వందలు</td><td><span class="rom">reṇḍu vandalu</span></td><td>2 × hundred <small>(plural -lu)</small></td></tr>
+              <tr><td class="num">500</td><td class="telugu">ఐదు వందలు</td><td><span class="rom">aidu vandalu</span></td><td>5 × hundred</td></tr>
+              <tr><td class="num">1,000</td><td class="telugu">వెయ్యి</td><td><span class="rom">veyyi</span></td><td>base word</td></tr>
+              <tr><td class="num">2,000</td><td class="telugu">రెండు వేలు</td><td><span class="rom">reṇḍu vēlu</span></td><td>2 × thousand <small>(veyyi → vēlu)</small></td></tr>
+              <tr><td class="num">5,000</td><td class="telugu">ఐదు వేలు</td><td><span class="rom">aidu vēlu</span></td><td>5 × thousand</td></tr>
+            </tbody>
+          </table>
+          <p>Note the plural <b>-lu</b> ending — the same one from Lesson 1 that gave you <em>vidyārthulu</em> and <em>kārlu</em>. Numbers aren't a special system; they're nouns behaving like nouns.</p>
+          <p>For values between, chain the parts largest first: <em>reṇḍu vēlu ēḍu vandalu</em> = 2,700.</p>
+          <div class="flag">
+            <b>Verify: 101–199</b>
+            For numbers just past 100, the traditional combining form is <b>nūṭa</b> <span class="telugu">నూట</span> — so 150 is <em>nūṭa yābhai</em> and 101 is <em>nūṭa okaṭi</em>. You may also hear <em>vanda</em> used directly. Worth asking which your wife says, since this is the one spot in the system where I'd expect regional and generational variation.
+          </div>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Lakh and crore — the part that will actually catch you out</h3>
+          <p>India doesn't group large numbers in thousands and millions. It uses <b>lakh</b> (100,000) and <b>crore</b> (10,000,000), and this carries straight into English conversation in Hyderabad.</p>
+          <table class="tbl">
+            <thead><tr><th>Telugu</th><th>Romanized</th><th>Value</th><th>Written</th></tr></thead>
+            <tbody>
+              <tr><td class="telugu">వెయ్యి</td><td><span class="rom">veyyi</span></td><td>1,000</td><td>1,000</td></tr>
+              <tr><td class="telugu">లక్ష</td><td><span class="rom">lakṣa</span></td><td>100 thousand</td><td>1,00,000</td></tr>
+              <tr><td class="telugu">కోటి</td><td><span class="rom">kōṭi</span></td><td>10 million</td><td>1,00,00,000</td></tr>
+            </tbody>
+          </table>
+          <p>Notice the <b>digit grouping</b> in that last column. Indian convention groups the last three digits, then twos: <span class="mono">12,34,567</span> rather than <span class="mono">1,234,567</span>. You'll see this in spreadsheets, payslips, and news.</p>
+          <div class="flag ok">
+            <b>Why this is genuinely work-relevant</b>
+            Budgets, salaries, headcounts and populations get quoted in lakhs and crores by default — including when your colleagues are speaking English. "Fifty lakh" is 5,000,000 and "two crore" is 20,000,000. Getting fluent in this conversion is arguably more immediately useful to you than any other item in this lesson, and it costs you two words.
+          </div>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Counting things: number before the noun</h3>
+          <p>Straightforward, and it reuses the plural you already know.</p>
+          <span class="ex">reṇḍu kārlu <span class="tel">రెండు కార్లు</span> <span class="en">— "two cars"</span></span><br>
+          <span class="ex">mūḍu pustakālu <span class="en">— "three books"</span></span>
+          <p>The noun takes its plural form, exactly as in Lesson 1. There's no separate counting word for objects, which makes this the easy half of the system.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Counting people uses different words</h3>
+          <p>Here's the part that surprises English speakers. Telugu's human / non-human split — the one behind <em>vāḷḷu</em> versus <em>avi</em> in Lesson 1 — extends to counting. You cannot use the ordinary numbers for people.</p>
+          <table class="tbl">
+            <thead><tr><th></th><th>Things</th><th>People</th></tr></thead>
+            <tbody>
+              <tr><td class="num">1</td><td><span class="rom">okaṭi</span></td><td><span class="rom">okaru</span> <span class="tel">ఒకరు</span></td></tr>
+              <tr><td class="num">2</td><td><span class="rom">reṇḍu</span></td><td><span class="rom">iddaru</span> <span class="tel">ఇద్దరు</span></td></tr>
+              <tr><td class="num">3</td><td><span class="rom">mūḍu</span></td><td><span class="rom">mugguru</span> <span class="tel">ముగ్గురు</span></td></tr>
+              <tr><td class="num">4</td><td><span class="rom">nālugu</span></td><td><span class="rom">naluguru</span> <span class="tel">నలుగురు</span></td></tr>
+              <tr><td class="num">5</td><td><span class="rom">aidu</span></td><td><span class="rom">aiduguru</span> <span class="tel">ఐదుగురు</span></td></tr>
+            </tbody>
+          </table>
+          <p>Notice the shared <b>-ru / -guru</b> ending — the same <em>-ru</em> that marks respectful plurals in <em>mīru</em> and <em>vāḷḷu</em>. Beyond about five, the general pattern uses <b>mandi</b> <span class="telugu">మంది</span>, a counter word for people:</p>
+          <span class="ex">padi mandi <span class="tel">పది మంది</span> <span class="en">— "ten people"</span></span><br>
+          <span class="ex">iravai mandi <span class="en">— "twenty people"</span></span>
+          <p>This matters for you directly: describing a team, a meeting, or a family means counting people, not objects. <em>Mā ṭīm lō padi mandi</em> — "there are ten people on my team."</p>
+          <div class="flag">
+            <b>Verify: the exact cutover</b>
+            The <em>-guru</em> forms are standard for the low numbers, and <em>mandi</em> takes over for larger counts — but where speakers switch, and whether they'd say <em>aiduguru</em> or <em>aidu mandi</em> for five, varies. Ask your wife what sounds natural to her.
+          </div>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Ordinals: first, second, third</h3>
+          <p><b>modaṭi</b> <span class="telugu">మొదటి</span> ("first") is its own word. After that, ordinals are formed from the number.</p>
+          <table class="tbl">
+            <thead><tr><th></th><th>Telugu</th><th>Romanized</th></tr></thead>
+            <tbody>
+              <tr><td>first</td><td class="telugu">మొదటి</td><td><span class="rom">modaṭi</span> <small>irregular</small></td></tr>
+              <tr><td>second</td><td class="telugu">రెండవ / రెండో</td><td><span class="rom">reṇḍava / reṇḍō</span></td></tr>
+              <tr><td>third</td><td class="telugu">మూడవ / మూడో</td><td><span class="rom">mūḍava / mūḍō</span></td></tr>
+              <tr><td>fourth</td><td class="telugu">నాలుగవ / నాలుగో</td><td><span class="rom">nālugava / nālugō</span></td></tr>
+            </tbody>
+          </table>
+          <p>Two endings, same meaning: <b>-ava</b> is the fuller form, <b>-ō</b> the shortened colloquial one. Once you know either, every ordinal above "first" follows.</p>
+          <div class="flag">
+            <b>Verify: which ending she uses</b>
+            Both <em>-ava</em> and <em>-ō</em> are correct, but everyday Hyderabad speech tends toward the shorter form. Worth confirming before you pick one to drill.
+          </div>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Money, and asking the price</h3>
+          <p>Combine numbers with <b>rūpāyalu</b> <span class="telugu">రూపాయలు</span> ("rupees") and you can complete the transaction frame from <a href="lesson-03-greetings.html">Lesson 3</a>.</p>
+          <span class="ex">idi enta? <span class="en">— "How much is this?"</span></span><br>
+          <span class="ex">yābhai rūpāyalu. <span class="tel">యాభై రూపాయలు.</span> <span class="en">— "Fifty rupees."</span></span><br>
+          <span class="ex">vanda rūpāyalu. <span class="en">— "A hundred rupees."</span></span>
+          <p>That's a complete exchange built from three lessons: the question from Lesson 3, the number from this one, and the zero-copula sentence shape from Lesson 1.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Telugu has its own digits — but nobody writes them</h3>
+          <p>Telugu script includes numerals: <span class="telugu" style="font-size:19px;color:var(--cream)">౦ ౧ ౨ ౩ ౪ ౫ ౬ ౭ ౮ ౯</span> for 0–9. You may see them in traditional or decorative contexts.</p>
+          <p>In practice, <b>Arabic numerals are used everywhere</b> — signs, prices, phone numbers, documents. This is recognition-only trivia, not something to learn actively. Mentioned so you're not thrown if you encounter them.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="tables">
+  <div class="wrap">
+    <span class="eyebrow">Reference</span>
+    <h2>Build any number</h2>
+    <p class="lede">The whole system on one screen. Read it as a set of assembly instructions rather than a list to memorise.</p>
+
+    <table class="tbl">
+      <thead><tr><th>To say…</th><th>Do this</th><th>Example</th></tr></thead>
+      <tbody>
+        <tr class="grp"><td colspan="3">Construction rules</td></tr>
+        <tr><td><b style="color:var(--cream)">1–10</b></td><td>Memorise. No pattern.</td><td><span class="mono">aidu</span> = 5</td></tr>
+        <tr><td><b style="color:var(--cream)">11–19</b></td><td><span class="mono">pada-</span> + unit, with some fusing</td><td><span class="mono">padamūḍu</span> = 13</td></tr>
+        <tr><td><b style="color:var(--cream)">20–90</b></td><td>Memorise the eight; all end <span class="mono">-ai</span></td><td><span class="mono">nalabhai</span> = 40</td></tr>
+        <tr><td><b style="color:var(--cream)">21–99</b></td><td>Ten word + unit word, no connector</td><td><span class="mono">nalabhai reṇḍu</span> = 42</td></tr>
+        <tr><td><b style="color:var(--cream)">Hundreds</b></td><td>Unit + <span class="mono">vandalu</span></td><td><span class="mono">mūḍu vandalu</span> = 300</td></tr>
+        <tr><td><b style="color:var(--cream)">Thousands</b></td><td>Unit + <span class="mono">vēlu</span></td><td><span class="mono">aidu vēlu</span> = 5,000</td></tr>
+        <tr><td><b style="color:var(--cream)">Mixed</b></td><td>Chain largest first</td><td><span class="mono">reṇḍu vēlu ēḍu vandalu</span> = 2,700</td></tr>
+        <tr class="grp"><td colspan="3">Counting</td></tr>
+        <tr><td><b style="color:var(--cream)">Things</b></td><td>Number + plural noun</td><td><span class="mono">reṇḍu kārlu</span></td></tr>
+        <tr><td><b style="color:var(--cream)">People, 1–5</b></td><td>Special <span class="mono">-guru</span> forms</td><td><span class="mono">mugguru</span> = 3 people</td></tr>
+        <tr><td><b style="color:var(--cream)">People, more</b></td><td>Number + <span class="mono">mandi</span></td><td><span class="mono">padi mandi</span> = 10 people</td></tr>
+        <tr><td><b style="color:var(--cream)">Ordinals</b></td><td>Number + <span class="mono">-ava</span> / <span class="mono">-ō</span></td><td><span class="mono">reṇḍō</span> = second</td></tr>
+      </tbody>
+    </table>
+
+    <div class="note-box win" style="margin-top:28px">
+      <b>The efficient path through this lesson</b>
+      <p>If you learn only three things here, make them: <b>1–10</b>, <b>the eight tens</b>, and <b>lakh/crore</b>. That's twenty items and it covers ages, prices, quantities, phone digits, and every large figure you'll hear at work. The teens, human-counting forms, and ordinals can follow later without blocking anything.</p>
+    </div>
+  </div>
+</section>
+
+<section id="questions">
+  <div class="wrap">
+    <span class="eyebrow">From this lesson</span>
+    <h2>Question deep dives</h2>
+    <p class="lede">Add your questions and I'll build them out the way we did for <span class="mono">oka</span>.</p>
+    <a class="question-link" href="../concepts/index.html">
+      <span class="question-mark">?</span>
+      <span><h3>No deep dives linked yet for Lesson 6</h3><p>Strong candidates: the full human-counting system and where <span class="mono">mandi</span> takes over; how the lakh/crore grouping works in speech and writing; or telling time and dates once numbers are solid.</p></span>
+      <span class="question-open">Open library</span>
+    </a>
+  </div>
+</section>
+
+<section id="anki">
+  <div class="wrap">
+    <span class="eyebrow">For import</span>
+    <h2>Anki word list — your 5 fields</h2>
+    <p class="lede">Same five-field format, <b>Audio</b> blank. <span class="mono">iravai</span> and <span class="mono">muppai</span> aren't re-listed — you already have those from Lesson 2.</p>
+    <div class="field-key">
+      <span><b>1</b> English (+ cue)</span>
+      <span><b>2</b> Romanized</span>
+      <span><b>3</b> Telugu script</span>
+      <span><b>4</b> Audio (blank)</span>
+      <span><b>5</b> Example</span>
+    </div>
+
+    <div class="anki-wrap">
+      <table class="anki">
+        <thead>
+          <tr><th class="f-en">English (with cue)</th><th>Romanized</th><th>Telugu</th><th style="text-align:center">Audio</th><th>Example sentence</th></tr>
+        </thead>
+        <tbody>
+          <tr class="sec"><td colspan="5">Core — 1 to 10 (learn these first)</td></tr>
+          <tr><td class="f-en">zero</td><td class="f-rom">sunnā</td><td class="f-tel">సున్నా</td><td class="f-aud">[ ]</td><td class="f-ex">sunnā.</td></tr>
+          <tr><td class="f-en">one (standalone — "oka" before a noun)</td><td class="f-rom">okaṭi</td><td class="f-tel">ఒకటి</td><td class="f-aud">[ ]</td><td class="f-ex">okaṭi ivvaṇḍi.</td></tr>
+          <tr><td class="f-en">two</td><td class="f-rom">reṇḍu</td><td class="f-tel">రెండు</td><td class="f-aud">[ ]</td><td class="f-ex">reṇḍu kārlu.</td></tr>
+          <tr><td class="f-en">three</td><td class="f-rom">mūḍu</td><td class="f-tel">మూడు</td><td class="f-aud">[ ]</td><td class="f-ex">mūḍu pustakālu.</td></tr>
+          <tr><td class="f-en">four</td><td class="f-rom">nālugu</td><td class="f-tel">నాలుగు</td><td class="f-aud">[ ]</td><td class="f-ex">nālugu.</td></tr>
+          <tr><td class="f-en">five</td><td class="f-rom">aidu</td><td class="f-tel">ఐదు</td><td class="f-aud">[ ]</td><td class="f-ex">aidu rūpāyalu.</td></tr>
+          <tr><td class="f-en">six</td><td class="f-rom">āru</td><td class="f-tel">ఆరు</td><td class="f-aud">[ ]</td><td class="f-ex">āru.</td></tr>
+          <tr><td class="f-en">seven</td><td class="f-rom">ēḍu</td><td class="f-tel">ఏడు</td><td class="f-aud">[ ]</td><td class="f-ex">ēḍu.</td></tr>
+          <tr><td class="f-en">eight</td><td class="f-rom">enimidi</td><td class="f-tel">ఎనిమిది</td><td class="f-aud">[ ]</td><td class="f-ex">enimidi.</td></tr>
+          <tr><td class="f-en">nine</td><td class="f-rom">tommidi</td><td class="f-tel">తొమ్మిది</td><td class="f-aud">[ ]</td><td class="f-ex">tommidi.</td></tr>
+          <tr><td class="f-en">ten</td><td class="f-rom">padi</td><td class="f-tel">పది</td><td class="f-aud">[ ]</td><td class="f-ex">padi mandi.</td></tr>
+
+          <tr class="sec"><td colspan="5">Tens — 40 to 90 (20 and 30 already in your deck)</td></tr>
+          <tr><td class="f-en">forty</td><td class="f-rom">nalabhai</td><td class="f-tel">నలభై</td><td class="f-aud">[ ]</td><td class="f-ex">nā vayasu nalabhai.</td></tr>
+          <tr><td class="f-en">fifty</td><td class="f-rom">yābhai</td><td class="f-tel">యాభై</td><td class="f-aud">[ ]</td><td class="f-ex">yābhai rūpāyalu.</td></tr>
+          <tr><td class="f-en">sixty</td><td class="f-rom">aravai</td><td class="f-tel">అరవై</td><td class="f-aud">[ ]</td><td class="f-ex">aravai.</td></tr>
+          <tr><td class="f-en">seventy</td><td class="f-rom">ḍebbhai</td><td class="f-tel">డెబ్బై</td><td class="f-aud">[ ]</td><td class="f-ex">ḍebbhai.</td></tr>
+          <tr><td class="f-en">eighty</td><td class="f-rom">enabhai</td><td class="f-tel">ఎనభై</td><td class="f-aud">[ ]</td><td class="f-ex">enabhai.</td></tr>
+          <tr><td class="f-en">ninety</td><td class="f-rom">tombhai</td><td class="f-tel">తొంభై</td><td class="f-aud">[ ]</td><td class="f-ex">tombhai tommidi = 99.</td></tr>
+
+          <tr class="sec"><td colspan="5">Large numbers — highest workplace value</td></tr>
+          <tr><td class="f-en">hundred</td><td class="f-rom">vanda</td><td class="f-tel">వంద</td><td class="f-aud">[ ]</td><td class="f-ex">vanda rūpāyalu.</td></tr>
+          <tr><td class="f-en">thousand</td><td class="f-rom">veyyi</td><td class="f-tel">వెయ్యి</td><td class="f-aud">[ ]</td><td class="f-ex">reṇḍu vēlu = 2,000.</td></tr>
+          <tr><td class="f-en">lakh — 100,000 (written 1,00,000)</td><td class="f-rom">lakṣa</td><td class="f-tel">లక్ష</td><td class="f-aud">[ ]</td><td class="f-ex">reṇḍu lakṣalu.</td></tr>
+          <tr><td class="f-en">crore — 10,000,000 (written 1,00,00,000)</td><td class="f-rom">kōṭi</td><td class="f-tel">కోటి</td><td class="f-aud">[ ]</td><td class="f-ex">oka kōṭi.</td></tr>
+          <tr><td class="f-en">rupees</td><td class="f-rom">rūpāyalu</td><td class="f-tel">రూపాయలు</td><td class="f-aud">[ ]</td><td class="f-ex">yābhai rūpāyalu.</td></tr>
+
+          <tr class="sec"><td colspan="5">Teens — lower priority</td></tr>
+          <tr><td class="f-en">eleven</td><td class="f-rom">padakoṇḍu</td><td class="f-tel">పదకొండు</td><td class="f-aud">[ ]</td><td class="f-ex">padakoṇḍu.</td></tr>
+          <tr><td class="f-en">twelve</td><td class="f-rom">panneṇḍu</td><td class="f-tel">పన్నెండు</td><td class="f-aud">[ ]</td><td class="f-ex">panneṇḍu.</td></tr>
+          <tr><td class="f-en">thirteen</td><td class="f-rom">padamūḍu</td><td class="f-tel">పదమూడు</td><td class="f-aud">[ ]</td><td class="f-ex">padamūḍu.</td></tr>
+          <tr><td class="f-en">fourteen</td><td class="f-rom">padnālugu</td><td class="f-tel">పద్నాలుగు</td><td class="f-aud">[ ]</td><td class="f-ex">padnālugu.</td></tr>
+          <tr><td class="f-en">fifteen</td><td class="f-rom">padihēnu</td><td class="f-tel">పదిహేను</td><td class="f-aud">[ ]</td><td class="f-ex">padihēnu.</td></tr>
+          <tr><td class="f-en">sixteen</td><td class="f-rom">padahāru</td><td class="f-tel">పదహారు</td><td class="f-aud">[ ]</td><td class="f-ex">padahāru.</td></tr>
+          <tr><td class="f-en">seventeen</td><td class="f-rom">padihēḍu</td><td class="f-tel">పదిహేడు</td><td class="f-aud">[ ]</td><td class="f-ex">padihēḍu.</td></tr>
+          <tr><td class="f-en">eighteen</td><td class="f-rom">paddenimidi</td><td class="f-tel">పద్దెనిమిది</td><td class="f-aud">[ ]</td><td class="f-ex">paddenimidi.</td></tr>
+          <tr><td class="f-en">nineteen</td><td class="f-rom">pantommidi</td><td class="f-tel">పంతొమ్మిది</td><td class="f-aud">[ ]</td><td class="f-ex">pantommidi.</td></tr>
+
+          <tr class="sec"><td colspan="5">Counting people</td></tr>
+          <tr><td class="f-en">one person (not okaṭi)</td><td class="f-rom">okaru</td><td class="f-tel">ఒకరు</td><td class="f-aud">[ ]</td><td class="f-ex">okaru mātramē.</td></tr>
+          <tr><td class="f-en">two people</td><td class="f-rom">iddaru</td><td class="f-tel">ఇద్దరు</td><td class="f-aud">[ ]</td><td class="f-ex">iddaru vidyārthulu.</td></tr>
+          <tr><td class="f-en">three people</td><td class="f-rom">mugguru</td><td class="f-tel">ముగ్గురు</td><td class="f-aud">[ ]</td><td class="f-ex">mugguru.</td></tr>
+          <tr><td class="f-en">four people</td><td class="f-rom">naluguru</td><td class="f-tel">నలుగురు</td><td class="f-aud">[ ]</td><td class="f-ex">naluguru.</td></tr>
+          <tr><td class="f-en">five people</td><td class="f-rom">aiduguru</td><td class="f-tel">ఐదుగురు</td><td class="f-aud">[ ]</td><td class="f-ex">aiduguru.</td></tr>
+          <tr><td class="f-en">people (counter word — use with larger numbers)</td><td class="f-rom">mandi</td><td class="f-tel">మంది</td><td class="f-aud">[ ]</td><td class="f-ex">padi mandi.</td></tr>
+
+          <tr class="sec"><td colspan="5">Ordinals</td></tr>
+          <tr><td class="f-en">first (irregular)</td><td class="f-rom">modaṭi</td><td class="f-tel">మొదటి</td><td class="f-aud">[ ]</td><td class="f-ex">modaṭi pāṭhaṁ.</td></tr>
+          <tr><td class="f-en">second (pattern: number + -ava / -ō)</td><td class="f-rom">reṇḍava / reṇḍō</td><td class="f-tel">రెండవ / రెండో</td><td class="f-aud">[ ]</td><td class="f-ex">reṇḍō roju.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="lede" style="margin-top:20px;font-size:14px"><b>39 notes</b> — the biggest batch yet, and nearly eight days of your limit. Don't add them all. <b>Suggested order:</b> 1–10 first (five days at your pace, but they unlock everything), then <span class="mono">vanda</span>, <span class="mono">veyyi</span>, <span class="mono">lakṣa</span>, <span class="mono">kōṭi</span>, <span class="mono">rūpāyalu</span>. The tens next. Teens, people-counting, and ordinals last — they're recognition-first and none of them block a conversation.</p>
+  </div>
+</section>
+
+<section id="try">
+  <div class="wrap">
+    <span class="eyebrow">Build it yourself</span>
+    <h2>Quick self-test</h2>
+    <p class="lede">Most of these are construction problems, not recall. Cover the green line and assemble the answer first.</p>
+    <ul class="try">
+      <li><span class="q">Say 42.</span><span class="a">nalabhai reṇḍu. &nbsp; (ten word + unit, no connector)</span></li>
+      <li><span class="q">Say 99.</span><span class="a">tombhai tommidi.</span></li>
+      <li><span class="q">Say 300.</span><span class="a">mūḍu vandalu. &nbsp; (multiplier + plural base)</span></li>
+      <li><span class="q">Say 2,700.</span><span class="a">reṇḍu vēlu ēḍu vandalu. &nbsp; (largest part first)</span></li>
+      <li><span class="q">Give your age using the Lesson 2 frame — pick any number.</span><span class="a">nā vayasu ______. &nbsp; e.g. nā vayasu muppai āru = 36</span></li>
+      <li><span class="q">"How much is this?" — then answer "fifty rupees."</span><span class="a">idi enta? / yābhai rūpāyalu.</span></li>
+      <li><span class="q">"Two cars" and "two people" — why are they different?</span><span class="a">reṇḍu kārlu / iddaru. &nbsp; People take the special -ru counting forms.</span></li>
+      <li><span class="q">"Ten people."</span><span class="a">padi mandi. &nbsp; (mandi is the counter for larger groups)</span></li>
+      <li><span class="q">How much is "fifty lakh" in plain digits?</span><span class="a">5,000,000. &nbsp; A lakh is 100,000.</span></li>
+      <li><span class="q">How much is "two crore"?</span><span class="a">20,000,000. &nbsp; A crore is 10,000,000.</span></li>
+      <li><span class="q">Which number has two forms, and why?</span><span class="a">okaṭi (alone) / oka (before a noun) — which is how oka became article-like.</span></li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><span class="mono">nalabhai reṇḍu · padi mandi · reṇḍu lakṣalu.</span> — that closes out week one. You can introduce yourself, greet people respectfully, name your family, describe who owns what, and now handle quantities, prices, and ages.</p>
+    <p style="margin-top:12px"><a href="lesson-05-possessives.html">← Lesson 5: Possessive pronouns</a></p>
+    <p style="margin-top:12px"><a href="../index.html">← Return to the Foundational Telugu learning path</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

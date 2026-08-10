@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Telugu · Lesson 3 — Greetings, Politeness &amp; the Three Ways to Say No</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+Telugu:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#191915;--ink-2:#22221d;--ink-3:#2c2c25;
+  --cream:#f1ece0;--cream-dim:#b9b3a4;
+  --amber:#e8a33d;--moss:#8fa37e;--flame:#d96c47;
+  --line:rgba(241,236,224,.12);--radius:14px;--max:1000px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{background:var(--ink);color:var(--cream);font-family:'Inter',sans-serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.telugu{font-family:'Noto Sans Telugu','Inter',sans-serif}
+.mono{font-family:'JetBrains Mono',monospace}
+h1,h2,h3{font-family:'Young Serif',serif;font-weight:400;line-height:1.15}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+section{padding:72px 0;border-top:1px solid var(--line)}
+.eyebrow{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--amber);margin-bottom:14px;display:block}
+h2{font-size:clamp(26px,4.2vw,36px);margin-bottom:14px}
+.lede{color:var(--cream-dim);max-width:660px;font-size:16.5px}
+.lede b{color:var(--cream)}
+a{color:var(--amber)}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:4px}
+
+nav{position:sticky;top:0;z-index:50;background:rgba(25,25,21,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+.logo{font-family:'JetBrains Mono',monospace;font-size:13.5px;font-weight:700;color:var(--cream);text-decoration:none}
+.logo span{color:var(--amber)}
+nav ul{display:flex;gap:20px;list-style:none}
+nav ul a{color:var(--cream-dim);text-decoration:none;font-size:13px;font-weight:500}
+nav ul a:hover{color:var(--amber)}
+@media(max-width:720px){nav ul{display:none}}
+.home-crumb{display:inline-block;margin-bottom:18px;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--cream-dim);text-decoration:none}
+.home-crumb:hover{color:var(--amber)}
+
+header.hero{padding:80px 0 64px;position:relative;overflow:hidden}
+.hero-glyph{position:absolute;right:-30px;top:-70px;font-family:'Noto Sans Telugu',sans-serif;font-size:clamp(260px,40vw,480px);line-height:1;color:rgba(232,163,61,.05);user-select:none;pointer-events:none}
+.hero h1{font-size:clamp(34px,6vw,58px);margin:8px 0 10px;color:var(--cream)}
+.hero h1 em{color:var(--amber);font-style:normal}
+.hero p{max-width:620px;color:var(--cream-dim);font-size:17px}
+
+.note-box{background:rgba(217,108,71,.07);border:1px solid rgba(217,108,71,.3);border-radius:var(--radius);padding:20px 24px;margin-top:30px;max-width:720px}
+.note-box b{color:var(--flame);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;display:block;margin-bottom:8px}
+.note-box p{font-size:14px;color:var(--cream-dim)}
+.note-box p+p{margin-top:10px}
+
+/* rule blocks */
+.rule{border-top:1px solid var(--line);padding:30px 0;display:grid;grid-template-columns:52px 1fr;gap:20px;counter-increment:r}
+.rules{counter-reset:r;margin-top:20px}
+.rule::before{content:counter(r,decimal-leading-zero);font-family:'JetBrains Mono',monospace;font-size:14px;color:var(--flame);padding-top:4px}
+.rule h3{font-size:19px;font-family:'Inter',sans-serif;font-weight:600;margin-bottom:8px;color:var(--cream)}
+.rule p{font-size:14.5px;color:var(--cream-dim);max-width:640px}
+.rule p+p{margin-top:10px}
+.rule b{color:var(--cream)}
+.rule-deep-link{display:inline-block;margin-top:13px;font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;text-decoration:none}
+.rule-deep-link::after{content:' →'}
+.ex{margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:14px;color:var(--moss);background:var(--ink-2);border:1px solid var(--line);border-radius:8px;padding:12px 16px;display:inline-block}
+.ex .en{color:var(--cream-dim);font-family:'Inter',sans-serif}
+.ex .tel{font-family:'Noto Sans Telugu',sans-serif;color:var(--cream)}
+.flag{margin-top:14px;border-left:3px solid var(--flame);background:rgba(217,108,71,.07);padding:11px 14px;font-size:13px;color:var(--cream-dim);border-radius:0 8px 8px 0}
+.flag b{color:var(--flame);font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;display:block;margin-bottom:5px}
+
+/* morpheme chips */
+.morph-row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:16px 0}
+.morph{border-radius:9px;padding:9px 14px;font-family:'JetBrains Mono',monospace;text-align:center;min-width:74px}
+.morph .p{font-size:16px;font-weight:700;display:block}
+.morph .r{font-size:9px;letter-spacing:.1em;text-transform:uppercase;opacity:.75;margin-top:3px;display:block}
+.morph.subj{background:rgba(232,163,61,.14);color:var(--amber);border:1px solid rgba(232,163,61,.35)}
+.morph.base{background:rgba(143,163,126,.14);color:var(--moss);border:1px solid rgba(143,163,126,.35)}
+.morph.mark{background:rgba(217,108,71,.14);color:var(--flame);border:1px solid rgba(217,108,71,.35)}
+.morph.op{background:none;border:none;color:var(--cream-dim);font-size:18px;min-width:auto;padding:0 2px}
+.morph.none{background:var(--ink-3);color:var(--cream-dim);border:1px dashed var(--line)}
+
+/* generic table */
+.tbl{width:100%;border-collapse:collapse;margin-top:22px;font-size:14.5px}
+.tbl th{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:11px 12px;color:var(--cream-dim);border-bottom:1px solid var(--line);vertical-align:bottom}
+.tbl td{padding:12px;border-bottom:1px solid var(--line);color:var(--cream-dim);vertical-align:top}
+.tbl td .rom{font-family:'JetBrains Mono',monospace;font-size:15px;color:var(--cream);font-weight:700}
+.tbl td .tel{font-family:'Noto Sans Telugu',sans-serif;font-size:15px;color:var(--cream-dim);opacity:.8}
+.tbl td small{display:block;font-size:12px;color:var(--cream-dim);margin-top:2px}
+.tbl .grp td{background:var(--ink-2);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--amber)}
+.tag{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:999px;margin-left:4px}
+.tag.neu{background:rgba(143,163,126,.16);color:var(--moss)}
+.tag.for{background:rgba(232,163,61,.16);color:var(--amber)}
+.tag.inf{background:rgba(217,108,71,.16);color:var(--flame)}
+
+/* anki table */
+.anki-wrap{overflow-x:auto;margin-top:26px;border:1px solid var(--line);border-radius:var(--radius)}
+.anki{width:100%;border-collapse:collapse;font-size:14px;min-width:720px}
+.anki th{background:var(--ink-3);font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:12px 14px;color:var(--amber);border-bottom:1px solid var(--line);white-space:nowrap}
+.anki td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--cream-dim);vertical-align:top}
+.anki tr:last-child td{border-bottom:none}
+.anki .f-en{color:var(--cream);width:31%}
+.anki .f-rom{font-family:'JetBrains Mono',monospace;color:var(--amber);font-weight:700;white-space:nowrap}
+.anki .f-tel{font-family:'Noto Sans Telugu',sans-serif;color:var(--cream)}
+.anki .f-aud{color:var(--cream-dim);opacity:.4;font-family:'JetBrains Mono',monospace;font-size:12px;text-align:center}
+.anki .f-ex{font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--moss)}
+.anki .sec td{background:var(--ink-2);font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--cream-dim)}
+.field-key{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--cream-dim)}
+.field-key span{background:var(--ink-2);border:1px solid var(--line);border-radius:6px;padding:5px 10px}
+.field-key b{color:var(--amber);font-weight:500}
+
+/* lesson questions */
+.question-link{display:grid;grid-template-columns:80px 1fr auto;align-items:center;gap:22px;margin-top:26px;border:1px dashed var(--line);border-radius:var(--radius);background:var(--ink-2);color:inherit;padding:22px;text-decoration:none}
+.question-link:hover{border-color:rgba(232,163,61,.4);background:var(--ink-3)}
+.question-mark{display:grid;width:60px;height:60px;place-items:center;border:1px solid rgba(143,163,126,.35);border-radius:50%;color:var(--moss);font-family:'Young Serif',serif;font-size:28px}
+.question-link h3{margin-bottom:5px;font-family:'Inter',sans-serif;font-size:17px;font-weight:600}
+.question-link p{margin:0;color:var(--cream-dim);font-size:13px}
+.question-open{color:var(--amber);font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;white-space:nowrap}
+.question-open::after{content:' →'}
+
+/* phrasebook */
+.phrase{margin-top:24px;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.phrase-row{display:grid;grid-template-columns:170px 1fr;gap:20px;padding:16px 20px;border-bottom:1px solid var(--line);background:var(--ink-2)}
+.phrase-row:last-child{border-bottom:none}
+.phrase-row>span{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--cream-dim);padding-top:4px}
+.phrase-row .line{font-family:'JetBrains Mono',monospace;font-size:15px;color:var(--amber);font-weight:700}
+.phrase-row .tel{font-family:'Noto Sans Telugu',sans-serif;font-size:15px;color:var(--cream);display:block;margin-top:3px}
+.phrase-row .en{font-size:13px;color:var(--cream-dim);display:block;margin-top:5px}
+
+footer{padding:52px 0 68px;border-top:1px solid var(--line)}
+footer p{font-size:13px;color:var(--cream-dim)}
+footer .mono{color:var(--amber)}
+.try{list-style:none;margin-top:18px;display:grid;gap:10px;max-width:640px}
+.try li{background:var(--ink-2);border:1px solid var(--line);border-radius:9px;padding:12px 16px;font-size:14px;color:var(--cream-dim)}
+.try li .q{color:var(--cream);font-weight:600}
+.try li .a{font-family:'JetBrains Mono',monospace;color:var(--moss);margin-top:4px;display:block}
+@media(max-width:720px){
+  .wrap{padding:0 16px}
+  .hero-glyph{right:0}
+  .rule{grid-template-columns:1fr;gap:8px}
+  .rule>div{min-width:0}
+  .tbl{display:block;width:100%;max-width:100%;overflow-x:auto;white-space:nowrap}
+  .question-link{grid-template-columns:52px 1fr;padding:18px 16px}
+  .question-mark{width:48px;height:48px}
+  .question-open{grid-column:2}
+  .phrase-row{grid-template-columns:1fr;gap:6px}
+}
+</style>
+</head>
+<body>
+
+<nav aria-label="Main">
+  <div class="wrap">
+    <a class="logo" href="../index.html"><span>te</span> lesson-03 · greetings</a>
+    <ul>
+      <li><a href="../index.html">Course home</a></li>
+      <li><a href="../stories/index.html">Stories</a></li>
+      <li><a href="#rules">Rules</a></li>
+      <li><a href="#negation">Three "no"s</a></li>
+      <li><a href="#phrasebook">Phrasebook</a></li>
+      <li><a href="#anki">Anki list</a></li>
+      <li><a href="#try">Self-test</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-glyph telugu" aria-hidden="true">అం</div>
+  <div class="wrap">
+    <a class="home-crumb" href="../index.html">← Foundational Telugu / Learning path</a>
+    <span class="eyebrow">Course extraction · Lesson 3</span>
+    <h1>Greetings, politeness &amp; the <em>three ways to say no</em></h1>
+    <p>A phrasebook lesson with two real grammar payloads underneath it. First: <b>aṇḍi</b> is a productive politeness suffix you can attach almost anywhere — Telugu encodes courtesy in <b>endings</b>, not in words like "please." Second: English's single "no" splits into <b>three</b> Telugu words that are not interchangeable.</p>
+
+    <div class="note-box">
+      <b>How I processed this</b>
+      <p>The roughest captions yet — this transcript rendered <em>avunu</em> as "avenue," <em>lēdu</em> as "ladoo," <em>vaddu</em> as "what do," <em>dayacēsi</em> as "the case," <em>parvālēdu</em> as "part," <em>enta</em> as "Eddie," and <em>bāgunnānu</em> as "Bhagwan Nanu." I reconstructed each from the surrounding explanation and normalized to the site's diacritics.</p>
+      <p>Two to confirm with your wife: whether <b>manchidi</b> is really what she'd use to describe a <em>person</em> (see rule 09), and the spelling she prefers for <b>śabhāṣ</b>, which has several written variants.</p>
+    </div>
+  </div>
+</header>
+
+<section id="rules">
+  <div class="wrap">
+    <span class="eyebrow">The grammar engine</span>
+    <h2>Structures &amp; rules introduced</h2>
+    <p class="lede">Same colour code: <b style="color:var(--amber)">base word</b> · <b style="color:var(--moss)">meaning unit</b> · <b style="color:var(--flame)">politeness / suffix</b>. Most of this lesson is vocabulary, but rules 02–04 and 06–08 are structural and will keep paying off.</p>
+
+    <div class="rules">
+
+      <div class="rule">
+        <div>
+          <h3><span class="mono">namaskāraṁ</span> — the greeting and the gesture</h3>
+          <p>The standard Telugu greeting, equivalent to Hindi <em>namaste</em>. The lesson gives its sense as an acknowledgement of the divinity in the person you're addressing — it is a respectful greeting, not a casual "hi."</p>
+          <p>It comes with a physical form: rather than waving, you bring your palms together with fingers pointing upward. In a Hyderabad workplace this pairing matters — the gesture without the word, or the word without the gesture, both read as slightly incomplete.</p>
+          <span class="ex">namaskāraṁ <span class="tel">నమస్కారం</span> <span class="en">— hello / greetings</span></span>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3><span class="mono">aṇḍi</span> attaches to almost anything</h3>
+          <p>This is the load-bearing rule of the lesson. <b>aṇḍi</b> <span class="telugu">అండి</span> is a politeness suffix, and you can append it to greetings, answers, and whole phrases to raise the register. You met it in Lesson 1 as a respectful address particle; here it becomes a productive tool.</p>
+          <div class="morph-row">
+            <span class="morph base"><span class="p">WORD</span><span class="r">any greeting / answer</span></span>
+            <span class="morph op">+</span>
+            <span class="morph mark"><span class="p">aṇḍi</span><span class="r">politeness</span></span>
+            <span class="morph op">→</span>
+            <span class="morph"><span class="p mono" style="color:var(--cream)">respectful version</span></span>
+          </div>
+          <span class="ex">namaskāraṁ → namaskāram aṇḍi <span class="en">— more respectful greeting</span></span><br>
+          <span class="ex">avunu → avunandi <span class="tel">అవునండి</span> <span class="en">— "yes" → polite "yes"</span></span><br>
+          <span class="ex">lēdu → lēdandi &nbsp;·&nbsp; vaddu → vaddandi &nbsp;·&nbsp; kādu → kādandi</span>
+          <p>Given your goal — respectful conversation with colleagues and senior leaders — this single suffix is probably the highest-leverage thing in the lesson. When in doubt, add it.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Telugu politeness lives in suffixes, not in words</h3>
+          <p>There <em>is</em> a word for "please" — <b>dayacēsi</b> <span class="telugu">దయచేసి</span> — but the lesson is explicit that it's rarely used in conversation. The politeness is already carried by the ending, so adding "please" on top is redundant.</p>
+          <p>"Please come in" is just <b>raṇḍi</b>. You do not say <em>dayacēsi raṇḍi</em>. This is a genuine structural difference from English, where politeness is mostly lexical ("please," "would you mind," "sorry to bother you").</p>
+          <div class="flag">
+            <b>Transfer error to avoid</b>
+            English speakers reach for "please" constantly. In Telugu that instinct should be redirected into <em>choosing the -aṇḍi form of the verb</em>. Politeness is a grammatical choice here, not an added word.
+          </div>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3><span class="mono">raṇḍi</span> = <span class="mono">rā</span> + <span class="mono">aṇḍi</span></h3>
+          <p>Worth pulling apart, because it shows the suffix fusing rather than just being appended. <b>rā</b> <span class="telugu">రా</span> means "come"; add the respectful suffix and you get <b>raṇḍi</b> <span class="telugu">రండి</span>, "please come in."</p>
+          <div class="morph-row">
+            <span class="morph base"><span class="p">rā</span><span class="r">come</span></span>
+            <span class="morph op">+</span>
+            <span class="morph mark"><span class="p">aṇḍi</span><span class="r">respectful</span></span>
+            <span class="morph op">→</span>
+            <span class="morph"><span class="p mono" style="color:var(--cream)">raṇḍi</span></span>
+          </div>
+          <p>Colloquially <b>raṇḍi</b> is how you actually welcome someone. The formal word for "welcome," <b>svāgataṁ</b> <span class="telugu">స్వాగతం</span>, exists but the lesson notes it's rare in conversation — you'll see it on banners and hear it in speeches more than in doorways.</p>
+          <p>Keep an eye on <span class="mono">rā</span>. It comes back in rule 11 doing something completely different.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Goodbye is "I'll come back"</h3>
+          <p>Telugu has no direct equivalent of "goodbye." The word used is <b>vastānu</b> <span class="telugu">వస్తాను</span>, which literally means <em>I'll come back</em>. The lesson frames this as a cultural preference: announcing a return is warmer than announcing a departure.</p>
+          <span class="ex">vastānu <span class="tel">వస్తాను</span> <span class="en">— "goodbye" (lit. I'll come back)</span></span><br>
+          <span class="ex">vastānandi <span class="tel">వస్తానండి</span> <span class="en">— the polite version, with aṇḍi</span></span>
+          <p>This is the kind of detail worth knowing before you use it with in-laws or senior colleagues — saying the literal "I'm leaving" equivalent would land as blunter than you intend.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Thanks: formal Telugu vs. the colloquial hybrid</h3>
+          <p><b>dhanyavādālu</b> <span class="telugu">ధన్యవాదాలు</span> (which you already have from Lesson 2) is used <b>exclusively in formal situations</b> — lectures, courses, written notes. Using it for everyday thanks sounds stilted.</p>
+          <p>What people increasingly say instead is a Telugu–English hybrid: <b>thanks aṇḍi</b>. The English word carries the meaning, the Telugu suffix carries the respect.</p>
+          <span class="ex">dhanyavādālu <span class="en">— formal, ceremonial</span></span><br>
+          <span class="ex">thanks aṇḍi <span class="en">— everyday, respectful, extremely common</span></span>
+          <p>This is the same loanword pattern from Lesson 2's professions, now applied to a social formula. Code-mixing here isn't sloppy — it's the current colloquial norm, and it's exactly what you'll hear in Hyderabad.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Three different words for "no"</h3>
+          <p>The biggest concept in the lesson. English "no" covers three distinct jobs that Telugu keeps separate. Picking the wrong one isn't a small error — it changes what you're denying.</p>
+          <table class="tbl">
+            <thead><tr><th>Word</th><th>Telugu</th><th>Denies</th><th>Roughly</th></tr></thead>
+            <tbody>
+              <tr><td><span class="rom">lēdu</span></td><td class="telugu">లేదు</td><td>Existence / presence</td><td>"There isn't / it's not there / I don't have it"</td></tr>
+              <tr><td><span class="rom">vaddu</span></td><td class="telugu">వద్దు</td><td>Desire / wanting</td><td>"I don't want it / no thanks"</td></tr>
+              <tr><td><span class="rom">kādu</span></td><td class="telugu">కాదు</td><td>Identity / a statement</td><td>"It is not / that's not right"</td></tr>
+            </tbody>
+          </table>
+          <p>All three take the politeness suffix the same way: <b>lēdandi</b>, <b>vaddandi</b>, <b>kādandi</b>.</p>
+          <p>Notice that <b>kādu</b> is the negation of the identity sentences you built in Lesson 1. <em>nēnu vidyārthini</em> ("I am a student") is denied with <em>kādu</em>, not with the other two — this is your first negation tool for the frame you already know.</p>
+          <span class="ex">idi kāru kādu. <span class="en">— "This is not a car." (denying the statement)</span></span><br>
+          <span class="ex">vaddu, thanks aṇḍi. <span class="en">— "No thanks." (declining an offer)</span></span>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Yes is simple — and takes the suffix too</h3>
+          <p><b>avunu</b> <span class="telugu">అవును</span> is "yes." The polite form is <b>avunandi</b> <span class="telugu">అవునండి</span>. Nothing complicated here, but note the pattern holding: base form for peers and intimates, <span class="mono">-aṇḍi</span> form for everyone else.</p>
+          <p>Also useful and register-neutral: <b>sarē</b> <span class="telugu">సరే</span>, "okay" — the general-purpose agreement word.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Two different "good"s</h3>
+          <p>Another English word that splits in Telugu, and the distinction is subtle rather than sharp.</p>
+          <table class="tbl">
+            <thead><tr><th>Word</th><th>Telugu</th><th>Sense</th><th>Use for</th></tr></thead>
+            <tbody>
+              <tr><td><span class="rom">manchidi</span></td><td class="telugu">మంచిది</td><td>Nice, noble, morally good</td><td>Character, worthiness</td></tr>
+              <tr><td><span class="rom">bāgundi</span></td><td class="telugu">బాగుంది</td><td>Fine, positive, going well</td><td>Food, trips, experiences, states</td></tr>
+            </tbody>
+          </table>
+          <span class="ex">"How was the food?" → bāgundi. <span class="en">— "It's good / it was fine."</span></span>
+          <div class="flag">
+            <b>Verify this one</b>
+            The lesson says you'd describe a good <em>person</em> as <b>manchidi</b>. That form is neuter, and for a person you'd more often hear <b>manchi manishi</b> <span class="telugu">మంచి మనిషి</span> ("a good person") or a gendered form. Ask your wife what she'd actually say about a colleague — the underlying point (manchi = moral good, bāgu = things going well) holds either way.
+          </div>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>"How are you" is literally "are you fine?"</h3>
+          <p><b>bāgunnārā</b> <span class="telugu">బాగున్నారా</span> — built on the same <em>bāgu</em> root as <em>bāgundi</em>. You can front it with the pronoun, but you don't have to.</p>
+          <span class="ex">bāgunnārā? <span class="tel">బాగున్నారా?</span> &nbsp;·&nbsp; mīru bāgunnārā? <span class="en">— "How are you?" (mīru is optional)</span></span><br>
+          <span class="ex">bāgunnānu. <span class="tel">బాగున్నాను.</span> &nbsp;·&nbsp; nēnu bāgunnānu. <span class="en">— "I'm fine."</span></span>
+          <p>Two things to notice. First, the <b>pronoun is optional</b> — the ending already tells you who's involved, so Telugu drops what English requires. Second, look at those endings: <b>-nu</b> for "I" and <b>-rā</b> marking the question to "you." That's the same person-marking logic from Lesson 1 showing up on a different kind of word.</p>
+          <p>Note that <b>mīru</b> is the respectful "you" — this is the version you'd use with colleagues and elders, and the one worth drilling first.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>"I don't know Telugu" = "Telugu doesn't come"</h3>
+          <p>A framing you'd never guess from English. <b>rādu</b> <span class="telugu">రాదు</span> is the negative of <em>rā</em> ("come") — so the sentence literally says <em>Telugu doesn't come [to me]</em>.</p>
+          <span class="ex">Telugu rādu. <span class="tel">తెలుగు రాదు.</span> <span class="en">— "I don't know Telugu."</span></span>
+          <p>Languages, in Telugu, are things that come to you or don't. That's also why this phrase is genuinely useful for you right now — it's the honest, natural way to signal your level rather than apologizing in English.</p>
+          <p>The question counterpart uses a different root: <b>telusā</b> <span class="telugu">తెలుసా</span>, "do you know?"</p>
+          <span class="ex">English telusā? <span class="tel">ఇంగ్లీష్ తెలుసా?</span> <span class="en">— "Do you know English?"</span></span>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Practical frames: <span class="mono">enta</span> and <span class="mono">idigō</span></h3>
+          <p><b>enta</b> <span class="telugu">ఎంత</span> means "how much." Combine it with <em>idi</em> — the near demonstrative from Lesson 1 — and you have a complete transaction question with no verb required.</p>
+          <div class="morph-row">
+            <span class="morph subj"><span class="p">idi</span><span class="r">this</span></span>
+            <span class="morph base"><span class="p">enta</span><span class="r">how much</span></span>
+            <span class="morph op">→</span>
+            <span class="morph"><span class="p mono" style="color:var(--cream)">idi enta?</span></span>
+          </div>
+          <span class="ex">idi enta? <span class="tel">ఇది ఎంత?</span> <span class="en">— "How much is this?"</span></span><br>
+          <span class="ex">idigō <span class="tel">ఇదిగో</span> &nbsp;·&nbsp; idigōṇḍi <span class="en">— "here you go," handing something over</span></span>
+          <p>Notice <em>idi enta</em> is another zero-copula sentence — the same Lesson 1 rule, now doing question work. And <b>idigō</b> is transparently <em>idi</em> + an emphatic ending: "here's this one."</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="negation">
+  <div class="wrap">
+    <span class="eyebrow">Reference</span>
+    <h2>Choosing the right "no"</h2>
+    <p class="lede">The one thing from this lesson most likely to trip you up mid-conversation. Ask yourself: <b>am I denying that something exists, that I want it, or that a statement is true?</b></p>
+    <table class="tbl">
+      <thead><tr><th>Situation</th><th>Use</th><th>Why</th></tr></thead>
+      <tbody>
+        <tr class="grp"><td colspan="3">lēdu — denying existence or presence</td></tr>
+        <tr><td>"Is there any coffee?"</td><td><span class="rom">lēdu</span> <span class="tel">లేదు</span></td><td>There isn't any — it doesn't exist right now</td></tr>
+        <tr><td>"Do you have a pen?"</td><td><span class="rom">lēdu</span></td><td>Not in my possession</td></tr>
+        <tr><td>"Is Ravi here?"</td><td><span class="rom">lēdandi</span></td><td>He's not present — polite form</td></tr>
+        <tr class="grp"><td colspan="3">vaddu — declining, refusing, not wanting</td></tr>
+        <tr><td>"More tea?"</td><td><span class="rom">vaddu</span> <span class="tel">వద్దు</span></td><td>I don't want it</td></tr>
+        <tr><td>Declining an offer politely</td><td><span class="rom">vaddandi</span></td><td>Same, with respect — this is the workplace-safe form</td></tr>
+        <tr class="grp"><td colspan="3">kādu — negating a statement or identity</td></tr>
+        <tr><td>"You're a teacher, right?"</td><td><span class="rom">kādu</span> <span class="tel">కాదు</span></td><td>That's not what I am — negates the identity sentence</td></tr>
+        <tr><td>"Is this your car?"</td><td><span class="rom">kādandi</span></td><td>It is not — polite correction</td></tr>
+      </tbody>
+    </table>
+
+    <div class="note-box" style="margin-top:28px">
+      <b>The connection back to Lesson 1</b>
+      <p><span class="mono">kādu</span> is the negation of the zero-copula identity frame. You built <em>Rāj vidyārthi</em> ("Raj is a student") in Lesson 1 with no verb at all; <em>kādu</em> is what you add to deny it. That means you now have both halves of the most basic sentence type in the language.</p>
+    </div>
+  </div>
+</section>
+
+<section id="phrasebook">
+  <div class="wrap">
+    <span class="eyebrow">Put it together</span>
+    <h2>The working phrasebook</h2>
+    <p class="lede">Everything from the lesson, sorted by when you'd actually reach for it. The polite column is the one to default to at work.</p>
+
+    <div class="phrase">
+      <div class="phrase-row"><span>Arriving</span><div><span class="line">namaskāraṁ / namaskāram aṇḍi</span><span class="tel">నమస్కారం</span><span class="en">Hello — palms together, fingers up</span></div></div>
+      <div class="phrase-row"><span>Being welcomed</span><div><span class="line">raṇḍi</span><span class="tel">రండి</span><span class="en">Please come in (rā + aṇḍi)</span></div></div>
+      <div class="phrase-row"><span>Small talk</span><div><span class="line">mīru bāgunnārā?</span><span class="tel">మీరు బాగున్నారా?</span><span class="en">How are you? (lit. are you fine?)</span></div></div>
+      <div class="phrase-row"><span>Answering</span><div><span class="line">nēnu bāgunnānu.</span><span class="tel">నేను బాగున్నాను.</span><span class="en">I'm fine.</span></div></div>
+      <div class="phrase-row"><span>Agreeing</span><div><span class="line">avunandi / sarē</span><span class="tel">అవునండి / సరే</span><span class="en">Yes / okay</span></div></div>
+      <div class="phrase-row"><span>Declining</span><div><span class="line">vaddandi</span><span class="tel">వద్దండి</span><span class="en">No thank you — I don't want it</span></div></div>
+      <div class="phrase-row"><span>Correcting</span><div><span class="line">kādandi</span><span class="tel">కాదండి</span><span class="en">No — that's not it</span></div></div>
+      <div class="phrase-row"><span>Not available</span><div><span class="line">lēdandi</span><span class="tel">లేదండి</span><span class="en">There isn't / it's not there</span></div></div>
+      <div class="phrase-row"><span>Apologising</span><div><span class="line">kṣaminchandi</span><span class="tel">క్షమించండి</span><span class="en">Sorry (lit. forgive me)</span></div></div>
+      <div class="phrase-row"><span>Reassuring</span><div><span class="line">parvālēdu</span><span class="tel">పర్వాలేదు</span><span class="en">No problem / it's all right</span></div></div>
+      <div class="phrase-row"><span>Thanking</span><div><span class="line">thanks aṇḍi</span><span class="tel">థాంక్స్ అండి</span><span class="en">Thank you — the everyday colloquial form</span></div></div>
+      <div class="phrase-row"><span>Praising</span><div><span class="line">śabhāṣ</span><span class="tel">శభాష్</span><span class="en">Well done / congratulations</span></div></div>
+      <div class="phrase-row"><span>Shopping</span><div><span class="line">idi enta?</span><span class="tel">ఇది ఎంత?</span><span class="en">How much is this?</span></div></div>
+      <div class="phrase-row"><span>Handing over</span><div><span class="line">idigōṇḍi</span><span class="tel">ఇదిగోండి</span><span class="en">Here you go</span></div></div>
+      <div class="phrase-row"><span>Moving on</span><div><span class="line">padaṇḍi</span><span class="tel">పదండి</span><span class="en">Let's go</span></div></div>
+      <div class="phrase-row"><span>Your level</span><div><span class="line">Telugu rādu.</span><span class="tel">తెలుగు రాదు.</span><span class="en">I don't know Telugu (lit. Telugu doesn't come)</span></div></div>
+      <div class="phrase-row"><span>Checking</span><div><span class="line">English telusā?</span><span class="tel">ఇంగ్లీష్ తెలుసా?</span><span class="en">Do you know English?</span></div></div>
+      <div class="phrase-row"><span>Leaving</span><div><span class="line">vastānandi</span><span class="tel">వస్తానండి</span><span class="en">Goodbye (lit. I'll come back)</span></div></div>
+    </div>
+
+    <div class="note-box" style="margin-top:28px">
+      <b>Your first real conversation kit</b>
+      <p>Combined with Lessons 1–2, you can now open with <span class="mono">namaskāram aṇḍi</span>, ask <span class="mono">mīru bāgunnārā</span>, introduce yourself with <span class="mono">nā pēru ___</span>, admit <span class="mono">Telugu rādu</span>, and close with <span class="mono">vastānandi</span>. That is a complete, respectful, if short exchange — and every piece of it is drillable today.</p>
+    </div>
+  </div>
+</section>
+
+<section id="questions">
+  <div class="wrap">
+    <span class="eyebrow">From this lesson</span>
+    <h2>Question deep dives</h2>
+    <p class="lede">Add your questions from the video and I'll build them out the way we did for <span class="mono">oka</span>.</p>
+    <a class="question-link" href="../concepts/index.html">
+      <span class="question-mark">?</span>
+      <span><h3>No deep dives linked yet for Lesson 3</h3><p>Strong candidates here: the <span class="mono">lēdu</span>/<span class="mono">vaddu</span>/<span class="mono">kādu</span> split with many worked examples, how far <span class="mono">aṇḍi</span> can productively attach, or when code-mixed English is the natural register.</p></span>
+      <span class="question-open">Open library</span>
+    </a>
+  </div>
+</section>
+
+<section id="anki">
+  <div class="wrap">
+    <span class="eyebrow">For import</span>
+    <h2>Anki word list — your 5 fields</h2>
+    <p class="lede">Same five-field format, <b>Audio</b> blank for your recordings. Polite <span class="mono">-aṇḍi</span> forms are shown in the example column rather than as separate notes — the suffix is a rule (02), not 26 more cards.</p>
+    <div class="field-key">
+      <span><b>1</b> English (+ cue)</span>
+      <span><b>2</b> Romanized</span>
+      <span><b>3</b> Telugu script</span>
+      <span><b>4</b> Audio (blank)</span>
+      <span><b>5</b> Example</span>
+    </div>
+
+    <div class="anki-wrap">
+      <table class="anki">
+        <thead>
+          <tr><th class="f-en">English (with cue)</th><th>Romanized</th><th>Telugu</th><th style="text-align:center">Audio</th><th>Example sentence</th></tr>
+        </thead>
+        <tbody>
+          <tr class="sec"><td colspan="5">Opening &amp; closing</td></tr>
+          <tr><td class="f-en">goodbye (lit. "I'll come back")</td><td class="f-rom">vastānu</td><td class="f-tel">వస్తాను</td><td class="f-aud">[ ]</td><td class="f-ex">vastānandi.</td></tr>
+          <tr><td class="f-en">please come in / welcome (colloquial)</td><td class="f-rom">raṇḍi</td><td class="f-tel">రండి</td><td class="f-aud">[ ]</td><td class="f-ex">raṇḍi, raṇḍi.</td></tr>
+          <tr><td class="f-en">come (base verb — becomes raṇḍi with aṇḍi)</td><td class="f-rom">rā</td><td class="f-tel">రా</td><td class="f-aud">[ ]</td><td class="f-ex">rā + aṇḍi → raṇḍi</td></tr>
+          <tr><td class="f-en">welcome (formal — banners and speeches)</td><td class="f-rom">svāgataṁ</td><td class="f-tel">స్వాగతం</td><td class="f-aud">[ ]</td><td class="f-ex">svāgataṁ aṇḍi.</td></tr>
+          <tr><td class="f-en">thank you (colloquial hybrid — the everyday choice)</td><td class="f-rom">thanks aṇḍi</td><td class="f-tel">థాంక్స్ అండి</td><td class="f-aud">[ ]</td><td class="f-ex">thanks aṇḍi.</td></tr>
+
+          <tr class="sec"><td colspan="5">Yes, no, okay</td></tr>
+          <tr><td class="f-en">yes</td><td class="f-rom">avunu</td><td class="f-tel">అవును</td><td class="f-aud">[ ]</td><td class="f-ex">avunandi.</td></tr>
+          <tr><td class="f-en">okay</td><td class="f-rom">sarē</td><td class="f-tel">సరే</td><td class="f-aud">[ ]</td><td class="f-ex">sarē aṇḍi.</td></tr>
+          <tr><td class="f-en">no — it doesn't exist / isn't there / I don't have it</td><td class="f-rom">lēdu</td><td class="f-tel">లేదు</td><td class="f-aud">[ ]</td><td class="f-ex">lēdandi.</td></tr>
+          <tr><td class="f-en">no — I don't want it (declining)</td><td class="f-rom">vaddu</td><td class="f-tel">వద్దు</td><td class="f-aud">[ ]</td><td class="f-ex">vaddandi, thanks aṇḍi.</td></tr>
+          <tr><td class="f-en">no — it is not (negating a statement)</td><td class="f-rom">kādu</td><td class="f-tel">కాదు</td><td class="f-aud">[ ]</td><td class="f-ex">idi kāru kādu.</td></tr>
+
+          <tr class="sec"><td colspan="5">Courtesy</td></tr>
+          <tr><td class="f-en">sorry (lit. "forgive me")</td><td class="f-rom">kṣaminchandi</td><td class="f-tel">క్షమించండి</td><td class="f-aud">[ ]</td><td class="f-ex">kṣaminchandi.</td></tr>
+          <tr><td class="f-en">no problem / it's all right</td><td class="f-rom">parvālēdu</td><td class="f-tel">పర్వాలేదు</td><td class="f-aud">[ ]</td><td class="f-ex">parvālēdu aṇḍi.</td></tr>
+          <tr><td class="f-en">please (rare — politeness usually goes in the suffix)</td><td class="f-rom">dayacēsi</td><td class="f-tel">దయచేసి</td><td class="f-aud">[ ]</td><td class="f-ex">raṇḍi (not "dayacēsi raṇḍi")</td></tr>
+          <tr><td class="f-en">well done / congratulations</td><td class="f-rom">śabhāṣ</td><td class="f-tel">శభాష్</td><td class="f-aud">[ ]</td><td class="f-ex">śabhāṣ!</td></tr>
+
+          <tr class="sec"><td colspan="5">Good, and asking how someone is</td></tr>
+          <tr><td class="f-en">good — nice, noble, morally good</td><td class="f-rom">manchidi</td><td class="f-tel">మంచిది</td><td class="f-aud">[ ]</td><td class="f-ex">manchidi.</td></tr>
+          <tr><td class="f-en">good — fine, going well (food, trips, states)</td><td class="f-rom">bāgundi</td><td class="f-tel">బాగుంది</td><td class="f-aud">[ ]</td><td class="f-ex">bāgundi aṇḍi.</td></tr>
+          <tr><td class="f-en">how are you? (lit. "are you fine?")</td><td class="f-rom">bāgunnārā</td><td class="f-tel">బాగున్నారా</td><td class="f-aud">[ ]</td><td class="f-ex">mīru bāgunnārā?</td></tr>
+          <tr><td class="f-en">I am fine</td><td class="f-rom">bāgunnānu</td><td class="f-tel">బాగున్నాను</td><td class="f-aud">[ ]</td><td class="f-ex">nēnu bāgunnānu.</td></tr>
+
+          <tr class="sec"><td colspan="5">Getting things done</td></tr>
+          <tr><td class="f-en">let's go</td><td class="f-rom">pada</td><td class="f-tel">పద</td><td class="f-aud">[ ]</td><td class="f-ex">padaṇḍi.</td></tr>
+          <tr><td class="f-en">how much</td><td class="f-rom">enta</td><td class="f-tel">ఎంత</td><td class="f-aud">[ ]</td><td class="f-ex">idi enta?</td></tr>
+          <tr><td class="f-en">here you go (handing something over)</td><td class="f-rom">idigō</td><td class="f-tel">ఇదిగో</td><td class="f-aud">[ ]</td><td class="f-ex">idigōṇḍi.</td></tr>
+
+          <tr class="sec"><td colspan="5">Talking about language</td></tr>
+          <tr><td class="f-en">doesn't come — used for "I don't know [a language]"</td><td class="f-rom">rādu</td><td class="f-tel">రాదు</td><td class="f-aud">[ ]</td><td class="f-ex">Telugu rādu.</td></tr>
+          <tr><td class="f-en">do you know?</td><td class="f-rom">telusā</td><td class="f-tel">తెలుసా</td><td class="f-aud">[ ]</td><td class="f-ex">English telusā?</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="lede" style="margin-top:20px;font-size:14px"><b>23 notes.</b> If you're sequencing against your five-a-day limit, the highest-value first five are <span class="mono">bāgunnārā</span>, <span class="mono">bāgunnānu</span>, <span class="mono">vaddu</span>, <span class="mono">kādu</span>, and <span class="mono">vastānu</span> — those turn Lessons 1–3 into an actual exchange. <span class="mono">dayacēsi</span> and <span class="mono">svāgataṁ</span> are recognition-only; the lesson itself says you won't use them in conversation.</p>
+  </div>
+</section>
+
+<section id="try">
+  <div class="wrap">
+    <span class="eyebrow">From the lesson</span>
+    <h2>Quick self-test</h2>
+    <p class="lede">Cover the green line and say each aloud first. Several of these are about picking the <em>right</em> word, not just any word.</p>
+    <ul class="try">
+      <li><span class="q">Greet someone respectfully — and what do your hands do?</span><span class="a">namaskāram aṇḍi. &nbsp; (palms together, fingers pointing up — not a wave)</span></li>
+      <li><span class="q">Someone offers you more food. You've had enough.</span><span class="a">vaddandi. &nbsp; (declining = vaddu, not lēdu)</span></li>
+      <li><span class="q">Someone asks if there's any coffee left. There isn't.</span><span class="a">lēdandi. &nbsp; (existence = lēdu)</span></li>
+      <li><span class="q">Someone assumes you're a teacher. You're not.</span><span class="a">kādandi. &nbsp; (negating an identity statement = kādu)</span></li>
+      <li><span class="q">"How are you?" — ask it respectfully, then answer.</span><span class="a">mīru bāgunnārā? / nēnu bāgunnānu. &nbsp; (both pronouns optional)</span></li>
+      <li><span class="q">Break down <span class="mono">raṇḍi</span> into its pieces.</span><span class="a">rā (come) + aṇḍi (respectful) → raṇḍi. &nbsp; No separate "please" needed.</span></li>
+      <li><span class="q">Say goodbye politely — and what does it literally mean?</span><span class="a">vastānandi. &nbsp; Literally "I'll come back."</span></li>
+      <li><span class="q">Tell someone you don't know Telugu.</span><span class="a">Telugu rādu. &nbsp; (lit. "Telugu doesn't come")</span></li>
+      <li><span class="q">Ask the price of something in front of you.</span><span class="a">idi enta? &nbsp; (idi from Lesson 1 + enta, no verb)</span></li>
+      <li><span class="q">Thank a colleague in the way people actually do.</span><span class="a">thanks aṇḍi. &nbsp; (dhanyavādālu is formal/ceremonial only)</span></li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><span class="mono">namaskāram aṇḍi … vastānandi.</span> — you can now open and close a respectful conversation, agree, decline three different ways, apologise, and ask a price. Next: numbers, which finishes the age slot from Lesson 2.</p>
+    <p style="margin-top:12px"><a href="lesson-04-family.html">Lesson 4: Family &amp; kinship names →</a></p>
+    <p style="margin-top:12px"><a href="lesson-02-introductions.html">← Lesson 2: Introducing yourself &amp; the "my / our" split</a></p>
+    <p style="margin-top:12px"><a href="../index.html">← Return to the Foundational Telugu learning path</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

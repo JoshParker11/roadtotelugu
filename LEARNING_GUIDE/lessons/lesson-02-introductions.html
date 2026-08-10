@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Telugu · Lesson 2 — Introducing Yourself &amp; the "my / our" Split</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+Telugu:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#191915;--ink-2:#22221d;--ink-3:#2c2c25;
+  --cream:#f1ece0;--cream-dim:#b9b3a4;
+  --amber:#e8a33d;--moss:#8fa37e;--flame:#d96c47;
+  --line:rgba(241,236,224,.12);--radius:14px;--max:1000px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{background:var(--ink);color:var(--cream);font-family:'Inter',sans-serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.telugu{font-family:'Noto Sans Telugu','Inter',sans-serif}
+.mono{font-family:'JetBrains Mono',monospace}
+h1,h2,h3{font-family:'Young Serif',serif;font-weight:400;line-height:1.15}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+section{padding:72px 0;border-top:1px solid var(--line)}
+.eyebrow{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--amber);margin-bottom:14px;display:block}
+h2{font-size:clamp(26px,4.2vw,36px);margin-bottom:14px}
+.lede{color:var(--cream-dim);max-width:660px;font-size:16.5px}
+.lede b{color:var(--cream)}
+a{color:var(--amber)}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:4px}
+
+nav{position:sticky;top:0;z-index:50;background:rgba(25,25,21,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+.logo{font-family:'JetBrains Mono',monospace;font-size:13.5px;font-weight:700;color:var(--cream);text-decoration:none}
+.logo span{color:var(--amber)}
+nav ul{display:flex;gap:20px;list-style:none}
+nav ul a{color:var(--cream-dim);text-decoration:none;font-size:13px;font-weight:500}
+nav ul a:hover{color:var(--amber)}
+@media(max-width:720px){nav ul{display:none}}
+.home-crumb{display:inline-block;margin-bottom:18px;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--cream-dim);text-decoration:none}
+.home-crumb:hover{color:var(--amber)}
+
+header.hero{padding:80px 0 64px;position:relative;overflow:hidden}
+.hero-glyph{position:absolute;right:-30px;top:-70px;font-family:'Noto Sans Telugu',sans-serif;font-size:clamp(260px,40vw,480px);line-height:1;color:rgba(232,163,61,.05);user-select:none;pointer-events:none}
+.hero h1{font-size:clamp(34px,6vw,58px);margin:8px 0 10px;color:var(--cream)}
+.hero h1 em{color:var(--amber);font-style:normal}
+.hero p{max-width:620px;color:var(--cream-dim);font-size:17px}
+
+.note-box{background:rgba(217,108,71,.07);border:1px solid rgba(217,108,71,.3);border-radius:var(--radius);padding:20px 24px;margin-top:30px;max-width:720px}
+.note-box b{color:var(--flame);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;display:block;margin-bottom:8px}
+.note-box p{font-size:14px;color:var(--cream-dim)}
+.note-box p+p{margin-top:10px}
+
+/* rule blocks */
+.rule{border-top:1px solid var(--line);padding:30px 0;display:grid;grid-template-columns:52px 1fr;gap:20px;counter-increment:r}
+.rules{counter-reset:r;margin-top:20px}
+.rule::before{content:counter(r,decimal-leading-zero);font-family:'JetBrains Mono',monospace;font-size:14px;color:var(--flame);padding-top:4px}
+.rule h3{font-size:19px;font-family:'Inter',sans-serif;font-weight:600;margin-bottom:8px;color:var(--cream)}
+.rule p{font-size:14.5px;color:var(--cream-dim);max-width:640px}
+.rule p+p{margin-top:10px}
+.rule b{color:var(--cream)}
+.rule-deep-link{display:inline-block;margin-top:13px;font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;text-decoration:none}
+.rule-deep-link::after{content:' →'}
+.ex{margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:14px;color:var(--moss);background:var(--ink-2);border:1px solid var(--line);border-radius:8px;padding:12px 16px;display:inline-block}
+.ex .en{color:var(--cream-dim);font-family:'Inter',sans-serif}
+.ex .tel{font-family:'Noto Sans Telugu',sans-serif;color:var(--cream)}
+.flag{margin-top:14px;border-left:3px solid var(--flame);background:rgba(217,108,71,.07);padding:11px 14px;font-size:13px;color:var(--cream-dim);border-radius:0 8px 8px 0}
+.flag b{color:var(--flame);font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;display:block;margin-bottom:5px}
+
+/* morpheme chips */
+.morph-row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:16px 0}
+.morph{border-radius:9px;padding:9px 14px;font-family:'JetBrains Mono',monospace;text-align:center;min-width:74px}
+.morph .p{font-size:16px;font-weight:700;display:block}
+.morph .r{font-size:9px;letter-spacing:.1em;text-transform:uppercase;opacity:.75;margin-top:3px;display:block}
+.morph.subj{background:rgba(232,163,61,.14);color:var(--amber);border:1px solid rgba(232,163,61,.35)}
+.morph.base{background:rgba(143,163,126,.14);color:var(--moss);border:1px solid rgba(143,163,126,.35)}
+.morph.mark{background:rgba(217,108,71,.14);color:var(--flame);border:1px solid rgba(217,108,71,.35)}
+.morph.op{background:none;border:none;color:var(--cream-dim);font-size:18px;min-width:auto;padding:0 2px}
+.morph.none{background:var(--ink-3);color:var(--cream-dim);border:1px dashed var(--line)}
+
+/* generic table */
+.tbl{width:100%;border-collapse:collapse;margin-top:22px;font-size:14.5px}
+.tbl th{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:11px 12px;color:var(--cream-dim);border-bottom:1px solid var(--line);vertical-align:bottom}
+.tbl td{padding:12px;border-bottom:1px solid var(--line);color:var(--cream-dim);vertical-align:top}
+.tbl td .rom{font-family:'JetBrains Mono',monospace;font-size:15px;color:var(--cream);font-weight:700}
+.tbl td .tel{font-family:'Noto Sans Telugu',sans-serif;font-size:15px;color:var(--cream-dim);opacity:.8}
+.tbl td small{display:block;font-size:12px;color:var(--cream-dim);margin-top:2px}
+.tbl .grp td{background:var(--ink-2);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--amber)}
+.tag{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:999px;margin-left:4px}
+.tag.neu{background:rgba(143,163,126,.16);color:var(--moss)}
+.tag.for{background:rgba(232,163,61,.16);color:var(--amber)}
+.tag.inf{background:rgba(217,108,71,.16);color:var(--flame)}
+.tag.m{background:rgba(110,150,200,.18);color:#8fb6e0}
+.tag.f{background:rgba(200,130,180,.16);color:#d9a2c8}
+
+/* anki table */
+.anki-wrap{overflow-x:auto;margin-top:26px;border:1px solid var(--line);border-radius:var(--radius)}
+.anki{width:100%;border-collapse:collapse;font-size:14px;min-width:720px}
+.anki th{background:var(--ink-3);font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:12px 14px;color:var(--amber);border-bottom:1px solid var(--line);white-space:nowrap}
+.anki td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--cream-dim);vertical-align:top}
+.anki tr:last-child td{border-bottom:none}
+.anki .f-en{color:var(--cream);width:31%}
+.anki .f-rom{font-family:'JetBrains Mono',monospace;color:var(--amber);font-weight:700;white-space:nowrap}
+.anki .f-tel{font-family:'Noto Sans Telugu',sans-serif;color:var(--cream)}
+.anki .f-aud{color:var(--cream-dim);opacity:.4;font-family:'JetBrains Mono',monospace;font-size:12px;text-align:center}
+.anki .f-ex{font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--moss)}
+.anki .sec td{background:var(--ink-2);font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--cream-dim)}
+.field-key{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--cream-dim)}
+.field-key span{background:var(--ink-2);border:1px solid var(--line);border-radius:6px;padding:5px 10px}
+.field-key b{color:var(--amber);font-weight:500}
+
+/* lesson questions */
+.question-link{display:grid;grid-template-columns:80px 1fr auto;align-items:center;gap:22px;margin-top:26px;border:1px dashed var(--line);border-radius:var(--radius);background:var(--ink-2);color:inherit;padding:22px;text-decoration:none}
+.question-link:hover{border-color:rgba(232,163,61,.4);background:var(--ink-3)}
+.question-mark{display:grid;width:60px;height:60px;place-items:center;border:1px solid rgba(143,163,126,.35);border-radius:50%;color:var(--moss);font-family:'Young Serif',serif;font-size:28px}
+.question-link h3{margin-bottom:5px;font-family:'Inter',sans-serif;font-size:17px;font-weight:600}
+.question-link p{margin:0;color:var(--cream-dim);font-size:13px}
+.question-open{color:var(--amber);font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;white-space:nowrap}
+.question-open::after{content:' →'}
+
+/* intro template */
+.template{margin-top:24px;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.template-row{display:grid;grid-template-columns:150px 1fr;gap:20px;padding:16px 20px;border-bottom:1px solid var(--line);background:var(--ink-2)}
+.template-row:last-child{border-bottom:none}
+.template-row>span{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--cream-dim);padding-top:4px}
+.template-row .line{font-family:'JetBrains Mono',monospace;font-size:15px;color:var(--amber);font-weight:700}
+.template-row .tel{font-family:'Noto Sans Telugu',sans-serif;font-size:15px;color:var(--cream);display:block;margin-top:3px}
+.template-row .en{font-size:13px;color:var(--cream-dim);display:block;margin-top:5px}
+
+footer{padding:52px 0 68px;border-top:1px solid var(--line)}
+footer p{font-size:13px;color:var(--cream-dim)}
+footer .mono{color:var(--amber)}
+.try{list-style:none;margin-top:18px;display:grid;gap:10px;max-width:640px}
+.try li{background:var(--ink-2);border:1px solid var(--line);border-radius:9px;padding:12px 16px;font-size:14px;color:var(--cream-dim)}
+.try li .q{color:var(--cream);font-weight:600}
+.try li .a{font-family:'JetBrains Mono',monospace;color:var(--moss);margin-top:4px;display:block}
+@media(max-width:720px){
+  .wrap{padding:0 16px}
+  .hero-glyph{right:0}
+  .rule{grid-template-columns:1fr;gap:8px}
+  .rule>div{min-width:0}
+  .tbl{display:block;width:100%;max-width:100%;overflow-x:auto;white-space:nowrap}
+  .question-link{grid-template-columns:52px 1fr;padding:18px 16px}
+  .question-mark{width:48px;height:48px}
+  .question-open{grid-column:2}
+  .template-row{grid-template-columns:1fr;gap:6px}
+}
+</style>
+</head>
+<body>
+
+<nav aria-label="Main">
+  <div class="wrap">
+    <a class="logo" href="../index.html"><span>te</span> lesson-02 · introductions</a>
+    <ul>
+      <li><a href="../index.html">Course home</a></li>
+      <li><a href="../stories/index.html">Stories</a></li>
+      <li><a href="#rules">Rules</a></li>
+      <li><a href="#possessives">My / our</a></li>
+      <li><a href="#template">Intro template</a></li>
+      <li><a href="#anki">Anki list</a></li>
+      <li><a href="#try">Self-test</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-glyph telugu" aria-hidden="true">నా</div>
+  <div class="wrap">
+    <a class="home-crumb" href="../index.html">← Foundational Telugu / Learning path</a>
+    <span class="eyebrow">Course extraction · Lesson 2</span>
+    <h1>Introducing yourself &amp; the <em>my / our</em> split</h1>
+    <p>Lesson 1 gave you the identity frame. Lesson 2 fills it with real content about <b>you</b> — name, age, profession, nationality, hometown, and family — and introduces the possessives <b>nā</b> (my) and <b>mā</b> (our). The cultural headline: close family always takes <b>mā</b>, "our," even if you are an only child.</p>
+
+    <div class="note-box">
+      <b>How I processed this</b>
+      <p>Auto-generated captions again, and this transcript was rougher than Lesson 1's — it rendered <em>abbāyi</em> as "abi," <em>āḍadi</em> as "Ardhangini," <em>pēru</em> as "Paru," <em>iravai</em> as "Airway," and <em>bhārya</em> as "Bahia." I reconstructed each from context and normalized everything to the same ISO-style diacritics used across the site.</p>
+      <p>Two items are worth confirming with your wife before you drill them: <b>moguḍu</b> for "man" (see the flag in rule 04) and whether the course's <b>mātṛbhāṣa</b> line was "mother tongue" as I've read it. Everything else is standard and low-risk.</p>
+    </div>
+  </div>
+</header>
+
+<section id="rules">
+  <div class="wrap">
+    <span class="eyebrow">The grammar engine</span>
+    <h2>Structures &amp; rules introduced</h2>
+    <p class="lede">Same colour code as Lesson 1: <b style="color:var(--amber)">subject / possessor</b> · <b style="color:var(--moss)">predicate word</b> · <b style="color:var(--flame)">person marker / suffix</b>. Lesson 2 mostly reuses the Lesson 1 machine — it adds possessives, a gender pattern, and one sound rule that explains a lot of what you'll hear.</p>
+
+    <div class="rules">
+
+      <div class="rule">
+        <div>
+          <h3><span class="mono">nēnu</span> has a long vowel</h3>
+          <p>The lesson opens by correcting pronunciation before anything else. It is <b>nēnu</b> <span class="telugu">నేను</span> with a long <b>ē</b>, not a short "nenu." Vowel length is contrastive in Telugu, so this is not a cosmetic detail — it is the difference between being understood immediately and making your listener work.</p>
+          <span class="ex">nēnu <span class="tel">నేను</span> &nbsp; <span class="en">— hold the ē. Same for pēru, not "peru."</span></span>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>The identity frame now takes any category</h3>
+          <p>Lesson 1's frame was <b>nēnu + NOUN + <span style="color:var(--flame)">-ni</span></b>. Lesson 2 shows that this one pattern covers everything you'd say about yourself: gender, species, profession, nationality. Learn the frame once and you swap the middle word forever.</p>
+          <div class="morph-row">
+            <span class="morph subj"><span class="p">nēnu</span><span class="r">I</span></span>
+            <span class="morph base"><span class="p">manishi</span><span class="r">person</span></span>
+            <span class="morph op">+</span>
+            <span class="morph mark"><span class="p">-ni</span><span class="r">"I" marker</span></span>
+            <span class="morph op">→</span>
+            <span class="morph"><span class="p mono" style="color:var(--cream)">manishini</span></span>
+          </div>
+          <span class="ex">nēnu abbāyini. <span class="tel">నేను అబ్బాయిని.</span> <span class="en">— "I am a boy."</span></span><br>
+          <span class="ex">nēnu ammāyini. <span class="tel">నేను అమ్మాయిని.</span> <span class="en">— "I am a girl."</span></span><br>
+          <span class="ex">nēnu manishini. <span class="tel">నేను మనిషిని.</span> <span class="en">— "I am a person / a human being."</span></span>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Fast speech deletes a vowel between words</h3>
+          <p>This is the lesson's most useful listening rule. When a word ending in a vowel is followed by a word starting with a vowel, the first vowel gets swallowed at conversational speed. <b>nēnu + abbāyini</b> is not pronounced as two clean words — it collapses to <b>nēnabbāyini</b>.</p>
+          <p>You saw this <em>inside</em> a word in Lesson 1 (vowel elision when a suffix attaches). Here it happens <b>across the word boundary</b>. Expect it constantly: it is why native speech sounds faster than the words on the page.</p>
+          <div class="morph-row">
+            <span class="morph subj"><span class="p">nēn<s>u</s></span><span class="r">I</span></span>
+            <span class="morph op">+</span>
+            <span class="morph base"><span class="p">abbāyini</span><span class="r">boy + marker</span></span>
+            <span class="morph op">→</span>
+            <span class="morph"><span class="p mono" style="color:var(--cream)">nēnabbāyini</span></span>
+          </div>
+          <span class="ex">nēnu ammāyini → nēnammāyini <span class="tel">నేనమ్మాయిని</span></span><br>
+          <span class="ex">nēnu āḍadini → nēnāḍadini <span class="tel">నేనాడదిని</span></span>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Stem-final <span class="mono">-u</span> becomes <span class="mono">-i</span> before the marker</h3>
+          <p>Nouns ending in <b>-ḍu</b> or <b>-lu</b> don't take <b>-ni</b> directly. The final <b>u</b> shifts to <b>i</b> first, then the marker attaches. The lesson calls this a quirk of pronunciation; treat it as a reliable mechanical step.</p>
+          <div class="morph-row">
+            <span class="morph base"><span class="p">bhāratīyuḍ<s>u</s></span><span class="r">Indian (m)</span></span>
+            <span class="morph op">→</span>
+            <span class="morph base"><span class="p">bhāratīyuḍi</span><span class="r">stem shift</span></span>
+            <span class="morph op">+</span>
+            <span class="morph mark"><span class="p">-ni</span><span class="r">"I"</span></span>
+            <span class="morph op">→</span>
+            <span class="morph"><span class="p mono" style="color:var(--cream)">bhāratīyuḍini</span></span>
+          </div>
+          <span class="ex">bhāratīyurālu → bhāratīyurālini <span class="en">— "I am an Indian woman."</span></span><br>
+          <span class="ex">moguḍu → moguḍini &nbsp;·&nbsp; āḍadi → āḍadini <span class="en">— words already ending in -i just add -ni.</span></span>
+          <div class="flag">
+            <b>Resolved in Lesson 4</b>
+            The course gives <b>moguḍu</b> <span class="telugu">మొగుడు</span> as “man” here, which looked wrong — and <a href="lesson-04-family.html">Lesson 4</a> confirms it: <b>moguḍu means husband</b>, the colloquial counterpart to formal <em>bharta</em>. For “a man” in the general sense, use <b>magavāḍu</b> <span class="telugu">మగవాడు</span>. Don't drill “nēnu moguḍini” as “I am a man.”
+          </div>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Male <span class="mono">-ḍu</span> / female <span class="mono">-rālu</span></h3>
+          <p>A pattern that runs through the whole language: many person-nouns come in a masculine form ending <b>-ḍu</b> and a feminine form ending <b>-rālu</b>. Once you notice it, you get the second half of every pair almost free.</p>
+          <table class="tbl">
+            <thead><tr><th>Meaning</th><th>Male · -ḍu</th><th>Female · -rālu</th></tr></thead>
+            <tbody>
+              <tr><td>teacher</td><td><span class="rom">upādhyāyuḍu</span> <span class="tel">ఉపాధ్యాయుడు</span></td><td><span class="rom">upādhyāyurālu</span> <span class="tel">ఉపాధ్యాయురాలు</span></td></tr>
+              <tr><td>doctor</td><td><span class="rom">vaidyuḍu</span> <span class="tel">వైద్యుడు</span></td><td><span class="rom">vaidyurālu</span> <span class="tel">వైద్యురాలు</span></td></tr>
+              <tr><td>friend</td><td><span class="rom">snēhituḍu</span> <span class="tel">స్నేహితుడు</span></td><td><span class="rom">snēhiturālu</span> <span class="tel">స్నేహితురాలు</span></td></tr>
+              <tr><td>Indian</td><td><span class="rom">bhāratīyuḍu</span> <span class="tel">భారతీయుడు</span></td><td><span class="rom">bhāratīyurālu</span> <span class="tel">భారతీయురాలు</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>English profession words are normal, not lazy</h3>
+          <p>The lesson makes a point of this: conversational Telugu freely uses English profession names, and for some jobs the Telugu word is effectively dead in speech. <b>abhiyanta</b> <span class="telugu">అభియంత</span> ("engineer") is the example given — nobody says it; everyone says <em>engineer</em>.</p>
+          <p>The reasoning offered is historical: Telugu used to borrow technical vocabulary from Sanskrit the way English borrowed from Latin. English now occupies that slot. Indian professional settings are multilingual, so the loanword is often the <b>more</b> natural choice, not a fallback.</p>
+          <span class="ex">nēnu enjinīrni. <span class="tel">నేను ఇంజినీర్‌ని.</span> <span class="en">— "I am an engineer." (the normal way)</span></span><br>
+          <span class="ex">nēnu ḍākṭarni. <span class="tel">నేను డాక్టర్‌ని.</span> &nbsp;·&nbsp; nēnu lāyarni. <span class="en">— equally fine.</span></span>
+          <p>This is good news for you: you can talk about your profession today without waiting for the vocabulary. The Telugu forms are still listed below so you recognise them when they appear in formal or written contexts.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Two possessives: <span class="mono">nā</span> (my) and <span class="mono">mā</span> (our)</h3>
+          <p>They sit directly in front of the noun. No ending changes on either word, and nothing else is needed.</p>
+          <div class="morph-row">
+            <span class="morph subj"><span class="p">nā</span><span class="r">my</span></span>
+            <span class="morph base"><span class="p">pēru</span><span class="r">name</span></span>
+            <span class="morph op">→</span>
+            <span class="morph"><span class="p mono" style="color:var(--cream)">nā pēru</span></span>
+          </div>
+          <p>Their standalone forms — <b>mine</b> and <b>ours</b> — add <b>-di</b>: <b>nādi</b> <span class="telugu">నాది</span> and <b>mādi</b> <span class="telugu">మాది</span>. You'll meet <em>mādi</em> again in rule 12, where it does the work of a whole sentence.</p>
+          <p><a href="lesson-05-possessives.html">Lesson 5</a> sharpens this: <b>mā</b> is specifically the <em>exclusive</em> “our,” and <b>mana</b> <span class="telugu">మన</span> is the inclusive one — the same split as <em>mēmu</em> / <em>manamu</em> from Lesson 1.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>There is no apostrophe-s — just stack the words</h3>
+          <p>Telugu has no equivalent of <em>'s</em>. "My doctor's name" is simply <b>my + doctor + name</b>, in that order, with nothing joining them. Possession is expressed by adjacency.</p>
+          <div class="morph-row">
+            <span class="morph subj"><span class="p">nā</span><span class="r">my</span></span>
+            <span class="morph base"><span class="p">ḍākṭar</span><span class="r">doctor</span></span>
+            <span class="morph base"><span class="p">pēru</span><span class="r">name</span></span>
+            <span class="morph op">→</span>
+            <span class="morph"><span class="p mono" style="color:var(--cream)">nā ḍākṭar pēru</span></span>
+          </div>
+          <span class="ex">nā ḍākṭar pēru Sophia. <span class="tel">నా డాక్టర్ పేరు సోఫియా.</span> <span class="en">— "My doctor's name is Sophia."</span></span>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Close family takes <span class="mono">mā</span>, not <span class="mono">nā</span></h3>
+          <p>This is the cultural core of the lesson. For immediate family — mother, father, siblings — Telugu speakers say <b>our</b>, not <b>my</b>. You do not say <em>nā amma</em>; you say <b>mā amma</b>, literally "our mother."</p>
+          <p>The reasoning given: the family, not the individual, is the central unit. So it is the family's mother and the family's father. This holds <b>even if you are an only child</b> — the "our" is not about siblings, it's about the family being the thing that owns the relationship.</p>
+          <span class="ex">mā amma <span class="tel">మా అమ్మ</span> <span class="en">— "my mother" (literally "our mother")</span></span><br>
+          <span class="ex">mā nāna <span class="tel">మా నాన్న</span> <span class="en">— "my father" (literally "our father")</span></span>
+          <p>People <b>outside</b> the family unit work the ordinary way, with <b>nā</b>: your friend, your doctor, your teacher.</p>
+          <span class="ex">nā snēhituḍu <span class="tel">నా స్నేహితుడు</span> <span class="en">— "my friend" (male)</span></span><br>
+          <span class="ex">nā ḍākṭar <span class="en">— "my doctor"</span></span>
+          <div class="flag">
+            <b>Why this matters for you</b>
+            Getting this wrong isn't a grammar error — it lands as a small cultural tell. Saying <em>nā amma</em> is intelligible but marks you as translating from English. <em>mā amma</em> is one of the cheapest ways to sound like you actually learned Telugu rather than decoded it.
+          </div>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Spouses take <span class="mono">nā</span> — with a traditional alternative</h3>
+          <p>Husband and wife break the family pattern: they take <b>nā</b>. But the lesson offers a second, more traditional option that reuses the respectful pronouns from Lesson 1.</p>
+          <table class="tbl">
+            <thead><tr><th></th><th>Everyday</th><th>Traditional</th><th>Literally</th></tr></thead>
+            <tbody>
+              <tr><td><b style="color:var(--cream)">my wife</b></td><td><span class="rom">nā bhārya</span> <span class="tel">నా భార్య</span></td><td><span class="rom">mā āviḍa</span> <span class="tel">మా ఆవిడ</span></td><td>"our respected she" — the matriarch of the family</td></tr>
+              <tr><td><b style="color:var(--cream)">my husband</b></td><td><span class="rom">nā bharta</span> <span class="tel">నా భర్త</span></td><td><span class="rom">mā āyana</span> <span class="tel">మా ఆయన</span></td><td>"our respected he" — the patriarch of the family</td></tr>
+            </tbody>
+          </table>
+          <p>Note what just happened: <b>āyana</b> and <b>āviḍa</b> — the formal third-person pronouns you learned in Lesson 1 — have become nouns here. That kind of reuse is exactly why the pronoun set was worth learning properly.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Name and age use the same bare frame</h3>
+          <p>No verb, no copula — Lesson 1's zero-copula rule doing the work again. Possessor, noun, value.</p>
+          <span class="ex">nā pēru Raj. <span class="tel">నా పేరు రాజ్.</span> <span class="en">— "My name is Raj."</span></span><br>
+          <span class="ex">nā vayasu iravai. <span class="tel">నా వయసు ఇరవై.</span> <span class="en">— "My age is 20." (iravai = 20, muppai = 30)</span></span>
+          <p>Numbers get their own lesson later; for now you only need the one that applies to you.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Origin: <span class="mono">mā ūru</span> → contracted to <span class="mono">mādi</span></h3>
+          <p>Hometown is family territory, so it takes <b>mā</b>: <b>mā ūru Hyderabad</b>, "our town is Hyderabad." In practice this contracts to <b>mādi Hyderabad</b> — literally "ours is Hyderabad," using the standalone possessive from rule 07.</p>
+          <span class="ex">mā ūru Hyderabad. <span class="tel">మా ఊరు హైదరాబాద్.</span> <span class="en">— "Our town is Hyderabad."</span></span><br>
+          <span class="ex">mādi Hyderabad. <span class="tel">మాది హైదరాబాద్.</span> <span class="en">— "Ours is Hyderabad." (the common form)</span></span>
+          <p>The same frame scales to any level of origin — city, region, state, country. <b>mādi London</b>, <b>mādi Karnataka</b>, <b>mādi America</b>.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Nationality: two routes to the same fact</h3>
+          <p>You can state nationality with the identity frame <em>or</em> with the origin frame, and both are normal.</p>
+          <span class="ex">nēnu bhāratīyuḍini. <span class="tel">నేను భారతీయుడిని.</span> <span class="en">— "I am an Indian." (male)</span></span><br>
+          <span class="ex">mādi India. <span class="en">— "Ours is India." (same information, family framing)</span></span>
+          <p>Most country names are borrowed from English with minor pronunciation shifts, so <b>nēnu Amerikanni</b> / <b>mādi America</b> works immediately. India has a native name: <b>Bhārata Dēśam</b> <span class="telugu">భారత దేశం</span>, where <em>Bhārata</em> is the ancient name and <b>dēśam</b> means "country." Both <em>Bhārata Dēśam</em> and <em>India</em> are used interchangeably.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="possessives">
+  <div class="wrap">
+    <span class="eyebrow">Reference</span>
+    <h2>The my / our decision</h2>
+    <p class="lede">The single most error-prone thing in this lesson. When in doubt, ask: <b>is this person part of my family unit?</b></p>
+    <table class="tbl">
+      <thead><tr><th>Form</th><th>Telugu</th><th>Means</th><th>Use for</th></tr></thead>
+      <tbody>
+        <tr><td><span class="rom">nā</span></td><td class="telugu">నా</td><td>my</td><td>Friends, doctor, teacher, colleagues, spouse, your own name / age / profession</td></tr>
+        <tr><td><span class="rom">mā</span></td><td class="telugu">మా</td><td>our</td><td>Mother, father, siblings, hometown, country, mother tongue — the family unit</td></tr>
+        <tr><td><span class="rom">nādi</span></td><td class="telugu">నాది</td><td>mine</td><td>Standing alone, without a following noun</td></tr>
+        <tr><td><span class="rom">mādi</span></td><td class="telugu">మాది</td><td>ours</td><td>Standing alone — especially "mādi Hyderabad" for origin</td></tr>
+      </tbody>
+    </table>
+
+    <table class="tbl">
+      <thead><tr><th>You want to say</th><th>Correct</th><th>Not</th></tr></thead>
+      <tbody>
+        <tr class="grp"><td colspan="3">Inside the family unit → mā</td></tr>
+        <tr><td>my mother</td><td><span class="rom">mā amma</span> <span class="tel">మా అమ్మ</span></td><td><span style="color:var(--flame)">nā amma</span></td></tr>
+        <tr><td>my father</td><td><span class="rom">mā nāna</span> <span class="tel">మా నాన్న</span></td><td><span style="color:var(--flame)">nā nāna</span></td></tr>
+        <tr><td>my hometown</td><td><span class="rom">mā ūru</span> <span class="tel">మా ఊరు</span></td><td><span style="color:var(--flame)">nā ūru</span></td></tr>
+        <tr><td>my mother tongue</td><td><span class="rom">mā mātṛbhāṣa</span> <span class="tel">మా మాతృభాష</span></td><td><span style="color:var(--flame)">nā mātṛbhāṣa</span></td></tr>
+        <tr class="grp"><td colspan="3">Outside the family unit → nā</td></tr>
+        <tr><td>my friend <span class="tag m">m</span></td><td><span class="rom">nā snēhituḍu</span> <span class="tel">నా స్నేహితుడు</span></td><td>—</td></tr>
+        <tr><td>my friend <span class="tag f">f</span></td><td><span class="rom">nā snēhiturālu</span> <span class="tel">నా స్నేహితురాలు</span></td><td>—</td></tr>
+        <tr><td>my doctor</td><td><span class="rom">nā ḍākṭar</span></td><td>—</td></tr>
+        <tr><td>my name / my age</td><td><span class="rom">nā pēru</span> · <span class="rom">nā vayasu</span></td><td>—</td></tr>
+        <tr class="grp"><td colspan="3">Spouse → nā, or traditional mā + respectful pronoun</td></tr>
+        <tr><td>my wife</td><td><span class="rom">nā bhārya</span> <span class="tel">నా భార్య</span></td><td>also: <span class="rom">mā āviḍa</span></td></tr>
+        <tr><td>my husband</td><td><span class="rom">nā bharta</span> <span class="tel">నా భర్త</span></td><td>also: <span class="rom">mā āyana</span></td></tr>
+      </tbody>
+    </table>
+
+    <div class="note-box" style="margin-top:28px">
+      <b>Loanword escape hatch</b>
+      <p>The lesson points out that <b>nā friend</b> is perfectly acceptable and sidesteps the male/female split entirely — <em>snēhituḍu</em> vs <em>snēhiturālu</em> becomes one word you can't get wrong. Worth knowing while the gender pairs are still settling.</p>
+    </div>
+  </div>
+</section>
+
+<section id="template">
+  <div class="wrap">
+    <span class="eyebrow">Put it together</span>
+    <h2>Your self-introduction template</h2>
+    <p class="lede">Every slot below is built from rules 01–13. Fill them in for yourself, say the whole thing out loud, and you have a complete Telugu introduction after two lessons.</p>
+
+    <div class="template">
+      <div class="template-row"><span>Greeting</span><div><span class="line">namaskāraṁ.</span><span class="tel">నమస్కారం.</span><span class="en">Hello. (from Lesson 1)</span></div></div>
+      <div class="template-row"><span>Name</span><div><span class="line">nā pēru ______.</span><span class="tel">నా పేరు ______.</span><span class="en">My name is ______.</span></div></div>
+      <div class="template-row"><span>Age</span><div><span class="line">nā vayasu ______.</span><span class="tel">నా వయసు ______.</span><span class="en">My age is ______.</span></div></div>
+      <div class="template-row"><span>Profession</span><div><span class="line">nēnu ______ ni.</span><span class="tel">నేను ______ ని.</span><span class="en">I am a ______. (English profession word is fine)</span></div></div>
+      <div class="template-row"><span>Nationality</span><div><span class="line">nēnu ______ ni. / mādi ______.</span><span class="tel">నేను ______ ని. / మాది ______.</span><span class="en">I am ______. / Ours is ______.</span></div></div>
+      <div class="template-row"><span>Hometown</span><div><span class="line">mādi ______.</span><span class="tel">మాది ______.</span><span class="en">Our hometown is ______.</span></div></div>
+      <div class="template-row"><span>Language</span><div><span class="line">mā mātṛbhāṣa ______.</span><span class="tel">మా మాతృభాష ______.</span><span class="en">Our mother tongue is ______.</span></div></div>
+      <div class="template-row"><span>Father</span><div><span class="line">mā nāna pēru ______.</span><span class="tel">మా నాన్న పేరు ______.</span><span class="en">My father's name is ______.</span></div></div>
+      <div class="template-row"><span>Mother</span><div><span class="line">mā amma pēru ______.</span><span class="tel">మా అమ్మ పేరు ______.</span><span class="en">My mother's name is ______.</span></div></div>
+      <div class="template-row"><span>Spouse</span><div><span class="line">nā bhārya / nā bharta pēru ______.</span><span class="tel">నా భార్య / నా భర్త పేరు ______.</span><span class="en">My wife's / husband's name is ______.</span></div></div>
+      <div class="template-row"><span>Their job</span><div><span class="line">atanu oka ______. / āme oka ______.</span><span class="tel">అతను ఒక ______. / ఆమె ఒక ______.</span><span class="en">He is a ______. / She is a ______. (Lesson 1 pronouns + oka)</span></div></div>
+      <div class="template-row"><span>Close</span><div><span class="line">dhanyavādālu.</span><span class="tel">ధన్యవాదాలు.</span><span class="en">Thank you.</span></div></div>
+    </div>
+
+    <div class="note-box" style="margin-top:28px">
+      <b>Notice what the last row proves</b>
+      <p>"atanu oka actor" pulls in the neutral third-person pronoun and <span class="mono">oka</span> from Lesson 1 — including the exact situation where <a href="../concepts/oka-one-and-a.html">oka is genuinely natural</a>: introducing someone as one member of a profession. Two lessons in and the pieces are already recombining.</p>
+    </div>
+  </div>
+</section>
+
+<section id="questions">
+  <div class="wrap">
+    <span class="eyebrow">From this lesson</span>
+    <h2>Question deep dives</h2>
+    <p class="lede">Add your questions from the video here and I'll build them out as standalone pages, the way we did for <span class="mono">oka</span>.</p>
+    <a class="question-link" href="../concepts/index.html">
+      <span class="question-mark">?</span>
+      <span><h3>No deep dives linked yet for Lesson 2</h3><p>Likely candidates from this material: the <span class="mono">mā</span> family rule and its edges, the <span class="mono">-ḍu</span>/<span class="mono">-rālu</span> gender system, or when loanwords beat Telugu vocabulary.</p></span>
+      <span class="question-open">Open library</span>
+    </a>
+  </div>
+</section>
+
+<section id="anki">
+  <div class="wrap">
+    <span class="eyebrow">For import</span>
+    <h2>Anki word list — your 5 fields</h2>
+    <p class="lede">Same five-field format. <b>Audio</b> stays blank for your recordings. Where a word has a common English loanword equivalent, the English field says so — you may decide not to drill the Telugu form at all right now.</p>
+    <div class="field-key">
+      <span><b>1</b> English (+ cue)</span>
+      <span><b>2</b> Romanized</span>
+      <span><b>3</b> Telugu script</span>
+      <span><b>4</b> Audio (blank)</span>
+      <span><b>5</b> Example</span>
+    </div>
+
+    <div class="anki-wrap">
+      <table class="anki">
+        <thead>
+          <tr><th class="f-en">English (with cue)</th><th>Romanized</th><th>Telugu</th><th style="text-align:center">Audio</th><th>Example sentence</th></tr>
+        </thead>
+        <tbody>
+          <tr class="sec"><td colspan="5">Describing yourself — people words</td></tr>
+          <tr><td class="f-en">boy</td><td class="f-rom">abbāyi</td><td class="f-tel">అబ్బాయి</td><td class="f-aud">[ ]</td><td class="f-ex">nēnu abbāyini.</td></tr>
+          <tr><td class="f-en">girl</td><td class="f-rom">ammāyi</td><td class="f-tel">అమ్మాయి</td><td class="f-aud">[ ]</td><td class="f-ex">nēnu ammāyini.</td></tr>
+          <tr><td class="f-en">man (course form — see rule 04; Lesson 4 confirms this means “husband”)</td><td class="f-rom">moguḍu</td><td class="f-tel">మొగుడు</td><td class="f-aud">[ ]</td><td class="f-ex">nā moguḍu enjinīr.</td></tr>
+          <tr><td class="f-en">woman</td><td class="f-rom">āḍadi</td><td class="f-tel">ఆడది</td><td class="f-aud">[ ]</td><td class="f-ex">nēnu āḍadini.</td></tr>
+          <tr><td class="f-en">person / human being</td><td class="f-rom">manishi</td><td class="f-tel">మనిషి</td><td class="f-aud">[ ]</td><td class="f-ex">nēnu manishini.</td></tr>
+
+          <tr class="sec"><td colspan="5">Professions — Telugu forms</td></tr>
+          <tr><td class="f-en">teacher (male, formal Telugu form)</td><td class="f-rom">upādhyāyuḍu</td><td class="f-tel">ఉపాధ్యాయుడు</td><td class="f-aud">[ ]</td><td class="f-ex">nēnu upādhyāyuḍini.</td></tr>
+          <tr><td class="f-en">teacher (female, formal Telugu form)</td><td class="f-rom">upādhyāyurālu</td><td class="f-tel">ఉపాధ్యాయురాలు</td><td class="f-aud">[ ]</td><td class="f-ex">nēnu upādhyāyurālini.</td></tr>
+          <tr><td class="f-en">doctor (male, formal Telugu form)</td><td class="f-rom">vaidyuḍu</td><td class="f-tel">వైద్యుడు</td><td class="f-aud">[ ]</td><td class="f-ex">āyana oka vaidyuḍu.</td></tr>
+          <tr><td class="f-en">doctor (female, formal Telugu form)</td><td class="f-rom">vaidyurālu</td><td class="f-tel">వైద్యురాలు</td><td class="f-aud">[ ]</td><td class="f-ex">āme oka vaidyurālu.</td></tr>
+          <tr><td class="f-en">lawyer</td><td class="f-rom">nyāyavādi</td><td class="f-tel">న్యాయవాది</td><td class="f-aud">[ ]</td><td class="f-ex">nēnu nyāyavādini.</td></tr>
+          <tr><td class="f-en">engineer (Telugu form — recognise only, never used in speech)</td><td class="f-rom">abhiyanta</td><td class="f-tel">అభియంత</td><td class="f-aud">[ ]</td><td class="f-ex">nēnu enjinīrni.</td></tr>
+          <tr><td class="f-en">doctor (loanword — the everyday choice)</td><td class="f-rom">ḍākṭaru</td><td class="f-tel">డాక్టర్</td><td class="f-aud">[ ]</td><td class="f-ex">nā ḍākṭar pēru Sophia.</td></tr>
+
+          <tr class="sec"><td colspan="5">Possessives</td></tr>
+          <tr><td class="f-en">my (before a noun)</td><td class="f-rom">nā</td><td class="f-tel">నా</td><td class="f-aud">[ ]</td><td class="f-ex">nā pēru Raj.</td></tr>
+          <tr><td class="f-en">our (before a noun — also "my" for close family)</td><td class="f-rom">mā</td><td class="f-tel">మా</td><td class="f-aud">[ ]</td><td class="f-ex">mā amma pēru Sunita.</td></tr>
+          <tr><td class="f-en">mine (stands alone)</td><td class="f-rom">nādi</td><td class="f-tel">నాది</td><td class="f-aud">[ ]</td><td class="f-ex">nādi oka kāru.</td></tr>
+          <tr><td class="f-en">ours (stands alone — used for hometown)</td><td class="f-rom">mādi</td><td class="f-tel">మాది</td><td class="f-aud">[ ]</td><td class="f-ex">mādi Hyderabad.</td></tr>
+
+          <tr class="sec"><td colspan="5">Name, age, numbers</td></tr>
+          <tr><td class="f-en">name (long ē — not like the country Peru)</td><td class="f-rom">pēru</td><td class="f-tel">పేరు</td><td class="f-aud">[ ]</td><td class="f-ex">nā pēru Raj.</td></tr>
+          <tr><td class="f-en">age</td><td class="f-rom">vayasu</td><td class="f-tel">వయసు</td><td class="f-aud">[ ]</td><td class="f-ex">nā vayasu iravai.</td></tr>
+          <tr><td class="f-en">twenty (20)</td><td class="f-rom">iravai</td><td class="f-tel">ఇరవై</td><td class="f-aud">[ ]</td><td class="f-ex">nā vayasu iravai.</td></tr>
+          <tr><td class="f-en">thirty (30)</td><td class="f-rom">muppai</td><td class="f-tel">ముప్పై</td><td class="f-aud">[ ]</td><td class="f-ex">nā vayasu muppai.</td></tr>
+
+          <tr class="sec"><td colspan="5">Family &amp; people close to you</td></tr>
+          <tr><td class="f-en">mother (say "mā amma" for "my mother")</td><td class="f-rom">amma</td><td class="f-tel">అమ్మ</td><td class="f-aud">[ ]</td><td class="f-ex">mā amma pēru Sunita.</td></tr>
+          <tr><td class="f-en">father (say "mā nāna" for "my father")</td><td class="f-rom">nāna</td><td class="f-tel">నాన్న</td><td class="f-aud">[ ]</td><td class="f-ex">mā nāna pēru John.</td></tr>
+          <tr><td class="f-en">friend (male)</td><td class="f-rom">snēhituḍu</td><td class="f-tel">స్నేహితుడు</td><td class="f-aud">[ ]</td><td class="f-ex">nā snēhituḍu vidyārthi.</td></tr>
+          <tr><td class="f-en">friend (female)</td><td class="f-rom">snēhiturālu</td><td class="f-tel">స్నేహితురాలు</td><td class="f-aud">[ ]</td><td class="f-ex">nā snēhiturālu vidyārthi.</td></tr>
+          <tr><td class="f-en">wife</td><td class="f-rom">bhārya</td><td class="f-tel">భార్య</td><td class="f-aud">[ ]</td><td class="f-ex">nā bhārya pēru Namrata.</td></tr>
+          <tr><td class="f-en">husband</td><td class="f-rom">bharta</td><td class="f-tel">భర్త</td><td class="f-aud">[ ]</td><td class="f-ex">nā bharta oka ṭīcharu.</td></tr>
+
+          <tr class="sec"><td colspan="5">Where you're from</td></tr>
+          <tr><td class="f-en">town / hometown</td><td class="f-rom">ūru</td><td class="f-tel">ఊరు</td><td class="f-aud">[ ]</td><td class="f-ex">mā ūru Hyderabad.</td></tr>
+          <tr><td class="f-en">native place (own town)</td><td class="f-rom">sonta ūru</td><td class="f-tel">సొంత ఊరు</td><td class="f-aud">[ ]</td><td class="f-ex">mā sonta ūru Hyderabad.</td></tr>
+          <tr><td class="f-en">country</td><td class="f-rom">dēśam</td><td class="f-tel">దేశం</td><td class="f-aud">[ ]</td><td class="f-ex">mādi Bhārata Dēśam.</td></tr>
+          <tr><td class="f-en">India (ancient name + "country")</td><td class="f-rom">Bhārata Dēśam</td><td class="f-tel">భారత దేశం</td><td class="f-aud">[ ]</td><td class="f-ex">mādi Bhārata Dēśam.</td></tr>
+          <tr><td class="f-en">Indian (male)</td><td class="f-rom">bhāratīyuḍu</td><td class="f-tel">భారతీయుడు</td><td class="f-aud">[ ]</td><td class="f-ex">nēnu bhāratīyuḍini.</td></tr>
+          <tr><td class="f-en">Indian (female)</td><td class="f-rom">bhāratīyurālu</td><td class="f-tel">భారతీయురాలు</td><td class="f-aud">[ ]</td><td class="f-ex">nēnu bhāratīyurālini.</td></tr>
+          <tr><td class="f-en">mother tongue</td><td class="f-rom">mātṛbhāṣa</td><td class="f-tel">మాతృభాష</td><td class="f-aud">[ ]</td><td class="f-ex">mā mātṛbhāṣa Telugu.</td></tr>
+
+          <tr class="sec"><td colspan="5">Closing</td></tr>
+          <tr><td class="f-en">thank you</td><td class="f-rom">dhanyavādālu</td><td class="f-tel">ధన్యవాదాలు</td><td class="f-aud">[ ]</td><td class="f-ex">dhanyavādālu.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="lede" style="margin-top:20px;font-size:14px">That's <b>34 notes</b> — a lot more than Lesson 1's 27, and far more than five days of your Anki limit. Suggested priority if you want to sequence it: the four possessives, <span class="mono">pēru</span>, <span class="mono">vayasu</span>, <span class="mono">amma</span>, <span class="mono">nāna</span>, and <span class="mono">manishi</span> first — those unlock the whole introduction template. The formal Telugu profession words (<span class="mono">upādhyāyuḍu</span>, <span class="mono">vaidyuḍu</span>, <span class="mono">abhiyanta</span>) are recognition-only for now; the lesson itself says you'll use the English words in conversation.</p>
+  </div>
+</section>
+
+<section id="try">
+  <div class="wrap">
+    <span class="eyebrow">From the lesson</span>
+    <h2>Quick self-test</h2>
+    <p class="lede">The video's own check questions plus a few builds from the template. Cover the green line and say each aloud first.</p>
+    <ul class="try">
+      <li><span class="q">"I am a person / a human being."</span><span class="a">nēnu manishini. &nbsp; (manishi already ends in -i, so just add -ni)</span></li>
+      <li><span class="q">"I am a girl" — now say it at conversational speed.</span><span class="a">nēnu ammāyini → nēnammāyini &nbsp; (the u of nēnu disappears)</span></li>
+      <li><span class="q">How do you say "my mother"?</span><span class="a">mā amma. &nbsp; (literally "our mother" — never nā amma)</span></li>
+      <li><span class="q">How do you say "my father"?</span><span class="a">mā nāna. &nbsp; (family unit → mā)</span></li>
+      <li><span class="q">How do you say "my friend" when it's a boy? A girl?</span><span class="a">nā snēhituḍu. / nā snēhiturālu. &nbsp; (or just nā friend)</span></li>
+      <li><span class="q">"My husband" — everyday and traditional.</span><span class="a">nā bharta. / mā āyana. &nbsp; ("our respected he")</span></li>
+      <li><span class="q">"My doctor's name is Sophia."</span><span class="a">nā ḍākṭar pēru Sophia. &nbsp; (no apostrophe-s, just stack)</span></li>
+      <li><span class="q">"My father is a teacher."</span><span class="a">mā nāna oka ṭīcharu. &nbsp; (mā for family, loanword profession)</span></li>
+      <li><span class="q">You're from Hyderabad — two ways.</span><span class="a">mā ūru Hyderabad. / mādi Hyderabad.</span></li>
+      <li><span class="q">"I am an Indian" (male speaker).</span><span class="a">nēnu bhāratīyuḍini. &nbsp; (-ḍu → -ḍi before -ni)</span></li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><span class="mono">nā pēru ______. mādi ______.</span> — after two lessons you can introduce yourself, your family, and where you're from. Next: numbers, which finishes the age slot properly.</p>
+    <p style="margin-top:12px"><a href="lesson-03-greetings.html">Lesson 3: Greetings, politeness &amp; the three ways to say no →</a></p>
+    <p style="margin-top:12px"><a href="lesson-01-pronouns.html">← Lesson 1: Pronouns &amp; the missing "to be"</a></p>
+    <p style="margin-top:12px"><a href="../index.html">← Return to the Foundational Telugu learning path</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

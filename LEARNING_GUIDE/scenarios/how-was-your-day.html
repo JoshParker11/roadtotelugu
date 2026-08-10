@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>“How was your day?” | Foundational Telugu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+Telugu:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#191915;--ink-2:#22221d;--ink-3:#2c2c25;
+  --cream:#f1ece0;--cream-dim:#b9b3a4;
+  --amber:#e8a33d;--moss:#8fa37e;--flame:#d96c47;--violet:#a48cc4;
+  --line:rgba(241,236,224,.12);--radius:14px;--max:1000px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{background:var(--ink);color:var(--cream);font-family:'Inter',sans-serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.telugu{font-family:'Noto Sans Telugu','Inter',sans-serif}
+.mono{font-family:'JetBrains Mono',monospace}
+h1,h2,h3{font-family:'Young Serif',serif;font-weight:400;line-height:1.15}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+section{padding:70px 0;border-top:1px solid var(--line)}
+.eyebrow{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--amber);margin-bottom:14px;display:block}
+h2{font-size:clamp(26px,4.2vw,36px);margin-bottom:14px}
+.lede{color:var(--cream-dim);max-width:680px;font-size:16.5px}
+.lede b{color:var(--cream)}
+a{color:var(--amber)}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:4px}
+
+nav{position:sticky;top:0;z-index:50;background:rgba(25,25,21,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+.logo{font-family:'JetBrains Mono',monospace;font-size:13.5px;font-weight:700;color:var(--cream);text-decoration:none}
+.logo span{color:var(--amber)}
+nav ul{display:flex;gap:20px;list-style:none}
+nav ul a{color:var(--cream-dim);text-decoration:none;font-size:13px;font-weight:500}
+nav ul a:hover{color:var(--amber)}
+@media(max-width:760px){nav ul{display:none}}
+.crumb{display:inline-block;margin-bottom:18px;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--cream-dim);text-decoration:none}
+.crumb:hover{color:var(--amber)}
+
+header.hero{padding:78px 0 60px;position:relative;overflow:hidden}
+.hero-glyph{position:absolute;right:-24px;top:-60px;font-family:'Noto Sans Telugu',sans-serif;font-size:clamp(200px,32vw,380px);line-height:1;color:rgba(232,163,61,.055);user-select:none;pointer-events:none}
+.hero .wrap{position:relative;z-index:1}
+.hero h1{font-size:clamp(34px,6vw,56px);margin:8px 0 10px;color:var(--cream)}
+.hero p{max-width:660px;color:var(--cream-dim);font-size:17px}
+
+.note-box{background:rgba(217,108,71,.07);border:1px solid rgba(217,108,71,.3);border-radius:var(--radius);padding:20px 24px;margin-top:28px;max-width:740px}
+.note-box b{color:var(--flame);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;display:block;margin-bottom:8px}
+.note-box p{font-size:14px;color:var(--cream-dim)}
+.note-box p+p{margin-top:10px}
+.note-box.win{background:rgba(143,163,126,.08);border-color:rgba(143,163,126,.32)}
+.note-box.win b{color:var(--moss)}
+.note-box.warn{background:rgba(164,140,196,.08);border-color:rgba(164,140,196,.32)}
+.note-box.warn b{color:var(--violet)}
+
+/* the say-this component */
+.say{border:1px solid var(--line);border-radius:var(--radius);background:var(--ink-2);padding:20px 22px;margin-top:14px;position:relative}
+.say .tel{display:block;font-family:'Noto Sans Telugu',sans-serif;font-size:23px;color:var(--cream);line-height:1.45}
+.say .rom{display:block;font-family:'JetBrains Mono',monospace;font-size:15px;color:var(--amber);font-weight:700;margin-top:7px}
+.say .en{display:block;font-size:14px;color:var(--cream-dim);margin-top:8px}
+.say .why{display:block;font-size:13px;color:var(--cream-dim);margin-top:12px;padding-top:12px;border-top:1px solid var(--line)}
+.say .why b{color:var(--moss)}
+.say.ask{border-left:3px solid var(--violet)}
+.say.top{border-left:3px solid var(--moss)}
+.say .lvl{position:absolute;top:16px;right:18px;font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;padding:3px 8px;border-radius:999px;background:rgba(232,163,61,.14);color:var(--amber)}
+.say .lvl.now{background:rgba(143,163,126,.18);color:var(--moss)}
+.say .lvl.chunk{background:rgba(217,108,71,.16);color:var(--flame)}
+
+.ladder{counter-reset:step;margin-top:26px}
+.step{border-top:1px solid var(--line);padding:28px 0;counter-increment:step}
+.step>h3{font-family:'Inter',sans-serif;font-size:19px;font-weight:600;color:var(--cream);margin-bottom:6px}
+.step>h3::before{content:counter(step);font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--flame);margin-right:10px}
+.step>p{font-size:14.5px;color:var(--cream-dim);max-width:660px}
+
+.tbl{width:100%;border-collapse:collapse;margin-top:22px;font-size:14.5px}
+.tbl th{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:11px 12px;color:var(--cream-dim);border-bottom:1px solid var(--line);vertical-align:bottom}
+.tbl td{padding:12px;border-bottom:1px solid var(--line);color:var(--cream-dim);vertical-align:top}
+.tbl td .rom{font-family:'JetBrains Mono',monospace;font-size:15px;color:var(--amber);font-weight:700}
+.tbl td .tel{font-family:'Noto Sans Telugu',sans-serif;font-size:15px;color:var(--cream)}
+
+.swap{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:16px 0}
+.swap .fix{border-radius:9px;padding:9px 14px;font-family:'JetBrains Mono',monospace;background:rgba(143,163,126,.13);color:var(--moss);border:1px solid rgba(143,163,126,.32);font-size:15px}
+.swap .slot{border-radius:9px;padding:9px 14px;font-family:'JetBrains Mono',monospace;background:rgba(217,108,71,.13);color:var(--flame);border:1px dashed rgba(217,108,71,.5);font-size:15px}
+.slot-list{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}
+.slot-list span{font-family:'JetBrains Mono',monospace;font-size:12.5px;background:var(--ink-3);border:1px solid var(--line);border-radius:999px;padding:5px 11px;color:var(--cream-dim)}
+.slot-list span b{color:var(--cream);font-weight:500}
+
+.anki-wrap{overflow-x:auto;margin-top:26px;border:1px solid var(--line);border-radius:var(--radius)}
+.anki{width:100%;border-collapse:collapse;font-size:14px;min-width:760px}
+.anki th{background:var(--ink-3);font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:12px 14px;color:var(--amber);border-bottom:1px solid var(--line);white-space:nowrap}
+.anki td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--cream-dim);vertical-align:top}
+.anki tr:last-child td{border-bottom:none}
+.anki .f-en{color:var(--cream);width:30%}
+.anki .f-rom{font-family:'JetBrains Mono',monospace;color:var(--amber);font-weight:700}
+.anki .f-tel{font-family:'Noto Sans Telugu',sans-serif;color:var(--cream)}
+.anki .f-aud{color:var(--cream-dim);opacity:.4;font-family:'JetBrains Mono',monospace;font-size:12px;text-align:center}
+.anki .f-ex{font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--moss)}
+.anki .sec td{background:var(--ink-2);font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--cream-dim)}
+.field-key{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--cream-dim)}
+.field-key span{background:var(--ink-2);border:1px solid var(--line);border-radius:6px;padding:5px 10px}
+.field-key b{color:var(--amber);font-weight:500}
+
+.qlist{margin-top:20px;padding-left:0;list-style:none}
+.qlist li{border:1px solid var(--line);border-radius:10px;background:var(--ink-2);padding:15px 18px;margin-top:10px;font-size:14px;color:var(--cream-dim)}
+.qlist li b{color:var(--cream);display:block;margin-bottom:4px}
+
+footer{padding:50px 0 66px;border-top:1px solid var(--line)}
+footer p{font-size:13px;color:var(--cream-dim)}
+footer .mono{color:var(--amber)}
+
+@media(max-width:760px){
+  .wrap{padding:0 16px}
+  .hero-glyph{right:-30px;font-size:170px}
+  .tbl{display:block;overflow-x:auto;white-space:nowrap}
+  .say .tel{font-size:20px}
+  .say .lvl{position:static;display:inline-block;margin-bottom:10px}
+}
+</style>
+</head>
+<body>
+
+<nav aria-label="Main">
+  <div class="wrap">
+    <a class="logo" href="../index.html"><span>te</span> scenarios</a>
+    <ul>
+      <li><a href="../index.html#course-path">Lessons</a></li>
+      <li><a href="#question">The question</a></li>
+      <li><a href="#answers">Answers</a></li>
+      <li><a href="#fuller">Two-clause</a></li>
+      <li><a href="#turnback">Turn it back</a></li>
+      <li><a href="#anki">Cards</a></li>
+      <li><a href="#workshop">Workshop</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-glyph telugu" aria-hidden="true">బాగుంది</div>
+  <div class="wrap">
+    <a class="crumb" href="../index.html">← Course home</a>
+    <span class="eyebrow">Scenario 01 · arriving at your in-laws'</span>
+    <h1>“How was your day?”</h1>
+    <p>Your mother-in-law will ask. This is a draft to react to, not a finished list — the point is to get something concrete in front of you so you can tell me what's wrong with it.</p>
+
+    <div class="note-box win">
+      <b>The good news first</b>
+      <p>You can already say most of this. <span class="mono">bāgā</span> and <span class="mono">lēdu</span> from Lesson 3, <span class="mono">undi</span> from Lesson 1, <span class="mono">chālā</span>, <span class="mono">mīru</span>, and <span class="mono">attayya</span> from Lesson 4. The handful of past-tense verbs below are <b>memorised blocks</b> — you're not expected to build them until Lesson 9, and I've flagged which ones those are.</p>
+    </div>
+
+    <div class="note-box">
+      <b>Everything here is Telangana / Hyderabad form</b>
+      <p>Which mostly shows up as <span class="mono">eṭla</span> rather than <span class="mono">elā</span>. If your wife says her mother uses the other one, tell me and I'll flip the whole page — it's a mechanical change.</p>
+    </div>
+  </div>
+</header>
+
+<section id="question">
+  <div class="wrap">
+    <span class="eyebrow">Step one</span>
+    <h2>Recognise the question first</h2>
+    <p class="lede">More important than the answer. If you don't catch what she asked, a perfect reply is useless — and she may not use the version you rehearsed. These are the realistic variants, roughly in order of likelihood.</p>
+
+    <div class="say ask">
+      <span class="lvl">most likely</span>
+      <span class="tel">ఈ రోజు ఎట్ల గడిచింది?</span>
+      <span class="rom">ī rōju eṭla gaḍichindi?</span>
+      <span class="en">How did today go?</span>
+      <span class="why"><b>Listen for:</b> <span class="mono">rōju</span> (day) and <span class="mono">eṭla</span> (how). Those two words are enough to identify it.</span>
+    </div>
+
+    <div class="say ask">
+      <span class="lvl">very likely</span>
+      <span class="tel">ఏం చేసారు?</span>
+      <span class="rom">ēṁ chēsāru?</span>
+      <span class="en">What did you do?</span>
+      <span class="why"><b>Listen for:</b> <span class="mono">ēṁ</span> (what). The <span class="mono">-āru</span> ending is the respectful "you" form — she's being polite to you.</span>
+    </div>
+
+    <div class="say ask">
+      <span class="lvl">likely</span>
+      <span class="tel">బాగున్నారా?</span>
+      <span class="rom">bāgunnārā?</span>
+      <span class="en">Are you well?</span>
+      <span class="why"><b>Listen for:</b> <span class="mono">bāgu-</span> plus a rising <span class="mono">-ā</span> at the end. That final <span class="mono">-ā</span> is the yes/no question marker — the same one you met on the song page.</span>
+    </div>
+
+    <div class="say ask">
+      <span class="lvl">near-certain</span>
+      <span class="tel">తిన్నారా?</span>
+      <span class="rom">tinnārā?</span>
+      <span class="en">Have you eaten?</span>
+      <span class="why"><b>This one is coming whether you like it or not.</b> See the follow-ups section — it matters more than the day question does.</span>
+    </div>
+
+    <div class="note-box">
+      <b>She may use the informal “you” instead</b>
+      <p>Telugu families vary on this. Traditionally a son-in-law is given high respect and gets <span class="mono">mīru</span> with <span class="mono">-āru</span> endings. In a warm modern family she may well use <span class="mono">nuvvu</span> and say <span class="mono">chēsāvu</span> instead of <span class="mono">chēsāru</span>. <b>Both mean the same thing</b> — don't let the different ending throw you. Worth asking your wife which her mother will use, since it tells you how you're being positioned.</p>
+    </div>
+  </div>
+</section>
+
+<section id="answers">
+  <div class="wrap">
+    <span class="eyebrow">Step two</span>
+    <h2>Four answers, increasing in ambition</h2>
+    <p class="lede">Pick one and get it fluent before adding the next. A short answer delivered confidently beats a long one delivered haltingly — and in this particular exchange, <b>short is also more natural.</b> Nobody wants a report.</p>
+
+    <div class="ladder">
+      <div class="step">
+        <h3>The one-word answer</h3>
+        <p>If you learn nothing else on this page, learn this word. It answers almost any "how was X" question in Telugu.</p>
+        <div class="say top">
+          <span class="lvl now">use now</span>
+          <span class="tel">బాగుంది</span>
+          <span class="rom">bāgundi</span>
+          <span class="en">It was good. / It's good.</span>
+          <span class="why"><b>Why you can already say this:</b> it's <span class="mono">bāgā</span> ("well," Lesson 3) fused with <span class="mono">undi</span> ("it is," Lesson 1). Telugu doesn't need a separate past tense here — context carries it.</span>
+        </div>
+        <div class="note-box warn">
+          <b>Careful: bāgundi vs bāgunnānu</b>
+          <p>If she asks about <b>the day</b>, answer <span class="mono">bāgundi</span> — the day is a thing, so it takes the neuter <span class="mono">undi</span>. If she asks about <b>you</b> (<span class="mono">bāgunnārā?</span>), answer <span class="mono">bāgunnānu</span> — "I am well," with the first-person ending from Lesson 1. Same root, different person marker. Getting these backwards is the most likely small error here.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <h3>Add warmth</h3>
+        <p>Naming her is worth more than any extra vocabulary. It's the difference between answering a question and greeting a person.</p>
+        <div class="say top">
+          <span class="lvl now">use now</span>
+          <span class="tel">చాలా బాగుంది అత్తయ్య</span>
+          <span class="rom">chālā bāgundi attayya</span>
+          <span class="en">Very good, aunty.</span>
+          <span class="why"><b>Why you can already say this:</b> <span class="mono">chālā</span> ("very") plus <span class="mono">attayya</span> — the address form of <span class="mono">atta</span> from Lesson 4, the word that does double duty for aunt and mother-in-law.</span>
+        </div>
+      </div>
+
+      <div class="step">
+        <h3>Give one piece of content</h3>
+        <p>One fact is plenty. This pattern is fully buildable from grammar you have — no past tense needed, because you're describing a state rather than an event.</p>
+        <div class="say">
+          <span class="lvl now">use now</span>
+          <span class="tel">ఈ రోజు ఆఫీసులో చాలా పని ఉంది</span>
+          <span class="rom">ī rōju āphīsulō chālā pani undi</span>
+          <span class="en">There was a lot of work at the office today.</span>
+          <span class="why"><b>Why you can already say this:</b> <span class="mono">-lō</span> is the "in" ending, and <span class="mono">undi</span> is Lesson 1's "there is." Literally: <em>today office-in much work is.</em> No verb conjugation anywhere.</span>
+        </div>
+        <div class="say">
+          <span class="lvl chunk">memorise whole</span>
+          <span class="tel">కొంచెం అలిసిపోయాను</span>
+          <span class="rom">konchaṁ alisipōyānu</span>
+          <span class="en">I'm a bit tired.</span>
+          <span class="why"><b>Learn this as a block.</b> <span class="mono">alisipōyānu</span> is past tense with a first-person ending — Lesson 9 territory. You'll take it apart later; for now it's one word. <span class="mono">konchaṁ</span> ("a little") is independently useful and softens almost anything.</span>
+        </div>
+      </div>
+
+      <div class="step">
+        <h3>Honest answers, for when it wasn't good</h3>
+        <p>Worth having, because always saying "good" gets noticed. And <span class="mono">parvālēdu</span> may be the most useful single word on this page — it's the Telugu shrug.</p>
+        <div class="say">
+          <span class="lvl now">use now</span>
+          <span class="tel">పర్వాలేదు</span>
+          <span class="rom">parvālēdu</span>
+          <span class="en">It was okay. / Not bad. / It's fine, don't worry about it.</span>
+          <span class="why"><b>Enormously versatile.</b> It also means "no problem" when someone apologises, and "it doesn't matter" when someone offers something you're declining. Card this one today.</span>
+        </div>
+        <div class="say">
+          <span class="lvl now">use now</span>
+          <span class="tel">ఈ రోజు కొంచెం కష్టం</span>
+          <span class="rom">ī rōju konchaṁ kaṣṭaṁ</span>
+          <span class="en">Today was a bit hard.</span>
+          <span class="why"><b>Why you can already say this:</b> zero copula from Lesson 1 — no verb at all. <em>Today a-little difficulty.</em> <span class="mono">kaṣṭaṁ</span> is a high-frequency word worth knowing.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="note-box win" style="margin-top:34px">
+      <b>Make it generative, not memorised</b>
+      <p>Five fixed sentences will run out fast. This frame won't:</p>
+      <div class="swap">
+        <span class="fix">ī rōju</span>
+        <span class="slot">PLACE-lō</span>
+        <span class="fix">chālā</span>
+        <span class="slot">THING</span>
+        <span class="fix">undi</span>
+      </div>
+      <div class="slot-list">
+        <span><b>āphīsulō</b> at the office</span>
+        <span><b>intlō</b> at home</span>
+        <span><b>pani</b> work</span>
+        <span><b>meetings</b> meetings</span>
+        <span><b>samayaṁ</b> time</span>
+        <span><b>chālā</b> a lot</span>
+        <span><b>konchaṁ</b> a little</span>
+      </div>
+      <p style="margin-top:14px">And yes — <b>say "meetings" in English.</b> That's not a shortcut, it's what Hyderabad IT people actually do. Code-mixing is native here, and forcing a Telugu technical word would sound stranger than the English one.</p>
+    </div>
+  </div>
+</section>
+
+<section id="fuller">
+  <div class="wrap">
+    <span class="eyebrow">Workshopped · two-clause answers</span>
+    <h2>“It was good, and here's why”</h2>
+    <p class="lede">The natural next step: a positive verdict plus one reason. Telugu handles this by simply putting the two clauses next to each other — <b>no word for “and” is required</b>, and inserting one would sound stilted.</p>
+
+    <div class="say">
+      <span class="lvl chunk">chēsānu is a block</span>
+      <span class="tel">బాగుంది, చాలా పని చేసాను</span>
+      <span class="rom">bāgundi, chālā pani chēsānu</span>
+      <span class="en">It was good — I did a lot of work.</span>
+      <span class="why"><b>The direct version.</b> <span class="mono">chēsānu</span> is "I did" — past tense with the first-person <span class="mono">-nu</span> ending you know from <span class="mono">unnānu</span>. Memorise it whole for now; Lesson 9 explains the shape.</span>
+    </div>
+
+    <div class="say top">
+      <span class="lvl now">more natural</span>
+      <span class="tel">బాగుంది, చాలా పని అయ్యింది</span>
+      <span class="rom">bāgundi, chālā pani ayyindi</span>
+      <span class="en">It was good — a lot of work got done.</span>
+      <span class="why"><b>This is the one I'd actually use.</b> See the note below: Telugu reaches for "it got done" far more readily than "I did it," and in a family setting that framing lands better.</span>
+    </div>
+
+    <div class="note-box win">
+      <b>The impersonal preference — worth internalising early</b>
+      <p>“I got a lot done” is a very American sentence. It centres you as the agent, and English small talk rewards that. Telugu much more often puts the <b>work</b> in the subject position: <span class="mono">pani ayyindi</span>, literally “the work became.” The achievement still comes across; you just aren't standing in front of it.</p>
+      <p>Both versions are correct and neither will cause confusion. But <span class="mono">ayyindi</span> reads as more modest, and modesty about your own accomplishments is weighted more heavily in Telugu family conversation than in American. With a mother-in-law you're trying to build warmth with, that's the safer instinct.</p>
+    </div>
+
+    <div class="say">
+      <span class="lvl chunk">pūrti ayyindi is a block</span>
+      <span class="tel">బాగుంది, ఒక మంచి పని పూర్తి అయ్యింది</span>
+      <span class="rom">bāgundi, oka manchi pani pūrti ayyindi</span>
+      <span class="en">It was good — a good piece of work got finished.</span>
+      <span class="why"><b>Look at <span class="mono">oka</span> doing exactly its job.</b> This is the deep-dive use: one newly introduced thing the listener doesn't know about yet. Drop it and the sentence goes vague. And <span class="mono">manchi</span> is the Lesson 3 “good” — the adjective form of <span class="mono">manchidi</span>.</span>
+    </div>
+
+    <div class="note-box warn">
+      <b>“Cool” doesn't survive translation</b>
+      <p>There's no clean Telugu equivalent for “something cool” in the sense you mean — pleasing, clever, satisfying to have built. <span class="mono">manchi</span> (“good”) is the safe substitute and is what a Telugu speaker would use.</p>
+      <p>If you want the enthusiasm, the authentic Hyderabad move is to <b>just say it in English</b>: <span class="mono">oka manchi project pūrti ayyindi</span>, or even “it was really interesting” mid-sentence. Your in-laws will have heard far more English code-mixing than you'll produce. Reaching for an obscure Telugu word to avoid an English one is the mistake, not the other way round.</p>
+    </div>
+
+    <h2 style="margin-top:56px">The traffic follow-up</h2>
+    <p class="lede">This one's a gift — it's almost entirely buildable from grammar you already have, and it contains a genuine idiom correction.</p>
+
+    <div class="say top">
+      <span class="lvl now">use now</span>
+      <span class="tel">కానీ దారిలో ట్రాఫిక్ చాలా ఎక్కువ ఉంది</span>
+      <span class="rom">kāni dārilō ṭrāphik chālā ekkuva undi</span>
+      <span class="en">But there was a lot of traffic on the way.</span>
+      <span class="why"><b>Only three new words.</b> <span class="mono">kāni</span> (but), <span class="mono">dāri</span> (way, road), <span class="mono">ekkuva</span> (a lot, excessive). Everything else you have: <span class="mono">-lō</span> from <span class="mono">āphīsulō</span>, plus <span class="mono">chālā</span> and <span class="mono">undi</span>.</span>
+    </div>
+
+    <div class="note-box">
+      <b>Don't say traffic was “bad”</b>
+      <p>This is the kind of thing that marks someone as translating rather than speaking. English rates traffic on a good/bad axis; Telugu rates it on <b>quantity</b>. You want <span class="mono">ekkuva</span> — “a lot,” “excessive.” Building <span class="mono">chedda ṭrāphik</span> (“bad traffic”) from a dictionary would be understood, but it isn't what anyone says.</p>
+      <p>The same instinct applies broadly: crowds, rain, work, and heat are all usually described by amount in Telugu rather than by quality.</p>
+    </div>
+
+    <div class="note-box win">
+      <b>Putting the whole thing together</b>
+      <p>Strung into one turn, which is a completely realistic thing to say at the door:</p>
+      <p style="margin-top:12px"><span class="mono" style="color:var(--amber);font-size:15px">bāgundi attayya. chālā pani ayyindi. kāni dārilō ṭrāphik chālā ekkuva undi.</span></p>
+      <p style="margin-top:10px">Three short sentences rather than one long one — which is both easier for you and more natural for her. Telugu conversation runs on short clauses far more than written English does, so don't feel you need to join them up.</p>
+      <p><b>Then hand it back:</b> <span class="mono">mīru eṭla unnāru?</span></p>
+    </div>
+  </div>
+</section>
+
+<section id="followups">
+  <div class="wrap">
+    <span class="eyebrow">Step three</span>
+    <h2>What comes immediately after</h2>
+    <p class="lede">The day question is small talk. It's the doorway to the conversation that actually matters, and you should be ready for where it goes.</p>
+
+    <div class="note-box">
+      <b>The food question is not optional</b>
+      <p>In a Telugu household, <span class="mono">tinnārā?</span> — "have you eaten?" — functions as an expression of care, close to a greeting. It will be asked, probably within a minute of your arrival, possibly before the day question. Answering it well does more relationship work than anything else on this page.</p>
+      <p>Be aware that saying <em>no</em> reliably produces food, and that accepting food is itself the relationship move. Declining repeatedly reads as distance, not politeness.</p>
+    </div>
+
+    <table class="tbl">
+      <thead><tr><th>If she asks</th><th>Say</th><th>Meaning</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="rom">tinnārā?</span><br><span class="tel">తిన్నారా?</span></td>
+          <td><span class="rom">tinnānu</span><br><span class="tel">తిన్నాను</span></td>
+          <td>I've eaten. <em>(memorised block)</em></td>
+        </tr>
+        <tr>
+          <td><span class="rom">tinnārā?</span><br><span class="tel">తిన్నారా?</span></td>
+          <td><span class="rom">lēdu, inkā tinalēdu</span><br><span class="tel">లేదు, ఇంకా తినలేదు</span></td>
+          <td>No, I haven't eaten yet. <em>(expect food)</em></td>
+        </tr>
+        <tr>
+          <td><span class="rom">inkā tinaṇḍi</span><br><span class="tel">ఇంకా తినండి</span></td>
+          <td><span class="rom">chālu, chālā bāgundi</span><br><span class="tel">చాలు, చాలా బాగుంది</span></td>
+          <td>Enough — it was delicious. <em>(the polite stop)</em></td>
+        </tr>
+        <tr>
+          <td><span class="rom">kāphī tāgutārā?</span><br><span class="tel">కాఫీ తాగుతారా?</span></td>
+          <td><span class="rom">avunu, thanks aṇḍi</span><br><span class="tel">అవును</span></td>
+          <td>Yes please. <em>(accepting is the friendly default)</em></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="note-box win">
+      <b>chālu is the word to have ready</b>
+      <p><span class="mono">chālu</span> means "enough / that's sufficient," and paired with a compliment it's how you stop a third helping without seeming to reject the hospitality. <span class="mono">chālu, chālā bāgundi</span> — "enough, it was very good" — does both jobs in three words.</p>
+    </div>
+  </div>
+</section>
+
+<section id="turnback">
+  <div class="wrap">
+    <span class="eyebrow">Step four · the one that matters most</span>
+    <h2>Ask her back</h2>
+    <p class="lede">This is the highest-value thing on the page and it costs you one sentence. A learner who answers and stops has completed a transaction. A learner who answers and <b>returns the question</b> has started a conversation — and signalled that the language is for her, not homework.</p>
+
+    <div class="say top">
+      <span class="lvl now">use now</span>
+      <span class="tel">మీరు ఎట్ల ఉన్నారు?</span>
+      <span class="rom">mīru eṭla unnāru?</span>
+      <span class="en">How are you?</span>
+      <span class="why"><b>Why you can already say this:</b> <span class="mono">mīru</span> from Lesson 1, <span class="mono">unnāru</span> is the same existence verb with the respectful ending. The only new piece is <span class="mono">eṭla</span>.</span>
+    </div>
+
+    <div class="say top">
+      <span class="lvl now">use now</span>
+      <span class="tel">ఇంట్లో అంతా బాగున్నారా?</span>
+      <span class="rom">intlō antā bāgunnārā?</span>
+      <span class="en">Is everyone at home well?</span>
+      <span class="why"><b>A very Telugu thing to ask.</b> Enquiring after the whole household rather than the individual is standard and lands as warm. <span class="mono">intlō</span> is <span class="mono">illu</span> ("house") plus the <span class="mono">-lō</span> you used above.</span>
+    </div>
+
+    <div class="say">
+      <span class="lvl chunk">memorise whole</span>
+      <span class="tel">మీ రోజు ఎట్ల గడిచింది?</span>
+      <span class="rom">mī rōju eṭla gaḍichindi?</span>
+      <span class="en">How did your day go?</span>
+      <span class="why"><b>Straight mirroring.</b> Take her question and swap in <span class="mono">mī</span> ("your," Lesson 5). Reusing someone's own construction back at them is the cheapest fluency trick there is, and it always fits.</span>
+    </div>
+
+    <div class="note-box win">
+      <b>The mirroring principle</b>
+      <p>Whatever she asks, you can nearly always hand it back by swapping the pronoun. You don't need to generate anything new — you just need to catch the question and change one word. Worth practising deliberately, because it makes a small vocabulary go a very long way.</p>
+    </div>
+  </div>
+</section>
+
+<section id="anki">
+  <div class="wrap">
+    <span class="eyebrow">Import format</span>
+    <h2>Cards for this scenario</h2>
+    <p class="lede">Same five fields as everywhere else. <b>25 rows, but don't take them all at once</b> — at your five-a-day this is roughly five days. The first six are the ones that do real work.</p>
+
+    <div class="field-key">
+      <span><b>1</b> English</span><span><b>2</b> Romanized</span><span><b>3</b> TeluguScript</span><span><b>4</b> Audio</span><span><b>5</b> Example</span>
+    </div>
+
+    <div class="anki-wrap">
+      <table class="anki">
+        <thead><tr><th>English</th><th>Romanized</th><th>Telugu</th><th>Audio</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr class="sec"><td colspan="5">Day one — these six carry the whole conversation</td></tr>
+          <tr><td class="f-en">It's good / it went well</td><td class="f-rom">bāgundi</td><td class="f-tel">బాగుంది</td><td class="f-aud">[ ]</td><td class="f-ex">ī rōju bāgundi</td></tr>
+          <tr><td class="f-en">I'm well</td><td class="f-rom">bāgunnānu</td><td class="f-tel">బాగున్నాను</td><td class="f-aud">[ ]</td><td class="f-ex">answer to bāgunnārā?</td></tr>
+          <tr><td class="f-en">It's okay / no problem / never mind</td><td class="f-rom">parvālēdu</td><td class="f-tel">పర్వాలేదు</td><td class="f-aud">[ ]</td><td class="f-ex">the all-purpose shrug</td></tr>
+          <tr><td class="f-en">How are you? (respectful)</td><td class="f-rom">mīru eṭla unnāru?</td><td class="f-tel">మీరు ఎట్ల ఉన్నారు?</td><td class="f-aud">[ ]</td><td class="f-ex">always return the question</td></tr>
+          <tr><td class="f-en">aunty / mother-in-law (address)</td><td class="f-rom">attayya</td><td class="f-tel">అత్తయ్య</td><td class="f-aud">[ ]</td><td class="f-ex">bāgundi attayya</td></tr>
+          <tr><td class="f-en">a little, somewhat</td><td class="f-rom">konchaṁ</td><td class="f-tel">కొంచెం</td><td class="f-aud">[ ]</td><td class="f-ex">konchaṁ kaṣṭaṁ</td></tr>
+
+          <tr class="sec"><td colspan="5">Day two — content and the food exchange</td></tr>
+          <tr><td class="f-en">today</td><td class="f-rom">ī rōju</td><td class="f-tel">ఈ రోజు</td><td class="f-aud">[ ]</td><td class="f-ex">ī rōju bāgundi</td></tr>
+          <tr><td class="f-en">work, task</td><td class="f-rom">pani</td><td class="f-tel">పని</td><td class="f-aud">[ ]</td><td class="f-ex">chālā pani undi</td></tr>
+          <tr><td class="f-en">difficult, hard</td><td class="f-rom">kaṣṭaṁ</td><td class="f-tel">కష్టం</td><td class="f-aud">[ ]</td><td class="f-ex">konchaṁ kaṣṭaṁ</td></tr>
+          <tr><td class="f-en">I've eaten</td><td class="f-rom">tinnānu</td><td class="f-tel">తిన్నాను</td><td class="f-aud">[ ]</td><td class="f-ex">block — Lesson 9 explains it</td></tr>
+          <tr><td class="f-en">not yet</td><td class="f-rom">inkā lēdu</td><td class="f-tel">ఇంకా లేదు</td><td class="f-aud">[ ]</td><td class="f-ex">inkā tinalēdu</td></tr>
+          <tr><td class="f-en">enough (stopping more food)</td><td class="f-rom">chālu</td><td class="f-tel">చాలు</td><td class="f-aud">[ ]</td><td class="f-ex">chālu, chālā bāgundi</td></tr>
+
+          <tr class="sec"><td colspan="5">Day three — the two-clause answer</td></tr>
+          <tr><td class="f-en">but</td><td class="f-rom">kāni</td><td class="f-tel">కానీ</td><td class="f-aud">[ ]</td><td class="f-ex">kāni ṭrāphik ekkuva undi</td></tr>
+          <tr><td class="f-en">a lot, excessive (of quantity)</td><td class="f-rom">ekkuva</td><td class="f-tel">ఎక్కువ</td><td class="f-aud">[ ]</td><td class="f-ex">not “bad” — Telugu counts traffic</td></tr>
+          <tr><td class="f-en">way, road, route</td><td class="f-rom">dāri</td><td class="f-tel">దారి</td><td class="f-aud">[ ]</td><td class="f-ex">dārilō — on the way</td></tr>
+          <tr><td class="f-en">it got done, it happened</td><td class="f-rom">ayyindi</td><td class="f-tel">అయ్యింది</td><td class="f-aud">[ ]</td><td class="f-ex">chālā pani ayyindi</td></tr>
+          <tr><td class="f-en">I did</td><td class="f-rom">chēsānu</td><td class="f-tel">చేసాను</td><td class="f-aud">[ ]</td><td class="f-ex">block — chālā pani chēsānu</td></tr>
+          <tr><td class="f-en">completed, finished</td><td class="f-rom">pūrti</td><td class="f-tel">పూర్తి</td><td class="f-aud">[ ]</td><td class="f-ex">pūrti ayyindi</td></tr>
+          <tr><td class="f-en">good (before a noun)</td><td class="f-rom">manchi</td><td class="f-tel">మంచి</td><td class="f-aud">[ ]</td><td class="f-ex">oka manchi pani</td></tr>
+
+          <tr class="sec"><td colspan="5">Day four — extending</td></tr>
+          <tr><td class="f-en">at the office</td><td class="f-rom">āphīsulō</td><td class="f-tel">ఆఫీసులో</td><td class="f-aud">[ ]</td><td class="f-ex">āphīsulō chālā pani undi</td></tr>
+          <tr><td class="f-en">at home, in the house</td><td class="f-rom">intlō</td><td class="f-tel">ఇంట్లో</td><td class="f-aud">[ ]</td><td class="f-ex">intlō antā bāgunnārā?</td></tr>
+          <tr><td class="f-en">everyone, all</td><td class="f-rom">antā</td><td class="f-tel">అంతా</td><td class="f-aud">[ ]</td><td class="f-ex">intlō antā</td></tr>
+          <tr><td class="f-en">I'm tired</td><td class="f-rom">alisipōyānu</td><td class="f-tel">అలిసిపోయాను</td><td class="f-aud">[ ]</td><td class="f-ex">block — konchaṁ alisipōyānu</td></tr>
+          <tr><td class="f-en">How did it go? (of a day)</td><td class="f-rom">eṭla gaḍichindi?</td><td class="f-tel">ఎట్ల గడిచింది?</td><td class="f-aud">[ ]</td><td class="f-ex">mī rōju eṭla gaḍichindi?</td></tr>
+          <tr><td class="f-en">Have you eaten?</td><td class="f-rom">tinnārā?</td><td class="f-tel">తిన్నారా?</td><td class="f-aud">[ ]</td><td class="f-ex">recognise it, don't just answer</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="workshop">
+  <div class="wrap">
+    <span class="eyebrow">Over to you</span>
+    <h2>What I need from you to sharpen this</h2>
+    <p class="lede">This is a first draft built on general Hyderabad usage. Your family is the authority, not me — and a few answers would let me tighten it considerably.</p>
+
+    <ul class="qlist">
+      <li><b>Does she use mīru or nuvvu with you?</b> This changes every ending on the page. It also tells you something about how you're being positioned in the family, which is worth knowing independently.</li>
+      <li><b>What does she actually call you, and what do you call her?</b> I've assumed <span class="mono">attayya</span>. Some families use <span class="mono">atta</span>, some add <span class="mono">gāru</span>, some use a name. Getting this right matters more than any sentence here.</li>
+      <li><b>Does she say eṭla or elā?</b> You said Hyderabad style, so I've gone with <span class="mono">eṭla</span> throughout — but confirm, because it's on nearly every line.</li>
+      <li><b>Is the day question even the real one?</b> In many households the actual opener is about food, traffic, or whether you're tired. If she never asks about your day, tell me what she does ask and I'll rebuild around that instead.</li>
+      <li><b>How much English does she use?</b> Determines whether "meetings" and "office" stay in English or want Telugu equivalents.</li>
+    </ul>
+
+    <div class="note-box">
+      <b>One thing worth trying before you refine anything</b>
+      <p>Use <span class="mono">bāgundi attayya</span> once, exactly as it is. The reaction will teach you more than another round of drafting will — including whether the address form is right, which is the part I'm least sure of.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><span class="mono">Foundational Telugu</span> · scenario 01 · draft for workshopping</p>
+    <p style="margin-top:10px"><a href="../index.html">Course home</a> · <a href="../stems/index.html">Sentence stems</a> · <a href="../lessons/lesson-04-family.html">Lesson 4: Family</a></p>
+  </div>
+</footer>
+</body>
+</html>

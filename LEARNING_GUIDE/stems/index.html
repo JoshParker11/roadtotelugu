@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The highest-frequency English sentence stems to build a Telugu course around.">
+<title>Sentence Stems | Foundational Telugu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;700&amp;family=Noto+Sans+Telugu:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css">
+<style>
+.stem-toolbar{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:26px;padding:14px;border:1px solid var(--line);border-radius:var(--radius);background:var(--ink-2);position:sticky;top:60px;z-index:40}
+.stem-toolbar .chip{background:var(--ink);border:1px solid var(--line-strong);border-radius:999px;color:var(--cream-dim);padding:7px 13px;font-family:'JetBrains Mono',monospace;font-size:11px;cursor:pointer}
+.stem-toolbar .chip:hover{border-color:var(--amber);color:var(--cream)}
+.stem-toolbar .chip.on{background:var(--amber);border-color:var(--amber);color:#191915;font-weight:700}
+.stem-toolbar .btn{background:var(--moss);border:0;border-radius:8px;color:#191915;padding:9px 15px;font-family:'JetBrains Mono',monospace;font-size:11.5px;font-weight:700;cursor:pointer;white-space:nowrap}
+.stem-toolbar .btn:hover{filter:brightness(1.1)}
+.stem-toolbar .btn.alt{background:transparent;border:1px solid var(--line-strong);color:var(--cream-dim)}
+.stem-toolbar .btn.alt:hover{border-color:var(--amber);color:var(--amber)}
+.stem-toolbar .tally{color:var(--cream-dim);font-family:'JetBrains Mono',monospace;font-size:11.5px;margin-left:auto}
+.stem-toolbar .tally b{color:var(--amber)}
+
+.sgroup{margin-top:34px}
+.sgroup-head{display:flex;align-items:baseline;justify-content:space-between;gap:14px;padding-bottom:9px;border-bottom:1px solid var(--line-strong);margin-bottom:8px}
+.sgroup-head h3{margin:0;font-family:'Inter',sans-serif;font-size:15px;font-weight:600;color:var(--cream)}
+.sgroup-head .meta{font-family:'JetBrains Mono',monospace;font-size:10.5px;color:var(--cream-dim);text-transform:uppercase;letter-spacing:.09em}
+
+.stem-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:8px}
+.stem{display:flex;align-items:flex-start;gap:10px;border:1px solid var(--line);border-radius:9px;background:var(--ink-2);padding:11px 13px;cursor:pointer;text-align:left;font:inherit;color:inherit;width:100%}
+.stem:hover{border-color:rgba(232,163,61,.45)}
+.stem.picked{border-color:var(--moss);background:rgba(143,163,126,.1)}
+.stem .box{flex:none;width:16px;height:16px;margin-top:3px;border:1px solid var(--line-strong);border-radius:4px;display:grid;place-items:center;font-size:11px;color:transparent}
+.stem.picked .box{background:var(--moss);border-color:var(--moss);color:#191915}
+.stem .body{min-width:0}
+.stem .txt{display:block;font-size:14.5px;color:var(--cream);line-height:1.4}
+.stem .txt em{color:var(--flame);font-style:normal;border-bottom:1px dashed var(--flame)}
+.stem .tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:6px}
+.stem .tg{font-family:'JetBrains Mono',monospace;font-size:8.5px;letter-spacing:.06em;text-transform:uppercase;padding:2px 6px;border-radius:999px}
+.tg.core{background:rgba(217,108,71,.18);color:var(--flame)}
+.tg.now{background:rgba(143,163,126,.16);color:var(--moss)}
+.tg.soon{background:rgba(232,163,61,.16);color:var(--amber)}
+.stem .nt{display:block;margin-top:6px;font-size:11.5px;color:var(--cream-dim);line-height:1.45}
+
+.legend{display:flex;flex-wrap:wrap;gap:16px;margin-top:22px;font-size:13px;color:var(--cream-dim)}
+.legend span{display:inline-flex;align-items:center;gap:7px}
+.legend i{width:10px;height:10px;border-radius:3px;display:inline-block}
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(120px);background:var(--moss);color:#191915;padding:12px 22px;border-radius:999px;font-family:'JetBrains Mono',monospace;font-size:12.5px;font-weight:700;transition:transform .25s ease;z-index:100}
+.toast.show{transform:translateX(-50%) translateY(0)}
+
+@media(max-width:650px){
+  .stem-toolbar{position:static}
+  .stem-toolbar .tally{margin-left:0;width:100%}
+  .stem-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#stems">Skip to the stems</a>
+
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="wrap">
+    <a class="logo" href="../index.html"><span>te</span> foundational-telugu</a>
+    <ul>
+      <li><a href="../index.html#course-path">Lessons</a></li>
+      <li><a href="index.html" aria-current="page">Stems</a></li>
+      <li><a href="../stories/index.html">Mini stories</a></li>
+      <li><a href="../concepts/index.html">Deep dives</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hub-header">
+  <div class="wrap">
+    <span class="eyebrow">The spine of the course</span>
+    <h1>Sentence stems, in English first</h1>
+    <p>The frames that recur constantly in everyday speech, before any Telugu is attached. Review them, pick the ones that match your life, and everything else — grammar, vocabulary, drills — gets sourced from what you select.</p>
+  </div>
+</header>
+
+<main>
+<section class="page-section" id="stems">
+  <div class="wrap">
+
+    <div class="note-box" style="max-width:none">
+      <b>Why English first</b>
+      <p>What people say every day barely changes across languages. Deciding <em>which</em> frames matter is a content question, not a Telugu question — so it's worth settling before translation muddies it. Once you've picked, the Telugu for most of these already exists in Lessons 1–6 or arrives with the tense lessons.</p>
+      <p><b>Tap any stem to select it.</b> Your picks are saved in this browser. Export the list when you're done and I'll build the Telugu, the drills, and the cards around exactly that set.</p>
+    </div>
+
+    <div class="legend">
+      <span><i style="background:var(--flame)"></i> <b style="color:var(--cream)">core</b> — the first 25, learn these before anything else</span>
+      <span><i style="background:var(--moss)"></i> <b style="color:var(--cream)">now</b> — buildable with Lessons 1–6 grammar</span>
+      <span><i style="background:var(--amber)"></i> <b style="color:var(--cream)">soon</b> — needs the upcoming tense lessons</span>
+    </div>
+
+    <div class="stem-toolbar">
+      <button class="chip on" data-f="all">all</button>
+      <button class="chip" data-f="core">core 25</button>
+      <button class="chip" data-f="now">say it now</button>
+      <button class="chip" data-f="soon">coming soon</button>
+      <button class="chip" data-f="picked">my picks</button>
+      <button class="btn alt" id="pick-core">Select the core 25</button>
+      <button class="btn alt" id="clear">Clear</button>
+      <button class="btn" id="copy">Copy picks</button>
+      <span class="tally" id="tally"></span>
+    </div>
+
+    <div id="stem-list"></div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p><span class="mono">Pick first, translate second.</span> The stem list is the syllabus; vocabulary and grammar are what fill it.</p>
+    <p><a href="../index.html">Course home</a></p>
+  </div>
+</footer>
+
+<script src="stem-data.js"></script>
+<script>
+(function(){
+  const KEY = "ft-stem-picks-v1";
+  let picks = new Set(JSON.parse(localStorage.getItem(KEY) || "[]"));
+  let filter = "all";
+  const listEl = document.getElementById("stem-list");
+  const tallyEl = document.getElementById("tally");
+
+  const save = () => localStorage.setItem(KEY, JSON.stringify([...picks]));
+  const slot = s => s.replace(/___/g, "<em>___</em>");
+
+  function visible(st){
+    if (filter === "core")   return !!st.core;
+    if (filter === "now")    return st.w === "now";
+    if (filter === "soon")   return st.w === "soon";
+    if (filter === "picked") return picks.has(st.s);
+    return true;
+  }
+
+  function render(){
+    const items = STEMS.filter(visible);
+    tallyEl.innerHTML = `<b>${picks.size}</b> selected · ${items.length} shown · ${STEMS.length} total`;
+
+    const byGroup = {};
+    items.forEach(st => { (byGroup[st.g] = byGroup[st.g] || []).push(st); });
+
+    listEl.innerHTML = GROUP_ORDER.filter(g => byGroup[g]).map(g => {
+      const cards = byGroup[g].map(st => `
+        <button class="stem${picks.has(st.s) ? " picked" : ""}" data-s="${st.s.replace(/"/g,"&quot;")}">
+          <span class="box">✓</span>
+          <span class="body">
+            <span class="txt">${slot(st.s)}</span>
+            <span class="tags">
+              ${st.core ? '<span class="tg core">core</span>' : ""}
+              <span class="tg ${st.w}">${st.w === "now" ? "say it now" : "coming soon"}</span>
+            </span>
+            ${st.n ? `<span class="nt">${st.n}</span>` : ""}
+          </span>
+        </button>`).join("");
+      return `
+        <div class="sgroup">
+          <div class="sgroup-head">
+            <h3>${g}</h3>
+            <span class="meta">${byGroup[g].length} stems</span>
+          </div>
+          <div class="stem-grid">${cards}</div>
+        </div>`;
+    }).join("") || `<p class="lede" style="margin-top:30px">Nothing here yet — try a different filter.</p>`;
+  }
+
+  listEl.addEventListener("click", e => {
+    const btn = e.target.closest(".stem");
+    if (!btn) return;
+    const s = btn.dataset.s;
+    if (picks.has(s)) picks.delete(s); else picks.add(s);
+    save(); render();
+  });
+
+  document.querySelectorAll("[data-f]").forEach(b => {
+    b.addEventListener("click", () => {
+      filter = b.dataset.f;
+      document.querySelectorAll("[data-f]").forEach(x => x.classList.toggle("on", x === b));
+      render();
+    });
+  });
+
+  document.getElementById("pick-core").addEventListener("click", () => {
+    STEMS.filter(s => s.core).forEach(s => picks.add(s.s));
+    save(); render(); toast("Core 25 selected");
+  });
+
+  document.getElementById("clear").addEventListener("click", () => {
+    picks.clear(); save(); render(); toast("Cleared");
+  });
+
+  document.getElementById("copy").addEventListener("click", async () => {
+    if (!picks.size) return toast("Nothing selected yet");
+    const out = GROUP_ORDER.map(g => {
+      const rows = STEMS.filter(s => s.g === g && picks.has(s.s));
+      return rows.length ? g + "\n" + rows.map(s => "  " + s.s).join("\n") : null;
+    }).filter(Boolean).join("\n\n");
+    try { await navigator.clipboard.writeText(out); toast("Copied " + picks.size + " stems"); }
+    catch { toast("Copy blocked by the browser"); }
+  });
+
+  let t;
+  function toast(msg){
+    let el = document.querySelector(".toast");
+    if (!el){ el = document.createElement("div"); el.className = "toast"; document.body.appendChild(el); }
+    el.textContent = msg; el.classList.add("show");
+    clearTimeout(t); t = setTimeout(() => el.classList.remove("show"), 2000);
+  }
+
+  render();
+})();
+</script>
+</body>
+</html>

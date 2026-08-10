@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Telugu · Lesson 1 — Pronouns &amp; "to be"</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+Telugu:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#191915;--ink-2:#22221d;--ink-3:#2c2c25;
+  --cream:#f1ece0;--cream-dim:#b9b3a4;
+  --amber:#e8a33d;--moss:#8fa37e;--flame:#d96c47;
+  --line:rgba(241,236,224,.12);--radius:14px;--max:1000px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{background:var(--ink);color:var(--cream);font-family:'Inter',sans-serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.telugu{font-family:'Noto Sans Telugu','Inter',sans-serif}
+.mono{font-family:'JetBrains Mono',monospace}
+h1,h2,h3{font-family:'Young Serif',serif;font-weight:400;line-height:1.15}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+section{padding:72px 0;border-top:1px solid var(--line)}
+.eyebrow{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--amber);margin-bottom:14px;display:block}
+h2{font-size:clamp(26px,4.2vw,36px);margin-bottom:14px}
+.lede{color:var(--cream-dim);max-width:660px;font-size:16.5px}
+.lede b{color:var(--cream)}
+a{color:var(--amber)}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:4px}
+
+nav{position:sticky;top:0;z-index:50;background:rgba(25,25,21,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+.logo{font-family:'JetBrains Mono',monospace;font-size:13.5px;font-weight:700;color:var(--cream);text-decoration:none}
+.logo span{color:var(--amber)}
+nav ul{display:flex;gap:20px;list-style:none}
+nav ul a{color:var(--cream-dim);text-decoration:none;font-size:13px;font-weight:500}
+nav ul a:hover{color:var(--amber)}
+@media(max-width:720px){nav ul{display:none}}
+.home-crumb{display:inline-block;margin-bottom:18px;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--cream-dim);text-decoration:none}
+.home-crumb:hover{color:var(--amber)}
+
+header.hero{padding:80px 0 64px;position:relative;overflow:hidden}
+.hero-glyph{position:absolute;right:-30px;top:-70px;font-family:'Noto Sans Telugu',sans-serif;font-size:clamp(260px,40vw,480px);line-height:1;color:rgba(232,163,61,.05);user-select:none;pointer-events:none}
+.hero h1{font-size:clamp(34px,6vw,58px);margin:8px 0 10px;color:var(--cream)}
+.hero h1 em{color:var(--amber);font-style:normal}
+.hero p{max-width:620px;color:var(--cream-dim);font-size:17px}
+
+.note-box{background:rgba(217,108,71,.07);border:1px solid rgba(217,108,71,.3);border-radius:var(--radius);padding:20px 24px;margin-top:30px;max-width:720px}
+.note-box b{color:var(--flame);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;display:block;margin-bottom:8px}
+.note-box p{font-size:14px;color:var(--cream-dim)}
+
+/* rule blocks */
+.rule{border-top:1px solid var(--line);padding:30px 0;display:grid;grid-template-columns:52px 1fr;gap:20px;counter-increment:r}
+.rules{counter-reset:r;margin-top:20px}
+.rule::before{content:counter(r,decimal-leading-zero);font-family:'JetBrains Mono',monospace;font-size:14px;color:var(--flame);padding-top:4px}
+.rule h3{font-size:19px;font-family:'Inter',sans-serif;font-weight:600;margin-bottom:8px;color:var(--cream)}
+.rule p{font-size:14.5px;color:var(--cream-dim);max-width:640px}
+.rule p+p{margin-top:10px}
+.rule b{color:var(--cream)}
+.rule-deep-link{display:inline-block;margin-top:13px;font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;text-decoration:none}
+.rule-deep-link::after{content:' →'}
+.ex{margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:14px;color:var(--moss);background:var(--ink-2);border:1px solid var(--line);border-radius:8px;padding:12px 16px;display:inline-block}
+.ex .en{color:var(--cream-dim);font-family:'Inter',sans-serif}
+
+/* morpheme chips */
+.morph-row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:16px 0}
+.morph{border-radius:9px;padding:9px 14px;font-family:'JetBrains Mono',monospace;text-align:center;min-width:74px}
+.morph .p{font-size:16px;font-weight:700;display:block}
+.morph .r{font-size:9px;letter-spacing:.1em;text-transform:uppercase;opacity:.75;margin-top:3px;display:block}
+.morph.subj{background:rgba(232,163,61,.14);color:var(--amber);border:1px solid rgba(232,163,61,.35)}
+.morph.base{background:rgba(143,163,126,.14);color:var(--moss);border:1px solid rgba(143,163,126,.35)}
+.morph.mark{background:rgba(217,108,71,.14);color:var(--flame);border:1px solid rgba(217,108,71,.35)}
+.morph.op{background:none;border:none;color:var(--cream-dim);font-size:18px;min-width:auto;padding:0 2px}
+.morph.none{background:var(--ink-3);color:var(--cream-dim);border:1px dashed var(--line)}
+
+/* generic table */
+.tbl{width:100%;border-collapse:collapse;margin-top:22px;font-size:14.5px}
+.tbl th{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:11px 12px;color:var(--cream-dim);border-bottom:1px solid var(--line);vertical-align:bottom}
+.tbl td{padding:12px;border-bottom:1px solid var(--line);color:var(--cream-dim);vertical-align:top}
+.tbl td .rom{font-family:'JetBrains Mono',monospace;font-size:15px;color:var(--cream);font-weight:700}
+.tbl td .tel{font-family:'Noto Sans Telugu',sans-serif;font-size:15px;color:var(--cream-dim);opacity:.8}
+.tbl td small{display:block;font-size:12px;color:var(--cream-dim);margin-top:2px}
+.tbl .grp td{background:var(--ink-2);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--amber)}
+.tag{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:999px;margin-left:4px}
+.tag.neu{background:rgba(143,163,126,.16);color:var(--moss)}
+.tag.for{background:rgba(232,163,61,.16);color:var(--amber)}
+.tag.inf{background:rgba(217,108,71,.16);color:var(--flame)}
+
+/* anki table */
+.anki-wrap{overflow-x:auto;margin-top:26px;border:1px solid var(--line);border-radius:var(--radius)}
+.anki{width:100%;border-collapse:collapse;font-size:14px;min-width:720px}
+.anki th{background:var(--ink-3);font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:12px 14px;color:var(--amber);border-bottom:1px solid var(--line);white-space:nowrap}
+.anki td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--cream-dim);vertical-align:top}
+.anki tr:last-child td{border-bottom:none}
+.anki .f-en{color:var(--cream);width:31%}
+.anki .f-rom{font-family:'JetBrains Mono',monospace;color:var(--amber);font-weight:700;white-space:nowrap}
+.anki .f-tel{font-family:'Noto Sans Telugu',sans-serif;color:var(--cream)}
+.anki .f-aud{color:var(--cream-dim);opacity:.4;font-family:'JetBrains Mono',monospace;font-size:12px;text-align:center}
+.anki .f-ex{font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--moss)}
+.anki .sec td{background:var(--ink-2);font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--cream-dim)}
+.field-key{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--cream-dim)}
+.field-key span{background:var(--ink-2);border:1px solid var(--line);border-radius:6px;padding:5px 10px}
+.field-key b{color:var(--amber);font-weight:500}
+
+/* lesson questions */
+.question-link{display:grid;grid-template-columns:80px 1fr auto;align-items:center;gap:22px;margin-top:26px;border:1px dashed var(--line);border-radius:var(--radius);background:var(--ink-2);color:inherit;padding:22px;text-decoration:none}
+.question-link:hover{border-color:rgba(232,163,61,.4);background:var(--ink-3)}
+.question-mark{display:grid;width:60px;height:60px;place-items:center;border:1px solid rgba(143,163,126,.35);border-radius:50%;color:var(--moss);font-family:'Young Serif',serif;font-size:28px}
+.question-link h3{margin-bottom:5px;font-family:'Inter',sans-serif;font-size:17px;font-weight:600}
+.question-link p{margin:0;color:var(--cream-dim);font-size:13px}
+.question-open{color:var(--amber);font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;white-space:nowrap}
+.question-open::after{content:' →'}
+
+footer{padding:52px 0 68px;border-top:1px solid var(--line)}
+footer p{font-size:13px;color:var(--cream-dim)}
+footer .mono{color:var(--amber)}
+.try{list-style:none;margin-top:18px;display:grid;gap:10px;max-width:640px}
+.try li{background:var(--ink-2);border:1px solid var(--line);border-radius:9px;padding:12px 16px;font-size:14px;color:var(--cream-dim)}
+.try li .q{color:var(--cream);font-weight:600}
+.try li .a{font-family:'JetBrains Mono',monospace;color:var(--moss);margin-top:4px;display:block}
+@media(max-width:720px){
+  .wrap{padding:0 16px}
+  .hero-glyph{right:0}
+  .rule{grid-template-columns:1fr;gap:8px}
+  .rule>div{min-width:0}
+  .tbl{display:block;width:100%;max-width:100%;overflow-x:auto;white-space:nowrap}
+  .tbl.distance-map{overflow:visible;white-space:normal}
+  .distance-map thead{display:none}
+  .distance-map tbody{display:block}
+  .distance-map tr:not(.grp){display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--line);padding:12px 0}
+  .distance-map tr:not(.grp) td{border:0;padding:4px 8px;white-space:normal}
+  .distance-map tr:not(.grp) td:first-child{grid-column:1/-1;color:var(--cream);font-size:13px}
+  .distance-map tr.grp{display:block}
+  .distance-map tr.grp td{display:block}
+  .distance-rule tr:not(.grp) td:nth-child(2),.distance-reference tr:not(.grp) td:nth-child(2){grid-column:1}
+  .distance-rule tr:not(.grp) td:nth-child(3){display:none}
+  .distance-rule tr:not(.grp) td:nth-child(4),.distance-reference tr:not(.grp) td:nth-child(3){grid-column:2}
+  .distance-rule tr:not(.grp) td:nth-child(2)::before,.distance-reference tr:not(.grp) td:nth-child(2)::before{content:'FAR';display:block;margin-bottom:3px;color:var(--cream-dim);font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.1em}
+  .distance-rule tr:not(.grp) td:nth-child(4)::before,.distance-reference tr:not(.grp) td:nth-child(3)::before{content:'NEAR';display:block;margin-bottom:3px;color:var(--moss);font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.1em}
+  .question-link{grid-template-columns:52px 1fr;padding:18px 16px}
+  .question-mark{width:48px;height:48px}
+  .question-open{grid-column:2}
+}
+</style>
+</head>
+<body>
+
+<nav aria-label="Main">
+  <div class="wrap">
+    <a class="logo" href="../index.html"><span>te</span> lesson-01 · pronouns</a>
+    <ul>
+      <li><a href="../index.html">Course home</a></li>
+      <li><a href="../stories/index.html">Stories</a></li>
+      <li><a href="#rules">Rules</a></li>
+      <li><a href="#pronouns">Pronoun map</a></li>
+      <li><a href="#questions">Deep dives</a></li>
+      <li><a href="#anki">Anki list</a></li>
+      <li><a href="#try">Self-test</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-glyph telugu" aria-hidden="true">నే</div>
+  <div class="wrap">
+    <a class="home-crumb" href="../index.html">← Foundational Telugu / Learning path</a>
+    <span class="eyebrow">Course extraction · Lesson 1</span>
+    <h1>Pronouns &amp; the missing <em>"to be"</em></h1>
+    <p>Everything Lesson 1 introduced, split into the two things you're collecting: the <b>rules</b> of how words fit together, and an <b>Anki-ready word list</b> in your exact five-field format. The lesson's big idea: Telugu has no "is/am/are" — you just place two words side by side and attach a tiny <b>person marker</b> to the predicate.</p>
+
+    <div class="note-box">
+      <b>How I processed this</b>
+      <p>Your transcript was auto-generated captions, so the romanization was badly scrambled (it heard <em>nēnu</em> as "nano," <em>vāḷḷu</em> as "Waldo"). I reconstructed the real Telugu from context and normalized every spelling to the ISO diacritics (ā ī ū ē ō · ṭ ḍ ṇ ḷ) used across your other materials, so this slots in cleanly. Run the pronunciations past your wife as usual — a couple of these pronouns (āyana, āviḍa) have subtle vowel qualities worth hearing live.</p>
+    </div>
+  </div>
+</header>
+
+<section id="rules">
+  <div class="wrap">
+    <span class="eyebrow">The grammar engine</span>
+    <h2>Structures &amp; rules introduced</h2>
+    <p class="lede">Colour code throughout: <b style="color:var(--amber)">subject pronoun</b> · <b style="color:var(--moss)">predicate word</b> · <b style="color:var(--flame)">person marker / suffix</b>. The lesson notes that all future Telugu grammar is built by modifying pronoun sounds — so this is the foundation everything else stacks on.</p>
+
+    <div class="rules">
+
+      <div class="rule">
+        <div>
+          <h3>There is no "to be"</h3>
+          <p>Telugu has no copula (no <em>is / am / are</em>) and no definite article (<em>the</em>). To say "Raj is a student," you place the two words together and stop. The literal shape is just "Raj student."</p>
+          <div class="morph-row">
+            <span class="morph subj"><span class="p">Raj</span><span class="r">subject</span></span>
+            <span class="morph base"><span class="p">vidyārthi</span><span class="r">student</span></span>
+          </div>
+          <span class="ex">Raj vidyārthi. &nbsp; <span class="en">— "Raj is a student."</span></span>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3><span class="mono">oka</span> — “one” with an article-like job</h3>
+          <p>Telugu does not require an indefinite article. <b>Oka</b> is the before-a-noun form of “one,” and it can also introduce “a” particular person or thing. Use the bare predicate <b>Rāj vidyārthi</b> as the neutral “Raj is a student”; adding <b>oka</b> deliberately makes Raj one member/example of the category.</p>
+          <span class="ex">Raj oka vidyārthi. &nbsp; <span class="en">— "Raj is a student."</span></span>
+          <br><a class="rule-deep-link" href="../concepts/oka-one-and-a.html">Deep dive: when oka means “one,” “a,” or “a certain”</a>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Person markers on the predicate</h3>
+          <p>Here's the twist. For <b>1st and 2nd person</b> subjects, you attach a small <b style="color:var(--flame)">person marker</b> to the predicate word, reinforcing who the sentence is about. Only four pronouns take one; every third-person pronoun takes <b>none</b>.</p>
+          <div class="morph-row">
+            <span class="morph subj"><span class="p">nēnu</span><span class="r">I</span></span>
+            <span class="morph base"><span class="p">vidyārthi</span><span class="r">student</span></span>
+            <span class="morph op">+</span>
+            <span class="morph mark"><span class="p">-ni</span><span class="r">"I" marker</span></span>
+            <span class="morph op">→</span>
+            <span class="morph"><span class="p mono" style="color:var(--cream)">vidyārthini</span></span>
+          </div>
+          <span class="ex">nēnu vidyārthini. &nbsp; <span class="en">— "I am a student."</span></span>
+
+          <table class="tbl">
+            <thead><tr><th>Subject</th><th>Marker</th><th>Example (with vidyārthi)</th></tr></thead>
+            <tbody>
+              <tr><td><span class="rom">nēnu</span> <small>I</small></td><td><b style="color:var(--flame)" class="mono">-ni</b></td><td class="mono">nēnu vidyārthi<b style="color:var(--flame)">ni</b></td></tr>
+              <tr><td><span class="rom">nuvvu</span> <small>you (informal)</small></td><td><b style="color:var(--flame)" class="mono">-vi</b></td><td class="mono">nuvvu vidyārthi<b style="color:var(--flame)">vi</b></td></tr>
+              <tr><td><span class="rom">manamu / mēmu</span> <small>we</small></td><td><b style="color:var(--flame)" class="mono">-amu</b></td><td class="mono">manam vidyārthul<b style="color:var(--flame)">amu</b></td></tr>
+              <tr><td><span class="rom">mīru</span> <small>you (formal/plural)</small></td><td><span class="mono" style="color:var(--cream-dim)">— none</span></td><td class="mono">mīru vidyārthi</td></tr>
+              <tr><td><span class="rom">all 3rd person</span> <small>he/she/it/they</small></td><td><span class="mono" style="color:var(--cream-dim)">— none</span></td><td class="mono">atanu vidyārthi</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Plurals: add -lu / -ulu</h3>
+          <p>Make almost any noun plural by adding <b>-lu</b> or <b>-ulu</b> — the direct equivalent of English -s/-es. This includes English loanwords.</p>
+          <span class="ex">vidyārthi → vidyārthulu &nbsp;·&nbsp; kāru → kārlu &nbsp;·&nbsp; champion → championlu</span>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Vowel elision when suffixes attach</h3>
+          <p>Two vowels can't sit together. When a word ending in a vowel meets a suffix starting with a vowel, <b>the first vowel is deleted</b>. This is why "we are students" isn't <em>vidyārthulu-amu</em> but <b>vidyārthulamu</b> — the final <em>u</em> of the plural gets eaten by <em>-amu</em>.</p>
+          <div class="morph-row">
+            <span class="morph base"><span class="p">vidyārthul<s>u</s></span><span class="r">students</span></span>
+            <span class="morph op">+</span>
+            <span class="morph mark"><span class="p">amu</span><span class="r">"we" marker</span></span>
+            <span class="morph op">→</span>
+            <span class="morph"><span class="p mono" style="color:var(--cream)">vidyārthulamu</span></span>
+          </div>
+          <span class="ex">manam vidyārthulamu. &nbsp; <span class="en">— "We are students." (colloquially often -am)</span></span>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Two "we": inclusive vs exclusive</h3>
+          <p>Telugu distinguishes whether the listener is included. <b style="color:var(--cream)">manamu</b> = inclusive ("you and I"); <b style="color:var(--cream)">mēmu</b> = exclusive ("us, but not you"). Saying "we're going" to your father-in-law with <em>manamu</em> invites him along; with <em>mēmu</em> you're just informing him.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Two "you": intimacy vs default politeness</h3>
+          <p><b style="color:var(--cream)">nuvvu</b> (informal) is for the closest friends and family only — anywhere else it can read as rude. <b style="color:var(--cream)">mīru</b> is both the plural <em>and</em> the respectful singular. <b>When unsure, always default to mīru.</b> This is exactly your in-law register.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Third person comes in formality tiers</h3>
+          <p>"He" and "she" each have three forms by formality. Pick the neutral one when in doubt; it works almost everywhere. The informal forms (vāḍu, adi) carry the same caution as nuvvu — intimates only.</p>
+          <table class="tbl">
+            <thead><tr><th></th><th>Formal</th><th>Neutral (default)</th><th>Informal — caution</th></tr></thead>
+            <tbody>
+              <tr><td><b style="color:var(--cream)">he</b></td><td class="mono">āyana</td><td class="mono" style="color:var(--moss)">atanu</td><td class="mono">vāḍu</td></tr>
+              <tr><td><b style="color:var(--cream)">she</b></td><td class="mono">āviḍa</td><td class="mono" style="color:var(--moss)">āme</td><td class="mono">adi</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>"They" splits by human vs non-human</h3>
+          <p>For people, "they" is <b style="color:var(--cream)">vāḷḷu</b> (note the retroflex ḷḷ — tongue curled back). For objects and non-humans, "they" is <b style="color:var(--cream)">avi</b>. They are not interchangeable. Also note <b>adi</b> ("it") shares its form — and grammar — with the informal "she," but only in the singular.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Near vs distant: the a → i / e shift</h3>
+          <p>Every third-person pronoun above is the <b>distant</b> form: the person or thing is farther from the speaker, like English <em>that</em> or <em>those</em>. Its <b>near</b> partner points to someone or something close to the speaker, like <em>this</em> or <em>these</em>.</p>
+          <p>The pattern is an opening <b style="color:var(--flame)">a / ā sound → i / ī sound</b>. Short stays short (<b>a → i</b>), and long stays long (<b>ā → ī</b>). The register and human/non-human meaning do not change.</p>
+          <table class="tbl distance-map distance-rule">
+            <thead><tr><th>Meaning / register</th><th>Distant · a / ā</th><th>→</th><th>Near · i / ī</th></tr></thead>
+            <tbody>
+              <tr><td>he <span class="tag for">formal</span></td><td><span class="rom">āyana</span> <span class="tel">ఆయన</span></td><td style="color:var(--amber)">→</td><td><span class="rom" style="color:var(--moss)">īyana</span> <span class="tel">ఈయన</span></td></tr>
+              <tr><td>he <span class="tag neu">neutral</span></td><td><span class="rom">atanu</span> <span class="tel">అతను</span></td><td style="color:var(--amber)">→</td><td><span class="rom" style="color:var(--moss)">itanu</span> <span class="tel">ఇతను</span></td></tr>
+              <tr><td>he <span class="tag inf">informal</span></td><td><span class="rom">vāḍu</span> <span class="tel">వాడు</span></td><td style="color:var(--amber)">→</td><td><span class="rom" style="color:var(--moss)">vīḍu</span> <span class="tel">వీడు</span></td></tr>
+              <tr><td>she <span class="tag for">formal</span></td><td><span class="rom">āviḍa</span> <span class="tel">ఆవిడ</span></td><td style="color:var(--amber)">→</td><td><span class="rom" style="color:var(--moss)">īviḍa</span> <span class="tel">ఈవిడ</span></td></tr>
+              <tr><td>she <span class="tag neu">neutral</span></td><td><span class="rom">āme</span> <span class="tel">ఆమె</span></td><td style="color:var(--amber)">→</td><td><span class="rom" style="color:var(--moss)">īme</span> <span class="tel">ఈమె</span></td></tr>
+              <tr><td>she <span class="tag inf">informal</span> / it</td><td><span class="rom">adi</span> <span class="tel">అది</span></td><td style="color:var(--amber)">→</td><td><span class="rom" style="color:var(--moss)">idi</span> <span class="tel">ఇది</span></td></tr>
+              <tr><td>they · people</td><td><span class="rom">vāḷḷu</span> <span class="tel">వాళ్ళు</span></td><td style="color:var(--amber)">→</td><td><span class="rom" style="color:var(--moss)">vīḷḷu</span> <span class="tel">వీళ్ళు</span></td></tr>
+              <tr><td>they · objects / non-human</td><td><span class="rom">avi</span> <span class="tel">అవి</span></td><td style="color:var(--amber)">→</td><td><span class="rom" style="color:var(--moss)">ivi</span> <span class="tel">ఇవి</span></td></tr>
+            </tbody>
+          </table>
+          <span class="ex">idi Tāj Mahal. <span class="en">— "This is the Taj Mahal."</span> &nbsp;·&nbsp; adi Tāj Mahal. <span class="en">— "That is the Taj Mahal."</span></span>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Loanwords get a -u tail</h3>
+          <p>English words are absorbed by adding a <b>-u</b> ending: <em>car → kāru</em>, and then pluralized normally: <em>kārlu</em>. The lesson uses "champion" and "teacher" directly this way — handy, since you can lean on English nouns you don't yet know in Telugu.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="pronouns">
+  <div class="wrap">
+    <span class="eyebrow">Reference</span>
+    <h2>The full pronoun map</h2>
+    <p class="lede">Everything from the lesson in one place. First and second person do not form a near/far pair. Every third-person row preserves its meaning and register while the opening vowel marks distance. <span class="tag for">formal</span> <span class="tag neu">neutral / default</span> <span class="tag inf">informal — intimates only</span></p>
+    <table class="tbl">
+      <tbody>
+        <tr class="grp"><td colspan="3">First &amp; second person</td></tr>
+        <tr><td><span class="rom">nēnu</span> <span class="tel">నేను</span></td><td>I</td><td>marker <b class="mono" style="color:var(--flame)">-ni</b></td></tr>
+        <tr><td><span class="rom">nuvvu</span> <span class="tel">నువ్వు</span> <span class="tag inf">inf</span></td><td>you (singular)</td><td>marker <b class="mono" style="color:var(--flame)">-vi</b></td></tr>
+        <tr><td><span class="rom">mīru</span> <span class="tel">మీరు</span> <span class="tag for">formal</span></td><td>you (formal / plural)</td><td>no marker</td></tr>
+        <tr><td><span class="rom">manamu</span> <span class="tel">మనము</span></td><td>we (inclusive — with you)</td><td>marker <b class="mono" style="color:var(--flame)">-amu</b></td></tr>
+        <tr><td><span class="rom">mēmu</span> <span class="tel">మేము</span></td><td>we (exclusive — not you)</td><td>marker <b class="mono" style="color:var(--flame)">-amu</b></td></tr>
+      </tbody>
+    </table>
+    <table class="tbl distance-map distance-reference">
+      <thead><tr><th>Meaning / register</th><th>Far · that / those</th><th>Near · this / these</th></tr></thead>
+      <tbody>
+        <tr class="grp"><td colspan="3">Third person — distance pairs</td></tr>
+        <tr><td>he <span class="tag for">formal</span></td><td><span class="rom">āyana</span> <span class="tel">ఆయన</span></td><td><span class="rom" style="color:var(--moss)">īyana</span> <span class="tel">ఈయన</span></td></tr>
+        <tr><td>he <span class="tag neu">neutral</span></td><td><span class="rom">atanu</span> <span class="tel">అతను</span></td><td><span class="rom" style="color:var(--moss)">itanu</span> <span class="tel">ఇతను</span></td></tr>
+        <tr><td>he <span class="tag inf">informal</span></td><td><span class="rom">vāḍu</span> <span class="tel">వాడు</span></td><td><span class="rom" style="color:var(--moss)">vīḍu</span> <span class="tel">వీడు</span></td></tr>
+        <tr><td>she <span class="tag for">formal</span></td><td><span class="rom">āviḍa</span> <span class="tel">ఆవిడ</span></td><td><span class="rom" style="color:var(--moss)">īviḍa</span> <span class="tel">ఈవిడ</span></td></tr>
+        <tr><td>she <span class="tag neu">neutral</span></td><td><span class="rom">āme</span> <span class="tel">ఆమె</span></td><td><span class="rom" style="color:var(--moss)">īme</span> <span class="tel">ఈమె</span></td></tr>
+        <tr><td>she <span class="tag inf">informal</span> / it</td><td><span class="rom">adi</span> <span class="tel">అది</span></td><td><span class="rom" style="color:var(--moss)">idi</span> <span class="tel">ఇది</span></td></tr>
+        <tr><td>they · people</td><td><span class="rom">vāḷḷu</span> <span class="tel">వాళ్ళు</span></td><td><span class="rom" style="color:var(--moss)">vīḷḷu</span> <span class="tel">వీళ్ళు</span></td></tr>
+        <tr><td>they · objects / non-human</td><td><span class="rom">avi</span> <span class="tel">అవి</span></td><td><span class="rom" style="color:var(--moss)">ivi</span> <span class="tel">ఇవి</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="questions">
+  <div class="wrap">
+    <span class="eyebrow">From this lesson</span>
+    <h2>Question deep dives</h2>
+    <p class="lede">Standalone explanations will collect the questions that need more examples, sharper boundaries, or a closer look at how the pieces behave.</p>
+    <a class="question-link" href="../concepts/oka-one-and-a.html">
+      <span class="question-mark telugu">ఒక</span>
+      <span><h3>When does <span class="mono">oka</span> mean “one,” “a,” or “a certain”?</h3><p>Learn why English needs <em>a/an</em> where Telugu often uses a bare noun, and what changes when <span class="mono">oka</span> is added.</p></span>
+      <span class="question-open">Read deep dive</span>
+    </a>
+    <p style="margin-top:15px;font-size:13px"><a href="../concepts/index.html">Browse the full deep-dive library →</a></p>
+  </div>
+</section>
+
+<section id="anki">
+  <div class="wrap">
+    <span class="eyebrow">For import</span>
+    <h2>Anki word list — your 5 fields</h2>
+    <p class="lede">Formatted exactly for your note type. The <b>English</b> field carries register/context cues so the card prompts the right form. <b>Audio</b> is left blank for your family recordings. Example sentences are caveman-short on purpose — just enough to frame the word.</p>
+    <div class="field-key">
+      <span><b>1</b> English (+ cue)</span>
+      <span><b>2</b> Romanized</span>
+      <span><b>3</b> Telugu script</span>
+      <span><b>4</b> Audio (blank)</span>
+      <span><b>5</b> Example</span>
+    </div>
+
+    <div class="anki-wrap">
+      <table class="anki">
+        <thead>
+          <tr><th class="f-en">English (with cue)</th><th>Romanized</th><th>Telugu</th><th style="text-align:center">Audio</th><th>Example sentence</th></tr>
+        </thead>
+        <tbody>
+          <tr class="sec"><td colspan="5">Pronouns — subject</td></tr>
+          <tr><td class="f-en">I</td><td class="f-rom">nēnu</td><td class="f-tel">నేను</td><td class="f-aud">[ ]</td><td class="f-ex">nēnu vidyārthini.</td></tr>
+          <tr><td class="f-en">you (informal — close friends/family only)</td><td class="f-rom">nuvvu</td><td class="f-tel">నువ్వు</td><td class="f-aud">[ ]</td><td class="f-ex">nuvvu vidyārthivi.</td></tr>
+          <tr><td class="f-en">you (formal / plural — the safe default)</td><td class="f-rom">mīru</td><td class="f-tel">మీరు</td><td class="f-aud">[ ]</td><td class="f-ex">mīru ṭīcharu.</td></tr>
+          <tr><td class="f-en">we (inclusive — includes the listener)</td><td class="f-rom">manamu</td><td class="f-tel">మనము</td><td class="f-aud">[ ]</td><td class="f-ex">manam vidyārthulamu.</td></tr>
+          <tr><td class="f-en">we (exclusive — not the listener)</td><td class="f-rom">mēmu</td><td class="f-tel">మేము</td><td class="f-aud">[ ]</td><td class="f-ex">mēmu vidyārthulamu.</td></tr>
+
+          <tr class="sec"><td colspan="5">Pronouns — he / she (distant)</td></tr>
+          <tr><td class="f-en">he (formal — to/about an elder)</td><td class="f-rom">āyana</td><td class="f-tel">ఆయన</td><td class="f-aud">[ ]</td><td class="f-ex">āyana ṭīcharu.</td></tr>
+          <tr><td class="f-en">he (neutral — the default form)</td><td class="f-rom">atanu</td><td class="f-tel">అతను</td><td class="f-aud">[ ]</td><td class="f-ex">atanu vidyārthi.</td></tr>
+          <tr><td class="f-en">he (informal — intimates only, caution)</td><td class="f-rom">vāḍu</td><td class="f-tel">వాడు</td><td class="f-aud">[ ]</td><td class="f-ex">vāḍu vidyārthi.</td></tr>
+          <tr><td class="f-en">she (formal — to/about an elder)</td><td class="f-rom">āviḍa</td><td class="f-tel">ఆవిడ</td><td class="f-aud">[ ]</td><td class="f-ex">āviḍa ṭīcharu.</td></tr>
+          <tr><td class="f-en">she (neutral — the default form)</td><td class="f-rom">āme</td><td class="f-tel">ఆమె</td><td class="f-aud">[ ]</td><td class="f-ex">āme vidyārthi.</td></tr>
+
+          <tr class="sec"><td colspan="5">Pronouns — it / they &amp; demonstratives</td></tr>
+          <tr><td class="f-en">it / she (informal) — that one</td><td class="f-rom">adi</td><td class="f-tel">అది</td><td class="f-aud">[ ]</td><td class="f-ex">adi kāru.</td></tr>
+          <tr><td class="f-en">this / it — the near form of adi</td><td class="f-rom">idi</td><td class="f-tel">ఇది</td><td class="f-aud">[ ]</td><td class="f-ex">idi kāru.</td></tr>
+          <tr><td class="f-en">they (people)</td><td class="f-rom">vāḷḷu</td><td class="f-tel">వాళ్ళు</td><td class="f-aud">[ ]</td><td class="f-ex">vāḷḷu vidyārthulu.</td></tr>
+          <tr><td class="f-en">they (things / non-human)</td><td class="f-rom">avi</td><td class="f-tel">అవి</td><td class="f-aud">[ ]</td><td class="f-ex">avi kārlu.</td></tr>
+
+          <tr class="sec"><td colspan="5">Pronouns — near counterparts</td></tr>
+          <tr><td class="f-en">he (formal, nearby — near form of āyana)</td><td class="f-rom">īyana</td><td class="f-tel">ఈయన</td><td class="f-aud">[ ]</td><td class="f-ex">īyana ṭīcharu.</td></tr>
+          <tr><td class="f-en">he (neutral, nearby — near form of atanu)</td><td class="f-rom">itanu</td><td class="f-tel">ఇతను</td><td class="f-aud">[ ]</td><td class="f-ex">itanu vidyārthi.</td></tr>
+          <tr><td class="f-en">he (informal, nearby — near form of vāḍu)</td><td class="f-rom">vīḍu</td><td class="f-tel">వీడు</td><td class="f-aud">[ ]</td><td class="f-ex">vīḍu vidyārthi.</td></tr>
+          <tr><td class="f-en">she (formal, nearby — near form of āviḍa)</td><td class="f-rom">īviḍa</td><td class="f-tel">ఈవిడ</td><td class="f-aud">[ ]</td><td class="f-ex">īviḍa ṭīcharu.</td></tr>
+          <tr><td class="f-en">she (neutral, nearby — near form of āme)</td><td class="f-rom">īme</td><td class="f-tel">ఈమె</td><td class="f-aud">[ ]</td><td class="f-ex">īme vidyārthi.</td></tr>
+          <tr><td class="f-en">they (nearby people — near form of vāḷḷu)</td><td class="f-rom">vīḷḷu</td><td class="f-tel">వీళ్ళు</td><td class="f-aud">[ ]</td><td class="f-ex">vīḷḷu vidyārthulu.</td></tr>
+          <tr><td class="f-en">these (objects / non-human — near form of avi)</td><td class="f-rom">ivi</td><td class="f-tel">ఇవి</td><td class="f-aud">[ ]</td><td class="f-ex">ivi kārlu.</td></tr>
+
+          <tr class="sec"><td colspan="5">Nouns &amp; the little words</td></tr>
+          <tr><td class="f-en">student</td><td class="f-rom">vidyārthi</td><td class="f-tel">విద్యార్థి</td><td class="f-aud">[ ]</td><td class="f-ex">Raj vidyārthi.</td></tr>
+          <tr><td class="f-en">students (plural)</td><td class="f-rom">vidyārthulu</td><td class="f-tel">విద్యార్థులు</td><td class="f-aud">[ ]</td><td class="f-ex">vāḷḷu vidyārthulu.</td></tr>
+          <tr><td class="f-en">teacher (loanword)</td><td class="f-rom">ṭīcharu</td><td class="f-tel">టీచర్</td><td class="f-aud">[ ]</td><td class="f-ex">mīru ṭīcharu.</td></tr>
+          <tr><td class="f-en">car (loanword)</td><td class="f-rom">kāru</td><td class="f-tel">కారు</td><td class="f-aud">[ ]</td><td class="f-ex">idi kāru.</td></tr>
+          <tr><td class="f-en">a / an (indefinite — optional, for emphasis)</td><td class="f-rom">oka</td><td class="f-tel">ఒక</td><td class="f-aud">[ ]</td><td class="f-ex">oka vidyārthi.</td></tr>
+          <tr><td class="f-en">a greeting — "hello / greetings"</td><td class="f-rom">namaskāraṁ</td><td class="f-tel">నమస్కారం</td><td class="f-aud">[ ]</td><td class="f-ex">namaskāraṁ aṇḍi.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="lede" style="margin-top:20px;font-size:14px">The near forms are included because they appear in the lesson, but learn them as <b>paired transformations</b>, not eight unrelated facts: āyana→īyana, atanu→itanu, vāḍu→vīḍu, āviḍa→īviḍa, āme→īme, adi→idi, vāḷḷu→vīḷḷu, and avi→ivi. <b>Idi</b> already appears with the demonstratives, so it is not duplicated in the near-counterparts section.</p>
+  </div>
+</section>
+
+<section id="try">
+  <div class="wrap">
+    <span class="eyebrow">From the lesson</span>
+    <h2>Quick self-test</h2>
+    <p class="lede">The video's own check questions, with answers. Cover the green line and say each aloud before revealing.</p>
+    <ul class="try">
+      <li><span class="q">"I am Sophia."</span><span class="a">nēnu Sophia ni. &nbsp; (nēnu + name + the "I" marker -ni)</span></li>
+      <li><span class="q">"You are a teacher" (to a teacher)</span><span class="a">mīru ṭīcharu. &nbsp; (formal → mīru, no marker)</span></li>
+      <li><span class="q">"You are a student" (to a student)</span><span class="a">nuvvu vidyārthivi. &nbsp; (informal → nuvvu + marker -vi)</span></li>
+      <li><span class="q">"We are the champions" (you're a champion too)</span><span class="a">manam championlamu. &nbsp; (inclusive we → -amu, vowel eaten)</span></li>
+      <li><span class="q">"This is the Taj Mahal / That is the Taj Mahal"</span><span class="a">idi Tāj Mahal. / adi Tāj Mahal. &nbsp; (near i- vs distant a-)</span></li>
+      <li><span class="q">"These people / those people"</span><span class="a">vīḷḷu / vāḷḷu. &nbsp; (near ī- vs distant ā-)</span></li>
+      <li><span class="q">Give the near partner for āviḍa, atanu, and avi.</span><span class="a">īviḍa, itanu, ivi. &nbsp; (keep the same meaning/register; change distance)</span></li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><span class="mono">nēnu vidyārthini.</span> — the first full sentence you can now build, and take apart, from its pieces. Next lesson: the word <span class="mono">nēnu</span> in depth &amp; self-introductions.</p>
+    <p style="margin-top:12px"><a href="lesson-02-introductions.html">Lesson 2: Introducing yourself &amp; the “my / our” split →</a></p>
+    <p style="margin-top:12px"><a href="../stories/story-01-ravi-and-sita.html">Practice Lesson 1 in Mini Story 01 →</a></p>
+    <p style="margin-top:12px"><a href="../index.html">← Return to the Foundational Telugu learning path</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
