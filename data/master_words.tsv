@@ -1,1246 +1,1242 @@
 id	telugu	roman	english	pos	lemma	example	rank	source	raw_rom	flags	notes
-W0001	మీరు	mīru	you (formal / plural — the safe default); You (Respect); you	pronoun		mīru ṭīcharu.	2	site,book1000,top1000	mīru	multi-gloss	
-W0002	తన	tana	own (his/her own); his	grammar		tana venaka	3	site,top1000	tana	multi-gloss	
-W0003	నేను	nēnu	I	pronoun		nēnu vidyārthini.	4	site,book1000,top1000	nēnu		
-W0004	మేము	mēmu	we (exclusive — not the listener); We	pronoun		mēmu vidyārthulamu.	5	site,book1000,top1000	mēmu	multi-gloss	
-W0005	అతను	atanu	he (neutral — the default form); he	pronoun		atanu vidyārthi.	5	site,top1000	atanu	multi-gloss	
-W0006	ఆమె	āme	she (neutral — the default form); She	pronoun		āme vidyārthi.	8	site,book1000,top1000	āme	multi-gloss	
-W0007	ఇది	idi	this / it — the near form of adi; It; which	pronoun-demonstrative		idi kāru.	9	site,book1000,top1000	idi	multi-gloss	
-W0008	ఒకటి	okaṭi	"one (standalone — ""oka"" before a noun); one"	numeral		okaṭi ivvaṇḍi.	14	site,top1000	okaṭi	multi-gloss	
-W0009	కానీ	kānī	but	other		kāni ṭrāphik ekkuva undi	21	site,top1000	kāni		
-W0010	ఏమి	ēmi	what	grammar		ēmi jarigindi?	22	site,top1000	ēmi		
-W0011	ధన్యవాదాలు	dhanyavādālu	thank you; Thanks; thank	formula		dhanyavādālu.	23	site,book1000,top1000	dhanyavādālu	multi-gloss	
-W0012	ఒక	oka	a / an (indefinite — optional, for emphasis); a; an	numeral-determiner		oka vidyārthi.	33	site,top1000	oka	multi-gloss	
-W0013	అవును	avunu	yes	response		avunandi.	33	site,book1000,top1000	avunu		
-W0014	అమ్మ	amma	"mother (say ""mā amma"" for ""my mother""); Mother"	noun-family		mā amma pēru Sunita.	38	site,book1000	amma	multi-gloss	
-W0015	నాన్న	nānna	"father (say ""mā nāna"" for ""my father""); Dad"	noun-family		mā nāna pēru John.	39	site,book1000	nāna	multi-gloss	
-W0016	అన్నయ్య	annayya	elder brother (shortens to anna); Elder brother	noun-family		mā annayya ḍākṭar.	40	site,book1000	annayya	multi-gloss	
-W0017	తమ్ముడు	tammuḍu	younger brother	noun-family		mā tammuḍu vidyārthi.	41	site,book1000	tammuḍu		
-W0018	అక్క	akka	elder sister	noun-family		mā akka vidyārthi.	42	site,book1000	akka		
-W0019	అమ్మమ్మ	ammamma	maternal grandmother (mother's mother); Grandmother	noun-family		mā ammamma gāru.	45	site,book1000	ammamma	multi-gloss	
-W0020	మూడు	mūḍu	three	numeral		mūḍu pustakālu.	53	site,top1000	mūḍu		
-W0021	చిన్న	chinna	small, young; small; little; short; tiny	adjective		chinna + nāna → chinnāna	59	site,top1000	chinna	multi-gloss	
-W0022	రంగు	rangu	colour; Color	noun		rangu lēni	60	site,book1000,top1000	rangu	multi-gloss	
-W0023	చాలు	chālu	enough (stopping more food); put	other		chālu, chālā bāgundi	61	site,top1000	chālu	multi-gloss	
-W0024	పెద్ద	pedda	big, elder; large; big	adjective		pedda + amma → peddamma	66	site,top1000	pedda	multi-gloss	
-W0025	కొంచెం	koncheṁ	a little, somewhat; Little	other		konchaṁ kaṣṭaṁ	93	site,book1000	konchaṁ	multi-gloss	
-W0026	సరే	sarē	okay; Well	response		sarē aṇḍi.	94	site,book1000	sarē	multi-gloss	
-W0027	మంచి	manchi	good (before a noun); Good; better	other		oka manchi pani	95	site,book1000,top1000	manchi	multi-gloss	
-W0028	కాదు	kādu	no — it is not (negating a statement); No	negation		idi kāru kādu.	98	site,book1000	kādu	multi-gloss	
-W0029	పని	pani	work, task; work	other		chālā pani undi	103	site,top1000	pani	multi-gloss	
-W0030	తల	tala	head	noun		tala etti chūḍu	107	site,book1000,top1000	tala		
-W0031	పేరు	pēru	name (long ē — not like the country Peru); where; name	noun		nā pēru Raj.	110	site,top1000	pēru	multi-gloss	
-W0032	మనిషి	maniṣi	person / human being; man	noun		nēnu manishini.	116	site,top1000	manishi	multi-gloss	
-W0033	మా	mā	"our (before a noun — also ""my"" for close family); our"	possessive		mā amma pēru Sunita.	124	site,top1000	mā	multi-gloss	
-W0034	మలుపు	malupu	turning point; turn	poetic		kṣaṇamoka malupu	139	site,top1000	malupu	multi-gloss	
-W0035	మీ	mī	your (formal / plural — the safe default); your	possessive		mī pēru ēmiṭi?	156	site,top1000	mī	multi-gloss	
-W0036	పిల్లలు	pillalu	children (collective); Children	noun-family		mā pillalu vidyārthulu.	164	site,book1000,top1000	pillalu	multi-gloss	
-W0037	రెండు	reṇḍu	two; both	numeral		reṇḍu kārlu.	173	site,top1000	reṇḍu	multi-gloss	
-W0038	దయచేసి	dayachēsi	please (rare — politeness usually goes in the suffix); Please	formula		"raṇḍi (not ""dayacēsi raṇḍi"")"	181	site,book1000,top1000	dayacēsi	multi-gloss	
-W0039	నా	nā	my (before a noun); my	possessive		nā pēru Raj.	187	site,top1000	nā	multi-gloss	
-W0040	తెలుసు	telusu	to be known (I know); know; knew	verb		nāku telusu — I know	189	site,top1000	telusu / teliyadu	multi-gloss	
-W0041	మొదటి	modaṭi	first (irregular); first	ordinal		modaṭi pāṭhaṁ.	193	site,top1000	modaṭi	multi-gloss	
-W0042	ఎవరు	evaru	who	grammar		evaru vastunnāru?	194	site,top1000	evaru		
-W0043	బొమ్మ	bomma	doll; Picture	noun		the Telugu word for guḍiyā	205	site,book1000	bomma	multi-gloss	
-W0044	దేశం	dēśaṁ	country; nation	noun		mādi Bhārata Dēśam.	206	site,top1000	dēśam	multi-gloss	
-W0045	నవ్వు	navvu	smile, laugh; Smile; laugh	noun		adi navvitē	208	site,book1000,top1000	navvu	multi-gloss	
-W0046	నాలుగు	nālugu	four	numeral		nālugu.	218	site,top1000	nālugu		
-W0047	స్నేహితుడు	snēhituḍu	friend (male); friend	noun		nā snēhituḍu vidyārthi.	257	site,top1000	snēhituḍu	multi-gloss	
-W0048	విను	vinu	to hear, to listen; hear	verb	విను	vinaḍu — he doesn't listen	265	site,top1000	vinu	multi-gloss verbform	impFam of విను
-W0049	కారు	kāru	car (loanword); car	noun		idi kāru.	297	site,top1000	kāru	inflected multi-gloss	
-W0050	అమ్మాయి	ammāyi	girl	noun		nēnu ammāyini.	303	site,top1000	ammāyi	inflected	
-W0051	పాట	pāṭa	song	noun		pelli pāṭa pāḍē	322	site,top1000	pāṭa		
-W0052	పూర్తి	pūrti	completed, finished; complete; full	other		pūrti ayyindi	333	site,top1000	pūrti	multi-gloss	
-W0053	అడుగు	aḍugu	step, foot; to ask; foot; step	noun		aḍugu kalipi	366	site,top1000	aḍugu	multi-gloss	
-W0054	బంగారు	bangāru	gold, golden (also a pet name); gold	noun		baṅgāru bomma	373	site,top1000	baṅgāru	inflected multi-gloss	
-W0055	దారి	dāri	way, road, route; lead	other		dārilō — on the way	408	site,top1000	dāri	multi-gloss	
-W0056	నిమిషం	nimiṣaṁ	minute	noun		oka nimiṣaṁ!	441	site,top1000	nimiṣaṁ		
-W0057	మనసు	manasu	heart, mind; mind	noun		manasē karaga lēdu	444	site,top1000	manasu	multi-gloss	
-W0058	వంద	vanda	hundred	numeral		vanda rūpāyalu.	457	site,top1000	vanda		
-W0059	ఐదు	aidu	five	numeral		aidu rūpāyalu.	458	site,top1000	aidu		
-W0060	ఆరు	āru	six	numeral		āru.	471	site,top1000	āru		
-W0061	పది	padi	ten	numeral		padi mandi.	476	site,top1000	padi		
-W0062	వర్షం	varṣaṁ	rain	noun		varṣaṁ vastundi	494	site,top1000	varṣaṁ		
-W0063	అల	ala	wave	noun		alalu alisi	538	site,top1000	ala		
-W0064	వేసవి	vēsavi	summer	noun		vēsavilō	557	site,top1000	vēsavi		
-W0065	క్షణం	kṣaṇaṁ	moment	noun		ā kṣaṇaṁ	660	site,top1000	kṣaṇaṁ		
-W0066	ఇరవై	iravai	twenty (20); twenty	numeral		nā vayasu iravai.	695	site,top1000	iravai	multi-gloss	
-W0067	ఎనిమిది	enimidi	eight	numeral		enimidi.	702	site,top1000	enimidi		
-W0068	ఏడు	ēḍu	seven	numeral		ēḍu.	712	site,top1000	ēḍu		
-W0069	కష్టం	kaṣṭaṁ	difficult, hard; difficult	other		konchaṁ kaṣṭaṁ	763	site,top1000	kaṣṭaṁ	multi-gloss	
-W0070	డాక్టర్	ḍākṭar	doctor (loanword — the everyday choice); doctor	noun-profession		nā ḍākṭar pēru Sophia.	764	site,top1000	ḍākṭaru	multi-gloss	
-W0071	విద్యార్థి	vidyārthi	student	noun		Raj vidyārthi.	772	site,top1000	vidyārthi		
-W0072	అసలు	asalu	at all, really; original	grammar		asalu vinaḍu	865	site,top1000	asalu	multi-gloss	
-W0073	భార్య	bhārya	wife	noun-family		nā bhārya pēru Namrata.	964	site,top1000	bhārya		
-W0074	భుజం	bhujaṁ	shoulder	noun		kuḍi bhujaṁ mīda	966	site,top1000	bhujaṁ		
-W0075	తొమ్మిది	tommidi	nine	numeral		tommidi.	975	site,top1000	tommidi		
-W0076	నువ్వు	nuvvu	you (informal — close friends/family only)	pronoun		nuvvu vidyārthivi.		site	nuvvu		
-W0077	మనము	manamu	we (inclusive — includes the listener)	pronoun		manam vidyārthulamu.		site	manamu		
-W0078	ఆయన	āyana	he (formal — to/about an elder)	pronoun		āyana ṭīcharu.		site	āyana		
-W0079	వాడు	vāḍu	he (informal — intimates only, caution)	pronoun		vāḍu vidyārthi.		site	vāḍu	inflected	
-W0080	ఆవిడ	āviḍa	she (formal — to/about an elder)	pronoun		āviḍa ṭīcharu.		site	āviḍa		
-W0081	అది	adi	it / she (informal) — that one	pronoun-demonstrative		adi kāru.		site	adi		
-W0082	వాళ్ళు	vāḷḷu	they (people)	pronoun		vāḷḷu vidyārthulu.		site	vāḷḷu		
-W0083	అవి	avi	they (things / non-human)	pronoun-demonstrative		avi kārlu.		site	avi		
-W0084	ఈయన	īyana	he (formal, nearby — near form of āyana)	pronoun		īyana ṭīcharu.		site	īyana		
-W0085	ఇతను	itanu	he (neutral, nearby — near form of atanu)	pronoun		itanu vidyārthi.		site	itanu		
-W0086	వీడు	vīḍu	he (informal, nearby — near form of vāḍu)	pronoun		vīḍu vidyārthi.		site	vīḍu		
-W0087	ఈవిడ	īviḍa	she (formal, nearby — near form of āviḍa)	pronoun		īviḍa ṭīcharu.		site	īviḍa		
-W0088	ఈమె	īme	she (neutral, nearby — near form of āme)	pronoun		īme vidyārthi.		site	īme		
-W0089	వీళ్ళు	vīḷḷu	they (nearby people — near form of vāḷḷu)	pronoun		vīḷḷu vidyārthulu.		site	vīḷḷu		
-W0090	ఇవి	ivi	these (objects / non-human — near form of avi)	pronoun-demonstrative		ivi kārlu.		site	ivi		
-W0091	విద్యార్థులు	vidyārthulu	students (plural)	noun		vāḷḷu vidyārthulu.		site	vidyārthulu		
-W0092	టీచర్	ṭīchar	teacher (loanword)	noun		mīru ṭīcharu.		site	ṭīcharu		
-W0093	నమస్కారం	namaskāraṁ	"a greeting — ""hello / greetings"""	formula		namaskāraṁ aṇḍi.		site	namaskāraṁ		
-W0094	అబ్బాయి	abbāyi	boy	noun		nēnu abbāyini.		site	abbāyi	inflected	
-W0095	మొగుడు	moguḍu	man (course form — see rule 04; Lesson 4 confirms this means “husband”)	noun-family		nā moguḍu enjinīr.		site	moguḍu		
-W0096	ఆడది	āḍadi	woman	noun		nēnu āḍadini.		site	āḍadi		
-W0097	ఉపాధ్యాయుడు	upādhyāyuḍu	teacher (male, formal Telugu form)	noun-profession		nēnu upādhyāyuḍini.		site	upādhyāyuḍu		
-W0098	ఉపాధ్యాయురాలు	upādhyāyurālu	teacher (female, formal Telugu form)	noun-profession		nēnu upādhyāyurālini.		site	upādhyāyurālu		
-W0099	వైద్యుడు	vaidyuḍu	doctor (male, formal Telugu form)	noun-profession		āyana oka vaidyuḍu.		site	vaidyuḍu		
-W0100	వైద్యురాలు	vaidyurālu	doctor (female, formal Telugu form)	noun-profession		āme oka vaidyurālu.		site	vaidyurālu		
-W0101	న్యాయవాది	nyāyavādi	lawyer	noun-profession		nēnu nyāyavādini.		site	nyāyavādi		
-W0102	అభియంత	abhiyanta	engineer (Telugu form — recognise only, never used in speech)	noun-profession		nēnu enjinīrni.		site	abhiyanta		
-W0103	నాది	nādi	mine (stands alone)	possessive		nādi oka kāru.		site	nādi		
-W0104	మాది	mādi	ours (stands alone — used for hometown)	possessive		mādi Hyderabad.		site	mādi		
-W0105	వయసు	vayasu	age	noun		nā vayasu iravai.		site	vayasu		
-W0106	ముప్పై	muppai	thirty (30)	numeral		nā vayasu muppai.		site	muppai		
-W0107	స్నేహితురాలు	snēhiturālu	friend (female)	noun		nā snēhiturālu vidyārthi.		site	snēhiturālu		
-W0108	భర్త	bharta	husband	noun-family		nā bharta oka ṭīcharu.		site	bharta		
-W0109	ఊరు	ūru	town / hometown	noun		mā ūru Hyderabad.		site	ūru		
-W0110	సొంత ఊరు	sonta ūru	native place (own town)	phrase		mā sonta ūru Hyderabad.		site	sonta ūru	phrase	
-W0111	భారత దేశం	bhārata dēśaṁ	"India (ancient name + ""country"")"	proper-noun		mādi Bhārata Dēśam.		site	Bhārata Dēśam	phrase	
-W0112	భారతీయుడు	bhāratīyuḍu	Indian (male)	noun		nēnu bhāratīyuḍini.		site	bhāratīyuḍu		
-W0113	భారతీయురాలు	bhāratīyurālu	Indian (female)	noun		nēnu bhāratīyurālini.		site	bhāratīyurālu		
-W0114	మాతృభాష	mātṛbhāṣa	mother tongue	noun		mā mātṛbhāṣa Telugu.		site	mātṛbhāṣa		
-W0115	వస్తాను	vastānu	"goodbye (lit. ""I'll come back"")"	formula	రా	vastānandi.		site	vastānu	inflected verbform	future of రా
-W0116	రండి	raṇḍi	please come in / welcome (colloquial)	formula	రా	raṇḍi, raṇḍi.		site	raṇḍi	inflected verbform	impPol of రా
-W0117	రా	rā	come (base verb — becomes raṇḍi with aṇḍi)	verb	రా	rā + aṇḍi → raṇḍi		site	rā	verbform	impFam of రా
-W0118	స్వాగతం	svāgataṁ	welcome (formal — banners and speeches)	formula		svāgataṁ aṇḍi.		site	svāgataṁ		
-W0119	థాంక్స్ అండి	thānks aṇḍi	thank you (colloquial hybrid — the everyday choice)	formula		thanks aṇḍi.		site	thanks aṇḍi	english-respelled inflected phrase	
-W0120	లేదు	lēdu	no — it doesn't exist / isn't there / I don't have it	negation	ఉండు	lēdandi.		site	lēdu	verbform	negPast of ఉండు
-W0121	వద్దు	vaddu	no — I don't want it (declining)	negation		vaddandi, thanks aṇḍi.		site	vaddu		
-W0122	క్షమించండి	kṣaminchaṇḍi	"sorry (lit. ""forgive me"")"	formula		kṣaminchandi.		site	kṣaminchandi	inflected	
-W0123	పర్వాలేదు	parvālēdu	It's okay / no problem / never mind	formula		parvālēdu aṇḍi.		site	parvālēdu		
-W0124	శభాష్	śabhāṣ	well done / congratulations	formula		śabhāṣ!		site	śabhāṣ		
-W0125	మంచిది	manchidi	good — nice, noble, morally good	adjective		manchidi.		site	manchidi		
-W0126	బాగుంది	bāgundi	good — fine, going well (food, trips, states)	adjective		bāgundi aṇḍi.		site	bāgundi	inflected	
-W0127	బాగున్నారా	bāgunnārā	"how are you? (lit. ""are you fine?"")"	formula		mīru bāgunnārā?		site	bāgunnārā		
-W0128	బాగున్నాను	bāgunnānu	I am fine	formula		nēnu bāgunnānu.		site	bāgunnānu	inflected	
-W0129	పద	pada	let's go	verb		padaṇḍi.		site	pada		
-W0130	ఎంత	enta	how much	question-word		idi enta?		site	enta		
-W0131	ఇదిగో	idigō	here you go (handing something over)	formula		idigōṇḍi.		site	idigō		
-W0132	రాదు	rādu	"doesn't come — used for ""I don't know [a language]"""	verb-negative	రా	Telugu rādu.		site	rādu	verbform	negFuture of రా
-W0133	తెలుసా	telusā	do you know?	question		English telusā?		site	telusā		
-W0134	చెల్లి	chelli	younger sister	noun-family		mā chelli ammāyi.		site	chelli		
-W0135	నానమ్మ	nānamma	paternal grandmother (father's mother)	noun-family		mā nānamma gāru.		site	nānamma		
-W0136	తాత	tāta	grandfather (either side)	noun-family		mā tāta gāru.		site	tāta		
-W0137	గారు	gāru	honorific suffix for people (respect)	honorific		Raj gāru.		site	gāru	inflected	
-W0138	మామయ్య	māmayya	mother's brother (any age)	noun-family		mā māmayya enjinīr.		site	māmayya		
-W0139	పెద్దమ్మ	peddamma	"mother's ELDER sister (lit. ""elder mother"")"	noun-family		mā peddamma gāru.		site	peddamma		
-W0140	పిన్ని	pinni	mother's YOUNGER sister	noun-family		mā pinni ṭīcharu.		site	pinni		
-W0141	అత్త	atta	father's sister (any age) — also mother-in-law	noun-family		mā atta gāru.		site	atta		
-W0142	పెద్దనాన్న	peddanānna	"father's ELDER brother (lit. ""elder father"")"	noun-family		mā peddanāna gāru.		site	peddanāna		
-W0143	చిన్నాన్న	chinnānna	"father's YOUNGER brother (lit. ""younger father"")"	noun-family		mā chinnāna vaidyuḍu.		site	chinnāna		
-W0144	పెళ్ళాం	peḷḷāṁ	wife (colloquial — bhārya is the formal word)	noun-family		nā pellām ṭīcharu.		site	pellām		
-W0145	మామ గారు	māma gāru	father-in-law (either side)	noun-family		mā māma gāru.		site	māma gāru	inflected phrase	
-W0146	కూతురు	kūturu	daughter	noun-family		mā kūturu vidyārthi.		site	kūturu		
-W0147	కొడుకు	koḍuku	son	noun-family		mā koḍuku abbāyi.		site	koḍuku		
-W0148	అల్లుడు	alluḍu	son-in-law	noun-family		nēnu alluḍini.		site	alluḍu		
-W0149	కోడలు	kōḍalu	daughter-in-law	noun-family		mā kōḍalu ḍākṭar.		site	kōḍalu		
-W0150	మనవలు	manavalu	grandchildren (collective)	noun-family		mā manavalu.		site	manavalu		
-W0151	మనవడు	manavaḍu	grandson (variant: manumaḍu)	noun-family		mā manavaḍu vidyārthi.		site	manavaḍu		
-W0152	మనవరాలు	manavarālu	granddaughter (variant: manumarālu)	noun-family		mā manavarālu ammāyi.		site	manavarālu		
-W0153	మన	mana	our — INCLUDING the listener	possessive		mana pērlu.		site	mana		
-W0154	నీ	nī	your (informal — close friends, younger people)	possessive		nī pēru ēnti?		site	nī		
-W0155	అతని	atani	his (neutral — the default form)	possessive		atani pēru Sanjay.		site	atani		
-W0156	వాడి	vāḍi	his (informal — intimates only)	possessive		vāḍi pēru Peter.		site	vāḍi		
-W0157	దాని	dāni	her (informal) / its	possessive		dāni pēru Gita.		site	dāni		
-W0158	వాళ్ళ	vāḷḷa	their (people)	possessive		vāḷḷa pērlu.		site	vāḷḷa		
-W0159	వాటి	vāṭi	their (objects / non-human)	possessive		vāṭi pērlu.		site	vāṭi		
-W0160	ఏమిటి	ēmiṭi	what (colloquially ēnti)	question-word		mī pēru ēmiṭi?		site	ēmiṭi		
-W0161	పేర్లు	pērlu	names (plural of pēru)	noun		vāḷḷa pērlu.		site	pērlu		
-W0162	సున్నా	sunnā	zero	numeral		sunnā.		site	sunnā		
-W0163	నలభై	nalabhai	forty	numeral		nā vayasu nalabhai.		site	nalabhai		
-W0164	యాభై	yābhai	fifty	numeral		yābhai rūpāyalu.		site	yābhai		
-W0165	అరవై	aravai	sixty	numeral		aravai.		site	aravai		
-W0166	డెబ్బై	ḍebbai	seventy	numeral		ḍebbhai.		site	ḍebbhai		
-W0167	ఎనభై	enabhai	eighty	numeral		enabhai.		site	enabhai		
-W0168	తొంభై	tombhai	ninety	numeral		tombhai tommidi = 99.		site	tombhai		
-W0169	వెయ్యి	veyyi	thousand	numeral		reṇḍu vēlu = 2,000.		site	veyyi		
-W0170	లక్ష	lakṣa	lakh — 100,000 (written 1,00,000)	numeral		reṇḍu lakṣalu.		site	lakṣa		
-W0171	కోటి	kōṭi	crore — 10,000,000 (written 1,00,00,000)	numeral		oka kōṭi.		site	kōṭi		
-W0172	రూపాయలు	rūpāyalu	rupees	noun		yābhai rūpāyalu.		site	rūpāyalu		
-W0173	పదకొండు	padakoṇḍu	eleven	numeral		padakoṇḍu.		site	padakoṇḍu		
-W0174	పన్నెండు	panneṇḍu	twelve	numeral		panneṇḍu.		site	panneṇḍu		
-W0175	పదమూడు	padamūḍu	thirteen	numeral		padamūḍu.		site	padamūḍu		
-W0176	పద్నాలుగు	padnālugu	fourteen	numeral		padnālugu.		site	padnālugu		
-W0177	పదిహేను	padihēnu	fifteen	numeral		padihēnu.		site	padihēnu		
-W0178	పదహారు	padahāru	sixteen	numeral		padahāru.		site	padahāru	inflected	
-W0179	పదిహేడు	padihēḍu	seventeen	numeral		padihēḍu.		site	padihēḍu		
-W0180	పద్దెనిమిది	paddenimidi	eighteen	numeral		paddenimidi.		site	paddenimidi		
-W0181	పంతొమ్మిది	pantommidi	nineteen	numeral		pantommidi.		site	pantommidi		
-W0182	ఒకరు	okaru	one person (not okaṭi)	numeral-human		okaru mātramē.		site	okaru		
-W0183	ఇద్దరు	iddaru	two people	numeral-human		iddaru vidyārthulu.		site	iddaru		
-W0184	ముగ్గురు	mugguru	three people	numeral-human		mugguru.		site	mugguru		
-W0185	నలుగురు	naluguru	four people	numeral-human		naluguru.		site	naluguru		
-W0186	ఐదుగురు	aiduguru	five people	numeral-human		aiduguru.		site	aiduguru		
-W0187	మంది	mandi	people (counter word — use with larger numbers)	numeral-human		padi mandi.		site	mandi		
-W0188	రెండవ / రెండో	reṇḍava / reṇḍō	second (pattern: number + -ava / -ō)	numeral		reṇḍō roju.		site	reṇḍava / reṇḍō	phrase	
-W0189	మీరు ఎట్ల ఉన్నారు?	mīru eṭla unnāru?	How are you? (respectful)	other		always return the question		site	mīru eṭla unnāru?	phrase	
-W0190	అత్తయ్య	attayya	aunty / mother-in-law (address)	other		bāgundi attayya		site	attayya		
-W0191	ఈ రోజు	ī rōju	today	other		ī rōju bāgundi		site	ī rōju	phrase	
-W0192	తిన్నాను	tinnānu	I've eaten	other	తిను	block — Lesson 9 explains it		site	tinnānu	inflected verbform	past of తిను
-W0193	ఇంకా లేదు	inkā lēdu	not yet	other		inkā tinalēdu		site	inkā lēdu	phrase	
-W0194	ఎక్కువ	ekkuva	a lot, excessive (of quantity)	other		not “bad” — Telugu counts traffic		site	ekkuva		
-W0195	అయ్యింది	ayyindi	it got done, it happened	other		chālā pani ayyindi		site	ayyindi	inflected	
-W0196	చేసాను	chēsānu	I did	other	చేయి	block — chālā pani chēsānu		site	chēsānu	inflected verbform	past of చేయి
-W0197	ఆఫీసులో	āphīsulō	at the office	other		āphīsulō chālā pani undi		site	āphīsulō		
-W0198	ఇంట్లో	iṇṭlō	at home, in the house	other		intlō antā bāgunnārā?		site	intlō		
-W0199	అంతా	antā	everyone, all	other		intlō antā		site	antā		
-W0200	అలిసిపోయాను	alisipōyānu	I'm tired	other		block — konchaṁ alisipōyānu		site	alisipōyānu	inflected	
-W0201	ఎట్ల గడిచింది?	eṭla gaḍichindi?	How did it go? (of a day)	other		mī rōju eṭla gaḍichindi?		site	eṭla gaḍichindi?	phrase	
-W0202	తిన్నారా?	tinnārā?	Have you eaten?	other		recognise it, don't just answer		site	tinnārā?		
-W0203	లాగా	lāgā	like, as	grammar		varṣaṁlā — like rain		site	lāga / -lā	bound-suffix	
-W0204	ఏమి జరిగినా	ēmi jariginā	whatever happens	grammar		fixed phrase		site	ēmi jariginā	phrase	
-W0205	ఎపుడూ	epuḍū	always, ever	grammar		epuḍū manasulō		site	epuḍū		
-W0206	తాను	tānu	himself, herself	grammar		tānē vachchāḍu		site	tānu	inflected	
-W0207	పై	pai	on, upon	grammar		tanapai — on him		site	-pai	bound-suffix	
-W0208	వెనక	venaka	behind	grammar		tana venakāle		site	venaka		
-W0209	పెళ్ళి	peḷḷi	wedding	noun		pelli pāṭa		site	pelli		
-W0210	అలుపు	alupu	tiredness	noun		alupu lēdu		site	alupu		
-W0211	ఆశ	āśa	hope, desire	noun		āśa karugunā		site	āśa		
-W0212	గెలుపు	gelupu	victory, winning	noun		kadilitē gelupu		site	gelupu		
-W0213	కల	kala	dream	noun		kalalu — dreams		site	kala		
-W0214	దిశ	diśa	direction	noun		diśalu reṇḍu		site	diśa		
-W0215	దినుసు	dinusu	grain, ingredient	noun		dinusē nalaga lēdu		site	dinusu		
-W0216	తిరుగు	tirugu	to turn, to roam	verb		tirigi — having turned		site	tirugu		
-W0217	జరుగు	jarugu	to happen	verb		ēmi jariginā		site	jarugu		
-W0218	చూడు	chūḍu	to see, to look	verb	చూడు	chūstunnāḍu — he's looking		site	chūḍu	verbform	impFam of చూడు
-W0219	పడు	paḍu	to fall	verb		eduru paḍu — to run into		site	paḍu		
-W0220	ఆగు	āgu	to stop	verb	ఆగు	āgunā? — would it stop?		site	āgu	verbform	impFam of ఆగు
-W0221	తాకు	tāku	to touch	verb		tāki — having touched		site	tāku		
-W0222	ఎత్తు	ettu	to lift, to raise	verb		tala etti		site	ettu		
-W0223	కలుపు	kalupu	to join, to mix	verb		aḍugu kalipi		site	kalupu		
-W0224	కరుగు	karugu	to melt, to dissolve	verb		manasu karagalēdu		site	karugu		
-W0225	అరుగు	arugu	to wear away	verb		arigi pōyinā		site	aragu		
-W0226	ఎరుగు	erugu	to know (be aware of)	verb		alupu eragaka		site	erugu		
-W0227	గగనము	gaganamu	sky (literary)	poetic		use ākāśaṁ instead		site	gaganamu		
-W0228	నింగి	ningi	sky (poetic native)	poetic		use ākāśaṁ instead		site	ningi		
-W0229	తపన	tapana	yearning, longing	poetic		vadalani tapana		site	tapana		
-W0230	వలపు	valapu	love, affection (literary)	poetic		use prēma instead		site	valapu		
-W0231	పయనం	payanaṁ	journey (literary)	poetic		use prayāṇaṁ instead		site	payanaṁ		
-W0232	సహజ గుణము	sahaja guṇamu	innate nature	poetic		Sanskrit compound		site	sahaja guṇamu	phrase	
-W0233	పెనుతాపం	penutāpaṁ	great heat	poetic		vēsavilō penutāpaṁ		site	penutāpaṁ		
-W0234	సన్నాయి	sannāyi	shehnai (wind instrument)	poetic		wedding music		site	sannāyi	inflected	
-W0235	డోలు	ḍōlu	drum	poetic		sannāyi ḍōlu		site	ḍōlu		
-W0236	తిరగలి	tiragali	grindstone	poetic		tiragali lāga		site	tiragali		
-W0237	చతికిలపడు	chatikilapaḍu	to collapse flat	poetic		spelling varies		site	chatikilapaḍu		
-W0238	కలవర పడు	kalavara paḍu	to be flustered	poetic		literary		site	kalavara paḍu	phrase	
-W0239	ఒర కంట	ora kaṇṭa	sidelong glance	poetic		word split uncertain		site	vora kaṇṭa	phrase	
-W0240	ఈడు జోడు	īḍu jōḍu	match, equal (in age)	poetic		set phrase		site	īḍu jōḍu	phrase	
-W0241	మునుపు	munupu	before, formerly	poetic		teliyadu munupu		site	munupu		
-W0242	చెంప	chempa	cheek (Telangana: sempa)	noun		sempalu		site	chempa		
-W0243	చెవులు	chevulu	ears (Telangana: sevulu)	noun		sevulaku duddulu		site	chevulu		
-W0244	పెదవులు	pedavulu	lips	noun		pedavul erragā		site	pedavulu		
-W0245	నడుము	naḍumu	waist	noun		dāni naḍumu		site	naḍumu		
-W0246	జడ	jaḍa	braid, plait	noun		jaḍa tākitē		site	jaḍa		
-W0247	కొప్పు	koppu	hair bun	noun		koppulō mallelu		site	koppu		
-W0248	మల్లె	malle	jasmine — everywhere in Hyderabad	noun		malle daṇḍa		site	malle		
-W0249	కడవ	kaḍava	water pot, large vessel	noun		bhujaṁ mīda kaḍava		site	kaḍava		
-W0250	దండ	daṇḍa	garland	noun		malle daṇḍa		site	daṇḍa		
-W0251	దుద్దులు	duddulu	earrings	noun		sevulaku duddulu		site	duddulu		
-W0252	మెరుపు	merupu	shine, flash, lightning	noun		meriyā (song form)		site	merupu		
-W0253	ముత్యాలు	mutyālu	pearls	noun		navvula mutyāl		site	mutyālu		
-W0254	రైక	raika	blouse (Telangana term)	noun		raikalu		site	raika		
-W0255	గజ్జెలు	gajjelu	anklet bells	noun		gajjel lēkunnā		site	gajjelu		
-W0256	వెన్నెల	vennela	moonlight (Telangana: ennela)	noun		ennela kuriyā		site	vennela		
-W0257	దిల్	dil	heart (Urdu) — very common in Hyderabad	urdu		mana dil		site	dil		
-W0258	దునియా	duniyā	world (Urdu)	urdu		mogōḷḷa duniyā		site	duniyā		
-W0259	గుడియా	guḍiyā	doll (Urdu) — affectionate	urdu		guḍiyā		site	guḍiyā		
-W0260	చిడియా	chiḍiyā	little bird (Urdu) — affectionate	urdu		chikkani chiḍiyā		site	chiḍiyā		
-W0261	సుర్మా	surmā	kohl, eyeliner (Urdu)	urdu		surmā peṭṭina		site	surmā		
-W0262	చురియా	churiyā	dagger, blade (Urdu)	urdu		churiyā		site	churiyā		
-W0263	ఫిరంగి	phirangi	cannon (Persian via Urdu)	urdu		adi phirangi		site	phirangi		
-W0264	లేకున్నా	lēkunnā	even without ___ (from lēdu)	grammar		gajjel lēkunnā		site	lēkunnā		
-W0265	మొగోళ్ళు	mogōḷḷu	men (Telangana dialect plural)	grammar		mogōḷḷa duniyā		site	mogōḷḷu		
-W0266	ఎర్రగా	erragā	redly, in a red way (from erupu)	grammar		erragā aitadi		site	erragā		
-W0267	చెలియా	cheliyā	dear one, beloved (Telangana: seliyā)	poetic		rādurā seliyā		site	cheliyā		
-W0268	మురిపాలు	muripālu	charms, delights	poetic		vastāy muripāl		site	muripālu		
-W0269	శివంగి	śivangi	lioness, tigress — a fierce woman	poetic		adi śivangi		site	śivangi		
-W0270	లవంగం	lavangaṁ	clove (also a sharpness metaphor)	poetic		māṭala ghāṭu lavangi		site	lavangaṁ		
-W0271	సారంగి	sārangi	sarangi — bowed string instrument	poetic		tīgalu lēni sārangi		site	sārangi	english-respelled	
-W0272	నువ్వ	nuvva	You				1	book1000	Nuvu		
-W0273	గా	gā	as				1	top1000		bound-suffix	
-W0274	మనం	manaṁ	Us				3	book1000	Manam		
-W0275	ఆ	ā	that; those				4	top1000		multi-gloss	
-W0276	వారు	vāru	They				6	book1000,top1000	Vaaru	inflected	
-W0277	ఉంది	undi	was; is; has		ఉండు		6	top1000		multi-gloss verbform	past of ఉండు
-W0278	అతడు	ataḍu	He				7	book1000	Athadu		
-W0279	కోసం	kōsaṁ	for				7	top1000			
-W0280	న	na	on				8	top1000		bound-suffix	
-W0281	ఉన్నాయి	unnāyi	are; were; been; include				9	top1000		inflected multi-gloss	
-W0282	నాకు/ నను	nāku/ nanu	To me				10	book1000	Naaku	phrase	
-W0283	తో	tō	with				10	top1000		bound-suffix	
-W0284	వారికి	vāriki	To them				11	book1000	Vaariki		
-W0285	అతనికి	ataniki	To him; him				12	book1000,top1000	Athaniki	multi-gloss	
-W0286	ఉంటుంది	uṇṭundi	be		ఉండు		12	top1000		inflected verbform	future of ఉండు
-W0287	ఎందుకు?	enduku?	Why?; For what ?				13	book1000	Endhuku ?	multi-gloss	
-W0288	వద్ద	vadda	at				13	top1000			
-W0289	ఎలా ?	elā ?	How ?				14	book1000	Ela ?	phrase	
-W0290		Edi ? 2 ?	Which ?				15	book1000	Edi ? 2 ?	needs-script no-script	
-W0291	కలిగి	kaligi	have; contain				15	top1000		multi-gloss	
-W0292		Enni ? 2 ?	How Many ?				16	book1000	Enni ? 2 ?	needs-script no-script	
-W0293	ఈ	ī	this; these				16	top1000		multi-gloss	
-W0294	ఎంత?	enta?	How Much ?				17	book1000	Enta ?		
-W0295	నుండి	nuṇḍi	from; since				17	top1000		bound-suffix multi-gloss	
-W0296	ఎప్పుడు?	eppuḍu?	When ?				18	book1000	Eppudu ?		
-W0297	ద్వారా	dvārā	by; through				18	top1000		multi-gloss	
-W0298	ఎక్కడ?	ekkaḍa?	Where ?				19	book1000	Ekkada ?		
-W0299	వేడి	vēḍi	hot; heat				19	top1000		multi-gloss	
-W0300	ఎవరు?	evaru?	Who ?				20	book1000	Evaru ?		
-W0301	పదం	padaṁ	word; term				20	top1000		multi-gloss	
-W0302		Nijanga ?	Really ?				21	book1000	Nijanga ?	needs-script no-script	
-W0303		Auna ? ដ ?	Is It ?				22	book1000	Auna ? ដ ?	needs-script no-script	
-W0304	అంగీకరించు	angīkarinchu	Agree				24	book1000	Angeekarinchu		
-W0305	అనుమతించు	anumatinchu	Allow				25	book1000	Anumathinchu		
-W0306	నమ్ము	nammu	Believe				26	book1000	Nammu		
-W0307	ఆపండి	āpaṇḍi	Stop				27	book1000	Apandi	inflected	
-W0308	లేదా	lēdā	or; nor				27	top1000		multi-gloss	
-W0309	ఇల్లు	illu	Home; house				28	book1000,top1000	Illu	multi-gloss	
-W0310	వచ్చింది	vachchindi	had; came; got		రా		28	top1000		inflected multi-gloss verbform	past of రా
-W0311	కొనడం	konaḍaṁ	To Buy				29	book1000	Konadam		
-W0312	ది	di	the				29	top1000		bound-suffix	
-W0313	త్రాగి	trāgi	Drinking				30	book1000	Traagu		
-W0314	యొక్క	yokka	of				30	top1000		bound-suffix	
-W0315	కూర్చో	kūrchō	Sit Down		కూర్చో		31	book1000	Koorcho	verbform	impFam of కూర్చో
-W0316	కు	ku	to				31	top1000		bound-suffix	
-W0317	అర్థంచేసుకో	arthanchēsukō	Understand				32	book1000	Artham cesuko		
-W0318	మరియు	mariyu	and				32	top1000			
-W0319	నమస్తే	namastē	Hello				34	book1000	Namaste		
-W0320	లో	lō	in				34	top1000		bound-suffix	
-W0321	మధ్యాహ్నం	madhyāhnaṁ	; noon				36	book1000,top1000		multi-gloss no-english no-romanization	
-W0322	చెయ్యవచ్చు	cheyyavachchu	can				36	top1000			
-W0323	సాయంత్రం	sāyantraṁ	Evening				37	book1000,top1000	Sayantram		
-W0324	అవుట్	avuṭ	out				37	top1000			
-W0325	ఇతర	itara	other				38	top1000			
-W0326	చేయండి	chēyaṇḍi	do		చేయి		41	top1000		inflected verbform	impPol of చేయి
-W0327	వారి	vāri	their				42	top1000			
-W0328	ವಲ್ಲಿ	ವಲ್ಲಿ	Younger Sister				43	book1000	Chelli	kannada-script	
-W0329	తాతయ్య/ తాతగారు	tātayya/ tātagāru	Grandfather				44	book1000	Thathaiya / Thathagaaru	inflected phrase	
-W0330	ఉంటే	uṇṭē	if		ఉండు		44	top1000		verbform	cond of ఉండు
-W0331	రెడీ	reḍī	will; won’t				45	top1000		multi-gloss	
-W0332	కూరగాయలు	kūragāyalu	Vegetables				46	book1000	Kuragayaalu		
-W0333	ఎలా	elā	how				46	top1000			
-W0334	వంకాయ	vankāya	Brinjal				47	book1000	Vankayaa		
-W0335	అన్నాడు	annāḍu	said		అను		47	top1000		inflected verbform	past of అను
-W0336	కాలీఫ్లవర్	kālīphlavar	Cauliflower				48	book1000	Cauliflower		
-W0337	ప్రతి	prati	each; every				49	top1000		multi-gloss	
-W0338	కొబ్బరి కాయ	kobbari kāya	Coconuts				50	book1000	Kobbarikaya	phrase	
-W0339	చెప్పండి	cheppaṇḍi	tell		చెప్పు		50	top1000		inflected verbform	impPol of చెప్పు
-W0340	పుదీనా	pudīnā	Mint				51	book1000	Puthina		
-W0341	చేస్తుంది	chēstundi	does		చేయి		51	top1000		inflected verbform	future of చేయి
-W0342	బఠాణి	baṭhāṇi	Peas				52	book1000	Bataani		
-W0343	సెట్	seṭ	set				52	top1000		english-respelled	
-W0344	ఉల్లిపాయ	ullipāya	Onions				53	book1000	Ullipaaya		
-W0345	వెల్లుల్లిపాయ	vellullipāya	Garlic				54	book1000	Vellullipaya		
-W0346	కావలసిన	kāvalasina	want				54	top1000			
-W0347	బంగాళాదుంప	bangāḷādumpa	Potato				55	book1000	SKILA Bangaladumpa		
-W0348	గాలి	gāli	air; wind				55	top1000		multi-gloss	
-W0349	టమాటా	ṭamāṭā	Tomato				56	book1000	Tamata		
-W0350	బాగా	bāgā	well				56	top1000			
-W0351	కీరదోసకాయ	kīradōsakāya	Cucumber				57	book1000	Keera Dosakaya		
-W0352	కూడా	kūḍā	also; even				57	top1000		bound-suffix multi-gloss	
-W0353	ములక్కాయ	mulakkāya	Drumstick				58	book1000	Mulakkaya		
-W0354	ప్లే	plē	play				58	top1000			
-W0355	బెండకాయ	beṇḍakāya	Ladyfinger				59	book1000	Bendakaya		
-W0356	ముగింపు	mugimpu	end; finish				60	top1000		multi-gloss	
-W0357	నలుపు	nalupu	Black				61	book1000,top1000	Nalupu		
-W0358	తెలుపు	telupu	White				62	book1000,top1000	Telupu		
-W0359	హోమ్	hōm	home				62	top1000			
-W0360	చదవడానికి	chadavaḍāniki	read		చదువు		63	top1000		verbform	purpose of చదువు
-W0361	చేతి	chēti	hand				64	top1000			
-W0362	పోర్ట్	pōrṭ	port				65	top1000		english-respelled	
-W0363	గోధుమ	gōdhuma	Godhuma; brown				67	book1000,top1000		english-respelled multi-gloss no-romanization	
-W0364	అక్షరక్రమ	akṣarakrama	spell				67	top1000			
-W0365	పసుపు	pasupu	Yellow				68	book1000,top1000	Pasupupacha		
-W0366	జోడించండి	jōḍinchaṇḍi	add				68	top1000		inflected	
-W0367	పింక్	pink	Pink				69	book1000	Gulabi	english-respelled	
-W0368	పాలు	pālu	Milk				70	book1000,top1000	Paalu		
-W0369	భూమి	bhūmi	land; earth; ground				70	top1000		multi-gloss	
-W0370	పెరుగు	perugu	Curd				71	book1000	Perugu		
-W0371	ನಯ್ಯ	ನಯ್ಯ	Ghee				72	book1000	Neiyyi	kannada-script	
-W0372	తప్పక	tappaka	must; should				72	top1000		multi-gloss	
-W0373	బియ్యం	biyyaṁ	Rice				73	book1000	Beeyam		
-W0374	గోధుమలు	gōdhumalu	Wheat				74	book1000	Godhumalu		
-W0375	అధిక	adhika	high				74	top1000			
-W0376	ఇటువంటి	iṭuvaṇṭi	such				75	top1000			
-W0377	గుడ్డు	guḍḍu	; egg				76	book1000,top1000		multi-gloss no-english no-romanization	
-W0378	అనుసరించండి	anusarinchaṇḍi	follow				76	top1000		inflected	
-W0379	ఉప్పు	uppu	Salt				77	book1000,top1000	Uppu		
-W0380	చట్టం	chaṭṭaṁ	act; law				77	top1000		multi-gloss	
-W0381	పంచదార	panchadāra	Sugar				78	book1000	Panchadaara		
-W0382	ఎందుకు	enduku	why				78	top1000			
-W0383	అగ్ని	agni	Fire				79	book1000,top1000	Agni		
-W0384	గోవా	gōvā	ask				79	top1000			
-W0385	పరుగెత్తు	parugettu	Run		పరుగెత్తు		80	book1000	Parugethu	verbform	impFam of పరుగెత్తు
-W0386	పురుషులు	puruṣulu	men				80	top1000			
-W0387	దొంగ	donga	Thief				81	book1000	Donga		
-W0388	మార్పు	mārpu	change				81	top1000			
-W0389	పంచాంగం	panchāngaṁ	Calendar				82	book1000	Panchangam		
-W0390	వెళ్ళింది	veḷḷindi	went		వెళ్ళు		82	top1000		inflected verbform	past of వెళ్ళు
-W0391	తేదీ	tēdī	Date				83	book1000	Thedhi		
-W0392	కాంతి	kānti	light				83	top1000			
-W0393	ఈరోజు	īrōju	Today				84	book1000	Iroju		
-W0394	రకం	rakaṁ	kind; type				84	top1000		multi-gloss	
-W0395	నిన్న	ninna	Yesterday				85	book1000	Ninna		
-W0396	ఆఫ్	āph	off				85	top1000			
-W0397	రేపు	rēpu	Tomorrow				86	book1000	Repu		
-W0398	అవసరం	avasaraṁ	need; necessary; require				86	top1000		multi-gloss	
-W0399	ప్రతిరోజు	pratirōju	Everyday				87	book1000	Prathiroju		
-W0400	రోజు	rōju	Day				88	book1000,top1000	Roju		
-W0401	చిత్రాన్ని	chitrānni	picture				88	top1000			
-W0402	ప్రయత్నించండి	prayatninchaṇḍi	try				89	top1000		inflected	
-W0403	పుట్టినరోజు పుట్టినరోజుశుభాకాంక్షలు ప్రయాణం	puṭṭinarōju puṭṭinarōjuśubhākānkṣalu prayāṇaṁ	Journey				90	book1000	Prayaanam	phrase	
-W0404	మాకు	māku	us				90	top1000			
-W0405	మళ్ళీ	maḷḷī	again				91	top1000			
-W0406	కొన్ని	konni	Some; few; certain				92	book1000,top1000	Konni	multi-gloss	
-W0407	జంతు	jantu	animal				92	top1000			
-W0408	పాయింట్	pāyiṇṭ	point				93	top1000			
-W0409	తల్లి	talli	mother				94	top1000			
-W0410	ప్రపంచ	prapancha	world				95	top1000			
-W0411	చెడు	cheḍu	Bad				96	book1000,top1000	Chedu		
-W0412	పరవాలేదు	paravālēdu	It's okay				97	book1000	Paravaaledu		
-W0413	నిర్మించడానికి	nirminchaḍāniki	build				97	top1000			
-W0414	స్వీయ	svīya	self				98	top1000			
-W0415	ఏమి ?	ēmi ?	What ?				99	book1000	Emi ?	phrase	
-W0416	తండ్రి	taṇḍri	father; dad				100	top1000		multi-gloss	
-W0417		Lekha ඒඛ	Letter				101	book1000	Lekha ඒඛ	needs-script no-script	
-W0418	ఏ	ē	any; no				101	top1000		multi-gloss	
-W0419	పేపర్	pēpar	Paper				102	book1000	Kaagitham		
-W0420	పుస్తకమం	pustakamaṁ	Book				103	book1000	Pusthakamu		
-W0421	సమయం	samayaṁ	Time				104	book1000,top1000	Samayam		
-W0422	భాగం	bhāgaṁ	part				104	top1000			
-W0423	ఎప్పటి లాగా	eppaṭi lāgā	Always				105	book1000	Ellappudu	phrase	
-W0424	పడుతుంది	paḍutundi	take				105	top1000		inflected	
-W0425	ವವಿ	ವವಿ	Ear				106	book1000	Chevi	kannada-script	
-W0426	పొందండి	pondaṇḍi	get				106	top1000		inflected	
-W0427	స్థలం	sthalaṁ	place				107	top1000			
-W0428	ముఖం	mukhaṁ	Face				108	book1000,top1000	Mukhamu		
-W0429	తయారు	tayāru	made; make				108	top1000		inflected multi-gloss	
-W0430	తను	tanu	Eat				109	book1000	Thinu		
-W0431	నివసిస్తున్నారు	nivasistunnāru	live				109	top1000		inflected	
-W0432	డాగ్	ḍāg	Drink				110	book1000	Taagu		
-W0433	నడవడం	naḍavaḍaṁ	Walk				111	book1000	Nadavadam		
-W0434	తర్వాత	tarvāta	after				111	top1000			
-W0435	రాయు	rāyu	Letter (alphabet)				112	book1000	Raayu		
-W0436	తిరిగి	tirigi	back				112	top1000			
-W0437	చ్దువ్వ	chduvva	Study				113	book1000	Chaduvu		
-W0438	భోజనం	bhōjanaṁ	MealsBhojanam				114	book1000		no-romanization	
-W0439	మాత్రమే	mātramē	only				114	top1000			
-W0440	బ్ట	bṭa	ClothBatta				115	book1000		no-romanization	
-W0441	రౌండ్	rauṇḍ	round				115	top1000			
-W0442	భాష	bhāṣa	LanguageBaasha; language				116	book1000,top1000		multi-gloss no-romanization	
-W0443	అంకెలు	ankelu	Number(number)Ankelu				117	book1000		no-romanization	
-W0444	సంవత్సరం	saṁvatsaraṁ	year				117	top1000			
-W0445	పండు	paṇḍu	Fruits; fruit				118	book1000,top1000	Pandlu	multi-gloss	
-W0446	ఆపల్ పండు	āpal paṇḍu	Apple				119	book1000	Apple pandu	phrase	
-W0447	షో	ṣō	show				119	top1000			
-W0448	అర్ట్టపండు	arṭṭapaṇḍu	Banana				120	book1000	Arati pandu		
-W0449	సపోటా	sapōṭā	Sapota				121	book1000	Sapota	english-respelled	
-W0450	సీా ఫ్లం	sīā phlaṁ	Custard apple				122	book1000	Sita phalam	phrase	
-W0451	నాకు	nāku	me				122	top1000			
-W0452	త్రదాక్ష	tradākṣa	Grapes				123	book1000	Draksha		
-W0453	ఇవ్వాలని	ivvālani	give				123	top1000			
-W0454	జంపండు	jampaṇḍu	Guava				124	book1000	Jam pandu		
-W0455	నిమకాయ	nimakāya	Lemon				125	book1000	Nimmakay		
-W0456	ల్లచి	llachi	Lychee				126	book1000	Litchi		
-W0457	మామిడి పండు	māmiḍi paṇḍu	Mango				127	book1000	Mamidi pandu	phrase	
-W0458	చాలా	chālā	very; much; too; quite; lot				127	top1000		multi-gloss	
-W0459	కేవలం	kēvalaṁ	just				129	top1000			
-W0460	బొపాయ్య	bopāyya	Boppaya				130	book1000		english-respelled no-romanization	
-W0461	రూపం	rūpaṁ	form				130	top1000			
-W0462	పెరి పండు	peri paṇḍu	Pear				131	book1000	Peri pandu	phrase	
-W0463	వాక్యం	vākyaṁ	sentence				131	top1000			
-W0464	అనాసపండు	anāsapaṇḍu	Pineapple				132	book1000	Anaasa pandu		
-W0465	గొప్ప	goppa	great				132	top1000			
-W0466	రేగుపండు	rēgupaṇḍu	Plum				133	book1000	Regu pandu		
-W0467	అనుకుంటున్నాను	anukuṇṭunnānu	think				133	top1000		inflected	
-W0468	దిక్కు	dikku	Direction				134	book1000	Dhikku		
-W0469	సే	sē	say				134	top1000			
-W0470	తూర్పు	tūrpu	East				135	book1000,top1000	Thoorupu		
-W0471	సహాయం	sahāyaṁ	help				135	top1000			
-W0472	పశ్చిమ	paśchima	West				136	book1000,top1000	Paschima		
-W0473	తక్కువ	takkuva	low; less				136	top1000		multi-gloss	
-W0474	ఉత్తరం	uttaraṁ	North				137	book1000	Uttaram		
-W0475	లైన్	lain	line				137	top1000			
-W0476	దక్షిణం	dakṣiṇaṁ	South				138	book1000	Dhakshinam		
-W0477	తేడా	tēḍā	differ				138	top1000			
-W0478	ఇక్కడ	ikkaḍa	Here				139	book1000,top1000	Ikkada		
-W0479	అక్కడ	akkaḍa	There				140	book1000,top1000	Akkada		
-W0480		Anthataa	Everywhere				141	book1000	Anthataa	needs-script no-script	
-W0481	ఆమార్గంలో	āmārgaṁlō	That way				142	book1000	Aa maarghamlo		
-W0482	అర్థం	arthaṁ	mean; meant				142	top1000		multi-gloss	
-W0483	ఎడమవైపుతిరుగు	eḍamavaiputirugu	Turn left				143	book1000	Yedama vypu thirughu		
-W0484	ముందు	mundu	before; front				143	top1000		multi-gloss	
-W0485	కుడివైపుతిరుగు	kuḍivaiputirugu	Tur Turn right				144	book1000	Kudi vypu thirughu		
-W0486	తరలింపు	taralimpu	move				144	top1000			
-W0487	చుట్టూతిరుగు	chuṭṭūtirugu	Turn around				145	book1000	Chuttoo thirughu		
-W0488	ఎదురుగా	edurugā	Opposite				146	book1000	Yedhurugha		
-W0489	బాయ్	bāy	boy				146	top1000			
-W0490	మెల్లిగా	melligā	Slowly				147	book1000	Melliga		
-W0491	వేగంగా	vēgangā	Fast				148	book1000	Vegamga		
-W0492	మీద	mīda	On top				149	book1000	Meedha		
-W0493	అదే	adē	same				149	top1000			
-W0494	పైన	paina	Above				150	book1000,top1000	Paina		
-W0495	లోపలా	lōpalā	Inside				151	book1000	Lopala		
-W0496	అన్ని	anni	all				151	top1000			
-W0497	బయటా	bayaṭā	Outside				152	book1000	Bayata		
-W0498	కింద	kinda	Below; under				153	book1000,top1000	Kindha	multi-gloss	
-W0499	ఉన్నప్పుడు	unnappuḍu	when				153	top1000			
-W0500	సమీపంలో	samīpaṁlō	Nearby; near				154	book1000,top1000	Sameepamlo	multi-gloss	
-W0501	అప్	ap	up				154	top1000			
-W0502	ఎడమ	eḍama	Left				155	book1000,top1000		no-romanization	
-W0503	ఉపయోగం	upayōgaṁ	use				155	top1000			
-W0504	కుడి	kuḍi	; right				156	book1000,top1000		multi-gloss no-english no-romanization	
-W0505	ప్రధమ	pradhama	Ahead				157	book1000	Mundhuga		
-W0506	మార్గం	mārgaṁ	way; path				157	top1000		multi-gloss	
-W0507	వెనుక	venuka	Behind				158	book1000,top1000	Venaka		
-W0508	గురించి	gurinchi	about				158	top1000			
-W0509	నా వెంటరండి	nā veṇṭaraṇḍi	Follow me				159	book1000	Na venta randi	inflected phrase	
-W0510	అనేక	anēka	many; several				159	top1000		multi-gloss	
-W0511	విమానాశ్రయం	vimānāśrayaṁ	Airport				160	book1000	Vimaanashrayam		
-W0512	అప్పుడు	appuḍu	then				160	top1000			
-W0513	జాగ్రత్తగా నడపనుంది	jāgrattagā naḍapanundi	Drive carefully				161	book1000	Jaagraththaghaa nadapandi	inflected phrase	
-W0514	వాటిని	vāṭini	them; might				161	top1000		multi-gloss	
-W0515		GORILA Balla	Table				162	book1000	GORILA Balla	needs-script no-script	
-W0516	రాయడానికి	rāyaḍāniki	write		రాయి		162	top1000		verbform	purpose of రాయి
-W0517	రాయి	rāyi	Stone		రాయి		163	book1000,top1000	Raayi	inflected verbform	impFam of రాయి
-W0518	చేస్తాను	chēstānu	would		చేయి		163	top1000		inflected verbform	future of చేయి
-W0519	వంటి	vaṇṭi	like				164	top1000			
-W0520	ప్రజలు	prajalu	People				165	book1000,top1000	Prajalu		
-W0521	కాబట్టి	kābaṭṭi	so				165	top1000			
-W0522	కొత్త	kotta	New				166	book1000,top1000	Kottha		
-W0523	పాత	pāta	Old				167	book1000,top1000	Paatha		
-W0524	ఆమె యొక్క	āme yokka	her				167	top1000		phrase	
-W0525	పిచ్చి	pichchi	Mad				168	book1000	Pichi		
-W0526	దీర్ఘ	dīrgha	long				168	top1000			
-W0527	ప్రశ్న	praśna	Question				169	book1000,top1000	Prasna		
-W0528	మార్కులు	mārkulu	Marks				170	book1000	Markulu	english-respelled	
-W0529	విషయం	viṣayaṁ	thing; subject; matter				170	top1000		multi-gloss	
-W0530	కిటికీ	kiṭikī	Window				171	book1000	Kitiki		
-W0531	చూడండి	chūḍaṇḍi	see; look		చూడు		171	top1000		inflected multi-gloss verbform	impPol of చూడు
-W0532	గది	gadi	Room				172	book1000,top1000	Gadhi		
-W0533	గడియారం	gaḍiyāraṁ	Clock				173	book1000,top1000	Gadiyaram		
-W0534	తినండి	tinaṇḍi	Eat ( Respect		తిను		174	book1000	Thinandi	inflected verbform	impPol of తిను
-W0535	నివాసస్థుడు	nivāsasthuḍu	Resident				175	book1000	Nivasasthudu		
-W0536	కుటుంభం	kuṭumbhaṁ	Family				176	book1000	Kutumbam		
-W0537	మరింత	marinta	more				176	top1000			
-W0538	ఇబ్బంది	ibbandi	Trouble				177	book1000,top1000	Ibbandi		
-W0539	దీపం	dīpaṁ	Lamp				178	book1000	Deepam		
-W0540	అనుకొనుట	anukonuṭa	could				178	top1000			
-W0541	జాగ్రత్త	jāgratta	Be Care				179	book1000	Jagratha		
-W0542	వెళ్ళి	veḷḷi	go				179	top1000			
-W0543	ఇప్పుడు	ippuḍu	Now				180	book1000,top1000	Ippudu		
-W0544	వచ్చిన	vachchina	come				180	top1000			
-W0545	చేసింది	chēsindi	did		చేయి		181	top1000		inflected verbform	past of చేయి
-W0546	రాయడం	rāyaḍaṁ	Writing				182	book1000	Rayadam		
-W0547	సంఖ్య	sankhya	number				182	top1000			
-W0548	శబ్దము	śabdamu	sound				183	top1000			
-W0549	వెళ్ళండి	veḷḷaṇḍi	Go		వెళ్ళు		184	book1000	Vellandi	inflected verbform	impPol of వెళ్ళు
-W0550	ఇవ్వండి	ivvaṇḍi	Give		ఇవ్వు		185	book1000	Ivvandi	inflected verbform	impPol of ఇవ్వు
-W0551	అత్యంత	atyanta	most				185	top1000			
-W0552	ఉండు	uṇḍu	Stay		ఉండు		186	book1000	Undu	verbform	impFam of ఉండు
-W0553	ఓపిక	ōpika	Patience				187	book1000	Opika		
-W0554	అంతరాయం	antarāyaṁ	Interrupt				188	book1000	Aantharayam		
-W0555	పైగా	paigā	over				188	top1000			
-W0556	గౌరవం	gauravaṁ	Respect				189	book1000	Gowravam		
-W0557	పెద్దవాళ్లు	peddavāḷlu	Elders				190	book1000	Peddhavaallu		
-W0558	నీటి	nīṭi	water				190	top1000			
-W0559	కారణం	kāraṇaṁ	Reason; cause				191	book1000,top1000	Kaaranam	multi-gloss	
-W0560	కంటే	kaṇṭē	than				191	top1000			
-W0561	సంతోషం	santōṣaṁ	Happiness				192	book1000	Santhosham		
-W0562	కాల్	kāl	call				192	top1000			
-W0563	శుభ్రమైన	śubhramaina	Clean				193	book1000	Subramaina		
-W0564	ముద్రణ	mudraṇa	Print				194	book1000,top1000	Mudrana		
-W0565	ఉత్తమ	uttama	Best				195	book1000,top1000	Utthama		
-W0566	మే	mē	may				195	top1000			
-W0567		Samadhanam	Reply				196	book1000	Samadhanam	needs-script no-script	
-W0568	డౌన్	ḍaun	down				196	top1000			
-W0569	ప్రమాణం	pramāṇaṁ	Promise				197	book1000	Pramanam		
-W0570	వైపు	vaipu	side; toward				197	top1000		multi-gloss	
-W0571	శబ్దం	śabdaṁ	Noise				198	book1000,top1000	Sabdham		
-W0572	ఇష్టం	iṣṭaṁ	Like				199	book1000	Istam		
-W0573	ప్రేమ	prēma	Love				200	book1000,top1000	Prema		
-W0574	కనుగొనేందుకు	kanugonēnduku	find				200	top1000			
-W0575	ఆకర్షణ	ākarṣaṇa	Attraction				201	book1000	Aakarshana		
-W0576	ద్వేషం	dvēṣaṁ	Hate				202	book1000	Dwesham		
-W0577	స్టాండ్	sṭāṇḍ	stand				202	top1000		english-respelled	
-W0578	పెళ్లి	peḷli	Marriage				203	book1000	Pelli		
-W0579	సొంత	sonta	own				203	top1000			
-W0580	పాఠశాల	pāṭhaśāla	School				204	book1000,top1000	Paatashala		
-W0581	పేజీ	pējī	page				204	top1000			
-W0582	ధర	dhara	Price; cost				206	book1000,top1000	Dhara	multi-gloss	
-W0583	ఏడుపు	ēḍupu	Cry				207	book1000	Eadupu		
-W0584	దొరకలేదు	dorakalēdu	found				207	top1000			
-W0585	సమాధానం	samādhānaṁ	answer				208	top1000			
-W0586	గులాబీ	gulābī	Rose				209	book1000,top1000	Gulabi		
-W0587	ఇప్పుడే	ippuḍē	Right now				210	book1000	Ippude		
-W0588	పెరుగుతాయి	perugutāyi	grow				210	top1000		inflected	
-W0589	పెద్దది	peddadi	Large				211	book1000	Peddadi		
-W0590	అధ్యయనం	adhyayanaṁ	study				211	top1000			
-W0591	చిన్నది	chinnadi	Small				212	book1000	Chinnadi		
-W0592	ఇప్పటికీ	ippaṭikī	still				212	top1000			
-W0593	కుక్క	kukka	Dog				213	book1000,top1000	Kukka		
-W0594	తెలుసుకోవడానికి	telusukōvaḍāniki	learn				213	top1000			
-W0595	కొట్టడం	koṭṭaḍaṁ	Beating				214	book1000	Kottadam		
-W0596	మొక్క	mokka	plant				214	top1000			
-W0597	ఆవు	āvu	Cow				215	book1000,top1000	Aavu		
-W0598	కవర్	kavar	cover				215	top1000			
-W0599	ఈగ	īga	Fly				216	book1000	Eega		
-W0600	ఆహార	āhāra	food				216	top1000			
-W0601	ఉడుత	uḍuta	Squirrel				217	book1000	Udutha		
-W0602	సూర్యుడు	sūryuḍu	sun				217	top1000			
-W0603	ఊయల	ūyala	Cradle				218	book1000	Ooyala		
-W0604	రిషి	riṣi	Rishi				219	book1000	Rishi		
-W0605	మధ్య	madhya	between; among; middle				219	top1000		multi-gloss	
-W0606	ఎలుక	eluka	Rat				220	book1000	Eluka		
-W0607	రాష్ట్ర	rāṣṭra	state				220	top1000			
-W0608	ఏనుగు	ēnugu	Elephant				221	book1000	Yenugu		
-W0609	ఉంచేందుకు	unchēnduku	keep				221	top1000			
-W0610	సముద్రం	samudraṁ	Sea				222	book1000	Samudram		
-W0611	కంటి	kaṇṭi	eye				222	top1000			
-W0612	ఎప్పుడూ	eppuḍū	never; ever				223	top1000		multi-gloss	
-W0613	గుంపు	gumpu	Gumpu; crowd				224	book1000,top1000		english-respelled multi-gloss no-romanization	
-W0614	గత	gata	last; past				224	top1000		multi-gloss	
-W0615	పదాలు	padālu	Words				225	book1000	Padaalu		
-W0616	వీలు	vīlu	let				225	top1000			
-W0617	ఆలోచన	ālōchana	thought; idea				226	top1000		multi-gloss	
-W0618	నగరం	nagaraṁ	city				227	top1000			
-W0619	చెట్టు	cheṭṭu	tree				228	top1000			
-W0620	క్రాస్	krās	cross				229	top1000			
-W0621	వ్యవసాయ	vyavasāya	farm				230	top1000			
-W0622	హార్డ్	hārḍ	hard				231	top1000		english-respelled	
-W0623	ప్రారంభం	prārambhaṁ	start; begin				232	top1000		multi-gloss	
-W0624	కథ	katha	story				234	top1000			
-W0625	రంపపు	rampapu	saw				235	top1000			
-W0626	ఇప్పటివరకు	ippaṭivaraku	far				236	top1000			
-W0627	సముద్ర	samudra	sea; ocean				237	top1000		multi-gloss	
-W0628	డ్రా	ḍrā	draw				238	top1000			
-W0629	చివరి	chivari	late				240	top1000			
-W0630	రన్	ran	run				241	top1000			
-W0631	చేయలేను	chēyalēnu	don’t				242	top1000			
-W0632	అయితే	ayitē	while; though				243	top1000		multi-gloss	
-W0633	పత్రికా	patrikā	press				244	top1000			
-W0634	దగ్గరగా	daggaragā	close				245	top1000			
-W0635	రాత్రి	rātri	night				246	top1000			
-W0636	నిజ	nija	real				247	top1000			
-W0637	జీవితం	jīvitaṁ	life				248	top1000			
-W0638	ఉత్తర	uttara	north				250	top1000			
-W0639	పుస్తకం	pustakaṁ	book				251	top1000			
-W0640	తీసుకు	tīsuku	carry				252	top1000			
-W0641	పట్టింది	paṭṭindi	took				253	top1000		inflected	
-W0642	సైన్స్	sains	science				254	top1000			
-W0643	తినడానికి	tinaḍāniki	eat		తిను		255	top1000		verbform	purpose of తిను
-W0644	ప్రారంభమైంది	prārambhamaindi	began				258	top1000			
-W0645	చేప	chēpa	fish				260	top1000			
-W0646	పర్వతము	parvatamu	mountain				261	top1000			
-W0647	ఆపడానికి	āpaḍāniki	stop				262	top1000			
-W0648	ఒకసారి	okasāri	once				263	top1000			
-W0649	బేస్	bēs	base				264	top1000			
-W0650	గుర్రం	gurraṁ	horse				266	top1000			
-W0651	కట్	kaṭ	cut				267	top1000			
-W0652	ఖచ్చితంగా	khachchitangā	sure				268	top1000			
-W0653	చూడటానికి	chūḍaṭāniki	watch				269	top1000			
-W0654	చెక్క	chekka	wood				272	top1000			
-W0655	ప్రధాన	pradhāna	main; major				273	top1000		multi-gloss	
-W0656	ఓపెన్	ōpen	open				274	top1000		english-respelled	
-W0657	అనిపించవచ్చు	anipinchavachchu	seem				275	top1000			
-W0658	కలిసి	kalisi	together				276	top1000			
-W0659	తదుపరి	tadupari	next				277	top1000			
-W0660	నడిచి	naḍichi	walk				282	top1000			
-W0661	ఉదాహరణకు	udāharaṇaku	example				283	top1000			
-W0662	సులభం	sulabhaṁ	ease				284	top1000			
-W0663	కాగితం	kāgitaṁ	paper				285	top1000			
-W0664	సమూహం	samūhaṁ	group				286	top1000			
-W0665	ఎల్లప్పుడూ	ellappuḍū	always				287	top1000			
-W0666	సంగీతం	sangītaṁ	music				288	top1000			
-W0667	మార్క్	mārk	mark				291	top1000		english-respelled	
-W0668	తరచుగా	tarachugā	often				292	top1000			
-W0669	లేఖ	lēkha	letter				293	top1000			
-W0670	వరకు	varaku	until				294	top1000		bound-suffix	
-W0671	మైలు	mailu	mile				295	top1000			
-W0672	నది	nadi	river				296	top1000			
-W0673	అడుగుల	aḍugula	feet				298	top1000			
-W0674	సంరక్షణ	saṁrakṣaṇa	care				299	top1000			
-W0675	రెండవ	reṇḍava	second				300	top1000			
-W0676	తగినంత	taginanta	enough				301	top1000			
-W0677	సాదా	sādā	plain				302	top1000			
-W0678	సాధారణ	sādhāraṇa	usual; common; simple; general				304	top1000		multi-gloss	
-W0679	యువ	yuva	young				305	top1000			
-W0680	సిద్ధంగా	siddhangā	ready				306	top1000			
-W0681	ఎరుపు	erupu	red				309	top1000			
-W0682	జాబితా	jābitā	list				310	top1000			
-W0683	అనుభూతి	anubhūti	feel				312	top1000			
-W0684	చర్చ	charcha	talk				313	top1000			
-W0685	పక్షి	pakṣi	bird				314	top1000			
-W0686	త్వరలో	tvaralō	soon				315	top1000			
-W0687	శరీర	śarīra	body				316	top1000			
-W0688	కుటుంబం	kuṭumbaṁ	family				318	top1000			
-W0689	ప్రత్యక్ష	pratyakṣa	direct				319	top1000			
-W0690	భంగిమలో	bhangimalō	pose				320	top1000			
-W0691	వదిలి	vadili	leave				321	top1000			
-W0692	కొలవటానికి	kolavaṭāniki	measure				323	top1000			
-W0693	తలుపు	talupu	door				324	top1000			
-W0694	ఉత్పత్తి	utpatti	product; produce				325	top1000		multi-gloss	
-W0695	సంఖ్యా	sankhyā	numeral				328	top1000			
-W0696	తరగతి	taragati	class				329	top1000			
-W0697	జరిగే	jarigē	happen				332	top1000			
-W0698	ఓడ	ōḍa	ship				334	top1000			
-W0699	ప్రాంతం	prāntaṁ	area; region				335	top1000		multi-gloss	
-W0700	సగం	sagaṁ	half				336	top1000			
-W0701	రాక్	rāk	rock				337	top1000			
-W0702	ఆర్డర్	ārḍar	order				338	top1000			
-W0703	దక్షిణ	dakṣiṇa	south				340	top1000			
-W0704	సమస్య	samasya	problem				341	top1000			
-W0705	ముక్క	mukka	piece				342	top1000			
-W0706	చెప్పారు	cheppāru	told		చెప్పు		343	top1000		inflected verbform	past of చెప్పు
-W0707	పాస్	pās	pass				345	top1000			
-W0708	టాప్	ṭāp	top				347	top1000			
-W0709	మొత్తం	mottaṁ	whole; total				348	top1000		multi-gloss	
-W0710	రాజు	rāju	king				349	top1000			
-W0711	వీధి	vīdhi	street				350	top1000			
-W0712	అంగుళం	anguḷaṁ	inch				351	top1000			
-W0713	గుణిస్తారు	guṇistāru	multiply				352	top1000		inflected	
-W0714	ఏమీ	ēmī	nothing				353	top1000			
-W0715	కోర్సు	kōrsu	course				354	top1000			
-W0716	ఉండడానికి	uṇḍaḍāniki	stay		ఉండు		355	top1000		verbform	purpose of ఉండు
-W0717	చక్రం	chakraṁ	wheel				356	top1000			
-W0718	శక్తి	śakti	force; power; energy				358	top1000		multi-gloss	
-W0719	నీలం	nīlaṁ	blue				359	top1000			
-W0720	వస్తువు	vastuvu	object				360	top1000			
-W0721	నిర్ణయించుకుంటారు	nirṇayinchukuṇṭāru	decide				361	top1000		inflected	
-W0722	ఉపరితల	uparitala	surface				362	top1000			
-W0723	లోతైన	lōtaina	deep				363	top1000			
-W0724	చంద్రుడు	chandruḍu	moon				364	top1000			
-W0725	ద్వీపం	dvīpaṁ	island				365	top1000			
-W0726	వ్యవస్థ	vyavastha	system				367	top1000			
-W0727	బిజీగా	bijīgā	busy				368	top1000			
-W0728	పరీక్ష	parīkṣa	test				369	top1000			
-W0729	రికార్డు	rikārḍu	record				370	top1000			
-W0730	పడవ	paḍava	boat				371	top1000			
-W0731	సాధ్యం	sādhyaṁ	possible				374	top1000			
-W0732	విమానం	vimānaṁ	plane				375	top1000			
-W0733	మారుగా	mārugā	stead				376	top1000			
-W0734	పొడి	poḍi	dry				377	top1000			
-W0735	ఆశ్చర్యానికి	āścharyāniki	wonder				378	top1000			
-W0736	వేల	vēla	thousand				380	top1000			
-W0737	క్రితం	kritaṁ	ago				381	top1000			
-W0738	నడిచింది	naḍichindi	ran		నడవు		382	top1000		inflected verbform	past of నడవు
-W0739	తనిఖీ	tanikhī	check				383	top1000			
-W0740	గేమ్	gēm	game				384	top1000			
-W0741	ఆకారం	ākāraṁ	shape				385	top1000			
-W0742	పోల్చుతారు	pōlchutāru	equate				386	top1000		inflected	
-W0743	మిస్	mis	miss				388	top1000			
-W0744	తీసుకువచ్చారు	tīsukuvachchāru	brought				389	top1000		inflected	
-W0745	మంచు	manchu	snow; ice				391	top1000		multi-gloss	
-W0746	టైర్	ṭair	tire				392	top1000			
-W0747	తీసుకుని	tīsukuni	bring				393	top1000			
-W0748	సుదూర	sudūra	distant				395	top1000			
-W0749	పూరించడానికి	pūrinchaḍāniki	fill				396	top1000			
-W0750	పెయింట్	peyiṇṭ	paint				398	top1000			
-W0751	యూనిట్	yūniṭ	unit				401	top1000			
-W0752	పట్టణం	paṭṭaṇaṁ	town				403	top1000			
-W0753	జరిమానా	jarimānā	fine				404	top1000			
-W0754	ఫ్లై	phlai	fly				406	top1000			
-W0755	వస్తాయి	vastāyi	fall				407	top1000		inflected	
-W0756	క్రై	krai	cry				409	top1000			
-W0757	కృష్ణ	kṛṣṇa	dark				410	top1000			
-W0758	యంత్రం	yantraṁ	machine				411	top1000			
-W0759	గమనిక	gamanika	note				412	top1000			
-W0760	వేచి	vēchi	wait				413	top1000			
-W0761	ప్రణాళిక	praṇāḷika	plan				414	top1000			
-W0762	ఫిగర్	phigar	figure				415	top1000			
-W0763	స్టార్	sṭār	star				416	top1000		english-respelled	
-W0764	బాక్స్	bāks	box				417	top1000			
-W0765	నామవాచకం	nāmavāchakaṁ	noun				418	top1000			
-W0766	ఫీల్డ్	phīlḍ	field				419	top1000			
-W0767	మిగిలిన	migilina	rest				420	top1000			
-W0768	సరైన	saraina	correct; proper				421	top1000		multi-gloss	
-W0769	సామర్థ్యం	sāmarthyaṁ	able				422	top1000			
-W0770	పౌండ్	pauṇḍ	pound				423	top1000			
-W0771	పూర్తయింది	pūrtayindi	done				424	top1000		inflected	
-W0772	అందం	andaṁ	beauty				425	top1000			
-W0773	డ్రైవ్	ḍraiv	drive				426	top1000			
-W0774	నిలిచి	nilichi	stood				427	top1000			
-W0775	బోధించడానికి	bōdhinchaḍāniki	teach				430	top1000			
-W0776	వారం	vāraṁ	week				431	top1000			
-W0777	ఆఖరి	ākhari	final				432	top1000			
-W0778	ఇచ్చింది	ichchindi	gave		ఇవ్వు		433	top1000		inflected verbform	past of ఇవ్వు
-W0779	ఆకుపచ్చ	ākupachcha	green				434	top1000			
-W0780	ఓహ్	ōh	oh				435	top1000		english-respelled	
-W0781	శీఘ్ర	śīghra	quick				436	top1000			
-W0782	అభివృద్ధి	abhivṛddhi	develop				437	top1000			
-W0783	వెచ్చని	vechchani	warm				439	top1000			
-W0784	ఉచిత	uchita	free				440	top1000			
-W0785	బలమైన	balamaina	strong				442	top1000			
-W0786	ప్రత్యేక	pratyēka	special; separate; particular				443	top1000		multi-gloss	
-W0787	స్పష్టమైన	spaṣṭamaina	clear				446	top1000			
-W0788	తోక	tōka	tail				447	top1000			
-W0789	నిజానికి	nijāniki	fact				449	top1000			
-W0790	స్పేస్	spēs	space				450	top1000			
-W0791	విన్న	vinna	heard				451	top1000			
-W0792	గంట	gaṇṭa	hour				453	top1000			
-W0793	నిజమైన	nijamaina	TRUE				455	top1000			
-W0794	సమయంలో	samayaṁlō	during				456	top1000			
-W0795	గుర్తు	gurtu	remember				459	top1000			
-W0796	ప్రారంభ	prārambha	early				461	top1000			
-W0797	పట్టి	paṭṭi	hold				462	top1000			
-W0798	వడ్డీ	vaḍḍī	interest				465	top1000			
-W0799	చేరుకోవడానికి	chērukōvaḍāniki	reach				466	top1000			
-W0800	ఫాస్ట్	phāsṭ	fast				467	top1000			
-W0801	క్రియ	kriya	verb				468	top1000			
-W0802	పాడే	pāḍē	sing				469	top1000			
-W0803	వినండి	vinaṇḍi	listen		విను		470	top1000		inflected verbform	impPol of విను
-W0804	పట్టిక	paṭṭika	table				472	top1000			
-W0805	ప్రయాణ	prayāṇa	travel				473	top1000			
-W0806	ఉదయం	udayaṁ	morning				475	top1000			
-W0807	అచ్చు	achchu	vowel				479	top1000			
-W0808	యుద్ధం	yuddhaṁ	war				481	top1000			
-W0809	లే	lē	lay				482	top1000			
-W0810	వ్యతిరేకంగా	vyatirēkangā	against				483	top1000			
-W0811	నమూనా	namūnā	pattern				484	top1000			
-W0812	నెమ్మదిగా	nemmadigā	slow				485	top1000			
-W0813	సెంటర్	seṇṭar	center				486	top1000			
-W0814	వ్యక్తి	vyakti	person				488	top1000			
-W0815	డబ్బు	ḍabbu	money				489	top1000			
-W0816	సర్వ్	sarv	serve				490	top1000			
-W0817	టెలిఫోన్	ṭeliphōn	appear				491	top1000			
-W0818	రోడ్డు	rōḍḍu	road				492	top1000			
-W0819	మాప్	māp	map				493	top1000		english-respelled	
-W0820	పాలన	pālana	rule				495	top1000			
-W0821	పాలించే	pālinchē	govern				496	top1000			
-W0822	పుల్	pul	pull				497	top1000		english-respelled	
-W0823	చల్లని	challani	cold; cool				498	top1000		multi-gloss	
-W0824	నోటీసు	nōṭīsu	notice				499	top1000		english-respelled	
-W0825	వాయిస్	vāyis	voice				500	top1000			
-W0826	వేట	vēṭa	hunt				502	top1000			
-W0827	మూడింటిని	mūḍiṇṭini	probable				503	top1000			
-W0828	మంచం	manchaṁ	bed				504	top1000			
-W0829	సోదరుడు	sōdaruḍu	brother				505	top1000			
-W0830	రైడ్	raiḍ	ride				507	top1000			
-W0831	సెల్	sel	cell				508	top1000			
-W0832	నమ్మకం	nammakaṁ	believe				509	top1000			
-W0833	బహుశా	bahuśā	perhaps				510	top1000			
-W0834	ఎంచుకోండి	enchukōṇḍi	pick; choose; select				511	top1000		inflected multi-gloss	
-W0835	ఆకస్మిక	ākasmika	sudden				512	top1000			
-W0836	కౌంట్	kauṇṭ	count				513	top1000			
-W0837	చదరపు	chadarapu	square				514	top1000			
-W0838	పొడవు	poḍavu	length				516	top1000			
-W0839	య	ya	represent				517	top1000			
-W0840	కళ	kaḷa	art				518	top1000			
-W0841	పరిమాణం	parimāṇaṁ	size				521	top1000			
-W0842	మారుతుంటాయి	mārutuṇṭāyi	vary				522	top1000		inflected	
-W0843	స్థిరపడేందుకు	sthirapaḍēnduku	settle				523	top1000			
-W0844	మాట్లాడటం	māṭlāḍaṭaṁ	speak				524	top1000			
-W0845	బరువు	baruvu	weight				525	top1000			
-W0846	సర్కిల్	sarkil	circle				529	top1000			
-W0847	జత	jata	pair				530	top1000			
-W0848	విభజన	vibhajana	divide; division				532	top1000		multi-gloss	
-W0849	అక్షరం	akṣaraṁ	syllable				533	top1000			
-W0850	భావించాడు	bhāvinchāḍu	felt				534	top1000		inflected	
-W0851	గ్రాండ్	grāṇḍ	grand				535	top1000		english-respelled	
-W0852	బంతి	banti	ball				536	top1000			
-W0853	ఇంకా	inkā	yet				537	top1000			
-W0854	డ్రాప్	ḍrāp	drop				539	top1000			
-W0855	గుండె	guṇḍe	heart				540	top1000			
-W0856	ఉన్నాను	unnānu	am		ఉండు		541	top1000		inflected verbform	past of ఉండు
-W0857	ప్రస్తుతం	prastutaṁ	present				542	top1000			
-W0858	భారీ	bhārī	heavy; huge				543	top1000		multi-gloss	
-W0859	డ్యాన్స్	ḍyāns	dance				544	top1000			
-W0860	ఇంజిన్	injin	engine				545	top1000			
-W0861	స్థానం	sthānaṁ	position				546	top1000			
-W0862	చేయి	chēyi	arm		చేయి		547	top1000		verbform	impFam of చేయి
-W0863	విస్తృత	vistṛta	wide; broad				548	top1000		multi-gloss	
-W0864	ప్రయాణమయ్యారు	prayāṇamayyāru	sail				549	top1000		inflected	
-W0865	పదార్థం	padārthaṁ	material				550	top1000			
-W0866	భిన్నం	bhinnaṁ	fraction				551	top1000			
-W0867	అటవీ	aṭavī	forest				552	top1000			
-W0868	కూర్చుని	kūrchuni	sit				553	top1000			
-W0869	రేసు	rēsu	race				554	top1000			
-W0870	విండో	viṇḍō	window				555	top1000			
-W0871	స్టోర్	sṭōr	store				556	top1000		english-respelled	
-W0872	రైలు	railu	train; rail				558	top1000		multi-gloss	
-W0873	నిద్ర	nidra	sleep				559	top1000			
-W0874	రుజువు	rujuvu	prove				560	top1000			
-W0875	ఒంటరి	oṇṭari	lone				561	top1000			
-W0876	లెగ్	leg	leg				562	top1000		english-respelled	
-W0877	వ్యాయామం	vyāyāmaṁ	exercise				563	top1000			
-W0878	గోడ	gōḍa	wall				564	top1000			
-W0879	క్యాచ్	kyāch	catch; caught				565	top1000		multi-gloss	
-W0880	మౌంట్	mauṇṭ	mount				566	top1000			
-W0881	అనుకుంటున్నారా	anukuṇṭunnārā	wish				567	top1000			
-W0882	ఆకాశంలో	ākāśaṁlō	sky				568	top1000			
-W0883	బోర్డు	bōrḍu	board				569	top1000			
-W0884	ఆనందం	ānandaṁ	joy				570	top1000			
-W0885	శీతాకాలంలో	śītākālaṁlō	winter				571	top1000			
-W0886	శని	śani	sat				572	top1000			
-W0887	రాసిన	rāsina	written				573	top1000			
-W0888	అడవి	aḍavi	wild				574	top1000			
-W0889	వాయిద్యం	vāyidyaṁ	instrument				575	top1000			
-W0890	ఉంచింది	unchindi	kept				576	top1000		inflected	
-W0891	గాజు	gāju	glass				577	top1000			
-W0892	గడ్డి	gaḍḍi	grass				578	top1000			
-W0893	ఉద్యోగం	udyōgaṁ	job				580	top1000			
-W0894	అంచు	anchu	edge				581	top1000			
-W0895	సైన్	sain	sign				582	top1000			
-W0896	పర్యటన	paryaṭana	visit				583	top1000			
-W0897	సాఫ్ట్	sāphṭ	soft				585	top1000			
-W0898	సరదాగా	saradāgā	fun				586	top1000			
-W0899	బ్రైట్	braiṭ	bright				587	top1000			
-W0900	గ్యాస్	gyās	gas				588	top1000			
-W0901	వాతావరణ	vātāvaraṇa	weather				589	top1000			
-W0902	నెల	nela	month				590	top1000			
-W0903	మిలియన్	miliyan	million				591	top1000		english-respelled	
-W0904	భరించలేదని	bharinchalēdani	bear				592	top1000			
-W0905	సంతోషంగా	santōṣangā	happy				594	top1000			
-W0906	ఆశిస్తున్నాము	āśistunnāmu	hope				595	top1000		inflected	
-W0907	పుష్పం	puṣpaṁ	flower				596	top1000			
-W0908	దుస్తులు ధరింపజేయు	dustulu dharimpajēyu	clothe				597	top1000		phrase	
-W0909	వింత	vinta	strange				598	top1000			
-W0910	వెళ్లిపోవడంతో	veḷlipōvaḍantō	gone				599	top1000			
-W0911	వాణిజ్య	vāṇijya	trade				600	top1000			
-W0912	శ్రావ్యత	śrāvyata	melody				601	top1000			
-W0913	యాత్ర	yātra	trip				602	top1000			
-W0914	కార్యాలయం	kāryālayaṁ	office				603	top1000			
-W0915	అందుకుంటారు	andukuṇṭāru	receive				604	top1000		inflected	
-W0916	వరుసగా	varusagā	row				605	top1000			
-W0917	నోరు	nōru	mouth				606	top1000			
-W0918	ఖచ్చితమైన	khachchitamaina	exact				607	top1000			
-W0919	చిహ్నం	chihnaṁ	symbol				608	top1000			
-W0920	చనిపోయే	chanipōyē	die				609	top1000			
-W0921	కనీసం	kanīsaṁ	least				610	top1000			
-W0922	అరవడం	aravaḍaṁ	shout				612	top1000			
-W0923	తప్ప	tappa	except				613	top1000			
-W0924	వ్రాసారు	vrāsāru	wrote				614	top1000		inflected	
-W0925	విత్తనం	vittanaṁ	seed				615	top1000			
-W0926	టోన్	ṭōn	tone				616	top1000			
-W0927	చేరడానికి	chēraḍāniki	join				617	top1000			
-W0928	సూచిస్తున్నాయి	sūchistunnāyi	suggest; indicate				618	top1000		inflected multi-gloss	
-W0929	శుభ్రంగా	śubhrangā	clean				619	top1000			
-W0930	విరామం	virāmaṁ	break				620	top1000			
-W0931	లేడీ	lēḍī	lady				621	top1000			
-W0932	యార్డ్	yārḍ	yard				622	top1000		english-respelled	
-W0933	పెరగడం	peragaḍaṁ	rise				623	top1000			
-W0934	దెబ్బ	debba	blow				625	top1000			
-W0935	చమురు	chamuru	oil				626	top1000			
-W0936	రక్త	rakta	blood				627	top1000			
-W0937	టచ్	ṭach	touch				628	top1000			
-W0938	పెరిగింది	perigindi	grew				629	top1000		inflected	
-W0939	శాతం	śātaṁ	cent				630	top1000			
-W0940	కలపాలి	kalapāli	mix				631	top1000			
-W0941	జట్టు	jaṭṭu	team				632	top1000			
-W0942	వైర్	vair	wire				633	top1000			
-W0943	కోల్పోయింది	kōlpōyindi	lost				635	top1000		inflected	
-W0944	ధరిస్తారు	dharistāru	wear				637	top1000		inflected	
-W0945	తోట	tōṭa	garden				638	top1000			
-W0946	సమాన	samāna	equal				639	top1000			
-W0947	పంపిన	pampina	sent				640	top1000			
-W0948	పడిపోయింది	paḍipōyindi	fell				642	top1000		inflected	
-W0949	సరిపోయే	saripōyē	fit				643	top1000			
-W0950	ప్రవాహం	pravāhaṁ	flow				644	top1000			
-W0951	న్యాయమైన	nyāyamaina	fair				645	top1000			
-W0952	బ్యాంకు	byānku	bank				646	top1000			
-W0953	సేకరించడానికి	sēkarinchaḍāniki	collect; gather				647	top1000		multi-gloss	
-W0954	సేవ్	sēv	save				648	top1000			
-W0955	నియంత్రణ	niyantraṇa	control				649	top1000			
-W0956	దశాంశ	daśāṁśa	decimal				650	top1000			
-W0957	చెవి	chevi	ear				651	top1000			
-W0958	వేరే	vērē	else				652	top1000			
-W0959	విరిగింది	virigindi	broke				654	top1000		inflected	
-W0960	కేసు	kēsu	case				655	top1000			
-W0961	చంపడానికి	champaḍāniki	kill				657	top1000			
-W0962	కుమారుడు	kumāruḍu	son				658	top1000			
-W0963	సరస్సు	sarassu	lake				659	top1000			
-W0964	స్థాయి	sthāyi	scale; level				661	top1000		inflected multi-gloss	
-W0965	బిగ్గరగా	biggaragā	loud				662	top1000			
-W0966	వసంత	vasanta	spring				663	top1000			
-W0967	గమనించి	gamaninchi	observe				664	top1000			
-W0968	పిల్లల	pillala	child				665	top1000			
-W0969	నేరుగా	nērugā	straight				666	top1000			
-W0970	హల్లు	hallu	consonant				667	top1000			
-W0971	నిఘంటువు	nighaṇṭuvu	dictionary				669	top1000			
-W0972	వేగం	vēgaṁ	speed				671	top1000			
-W0973	పద్ధతి	paddhati	method				672	top1000			
-W0974	అవయవ	avayava	organ				673	top1000			
-W0975	చెల్లించటానికి	chellinchaṭāniki	pay				674	top1000			
-W0976	వయస్సు	vayassu	age				675	top1000			
-W0977	విభాగం	vibhāgaṁ	section				676	top1000			
-W0978	దుస్తుల	dustula	dress				677	top1000			
-W0979	క్లౌడ్	klauḍ	cloud				678	top1000			
-W0980	ఆశ్చర్యం	āścharyaṁ	surprise				679	top1000			
-W0981	నిశ్శబ్ద	niśśabda	quiet; silent				680	top1000		multi-gloss	
-W0982	ఆరోహణను	ārōhaṇanu	climb				683	top1000			
-W0983	డిజైన్	ḍijain	design				685	top1000			
-W0984	పేద	pēda	poor				686	top1000			
-W0985	ప్రయోగం	prayōgaṁ	experiment				688	top1000			
-W0986	దిగువ	diguva	bottom				689	top1000			
-W0987	కీ	kī	key				690	top1000			
-W0988	ఇనుము	inumu	iron				691	top1000			
-W0989	ఒకే	okē	single				692	top1000			
-W0990	స్టిక్	sṭik	stick				693	top1000			
-W0991	ఫ్లాట్	phlāṭ	flat				694	top1000			
-W0992	చర్మం	charmaṁ	skin				696	top1000			
-W0993	చిరునవ్వు	chirunavvu	smile				697	top1000			
-W0994	క్రీజ్	krīj	crease				698	top1000			
-W0995	రంధ్రం	randhraṁ	hole				699	top1000			
-W0996	జంప్	jamp	jump				700	top1000			
-W0997	బేబీ	bēbī	baby				701	top1000			
-W0998	గ్రామం	grāmaṁ	village				703	top1000			
-W0999	మీట్	mīṭ	meet				704	top1000			
-W1000	రూట్	rūṭ	root				705	top1000			
-W1001	కొనుగోలు	konugōlu	buy; bought				706	top1000		multi-gloss	
-W1002	పెంచడానికి	penchaḍāniki	raise				707	top1000			
-W1003	పరిష్కరించడానికి	pariṣkarinchaḍāniki	solve				708	top1000			
-W1004	మెటల్	meṭal	metal				709	top1000		english-respelled	
-W1005	లేదో	lēdō	whether				710	top1000			
-W1006	పుష్	puṣ	push				711	top1000			
-W1007	పేరా	pērā	paragraph				713	top1000			
-W1008	మూడో	mūḍō	third				714	top1000			
-W1009	వలెను	valenu	shall				715	top1000			
-W1010	ఒక్కొక	okkoka	held				716	top1000			
-W1011	జుట్టు	juṭṭu	hair				717	top1000			
-W1012	వర్ణించేందుకు	varṇinchēnduku	describe				718	top1000			
-W1013	కుక్	kuk	cook				719	top1000			
-W1014	ఫ్లోర్	phlōr	floor				720	top1000			
-W1015	గాని	gāni	either				721	top1000			
-W1016	ఫలితంగా	phalitangā	result				722	top1000			
-W1017	బర్న్	barn	burn				723	top1000			
-W1018	కొండ	koṇḍa	hill				724	top1000			
-W1019	సురక్షితంగా	surakṣitangā	safe				725	top1000			
-W1020	పిల్లి	pilli	cat				726	top1000			
-W1021	శతాబ్దం	śatābdaṁ	century				727	top1000			
-W1022	పరిగణలోకి	parigaṇalōki	consider				728	top1000			
-W1023	బిట్	biṭ	bit				731	top1000		english-respelled	
-W1024	తీరం	tīraṁ	coast; shore				732	top1000		multi-gloss	
-W1025	ప్రతిని	pratini	copy				733	top1000			
-W1026	పదబంధం	padabandhaṁ	phrase				734	top1000			
-W1027	పొడవైన	poḍavaina	tall				736	top1000			
-W1028	ఇసుక	isuka	sand				737	top1000			
-W1029	మట్టి	maṭṭi	soil				738	top1000			
-W1030	రోల్	rōl	roll				739	top1000		english-respelled	
-W1031	ఉష్ణోగ్రత	uṣṇōgrata	temperature				740	top1000			
-W1032	వేలు	vēlu	finger				741	top1000			
-W1033	పరిశ్రమ	pariśrama	industry				742	top1000			
-W1034	విలువ	viluva	value				743	top1000			
-W1035	పోరాటం	pōrāṭaṁ	fight				744	top1000			
-W1036	అబద్ధం	abaddhaṁ	lie				745	top1000			
-W1037	ఓడించింది	ōḍinchindi	beat				746	top1000		inflected	
-W1038	ఉత్సుకతను	utsukatanu	excite				747	top1000			
-W1039	సహజ	sahaja	natural				748	top1000			
-W1040	వీక్షణ	vīkṣaṇa	view				749	top1000			
-W1041	భావం	bhāvaṁ	sense				750	top1000			
-W1042	రాజధాని	rājadhāni	capital				751	top1000			
-W1043	కుర్చీ	kurchī	chair				753	top1000			
-W1044	ప్రమాదం	pramādaṁ	danger				754	top1000			
-W1045	రిచ్	rich	rich				756	top1000		english-respelled	
-W1046	మందపాటి	mandapāṭi	thick				757	top1000			
-W1047	సైనికుడు	sainikuḍu	soldier				758	top1000			
-W1048	ప్రక్రియ	prakriya	process				759	top1000			
-W1049	పనిచేస్తాయి	panichēstāyi	operate				760	top1000		inflected	
-W1050	ఆచరణలో	ācharaṇalō	practice				761	top1000			
-W1051	రక్షించేందుకు	rakṣinchēnduku	protect				766	top1000			
-W1052	పంట	paṇṭa	crop				768	top1000			
-W1053	ఆధునిక	ādhunika	modern				769	top1000			
-W1054	మూలకం	mūlakaṁ	element				770	top1000			
-W1055	హిట్	hiṭ	hit				771	top1000		english-respelled	
-W1056	మూలలో	mūlalō	corner				773	top1000			
-W1057	పార్టీ	pārṭī	party				774	top1000		english-respelled	
-W1058	సరఫరా	sarapharā	supply				775	top1000			
-W1059	దీని	dīni	whose				776	top1000			
-W1060	గుర్తించడం	gurtinchaḍaṁ	locate				777	top1000			
-W1061	రింగ్	ring	ring				778	top1000		english-respelled	
-W1062	పాత్ర	pātra	character				779	top1000			
-W1063	క్రిమి	krimi	insect				780	top1000			
-W1064	కాలం	kālaṁ	period				782	top1000			
-W1065	రేడియో	rēḍiyō	radio				784	top1000			
-W1066	మాట్లాడారు	māṭlāḍāru	spoke		మాట్లాడు		785	top1000		inflected verbform	past of మాట్లాడు
-W1067	అణువు	aṇuvu	atom; molecule				786	top1000		multi-gloss	
-W1068	మానవ	mānava	human				787	top1000			
-W1069	చరిత్ర	charitra	history				788	top1000			
-W1070	ప్రభావం	prabhāvaṁ	effect				789	top1000			
-W1071	విద్యుత్	vidyut	electric				790	top1000			
-W1072	ఆశించే	āśinchē	expect				791	top1000			
-W1073	ఎముక	emuka	bone				792	top1000			
-W1074	ఊహించే	ūhinchē	imagine				794	top1000			
-W1075	అందించేందుకు	andinchēnduku	provide				795	top1000			
-W1076	అంగీకరిస్తున్నారు	angīkaristunnāru	agree				796	top1000		inflected	
-W1077	అందువలన	anduvalana	thus				797	top1000			
-W1078	సున్నితమైన	sunnitamaina	gentle				798	top1000			
-W1079	మహిళ	mahiḷa	woman				799	top1000			
-W1080	కెప్టెన్	kepṭen	captain				800	top1000			
-W1081	అంచనా	anchanā	guess				801	top1000			
-W1082	పదునైన	padunaina	sharp				803	top1000			
-W1083	వింగ్	ving	wing				804	top1000			
-W1084	సృష్టించడానికి	sṛṣṭinchaḍāniki	create				805	top1000			
-W1085	పొరుగు	porugu	neighbor				806	top1000			
-W1086	వాష్	vāṣ	wash				807	top1000			
-W1087	బ్యాట్	byāṭ	bat				808	top1000			
-W1088	కాకుండా	kākuṇḍā	rather				809	top1000			
-W1089	మొక్కజొన్న	mokkajonna	corn				811	top1000			
-W1090	సరిపోల్చండి	saripōlchaṇḍi	compare				812	top1000		inflected	
-W1091	పద్యం	padyaṁ	poem				813	top1000			
-W1092	స్ట్రింగ్	sṭring	string				814	top1000		english-respelled	
-W1093	బెల్	bel	bell				815	top1000		english-respelled	
-W1094	ఆధారపడి	ādhārapaḍi	depend				816	top1000			
-W1095	మాంసం	māṁsaṁ	meat				817	top1000			
-W1096	రబ్	rab	rub				818	top1000			
-W1097	ట్యూబ్	ṭyūb	tube				819	top1000			
-W1098	ప్రసిద్ధ	prasiddha	famous				820	top1000			
-W1099	డాలర్	ḍālar	dollar				821	top1000			
-W1100	స్ట్రీమ్	sṭrīm	stream				822	top1000			
-W1101	భయము	bhayamu	fear				823	top1000			
-W1102	దృష్టి	dṛṣṭi	sight				824	top1000			
-W1103	సన్నని	sannani	thin				825	top1000			
-W1104	త్రిభుజం	tribhujaṁ	triangle				826	top1000			
-W1105	గ్రహం	grahaṁ	planet				827	top1000			
-W1106	అత్యవసరము	atyavasaramu	hurry				828	top1000			
-W1107	చీఫ్	chīph	chief				829	top1000			
-W1108	కాలనీ	kālanī	colony				830	top1000			
-W1109	మైన్	main	mine				832	top1000			
-W1110	టై	ṭai	tie				833	top1000			
-W1111	నమోదు	namōdu	enter				834	top1000			
-W1112	తాజా	tājā	fresh				836	top1000			
-W1113	శోధన	śōdhana	search				837	top1000			
-W1114	పంపండి	pampaṇḍi	send				838	top1000		inflected	
-W1115	తుపాకీ	tupākī	gun				840	top1000			
-W1116	అనుమతిస్తాయి	anumatistāyi	allow				841	top1000		inflected	
-W1117	చనిపోయిన	chanipōyina	dead				843	top1000			
-W1118	స్పాట్	spāṭ	spot				844	top1000			
-W1119	ఎడారి	eḍāri	desert				845	top1000			
-W1120	దావా	dāvā	suit; claim				846	top1000		multi-gloss	
-W1121	ప్రస్తుత	prastuta	current				847	top1000			
-W1122	లిఫ్ట్	liphṭ	lift				848	top1000			
-W1123	చేరు	chēru	arrive				850	top1000			
-W1124	మాస్టర్	māsṭar	master				851	top1000		english-respelled	
-W1125	ట్రాక్	ṭrāk	track				852	top1000			
-W1126	పేరెంట్	pēreṇṭ	parent				853	top1000			
-W1127	షీట్	ṣīṭ	sheet				856	top1000			
-W1128	పదార్ధం	padārdhaṁ	substance				857	top1000			
-W1129	మొగ్గుచూపుతున్నారు	mogguchūputunnāru	favor				858	top1000		inflected	
-W1130	కనెక్ట్	kanekṭ	connect				859	top1000			
-W1131	పోస్ట్	pōsṭ	post				860	top1000		english-respelled	
-W1132	ఖర్చు	kharchu	spend				861	top1000			
-W1133	తీగ	tīga	chord				862	top1000			
-W1134	కొవ్వు	kovvu	fat				863	top1000			
-W1135	ఆనందంగా	ānandangā	glad				864	top1000			
-W1136	వాటా	vāṭā	share				866	top1000			
-W1137	స్టేషన్	sṭēṣan	station				867	top1000			
-W1138	బ్రెడ్	breḍ	bread				869	top1000			
-W1139	వసూలు	vasūlu	charge				870	top1000			
-W1140	బార్	bār	bar				872	top1000		english-respelled	
-W1141	ఆఫర్	āphar	offer				873	top1000			
-W1142	సెగ్మెంట్	segmeṇṭ	segment				874	top1000		english-respelled	
-W1143	బానిస	bānisa	slave				875	top1000			
-W1144	డక్	ḍak	duck				876	top1000			
-W1145	తక్షణ	takṣaṇa	instant				877	top1000			
-W1146	మార్కెట్	mārkeṭ	market				878	top1000		english-respelled	
-W1147	డిగ్రీ	ḍigrī	degree				879	top1000			
-W1148	జనసాంద్రత	janasāndrata	populate				880	top1000			
-W1149	చిక్	chik	chick				881	top1000			
-W1150	ప్రియమైన	priyamaina	dear				882	top1000			
-W1151	శత్రువు	śatruvu	enemy				883	top1000			
-W1152	ప్రత్యుత్తరం	pratyuttaraṁ	reply				884	top1000			
-W1153	పానీయం	pānīyaṁ	drink				885	top1000			
-W1154	సంభవించవచ్చు	sambhavinchavachchu	occur				886	top1000			
-W1155	మద్దతు	maddatu	support				887	top1000			
-W1156	ప్రసంగం	prasangaṁ	speech				888	top1000			
-W1157	ప్రకృతి	prakṛti	nature				889	top1000			
-W1158	పరిధి	paridhi	range				890	top1000			
-W1159	ఆవిరి	āviri	steam				891	top1000			
-W1160	చలన	chalana	motion				892	top1000			
-W1161	ద్రవ	drava	liquid				894	top1000			
-W1162	లాగిన్	lāgin	log				895	top1000			
-W1163	కోశంట్	kōśaṇṭ	quotient				897	top1000			
-W1164	పళ్ళు	paḷḷu	teeth				898	top1000			
-W1165	షెల్	ṣel	shell				899	top1000			
-W1166	మెడ	meḍa	neck				900	top1000			
-W1167	ఆక్సిజన్	āksijan	oxygen				901	top1000			
-W1168	చక్కెర	chakkera	sugar				902	top1000			
-W1169	మరణం	maraṇaṁ	death				903	top1000			
-W1170	అందంగా	andangā	pretty				904	top1000			
-W1171	నైపుణ్యం	naipuṇyaṁ	skill				905	top1000			
-W1172	మహిళలు	mahiḷalu	women				906	top1000			
-W1173	సీజన్	sījan	season				907	top1000			
-W1174	పరిష్కారం	pariṣkāraṁ	solution				908	top1000			
-W1175	అయస్కాంతం	ayaskāntaṁ	magnet				909	top1000			
-W1176	వెండి	veṇḍi	silver				910	top1000		inflected	
-W1177	శాఖ	śākha	branch				912	top1000			
-W1178	మ్యాచ్	myāch	match				913	top1000			
-W1179	ప్రత్యయం	pratyayaṁ	suffix				914	top1000			
-W1180	ముఖ్యంగా	mukhyangā	especially				915	top1000			
-W1181	అత్తి	atti	fig				916	top1000			
-W1182	భయపడ్డారు	bhayapaḍḍāru	afraid				917	top1000		inflected	
-W1183	సోదరి	sōdari	sister				919	top1000			
-W1184	స్టీల్	sṭīl	steel				920	top1000			
-W1185	చర్చించడానికి	charchinchaḍāniki	discuss				921	top1000			
-W1186	ముందుకు	munduku	forward				922	top1000			
-W1187	ఇదే	idē	similar				923	top1000			
-W1188	మార్గనిర్దేశం	mārganirdēśaṁ	guide				924	top1000			
-W1189	అనుభవం	anubhavaṁ	experience				925	top1000			
-W1190	స్కోరు	skōru	score				926	top1000			
-W1191	ఆపిల్	āpil	apple				927	top1000			
-W1192	దారితీసింది	dāritīsindi	led				929	top1000		inflected	
-W1193	పిచ్	pich	pitch				930	top1000			
-W1194	కోటు	kōṭu	coat				931	top1000			
-W1195	మాస్	mās	mass				932	top1000			
-W1196	కార్డ్	kārḍ	card				933	top1000			
-W1197	బ్యాండ్	byāṇḍ	band				934	top1000			
-W1198	తాడు	tāḍu	rope				935	top1000		inflected	
-W1199	స్లిప్	slip	slip				936	top1000		english-respelled	
-W1200	విజయం	vijayaṁ	win; success				937	top1000		multi-gloss	
-W1201	కావాలని	kāvālani	dream				938	top1000			
-W1202	పరిస్థితి	paristhiti	condition				940	top1000			
-W1203	ఫీడ్	phīḍ	feed				941	top1000			
-W1204	సాధనం	sādhanaṁ	tool				942	top1000			
-W1205	ప్రాథమిక	prāthamika	basic				944	top1000			
-W1206	వాసన	vāsana	smell				945	top1000			
-W1207	లోయలో	lōyalō	valley				946	top1000			
-W1208	డబుల్	ḍabul	double				948	top1000			
-W1209	సీటు	sīṭu	seat				949	top1000			
-W1210	కొనసాగుతుంది	konasāgutundi	continue				950	top1000		inflected	
-W1211	బ్లాక్	blāk	block				951	top1000			
-W1212	చార్ట్	chārṭ	chart				952	top1000		english-respelled	
-W1213	టోపీ	ṭōpī	hat				953	top1000			
-W1214	అమ్మే	ammē	sell				954	top1000			
-W1215	సంస్థ	saṁstha	company				956	top1000			
-W1216	వ్యవకలనం	vyavakalanaṁ	subtract				957	top1000			
-W1217	ఈవెంట్	īveṇṭ	event				958	top1000			
-W1218	ఒప్పందం	oppandaṁ	deal				960	top1000			
-W1219	ఈత	īta	swim				961	top1000			
-W1220	వ్యతిరేక	vyatirēka	opposite				963	top1000			
-W1221	షూ	ṣū	shoe				965	top1000			
-W1222	స్ప్రెడ్	spreḍ	spread				967	top1000		english-respelled	
-W1223	ఏర్పాట్లు	ērpāṭlu	arrange				968	top1000			
-W1224	శిబిరం	śibiraṁ	camp				969	top1000			
-W1225	కనుగొనడమే	kanugonaḍamē	invent				970	top1000			
-W1226	పత్తి	patti	cotton				971	top1000			
-W1227	పుట్టినప్పటి	puṭṭinappaṭi	born				972	top1000			
-W1228	గుర్తించడానికి	gurtinchaḍāniki	determine				973	top1000			
-W1229	కొలత గల పాత్ర	kolata gala pātra	quart				974	top1000		phrase	
-W1230	ట్రక్	ṭrak	truck				976	top1000			
-W1231	క్రీడల్లో అవకాశాలు	krīḍallō avakāśālu	chance				979	top1000		phrase	
-W1232	షాప్	ṣāp	shop				981	top1000			
-W1233	సాగిన	sāgina	stretch				982	top1000			
-W1234	త్రో	trō	throw				983	top1000			
-W1235	బాగా చేయు	bāgā chēyu	shine				984	top1000		phrase	
-W1236	ఆస్తి	āsti	property				985	top1000			
-W1237	కాలమ్	kālam	column				986	top1000			
-W1238	తప్పు	tappu	wrong				989	top1000			
-W1239	బూడిద	būḍida	gray				990	top1000			
-W1240	రిపీట్	ripīṭ	repeat				991	top1000			
-W1241	సిద్ధం	siddhaṁ	prepare				994	top1000			
-W1242	ముక్కు	mukku	nose				996	top1000			
-W1243	బహువచనం	bahuvachanaṁ	plural				997	top1000			
-W1244	కోపం	kōpaṁ	anger				998	top1000			
-W1245	ఖండం	khaṇḍaṁ	continent				1000	top1000			
+W0001	నువ్వ	nuvva	You				1	site,book1000	nuvva		
+W0002	మీరు	mīru	you (formal / plural — the safe default); You (Respect); you			mīru ṭīcharu.	2	site,book1000,top1000	mīru		
+W0003	తన	tana	own (his/her own); his			tana venaka	3	site,top1000	tana		
+W0004	మనం	manaṁ	Us				3	site,book1000	manaṁ		
+W0005	నేను	nēnu	I			nēnu vidyārthini.	4	site,book1000,top1000	nēnu		
+W0006	ఆ	ā	that; those				4	site,top1000	ā		
+W0007	మేము	mēmu	we (exclusive — not the listener); We			mēmu vidyārthulamu.	5	site,book1000,top1000	mēmu		
+W0008	అతను	atanu	he (neutral — the default form); he			atanu vidyārthi.	5	site,top1000	atanu		
+W0009	వారు	vāru	They				6	site,book1000,top1000	vāru	inflected	
+W0010	ఉంది	undi	was; is; has  [form of ఉండు]; has		ఉండు		6	site,top1000	undi	multi-gloss verbform	past of ఉండు
+W0011	అతడు	ataḍu	He				7	site,book1000	ataḍu		
+W0012	కోసం	kōsaṁ	for				7	site,top1000	kōsaṁ		
+W0013	ఆమె	āme	she (neutral — the default form); She			āme vidyārthi.	8	site,book1000,top1000	āme		
+W0014	ఇది	idi	this / it — the near form of adi; It; which			idi kāru.	9	site,book1000,top1000	idi		
+W0015	ఉన్నాయి	unnāyi	are; were; been; include				9	site,top1000	unnāyi	inflected	
+W0016	నాకు/ నను	nāku/ nanu	To me				10	site,book1000	nāku/ nanu	phrase	
+W0017	వారికి	vāriki	To them				11	site,book1000	vāriki		
+W0018	అతనికి	ataniki	To him; him				12	site,book1000,top1000	ataniki		
+W0019	ఉంటుంది	uṇṭundi	be  [form of ఉండు]; be		ఉండు		12	site,top1000	uṇṭundi	inflected multi-gloss verbform	future of ఉండు
+W0020	ఎందుకు?	enduku?	Why?; For what ?				13	site,book1000	enduku?		
+W0021	వద్ద	vadda	at				13	site,top1000	vadda		
+W0022	ఒకటి	okaṭi	"one (standalone — ""oka"" before a noun); one"			okaṭi ivvaṇḍi.	14	site,top1000	okaṭi		
+W0023	ఎలా ?	elā ?	How ?				14	site,book1000	elā ?	phrase	
+W0024	కలిగి	kaligi	have; contain				15	site,top1000	kaligi		
+W0025	ఈ	ī	this; these				16	site,top1000	ī		
+W0026	ఎంత?	enta?	How Much ?				17	site,book1000	enta?		
+W0027	ఎప్పుడు?	eppuḍu?	When ?				18	site,book1000	eppuḍu?		
+W0028	ద్వారా	dvārā	by; through				18	site,top1000	dvārā		
+W0029	ఎక్కడ?	ekkaḍa?	Where ?				19	site,book1000	ekkaḍa?		
+W0030	వేడి	vēḍi	hot; heat				19	site,top1000	vēḍi		
+W0031	ఎవరు?	evaru?	Who ?				20	site,book1000	evaru?		
+W0032	పదం	padaṁ	word; term				20	site,top1000	padaṁ		
+W0033	కానీ	kānī	but			kāni ṭrāphik ekkuva undi	21	site,top1000	kānī		
+W0034	ఏమి	ēmi	what			ēmi jarigindi?	22	site,top1000	ēmi		
+W0035	ధన్యవాదాలు	dhanyavādālu	thank you; Thanks; thank			dhanyavādālu.	23	site,book1000,top1000	dhanyavādālu		
+W0036	అంగీకరించు	angīkarinchu	Agree				24	site,book1000	angīkarinchu		
+W0037	అనుమతించు	anumatinchu	Allow				25	site,book1000	anumatinchu		
+W0038	నమ్ము	nammu	Believe				26	site,book1000	nammu		
+W0039	ఆపండి	āpaṇḍi	Stop				27	site,book1000	āpaṇḍi	inflected	
+W0040	లేదా	lēdā	or; nor				27	site,top1000	lēdā		
+W0041	ఇల్లు	illu	Home; house				28	site,book1000,top1000	illu		
+W0042	వచ్చింది	vachchindi	had; came; got  [form of రా]; got		రా		28	site,top1000	vachchindi	inflected multi-gloss verbform	past of రా
+W0043	కొనడం	konaḍaṁ	To Buy				29	site,book1000	konaḍaṁ		
+W0044	త్రాగి	trāgi	Drinking				30	site,book1000	trāgi		
+W0045	కూర్చో	kūrchō	Sit Down  [form of కూర్చో]; Sit Down		కూర్చో		31	site,book1000	kūrchō	multi-gloss verbform	impFam of కూర్చో
+W0046	అర్థంచేసుకో	arthanchēsukō	Understand				32	site,book1000	arthanchēsukō		
+W0047	మరియు	mariyu	and				32	site,top1000	mariyu		
+W0048	ఒక	oka	a / an (indefinite — optional, for emphasis); a; an			oka vidyārthi.	33	site,top1000	oka		
+W0049	అవును	avunu	yes			avunandi.	33	site,book1000,top1000	avunu		
+W0050	నమస్తే	namastē	Hello				34	site,book1000	namastē		
+W0051	చెయ్యవచ్చు	cheyyavachchu	can				36	site,top1000	cheyyavachchu		
+W0052	సాయంత్రం	sāyantraṁ	Evening				37	site,book1000,top1000	sāyantraṁ		
+W0053	అవుట్	avuṭ	out				37	site,top1000	avuṭ		
+W0054	అమ్మ	amma	"mother (say ""mā amma"" for ""my mother""); Mother"			mā amma pēru Sunita.	38	site,book1000	amma		
+W0055	ఇతర	itara	other				38	site,top1000	itara		
+W0056	నాన్న	nānna	"father (say ""mā nāna"" for ""my father""); Dad"			mā nāna pēru John.	39	site,book1000	nānna		
+W0057	అన్నయ్య	annayya	elder brother (shortens to anna); Elder brother			mā annayya ḍākṭar.	40	site,book1000	annayya		
+W0058	తమ్ముడు	tammuḍu	younger brother			mā tammuḍu vidyārthi.	41	site,book1000	tammuḍu		
+W0059	చేయండి	chēyaṇḍi	do  [form of చేయి]; do		చేయి		41	site,top1000	chēyaṇḍi	inflected multi-gloss verbform	impPol of చేయి
+W0060	అక్క	akka	elder sister			mā akka vidyārthi.	42	site,book1000	akka		
+W0061	వారి	vāri	their				42	site,top1000	vāri		
+W0062	తాతయ్య/ తాతగారు	tātayya/ tātagāru	Grandfather				44	site,book1000	tātayya/ tātagāru	inflected phrase	
+W0063	ఉంటే	uṇṭē	if  [form of ఉండు]; if		ఉండు		44	site,top1000	uṇṭē	multi-gloss verbform	cond of ఉండు
+W0064	అమ్మమ్మ	ammamma	maternal grandmother (mother's mother); Grandmother			mā ammamma gāru.	45	site,book1000	ammamma		
+W0065	రెడీ	reḍī	will; won’t				45	site,top1000	reḍī		
+W0066	కూరగాయలు	kūragāyalu	Vegetables				46	site,book1000	kūragāyalu		
+W0067	ఎలా	elā	how				46	site,top1000	elā		
+W0068	వంకాయ	vankāya	Brinjal				47	site,book1000	vankāya		
+W0069	అన్నాడు	annāḍu	said  [form of అను]; said		అను		47	site,top1000	annāḍu	inflected multi-gloss verbform	past of అను
+W0070	కాలీఫ్లవర్	kālīphlavar	Cauliflower				48	site,book1000	kālīphlavar		
+W0071	ప్రతి	prati	each; every				49	site,top1000	prati		
+W0072	కొబ్బరి కాయ	kobbari kāya	Coconuts				50	site,book1000	kobbari kāya	phrase	
+W0073	చెప్పండి	cheppaṇḍi	tell  [form of చెప్పు]; tell		చెప్పు		50	site,top1000	cheppaṇḍi	inflected multi-gloss verbform	impPol of చెప్పు
+W0074	పుదీనా	pudīnā	Mint				51	site,book1000	pudīnā		
+W0075	చేస్తుంది	chēstundi	does  [form of చేయి]; does		చేయి		51	site,top1000	chēstundi	inflected multi-gloss verbform	future of చేయి
+W0076	బఠాణి	baṭhāṇi	Peas				52	site,book1000	baṭhāṇi		
+W0077	మూడు	mūḍu	three			mūḍu pustakālu.	53	site,top1000	mūḍu		
+W0078	ఉల్లిపాయ	ullipāya	Onions				53	site,book1000	ullipāya		
+W0079	వెల్లుల్లిపాయ	vellullipāya	Garlic				54	site,book1000	vellullipāya		
+W0080	కావలసిన	kāvalasina	want				54	site,top1000	kāvalasina		
+W0081	బంగాళాదుంప	bangāḷādumpa	Potato				55	site,book1000	bangāḷādumpa		
+W0082	గాలి	gāli	air; wind				55	site,top1000	gāli		
+W0083	టమాటా	ṭamāṭā	Tomato				56	site,book1000	ṭamāṭā		
+W0084	బాగా	bāgā	well				56	site,top1000	bāgā		
+W0085	కీరదోసకాయ	kīradōsakāya	Cucumber				57	site,book1000	kīradōsakāya		
+W0086	ములక్కాయ	mulakkāya	Drumstick				58	site,book1000	mulakkāya		
+W0087	ప్లే	plē	play				58	site,top1000	plē		
+W0088	చిన్న	chinna	small, young; small; little; short; tiny			chinna + nāna → chinnāna	59	site,top1000	chinna		
+W0089	బెండకాయ	beṇḍakāya	Ladyfinger				59	site,book1000	beṇḍakāya		
+W0090	రంగు	rangu	colour; Color			rangu lēni	60	site,book1000,top1000	rangu		
+W0091	ముగింపు	mugimpu	end; finish				60	site,top1000	mugimpu		
+W0092	చాలు	chālu	enough (stopping more food); put			chālu, chālā bāgundi	61	site,top1000	chālu		
+W0093	నలుపు	nalupu	Black				61	site,book1000,top1000	nalupu		
+W0094	తెలుపు	telupu	White				62	site,book1000,top1000	telupu		
+W0095	హోమ్	hōm	home				62	site,top1000	hōm		
+W0096	చదవడానికి	chadavaḍāniki	read  [form of చదువు]; read		చదువు		63	site,top1000	chadavaḍāniki	multi-gloss verbform	purpose of చదువు
+W0097	చేతి	chēti	hand				64	site,top1000	chēti		
+W0098	పెద్ద	pedda	big, elder; large; big			pedda + amma → peddamma	66	site,top1000	pedda		
+W0099	అక్షరక్రమ	akṣarakrama	spell				67	site,top1000	akṣarakrama		
+W0100	పసుపు	pasupu	Yellow				68	site,book1000,top1000	pasupu		
+W0101	జోడించండి	jōḍinchaṇḍi	add				68	site,top1000	jōḍinchaṇḍi	inflected	
+W0102	పాలు	pālu	Milk				70	site,book1000,top1000	pālu		
+W0103	భూమి	bhūmi	land; earth; ground				70	site,top1000	bhūmi		
+W0104	పెరుగు	perugu	Curd				71	site,book1000	perugu		
+W0105	తప్పక	tappaka	must; should				72	site,top1000	tappaka		
+W0106	బియ్యం	biyyaṁ	Rice				73	site,book1000	biyyaṁ		
+W0107	గోధుమలు	gōdhumalu	Wheat				74	site,book1000	gōdhumalu		
+W0108	అధిక	adhika	high				74	site,top1000	adhika		
+W0109	ఇటువంటి	iṭuvaṇṭi	such				75	site,top1000	iṭuvaṇṭi		
+W0110	అనుసరించండి	anusarinchaṇḍi	follow				76	site,top1000	anusarinchaṇḍi	inflected	
+W0111	ఉప్పు	uppu	Salt				77	site,book1000,top1000	uppu		
+W0112	చట్టం	chaṭṭaṁ	act; law				77	site,top1000	chaṭṭaṁ		
+W0113	పంచదార	panchadāra	Sugar				78	site,book1000	panchadāra		
+W0114	ఎందుకు	enduku	why				78	site,top1000	enduku		
+W0115	అగ్ని	agni	Fire				79	site,book1000,top1000	agni		
+W0116	గోవా	gōvā	ask				79	site,top1000	gōvā		
+W0117	పరుగెత్తు	parugettu	Run  [form of పరుగెత్తు]; Run		పరుగెత్తు		80	site,book1000	parugettu	multi-gloss verbform	impFam of పరుగెత్తు
+W0118	పురుషులు	puruṣulu	men				80	site,top1000	puruṣulu		
+W0119	దొంగ	donga	Thief				81	site,book1000	donga		
+W0120	మార్పు	mārpu	change				81	site,top1000	mārpu		
+W0121	పంచాంగం	panchāngaṁ	Calendar				82	site,book1000	panchāngaṁ		
+W0122	వెళ్ళింది	veḷḷindi	went  [form of వెళ్ళు]; went		వెళ్ళు		82	site,top1000	veḷḷindi	inflected multi-gloss verbform	past of వెళ్ళు
+W0123	తేదీ	tēdī	Date				83	site,book1000	tēdī		
+W0124	కాంతి	kānti	light				83	site,top1000	kānti		
+W0125	ఈరోజు	īrōju	Today				84	site,book1000	īrōju		
+W0126	రకం	rakaṁ	kind; type				84	site,top1000	rakaṁ		
+W0127	నిన్న	ninna	Yesterday				85	site,book1000	ninna		
+W0128	ఆఫ్	āph	off				85	site,top1000	āph		
+W0129	రేపు	rēpu	Tomorrow				86	site,book1000	rēpu		
+W0130	అవసరం	avasaraṁ	need; necessary; require				86	site,top1000	avasaraṁ		
+W0131	ప్రతిరోజు	pratirōju	Everyday				87	site,book1000	pratirōju		
+W0132	రోజు	rōju	Day				88	site,book1000,top1000	rōju		
+W0133	చిత్రాన్ని	chitrānni	picture				88	site,top1000	chitrānni		
+W0134	ప్రయత్నించండి	prayatninchaṇḍi	try				89	site,top1000	prayatninchaṇḍi	inflected	
+W0135	పుట్టినరోజు పుట్టినరోజుశుభాకాంక్షలు ప్రయాణం	puṭṭinarōju puṭṭinarōjuśubhākānkṣalu prayāṇaṁ	Journey				90	site,book1000	puṭṭinarōju puṭṭinarōjuśubhākānkṣalu prayāṇaṁ	phrase	
+W0136	మాకు	māku	us				90	site,top1000	māku		
+W0137	మళ్ళీ	maḷḷī	again				91	site,top1000	maḷḷī		
+W0138	కొన్ని	konni	Some; few; certain				92	site,book1000,top1000	konni		
+W0139	జంతు	jantu	animal				92	site,top1000	jantu		
+W0140	కొంచెం	koncheṁ	a little, somewhat; Little			konchaṁ kaṣṭaṁ	93	site,book1000	koncheṁ		
+W0141	పాయింట్	pāyiṇṭ	point				93	site,top1000	pāyiṇṭ		
+W0142	సరే	sarē	okay; Well			sarē aṇḍi.	94	site,book1000	sarē		
+W0143	తల్లి	talli	mother				94	site,top1000	talli		
+W0144	మంచి	manchi	good (before a noun); Good; better			oka manchi pani	95	site,book1000,top1000	manchi		
+W0145	ప్రపంచ	prapancha	world				95	site,top1000	prapancha		
+W0146	చెడు	cheḍu	Bad				96	site,book1000,top1000	cheḍu		
+W0147	పరవాలేదు	paravālēdu	It's okay				97	site,book1000	paravālēdu		
+W0148	నిర్మించడానికి	nirminchaḍāniki	build				97	site,top1000	nirminchaḍāniki		
+W0149	కాదు	kādu	no — it is not (negating a statement); No			idi kāru kādu.	98	site,book1000	kādu		
+W0150	స్వీయ	svīya	self				98	site,top1000	svīya		
+W0151	ఏమి ?	ēmi ?	What ?				99	site,book1000	ēmi ?	phrase	
+W0152	తండ్రి	taṇḍri	father; dad				100	site,top1000	taṇḍri		
+W0153	ఏ	ē	any; no				101	site,top1000	ē		
+W0154	పేపర్	pēpar	Paper				102	site,book1000	pēpar		
+W0155	పని	pani	work, task; work			chālā pani undi	103	site,top1000	pani		
+W0156	పుస్తకమం	pustakamaṁ	Book				103	site,book1000	pustakamaṁ		
+W0157	సమయం	samayaṁ	Time				104	site,book1000,top1000	samayaṁ		
+W0158	భాగం	bhāgaṁ	part				104	site,top1000	bhāgaṁ		
+W0159	ఎప్పటి లాగా	eppaṭi lāgā	Always				105	site,book1000	eppaṭi lāgā	phrase	
+W0160	పడుతుంది	paḍutundi	take				105	site,top1000	paḍutundi	inflected	
+W0161	పొందండి	pondaṇḍi	get				106	site,top1000	pondaṇḍi	inflected	
+W0162	తల	tala	head			tala etti chūḍu	107	site,book1000,top1000	tala		
+W0163	స్థలం	sthalaṁ	place				107	site,top1000	sthalaṁ		
+W0164	ముఖం	mukhaṁ	Face				108	site,book1000,top1000	mukhaṁ		
+W0165	తయారు	tayāru	made; make				108	site,top1000	tayāru	inflected	
+W0166	తను	tanu	Eat				109	site,book1000	tanu		
+W0167	నివసిస్తున్నారు	nivasistunnāru	live				109	site,top1000	nivasistunnāru	inflected	
+W0168	పేరు	pēru	name (long ē — not like the country Peru); where; name			nā pēru Raj.	110	site,top1000	pēru		
+W0169	డాగ్	ḍāg	Drink				110	site,book1000	ḍāg		
+W0170	నడవడం	naḍavaḍaṁ	Walk				111	site,book1000	naḍavaḍaṁ		
+W0171	తర్వాత	tarvāta	after				111	site,top1000	tarvāta		
+W0172	రాయు	rāyu	Letter (alphabet)				112	site,book1000	rāyu		
+W0173	తిరిగి	tirigi	back				112	site,top1000	tirigi		
+W0174	చ్దువ్వ	chduvva	Study				113	site,book1000	chduvva		
+W0175	భోజనం	bhōjanaṁ	MealsBhojanam				114	site,book1000	bhōjanaṁ		
+W0176	మాత్రమే	mātramē	only				114	site,top1000	mātramē		
+W0177	బ్ట	bṭa	ClothBatta				115	site,book1000	bṭa		
+W0178	రౌండ్	rauṇḍ	round				115	site,top1000	rauṇḍ		
+W0179	మనిషి	maniṣi	person / human being; man			nēnu manishini.	116	site,top1000	maniṣi		
+W0180	భాష	bhāṣa	LanguageBaasha; language				116	site,book1000,top1000	bhāṣa		
+W0181	అంకెలు	ankelu	Number(number)Ankelu				117	site,book1000	ankelu		
+W0182	సంవత్సరం	saṁvatsaraṁ	year				117	site,top1000	saṁvatsaraṁ		
+W0183	పండు	paṇḍu	Fruits; fruit				118	site,book1000,top1000	paṇḍu		
+W0184	ఆపల్ పండు	āpal paṇḍu	Apple				119	site,book1000	āpal paṇḍu	phrase	
+W0185	షో	ṣō	show				119	site,top1000	ṣō		
+W0186	అర్ట్టపండు	arṭṭapaṇḍu	Banana				120	site,book1000	arṭṭapaṇḍu		
+W0187	సీా ఫ్లం	sīā phlaṁ	Custard apple				122	site,book1000	sīā phlaṁ	phrase	
+W0188	నాకు	nāku	me				122	site,top1000	nāku		
+W0189	త్రదాక్ష	tradākṣa	Grapes				123	site,book1000	tradākṣa		
+W0190	ఇవ్వాలని	ivvālani	give				123	site,top1000	ivvālani		
+W0191	మా	mā	"our (before a noun — also ""my"" for close family); our"			mā amma pēru Sunita.	124	site,top1000	mā		
+W0192	జంపండు	jampaṇḍu	Guava				124	site,book1000	jampaṇḍu		
+W0193	నిమకాయ	nimakāya	Lemon				125	site,book1000	nimakāya		
+W0194	ల్లచి	llachi	Lychee				126	site,book1000	llachi		
+W0195	మామిడి పండు	māmiḍi paṇḍu	Mango				127	site,book1000	māmiḍi paṇḍu	phrase	
+W0196	చాలా	chālā	very; much; too; quite; lot				127	site,top1000	chālā		
+W0197	కేవలం	kēvalaṁ	just				129	site,top1000	kēvalaṁ		
+W0198	రూపం	rūpaṁ	form				130	site,top1000	rūpaṁ		
+W0199	పెరి పండు	peri paṇḍu	Pear				131	site,book1000	peri paṇḍu	phrase	
+W0200	వాక్యం	vākyaṁ	sentence				131	site,top1000	vākyaṁ		
+W0201	అనాసపండు	anāsapaṇḍu	Pineapple				132	site,book1000	anāsapaṇḍu		
+W0202	గొప్ప	goppa	great				132	site,top1000	goppa		
+W0203	రేగుపండు	rēgupaṇḍu	Plum				133	site,book1000	rēgupaṇḍu		
+W0204	అనుకుంటున్నాను	anukuṇṭunnānu	think				133	site,top1000	anukuṇṭunnānu	inflected	
+W0205	దిక్కు	dikku	Direction				134	site,book1000	dikku		
+W0206	సే	sē	say				134	site,top1000	sē		
+W0207	తూర్పు	tūrpu	East				135	site,book1000,top1000	tūrpu		
+W0208	సహాయం	sahāyaṁ	help				135	site,top1000	sahāyaṁ		
+W0209	పశ్చిమ	paśchima	West				136	site,book1000,top1000	paśchima		
+W0210	తక్కువ	takkuva	low; less				136	site,top1000	takkuva		
+W0211	ఉత్తరం	uttaraṁ	North				137	site,book1000	uttaraṁ		
+W0212	లైన్	lain	line				137	site,top1000	lain		
+W0213	దక్షిణం	dakṣiṇaṁ	South				138	site,book1000	dakṣiṇaṁ		
+W0214	తేడా	tēḍā	differ				138	site,top1000	tēḍā		
+W0215	మలుపు	malupu	turning point; turn			kṣaṇamoka malupu	139	site,top1000	malupu		
+W0216	ఇక్కడ	ikkaḍa	Here				139	site,book1000,top1000	ikkaḍa		
+W0217	అక్కడ	akkaḍa	There				140	site,book1000,top1000	akkaḍa		
+W0218	ఆమార్గంలో	āmārgaṁlō	That way				142	site,book1000	āmārgaṁlō		
+W0219	అర్థం	arthaṁ	mean; meant				142	site,top1000	arthaṁ		
+W0220	ఎడమవైపుతిరుగు	eḍamavaiputirugu	Turn left				143	site,book1000	eḍamavaiputirugu		
+W0221	ముందు	mundu	before; front				143	site,top1000	mundu		
+W0222	కుడివైపుతిరుగు	kuḍivaiputirugu	Tur Turn right				144	site,book1000	kuḍivaiputirugu		
+W0223	తరలింపు	taralimpu	move				144	site,top1000	taralimpu		
+W0224	చుట్టూతిరుగు	chuṭṭūtirugu	Turn around				145	site,book1000	chuṭṭūtirugu		
+W0225	ఎదురుగా	edurugā	Opposite				146	site,book1000	edurugā		
+W0226	బాయ్	bāy	boy				146	site,top1000	bāy		
+W0227	మెల్లిగా	melligā	Slowly				147	site,book1000	melligā		
+W0228	వేగంగా	vēgangā	Fast				148	site,book1000	vēgangā		
+W0229	మీద	mīda	On top				149	site,book1000	mīda		
+W0230	అదే	adē	same				149	site,top1000	adē		
+W0231	పైన	paina	Above				150	site,book1000,top1000	paina		
+W0232	లోపలా	lōpalā	Inside				151	site,book1000	lōpalā		
+W0233	అన్ని	anni	all				151	site,top1000	anni		
+W0234	బయటా	bayaṭā	Outside				152	site,book1000	bayaṭā		
+W0235	కింద	kinda	Below; under				153	site,book1000,top1000	kinda		
+W0236	ఉన్నప్పుడు	unnappuḍu	when				153	site,top1000	unnappuḍu		
+W0237	సమీపంలో	samīpaṁlō	Nearby; near				154	site,book1000,top1000	samīpaṁlō		
+W0238	అప్	ap	up				154	site,top1000	ap		
+W0239	ఎడమ	eḍama	Left				155	site,book1000,top1000	eḍama		
+W0240	ఉపయోగం	upayōgaṁ	use				155	site,top1000	upayōgaṁ		
+W0241	మీ	mī	your (formal / plural — the safe default); your			mī pēru ēmiṭi?	156	site,top1000	mī		
+W0242	ప్రధమ	pradhama	Ahead				157	site,book1000	pradhama		
+W0243	మార్గం	mārgaṁ	way; path				157	site,top1000	mārgaṁ		
+W0244	వెనుక	venuka	Behind				158	site,book1000,top1000	venuka		
+W0245	గురించి	gurinchi	about				158	site,top1000	gurinchi		
+W0246	నా వెంటరండి	nā veṇṭaraṇḍi	Follow me				159	site,book1000	nā veṇṭaraṇḍi	inflected phrase	
+W0247	అనేక	anēka	many; several				159	site,top1000	anēka		
+W0248	విమానాశ్రయం	vimānāśrayaṁ	Airport				160	site,book1000	vimānāśrayaṁ		
+W0249	అప్పుడు	appuḍu	then				160	site,top1000	appuḍu		
+W0250	జాగ్రత్తగా నడపనుంది	jāgrattagā naḍapanundi	Drive carefully				161	site,book1000	jāgrattagā naḍapanundi	inflected phrase	
+W0251	వాటిని	vāṭini	them; might				161	site,top1000	vāṭini		
+W0252	రాయడానికి	rāyaḍāniki	write  [form of రాయి]; write		రాయి		162	site,top1000	rāyaḍāniki	multi-gloss verbform	purpose of రాయి
+W0253	రాయి	rāyi	Stone  [form of రాయి]; Stone		రాయి		163	site,book1000,top1000	rāyi	inflected multi-gloss verbform	impFam of రాయి
+W0254	చేస్తాను	chēstānu	would  [form of చేయి]; would		చేయి		163	site,top1000	chēstānu	inflected multi-gloss verbform	future of చేయి
+W0255	పిల్లలు	pillalu	children (collective); Children			mā pillalu vidyārthulu.	164	site,book1000,top1000	pillalu		
+W0256	వంటి	vaṇṭi	like				164	site,top1000	vaṇṭi		
+W0257	ప్రజలు	prajalu	People				165	site,book1000,top1000	prajalu		
+W0258	కాబట్టి	kābaṭṭi	so				165	site,top1000	kābaṭṭi		
+W0259	కొత్త	kotta	New				166	site,book1000,top1000	kotta		
+W0260	పాత	pāta	Old				167	site,book1000,top1000	pāta		
+W0261	ఆమె యొక్క	āme yokka	her				167	site,top1000	āme yokka	phrase	
+W0262	పిచ్చి	pichchi	Mad				168	site,book1000	pichchi		
+W0263	దీర్ఘ	dīrgha	long				168	site,top1000	dīrgha		
+W0264	ప్రశ్న	praśna	Question				169	site,book1000,top1000	praśna		
+W0265	విషయం	viṣayaṁ	thing; subject; matter				170	site,top1000	viṣayaṁ		
+W0266	కిటికీ	kiṭikī	Window				171	site,book1000	kiṭikī		
+W0267	చూడండి	chūḍaṇḍi	see; look  [form of చూడు]; look		చూడు		171	site,top1000	chūḍaṇḍi	inflected multi-gloss verbform	impPol of చూడు
+W0268	గది	gadi	Room				172	site,book1000,top1000	gadi		
+W0269	రెండు	reṇḍu	two; both			reṇḍu kārlu.	173	site,top1000	reṇḍu		
+W0270	గడియారం	gaḍiyāraṁ	Clock				173	site,book1000,top1000	gaḍiyāraṁ		
+W0271	తినండి	tinaṇḍi	Eat ( Respect  [form of తిను]; Eat ( Respect		తిను		174	site,book1000	tinaṇḍi	inflected multi-gloss verbform	impPol of తిను
+W0272	నివాసస్థుడు	nivāsasthuḍu	Resident				175	site,book1000	nivāsasthuḍu		
+W0273	కుటుంభం	kuṭumbhaṁ	Family				176	site,book1000	kuṭumbhaṁ		
+W0274	మరింత	marinta	more				176	site,top1000	marinta		
+W0275	ఇబ్బంది	ibbandi	Trouble				177	site,book1000,top1000	ibbandi		
+W0276	దీపం	dīpaṁ	Lamp				178	site,book1000	dīpaṁ		
+W0277	అనుకొనుట	anukonuṭa	could				178	site,top1000	anukonuṭa		
+W0278	జాగ్రత్త	jāgratta	Be Care				179	site,book1000	jāgratta		
+W0279	వెళ్ళి	veḷḷi	go				179	site,top1000	veḷḷi		
+W0280	ఇప్పుడు	ippuḍu	Now				180	site,book1000,top1000	ippuḍu		
+W0281	వచ్చిన	vachchina	come				180	site,top1000	vachchina		
+W0282	దయచేసి	dayachēsi	please (rare — politeness usually goes in the suffix); Please			"raṇḍi (not ""dayacēsi raṇḍi"")"	181	site,book1000,top1000	dayachēsi		
+W0283	చేసింది	chēsindi	did  [form of చేయి]; did		చేయి		181	site,top1000	chēsindi	inflected multi-gloss verbform	past of చేయి
+W0284	రాయడం	rāyaḍaṁ	Writing				182	site,book1000	rāyaḍaṁ		
+W0285	సంఖ్య	sankhya	number				182	site,top1000	sankhya		
+W0286	శబ్దము	śabdamu	sound				183	site,top1000	śabdamu		
+W0287	వెళ్ళండి	veḷḷaṇḍi	Go  [form of వెళ్ళు]; Go		వెళ్ళు		184	site,book1000	veḷḷaṇḍi	inflected multi-gloss verbform	impPol of వెళ్ళు
+W0288	ఇవ్వండి	ivvaṇḍi	Give  [form of ఇవ్వు]; Give		ఇవ్వు		185	site,book1000	ivvaṇḍi	inflected multi-gloss verbform	impPol of ఇవ్వు
+W0289	అత్యంత	atyanta	most				185	site,top1000	atyanta		
+W0290	ఉండు	uṇḍu	Stay  [form of ఉండు]; Stay		ఉండు		186	site,book1000	uṇḍu	multi-gloss verbform	impFam of ఉండు
+W0291	నా	nā	my (before a noun); my			nā pēru Raj.	187	site,top1000	nā		
+W0292	ఓపిక	ōpika	Patience				187	site,book1000	ōpika		
+W0293	అంతరాయం	antarāyaṁ	Interrupt				188	site,book1000	antarāyaṁ		
+W0294	పైగా	paigā	over				188	site,top1000	paigā		
+W0295	తెలుసు	telusu	to be known (I know); know; knew			nāku telusu — I know	189	site,top1000	telusu		
+W0296	గౌరవం	gauravaṁ	Respect				189	site,book1000	gauravaṁ		
+W0297	పెద్దవాళ్లు	peddavāḷlu	Elders				190	site,book1000	peddavāḷlu		
+W0298	నీటి	nīṭi	water				190	site,top1000	nīṭi		
+W0299	కారణం	kāraṇaṁ	Reason; cause				191	site,book1000,top1000	kāraṇaṁ		
+W0300	కంటే	kaṇṭē	than				191	site,top1000	kaṇṭē		
+W0301	సంతోషం	santōṣaṁ	Happiness				192	site,book1000	santōṣaṁ		
+W0302	కాల్	kāl	call				192	site,top1000	kāl		
+W0303	మొదటి	modaṭi	first (irregular); first			modaṭi pāṭhaṁ.	193	site,top1000	modaṭi		
+W0304	శుభ్రమైన	śubhramaina	Clean				193	site,book1000	śubhramaina		
+W0305	ఎవరు	evaru	who			evaru vastunnāru?	194	site,top1000	evaru		
+W0306	ముద్రణ	mudraṇa	Print				194	site,book1000,top1000	mudraṇa		
+W0307	ఉత్తమ	uttama	Best				195	site,book1000,top1000	uttama		
+W0308	మే	mē	may				195	site,top1000	mē		
+W0309	డౌన్	ḍaun	down				196	site,top1000	ḍaun		
+W0310	ప్రమాణం	pramāṇaṁ	Promise				197	site,book1000	pramāṇaṁ		
+W0311	వైపు	vaipu	side; toward				197	site,top1000	vaipu		
+W0312	శబ్దం	śabdaṁ	Noise				198	site,book1000,top1000	śabdaṁ		
+W0313	ఇష్టం	iṣṭaṁ	Like				199	site,book1000	iṣṭaṁ		
+W0314	ప్రేమ	prēma	Love				200	site,book1000,top1000	prēma		
+W0315	కనుగొనేందుకు	kanugonēnduku	find				200	site,top1000	kanugonēnduku		
+W0316	ఆకర్షణ	ākarṣaṇa	Attraction				201	site,book1000	ākarṣaṇa		
+W0317	ద్వేషం	dvēṣaṁ	Hate				202	site,book1000	dvēṣaṁ		
+W0318	పెళ్లి	peḷli	Marriage				203	site,book1000	peḷli		
+W0319	సొంత	sonta	own				203	site,top1000	sonta		
+W0320	పాఠశాల	pāṭhaśāla	School				204	site,book1000,top1000	pāṭhaśāla		
+W0321	పేజీ	pējī	page				204	site,top1000	pējī		
+W0322	బొమ్మ	bomma	doll; Picture			the Telugu word for guḍiyā	205	site,book1000	bomma		
+W0323	దేశం	dēśaṁ	country; nation			mādi Bhārata Dēśam.	206	site,top1000	dēśaṁ		
+W0324	ధర	dhara	Price; cost				206	site,book1000,top1000	dhara		
+W0325	ఏడుపు	ēḍupu	Cry				207	site,book1000	ēḍupu		
+W0326	దొరకలేదు	dorakalēdu	found				207	site,top1000	dorakalēdu		
+W0327	నవ్వు	navvu	smile, laugh; Smile; laugh			adi navvitē	208	site,book1000,top1000	navvu		
+W0328	సమాధానం	samādhānaṁ	answer				208	site,top1000	samādhānaṁ		
+W0329	గులాబీ	gulābī	Rose				209	site,book1000,top1000	gulābī		
+W0330	ఇప్పుడే	ippuḍē	Right now				210	site,book1000	ippuḍē		
+W0331	పెరుగుతాయి	perugutāyi	grow				210	site,top1000	perugutāyi	inflected	
+W0332	పెద్దది	peddadi	Large				211	site,book1000	peddadi		
+W0333	అధ్యయనం	adhyayanaṁ	study				211	site,top1000	adhyayanaṁ		
+W0334	చిన్నది	chinnadi	Small				212	site,book1000	chinnadi		
+W0335	ఇప్పటికీ	ippaṭikī	still				212	site,top1000	ippaṭikī		
+W0336	కుక్క	kukka	Dog				213	site,book1000,top1000	kukka		
+W0337	తెలుసుకోవడానికి	telusukōvaḍāniki	learn				213	site,top1000	telusukōvaḍāniki		
+W0338	కొట్టడం	koṭṭaḍaṁ	Beating				214	site,book1000	koṭṭaḍaṁ		
+W0339	మొక్క	mokka	plant				214	site,top1000	mokka		
+W0340	ఆవు	āvu	Cow				215	site,book1000,top1000	āvu		
+W0341	కవర్	kavar	cover				215	site,top1000	kavar		
+W0342	ఈగ	īga	Fly				216	site,book1000	īga		
+W0343	ఆహార	āhāra	food				216	site,top1000	āhāra		
+W0344	ఉడుత	uḍuta	Squirrel				217	site,book1000	uḍuta		
+W0345	సూర్యుడు	sūryuḍu	sun				217	site,top1000	sūryuḍu		
+W0346	నాలుగు	nālugu	four			nālugu.	218	site,top1000	nālugu		
+W0347	ఊయల	ūyala	Cradle				218	site,book1000	ūyala		
+W0348	రిషి	riṣi	Rishi				219	site,book1000	riṣi		
+W0349	మధ్య	madhya	between; among; middle				219	site,top1000	madhya		
+W0350	ఎలుక	eluka	Rat				220	site,book1000	eluka		
+W0351	రాష్ట్ర	rāṣṭra	state				220	site,top1000	rāṣṭra		
+W0352	ఏనుగు	ēnugu	Elephant				221	site,book1000	ēnugu		
+W0353	ఉంచేందుకు	unchēnduku	keep				221	site,top1000	unchēnduku		
+W0354	సముద్రం	samudraṁ	Sea				222	site,book1000	samudraṁ		
+W0355	కంటి	kaṇṭi	eye				222	site,top1000	kaṇṭi		
+W0356	ఎప్పుడూ	eppuḍū	never; ever				223	site,top1000	eppuḍū		
+W0357	గత	gata	last; past				224	site,top1000	gata		
+W0358	పదాలు	padālu	Words				225	site,book1000	padālu		
+W0359	వీలు	vīlu	let				225	site,top1000	vīlu		
+W0360	ఆలోచన	ālōchana	thought; idea				226	site,top1000	ālōchana		
+W0361	నగరం	nagaraṁ	city				227	site,top1000	nagaraṁ		
+W0362	చెట్టు	cheṭṭu	tree				228	site,top1000	cheṭṭu		
+W0363	క్రాస్	krās	cross				229	site,top1000	krās		
+W0364	వ్యవసాయ	vyavasāya	farm				230	site,top1000	vyavasāya		
+W0365	ప్రారంభం	prārambhaṁ	start; begin				232	site,top1000	prārambhaṁ		
+W0366	కథ	katha	story				234	site,top1000	katha		
+W0367	రంపపు	rampapu	saw				235	site,top1000	rampapu		
+W0368	ఇప్పటివరకు	ippaṭivaraku	far				236	site,top1000	ippaṭivaraku		
+W0369	సముద్ర	samudra	sea; ocean				237	site,top1000	samudra		
+W0370	డ్రా	ḍrā	draw				238	site,top1000	ḍrā		
+W0371	చివరి	chivari	late				240	site,top1000	chivari		
+W0372	రన్	ran	run				241	site,top1000	ran		
+W0373	చేయలేను	chēyalēnu	don’t				242	site,top1000	chēyalēnu		
+W0374	అయితే	ayitē	while; though				243	site,top1000	ayitē		
+W0375	పత్రికా	patrikā	press				244	site,top1000	patrikā		
+W0376	దగ్గరగా	daggaragā	close				245	site,top1000	daggaragā		
+W0377	రాత్రి	rātri	night				246	site,top1000	rātri		
+W0378	నిజ	nija	real				247	site,top1000	nija		
+W0379	జీవితం	jīvitaṁ	life				248	site,top1000	jīvitaṁ		
+W0380	ఉత్తర	uttara	north				250	site,top1000	uttara		
+W0381	పుస్తకం	pustakaṁ	book				251	site,top1000	pustakaṁ		
+W0382	తీసుకు	tīsuku	carry				252	site,top1000	tīsuku		
+W0383	పట్టింది	paṭṭindi	took				253	site,top1000	paṭṭindi	inflected	
+W0384	సైన్స్	sains	science				254	site,top1000	sains		
+W0385	తినడానికి	tinaḍāniki	eat  [form of తిను]; eat		తిను		255	site,top1000	tinaḍāniki	multi-gloss verbform	purpose of తిను
+W0386	స్నేహితుడు	snēhituḍu	friend (male); friend			nā snēhituḍu vidyārthi.	257	site,top1000	snēhituḍu		
+W0387	ప్రారంభమైంది	prārambhamaindi	began				258	site,top1000	prārambhamaindi		
+W0388	చేప	chēpa	fish				260	site,top1000	chēpa		
+W0389	పర్వతము	parvatamu	mountain				261	site,top1000	parvatamu		
+W0390	ఆపడానికి	āpaḍāniki	stop				262	site,top1000	āpaḍāniki		
+W0391	ఒకసారి	okasāri	once				263	site,top1000	okasāri		
+W0392	బేస్	bēs	base				264	site,top1000	bēs		
+W0393	విను	vinu	to hear, to listen; hear  [form of విను]; hear		విను	vinaḍu — he doesn't listen	265	site,top1000	vinu	multi-gloss verbform	impFam of విను
+W0394	గుర్రం	gurraṁ	horse				266	site,top1000	gurraṁ		
+W0395	కట్	kaṭ	cut				267	site,top1000	kaṭ		
+W0396	ఖచ్చితంగా	khachchitangā	sure				268	site,top1000	khachchitangā		
+W0397	చూడటానికి	chūḍaṭāniki	watch				269	site,top1000	chūḍaṭāniki		
+W0398	చెక్క	chekka	wood				272	site,top1000	chekka		
+W0399	ప్రధాన	pradhāna	main; major				273	site,top1000	pradhāna		
+W0400	అనిపించవచ్చు	anipinchavachchu	seem				275	site,top1000	anipinchavachchu		
+W0401	కలిసి	kalisi	together				276	site,top1000	kalisi		
+W0402	తదుపరి	tadupari	next				277	site,top1000	tadupari		
+W0403	నడిచి	naḍichi	walk				282	site,top1000	naḍichi		
+W0404	ఉదాహరణకు	udāharaṇaku	example				283	site,top1000	udāharaṇaku		
+W0405	సులభం	sulabhaṁ	ease				284	site,top1000	sulabhaṁ		
+W0406	కాగితం	kāgitaṁ	paper				285	site,top1000	kāgitaṁ		
+W0407	సమూహం	samūhaṁ	group				286	site,top1000	samūhaṁ		
+W0408	ఎల్లప్పుడూ	ellappuḍū	always				287	site,top1000	ellappuḍū		
+W0409	సంగీతం	sangītaṁ	music				288	site,top1000	sangītaṁ		
+W0410	తరచుగా	tarachugā	often				292	site,top1000	tarachugā		
+W0411	లేఖ	lēkha	letter				293	site,top1000	lēkha		
+W0412	మైలు	mailu	mile				295	site,top1000	mailu		
+W0413	నది	nadi	river				296	site,top1000	nadi		
+W0414	కారు	kāru	car (loanword); car			idi kāru.	297	site,top1000	kāru	inflected	
+W0415	అడుగుల	aḍugula	feet				298	site,top1000	aḍugula		
+W0416	సంరక్షణ	saṁrakṣaṇa	care				299	site,top1000	saṁrakṣaṇa		
+W0417	రెండవ	reṇḍava	second				300	site,top1000	reṇḍava		
+W0418	తగినంత	taginanta	enough				301	site,top1000	taginanta		
+W0419	సాదా	sādā	plain				302	site,top1000	sādā		
+W0420	అమ్మాయి	ammāyi	girl			nēnu ammāyini.	303	site,top1000	ammāyi	inflected	
+W0421	సాధారణ	sādhāraṇa	usual; common; simple; general				304	site,top1000	sādhāraṇa		
+W0422	యువ	yuva	young				305	site,top1000	yuva		
+W0423	సిద్ధంగా	siddhangā	ready				306	site,top1000	siddhangā		
+W0424	ఎరుపు	erupu	red				309	site,top1000	erupu		
+W0425	జాబితా	jābitā	list				310	site,top1000	jābitā		
+W0426	అనుభూతి	anubhūti	feel				312	site,top1000	anubhūti		
+W0427	చర్చ	charcha	talk				313	site,top1000	charcha		
+W0428	పక్షి	pakṣi	bird				314	site,top1000	pakṣi		
+W0429	త్వరలో	tvaralō	soon				315	site,top1000	tvaralō		
+W0430	శరీర	śarīra	body				316	site,top1000	śarīra		
+W0431	కుటుంబం	kuṭumbaṁ	family				318	site,top1000	kuṭumbaṁ		
+W0432	ప్రత్యక్ష	pratyakṣa	direct				319	site,top1000	pratyakṣa		
+W0433	భంగిమలో	bhangimalō	pose				320	site,top1000	bhangimalō		
+W0434	వదిలి	vadili	leave				321	site,top1000	vadili		
+W0435	పాట	pāṭa	song			pelli pāṭa pāḍē	322	site,top1000	pāṭa		
+W0436	కొలవటానికి	kolavaṭāniki	measure				323	site,top1000	kolavaṭāniki		
+W0437	తలుపు	talupu	door				324	site,top1000	talupu		
+W0438	ఉత్పత్తి	utpatti	product; produce				325	site,top1000	utpatti		
+W0439	సంఖ్యా	sankhyā	numeral				328	site,top1000	sankhyā		
+W0440	తరగతి	taragati	class				329	site,top1000	taragati		
+W0441	జరిగే	jarigē	happen				332	site,top1000	jarigē		
+W0442	పూర్తి	pūrti	completed, finished; complete; full			pūrti ayyindi	333	site,top1000	pūrti		
+W0443	ఓడ	ōḍa	ship				334	site,top1000	ōḍa		
+W0444	ప్రాంతం	prāntaṁ	area; region				335	site,top1000	prāntaṁ		
+W0445	సగం	sagaṁ	half				336	site,top1000	sagaṁ		
+W0446	రాక్	rāk	rock				337	site,top1000	rāk		
+W0447	ఆర్డర్	ārḍar	order				338	site,top1000	ārḍar		
+W0448	దక్షిణ	dakṣiṇa	south				340	site,top1000	dakṣiṇa		
+W0449	సమస్య	samasya	problem				341	site,top1000	samasya		
+W0450	ముక్క	mukka	piece				342	site,top1000	mukka		
+W0451	చెప్పారు	cheppāru	told  [form of చెప్పు]; told		చెప్పు		343	site,top1000	cheppāru	inflected multi-gloss verbform	past of చెప్పు
+W0452	పాస్	pās	pass				345	site,top1000	pās		
+W0453	టాప్	ṭāp	top				347	site,top1000	ṭāp		
+W0454	మొత్తం	mottaṁ	whole; total				348	site,top1000	mottaṁ		
+W0455	రాజు	rāju	king				349	site,top1000	rāju		
+W0456	వీధి	vīdhi	street				350	site,top1000	vīdhi		
+W0457	అంగుళం	anguḷaṁ	inch				351	site,top1000	anguḷaṁ		
+W0458	గుణిస్తారు	guṇistāru	multiply				352	site,top1000	guṇistāru	inflected	
+W0459	ఏమీ	ēmī	nothing				353	site,top1000	ēmī		
+W0460	కోర్సు	kōrsu	course				354	site,top1000	kōrsu		
+W0461	ఉండడానికి	uṇḍaḍāniki	stay  [form of ఉండు]; stay		ఉండు		355	site,top1000	uṇḍaḍāniki	multi-gloss verbform	purpose of ఉండు
+W0462	చక్రం	chakraṁ	wheel				356	site,top1000	chakraṁ		
+W0463	శక్తి	śakti	force; power; energy				358	site,top1000	śakti		
+W0464	నీలం	nīlaṁ	blue				359	site,top1000	nīlaṁ		
+W0465	వస్తువు	vastuvu	object				360	site,top1000	vastuvu		
+W0466	నిర్ణయించుకుంటారు	nirṇayinchukuṇṭāru	decide				361	site,top1000	nirṇayinchukuṇṭāru	inflected	
+W0467	ఉపరితల	uparitala	surface				362	site,top1000	uparitala		
+W0468	లోతైన	lōtaina	deep				363	site,top1000	lōtaina		
+W0469	చంద్రుడు	chandruḍu	moon				364	site,top1000	chandruḍu		
+W0470	ద్వీపం	dvīpaṁ	island				365	site,top1000	dvīpaṁ		
+W0471	అడుగు	aḍugu	step, foot; to ask; foot; step			aḍugu kalipi	366	site,top1000	aḍugu		
+W0472	వ్యవస్థ	vyavastha	system				367	site,top1000	vyavastha		
+W0473	బిజీగా	bijīgā	busy				368	site,top1000	bijīgā		
+W0474	పరీక్ష	parīkṣa	test				369	site,top1000	parīkṣa		
+W0475	రికార్డు	rikārḍu	record				370	site,top1000	rikārḍu		
+W0476	పడవ	paḍava	boat				371	site,top1000	paḍava		
+W0477	బంగారు	bangāru	gold, golden (also a pet name); gold			baṅgāru bomma	373	site,top1000	bangāru	inflected	
+W0478	సాధ్యం	sādhyaṁ	possible				374	site,top1000	sādhyaṁ		
+W0479	విమానం	vimānaṁ	plane				375	site,top1000	vimānaṁ		
+W0480	మారుగా	mārugā	stead				376	site,top1000	mārugā		
+W0481	పొడి	poḍi	dry				377	site,top1000	poḍi		
+W0482	ఆశ్చర్యానికి	āścharyāniki	wonder				378	site,top1000	āścharyāniki		
+W0483	వేల	vēla	thousand				380	site,top1000	vēla		
+W0484	క్రితం	kritaṁ	ago				381	site,top1000	kritaṁ		
+W0485	నడిచింది	naḍichindi	ran  [form of నడవు]; ran		నడవు		382	site,top1000	naḍichindi	inflected multi-gloss verbform	past of నడవు
+W0486	తనిఖీ	tanikhī	check				383	site,top1000	tanikhī		
+W0487	గేమ్	gēm	game				384	site,top1000	gēm		
+W0488	ఆకారం	ākāraṁ	shape				385	site,top1000	ākāraṁ		
+W0489	పోల్చుతారు	pōlchutāru	equate				386	site,top1000	pōlchutāru	inflected	
+W0490	మిస్	mis	miss				388	site,top1000	mis		
+W0491	తీసుకువచ్చారు	tīsukuvachchāru	brought				389	site,top1000	tīsukuvachchāru	inflected	
+W0492	మంచు	manchu	snow; ice				391	site,top1000	manchu		
+W0493	టైర్	ṭair	tire				392	site,top1000	ṭair		
+W0494	తీసుకుని	tīsukuni	bring				393	site,top1000	tīsukuni		
+W0495	సుదూర	sudūra	distant				395	site,top1000	sudūra		
+W0496	పూరించడానికి	pūrinchaḍāniki	fill				396	site,top1000	pūrinchaḍāniki		
+W0497	పెయింట్	peyiṇṭ	paint				398	site,top1000	peyiṇṭ		
+W0498	యూనిట్	yūniṭ	unit				401	site,top1000	yūniṭ		
+W0499	పట్టణం	paṭṭaṇaṁ	town				403	site,top1000	paṭṭaṇaṁ		
+W0500	జరిమానా	jarimānā	fine				404	site,top1000	jarimānā		
+W0501	ఫ్లై	phlai	fly				406	site,top1000	phlai		
+W0502	వస్తాయి	vastāyi	fall				407	site,top1000	vastāyi	inflected	
+W0503	దారి	dāri	way, road, route; lead			dārilō — on the way	408	site,top1000	dāri		
+W0504	క్రై	krai	cry				409	site,top1000	krai		
+W0505	కృష్ణ	kṛṣṇa	dark				410	site,top1000	kṛṣṇa		
+W0506	యంత్రం	yantraṁ	machine				411	site,top1000	yantraṁ		
+W0507	గమనిక	gamanika	note				412	site,top1000	gamanika		
+W0508	వేచి	vēchi	wait				413	site,top1000	vēchi		
+W0509	ప్రణాళిక	praṇāḷika	plan				414	site,top1000	praṇāḷika		
+W0510	ఫిగర్	phigar	figure				415	site,top1000	phigar		
+W0511	బాక్స్	bāks	box				417	site,top1000	bāks		
+W0512	నామవాచకం	nāmavāchakaṁ	noun				418	site,top1000	nāmavāchakaṁ		
+W0513	ఫీల్డ్	phīlḍ	field				419	site,top1000	phīlḍ		
+W0514	మిగిలిన	migilina	rest				420	site,top1000	migilina		
+W0515	సరైన	saraina	correct; proper				421	site,top1000	saraina		
+W0516	సామర్థ్యం	sāmarthyaṁ	able				422	site,top1000	sāmarthyaṁ		
+W0517	పౌండ్	pauṇḍ	pound				423	site,top1000	pauṇḍ		
+W0518	పూర్తయింది	pūrtayindi	done				424	site,top1000	pūrtayindi	inflected	
+W0519	అందం	andaṁ	beauty				425	site,top1000	andaṁ		
+W0520	డ్రైవ్	ḍraiv	drive				426	site,top1000	ḍraiv		
+W0521	నిలిచి	nilichi	stood				427	site,top1000	nilichi		
+W0522	బోధించడానికి	bōdhinchaḍāniki	teach				430	site,top1000	bōdhinchaḍāniki		
+W0523	వారం	vāraṁ	week				431	site,top1000	vāraṁ		
+W0524	ఆఖరి	ākhari	final				432	site,top1000	ākhari		
+W0525	ఇచ్చింది	ichchindi	gave  [form of ఇవ్వు]; gave		ఇవ్వు		433	site,top1000	ichchindi	inflected multi-gloss verbform	past of ఇవ్వు
+W0526	ఆకుపచ్చ	ākupachcha	green				434	site,top1000	ākupachcha		
+W0527	శీఘ్ర	śīghra	quick				436	site,top1000	śīghra		
+W0528	అభివృద్ధి	abhivṛddhi	develop				437	site,top1000	abhivṛddhi		
+W0529	వెచ్చని	vechchani	warm				439	site,top1000	vechchani		
+W0530	ఉచిత	uchita	free				440	site,top1000	uchita		
+W0531	నిమిషం	nimiṣaṁ	minute			oka nimiṣaṁ!	441	site,top1000	nimiṣaṁ		
+W0532	బలమైన	balamaina	strong				442	site,top1000	balamaina		
+W0533	ప్రత్యేక	pratyēka	special; separate; particular				443	site,top1000	pratyēka		
+W0534	మనసు	manasu	heart, mind; mind			manasē karaga lēdu	444	site,top1000	manasu		
+W0535	స్పష్టమైన	spaṣṭamaina	clear				446	site,top1000	spaṣṭamaina		
+W0536	తోక	tōka	tail				447	site,top1000	tōka		
+W0537	నిజానికి	nijāniki	fact				449	site,top1000	nijāniki		
+W0538	స్పేస్	spēs	space				450	site,top1000	spēs		
+W0539	విన్న	vinna	heard				451	site,top1000	vinna		
+W0540	గంట	gaṇṭa	hour				453	site,top1000	gaṇṭa		
+W0541	నిజమైన	nijamaina	TRUE				455	site,top1000	nijamaina		
+W0542	సమయంలో	samayaṁlō	during				456	site,top1000	samayaṁlō		
+W0543	వంద	vanda	hundred			vanda rūpāyalu.	457	site,top1000	vanda		
+W0544	ఐదు	aidu	five			aidu rūpāyalu.	458	site,top1000	aidu		
+W0545	గుర్తు	gurtu	remember				459	site,top1000	gurtu		
+W0546	ప్రారంభ	prārambha	early				461	site,top1000	prārambha		
+W0547	పట్టి	paṭṭi	hold				462	site,top1000	paṭṭi		
+W0548	వడ్డీ	vaḍḍī	interest				465	site,top1000	vaḍḍī		
+W0549	చేరుకోవడానికి	chērukōvaḍāniki	reach				466	site,top1000	chērukōvaḍāniki		
+W0550	ఫాస్ట్	phāsṭ	fast				467	site,top1000	phāsṭ		
+W0551	క్రియ	kriya	verb				468	site,top1000	kriya		
+W0552	పాడే	pāḍē	sing				469	site,top1000	pāḍē		
+W0553	వినండి	vinaṇḍi	listen  [form of విను]; listen		విను		470	site,top1000	vinaṇḍi	inflected multi-gloss verbform	impPol of విను
+W0554	ఆరు	āru	six			āru.	471	site,top1000	āru		
+W0555	పట్టిక	paṭṭika	table				472	site,top1000	paṭṭika		
+W0556	ప్రయాణ	prayāṇa	travel				473	site,top1000	prayāṇa		
+W0557	ఉదయం	udayaṁ	morning				475	site,top1000	udayaṁ		
+W0558	పది	padi	ten			padi mandi.	476	site,top1000	padi		
+W0559	అచ్చు	achchu	vowel				479	site,top1000	achchu		
+W0560	యుద్ధం	yuddhaṁ	war				481	site,top1000	yuddhaṁ		
+W0561	లే	lē	lay				482	site,top1000	lē		
+W0562	వ్యతిరేకంగా	vyatirēkangā	against				483	site,top1000	vyatirēkangā		
+W0563	నమూనా	namūnā	pattern				484	site,top1000	namūnā		
+W0564	నెమ్మదిగా	nemmadigā	slow				485	site,top1000	nemmadigā		
+W0565	సెంటర్	seṇṭar	center				486	site,top1000	seṇṭar		
+W0566	వ్యక్తి	vyakti	person				488	site,top1000	vyakti		
+W0567	డబ్బు	ḍabbu	money				489	site,top1000	ḍabbu		
+W0568	సర్వ్	sarv	serve				490	site,top1000	sarv		
+W0569	టెలిఫోన్	ṭeliphōn	appear				491	site,top1000	ṭeliphōn		
+W0570	రోడ్డు	rōḍḍu	road				492	site,top1000	rōḍḍu		
+W0571	వర్షం	varṣaṁ	rain			varṣaṁ vastundi	494	site,top1000	varṣaṁ		
+W0572	పాలన	pālana	rule				495	site,top1000	pālana		
+W0573	పాలించే	pālinchē	govern				496	site,top1000	pālinchē		
+W0574	చల్లని	challani	cold; cool				498	site,top1000	challani		
+W0575	వాయిస్	vāyis	voice				500	site,top1000	vāyis		
+W0576	వేట	vēṭa	hunt				502	site,top1000	vēṭa		
+W0577	మూడింటిని	mūḍiṇṭini	probable				503	site,top1000	mūḍiṇṭini		
+W0578	మంచం	manchaṁ	bed				504	site,top1000	manchaṁ		
+W0579	సోదరుడు	sōdaruḍu	brother				505	site,top1000	sōdaruḍu		
+W0580	రైడ్	raiḍ	ride				507	site,top1000	raiḍ		
+W0581	సెల్	sel	cell				508	site,top1000	sel		
+W0582	నమ్మకం	nammakaṁ	believe				509	site,top1000	nammakaṁ		
+W0583	బహుశా	bahuśā	perhaps				510	site,top1000	bahuśā		
+W0584	ఎంచుకోండి	enchukōṇḍi	pick; choose; select				511	site,top1000	enchukōṇḍi	inflected	
+W0585	ఆకస్మిక	ākasmika	sudden				512	site,top1000	ākasmika		
+W0586	కౌంట్	kauṇṭ	count				513	site,top1000	kauṇṭ		
+W0587	చదరపు	chadarapu	square				514	site,top1000	chadarapu		
+W0588	పొడవు	poḍavu	length				516	site,top1000	poḍavu		
+W0589	య	ya	represent				517	site,top1000	ya		
+W0590	కళ	kaḷa	art				518	site,top1000	kaḷa		
+W0591	పరిమాణం	parimāṇaṁ	size				521	site,top1000	parimāṇaṁ		
+W0592	మారుతుంటాయి	mārutuṇṭāyi	vary				522	site,top1000	mārutuṇṭāyi	inflected	
+W0593	స్థిరపడేందుకు	sthirapaḍēnduku	settle				523	site,top1000	sthirapaḍēnduku		
+W0594	మాట్లాడటం	māṭlāḍaṭaṁ	speak				524	site,top1000	māṭlāḍaṭaṁ		
+W0595	బరువు	baruvu	weight				525	site,top1000	baruvu		
+W0596	సర్కిల్	sarkil	circle				529	site,top1000	sarkil		
+W0597	జత	jata	pair				530	site,top1000	jata		
+W0598	విభజన	vibhajana	divide; division				532	site,top1000	vibhajana		
+W0599	అక్షరం	akṣaraṁ	syllable				533	site,top1000	akṣaraṁ		
+W0600	భావించాడు	bhāvinchāḍu	felt				534	site,top1000	bhāvinchāḍu	inflected	
+W0601	బంతి	banti	ball				536	site,top1000	banti		
+W0602	ఇంకా	inkā	yet				537	site,top1000	inkā		
+W0603	అల	ala	wave			alalu alisi	538	site,top1000	ala		
+W0604	డ్రాప్	ḍrāp	drop				539	site,top1000	ḍrāp		
+W0605	గుండె	guṇḍe	heart				540	site,top1000	guṇḍe		
+W0606	ఉన్నాను	unnānu	am  [form of ఉండు]; am		ఉండు		541	site,top1000	unnānu	inflected multi-gloss verbform	past of ఉండు
+W0607	ప్రస్తుతం	prastutaṁ	present				542	site,top1000	prastutaṁ		
+W0608	భారీ	bhārī	heavy; huge				543	site,top1000	bhārī		
+W0609	డ్యాన్స్	ḍyāns	dance				544	site,top1000	ḍyāns		
+W0610	ఇంజిన్	injin	engine				545	site,top1000	injin		
+W0611	స్థానం	sthānaṁ	position				546	site,top1000	sthānaṁ		
+W0612	చేయి	chēyi	arm  [form of చేయి]; arm		చేయి		547	site,top1000	chēyi	multi-gloss verbform	impFam of చేయి
+W0613	విస్తృత	vistṛta	wide; broad				548	site,top1000	vistṛta		
+W0614	ప్రయాణమయ్యారు	prayāṇamayyāru	sail				549	site,top1000	prayāṇamayyāru	inflected	
+W0615	పదార్థం	padārthaṁ	material				550	site,top1000	padārthaṁ		
+W0616	భిన్నం	bhinnaṁ	fraction				551	site,top1000	bhinnaṁ		
+W0617	అటవీ	aṭavī	forest				552	site,top1000	aṭavī		
+W0618	కూర్చుని	kūrchuni	sit				553	site,top1000	kūrchuni		
+W0619	రేసు	rēsu	race				554	site,top1000	rēsu		
+W0620	విండో	viṇḍō	window				555	site,top1000	viṇḍō		
+W0621	వేసవి	vēsavi	summer			vēsavilō	557	site,top1000	vēsavi		
+W0622	రైలు	railu	train; rail				558	site,top1000	railu		
+W0623	నిద్ర	nidra	sleep				559	site,top1000	nidra		
+W0624	రుజువు	rujuvu	prove				560	site,top1000	rujuvu		
+W0625	ఒంటరి	oṇṭari	lone				561	site,top1000	oṇṭari		
+W0626	వ్యాయామం	vyāyāmaṁ	exercise				563	site,top1000	vyāyāmaṁ		
+W0627	గోడ	gōḍa	wall				564	site,top1000	gōḍa		
+W0628	క్యాచ్	kyāch	catch; caught				565	site,top1000	kyāch		
+W0629	మౌంట్	mauṇṭ	mount				566	site,top1000	mauṇṭ		
+W0630	అనుకుంటున్నారా	anukuṇṭunnārā	wish				567	site,top1000	anukuṇṭunnārā		
+W0631	ఆకాశంలో	ākāśaṁlō	sky				568	site,top1000	ākāśaṁlō		
+W0632	బోర్డు	bōrḍu	board				569	site,top1000	bōrḍu		
+W0633	ఆనందం	ānandaṁ	joy				570	site,top1000	ānandaṁ		
+W0634	శీతాకాలంలో	śītākālaṁlō	winter				571	site,top1000	śītākālaṁlō		
+W0635	శని	śani	sat				572	site,top1000	śani		
+W0636	రాసిన	rāsina	written				573	site,top1000	rāsina		
+W0637	అడవి	aḍavi	wild				574	site,top1000	aḍavi		
+W0638	వాయిద్యం	vāyidyaṁ	instrument				575	site,top1000	vāyidyaṁ		
+W0639	ఉంచింది	unchindi	kept				576	site,top1000	unchindi	inflected	
+W0640	గాజు	gāju	glass				577	site,top1000	gāju		
+W0641	గడ్డి	gaḍḍi	grass				578	site,top1000	gaḍḍi		
+W0642	ఉద్యోగం	udyōgaṁ	job				580	site,top1000	udyōgaṁ		
+W0643	అంచు	anchu	edge				581	site,top1000	anchu		
+W0644	సైన్	sain	sign				582	site,top1000	sain		
+W0645	పర్యటన	paryaṭana	visit				583	site,top1000	paryaṭana		
+W0646	సాఫ్ట్	sāphṭ	soft				585	site,top1000	sāphṭ		
+W0647	సరదాగా	saradāgā	fun				586	site,top1000	saradāgā		
+W0648	బ్రైట్	braiṭ	bright				587	site,top1000	braiṭ		
+W0649	గ్యాస్	gyās	gas				588	site,top1000	gyās		
+W0650	వాతావరణ	vātāvaraṇa	weather				589	site,top1000	vātāvaraṇa		
+W0651	నెల	nela	month				590	site,top1000	nela		
+W0652	భరించలేదని	bharinchalēdani	bear				592	site,top1000	bharinchalēdani		
+W0653	సంతోషంగా	santōṣangā	happy				594	site,top1000	santōṣangā		
+W0654	ఆశిస్తున్నాము	āśistunnāmu	hope				595	site,top1000	āśistunnāmu	inflected	
+W0655	పుష్పం	puṣpaṁ	flower				596	site,top1000	puṣpaṁ		
+W0656	దుస్తులు ధరింపజేయు	dustulu dharimpajēyu	clothe				597	site,top1000	dustulu dharimpajēyu	phrase	
+W0657	వింత	vinta	strange				598	site,top1000	vinta		
+W0658	వెళ్లిపోవడంతో	veḷlipōvaḍantō	gone				599	site,top1000	veḷlipōvaḍantō		
+W0659	వాణిజ్య	vāṇijya	trade				600	site,top1000	vāṇijya		
+W0660	శ్రావ్యత	śrāvyata	melody				601	site,top1000	śrāvyata		
+W0661	యాత్ర	yātra	trip				602	site,top1000	yātra		
+W0662	కార్యాలయం	kāryālayaṁ	office				603	site,top1000	kāryālayaṁ		
+W0663	అందుకుంటారు	andukuṇṭāru	receive				604	site,top1000	andukuṇṭāru	inflected	
+W0664	వరుసగా	varusagā	row				605	site,top1000	varusagā		
+W0665	నోరు	nōru	mouth				606	site,top1000	nōru		
+W0666	ఖచ్చితమైన	khachchitamaina	exact				607	site,top1000	khachchitamaina		
+W0667	చిహ్నం	chihnaṁ	symbol				608	site,top1000	chihnaṁ		
+W0668	చనిపోయే	chanipōyē	die				609	site,top1000	chanipōyē		
+W0669	కనీసం	kanīsaṁ	least				610	site,top1000	kanīsaṁ		
+W0670	అరవడం	aravaḍaṁ	shout				612	site,top1000	aravaḍaṁ		
+W0671	తప్ప	tappa	except				613	site,top1000	tappa		
+W0672	వ్రాసారు	vrāsāru	wrote				614	site,top1000	vrāsāru	inflected	
+W0673	విత్తనం	vittanaṁ	seed				615	site,top1000	vittanaṁ		
+W0674	టోన్	ṭōn	tone				616	site,top1000	ṭōn		
+W0675	చేరడానికి	chēraḍāniki	join				617	site,top1000	chēraḍāniki		
+W0676	సూచిస్తున్నాయి	sūchistunnāyi	suggest; indicate				618	site,top1000	sūchistunnāyi	inflected	
+W0677	శుభ్రంగా	śubhrangā	clean				619	site,top1000	śubhrangā		
+W0678	విరామం	virāmaṁ	break				620	site,top1000	virāmaṁ		
+W0679	లేడీ	lēḍī	lady				621	site,top1000	lēḍī		
+W0680	పెరగడం	peragaḍaṁ	rise				623	site,top1000	peragaḍaṁ		
+W0681	దెబ్బ	debba	blow				625	site,top1000	debba		
+W0682	చమురు	chamuru	oil				626	site,top1000	chamuru		
+W0683	రక్త	rakta	blood				627	site,top1000	rakta		
+W0684	టచ్	ṭach	touch				628	site,top1000	ṭach		
+W0685	పెరిగింది	perigindi	grew				629	site,top1000	perigindi	inflected	
+W0686	శాతం	śātaṁ	cent				630	site,top1000	śātaṁ		
+W0687	కలపాలి	kalapāli	mix				631	site,top1000	kalapāli		
+W0688	జట్టు	jaṭṭu	team				632	site,top1000	jaṭṭu		
+W0689	వైర్	vair	wire				633	site,top1000	vair		
+W0690	కోల్పోయింది	kōlpōyindi	lost				635	site,top1000	kōlpōyindi	inflected	
+W0691	ధరిస్తారు	dharistāru	wear				637	site,top1000	dharistāru	inflected	
+W0692	తోట	tōṭa	garden				638	site,top1000	tōṭa		
+W0693	సమాన	samāna	equal				639	site,top1000	samāna		
+W0694	పంపిన	pampina	sent				640	site,top1000	pampina		
+W0695	పడిపోయింది	paḍipōyindi	fell				642	site,top1000	paḍipōyindi	inflected	
+W0696	సరిపోయే	saripōyē	fit				643	site,top1000	saripōyē		
+W0697	ప్రవాహం	pravāhaṁ	flow				644	site,top1000	pravāhaṁ		
+W0698	న్యాయమైన	nyāyamaina	fair				645	site,top1000	nyāyamaina		
+W0699	బ్యాంకు	byānku	bank				646	site,top1000	byānku		
+W0700	సేకరించడానికి	sēkarinchaḍāniki	collect; gather				647	site,top1000	sēkarinchaḍāniki		
+W0701	సేవ్	sēv	save				648	site,top1000	sēv		
+W0702	నియంత్రణ	niyantraṇa	control				649	site,top1000	niyantraṇa		
+W0703	దశాంశ	daśāṁśa	decimal				650	site,top1000	daśāṁśa		
+W0704	చెవి	chevi	ear				651	site,top1000	chevi		
+W0705	వేరే	vērē	else				652	site,top1000	vērē		
+W0706	విరిగింది	virigindi	broke				654	site,top1000	virigindi	inflected	
+W0707	కేసు	kēsu	case				655	site,top1000	kēsu		
+W0708	చంపడానికి	champaḍāniki	kill				657	site,top1000	champaḍāniki		
+W0709	కుమారుడు	kumāruḍu	son				658	site,top1000	kumāruḍu		
+W0710	సరస్సు	sarassu	lake				659	site,top1000	sarassu		
+W0711	క్షణం	kṣaṇaṁ	moment			ā kṣaṇaṁ	660	site,top1000	kṣaṇaṁ		
+W0712	స్థాయి	sthāyi	scale; level				661	site,top1000	sthāyi	inflected	
+W0713	బిగ్గరగా	biggaragā	loud				662	site,top1000	biggaragā		
+W0714	వసంత	vasanta	spring				663	site,top1000	vasanta		
+W0715	గమనించి	gamaninchi	observe				664	site,top1000	gamaninchi		
+W0716	పిల్లల	pillala	child				665	site,top1000	pillala		
+W0717	నేరుగా	nērugā	straight				666	site,top1000	nērugā		
+W0718	హల్లు	hallu	consonant				667	site,top1000	hallu		
+W0719	నిఘంటువు	nighaṇṭuvu	dictionary				669	site,top1000	nighaṇṭuvu		
+W0720	వేగం	vēgaṁ	speed				671	site,top1000	vēgaṁ		
+W0721	పద్ధతి	paddhati	method				672	site,top1000	paddhati		
+W0722	అవయవ	avayava	organ				673	site,top1000	avayava		
+W0723	చెల్లించటానికి	chellinchaṭāniki	pay				674	site,top1000	chellinchaṭāniki		
+W0724	వయస్సు	vayassu	age				675	site,top1000	vayassu		
+W0725	విభాగం	vibhāgaṁ	section				676	site,top1000	vibhāgaṁ		
+W0726	దుస్తుల	dustula	dress				677	site,top1000	dustula		
+W0727	క్లౌడ్	klauḍ	cloud				678	site,top1000	klauḍ		
+W0728	ఆశ్చర్యం	āścharyaṁ	surprise				679	site,top1000	āścharyaṁ		
+W0729	నిశ్శబ్ద	niśśabda	quiet; silent				680	site,top1000	niśśabda		
+W0730	ఆరోహణను	ārōhaṇanu	climb				683	site,top1000	ārōhaṇanu		
+W0731	డిజైన్	ḍijain	design				685	site,top1000	ḍijain		
+W0732	పేద	pēda	poor				686	site,top1000	pēda		
+W0733	ప్రయోగం	prayōgaṁ	experiment				688	site,top1000	prayōgaṁ		
+W0734	దిగువ	diguva	bottom				689	site,top1000	diguva		
+W0735	కీ	kī	key				690	site,top1000	kī		
+W0736	ఇనుము	inumu	iron				691	site,top1000	inumu		
+W0737	ఒకే	okē	single				692	site,top1000	okē		
+W0738	స్టిక్	sṭik	stick				693	site,top1000	sṭik		
+W0739	ఫ్లాట్	phlāṭ	flat				694	site,top1000	phlāṭ		
+W0740	ఇరవై	iravai	twenty (20); twenty			nā vayasu iravai.	695	site,top1000	iravai		
+W0741	చర్మం	charmaṁ	skin				696	site,top1000	charmaṁ		
+W0742	చిరునవ్వు	chirunavvu	smile				697	site,top1000	chirunavvu		
+W0743	క్రీజ్	krīj	crease				698	site,top1000	krīj		
+W0744	రంధ్రం	randhraṁ	hole				699	site,top1000	randhraṁ		
+W0745	జంప్	jamp	jump				700	site,top1000	jamp		
+W0746	బేబీ	bēbī	baby				701	site,top1000	bēbī		
+W0747	ఎనిమిది	enimidi	eight			enimidi.	702	site,top1000	enimidi		
+W0748	గ్రామం	grāmaṁ	village				703	site,top1000	grāmaṁ		
+W0749	మీట్	mīṭ	meet				704	site,top1000	mīṭ		
+W0750	రూట్	rūṭ	root				705	site,top1000	rūṭ		
+W0751	కొనుగోలు	konugōlu	buy; bought				706	site,top1000	konugōlu		
+W0752	పెంచడానికి	penchaḍāniki	raise				707	site,top1000	penchaḍāniki		
+W0753	పరిష్కరించడానికి	pariṣkarinchaḍāniki	solve				708	site,top1000	pariṣkarinchaḍāniki		
+W0754	లేదో	lēdō	whether				710	site,top1000	lēdō		
+W0755	పుష్	puṣ	push				711	site,top1000	puṣ		
+W0756	ఏడు	ēḍu	seven			ēḍu.	712	site,top1000	ēḍu		
+W0757	పేరా	pērā	paragraph				713	site,top1000	pērā		
+W0758	మూడో	mūḍō	third				714	site,top1000	mūḍō		
+W0759	వలెను	valenu	shall				715	site,top1000	valenu		
+W0760	ఒక్కొక	okkoka	held				716	site,top1000	okkoka		
+W0761	జుట్టు	juṭṭu	hair				717	site,top1000	juṭṭu		
+W0762	వర్ణించేందుకు	varṇinchēnduku	describe				718	site,top1000	varṇinchēnduku		
+W0763	కుక్	kuk	cook				719	site,top1000	kuk		
+W0764	ఫ్లోర్	phlōr	floor				720	site,top1000	phlōr		
+W0765	గాని	gāni	either				721	site,top1000	gāni		
+W0766	ఫలితంగా	phalitangā	result				722	site,top1000	phalitangā		
+W0767	బర్న్	barn	burn				723	site,top1000	barn		
+W0768	కొండ	koṇḍa	hill				724	site,top1000	koṇḍa		
+W0769	సురక్షితంగా	surakṣitangā	safe				725	site,top1000	surakṣitangā		
+W0770	పిల్లి	pilli	cat				726	site,top1000	pilli		
+W0771	శతాబ్దం	śatābdaṁ	century				727	site,top1000	śatābdaṁ		
+W0772	పరిగణలోకి	parigaṇalōki	consider				728	site,top1000	parigaṇalōki		
+W0773	తీరం	tīraṁ	coast; shore				732	site,top1000	tīraṁ		
+W0774	ప్రతిని	pratini	copy				733	site,top1000	pratini		
+W0775	పదబంధం	padabandhaṁ	phrase				734	site,top1000	padabandhaṁ		
+W0776	పొడవైన	poḍavaina	tall				736	site,top1000	poḍavaina		
+W0777	ఇసుక	isuka	sand				737	site,top1000	isuka		
+W0778	మట్టి	maṭṭi	soil				738	site,top1000	maṭṭi		
+W0779	ఉష్ణోగ్రత	uṣṇōgrata	temperature				740	site,top1000	uṣṇōgrata		
+W0780	వేలు	vēlu	finger				741	site,top1000	vēlu		
+W0781	పరిశ్రమ	pariśrama	industry				742	site,top1000	pariśrama		
+W0782	విలువ	viluva	value				743	site,top1000	viluva		
+W0783	పోరాటం	pōrāṭaṁ	fight				744	site,top1000	pōrāṭaṁ		
+W0784	అబద్ధం	abaddhaṁ	lie				745	site,top1000	abaddhaṁ		
+W0785	ఓడించింది	ōḍinchindi	beat				746	site,top1000	ōḍinchindi	inflected	
+W0786	ఉత్సుకతను	utsukatanu	excite				747	site,top1000	utsukatanu		
+W0787	సహజ	sahaja	natural				748	site,top1000	sahaja		
+W0788	వీక్షణ	vīkṣaṇa	view				749	site,top1000	vīkṣaṇa		
+W0789	భావం	bhāvaṁ	sense				750	site,top1000	bhāvaṁ		
+W0790	రాజధాని	rājadhāni	capital				751	site,top1000	rājadhāni		
+W0791	కుర్చీ	kurchī	chair				753	site,top1000	kurchī		
+W0792	ప్రమాదం	pramādaṁ	danger				754	site,top1000	pramādaṁ		
+W0793	మందపాటి	mandapāṭi	thick				757	site,top1000	mandapāṭi		
+W0794	సైనికుడు	sainikuḍu	soldier				758	site,top1000	sainikuḍu		
+W0795	ప్రక్రియ	prakriya	process				759	site,top1000	prakriya		
+W0796	పనిచేస్తాయి	panichēstāyi	operate				760	site,top1000	panichēstāyi	inflected	
+W0797	ఆచరణలో	ācharaṇalō	practice				761	site,top1000	ācharaṇalō		
+W0798	కష్టం	kaṣṭaṁ	difficult, hard; difficult			konchaṁ kaṣṭaṁ	763	site,top1000	kaṣṭaṁ		
+W0799	డాక్టర్	ḍākṭar	doctor (loanword — the everyday choice); doctor			nā ḍākṭar pēru Sophia.	764	site,top1000	ḍākṭar		
+W0800	రక్షించేందుకు	rakṣinchēnduku	protect				766	site,top1000	rakṣinchēnduku		
+W0801	పంట	paṇṭa	crop				768	site,top1000	paṇṭa		
+W0802	ఆధునిక	ādhunika	modern				769	site,top1000	ādhunika		
+W0803	మూలకం	mūlakaṁ	element				770	site,top1000	mūlakaṁ		
+W0804	విద్యార్థి	vidyārthi	student			Raj vidyārthi.	772	site,top1000	vidyārthi		
+W0805	మూలలో	mūlalō	corner				773	site,top1000	mūlalō		
+W0806	సరఫరా	sarapharā	supply				775	site,top1000	sarapharā		
+W0807	దీని	dīni	whose				776	site,top1000	dīni		
+W0808	గుర్తించడం	gurtinchaḍaṁ	locate				777	site,top1000	gurtinchaḍaṁ		
+W0809	పాత్ర	pātra	character				779	site,top1000	pātra		
+W0810	క్రిమి	krimi	insect				780	site,top1000	krimi		
+W0811	కాలం	kālaṁ	period				782	site,top1000	kālaṁ		
+W0812	రేడియో	rēḍiyō	radio				784	site,top1000	rēḍiyō		
+W0813	మాట్లాడారు	māṭlāḍāru	spoke  [form of మాట్లాడు]; spoke		మాట్లాడు		785	site,top1000	māṭlāḍāru	inflected multi-gloss verbform	past of మాట్లాడు
+W0814	అణువు	aṇuvu	atom; molecule				786	site,top1000	aṇuvu		
+W0815	మానవ	mānava	human				787	site,top1000	mānava		
+W0816	చరిత్ర	charitra	history				788	site,top1000	charitra		
+W0817	ప్రభావం	prabhāvaṁ	effect				789	site,top1000	prabhāvaṁ		
+W0818	విద్యుత్	vidyut	electric				790	site,top1000	vidyut		
+W0819	ఆశించే	āśinchē	expect				791	site,top1000	āśinchē		
+W0820	ఎముక	emuka	bone				792	site,top1000	emuka		
+W0821	ఊహించే	ūhinchē	imagine				794	site,top1000	ūhinchē		
+W0822	అందించేందుకు	andinchēnduku	provide				795	site,top1000	andinchēnduku		
+W0823	అంగీకరిస్తున్నారు	angīkaristunnāru	agree				796	site,top1000	angīkaristunnāru	inflected	
+W0824	అందువలన	anduvalana	thus				797	site,top1000	anduvalana		
+W0825	సున్నితమైన	sunnitamaina	gentle				798	site,top1000	sunnitamaina		
+W0826	మహిళ	mahiḷa	woman				799	site,top1000	mahiḷa		
+W0827	కెప్టెన్	kepṭen	captain				800	site,top1000	kepṭen		
+W0828	అంచనా	anchanā	guess				801	site,top1000	anchanā		
+W0829	పదునైన	padunaina	sharp				803	site,top1000	padunaina		
+W0830	వింగ్	ving	wing				804	site,top1000	ving		
+W0831	సృష్టించడానికి	sṛṣṭinchaḍāniki	create				805	site,top1000	sṛṣṭinchaḍāniki		
+W0832	పొరుగు	porugu	neighbor				806	site,top1000	porugu		
+W0833	వాష్	vāṣ	wash				807	site,top1000	vāṣ		
+W0834	బ్యాట్	byāṭ	bat				808	site,top1000	byāṭ		
+W0835	కాకుండా	kākuṇḍā	rather				809	site,top1000	kākuṇḍā		
+W0836	మొక్కజొన్న	mokkajonna	corn				811	site,top1000	mokkajonna		
+W0837	సరిపోల్చండి	saripōlchaṇḍi	compare				812	site,top1000	saripōlchaṇḍi	inflected	
+W0838	పద్యం	padyaṁ	poem				813	site,top1000	padyaṁ		
+W0839	ఆధారపడి	ādhārapaḍi	depend				816	site,top1000	ādhārapaḍi		
+W0840	మాంసం	māṁsaṁ	meat				817	site,top1000	māṁsaṁ		
+W0841	రబ్	rab	rub				818	site,top1000	rab		
+W0842	ట్యూబ్	ṭyūb	tube				819	site,top1000	ṭyūb		
+W0843	ప్రసిద్ధ	prasiddha	famous				820	site,top1000	prasiddha		
+W0844	డాలర్	ḍālar	dollar				821	site,top1000	ḍālar		
+W0845	స్ట్రీమ్	sṭrīm	stream				822	site,top1000	sṭrīm		
+W0846	భయము	bhayamu	fear				823	site,top1000	bhayamu		
+W0847	దృష్టి	dṛṣṭi	sight				824	site,top1000	dṛṣṭi		
+W0848	సన్నని	sannani	thin				825	site,top1000	sannani		
+W0849	త్రిభుజం	tribhujaṁ	triangle				826	site,top1000	tribhujaṁ		
+W0850	గ్రహం	grahaṁ	planet				827	site,top1000	grahaṁ		
+W0851	అత్యవసరము	atyavasaramu	hurry				828	site,top1000	atyavasaramu		
+W0852	చీఫ్	chīph	chief				829	site,top1000	chīph		
+W0853	కాలనీ	kālanī	colony				830	site,top1000	kālanī		
+W0854	మైన్	main	mine				832	site,top1000	main		
+W0855	టై	ṭai	tie				833	site,top1000	ṭai		
+W0856	నమోదు	namōdu	enter				834	site,top1000	namōdu		
+W0857	తాజా	tājā	fresh				836	site,top1000	tājā		
+W0858	శోధన	śōdhana	search				837	site,top1000	śōdhana		
+W0859	పంపండి	pampaṇḍi	send				838	site,top1000	pampaṇḍi	inflected	
+W0860	తుపాకీ	tupākī	gun				840	site,top1000	tupākī		
+W0861	అనుమతిస్తాయి	anumatistāyi	allow				841	site,top1000	anumatistāyi	inflected	
+W0862	చనిపోయిన	chanipōyina	dead				843	site,top1000	chanipōyina		
+W0863	స్పాట్	spāṭ	spot				844	site,top1000	spāṭ		
+W0864	ఎడారి	eḍāri	desert				845	site,top1000	eḍāri		
+W0865	దావా	dāvā	suit; claim				846	site,top1000	dāvā		
+W0866	ప్రస్తుత	prastuta	current				847	site,top1000	prastuta		
+W0867	లిఫ్ట్	liphṭ	lift				848	site,top1000	liphṭ		
+W0868	చేరు	chēru	arrive				850	site,top1000	chēru		
+W0869	ట్రాక్	ṭrāk	track				852	site,top1000	ṭrāk		
+W0870	పేరెంట్	pēreṇṭ	parent				853	site,top1000	pēreṇṭ		
+W0871	షీట్	ṣīṭ	sheet				856	site,top1000	ṣīṭ		
+W0872	పదార్ధం	padārdhaṁ	substance				857	site,top1000	padārdhaṁ		
+W0873	మొగ్గుచూపుతున్నారు	mogguchūputunnāru	favor				858	site,top1000	mogguchūputunnāru	inflected	
+W0874	కనెక్ట్	kanekṭ	connect				859	site,top1000	kanekṭ		
+W0875	ఖర్చు	kharchu	spend				861	site,top1000	kharchu		
+W0876	తీగ	tīga	chord				862	site,top1000	tīga		
+W0877	కొవ్వు	kovvu	fat				863	site,top1000	kovvu		
+W0878	ఆనందంగా	ānandangā	glad				864	site,top1000	ānandangā		
+W0879	అసలు	asalu	at all, really; original			asalu vinaḍu	865	site,top1000	asalu		
+W0880	వాటా	vāṭā	share				866	site,top1000	vāṭā		
+W0881	స్టేషన్	sṭēṣan	station				867	site,top1000	sṭēṣan		
+W0882	బ్రెడ్	breḍ	bread				869	site,top1000	breḍ		
+W0883	వసూలు	vasūlu	charge				870	site,top1000	vasūlu		
+W0884	ఆఫర్	āphar	offer				873	site,top1000	āphar		
+W0885	బానిస	bānisa	slave				875	site,top1000	bānisa		
+W0886	డక్	ḍak	duck				876	site,top1000	ḍak		
+W0887	తక్షణ	takṣaṇa	instant				877	site,top1000	takṣaṇa		
+W0888	డిగ్రీ	ḍigrī	degree				879	site,top1000	ḍigrī		
+W0889	జనసాంద్రత	janasāndrata	populate				880	site,top1000	janasāndrata		
+W0890	చిక్	chik	chick				881	site,top1000	chik		
+W0891	ప్రియమైన	priyamaina	dear				882	site,top1000	priyamaina		
+W0892	శత్రువు	śatruvu	enemy				883	site,top1000	śatruvu		
+W0893	ప్రత్యుత్తరం	pratyuttaraṁ	reply				884	site,top1000	pratyuttaraṁ		
+W0894	పానీయం	pānīyaṁ	drink				885	site,top1000	pānīyaṁ		
+W0895	సంభవించవచ్చు	sambhavinchavachchu	occur				886	site,top1000	sambhavinchavachchu		
+W0896	మద్దతు	maddatu	support				887	site,top1000	maddatu		
+W0897	ప్రసంగం	prasangaṁ	speech				888	site,top1000	prasangaṁ		
+W0898	ప్రకృతి	prakṛti	nature				889	site,top1000	prakṛti		
+W0899	పరిధి	paridhi	range				890	site,top1000	paridhi		
+W0900	ఆవిరి	āviri	steam				891	site,top1000	āviri		
+W0901	చలన	chalana	motion				892	site,top1000	chalana		
+W0902	ద్రవ	drava	liquid				894	site,top1000	drava		
+W0903	లాగిన్	lāgin	log				895	site,top1000	lāgin		
+W0904	కోశంట్	kōśaṇṭ	quotient				897	site,top1000	kōśaṇṭ		
+W0905	పళ్ళు	paḷḷu	teeth				898	site,top1000	paḷḷu		
+W0906	షెల్	ṣel	shell				899	site,top1000	ṣel		
+W0907	మెడ	meḍa	neck				900	site,top1000	meḍa		
+W0908	ఆక్సిజన్	āksijan	oxygen				901	site,top1000	āksijan		
+W0909	చక్కెర	chakkera	sugar				902	site,top1000	chakkera		
+W0910	మరణం	maraṇaṁ	death				903	site,top1000	maraṇaṁ		
+W0911	అందంగా	andangā	pretty				904	site,top1000	andangā		
+W0912	నైపుణ్యం	naipuṇyaṁ	skill				905	site,top1000	naipuṇyaṁ		
+W0913	మహిళలు	mahiḷalu	women				906	site,top1000	mahiḷalu		
+W0914	సీజన్	sījan	season				907	site,top1000	sījan		
+W0915	పరిష్కారం	pariṣkāraṁ	solution				908	site,top1000	pariṣkāraṁ		
+W0916	అయస్కాంతం	ayaskāntaṁ	magnet				909	site,top1000	ayaskāntaṁ		
+W0917	వెండి	veṇḍi	silver				910	site,top1000	veṇḍi	inflected	
+W0918	శాఖ	śākha	branch				912	site,top1000	śākha		
+W0919	మ్యాచ్	myāch	match				913	site,top1000	myāch		
+W0920	ప్రత్యయం	pratyayaṁ	suffix				914	site,top1000	pratyayaṁ		
+W0921	ముఖ్యంగా	mukhyangā	especially				915	site,top1000	mukhyangā		
+W0922	అత్తి	atti	fig				916	site,top1000	atti		
+W0923	భయపడ్డారు	bhayapaḍḍāru	afraid				917	site,top1000	bhayapaḍḍāru	inflected	
+W0924	సోదరి	sōdari	sister				919	site,top1000	sōdari		
+W0925	స్టీల్	sṭīl	steel				920	site,top1000	sṭīl		
+W0926	చర్చించడానికి	charchinchaḍāniki	discuss				921	site,top1000	charchinchaḍāniki		
+W0927	ముందుకు	munduku	forward				922	site,top1000	munduku		
+W0928	ఇదే	idē	similar				923	site,top1000	idē		
+W0929	మార్గనిర్దేశం	mārganirdēśaṁ	guide				924	site,top1000	mārganirdēśaṁ		
+W0930	అనుభవం	anubhavaṁ	experience				925	site,top1000	anubhavaṁ		
+W0931	స్కోరు	skōru	score				926	site,top1000	skōru		
+W0932	ఆపిల్	āpil	apple				927	site,top1000	āpil		
+W0933	దారితీసింది	dāritīsindi	led				929	site,top1000	dāritīsindi	inflected	
+W0934	పిచ్	pich	pitch				930	site,top1000	pich		
+W0935	కోటు	kōṭu	coat				931	site,top1000	kōṭu		
+W0936	మాస్	mās	mass				932	site,top1000	mās		
+W0937	కార్డ్	kārḍ	card				933	site,top1000	kārḍ		
+W0938	బ్యాండ్	byāṇḍ	band				934	site,top1000	byāṇḍ		
+W0939	తాడు	tāḍu	rope				935	site,top1000	tāḍu	inflected	
+W0940	విజయం	vijayaṁ	win; success				937	site,top1000	vijayaṁ		
+W0941	కావాలని	kāvālani	dream				938	site,top1000	kāvālani		
+W0942	పరిస్థితి	paristhiti	condition				940	site,top1000	paristhiti		
+W0943	ఫీడ్	phīḍ	feed				941	site,top1000	phīḍ		
+W0944	సాధనం	sādhanaṁ	tool				942	site,top1000	sādhanaṁ		
+W0945	ప్రాథమిక	prāthamika	basic				944	site,top1000	prāthamika		
+W0946	వాసన	vāsana	smell				945	site,top1000	vāsana		
+W0947	లోయలో	lōyalō	valley				946	site,top1000	lōyalō		
+W0948	డబుల్	ḍabul	double				948	site,top1000	ḍabul		
+W0949	సీటు	sīṭu	seat				949	site,top1000	sīṭu		
+W0950	కొనసాగుతుంది	konasāgutundi	continue				950	site,top1000	konasāgutundi	inflected	
+W0951	బ్లాక్	blāk	block				951	site,top1000	blāk		
+W0952	టోపీ	ṭōpī	hat				953	site,top1000	ṭōpī		
+W0953	అమ్మే	ammē	sell				954	site,top1000	ammē		
+W0954	సంస్థ	saṁstha	company				956	site,top1000	saṁstha		
+W0955	వ్యవకలనం	vyavakalanaṁ	subtract				957	site,top1000	vyavakalanaṁ		
+W0956	ఈవెంట్	īveṇṭ	event				958	site,top1000	īveṇṭ		
+W0957	ఒప్పందం	oppandaṁ	deal				960	site,top1000	oppandaṁ		
+W0958	ఈత	īta	swim				961	site,top1000	īta		
+W0959	వ్యతిరేక	vyatirēka	opposite				963	site,top1000	vyatirēka		
+W0960	భార్య	bhārya	wife			nā bhārya pēru Namrata.	964	site,top1000	bhārya		
+W0961	షూ	ṣū	shoe				965	site,top1000	ṣū		
+W0962	భుజం	bhujaṁ	shoulder			kuḍi bhujaṁ mīda	966	site,top1000	bhujaṁ		
+W0963	ఏర్పాట్లు	ērpāṭlu	arrange				968	site,top1000	ērpāṭlu		
+W0964	శిబిరం	śibiraṁ	camp				969	site,top1000	śibiraṁ		
+W0965	కనుగొనడమే	kanugonaḍamē	invent				970	site,top1000	kanugonaḍamē		
+W0966	పత్తి	patti	cotton				971	site,top1000	patti		
+W0967	పుట్టినప్పటి	puṭṭinappaṭi	born				972	site,top1000	puṭṭinappaṭi		
+W0968	గుర్తించడానికి	gurtinchaḍāniki	determine				973	site,top1000	gurtinchaḍāniki		
+W0969	కొలత గల పాత్ర	kolata gala pātra	quart				974	site,top1000	kolata gala pātra	phrase	
+W0970	తొమ్మిది	tommidi	nine			tommidi.	975	site,top1000	tommidi		
+W0971	ట్రక్	ṭrak	truck				976	site,top1000	ṭrak		
+W0972	క్రీడల్లో అవకాశాలు	krīḍallō avakāśālu	chance				979	site,top1000	krīḍallō avakāśālu	phrase	
+W0973	షాప్	ṣāp	shop				981	site,top1000	ṣāp		
+W0974	సాగిన	sāgina	stretch				982	site,top1000	sāgina		
+W0975	త్రో	trō	throw				983	site,top1000	trō		
+W0976	బాగా చేయు	bāgā chēyu	shine				984	site,top1000	bāgā chēyu	phrase	
+W0977	ఆస్తి	āsti	property				985	site,top1000	āsti		
+W0978	కాలమ్	kālam	column				986	site,top1000	kālam		
+W0979	తప్పు	tappu	wrong				989	site,top1000	tappu		
+W0980	బూడిద	būḍida	gray				990	site,top1000	būḍida		
+W0981	రిపీట్	ripīṭ	repeat				991	site,top1000	ripīṭ		
+W0982	సిద్ధం	siddhaṁ	prepare				994	site,top1000	siddhaṁ		
+W0983	ముక్కు	mukku	nose				996	site,top1000	mukku		
+W0984	బహువచనం	bahuvachanaṁ	plural				997	site,top1000	bahuvachanaṁ		
+W0985	కోపం	kōpaṁ	anger				998	site,top1000	kōpaṁ		
+W0986	ఖండం	khaṇḍaṁ	continent				1000	site,top1000	khaṇḍaṁ		
+W0987	నువ్వు	nuvvu	you (informal — close friends/family only)			nuvvu vidyārthivi.		site	nuvvu		
+W0988	మనము	manamu	we (inclusive — includes the listener)			manam vidyārthulamu.		site	manamu		
+W0989	ఆయన	āyana	he (formal — to/about an elder)			āyana ṭīcharu.		site	āyana		
+W0990	వాడు	vāḍu	he (informal — intimates only, caution)			vāḍu vidyārthi.		site	vāḍu	inflected	
+W0991	ఆవిడ	āviḍa	she (formal — to/about an elder)			āviḍa ṭīcharu.		site	āviḍa		
+W0992	అది	adi	it / she (informal) — that one			adi kāru.		site	adi		
+W0993	వాళ్ళు	vāḷḷu	they (people)			vāḷḷu vidyārthulu.		site	vāḷḷu		
+W0994	అవి	avi	they (things / non-human)			avi kārlu.		site	avi		
+W0995	ఈయన	īyana	he (formal, nearby — near form of āyana)			īyana ṭīcharu.		site	īyana		
+W0996	ఇతను	itanu	he (neutral, nearby — near form of atanu)			itanu vidyārthi.		site	itanu		
+W0997	వీడు	vīḍu	he (informal, nearby — near form of vāḍu)			vīḍu vidyārthi.		site	vīḍu		
+W0998	ఈవిడ	īviḍa	she (formal, nearby — near form of āviḍa)			īviḍa ṭīcharu.		site	īviḍa		
+W0999	ఈమె	īme	she (neutral, nearby — near form of āme)			īme vidyārthi.		site	īme		
+W1000	వీళ్ళు	vīḷḷu	they (nearby people — near form of vāḷḷu)			vīḷḷu vidyārthulu.		site	vīḷḷu		
+W1001	ఇవి	ivi	these (objects / non-human — near form of avi)			ivi kārlu.		site	ivi		
+W1002	విద్యార్థులు	vidyārthulu	students (plural)			vāḷḷu vidyārthulu.		site	vidyārthulu		
+W1003	టీచర్	ṭīchar	teacher (loanword)			mīru ṭīcharu.		site	ṭīchar		
+W1004	నమస్కారం	namaskāraṁ	"a greeting — ""hello / greetings"""			namaskāraṁ aṇḍi.		site	namaskāraṁ		
+W1005	అబ్బాయి	abbāyi	boy			nēnu abbāyini.		site	abbāyi	inflected	
+W1006	మొగుడు	moguḍu	man (course form — see rule 04; Lesson 4 confirms this means “husband”)			nā moguḍu enjinīr.		site	moguḍu		
+W1007	ఆడది	āḍadi	woman			nēnu āḍadini.		site	āḍadi		
+W1008	ఉపాధ్యాయుడు	upādhyāyuḍu	teacher (male, formal Telugu form)			nēnu upādhyāyuḍini.		site	upādhyāyuḍu		
+W1009	ఉపాధ్యాయురాలు	upādhyāyurālu	teacher (female, formal Telugu form)			nēnu upādhyāyurālini.		site	upādhyāyurālu		
+W1010	వైద్యుడు	vaidyuḍu	doctor (male, formal Telugu form)			āyana oka vaidyuḍu.		site	vaidyuḍu		
+W1011	వైద్యురాలు	vaidyurālu	doctor (female, formal Telugu form)			āme oka vaidyurālu.		site	vaidyurālu		
+W1012	న్యాయవాది	nyāyavādi	lawyer			nēnu nyāyavādini.		site	nyāyavādi		
+W1013	అభియంత	abhiyanta	engineer (Telugu form — recognise only, never used in speech)			nēnu enjinīrni.		site	abhiyanta		
+W1014	నాది	nādi	mine (stands alone)			nādi oka kāru.		site	nādi		
+W1015	మాది	mādi	ours (stands alone — used for hometown)			mādi Hyderabad.		site	mādi		
+W1016	వయసు	vayasu	age			nā vayasu iravai.		site	vayasu		
+W1017	ముప్పై	muppai	thirty (30)			nā vayasu muppai.		site	muppai		
+W1018	స్నేహితురాలు	snēhiturālu	friend (female)			nā snēhiturālu vidyārthi.		site	snēhiturālu		
+W1019	భర్త	bharta	husband			nā bharta oka ṭīcharu.		site	bharta		
+W1020	ఊరు	ūru	town / hometown			mā ūru Hyderabad.		site	ūru		
+W1021	సొంత ఊరు	sonta ūru	native place (own town)			mā sonta ūru Hyderabad.		site	sonta ūru	phrase	
+W1022	భారత దేశం	bhārata dēśaṁ	"India (ancient name + ""country"")"			mādi Bhārata Dēśam.		site	bhārata dēśaṁ	phrase	
+W1023	భారతీయుడు	bhāratīyuḍu	Indian (male)			nēnu bhāratīyuḍini.		site	bhāratīyuḍu		
+W1024	భారతీయురాలు	bhāratīyurālu	Indian (female)			nēnu bhāratīyurālini.		site	bhāratīyurālu		
+W1025	మాతృభాష	mātṛbhāṣa	mother tongue			mā mātṛbhāṣa Telugu.		site	mātṛbhāṣa		
+W1026	వస్తాను	vastānu	"goodbye (lit. ""I'll come back"")  [form of రా]"		రా	vastānandi.		site	vastānu	inflected verbform	future of రా
+W1027	రండి	raṇḍi	please come in / welcome (colloquial)  [form of రా]		రా	raṇḍi, raṇḍi.		site	raṇḍi	inflected verbform	impPol of రా
+W1028	రా	rā	come (base verb — becomes raṇḍi with aṇḍi)  [form of రా]		రా	rā + aṇḍi → raṇḍi		site	rā	verbform	impFam of రా
+W1029	స్వాగతం	svāgataṁ	welcome (formal — banners and speeches)			svāgataṁ aṇḍi.		site	svāgataṁ		
+W1030	లేదు	lēdu	no — it doesn't exist / isn't there / I don't have it  [form of ఉండు]		ఉండు	lēdandi.		site	lēdu	verbform	negPast of ఉండు
+W1031	వద్దు	vaddu	no — I don't want it (declining)			vaddandi, thanks aṇḍi.		site	vaddu		
+W1032	క్షమించండి	kṣaminchaṇḍi	"sorry (lit. ""forgive me"")"			kṣaminchandi.		site	kṣaminchaṇḍi	inflected	
+W1033	పర్వాలేదు	parvālēdu	It's okay / no problem / never mind			parvālēdu aṇḍi.		site	parvālēdu		
+W1034	శభాష్	śabhāṣ	well done / congratulations			śabhāṣ!		site	śabhāṣ		
+W1035	మంచిది	manchidi	good — nice, noble, morally good			manchidi.		site	manchidi		
+W1036	బాగుంది	bāgundi	good — fine, going well (food, trips, states)			bāgundi aṇḍi.		site	bāgundi	inflected	
+W1037	బాగున్నారా	bāgunnārā	"how are you? (lit. ""are you fine?"")"			mīru bāgunnārā?		site	bāgunnārā		
+W1038	బాగున్నాను	bāgunnānu	I am fine			nēnu bāgunnānu.		site	bāgunnānu	inflected	
+W1039	పద	pada	let's go			padaṇḍi.		site	pada		
+W1040	ఎంత	enta	how much			idi enta?		site	enta		
+W1041	ఇదిగో	idigō	here you go (handing something over)			idigōṇḍi.		site	idigō		
+W1042	రాదు	rādu	"doesn't come — used for ""I don't know [a language]""  [form of రా]"		రా	Telugu rādu.		site	rādu	verbform	negFuture of రా
+W1043	తెలుసా	telusā	do you know?			English telusā?		site	telusā		
+W1044	చెల్లి	chelli	younger sister			mā chelli ammāyi.		site	chelli		
+W1045	నానమ్మ	nānamma	paternal grandmother (father's mother)			mā nānamma gāru.		site	nānamma		
+W1046	తాత	tāta	grandfather (either side)			mā tāta gāru.		site	tāta		
+W1047	గారు	gāru	honorific suffix for people (respect)			Raj gāru.		site	gāru	inflected	
+W1048	మామయ్య	māmayya	mother's brother (any age)			mā māmayya enjinīr.		site	māmayya		
+W1049	పెద్దమ్మ	peddamma	"mother's ELDER sister (lit. ""elder mother"")"			mā peddamma gāru.		site	peddamma		
+W1050	పిన్ని	pinni	mother's YOUNGER sister			mā pinni ṭīcharu.		site	pinni		
+W1051	అత్త	atta	father's sister (any age) — also mother-in-law			mā atta gāru.		site	atta		
+W1052	పెద్దనాన్న	peddanānna	"father's ELDER brother (lit. ""elder father"")"			mā peddanāna gāru.		site	peddanānna		
+W1053	చిన్నాన్న	chinnānna	"father's YOUNGER brother (lit. ""younger father"")"			mā chinnāna vaidyuḍu.		site	chinnānna		
+W1054	పెళ్ళాం	peḷḷāṁ	wife (colloquial — bhārya is the formal word)			nā pellām ṭīcharu.		site	peḷḷāṁ		
+W1055	మామ గారు	māma gāru	father-in-law (either side)			mā māma gāru.		site	māma gāru	inflected phrase	
+W1056	కూతురు	kūturu	daughter			mā kūturu vidyārthi.		site	kūturu		
+W1057	కొడుకు	koḍuku	son			mā koḍuku abbāyi.		site	koḍuku		
+W1058	అల్లుడు	alluḍu	son-in-law			nēnu alluḍini.		site	alluḍu		
+W1059	కోడలు	kōḍalu	daughter-in-law			mā kōḍalu ḍākṭar.		site	kōḍalu		
+W1060	మనవలు	manavalu	grandchildren (collective)			mā manavalu.		site	manavalu		
+W1061	మనవడు	manavaḍu	grandson (variant: manumaḍu)			mā manavaḍu vidyārthi.		site	manavaḍu		
+W1062	మనవరాలు	manavarālu	granddaughter (variant: manumarālu)			mā manavarālu ammāyi.		site	manavarālu		
+W1063	మన	mana	our — INCLUDING the listener			mana pērlu.		site	mana		
+W1064	నీ	nī	your (informal — close friends, younger people)			nī pēru ēnti?		site	nī		
+W1065	అతని	atani	his (neutral — the default form)			atani pēru Sanjay.		site	atani		
+W1066	వాడి	vāḍi	his (informal — intimates only)			vāḍi pēru Peter.		site	vāḍi		
+W1067	దాని	dāni	her (informal) / its			dāni pēru Gita.		site	dāni		
+W1068	వాళ్ళ	vāḷḷa	their (people)			vāḷḷa pērlu.		site	vāḷḷa		
+W1069	వాటి	vāṭi	their (objects / non-human)			vāṭi pērlu.		site	vāṭi		
+W1070	ఏమిటి	ēmiṭi	what (colloquially ēnti)			mī pēru ēmiṭi?		site	ēmiṭi		
+W1071	పేర్లు	pērlu	names (plural of pēru)			vāḷḷa pērlu.		site	pērlu		
+W1072	సున్నా	sunnā	zero			sunnā.		site	sunnā		
+W1073	నలభై	nalabhai	forty			nā vayasu nalabhai.		site	nalabhai		
+W1074	యాభై	yābhai	fifty			yābhai rūpāyalu.		site	yābhai		
+W1075	అరవై	aravai	sixty			aravai.		site	aravai		
+W1076	డెబ్బై	ḍebbai	seventy			ḍebbhai.		site	ḍebbai		
+W1077	ఎనభై	enabhai	eighty			enabhai.		site	enabhai		
+W1078	తొంభై	tombhai	ninety			tombhai tommidi = 99.		site	tombhai		
+W1079	వెయ్యి	veyyi	thousand			reṇḍu vēlu = 2,000.		site	veyyi		
+W1080	లక్ష	lakṣa	lakh — 100,000 (written 1,00,000)			reṇḍu lakṣalu.		site	lakṣa		
+W1081	కోటి	kōṭi	crore — 10,000,000 (written 1,00,00,000)			oka kōṭi.		site	kōṭi		
+W1082	రూపాయలు	rūpāyalu	rupees			yābhai rūpāyalu.		site	rūpāyalu		
+W1083	పదకొండు	padakoṇḍu	eleven			padakoṇḍu.		site	padakoṇḍu		
+W1084	పన్నెండు	panneṇḍu	twelve			panneṇḍu.		site	panneṇḍu		
+W1085	పదమూడు	padamūḍu	thirteen			padamūḍu.		site	padamūḍu		
+W1086	పద్నాలుగు	padnālugu	fourteen			padnālugu.		site	padnālugu		
+W1087	పదిహేను	padihēnu	fifteen			padihēnu.		site	padihēnu		
+W1088	పదహారు	padahāru	sixteen			padahāru.		site	padahāru	inflected	
+W1089	పదిహేడు	padihēḍu	seventeen			padihēḍu.		site	padihēḍu		
+W1090	పద్దెనిమిది	paddenimidi	eighteen			paddenimidi.		site	paddenimidi		
+W1091	పంతొమ్మిది	pantommidi	nineteen			pantommidi.		site	pantommidi		
+W1092	ఒకరు	okaru	one person (not okaṭi)			okaru mātramē.		site	okaru		
+W1093	ఇద్దరు	iddaru	two people			iddaru vidyārthulu.		site	iddaru		
+W1094	ముగ్గురు	mugguru	three people			mugguru.		site	mugguru		
+W1095	నలుగురు	naluguru	four people			naluguru.		site	naluguru		
+W1096	ఐదుగురు	aiduguru	five people			aiduguru.		site	aiduguru		
+W1097	మంది	mandi	people (counter word — use with larger numbers)			padi mandi.		site	mandi		
+W1098	రెండవ / రెండో	reṇḍava / reṇḍō	second (pattern: number + -ava / -ō)			reṇḍō roju.		site	reṇḍava / reṇḍō	phrase	
+W1099	మీరు ఎట్ల ఉన్నారు?	mīru eṭla unnāru?	How are you? (respectful)			always return the question		site	mīru eṭla unnāru?	phrase	
+W1100	అత్తయ్య	attayya	aunty / mother-in-law (address)			bāgundi attayya		site	attayya		
+W1101	ఈ రోజు	ī rōju	today			ī rōju bāgundi		site	ī rōju	phrase	
+W1102	తిన్నాను	tinnānu	I've eaten  [form of తిను]		తిను	block — Lesson 9 explains it		site	tinnānu	inflected verbform	past of తిను
+W1103	ఇంకా లేదు	inkā lēdu	not yet			inkā tinalēdu		site	inkā lēdu	phrase	
+W1104	ఎక్కువ	ekkuva	a lot, excessive (of quantity)			not “bad” — Telugu counts traffic		site	ekkuva		
+W1105	అయ్యింది	ayyindi	it got done, it happened			chālā pani ayyindi		site	ayyindi	inflected	
+W1106	చేసాను	chēsānu	I did  [form of చేయి]		చేయి	block — chālā pani chēsānu		site	chēsānu	inflected verbform	past of చేయి
+W1107	ఆఫీసులో	āphīsulō	at the office			āphīsulō chālā pani undi		site	āphīsulō		
+W1108	ఇంట్లో	iṇṭlō	at home, in the house			intlō antā bāgunnārā?		site	iṇṭlō		
+W1109	అంతా	antā	everyone, all			intlō antā		site	antā		
+W1110	అలిసిపోయాను	alisipōyānu	I'm tired			block — konchaṁ alisipōyānu		site	alisipōyānu	inflected	
+W1111	ఎట్ల గడిచింది?	eṭla gaḍichindi?	How did it go? (of a day)			mī rōju eṭla gaḍichindi?		site	eṭla gaḍichindi?	phrase	
+W1112	తిన్నారా?	tinnārā?	Have you eaten?			recognise it, don't just answer		site	tinnārā?		
+W1113	ఏమి జరిగినా	ēmi jariginā	whatever happens			fixed phrase		site	ēmi jariginā	phrase	
+W1114	ఎపుడూ	epuḍū	always, ever			epuḍū manasulō		site	epuḍū		
+W1115	తాను	tānu	himself, herself			tānē vachchāḍu		site	tānu	inflected	
+W1116	వెనక	venaka	behind			tana venakāle		site	venaka		
+W1117	పెళ్ళి	peḷḷi	wedding			pelli pāṭa		site	peḷḷi		
+W1118	అలుపు	alupu	tiredness			alupu lēdu		site	alupu		
+W1119	ఆశ	āśa	hope, desire			āśa karugunā		site	āśa		
+W1120	గెలుపు	gelupu	victory, winning			kadilitē gelupu		site	gelupu		
+W1121	కల	kala	dream			kalalu — dreams		site	kala		
+W1122	దిశ	diśa	direction			diśalu reṇḍu		site	diśa		
+W1123	దినుసు	dinusu	grain, ingredient			dinusē nalaga lēdu		site	dinusu		
+W1124	తిరుగు	tirugu	to turn, to roam			tirigi — having turned		site	tirugu		
+W1125	జరుగు	jarugu	to happen			ēmi jariginā		site	jarugu		
+W1126	చూడు	chūḍu	to see, to look  [form of చూడు]		చూడు	chūstunnāḍu — he's looking		site	chūḍu	verbform	impFam of చూడు
+W1127	పడు	paḍu	to fall			eduru paḍu — to run into		site	paḍu		
+W1128	ఆగు	āgu	to stop  [form of ఆగు]		ఆగు	āgunā? — would it stop?		site	āgu	verbform	impFam of ఆగు
+W1129	తాకు	tāku	to touch			tāki — having touched		site	tāku		
+W1130	ఎత్తు	ettu	to lift, to raise			tala etti		site	ettu		
+W1131	కలుపు	kalupu	to join, to mix			aḍugu kalipi		site	kalupu		
+W1132	కరుగు	karugu	to melt, to dissolve			manasu karagalēdu		site	karugu		
+W1133	అరుగు	arugu	to wear away			arigi pōyinā		site	arugu		
+W1134	ఎరుగు	erugu	to know (be aware of)			alupu eragaka		site	erugu		
+W1135	గగనము	gaganamu	sky (literary)			use ākāśaṁ instead		site	gaganamu		
+W1136	నింగి	ningi	sky (poetic native)			use ākāśaṁ instead		site	ningi		
+W1137	తపన	tapana	yearning, longing			vadalani tapana		site	tapana		
+W1138	వలపు	valapu	love, affection (literary)			use prēma instead		site	valapu		
+W1139	పయనం	payanaṁ	journey (literary)			use prayāṇaṁ instead		site	payanaṁ		
+W1140	సహజ గుణము	sahaja guṇamu	innate nature			Sanskrit compound		site	sahaja guṇamu	phrase	
+W1141	పెనుతాపం	penutāpaṁ	great heat			vēsavilō penutāpaṁ		site	penutāpaṁ		
+W1142	సన్నాయి	sannāyi	shehnai (wind instrument)			wedding music		site	sannāyi	inflected	
+W1143	డోలు	ḍōlu	drum			sannāyi ḍōlu		site	ḍōlu		
+W1144	తిరగలి	tiragali	grindstone			tiragali lāga		site	tiragali		
+W1145	చతికిలపడు	chatikilapaḍu	to collapse flat			spelling varies		site	chatikilapaḍu		
+W1146	కలవర పడు	kalavara paḍu	to be flustered			literary		site	kalavara paḍu	phrase	
+W1147	ఒర కంట	ora kaṇṭa	sidelong glance			word split uncertain		site	ora kaṇṭa	phrase	
+W1148	ఈడు జోడు	īḍu jōḍu	match, equal (in age)			set phrase		site	īḍu jōḍu	phrase	
+W1149	మునుపు	munupu	before, formerly			teliyadu munupu		site	munupu		
+W1150	చెంప	chempa	cheek (Telangana: sempa)			sempalu		site	chempa		
+W1151	చెవులు	chevulu	ears (Telangana: sevulu)			sevulaku duddulu		site	chevulu		
+W1152	పెదవులు	pedavulu	lips			pedavul erragā		site	pedavulu		
+W1153	నడుము	naḍumu	waist			dāni naḍumu		site	naḍumu		
+W1154	జడ	jaḍa	braid, plait			jaḍa tākitē		site	jaḍa		
+W1155	కొప్పు	koppu	hair bun			koppulō mallelu		site	koppu		
+W1156	మల్లె	malle	jasmine — everywhere in Hyderabad			malle daṇḍa		site	malle		
+W1157	కడవ	kaḍava	water pot, large vessel			bhujaṁ mīda kaḍava		site	kaḍava		
+W1158	దండ	daṇḍa	garland			malle daṇḍa		site	daṇḍa		
+W1159	దుద్దులు	duddulu	earrings			sevulaku duddulu		site	duddulu		
+W1160	మెరుపు	merupu	shine, flash, lightning			meriyā (song form)		site	merupu		
+W1161	ముత్యాలు	mutyālu	pearls			navvula mutyāl		site	mutyālu		
+W1162	రైక	raika	blouse (Telangana term)			raikalu		site	raika		
+W1163	గజ్జెలు	gajjelu	anklet bells			gajjel lēkunnā		site	gajjelu		
+W1164	వెన్నెల	vennela	moonlight (Telangana: ennela)			ennela kuriyā		site	vennela		
+W1165	దిల్	dil	heart (Urdu) — very common in Hyderabad			mana dil		site	dil		
+W1166	దునియా	duniyā	world (Urdu)			mogōḷḷa duniyā		site	duniyā		
+W1167	గుడియా	guḍiyā	doll (Urdu) — affectionate			guḍiyā		site	guḍiyā		
+W1168	చిడియా	chiḍiyā	little bird (Urdu) — affectionate			chikkani chiḍiyā		site	chiḍiyā		
+W1169	సుర్మా	surmā	kohl, eyeliner (Urdu)			surmā peṭṭina		site	surmā		
+W1170	చురియా	churiyā	dagger, blade (Urdu)			churiyā		site	churiyā		
+W1171	ఫిరంగి	phirangi	cannon (Persian via Urdu)			adi phirangi		site	phirangi		
+W1172	లేకున్నా	lēkunnā	even without ___ (from lēdu)			gajjel lēkunnā		site	lēkunnā		
+W1173	మొగోళ్ళు	mogōḷḷu	men (Telangana dialect plural)			mogōḷḷa duniyā		site	mogōḷḷu		
+W1174	ఎర్రగా	erragā	redly, in a red way (from erupu)			erragā aitadi		site	erragā		
+W1175	చెలియా	cheliyā	dear one, beloved (Telangana: seliyā)			rādurā seliyā		site	cheliyā		
+W1176	మురిపాలు	muripālu	charms, delights			vastāy muripāl		site	muripālu		
+W1177	శివంగి	śivangi	lioness, tigress — a fierce woman			adi śivangi		site	śivangi		
+W1178	లవంగం	lavangaṁ	clove (also a sharpness metaphor)			māṭala ghāṭu lavangi		site	lavangaṁ		
+W1179	గా	gā	as				1	top1000		bound-suffix	
+W1180	న	na	on				8	top1000		bound-suffix	
+W1181	తో	tō	with				10	top1000		bound-suffix	
+W1182		Edi ? 2 ?	Which ?				15	book1000	Edi ? 2 ?	needs-script no-script	
+W1183		Enni ? 2 ?	How Many ?				16	book1000	Enni ? 2 ?	needs-script no-script	
+W1184	నుండి	nuṇḍi	from; since				17	top1000		bound-suffix multi-gloss	
+W1185		Nijanga ?	Really ?				21	book1000	Nijanga ?	needs-script no-script	
+W1186		Auna ? ដ ?	Is It ?				22	book1000	Auna ? ដ ?	needs-script no-script	
+W1187	ది	di	the				29	top1000		bound-suffix	
+W1188	యొక్క	yokka	of				30	top1000		bound-suffix	
+W1189	కు	ku	to				31	top1000		bound-suffix	
+W1190	లో	lō	in				34	top1000		bound-suffix	
+W1191	మధ్యాహ్నం	madhyāhnaṁ	; noon				36	book1000,top1000		multi-gloss no-english no-romanization	
+W1192	ವಲ್ಲಿ	ವಲ್ಲಿ	Younger Sister				43	book1000	Chelli	kannada-script	
+W1193	సెట్	seṭ	set				52	top1000		english-respelled	
+W1194	కూడా	kūḍā	also; even				57	top1000		bound-suffix multi-gloss	
+W1195	పోర్ట్	pōrṭ	port				65	top1000		english-respelled	
+W1196	గోధుమ	gōdhuma	Godhuma; brown				67	book1000,top1000		english-respelled multi-gloss no-romanization	
+W1197	పింక్	pink	Pink				69	book1000	Gulabi	english-respelled	
+W1198	ನಯ್ಯ	ನಯ್ಯ	Ghee				72	book1000	Neiyyi	kannada-script	
+W1199	గుడ్డు	guḍḍu	; egg				76	book1000,top1000		multi-gloss no-english no-romanization	
+W1200		Lekha ඒඛ	Letter				101	book1000	Lekha ඒඛ	needs-script no-script	
+W1201	ವವಿ	ವವಿ	Ear				106	book1000	Chevi	kannada-script	
+W1202	సపోటా	sapōṭā	Sapota				121	book1000	Sapota	english-respelled	
+W1203	బొపాయ్య	bopāyya	Boppaya				130	book1000		english-respelled no-romanization	
+W1204		Anthataa	Everywhere				141	book1000	Anthataa	needs-script no-script	
+W1205	కుడి	kuḍi	; right				156	book1000,top1000		multi-gloss no-english no-romanization	
+W1206		GORILA Balla	Table				162	book1000	GORILA Balla	needs-script no-script	
+W1207	మార్కులు	mārkulu	Marks				170	book1000	Markulu	english-respelled	
+W1208		Samadhanam	Reply				196	book1000	Samadhanam	needs-script no-script	
+W1209	స్టాండ్	sṭāṇḍ	stand				202	top1000		english-respelled	
+W1210	గుంపు	gumpu	Gumpu; crowd				224	book1000,top1000		english-respelled multi-gloss no-romanization	
+W1211	హార్డ్	hārḍ	hard				231	top1000		english-respelled	
+W1212	ఓపెన్	ōpen	open				274	top1000		english-respelled	
+W1213	మార్క్	mārk	mark				291	top1000		english-respelled	
+W1214	వరకు	varaku	until				294	top1000		bound-suffix	
+W1215	స్టార్	sṭār	star				416	top1000		english-respelled	
+W1216	ఓహ్	ōh	oh				435	top1000		english-respelled	
+W1217	మాప్	māp	map				493	top1000		english-respelled	
+W1218	పుల్	pul	pull				497	top1000		english-respelled	
+W1219	నోటీసు	nōṭīsu	notice				499	top1000		english-respelled	
+W1220	గ్రాండ్	grāṇḍ	grand				535	top1000		english-respelled	
+W1221	స్టోర్	sṭōr	store				556	top1000		english-respelled	
+W1222	లెగ్	leg	leg				562	top1000		english-respelled	
+W1223	మిలియన్	miliyan	million				591	top1000		english-respelled	
+W1224	యార్డ్	yārḍ	yard				622	top1000		english-respelled	
+W1225	మెటల్	meṭal	metal				709	top1000		english-respelled	
+W1226	బిట్	biṭ	bit				731	top1000		english-respelled	
+W1227	రోల్	rōl	roll				739	top1000		english-respelled	
+W1228	రిచ్	rich	rich				756	top1000		english-respelled	
+W1229	హిట్	hiṭ	hit				771	top1000		english-respelled	
+W1230	పార్టీ	pārṭī	party				774	top1000		english-respelled	
+W1231	రింగ్	ring	ring				778	top1000		english-respelled	
+W1232	స్ట్రింగ్	sṭring	string				814	top1000		english-respelled	
+W1233	బెల్	bel	bell				815	top1000		english-respelled	
+W1234	మాస్టర్	māsṭar	master				851	top1000		english-respelled	
+W1235	పోస్ట్	pōsṭ	post				860	top1000		english-respelled	
+W1236	బార్	bār	bar				872	top1000		english-respelled	
+W1237	సెగ్మెంట్	segmeṇṭ	segment				874	top1000		english-respelled	
+W1238	మార్కెట్	mārkeṭ	market				878	top1000		english-respelled	
+W1239	స్లిప్	slip	slip				936	top1000		english-respelled	
+W1240	చార్ట్	chārṭ	chart				952	top1000		english-respelled	
+W1241	స్ప్రెడ్	spreḍ	spread				967	top1000		english-respelled	

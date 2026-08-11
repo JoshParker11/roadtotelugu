@@ -4,6 +4,12 @@
 English-Telugu-+RootVerbs.pdf
 *.pdf
 
+# Private material. The conversation transcripts are recordings of family at home: they
+# contain relatives' names, financial disputes, health details and ages. None of those
+# people agreed to be published, and this repo is public. Only de-identified linguistic
+# output derived from them may ever be committed.
+sources/private/
+
 # macOS
 .DS_Store
 ._*
