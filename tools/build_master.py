@@ -55,6 +55,93 @@ def is_english_respelled(rom, en):
     return a == b or (len(b) > 3 and a.startswith(b[:4])) or (len(a) > 3 and b.startswith(a[:4]))
 
 
+GLOSS_STRIP = re.compile(r'\([^)]*\)|\[[^\]]*\]')
+
+
+def gloss_terms(en):
+    """Comparable meaning units: 'to eat' -> {eat}, 'How Much ?' -> {how much},
+    'you (informal — close friends only); you' -> {you}."""
+    out = set()
+    for part in re.split(r'[;,/]', GLOSS_STRIP.sub('', en or '')):
+        t = re.sub(r'[^a-z ]', '', part.lower()).strip()
+        t = re.sub(r'^to\s+', '', t).strip()
+        if t:
+            out.add(t)
+    return out
+
+
+# Suffixes that change the word rather than misspell it. పెద్ద "big" vs పెద్దది "the big
+# one", వెళ్ళి "having gone" vs వెళ్ళండి "please go" — same gloss, different words.
+MEANINGFUL_SUFFIX = ('ది', 'ండి', 'కు', 'కి', 'లో', 'తో', 'ని', 'ను', 'లు', 'గా')
+
+
+def _edit(a, b):
+    if a == b: return 0
+    prev = list(range(len(b) + 1))
+    for i, ca in enumerate(a, 1):
+        cur = [i]
+        for j, cb in enumerate(b, 1):
+            cur.append(min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (ca != cb)))
+        prev = cur
+    return prev[-1]
+
+
+def _same_word(short, long_):
+    """True only for an orthographic slip, not a real morphological difference."""
+    strip = lambda x: re.sub(r'[\s?!.,]', '', x)
+    if strip(short) == strip(long_):
+        return True                                   # ఎంత? / ఎంత, ఈరోజు / ఈ రోజు
+    if _edit(short, long_) > 1:
+        return False                                  # too far apart to be a slip
+    return not long_.endswith(MEANINGFUL_SUFFIX)      # నువ్వ/నువ్వు yes, పెద్ద/పెద్దది no
+
+
+def reconcile_typos(merged):
+    """Fold single-source entries that are a misprint of a well-attested one.
+
+    The book's very first entry prints "You / Nuvu / నువ్వ" — the script is missing its
+    final vowel sign, so నువ్వ (nuvva, not a word) never merges with నువ్వు (nuvvu) and
+    survives as its own card.
+
+    Edit distance alone cannot find these: Telugu is full of real minimal pairs, and a
+    similarity scan over romanization flags తాగు/ఆగు and పాడు/పడు, which are different
+    words. So a candidate needs a shared gloss term AND near-identical script — and even
+    then it is only merged when the difference is an orthographic slip. Anything else is
+    left alone and flagged for a human, because merging is destructive."""
+    import difflib
+    attested = [m for m in merged.values() if len(m['source'].split(',')) > 1]
+    drop, flagged = [], []
+    for key, m in merged.items():
+        if len(m['source'].split(',')) > 1 or not m['telugu']:
+            continue
+        terms = gloss_terms(m['english'])
+        if not terms:
+            continue
+        for a in attested:
+            if not a['telugu'] or a is m or not (terms & gloss_terms(a['english'])):
+                continue
+            if difflib.SequenceMatcher(None, m['telugu'], a['telugu']).ratio() < 0.80:
+                continue
+            pair = sorted((m['telugu'], a['telugu']), key=len)
+            if _same_word(*pair):
+                for src in m['source'].split(','):
+                    if src not in a['source'].split(','):
+                        a['source'] += ',' + src
+                a['notes'] = (a['notes'] + f" · {m['source']} prints this as {m['telugu']}"
+                              f" ({m['roman']}) — treated as a misprint").strip(' ·')
+                a['flags'].add('merged-misprint')
+                drop.append((key, m, a))
+            else:
+                m['flags'].add('possible-misprint')
+                m['notes'] = (m['notes'] + f" · close to {a['telugu']} ({a['roman']}) "
+                              f"[{a['source']}] — confirm these are different words").strip(' ·')
+                flagged.append((m, a))
+            break
+    for key, _, _ in drop:
+        del merged[key]
+    return drop, flagged
+
+
 def classify(rec):
     flags = []
     te, rom, en = rec['telugu'], rec['roman'], rec['english']
@@ -121,6 +208,17 @@ def main():
         if r.get('book_flags'):
             rec['flags'] |= set(r['book_flags'].split())
         merged[key] = rec
+
+    dropped, flagged = reconcile_typos(merged)
+    if flagged:
+        print(f'\n  {len(flagged)} look close but differ by a real suffix — left alone, flagged:')
+        for m, a in flagged[:8]:
+            print(f"    {m['telugu']:<14}{m['roman']:<12}vs {a['telugu']} {a['roman']}")
+    if dropped:
+        print(f'\n  folded {len(dropped)} misprints into their attested spelling:')
+        for _, m, a in dropped:
+            print(f"    {m['telugu']:<14}{m['roman']:<12}\"{m['english'][:26]}\" [{m['source']}]"
+                  f"  ->  {a['telugu']} {a['roman']}")
 
     rows = list(merged.values())
     # study order: site material first (already sequenced), then by source frequency rank
