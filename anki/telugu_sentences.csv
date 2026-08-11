@@ -1,152 +1,851 @@
-EnglishPrompt,EnglishAudio,TeluguScript,Romanization,TeluguAudio,Notes,Tags,ID,Source,Kind,RegisterCue,CardMode,ScriptStatus,Level,Label
-Raj is a student.,,రాజ్ విద్యార్థి.,Raj vidyārthi.,,,src::lesson-01 type::example mode::production flag::assembled,S0001,"Lesson 1 · Pronouns & the missing ""to be""",example,,production,assembled,,
-Raj is a student.,,రాజ్ ఒక విద్యార్థి.,Raj oka vidyārthi.,,,src::lesson-01 type::example mode::production flag::assembled,S0002,"Lesson 1 · Pronouns & the missing ""to be""",example,,production,assembled,,
-I am a student.,,నేను విద్యార్థిని.,nēnu vidyārthini.,,,src::lesson-01 type::example mode::production flag::assembled,S0003,"Lesson 1 · Pronouns & the missing ""to be""",example,,production,assembled,,
-We are students.,,మనం విద్యార్థులము.,manam vidyārthulamu.,,colloquially often -am,src::lesson-01 type::example mode::production flag::assembled,S0004,"Lesson 1 · Pronouns & the missing ""to be""",example,,production,assembled,,
-This is the Taj Mahal.,,ఇది తాజ్ మహల్.,idi Tāj Mahal.,,,src::lesson-01 type::example mode::production flag::assembled,S0005,"Lesson 1 · Pronouns & the missing ""to be""",example,,production,assembled,,
-"""I am Sophia.""",,నేను సోఫియా ని.,nēnu Sophia ni.,,"nēnu + name + the ""I"" marker -ni",src::lesson-01 type::drill mode::production flag::assembled,S0006,"Lesson 1 · Pronouns & the missing ""to be""",drill,,production,assembled,,
-"""You are a teacher"" (to a teacher) [respectful]",,మీరు టీచర్.,mīru ṭīcharu.,,"formal → mīru, no marker",src::lesson-01 type::drill reg::respectful mode::production flag::assembled,S0007,"Lesson 1 · Pronouns & the missing ""to be""",drill,respectful,production,assembled,,
-"""You are a student"" (to a student) [informal]",,నువ్వు విద్యార్థివి.,nuvvu vidyārthivi.,,informal → nuvvu + marker -vi,src::lesson-01 type::drill reg::informal mode::production flag::assembled,S0008,"Lesson 1 · Pronouns & the missing ""to be""",drill,informal,production,assembled,,
-"""We are the champions"" (you're a champion too)",,,manam championlamu.,,"inclusive we → -amu, vowel eaten",src::lesson-01 type::drill mode::production flag::needs-script,S0009,"Lesson 1 · Pronouns & the missing ""to be""",drill,,production,needs-script,,
-"""This is the Taj Mahal / That is the Taj Mahal""",,ఇది తాజ్ మహల్. / అది తాజ్ మహల్.,idi Tāj Mahal. / adi Tāj Mahal.,,near i- vs distant a-,src::lesson-01 type::drill mode::production flag::assembled,S0010,"Lesson 1 · Pronouns & the missing ""to be""",drill,,production,assembled,,
-"""These people / those people""",,వీళ్ళు / వాళ్ళు.,vīḷḷu / vāḷḷu.,,near ī- vs distant ā-,src::lesson-01 type::drill mode::production flag::assembled,S0011,"Lesson 1 · Pronouns & the missing ""to be""",drill,,production,assembled,,
-"Give the near partner for āviḍa, atanu, and avi.",,"ఈవిడ, ఇతను, ఇవి.","īviḍa, itanu, ivi.",,keep the same meaning/register; change distance,src::lesson-01 type::drill mode::recognition flag::assembled,S0012,"Lesson 1 · Pronouns & the missing ""to be""",drill,,recognition,assembled,,
-Hello. (from Lesson 1),,నమస్కారం.,namaskāraṁ.,,,src::lesson-02 type::frame mode::production,S0013,Lesson 2 · Introductions,frame,,production,verbatim,,Greeting
-My name is ______.,,నా పేరు ______.,nā pēru ______.,,,src::lesson-02 type::frame mode::production,S0014,Lesson 2 · Introductions,frame,,production,verbatim,,Name
-My age is ______.,,నా వయసు ______.,nā vayasu ______.,,e.g. nā vayasu muppai āru = 36,src::lesson-02 type::frame mode::production,S0015,Lesson 2 · Introductions,frame,,production,verbatim,,Age
-I am a ______. (English profession word is fine),,నేను ______ ని.,nēnu ______ ni.,,,src::lesson-02 type::frame mode::production,S0016,Lesson 2 · Introductions,frame,,production,verbatim,,Profession
-I am ______. / Ours is ______.,,నేను ______ ని. / మాది ______.,nēnu ______ ni. / mādi ______.,,,src::lesson-02 type::frame mode::production,S0017,Lesson 2 · Introductions,frame,,production,verbatim,,Nationality
-Our hometown is ______.,,మాది ______.,mādi ______.,,,src::lesson-02 type::frame mode::production,S0018,Lesson 2 · Introductions,frame,,production,verbatim,,Hometown
-Our mother tongue is ______.,,మా మాతృభాష ______.,mā mātṛbhāṣa ______.,,,src::lesson-02 type::frame mode::production,S0019,Lesson 2 · Introductions,frame,,production,verbatim,,Language
-My father's name is ______.,,మా నాన్న పేరు ______.,mā nāna pēru ______.,,,src::lesson-02 type::frame mode::production,S0020,Lesson 2 · Introductions,frame,,production,verbatim,,Father
-My mother's name is ______.,,మా అమ్మ పేరు ______.,mā amma pēru ______.,,,src::lesson-02 type::frame mode::production,S0021,Lesson 2 · Introductions,frame,,production,verbatim,,Mother
-My wife's / husband's name is ______.,,నా భార్య / నా భర్త పేరు ______.,nā bhārya / nā bharta pēru ______.,,,src::lesson-02 type::frame mode::production,S0022,Lesson 2 · Introductions,frame,,production,verbatim,,Spouse
-He is a ______. / She is a ______. (Lesson 1 pronouns + oka),,అతను ఒక ______. / ఆమె ఒక ______.,atanu oka ______. / āme oka ______.,,,src::lesson-02 type::frame mode::production,S0023,Lesson 2 · Introductions,frame,,production,verbatim,,Their job
-Thank you.,,ధన్యవాదాలు.,dhanyavādālu.,,,src::lesson-02 type::frame mode::production,S0024,Lesson 2 · Introductions,frame,,production,verbatim,,Close
-I am a boy.,,నేను అబ్బాయిని.,nēnu abbāyini.,,,src::lesson-02 type::example mode::production,S0025,Lesson 2 · Introductions,example,,production,verbatim,,
-I am a girl.,,నేను అమ్మాయిని.,nēnu ammāyini.,,,src::lesson-02 type::example mode::production,S0026,Lesson 2 · Introductions,example,,production,verbatim,,
-"""I am a person / a human being.""",,నేను మనిషిని.,nēnu manishini.,,"manishi already ends in -i, so just add -ni",src::lesson-02 type::example mode::production,S0027,Lesson 2 · Introductions,example,,production,verbatim,,
-I am an engineer.,,నేను ఇంజినీర్‌ని.,nēnu enjinīrni.,,the normal way,src::lesson-02 type::example mode::production,S0028,Lesson 2 · Introductions,example,,production,verbatim,,
-"""My doctor's name is Sophia.""",,నా డాక్టర్ పేరు సోఫియా.,nā ḍākṭar pēru Sophia.,,"no apostrophe-s, just stack",src::lesson-02 type::example mode::production,S0029,Lesson 2 · Introductions,example,,production,verbatim,,
-My name is Raj.,,నా పేరు రాజ్.,nā pēru Raj.,,,src::lesson-02 type::example mode::production,S0030,Lesson 2 · Introductions,example,,production,verbatim,,
-My age is 20.,,నా వయసు ఇరవై.,nā vayasu iravai.,,"iravai = 20, muppai = 30",src::lesson-02 type::example mode::production,S0031,Lesson 2 · Introductions,example,,production,verbatim,,
-Our town is Hyderabad.,,మా ఊరు హైదరాబాద్.,mā ūru Hyderabad.,,,src::lesson-02 type::example mode::production,S0032,Lesson 2 · Introductions,example,,production,verbatim,,
-Ours is Hyderabad.,,మాది హైదరాబాద్.,mādi Hyderabad.,,the common form,src::lesson-02 type::example mode::production,S0033,Lesson 2 · Introductions,example,,production,verbatim,,
-"""I am an Indian"" (male speaker).",,నేను భారతీయుడిని.,nēnu bhāratīyuḍini.,,male · -ḍu → -ḍi before -ni,src::lesson-02 type::example mode::production,S0034,Lesson 2 · Introductions,example,,production,verbatim,,
-Ours is India.,,మాది ఇండియా.,mādi India.,,"same information, family framing",src::lesson-02 type::example mode::production flag::assembled,S0035,Lesson 2 · Introductions,example,,production,assembled,,
-"How do you say ""my mother""?",,మా అమ్మ.,mā amma.,,"literally ""our mother"" — never nā amma",src::lesson-02 type::drill mode::production flag::assembled,S0036,Lesson 2 · Introductions,drill,,production,assembled,,
-"How do you say ""my father""?",,మా నాన్న.,mā nāna.,,family unit → mā,src::lesson-02 type::drill mode::production flag::assembled,S0037,Lesson 2 · Introductions,drill,,production,assembled,,
-"How do you say ""my friend"" when it's a boy? A girl?",,నా స్నేహితుడు. / నా స్నేహితురాలు.,nā snēhituḍu. / nā snēhiturālu.,,or just nā friend,src::lesson-02 type::drill mode::production flag::assembled,S0038,Lesson 2 · Introductions,drill,,production,assembled,,
-"""My husband"" — everyday and traditional.",,నా భర్త. / మా ఆయన.,nā bharta. / mā āyana.,,"""our respected he""",src::lesson-02 type::drill mode::production flag::assembled,S0039,Lesson 2 · Introductions,drill,,production,assembled,,
-"""My father is a teacher.""",,మా నాన్న ఒక టీచర్.,mā nāna oka ṭīcharu.,,"mā for family, loanword profession",src::lesson-02 type::drill mode::production flag::assembled,S0040,Lesson 2 · Introductions,drill,,production,assembled,,
-You're from Hyderabad — two ways.,,మా ఊరు హైదరాబాద్. / మాది హైదరాబాద్.,mā ūru Hyderabad. / mādi Hyderabad.,,,src::lesson-02 type::drill mode::production flag::assembled,S0041,Lesson 2 · Introductions,drill,,production,assembled,,
-"Hello — palms together, fingers up",,నమస్కారం,namaskāraṁ / namaskāram aṇḍi,,,src::lesson-03 type::phrase reg::respectful mode::production,S0042,Lesson 3 · Greetings & courtesy,phrase,respectful,production,verbatim,,Arriving
-Please come in (rā + aṇḍi) [respectful],,రండి,raṇḍi,,,src::lesson-03 type::phrase reg::respectful mode::production,S0043,Lesson 3 · Greetings & courtesy,phrase,respectful,production,verbatim,,Being welcomed
-How are you? (lit. are you fine?) [respectful],,మీరు బాగున్నారా?,mīru bāgunnārā?,,,src::lesson-03 type::phrase reg::respectful mode::production,S0044,Lesson 3 · Greetings & courtesy,phrase,respectful,production,verbatim,,Small talk
-I'm fine.,,నేను బాగున్నాను.,nēnu bāgunnānu.,,,src::lesson-03 type::phrase mode::production,S0045,Lesson 3 · Greetings & courtesy,phrase,,production,verbatim,,Answering
-Yes / okay,,అవునండి / సరే,avunandi / sarē,,,src::lesson-03 type::phrase reg::respectful mode::production,S0046,Lesson 3 · Greetings & courtesy,phrase,respectful,production,verbatim,,Agreeing
-Someone offers you more food. You've had enough. [respectful],,వద్దండి,vaddandi,,"declining = vaddu, not lēdu",src::lesson-03 type::phrase reg::respectful mode::production,S0047,Lesson 3 · Greetings & courtesy,phrase,respectful,production,verbatim,,Declining
-Someone assumes you're a teacher. You're not. [respectful],,కాదండి,kādandi,,negating an identity statement = kādu,src::lesson-03 type::phrase reg::respectful mode::production,S0048,Lesson 3 · Greetings & courtesy,phrase,respectful,production,verbatim,,Correcting
-Someone asks if there's any coffee left. There isn't. [respectful],,లేదండి,lēdandi,,existence = lēdu,src::lesson-03 type::phrase reg::respectful mode::production,S0049,Lesson 3 · Greetings & courtesy,phrase,respectful,production,verbatim,,Not available
-Sorry (lit. forgive me) [respectful],,క్షమించండి,kṣaminchandi,,,src::lesson-03 type::phrase reg::respectful mode::production,S0050,Lesson 3 · Greetings & courtesy,phrase,respectful,production,verbatim,,Apologising
-"It was okay. / Not bad. / It's fine, don't worry about it.",,పర్వాలేదు,parvālēdu,,"Enormously versatile. It also means ""no problem"" when someone apologises, and ""it doesn't matter"" when someone offers something you're declining. Card this one today.",src::lesson-03 type::phrase mode::production,S0051,Lesson 3 · Greetings & courtesy,phrase,,production,verbatim,,Reassuring
-Thank a colleague in the way people actually do.,,థాంక్స్ అండి,thanks aṇḍi,,dhanyavādālu is formal/ceremonial only,src::lesson-03 type::phrase reg::respectful mode::production,S0052,Lesson 3 · Greetings & courtesy,phrase,respectful,production,verbatim,,Thanking
-Well done / congratulations,,శభాష్,śabhāṣ,,,src::lesson-03 type::phrase mode::production,S0053,Lesson 3 · Greetings & courtesy,phrase,,production,verbatim,,Praising
-Ask the price of something in front of you.,,ఇది ఎంత?,idi enta?,,"idi from Lesson 1 + enta, no verb",src::lesson-03 type::phrase mode::production,S0054,Lesson 3 · Greetings & courtesy,phrase,,production,verbatim,,Shopping
-Here you go [respectful],,ఇదిగోండి,idigōṇḍi,,,src::lesson-03 type::phrase reg::respectful mode::production,S0055,Lesson 3 · Greetings & courtesy,phrase,respectful,production,verbatim,,Handing over
-Let's go [respectful],,పదండి,padaṇḍi,,,src::lesson-03 type::phrase reg::respectful mode::production,S0056,Lesson 3 · Greetings & courtesy,phrase,respectful,production,verbatim,,Moving on
-Tell someone you don't know Telugu.,,తెలుగు రాదు.,Telugu rādu.,,"lit. ""Telugu doesn't come""",src::lesson-03 type::phrase mode::production,S0057,Lesson 3 · Greetings & courtesy,phrase,,production,verbatim,,Your level
-Do you know English?,,ఇంగ్లీష్ తెలుసా?,English telusā?,,,src::lesson-03 type::phrase mode::production,S0058,Lesson 3 · Greetings & courtesy,phrase,,production,verbatim,,Checking
-Say goodbye politely — and what does it literally mean?,,వస్తానండి,vastānandi,,"Literally ""I'll come back.""",src::lesson-03 type::phrase reg::respectful mode::production,S0059,Lesson 3 · Greetings & courtesy,phrase,respectful,production,verbatim,,Leaving
-This is not a car.,,ఇది కారు కాదు.,idi kāru kādu.,,denying the statement,src::lesson-03 type::example mode::production flag::assembled,S0060,Lesson 3 · Greetings & courtesy,example,,production,assembled,,
-No thanks. [respectful],,"వద్దు, థాంక్స్ అండి.","vaddu, thanks aṇḍi.",,declining an offer,src::lesson-03 type::example reg::respectful mode::production flag::assembled,S0061,Lesson 3 · Greetings & courtesy,example,respectful,production,assembled,,
-Greet someone respectfully — and what do your hands do?,,నమస్కారం అండి.,namaskāram aṇḍi.,,"palms together, fingers pointing up — not a wave",src::lesson-03 type::drill reg::respectful mode::production flag::assembled,S0062,Lesson 3 · Greetings & courtesy,drill,respectful,production,assembled,,
-"""How are you?"" — ask it respectfully, then answer.",,మీరు బాగున్నారా? / నేను బాగున్నాను.,mīru bāgunnārā? / nēnu bāgunnānu.,,both pronouns optional,src::lesson-03 type::drill reg::respectful mode::production flag::assembled,S0063,Lesson 3 · Greetings & courtesy,drill,respectful,production,assembled,,
-Your mother's elder sister.,,పెద్దమ్మ.,peddamma.,,"pedda + amma — ""elder mother""",src::lesson-04 type::drill mode::production flag::assembled,S0064,Lesson 4 · Family,drill,,production,assembled,,
-Your mother's younger sister.,,పిన్ని.,pinni.,,not a compound — its own word,src::lesson-04 type::drill mode::production flag::assembled,S0065,Lesson 4 · Family,drill,,production,assembled,,
-Your father's younger brother.,,చిన్నాన్న.,chinnāna.,,"chinna + nāna — ""younger father""",src::lesson-04 type::drill mode::production flag::assembled,S0066,Lesson 4 · Family,drill,,production,assembled,,
-Your father's sister — and does her age matter?,,అత్త.,atta.,,"No — age-neutral, like māmayya on the other side.",src::lesson-04 type::drill mode::production flag::assembled,S0067,Lesson 4 · Family,drill,,production,assembled,,
-Elder sister and younger sister.,,అక్క / చెల్లి.,akka / chelli.,,,src::lesson-04 type::drill mode::production flag::assembled,S0068,Lesson 4 · Family,drill,,production,assembled,,
-Address your grandfather respectfully.,,తాత గారు.,tāta gāru.,,"gāru attaches to people, aṇḍi to phrases",src::lesson-04 type::drill reg::respectful mode::production flag::assembled,S0069,Lesson 4 · Family,drill,respectful,production,assembled,,
-Your mother-in-law and father-in-law.,,అత్త గారు / మామ గారు.,atta gāru / māma gāru.,,Same roots as the paternal aunt and maternal uncle.,src::lesson-04 type::drill reg::respectful mode::production flag::assembled,S0070,Lesson 4 · Family,drill,respectful,production,assembled,,
-Son-in-law and daughter-in-law.,,అల్లుడు / కోడలు.,alluḍu / kōḍalu.,,,src::lesson-04 type::drill mode::production flag::assembled,S0071,Lesson 4 · Family,drill,,production,assembled,,
-"""I am the son-in-law."" — mind the Lesson 2 sound rule.",,నేను అల్లుడిని.,nēnu alluḍini.,,-ḍu → -ḍi before the person marker,src::lesson-04 type::drill mode::production flag::assembled,S0072,Lesson 4 · Family,drill,,production,assembled,,
-Hello. My name is Ravi.,,నమస్కారం. నా పేరు రవి.,namaskāraṁ. nā pēru Ravi.,,,src::lesson-05 type::dialogue mode::production,S0073,Lesson 5 · Possessives,dialogue,,production,verbatim,,
-That is my father. His name is Murthy. (formal — unchanged),,ఆయన మా నాన్న. ఆయన పేరు మూర్తి.,āyana mā nāna. āyana pēru Murthy.,,,src::lesson-05 type::dialogue mode::production,S0074,Lesson 5 · Possessives,dialogue,,production,verbatim,,
-That is my mother. Her name is Sunita. (formal — unchanged),,ఆవిడ మా అమ్మ. ఆవిడ పేరు సునీత.,āviḍa mā amma. āviḍa pēru Sunita.,,,src::lesson-05 type::dialogue mode::production,S0075,Lesson 5 · Possessives,dialogue,,production,verbatim,,
-She is my elder sister. Her name is Divya. (neutral — unchanged),,ఆమె మా అక్క. ఆమె పేరు దివ్య.,āme mā akka. āme pēru Divya.,,,src::lesson-05 type::dialogue mode::production,S0076,Lesson 5 · Possessives,dialogue,,production,verbatim,,
-He is my father's younger brother. His name is Sanjay. (neutral — u→i),,అతను మా చిన్నాన్న. అతని పేరు సంజయ్.,atanu mā chinnāna. atani pēru Sanjay.,,,src::lesson-05 type::dialogue mode::production,S0077,Lesson 5 · Possessives,dialogue,,production,verbatim,,
-He is my friend. His name is Peter. (informal — u→i),,వాడు నా ఫ్రెండ్. వాడి పేరు పీటర్.,vāḍu nā friend. vāḍi pēru Peter.,,,src::lesson-05 type::dialogue reg::informal mode::production,S0078,Lesson 5 · Possessives,dialogue,informal,production,verbatim,,
-That's my classmate. Her name is Gita. (informal — new form),,అది నా క్లాస్‌మేట్. దాని పేరు గీత.,adi nā classmate. dāni pēru Gita.,,,src::lesson-05 type::dialogue mode::production,S0079,Lesson 5 · Possessives,dialogue,,production,verbatim,,
-"Their names are Peter and Gita. (plural — u→a, noun takes -lu)",,"వాళ్ళ పేర్లు పీటర్, గీత.","vāḷḷa pērlu Peter, Gita.",,,src::lesson-05 type::dialogue mode::production,S0080,Lesson 5 · Possessives,dialogue,,production,verbatim,,
-Ask a stranger their name.,,మీ పేరు ఏమిటి?,mī pēru ēmiṭi?,,"respectful · stranger → always mī, never nī",src::lesson-05 type::example reg::respectful mode::production,S0081,Lesson 5 · Possessives,example,respectful,production,verbatim,,
-Say that question the way it actually sounds at speed. [respectful],,మీ పేరెంటి?,mī pēreṇṭi?,,pēru + ēnti — the vowel gets deleted,src::lesson-05 type::drill reg::respectful mode::production flag::assembled,S0082,Lesson 5 · Possessives,drill,respectful,production,assembled,,
-"""His name is Sanjay"" — neutral register.",,అతని పేరు సంజయ్.,atani pēru Sanjay.,,atanu → atani,src::lesson-05 type::drill mode::production flag::assembled,S0083,Lesson 5 · Possessives,drill,,production,assembled,,
-"""Her name is Divya"" — neutral register.",,ఆమె పేరు దివ్య.,āme pēru Divya.,,āme doesn't change,src::lesson-05 type::drill mode::production flag::assembled,S0084,Lesson 5 · Possessives,drill,,production,assembled,,
-"""His name"" using the formal pronoun.",,ఆయన పేరు.,āyana pēru.,,unchanged,src::lesson-05 type::drill mode::production flag::assembled,S0085,Lesson 5 · Possessives,drill,,production,assembled,,
-Which two possessives are completely new words?,,,dāni (from adi) and vāṭi (from avi) — both neuter.,,,src::lesson-05 type::drill mode::recognition flag::needs-script,S0086,Lesson 5 · Possessives,drill,,recognition,needs-script,,
-"""Their names"" for a group of people.",,వాళ్ళ పేర్లు.,vāḷḷa pērlu.,,"vāḷḷu → vāḷḷa, and pēru → pērlu",src::lesson-05 type::drill mode::production flag::assembled,S0087,Lesson 5 · Possessives,drill,,production,assembled,,
-"""Our names"" — you're telling someone outside your group.",,మా పేర్లు.,mā pērlu.,,exclusive — they're not included,src::lesson-05 type::drill mode::production flag::assembled,S0088,Lesson 5 · Possessives,drill,,production,assembled,,
-Now say it including your listener.,,మన పేర్లు.,mana pērlu.,,inclusive,src::lesson-05 type::drill mode::production flag::assembled,S0089,Lesson 5 · Possessives,drill,,production,assembled,,
-Which possessives are identical to their pronouns?,,"ఆయన, ఆవిడ, ఆమె.","āyana, āviḍa, āme.",,,src::lesson-05 type::drill mode::recognition flag::assembled,S0090,Lesson 5 · Possessives,drill,,recognition,assembled,,
-21,,ఇరవై ఒకటి,iravai okaṭi,,,src::lesson-06 type::example mode::production,S0091,Lesson 6 · Numbers,example,,production,verbatim,,
-37,,ముప్పై ఏడు,muppai ēḍu,,,src::lesson-06 type::example mode::production,S0092,Lesson 6 · Numbers,example,,production,verbatim,,
-Say 99.,,తొంభై తొమ్మిది,tombhai tommidi,,,src::lesson-06 type::example mode::production,S0093,Lesson 6 · Numbers,example,,production,verbatim,,
-Fifty rupees.,,యాభై రూపాయలు.,yābhai rūpāyalu.,,,src::lesson-06 type::example mode::production,S0094,Lesson 6 · Numbers,example,,production,verbatim,,
-A hundred rupees.,,వంద రూపాయలు.,vanda rūpāyalu.,,,src::lesson-06 type::example mode::production flag::assembled,S0095,Lesson 6 · Numbers,example,,production,assembled,,
-Say 42.,,నలభై రెండు.,nalabhai reṇḍu.,,"ten word + unit, no connector",src::lesson-06 type::drill mode::production flag::assembled,S0096,Lesson 6 · Numbers,drill,,production,assembled,,
-Say 300.,,మూడు వందలు.,mūḍu vandalu.,,multiplier + plural base,src::lesson-06 type::drill mode::production flag::assembled,S0097,Lesson 6 · Numbers,drill,,production,assembled,,
-"Say 2,700.",,రెండు వేలు ఏడు వందలు.,reṇḍu vēlu ēḍu vandalu.,,largest part first,src::lesson-06 type::drill mode::production flag::assembled,S0098,Lesson 6 · Numbers,drill,,production,assembled,,
-"""How much is this?"" — then answer ""fifty rupees.""",,ఇది ఎంత? / యాభై రూపాయలు.,idi enta? / yābhai rūpāyalu.,,,src::lesson-06 type::drill mode::production flag::assembled,S0099,Lesson 6 · Numbers,drill,,production,assembled,,
-"""Two cars"" and ""two people"" — why are they different?",,రెండు కార్లు / ఇద్దరు.,reṇḍu kārlu / iddaru.,,People take the special -ru counting forms.,src::lesson-06 type::drill mode::production flag::assembled,S0100,Lesson 6 · Numbers,drill,,production,assembled,,
-"""Ten people.""",,పది మంది.,padi mandi.,,mandi is the counter for larger groups,src::lesson-06 type::drill mode::production flag::assembled,S0101,Lesson 6 · Numbers,drill,,production,assembled,,
-"How much is ""fifty lakh"" in plain digits?",,"5,000,000.","5,000,000.",,"A lakh is 100,000. · A crore is 10,000,000.",src::lesson-06 type::drill mode::recognition flag::assembled,S0102,Lesson 6 · Numbers,drill,,recognition,assembled,,
-"Which number has two forms, and why?",,,okaṭi (alone) / oka (before a noun) — which is how oka became article-like.,,,src::lesson-06 type::drill mode::recognition flag::needs-script,S0103,Lesson 6 · Numbers,drill,,recognition,needs-script,,
-How did today go?,,ఈ రోజు ఎట్ల గడిచింది?,ī rōju eṭla gaḍichindi?,,Listen for: rōju (day) and eṭla (how). Those two words are enough to identify it.,src::scenario-how-was-your-day type::scenario mode::production,S0104,Scenario · How was your day?,scenario,,production,verbatim,most likely,
-What did you do? [respectful],,ఏం చేసారు?,ēṁ chēsāru?,,"Listen for: ēṁ (what). The -āru ending is the respectful ""you"" form — she's being polite to you.",src::scenario-how-was-your-day type::scenario reg::respectful mode::production,S0105,Scenario · How was your day?,scenario,respectful,production,verbatim,very likely,
-Are you well? [respectful],,బాగున్నారా?,bāgunnārā?,,Listen for: bāgu- plus a rising -ā at the end. That final -ā is the yes/no question marker — the same one you met on the song page.,src::scenario-how-was-your-day type::scenario reg::respectful mode::production,S0106,Scenario · How was your day?,scenario,respectful,production,verbatim,likely,
-Have you eaten? [respectful],,తిన్నారా?,tinnārā?,,This one is coming whether you like it or not. See the follow-ups section — it matters more than the day question does.,src::scenario-how-was-your-day type::scenario reg::respectful mode::production,S0107,Scenario · How was your day?,scenario,respectful,production,verbatim,near-certain,
-It was good. / It's good.,,బాగుంది,bāgundi,,"Why you can already say this: it's bāgā (""well,"" Lesson 3) fused with undi (""it is,"" Lesson 1). Telugu doesn't need a separate past tense here — context carries it.",src::scenario-how-was-your-day type::scenario mode::production,S0108,Scenario · How was your day?,scenario,,production,verbatim,,
-"Very good, aunty.",,చాలా బాగుంది అత్తయ్య,chālā bāgundi attayya,,"Why you can already say this: chālā (""very"") plus attayya — the address form of atta from Lesson 4, the word that does double duty for aunt and mother-in-law.",src::scenario-how-was-your-day type::scenario mode::production,S0109,Scenario · How was your day?,scenario,,production,verbatim,,
-There was a lot of work at the office today.,,ఈ రోజు ఆఫీసులో చాలా పని ఉంది,ī rōju āphīsulō chālā pani undi,,"Why you can already say this: -lō is the ""in"" ending, and undi is Lesson 1's ""there is."" Literally: today office-in much work is. No verb conjugation anywhere.",src::scenario-how-was-your-day type::scenario mode::production,S0110,Scenario · How was your day?,scenario,,production,verbatim,,
-I'm a bit tired.,,కొంచెం అలిసిపోయాను,konchaṁ alisipōyānu,,"Learn this as a block. alisipōyānu is past tense with a first-person ending — Lesson 9 territory. You'll take it apart later; for now it's one word. konchaṁ (""a little"") is independently useful and softens almost anything.",src::scenario-how-was-your-day type::scenario mode::production,S0111,Scenario · How was your day?,scenario,,production,verbatim,,
-Today was a bit hard.,,ఈ రోజు కొంచెం కష్టం,ī rōju konchaṁ kaṣṭaṁ,,Why you can already say this: zero copula from Lesson 1 — no verb at all. Today a-little difficulty. kaṣṭaṁ is a high-frequency word worth knowing.,src::scenario-how-was-your-day type::scenario mode::production,S0112,Scenario · How was your day?,scenario,,production,verbatim,,
-It was good — I did a lot of work.,,"బాగుంది, చాలా పని చేసాను","bāgundi, chālā pani chēsānu",,"The direct version. chēsānu is ""I did"" — past tense with the first-person -nu ending you know from unnānu. Memorise it whole for now; Lesson 9 explains the shape.",src::scenario-how-was-your-day type::scenario mode::production,S0113,Scenario · How was your day?,scenario,,production,verbatim,,
-It was good — a lot of work got done.,,"బాగుంది, చాలా పని అయ్యింది","bāgundi, chālā pani ayyindi",,"This is the one I'd actually use. See the note below: Telugu reaches for ""it got done"" far more readily than ""I did it,"" and in a family setting that framing lands better.",src::scenario-how-was-your-day type::scenario mode::production,S0114,Scenario · How was your day?,scenario,,production,verbatim,,
-It was good — a good piece of work got finished.,,"బాగుంది, ఒక మంచి పని పూర్తి అయ్యింది","bāgundi, oka manchi pani pūrti ayyindi",,Look at oka doing exactly its job. This is the deep-dive use: one newly introduced thing the listener doesn't know about yet. Drop it and the sentence goes vague. And manchi is the Lesson 3 “good” — the adjective form of manchidi.,src::scenario-how-was-your-day type::scenario mode::production,S0115,Scenario · How was your day?,scenario,,production,verbatim,,
-But there was a lot of traffic on the way.,,కానీ దారిలో ట్రాఫిక్ చాలా ఎక్కువ ఉంది,kāni dārilō ṭrāphik chālā ekkuva undi,,"Only three new words. kāni (but), dāri (way, road), ekkuva (a lot, excessive). Everything else you have: -lō from āphīsulō, plus chālā and undi.",src::scenario-how-was-your-day type::scenario mode::production,S0116,Scenario · How was your day?,scenario,,production,verbatim,,
-How are you? [respectful],,మీరు ఎట్ల ఉన్నారు?,mīru eṭla unnāru?,,"Why you can already say this: mīru from Lesson 1, unnāru is the same existence verb with the respectful ending. The only new piece is eṭla.",src::scenario-how-was-your-day type::scenario reg::respectful mode::production,S0117,Scenario · How was your day?,scenario,respectful,production,verbatim,,
-Is everyone at home well? [respectful],,ఇంట్లో అంతా బాగున్నారా?,intlō antā bāgunnārā?,,"A very Telugu thing to ask. Enquiring after the whole household rather than the individual is standard and lands as warm. intlō is illu (""house"") plus the -lō you used above.",src::scenario-how-was-your-day type::scenario reg::respectful mode::production,S0118,Scenario · How was your day?,scenario,respectful,production,verbatim,,
-How did your day go? [respectful],,మీ రోజు ఎట్ల గడిచింది?,mī rōju eṭla gaḍichindi?,,"Straight mirroring. Take her question and swap in mī (""your,"" Lesson 5). Reusing someone's own construction back at them is the cheapest fluency trick there is, and it always fits.",src::scenario-how-was-your-day type::scenario reg::respectful mode::production,S0119,Scenario · How was your day?,scenario,respectful,production,verbatim,,
-This nearby man/person is Ravi.,,ఇతను రవి.,itanu Ravi.,,,src::story-01 type::story mode::production,S0120,Mini story 01 · Ravi and Sita,story,,production,verbatim,,line 01
-Ravi is a student.,,రవి విద్యార్థి.,Ravi vidyārthi.,,,src::story-01 type::story mode::production,S0121,Mini story 01 · Ravi and Sita,story,,production,verbatim,,line 02
-This nearby woman is Sita.,,ఈమె సీత.,īme Sīta.,,,src::story-01 type::story mode::production,S0122,Mini story 01 · Ravi and Sita,story,,production,verbatim,,line 03
-Sita is also a student.,,సీత కూడా విద్యార్థి.,Sīta kūḍā vidyārthi.,,,src::story-01 type::story mode::production,S0123,Mini story 01 · Ravi and Sita,story,,production,verbatim,,line 04
-Produce: “These people are students.”,,వీళ్ళు విద్యార్థులు.,vīḷḷu vidyārthulu.,,,src::story-01 type::story mode::production,S0124,Mini story 01 · Ravi and Sita,story,,production,verbatim,,line 05
-That gentleman is a teacher.,,ఆయన టీచర్.,āyana ṭīcharu.,,,src::story-01 type::story mode::production,S0125,Mini story 01 · Ravi and Sita,story,,production,verbatim,,line 06
-Produce: “This lady is also a teacher.”,,ఈవిడ కూడా టీచర్.,īviḍa kūḍā ṭīcharu.,,,src::story-01 type::story mode::production,S0126,Mini story 01 · Ravi and Sita,story,,production,verbatim,,line 07
-This is a car.,,ఇది కారు.,idi kāru.,,,src::story-01 type::story mode::production,S0127,Mini story 01 · Ravi and Sita,story,,production,verbatim,,line 08
-Change near to far: idi kāru.,,అది కారు.,adi kāru.,,,src::story-01 type::story mode::production,S0128,Mini story 01 · Ravi and Sita,story,,production,verbatim,,line 09
-Change singular to plural: idi kāru.,,ఇవి కార్లు.,ivi kārlu.,,,src::story-01 type::story mode::production,S0129,Mini story 01 · Ravi and Sita,story,,production,verbatim,,line 10
-Those are cars.,,అవి కార్లు.,avi kārlu.,,,src::story-01 type::story mode::production,S0130,Mini story 01 · Ravi and Sita,story,,production,verbatim,,line 11
-Those people are students.,,వాళ్ళు విద్యార్థులు.,vāḷḷu vidyārthulu.,,,src::story-01 type::story mode::production,S0131,Mini story 01 · Ravi and Sita,story,,production,verbatim,,line 12
-Who is a student?,,రవి విద్యార్థి. సీత కూడా విద్యార్థి.,Ravi vidyārthi. Sīta kūḍā vidyārthi.,,,src::story-01 type::drill mode::production flag::assembled,S0132,Mini story 01 · Ravi and Sita,drill,,production,assembled,,
-“She is a teacher.” Neutral statement of profession.,,ఆమె టీచర్.,āme ṭīcar.,,bare predicate; English “a” does not need translation.,src::concept-oka type::drill mode::production flag::assembled,S0133,Deep dive · oka,drill,,production,assembled,,
-“A man came.” He is new to the story.,,,oka maniṣi vaccāḍu.,,oka introduces one new participant.,src::concept-oka type::drill mode::production flag::needs-script,S0134,Deep dive · oka,drill,,production,needs-script,,
-“Give me one.” The noun is already understood. [respectful],,ఒకటి ఇవ్వండి.,okaṭi ivvaṇḍi.,,"independent okaṭi, not bare oka. · The item is understood, so independent okaṭi takes its place.",src::concept-oka type::drill reg::respectful mode::production flag::assembled,S0135,Deep dive · oka,drill,respectful,production,assembled,,
-"“I bought one book, not two.”",,"నేను ఒక పుస్తకం కొన్నాను, రెండు కాదు.","nēnu oka pustakaṁ konnānu, reṇḍu kādu.",,exact count makes oka meaningful.,src::concept-oka type::drill mode::production flag::assembled,S0136,Deep dive · oka,drill,,production,assembled,,
-“The book is on the table.” Both speakers know which book.,,పుస్తకం బల్ల మీద ఉంది.,pustakaṁ balla mīda undi.,,context can identify a bare noun; ā pustakaṁ if you need to point it out. · if both people know which book. A bare noun is not automatically indefinite.,src::concept-oka type::drill mode::production flag::assembled,S0137,Deep dive · oka,drill,,production,assembled,,
-“Someone called Ramayya called.” The listener does not know him.,,ఒక రామయ్య ఫోన్ చేశాడు.,oka Rāmayya phōn cēśāḍu.,,oka gives “a certain / someone named.” · The identity is not assumed to be known.,src::concept-oka type::drill mode::production flag::assembled,S0138,Deep dive · oka,drill,,production,assembled,,
-one book,,ఒక పుస్తకం,oka pustakaṁ,,or “a book.” Oka modifies the noun that follows it.,src::concept-oka type::contrast mode::production,S0139,Deep dive · oka,contrast,,production,verbatim,,Before a noun
-Take a/one book. [respectful],,ఒక పుస్తకం తీసుకోండి,oka pustakaṁ tīsukoṇḍi,,Context decides how strongly the count matters.,src::concept-oka type::contrast reg::respectful mode::production,S0140,Deep dive · oka,contrast,respectful,production,verbatim,,Plain count
-Take only one book. [respectful],,ఒక్క పుస్తకమే తీసుకోండి,okka pustakamē tīsukoṇḍi,,The doubled kk plus -ē excludes alternatives explicitly.,src::concept-oka type::contrast reg::respectful mode::production,S0141,Deep dive · oka,contrast,respectful,production,verbatim,,One only
-I bought a book / the book.,,నేను పుస్తకం కొన్నాను,nēnu pustakaṁ konnānu,,The point may simply be what you bought.,src::concept-oka type::contrast mode::production,S0142,Deep dive · oka,contrast,,production,verbatim,,Bare object · compact event
-I bought a/one book.,,నేను ఒక పుస్తకం కొన్నాను,nēnu oka pustakaṁ konnānu,,"One book is placed into the conversation, especially naturally if you will say more about it.",src::concept-oka type::contrast mode::production,S0143,Deep dive · oka,contrast,,production,verbatim,,Individuated object
-She is a doctor.,,ఆమె డాక్టర్,āme ḍākṭar,,This is the normal classification pattern. English requires a; Telugu does not.,src::concept-oka type::contrast mode::production,S0144,Deep dive · oka,contrast,,production,verbatim,,Neutral profession
-She is a good doctor.,,ఆమె ఒక మంచి డాక్టర్,āme oka manci ḍākṭar,,Oka presents her more deliberately as one member/example of that category. Bare āme manci ḍākṭar is also natural.,src::concept-oka type::contrast mode::production,S0145,Deep dive · oka,contrast,,production,verbatim,,Characterization
-Literally “man knocked on the door.”,,మనిషి తలుపు తట్టాడు,maniṣi talupu taṭṭāḍu,,"Possible in context, but abrupt as a story opening; it can sound as if the man is already identifiable.",src::concept-oka type::contrast mode::production,S0146,Deep dive · oka,contrast,,production,verbatim,,Context-dependent participant
-A man knocked on the door.,,ఒక మనిషి తలుపు తట్టాడు,oka maniṣi talupu taṭṭāḍu,,One previously unknown man enters the story and can now be referred to again.,src::concept-oka type::contrast mode::production,S0147,Deep dive · oka,contrast,,production,verbatim,,New story participant
-Ramayya called.,,రామయ్య ఫోన్ చేశాడు,Rāmayya phōn cēśāḍu,,The name is enough for the listener to know who you mean.,src::concept-oka type::contrast mode::production,S0148,Deep dive · oka,contrast,,production,verbatim,,"Named, assumed identifiable"
-That book is on the table.,,ఆ పుస్తకం బల్ల మీద ఉంది,ā pustakaṁ balla mīda undi,,"For an identifiable object, a demonstrative such as ā often does the job—not oka.",src::concept-oka type::contrast mode::production,S0149,Deep dive · oka,contrast,,production,verbatim,,Explicitly pointed out
-Please wait ten minutes. [respectful],,పది నిమిషాలు ఆగండి,padi nimiṣālu āgaṇḍi,,The quantity is presented directly.,src::concept-oka type::contrast reg::respectful mode::production,S0150,Deep dive · oka,contrast,respectful,production,verbatim,,Unhedged amount
-Please wait about ten minutes. [respectful],,ఒక పది నిమిషాలు ఆగండి,oka padi nimiṣālu āgaṇḍi,,"In contemporary speech, oka can soften a following quantity into an estimate.",src::concept-oka type::contrast reg::respectful mode::production,S0151,Deep dive · oka,contrast,respectful,production,verbatim,,Conversational estimate
+EnglishPrompt,EnglishAudio,TeluguScript,Romanization,TeluguAudio,Notes,Tags,ID
+I am a student.,,నేను విద్యార్థిని.,nēnu vidyārthini.,,,src::site known::100,S0001
+We are students.,,మనం విద్యార్థులము.,manaṁ vidyārthulamu.,,colloquially often -am,src::site known::100,S0002
+"""You are a teacher"" (to a teacher) [respectful]",,మీరు టీచర్.,mīru ṭīchar.,,"formal → mīru, no marker",src::site reg::respectful known::100,S0003
+"""You are a student"" (to a student) [informal]",,నువ్వు విద్యార్థివి.,nuvvu vidyārthivi.,,informal → nuvvu + marker -vi,src::site reg::informal known::100,S0004
+"""These people / those people""",,వీళ్ళు / వాళ్ళు.,vīḷḷu / vāḷḷu.,,near ī- vs distant ā-,src::site known::100,S0006
+"Give the near partner for āviḍa, atanu, and avi.",,"ఈవిడ, ఇతను, ఇవి.","īviḍa, itanu, ivi.",,keep the same meaning/register; change distance,src::site known::100,S0007
+"Hello. (from Lesson 1); Hello — palms together, fingers up",,నమస్కారం.,namaskāraṁ.,,,src::site known::100,S0008
+My name is ______.,,నా పేరు ______.,nā pēru ______.,,,src::site src::book1000 known::100,S0009
+My age is ______.,,నా వయసు ______.,nā vayasu ______.,,e.g. nā vayasu muppai āru = 36,src::site known::100,S0010
+I am a ______. (English profession word is fine),,నేను ______ ని.,nēnu ______ ni.,,,src::site known::100,S0011
+I am ______. / Ours is ______.,,నేను ______ ని. / మాది ______.,nēnu ______ ni. / mādi ______.,,,src::site known::100,S0012
+Our hometown is ______.,,మాది ______.,mādi ______.,,,src::site known::100,S0013
+Our mother tongue is ______.,,మా మాతృభాష ______.,mā mātṛbhāṣa ______.,,,src::site known::100,S0014
+My father's name is ______.,,మా నాన్న పేరు ______.,mā nānna pēru ______.,,,src::site known::100,S0015
+My mother's name is ______.,,మా అమ్మ పేరు ______.,mā amma pēru ______.,,,src::site known::100,S0016
+My wife's / husband's name is ______.,,నా భార్య / నా భర్త పేరు ______.,nā bhārya / nā bharta pēru ______.,,,src::site known::100,S0017
+He is a ______. / She is a ______. (Lesson 1 pronouns + oka),,అతను ఒక ______. / ఆమె ఒక ______.,atanu oka ______. / āme oka ______.,,,src::site known::100,S0018
+Thank you.,,ధన్యవాదాలు.,dhanyavādālu.,,,src::site known::100,S0019
+I am a boy.,,నేను అబ్బాయిని.,nēnu abbāyini.,,,src::site known::100,S0020
+I am a girl.,,నేను అమ్మాయిని.,nēnu ammāyini.,,,src::site known::100,S0021
+"""I am a person / a human being.""",,నేను మనిషిని.,nēnu maniṣini.,,"manishi already ends in -i, so just add -ni",src::site known::100,S0022
+I am an engineer.,,నేను ఇంజినీర్‌ని.,nēnu injinīrni.,,the normal way,src::site known::100,S0023
+My age is 20.,,నా వయసు ఇరవై.,nā vayasu iravai.,,"iravai = 20, muppai = 30",src::site known::100,S0024
+"""I am an Indian"" (male speaker).",,నేను భారతీయుడిని.,nēnu bhāratīyuḍini.,,male · -ḍu → -ḍi before -ni,src::site known::100,S0025
+"How do you say ""my mother""?",,మా అమ్మ.,mā amma.,,"literally ""our mother"" — never nā amma",src::site known::100,S0026
+"How do you say ""my father""?",,మా నాన్న.,mā nānna.,,family unit → mā,src::site known::100,S0027
+"How do you say ""my friend"" when it's a boy? A girl?",,నా స్నేహితుడు. / నా స్నేహితురాలు.,nā snēhituḍu. / nā snēhiturālu.,,or just nā friend,src::site known::100,S0028
+"""My husband"" — everyday and traditional.",,నా భర్త. / మా ఆయన.,nā bharta. / mā āyana.,,"""our respected he""",src::site known::100,S0029
+"""My father is a teacher.""",,మా నాన్న ఒక టీచర్.,mā nānna oka ṭīchar.,,"mā for family, loanword profession",src::site known::100,S0030
+Please come in (rā + aṇḍi) [respectful],,రండి,raṇḍi,,,src::site reg::respectful known::100,S0031
+How are you? (lit. are you fine?) [respectful]; Are you okay ?,,మీరు బాగున్నారా?,mīru bāgunnārā?,,,src::site src::book1000 reg::respectful known::100,S0032
+I'm fine.; I feel good,,నేను బాగున్నాను.,nēnu bāgunnānu.,,,src::site src::book1000 known::100,S0033
+Yes / okay [respectful],,అవునండి / సరే,avunaṇḍi / sarē,,,src::site reg::respectful known::100,S0034
+Someone offers you more food. You've had enough. [respectful],,వద్దండి,vaddaṇḍi,,"declining = vaddu, not lēdu",src::site reg::respectful known::100,S0035
+Someone assumes you're a teacher. You're not. [respectful],,కాదండి,kādaṇḍi,,negating an identity statement = kādu,src::site reg::respectful known::100,S0036
+Someone asks if there's any coffee left. There isn't. [respectful],,లేదండి,lēdaṇḍi,,existence = lēdu,src::site reg::respectful known::100,S0037
+Sorry (lit. forgive me) [respectful]; Excuse me; Pardon me,,క్షమించండి,kṣaminchaṇḍi,,,src::site src::book1000 reg::respectful known::100,S0038
+"It was okay. / Not bad. / It's fine, don't worry about it.; Never mind",,పర్వాలేదు,parvālēdu,,"Enormously versatile. It also means ""no problem"" when someone apologises, and ""it doesn't matter"" when someone offers something you're declining. Card this one today.",src::site src::book1000 known::100,S0039
+Thank a colleague in the way people actually do. [respectful],,థాంక్స్ అండి,thānks aṇḍi,,dhanyavādālu is formal/ceremonial only,src::site reg::respectful known::100,S0040
+Well done / congratulations,,శభాష్,śabhāṣ,,,src::site known::100,S0041
+Ask the price of something in front of you.,,ఇది ఎంత?,idi enta?,,"idi from Lesson 1 + enta, no verb",src::site known::100,S0042
+Here you go [respectful],,ఇదిగోండి,idigōṇḍi,,,src::site reg::respectful known::100,S0043
+Let's go [respectful],,పదండి,padaṇḍi,,,src::site reg::respectful known::100,S0044
+Tell someone you don't know Telugu.,,తెలుగు రాదు.,telugu rādu.,,"lit. ""Telugu doesn't come""",src::site known::100,S0045
+Say goodbye politely — and what does it literally mean?,,వస్తానండి,vastānaṇḍi,,"Literally ""I'll come back.""",src::site reg::respectful known::100,S0046
+This is not a car.,,ఇది కారు కాదు.,idi kāru kādu.,,denying the statement,src::site known::100,S0047
+No thanks. [respectful],,"వద్దు, థాంక్స్ అండి.","vaddu, thānks aṇḍi.",,declining an offer,src::site reg::respectful known::100,S0048
+Greet someone respectfully — and what do your hands do?,,నమస్కారం అండి.,namaskāraṁ aṇḍi.,,"palms together, fingers pointing up — not a wave",src::site reg::respectful known::100,S0049
+"""How are you?"" — ask it respectfully, then answer.",,మీరు బాగున్నారా? / నేను బాగున్నాను.,mīru bāgunnārā? / nēnu bāgunnānu.,,both pronouns optional,src::site reg::respectful known::100,S0050
+Your mother's elder sister.,,పెద్దమ్మ.,peddamma.,,"pedda + amma — ""elder mother""",src::site known::100,S0051
+Your mother's younger sister.,,పిన్ని.,pinni.,,not a compound — its own word,src::site known::100,S0052
+Your father's younger brother.,,చిన్నాన్న.,chinnānna.,,"chinna + nāna — ""younger father""",src::site known::100,S0053
+Your father's sister — and does her age matter?,,అత్త.,atta.,,"No — age-neutral, like māmayya on the other side.",src::site known::100,S0054
+Elder sister and younger sister.,,అక్క / చెల్లి.,akka / chelli.,,,src::site known::100,S0055
+Address your grandfather respectfully.,,తాత గారు.,tāta gāru.,,"gāru attaches to people, aṇḍi to phrases",src::site reg::respectful known::100,S0056
+Your mother-in-law and father-in-law. [respectful],,అత్త గారు / మామ గారు.,atta gāru / māma gāru.,,Same roots as the paternal aunt and maternal uncle.,src::site reg::respectful known::100,S0057
+Son-in-law and daughter-in-law.,,అల్లుడు / కోడలు.,alluḍu / kōḍalu.,,,src::site known::100,S0058
+"""I am the son-in-law."" — mind the Lesson 2 sound rule.",,నేను అల్లుడిని.,nēnu alluḍini.,,-ḍu → -ḍi before the person marker,src::site known::100,S0059
+Ask a stranger their name. [respectful],,మీ పేరు ఏమిటి?,mī pēru ēmiṭi?,,"respectful · stranger → always mī, never nī",src::site reg::respectful known::100,S0060
+Say that question the way it actually sounds at speed. [respectful],,మీ పేరెంటి?,mī pēreṇṭi?,,pēru + ēnti — the vowel gets deleted,src::site reg::respectful known::100,S0061
+"""His name"" using the formal pronoun.",,ఆయన పేరు.,āyana pēru.,,unchanged,src::site known::100,S0062
+"""Their names"" for a group of people.",,వాళ్ళ పేర్లు.,vāḷḷa pērlu.,,"vāḷḷu → vāḷḷa, and pēru → pērlu",src::site known::100,S0063
+"""Our names"" — you're telling someone outside your group.",,మా పేర్లు.,mā pērlu.,,exclusive — they're not included,src::site known::100,S0064
+Now say it including your listener.,,మన పేర్లు.,mana pērlu.,,inclusive,src::site known::100,S0065
+Which possessives are identical to their pronouns?,,"ఆయన, ఆవిడ, ఆమె.","āyana, āviḍa, āme.",,,src::site known::100,S0066
+21,,ఇరవై ఒకటి,iravai okaṭi,,,src::site known::100,S0067
+37,,ముప్పై ఏడు,muppai ēḍu,,,src::site known::100,S0068
+Say 99.,,తొంభై తొమ్మిది,tombhai tommidi,,,src::site known::100,S0069
+Fifty rupees.,,యాభై రూపాయలు.,yābhai rūpāyalu.,,,src::site known::100,S0070
+A hundred rupees.,,వంద రూపాయలు.,vanda rūpāyalu.,,,src::site known::100,S0071
+Say 42.,,నలభై రెండు.,nalabhai reṇḍu.,,"ten word + unit, no connector",src::site known::100,S0072
+Say 300.,,మూడు వందలు.,mūḍu vandalu.,,multiplier + plural base,src::site known::100,S0073
+"Say 2,700.",,రెండు వేలు ఏడు వందలు.,reṇḍu vēlu ēḍu vandalu.,,largest part first,src::site known::100,S0074
+"""How much is this?"" — then answer ""fifty rupees.""",,ఇది ఎంత? / యాభై రూపాయలు.,idi enta? / yābhai rūpāyalu.,,,src::site known::100,S0075
+"""Ten people.""",,పది మంది.,padi mandi.,,mandi is the counter for larger groups,src::site known::100,S0076
+"How much is ""fifty lakh"" in plain digits?",,"5,000,000.","5,000,000.",,"A lakh is 100,000. · A crore is 10,000,000.",src::site known::100,S0077
+How did today go?,,ఈ రోజు ఎట్ల గడిచింది?,ī rōju eṭla gaḍichindi?,,Listen for: rōju (day) and eṭla (how). Those two words are enough to identify it.,src::site known::100,S0078
+Are you well? [respectful],,బాగున్నారా?,bāgunnārā?,,Listen for: bāgu- plus a rising -ā at the end. That final -ā is the yes/no question marker — the same one you met on the song page.,src::site reg::respectful known::100,S0079
+Have you eaten? [respectful],,తిన్నారా?,tinnārā?,,This one is coming whether you like it or not. See the follow-ups section — it matters more than the day question does.,src::site reg::respectful known::100,S0080
+It was good. / It's good.,,బాగుంది,bāgundi,,"Why you can already say this: it's bāgā (""well,"" Lesson 3) fused with undi (""it is,"" Lesson 1). Telugu doesn't need a separate past tense here — context carries it.",src::site known::100,S0081
+"Very good, aunty.",,చాలా బాగుంది అత్తయ్య,chālā bāgundi attayya,,"Why you can already say this: chālā (""very"") plus attayya — the address form of atta from Lesson 4, the word that does double duty for aunt and mother-in-law.",src::site known::100,S0082
+There was a lot of work at the office today.,,ఈ రోజు ఆఫీసులో చాలా పని ఉంది,ī rōju āphīsulō chālā pani undi,,"Why you can already say this: -lō is the ""in"" ending, and undi is Lesson 1's ""there is."" Literally: today office-in much work is. No verb conjugation anywhere.",src::site known::100,S0083
+I'm a bit tired.,,కొంచెం అలిసిపోయాను,koncheṁ alisipōyānu,,"Learn this as a block. alisipōyānu is past tense with a first-person ending — Lesson 9 territory. You'll take it apart later; for now it's one word. konchaṁ (""a little"") is independently useful and softens almost anything.",src::site known::100,S0084
+Today was a bit hard.,,ఈ రోజు కొంచెం కష్టం,ī rōju koncheṁ kaṣṭaṁ,,Why you can already say this: zero copula from Lesson 1 — no verb at all. Today a-little difficulty. kaṣṭaṁ is a high-frequency word worth knowing.,src::site known::100,S0085
+It was good — I did a lot of work.,,"బాగుంది, చాలా పని చేసాను","bāgundi, chālā pani chēsānu",,"The direct version. chēsānu is ""I did"" — past tense with the first-person -nu ending you know from unnānu. Memorise it whole for now; Lesson 9 explains the shape.",src::site known::100,S0086
+It was good — a lot of work got done.,,"బాగుంది, చాలా పని అయ్యింది","bāgundi, chālā pani ayyindi",,"This is the one I'd actually use. See the note below: Telugu reaches for ""it got done"" far more readily than ""I did it,"" and in a family setting that framing lands better.",src::site known::100,S0087
+It was good — a good piece of work got finished.,,"బాగుంది, ఒక మంచి పని పూర్తి అయ్యింది","bāgundi, oka manchi pani pūrti ayyindi",,Look at oka doing exactly its job. This is the deep-dive use: one newly introduced thing the listener doesn't know about yet. Drop it and the sentence goes vague. And manchi is the Lesson 3 “good” — the adjective form of manchidi.,src::site known::100,S0088
+How are you? [respectful],,మీరు ఎట్ల ఉన్నారు?,mīru eṭla unnāru?,,"Why you can already say this: mīru from Lesson 1, unnāru is the same existence verb with the respectful ending. The only new piece is eṭla.",src::site reg::respectful known::100,S0089
+Is everyone at home well? [respectful],,ఇంట్లో అంతా బాగున్నారా?,iṇṭlō antā bāgunnārā?,,"A very Telugu thing to ask. Enquiring after the whole household rather than the individual is standard and lands as warm. intlō is illu (""house"") plus the -lō you used above.",src::site reg::respectful known::100,S0090
+How did your day go? [respectful],,మీ రోజు ఎట్ల గడిచింది?,mī rōju eṭla gaḍichindi?,,"Straight mirroring. Take her question and swap in mī (""your,"" Lesson 5). Reusing someone's own construction back at them is the cheapest fluency trick there is, and it always fits.",src::site reg::respectful known::100,S0091
+This nearby woman is Sita.,,ఈమె సీత.,īme sīta.,,,src::site known::100,S0092
+Sita is also a student.,,సీత కూడా విద్యార్థి.,sīta kūḍā vidyārthi.,,,src::site known::100,S0093
+Produce: “These people are students.”,,వీళ్ళు విద్యార్థులు.,vīḷḷu vidyārthulu.,,,src::site known::100,S0094
+That gentleman is a teacher.,,ఆయన టీచర్.,āyana ṭīchar.,,,src::site known::100,S0095
+Produce: “This lady is also a teacher.”,,ఈవిడ కూడా టీచర్.,īviḍa kūḍā ṭīchar.,,,src::site known::100,S0096
+This is a car.,,ఇది కారు.,idi kāru.,,,src::site known::100,S0097
+Change near to far: idi kāru.,,అది కారు.,adi kāru.,,,src::site known::100,S0098
+Those people are students.,,వాళ్ళు విద్యార్థులు.,vāḷḷu vidyārthulu.,,,src::site known::100,S0099
+“She is a teacher.” Neutral statement of profession.,,ఆమె టీచర్.,āme ṭīchar.,,bare predicate; English “a” does not need translation.,src::site known::100,S0100
+“Give me one.” The noun is already understood. [respectful],,ఒకటి ఇవ్వండి.,okaṭi ivvaṇḍi.,,"independent okaṭi, not bare oka. · The item is understood, so independent okaṭi takes its place.",src::site reg::respectful known::100,S0101
+"“I bought one book, not two.”",,"నేను ఒక పుస్తకం కొన్నాను, రెండు కాదు.","nēnu oka pustakaṁ konnānu, reṇḍu kādu.",,exact count makes oka meaningful.,src::site known::100,S0102
+“The book is on the table.” Both speakers know which book.,,పుస్తకం బల్ల మీద ఉంది.,pustakaṁ balla mīda undi.,,context can identify a bare noun; ā pustakaṁ if you need to point it out. · if both people know which book. A bare noun is not automatically indefinite.,src::site known::100,S0103
+one book,,ఒక పుస్తకం,oka pustakaṁ,,or “a book.” Oka modifies the noun that follows it.,src::site known::100,S0104
+Take a/one book. [respectful],,ఒక పుస్తకం తీసుకోండి,oka pustakaṁ tīsukōṇḍi,,Context decides how strongly the count matters.,src::site reg::respectful known::100,S0105
+I bought a book / the book.,,నేను పుస్తకం కొన్నాను,nēnu pustakaṁ konnānu,,The point may simply be what you bought.,src::site known::100,S0106
+I bought a/one book.,,నేను ఒక పుస్తకం కొన్నాను,nēnu oka pustakaṁ konnānu,,"One book is placed into the conversation, especially naturally if you will say more about it.",src::site known::100,S0107
+She is a doctor.,,ఆమె డాక్టర్,āme ḍākṭar,,This is the normal classification pattern. English requires a; Telugu does not.,src::site known::100,S0108
+She is a good doctor.,,ఆమె ఒక మంచి డాక్టర్,āme oka manchi ḍākṭar,,Oka presents her more deliberately as one member/example of that category. Bare āme manci ḍākṭar is also natural.,src::site known::100,S0109
+That book is on the table.,,ఆ పుస్తకం బల్ల మీద ఉంది,ā pustakaṁ balla mīda undi,,"For an identifiable object, a demonstrative such as ā often does the job—not oka.",src::site known::100,S0110
+Please wait ten minutes. [respectful],,పది నిమిషాలు ఆగండి,padi nimiṣālu āgaṇḍi,,The quantity is presented directly.,src::site reg::respectful known::100,S0111
+Please wait about ten minutes. [respectful],,ఒక పది నిమిషాలు ఆగండి,oka padi nimiṣālu āgaṇḍi,,"In contemporary speech, oka can soften a following quantity into an estimate.",src::site reg::respectful known::100,S0112
+That is my father. His name is Murthy. (formal — unchanged),,ఆయన మా నాన్న. ఆయన పేరు మూర్తి.,āyana mā nānna. āyana pēru mūrti.,,,src::site known::80,S0113
+That is my mother. Her name is Sunita. (formal — unchanged),,ఆవిడ మా అమ్మ. ఆవిడ పేరు సునీత.,āviḍa mā amma. āviḍa pēru sunīta.,,,src::site known::80,S0114
+She is my elder sister. Her name is Divya. (neutral — unchanged),,ఆమె మా అక్క. ఆమె పేరు దివ్య.,āme mā akka. āme pēru divya.,,,src::site known::80,S0115
+He is my father's younger brother. His name is Sanjay. (neutral — u→i),,అతను మా చిన్నాన్న. అతని పేరు సంజయ్.,atanu mā chinnānna. atani pēru sanjay.,,,src::site known::80,S0116
+But there was a lot of traffic on the way.,,కానీ దారిలో ట్రాఫిక్ చాలా ఎక్కువ ఉంది,kānī dārilō ṭrāphik chālā ekkuva undi,,"Only three new words. kāni (but), dāri (way, road), ekkuva (a lot, excessive). Everything else you have: -lō from āphīsulō, plus chālā and undi.",src::site known::80,S0117
+Who is a student?,,రవి విద్యార్థి. సీత కూడా విద్యార్థి.,ravi vidyārthi. sīta kūḍā vidyārthi.,,,src::site known::80,S0118
+"""My doctor's name is Sophia.""",,నా డాక్టర్ పేరు సోఫియా.,nā ḍākṭar pēru sōphiyā.,,"no apostrophe-s, just stack",src::site known::60,S0119
+Hello. My name is Ravi.,,నమస్కారం. నా పేరు రవి.,namaskāraṁ. nā pēru ravi.,,,src::site known::60,S0120
+"""Two cars"" and ""two people"" — why are they different?",,రెండు కార్లు / ఇద్దరు.,reṇḍu kārlu / iddaru.,,People take the special -ru counting forms.,src::site known::60,S0121
+A man knocked on the door.,,ఒక మనిషి తలుపు తట్టాడు,oka maniṣi talupu taṭṭāḍu,,One previously unknown man enters the story and can now be referred to again.,src::site known::60,S0122
+Raj is a student.,,రాజ్ ఒక విద్యార్థి.,rāj oka vidyārthi.,,,src::site known::60,S0123
+"""I am Sophia.""",,నేను సోఫియా ని.,nēnu sōphiyā ni.,,"nēnu + name + the ""I"" marker -ni",src::site known::60,S0124
+My name is Raj.,,నా పేరు రాజ్.,nā pēru rāj.,,,src::site known::60,S0125
+Our town is Hyderabad.,,మా ఊరు హైదరాబాద్.,mā ūru haidarābād.,,,src::site known::60,S0126
+You're from Hyderabad — two ways.,,మా ఊరు హైదరాబాద్. / మాది హైదరాబాద్.,mā ūru haidarābād. / mādi haidarābād.,,,src::site known::60,S0127
+He is my friend. His name is Peter. (informal — u→i),,వాడు నా ఫ్రెండ్. వాడి పేరు పీటర్.,vāḍu nā phreṇḍ. vāḍi pēru pīṭar.,,,src::site reg::informal known::60,S0128
+That's my classmate. Her name is Gita. (informal — new form),,అది నా క్లాస్‌మేట్. దాని పేరు గీత.,adi nā klāsmēṭ. dāni pēru gīta.,,,src::site known::60,S0129
+"""His name is Sanjay"" — neutral register.",,అతని పేరు సంజయ్.,atani pēru sanjay.,,atanu → atani,src::site known::60,S0130
+"""Her name is Divya"" — neutral register.",,ఆమె పేరు దివ్య.,āme pēru divya.,,āme doesn't change,src::site known::60,S0131
+Take only one book. [respectful],,ఒక్క పుస్తకమే తీసుకోండి,okka pustakamē tīsukōṇḍi,,The doubled kk plus -ē excludes alternatives explicitly.,src::site reg::respectful known::60,S0133
+Literally “man knocked on the door.”,,మనిషి తలుపు తట్టాడు,maniṣi talupu taṭṭāḍu,,"Possible in context, but abrupt as a story opening; it can sound as if the man is already identifiable.",src::site known::60,S0134
+Raj is a student.,,రాజ్ విద్యార్థి.,rāj vidyārthi.,,,src::site known::40,S0135
+Ours is Hyderabad.,,మాది హైదరాబాద్.,mādi haidarābād.,,the common form,src::site known::40,S0136
+Ours is India.,,మాది ఇండియా.,mādi iṇḍiyā.,,"same information, family framing",src::site known::40,S0137
+Do you know English?,,ఇంగ్లీష్ తెలుసా?,inglīṣ telusā?,,,src::site known::40,S0138
+"Their names are Peter and Gita. (plural — u→a, noun takes -lu)",,"వాళ్ళ పేర్లు పీటర్, గీత.","vāḷḷa pērlu pīṭar, gīta.",,,src::site known::40,S0139
+What did you do? [respectful],,ఏం చేసారు?,ēṁ chēsāru?,,"Listen for: ēṁ (what). The -āru ending is the respectful ""you"" form — she's being polite to you.",src::site reg::respectful known::40,S0141
+This nearby man/person is Ravi.,,ఇతను రవి.,itanu ravi.,,,src::site known::40,S0142
+Ravi is a student.,,రవి విద్యార్థి.,ravi vidyārthi.,,,src::site known::40,S0143
+Change singular to plural: idi kāru.,,ఇవి కార్లు.,ivi kārlu.,,,src::site known::40,S0144
+Those are cars.,,అవి కార్లు.,avi kārlu.,,,src::site known::40,S0145
+“Someone called Ramayya called.” The listener does not know him.,,ఒక రామయ్య ఫోన్ చేశాడు.,oka rāmayya phōn chēśāḍu.,,oka gives “a certain / someone named.” · The identity is not assumed to be known.,src::site known::40,S0146
+"""This is the Taj Mahal / That is the Taj Mahal""",,ఇది తాజ్ మహల్. / అది తాజ్ మహల్.,idi tāj mahal. / adi tāj mahal.,,near i- vs distant a-,src::site known::40,S0147
+This is the Taj Mahal.,,ఇది తాజ్ మహల్.,idi tāj mahal.,,,src::site known::20,S0149
+Ramayya called.,,రామయ్య ఫోన్ చేశాడు,rāmayya phōn chēśāḍu,,The name is enough for the listener to know who you mean.,src::site known::20,S0150
+I am; I drank,,నేను,nēnu,,,src::book1000 known::100,S0151
+I gave; I gave it,,నేనుఇచ్చాను,nēnuichchānu,,,src::book1000 known::100,S0152
+You go,,నువ్వువెళ్ళు,nuvvuveḷḷu,,,src::book1000 known::100,S0153
+I know,,నాకుతెలుసు,nākutelusu,,,src::book1000 known::100,S0154
+Why me ?,,నేనుఎందుకు?,nēnuenduku?,,,src::book1000 known::100,S0155
+So am I,,నేనుకూడా,nēnukūḍā,,,src::book1000 known::100,S0156
+I wrote,,నేనువ్రాసాను,nēnuvrāsānu,,,src::book1000 known::100,S0157
+Not bad,,చెడుకాదు,cheḍukādu,,,src::book1000 known::100,S0158
+Not yet,,ఇంకా లేదు,inkā lēdu,,,src::book1000 known::100,S0159
+Hold on [respectful],,పట్టుకోండి,paṭṭukōṇḍi,,,src::book1000 reg::respectful known::100,S0160
+It's me,,ಅದಿ ನನ,ಅದಿ ನನ,,,src::book1000 known::100,S0161
+Come in [respectful],,లోపలికి రండి,lōpaliki raṇḍi,,,src::book1000 reg::respectful known::100,S0162
+Go back [respectful],,వెనక్కి వెళ్ళండి,venakki veḷḷaṇḍi,,,src::book1000 reg::respectful known::100,S0163
+I do it; I will do it,,నేనుచేస్తాను,nēnuchēstānu,,,src::book1000 known::100,S0164
+We went,,మేమువెళ్ళాము,mēmuveḷḷāmu,,,src::book1000 known::100,S0165
+Go away [respectful],,వెళ్లిపోండి,veḷlipōṇḍi,,,src::book1000 reg::respectful known::100,S0166
+Take it [respectful],,తీసుకోండి,tīsukōṇḍi,,,src::book1000 reg::respectful known::100,S0167
+Got it ?,,అర్థమైందా?,arthamaindā?,,,src::book1000 known::100,S0168
+Let's go; Let's go !,,వెళాం,veḷāṁ,,,src::book1000 known::100,S0169
+I opened,,నేనుతెరిచాను,nēnuterichānu,,,src::book1000 known::100,S0170
+Why not ?,,ఎందుకుకాదు,endukukādu,,,src::book1000 known::100,S0171
+So did I,,నేనుఅలా చేసాను,nēnualā chēsānu,,,src::book1000 known::100,S0172
+Just now,,ఇప్పుడే,ippuḍē,,,src::book1000 known::100,S0173
+You gave,,మీరుఇచ్చారు,mīruichchāru,,,src::book1000 known::100,S0174
+They saw,,వారుచూశారు,vāruchūśāru,,,src::book1000 known::100,S0175
+Not that,,అది కాదు,adi kādu,,,src::book1000 known::100,S0176
+Not this,,ఇది కాదు,idi kādu,,,src::book1000 known::100,S0177
+Hurry up,,త్వరగా,tvaragā,,,src::book1000 known::100,S0178
+Step out [respectful],,బయటకి వెళ్ళండి,bayaṭaki veḷḷaṇḍi,,,src::book1000 reg::respectful known::100,S0179
+Have fun [respectful],,ఆనందించండి,ānandinchaṇḍi,,,src::book1000 reg::respectful known::100,S0180
+I did it,,నేనుచేసాను,nēnuchēsānu,,,src::book1000 known::100,S0181
+Sit here [respectful],,ఇక్కడకూర్చోండి,ikkaḍakūrchōṇḍi,,,src::book1000 reg::respectful known::100,S0182
+Run fast [respectful],,వేగంగా పరిగెత్తండి,vēgangā parigettaṇḍi,,,src::book1000 reg::respectful known::100,S0183
+And you ?,,మరియుమీరు,mariyumīru,,,src::book1000 known::100,S0184
+Remember,,గుర్తు,gurtu,,,src::book1000 known::100,S0185
+Be quiet [respectful],,నిశ్సబ్దంగాఉండండి,niśsabdangāuṇḍaṇḍi,,,src::book1000 reg::respectful known::100,S0186
+Trust me [respectful],,నన్నునమ్మండి,nannunammaṇḍi,,,src::book1000 reg::respectful known::100,S0187
+He walks,,అయననడుస్తారు,ayananaḍustāru,,,src::book1000 known::100,S0188
+Clean it [respectful],,శుభ్రంచేయండి,śubhranchēyaṇḍi,,,src::book1000 reg::respectful known::100,S0189
+Really ?,,నిజంగా?,nijangā?,,,src::book1000 known::100,S0190
+Be ready [respectful],,సిద్ధంగాఉండండి,siddhangāuṇḍaṇḍi,,,src::book1000 reg::respectful known::100,S0191
+Too bad !,,చాలా చెడ్డది,chālā cheḍḍadi,,,src::book1000 known::100,S0192
+I am not,,నేనుకాదు,nēnukādu,,,src::book1000 known::100,S0193
+Leave it [respectful],,వదిలేయండి,vadilēyaṇḍi,,,src::book1000 reg::respectful known::100,S0194
+Stand up ! [respectful],,నిలబడండి !,nilabaḍaṇḍi !,,,src::book1000 reg::respectful known::100,S0195
+Who said ?,,ఎవరుచెప్పారు?,evarucheppāru?,,,src::book1000 known::100,S0196
+Who goes ?; Who will go ?,,ఎవరువెళ్తారు?,evaruveḷtāru?,,,src::book1000 known::100,S0197
+Here I am; I am here,,నేనుఇక్కడఉన్నాను,nēnuikkaḍaunnānu,,,src::book1000 known::100,S0198
+Over here,,ఇక్కడ,ikkaḍa,,,src::book1000 known::100,S0199
+I am hurt,,నేనుఅలిగాను,nēnualigānu,,,src::book1000 known::100,S0200
+Do it now [respectful],,ఇప్పుడేచేయండి,ippuḍēchēyaṇḍi,,,src::book1000 reg::respectful known::100,S0201
+I am only,,నేనుమాత్రమే,nēnumātramē,,,src::book1000 known::100,S0202
+It's easy,,ఇది సులభం,idi sulabhaṁ,,,src::book1000 known::100,S0203
+It's hard; It is difficult,,అది కష్టం,adi kaṣṭaṁ,,,src::book1000 known::100,S0204
+Come soon [respectful],,త్వరగా రండి,tvaragā raṇḍi,,,src::book1000 reg::respectful known::100,S0205
+Let me go [respectful],,నన్నువెళ్లనివ్వండి,nannuveḷlanivvaṇḍi,,,src::book1000 reg::respectful known::100,S0206
+Who came ?,,ఎవరువచ్చారు,evaruvachchāru,,,src::book1000 known::100,S0207
+She spoke,,ఆవిడమాట్లాడారు,āviḍamāṭlāḍāru,,,src::book1000 known::100,S0208
+Don't hit [respectful],,కొట్టకండి,koṭṭakaṇḍi,,,src::book1000 reg::respectful known::100,S0209
+Look here [respectful],,ఇక్కడచూడండి,ikkaḍachūḍaṇḍi,,,src::book1000 reg::respectful known::100,S0210
+Walk slowly [respectful],,నెమ్మదిగా నడవండి,nemmadigā naḍavaṇḍi,,,src::book1000 reg::respectful known::100,S0211
+See there [respectful],,అక్కడచూడండి,akkaḍachūḍaṇḍi,,,src::book1000 reg::respectful known::100,S0212
+I am lost,,నేనుతప్పిపోయాను,nēnutappipōyānu,,,src::book1000 known::100,S0213
+Slow down [respectful],,వేగంతగ్గించండి,vēgantagginchaṇḍi,,,src::book1000 reg::respectful known::100,S0214
+I'm eight,,నాకుఎనిమిది సంవత్సరాలు,nākuenimidi saṁvatsarālu,,,src::book1000 known::100,S0215
+It's 6:30 pm,,సాయంత్రం6:30 గంటలు,sāyantraṁ6:30 gaṇṭalu,,,src::book1000 known::100,S0216
+I got sad; I'm feeling sad,,నాకుబాధగా ఉంది,nākubādhagā undi,,,src::book1000 known::100,S0217
+Get ready [respectful],,సిద్దంగాఉండండి,siddangāuṇḍaṇḍi,,,src::book1000 reg::respectful known::100,S0218
+Chala bagundi; Very nice !,,చాలా బాగుంది,chālā bāgundi,,,src::book1000 known::100,S0219
+Let it be [respectful],,అలా ఉండనివ్వండి,alā uṇḍanivvaṇḍi,,,src::book1000 reg::respectful known::100,S0220
+Yes or no ?,,అవునా లేదా,avunā lēdā,,,src::book1000 known::100,S0221
+Good noon !,,శుభమధ్యాహ్నం,śubhamadhyāhnaṁ,,,src::book1000 known::100,S0222
+All right !,,అయితే సరే,ayitē sarē,,,src::book1000 known::100,S0223
+Very good !,,చాలా మంచిది,chālā manchidi,,,src::book1000 known::100,S0224
+Who knows ?,,ఎవరికీ తెలుసు,evarikī telusu,,,src::book1000 known::100,S0225
+May I sit ?; May I sit down ?,,నేనుకూర్చోవచ్చా?,nēnukūrchōvachchā?,,,src::book1000 known::100,S0226
+I am ready,,నేనుసిద్ధంగా ఉన్నాను,nēnusiddhangā unnānu,,,src::book1000 known::100,S0227
+Had lunch ?,,భోజనంచేసారా,bhōjananchēsārā,,,src::book1000 known::100,S0229
+Please sit [respectful],,దయచేసి కూర్చోండి,dayachēsi kūrchōṇḍi,,,src::book1000 reg::respectful known::100,S0230
+I gotta go; I have to go,,నేనువెళ్ళాలి,nēnuveḷḷāli,,,src::book1000 known::100,S0231
+I am bored,,నేనువిసుగుచెందాను,nēnuvisuguchendānu,,,src::book1000 known::100,S0232
+Who is he ?,,అయనఎవరు,ayanaevaru,,,src::book1000 known::100,S0233
+"Yes , it is",,అవునుఅదే,avunuadē,,,src::book1000 known::100,S0234
+What's up ?,,ఏమిటి సంగతులు,ēmiṭi sangatulu,,,src::book1000 known::100,S0235
+I don't go; I shall not go,,నేనువెళ్ళను,nēnuveḷḷanu,,,src::book1000 known::100,S0236
+Here it is,,ఇదిగో,idigō,,,src::book1000 known::100,S0237
+He will do,,అయనచేస్తారు,ayanachēstāru,,,src::book1000 known::100,S0238
+Look at me [respectful],,నన్నుచుడండి,nannuchuḍaṇḍi,,,src::book1000 reg::respectful known::100,S0239
+You may go,,మీరువెళ్ళవచ్చు,mīruveḷḷavachchu,,,src::book1000 known::100,S0240
+I like her,,నాకుఆమె ఇష్టము,nākuāme iṣṭamu,,,src::book1000 known::100,S0241
+I'm single,,నేనుఒంటరిగా ఉన్నాను,nēnuoṇṭarigā unnānu,,,src::book1000 known::100,S0242
+I remember,,నాకుగుర్తుంది,nākugurtundi,,,src::book1000 known::100,S0243
+I am tired,,నేనుఅలసిపోయాను,nēnualasipōyānu,,,src::book1000 known::100,S0244
+I am great,,నేనుభేషుగ్గా ఉన్నాను,nēnubhēṣuggā unnānu,,,src::book1000 known::100,S0245
+Let me see; Let me check [respectful],,నన్నుచుడనివ్వండి,nannuchuḍanivvaṇḍi,,,src::book1000 reg::respectful known::100,S0246
+No problem [respectful],,ఏమి ఇబ్బంది లేదు,ēmi ibbandi lēdu,,,src::book1000 reg::respectful known::100,S0247
+This is me,,ಇದಿ ನೆನ,ಇದಿ ನೆನ,,,src::book1000 known::100,S0248
+Let's walk,,అలా నడుద్దామా,alā naḍuddāmā,,,src::book1000 known::100,S0249
+How was it ?,,అది ఎలా ఉంది ?,adi elā undi ?,,,src::book1000 known::100,S0250
+I will open,,నేనుతెరుసాను,nēnuterusānu,,,src::book1000 known::100,S0251
+Look at me! [respectful],,నను చుడండి,nanu chuḍaṇḍi,,,src::book1000 reg::respectful known::100,S0252
+Good night!,,శుభరాత్రత,śubharātrata,,,src::book1000 known::100,S0253
+Why not me?,,నేనుఎందుకుకాదు?,nēnuendukukādu?,,,src::book1000 known::100,S0254
+Who danced?,,ఎవరునృతంచేశారు?,evarunṛtanchēśāru?,,,src::book1000 known::100,S0255
+Who did it?,,దీనిని ఎవరుచేశారు?,dīnini evaruchēśāru?,,,src::book1000 known::100,S0256
+He ate soon,,అయనవెంటనే తనారు,ayanaveṇṭanē tanāru,,,src::book1000 known::100,S0257
+I can do it,,నేనుచేయగలను,nēnuchēyagalanu,,,src::book1000 known::100,S0258
+I may do it,,నేనుచేయవచు,nēnuchēyavachu,,,src::book1000 known::100,S0259
+That's true,,అది నిజం,adi nijaṁ,,,src::book1000 known::100,S0260
+"No, I don't",,లేదునేనుచేయను,lēdunēnuchēyanu,,,src::book1000 known::100,S0261
+Don't trust [respectful],,నమ్మకండి,nammakaṇḍi,,,src::book1000 reg::respectful known::100,S0262
+Nobody gave,,ఎవరూఇవ్వలేదు,evarūivvalēdu,,,src::book1000 known::100,S0263
+I am hungry,,నాకుఆకలిగా ఉంది,nākuākaligā undi,,,src::book1000 known::100,S0264
+Who is she ?,,ఆవిడఎవరు?,āviḍaevaru?,,,src::book1000 known::100,S0265
+Step inside,,లోపలికి అడుగు,lōpaliki aḍugu,,,src::book1000 known::100,S0266
+Write to me [respectful],,నాకురాయండి,nākurāyaṇḍi,,,src::book1000 reg::respectful known::100,S0267
+Just coming,,ఇప్పుడే వస్తోంది,ippuḍē vastōndi,,,src::book1000 known::100,S0268
+He is short [respectful],,అయనపొట్టిగాఉన్నారు,ayanapoṭṭigāunnāru,,,src::book1000 reg::respectful known::100,S0269
+It was here,,ఇది ఇక్కడఉండే,idi ikkaḍauṇḍē,,,src::book1000 known::100,S0270
+Don't drink [respectful],,తాగకండి,tāgakaṇḍi,,,src::book1000 reg::respectful known::100,S0271
+Welcome sir,,స్వాగతంసార్,svāgataṁsār,,,src::book1000 known::100,S0272
+Shall we go; Shall we go ?,,మనంవెళ్లామా,manaṁveḷlāmā,,,src::book1000 known::100,S0273
+Put it down [respectful],,కిందపెట్టండి,kindapeṭṭaṇḍi,,,src::book1000 reg::respectful known::100,S0274
+I still eat,,నేనుఇంకా తింటాను,nēnuinkā tiṇṭānu,,,src::book1000 known::100,S0275
+I'm worried,,నేనుచింతిస్తున్నాను,nēnuchintistunnānu,,,src::book1000 known::100,S0276
+I trust you [respectful],,మీ మీదనాకునమ్మకంఉంది,mī mīdanākunammakaṁundi,,,src::book1000 reg::respectful known::100,S0277
+I'm leaving; I am leaving,,నేనుబయలుదేరుతున్నాను,nēnubayaludērutunnānu,,,src::book1000 known::100,S0278
+Did you go ?,,మీరువెళ్ళారా?,mīruveḷḷārā?,,,src::book1000 known::100,S0279
+"Yes , I went",,అవునునేనువెళ్ళాను,avununēnuveḷḷānu,,,src::book1000 known::100,S0280
+It is salty,,ఇది ఉప్పుగా ఉంది,idi uppugā undi,,,src::book1000 known::100,S0281
+Okay Doctor,,సరే డాక్టర్,sarē ḍākṭar,,,src::book1000 known::100,S0282
+Start a job [respectful],,ఉద్యోగంప్రారంభించండి,udyōgamprārambhinchaṇḍi,,,src::book1000 reg::respectful known::100,S0283
+Let them go [respectful],,వాళ్ళని వెళ్లనివ్వండి,vāḷḷani veḷlanivvaṇḍi,,,src::book1000 reg::respectful known::100,S0284
+Smile a lot [respectful],,చాలా నవ్వండి,chālā navvaṇḍi,,,src::book1000 reg::respectful known::100,S0285
+Wait for me [respectful],,నా కోసంఆగండి,nā kōsaṁāgaṇḍi,,,src::book1000 reg::respectful known::100,S0286
+"I say , stop [respectful]",,నేనుచెబుతున్నఆపండి,nēnuchebutunnaāpaṇḍi,,,src::book1000 reg::respectful known::100,S0287
+I didn't go,,నేనువెళ్ళలేదు,nēnuveḷḷalēdu,,,src::book1000 known::100,S0288
+Is that me ?,,ಅದಿ ನೆನನ್?,ಅದಿ ನೆನನ್?,,,src::book1000 known::100,S0289
+Be cautious [respectful],,జాగ్రత్తగాఉండండి,jāgrattagāuṇḍaṇḍi,,,src::book1000 reg::respectful known::100,S0290
+I am thirsty,,నాకుదాహంవేస్తోంది,nākudāhaṁvēstōndi,,,src::book1000 known::100,S0291
+I am opening,,నేనుతెరుస్తున్నాను,nēnuterustunnānu,,,src::book1000 known::100,S0292
+Has he come ?,,అయనవచ్చారా?,ayanavachchārā?,,,src::book1000 known::100,S0293
+Neither am I,,నేనుకూడా కాదు,nēnukūḍā kādu,,,src::book1000 known::100,S0294
+Did you try ?,,మీరుప్రయత్నించారా?,mīruprayatninchārā?,,,src::book1000 known::100,S0295
+Who does it ?,,ఎవరుచేస్తారు?,evaruchēstāru?,,,src::book1000 known::100,S0296
+Was he sent ?,,అయనపంపబడ్డారా?,ayanapampabaḍḍārā?,,,src::book1000 known::100,S0297
+Is he loved ?,,అయనప్రేమించబడ్డారా?,ayanaprēminchabaḍḍārā?,,,src::book1000 known::100,S0298
+I must do it,,నేనుతప్పకచేయాలి,nēnutappakachēyāli,,,src::book1000 known::100,S0299
+See you then,,మరలా కలుద్దాం,maralā kaluddāṁ,,,src::book1000 known::100,S0300
+I am writing,,నేనురాస్తున్నాను,nēnurāstunnānu,,,src::book1000 known::100,S0301
+Why so late ?,,ఎందుకుఅంతఆలస్యం?,endukuantaālasyaṁ?,,,src::book1000 known::100,S0302
+Just imagine [respectful],,కేవలంఊహించుకోండి,kēvalaṁūhinchukōṇḍi,,,src::book1000 reg::respectful known::100,S0303
+What's next ?,,తరవాతఏంటి ?,taravātaēṇṭi ?,,,src::book1000 known::100,S0304
+I'm studying; I am studying,,నేనుచదువుకుంటున్నాను,nēnuchaduvukuṇṭunnānu,,,src::book1000 known::100,S0305
+I won't play,,నేనుఆడను,nēnuāḍanu,,,src::book1000 known::100,S0306
+I brought it,,నేనుతెచ్చాను,nēnutechchānu,,,src::book1000 known::100,S0307
+You don't go,,మీరువెళ్లరు,mīruveḷlaru,,,src::book1000 known::100,S0308
+You are boys,,మీరుఅబ్బాయిలే,mīruabbāyilē,,,src::book1000 known::100,S0309
+We are girls,,మేముఅమ్మాయిలు,mēmuammāyilu,,,src::book1000 known::100,S0310
+"No , It's not",,"కాదు, అది కానేకాదు","kādu, adi kānēkādu",,,src::book1000 known::100,S0311
+Stop talking [respectful],,మాట్లాడటంఆపండి,māṭlāḍaṭaṁāpaṇḍi,,,src::book1000 reg::respectful known::100,S0312
+I am cooking,,నేనువండుతున్నాను,nēnuvaṇḍutunnānu,,,src::book1000 known::100,S0313
+Drive Slowly [respectful],,నెమ్మదిగా నడపండి,nemmadigā naḍapaṇḍi,,,src::book1000 reg::respectful known::100,S0314
+Where is it ?,,అది ఎక్కడఉంది ?,adi ekkaḍaundi ?,,,src::book1000 known::100,S0315
+What is this ?,,ఇది ఏమిటి?,idi ēmiṭi?,,,src::book1000 known::100,S0316
+Don't go now [respectful],,ఇప్పుడువెళ్ళకండి,ippuḍuveḷḷakaṇḍi,,,src::book1000 reg::respectful known::100,S0317
+I had coffee,,నేనుకాఫీ తాగాను,nēnukāphī tāgānu,,,src::book1000 known::100,S0318
+He called me,,అతనునన్నుపిలిచారు.,atanunannupilichāru.,,,src::book1000 known::100,S0319
+I need a pen,,నాకుకలంకావాలి,nākukalankāvāli,,,src::book1000 known::100,S0320
+Is he there ? [respectful],,అయనఅక్కడఉన్నారా?,ayanaakkaḍaunnārā?,,,src::book1000 reg::respectful known::100,S0321
+I have a son,,నాకుఒకకుమారుడుఉన్నాడు,nākuokakumāruḍuunnāḍu,,,src::book1000 known::100,S0322
+Are you sad ? [respectful],,మీరుబాధలో ఉన్నారా?,mīrubādhalō unnārā?,,,src::book1000 reg::respectful known::100,S0323
+I am running,,నేనుపరిగెడుతున్నాను,nēnuparigeḍutunnānu,,,src::book1000 known::100,S0324
+Stop staring [respectful],,చూడటంఆపండి,chūḍaṭaṁāpaṇḍi,,,src::book1000 reg::respectful known::100,S0325
+That's right; That's right !,,అది సరైనది,adi sarainadi,,,src::book1000 known::100,S0326
+I don't care,,నేనుపట్టించుకోను,nēnupaṭṭinchukōnu,,,src::book1000 known::100,S0327
+I don't mind,,నేనుపట్టించుకోవడంలేదు,nēnupaṭṭinchukōvaḍaṁlēdu,,,src::book1000 known::100,S0328
+I'm not sure,,నాకుఖచ్చితంగా తెలియదు,nākukhachchitangā teliyadu,,,src::book1000 known::100,S0329
+Here you are [respectful],,ఇక్కడఉన్నారు మీరు,ikkaḍaunnāru mīru,,,src::book1000 reg::respectful known::100,S0330
+Is ready ?,,ఇది సిద్ధంగా ఉందా?,idi siddhangā undā?,,,src::book1000 known::100,S0331
+Wash the car [respectful],,కారుకడగండి,kārukaḍagaṇḍi,,,src::book1000 reg::respectful known::100,S0332
+"Yes , I begin",,అవునునేనుప్రారంభిస్తాను,avununēnuprārambhistānu,,,src::book1000 known::100,S0333
+is it clean ?,,ఇది శుభ్రంగాఉందా?,idi śubhrangāundā?,,,src::book1000 known::100,S0334
+I understood,,అర్థమైంది,arthamaindi,,,src::book1000 known::100,S0335
+I play hrs,,నేనురెండుగంటలుఆడుతాను,nēnureṇḍugaṇṭaluāḍutānu,,,src::book1000 known::100,S0336
+Nothing much,,పెద్దగా ఏమీ లేదు,peddagā ēmī lēdu,,,src::book1000 known::100,S0337
+That will do,,అది సరిపోతుంది,adi saripōtundi,,,src::book1000 known::100,S0338
+Speak slowly [respectful],,నెమ్మదిగా మాట్లాడండి,nemmadigā māṭlāḍaṇḍi,,,src::book1000 reg::respectful known::100,S0339
+Go and sleep [respectful],,వెళ్లినిద్రపోండి,veḷlinidrapōṇḍi,,,src::book1000 reg::respectful known::100,S0340
+It's raining,,వర్షంపడుతుంది ఇది సూర్యోదయము,varṣampaḍutundi idi sūryōdayamu,,,src::book1000 known::100,S0341
+You are good,,మీరుమంచి వారు,mīrumanchi vāru,,,src::book1000 known::100,S0342
+He had a pen,,అయనవద్దఒకకలంఉంది,ayanavaddaokakalaṁundi,,,src::book1000 known::100,S0343
+We are yours,,మేముమీకే,mēmumīkē,,,src::book1000 known::100,S0344
+I didn't say,,నేనుచెప్పలేదు,nēnucheppalēdu,,,src::book1000 known::100,S0345
+It's my will,,ఇది నా సంకల్పం,idi nā sankalpaṁ,,,src::book1000 known::100,S0346
+I will study,,నేనుచదువుతాను,nēnuchaduvutānu,,,src::book1000 known::100,S0347
+This is too much,,ఇది చాలా ఎక్కువ,idi chālā ekkuva,,,src::book1000 known::100,S0348
+I am smiling; I am laughing,,నేనునవ్వుతున్నాను,nēnunavvutunnānu,,,src::book1000 known::100,S0349
+Let me speak [respectful],,నన్నుమాట్లాడనివ్వండి,nannumāṭlāḍanivvaṇḍi,,,src::book1000 reg::respectful known::100,S0350
+He is my cat,,అతనునా పిల్లి,atanunā pilli,,,src::book1000 known::100,S0351
+He is asleep [respectful],,అయననిద్రపోతున్నారు,ayananidrapōtunnāru,,,src::book1000 reg::respectful known::100,S0352
+I took hrs,,నేనురెండ్గంటలుతీసుకున్నాను,nēnureṇḍgaṇṭalutīsukunnānu,,,src::book1000 known::100,S0353
+I have a car,,నాకుకారుఉంది,nākukāruundi,,,src::book1000 known::100,S0354
+Not to worry [respectful],,చింతించకండి,chintinchakaṇḍi,,,src::book1000 reg::respectful known::100,S0355
+He is unwell [respectful],,అయనఅనారోగ్యంతో ఉన్నారు,ayanaanārōgyantō unnāru,,,src::book1000 reg::respectful known::100,S0356
+I was scared,,నేనుభయపడ్డాను,nēnubhayapaḍḍānu,,,src::book1000 known::100,S0357
+I am doing it; I was doing it,,నేనుచేస్తున్నాను,nēnuchēstunnānu,,,src::book1000 known::100,S0358
+"Yes , I am sad",,అవునునేనువిచారంగా ఉన్నాను,avununēnuvichārangā unnānu,,,src::book1000 known::100,S0359
+I have a cold,,నాకుజలుబుచేసింది,nākujalubuchēsindi,,,src::book1000 known::100,S0360
+I don't open,,నేనుతెరవను,nēnuteravanu,,,src::book1000 known::100,S0361
+I didn't open,,నేనుతెరవలేదు,nēnuteravalēdu,,,src::book1000 known::100,S0362
+He is opening [respectful],,అయనతెరుస్తున్నారు,ayanaterustunnāru,,,src::book1000 reg::respectful known::100,S0363
+Good morning !,,శుభోదయం,śubhōdayaṁ,,,src::book1000 known::100,S0364
+Good evening !,,శుభసాయంత్రం,śubhasāyantraṁ,,,src::book1000 known::100,S0365
+Neither can I,,నేనుచేయలేను,nēnuchēyalēnu,,,src::book1000 known::100,S0366
+Who are you ??,,మీరుఎవరు?,mīruevaru?,,,src::book1000 known::100,S0367
+Will it rain ?,,వర్షంపడుతుందా?,varṣampaḍutundā?,,,src::book1000 known::100,S0368
+Don't hurt me [respectful],,నన్నుభాదించకండి,nannubhādinchakaṇḍi,,,src::book1000 reg::respectful known::100,S0369
+I can give it,,నేనుఇవ్వగలను,nēnuivvagalanu,,,src::book1000 known::100,S0370
+Come let's go [respectful],,రండి వెళ్లాం,raṇḍi veḷlāṁ,,,src::book1000 reg::respectful known::100,S0371
+I was writing,,నేనువ్రాస్తున్నాను,nēnuvrāstunnānu,,,src::book1000 known::100,S0372
+It's not good; It's not nice,,ఇది మంచిది కాదు,idi manchidi kādu,,,src::book1000 known::100,S0373
+Lock the door [respectful],,తలుపుకితాళంవేయండి,talupukitāḷaṁvēyaṇḍi,,,src::book1000 reg::respectful known::100,S0374
+You tell once [respectful],,మీరుఒకసారి చెప్పండి,mīruokasāri cheppaṇḍi,,,src::book1000 reg::respectful known::100,S0375
+I don't drink,,నేనుతాగను,nēnutāganu,,,src::book1000 known::100,S0376
+They are fine,,అవి బాగున్నాయి,avi bāgunnāyi,,,src::book1000 known::100,S0377
+Where are we ?,,మనంఎక్కడఉన్నాము?,manaṁekkaḍaunnāmu?,,,src::book1000 known::100,S0378
+Where is she ? [respectful],,ఆవిడా ఎక్కడఉన్నారు?,āviḍā ekkaḍaunnāru?,,,src::book1000 reg::respectful known::100,S0379
+I need a taxi,,నాకుటాక్సీ కావాలి,nākuṭāksī kāvāli,,,src::book1000 known::100,S0380
+I am new here,,నేనుఇక్కడకొత్తగా వచ్చాను,nēnuikkaḍakottagā vachchānu,,,src::book1000 known::100,S0381
+Read the book [respectful],,పుస్తకంచదవండి,pustakanchadavaṇḍi,,,src::book1000 reg::respectful known::100,S0382
+Stop doing it [respectful],,చేయడంఆపండి,chēyaḍaṁāpaṇḍi,,,src::book1000 reg::respectful known::100,S0383
+Stop dreaming [respectful],,కలలుకనడంఆపండి,kalalukanaḍaṁāpaṇḍi,,,src::book1000 reg::respectful known::100,S0384
+Keep it ready [respectful],,సిద్ధంగాఉంచండి,siddhangāunchaṇḍi,,,src::book1000 reg::respectful known::100,S0385
+Keep it going [respectful],,కొనసాగించండి,konasāginchaṇḍi,,,src::book1000 reg::respectful known::100,S0386
+Don't fool me [respectful],,నన్నుమోసంచేయకండి,nannumōsanchēyakaṇḍi,,,src::book1000 reg::respectful known::100,S0387
+I don't know,,నాకుతెలియదు,nākuteliyadu,,,src::book1000 known::100,S0388
+Kindly see it [respectful],,దయతో చూడండి,dayatō chūḍaṇḍi,,,src::book1000 reg::respectful known::100,S0389
+You are wrong,,మీరుతప్పు,mīrutappu,,,src::book1000 known::100,S0390
+What do I do ?,,నేనుఏమి చెయ్యాలి?,nēnuēmi cheyyāli?,,,src::book1000 known::100,S0391
+Repeat please [respectful],,దయచేసి మళ్ళీ చెప్పండి,dayachēsi maḷḷī cheppaṇḍi,,,src::book1000 reg::respectful known::100,S0392
+I go with him,,నేనుఆయనతో వెళ్తాను,nēnuāyanatō veḷtānu,,,src::book1000 known::100,S0393
+It is raining,,వర్షంపడుతోంది,varṣampaḍutōndi,,,src::book1000 known::100,S0394
+I need a room,,నాకుఒకగది కావాలి,nākuokagadi kāvāli,,,src::book1000 known::100,S0395
+I give my pen,,నేనునా కలంఇస్తాను,nēnunā kalaṁistānu,,,src::book1000 known::100,S0397
+I prefer milk,,నేనుపాలనుఇష్టపడతాను,nēnupālanuiṣṭapaḍatānu,,,src::book1000 known::100,S0398
+Try to say it [respectful],,చెప్పడానికి ప్రయత్నించండి,cheppaḍāniki prayatninchaṇḍi,,,src::book1000 reg::respectful known::100,S0399
+What's wrong ?,,తప్పుఏంటి?,tappuēṇṭi?,,,src::book1000 known::100,S0400
+It is snowing,,మంచుపడుతున్నది,manchupaḍutunnadi,,,src::book1000 known::100,S0401
+Shall I wait ?,,నేనువేచి ఉండాలా?,nēnuvēchi uṇḍālā?,,,src::book1000 known::100,S0402
+Mop the floor [respectful],,నేలతుదచండి,nēlatudachaṇḍi,,,src::book1000 reg::respectful known::100,S0403
+I need a bath,,నేనుస్నానంచేయాలి,nēnusnānanchēyāli,,,src::book1000 known::100,S0404
+Do you begin ?,,మీరుప్రారంభిస్తారా?,mīruprārambhistārā?,,,src::book1000 known::100,S0405
+Do what I say [respectful],,నేనుచెప్పేదిచేయండి,nēnucheppēdichēyaṇḍi,,,src::book1000 reg::respectful known::100,S0406
+I play soccer,,నేనుసాకర్ ఆడుతాను,nēnusākar āḍutānu,,,src::book1000 known::100,S0407
+Do you smoke ?,,మీరుపొగత్రాగుతారా?,mīrupogatrāgutārā?,,,src::book1000 known::100,S0408
+I want to eat,,నాకుతినాలని ఉంది,nākutinālani undi,,,src::book1000 known::100,S0409
+Speak quickly [respectful],,త్వరగా మాట్లాడండి,tvaragā māṭlāḍaṇḍi,,,src::book1000 reg::respectful known::100,S0410
+Learn driving [respectful],,డ్రైవింగ్ నేర్చుకోండి,ḍraiving nērchukōṇḍi,,,src::book1000 reg::respectful known::100,S0411
+That is a boy,,అది అబ్బాయి,adi abbāyi,,,src::book1000 known::100,S0412
+He was asleep,,అయననిద్రపోయారు,ayananidrapōyāru,,,src::book1000 known::100,S0413
+She was tired,,ఆవిడఅలసిపోయారు,āviḍaalasipōyāru,,,src::book1000 known::100,S0414
+Help the poor [respectful],,పేదవారికి సహాయంచేయండి,pēdavāriki sahāyanchēyaṇḍi,,,src::book1000 reg::respectful known::100,S0415
+Comb the hair [respectful],,జుట్టుదువ్వుకోండి,juṭṭuduvvukōṇḍi,,,src::book1000 reg::respectful known::100,S0416
+Love yourself,,నిన్నునువ్వుప్రేమించు,ninnunuvvuprēminchu,,,src::book1000 known::100,S0417
+Have patience [respectful],,ఓపికకలిగిఉండండి,ōpikakaligiuṇḍaṇḍi,,,src::book1000 reg::respectful known::100,S0418
+You amazed,,మీరునన్నుఆశ్చర్యపరిచారు,mīrunannuāścharyaparichāru,,,src::book1000 known::100,S0419
+You are lying [respectful],,మీరుఅబధంచెప్తున్నారు,mīruabadhancheptunnāru,,,src::book1000 reg::respectful known::100,S0420
+You let us go [respectful],,మీరుమమ్మల్ని వెళ్లనివ్వండి,mīrumammalni veḷlanivvaṇḍi,,,src::book1000 reg::respectful known::100,S0421
+I have my car,,నా దగ్గరకారుఉంది,nā daggarakāruundi,,,src::book1000 known::100,S0422
+He forgave me,,అయననన్నుక్షమించారు,ayananannukṣaminchāru,,,src::book1000 known::100,S0423
+You look good [respectful],,మీరుచాలా బాగా ఉన్నారు,mīruchālā bāgā unnāru,,,src::book1000 reg::respectful known::100,S0424
+See you again,,మళ్ళీ కలుద్దాం,maḷḷī kaluddāṁ,,,src::book1000 known::100,S0425
+I am teaching,,నేనుబోధిస్తున్నాను,nēnubōdhistunnānu,,,src::book1000 known::100,S0426
+He is weeping [respectful],,అయనఏడుస్తున్నారు,ayanaēḍustunnāru,,,src::book1000 reg::respectful known::100,S0427
+I am learning,,నేనునేర్చుకుంటున్నాను,nēnunērchukuṇṭunnānu,,,src::book1000 known::100,S0428
+I sell apples,,నేనుయాపిల్ పండ్లుఅమ్ముతాను,nēnuyāpil paṇḍluammutānu,,,src::book1000 known::100,S0429
+Here is a pen,,ఇక్కడఒకకలంఉంది,ikkaḍaokakalaṁundi,,,src::book1000 known::100,S0430
+Shall we eat ?,,మనంతిందామా?,manantindāmā?,,,src::book1000 known::100,S0431
+Go right away [respectful],,వెంటనే వెళ్ళండి,veṇṭanē veḷḷaṇḍi,,,src::book1000 reg::respectful known::100,S0432
+Speak quietly [respectful],,నిశ్శబ్దంగా మాట్లాడండి,niśśabdangā māṭlāḍaṇḍi,,,src::book1000 reg::respectful known::100,S0433
+It costs Rs,,దీని ధరఅయిదురూపాయలు,dīni dharaayidurūpāyalu,,,src::book1000 known::100,S0434
+I don't agree,,నేనుఅంగీకరించను,nēnuangīkarinchanu,,,src::book1000 known::100,S0435
+I spend a lot,,నేనుచాలా ఖర్చుచేస్తాను,nēnuchālā kharchuchēstānu,,,src::book1000 known::100,S0436
+Please come in [respectful],,దయచేసి లోపలికి రండి,dayachēsi lōpaliki raṇḍi,,,src::book1000 reg::respectful known::100,S0437
+I have a cough,,నాకుదగ్గుగాఉంది,nākudaggugāundi,,,src::book1000 known::100,S0438
+He didn't open,,అయనతెరవలేదు,ayanateravalēdu,,,src::book1000 known::100,S0439
+Never do that ! [respectful],,ఎప్పుడుఅలా చేయకండి,eppuḍualā chēyakaṇḍi,,,src::book1000 reg::respectful known::100,S0440
+Comb your hair [respectful],,తలదువ్వుకోండి,taladuvvukōṇḍi,,,src::book1000 reg::respectful known::100,S0441
+Whose is this ?,,ఇది ఎవరిది?,idi evaridi?,,,src::book1000 known::100,S0442
+Go to the left [respectful],,ఎడమవైపువెళ్ళండి,eḍamavaipuveḷḷaṇḍi,,,src::book1000 reg::respectful known::100,S0444
+Ready to begin,,ప్రారంభించడానికి సిద్ధంగాఉంది,prārambhinchaḍāniki siddhangāundi,,,src::book1000 known::100,S0445
+Don't blame me,,నన్నునిందించవద్దు,nannunindinchavaddu,,,src::book1000 known::100,S0446
+She is singing [respectful],,ఆవిడపడుతున్నారు,āviḍapaḍutunnāru,,,src::book1000 reg::respectful known::100,S0447
+Now I can talk,,ఇప్పుడునేనుమాట్లాడగలను,ippuḍunēnumāṭlāḍagalanu,,,src::book1000 known::100,S0448
+It's very good,,ఇది చాలా బాగుంది,idi chālā bāgundi,,,src::book1000 known::100,S0449
+I can hear you,,నేనుమిమ్మల్ని వినగలుగుతున్నాను,nēnumimmalni vinagalugutunnānu,,,src::book1000 known::100,S0450
+Think about it [respectful],,దాని గురించి ఆలోచించండి,dāni gurinchi ālōchinchaṇḍi,,,src::book1000 reg::respectful known::100,S0451
+Enjoy yourself [respectful],,సంతోషంగా ఉండండి,santōṣangā uṇḍaṇḍi,,,src::book1000 reg::respectful known::100,S0452
+I have no idea,,నాకుఅవగాహనలేదు,nākuavagāhanalēdu,,,src::book1000 known::100,S0453
+I came walking,,నేనునడుస్తూవచ్చాను,nēnunaḍustūvachchānu,,,src::book1000 known::100,S0454
+Do it properly [respectful],,సరిగ్గాచేయండి,sariggāchēyaṇḍi,,,src::book1000 reg::respectful known::100,S0455
+Do it together [respectful],,కలిసి చేయండి,kalisi chēyaṇḍi,,,src::book1000 reg::respectful known::100,S0456
+Read it for me [respectful],,నా కోసంచదవండి,nā kōsanchadavaṇḍi,,,src::book1000 reg::respectful known::100,S0457
+Start doing it [respectful],,చేయడంప్రారంభించండి,chēyaḍamprārambhinchaṇḍi,,,src::book1000 reg::respectful known::100,S0458
+How did it go ?,,ఎలా జరిగింది ?,elā jarigindi ?,,,src::book1000 known::100,S0459
+It can't be so,,అది అలా కాదు,adi alā kādu,,,src::book1000 known::100,S0460
+Be good to all [respectful],,అందరితో మంచిగా ఉండండి,andaritō manchigā uṇḍaṇḍi,,,src::book1000 reg::respectful known::100,S0461
+He needs money,,ఆయనకి డబ్బుకావాలి,āyanaki ḍabbukāvāli,,,src::book1000 known::100,S0462
+I'll come back,,నేనుమల్లి వస్తాను,nēnumalli vastānu,,,src::book1000 known::100,S0463
+How is he now ? [respectful],,ఆయనఇప్పుడుఎలా ఉన్నారు?,āyanaippuḍuelā unnāru?,,,src::book1000 reg::respectful known::100,S0464
+It's cold here,,ఇక్కడచల్లగాఉంది,ikkaḍachallagāundi,,,src::book1000 known::100,S0465
+Allow me to do [respectful],,నన్నుచేయడానికి అనుమతించండి,nannuchēyaḍāniki anumatinchaṇḍi,,,src::book1000 reg::respectful known::100,S0466
+Are they happy ?,,వారుసంతోషమా?,vārusantōṣamā?,,,src::book1000 known::100,S0467
+Give me a hand [respectful],,నాకుచేయి అందించండి,nākuchēyi andinchaṇḍi,,,src::book1000 reg::respectful known::100,S0468
+It will happen,,అది జరుగుతుంది,adi jarugutundi,,,src::book1000 known::100,S0469
+He will not do,,Ayana ఆయనదానినిచేయరు danini cheyaru,Ayana āyanadāninichēyaru danini cheyaru,,,src::book1000 known::100,S0470
+"Yes , Of course",,అవును,avunu,,,src::book1000 known::100,S0471
+That is my car,,అది నా కారు,adi nā kāru,,,src::book1000 known::100,S0472
+Are they fine ? [respectful],,వారుబాగున్నారా?,vārubāgunnārā?,,,src::book1000 reg::respectful known::100,S0473
+Are they bold ? [respectful],,వారుధైర్యంగా ఉన్నారా?,vārudhairyangā unnārā?,,,src::book1000 reg::respectful known::100,S0474
+Are they here ? [respectful],,వారుఇక్కడఉన్నారా?,vāruikkaḍaunnārā?,,,src::book1000 reg::respectful known::100,S0475
+I write a poem,,నేనుఒకపద్యంవ్రాస్తాను,nēnuokapadyaṁvrāstānu,,,src::book1000 known::100,S0476
+I import dates,,నేనుఖర్జురాలనుదిగుమతి చేస్తాను,nēnukharjurālanudigumati chēstānu,,,src::book1000 known::100,S0477
+We are running,,మేముపరిగెడుతున్నాము,mēmuparigeḍutunnāmu,,,src::book1000 known::100,S0478
+This is my pen,,ఇది నా కలం,idi nā kalaṁ,,,src::book1000 known::100,S0479
+"Yes , I like it",,అవునునాకది ఇష్టం,avununākadi iṣṭaṁ,,,src::book1000 known::100,S0480
+It is very hot IRCHAND,,ఇది చాలా వేడిగాఉంటుంది,idi chālā vēḍigāuṇṭundi,,,src::book1000 known::100,S0481
+I'm not afraid,,నేనుభయపడుటలేదు,nēnubhayapaḍuṭalēdu,,,src::book1000 known::100,S0482
+Don't be angry [respectful],,కోపగించకండి,kōpaginchakaṇḍi,,,src::book1000 reg::respectful known::100,S0483
+He took a book [respectful],,అతనుఒకపుస్తకంతీసుకున్నారు.,atanuokapustakantīsukunnāru.,,,src::book1000 reg::respectful known::100,S0484
+Are they rich ?,,వారుధనవంతులా?,vārudhanavantulā?,,,src::book1000 known::100,S0485
+It's It ' very cold,,ఇది చాలా చల్లగాఉంది,idi chālā challagāundi,,,src::book1000 known::100,S0486
+Use your brain [respectful],,మీ మెదడునుఉపయోగించండి,mī medaḍunuupayōginchaṇḍi,,,src::book1000 reg::respectful known::100,S0487
+Serve the food [respectful],,ఆహారాన్ని వడ్డించండి,āhārānni vaḍḍinchaṇḍi,,,src::book1000 reg::respectful known::100,S0488
+You will learn,,మీరునేర్చుకుంటారు,mīrunērchukuṇṭāru,,,src::book1000 known::100,S0489
+You are a girl,,మీరుఒకఅమ్మాయి,mīruokaammāyi,,,src::book1000 known::100,S0490
+Think about me [respectful],,నా గురించి ఆలోచించండి,nā gurinchi ālōchinchaṇḍi,,,src::book1000 reg::respectful known::100,S0491
+Mend your ways [respectful],,మీ మార్గాలనుచక్కదిద్దుకోండి,mī mārgālanuchakkadiddukōṇḍi,,,src::book1000 reg::respectful known::100,S0492
+He saddened me,,ఆయననన్నుబాధపెట్టారు,āyananannubādhapeṭṭāru,,,src::book1000 known::100,S0493
+Remind me at [respectful],,ఎనిమిది గంటలకునాకుగుర్తుచేయండి,enimidi gaṇṭalakunākugurtuchēyaṇḍi,,,src::book1000 reg::respectful known::100,S0494
+Don't sit idle [respectful],,పనిలేకుండా కూర్చోకండి,panilēkuṇḍā kūrchōkaṇḍi,,,src::book1000 reg::respectful known::100,S0495
+Don't annoy me [respectful],,నన్నుబాధించకండి,nannubādhinchakaṇḍi,,,src::book1000 reg::respectful known::100,S0496
+I play cricket,,నేనుక్రికెట్ఆడతాను,nēnukrikeṭāḍatānu,,,src::book1000 known::100,S0497
+I have to play,,నేనుఆడాలి,nēnuāḍāli,,,src::book1000 known::100,S0498
+Light the lamp [respectful],,దీపంవెలిగించండి,dīpaṁveliginchaṇḍi,,,src::book1000 reg::respectful known::100,S0499
+He was awkward [respectful],,ఆయనఇబ్బందికరంగా ఉన్నారు,āyanaibbandikarangā unnāru,,,src::book1000 reg::respectful known::100,S0500
+Mom is at home,,అమ్మఇంట్లోఉంది,ammaiṇṭlōundi,,,src::book1000 known::100,S0501
+He makes me go,,ఆయననన్నువెళ్లేలా చేస్తారు,āyananannuveḷlēlā chēstāru,,,src::book1000 known::100,S0502
+You may go now,,మీరుఇప్పుడువెళ్ళవచ్చు,mīruippuḍuveḷḷavachchu,,,src::book1000 known::100,S0503
+Please take it [respectful],,దయచేసి తీసుకోండి,dayachēsi tīsukōṇḍi,,,src::book1000 reg::respectful known::100,S0504
+I like the dog,,నాకుకుక్కఅంటే ఇష్టం,nākukukkaaṇṭē iṣṭaṁ,,,src::book1000 known::100,S0505
+Don't favor me [respectful],,నాకుఅనుకూలంగా ఉండకండి,nākuanukūlangā uṇḍakaṇḍi,,,src::book1000 reg::respectful known::100,S0506
+I have my ways,,నాకునా మార్గాలుఉన్నాయి,nākunā mārgāluunnāyi,,,src::book1000 known::100,S0507
+Who is guilty?,,ఎవరుదోషి?,evarudōṣi?,,,src::book1000 known::100,S0508
+What happened?,,ఏమి జరిగింది?,ēmi jarigindi?,,,src::book1000 known::100,S0509
+He did nothing,,ఆయనఏమీ చేయలేదు,āyanaēmī chēyalēdu,,,src::book1000 known::100,S0510
+He got us coke,,ఆయనమాకుకోక్ తీసుకునారు,āyanamākukōk tīsukunāru,,,src::book1000 known::100,S0511
+He has nothing,,ఆయనకి ఏమి లేదు,āyanaki ēmi lēdu,,,src::book1000 known::100,S0512
+Bring some more [respectful],,మరికొని తీసుకుర్ండి,marikoni tīsukurṇḍi,,,src::book1000 reg::respectful known::100,S0513
+What are,,ఇవి ఏమిట్ట?,ivi ēmiṭṭa?,,,src::book1000 known::100,S0514
+What are those?,,అవి ఏమిట్ట?,avi ēmiṭṭa?,,,src::book1000 known::100,S0515
+He doesn't open,,ఆయనతెర్వరు,āyanatervaru,,,src::book1000 known::100,S0516
+I will not open,,నేనుతెర్వను,nēnutervanu,,,src::book1000 known::100,S0517
+Get in ! [respectful],,లోపలి రండి,lōpali raṇḍi,,,src::book1000 reg::respectful known::100,S0518
+Get in the car ! [respectful],,కారులోకి రండి !,kārulōki raṇḍi !,,,src::book1000 reg::respectful known::100,S0519
+Why are you so ?,,ఎందుకుమీరుఅంత?,endukumīruanta?,,,src::book1000 known::100,S0520
+How ridiculous !,,ఎంతహాస్యాస్పదంగాఉంది !,entahāsyāspadangāundi !,,,src::book1000 known::100,S0521
+How disgusting !,,ఎంతఅసహ్యకరమైనది,entaasahyakaramainadi,,,src::book1000 known::100,S0522
+Where can I go ?,,నేనుఎక్కడికి వెళ్ళగలను?,nēnuekkaḍiki veḷḷagalanu?,,,src::book1000 known::100,S0523
+Who doesn't go ?,,ఎవరువెళ్ళరు?,evaruveḷḷaru?,,,src::book1000 known::100,S0524
+Don't scold him [respectful],,ఆయని తటక్ండి,āyani taṭakṇḍi,,,src::book1000 reg::respectful known::100,S0525
+That's not true,,అది నిజంకాదు,adi nijankādu,,,src::book1000 known::100,S0526
+I don't give it,,నేనుఇవను,nēnuivanu,,,src::book1000 known::100,S0527
+Shall we leave?,,మనంవెళామా?,manaṁveḷāmā?,,,src::book1000 known::100,S0528
+I Nenu have dinni to do cheyali it,,నేనుదీని చేయాల్ల,nēnudīni chēyālla,,,src::book1000 known::100,S0529
+I may not do it,,నేనుచేయక్పోవచు,nēnuchēyakpōvachu,,,src::book1000 known::100,S0530
+Much,,ఇప్పడుచలా మంచిది,ippaḍuchalā manchidi,,,src::book1000 known::100,S0531
+It must be true,,అది నిజంఅయ్యఉండాల్ల,adi nijaṁayyauṇḍālla,,,src::book1000 known::100,S0532
+Isn't he there ?,,ఆయనఅక్కడలేరా?,āyanaakkaḍalērā?,,,src::book1000 known::100,S0533
+Nobody is there,,ఎవరూలేరు,evarūlēru,,,src::book1000 known::100,S0534
+He became angry [respectful],,ఆయనకోపంగా ఉన్నారు,āyanakōpangā unnāru,,,src::book1000 reg::respectful known::100,S0535
+May I join you ?,,నేనుమీతో చేరవచ్చా?,nēnumītō chēravachchā?,,,src::book1000 known::100,S0536
+I don't mind it,,నేనుపట్టిచుకోను,nēnupaṭṭichukōnu,,,src::book1000 known::100,S0537
+I don't want it,,నాకుఅది అక్కరలేదు,nākuadi akkaralēdu,,,src::book1000 known::100,S0538
+I am in trouble,,నేనుఇబ్బందుల్లో ఉన్నాను,nēnuibbandullō unnānu,,,src::book1000 known::100,S0539
+"No , I don't eat",,లేదునేనుతినను,lēdunēnutinanu,,,src::book1000 known::100,S0540
+He is listening [respectful],,ఆయనవింటున్నారు,āyanaviṇṭunnāru,,,src::book1000 reg::respectful known::100,S0541
+Don't get angry [respectful],,కోపంతెచ్చుకోకండి,kōpantechchukōkaṇḍi,,,src::book1000 reg::respectful known::100,S0542
+Fix your collar [respectful],,మీ కాలర్నుపరిష్కరించండి,mī kālarnupariṣkarinchaṇḍi,,,src::book1000 reg::respectful known::100,S0543
+Mosquito bit me,,నన్నుదోమకుట్టింది,nannudōmakuṭṭindi,,,src::book1000 known::100,S0544
+How's it going ?,,ఎలా జరుగుతోంది?,elā jarugutōndi?,,,src::book1000 known::100,S0545
+Where were you ?,,మీరుఎక్కడఉంటిరి?,mīruekkaḍauṇṭiri?,,,src::book1000 known::100,S0546
+Don't be afraid [respectful],,భయపడకండి,bhayapaḍakaṇḍi,,,src::book1000 reg::respectful known::100,S0547
+Come let's play [respectful],,రండి ఆడుదాం,raṇḍi āḍudāṁ,,,src::book1000 reg::respectful known::100,S0548
+Don't tell lies [respectful],,అబద్ధాలుచెప్పకండి,abaddhālucheppakaṇḍi,,,src::book1000 reg::respectful known::100,S0549
+Open your mouth [respectful],,నోరుతెరవండి,nōruteravaṇḍi,,,src::book1000 reg::respectful known::100,S0550
+That's my fault,,అది నా తప్పు,adi nā tappu,,,src::book1000 known::100,S0551
+It's on the top,,ఇది పైనఉంది,idi painaundi,,,src::book1000 known::100,S0552
+I went with him,,నేనుఆయనతో వెళ్ళాను,nēnuāyanatō veḷḷānu,,,src::book1000 known::100,S0553
+She is carrying [respectful],,ఆవిడమోస్తున్నారు,āviḍamōstunnāru,,,src::book1000 reg::respectful known::100,S0554
+"No , I like curd",,లేదునేనుపెరుగుని ఇష్టపడతాను,lēdunēnuperuguni iṣṭapaḍatānu,,,src::book1000 known::100,S0555
+I came train,,నేనురైలులో వచ్చాను,nēnurailulō vachchānu,,,src::book1000 known::100,S0556
+I want to sleep,,నేనునిద్రపోవాలనుకుంటున్నాను,nēnunidrapōvālanukuṇṭunnānu,,,src::book1000 known::100,S0557
+Read the lesson [respectful],,పాఠంచదవండి,pāṭhanchadavaṇḍi,,,src::book1000 reg::respectful known::100,S0558
+I am yet to eat,,నేనుఇంకా తినలేదు,nēnuinkā tinalēdu,,,src::book1000 known::100,S0559
+I cannot write,,నేనువ్రాయలేను,nēnuvrāyalēnu,,,src::book1000 known::100,S0560
+That is a mango,,ఇది మామిడి,idi māmiḍi,,,src::book1000 known::100,S0561
+Are they tired ?,,వారుఅలసిపోయారా?,vārualasipōyārā?,,,src::book1000 known::100,S0562
+I want a camera,,నాకుకెమెరా కావాలి,nākukemerā kāvāli,,,src::book1000 known::100,S0563
+They play chess,,వారుచెదరంగంఆడుతారు,vāruchedarangaṁāḍutāru,,,src::book1000 known::100,S0564
+They make dolls,,వారుబొమ్మలనుతయారుచేస్తారు,vārubommalanutayāruchēstāru,,,src::book1000 known::100,S0565
+I teach English,,నేనుఆంగ్లభాషనేర్పిస్తాను,nēnuānglabhāṣanērpistānu,,,src::book1000 known::100,S0566
+I study English,,నేనుఆంగ్లంచదువుతాను,nēnuānglanchaduvutānu,,,src::book1000 known::100,S0567
+This is his pen,,ఇది ఆయనకలం,idi āyanakalaṁ,,,src::book1000 known::100,S0568
+How's the,,ఆహారంఎలా ఉంది?,āhāraṁelā undi?,,,src::book1000 known::100,S0569
+Drive Carefully [respectful],,జాగ్రత్తగా నడపండి,jāgrattagā naḍapaṇḍi,,,src::book1000 reg::respectful known::100,S0570
+Is it possible ?,,ఇది సాధ్యమేనా?,idi sādhyamēnā?,,,src::book1000 known::100,S0571
+Sweep the floor [respectful],,నేలనుతుదచండి,nēlanutudachaṇḍi,,,src::book1000 reg::respectful known::100,S0572
+That smells bad,,చెడువాసనవస్తుంది,cheḍuvāsanavastundi,,,src::book1000 known::100,S0573
+I don't like it,,ఇది నాకుఇష్టంలేదు,idi nākuiṣṭaṁlēdu,,,src::book1000 known::100,S0574
+This is for you [respectful],,ఇది మీ కోసం,idi mī kōsaṁ,,,src::book1000 reg::respectful known::100,S0575
+I will buy this,,నేనుదీన్నికొంటాను,nēnudīnnikoṇṭānu,,,src::book1000 known::100,S0576
+Can I sit here ?,,నేనుఇక్కడకూర్చోవచ్చా?,nēnuikkaḍakūrchōvachchā?,,,src::book1000 known::100,S0577
+I need a doctor,,నాకుఒకవైద్యుడుకావాలి,nākuokavaidyuḍukāvāli,,,src::book1000 known::100,S0578
+Don't interrupt [respectful],,అంతరాయంకలిగించకండి,antarāyankaliginchakaṇḍi,,,src::book1000 reg::respectful known::100,S0579
+Why do you run ?,,మీరుఎందుకుపరిగెత్తుతారు?,mīruendukuparigettutāru?,,,src::book1000 known::100,S0580
+Why did he run ?,,ఆయనఎందుకుపరిగెత్తారు?,āyanaendukuparigettāru?,,,src::book1000 known::100,S0581
+Are you kidding ? [respectful],,మీరుతమాషా చేస్తున్నారా?,mīrutamāṣā chēstunnārā?,,,src::book1000 reg::respectful known::100,S0582
+These are books,,ఇవి పుస్తకాలు,ivi pustakālu,,,src::book1000 known::100,S0583
+I am not a girl,,నేనుఅమ్మాయిని కాదు,nēnuammāyini kādu,,,src::book1000 known::100,S0584
+I open the door,,నేనుతలుపుతీరుస్తాను,nēnutaluputīrustānu,,,src::book1000 known::100,S0585
+I don't get you,,నాకుమీరుచెప్పింది అర్థంకాలేదు,nākumīrucheppindi arthankālēdu,,,src::book1000 known::100,S0586
+Don't abuse him [respectful],,ఆయనన్నినిందించకండి,āyananninindinchakaṇḍi,,,src::book1000 reg::respectful known::100,S0587
+I live in Delhi,,నేనుఢిల్లీ లో నివసిస్తున్నాను,nēnuḍhillī lō nivasistunnānu,,,src::book1000 known::100,S0588
+We were sitting,,మేముకూర్చున్నాము,mēmukūrchunnāmu,,,src::book1000 known::100,S0589
+It is lightning,,అది మెరుపు,adi merupu,,,src::book1000 known::100,S0590
+He is shivering [respectful],,ఆయనవణుకుతున్నారు,āyanavaṇukutunnāru,,,src::book1000 reg::respectful known::100,S0591
+It took years,,దీనికిఆరుసంవత్సరాలుపట్టింది,dīnikiārusaṁvatsarālupaṭṭindi,,,src::book1000 known::100,S0592
+He seldom walks,,ఆయనఅరుదుగా నడుస్తారు,āyanaarudugā naḍustāru,,,src::book1000 known::100,S0593
+I had been told,,నాకుచెప్పబడింది,nākucheppabaḍindi,,,src::book1000 known::100,S0594
+I never met you,,నేనుమిమ్మల్ని ఎప్పుడుకలవలేదు,nēnumimmalni eppuḍukalavalēdu,,,src::book1000 known::100,S0595
+I must go there,,నేనుఅక్కడికి వెళ్ళాలి,nēnuakkaḍiki veḷḷāli,,,src::book1000 known::100,S0596
+Nothing special,,ప్రత్యేకంగాఏమీ లేదు,pratyēkangāēmī lēdu,,,src::book1000 known::100,S0597
+Clean the floor,,నేలశుభ్రపరుచుము,nēlaśubhraparuchumu,,,src::book1000 known::100,S0598
+"Nothing , thanks",,"ఏమీ లేదు, ధన్యవాదాలు","ēmī lēdu, dhanyavādālu",,,src::book1000 known::100,S0599
+"Have it , please [respectful]",,దయచేసి ఇది తీసుకోండి,dayachēsi idi tīsukōṇḍi,,,src::book1000 reg::respectful known::100,S0600
+I don't believe,,నేనునమ్మను,nēnunammanu,,,src::book1000 known::100,S0601
+What do you do ?,,మీరుఏమి చేస్తారు?,mīruēmi chēstāru?,,,src::book1000 known::100,S0602
+I go for a walk,,నేనునడకకోసంవెళ్తాను,nēnunaḍakakōsaṁveḷtānu,,,src::book1000 known::100,S0603
+Keep it forever [respectful],,ఎప్పటికీఉంచండి,eppaṭikīunchaṇḍi,,,src::book1000 reg::respectful known::100,S0604
+I am having fun,,నేనుఆనందిస్తున్నాను,nēnuānandistunnānu,,,src::book1000 known::100,S0605
+She talks a lot,,ఆవిడచాలమాట్లాడుతుంది,āviḍachālamāṭlāḍutundi,,,src::book1000 known::100,S0606
+India will win,,భారతదేశంగెలుస్తుంది,bhāratadēśangelustundi,,,src::book1000 known::100,S0607
+I had food,,నేనుఆహారంతిన్నాను,nēnuāhārantinnānu,,,src::book1000 known::100,S0608
+Who do all know?,,మీరుఎందుకుతెలుసుకోవాలి?,mīruendukutelusukōvāli?,,,src::book1000 known::100,S0609
+I enjoyed a lot !,,నేనుచాలా ఆనందించాను,nēnuchālā ānandinchānu,,,src::book1000 known::100,S0610
+You are mistaken,,మీరుపొరపాటుపడ్డారు,mīruporapāṭupaḍḍāru,,,src::book1000 known::100,S0611
+I am proud of it,,నేనుగర్వపడుతున్నాను,nēnugarvapaḍutunnānu,,,src::book1000 known::100,S0612
+"Yes , I am happy ?",,అవునునేనుసంతోషంగా ఉన్నాను,avununēnusantōṣangā unnānu,,,src::book1000 known::100,S0613
+Are these books ?,,ఇవి పుస్తకాలా?,ivi pustakālā?,,,src::book1000 known::100,S0614
+I have toothache,,నాకుదంతనొప్పిఉంది,nākudantanoppiundi,,,src::book1000 known::100,S0615
+I am not opening,,నేనుతెరవడంలేదు,nēnuteravaḍaṁlēdu,,,src::book1000 known::100,S0616
+Give a break ! [respectful],,నాకువిరామంఇవ్వండి,nākuvirāmaṁivvaṇḍi,,,src::book1000 reg::respectful known::100,S0617
+How are you now ? [respectful],,ఇప్పుడుమీరుఎలా ఉన్నారు?,ippuḍumīruelā unnāru?,,,src::book1000 reg::respectful known::100,S0618
+Who am I to you ?,,నేనుమీకుఏమి అవుతాను?,nēnumīkuēmi avutānu?,,,src::book1000 known::100,S0619
+Have a nice day !,,శుభదినం!,śubhadinaṁ!,,,src::book1000 known::100,S0620
+Why did you ask ?,,ఎందుకుఅడిగారు?,endukuaḍigāru?,,,src::book1000 known::100,S0621
+Get out of here ! [respectful],,ఇక్కడనుండి వెళ్లిపోండి,ikkaḍanuṇḍi veḷlipōṇḍi,,,src::book1000 reg::respectful known::100,S0622
+Where do you go ?,,మీరుఎక్కడికి వెళతారు?,mīruekkaḍiki veḷatāru?,,,src::book1000 known::100,S0623
+Please accept it [respectful],,దయచేసి అంగీకరించండి,dayachēsi angīkarinchaṇḍi,,,src::book1000 reg::respectful known::100,S0624
+Don't yell at me [respectful],,నా మీదఅరవకండి,nā mīdaaravakaṇḍi,,,src::book1000 reg::respectful known::100,S0625
+I missed the bus,,నేనుబస్సునుఅందుకోలేకపోయాను,nēnubassunuandukōlēkapōyānu,,,src::book1000 known::100,S0626
+I am his brother,,నేనుఆయనసోదరుడిని,nēnuāyanasōdaruḍini,,,src::book1000 known::100,S0627
+Can you do this ?,,మీరుదీన్నిచేయగలరా?,mīrudīnnichēyagalarā?,,,src::book1000 known::100,S0628
+I cannot give it,,నేనుఇవ్వలేను,nēnuivvalēnu,,,src::book1000 known::100,S0629
+I didn't give it,,నేనుఇవ్వలేదు,nēnuivvalēdu,,,src::book1000 known::100,S0630
+I will not do it,,నేనుచేయను,nēnuchēyanu,,,src::book1000 known::100,S0631
+You are a genius,,మీరుమేధావి,mīrumēdhāvi,,,src::book1000 known::100,S0632
+Long time no see,,చాలా కాలంచూడలేదు,chālā kālanchūḍalēdu,,,src::book1000 known::100,S0633
+Buy me a new one [respectful],,నాకుక్రొత్తదాన్ని కొనండి,nākukrottadānni konaṇḍi,,,src::book1000 reg::respectful known::100,S0634
+Show me this one [respectful],,ఇది నాకుచూపించండి,idi nākuchūpinchaṇḍi,,,src::book1000 reg::respectful known::100,S0635
+There's one here,,ఇక్కడఒకటి ఉంది,ikkaḍaokaṭi undi,,,src::book1000 known::100,S0636
+Don't go so fast [respectful],,అంతవేగంగా వెళ్ళకండి,antavēgangā veḷḷakaṇḍi,,,src::book1000 reg::respectful known::100,S0637
+I'm still eating,,నేనుఇంకా తింటున్నాను,nēnuinkā tiṇṭunnānu,,,src::book1000 known::100,S0638
+Most of the time,,ఎక్కువసమయం,ekkuvasamayaṁ,,,src::book1000 known::100,S0639
+Were you eating ?,,మీరుభోజనంచేస్తూండేనా?,mīrubhōjananchēstūṇḍēnā?,,,src::book1000 known::100,S0640
+It's very urgent,,ఇది చాలా అత్యవసరం,idi chālā atyavasaraṁ,,,src::book1000 known::100,S0641
+I will try again,,నేనుమళ్ళీ ప్రయత్నిస్తాను,nēnumaḷḷī prayatnistānu,,,src::book1000 known::100,S0642
+She is my sister,,ఆవిడనా సోదరి,āviḍanā sōdari,,,src::book1000 known::100,S0643
+This is my house,,ఇది నా ఇల్లు,idi nā illu,,,src::book1000 known::100,S0644
+I could be wrong,,నేనుతప్పుకావచ్చు,nēnutappukāvachchu,,,src::book1000 known::100,S0645
+Can you show me ?,,నాకుచూపిస్తారా?,nākuchūpistārā?,,,src::book1000 known::100,S0646
+That's beautiful,,అది అందంగావుంది,adi andangāvundi,,,src::book1000 known::100,S0647
+Is that too big ?,,అది చాలా పెద్దదా?,adi chālā peddadā?,,,src::book1000 known::100,S0648
+"If so , it's okay",,"అలా అయితే , అది సరే","alā ayitē , adi sarē",,,src::book1000 known::100,S0649
+Give this to her [respectful],,ఇది ఆవిడకుఇవ్వండి,idi āviḍakuivvaṇḍi,,,src::book1000 reg::respectful known::100,S0650
+Nothing but this,,ఇది తప్పమరేమీ లేదు,idi tappamarēmī lēdu,,,src::book1000 known::100,S0651
+I care about you,,నేనుమీ గురించి పట్టించుకుంటాను,nēnumī gurinchi paṭṭinchukuṇṭānu,,,src::book1000 known::100,S0652
+It's upside down,,ఇది తలక్రిందులుగాఉంది,idi talakrindulugāundi,,,src::book1000 known::100,S0653
+I have no choice,,నాకువేరే మార్గంలేదు,nākuvērē mārgaṁlēdu,,,src::book1000 known::100,S0654
+I wanna buy this,,నేనుదీన్నికొనాలనుకుంటున్నాను,nēnudīnnikonālanukuṇṭunnānu,,,src::book1000 known::100,S0655
+Can I try it on ?,,నేనుకాస్తప్రయత్నించవచ్చా?,nēnukāstaprayatninchavachchā?,,,src::book1000 known::100,S0656
+He remembers you,,ఆయనమిమ్మల్ని గుర్తుంచుకుంటారు,āyanamimmalni gurtunchukuṇṭāru,,,src::book1000 known::100,S0657
+I don't like tea,,నాకుచాయ్ లేదు,nākuchāy lēdu,,,src::book1000 known::100,S0658
+What do you ask ?,,మీరుఏమి అడుగుతారు?,mīruēmi aḍugutāru?,,,src::book1000 known::100,S0659
+How many people ? [respectful],,ఎంతమంది ?,entamandi ?,,,src::book1000 reg::respectful known::100,S0660
+How is everyone ? [respectful],,"ప్రతిఒక్కరు, ఎలా ఉన్నారు?","pratiokkaru, elā unnāru?",,,src::book1000 reg::respectful known::100,S0661
+What to eat now ?,,ఇప్పుడుఏమి తినాలి?,ippuḍuēmi tināli?,,,src::book1000 known::100,S0662
+Don't make noise [respectful],,శబ్దంచేయకండి,śabdanchēyakaṇḍi,,,src::book1000 reg::respectful known::100,S0663
+This is not true,,ఇది నిజంకాదు,idi nijankādu,,,src::book1000 known::100,S0664
+We have no money,,మాకుడబ్బులేదు,mākuḍabbulēdu,,,src::book1000 known::100,S0665
+This is her book,,ఇది ఆవిడా పుస్తకం,idi āviḍā pustakaṁ,,,src::book1000 known::100,S0666
+This is my watch,,ఇది నా గడియారం,idi nā gaḍiyāraṁ,,,src::book1000 known::100,S0667
+She is asking me,,ఆవిడా నన్నుఅడుగుతోంది.,āviḍā nannuaḍugutōndi.,,,src::book1000 known::100,S0668
+He will be there,,ఆయనఅక్కడఉంటారు,āyanaakkaḍauṇṭāru,,,src::book1000 known::100,S0669
+I agree with you,,నేనుమీతో అంగీక్రిసునాను,nēnumītō angīkrisunānu,,,src::book1000 known::100,S0670
+May I stay here?,,నేనుఇక్డే ఉండవచ?,nēnuikḍē uṇḍavacha?,,,src::book1000 known::100,S0671
+I need your help,,Naku నాకుమీ mi సహాయం sahayam kavali కావాల్ల,Naku nākumī mi sahāyaṁ sahayam kavali kāvālla,,,src::book1000 known::100,S0672
+I come with you,,నేనుమీతో వసాను,nēnumītō vasānu,,,src::book1000 known::100,S0673
+"No, I am not sad",,"లేదు, నాకుబాధగా లేదు","lēdu, nākubādhagā lēdu",,,src::book1000 known::100,S0674
+I buy vegetables,,నేనుకూర్గాయలుకొంటాను,nēnukūrgāyalukoṇṭānu,,,src::book1000 known::100,S0675
+What do they do? [respectful],,వారుఏమి చేసారు?,vāruēmi chēsāru?,,,src::book1000 reg::respectful known::100,S0676
+I write a letter,,నేనుఒక్ లేఖరాసాను,nēnuok lēkharāsānu,,,src::book1000 known::100,S0677
+"Yes, I have taken",,అవునునేనుతీసుకున్నాను,avununēnutīsukunnānu,,,src::book1000 known::100,S0678
+I don't like her,,నేనుఆవిడని ఇష్టపడను,nēnuāviḍani iṣṭapaḍanu,,,src::book1000 known::100,S0679
+I'm sick,,నా అరోగ్యముబాగా లేదు,nā arōgyamubāgā lēdu,,,src::book1000 known::60,S0680
+I'm nervous,,బయంగా వుంది నాకు,bayangā vundi nāku,,,src::book1000 known::60,S0681
+It is sweet,,ఇది తియ్యగా ఉంది,idi tiyyagā undi,,,src::book1000 known::60,S0682
+Take my bike [respectful],,నా బైక్ తీసుకోండి,nā baik tīsukōṇḍi,,,src::book1000 reg::respectful known::60,S0683
+Do something [respectful],,ఎదో ఒకటి చేయండి,edō okaṭi chēyaṇḍi,,,src::book1000 reg::respectful known::60,S0684
+I tie my tie,,నేనునా టై కట్టాను,nēnunā ṭai kaṭṭānu,,,src::book1000 known::60,S0685
+But I like it,,కానీ నాకుఅది నచ్చింది,kānī nākuadi nachchindi,,,src::book1000 known::60,S0686
+This is cheap,,ఇది చౌకగా ఉంటుంది,idi chaukagā uṇṭundi,,,src::book1000 known::60,S0687
+Let him relax [respectful],,ఆయన్ని విశ్రాంతి తీసుకోనివ్వండి,āyanni viśrānti tīsukōnivvaṇḍi,,,src::book1000 reg::respectful known::60,S0688
+"No , it is mine",,"లేదు, అది నాదే","lēdu, adi nādē",,,src::book1000 known::60,S0689
+Bring my shirt [respectful],,నా చొక్కా తీసుకురండి,nā chokkā tīsukuraṇḍi,,,src::book1000 reg::respectful known::60,S0690
+Do this slowly [respectful],,దీన్ని నెమ్మదిగా చేయండి,dīnni nemmadigā chēyaṇḍi,,,src::book1000 reg::respectful known::60,S0691
+It was my duty,,అది నా కర్తవ్యం,adi nā kartavyaṁ,,,src::book1000 known::60,S0693
+This is my bag,,ఇది నా బ్యాగ్,idi nā byāg,,,src::book1000 known::60,S0694
+That's too bad !,,అది చాలా అన్యాయం!,adi chālā anyāyaṁ!,,,src::book1000 known::60,S0695
+Don't compel me [respectful],,నను బ్లవంతం చేయక్ండి,nanu blavantaṁ chēyakṇḍi,,,src::book1000 reg::respectful known::60,S0696
+I lost my watch,,నేనునా గడియారాని కోలోయాను,nēnunā gaḍiyārāni kōlōyānu,,,src::book1000 known::60,S0697
+Are you at home [respectful],,మీరుఇంటి దెగ్గరే ఉన్నారా?,mīruiṇṭi deggarē unnārā?,,,src::book1000 reg::respectful known::60,S0698
+He will not open,,Ayana ఆయనతెరవరు teravaru,Ayana āyanateravaru teravaru,,,src::book1000 known::60,S0699
+Walk the bicycle [respectful],,సైకిల్ తో నడవండి,saikil tō naḍavaṇḍi,,,src::book1000 reg::respectful known::60,S0700
+Go this way [respectful],,ఈమార్గంలో Ee marganlo vellandi వెళ్ళండి,īmārgaṁlō Ee marganlo vellandi veḷḷaṇḍi,,,src::book1000 reg::respectful known::60,S0701
+He is not well,,Ayana ఆయనబాగా baga leru లేరు,Ayana āyanabāgā baga leru lēru,,,src::book1000 known::60,S0702
+Pull it [respectful],,దీనిని లాగుము/లాగండి,dīnini lāgumu/lāgaṇḍi,,,src::book1000 reg::respectful known::40,S0703
+Ram goes,,రామ్ వెళతారు,rām veḷatāru,,,src::book1000 known::40,S0704
+Come home [respectful],,ఇంటికి రండి,iṇṭiki raṇḍi,,,src::book1000 reg::respectful known::40,S0705
+Stay away [respectful],,దూరంగా ఉండండి,dūrangā uṇḍaṇḍi,,,src::book1000 reg::respectful known::40,S0706
+It's gone,,అది పోయింది,adi pōyindi,,,src::book1000 known::40,S0707
+Leave him [respectful],,ఆయనని విడిచిపెట్టండి,āyanani viḍichipeṭṭaṇḍi,,,src::book1000 reg::respectful known::40,S0708
+Ram walks,,రామ్ నడుచును,rām naḍuchunu,,,src::book1000 known::40,S0709
+Ram plays,,రామ్ ఆడుతారు,rām āḍutāru,,,src::book1000 known::40,S0710
+Is Ram in ? [respectful],,రామ్ ఉన్నారా?,rām unnārā?,,,src::book1000 reg::respectful known::40,S0711
+Thank God !,,దేవునికి ధన్యవాదాలు,dēvuniki dhanyavādālu,,,src::book1000 known::40,S0712
+Just taste it [respectful],,రుచి చూడండి,ruchi chūḍaṇḍi,,,src::book1000 reg::respectful known::40,S0713
+I like him,,అతనంటే నాకిష్టం,atanaṇṭē nākiṣṭaṁ,,,src::book1000 known::40,S0714
+Go to hell,,నరకానికి వెళ్ళు,narakāniki veḷḷu,,,src::book1000 known::40,S0715
+It's a sin,,అది పాపం,adi pāpaṁ,,,src::book1000 known::40,S0716
+Go straight [respectful],,తనగా వెళ్ండి,tanagā veḷṇḍi,,,src::book1000 reg::respectful known::40,S0717
+I missed it,,నేనుదానిని కోలోయాను,nēnudānini kōlōyānu,,,src::book1000 known::40,S0718
+It's Ramesh,,ఇది రమేష్,idi ramēṣ,,,src::book1000 known::40,S0719
+I asked him,,నేనుఆయనని అడిగాను,nēnuāyanani aḍigānu,,,src::book1000 known::40,S0720
+Be generous [respectful],,ఉదారంగా ఉండండి,udārangā uṇḍaṇḍi,,,src::book1000 reg::respectful known::40,S0721
+Go upstairs ! [respectful],,పైకి వెళ్ళండి,paiki veḷḷaṇḍi,,,src::book1000 reg::respectful known::40,S0722
+Do you have ? [respectful],,మీ దెగ్గరఉందా?,mī deggaraundā?,,,src::book1000 reg::respectful known::40,S0723
+Nothing else,,ఇంకేమి లేదు,inkēmi lēdu,,,src::book1000 known::40,S0724
+Let him come [respectful],,ఆయనని రానివ్వండి,āyanani rānivvaṇḍi,,,src::book1000 reg::respectful known::40,S0725
+It is boring,,అది విసుగ్గాఉంది,adi visuggāundi,,,src::book1000 known::40,S0726
+Come with me [respectful],,నాతో రండి,nātō raṇḍi,,,src::book1000 reg::respectful known::40,S0727
+Listen to me [respectful],,నా మాటవినండి,nā māṭavinaṇḍi,,,src::book1000 reg::respectful known::40,S0728
+He has fever,,ఆయనకి జ్వరంఉంది,āyanaki jvaraṁundi,,,src::book1000 known::40,S0729
+Can I not go ?,,నేనువెళ్లకుండా ఉండొచ్చా?,nēnuveḷlakuṇḍā uṇḍochchā?,,,src::book1000 known::40,S0730
+Who hurt you ?,,ఎవరుమిమ్మల్ని బాధించారు?,evarumimmalni bādhinchāru?,,,src::book1000 known::40,S0731
+He had a shop,,ఆయనకి ఒకదుకాణంఉంది,āyanaki okadukāṇaṁundi,,,src::book1000 known::40,S0732
+Ring the bell [respectful],,బెల్ మోగించండి,bel mōginchaṇḍi,,,src::book1000 reg::respectful known::40,S0733
+Bring it soon [respectful],,తొందరగా తీసుకురండి,tondaragā tīsukuraṇḍi,,,src::book1000 reg::respectful known::40,S0734
+Is Suresh in ? [respectful],,సురేష్ లోపలఉన్నారా?,surēṣ lōpalaunnārā?,,,src::book1000 reg::respectful known::40,S0735
+Ram is asleep,,రామ్ నిద్రపోయారు,rām nidrapōyāru,,,src::book1000 known::40,S0736
+Sumit is here [respectful],,సుమిత్ ఇక్కడఉన్నారు,sumit ikkaḍaunnāru,,,src::book1000 reg::respectful known::40,S0737
+It is a chair,,అది ఒకకుర్చీ,adi okakurchī,,,src::book1000 known::40,S0738
+Go downstairs ! [respectful],,క్రిందకి వెళ్ళండి,krindaki veḷḷaṇḍi,,,src::book1000 reg::respectful known::40,S0739
+May I come in ?,,నేనులోపలికి రావచ్చా?,nēnulōpaliki rāvachchā?,,,src::book1000 known::40,S0740
+Who has money ?,,ఎవరి దెగ్గరడబ్బుఉంది?,evari deggaraḍabbuundi?,,,src::book1000 known::40,S0741
+Go to the shop [respectful],,దుకాణానికి వెళ్ళండి,dukāṇāniki veḷḷaṇḍi,,,src::book1000 reg::respectful known::40,S0742
+Is coffee hot ?,,కాఫీ వేడిగాఉందా ?,kāphī vēḍigāundā ?,,,src::book1000 known::40,S0743
+It's up to you,,మీకే వదిలేస్తున్నాం,mīkē vadilēstunnāṁ,,,src::book1000 known::40,S0744
+It's delicious,,అది రుచికరమైనది,adi ruchikaramainadi,,,src::book1000 known::40,S0745
+He's very lazy,,అతనుచాలా సోమరి,atanuchālā sōmari,,,src::book1000 known::40,S0746
+This is a book,,ఇది ఒకపుస్తకం,idi okapustakaṁ,,,src::book1000 known::40,S0747
+Wear the shirt [respectful],,చొక్కా ధరించండి,chokkā dharinchaṇḍi,,,src::book1000 reg::respectful known::40,S0748
+It was written,,అది వ్రాయబడినది,adi vrāyabaḍinadi,,,src::book1000 known::40,S0749
+Do not overeat [respectful],,అతిగా తినకండి,atigā tinakaṇḍi,,,src::book1000 reg::respectful known::40,S0750
+It's all right,,సరే అలాగే,sarē alāgē,,,src::book1000 known::40,S0751
+Be comfortable [respectful],,సౌక్ర్ంగా ఉండండి,saukrngā uṇḍaṇḍi,,,src::book1000 reg::respectful known::40,S0752
+Is Idi this pusthakama? a these? book?,,ఇది ప్పసక్మా?,idi ppasakmā?,,,src::book1000 known::40,S0753
+Get on the bus ! [respectful],,బస్సులో ఎక్కండి,bassulō ekkaṇḍi,,,src::book1000 reg::respectful known::40,S0754
+Do you need it ?,,మీకుఇది కావాలా?,mīkuidi kāvālā?,,,src::book1000 known::40,S0755
+How does he go ?,,ఆయనఎలా వెళ్తారు?,āyanaelā veḷtāru?,,,src::book1000 known::40,S0756
+Don't eat often [respectful],,తర్చుగా తనక్ండి,tarchugā tanakṇḍi,,,src::book1000 reg::respectful known::40,S0757
+I like them too,,నాకుఅవి నచయ్య,nākuavi nachayya,,,src::book1000 known::40,S0758
+"So, who are you?",,అయ్యతే మీరుఎవరు?,ayyatē mīruevaru?,,,src::book1000 known::40,S0759
+We are all here,,మేమంతా ఇక్కడఉన్నాం,mēmantā ikkaḍaunnāṁ,,,src::book1000 known::40,S0760
+Who called you ?,,మిమ్మల్ని ఎవరుపిలిచారు?,mimmalni evarupilichāru?,,,src::book1000 known::40,S0761
+They called you,,వారుమిమ్మల్ని పిలిచారు,vārumimmalni pilichāru,,,src::book1000 known::40,S0762
+The gas is over,,గ్యాస్ అయిపోయింది,gyās ayipōyindi,,,src::book1000 known::40,S0763
+See you tonight,,ఈరాత్రికి కలుద్దాం,īrātriki kaluddāṁ,,,src::book1000 known::40,S0764
+It is wonderful,,ఇది అద్భుతమైనది,idi adbhutamainadi,,,src::book1000 known::40,S0765
+Turn on the tap; Turn the tap on [respectful],,ట్యాప్ ఆన్చేయండి,ṭyāp ānchēyaṇḍi,,,src::book1000 reg::respectful known::40,S0766
+There was a tap,,ఒకకుళాయి ఉంది,okakuḷāyi undi,,,src::book1000 known::40,S0767
+I am used to it,,నాకుఅది అలవాటే,nākuadi alavāṭē,,,src::book1000 known::40,S0768
+Rahul has to go,,రాహుల్ వెళ్ళాలి,rāhul veḷḷāli,,,src::book1000 known::40,S0769
+Ram never plays,,రామ్ ఎప్పుడుఆడరు,rām eppuḍuāḍaru,,,src::book1000 known::40,S0770
+No matter what !,,ఏది ఏమైనా,ēdi ēmainā,,,src::book1000 known::40,S0771
+This is a rumor,,ఇది ఒకపుకారు,idi okapukāru,,,src::book1000 known::40,S0772
+I keep my words,,నేనునా మాటమీదనిలబడతాను,nēnunā māṭamīdanilabaḍatānu,,,src::book1000 known::40,S0773
+Nothing as such,,అలాంటిదేమీ లేదు,alāṇṭidēmī lēdu,,,src::book1000 known::40,S0774
+Don't bother me [respectful],,నన్నుఇబ్బంది పెట్టవద్దు,nannuibbandi peṭṭavaddu,,,src::book1000 reg::respectful known::40,S0775
+What can I open ?,,నేనుఏమి తెరవగలను?,nēnuēmi teravagalanu?,,,src::book1000 known::40,S0776
+Is Shyam coming ? [respectful],,శ్యామ్ వస్తున్నారా?,śyām vastunnārā?,,,src::book1000 reg::respectful known::40,S0777
+Not even a bite !,,ఒకముద్దకూడా కాదు,okamuddakūḍā kādu,,,src::book1000 known::40,S0778
+How will you go ?,,మీరుఎలా వెళ్తారు?,mīruelā veḷtāru?,,,src::book1000 known::40,S0779
+"Somehow , I got it",,ఎలాగో నాకుఅర్థమైంది,elāgō nākuarthamaindi,,,src::book1000 known::40,S0780
+Orange is cheap,,నారింజచౌకగా ఉంటుంది,nārinjachaukagā uṇṭundi,,,src::book1000 known::40,S0781
+I can't hear you,,నాకుమీ మాటవినిపించడంలేదు,nākumī māṭavinipinchaḍaṁlēdu,,,src::book1000 known::40,S0782
+Blow the balloon [respectful],,గాలి బుడగఊదండి,gāli buḍagaūdaṇḍi,,,src::book1000 reg::respectful known::40,S0783
+What is he like ?,,ఆయనఎలా ఉంటారు?,āyanaelā uṇṭāru?,,,src::book1000 known::40,S0784
+What is written ?,,ఏమి వ్రాయబడింది?,ēmi vrāyabaḍindi?,,,src::book1000 known::40,S0785
+What you do say ?,,మీరుఏమి చెబుతారు?,mīruēmi chebutāru?,,,src::book1000 known::40,S0786
+Are you at home?,,మీరుఇంటోనే ఉనారా?,mīruiṇṭōnē unārā?,,,src::book1000 known::40,S0787
+Nothing happened,,ఏమీ జర్గలేదు,ēmī jargalēdu,,,src::book1000 known::40,S0788
+Why is he angry?,,ఆయనఎందుకుకోపంగా ఉనారు?,āyanaendukukōpangā unāru?,,,src::book1000 known::40,S0789
+"Yes, he is there",,"అవ్వను, అతనుఅక్డఉనారు","avvanu, atanuakḍaunāru",,,src::book1000 known::40,S0790
+What do you buy?,,మీరుఏమి కొంటారు?,mīruēmi koṇṭāru?,,,src::book1000 known::40,S0791
+Turn it on [respectful],,దాన్ని ఆన్ చేయండి,dānni ān chēyaṇḍi,,,src::book1000 reg::respectful known::20,S0792
+He buys pens,,ఆయనఇరవై అయిదు పెన్నులుకొంటారు,āyanairavai ayidu pennulukoṇṭāru,,,src::book1000 known::20,S0793
+Turn it [respectful],,దాన్నితిప్పండి,dānnitippaṇḍi,,,src::book1000 reg::respectful known::0,S0794
+Lift it [respectful],,దాన్ని ఎత్తండి,dānni ettaṇḍi,,,src::book1000 reg::respectful known::0,S0795
+Push it [respectful],,త్రోయుము/నెట్టండి,trōyumu/neṭṭaṇḍi,,,src::book1000 reg::respectful known::0,S0796
+Blow it [respectful],,ఊదండి,ūdaṇḍi,,,src::book1000 reg::respectful known::0,S0797
+Tear it [respectful],,దాన్నిచింపివేయండి,dānnichimpivēyaṇḍi,,,src::book1000 reg::respectful known::0,S0798
+Throw it [respectful],,విసిరేయండి,visirēyaṇḍi,,,src::book1000 reg::respectful known::0,S0799
+Paste it [respectful],,అతికించండి,atikinchaṇḍi,,,src::book1000 reg::respectful known::0,S0800
+Use this [respectful],,దీన్నిఉపయోగించండి,dīnniupayōginchaṇḍi,,,src::book1000 reg::respectful known::0,S0801
+As usual !,,యధావిధిగా,yadhāvidhigā,,,src::book1000 known::0,S0802
+Don't cry [respectful],,ఏడవకండి,ēḍavakaṇḍi,,,src::book1000 reg::respectful known::0,S0803
+Ignore it [respectful],,దాన్ని విస్మరించండి,dānni vismarinchaṇḍi,,,src::book1000 reg::respectful known::0,S0804
+Forget it [respectful],,మర్చిపోండి,marchipōṇḍi,,,src::book1000 reg::respectful known::0,S0805
+Take away [respectful],,తీసివేయండి,tīsivēyaṇḍi,,,src::book1000 reg::respectful known::0,S0806
+Thannakandi [respectful],,తన్నకండి,tannakaṇḍi,,,src::book1000 reg::respectful known::0,S0807
+Don't yell,,కేకలువేయవద్దు,kēkaluvēyavaddu,,,src::book1000 known::0,S0808
+I like you,,మీరంటే నాకిష్టం,mīraṇṭē nākiṣṭaṁ,,,src::book1000 known::0,S0809
+Find a job [respectful],,ఒకఉద్యోగంవెతుక్కోండి,okaudyōgaṁvetukkōṇḍi,,,src::book1000 reg::respectful known::0,S0810
+Be with me [respectful],,నాతోఉండండి,nātōuṇḍaṇḍi,,,src::book1000 reg::respectful known::0,S0811
+Be serious [respectful],,తీవ్రంగాఉండండి,tīvrangāuṇḍaṇḍi,,,src::book1000 reg::respectful known::0,S0812
+It is love,,ఇదిప్రేమ,idiprēma,,,src::book1000 known::0,S0813
+Same to you,,మీకుఅలాగే,mīkualāgē,,,src::book1000 known::0,S0814
+Turn it off [respectful],,దాన్నిఆపివేయండి,dānniāpivēyaṇḍi,,,src::book1000 reg::respectful known::0,S0815
+Do it later [respectful],,తరువాతచేయండి,taruvātachēyaṇḍi,,,src::book1000 reg::respectful known::0,S0816
+Just joking,,ఊరికే హాస్యంచేస్తున్నా,ūrikē hāsyanchēstunnā,,,src::book1000 known::0,S0817
+Go to sleep [respectful],,నిద్దురపోండి,niddurapōṇḍi,,,src::book1000 reg::respectful known::0,S0818
+Don't do it [respectful],,దీన్నిచేయకండి,dīnnichēyakaṇḍi,,,src::book1000 reg::respectful known::0,S0819
+Let it rain,,వానపడనీ,vānapaḍanī,,,src::book1000 known::0,S0820
+Don't delay ! [respectful],,ఆలస్యంచేయకండి,ālasyanchēyakaṇḍi,,,src::book1000 reg::respectful known::0,S0821
+In minutes,,అయిదునిమిషాల్లో,ayidunimiṣāllō,,,src::book1000 known::0,S0822
+Open the lid [respectful],,మూతతెరవండి,mūtateravaṇḍi,,,src::book1000 reg::respectful known::0,S0823
+Stop playing [respectful],,ఆడటంమానేయండి,āḍaṭammānēyaṇḍi,,,src::book1000 reg::respectful known::0,S0824
+Don't forget [respectful],,మర్చిపోకండి,marchipōkaṇḍi,,,src::book1000 reg::respectful known::0,S0825
+It is cloudy,,మబ్బులుకమ్ముకునిఉంది,mabbulukammukuniundi,,,src::book1000 known::0,S0826
+Don't be shy [respectful],,సిగ్గుపడకండి,siggupaḍakaṇḍi,,,src::book1000 reg::respectful known::0,S0827
+Close the lid [respectful],,మూతమూసివేయండి,mūtamūsivēyaṇḍi,,,src::book1000 reg::respectful known::0,S0828
+Show yourself [respectful],,మీరేంటో నిరూపించుకోండి,mīrēṇṭō nirūpinchukōṇḍi,,,src::book1000 reg::respectful known::0,S0829
+Wait a minute [respectful],,ఒకనిమిషంఆగండి,okanimiṣaṁāgaṇḍi,,,src::book1000 reg::respectful known::0,S0830
+Give rupees [respectful],,ఆరురూపాయలుఇవ్వండి,ārurūpāyaluivvaṇḍi,,,src::book1000 reg::respectful known::0,S0831
+In which way ?,,ఏవిధంగా?,ēvidhangā?,,,src::book1000 known::0,S0832
+Wash the bike [respectful],,బైక్తుదచండి,baiktudachaṇḍi,,,src::book1000 reg::respectful known::0,S0833
+What's in it ?,,ఇందులో ఏముంది ?,indulō ēmundi ?,,,src::book1000 known::0,S0834
+Get well soon [respectful],,తొందరగా కోలుకోండి,tondaragā kōlukōṇḍi,,,src::book1000 reg::respectful known::0,S0835
+Happy New Year,,నూతనసంవత్సరశుభాకాంక్షలు,nūtanasaṁvatsaraśubhākānkṣalu,,,src::book1000 known::0,S0836
+You know what,,నీకుతెలుసా,nīkutelusā,,,src::book1000 known::0,S0837
+Are you sick ?,,మీకుఒంట్లో బాలేదా?,mīkuoṇṭlō bālēdā?,,,src::book1000 known::0,S0838
+Just like that,,ఊరికే,ūrikē,,,src::book1000 known::0,S0839
+How big is it ?,,అదిఎంతపెద్దది?,adientapeddadi?,,,src::book1000 known::0,S0840
+I am a teacher,,నేనొకఉపాధ్యాయుడిని,nēnokaupādhyāyuḍini,,,src::book1000 known::0,S0841
+Do not gesture [respectful],,సంజ్ఞచేయకండి,sanjñachēyakaṇḍi,,,src::book1000 reg::respectful known::0,S0842
+Don't touch it [respectful],,దాన్ని తాకకండి,dānni tākakaṇḍi,,,src::book1000 reg::respectful known::0,S0843
+Don't be hasty [respectful],,తొందరపడకండి,tondarapaḍakaṇḍi,,,src::book1000 reg::respectful known::0,S0844
+Don't hesitate [respectful],,మొహమాటంపడకండి,mohamāṭampaḍakaṇḍi,,,src::book1000 reg::respectful known::0,S0845
+Don't you know?,,మీకుతెల్లయదా?,mīkutellayadā?,,,src::book1000 known::0,S0846
+Are you a girl?,,నీవ్వఆడపలవా?,nīvvaāḍapalavā?,,,src::book1000 known::0,S0847
+Don't be silly ! [respectful],,వెర్రిఉండకండి,verriuṇḍakaṇḍi,,,src::book1000 reg::respectful known::0,S0848
+Battery betternow isgone poindi [respectful],,Battery బాటర్చపోయ్యంది,Battery bāṭarchapōyyandi,,,src::book1000 reg::respectful known::0,S0849
+There is a lamp,,ఒకదీపంఉంది,okadīpaṁundi,,,src::book1000 known::0,S0850
+Do you like it ?,,మీకునచ్చిందా?,mīkunachchindā?,,,src::book1000 known::0,S0851
+Call the police [respectful],,పోలీసులనుపిలవండి,pōlīsulanupilavaṇḍi,,,src::book1000 reg::respectful known::0,S0852
+You are welcome,,మీకుస్వాగతం,mīkusvāgataṁ,,,src::book1000 known::0,S0853
+Get off the bus ! [respectful],,బస్సునుండి దిగిపోండి,bassunuṇḍi digipōṇḍi,,,src::book1000 reg::respectful known::0,S0854
+What's going on ?,,ఏంజరుగుతోంది?,ēnjarugutōndi?,,,src::book1000 known::0,S0855
+Who is that boy ?,,ఆబాబుఎవరు?,ābābuevaru?,,,src::book1000 known::0,S0856
+Rare opportunity,,అరుదైనఅవకాశం,arudainaavakāśaṁ,,,src::book1000 known::0,S0857
+Do you know her ?,,మీకుఆవిడతెలుసా?,mīkuāviḍatelusā?,,,src::book1000 known::0,S0858

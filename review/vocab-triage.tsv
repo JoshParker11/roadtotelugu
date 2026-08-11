@@ -1,146 +1,188 @@
-id	telugu	roman	english	flags	lemma	source	decision	replacement
-W0202	లాగా	lāgā	like, as	bound-suffix		site		
-W0206	పై	pai	on, upon	bound-suffix		site		
-W0272	గా	gā	as	bound-suffix		top1000		
-W0276	న	na	on	bound-suffix		top1000		
-W0278	తో	tō	with	bound-suffix		top1000		
-W0284	నుండి	nuṇḍi	from; since	bound-suffix multi-gloss		top1000		
-W0291	ది	di	the	bound-suffix		top1000		
-W0292	యొక్క	yokka	of	bound-suffix		top1000		
-W0293	కు	ku	to	bound-suffix		top1000		
-W0295	లో	lō	in	bound-suffix		top1000		
-W0313	కూడా	kūḍā	also; even	bound-suffix multi-gloss		top1000		
-W0503	వరకు	varaku	until	bound-suffix		top1000		
-W0111	థాంక్స్ అండి	thānks aṇḍi	thank you (colloquial hybrid — the everyday choice)	english-respelled inflected phrase		site		
-W0271	సారంగి	sārangi	sarangi — bowed string instrument	english-respelled		site		
-W0309	సెట్	seṭ	set	english-respelled		top1000		
-W0319	పోర్ట్	pōrṭ	port	english-respelled		top1000		
-W0425	స్టాండ్	sṭāṇḍ	stand	english-respelled		top1000		
-W0451	హార్డ్	hārḍ	hard	english-respelled		top1000		
-W0488	ఓపెన్	ōpen	open	english-respelled		top1000		
-W0500	మార్క్	mārk	mark	english-respelled		top1000		
-W0603	స్టార్	sṭār	star	english-respelled		top1000		
-W0620	ఓహ్	ōh	oh	english-respelled		top1000		
-W0663	మాప్	māp	map	english-respelled		top1000		
-W0666	పుల్	pul	pull	english-respelled		top1000		
-W0668	నోటీసు	nōṭīsu	notice	english-respelled		top1000		
-W0696	గ్రాండ్	grāṇḍ	grand	english-respelled		top1000		
-W0716	స్టోర్	sṭōr	store	english-respelled		top1000		
-W0721	లెగ్	leg	leg	english-respelled		top1000		
-W0749	మిలియన్	miliyan	million	english-respelled		top1000		
-W0779	యార్డ్	yārḍ	yard	english-respelled		top1000		
-W0856	మెటల్	meṭal	metal	english-respelled		top1000		
-W0875	బిట్	biṭ	bit	english-respelled		top1000		
-W0882	రోల్	rōl	roll	english-respelled		top1000		
-W0898	రిచ్	rich	rich	english-respelled		top1000		
-W0909	హిట్	hiṭ	hit	english-respelled		top1000		
-W0911	పార్టీ	pārṭī	party	english-respelled		top1000		
-W0915	రింగ్	ring	ring	english-respelled		top1000		
-W0947	స్ట్రింగ్	sṭring	string	english-respelled		top1000		
-W0948	బెల్	bel	bell	english-respelled		top1000		
-W0983	మాస్టర్	māsṭar	master	english-respelled		top1000		
-W0990	పోస్ట్	pōsṭ	post	english-respelled		top1000		
-W0999	బార్	bār	bar	english-respelled		top1000		
-W1001	సెగ్మెంట్	segmeṇṭ	segment	english-respelled		top1000		
-W1005	మార్కెట్	mārkeṭ	market	english-respelled		top1000		
-W1058	స్లిప్	slip	slip	english-respelled		top1000		
-W1072	చార్ట్	chārṭ	chart	english-respelled		top1000		
-W1082	స్ప్రెడ్	spreḍ	spread	english-respelled		top1000		
-W0035	కారు	kāru	car (loanword); car	inflected multi-gloss		site,top1000		
-W0036	అమ్మాయి	ammāyi	girl	inflected		site,top1000		
-W0040	బంగారు	bangāru	gold, golden (also a pet name); gold	inflected multi-gloss		site,top1000		
-W0069	వాడు	vāḍu	he (informal — intimates only, caution)	inflected		site		
-W0084	అబ్బాయి	abbāyi	boy	inflected		site		
-W0107	వస్తాను	vastānu	"goodbye (lit. ""I'll come back"")"	inflected verbform	రా	site		
-W0108	రండి	raṇḍi	please come in / welcome (colloquial)	inflected verbform	రా	site		
-W0116	క్షమించండి	kṣaminchaṇḍi	"sorry (lit. ""forgive me"")"	inflected		site		
-W0120	బాగుంది	bāgundi	good — fine, going well (food, trips, states)	inflected		site		
-W0122	బాగున్నాను	bāgunnānu	I am fine	inflected		site		
-W0135	గారు	gāru	honorific suffix for people (respect)	inflected		site		
-W0143	మామ గారు	māma gāru	father-in-law (either side)	inflected phrase		site		
-W0176	పదహారు	padahāru	sixteen	inflected		site		
-W0191	తిన్నాను	tinnānu	I've eaten	inflected verbform	తిను	site		
-W0194	అయ్యింది	ayyindi	it got done, it happened	inflected		site		
-W0195	చేసాను	chēsānu	I did	inflected verbform	చేయి	site		
-W0199	అలిసిపోయాను	alisipōyānu	I'm tired	inflected		site		
-W0205	తాను	tānu	himself, herself	inflected		site		
-W0234	సన్నాయి	sannāyi	shehnai (wind instrument)	inflected		site		
-W0277	ఉన్నాయి	unnāyi	are; were; been; include	inflected multi-gloss		top1000		
-W0279	వారు	vāru	they	inflected		top1000		
-W0280	ఉంటుంది	uṇṭundi	be	inflected verbform	ఉండు	top1000		
-W0290	వచ్చింది	vachchindi	had; came; got	inflected multi-gloss verbform	రా	top1000		
-W0299	చేయండి	chēyaṇḍi	do	inflected verbform	చేయి	top1000		
-W0305	అన్నాడు	annāḍu	said	inflected verbform	అను	top1000		
-W0307	చెప్పండి	cheppaṇḍi	tell	inflected verbform	చెప్పు	top1000		
-W0308	చేస్తుంది	chēstundi	does	inflected verbform	చేయి	top1000		
-W0321	జోడించండి	jōḍinchaṇḍi	add	inflected		top1000		
-W0327	అనుసరించండి	anusarinchaṇḍi	follow	inflected		top1000		
-W0333	వెళ్ళింది	veḷḷindi	went	inflected verbform	వెళ్ళు	top1000		
-W0340	ప్రయత్నించండి	prayatninchaṇḍi	try	inflected		top1000		
-W0354	పడుతుంది	paḍutundi	take	inflected		top1000		
-W0355	పొందండి	pondaṇḍi	get	inflected		top1000		
-W0357	తయారు	tayāru	made; make	inflected multi-gloss		top1000		
-W0358	నివసిస్తున్నారు	nivasistunnāru	live	inflected		top1000		
-W0373	అనుకుంటున్నాను	anukuṇṭunnānu	think	inflected		top1000		
-W0398	చేస్తాను	chēstānu	would	inflected verbform	చేయి	top1000		
-W0404	చూడండి	chūḍaṇḍi	see; look	inflected multi-gloss verbform	చూడు	top1000		
-W0411	చేసింది	chēsindi	did	inflected verbform	చేయి	top1000		
-W0431	పెరుగుతాయి	perugutāyi	grow	inflected		top1000		
-W0471	పట్టింది	paṭṭindi	took	inflected		top1000		
-W0544	చెప్పారు	cheppāru	told	inflected verbform	చెప్పు	top1000		
-W0551	గుణిస్తారు	guṇistāru	multiply	inflected		top1000		
-W0559	నిర్ణయించుకుంటారు	nirṇayinchukuṇṭāru	decide	inflected		top1000		
-W0576	నడిచింది	naḍichindi	ran	inflected verbform	నడవు	top1000		
-W0580	పోల్చుతారు	pōlchutāru	equate	inflected		top1000		
-W0582	తీసుకువచ్చారు	tīsukuvachchāru	brought	inflected		top1000		
-W0595	వస్తాయి	vastāyi	fall	inflected		top1000		
-W0611	పూర్తయింది	pūrtayindi	done	inflected		top1000		
-W0618	ఇచ్చింది	ichchindi	gave	inflected verbform	ఇవ్వు	top1000		
-W0646	వినండి	vinaṇḍi	listen	inflected verbform	విను	top1000		
-W0679	ఎంచుకోండి	enchukōṇḍi	pick; choose; select	inflected multi-gloss		top1000		
-W0687	మారుతుంటాయి	mārutuṇṭāyi	vary	inflected		top1000		
-W0695	భావించాడు	bhāvinchāḍu	felt	inflected		top1000		
-W0701	ఉన్నాను	unnānu	am	inflected verbform	ఉండు	top1000		
-W0709	ప్రయాణమయ్యారు	prayāṇamayyāru	sail	inflected		top1000		
-W0735	ఉంచింది	unchindi	kept	inflected		top1000		
-W0752	ఆశిస్తున్నాము	āśistunnāmu	hope	inflected		top1000		
-W0761	అందుకుంటారు	andukuṇṭāru	receive	inflected		top1000		
-W0771	వ్రాసారు	vrāsāru	wrote	inflected		top1000		
-W0775	సూచిస్తున్నాయి	sūchistunnāyi	suggest; indicate	inflected multi-gloss		top1000		
-W0786	పెరిగింది	perigindi	grew	inflected		top1000		
-W0792	కోల్పోయింది	kōlpōyindi	lost	inflected		top1000		
-W0794	ధరిస్తారు	dharistāru	wear	inflected		top1000		
-W0798	పడిపోయింది	paḍipōyindi	fell	inflected		top1000		
-W0809	విరిగింది	virigindi	broke	inflected		top1000		
-W0814	స్థాయి	sthāyi	scale; level	inflected multi-gloss		top1000		
-W0833	రాయి	rāyi	stone	inflected verbform	రాయి	top1000		
-W0889	ఓడించింది	ōḍinchindi	beat	inflected		top1000		
-W0902	పనిచేస్తాయి	panichēstāyi	operate	inflected		top1000		
-W0920	మాట్లాడారు	māṭlāḍāru	spoke	inflected verbform	మాట్లాడు	top1000		
-W0930	అంగీకరిస్తున్నారు	angīkaristunnāru	agree	inflected		top1000		
-W0945	సరిపోల్చండి	saripōlchaṇḍi	compare	inflected		top1000		
-W0970	పంపండి	pampaṇḍi	send	inflected		top1000		
-W0973	అనుమతిస్తాయి	anumatistāyi	allow	inflected		top1000		
-W0988	మొగ్గుచూపుతున్నారు	mogguchūputunnāru	favor	inflected		top1000		
-W1035	వెండి	veṇḍi	silver	inflected		top1000		
-W1041	భయపడ్డారు	bhayapaḍḍāru	afraid	inflected		top1000		
-W1051	దారితీసింది	dāritīsindi	led	inflected		top1000		
-W1057	తాడు	tāḍu	rope	inflected		top1000		
-W1070	కొనసాగుతుంది	konasāgutundi	continue	inflected		top1000		
-W0102	సొంత ఊరు	sonta ūru	native place (own town)	phrase		site		
-W0103	భారత దేశం	bhārata dēśaṁ	"India (ancient name + ""country"")"	phrase		site		
-W0186	రెండవ / రెండో	reṇḍava / reṇḍō	second (pattern: number + -ava / -ō)	phrase		site		
-W0187	మీరు ఎట్ల ఉన్నారు?	mīru eṭla unnāru?	How are you? (respectful)	phrase		site		
-W0190	ఈ రోజు	ī rōju	today	phrase		site		
-W0192	ఇంకా లేదు	inkā lēdu	not yet	phrase		site		
-W0200	ఎట్ల గడిచింది?	eṭla gaḍichindi?	How did it go? (of a day)	phrase		site		
-W0203	ఏమి జరిగినా	ēmi jariginā	whatever happens	phrase		site		
-W0232	సహజ గుణము	sahaja guṇamu	innate nature	phrase		site		
-W0238	కలవర పడు	kalavara paḍu	to be flustered	phrase		site		
-W0239	ఒర కంట	ora kaṇṭa	sidelong glance	phrase		site		
-W0240	ఈడు జోడు	īḍu jōḍu	match, equal (in age)	phrase		site		
-W0401	ఆమె యొక్క	āme yokka	her	phrase		top1000		
-W0754	దుస్తులు ధరింపజేయు	dustulu dharimpajēyu	clothe	phrase		top1000		
-W1089	కొలత గల పాత్ర	kolata gala pātra	quart	phrase		top1000		
-W1092	క్రీడల్లో అవకాశాలు	krīḍallō avakāśālu	chance	phrase		top1000		
-W1096	బాగా చేయు	bāgā chēyu	shine	phrase		top1000		
+id	telugu	roman	english	flags	lemma	source	raw_rom	decision	replacement
+W0328	ವಲ್ಲಿ	ವಲ್ಲಿ	Younger Sister	kannada-script		book1000	Chelli		
+W0371	ನಯ್ಯ	ನಯ್ಯ	Ghee	kannada-script		book1000	Neiyyi		
+W0425	ವವಿ	ವವಿ	Ear	kannada-script		book1000	Chevi		
+W0290		Edi ? 2 ?	Which ?	needs-script no-script		book1000	Edi ? 2 ?		
+W0292		Enni ? 2 ?	How Many ?	needs-script no-script		book1000	Enni ? 2 ?		
+W0302		Nijanga ?	Really ?	needs-script no-script		book1000	Nijanga ?		
+W0303		Auna ? ដ ?	Is It ?	needs-script no-script		book1000	Auna ? ដ ?		
+W0417		Lekha ඒඛ	Letter	needs-script no-script		book1000	Lekha ඒඛ		
+W0480		Anthataa	Everywhere	needs-script no-script		book1000	Anthataa		
+W0515		GORILA Balla	Table	needs-script no-script		book1000	GORILA Balla		
+W0567		Samadhanam	Reply	needs-script no-script		book1000	Samadhanam		
+W0203	లాగా	lāgā	like, as	bound-suffix		site	lāga / -lā		
+W0207	పై	pai	on, upon	bound-suffix		site	-pai		
+W0273	గా	gā	as	bound-suffix		top1000			
+W0280	న	na	on	bound-suffix		top1000			
+W0283	తో	tō	with	bound-suffix		top1000			
+W0295	నుండి	nuṇḍi	from; since	bound-suffix multi-gloss		top1000			
+W0312	ది	di	the	bound-suffix		top1000			
+W0314	యొక్క	yokka	of	bound-suffix		top1000			
+W0316	కు	ku	to	bound-suffix		top1000			
+W0320	లో	lō	in	bound-suffix		top1000			
+W0352	కూడా	kūḍā	also; even	bound-suffix multi-gloss		top1000			
+W0670	వరకు	varaku	until	bound-suffix		top1000			
+W0119	థాంక్స్ అండి	thānks aṇḍi	thank you (colloquial hybrid — the everyday choice)	english-respelled inflected phrase		site	thanks aṇḍi		
+W0271	సారంగి	sārangi	sarangi — bowed string instrument	english-respelled		site	sārangi		
+W0343	సెట్	seṭ	set	english-respelled		top1000			
+W0362	పోర్ట్	pōrṭ	port	english-respelled		top1000			
+W0363	గోధుమ	gōdhuma	Godhuma; brown	english-respelled multi-gloss no-romanization		book1000,top1000			
+W0367	పింక్	pink	Pink	english-respelled		book1000	Gulabi		
+W0449	సపోటా	sapōṭā	Sapota	english-respelled		book1000	Sapota		
+W0460	బొపాయ్య	bopāyya	Boppaya	english-respelled no-romanization		book1000			
+W0528	మార్కులు	mārkulu	Marks	english-respelled		book1000	Markulu		
+W0577	స్టాండ్	sṭāṇḍ	stand	english-respelled		top1000			
+W0613	గుంపు	gumpu	Gumpu; crowd	english-respelled multi-gloss no-romanization		book1000,top1000			
+W0622	హార్డ్	hārḍ	hard	english-respelled		top1000			
+W0656	ఓపెన్	ōpen	open	english-respelled		top1000			
+W0667	మార్క్	mārk	mark	english-respelled		top1000			
+W0763	స్టార్	sṭār	star	english-respelled		top1000			
+W0780	ఓహ్	ōh	oh	english-respelled		top1000			
+W0819	మాప్	māp	map	english-respelled		top1000			
+W0822	పుల్	pul	pull	english-respelled		top1000			
+W0824	నోటీసు	nōṭīsu	notice	english-respelled		top1000			
+W0851	గ్రాండ్	grāṇḍ	grand	english-respelled		top1000			
+W0871	స్టోర్	sṭōr	store	english-respelled		top1000			
+W0876	లెగ్	leg	leg	english-respelled		top1000			
+W0903	మిలియన్	miliyan	million	english-respelled		top1000			
+W0932	యార్డ్	yārḍ	yard	english-respelled		top1000			
+W1004	మెటల్	meṭal	metal	english-respelled		top1000			
+W1023	బిట్	biṭ	bit	english-respelled		top1000			
+W1030	రోల్	rōl	roll	english-respelled		top1000			
+W1045	రిచ్	rich	rich	english-respelled		top1000			
+W1055	హిట్	hiṭ	hit	english-respelled		top1000			
+W1057	పార్టీ	pārṭī	party	english-respelled		top1000			
+W1061	రింగ్	ring	ring	english-respelled		top1000			
+W1092	స్ట్రింగ్	sṭring	string	english-respelled		top1000			
+W1093	బెల్	bel	bell	english-respelled		top1000			
+W1124	మాస్టర్	māsṭar	master	english-respelled		top1000			
+W1131	పోస్ట్	pōsṭ	post	english-respelled		top1000			
+W1140	బార్	bār	bar	english-respelled		top1000			
+W1142	సెగ్మెంట్	segmeṇṭ	segment	english-respelled		top1000			
+W1146	మార్కెట్	mārkeṭ	market	english-respelled		top1000			
+W1199	స్లిప్	slip	slip	english-respelled		top1000			
+W1212	చార్ట్	chārṭ	chart	english-respelled		top1000			
+W1222	స్ప్రెడ్	spreḍ	spread	english-respelled		top1000			
+W0321	మధ్యాహ్నం	madhyāhnaṁ	; noon	multi-gloss no-english no-romanization		book1000,top1000			
+W0377	గుడ్డు	guḍḍu	; egg	multi-gloss no-english no-romanization		book1000,top1000			
+W0504	కుడి	kuḍi	; right	multi-gloss no-english no-romanization		book1000,top1000			
+W0438	భోజనం	bhōjanaṁ	MealsBhojanam	no-romanization		book1000			
+W0440	బ్ట	bṭa	ClothBatta	no-romanization		book1000			
+W0442	భాష	bhāṣa	LanguageBaasha; language	multi-gloss no-romanization		book1000,top1000			
+W0443	అంకెలు	ankelu	Number(number)Ankelu	no-romanization		book1000			
+W0502	ఎడమ	eḍama	Left	no-romanization		book1000,top1000			
+W0049	కారు	kāru	car (loanword); car	inflected multi-gloss		site,top1000	kāru		
+W0050	అమ్మాయి	ammāyi	girl	inflected		site,top1000	ammāyi		
+W0054	బంగారు	bangāru	gold, golden (also a pet name); gold	inflected multi-gloss		site,top1000	baṅgāru		
+W0079	వాడు	vāḍu	he (informal — intimates only, caution)	inflected		site	vāḍu		
+W0094	అబ్బాయి	abbāyi	boy	inflected		site	abbāyi		
+W0115	వస్తాను	vastānu	"goodbye (lit. ""I'll come back"")"	inflected verbform	రా	site	vastānu		
+W0116	రండి	raṇḍi	please come in / welcome (colloquial)	inflected verbform	రా	site	raṇḍi		
+W0122	క్షమించండి	kṣaminchaṇḍi	"sorry (lit. ""forgive me"")"	inflected		site	kṣaminchandi		
+W0126	బాగుంది	bāgundi	good — fine, going well (food, trips, states)	inflected		site	bāgundi		
+W0128	బాగున్నాను	bāgunnānu	I am fine	inflected		site	bāgunnānu		
+W0137	గారు	gāru	honorific suffix for people (respect)	inflected		site	gāru		
+W0145	మామ గారు	māma gāru	father-in-law (either side)	inflected phrase		site	māma gāru		
+W0178	పదహారు	padahāru	sixteen	inflected		site	padahāru		
+W0192	తిన్నాను	tinnānu	I've eaten	inflected verbform	తిను	site	tinnānu		
+W0195	అయ్యింది	ayyindi	it got done, it happened	inflected		site	ayyindi		
+W0196	చేసాను	chēsānu	I did	inflected verbform	చేయి	site	chēsānu		
+W0200	అలిసిపోయాను	alisipōyānu	I'm tired	inflected		site	alisipōyānu		
+W0206	తాను	tānu	himself, herself	inflected		site	tānu		
+W0234	సన్నాయి	sannāyi	shehnai (wind instrument)	inflected		site	sannāyi		
+W0276	వారు	vāru	They	inflected		book1000,top1000	Vaaru		
+W0281	ఉన్నాయి	unnāyi	are; were; been; include	inflected multi-gloss		top1000			
+W0286	ఉంటుంది	uṇṭundi	be	inflected verbform	ఉండు	top1000			
+W0307	ఆపండి	āpaṇḍi	Stop	inflected		book1000	Apandi		
+W0310	వచ్చింది	vachchindi	had; came; got	inflected multi-gloss verbform	రా	top1000			
+W0326	చేయండి	chēyaṇḍi	do	inflected verbform	చేయి	top1000			
+W0329	తాతయ్య/ తాతగారు	tātayya/ tātagāru	Grandfather	inflected phrase		book1000	Thathaiya / Thathagaaru		
+W0335	అన్నాడు	annāḍu	said	inflected verbform	అను	top1000			
+W0339	చెప్పండి	cheppaṇḍi	tell	inflected verbform	చెప్పు	top1000			
+W0341	చేస్తుంది	chēstundi	does	inflected verbform	చేయి	top1000			
+W0366	జోడించండి	jōḍinchaṇḍi	add	inflected		top1000			
+W0378	అనుసరించండి	anusarinchaṇḍi	follow	inflected		top1000			
+W0390	వెళ్ళింది	veḷḷindi	went	inflected verbform	వెళ్ళు	top1000			
+W0402	ప్రయత్నించండి	prayatninchaṇḍi	try	inflected		top1000			
+W0424	పడుతుంది	paḍutundi	take	inflected		top1000			
+W0426	పొందండి	pondaṇḍi	get	inflected		top1000			
+W0429	తయారు	tayāru	made; make	inflected multi-gloss		top1000			
+W0431	నివసిస్తున్నారు	nivasistunnāru	live	inflected		top1000			
+W0467	అనుకుంటున్నాను	anukuṇṭunnānu	think	inflected		top1000			
+W0509	నా వెంటరండి	nā veṇṭaraṇḍi	Follow me	inflected phrase		book1000	Na venta randi		
+W0513	జాగ్రత్తగా నడపనుంది	jāgrattagā naḍapanundi	Drive carefully	inflected phrase		book1000	Jaagraththaghaa nadapandi		
+W0517	రాయి	rāyi	Stone	inflected verbform	రాయి	book1000,top1000	Raayi		
+W0518	చేస్తాను	chēstānu	would	inflected verbform	చేయి	top1000			
+W0531	చూడండి	chūḍaṇḍi	see; look	inflected multi-gloss verbform	చూడు	top1000			
+W0534	తినండి	tinaṇḍi	Eat ( Respect	inflected verbform	తిను	book1000	Thinandi		
+W0545	చేసింది	chēsindi	did	inflected verbform	చేయి	top1000			
+W0549	వెళ్ళండి	veḷḷaṇḍi	Go	inflected verbform	వెళ్ళు	book1000	Vellandi		
+W0550	ఇవ్వండి	ivvaṇḍi	Give	inflected verbform	ఇవ్వు	book1000	Ivvandi		
+W0588	పెరుగుతాయి	perugutāyi	grow	inflected		top1000			
+W0641	పట్టింది	paṭṭindi	took	inflected		top1000			
+W0706	చెప్పారు	cheppāru	told	inflected verbform	చెప్పు	top1000			
+W0713	గుణిస్తారు	guṇistāru	multiply	inflected		top1000			
+W0721	నిర్ణయించుకుంటారు	nirṇayinchukuṇṭāru	decide	inflected		top1000			
+W0738	నడిచింది	naḍichindi	ran	inflected verbform	నడవు	top1000			
+W0742	పోల్చుతారు	pōlchutāru	equate	inflected		top1000			
+W0744	తీసుకువచ్చారు	tīsukuvachchāru	brought	inflected		top1000			
+W0755	వస్తాయి	vastāyi	fall	inflected		top1000			
+W0771	పూర్తయింది	pūrtayindi	done	inflected		top1000			
+W0778	ఇచ్చింది	ichchindi	gave	inflected verbform	ఇవ్వు	top1000			
+W0803	వినండి	vinaṇḍi	listen	inflected verbform	విను	top1000			
+W0834	ఎంచుకోండి	enchukōṇḍi	pick; choose; select	inflected multi-gloss		top1000			
+W0842	మారుతుంటాయి	mārutuṇṭāyi	vary	inflected		top1000			
+W0850	భావించాడు	bhāvinchāḍu	felt	inflected		top1000			
+W0856	ఉన్నాను	unnānu	am	inflected verbform	ఉండు	top1000			
+W0864	ప్రయాణమయ్యారు	prayāṇamayyāru	sail	inflected		top1000			
+W0890	ఉంచింది	unchindi	kept	inflected		top1000			
+W0906	ఆశిస్తున్నాము	āśistunnāmu	hope	inflected		top1000			
+W0915	అందుకుంటారు	andukuṇṭāru	receive	inflected		top1000			
+W0924	వ్రాసారు	vrāsāru	wrote	inflected		top1000			
+W0928	సూచిస్తున్నాయి	sūchistunnāyi	suggest; indicate	inflected multi-gloss		top1000			
+W0938	పెరిగింది	perigindi	grew	inflected		top1000			
+W0943	కోల్పోయింది	kōlpōyindi	lost	inflected		top1000			
+W0944	ధరిస్తారు	dharistāru	wear	inflected		top1000			
+W0948	పడిపోయింది	paḍipōyindi	fell	inflected		top1000			
+W0959	విరిగింది	virigindi	broke	inflected		top1000			
+W0964	స్థాయి	sthāyi	scale; level	inflected multi-gloss		top1000			
+W1037	ఓడించింది	ōḍinchindi	beat	inflected		top1000			
+W1049	పనిచేస్తాయి	panichēstāyi	operate	inflected		top1000			
+W1066	మాట్లాడారు	māṭlāḍāru	spoke	inflected verbform	మాట్లాడు	top1000			
+W1076	అంగీకరిస్తున్నారు	angīkaristunnāru	agree	inflected		top1000			
+W1090	సరిపోల్చండి	saripōlchaṇḍi	compare	inflected		top1000			
+W1114	పంపండి	pampaṇḍi	send	inflected		top1000			
+W1116	అనుమతిస్తాయి	anumatistāyi	allow	inflected		top1000			
+W1129	మొగ్గుచూపుతున్నారు	mogguchūputunnāru	favor	inflected		top1000			
+W1176	వెండి	veṇḍi	silver	inflected		top1000			
+W1182	భయపడ్డారు	bhayapaḍḍāru	afraid	inflected		top1000			
+W1192	దారితీసింది	dāritīsindi	led	inflected		top1000			
+W1198	తాడు	tāḍu	rope	inflected		top1000			
+W1210	కొనసాగుతుంది	konasāgutundi	continue	inflected		top1000			
+W0110	సొంత ఊరు	sonta ūru	native place (own town)	phrase		site	sonta ūru		
+W0111	భారత దేశం	bhārata dēśaṁ	"India (ancient name + ""country"")"	phrase		site	Bhārata Dēśam		
+W0188	రెండవ / రెండో	reṇḍava / reṇḍō	second (pattern: number + -ava / -ō)	phrase		site	reṇḍava / reṇḍō		
+W0189	మీరు ఎట్ల ఉన్నారు?	mīru eṭla unnāru?	How are you? (respectful)	phrase		site	mīru eṭla unnāru?		
+W0191	ఈ రోజు	ī rōju	today	phrase		site	ī rōju		
+W0193	ఇంకా లేదు	inkā lēdu	not yet	phrase		site	inkā lēdu		
+W0201	ఎట్ల గడిచింది?	eṭla gaḍichindi?	How did it go? (of a day)	phrase		site	eṭla gaḍichindi?		
+W0204	ఏమి జరిగినా	ēmi jariginā	whatever happens	phrase		site	ēmi jariginā		
+W0232	సహజ గుణము	sahaja guṇamu	innate nature	phrase		site	sahaja guṇamu		
+W0238	కలవర పడు	kalavara paḍu	to be flustered	phrase		site	kalavara paḍu		
+W0239	ఒర కంట	ora kaṇṭa	sidelong glance	phrase		site	vora kaṇṭa		
+W0240	ఈడు జోడు	īḍu jōḍu	match, equal (in age)	phrase		site	īḍu jōḍu		
+W0282	నాకు/ నను	nāku/ nanu	To me	phrase		book1000	Naaku		
+W0289	ఎలా ?	elā ?	How ?	phrase		book1000	Ela ?		
+W0338	కొబ్బరి కాయ	kobbari kāya	Coconuts	phrase		book1000	Kobbarikaya		
+W0403	పుట్టినరోజు పుట్టినరోజుశుభాకాంక్షలు ప్రయాణం	puṭṭinarōju puṭṭinarōjuśubhākānkṣalu prayāṇaṁ	Journey	phrase		book1000	Prayaanam		
+W0415	ఏమి ?	ēmi ?	What ?	phrase		book1000	Emi ?		
+W0423	ఎప్పటి లాగా	eppaṭi lāgā	Always	phrase		book1000	Ellappudu		
+W0446	ఆపల్ పండు	āpal paṇḍu	Apple	phrase		book1000	Apple pandu		
+W0450	సీా ఫ్లం	sīā phlaṁ	Custard apple	phrase		book1000	Sita phalam		
+W0457	మామిడి పండు	māmiḍi paṇḍu	Mango	phrase		book1000	Mamidi pandu		
+W0462	పెరి పండు	peri paṇḍu	Pear	phrase		book1000	Peri pandu		
+W0524	ఆమె యొక్క	āme yokka	her	phrase		top1000			
+W0908	దుస్తులు ధరింపజేయు	dustulu dharimpajēyu	clothe	phrase		top1000			
+W1229	కొలత గల పాత్ర	kolata gala pātra	quart	phrase		top1000			
+W1231	క్రీడల్లో అవకాశాలు	krīḍallō avakāśālu	chance	phrase		top1000			
+W1235	బాగా చేయు	bāgā chēyu	shine	phrase		top1000			

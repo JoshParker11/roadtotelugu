@@ -1,273 +1,1179 @@
-English,Romanized,TeluguScript,Audio,Example,Tags,ID,Source,Section,Category,Tier,Flag,AlsoSeenIn
-I,nēnu,నేను,,nēnu vidyārthini.,src::lesson-01 cat::pronoun tier::core,W0001,"Lesson 1 · Pronouns & the missing ""to be""",Pronouns — subject,pronoun,core,,
-you (informal — close friends/family only),nuvvu,నువ్వు,,nuvvu vidyārthivi.,src::lesson-01 cat::pronoun tier::core,W0002,"Lesson 1 · Pronouns & the missing ""to be""",Pronouns — subject,pronoun,core,,
-you (formal / plural — the safe default),mīru,మీరు,,mīru ṭīcharu.,src::lesson-01 cat::pronoun tier::core,W0003,"Lesson 1 · Pronouns & the missing ""to be""",Pronouns — subject,pronoun,core,,
-we (inclusive — includes the listener),manamu,మనము,,manam vidyārthulamu.,src::lesson-01 cat::pronoun tier::core,W0004,"Lesson 1 · Pronouns & the missing ""to be""",Pronouns — subject,pronoun,core,,
-we (exclusive — not the listener),mēmu,మేము,,mēmu vidyārthulamu.,src::lesson-01 cat::pronoun tier::core,W0005,"Lesson 1 · Pronouns & the missing ""to be""",Pronouns — subject,pronoun,core,,
-he (formal — to/about an elder),āyana,ఆయన,,āyana ṭīcharu.,src::lesson-01 cat::pronoun tier::core,W0006,"Lesson 1 · Pronouns & the missing ""to be""",Pronouns — he / she (distant),pronoun,core,,
-he (neutral — the default form),atanu,అతను,,atanu vidyārthi.,src::lesson-01 cat::pronoun tier::core,W0007,"Lesson 1 · Pronouns & the missing ""to be""",Pronouns — he / she (distant),pronoun,core,,
-"he (informal — intimates only, caution)",vāḍu,వాడు,,vāḍu vidyārthi.,src::lesson-01 cat::pronoun tier::core,W0008,"Lesson 1 · Pronouns & the missing ""to be""",Pronouns — he / she (distant),pronoun,core,,
-she (formal — to/about an elder),āviḍa,ఆవిడ,,āviḍa ṭīcharu.,src::lesson-01 cat::pronoun tier::core,W0009,"Lesson 1 · Pronouns & the missing ""to be""",Pronouns — he / she (distant),pronoun,core,,
-she (neutral — the default form),āme,ఆమె,,āme vidyārthi.,src::lesson-01 cat::pronoun tier::core,W0010,"Lesson 1 · Pronouns & the missing ""to be""",Pronouns — he / she (distant),pronoun,core,,
-it / she (informal) — that one,adi,అది,,adi kāru.,src::lesson-01 cat::pronoun-demonstrative tier::core,W0011,"Lesson 1 · Pronouns & the missing ""to be""",Pronouns — it / they & demonstratives,pronoun-demonstrative,core,,
-this / it — the near form of adi,idi,ఇది,,idi kāru.,src::lesson-01 cat::pronoun-demonstrative tier::core,W0012,"Lesson 1 · Pronouns & the missing ""to be""",Pronouns — it / they & demonstratives,pronoun-demonstrative,core,,
-they (people),vāḷḷu,వాళ్ళు,,vāḷḷu vidyārthulu.,src::lesson-01 cat::pronoun tier::core,W0013,"Lesson 1 · Pronouns & the missing ""to be""",Pronouns — it / they & demonstratives,pronoun,core,,
-they (things / non-human),avi,అవి,,avi kārlu.,src::lesson-01 cat::pronoun-demonstrative tier::core,W0014,"Lesson 1 · Pronouns & the missing ""to be""",Pronouns — it / they & demonstratives,pronoun-demonstrative,core,,
-"he (formal, nearby — near form of āyana)",īyana,ఈయన,,īyana ṭīcharu.,src::lesson-01 cat::pronoun tier::core,W0015,"Lesson 1 · Pronouns & the missing ""to be""",Pronouns — near counterparts,pronoun,core,,
-"he (neutral, nearby — near form of atanu)",itanu,ఇతను,,itanu vidyārthi.,src::lesson-01 cat::pronoun tier::core,W0016,"Lesson 1 · Pronouns & the missing ""to be""",Pronouns — near counterparts,pronoun,core,,
-"he (informal, nearby — near form of vāḍu)",vīḍu,వీడు,,vīḍu vidyārthi.,src::lesson-01 cat::pronoun tier::core,W0017,"Lesson 1 · Pronouns & the missing ""to be""",Pronouns — near counterparts,pronoun,core,,
-"she (formal, nearby — near form of āviḍa)",īviḍa,ఈవిడ,,īviḍa ṭīcharu.,src::lesson-01 cat::pronoun tier::core,W0018,"Lesson 1 · Pronouns & the missing ""to be""",Pronouns — near counterparts,pronoun,core,,
-"she (neutral, nearby — near form of āme)",īme,ఈమె,,īme vidyārthi.,src::lesson-01 cat::pronoun tier::core,W0019,"Lesson 1 · Pronouns & the missing ""to be""",Pronouns — near counterparts,pronoun,core,,
-they (nearby people — near form of vāḷḷu),vīḷḷu,వీళ్ళు,,vīḷḷu vidyārthulu.,src::lesson-01 cat::pronoun tier::core,W0020,"Lesson 1 · Pronouns & the missing ""to be""",Pronouns — near counterparts,pronoun,core,,
-these (objects / non-human — near form of avi),ivi,ఇవి,,ivi kārlu.,src::lesson-01 cat::pronoun-demonstrative tier::core,W0021,"Lesson 1 · Pronouns & the missing ""to be""",Pronouns — near counterparts,pronoun-demonstrative,core,,
-student,vidyārthi,విద్యార్థి,,Raj vidyārthi.,src::lesson-01 cat::noun tier::core,W0022,"Lesson 1 · Pronouns & the missing ""to be""",Nouns & the little words,noun,core,,
-students (plural),vidyārthulu,విద్యార్థులు,,vāḷḷu vidyārthulu.,src::lesson-01 cat::noun tier::core,W0023,"Lesson 1 · Pronouns & the missing ""to be""",Nouns & the little words,noun,core,,
-teacher (loanword),ṭīcharu,టీచర్,,mīru ṭīcharu.,src::lesson-01 cat::noun tier::core,W0024,"Lesson 1 · Pronouns & the missing ""to be""",Nouns & the little words,noun,core,,
-car (loanword),kāru,కారు,,idi kāru.,src::lesson-01 cat::noun tier::core,W0025,"Lesson 1 · Pronouns & the missing ""to be""",Nouns & the little words,noun,core,,
-"a / an (indefinite — optional, for emphasis)",oka,ఒక,,oka vidyārthi.,src::lesson-01 cat::numeral-determiner tier::core,W0026,"Lesson 1 · Pronouns & the missing ""to be""",Nouns & the little words,numeral-determiner,core,,
-"a greeting — ""hello / greetings""",namaskāraṁ,నమస్కారం,,namaskāraṁ aṇḍi.,src::lesson-01 cat::formula tier::core,W0027,"Lesson 1 · Pronouns & the missing ""to be""",Nouns & the little words,formula,core,,
-boy,abbāyi,అబ్బాయి,,nēnu abbāyini.,src::lesson-02 cat::noun tier::core,W0028,Lesson 2 · Introductions,Describing yourself — people words,noun,core,,song-gira-gira
-girl,ammāyi,అమ్మాయి,,nēnu ammāyini.,src::lesson-02 cat::noun tier::core,W0029,Lesson 2 · Introductions,Describing yourself — people words,noun,core,,
-man (course form — see rule 04; Lesson 4 confirms this means “husband”),moguḍu,మొగుడు,,nā moguḍu enjinīr.,src::lesson-02 cat::noun-family tier::core,W0030,Lesson 2 · Introductions,Describing yourself — people words,noun-family,core,,lesson-04
-woman,āḍadi,ఆడది,,nēnu āḍadini.,src::lesson-02 cat::noun tier::core,W0031,Lesson 2 · Introductions,Describing yourself — people words,noun,core,,
-person / human being,manishi,మనిషి,,nēnu manishini.,src::lesson-02 cat::noun tier::core,W0032,Lesson 2 · Introductions,Describing yourself — people words,noun,core,,
-"teacher (male, formal Telugu form)",upādhyāyuḍu,ఉపాధ్యాయుడు,,nēnu upādhyāyuḍini.,src::lesson-02 cat::noun-profession tier::core,W0033,Lesson 2 · Introductions,Professions — Telugu forms,noun-profession,core,,
-"teacher (female, formal Telugu form)",upādhyāyurālu,ఉపాధ్యాయురాలు,,nēnu upādhyāyurālini.,src::lesson-02 cat::noun-profession tier::core,W0034,Lesson 2 · Introductions,Professions — Telugu forms,noun-profession,core,,
-"doctor (male, formal Telugu form)",vaidyuḍu,వైద్యుడు,,āyana oka vaidyuḍu.,src::lesson-02 cat::noun-profession tier::core,W0035,Lesson 2 · Introductions,Professions — Telugu forms,noun-profession,core,,
-"doctor (female, formal Telugu form)",vaidyurālu,వైద్యురాలు,,āme oka vaidyurālu.,src::lesson-02 cat::noun-profession tier::core,W0036,Lesson 2 · Introductions,Professions — Telugu forms,noun-profession,core,,
-lawyer,nyāyavādi,న్యాయవాది,,nēnu nyāyavādini.,src::lesson-02 cat::noun-profession tier::core,W0037,Lesson 2 · Introductions,Professions — Telugu forms,noun-profession,core,,
-"engineer (Telugu form — recognise only, never used in speech)",abhiyanta,అభియంత,,nēnu enjinīrni.,src::lesson-02 cat::noun-profession tier::core,W0038,Lesson 2 · Introductions,Professions — Telugu forms,noun-profession,core,,
-doctor (loanword — the everyday choice),ḍākṭaru,డాక్టర్,,nā ḍākṭar pēru Sophia.,src::lesson-02 cat::noun-profession tier::core,W0039,Lesson 2 · Introductions,Professions — Telugu forms,noun-profession,core,,
-my (before a noun),nā,నా,,nā pēru Raj.,src::lesson-02 cat::possessive tier::core,W0040,Lesson 2 · Introductions,Possessives,possessive,core,,
-"our (before a noun — also ""my"" for close family)",mā,మా,,mā amma pēru Sunita.,src::lesson-02 cat::possessive tier::core,W0041,Lesson 2 · Introductions,Possessives,possessive,core,,
-mine (stands alone),nādi,నాది,,nādi oka kāru.,src::lesson-02 cat::possessive tier::core,W0042,Lesson 2 · Introductions,Possessives,possessive,core,,
-ours (stands alone — used for hometown),mādi,మాది,,mādi Hyderabad.,src::lesson-02 cat::possessive tier::core,W0043,Lesson 2 · Introductions,Possessives,possessive,core,,
-name (long ē — not like the country Peru),pēru,పేరు,,nā pēru Raj.,src::lesson-02 cat::noun tier::core,W0044,Lesson 2 · Introductions,"Name, age, numbers",noun,core,,
-age,vayasu,వయసు,,nā vayasu iravai.,src::lesson-02 cat::noun tier::core,W0045,Lesson 2 · Introductions,"Name, age, numbers",noun,core,,
-twenty (20),iravai,ఇరవై,,nā vayasu iravai.,src::lesson-02 cat::numeral tier::core,W0046,Lesson 2 · Introductions,"Name, age, numbers",numeral,core,,
-thirty (30),muppai,ముప్పై,,nā vayasu muppai.,src::lesson-02 cat::numeral tier::core,W0047,Lesson 2 · Introductions,"Name, age, numbers",numeral,core,,
-"mother (say ""mā amma"" for ""my mother"")",amma,అమ్మ,,mā amma pēru Sunita.,src::lesson-02 cat::noun-family tier::core,W0048,Lesson 2 · Introductions,Family & people close to you,noun-family,core,,
-"father (say ""mā nāna"" for ""my father"")",nāna,నాన్న,,mā nāna pēru John.,src::lesson-02 cat::noun-family tier::core,W0049,Lesson 2 · Introductions,Family & people close to you,noun-family,core,,
-friend (male),snēhituḍu,స్నేహితుడు,,nā snēhituḍu vidyārthi.,src::lesson-02 cat::noun tier::core,W0050,Lesson 2 · Introductions,Family & people close to you,noun,core,,
-friend (female),snēhiturālu,స్నేహితురాలు,,nā snēhiturālu vidyārthi.,src::lesson-02 cat::noun tier::core,W0051,Lesson 2 · Introductions,Family & people close to you,noun,core,,
-wife,bhārya,భార్య,,nā bhārya pēru Namrata.,src::lesson-02 cat::noun-family tier::core,W0052,Lesson 2 · Introductions,Family & people close to you,noun-family,core,,
-husband,bharta,భర్త,,nā bharta oka ṭīcharu.,src::lesson-02 cat::noun-family tier::core,W0053,Lesson 2 · Introductions,Family & people close to you,noun-family,core,,
-town / hometown,ūru,ఊరు,,mā ūru Hyderabad.,src::lesson-02 cat::noun tier::core,W0054,Lesson 2 · Introductions,Where you're from,noun,core,,
-native place (own town),sonta ūru,సొంత ఊరు,,mā sonta ūru Hyderabad.,src::lesson-02 cat::phrase tier::core,W0055,Lesson 2 · Introductions,Where you're from,phrase,core,,
-country,dēśam,దేశం,,mādi Bhārata Dēśam.,src::lesson-02 cat::noun tier::core,W0056,Lesson 2 · Introductions,Where you're from,noun,core,,
-"India (ancient name + ""country"")",Bhārata Dēśam,భారత దేశం,,mādi Bhārata Dēśam.,src::lesson-02 cat::proper-noun tier::core,W0057,Lesson 2 · Introductions,Where you're from,proper-noun,core,,
-Indian (male),bhāratīyuḍu,భారతీయుడు,,nēnu bhāratīyuḍini.,src::lesson-02 cat::noun tier::core,W0058,Lesson 2 · Introductions,Where you're from,noun,core,,
-Indian (female),bhāratīyurālu,భారతీయురాలు,,nēnu bhāratīyurālini.,src::lesson-02 cat::noun tier::core,W0059,Lesson 2 · Introductions,Where you're from,noun,core,,
-mother tongue,mātṛbhāṣa,మాతృభాష,,mā mātṛbhāṣa Telugu.,src::lesson-02 cat::noun tier::core,W0060,Lesson 2 · Introductions,Where you're from,noun,core,,
-thank you,dhanyavādālu,ధన్యవాదాలు,,dhanyavādālu.,src::lesson-02 cat::formula tier::core,W0061,Lesson 2 · Introductions,Closing,formula,core,,
-"goodbye (lit. ""I'll come back"")",vastānu,వస్తాను,,vastānandi.,src::lesson-03 cat::formula tier::core,W0062,Lesson 3 · Greetings & courtesy,Opening & closing,formula,core,,
-please come in / welcome (colloquial),raṇḍi,రండి,,"raṇḍi, raṇḍi.",src::lesson-03 cat::formula tier::core,W0063,Lesson 3 · Greetings & courtesy,Opening & closing,formula,core,,
-come (base verb — becomes raṇḍi with aṇḍi),rā,రా,,rā + aṇḍi → raṇḍi,src::lesson-03 cat::verb tier::core,W0064,Lesson 3 · Greetings & courtesy,Opening & closing,verb,core,,
-welcome (formal — banners and speeches),svāgataṁ,స్వాగతం,,svāgataṁ aṇḍi.,src::lesson-03 cat::formula tier::core,W0065,Lesson 3 · Greetings & courtesy,Opening & closing,formula,core,,
-thank you (colloquial hybrid — the everyday choice),thanks aṇḍi,థాంక్స్ అండి,,thanks aṇḍi.,src::lesson-03 cat::formula tier::core,W0066,Lesson 3 · Greetings & courtesy,Opening & closing,formula,core,,
-yes,avunu,అవును,,avunandi.,src::lesson-03 cat::response tier::core,W0067,Lesson 3 · Greetings & courtesy,"Yes, no, okay",response,core,,
-okay,sarē,సరే,,sarē aṇḍi.,src::lesson-03 cat::response tier::core,W0068,Lesson 3 · Greetings & courtesy,"Yes, no, okay",response,core,,
-no — it doesn't exist / isn't there / I don't have it,lēdu,లేదు,,lēdandi.,src::lesson-03 cat::negation tier::core,W0069,Lesson 3 · Greetings & courtesy,"Yes, no, okay",negation,core,,
-no — I don't want it (declining),vaddu,వద్దు,,"vaddandi, thanks aṇḍi.",src::lesson-03 cat::negation tier::core,W0070,Lesson 3 · Greetings & courtesy,"Yes, no, okay",negation,core,,
-no — it is not (negating a statement),kādu,కాదు,,idi kāru kādu.,src::lesson-03 cat::negation tier::core,W0071,Lesson 3 · Greetings & courtesy,"Yes, no, okay",negation,core,,
-"sorry (lit. ""forgive me"")",kṣaminchandi,క్షమించండి,,kṣaminchandi.,src::lesson-03 cat::formula tier::core,W0072,Lesson 3 · Greetings & courtesy,Courtesy,formula,core,,
-It's okay / no problem / never mind,parvālēdu,పర్వాలేదు,,parvālēdu aṇḍi.,src::lesson-03 cat::formula tier::core,W0073,Lesson 3 · Greetings & courtesy,Courtesy,formula,core,,scenario-how-was-your-day
-please (rare — politeness usually goes in the suffix),dayacēsi,దయచేసి,,"raṇḍi (not ""dayacēsi raṇḍi"")",src::lesson-03 cat::formula tier::core,W0074,Lesson 3 · Greetings & courtesy,Courtesy,formula,core,,
-well done / congratulations,śabhāṣ,శభాష్,,śabhāṣ!,src::lesson-03 cat::formula tier::core,W0075,Lesson 3 · Greetings & courtesy,Courtesy,formula,core,,
-"good — nice, noble, morally good",manchidi,మంచిది,,manchidi.,src::lesson-03 cat::adjective tier::core,W0076,Lesson 3 · Greetings & courtesy,"Good, and asking how someone is",adjective,core,,
-"good — fine, going well (food, trips, states)",bāgundi,బాగుంది,,bāgundi aṇḍi.,src::lesson-03 cat::adjective tier::core,W0077,Lesson 3 · Greetings & courtesy,"Good, and asking how someone is",adjective,core,,scenario-how-was-your-day
-"how are you? (lit. ""are you fine?"")",bāgunnārā,బాగున్నారా,,mīru bāgunnārā?,src::lesson-03 cat::formula tier::core,W0078,Lesson 3 · Greetings & courtesy,"Good, and asking how someone is",formula,core,,
-I am fine,bāgunnānu,బాగున్నాను,,nēnu bāgunnānu.,src::lesson-03 cat::formula tier::core,W0079,Lesson 3 · Greetings & courtesy,"Good, and asking how someone is",formula,core,,scenario-how-was-your-day
-let's go,pada,పద,,padaṇḍi.,src::lesson-03 cat::verb tier::core,W0080,Lesson 3 · Greetings & courtesy,Getting things done,verb,core,,
-how much,enta,ఎంత,,idi enta?,src::lesson-03 cat::question-word tier::core,W0081,Lesson 3 · Greetings & courtesy,Getting things done,question-word,core,,
-here you go (handing something over),idigō,ఇదిగో,,idigōṇḍi.,src::lesson-03 cat::formula tier::core,W0082,Lesson 3 · Greetings & courtesy,Getting things done,formula,core,,
-"doesn't come — used for ""I don't know [a language]""",rādu,రాదు,,Telugu rādu.,src::lesson-03 cat::verb-negative tier::core,W0083,Lesson 3 · Greetings & courtesy,Talking about language,verb-negative,core,,
-do you know?,telusā,తెలుసా,,English telusā?,src::lesson-03 cat::question tier::core,W0084,Lesson 3 · Greetings & courtesy,Talking about language,question,core,,
-elder sister,akka,అక్క,,mā akka vidyārthi.,src::lesson-04 cat::noun-family tier::core,W0085,Lesson 4 · Family,Siblings,noun-family,core,,
-younger sister,chelli,చెల్లి,,mā chelli ammāyi.,src::lesson-04 cat::noun-family tier::core,W0086,Lesson 4 · Family,Siblings,noun-family,core,,
-elder brother (shortens to anna),annayya,అన్నయ్య,,mā annayya ḍākṭar.,src::lesson-04 cat::noun-family tier::core,W0087,Lesson 4 · Family,Siblings,noun-family,core,,
-younger brother,tammuḍu,తమ్ముడు,,mā tammuḍu vidyārthi.,src::lesson-04 cat::noun-family tier::core,W0088,Lesson 4 · Family,Siblings,noun-family,core,,
-maternal grandmother (mother's mother),ammamma,అమ్మమ్మ,,mā ammamma gāru.,src::lesson-04 cat::noun-family tier::core,W0089,Lesson 4 · Family,Grandparents & the honorific,noun-family,core,,
-paternal grandmother (father's mother),nānamma,నానమ్మ,,mā nānamma gāru.,src::lesson-04 cat::noun-family tier::core,W0090,Lesson 4 · Family,Grandparents & the honorific,noun-family,core,,
-grandfather (either side),tāta,తాత,,mā tāta gāru.,src::lesson-04 cat::noun-family tier::core,W0091,Lesson 4 · Family,Grandparents & the honorific,noun-family,core,,
-honorific suffix for people (respect),gāru,గారు,,Raj gāru.,src::lesson-04 cat::honorific tier::core,W0092,Lesson 4 · Family,Grandparents & the honorific,honorific,core,,
-"big, elder",pedda,పెద్ద,,pedda + amma → peddamma,src::lesson-04 cat::adjective tier::core,W0093,Lesson 4 · Family,Building blocks,adjective,core,,
-"small, young",chinna,చిన్న,,chinna + nāna → chinnāna,src::lesson-04 cat::adjective tier::core,W0094,Lesson 4 · Family,Building blocks,adjective,core,,
-mother's brother (any age),māmayya,మామయ్య,,mā māmayya enjinīr.,src::lesson-04 cat::noun-family tier::core,W0095,Lesson 4 · Family,Uncles & aunts — maternal side,noun-family,core,,
-"mother's ELDER sister (lit. ""elder mother"")",peddamma,పెద్దమ్మ,,mā peddamma gāru.,src::lesson-04 cat::noun-family tier::core,W0096,Lesson 4 · Family,Uncles & aunts — maternal side,noun-family,core,,
-mother's YOUNGER sister,pinni,పిన్ని,,mā pinni ṭīcharu.,src::lesson-04 cat::noun-family tier::core,W0097,Lesson 4 · Family,Uncles & aunts — maternal side,noun-family,core,,
-father's sister (any age) — also mother-in-law,atta,అత్త,,mā atta gāru.,src::lesson-04 cat::noun-family tier::core,W0098,Lesson 4 · Family,Uncles & aunts — paternal side,noun-family,core,,
-"father's ELDER brother (lit. ""elder father"")",peddanāna,పెద్దనాన్న,,mā peddanāna gāru.,src::lesson-04 cat::noun-family tier::core,W0099,Lesson 4 · Family,Uncles & aunts — paternal side,noun-family,core,,
-"father's YOUNGER brother (lit. ""younger father"")",chinnāna,చిన్నాన్న,,mā chinnāna vaidyuḍu.,src::lesson-04 cat::noun-family tier::core,W0100,Lesson 4 · Family,Uncles & aunts — paternal side,noun-family,core,,
-wife (colloquial — bhārya is the formal word),pellām,పెళ్ళాం,,nā pellām ṭīcharu.,src::lesson-04 cat::noun-family tier::core,W0101,Lesson 4 · Family,Spouse & in-laws,noun-family,core,,
-father-in-law (either side),māma gāru,మామ గారు,,mā māma gāru.,src::lesson-04 cat::noun-family tier::core,W0102,Lesson 4 · Family,Spouse & in-laws,noun-family,core,,
-children (collective),pillalu,పిల్లలు,,mā pillalu vidyārthulu.,src::lesson-04 cat::noun-family tier::core,W0103,Lesson 4 · Family,Children,noun-family,core,,
-daughter,kūturu,కూతురు,,mā kūturu vidyārthi.,src::lesson-04 cat::noun-family tier::core,W0104,Lesson 4 · Family,Children,noun-family,core,,
-son,koḍuku,కొడుకు,,mā koḍuku abbāyi.,src::lesson-04 cat::noun-family tier::core,W0105,Lesson 4 · Family,Children,noun-family,core,,
-son-in-law,alluḍu,అల్లుడు,,nēnu alluḍini.,src::lesson-04 cat::noun-family tier::core,W0106,Lesson 4 · Family,Children,noun-family,core,,
-daughter-in-law,kōḍalu,కోడలు,,mā kōḍalu ḍākṭar.,src::lesson-04 cat::noun-family tier::core,W0107,Lesson 4 · Family,Children,noun-family,core,,
-grandchildren (collective),manavalu,మనవలు,,mā manavalu.,src::lesson-04 cat::noun-family tier::core,W0108,Lesson 4 · Family,Grandchildren,noun-family,core,,
-grandson (variant: manumaḍu),manavaḍu,మనవడు,,mā manavaḍu vidyārthi.,src::lesson-04 cat::noun-family tier::core,W0109,Lesson 4 · Family,Grandchildren,noun-family,core,,
-granddaughter (variant: manumarālu),manavarālu,మనవరాలు,,mā manavarālu ammāyi.,src::lesson-04 cat::noun-family tier::core,W0110,Lesson 4 · Family,Grandchildren,noun-family,core,,
-our — INCLUDING the listener,mana,మన,,mana pērlu.,src::lesson-05 cat::possessive tier::core,W0111,Lesson 5 · Possessives,First & second person possessives,possessive,core,,
-your (formal / plural — the safe default),mī,మీ,,mī pēru ēmiṭi?,src::lesson-05 cat::possessive tier::core,W0112,Lesson 5 · Possessives,First & second person possessives,possessive,core,,
-"your (informal — close friends, younger people)",nī,నీ,,nī pēru ēnti?,src::lesson-05 cat::possessive tier::core,W0113,Lesson 5 · Possessives,First & second person possessives,possessive,core,,
-his (neutral — the default form),atani,అతని,,atani pēru Sanjay.,src::lesson-05 cat::possessive tier::core,W0114,Lesson 5 · Possessives,Third person possessives,possessive,core,,
-his (informal — intimates only),vāḍi,వాడి,,vāḍi pēru Peter.,src::lesson-05 cat::possessive tier::core,W0115,Lesson 5 · Possessives,Third person possessives,possessive,core,,
-her (informal) / its,dāni,దాని,,dāni pēru Gita.,src::lesson-05 cat::possessive tier::core,W0116,Lesson 5 · Possessives,Third person possessives,possessive,core,,
-their (people),vāḷḷa,వాళ్ళ,,vāḷḷa pērlu.,src::lesson-05 cat::possessive tier::core,W0117,Lesson 5 · Possessives,Third person possessives,possessive,core,,
-their (objects / non-human),vāṭi,వాటి,,vāṭi pērlu.,src::lesson-05 cat::possessive tier::core,W0118,Lesson 5 · Possessives,Third person possessives,possessive,core,,
-what (colloquially ēnti),ēmiṭi,ఏమిటి,,mī pēru ēmiṭi?,src::lesson-05 cat::question-word tier::core,W0119,Lesson 5 · Possessives,"Asking, and plural nouns",question-word,core,,
-names (plural of pēru),pērlu,పేర్లు,,vāḷḷa pērlu.,src::lesson-05 cat::noun tier::core,W0120,Lesson 5 · Possessives,"Asking, and plural nouns",noun,core,,
-zero,sunnā,సున్నా,,sunnā.,src::lesson-06 cat::numeral tier::core,W0121,Lesson 6 · Numbers,Core — 1 to 10 (learn these first),numeral,core,,
-"one (standalone — ""oka"" before a noun)",okaṭi,ఒకటి,,okaṭi ivvaṇḍi.,src::lesson-06 cat::numeral tier::core,W0122,Lesson 6 · Numbers,Core — 1 to 10 (learn these first),numeral,core,,
-two,reṇḍu,రెండు,,reṇḍu kārlu.,src::lesson-06 cat::numeral tier::core,W0123,Lesson 6 · Numbers,Core — 1 to 10 (learn these first),numeral,core,,song-gira-gira
-three,mūḍu,మూడు,,mūḍu pustakālu.,src::lesson-06 cat::numeral tier::core,W0124,Lesson 6 · Numbers,Core — 1 to 10 (learn these first),numeral,core,,
-four,nālugu,నాలుగు,,nālugu.,src::lesson-06 cat::numeral tier::core,W0125,Lesson 6 · Numbers,Core — 1 to 10 (learn these first),numeral,core,,
-five,aidu,ఐదు,,aidu rūpāyalu.,src::lesson-06 cat::numeral tier::core,W0126,Lesson 6 · Numbers,Core — 1 to 10 (learn these first),numeral,core,,
-six,āru,ఆరు,,āru.,src::lesson-06 cat::numeral tier::core,W0127,Lesson 6 · Numbers,Core — 1 to 10 (learn these first),numeral,core,,
-seven,ēḍu,ఏడు,,ēḍu.,src::lesson-06 cat::numeral tier::core,W0128,Lesson 6 · Numbers,Core — 1 to 10 (learn these first),numeral,core,,
-eight,enimidi,ఎనిమిది,,enimidi.,src::lesson-06 cat::numeral tier::core,W0129,Lesson 6 · Numbers,Core — 1 to 10 (learn these first),numeral,core,,
-nine,tommidi,తొమ్మిది,,tommidi.,src::lesson-06 cat::numeral tier::core,W0130,Lesson 6 · Numbers,Core — 1 to 10 (learn these first),numeral,core,,
-ten,padi,పది,,padi mandi.,src::lesson-06 cat::numeral tier::core,W0131,Lesson 6 · Numbers,Core — 1 to 10 (learn these first),numeral,core,,
-forty,nalabhai,నలభై,,nā vayasu nalabhai.,src::lesson-06 cat::numeral tier::core,W0132,Lesson 6 · Numbers,Tens — 40 to 90 (20 and 30 already in your deck),numeral,core,,
-fifty,yābhai,యాభై,,yābhai rūpāyalu.,src::lesson-06 cat::numeral tier::core,W0133,Lesson 6 · Numbers,Tens — 40 to 90 (20 and 30 already in your deck),numeral,core,,
-sixty,aravai,అరవై,,aravai.,src::lesson-06 cat::numeral tier::core,W0134,Lesson 6 · Numbers,Tens — 40 to 90 (20 and 30 already in your deck),numeral,core,,
-seventy,ḍebbhai,డెబ్బై,,ḍebbhai.,src::lesson-06 cat::numeral tier::core,W0135,Lesson 6 · Numbers,Tens — 40 to 90 (20 and 30 already in your deck),numeral,core,,
-eighty,enabhai,ఎనభై,,enabhai.,src::lesson-06 cat::numeral tier::core,W0136,Lesson 6 · Numbers,Tens — 40 to 90 (20 and 30 already in your deck),numeral,core,,
-ninety,tombhai,తొంభై,,tombhai tommidi = 99.,src::lesson-06 cat::numeral tier::core,W0137,Lesson 6 · Numbers,Tens — 40 to 90 (20 and 30 already in your deck),numeral,core,,
-hundred,vanda,వంద,,vanda rūpāyalu.,src::lesson-06 cat::numeral tier::core,W0138,Lesson 6 · Numbers,Large numbers — highest workplace value,numeral,core,,
-thousand,veyyi,వెయ్యి,,"reṇḍu vēlu = 2,000.",src::lesson-06 cat::numeral tier::core,W0139,Lesson 6 · Numbers,Large numbers — highest workplace value,numeral,core,,
-"lakh — 100,000 (written 1,00,000)",lakṣa,లక్ష,,reṇḍu lakṣalu.,src::lesson-06 cat::numeral tier::core,W0140,Lesson 6 · Numbers,Large numbers — highest workplace value,numeral,core,,
-"crore — 10,000,000 (written 1,00,00,000)",kōṭi,కోటి,,oka kōṭi.,src::lesson-06 cat::numeral tier::core,W0141,Lesson 6 · Numbers,Large numbers — highest workplace value,numeral,core,,
-rupees,rūpāyalu,రూపాయలు,,yābhai rūpāyalu.,src::lesson-06 cat::noun tier::core,W0142,Lesson 6 · Numbers,Large numbers — highest workplace value,noun,core,,
-eleven,padakoṇḍu,పదకొండు,,padakoṇḍu.,src::lesson-06 cat::numeral tier::standard,W0143,Lesson 6 · Numbers,Teens — lower priority,numeral,standard,,
-twelve,panneṇḍu,పన్నెండు,,panneṇḍu.,src::lesson-06 cat::numeral tier::standard,W0144,Lesson 6 · Numbers,Teens — lower priority,numeral,standard,,
-thirteen,padamūḍu,పదమూడు,,padamūḍu.,src::lesson-06 cat::numeral tier::standard,W0145,Lesson 6 · Numbers,Teens — lower priority,numeral,standard,,
-fourteen,padnālugu,పద్నాలుగు,,padnālugu.,src::lesson-06 cat::numeral tier::standard,W0146,Lesson 6 · Numbers,Teens — lower priority,numeral,standard,,
-fifteen,padihēnu,పదిహేను,,padihēnu.,src::lesson-06 cat::numeral tier::standard,W0147,Lesson 6 · Numbers,Teens — lower priority,numeral,standard,,
-sixteen,padahāru,పదహారు,,padahāru.,src::lesson-06 cat::numeral tier::standard,W0148,Lesson 6 · Numbers,Teens — lower priority,numeral,standard,,
-seventeen,padihēḍu,పదిహేడు,,padihēḍu.,src::lesson-06 cat::numeral tier::standard,W0149,Lesson 6 · Numbers,Teens — lower priority,numeral,standard,,
-eighteen,paddenimidi,పద్దెనిమిది,,paddenimidi.,src::lesson-06 cat::numeral tier::standard,W0150,Lesson 6 · Numbers,Teens — lower priority,numeral,standard,,
-nineteen,pantommidi,పంతొమ్మిది,,pantommidi.,src::lesson-06 cat::numeral tier::standard,W0151,Lesson 6 · Numbers,Teens — lower priority,numeral,standard,,
-one person (not okaṭi),okaru,ఒకరు,,okaru mātramē.,src::lesson-06 cat::numeral-human tier::core,W0152,Lesson 6 · Numbers,Counting people,numeral-human,core,,
-two people,iddaru,ఇద్దరు,,iddaru vidyārthulu.,src::lesson-06 cat::numeral-human tier::core,W0153,Lesson 6 · Numbers,Counting people,numeral-human,core,,
-three people,mugguru,ముగ్గురు,,mugguru.,src::lesson-06 cat::numeral-human tier::core,W0154,Lesson 6 · Numbers,Counting people,numeral-human,core,,
-four people,naluguru,నలుగురు,,naluguru.,src::lesson-06 cat::numeral-human tier::core,W0155,Lesson 6 · Numbers,Counting people,numeral-human,core,,
-five people,aiduguru,ఐదుగురు,,aiduguru.,src::lesson-06 cat::numeral-human tier::core,W0156,Lesson 6 · Numbers,Counting people,numeral-human,core,,
-people (counter word — use with larger numbers),mandi,మంది,,padi mandi.,src::lesson-06 cat::numeral-human tier::core,W0157,Lesson 6 · Numbers,Counting people,numeral-human,core,,
-first (irregular),modaṭi,మొదటి,,modaṭi pāṭhaṁ.,src::lesson-06 cat::ordinal tier::core,W0158,Lesson 6 · Numbers,Ordinals,ordinal,core,,
-second (pattern: number + -ava / -ō),reṇḍava / reṇḍō,రెండవ / రెండో,,reṇḍō roju.,src::lesson-06 cat::numeral tier::core,W0159,Lesson 6 · Numbers,Ordinals,numeral,core,,
-How are you? (respectful),mīru eṭla unnāru?,మీరు ఎట్ల ఉన్నారు?,,always return the question,src::scenario-how-was-your-day cat::other tier::core,W0160,Scenario · How was your day?,Day one — these six carry the whole conversation,other,core,,
-aunty / mother-in-law (address),attayya,అత్తయ్య,,bāgundi attayya,src::scenario-how-was-your-day cat::other tier::core,W0161,Scenario · How was your day?,Day one — these six carry the whole conversation,other,core,,
-"a little, somewhat",konchaṁ,కొంచెం,,konchaṁ kaṣṭaṁ,src::scenario-how-was-your-day cat::other tier::core,W0162,Scenario · How was your day?,Day one — these six carry the whole conversation,other,core,,
-today,ī rōju,ఈ రోజు,,ī rōju bāgundi,src::scenario-how-was-your-day cat::other tier::core,W0163,Scenario · How was your day?,Day two — content and the food exchange,other,core,,
-"work, task",pani,పని,,chālā pani undi,src::scenario-how-was-your-day cat::other tier::core,W0164,Scenario · How was your day?,Day two — content and the food exchange,other,core,,
-"difficult, hard",kaṣṭaṁ,కష్టం,,konchaṁ kaṣṭaṁ,src::scenario-how-was-your-day cat::other tier::core,W0165,Scenario · How was your day?,Day two — content and the food exchange,other,core,,
-I've eaten,tinnānu,తిన్నాను,,block — Lesson 9 explains it,src::scenario-how-was-your-day cat::other tier::core,W0166,Scenario · How was your day?,Day two — content and the food exchange,other,core,,
-not yet,inkā lēdu,ఇంకా లేదు,,inkā tinalēdu,src::scenario-how-was-your-day cat::other tier::core,W0167,Scenario · How was your day?,Day two — content and the food exchange,other,core,,
-enough (stopping more food),chālu,చాలు,,"chālu, chālā bāgundi",src::scenario-how-was-your-day cat::other tier::core,W0168,Scenario · How was your day?,Day two — content and the food exchange,other,core,,
-but,kāni,కానీ,,kāni ṭrāphik ekkuva undi,src::scenario-how-was-your-day cat::other tier::core,W0169,Scenario · How was your day?,Day three — the two-clause answer,other,core,,
-"a lot, excessive (of quantity)",ekkuva,ఎక్కువ,,not “bad” — Telugu counts traffic,src::scenario-how-was-your-day cat::other tier::core,W0170,Scenario · How was your day?,Day three — the two-clause answer,other,core,,
-"way, road, route",dāri,దారి,,dārilō — on the way,src::scenario-how-was-your-day cat::other tier::core,W0171,Scenario · How was your day?,Day three — the two-clause answer,other,core,,
-"it got done, it happened",ayyindi,అయ్యింది,,chālā pani ayyindi,src::scenario-how-was-your-day cat::other tier::core,W0172,Scenario · How was your day?,Day three — the two-clause answer,other,core,,
-I did,chēsānu,చేసాను,,block — chālā pani chēsānu,src::scenario-how-was-your-day cat::other tier::core,W0173,Scenario · How was your day?,Day three — the two-clause answer,other,core,,
-"completed, finished",pūrti,పూర్తి,,pūrti ayyindi,src::scenario-how-was-your-day cat::other tier::core,W0174,Scenario · How was your day?,Day three — the two-clause answer,other,core,,
-good (before a noun),manchi,మంచి,,oka manchi pani,src::scenario-how-was-your-day cat::other tier::core,W0175,Scenario · How was your day?,Day three — the two-clause answer,other,core,,
-at the office,āphīsulō,ఆఫీసులో,,āphīsulō chālā pani undi,src::scenario-how-was-your-day cat::other tier::core,W0176,Scenario · How was your day?,Day four — extending,other,core,,
-"at home, in the house",intlō,ఇంట్లో,,intlō antā bāgunnārā?,src::scenario-how-was-your-day cat::other tier::core,W0177,Scenario · How was your day?,Day four — extending,other,core,,
-"everyone, all",antā,అంతా,,intlō antā,src::scenario-how-was-your-day cat::other tier::core,W0178,Scenario · How was your day?,Day four — extending,other,core,,
-I'm tired,alisipōyānu,అలిసిపోయాను,,block — konchaṁ alisipōyānu,src::scenario-how-was-your-day cat::other tier::core,W0179,Scenario · How was your day?,Day four — extending,other,core,,
-How did it go? (of a day),eṭla gaḍichindi?,ఎట్ల గడిచింది?,,mī rōju eṭla gaḍichindi?,src::scenario-how-was-your-day cat::other tier::core,W0180,Scenario · How was your day?,Day four — extending,other,core,,
-Have you eaten?,tinnārā?,తిన్నారా?,,"recognise it, don't just answer",src::scenario-how-was-your-day cat::other tier::core,W0181,Scenario · How was your day?,Day four — extending,other,core,,
-"like, as",lāga / -lā,లాగా,,varṣaṁlā — like rain,src::song-gira-gira cat::grammar tier::core,W0182,Song · Gira Gira,Grammar words — highest value in the song,grammar,core,,
-whatever happens,ēmi jariginā,ఏమి జరిగినా,,fixed phrase,src::song-gira-gira cat::grammar tier::core,W0183,Song · Gira Gira,Grammar words — highest value in the song,grammar,core,,
-what,ēmi,ఏమి,,ēmi jarigindi?,src::song-gira-gira cat::grammar tier::core,W0184,Song · Gira Gira,Grammar words — highest value in the song,grammar,core,,
-who,evaru,ఎవరు,,evaru vastunnāru?,src::song-gira-gira cat::grammar tier::core,W0185,Song · Gira Gira,Grammar words — highest value in the song,grammar,core,,
-"always, ever",epuḍū,ఎపుడూ,,epuḍū manasulō,src::song-gira-gira cat::grammar tier::core,W0186,Song · Gira Gira,Grammar words — highest value in the song,grammar,core,,
-"at all, really",asalu,అసలు,,asalu vinaḍu,src::song-gira-gira cat::grammar tier::core,W0187,Song · Gira Gira,Grammar words — highest value in the song,grammar,core,,
-own (his/her own),tana,తన,,tana venaka,src::song-gira-gira cat::grammar tier::core,W0188,Song · Gira Gira,Grammar words — highest value in the song,grammar,core,,
-"himself, herself",tānu,తాను,,tānē vachchāḍu,src::song-gira-gira cat::grammar tier::core,W0189,Song · Gira Gira,Grammar words — highest value in the song,grammar,core,,
-"on, upon",-pai,పై,,tanapai — on him,src::song-gira-gira cat::grammar tier::core,W0190,Song · Gira Gira,Grammar words — highest value in the song,grammar,core,,
-behind,venaka,వెనక,,tana venakāle,src::song-gira-gira cat::grammar tier::core,W0191,Song · Gira Gira,Grammar words — highest value in the song,grammar,core,,
-"heart, mind",manasu,మనసు,,manasē karaga lēdu,src::song-gira-gira cat::noun tier::core,W0192,Song · Gira Gira,Everyday nouns worth carding,noun,core,,
-minute,nimiṣaṁ,నిమిషం,,oka nimiṣaṁ!,src::song-gira-gira cat::noun tier::core,W0193,Song · Gira Gira,Everyday nouns worth carding,noun,core,,
-moment,kṣaṇaṁ,క్షణం,,ā kṣaṇaṁ,src::song-gira-gira cat::noun tier::core,W0194,Song · Gira Gira,Everyday nouns worth carding,noun,core,,
-rain,varṣaṁ,వర్షం,,varṣaṁ vastundi,src::song-gira-gira cat::noun tier::core,W0195,Song · Gira Gira,Everyday nouns worth carding,noun,core,,
-summer,vēsavi,వేసవి,,vēsavilō,src::song-gira-gira cat::noun tier::core,W0196,Song · Gira Gira,Everyday nouns worth carding,noun,core,,
-wedding,pelli,పెళ్ళి,,pelli pāṭa,src::song-gira-gira cat::noun tier::core,W0197,Song · Gira Gira,Everyday nouns worth carding,noun,core,,
-song,pāṭa,పాట,,pelli pāṭa pāḍē,src::song-gira-gira cat::noun tier::core,W0198,Song · Gira Gira,Everyday nouns worth carding,noun,core,,
-head,tala,తల,,tala etti chūḍu,src::song-gira-gira cat::noun tier::core,W0199,Song · Gira Gira,Everyday nouns worth carding,noun,core,,
-"step, foot",aḍugu,అడుగు,,aḍugu kalipi,src::song-gira-gira cat::noun tier::core,W0200,Song · Gira Gira,Everyday nouns worth carding,noun,core,,
-tiredness,alupu,అలుపు,,alupu lēdu,src::song-gira-gira cat::noun tier::core,W0201,Song · Gira Gira,Everyday nouns worth carding,noun,core,,
-"hope, desire",āśa,ఆశ,,āśa karugunā,src::song-gira-gira cat::noun tier::core,W0202,Song · Gira Gira,Everyday nouns worth carding,noun,core,,
-"victory, winning",gelupu,గెలుపు,,kadilitē gelupu,src::song-gira-gira cat::noun tier::core,W0203,Song · Gira Gira,Everyday nouns worth carding,noun,core,,
-"gold, golden (also a pet name)",baṅgāru,బంగారు,,baṅgāru bomma,src::song-gira-gira cat::noun tier::core,W0204,Song · Gira Gira,Everyday nouns worth carding,noun,core,,
-doll,bomma,బొమ్మ,,the Telugu word for guḍiyā,src::song-gira-gira cat::noun tier::standard,W0205,Song · Gira Gira,Everyday nouns worth carding,noun,standard,,
-dream,kala,కల,,kalalu — dreams,src::song-gira-gira cat::noun tier::core,W0206,Song · Gira Gira,Everyday nouns worth carding,noun,core,,
-wave,ala,అల,,alalu alisi,src::song-gira-gira cat::noun tier::standard,W0207,Song · Gira Gira,Everyday nouns worth carding,noun,standard,,
-direction,diśa,దిశ,,diśalu reṇḍu,src::song-gira-gira cat::noun tier::standard,W0208,Song · Gira Gira,Everyday nouns worth carding,noun,standard,,
-"grain, ingredient",dinusu,దినుసు,,dinusē nalaga lēdu,src::song-gira-gira cat::noun tier::standard,W0209,Song · Gira Gira,Everyday nouns worth carding,noun,standard,,
-"to turn, to roam",tirugu,తిరుగు,,tirigi — having turned,src::song-gira-gira cat::verb tier::core,W0210,Song · Gira Gira,Verbs — you'll conjugate these from Lesson 7,verb,core,,
-to happen,jarugu,జరుగు,,ēmi jariginā,src::song-gira-gira cat::verb tier::core,W0211,Song · Gira Gira,Verbs — you'll conjugate these from Lesson 7,verb,core,,
-"to hear, to listen",vinu,విను,,vinaḍu — he doesn't listen,src::song-gira-gira cat::verb tier::core,W0212,Song · Gira Gira,Verbs — you'll conjugate these from Lesson 7,verb,core,,
-"to see, to look",chūḍu,చూడు,,chūstunnāḍu — he's looking,src::song-gira-gira cat::verb tier::core,W0213,Song · Gira Gira,Verbs — you'll conjugate these from Lesson 7,verb,core,,
-to ask,aḍugu,అడుగు,,aḍigi aḍigi,src::song-gira-gira cat::verb tier::core,W0214,Song · Gira Gira,Verbs — you'll conjugate these from Lesson 7,verb,core,,
-to be known (I know),telusu / teliyadu,తెలుసు,,nāku telusu — I know,src::song-gira-gira cat::verb tier::core,W0215,Song · Gira Gira,Verbs — you'll conjugate these from Lesson 7,verb,core,,
-to fall,paḍu,పడు,,eduru paḍu — to run into,src::song-gira-gira cat::verb tier::core,W0216,Song · Gira Gira,Verbs — you'll conjugate these from Lesson 7,verb,core,,
-to stop,āgu,ఆగు,,āgunā? — would it stop?,src::song-gira-gira cat::verb tier::core,W0217,Song · Gira Gira,Verbs — you'll conjugate these from Lesson 7,verb,core,,
-to touch,tāku,తాకు,,tāki — having touched,src::song-gira-gira cat::verb tier::core,W0218,Song · Gira Gira,Verbs — you'll conjugate these from Lesson 7,verb,core,,
-"to lift, to raise",ettu,ఎత్తు,,tala etti,src::song-gira-gira cat::verb tier::core,W0219,Song · Gira Gira,Verbs — you'll conjugate these from Lesson 7,verb,core,,
-"to join, to mix",kalupu,కలుపు,,aḍugu kalipi,src::song-gira-gira cat::verb tier::core,W0220,Song · Gira Gira,Verbs — you'll conjugate these from Lesson 7,verb,core,,
-"to melt, to dissolve",karugu,కరుగు,,manasu karagalēdu,src::song-gira-gira cat::verb tier::standard,W0221,Song · Gira Gira,Verbs — you'll conjugate these from Lesson 7,verb,standard,,
-to wear away,aragu,అరుగు,,arigi pōyinā,src::song-gira-gira cat::verb tier::standard,W0222,Song · Gira Gira,Verbs — you'll conjugate these from Lesson 7,verb,standard,,
-to know (be aware of),erugu,ఎరుగు,,alupu eragaka,src::song-gira-gira cat::verb tier::standard,W0223,Song · Gira Gira,Verbs — you'll conjugate these from Lesson 7,verb,standard,,
-sky (literary),gaganamu,గగనము,,use ākāśaṁ instead,src::song-gira-gira cat::poetic tier::recognition,W0224,Song · Gira Gira,"Poetic register — recognise, don't reproduce",poetic,recognition,,
-sky (poetic native),ningi,నింగి,,use ākāśaṁ instead,src::song-gira-gira cat::poetic tier::recognition,W0225,Song · Gira Gira,"Poetic register — recognise, don't reproduce",poetic,recognition,,
-"yearning, longing",tapana,తపన,,vadalani tapana,src::song-gira-gira cat::poetic tier::recognition,W0226,Song · Gira Gira,"Poetic register — recognise, don't reproduce",poetic,recognition,,
-"love, affection (literary)",valapu,వలపు,,use prēma instead,src::song-gira-gira cat::poetic tier::recognition,W0227,Song · Gira Gira,"Poetic register — recognise, don't reproduce",poetic,recognition,,
-journey (literary),payanaṁ,పయనం,,use prayāṇaṁ instead,src::song-gira-gira cat::poetic tier::recognition,W0228,Song · Gira Gira,"Poetic register — recognise, don't reproduce",poetic,recognition,,
-innate nature,sahaja guṇamu,సహజ గుణము,,Sanskrit compound,src::song-gira-gira cat::poetic tier::recognition,W0229,Song · Gira Gira,"Poetic register — recognise, don't reproduce",poetic,recognition,,
-great heat,penutāpaṁ,పెనుతాపం,,vēsavilō penutāpaṁ,src::song-gira-gira cat::poetic tier::recognition,W0230,Song · Gira Gira,"Poetic register — recognise, don't reproduce",poetic,recognition,,
-turning point,malupu,మలుపు,,kṣaṇamoka malupu,src::song-gira-gira cat::poetic tier::recognition,W0231,Song · Gira Gira,"Poetic register — recognise, don't reproduce",poetic,recognition,,
-shehnai (wind instrument),sannāyi,సన్నాయి,,wedding music,src::song-gira-gira cat::poetic tier::recognition,W0232,Song · Gira Gira,"Poetic register — recognise, don't reproduce",poetic,recognition,,
-drum,ḍōlu,డోలు,,sannāyi ḍōlu,src::song-gira-gira cat::poetic tier::recognition,W0233,Song · Gira Gira,"Poetic register — recognise, don't reproduce",poetic,recognition,,
-grindstone,tiragali,తిరగలి,,tiragali lāga,src::song-gira-gira cat::poetic tier::recognition,W0234,Song · Gira Gira,"Poetic register — recognise, don't reproduce",poetic,recognition,,
-to collapse flat,chatikilapaḍu,చతికిలపడు,,spelling varies,src::song-gira-gira cat::poetic tier::recognition flag::verify,W0235,Song · Gira Gira,"Poetic register — recognise, don't reproduce",poetic,recognition,verify-with-native,
-to be flustered,kalavara paḍu,కలవర పడు,,literary,src::song-gira-gira cat::poetic tier::recognition flag::verify,W0236,Song · Gira Gira,"Poetic register — recognise, don't reproduce",poetic,recognition,verify-with-native,
-sidelong glance,vora kaṇṭa,ఒర కంట,,word split uncertain,src::song-gira-gira cat::poetic tier::recognition flag::verify,W0237,Song · Gira Gira,"Poetic register — recognise, don't reproduce",poetic,recognition,verify-with-native,
-"match, equal (in age)",īḍu jōḍu,ఈడు జోడు,,set phrase,src::song-gira-gira cat::poetic tier::recognition flag::verify,W0238,Song · Gira Gira,"Poetic register — recognise, don't reproduce",poetic,recognition,verify-with-native,
-"before, formerly",munupu,మునుపు,,teliyadu munupu,src::song-gira-gira cat::poetic tier::recognition flag::verify,W0239,Song · Gira Gira,"Poetic register — recognise, don't reproduce",poetic,recognition,verify-with-native,
-shoulder,bhujaṁ,భుజం,,kuḍi bhujaṁ mīda,src::song-saranga-dariya cat::noun tier::core,W0240,Song · Saranga Dariya,Body — mostly worth having,noun,core,,
-cheek (Telangana: sempa),chempa,చెంప,,sempalu,src::song-saranga-dariya cat::noun tier::core,W0241,Song · Saranga Dariya,Body — mostly worth having,noun,core,,
-ears (Telangana: sevulu),chevulu,చెవులు,,sevulaku duddulu,src::song-saranga-dariya cat::noun tier::core,W0242,Song · Saranga Dariya,Body — mostly worth having,noun,core,,
-lips,pedavulu,పెదవులు,,pedavul erragā,src::song-saranga-dariya cat::noun tier::core,W0243,Song · Saranga Dariya,Body — mostly worth having,noun,core,,
-waist,naḍumu,నడుము,,dāni naḍumu,src::song-saranga-dariya cat::noun tier::core,W0244,Song · Saranga Dariya,Body — mostly worth having,noun,core,,
-"smile, laugh",navvu,నవ్వు,,adi navvitē,src::song-saranga-dariya cat::noun tier::core,W0245,Song · Saranga Dariya,Body — mostly worth having,noun,core,,
-"braid, plait",jaḍa,జడ,,jaḍa tākitē,src::song-saranga-dariya cat::noun tier::standard,W0246,Song · Saranga Dariya,Body — mostly worth having,noun,standard,,
-hair bun,koppu,కొప్పు,,koppulō mallelu,src::song-saranga-dariya cat::noun tier::standard,W0247,Song · Saranga Dariya,Body — mostly worth having,noun,standard,,
-jasmine — everywhere in Hyderabad,malle,మల్లె,,malle daṇḍa,src::song-saranga-dariya cat::noun tier::core,W0248,Song · Saranga Dariya,Everyday objects & nature,noun,core,,
-colour,rangu,రంగు,,rangu lēni,src::song-saranga-dariya cat::noun tier::core,W0249,Song · Saranga Dariya,Everyday objects & nature,noun,core,,
-"water pot, large vessel",kaḍava,కడవ,,bhujaṁ mīda kaḍava,src::song-saranga-dariya cat::noun tier::standard,W0250,Song · Saranga Dariya,Everyday objects & nature,noun,standard,,
-garland,daṇḍa,దండ,,malle daṇḍa,src::song-saranga-dariya cat::noun tier::standard,W0251,Song · Saranga Dariya,Everyday objects & nature,noun,standard,,
-earrings,duddulu,దుద్దులు,,sevulaku duddulu,src::song-saranga-dariya cat::noun tier::standard,W0252,Song · Saranga Dariya,Everyday objects & nature,noun,standard,,
-"shine, flash, lightning",merupu,మెరుపు,,meriyā (song form),src::song-saranga-dariya cat::noun tier::standard,W0253,Song · Saranga Dariya,Everyday objects & nature,noun,standard,,
-pearls,mutyālu,ముత్యాలు,,navvula mutyāl,src::song-saranga-dariya cat::noun tier::standard,W0254,Song · Saranga Dariya,Everyday objects & nature,noun,standard,,
-blouse (Telangana term),raika,రైక,,raikalu,src::song-saranga-dariya cat::noun tier::standard flag::verify,W0255,Song · Saranga Dariya,Everyday objects & nature,noun,standard,verify-with-native,
-anklet bells,gajjelu,గజ్జెలు,,gajjel lēkunnā,src::song-saranga-dariya cat::noun tier::recognition,W0256,Song · Saranga Dariya,Everyday objects & nature,noun,recognition,,
-moonlight (Telangana: ennela),vennela,వెన్నెల,,ennela kuriyā,src::song-saranga-dariya cat::noun tier::recognition,W0257,Song · Saranga Dariya,Everyday objects & nature,noun,recognition,,
-heart (Urdu) — very common in Hyderabad,dil,దిల్,,mana dil,src::song-saranga-dariya cat::urdu tier::core,W0258,Song · Saranga Dariya,Dakhni Urdu layer — the Hyderabad vocabulary,urdu,core,,
-world (Urdu),duniyā,దునియా,,mogōḷḷa duniyā,src::song-saranga-dariya cat::urdu tier::core,W0259,Song · Saranga Dariya,Dakhni Urdu layer — the Hyderabad vocabulary,urdu,core,,
-doll (Urdu) — affectionate,guḍiyā,గుడియా,,guḍiyā,src::song-saranga-dariya cat::urdu tier::standard,W0260,Song · Saranga Dariya,Dakhni Urdu layer — the Hyderabad vocabulary,urdu,standard,,
-little bird (Urdu) — affectionate,chiḍiyā,చిడియా,,chikkani chiḍiyā,src::song-saranga-dariya cat::urdu tier::standard,W0261,Song · Saranga Dariya,Dakhni Urdu layer — the Hyderabad vocabulary,urdu,standard,,
-"kohl, eyeliner (Urdu)",surmā,సుర్మా,,surmā peṭṭina,src::song-saranga-dariya cat::urdu tier::standard,W0262,Song · Saranga Dariya,Dakhni Urdu layer — the Hyderabad vocabulary,urdu,standard,,
-"dagger, blade (Urdu)",churiyā,చురియా,,churiyā,src::song-saranga-dariya cat::urdu tier::recognition,W0263,Song · Saranga Dariya,Dakhni Urdu layer — the Hyderabad vocabulary,urdu,recognition,,
-cannon (Persian via Urdu),phirangi,ఫిరంగి,,adi phirangi,src::song-saranga-dariya cat::urdu tier::recognition,W0264,Song · Saranga Dariya,Dakhni Urdu layer — the Hyderabad vocabulary,urdu,recognition,,
-even without ___ (from lēdu),lēkunnā,లేకున్నా,,gajjel lēkunnā,src::song-saranga-dariya cat::grammar tier::core,W0265,Song · Saranga Dariya,Grammar chunks worth keeping,grammar,core,,
-men (Telangana dialect plural),mogōḷḷu,మొగోళ్ళు,,mogōḷḷa duniyā,src::song-saranga-dariya cat::grammar tier::core,W0266,Song · Saranga Dariya,Grammar chunks worth keeping,grammar,core,,
-"redly, in a red way (from erupu)",erragā,ఎర్రగా,,erragā aitadi,src::song-saranga-dariya cat::grammar tier::standard,W0267,Song · Saranga Dariya,Grammar chunks worth keeping,grammar,standard,,
-"dear one, beloved (Telangana: seliyā)",cheliyā,చెలియా,,rādurā seliyā,src::song-saranga-dariya cat::poetic tier::recognition,W0268,Song · Saranga Dariya,"Poetic — recognise, don't card",poetic,recognition,,
-"charms, delights",muripālu,మురిపాలు,,vastāy muripāl,src::song-saranga-dariya cat::poetic tier::recognition,W0269,Song · Saranga Dariya,"Poetic — recognise, don't card",poetic,recognition,,
-"lioness, tigress — a fierce woman",śivangi,శివంగి,,adi śivangi,src::song-saranga-dariya cat::poetic tier::recognition,W0270,Song · Saranga Dariya,"Poetic — recognise, don't card",poetic,recognition,,
-clove (also a sharpness metaphor),lavangaṁ,లవంగం,,māṭala ghāṭu lavangi,src::song-saranga-dariya cat::poetic tier::recognition,W0271,Song · Saranga Dariya,"Poetic — recognise, don't card",poetic,recognition,,
-sarangi — bowed string instrument,sārangi,సారంగి,,tīgalu lēni sārangi,src::song-saranga-dariya cat::poetic tier::recognition,W0272,Song · Saranga Dariya,"Poetic — recognise, don't card",poetic,recognition,,
+English,Romanized,TeluguScript,Audio,Example,Tags,ID
+you (formal / plural — the safe default); You (Respect); you,mīru,మీరు,,mīru ṭīcharu.,src::site src::book1000 src::top1000 cat::pronoun flag::multi-gloss,W0001
+own (his/her own); his,tana,తన,,tana venaka,src::site src::top1000 cat::grammar flag::multi-gloss,W0002
+I,nēnu,నేను,,nēnu vidyārthini.,src::site src::book1000 src::top1000 cat::pronoun,W0003
+we (exclusive — not the listener); We,mēmu,మేము,,mēmu vidyārthulamu.,src::site src::book1000 src::top1000 cat::pronoun flag::multi-gloss,W0004
+he (neutral — the default form); he,atanu,అతను,,atanu vidyārthi.,src::site src::top1000 cat::pronoun flag::multi-gloss,W0005
+she (neutral — the default form); She,āme,ఆమె,,āme vidyārthi.,src::site src::book1000 src::top1000 cat::pronoun flag::multi-gloss,W0006
+this / it — the near form of adi; It; which,idi,ఇది,,idi kāru.,src::site src::book1000 src::top1000 cat::pronoun-demonstrative flag::multi-gloss,W0007
+"one (standalone — ""oka"" before a noun); one",okaṭi,ఒకటి,,okaṭi ivvaṇḍi.,src::site src::top1000 cat::numeral flag::multi-gloss,W0008
+but,kānī,కానీ,,kāni ṭrāphik ekkuva undi,src::site src::top1000 cat::other,W0009
+what,ēmi,ఏమి,,ēmi jarigindi?,src::site src::top1000 cat::grammar,W0010
+thank you; Thanks; thank,dhanyavādālu,ధన్యవాదాలు,,dhanyavādālu.,src::site src::book1000 src::top1000 cat::formula flag::multi-gloss,W0011
+"a / an (indefinite — optional, for emphasis); a; an",oka,ఒక,,oka vidyārthi.,src::site src::top1000 cat::numeral-determiner flag::multi-gloss,W0012
+yes,avunu,అవును,,avunandi.,src::site src::book1000 src::top1000 cat::response,W0013
+"mother (say ""mā amma"" for ""my mother""); Mother",amma,అమ్మ,,mā amma pēru Sunita.,src::site src::book1000 cat::noun-family flag::multi-gloss,W0014
+"father (say ""mā nāna"" for ""my father""); Dad",nānna,నాన్న,,mā nāna pēru John.,src::site src::book1000 cat::noun-family flag::multi-gloss,W0015
+elder brother (shortens to anna); Elder brother,annayya,అన్నయ్య,,mā annayya ḍākṭar.,src::site src::book1000 cat::noun-family flag::multi-gloss,W0016
+younger brother,tammuḍu,తమ్ముడు,,mā tammuḍu vidyārthi.,src::site src::book1000 cat::noun-family,W0017
+elder sister,akka,అక్క,,mā akka vidyārthi.,src::site src::book1000 cat::noun-family,W0018
+maternal grandmother (mother's mother); Grandmother,ammamma,అమ్మమ్మ,,mā ammamma gāru.,src::site src::book1000 cat::noun-family flag::multi-gloss,W0019
+three,mūḍu,మూడు,,mūḍu pustakālu.,src::site src::top1000 cat::numeral,W0020
+"small, young; small; little; short; tiny",chinna,చిన్న,,chinna + nāna → chinnāna,src::site src::top1000 cat::adjective flag::multi-gloss,W0021
+colour; Color,rangu,రంగు,,rangu lēni,src::site src::book1000 src::top1000 cat::noun flag::multi-gloss,W0022
+enough (stopping more food); put,chālu,చాలు,,"chālu, chālā bāgundi",src::site src::top1000 cat::other flag::multi-gloss,W0023
+"big, elder; large; big",pedda,పెద్ద,,pedda + amma → peddamma,src::site src::top1000 cat::adjective flag::multi-gloss,W0024
+"a little, somewhat; Little",koncheṁ,కొంచెం,,konchaṁ kaṣṭaṁ,src::site src::book1000 cat::other flag::multi-gloss,W0025
+okay; Well,sarē,సరే,,sarē aṇḍi.,src::site src::book1000 cat::response flag::multi-gloss,W0026
+good (before a noun); Good; better,manchi,మంచి,,oka manchi pani,src::site src::book1000 src::top1000 cat::other flag::multi-gloss,W0027
+no — it is not (negating a statement); No,kādu,కాదు,,idi kāru kādu.,src::site src::book1000 cat::negation flag::multi-gloss,W0028
+"work, task; work",pani,పని,,chālā pani undi,src::site src::top1000 cat::other flag::multi-gloss,W0029
+head,tala,తల,,tala etti chūḍu,src::site src::book1000 src::top1000 cat::noun,W0030
+name (long ē — not like the country Peru); where; name,pēru,పేరు,,nā pēru Raj.,src::site src::top1000 cat::noun flag::multi-gloss,W0031
+person / human being; man,maniṣi,మనిషి,,nēnu manishini.,src::site src::top1000 cat::noun flag::multi-gloss,W0032
+"our (before a noun — also ""my"" for close family); our",mā,మా,,mā amma pēru Sunita.,src::site src::top1000 cat::possessive flag::multi-gloss,W0033
+turning point; turn,malupu,మలుపు,,kṣaṇamoka malupu,src::site src::top1000 cat::poetic flag::multi-gloss,W0034
+your (formal / plural — the safe default); your,mī,మీ,,mī pēru ēmiṭi?,src::site src::top1000 cat::possessive flag::multi-gloss,W0035
+children (collective); Children,pillalu,పిల్లలు,,mā pillalu vidyārthulu.,src::site src::book1000 src::top1000 cat::noun-family flag::multi-gloss,W0036
+two; both,reṇḍu,రెండు,,reṇḍu kārlu.,src::site src::top1000 cat::numeral flag::multi-gloss,W0037
+please (rare — politeness usually goes in the suffix); Please,dayachēsi,దయచేసి,,"raṇḍi (not ""dayacēsi raṇḍi"")",src::site src::book1000 src::top1000 cat::formula flag::multi-gloss,W0038
+my (before a noun); my,nā,నా,,nā pēru Raj.,src::site src::top1000 cat::possessive flag::multi-gloss,W0039
+to be known (I know); know; knew,telusu,తెలుసు,,nāku telusu — I know,src::site src::top1000 cat::verb flag::multi-gloss,W0040
+first (irregular); first,modaṭi,మొదటి,,modaṭi pāṭhaṁ.,src::site src::top1000 cat::ordinal flag::multi-gloss,W0041
+who,evaru,ఎవరు,,evaru vastunnāru?,src::site src::top1000 cat::grammar,W0042
+doll; Picture,bomma,బొమ్మ,,the Telugu word for guḍiyā,src::site src::book1000 cat::noun flag::multi-gloss,W0043
+country; nation,dēśaṁ,దేశం,,mādi Bhārata Dēśam.,src::site src::top1000 cat::noun flag::multi-gloss,W0044
+"smile, laugh; Smile; laugh",navvu,నవ్వు,,adi navvitē,src::site src::book1000 src::top1000 cat::noun flag::multi-gloss,W0045
+four,nālugu,నాలుగు,,nālugu.,src::site src::top1000 cat::numeral,W0046
+friend (male); friend,snēhituḍu,స్నేహితుడు,,nā snēhituḍu vidyārthi.,src::site src::top1000 cat::noun flag::multi-gloss,W0047
+"to hear, to listen; hear  [form of విను]",vinu,విను,,vinaḍu — he doesn't listen,src::site src::top1000 cat::verb flag::inflected flag::multi-gloss flag::verbform,W0048
+car (loanword); car,kāru,కారు,,idi kāru.,src::site src::top1000 cat::noun flag::inflected flag::multi-gloss,W0049
+girl,ammāyi,అమ్మాయి,,nēnu ammāyini.,src::site src::top1000 cat::noun flag::inflected,W0050
+song,pāṭa,పాట,,pelli pāṭa pāḍē,src::site src::top1000 cat::noun,W0051
+"completed, finished; complete; full",pūrti,పూర్తి,,pūrti ayyindi,src::site src::top1000 cat::other flag::multi-gloss,W0052
+"step, foot; to ask; foot; step",aḍugu,అడుగు,,aḍugu kalipi,src::site src::top1000 cat::noun flag::multi-gloss,W0053
+"gold, golden (also a pet name); gold",bangāru,బంగారు,,baṅgāru bomma,src::site src::top1000 cat::noun flag::inflected flag::multi-gloss,W0054
+"way, road, route; lead",dāri,దారి,,dārilō — on the way,src::site src::top1000 cat::other flag::multi-gloss,W0055
+minute,nimiṣaṁ,నిమిషం,,oka nimiṣaṁ!,src::site src::top1000 cat::noun,W0056
+"heart, mind; mind",manasu,మనసు,,manasē karaga lēdu,src::site src::top1000 cat::noun flag::multi-gloss,W0057
+hundred,vanda,వంద,,vanda rūpāyalu.,src::site src::top1000 cat::numeral,W0058
+five,aidu,ఐదు,,aidu rūpāyalu.,src::site src::top1000 cat::numeral,W0059
+six,āru,ఆరు,,āru.,src::site src::top1000 cat::numeral,W0060
+ten,padi,పది,,padi mandi.,src::site src::top1000 cat::numeral,W0061
+rain,varṣaṁ,వర్షం,,varṣaṁ vastundi,src::site src::top1000 cat::noun,W0062
+wave,ala,అల,,alalu alisi,src::site src::top1000 cat::noun,W0063
+summer,vēsavi,వేసవి,,vēsavilō,src::site src::top1000 cat::noun,W0064
+moment,kṣaṇaṁ,క్షణం,,ā kṣaṇaṁ,src::site src::top1000 cat::noun,W0065
+twenty (20); twenty,iravai,ఇరవై,,nā vayasu iravai.,src::site src::top1000 cat::numeral flag::multi-gloss,W0066
+eight,enimidi,ఎనిమిది,,enimidi.,src::site src::top1000 cat::numeral,W0067
+seven,ēḍu,ఏడు,,ēḍu.,src::site src::top1000 cat::numeral,W0068
+"difficult, hard; difficult",kaṣṭaṁ,కష్టం,,konchaṁ kaṣṭaṁ,src::site src::top1000 cat::other flag::multi-gloss,W0069
+doctor (loanword — the everyday choice); doctor,ḍākṭar,డాక్టర్,,nā ḍākṭar pēru Sophia.,src::site src::top1000 cat::noun-profession flag::multi-gloss,W0070
+student,vidyārthi,విద్యార్థి,,Raj vidyārthi.,src::site src::top1000 cat::noun,W0071
+"at all, really; original",asalu,అసలు,,asalu vinaḍu,src::site src::top1000 cat::grammar flag::multi-gloss,W0072
+wife,bhārya,భార్య,,nā bhārya pēru Namrata.,src::site src::top1000 cat::noun-family,W0073
+shoulder,bhujaṁ,భుజం,,kuḍi bhujaṁ mīda,src::site src::top1000 cat::noun,W0074
+nine,tommidi,తొమ్మిది,,tommidi.,src::site src::top1000 cat::numeral,W0075
+you (informal — close friends/family only),nuvvu,నువ్వు,,nuvvu vidyārthivi.,src::site cat::pronoun,W0076
+we (inclusive — includes the listener),manamu,మనము,,manam vidyārthulamu.,src::site cat::pronoun,W0077
+he (formal — to/about an elder),āyana,ఆయన,,āyana ṭīcharu.,src::site cat::pronoun,W0078
+"he (informal — intimates only, caution)",vāḍu,వాడు,,vāḍu vidyārthi.,src::site cat::pronoun flag::inflected,W0079
+she (formal — to/about an elder),āviḍa,ఆవిడ,,āviḍa ṭīcharu.,src::site cat::pronoun,W0080
+it / she (informal) — that one,adi,అది,,adi kāru.,src::site cat::pronoun-demonstrative,W0081
+they (people),vāḷḷu,వాళ్ళు,,vāḷḷu vidyārthulu.,src::site cat::pronoun,W0082
+they (things / non-human),avi,అవి,,avi kārlu.,src::site cat::pronoun-demonstrative,W0083
+"he (formal, nearby — near form of āyana)",īyana,ఈయన,,īyana ṭīcharu.,src::site cat::pronoun,W0084
+"he (neutral, nearby — near form of atanu)",itanu,ఇతను,,itanu vidyārthi.,src::site cat::pronoun,W0085
+"he (informal, nearby — near form of vāḍu)",vīḍu,వీడు,,vīḍu vidyārthi.,src::site cat::pronoun,W0086
+"she (formal, nearby — near form of āviḍa)",īviḍa,ఈవిడ,,īviḍa ṭīcharu.,src::site cat::pronoun,W0087
+"she (neutral, nearby — near form of āme)",īme,ఈమె,,īme vidyārthi.,src::site cat::pronoun,W0088
+they (nearby people — near form of vāḷḷu),vīḷḷu,వీళ్ళు,,vīḷḷu vidyārthulu.,src::site cat::pronoun,W0089
+these (objects / non-human — near form of avi),ivi,ఇవి,,ivi kārlu.,src::site cat::pronoun-demonstrative,W0090
+students (plural),vidyārthulu,విద్యార్థులు,,vāḷḷu vidyārthulu.,src::site cat::noun,W0091
+teacher (loanword),ṭīchar,టీచర్,,mīru ṭīcharu.,src::site cat::noun,W0092
+"a greeting — ""hello / greetings""",namaskāraṁ,నమస్కారం,,namaskāraṁ aṇḍi.,src::site cat::formula,W0093
+boy,abbāyi,అబ్బాయి,,nēnu abbāyini.,src::site cat::noun flag::inflected,W0094
+man (course form — see rule 04; Lesson 4 confirms this means “husband”),moguḍu,మొగుడు,,nā moguḍu enjinīr.,src::site cat::noun-family,W0095
+woman,āḍadi,ఆడది,,nēnu āḍadini.,src::site cat::noun,W0096
+"teacher (male, formal Telugu form)",upādhyāyuḍu,ఉపాధ్యాయుడు,,nēnu upādhyāyuḍini.,src::site cat::noun-profession,W0097
+"teacher (female, formal Telugu form)",upādhyāyurālu,ఉపాధ్యాయురాలు,,nēnu upādhyāyurālini.,src::site cat::noun-profession,W0098
+"doctor (male, formal Telugu form)",vaidyuḍu,వైద్యుడు,,āyana oka vaidyuḍu.,src::site cat::noun-profession,W0099
+"doctor (female, formal Telugu form)",vaidyurālu,వైద్యురాలు,,āme oka vaidyurālu.,src::site cat::noun-profession,W0100
+lawyer,nyāyavādi,న్యాయవాది,,nēnu nyāyavādini.,src::site cat::noun-profession,W0101
+"engineer (Telugu form — recognise only, never used in speech)",abhiyanta,అభియంత,,nēnu enjinīrni.,src::site cat::noun-profession,W0102
+mine (stands alone),nādi,నాది,,nādi oka kāru.,src::site cat::possessive,W0103
+ours (stands alone — used for hometown),mādi,మాది,,mādi Hyderabad.,src::site cat::possessive,W0104
+age,vayasu,వయసు,,nā vayasu iravai.,src::site cat::noun,W0105
+thirty (30),muppai,ముప్పై,,nā vayasu muppai.,src::site cat::numeral,W0106
+friend (female),snēhiturālu,స్నేహితురాలు,,nā snēhiturālu vidyārthi.,src::site cat::noun,W0107
+husband,bharta,భర్త,,nā bharta oka ṭīcharu.,src::site cat::noun-family,W0108
+town / hometown,ūru,ఊరు,,mā ūru Hyderabad.,src::site cat::noun,W0109
+native place (own town),sonta ūru,సొంత ఊరు,,mā sonta ūru Hyderabad.,src::site cat::phrase flag::phrase,W0110
+"India (ancient name + ""country"")",bhārata dēśaṁ,భారత దేశం,,mādi Bhārata Dēśam.,src::site cat::proper-noun flag::phrase,W0111
+Indian (male),bhāratīyuḍu,భారతీయుడు,,nēnu bhāratīyuḍini.,src::site cat::noun,W0112
+Indian (female),bhāratīyurālu,భారతీయురాలు,,nēnu bhāratīyurālini.,src::site cat::noun,W0113
+mother tongue,mātṛbhāṣa,మాతృభాష,,mā mātṛbhāṣa Telugu.,src::site cat::noun,W0114
+"goodbye (lit. ""I'll come back"")  [form of రా]",vastānu,వస్తాను,,vastānandi.,src::site cat::formula flag::inflected flag::verbform,W0115
+please come in / welcome (colloquial)  [form of రా],raṇḍi,రండి,,"raṇḍi, raṇḍi.",src::site cat::formula flag::inflected flag::verbform,W0116
+come (base verb — becomes raṇḍi with aṇḍi)  [form of రా],rā,రా,,rā + aṇḍi → raṇḍi,src::site cat::verb flag::inflected flag::verbform,W0117
+welcome (formal — banners and speeches),svāgataṁ,స్వాగతం,,svāgataṁ aṇḍi.,src::site cat::formula,W0118
+no — it doesn't exist / isn't there / I don't have it  [form of ఉండు],lēdu,లేదు,,lēdandi.,src::site cat::negation flag::inflected flag::verbform,W0120
+no — I don't want it (declining),vaddu,వద్దు,,"vaddandi, thanks aṇḍi.",src::site cat::negation,W0121
+"sorry (lit. ""forgive me"")",kṣaminchaṇḍi,క్షమించండి,,kṣaminchandi.,src::site cat::formula flag::inflected,W0122
+It's okay / no problem / never mind,parvālēdu,పర్వాలేదు,,parvālēdu aṇḍi.,src::site cat::formula,W0123
+well done / congratulations,śabhāṣ,శభాష్,,śabhāṣ!,src::site cat::formula,W0124
+"good — nice, noble, morally good",manchidi,మంచిది,,manchidi.,src::site cat::adjective,W0125
+"good — fine, going well (food, trips, states)",bāgundi,బాగుంది,,bāgundi aṇḍi.,src::site cat::adjective flag::inflected,W0126
+"how are you? (lit. ""are you fine?"")",bāgunnārā,బాగున్నారా,,mīru bāgunnārā?,src::site cat::formula,W0127
+I am fine,bāgunnānu,బాగున్నాను,,nēnu bāgunnānu.,src::site cat::formula flag::inflected,W0128
+let's go,pada,పద,,padaṇḍi.,src::site cat::verb,W0129
+how much,enta,ఎంత,,idi enta?,src::site cat::question-word,W0130
+here you go (handing something over),idigō,ఇదిగో,,idigōṇḍi.,src::site cat::formula,W0131
+"doesn't come — used for ""I don't know [a language]""  [form of రా]",rādu,రాదు,,Telugu rādu.,src::site cat::verb-negative flag::inflected flag::verbform,W0132
+do you know?,telusā,తెలుసా,,English telusā?,src::site cat::question,W0133
+younger sister,chelli,చెల్లి,,mā chelli ammāyi.,src::site cat::noun-family,W0134
+paternal grandmother (father's mother),nānamma,నానమ్మ,,mā nānamma gāru.,src::site cat::noun-family,W0135
+grandfather (either side),tāta,తాత,,mā tāta gāru.,src::site cat::noun-family,W0136
+honorific suffix for people (respect),gāru,గారు,,Raj gāru.,src::site cat::honorific flag::inflected,W0137
+mother's brother (any age),māmayya,మామయ్య,,mā māmayya enjinīr.,src::site cat::noun-family,W0138
+"mother's ELDER sister (lit. ""elder mother"")",peddamma,పెద్దమ్మ,,mā peddamma gāru.,src::site cat::noun-family,W0139
+mother's YOUNGER sister,pinni,పిన్ని,,mā pinni ṭīcharu.,src::site cat::noun-family,W0140
+father's sister (any age) — also mother-in-law,atta,అత్త,,mā atta gāru.,src::site cat::noun-family,W0141
+"father's ELDER brother (lit. ""elder father"")",peddanānna,పెద్దనాన్న,,mā peddanāna gāru.,src::site cat::noun-family,W0142
+"father's YOUNGER brother (lit. ""younger father"")",chinnānna,చిన్నాన్న,,mā chinnāna vaidyuḍu.,src::site cat::noun-family,W0143
+wife (colloquial — bhārya is the formal word),peḷḷāṁ,పెళ్ళాం,,nā pellām ṭīcharu.,src::site cat::noun-family,W0144
+father-in-law (either side),māma gāru,మామ గారు,,mā māma gāru.,src::site cat::noun-family flag::inflected flag::phrase,W0145
+daughter,kūturu,కూతురు,,mā kūturu vidyārthi.,src::site cat::noun-family,W0146
+son,koḍuku,కొడుకు,,mā koḍuku abbāyi.,src::site cat::noun-family,W0147
+son-in-law,alluḍu,అల్లుడు,,nēnu alluḍini.,src::site cat::noun-family,W0148
+daughter-in-law,kōḍalu,కోడలు,,mā kōḍalu ḍākṭar.,src::site cat::noun-family,W0149
+grandchildren (collective),manavalu,మనవలు,,mā manavalu.,src::site cat::noun-family,W0150
+grandson (variant: manumaḍu),manavaḍu,మనవడు,,mā manavaḍu vidyārthi.,src::site cat::noun-family,W0151
+granddaughter (variant: manumarālu),manavarālu,మనవరాలు,,mā manavarālu ammāyi.,src::site cat::noun-family,W0152
+our — INCLUDING the listener,mana,మన,,mana pērlu.,src::site cat::possessive,W0153
+"your (informal — close friends, younger people)",nī,నీ,,nī pēru ēnti?,src::site cat::possessive,W0154
+his (neutral — the default form),atani,అతని,,atani pēru Sanjay.,src::site cat::possessive,W0155
+his (informal — intimates only),vāḍi,వాడి,,vāḍi pēru Peter.,src::site cat::possessive,W0156
+her (informal) / its,dāni,దాని,,dāni pēru Gita.,src::site cat::possessive,W0157
+their (people),vāḷḷa,వాళ్ళ,,vāḷḷa pērlu.,src::site cat::possessive,W0158
+their (objects / non-human),vāṭi,వాటి,,vāṭi pērlu.,src::site cat::possessive,W0159
+what (colloquially ēnti),ēmiṭi,ఏమిటి,,mī pēru ēmiṭi?,src::site cat::question-word,W0160
+names (plural of pēru),pērlu,పేర్లు,,vāḷḷa pērlu.,src::site cat::noun,W0161
+zero,sunnā,సున్నా,,sunnā.,src::site cat::numeral,W0162
+forty,nalabhai,నలభై,,nā vayasu nalabhai.,src::site cat::numeral,W0163
+fifty,yābhai,యాభై,,yābhai rūpāyalu.,src::site cat::numeral,W0164
+sixty,aravai,అరవై,,aravai.,src::site cat::numeral,W0165
+seventy,ḍebbai,డెబ్బై,,ḍebbhai.,src::site cat::numeral,W0166
+eighty,enabhai,ఎనభై,,enabhai.,src::site cat::numeral,W0167
+ninety,tombhai,తొంభై,,tombhai tommidi = 99.,src::site cat::numeral,W0168
+thousand,veyyi,వెయ్యి,,"reṇḍu vēlu = 2,000.",src::site cat::numeral,W0169
+"lakh — 100,000 (written 1,00,000)",lakṣa,లక్ష,,reṇḍu lakṣalu.,src::site cat::numeral,W0170
+"crore — 10,000,000 (written 1,00,00,000)",kōṭi,కోటి,,oka kōṭi.,src::site cat::numeral,W0171
+rupees,rūpāyalu,రూపాయలు,,yābhai rūpāyalu.,src::site cat::noun,W0172
+eleven,padakoṇḍu,పదకొండు,,padakoṇḍu.,src::site cat::numeral,W0173
+twelve,panneṇḍu,పన్నెండు,,panneṇḍu.,src::site cat::numeral,W0174
+thirteen,padamūḍu,పదమూడు,,padamūḍu.,src::site cat::numeral,W0175
+fourteen,padnālugu,పద్నాలుగు,,padnālugu.,src::site cat::numeral,W0176
+fifteen,padihēnu,పదిహేను,,padihēnu.,src::site cat::numeral,W0177
+sixteen,padahāru,పదహారు,,padahāru.,src::site cat::numeral flag::inflected,W0178
+seventeen,padihēḍu,పదిహేడు,,padihēḍu.,src::site cat::numeral,W0179
+eighteen,paddenimidi,పద్దెనిమిది,,paddenimidi.,src::site cat::numeral,W0180
+nineteen,pantommidi,పంతొమ్మిది,,pantommidi.,src::site cat::numeral,W0181
+one person (not okaṭi),okaru,ఒకరు,,okaru mātramē.,src::site cat::numeral-human,W0182
+two people,iddaru,ఇద్దరు,,iddaru vidyārthulu.,src::site cat::numeral-human,W0183
+three people,mugguru,ముగ్గురు,,mugguru.,src::site cat::numeral-human,W0184
+four people,naluguru,నలుగురు,,naluguru.,src::site cat::numeral-human,W0185
+five people,aiduguru,ఐదుగురు,,aiduguru.,src::site cat::numeral-human,W0186
+people (counter word — use with larger numbers),mandi,మంది,,padi mandi.,src::site cat::numeral-human,W0187
+second (pattern: number + -ava / -ō),reṇḍava / reṇḍō,రెండవ / రెండో,,reṇḍō roju.,src::site cat::numeral flag::phrase,W0188
+How are you? (respectful),mīru eṭla unnāru?,మీరు ఎట్ల ఉన్నారు?,,always return the question,src::site cat::other flag::phrase,W0189
+aunty / mother-in-law (address),attayya,అత్తయ్య,,bāgundi attayya,src::site cat::other,W0190
+today,ī rōju,ఈ రోజు,,ī rōju bāgundi,src::site cat::other flag::phrase,W0191
+I've eaten  [form of తిను],tinnānu,తిన్నాను,,block — Lesson 9 explains it,src::site cat::other flag::inflected flag::verbform,W0192
+not yet,inkā lēdu,ఇంకా లేదు,,inkā tinalēdu,src::site cat::other flag::phrase,W0193
+"a lot, excessive (of quantity)",ekkuva,ఎక్కువ,,not “bad” — Telugu counts traffic,src::site cat::other,W0194
+"it got done, it happened",ayyindi,అయ్యింది,,chālā pani ayyindi,src::site cat::other flag::inflected,W0195
+I did  [form of చేయి],chēsānu,చేసాను,,block — chālā pani chēsānu,src::site cat::other flag::inflected flag::verbform,W0196
+at the office,āphīsulō,ఆఫీసులో,,āphīsulō chālā pani undi,src::site cat::other,W0197
+"at home, in the house",iṇṭlō,ఇంట్లో,,intlō antā bāgunnārā?,src::site cat::other,W0198
+"everyone, all",antā,అంతా,,intlō antā,src::site cat::other,W0199
+I'm tired,alisipōyānu,అలిసిపోయాను,,block — konchaṁ alisipōyānu,src::site cat::other flag::inflected,W0200
+How did it go? (of a day),eṭla gaḍichindi?,ఎట్ల గడిచింది?,,mī rōju eṭla gaḍichindi?,src::site cat::other flag::phrase,W0201
+Have you eaten?,tinnārā?,తిన్నారా?,,"recognise it, don't just answer",src::site cat::other,W0202
+whatever happens,ēmi jariginā,ఏమి జరిగినా,,fixed phrase,src::site cat::grammar flag::phrase,W0204
+"always, ever",epuḍū,ఎపుడూ,,epuḍū manasulō,src::site cat::grammar,W0205
+"himself, herself",tānu,తాను,,tānē vachchāḍu,src::site cat::grammar flag::inflected,W0206
+behind,venaka,వెనక,,tana venakāle,src::site cat::grammar,W0208
+wedding,peḷḷi,పెళ్ళి,,pelli pāṭa,src::site cat::noun,W0209
+tiredness,alupu,అలుపు,,alupu lēdu,src::site cat::noun,W0210
+"hope, desire",āśa,ఆశ,,āśa karugunā,src::site cat::noun,W0211
+"victory, winning",gelupu,గెలుపు,,kadilitē gelupu,src::site cat::noun,W0212
+dream,kala,కల,,kalalu — dreams,src::site cat::noun,W0213
+direction,diśa,దిశ,,diśalu reṇḍu,src::site cat::noun,W0214
+"grain, ingredient",dinusu,దినుసు,,dinusē nalaga lēdu,src::site cat::noun,W0215
+"to turn, to roam",tirugu,తిరుగు,,tirigi — having turned,src::site cat::verb,W0216
+to happen,jarugu,జరుగు,,ēmi jariginā,src::site cat::verb,W0217
+"to see, to look  [form of చూడు]",chūḍu,చూడు,,chūstunnāḍu — he's looking,src::site cat::verb flag::inflected flag::verbform,W0218
+to fall,paḍu,పడు,,eduru paḍu — to run into,src::site cat::verb,W0219
+to stop  [form of ఆగు],āgu,ఆగు,,āgunā? — would it stop?,src::site cat::verb flag::inflected flag::verbform,W0220
+to touch,tāku,తాకు,,tāki — having touched,src::site cat::verb,W0221
+"to lift, to raise",ettu,ఎత్తు,,tala etti,src::site cat::verb,W0222
+"to join, to mix",kalupu,కలుపు,,aḍugu kalipi,src::site cat::verb,W0223
+"to melt, to dissolve",karugu,కరుగు,,manasu karagalēdu,src::site cat::verb,W0224
+to wear away,arugu,అరుగు,,arigi pōyinā,src::site cat::verb,W0225
+to know (be aware of),erugu,ఎరుగు,,alupu eragaka,src::site cat::verb,W0226
+sky (literary),gaganamu,గగనము,,use ākāśaṁ instead,src::site cat::poetic,W0227
+sky (poetic native),ningi,నింగి,,use ākāśaṁ instead,src::site cat::poetic,W0228
+"yearning, longing",tapana,తపన,,vadalani tapana,src::site cat::poetic,W0229
+"love, affection (literary)",valapu,వలపు,,use prēma instead,src::site cat::poetic,W0230
+journey (literary),payanaṁ,పయనం,,use prayāṇaṁ instead,src::site cat::poetic,W0231
+innate nature,sahaja guṇamu,సహజ గుణము,,Sanskrit compound,src::site cat::poetic flag::phrase,W0232
+great heat,penutāpaṁ,పెనుతాపం,,vēsavilō penutāpaṁ,src::site cat::poetic,W0233
+shehnai (wind instrument),sannāyi,సన్నాయి,,wedding music,src::site cat::poetic flag::inflected,W0234
+drum,ḍōlu,డోలు,,sannāyi ḍōlu,src::site cat::poetic,W0235
+grindstone,tiragali,తిరగలి,,tiragali lāga,src::site cat::poetic,W0236
+to collapse flat,chatikilapaḍu,చతికిలపడు,,spelling varies,src::site cat::poetic,W0237
+to be flustered,kalavara paḍu,కలవర పడు,,literary,src::site cat::poetic flag::phrase,W0238
+sidelong glance,ora kaṇṭa,ఒర కంట,,word split uncertain,src::site cat::poetic flag::phrase,W0239
+"match, equal (in age)",īḍu jōḍu,ఈడు జోడు,,set phrase,src::site cat::poetic flag::phrase,W0240
+"before, formerly",munupu,మునుపు,,teliyadu munupu,src::site cat::poetic,W0241
+cheek (Telangana: sempa),chempa,చెంప,,sempalu,src::site cat::noun,W0242
+ears (Telangana: sevulu),chevulu,చెవులు,,sevulaku duddulu,src::site cat::noun,W0243
+lips,pedavulu,పెదవులు,,pedavul erragā,src::site cat::noun,W0244
+waist,naḍumu,నడుము,,dāni naḍumu,src::site cat::noun,W0245
+"braid, plait",jaḍa,జడ,,jaḍa tākitē,src::site cat::noun,W0246
+hair bun,koppu,కొప్పు,,koppulō mallelu,src::site cat::noun,W0247
+jasmine — everywhere in Hyderabad,malle,మల్లె,,malle daṇḍa,src::site cat::noun,W0248
+"water pot, large vessel",kaḍava,కడవ,,bhujaṁ mīda kaḍava,src::site cat::noun,W0249
+garland,daṇḍa,దండ,,malle daṇḍa,src::site cat::noun,W0250
+earrings,duddulu,దుద్దులు,,sevulaku duddulu,src::site cat::noun,W0251
+"shine, flash, lightning",merupu,మెరుపు,,meriyā (song form),src::site cat::noun,W0252
+pearls,mutyālu,ముత్యాలు,,navvula mutyāl,src::site cat::noun,W0253
+blouse (Telangana term),raika,రైక,,raikalu,src::site cat::noun,W0254
+anklet bells,gajjelu,గజ్జెలు,,gajjel lēkunnā,src::site cat::noun,W0255
+moonlight (Telangana: ennela),vennela,వెన్నెల,,ennela kuriyā,src::site cat::noun,W0256
+heart (Urdu) — very common in Hyderabad,dil,దిల్,,mana dil,src::site cat::urdu,W0257
+world (Urdu),duniyā,దునియా,,mogōḷḷa duniyā,src::site cat::urdu,W0258
+doll (Urdu) — affectionate,guḍiyā,గుడియా,,guḍiyā,src::site cat::urdu,W0259
+little bird (Urdu) — affectionate,chiḍiyā,చిడియా,,chikkani chiḍiyā,src::site cat::urdu,W0260
+"kohl, eyeliner (Urdu)",surmā,సుర్మా,,surmā peṭṭina,src::site cat::urdu,W0261
+"dagger, blade (Urdu)",churiyā,చురియా,,churiyā,src::site cat::urdu,W0262
+cannon (Persian via Urdu),phirangi,ఫిరంగి,,adi phirangi,src::site cat::urdu,W0263
+even without ___ (from lēdu),lēkunnā,లేకున్నా,,gajjel lēkunnā,src::site cat::grammar,W0264
+men (Telangana dialect plural),mogōḷḷu,మొగోళ్ళు,,mogōḷḷa duniyā,src::site cat::grammar,W0265
+"redly, in a red way (from erupu)",erragā,ఎర్రగా,,erragā aitadi,src::site cat::grammar,W0266
+"dear one, beloved (Telangana: seliyā)",cheliyā,చెలియా,,rādurā seliyā,src::site cat::poetic,W0267
+"charms, delights",muripālu,మురిపాలు,,vastāy muripāl,src::site cat::poetic,W0268
+"lioness, tigress — a fierce woman",śivangi,శివంగి,,adi śivangi,src::site cat::poetic,W0269
+clove (also a sharpness metaphor),lavangaṁ,లవంగం,,māṭala ghāṭu lavangi,src::site cat::poetic,W0270
+You,nuvva,నువ్వ,,,src::book1000,W0272
+Us,manaṁ,మనం,,,src::book1000,W0274
+that; those,ā,ఆ,,,src::top1000 flag::multi-gloss,W0275
+They,vāru,వారు,,,src::book1000 src::top1000 flag::inflected,W0276
+was; is; has  [form of ఉండు],undi,ఉంది,,,src::top1000 flag::inflected flag::multi-gloss flag::verbform,W0277
+He,ataḍu,అతడు,,,src::book1000,W0278
+for,kōsaṁ,కోసం,,,src::top1000,W0279
+are; were; been; include,unnāyi,ఉన్నాయి,,,src::top1000 flag::inflected flag::multi-gloss,W0281
+To me,nāku/ nanu,నాకు/ నను,,,src::book1000 flag::phrase,W0282
+To them,vāriki,వారికి,,,src::book1000,W0284
+To him; him,ataniki,అతనికి,,,src::book1000 src::top1000 flag::multi-gloss,W0285
+be  [form of ఉండు],uṇṭundi,ఉంటుంది,,,src::top1000 flag::inflected flag::verbform,W0286
+Why?; For what ?,enduku?,ఎందుకు?,,,src::book1000 flag::multi-gloss,W0287
+at,vadda,వద్ద,,,src::top1000,W0288
+How ?,elā ?,ఎలా ?,,,src::book1000 flag::phrase,W0289
+have; contain,kaligi,కలిగి,,,src::top1000 flag::multi-gloss,W0291
+this; these,ī,ఈ,,,src::top1000 flag::multi-gloss,W0293
+How Much ?,enta?,ఎంత?,,,src::book1000,W0294
+When ?,eppuḍu?,ఎప్పుడు?,,,src::book1000,W0296
+by; through,dvārā,ద్వారా,,,src::top1000 flag::multi-gloss,W0297
+Where ?,ekkaḍa?,ఎక్కడ?,,,src::book1000,W0298
+hot; heat,vēḍi,వేడి,,,src::top1000 flag::multi-gloss,W0299
+Who ?,evaru?,ఎవరు?,,,src::book1000,W0300
+word; term,padaṁ,పదం,,,src::top1000 flag::multi-gloss,W0301
+Agree,angīkarinchu,అంగీకరించు,,,src::book1000,W0304
+Allow,anumatinchu,అనుమతించు,,,src::book1000,W0305
+Believe,nammu,నమ్ము,,,src::book1000,W0306
+Stop,āpaṇḍi,ఆపండి,,,src::book1000 flag::inflected,W0307
+or; nor,lēdā,లేదా,,,src::top1000 flag::multi-gloss,W0308
+Home; house,illu,ఇల్లు,,,src::book1000 src::top1000 flag::multi-gloss,W0309
+had; came; got  [form of రా],vachchindi,వచ్చింది,,,src::top1000 flag::inflected flag::multi-gloss flag::verbform,W0310
+To Buy,konaḍaṁ,కొనడం,,,src::book1000,W0311
+Drinking,trāgi,త్రాగి,,,src::book1000,W0313
+Sit Down  [form of కూర్చో],kūrchō,కూర్చో,,,src::book1000 flag::inflected flag::verbform,W0315
+Understand,arthanchēsukō,అర్థంచేసుకో,,,src::book1000,W0317
+and,mariyu,మరియు,,,src::top1000,W0318
+Hello,namastē,నమస్తే,,,src::book1000,W0319
+can,cheyyavachchu,చెయ్యవచ్చు,,,src::top1000,W0322
+Evening,sāyantraṁ,సాయంత్రం,,,src::book1000 src::top1000,W0323
+out,avuṭ,అవుట్,,,src::top1000,W0324
+other,itara,ఇతర,,,src::top1000,W0325
+do  [form of చేయి],chēyaṇḍi,చేయండి,,,src::top1000 flag::inflected flag::verbform,W0326
+their,vāri,వారి,,,src::top1000,W0327
+Grandfather,tātayya/ tātagāru,తాతయ్య/ తాతగారు,,,src::book1000 flag::inflected flag::phrase,W0329
+if  [form of ఉండు],uṇṭē,ఉంటే,,,src::top1000 flag::inflected flag::verbform,W0330
+will; won’t,reḍī,రెడీ,,,src::top1000 flag::multi-gloss,W0331
+Vegetables,kūragāyalu,కూరగాయలు,,,src::book1000,W0332
+how,elā,ఎలా,,,src::top1000,W0333
+Brinjal,vankāya,వంకాయ,,,src::book1000,W0334
+said  [form of అను],annāḍu,అన్నాడు,,,src::top1000 flag::inflected flag::verbform,W0335
+Cauliflower,kālīphlavar,కాలీఫ్లవర్,,,src::book1000,W0336
+each; every,prati,ప్రతి,,,src::top1000 flag::multi-gloss,W0337
+Coconuts,kobbari kāya,కొబ్బరి కాయ,,,src::book1000 flag::phrase,W0338
+tell  [form of చెప్పు],cheppaṇḍi,చెప్పండి,,,src::top1000 flag::inflected flag::verbform,W0339
+Mint,pudīnā,పుదీనా,,,src::book1000,W0340
+does  [form of చేయి],chēstundi,చేస్తుంది,,,src::top1000 flag::inflected flag::verbform,W0341
+Peas,baṭhāṇi,బఠాణి,,,src::book1000,W0342
+Onions,ullipāya,ఉల్లిపాయ,,,src::book1000,W0344
+Garlic,vellullipāya,వెల్లుల్లిపాయ,,,src::book1000,W0345
+want,kāvalasina,కావలసిన,,,src::top1000,W0346
+Potato,bangāḷādumpa,బంగాళాదుంప,,,src::book1000,W0347
+air; wind,gāli,గాలి,,,src::top1000 flag::multi-gloss,W0348
+Tomato,ṭamāṭā,టమాటా,,,src::book1000,W0349
+well,bāgā,బాగా,,,src::top1000,W0350
+Cucumber,kīradōsakāya,కీరదోసకాయ,,,src::book1000,W0351
+Drumstick,mulakkāya,ములక్కాయ,,,src::book1000,W0353
+play,plē,ప్లే,,,src::top1000,W0354
+Ladyfinger,beṇḍakāya,బెండకాయ,,,src::book1000,W0355
+end; finish,mugimpu,ముగింపు,,,src::top1000 flag::multi-gloss,W0356
+Black,nalupu,నలుపు,,,src::book1000 src::top1000,W0357
+White,telupu,తెలుపు,,,src::book1000 src::top1000,W0358
+home,hōm,హోమ్,,,src::top1000,W0359
+read  [form of చదువు],chadavaḍāniki,చదవడానికి,,,src::top1000 flag::inflected flag::verbform,W0360
+hand,chēti,చేతి,,,src::top1000,W0361
+spell,akṣarakrama,అక్షరక్రమ,,,src::top1000,W0364
+Yellow,pasupu,పసుపు,,,src::book1000 src::top1000,W0365
+add,jōḍinchaṇḍi,జోడించండి,,,src::top1000 flag::inflected,W0366
+Milk,pālu,పాలు,,,src::book1000 src::top1000,W0368
+land; earth; ground,bhūmi,భూమి,,,src::top1000 flag::multi-gloss,W0369
+Curd,perugu,పెరుగు,,,src::book1000,W0370
+must; should,tappaka,తప్పక,,,src::top1000 flag::multi-gloss,W0372
+Rice,biyyaṁ,బియ్యం,,,src::book1000,W0373
+Wheat,gōdhumalu,గోధుమలు,,,src::book1000,W0374
+high,adhika,అధిక,,,src::top1000,W0375
+such,iṭuvaṇṭi,ఇటువంటి,,,src::top1000,W0376
+follow,anusarinchaṇḍi,అనుసరించండి,,,src::top1000 flag::inflected,W0378
+Salt,uppu,ఉప్పు,,,src::book1000 src::top1000,W0379
+act; law,chaṭṭaṁ,చట్టం,,,src::top1000 flag::multi-gloss,W0380
+Sugar,panchadāra,పంచదార,,,src::book1000,W0381
+why,enduku,ఎందుకు,,,src::top1000,W0382
+Fire,agni,అగ్ని,,,src::book1000 src::top1000,W0383
+ask,gōvā,గోవా,,,src::top1000,W0384
+Run  [form of పరుగెత్తు],parugettu,పరుగెత్తు,,,src::book1000 flag::inflected flag::verbform,W0385
+men,puruṣulu,పురుషులు,,,src::top1000,W0386
+Thief,donga,దొంగ,,,src::book1000,W0387
+change,mārpu,మార్పు,,,src::top1000,W0388
+Calendar,panchāngaṁ,పంచాంగం,,,src::book1000,W0389
+went  [form of వెళ్ళు],veḷḷindi,వెళ్ళింది,,,src::top1000 flag::inflected flag::verbform,W0390
+Date,tēdī,తేదీ,,,src::book1000,W0391
+light,kānti,కాంతి,,,src::top1000,W0392
+Today,īrōju,ఈరోజు,,,src::book1000,W0393
+kind; type,rakaṁ,రకం,,,src::top1000 flag::multi-gloss,W0394
+Yesterday,ninna,నిన్న,,,src::book1000,W0395
+off,āph,ఆఫ్,,,src::top1000,W0396
+Tomorrow,rēpu,రేపు,,,src::book1000,W0397
+need; necessary; require,avasaraṁ,అవసరం,,,src::top1000 flag::multi-gloss,W0398
+Everyday,pratirōju,ప్రతిరోజు,,,src::book1000,W0399
+Day,rōju,రోజు,,,src::book1000 src::top1000,W0400
+picture,chitrānni,చిత్రాన్ని,,,src::top1000,W0401
+try,prayatninchaṇḍi,ప్రయత్నించండి,,,src::top1000 flag::inflected,W0402
+Journey,puṭṭinarōju puṭṭinarōjuśubhākānkṣalu prayāṇaṁ,పుట్టినరోజు పుట్టినరోజుశుభాకాంక్షలు ప్రయాణం,,,src::book1000 flag::phrase,W0403
+us,māku,మాకు,,,src::top1000,W0404
+again,maḷḷī,మళ్ళీ,,,src::top1000,W0405
+Some; few; certain,konni,కొన్ని,,,src::book1000 src::top1000 flag::multi-gloss,W0406
+animal,jantu,జంతు,,,src::top1000,W0407
+point,pāyiṇṭ,పాయింట్,,,src::top1000,W0408
+mother,talli,తల్లి,,,src::top1000,W0409
+world,prapancha,ప్రపంచ,,,src::top1000,W0410
+Bad,cheḍu,చెడు,,,src::book1000 src::top1000,W0411
+It's okay,paravālēdu,పరవాలేదు,,,src::book1000,W0412
+build,nirminchaḍāniki,నిర్మించడానికి,,,src::top1000,W0413
+self,svīya,స్వీయ,,,src::top1000,W0414
+What ?,ēmi ?,ఏమి ?,,,src::book1000 flag::phrase,W0415
+father; dad,taṇḍri,తండ్రి,,,src::top1000 flag::multi-gloss,W0416
+any; no,ē,ఏ,,,src::top1000 flag::multi-gloss,W0418
+Paper,pēpar,పేపర్,,,src::book1000,W0419
+Book,pustakamaṁ,పుస్తకమం,,,src::book1000,W0420
+Time,samayaṁ,సమయం,,,src::book1000 src::top1000,W0421
+part,bhāgaṁ,భాగం,,,src::top1000,W0422
+Always,eppaṭi lāgā,ఎప్పటి లాగా,,,src::book1000 flag::phrase,W0423
+take,paḍutundi,పడుతుంది,,,src::top1000 flag::inflected,W0424
+get,pondaṇḍi,పొందండి,,,src::top1000 flag::inflected,W0426
+place,sthalaṁ,స్థలం,,,src::top1000,W0427
+Face,mukhaṁ,ముఖం,,,src::book1000 src::top1000,W0428
+made; make,tayāru,తయారు,,,src::top1000 flag::inflected flag::multi-gloss,W0429
+Eat,tanu,తను,,,src::book1000,W0430
+live,nivasistunnāru,నివసిస్తున్నారు,,,src::top1000 flag::inflected,W0431
+Drink,ḍāg,డాగ్,,,src::book1000,W0432
+Walk,naḍavaḍaṁ,నడవడం,,,src::book1000,W0433
+after,tarvāta,తర్వాత,,,src::top1000,W0434
+Letter (alphabet),rāyu,రాయు,,,src::book1000,W0435
+back,tirigi,తిరిగి,,,src::top1000,W0436
+Study,chduvva,చ్దువ్వ,,,src::book1000,W0437
+MealsBhojanam,bhōjanaṁ,భోజనం,,,src::book1000,W0438
+only,mātramē,మాత్రమే,,,src::top1000,W0439
+ClothBatta,bṭa,బ్ట,,,src::book1000,W0440
+round,rauṇḍ,రౌండ్,,,src::top1000,W0441
+LanguageBaasha; language,bhāṣa,భాష,,,src::book1000 src::top1000 flag::multi-gloss,W0442
+Number(number)Ankelu,ankelu,అంకెలు,,,src::book1000,W0443
+year,saṁvatsaraṁ,సంవత్సరం,,,src::top1000,W0444
+Fruits; fruit,paṇḍu,పండు,,,src::book1000 src::top1000 flag::multi-gloss,W0445
+Apple,āpal paṇḍu,ఆపల్ పండు,,,src::book1000 flag::phrase,W0446
+show,ṣō,షో,,,src::top1000,W0447
+Banana,arṭṭapaṇḍu,అర్ట్టపండు,,,src::book1000,W0448
+Custard apple,sīā phlaṁ,సీా ఫ్లం,,,src::book1000 flag::phrase,W0450
+me,nāku,నాకు,,,src::top1000,W0451
+Grapes,tradākṣa,త్రదాక్ష,,,src::book1000,W0452
+give,ivvālani,ఇవ్వాలని,,,src::top1000,W0453
+Guava,jampaṇḍu,జంపండు,,,src::book1000,W0454
+Lemon,nimakāya,నిమకాయ,,,src::book1000,W0455
+Lychee,llachi,ల్లచి,,,src::book1000,W0456
+Mango,māmiḍi paṇḍu,మామిడి పండు,,,src::book1000 flag::phrase,W0457
+very; much; too; quite; lot,chālā,చాలా,,,src::top1000 flag::multi-gloss,W0458
+just,kēvalaṁ,కేవలం,,,src::top1000,W0459
+form,rūpaṁ,రూపం,,,src::top1000,W0461
+Pear,peri paṇḍu,పెరి పండు,,,src::book1000 flag::phrase,W0462
+sentence,vākyaṁ,వాక్యం,,,src::top1000,W0463
+Pineapple,anāsapaṇḍu,అనాసపండు,,,src::book1000,W0464
+great,goppa,గొప్ప,,,src::top1000,W0465
+Plum,rēgupaṇḍu,రేగుపండు,,,src::book1000,W0466
+think,anukuṇṭunnānu,అనుకుంటున్నాను,,,src::top1000 flag::inflected,W0467
+Direction,dikku,దిక్కు,,,src::book1000,W0468
+say,sē,సే,,,src::top1000,W0469
+East,tūrpu,తూర్పు,,,src::book1000 src::top1000,W0470
+help,sahāyaṁ,సహాయం,,,src::top1000,W0471
+West,paśchima,పశ్చిమ,,,src::book1000 src::top1000,W0472
+low; less,takkuva,తక్కువ,,,src::top1000 flag::multi-gloss,W0473
+North,uttaraṁ,ఉత్తరం,,,src::book1000,W0474
+line,lain,లైన్,,,src::top1000,W0475
+South,dakṣiṇaṁ,దక్షిణం,,,src::book1000,W0476
+differ,tēḍā,తేడా,,,src::top1000,W0477
+Here,ikkaḍa,ఇక్కడ,,,src::book1000 src::top1000,W0478
+There,akkaḍa,అక్కడ,,,src::book1000 src::top1000,W0479
+That way,āmārgaṁlō,ఆమార్గంలో,,,src::book1000,W0481
+mean; meant,arthaṁ,అర్థం,,,src::top1000 flag::multi-gloss,W0482
+Turn left,eḍamavaiputirugu,ఎడమవైపుతిరుగు,,,src::book1000,W0483
+before; front,mundu,ముందు,,,src::top1000 flag::multi-gloss,W0484
+Tur Turn right,kuḍivaiputirugu,కుడివైపుతిరుగు,,,src::book1000,W0485
+move,taralimpu,తరలింపు,,,src::top1000,W0486
+Turn around,chuṭṭūtirugu,చుట్టూతిరుగు,,,src::book1000,W0487
+Opposite,edurugā,ఎదురుగా,,,src::book1000,W0488
+boy,bāy,బాయ్,,,src::top1000,W0489
+Slowly,melligā,మెల్లిగా,,,src::book1000,W0490
+Fast,vēgangā,వేగంగా,,,src::book1000,W0491
+On top,mīda,మీద,,,src::book1000,W0492
+same,adē,అదే,,,src::top1000,W0493
+Above,paina,పైన,,,src::book1000 src::top1000,W0494
+Inside,lōpalā,లోపలా,,,src::book1000,W0495
+all,anni,అన్ని,,,src::top1000,W0496
+Outside,bayaṭā,బయటా,,,src::book1000,W0497
+Below; under,kinda,కింద,,,src::book1000 src::top1000 flag::multi-gloss,W0498
+when,unnappuḍu,ఉన్నప్పుడు,,,src::top1000,W0499
+Nearby; near,samīpaṁlō,సమీపంలో,,,src::book1000 src::top1000 flag::multi-gloss,W0500
+up,ap,అప్,,,src::top1000,W0501
+Left,eḍama,ఎడమ,,,src::book1000 src::top1000,W0502
+use,upayōgaṁ,ఉపయోగం,,,src::top1000,W0503
+Ahead,pradhama,ప్రధమ,,,src::book1000,W0505
+way; path,mārgaṁ,మార్గం,,,src::top1000 flag::multi-gloss,W0506
+Behind,venuka,వెనుక,,,src::book1000 src::top1000,W0507
+about,gurinchi,గురించి,,,src::top1000,W0508
+Follow me,nā veṇṭaraṇḍi,నా వెంటరండి,,,src::book1000 flag::inflected flag::phrase,W0509
+many; several,anēka,అనేక,,,src::top1000 flag::multi-gloss,W0510
+Airport,vimānāśrayaṁ,విమానాశ్రయం,,,src::book1000,W0511
+then,appuḍu,అప్పుడు,,,src::top1000,W0512
+Drive carefully,jāgrattagā naḍapanundi,జాగ్రత్తగా నడపనుంది,,,src::book1000 flag::inflected flag::phrase,W0513
+them; might,vāṭini,వాటిని,,,src::top1000 flag::multi-gloss,W0514
+write  [form of రాయి],rāyaḍāniki,రాయడానికి,,,src::top1000 flag::inflected flag::verbform,W0516
+Stone  [form of రాయి],rāyi,రాయి,,,src::book1000 src::top1000 flag::inflected flag::verbform,W0517
+would  [form of చేయి],chēstānu,చేస్తాను,,,src::top1000 flag::inflected flag::verbform,W0518
+like,vaṇṭi,వంటి,,,src::top1000,W0519
+People,prajalu,ప్రజలు,,,src::book1000 src::top1000,W0520
+so,kābaṭṭi,కాబట్టి,,,src::top1000,W0521
+New,kotta,కొత్త,,,src::book1000 src::top1000,W0522
+Old,pāta,పాత,,,src::book1000 src::top1000,W0523
+her,āme yokka,ఆమె యొక్క,,,src::top1000 flag::phrase,W0524
+Mad,pichchi,పిచ్చి,,,src::book1000,W0525
+long,dīrgha,దీర్ఘ,,,src::top1000,W0526
+Question,praśna,ప్రశ్న,,,src::book1000 src::top1000,W0527
+thing; subject; matter,viṣayaṁ,విషయం,,,src::top1000 flag::multi-gloss,W0529
+Window,kiṭikī,కిటికీ,,,src::book1000,W0530
+see; look  [form of చూడు],chūḍaṇḍi,చూడండి,,,src::top1000 flag::inflected flag::multi-gloss flag::verbform,W0531
+Room,gadi,గది,,,src::book1000 src::top1000,W0532
+Clock,gaḍiyāraṁ,గడియారం,,,src::book1000 src::top1000,W0533
+Eat ( Respect  [form of తిను],tinaṇḍi,తినండి,,,src::book1000 flag::inflected flag::verbform,W0534
+Resident,nivāsasthuḍu,నివాసస్థుడు,,,src::book1000,W0535
+Family,kuṭumbhaṁ,కుటుంభం,,,src::book1000,W0536
+more,marinta,మరింత,,,src::top1000,W0537
+Trouble,ibbandi,ఇబ్బంది,,,src::book1000 src::top1000,W0538
+Lamp,dīpaṁ,దీపం,,,src::book1000,W0539
+could,anukonuṭa,అనుకొనుట,,,src::top1000,W0540
+Be Care,jāgratta,జాగ్రత్త,,,src::book1000,W0541
+go,veḷḷi,వెళ్ళి,,,src::top1000,W0542
+Now,ippuḍu,ఇప్పుడు,,,src::book1000 src::top1000,W0543
+come,vachchina,వచ్చిన,,,src::top1000,W0544
+did  [form of చేయి],chēsindi,చేసింది,,,src::top1000 flag::inflected flag::verbform,W0545
+Writing,rāyaḍaṁ,రాయడం,,,src::book1000,W0546
+number,sankhya,సంఖ్య,,,src::top1000,W0547
+sound,śabdamu,శబ్దము,,,src::top1000,W0548
+Go  [form of వెళ్ళు],veḷḷaṇḍi,వెళ్ళండి,,,src::book1000 flag::inflected flag::verbform,W0549
+Give  [form of ఇవ్వు],ivvaṇḍi,ఇవ్వండి,,,src::book1000 flag::inflected flag::verbform,W0550
+most,atyanta,అత్యంత,,,src::top1000,W0551
+Stay  [form of ఉండు],uṇḍu,ఉండు,,,src::book1000 flag::inflected flag::verbform,W0552
+Patience,ōpika,ఓపిక,,,src::book1000,W0553
+Interrupt,antarāyaṁ,అంతరాయం,,,src::book1000,W0554
+over,paigā,పైగా,,,src::top1000,W0555
+Respect,gauravaṁ,గౌరవం,,,src::book1000,W0556
+Elders,peddavāḷlu,పెద్దవాళ్లు,,,src::book1000,W0557
+water,nīṭi,నీటి,,,src::top1000,W0558
+Reason; cause,kāraṇaṁ,కారణం,,,src::book1000 src::top1000 flag::multi-gloss,W0559
+than,kaṇṭē,కంటే,,,src::top1000,W0560
+Happiness,santōṣaṁ,సంతోషం,,,src::book1000,W0561
+call,kāl,కాల్,,,src::top1000,W0562
+Clean,śubhramaina,శుభ్రమైన,,,src::book1000,W0563
+Print,mudraṇa,ముద్రణ,,,src::book1000 src::top1000,W0564
+Best,uttama,ఉత్తమ,,,src::book1000 src::top1000,W0565
+may,mē,మే,,,src::top1000,W0566
+down,ḍaun,డౌన్,,,src::top1000,W0568
+Promise,pramāṇaṁ,ప్రమాణం,,,src::book1000,W0569
+side; toward,vaipu,వైపు,,,src::top1000 flag::multi-gloss,W0570
+Noise,śabdaṁ,శబ్దం,,,src::book1000 src::top1000,W0571
+Like,iṣṭaṁ,ఇష్టం,,,src::book1000,W0572
+Love,prēma,ప్రేమ,,,src::book1000 src::top1000,W0573
+find,kanugonēnduku,కనుగొనేందుకు,,,src::top1000,W0574
+Attraction,ākarṣaṇa,ఆకర్షణ,,,src::book1000,W0575
+Hate,dvēṣaṁ,ద్వేషం,,,src::book1000,W0576
+Marriage,peḷli,పెళ్లి,,,src::book1000,W0578
+own,sonta,సొంత,,,src::top1000,W0579
+School,pāṭhaśāla,పాఠశాల,,,src::book1000 src::top1000,W0580
+page,pējī,పేజీ,,,src::top1000,W0581
+Price; cost,dhara,ధర,,,src::book1000 src::top1000 flag::multi-gloss,W0582
+Cry,ēḍupu,ఏడుపు,,,src::book1000,W0583
+found,dorakalēdu,దొరకలేదు,,,src::top1000,W0584
+answer,samādhānaṁ,సమాధానం,,,src::top1000,W0585
+Rose,gulābī,గులాబీ,,,src::book1000 src::top1000,W0586
+Right now,ippuḍē,ఇప్పుడే,,,src::book1000,W0587
+grow,perugutāyi,పెరుగుతాయి,,,src::top1000 flag::inflected,W0588
+Large,peddadi,పెద్దది,,,src::book1000,W0589
+study,adhyayanaṁ,అధ్యయనం,,,src::top1000,W0590
+Small,chinnadi,చిన్నది,,,src::book1000,W0591
+still,ippaṭikī,ఇప్పటికీ,,,src::top1000,W0592
+Dog,kukka,కుక్క,,,src::book1000 src::top1000,W0593
+learn,telusukōvaḍāniki,తెలుసుకోవడానికి,,,src::top1000,W0594
+Beating,koṭṭaḍaṁ,కొట్టడం,,,src::book1000,W0595
+plant,mokka,మొక్క,,,src::top1000,W0596
+Cow,āvu,ఆవు,,,src::book1000 src::top1000,W0597
+cover,kavar,కవర్,,,src::top1000,W0598
+Fly,īga,ఈగ,,,src::book1000,W0599
+food,āhāra,ఆహార,,,src::top1000,W0600
+Squirrel,uḍuta,ఉడుత,,,src::book1000,W0601
+sun,sūryuḍu,సూర్యుడు,,,src::top1000,W0602
+Cradle,ūyala,ఊయల,,,src::book1000,W0603
+Rishi,riṣi,రిషి,,,src::book1000,W0604
+between; among; middle,madhya,మధ్య,,,src::top1000 flag::multi-gloss,W0605
+Rat,eluka,ఎలుక,,,src::book1000,W0606
+state,rāṣṭra,రాష్ట్ర,,,src::top1000,W0607
+Elephant,ēnugu,ఏనుగు,,,src::book1000,W0608
+keep,unchēnduku,ఉంచేందుకు,,,src::top1000,W0609
+Sea,samudraṁ,సముద్రం,,,src::book1000,W0610
+eye,kaṇṭi,కంటి,,,src::top1000,W0611
+never; ever,eppuḍū,ఎప్పుడూ,,,src::top1000 flag::multi-gloss,W0612
+last; past,gata,గత,,,src::top1000 flag::multi-gloss,W0614
+Words,padālu,పదాలు,,,src::book1000,W0615
+let,vīlu,వీలు,,,src::top1000,W0616
+thought; idea,ālōchana,ఆలోచన,,,src::top1000 flag::multi-gloss,W0617
+city,nagaraṁ,నగరం,,,src::top1000,W0618
+tree,cheṭṭu,చెట్టు,,,src::top1000,W0619
+cross,krās,క్రాస్,,,src::top1000,W0620
+farm,vyavasāya,వ్యవసాయ,,,src::top1000,W0621
+start; begin,prārambhaṁ,ప్రారంభం,,,src::top1000 flag::multi-gloss,W0623
+story,katha,కథ,,,src::top1000,W0624
+saw,rampapu,రంపపు,,,src::top1000,W0625
+far,ippaṭivaraku,ఇప్పటివరకు,,,src::top1000,W0626
+sea; ocean,samudra,సముద్ర,,,src::top1000 flag::multi-gloss,W0627
+draw,ḍrā,డ్రా,,,src::top1000,W0628
+late,chivari,చివరి,,,src::top1000,W0629
+run,ran,రన్,,,src::top1000,W0630
+don’t,chēyalēnu,చేయలేను,,,src::top1000,W0631
+while; though,ayitē,అయితే,,,src::top1000 flag::multi-gloss,W0632
+press,patrikā,పత్రికా,,,src::top1000,W0633
+close,daggaragā,దగ్గరగా,,,src::top1000,W0634
+night,rātri,రాత్రి,,,src::top1000,W0635
+real,nija,నిజ,,,src::top1000,W0636
+life,jīvitaṁ,జీవితం,,,src::top1000,W0637
+north,uttara,ఉత్తర,,,src::top1000,W0638
+book,pustakaṁ,పుస్తకం,,,src::top1000,W0639
+carry,tīsuku,తీసుకు,,,src::top1000,W0640
+took,paṭṭindi,పట్టింది,,,src::top1000 flag::inflected,W0641
+science,sains,సైన్స్,,,src::top1000,W0642
+eat  [form of తిను],tinaḍāniki,తినడానికి,,,src::top1000 flag::inflected flag::verbform,W0643
+began,prārambhamaindi,ప్రారంభమైంది,,,src::top1000,W0644
+fish,chēpa,చేప,,,src::top1000,W0645
+mountain,parvatamu,పర్వతము,,,src::top1000,W0646
+stop,āpaḍāniki,ఆపడానికి,,,src::top1000,W0647
+once,okasāri,ఒకసారి,,,src::top1000,W0648
+base,bēs,బేస్,,,src::top1000,W0649
+horse,gurraṁ,గుర్రం,,,src::top1000,W0650
+cut,kaṭ,కట్,,,src::top1000,W0651
+sure,khachchitangā,ఖచ్చితంగా,,,src::top1000,W0652
+watch,chūḍaṭāniki,చూడటానికి,,,src::top1000,W0653
+wood,chekka,చెక్క,,,src::top1000,W0654
+main; major,pradhāna,ప్రధాన,,,src::top1000 flag::multi-gloss,W0655
+seem,anipinchavachchu,అనిపించవచ్చు,,,src::top1000,W0657
+together,kalisi,కలిసి,,,src::top1000,W0658
+next,tadupari,తదుపరి,,,src::top1000,W0659
+walk,naḍichi,నడిచి,,,src::top1000,W0660
+example,udāharaṇaku,ఉదాహరణకు,,,src::top1000,W0661
+ease,sulabhaṁ,సులభం,,,src::top1000,W0662
+paper,kāgitaṁ,కాగితం,,,src::top1000,W0663
+group,samūhaṁ,సమూహం,,,src::top1000,W0664
+always,ellappuḍū,ఎల్లప్పుడూ,,,src::top1000,W0665
+music,sangītaṁ,సంగీతం,,,src::top1000,W0666
+often,tarachugā,తరచుగా,,,src::top1000,W0668
+letter,lēkha,లేఖ,,,src::top1000,W0669
+mile,mailu,మైలు,,,src::top1000,W0671
+river,nadi,నది,,,src::top1000,W0672
+feet,aḍugula,అడుగుల,,,src::top1000,W0673
+care,saṁrakṣaṇa,సంరక్షణ,,,src::top1000,W0674
+second,reṇḍava,రెండవ,,,src::top1000,W0675
+enough,taginanta,తగినంత,,,src::top1000,W0676
+plain,sādā,సాదా,,,src::top1000,W0677
+usual; common; simple; general,sādhāraṇa,సాధారణ,,,src::top1000 flag::multi-gloss,W0678
+young,yuva,యువ,,,src::top1000,W0679
+ready,siddhangā,సిద్ధంగా,,,src::top1000,W0680
+red,erupu,ఎరుపు,,,src::top1000,W0681
+list,jābitā,జాబితా,,,src::top1000,W0682
+feel,anubhūti,అనుభూతి,,,src::top1000,W0683
+talk,charcha,చర్చ,,,src::top1000,W0684
+bird,pakṣi,పక్షి,,,src::top1000,W0685
+soon,tvaralō,త్వరలో,,,src::top1000,W0686
+body,śarīra,శరీర,,,src::top1000,W0687
+family,kuṭumbaṁ,కుటుంబం,,,src::top1000,W0688
+direct,pratyakṣa,ప్రత్యక్ష,,,src::top1000,W0689
+pose,bhangimalō,భంగిమలో,,,src::top1000,W0690
+leave,vadili,వదిలి,,,src::top1000,W0691
+measure,kolavaṭāniki,కొలవటానికి,,,src::top1000,W0692
+door,talupu,తలుపు,,,src::top1000,W0693
+product; produce,utpatti,ఉత్పత్తి,,,src::top1000 flag::multi-gloss,W0694
+numeral,sankhyā,సంఖ్యా,,,src::top1000,W0695
+class,taragati,తరగతి,,,src::top1000,W0696
+happen,jarigē,జరిగే,,,src::top1000,W0697
+ship,ōḍa,ఓడ,,,src::top1000,W0698
+area; region,prāntaṁ,ప్రాంతం,,,src::top1000 flag::multi-gloss,W0699
+half,sagaṁ,సగం,,,src::top1000,W0700
+rock,rāk,రాక్,,,src::top1000,W0701
+order,ārḍar,ఆర్డర్,,,src::top1000,W0702
+south,dakṣiṇa,దక్షిణ,,,src::top1000,W0703
+problem,samasya,సమస్య,,,src::top1000,W0704
+piece,mukka,ముక్క,,,src::top1000,W0705
+told  [form of చెప్పు],cheppāru,చెప్పారు,,,src::top1000 flag::inflected flag::verbform,W0706
+pass,pās,పాస్,,,src::top1000,W0707
+top,ṭāp,టాప్,,,src::top1000,W0708
+whole; total,mottaṁ,మొత్తం,,,src::top1000 flag::multi-gloss,W0709
+king,rāju,రాజు,,,src::top1000,W0710
+street,vīdhi,వీధి,,,src::top1000,W0711
+inch,anguḷaṁ,అంగుళం,,,src::top1000,W0712
+multiply,guṇistāru,గుణిస్తారు,,,src::top1000 flag::inflected,W0713
+nothing,ēmī,ఏమీ,,,src::top1000,W0714
+course,kōrsu,కోర్సు,,,src::top1000,W0715
+stay  [form of ఉండు],uṇḍaḍāniki,ఉండడానికి,,,src::top1000 flag::inflected flag::verbform,W0716
+wheel,chakraṁ,చక్రం,,,src::top1000,W0717
+force; power; energy,śakti,శక్తి,,,src::top1000 flag::multi-gloss,W0718
+blue,nīlaṁ,నీలం,,,src::top1000,W0719
+object,vastuvu,వస్తువు,,,src::top1000,W0720
+decide,nirṇayinchukuṇṭāru,నిర్ణయించుకుంటారు,,,src::top1000 flag::inflected,W0721
+surface,uparitala,ఉపరితల,,,src::top1000,W0722
+deep,lōtaina,లోతైన,,,src::top1000,W0723
+moon,chandruḍu,చంద్రుడు,,,src::top1000,W0724
+island,dvīpaṁ,ద్వీపం,,,src::top1000,W0725
+system,vyavastha,వ్యవస్థ,,,src::top1000,W0726
+busy,bijīgā,బిజీగా,,,src::top1000,W0727
+test,parīkṣa,పరీక్ష,,,src::top1000,W0728
+record,rikārḍu,రికార్డు,,,src::top1000,W0729
+boat,paḍava,పడవ,,,src::top1000,W0730
+possible,sādhyaṁ,సాధ్యం,,,src::top1000,W0731
+plane,vimānaṁ,విమానం,,,src::top1000,W0732
+stead,mārugā,మారుగా,,,src::top1000,W0733
+dry,poḍi,పొడి,,,src::top1000,W0734
+wonder,āścharyāniki,ఆశ్చర్యానికి,,,src::top1000,W0735
+thousand,vēla,వేల,,,src::top1000,W0736
+ago,kritaṁ,క్రితం,,,src::top1000,W0737
+ran  [form of నడవు],naḍichindi,నడిచింది,,,src::top1000 flag::inflected flag::verbform,W0738
+check,tanikhī,తనిఖీ,,,src::top1000,W0739
+game,gēm,గేమ్,,,src::top1000,W0740
+shape,ākāraṁ,ఆకారం,,,src::top1000,W0741
+equate,pōlchutāru,పోల్చుతారు,,,src::top1000 flag::inflected,W0742
+miss,mis,మిస్,,,src::top1000,W0743
+brought,tīsukuvachchāru,తీసుకువచ్చారు,,,src::top1000 flag::inflected,W0744
+snow; ice,manchu,మంచు,,,src::top1000 flag::multi-gloss,W0745
+tire,ṭair,టైర్,,,src::top1000,W0746
+bring,tīsukuni,తీసుకుని,,,src::top1000,W0747
+distant,sudūra,సుదూర,,,src::top1000,W0748
+fill,pūrinchaḍāniki,పూరించడానికి,,,src::top1000,W0749
+paint,peyiṇṭ,పెయింట్,,,src::top1000,W0750
+unit,yūniṭ,యూనిట్,,,src::top1000,W0751
+town,paṭṭaṇaṁ,పట్టణం,,,src::top1000,W0752
+fine,jarimānā,జరిమానా,,,src::top1000,W0753
+fly,phlai,ఫ్లై,,,src::top1000,W0754
+fall,vastāyi,వస్తాయి,,,src::top1000 flag::inflected,W0755
+cry,krai,క్రై,,,src::top1000,W0756
+dark,kṛṣṇa,కృష్ణ,,,src::top1000,W0757
+machine,yantraṁ,యంత్రం,,,src::top1000,W0758
+note,gamanika,గమనిక,,,src::top1000,W0759
+wait,vēchi,వేచి,,,src::top1000,W0760
+plan,praṇāḷika,ప్రణాళిక,,,src::top1000,W0761
+figure,phigar,ఫిగర్,,,src::top1000,W0762
+box,bāks,బాక్స్,,,src::top1000,W0764
+noun,nāmavāchakaṁ,నామవాచకం,,,src::top1000,W0765
+field,phīlḍ,ఫీల్డ్,,,src::top1000,W0766
+rest,migilina,మిగిలిన,,,src::top1000,W0767
+correct; proper,saraina,సరైన,,,src::top1000 flag::multi-gloss,W0768
+able,sāmarthyaṁ,సామర్థ్యం,,,src::top1000,W0769
+pound,pauṇḍ,పౌండ్,,,src::top1000,W0770
+done,pūrtayindi,పూర్తయింది,,,src::top1000 flag::inflected,W0771
+beauty,andaṁ,అందం,,,src::top1000,W0772
+drive,ḍraiv,డ్రైవ్,,,src::top1000,W0773
+stood,nilichi,నిలిచి,,,src::top1000,W0774
+teach,bōdhinchaḍāniki,బోధించడానికి,,,src::top1000,W0775
+week,vāraṁ,వారం,,,src::top1000,W0776
+final,ākhari,ఆఖరి,,,src::top1000,W0777
+gave  [form of ఇవ్వు],ichchindi,ఇచ్చింది,,,src::top1000 flag::inflected flag::verbform,W0778
+green,ākupachcha,ఆకుపచ్చ,,,src::top1000,W0779
+quick,śīghra,శీఘ్ర,,,src::top1000,W0781
+develop,abhivṛddhi,అభివృద్ధి,,,src::top1000,W0782
+warm,vechchani,వెచ్చని,,,src::top1000,W0783
+free,uchita,ఉచిత,,,src::top1000,W0784
+strong,balamaina,బలమైన,,,src::top1000,W0785
+special; separate; particular,pratyēka,ప్రత్యేక,,,src::top1000 flag::multi-gloss,W0786
+clear,spaṣṭamaina,స్పష్టమైన,,,src::top1000,W0787
+tail,tōka,తోక,,,src::top1000,W0788
+fact,nijāniki,నిజానికి,,,src::top1000,W0789
+space,spēs,స్పేస్,,,src::top1000,W0790
+heard,vinna,విన్న,,,src::top1000,W0791
+hour,gaṇṭa,గంట,,,src::top1000,W0792
+TRUE,nijamaina,నిజమైన,,,src::top1000,W0793
+during,samayaṁlō,సమయంలో,,,src::top1000,W0794
+remember,gurtu,గుర్తు,,,src::top1000,W0795
+early,prārambha,ప్రారంభ,,,src::top1000,W0796
+hold,paṭṭi,పట్టి,,,src::top1000,W0797
+interest,vaḍḍī,వడ్డీ,,,src::top1000,W0798
+reach,chērukōvaḍāniki,చేరుకోవడానికి,,,src::top1000,W0799
+fast,phāsṭ,ఫాస్ట్,,,src::top1000,W0800
+verb,kriya,క్రియ,,,src::top1000,W0801
+sing,pāḍē,పాడే,,,src::top1000,W0802
+listen  [form of విను],vinaṇḍi,వినండి,,,src::top1000 flag::inflected flag::verbform,W0803
+table,paṭṭika,పట్టిక,,,src::top1000,W0804
+travel,prayāṇa,ప్రయాణ,,,src::top1000,W0805
+morning,udayaṁ,ఉదయం,,,src::top1000,W0806
+vowel,achchu,అచ్చు,,,src::top1000,W0807
+war,yuddhaṁ,యుద్ధం,,,src::top1000,W0808
+lay,lē,లే,,,src::top1000,W0809
+against,vyatirēkangā,వ్యతిరేకంగా,,,src::top1000,W0810
+pattern,namūnā,నమూనా,,,src::top1000,W0811
+slow,nemmadigā,నెమ్మదిగా,,,src::top1000,W0812
+center,seṇṭar,సెంటర్,,,src::top1000,W0813
+person,vyakti,వ్యక్తి,,,src::top1000,W0814
+money,ḍabbu,డబ్బు,,,src::top1000,W0815
+serve,sarv,సర్వ్,,,src::top1000,W0816
+appear,ṭeliphōn,టెలిఫోన్,,,src::top1000,W0817
+road,rōḍḍu,రోడ్డు,,,src::top1000,W0818
+rule,pālana,పాలన,,,src::top1000,W0820
+govern,pālinchē,పాలించే,,,src::top1000,W0821
+cold; cool,challani,చల్లని,,,src::top1000 flag::multi-gloss,W0823
+voice,vāyis,వాయిస్,,,src::top1000,W0825
+hunt,vēṭa,వేట,,,src::top1000,W0826
+probable,mūḍiṇṭini,మూడింటిని,,,src::top1000,W0827
+bed,manchaṁ,మంచం,,,src::top1000,W0828
+brother,sōdaruḍu,సోదరుడు,,,src::top1000,W0829
+ride,raiḍ,రైడ్,,,src::top1000,W0830
+cell,sel,సెల్,,,src::top1000,W0831
+believe,nammakaṁ,నమ్మకం,,,src::top1000,W0832
+perhaps,bahuśā,బహుశా,,,src::top1000,W0833
+pick; choose; select,enchukōṇḍi,ఎంచుకోండి,,,src::top1000 flag::inflected flag::multi-gloss,W0834
+sudden,ākasmika,ఆకస్మిక,,,src::top1000,W0835
+count,kauṇṭ,కౌంట్,,,src::top1000,W0836
+square,chadarapu,చదరపు,,,src::top1000,W0837
+length,poḍavu,పొడవు,,,src::top1000,W0838
+represent,ya,య,,,src::top1000,W0839
+art,kaḷa,కళ,,,src::top1000,W0840
+size,parimāṇaṁ,పరిమాణం,,,src::top1000,W0841
+vary,mārutuṇṭāyi,మారుతుంటాయి,,,src::top1000 flag::inflected,W0842
+settle,sthirapaḍēnduku,స్థిరపడేందుకు,,,src::top1000,W0843
+speak,māṭlāḍaṭaṁ,మాట్లాడటం,,,src::top1000,W0844
+weight,baruvu,బరువు,,,src::top1000,W0845
+circle,sarkil,సర్కిల్,,,src::top1000,W0846
+pair,jata,జత,,,src::top1000,W0847
+divide; division,vibhajana,విభజన,,,src::top1000 flag::multi-gloss,W0848
+syllable,akṣaraṁ,అక్షరం,,,src::top1000,W0849
+felt,bhāvinchāḍu,భావించాడు,,,src::top1000 flag::inflected,W0850
+ball,banti,బంతి,,,src::top1000,W0852
+yet,inkā,ఇంకా,,,src::top1000,W0853
+drop,ḍrāp,డ్రాప్,,,src::top1000,W0854
+heart,guṇḍe,గుండె,,,src::top1000,W0855
+am  [form of ఉండు],unnānu,ఉన్నాను,,,src::top1000 flag::inflected flag::verbform,W0856
+present,prastutaṁ,ప్రస్తుతం,,,src::top1000,W0857
+heavy; huge,bhārī,భారీ,,,src::top1000 flag::multi-gloss,W0858
+dance,ḍyāns,డ్యాన్స్,,,src::top1000,W0859
+engine,injin,ఇంజిన్,,,src::top1000,W0860
+position,sthānaṁ,స్థానం,,,src::top1000,W0861
+arm  [form of చేయి],chēyi,చేయి,,,src::top1000 flag::inflected flag::verbform,W0862
+wide; broad,vistṛta,విస్తృత,,,src::top1000 flag::multi-gloss,W0863
+sail,prayāṇamayyāru,ప్రయాణమయ్యారు,,,src::top1000 flag::inflected,W0864
+material,padārthaṁ,పదార్థం,,,src::top1000,W0865
+fraction,bhinnaṁ,భిన్నం,,,src::top1000,W0866
+forest,aṭavī,అటవీ,,,src::top1000,W0867
+sit,kūrchuni,కూర్చుని,,,src::top1000,W0868
+race,rēsu,రేసు,,,src::top1000,W0869
+window,viṇḍō,విండో,,,src::top1000,W0870
+train; rail,railu,రైలు,,,src::top1000 flag::multi-gloss,W0872
+sleep,nidra,నిద్ర,,,src::top1000,W0873
+prove,rujuvu,రుజువు,,,src::top1000,W0874
+lone,oṇṭari,ఒంటరి,,,src::top1000,W0875
+exercise,vyāyāmaṁ,వ్యాయామం,,,src::top1000,W0877
+wall,gōḍa,గోడ,,,src::top1000,W0878
+catch; caught,kyāch,క్యాచ్,,,src::top1000 flag::multi-gloss,W0879
+mount,mauṇṭ,మౌంట్,,,src::top1000,W0880
+wish,anukuṇṭunnārā,అనుకుంటున్నారా,,,src::top1000,W0881
+sky,ākāśaṁlō,ఆకాశంలో,,,src::top1000,W0882
+board,bōrḍu,బోర్డు,,,src::top1000,W0883
+joy,ānandaṁ,ఆనందం,,,src::top1000,W0884
+winter,śītākālaṁlō,శీతాకాలంలో,,,src::top1000,W0885
+sat,śani,శని,,,src::top1000,W0886
+written,rāsina,రాసిన,,,src::top1000,W0887
+wild,aḍavi,అడవి,,,src::top1000,W0888
+instrument,vāyidyaṁ,వాయిద్యం,,,src::top1000,W0889
+kept,unchindi,ఉంచింది,,,src::top1000 flag::inflected,W0890
+glass,gāju,గాజు,,,src::top1000,W0891
+grass,gaḍḍi,గడ్డి,,,src::top1000,W0892
+job,udyōgaṁ,ఉద్యోగం,,,src::top1000,W0893
+edge,anchu,అంచు,,,src::top1000,W0894
+sign,sain,సైన్,,,src::top1000,W0895
+visit,paryaṭana,పర్యటన,,,src::top1000,W0896
+soft,sāphṭ,సాఫ్ట్,,,src::top1000,W0897
+fun,saradāgā,సరదాగా,,,src::top1000,W0898
+bright,braiṭ,బ్రైట్,,,src::top1000,W0899
+gas,gyās,గ్యాస్,,,src::top1000,W0900
+weather,vātāvaraṇa,వాతావరణ,,,src::top1000,W0901
+month,nela,నెల,,,src::top1000,W0902
+bear,bharinchalēdani,భరించలేదని,,,src::top1000,W0904
+happy,santōṣangā,సంతోషంగా,,,src::top1000,W0905
+hope,āśistunnāmu,ఆశిస్తున్నాము,,,src::top1000 flag::inflected,W0906
+flower,puṣpaṁ,పుష్పం,,,src::top1000,W0907
+clothe,dustulu dharimpajēyu,దుస్తులు ధరింపజేయు,,,src::top1000 flag::phrase,W0908
+strange,vinta,వింత,,,src::top1000,W0909
+gone,veḷlipōvaḍantō,వెళ్లిపోవడంతో,,,src::top1000,W0910
+trade,vāṇijya,వాణిజ్య,,,src::top1000,W0911
+melody,śrāvyata,శ్రావ్యత,,,src::top1000,W0912
+trip,yātra,యాత్ర,,,src::top1000,W0913
+office,kāryālayaṁ,కార్యాలయం,,,src::top1000,W0914
+receive,andukuṇṭāru,అందుకుంటారు,,,src::top1000 flag::inflected,W0915
+row,varusagā,వరుసగా,,,src::top1000,W0916
+mouth,nōru,నోరు,,,src::top1000,W0917
+exact,khachchitamaina,ఖచ్చితమైన,,,src::top1000,W0918
+symbol,chihnaṁ,చిహ్నం,,,src::top1000,W0919
+die,chanipōyē,చనిపోయే,,,src::top1000,W0920
+least,kanīsaṁ,కనీసం,,,src::top1000,W0921
+shout,aravaḍaṁ,అరవడం,,,src::top1000,W0922
+except,tappa,తప్ప,,,src::top1000,W0923
+wrote,vrāsāru,వ్రాసారు,,,src::top1000 flag::inflected,W0924
+seed,vittanaṁ,విత్తనం,,,src::top1000,W0925
+tone,ṭōn,టోన్,,,src::top1000,W0926
+join,chēraḍāniki,చేరడానికి,,,src::top1000,W0927
+suggest; indicate,sūchistunnāyi,సూచిస్తున్నాయి,,,src::top1000 flag::inflected flag::multi-gloss,W0928
+clean,śubhrangā,శుభ్రంగా,,,src::top1000,W0929
+break,virāmaṁ,విరామం,,,src::top1000,W0930
+lady,lēḍī,లేడీ,,,src::top1000,W0931
+rise,peragaḍaṁ,పెరగడం,,,src::top1000,W0933
+blow,debba,దెబ్బ,,,src::top1000,W0934
+oil,chamuru,చమురు,,,src::top1000,W0935
+blood,rakta,రక్త,,,src::top1000,W0936
+touch,ṭach,టచ్,,,src::top1000,W0937
+grew,perigindi,పెరిగింది,,,src::top1000 flag::inflected,W0938
+cent,śātaṁ,శాతం,,,src::top1000,W0939
+mix,kalapāli,కలపాలి,,,src::top1000,W0940
+team,jaṭṭu,జట్టు,,,src::top1000,W0941
+wire,vair,వైర్,,,src::top1000,W0942
+lost,kōlpōyindi,కోల్పోయింది,,,src::top1000 flag::inflected,W0943
+wear,dharistāru,ధరిస్తారు,,,src::top1000 flag::inflected,W0944
+garden,tōṭa,తోట,,,src::top1000,W0945
+equal,samāna,సమాన,,,src::top1000,W0946
+sent,pampina,పంపిన,,,src::top1000,W0947
+fell,paḍipōyindi,పడిపోయింది,,,src::top1000 flag::inflected,W0948
+fit,saripōyē,సరిపోయే,,,src::top1000,W0949
+flow,pravāhaṁ,ప్రవాహం,,,src::top1000,W0950
+fair,nyāyamaina,న్యాయమైన,,,src::top1000,W0951
+bank,byānku,బ్యాంకు,,,src::top1000,W0952
+collect; gather,sēkarinchaḍāniki,సేకరించడానికి,,,src::top1000 flag::multi-gloss,W0953
+save,sēv,సేవ్,,,src::top1000,W0954
+control,niyantraṇa,నియంత్రణ,,,src::top1000,W0955
+decimal,daśāṁśa,దశాంశ,,,src::top1000,W0956
+ear,chevi,చెవి,,,src::top1000,W0957
+else,vērē,వేరే,,,src::top1000,W0958
+broke,virigindi,విరిగింది,,,src::top1000 flag::inflected,W0959
+case,kēsu,కేసు,,,src::top1000,W0960
+kill,champaḍāniki,చంపడానికి,,,src::top1000,W0961
+son,kumāruḍu,కుమారుడు,,,src::top1000,W0962
+lake,sarassu,సరస్సు,,,src::top1000,W0963
+scale; level,sthāyi,స్థాయి,,,src::top1000 flag::inflected flag::multi-gloss,W0964
+loud,biggaragā,బిగ్గరగా,,,src::top1000,W0965
+spring,vasanta,వసంత,,,src::top1000,W0966
+observe,gamaninchi,గమనించి,,,src::top1000,W0967
+child,pillala,పిల్లల,,,src::top1000,W0968
+straight,nērugā,నేరుగా,,,src::top1000,W0969
+consonant,hallu,హల్లు,,,src::top1000,W0970
+dictionary,nighaṇṭuvu,నిఘంటువు,,,src::top1000,W0971
+speed,vēgaṁ,వేగం,,,src::top1000,W0972
+method,paddhati,పద్ధతి,,,src::top1000,W0973
+organ,avayava,అవయవ,,,src::top1000,W0974
+pay,chellinchaṭāniki,చెల్లించటానికి,,,src::top1000,W0975
+age,vayassu,వయస్సు,,,src::top1000,W0976
+section,vibhāgaṁ,విభాగం,,,src::top1000,W0977
+dress,dustula,దుస్తుల,,,src::top1000,W0978
+cloud,klauḍ,క్లౌడ్,,,src::top1000,W0979
+surprise,āścharyaṁ,ఆశ్చర్యం,,,src::top1000,W0980
+quiet; silent,niśśabda,నిశ్శబ్ద,,,src::top1000 flag::multi-gloss,W0981
+climb,ārōhaṇanu,ఆరోహణను,,,src::top1000,W0982
+design,ḍijain,డిజైన్,,,src::top1000,W0983
+poor,pēda,పేద,,,src::top1000,W0984
+experiment,prayōgaṁ,ప్రయోగం,,,src::top1000,W0985
+bottom,diguva,దిగువ,,,src::top1000,W0986
+key,kī,కీ,,,src::top1000,W0987
+iron,inumu,ఇనుము,,,src::top1000,W0988
+single,okē,ఒకే,,,src::top1000,W0989
+stick,sṭik,స్టిక్,,,src::top1000,W0990
+flat,phlāṭ,ఫ్లాట్,,,src::top1000,W0991
+skin,charmaṁ,చర్మం,,,src::top1000,W0992
+smile,chirunavvu,చిరునవ్వు,,,src::top1000,W0993
+crease,krīj,క్రీజ్,,,src::top1000,W0994
+hole,randhraṁ,రంధ్రం,,,src::top1000,W0995
+jump,jamp,జంప్,,,src::top1000,W0996
+baby,bēbī,బేబీ,,,src::top1000,W0997
+village,grāmaṁ,గ్రామం,,,src::top1000,W0998
+meet,mīṭ,మీట్,,,src::top1000,W0999
+root,rūṭ,రూట్,,,src::top1000,W1000
+buy; bought,konugōlu,కొనుగోలు,,,src::top1000 flag::multi-gloss,W1001
+raise,penchaḍāniki,పెంచడానికి,,,src::top1000,W1002
+solve,pariṣkarinchaḍāniki,పరిష్కరించడానికి,,,src::top1000,W1003
+whether,lēdō,లేదో,,,src::top1000,W1005
+push,puṣ,పుష్,,,src::top1000,W1006
+paragraph,pērā,పేరా,,,src::top1000,W1007
+third,mūḍō,మూడో,,,src::top1000,W1008
+shall,valenu,వలెను,,,src::top1000,W1009
+held,okkoka,ఒక్కొక,,,src::top1000,W1010
+hair,juṭṭu,జుట్టు,,,src::top1000,W1011
+describe,varṇinchēnduku,వర్ణించేందుకు,,,src::top1000,W1012
+cook,kuk,కుక్,,,src::top1000,W1013
+floor,phlōr,ఫ్లోర్,,,src::top1000,W1014
+either,gāni,గాని,,,src::top1000,W1015
+result,phalitangā,ఫలితంగా,,,src::top1000,W1016
+burn,barn,బర్న్,,,src::top1000,W1017
+hill,koṇḍa,కొండ,,,src::top1000,W1018
+safe,surakṣitangā,సురక్షితంగా,,,src::top1000,W1019
+cat,pilli,పిల్లి,,,src::top1000,W1020
+century,śatābdaṁ,శతాబ్దం,,,src::top1000,W1021
+consider,parigaṇalōki,పరిగణలోకి,,,src::top1000,W1022
+coast; shore,tīraṁ,తీరం,,,src::top1000 flag::multi-gloss,W1024
+copy,pratini,ప్రతిని,,,src::top1000,W1025
+phrase,padabandhaṁ,పదబంధం,,,src::top1000,W1026
+tall,poḍavaina,పొడవైన,,,src::top1000,W1027
+sand,isuka,ఇసుక,,,src::top1000,W1028
+soil,maṭṭi,మట్టి,,,src::top1000,W1029
+temperature,uṣṇōgrata,ఉష్ణోగ్రత,,,src::top1000,W1031
+finger,vēlu,వేలు,,,src::top1000,W1032
+industry,pariśrama,పరిశ్రమ,,,src::top1000,W1033
+value,viluva,విలువ,,,src::top1000,W1034
+fight,pōrāṭaṁ,పోరాటం,,,src::top1000,W1035
+lie,abaddhaṁ,అబద్ధం,,,src::top1000,W1036
+beat,ōḍinchindi,ఓడించింది,,,src::top1000 flag::inflected,W1037
+excite,utsukatanu,ఉత్సుకతను,,,src::top1000,W1038
+natural,sahaja,సహజ,,,src::top1000,W1039
+view,vīkṣaṇa,వీక్షణ,,,src::top1000,W1040
+sense,bhāvaṁ,భావం,,,src::top1000,W1041
+capital,rājadhāni,రాజధాని,,,src::top1000,W1042
+chair,kurchī,కుర్చీ,,,src::top1000,W1043
+danger,pramādaṁ,ప్రమాదం,,,src::top1000,W1044
+thick,mandapāṭi,మందపాటి,,,src::top1000,W1046
+soldier,sainikuḍu,సైనికుడు,,,src::top1000,W1047
+process,prakriya,ప్రక్రియ,,,src::top1000,W1048
+operate,panichēstāyi,పనిచేస్తాయి,,,src::top1000 flag::inflected,W1049
+practice,ācharaṇalō,ఆచరణలో,,,src::top1000,W1050
+protect,rakṣinchēnduku,రక్షించేందుకు,,,src::top1000,W1051
+crop,paṇṭa,పంట,,,src::top1000,W1052
+modern,ādhunika,ఆధునిక,,,src::top1000,W1053
+element,mūlakaṁ,మూలకం,,,src::top1000,W1054
+corner,mūlalō,మూలలో,,,src::top1000,W1056
+supply,sarapharā,సరఫరా,,,src::top1000,W1058
+whose,dīni,దీని,,,src::top1000,W1059
+locate,gurtinchaḍaṁ,గుర్తించడం,,,src::top1000,W1060
+character,pātra,పాత్ర,,,src::top1000,W1062
+insect,krimi,క్రిమి,,,src::top1000,W1063
+period,kālaṁ,కాలం,,,src::top1000,W1064
+radio,rēḍiyō,రేడియో,,,src::top1000,W1065
+spoke  [form of మాట్లాడు],māṭlāḍāru,మాట్లాడారు,,,src::top1000 flag::inflected flag::verbform,W1066
+atom; molecule,aṇuvu,అణువు,,,src::top1000 flag::multi-gloss,W1067
+human,mānava,మానవ,,,src::top1000,W1068
+history,charitra,చరిత్ర,,,src::top1000,W1069
+effect,prabhāvaṁ,ప్రభావం,,,src::top1000,W1070
+electric,vidyut,విద్యుత్,,,src::top1000,W1071
+expect,āśinchē,ఆశించే,,,src::top1000,W1072
+bone,emuka,ఎముక,,,src::top1000,W1073
+imagine,ūhinchē,ఊహించే,,,src::top1000,W1074
+provide,andinchēnduku,అందించేందుకు,,,src::top1000,W1075
+agree,angīkaristunnāru,అంగీకరిస్తున్నారు,,,src::top1000 flag::inflected,W1076
+thus,anduvalana,అందువలన,,,src::top1000,W1077
+gentle,sunnitamaina,సున్నితమైన,,,src::top1000,W1078
+woman,mahiḷa,మహిళ,,,src::top1000,W1079
+captain,kepṭen,కెప్టెన్,,,src::top1000,W1080
+guess,anchanā,అంచనా,,,src::top1000,W1081
+sharp,padunaina,పదునైన,,,src::top1000,W1082
+wing,ving,వింగ్,,,src::top1000,W1083
+create,sṛṣṭinchaḍāniki,సృష్టించడానికి,,,src::top1000,W1084
+neighbor,porugu,పొరుగు,,,src::top1000,W1085
+wash,vāṣ,వాష్,,,src::top1000,W1086
+bat,byāṭ,బ్యాట్,,,src::top1000,W1087
+rather,kākuṇḍā,కాకుండా,,,src::top1000,W1088
+corn,mokkajonna,మొక్కజొన్న,,,src::top1000,W1089
+compare,saripōlchaṇḍi,సరిపోల్చండి,,,src::top1000 flag::inflected,W1090
+poem,padyaṁ,పద్యం,,,src::top1000,W1091
+depend,ādhārapaḍi,ఆధారపడి,,,src::top1000,W1094
+meat,māṁsaṁ,మాంసం,,,src::top1000,W1095
+rub,rab,రబ్,,,src::top1000,W1096
+tube,ṭyūb,ట్యూబ్,,,src::top1000,W1097
+famous,prasiddha,ప్రసిద్ధ,,,src::top1000,W1098
+dollar,ḍālar,డాలర్,,,src::top1000,W1099
+stream,sṭrīm,స్ట్రీమ్,,,src::top1000,W1100
+fear,bhayamu,భయము,,,src::top1000,W1101
+sight,dṛṣṭi,దృష్టి,,,src::top1000,W1102
+thin,sannani,సన్నని,,,src::top1000,W1103
+triangle,tribhujaṁ,త్రిభుజం,,,src::top1000,W1104
+planet,grahaṁ,గ్రహం,,,src::top1000,W1105
+hurry,atyavasaramu,అత్యవసరము,,,src::top1000,W1106
+chief,chīph,చీఫ్,,,src::top1000,W1107
+colony,kālanī,కాలనీ,,,src::top1000,W1108
+mine,main,మైన్,,,src::top1000,W1109
+tie,ṭai,టై,,,src::top1000,W1110
+enter,namōdu,నమోదు,,,src::top1000,W1111
+fresh,tājā,తాజా,,,src::top1000,W1112
+search,śōdhana,శోధన,,,src::top1000,W1113
+send,pampaṇḍi,పంపండి,,,src::top1000 flag::inflected,W1114
+gun,tupākī,తుపాకీ,,,src::top1000,W1115
+allow,anumatistāyi,అనుమతిస్తాయి,,,src::top1000 flag::inflected,W1116
+dead,chanipōyina,చనిపోయిన,,,src::top1000,W1117
+spot,spāṭ,స్పాట్,,,src::top1000,W1118
+desert,eḍāri,ఎడారి,,,src::top1000,W1119
+suit; claim,dāvā,దావా,,,src::top1000 flag::multi-gloss,W1120
+current,prastuta,ప్రస్తుత,,,src::top1000,W1121
+lift,liphṭ,లిఫ్ట్,,,src::top1000,W1122
+arrive,chēru,చేరు,,,src::top1000,W1123
+track,ṭrāk,ట్రాక్,,,src::top1000,W1125
+parent,pēreṇṭ,పేరెంట్,,,src::top1000,W1126
+sheet,ṣīṭ,షీట్,,,src::top1000,W1127
+substance,padārdhaṁ,పదార్ధం,,,src::top1000,W1128
+favor,mogguchūputunnāru,మొగ్గుచూపుతున్నారు,,,src::top1000 flag::inflected,W1129
+connect,kanekṭ,కనెక్ట్,,,src::top1000,W1130
+spend,kharchu,ఖర్చు,,,src::top1000,W1132
+chord,tīga,తీగ,,,src::top1000,W1133
+fat,kovvu,కొవ్వు,,,src::top1000,W1134
+glad,ānandangā,ఆనందంగా,,,src::top1000,W1135
+share,vāṭā,వాటా,,,src::top1000,W1136
+station,sṭēṣan,స్టేషన్,,,src::top1000,W1137
+bread,breḍ,బ్రెడ్,,,src::top1000,W1138
+charge,vasūlu,వసూలు,,,src::top1000,W1139
+offer,āphar,ఆఫర్,,,src::top1000,W1141
+slave,bānisa,బానిస,,,src::top1000,W1143
+duck,ḍak,డక్,,,src::top1000,W1144
+instant,takṣaṇa,తక్షణ,,,src::top1000,W1145
+degree,ḍigrī,డిగ్రీ,,,src::top1000,W1147
+populate,janasāndrata,జనసాంద్రత,,,src::top1000,W1148
+chick,chik,చిక్,,,src::top1000,W1149
+dear,priyamaina,ప్రియమైన,,,src::top1000,W1150
+enemy,śatruvu,శత్రువు,,,src::top1000,W1151
+reply,pratyuttaraṁ,ప్రత్యుత్తరం,,,src::top1000,W1152
+drink,pānīyaṁ,పానీయం,,,src::top1000,W1153
+occur,sambhavinchavachchu,సంభవించవచ్చు,,,src::top1000,W1154
+support,maddatu,మద్దతు,,,src::top1000,W1155
+speech,prasangaṁ,ప్రసంగం,,,src::top1000,W1156
+nature,prakṛti,ప్రకృతి,,,src::top1000,W1157
+range,paridhi,పరిధి,,,src::top1000,W1158
+steam,āviri,ఆవిరి,,,src::top1000,W1159
+motion,chalana,చలన,,,src::top1000,W1160
+liquid,drava,ద్రవ,,,src::top1000,W1161
+log,lāgin,లాగిన్,,,src::top1000,W1162
+quotient,kōśaṇṭ,కోశంట్,,,src::top1000,W1163
+teeth,paḷḷu,పళ్ళు,,,src::top1000,W1164
+shell,ṣel,షెల్,,,src::top1000,W1165
+neck,meḍa,మెడ,,,src::top1000,W1166
+oxygen,āksijan,ఆక్సిజన్,,,src::top1000,W1167
+sugar,chakkera,చక్కెర,,,src::top1000,W1168
+death,maraṇaṁ,మరణం,,,src::top1000,W1169
+pretty,andangā,అందంగా,,,src::top1000,W1170
+skill,naipuṇyaṁ,నైపుణ్యం,,,src::top1000,W1171
+women,mahiḷalu,మహిళలు,,,src::top1000,W1172
+season,sījan,సీజన్,,,src::top1000,W1173
+solution,pariṣkāraṁ,పరిష్కారం,,,src::top1000,W1174
+magnet,ayaskāntaṁ,అయస్కాంతం,,,src::top1000,W1175
+silver,veṇḍi,వెండి,,,src::top1000 flag::inflected,W1176
+branch,śākha,శాఖ,,,src::top1000,W1177
+match,myāch,మ్యాచ్,,,src::top1000,W1178
+suffix,pratyayaṁ,ప్రత్యయం,,,src::top1000,W1179
+especially,mukhyangā,ముఖ్యంగా,,,src::top1000,W1180
+fig,atti,అత్తి,,,src::top1000,W1181
+afraid,bhayapaḍḍāru,భయపడ్డారు,,,src::top1000 flag::inflected,W1182
+sister,sōdari,సోదరి,,,src::top1000,W1183
+steel,sṭīl,స్టీల్,,,src::top1000,W1184
+discuss,charchinchaḍāniki,చర్చించడానికి,,,src::top1000,W1185
+forward,munduku,ముందుకు,,,src::top1000,W1186
+similar,idē,ఇదే,,,src::top1000,W1187
+guide,mārganirdēśaṁ,మార్గనిర్దేశం,,,src::top1000,W1188
+experience,anubhavaṁ,అనుభవం,,,src::top1000,W1189
+score,skōru,స్కోరు,,,src::top1000,W1190
+apple,āpil,ఆపిల్,,,src::top1000,W1191
+led,dāritīsindi,దారితీసింది,,,src::top1000 flag::inflected,W1192
+pitch,pich,పిచ్,,,src::top1000,W1193
+coat,kōṭu,కోటు,,,src::top1000,W1194
+mass,mās,మాస్,,,src::top1000,W1195
+card,kārḍ,కార్డ్,,,src::top1000,W1196
+band,byāṇḍ,బ్యాండ్,,,src::top1000,W1197
+rope,tāḍu,తాడు,,,src::top1000 flag::inflected,W1198
+win; success,vijayaṁ,విజయం,,,src::top1000 flag::multi-gloss,W1200
+dream,kāvālani,కావాలని,,,src::top1000,W1201
+condition,paristhiti,పరిస్థితి,,,src::top1000,W1202
+feed,phīḍ,ఫీడ్,,,src::top1000,W1203
+tool,sādhanaṁ,సాధనం,,,src::top1000,W1204
+basic,prāthamika,ప్రాథమిక,,,src::top1000,W1205
+smell,vāsana,వాసన,,,src::top1000,W1206
+valley,lōyalō,లోయలో,,,src::top1000,W1207
+double,ḍabul,డబుల్,,,src::top1000,W1208
+seat,sīṭu,సీటు,,,src::top1000,W1209
+continue,konasāgutundi,కొనసాగుతుంది,,,src::top1000 flag::inflected,W1210
+block,blāk,బ్లాక్,,,src::top1000,W1211
+hat,ṭōpī,టోపీ,,,src::top1000,W1213
+sell,ammē,అమ్మే,,,src::top1000,W1214
+company,saṁstha,సంస్థ,,,src::top1000,W1215
+subtract,vyavakalanaṁ,వ్యవకలనం,,,src::top1000,W1216
+event,īveṇṭ,ఈవెంట్,,,src::top1000,W1217
+deal,oppandaṁ,ఒప్పందం,,,src::top1000,W1218
+swim,īta,ఈత,,,src::top1000,W1219
+opposite,vyatirēka,వ్యతిరేక,,,src::top1000,W1220
+shoe,ṣū,షూ,,,src::top1000,W1221
+arrange,ērpāṭlu,ఏర్పాట్లు,,,src::top1000,W1223
+camp,śibiraṁ,శిబిరం,,,src::top1000,W1224
+invent,kanugonaḍamē,కనుగొనడమే,,,src::top1000,W1225
+cotton,patti,పత్తి,,,src::top1000,W1226
+born,puṭṭinappaṭi,పుట్టినప్పటి,,,src::top1000,W1227
+determine,gurtinchaḍāniki,గుర్తించడానికి,,,src::top1000,W1228
+quart,kolata gala pātra,కొలత గల పాత్ర,,,src::top1000 flag::phrase,W1229
+truck,ṭrak,ట్రక్,,,src::top1000,W1230
+chance,krīḍallō avakāśālu,క్రీడల్లో అవకాశాలు,,,src::top1000 flag::phrase,W1231
+shop,ṣāp,షాప్,,,src::top1000,W1232
+stretch,sāgina,సాగిన,,,src::top1000,W1233
+throw,trō,త్రో,,,src::top1000,W1234
+shine,bāgā chēyu,బాగా చేయు,,,src::top1000 flag::phrase,W1235
+property,āsti,ఆస్తి,,,src::top1000,W1236
+column,kālam,కాలమ్,,,src::top1000,W1237
+wrong,tappu,తప్పు,,,src::top1000,W1238
+gray,būḍida,బూడిద,,,src::top1000,W1239
+repeat,ripīṭ,రిపీట్,,,src::top1000,W1240
+prepare,siddhaṁ,సిద్ధం,,,src::top1000,W1241
+nose,mukku,ముక్కు,,,src::top1000,W1242
+plural,bahuvachanaṁ,బహువచనం,,,src::top1000,W1243
+anger,kōpaṁ,కోపం,,,src::top1000,W1244
+continent,khaṇḍaṁ,ఖండం,,,src::top1000,W1245

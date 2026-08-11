@@ -1,0 +1,993 @@
+kind	num	page	english	raw_rom	telugu	scripts	flags
+word	1	5	You	Nuvu	నువ్వ	telugu	
+word	2	5	You (Respect)	Miru	మీరు	telugu	
+word	3	5	Us	Manam	మనం	telugu	
+word	4	5	I	Nenu	నేను	telugu	
+word	5	5	We	Memu	మేము	telugu	
+word	6	5	They	Vaaru	వారు	telugu	
+word	7	5	He	Athadu	అతడు	telugu	
+word	8	5	She	Aame	ఆమె	telugu	
+word	9	5	It	Idi -Adi	ఇది	telugu	
+word	10	5	To me	Naaku	నాకు/ నను	telugu	
+word	11	5	To them	Vaariki	వారికి	telugu	
+word	12	5	To him	Athaniki	అతనికి	telugu	
+word	13	5	Why?	Endhuku ?	ఎందుకు?	telugu	
+word	14	6	How ?	Ela ?	ఎలా ?	telugu	
+word	15	6	Which ?	Edi ? 2 ?			no-script
+word	16	6	How Many ?	Enni ? 2 ?			no-script
+word	17	6	How Much ?	Enta ?	ఎంత?	telugu	
+word	18	6	When ?	Eppudu ?	ఎప్పుడు?	telugu	
+word	19	6	Where ?	Ekkada ?	ఎక్కడ?	telugu	
+word	20	6	Who ?	Evaru ?	ఎవరు?	telugu	
+word	21	6	Really ?	Nijanga ?			no-script
+word	22	6	Is It ?	Auna ? ដ ?			no-script
+word	23	6	Thanks	Dhanyavadalu	ధన్యవాదాలు	telugu	
+word	24	6	Agree	Angeekarinchu	అంగీకరించు	telugu	
+word	25	6	Allow	Anumathinchu	అనుమతించు	telugu	
+word	26	6	Believe	Nammu	నమ్ము	telugu	
+word	27	7	Stop	Apandi	ఆపండి	telugu	
+word	28	7	Home	Illu	ఇల్లు	telugu	
+word	29	7	To Buy	Konadam	కొనడం	telugu	
+word	30	7	Drinking	Traagu	త్రాగి	telugu	
+word	31	7	Sit Down	Koorcho	కూర్చో	telugu	
+word	32	7	Understand	Artham cesuko	అర్థంచేసుకో	telugu	
+word	33	7	Yes	Avunu	అవును	telugu	
+word	34	7	Hello	Namaste	నమస్తే	telugu	
+word	35	7					no-english no-romanization no-script
+word	36	7			మధ్యాహ్నం	telugu	no-english no-romanization
+word	37	7	Evening	Sayantram	సాయంత్రం	telugu	
+word	38	7	Mother	Amma	అమ్మ	telugu	
+word	39	7	Dad	Nanna	నాన్న	telugu	
+word	40	7	Elder brother	Annaya	అన్నయ్య	telugu	
+word	41	8	Younger Brother	Thammudu	తమ్ముడు	telugu	
+word	42	8	Elder Sister	Akka	అక్క	telugu	
+word	43	8	Younger Sister	Chelli	ವಲ್ಲಿ	kannada	kannada-script
+word	44	8	Grandfather	Thathaiya / Thathagaaru	తాతయ్య/ తాతగారు	telugu	
+word	45	8	Grandmother	Ammama	అమ్మమ్మ	telugu	
+word	46	8	Vegetables	Kuragayaalu	కూరగాయలు	telugu	
+word	47	8	Brinjal	Vankayaa	వంకాయ	telugu	
+word	48	8	Cauliflower	Cauliflower	కాలీఫ్లవర్	telugu	
+word	49	8					no-english no-romanization no-script
+word	50	8	Coconuts	Kobbarikaya	కొబ్బరి కాయ	telugu	
+word	51	8	Mint	Puthina	పుదీనా	telugu	
+word	52	8	Peas	Bataani	బఠాణి	telugu	
+word	53	8	Onions	Ullipaaya	ఉల్లిపాయ	telugu	
+word	54	9	Garlic	Vellullipaya	వెల్లుల్లిపాయ	telugu	
+word	55	9	Potato	SKILA Bangaladumpa	బంగాళాదుంప	telugu	
+word	56	9	Tomato	Tamata	టమాటా	telugu	
+word	57	9	Cucumber	Keera Dosakaya	కీరదోసకాయ	telugu	
+word	58	9	Drumstick	Mulakkaya	ములక్కాయ	telugu	
+word	59	9	Ladyfinger	Bendakaya	బెండకాయ	telugu	
+word	60	9	Color	Rangu	రంగు	telugu	
+word	61	9	Black	Nalupu	నలుపు	telugu	
+word	62	9	White	Telupu	తెలుపు	telugu	
+word	63	9					no-english no-romanization no-script
+word	65	9					no-english no-romanization no-script
+word	66	9					no-english no-romanization no-script
+word	67	9	Godhuma		గోధుమ	telugu	no-romanization
+word	68	10	Yellow	Pasupupacha	పసుపు	telugu	
+word	69	10	Pink	Gulabi	పింక్	telugu	
+word	70	10	Milk	Paalu	పాలు	telugu	
+word	71	10	Curd	Perugu	పెరుగు	telugu	
+word	72	10	Ghee	Neiyyi	ನಯ್ಯ	kannada	kannada-script
+word	73	10	Rice	Beeyam	బియ్యం	telugu	
+word	74	10	Wheat	Godhumalu	గోధుమలు	telugu	
+word	75	10	Vegetable				no-romanization no-script
+word	76	10			గుడ్డు	telugu	no-english no-romanization
+word	77	10	Salt	Uppu	ఉప్పు	telugu	
+word	78	10	Sugar	Panchadaara	పంచదార	telugu	
+word	79	10	Fire	Agni	అగ్ని	telugu	
+word	80	10	Run	Parugethu	పరుగెత్తు	telugu	
+word	81	11	Thief	Donga	దొంగ	telugu	
+word	82	11	Calendar	Panchangam	పంచాంగం	telugu	
+word	83	11	Date	Thedhi	తేదీ	telugu	
+word	84	11	Today	Iroju	ఈరోజు	telugu	
+word	85	11	Yesterday	Ninna	నిన్న	telugu	
+word	86	11	Tomorrow	Repu	రేపు	telugu	
+word	87	11	Everyday	Prathiroju	ప్రతిరోజు	telugu	
+word	88	11	Day	Roju	రోజు	telugu	
+word	89	11					no-english no-romanization no-script
+word	90	11	Journey	Prayaanam	పుట్టినరోజు పుట్టినరోజుశుభాకాంక్షలు ప్రయాణం	telugu	
+word	92	11	Some	Konni	కొన్ని	telugu	
+word	93	11	Little	Konchem	కొంచెం	telugu	
+word	94	11	Well	Sare	సరే	telugu	
+word	95	12	Good	Manchi	మంచి	telugu	
+word	96	12	Bad	Chedu	చెడు	telugu	
+word	97	12	It's okay	Paravaaledu	పరవాలేదు	telugu	
+word	98	12	No	Kaadhu	కాదు	telugu	
+word	99	12	What ?	Emi ?	ఏమి ?	telugu	
+word	100	12	For what ?	Endhukku ?	ఎందుకు?	telugu	
+word	101	12	Letter	Lekha ඒඛ			no-script
+word	102	12	Paper	Kaagitham	పేపర్	telugu	
+word	103	12	Book	Pusthakamu	పుస్తకమం	telugu	
+word	104	12	Time	Samayam	సమయం	telugu	
+word	105	12	Always	Ellappudu	ఎప్పటి లాగా	telugu	
+word	106	12	Ear	Chevi	ವವಿ	kannada	kannada-script
+word	107	13	Head	Tala	తల	telugu	
+word	108	13	Face	Mukhamu	ముఖం	telugu	
+word	109	13	Eat	Thinu	తను	telugu	
+word	110	13	Drink	Taagu	డాగ్	telugu	
+word	111	13	Walk	Nadavadam	నడవడం	telugu	
+word	112	13	Letter (alphabet)	Raayu	రాయు	telugu	
+word	113	13	Study	Chaduvu	చ్దువ్వ	telugu	
+word	114	13	MealsBhojanam		భోజనం	telugu	no-romanization
+word	115	13	ClothBatta		బ్ట	telugu	no-romanization
+word	116	13	LanguageBaasha		భాష	telugu	no-romanization
+word	117	13	Number(number)Ankelu		అంకెలు	telugu	no-romanization
+word	118	13	Fruits	Pandlu	పండు	telugu	
+word	119	13	Apple	Apple pandu	ఆపల్ పండు	telugu	
+word	120	13	Banana	Arati pandu	అర్ట్టపండు	telugu	
+word	121	14	Sapota	Sapota	సపోటా	telugu	
+word	122	14	Custard apple	Sita phalam	సీా ఫ్లం	telugu	
+word	123	14	Grapes	Draksha	త్రదాక్ష	telugu	
+word	124	14	Guava	Jam pandu	జంపండు	telugu	
+word	125	14	Lemon	Nimmakay	నిమకాయ	telugu	
+word	126	14	Lychee	Litchi	ల్లచి	telugu	
+word	127	14	Mango	Mamidi pandu	మామిడి పండు	telugu	
+word	128	14	Papaya Muskmelonkharbhujapanduఖరుజపండు OrangeKamalapanduక్మలాపండు				no-romanization no-script
+word	129	14					no-english no-romanization no-script
+word	130	14	Boppaya		బొపాయ్య	telugu	no-romanization
+word	131	14	Pear	Peri pandu	పెరి పండు	telugu	
+word	132	14	Pineapple	Anaasa pandu	అనాసపండు	telugu	
+word	133	14	Plum	Regu pandu	రేగుపండు	telugu	
+word	134	15	Direction	Dhikku	దిక్కు	telugu	
+word	135	15	East	Thoorupu	తూర్పు	telugu	
+word	136	15	West	Paschima	పశ్చిమ	telugu	
+word	137	15	North	Uttaram	ఉత్తరం	telugu	
+word	138	15	South	Dhakshinam	దక్షిణం	telugu	
+word	139	15	Here	Ikkada	ఇక్కడ	telugu	
+word	140	15	There	Akkada	అక్కడ	telugu	
+word	141	15	Everywhere	Anthataa			no-script
+word	142	15	That way	Aa maarghamlo	ఆమార్గంలో	telugu	
+word	143	15	Turn left	Yedama vypu thirughu	ఎడమవైపుతిరుగు	telugu	
+word	144	15	Tur Turn right	Kudi vypu thirughu	కుడివైపుతిరుగు	telugu	
+word	145	15	Turn around	Chuttoo thirughu	చుట్టూతిరుగు	telugu	
+word	146	15	Opposite	Yedhurugha	ఎదురుగా	telugu	
+word	147	15	Slowly	Melliga	మెల్లిగా	telugu	
+word	148	16	Fast	Vegamga	వేగంగా	telugu	
+word	149	16	On top	Meedha	మీద	telugu	
+word	150	16	Above	Paina	పైన	telugu	
+word	151	16	Inside	Lopala	లోపలా	telugu	
+word	152	16	Outside	Bayata	బయటా	telugu	
+word	153	16	Below	Kindha	కింద	telugu	
+word	154	16	Nearby	Sameepamlo	సమీపంలో	telugu	
+word	155	16	Left		ఎడమ	telugu	no-romanization
+word	156	16			కుడి	telugu	no-english no-romanization
+word	157	16	Ahead	Mundhuga	ప్రధమ	telugu	
+word	158	16	Behind	Venaka	వెనుక	telugu	
+word	159	16	Follow me	Na venta randi	నా వెంటరండి	telugu	
+word	160	16	Airport	Vimaanashrayam	విమానాశ్రయం	telugu	
+word	161	17	Drive carefully	Jaagraththaghaa nadapandi	జాగ్రత్తగా నడపనుంది	telugu	
+word	162	17	Table	GORILA Balla			no-script
+word	163	17	Stone	Raayi	రాయి	telugu	
+word	164	17	Children	Pillalu	పిల్లలు	telugu	
+word	165	17	People	Prajalu	ప్రజలు	telugu	
+word	166	17	New	Kottha	కొత్త	telugu	
+word	167	17	Old	Paatha	పాత	telugu	
+word	168	17	Mad	Pichi	పిచ్చి	telugu	
+word	169	17	Question	Prasna	ప్రశ్న	telugu	
+word	170	17	Marks	Markulu	మార్కులు	telugu	
+word	171	17	Window	Kitiki	కిటికీ	telugu	
+word	172	17	Room	Gadhi	గది	telugu	
+word	173	17	Clock	Gadiyaram	గడియారం	telugu	
+word	174	17	Eat ( Respect	Thinandi	తినండి	telugu	
+word	175	18	Resident	Nivasasthudu	నివాసస్థుడు	telugu	
+word	176	18	Family	Kutumbam	కుటుంభం	telugu	
+word	177	18	Trouble	Ibbandi	ఇబ్బంది	telugu	
+word	178	18	Lamp	Deepam	దీపం	telugu	
+word	179	18	Be Care	Jagratha	జాగ్రత్త	telugu	
+word	180	18	Now	Ippudu	ఇప్పుడు	telugu	
+word	181	18	Please	Dayachesi	దయచేసి	telugu	
+word	182	18	Writing	Rayadam	రాయడం	telugu	
+word	183	18					no-english no-romanization no-script
+word	184	18	Go	Vellandi	వెళ్ళండి	telugu	
+word	185	18	Give	Ivvandi	ఇవ్వండి	telugu	
+word	186	18	Stay	Undu	ఉండు	telugu	
+word	187	18	Patience	Opika	ఓపిక	telugu	
+word	188	19	Interrupt	Aantharayam	అంతరాయం	telugu	
+word	189	19	Respect	Gowravam	గౌరవం	telugu	
+word	190	19	Elders	Peddhavaallu	పెద్దవాళ్లు	telugu	
+word	191	19	Reason	Kaaranam	కారణం	telugu	
+word	192	19	Happiness	Santhosham	సంతోషం	telugu	
+word	193	19	Clean	Subramaina	శుభ్రమైన	telugu	
+word	194	19	Print	Mudrana	ముద్రణ	telugu	
+word	195	19	Best	Utthama	ఉత్తమ	telugu	
+word	196	19	Reply	Samadhanam			no-script
+word	197	19	Promise	Pramanam	ప్రమాణం	telugu	
+word	198	19	Noise	Sabdham	శబ్దం	telugu	
+word	199	19	Like	Istam	ఇష్టం	telugu	
+word	200	19	Love	Prema	ప్రేమ	telugu	
+word	201	20	Attraction	Aakarshana	ఆకర్షణ	telugu	
+word	202	20	Hate	Dwesham	ద్వేషం	telugu	
+word	203	20	Marriage	Pelli	పెళ్లి	telugu	
+word	204	20	School	Paatashala	పాఠశాల	telugu	
+word	205	20	Picture	Bomma	బొమ్మ	telugu	
+word	206	20	Price	Dhara	ధర	telugu	
+word	207	20	Cry	Eadupu	ఏడుపు	telugu	
+word	208	20	Smile	Navvu	నవ్వు	telugu	
+word	209	20	Rose	Gulabi	గులాబీ	telugu	
+word	210	20	Right now	Ippude	ఇప్పుడే	telugu	
+word	211	20	Large	Peddadi	పెద్దది	telugu	
+word	212	20	Small	Chinnadi	చిన్నది	telugu	
+word	213	20	Dog	Kukka	కుక్క	telugu	
+word	214	20	Beating	Kottadam	కొట్టడం	telugu	
+word	215	21	Cow	Aavu	ఆవు	telugu	
+word	216	21	Fly	Eega	ఈగ	telugu	
+word	217	21	Squirrel	Udutha	ఉడుత	telugu	
+word	218	21	Cradle	Ooyala	ఊయల	telugu	
+word	219	21	Rishi	Rishi	రిషి	telugu	
+word	220	21	Rat	Eluka	ఎలుక	telugu	
+word	221	21	Elephant	Yenugu	ఏనుగు	telugu	
+word	222	21	Sea	Samudram	సముద్రం	telugu	
+word	223	21					no-english no-romanization no-script
+word	224	21	Gumpu		గుంపు	telugu	no-romanization
+word	225	21	Words	Padaalu	పదాలు	telugu	
+sentence	1	22	I am	Nenu	నేను	telugu	
+sentence	2	22	I gave	Nenu ichanu	నేనుఇచ్చాను	telugu	
+sentence	3	22	You go	Nuvvu vellu	నువ్వువెళ్ళు	telugu	
+sentence	4	22	I know	Naku telusu	నాకుతెలుసు	telugu	
+sentence	5	22	Why me ?	Nenu enduku ?	నేనుఎందుకు?	telugu	
+sentence	6	22	So am I	Nenu kuda	నేనుకూడా	telugu	
+sentence	7	22	I wrote	Nenu vrasanu	నేనువ్రాసాను	telugu	
+sentence	8	22	I drank	Nenu	నేను	telugu	
+sentence	9	22	Not bad	Chedu kadu	చెడుకాదు	telugu	
+sentence	10	22	Not yet	Inka ledu	ఇంకా లేదు	telugu	
+sentence	11	22	Turn it	Danni tippandi	దాన్నితిప్పండి	telugu	
+sentence	12	22	Hold on	Pattukondi	పట్టుకోండి	telugu	
+sentence	13	22	Lift it	Danni ethandi	దాన్ని ఎత్తండి	telugu	
+sentence	14	23	Push it	Troyumu /nettandi	త్రోయుము/నెట్టండి	telugu	
+sentence	15	23	Pull it	Dinini lagumu / lagandi	దీనిని లాగుము/లాగండి	telugu	
+sentence	16	23	It's me	Adi nene	ಅದಿ ನನ	kannada	kannada-script
+sentence	17	23	Blow it	Oodandi	ఊదండి	telugu	
+sentence	18	23	Tear it	Danni chimpiveyandi	దాన్నిచింపివేయండి	telugu	
+sentence	19	23	Come in	Lopalaki randi	లోపలికి రండి	telugu	
+sentence	20	23	Go back	Venakki vellandi	వెనక్కి వెళ్ళండి	telugu	
+sentence	21	23	I do it	Nenu chestanu	నేనుచేస్తాను	telugu	
+sentence	22	23	We went	Memu vellamu	మేమువెళ్ళాము	telugu	
+sentence	23	23	Go away	Vellipondi	వెళ్లిపోండి	telugu	
+sentence	24	23	Take it	Teesukondi	తీసుకోండి	telugu	
+sentence	25	23	Got it ?	Ardamainda ?	అర్థమైందా?	telugu	
+sentence	26	23	Let's go	Veldam	వెళాం	telugu	
+sentence	27	23	I opened	Nenu terichanu	నేనుతెరిచాను	telugu	
+sentence	28	24	Why not ?	Enduku kadu	ఎందుకుకాదు	telugu	
+sentence	29	24	So did I	Nenu ala chesanu	నేనుఅలా చేసాను	telugu	
+sentence	30	24	Just now	Ippude	ఇప్పుడే	telugu	
+sentence	31	24	You gave	Miru icharu	మీరుఇచ్చారు	telugu	
+sentence	32	24	They saw	Varu chusaru	వారుచూశారు	telugu	
+sentence	33	24	Throw it	Visireyandi	విసిరేయండి	telugu	
+sentence	34	24	Not that	Adi kadu	అది కాదు	telugu	
+sentence	35	24	Not this	Idi kadu	ఇది కాదు	telugu	
+sentence	36	24	Paste it	Athikinchandi	అతికించండి	telugu	
+sentence	37	24	Hurry up	Tvaraga	త్వరగా	telugu	
+sentence	38	24	Step out	Bayataki vellandi	బయటకి వెళ్ళండి	telugu	
+sentence	39	24	Have fun	Anandinchandi	ఆనందించండి	telugu	
+sentence	40	24	I did it	Nenu chesanu	నేనుచేసాను	telugu	
+sentence	41	25	Sit here	Ikkada kurchondi	ఇక్కడకూర్చోండి	telugu	
+sentence	42	25	Run fast	Veganga parigethandi	వేగంగా పరిగెత్తండి	telugu	
+sentence	43	25	And you ?	Mariyu miru	మరియుమీరు	telugu	
+sentence	44	25	Use this	Dinni upayoginchandi	దీన్నిఉపయోగించండి	telugu	
+sentence	45	25	I'm sick	Na arogyamu baga ledu	నా అరోగ్యముబాగా లేదు	telugu	
+sentence	46	25	Remember	Gurtu	గుర్తు	telugu	
+sentence	47	25	Be quiet	Nishabdanga undandi	నిశ్సబ్దంగాఉండండి	telugu	
+sentence	48	25	Trust me	Nannu nammandi	నన్నునమ్మండి	telugu	
+sentence	49	25	Ram goes	Ram	రామ్ వెళతారు	telugu	
+sentence	50	25	He walks	Ayana nadustaru	అయననడుస్తారు	telugu	
+sentence	51	25	Clean it	Shubram cheyandi	శుభ్రంచేయండి	telugu	
+sentence	52	25	Really ?	Nijanga ?	నిజంగా?	telugu	
+sentence	53	25	Be ready	Siddanga undandi	సిద్ధంగాఉండండి	telugu	
+sentence	54	25	Too bad !	Chala cheddadi	చాలా చెడ్డది	telugu	
+sentence	55	26	I am not	Nenu kadu	నేనుకాదు	telugu	
+sentence	56	26	Leave it	Vadileyandi	వదిలేయండి	telugu	
+sentence	57	26	Let's go !	Veldam !	వెళాం!	telugu	
+sentence	58	26	Stand up !	Nilabadandi !	నిలబడండి !	telugu	
+sentence	59	26	Excuse me	Kshaminchandi	క్షమించండి	telugu	
+sentence	60	26	As usual !	Yadhavidhiga	యధావిధిగా	telugu	
+sentence	61	26	Who said ?	Evaru chepparu ?	ఎవరుచెప్పారు?	telugu	
+sentence	62	26	Who goes ?	Evaru veltaru ?	ఎవరువెళ్తారు?	telugu	
+sentence	63	26	Here I am	Nenu ikkada unnanu	నేనుఇక్కడఉన్నాను	telugu	
+sentence	64	26	I gave it	Nenu ichanu	నేనుఇచ్చాను	telugu	
+sentence	65	26	Over here	Ikkada	ఇక్కడ	telugu	
+sentence	66	26	Come home	Intiki randi	ఇంటికి రండి	telugu	
+sentence	67	26	I am hurt	Nenu aliganu	నేనుఅలిగాను	telugu	
+sentence	68	27	Don't cry	Edavakandi	ఏడవకండి	telugu	
+sentence	69	27	Do it now	Ippude cheyandi	ఇప్పుడేచేయండి	telugu	
+sentence	70	27	I am here	Nenu ikkada unnanu	నేనుఇక్కడఉన్నాను	telugu	
+sentence	71	27	I am only	Nenu matrame	నేనుమాత్రమే	telugu	
+sentence	72	27	Stay away	Dooranga undandi	దూరంగా ఉండండి	telugu	
+sentence	73	27	Ignore it	Danni vismarinchandi	దాన్ని విస్మరించండి	telugu	
+sentence	74	27	It's easy	Idi sulabham	ఇది సులభం	telugu	
+sentence	75	27	It's hard	Adi kastam	అది కష్టం	telugu	
+sentence	76	27	It's gone	Adi poindi	అది పోయింది	telugu	
+sentence	77	27	Come soon	Tvaraga randi	త్వరగా రండి	telugu	
+sentence	78	27	Let me go	Nannu vellanivvandi	నన్నువెళ్లనివ్వండి	telugu	
+sentence	79	27	Who came ?	Evaru vacharu	ఎవరువచ్చారు	telugu	
+sentence	80	27	She spoke	Ame matladaru	ఆవిడమాట్లాడారు	telugu	
+sentence	81	27	Don't hit	Kottakandi	కొట్టకండి	telugu	
+sentence	82	28	Pardon me	Kshaminchandi	క్షమించండి	telugu	
+sentence	83	28	Look here	Ikkada chudandi	ఇక్కడచూడండి	telugu	
+sentence	84	28	Walk slowly	Nemmadiga nadavandi	నెమ్మదిగా నడవండి	telugu	
+sentence	85	28	Leave him	Athadini vidichipettandi	ఆయనని విడిచిపెట్టండి	telugu	
+sentence	86	28	See there	Akkada chudandi	అక్కడచూడండి	telugu	
+sentence	87	28	I am lost	Nenu tappipoyanu	నేనుతప్పిపోయాను	telugu	
+sentence	88	28					no-english no-romanization no-script
+sentence	89	28					no-english no-romanization no-script
+sentence	90	28					no-english no-romanization no-script
+sentence	91	28					no-english no-romanization no-script
+sentence	94	28	Slow down	Vegam tagginchandi	వేగంతగ్గించండి	telugu	
+sentence	95	29	I'm eight	Naku enimidi samvatsaralu	నాకుఎనిమిది సంవత్సరాలు	telugu	
+sentence	96	29	It's 6:30 pm	Sayantram 6 : 30gantalu	సాయంత్రం6:30 గంటలు	telugu	
+sentence	97	29	Forget it	Marchipondi	మర్చిపోండి	telugu	
+sentence	98	29	Ram walks	Ram naduchunu	రామ్ నడుచును	telugu	
+sentence	99	29	Ram plays	Ram adutharu	రామ్ ఆడుతారు	telugu	
+sentence	100	29	Take away	Teesiveyandi	తీసివేయండి	telugu	
+sentence	101	29	I got sad	Naku badhaga undi	నాకుబాధగా ఉంది	telugu	
+sentence	102	29	Get ready	Siddanga undandi	సిద్దంగాఉండండి	telugu	
+sentence	103	29	Chala bagundi		చాలా బాగుంది	telugu	no-romanization
+sentence	104	29	Let it be	Ala undanivvandi	అలా ఉండనివ్వండి	telugu	
+sentence	105	29	Yes or no ?	Avuna leda	అవునా లేదా	telugu	
+sentence	106	29	Good noon !	Shubha madyahnam	శుభమధ్యాహ్నం	telugu	
+sentence	107	29	All right !	Ayithe sare	అయితే సరే	telugu	
+sentence	108	30	Very good !	Chala manchidi	చాలా మంచిది	telugu	
+sentence	109	30	Is Ram in ?	Ram unnara ?	రామ్ ఉన్నారా?	telugu	
+sentence	110	30	Who knows ?	Evariki telusu	ఎవరికీ తెలుసు	telugu	
+sentence	111	30	Thank God !	Devuniki danyavadalu	దేవునికి ధన్యవాదాలు	telugu	
+sentence	112	30	May I sit ?	Nenu kurchovacha	నేనుకూర్చోవచ్చా?	telugu	
+sentence	113	30	I am ready	Nenu siddanga unnanu	నేనుసిద్ధంగా ఉన్నాను	telugu	
+sentence	114	30	let's talk	Manam matladukundam			no-script
+sentence	115	30					no-english no-romanization no-script
+sentence	116	30					no-english no-romanization no-script
+sentence	118	30					no-english no-romanization no-script
+sentence	119	30	Had lunch ?	Bhojanam chesara	భోజనంచేసారా	telugu	
+sentence	120	30	Please sit	Dayachesi kurchondi	దయచేసి కూర్చోండి	telugu	
+sentence	121	31	Turn it on	Danni on cheyandi	దాన్ని ఆన్ చేయండి	telugu	
+sentence	122	31	I gotta go	Nenu vellali	నేనువెళ్ళాలి	telugu	
+sentence	123	31	I am bored	Nenu visugu chendanu	నేనువిసుగుచెందాను	telugu	
+sentence	124	31	Who is he ?	Athanu evaru ?	అయనఎవరు	telugu	
+sentence	125	31	Yes , it is	Avunu ade	అవునుఅదే	telugu	
+sentence	126	31	What's up ?	Emiti sangathulu	ఏమిటి సంగతులు	telugu	
+sentence	127	31	Just taste it	Ruchi chudandi	రుచి చూడండి	telugu	
+sentence	128	31	from when ?				no-romanization no-script
+sentence	129	31					no-english no-romanization no-script
+sentence	130	31					no-english no-romanization no-script
+sentence	131	31					no-english no-romanization no-script
+sentence	132	31					no-english no-romanization no-script
+sentence	133	31	Thannakandi		తన్నకండి	telugu	no-romanization
+sentence	134	31	Don't yell	Kekalu veyavaddu	కేకలువేయవద్దు	telugu	
+sentence	135	32	I don't go	Nenu vellanu	నేనువెళ్ళను	telugu	
+sentence	136	32	Here it is	Idigo	ఇదిగో	telugu	
+sentence	137	32	He will do	Ayana chestaru	అయనచేస్తారు	telugu	
+sentence	138	32	Look at me	Nannu chudandi	నన్నుచుడండి	telugu	
+sentence	139	32	You may go	Miru vellavachu	మీరువెళ్ళవచ్చు	telugu	
+sentence	140	32	I like him	Athanante nakishtam	అతనంటే నాకిష్టం	telugu	
+sentence	141	32	I like her	Naku ame istamu	నాకుఆమె ఇష్టము	telugu	
+sentence	142	32	I'm single	Nenu ontariga unnanu	నేనుఒంటరిగా ఉన్నాను	telugu	
+sentence	143	32	I remember	Naku gurtundi	నాకుగుర్తుంది	telugu	
+sentence	144	32	I am tired	Nenu alasipoyanu	నేనుఅలసిపోయాను	telugu	
+sentence	145	32	I am great	Nenu beshugga unnanu	నేనుభేషుగ్గా ఉన్నాను	telugu	
+sentence	146	32	My name is	Na peru	నా పేరు	telugu	
+sentence	147	32	I like you	Mirante nakistam	మీరంటే నాకిష్టం	telugu	
+sentence	148	33	Never mind	Paravaledu	పర్వాలేదు	telugu	
+sentence	149	33	Find a job	Oka udyogam vetukkondi	ఒకఉద్యోగంవెతుక్కోండి	telugu	
+sentence	150	33	Be with me	Natho undandi	నాతోఉండండి	telugu	
+sentence	151	33	Let me see	Nannu chudanivvandi	నన్నుచుడనివ్వండి	telugu	
+sentence	152	33	Go to hell	Narakaniki vellu	నరకానికి వెళ్ళు	telugu	
+sentence	153	33	It's a sin	Adi papam	అది పాపం	telugu	
+sentence	154	33	Be serious	Tivranga undandi	తీవ్రంగాఉండండి	telugu	
+sentence	155	33	No problem	Emi ibbandi ledu	ఏమి ఇబ్బంది లేదు	telugu	
+sentence	156	33	This is me	Idi nene	ಇದಿ ನೆನ	kannada	kannada-script
+sentence	157	33	Very nice !	Chala bagundi	చాలా బాగుంది	telugu	
+sentence	158	33	It is love	Idi prema	ఇదిప్రేమ	telugu	
+sentence	159	33	Let's walk	Ala naduddama	అలా నడుద్దామా	telugu	
+sentence	160	33	How was it ?	Adi ela undi ?	అది ఎలా ఉంది ?	telugu	
+sentence	161	33	I will open	Nenu terustanu	నేనుతెరుసాను	telugu	
+sentence	162	34	Look at me!	Nannu chudandi	నను చుడండి	telugu	
+sentence	163	34	Good night!	Shubha rathri	శుభరాత్రత	telugu	
+sentence	164	34	Why not me?	Nenu enduku kadu?	నేనుఎందుకుకాదు?	telugu	
+sentence	165	34	Same to you	Miku alage	మీకుఅలాగే	telugu	
+sentence	166	34	Who danced?	Evaru nrithyam chesaru?	ఎవరునృతంచేశారు?	telugu	
+sentence	167	34	Who did it?	Dinini evaru chesaru?	దీనిని ఎవరుచేశారు?	telugu	
+sentence	168	34	He ate soon	Athanu ventane thinnaru	అయనవెంటనే తనారు	telugu	
+sentence	169	34	I can do it	Nenu cheyagalanu	నేనుచేయగలను	telugu	
+sentence	170	34	I may do it	Nenu cheyavachu	నేనుచేయవచు	telugu	
+sentence	171	34	Go straight	Thinnaga vellandi	తనగా వెళ్ండి	telugu	
+sentence	172	34	That's true	Adi nijam	అది నిజం	telugu	
+sentence	173	34	I missed it	Nenu danini kolpayanu	నేనుదానిని కోలోయాను	telugu	
+sentence	174	34	No, I don't	Ledu nenu cheyanu	లేదునేనుచేయను	telugu	
+sentence	175	35	It's Ramesh	Idi ramesh	ఇది రమేష్	telugu	
+sentence	176	35	Don't trust	Nammakandi	నమ్మకండి	telugu	
+sentence	177	35	Nobody gave	Evvaru ivvaledu	ఎవరూఇవ్వలేదు	telugu	
+sentence	178	35	Turn it off	Danni apiveyandi	దాన్నిఆపివేయండి	telugu	
+sentence	179	35	I am hungry	Naku akali ga undi	నాకుఆకలిగా ఉంది	telugu	
+sentence	180	35	Who is she ?	Avida evaru ?	ఆవిడఎవరు?	telugu	
+sentence	181	35	Do it later	Taruvata cheyandi	తరువాతచేయండి	telugu	
+sentence	182	35	Step inside	Lopaliki	లోపలికి అడుగు	telugu	
+sentence	183	35	Just joking	Urike hasyam chestunna	ఊరికే హాస్యంచేస్తున్నా	telugu	
+sentence	184	35	Write to me	Naku rayandi	నాకురాయండి	telugu	
+sentence	185	35	Just coming	Ippude vasthondi	ఇప్పుడే వస్తోంది	telugu	
+sentence	186	35	He is short	Ayana pottiga unnaru	అయనపొట్టిగాఉన్నారు	telugu	
+sentence	187	35	It was here	Idi ikkada unde	ఇది ఇక్కడఉండే	telugu	
+sentence	188	35	Don't drink	Thagakandi	తాగకండి	telugu	
+sentence	189	36	Welcome sir	Svagatham saar	స్వాగతంసార్	telugu	
+sentence	190	36	Shall we go	Manam veldama	మనంవెళ్లామా	telugu	
+sentence	191	36	I asked him	Nenu ayanani adiganu	నేనుఆయనని అడిగాను	telugu	
+sentence	192	36	Put it down	Kinda pettandi	కిందపెట్టండి	telugu	
+sentence	193	36	I still eat	Nenu inka thintanu	నేనుఇంకా తింటాను	telugu	
+sentence	194	36	Go this way		ఈమార్గంలో Ee marganlo vellandi వెళ్ళండి	telugu	no-romanization
+sentence	195	36	I can write				no-romanization no-script
+sentence	196	36					no-english no-romanization no-script
+sentence	197	36					no-english no-romanization no-script
+sentence	198	36	I'm nervous	Bhyamga undi naku	బయంగా వుంది నాకు	telugu	
+sentence	199	36	I'm worried	Nenu chintistunnanu	నేనుచింతిస్తున్నాను	telugu	
+sentence	200	36	I feel good	Nenu bagunnanu	నేనుబాగున్నాను	telugu	
+sentence	201	37	I trust you	Mi meeda nammakam undi	మీ మీదనాకునమ్మకంఉంది	telugu	
+sentence	202	37	Go to sleep	Niddurapondi	నిద్దురపోండి	telugu	
+sentence	203	37	I'm leaving	Nenu bayaluderuthunna	నేనుబయలుదేరుతున్నాను	telugu	
+sentence	204	37	Did you go ?	Miru vellara ?	మీరువెళ్ళారా?	telugu	
+sentence	205	37	Yes , I went	Avunu nenu vellanu	అవునునేనువెళ్ళాను	telugu	
+sentence	206	37	It is sweet	Idi tiyyaga undi	ఇది తియ్యగా ఉంది	telugu	
+sentence	207	37	It is salty	Idi uppuga undi	ఇది ఉప్పుగా ఉంది	telugu	
+sentence	208	37	Okay Doctor	Sare doctor	సరే డాక్టర్	telugu	
+sentence	209	37	Nenu ammayini				no-romanization no-script
+sentence	210	37	Kannu kottoddu				no-romanization no-script
+sentence	211	37	Start a job	Udyogam prarambinchand	ఉద్యోగంప్రారంభించండి	telugu	
+sentence	212	37	Let them go	Vallani vellanivvandi	వాళ్ళని వెళ్లనివ్వండి	telugu	
+sentence	213	37	Smile a lot	Chala navvandi	చాలా నవ్వండి	telugu	
+sentence	214	38	Wait for me	Na kosam agandi	నా కోసంఆగండి	telugu	
+sentence	215	38	Don't do it	Dinni cheyakandi	దీన్నిచేయకండి	telugu	
+sentence	216	38	Be generous	Udaranga undandi	ఉదారంగా ఉండండి	telugu	
+sentence	217	38	I say , stop	Nenu chebuthunna apandi	నేనుచెబుతున్నఆపండి	telugu	
+sentence	218	38	I didn't go	Nenu vellaledu	నేనువెళ్ళలేదు	telugu	
+sentence	219	38	Let it rain	Vana padani	వానపడనీ	telugu	
+sentence	220	38	Is that me ?	Adi nenena ?	ಅದಿ ನೆನನ್?	kannada	kannada-script
+sentence	221	38	Be cautious	Jagrathaga undandi	జాగ్రత్తగాఉండండి	telugu	
+sentence	222	38	I am leaving	Nenu bayaluderuthunnanu	నేనుబయలుదేరుతున్నాను	telugu	
+sentence	223	38	I am thirsty	Naku daham vesthondi	నాకుదాహంవేస్తోంది	telugu	
+sentence	224	38	I am opening	Nenu therustunnanu	నేనుతెరుస్తున్నాను	telugu	
+sentence	225	38	Has he come ?	Ayana vachara ?	అయనవచ్చారా?	telugu	
+sentence	226	38	Go upstairs !	Paiki vellandi	పైకి వెళ్ళండి	telugu	
+sentence	227	38	Neither am I	Nenu kuda kadu	నేనుకూడా కాదు	telugu	
+sentence	228	39	Did you try ?	Miru prayathninchara ?	మీరుప్రయత్నించారా?	telugu	
+sentence	229	39	Do you have ?	Mi deggara unda ?	మీ దెగ్గరఉందా?	telugu	
+sentence	230	39	Who will go ?	Evaru veltaru ?	ఎవరువెళ్తారు?	telugu	
+sentence	231	39	Who does it ?	Evaru chestaru ?	ఎవరుచేస్తారు?	telugu	
+sentence	232	39	Was he sent ?	Ayana pampabaddara ?	అయనపంపబడ్డారా?	telugu	
+sentence	233	39	Is he loved ?	Ayana preminchabaddara ?	అయనప్రేమించబడ్డారా?	telugu	
+sentence	234	39	I will do it	Nenu chestanu	నేనుచేస్తాను	telugu	
+sentence	235	39	I must do it		నేనుతప్పకచేయాలి	telugu	no-romanization
+sentence	236	39	See you then	Marala kaluddam	మరలా కలుద్దాం	telugu	
+sentence	237	39	I am writing	Nenu rasthunnanu	నేనురాస్తున్నాను	telugu	
+sentence	238	39	Take my bike	Na bike tesukondi	నా బైక్ తీసుకోండి	telugu	
+sentence	239	39	Why so late ?	Enduku antha alasyam?	ఎందుకుఅంతఆలస్యం?	telugu	
+sentence	240	39	Nothing else	Inkemi ledu	ఇంకేమి లేదు	telugu	
+sentence	241	40	Do something	Edo okati cheyandi	ఎదో ఒకటి చేయండి	telugu	
+sentence	242	40	Just imagine	Kevalam oohinchukondi	కేవలంఊహించుకోండి	telugu	
+sentence	243	40	What's next ?	Taruvata enti ?	తరవాతఏంటి ?	telugu	
+sentence	244	40	Don't delay !	Alasyam cheyakandi	ఆలస్యంచేయకండి	telugu	
+sentence	245	40	I'm studying	Nenu chaduvukuntunnanu	నేనుచదువుకుంటున్నాను	telugu	
+sentence	246	40	In minutes	Ayidu nimishallo	అయిదునిమిషాల్లో	telugu	
+sentence	247	40	I won't play	Nenu adanu	నేనుఆడను	telugu	
+sentence	248	40	I brought it	Nenu techanu	నేనుతెచ్చాను	telugu	
+sentence	249	40	You don't go	Miru vellaru	మీరువెళ్లరు	telugu	
+sentence	250	40	You are boys	Miru abbayile	మీరుఅబ్బాయిలే	telugu	
+sentence	251	40	We are girls	Memu ammayilu	మేముఅమ్మాయిలు	telugu	
+sentence	252	40	Let him come	Ayanani ranivvandi	ఆయనని రానివ్వండి	telugu	
+sentence	253	40	Open the lid	Mootha teravandi	మూతతెరవండి	telugu	
+sentence	254	40	No , It's not	Kadu , adi kane kadu	కాదు, అది కానేకాదు	telugu	
+sentence	255	41	Stop talking	Matladatam apu	మాట్లాడటంఆపండి	telugu	
+sentence	256	41	I am cooking	Nenu vanduthunnanu	నేనువండుతున్నాను	telugu	
+sentence	257	41	Stop playing	Adatam maneyandi	ఆడటంమానేయండి	telugu	
+sentence	258	41	Drive Slowly	Nemmadiga nadapandi	నెమ్మదిగా నడపండి	telugu	
+sentence	259	41	Where is it ?	Adi ekkada undi ?	అది ఎక్కడఉంది ?	telugu	
+sentence	260	41	What is this ?	Idi emiti ?	ఇది ఏమిటి?	telugu	
+sentence	261	41	Don't forget	Marchipokandi	మర్చిపోకండి	telugu	
+sentence	262	41	Don't go now		ఇప్పుడువెళ్ళకండి	telugu	no-romanization
+sentence	263	41	I had coffee	Nenu coffee taganu	నేనుకాఫీ తాగాను	telugu	
+sentence	264	41	He called me	Athanu nannu pilicharu	అతనునన్నుపిలిచారు.	telugu	
+sentence	265	41	I need a pen	Naku kalam kavali	నాకుకలంకావాలి	telugu	
+sentence	266	41	Is he there ?	Ayana akkada unnara ?	అయనఅక్కడఉన్నారా?	telugu	
+sentence	267	41	I have a son	Naku oka kumarudu unnadu	నాకుఒకకుమారుడుఉన్నాడు	telugu	
+sentence	268	42	Are you sad ?	Miru badhalo unnara ?	మీరుబాధలో ఉన్నారా?	telugu	
+sentence	269	42	I am running	Nenu parigeduthunnanu	నేనుపరిగెడుతున్నాను	telugu	
+sentence	270	42	Stop staring	Chudatam apandi	చూడటంఆపండి	telugu	
+sentence	271	42	It is boring	Adi visugga undi	అది విసుగ్గాఉంది	telugu	
+sentence	272	42	It is cloudy	Mabbulu kammukoni undi	మబ్బులుకమ్ముకునిఉంది	telugu	
+sentence	273	42	That's right	Adi sarainadi	అది సరైనది	telugu	
+sentence	274	42	I don't care	Nenu pattinchukoni	నేనుపట్టించుకోను	telugu	
+sentence	275	42	I don't mind	Nenu pattinchukovadam ledu	నేనుపట్టించుకోవడంలేదు	telugu	
+sentence	276	42	I'm not sure	Naku kachithanga teliyadu	నాకుఖచ్చితంగా తెలియదు	telugu	
+sentence	277	42	Here you are	Ikkada unnaru miru	ఇక్కడఉన్నారు మీరు	telugu	
+sentence	278	42	Is ready ?	Idi siddanga unda ?	ఇది సిద్ధంగా ఉందా?	telugu	
+sentence	279	42	Wash the car	Karu kadagandi	కారుకడగండి	telugu	
+sentence	280	42	Yes , I begin	Avunu nenu prarambisthanu	అవునునేనుప్రారంభిస్తాను	telugu	
+sentence	281	42	Let me check	Nannu chudanivvandi	నన్నుచుడనివ్వండి	telugu	
+sentence	282	43	is it clean ?	Idi shubranga unda ?	ఇది శుభ్రంగాఉందా?	telugu	
+sentence	283	43	I understood	Ardamaindi	అర్థమైంది	telugu	
+sentence	284	43	I play hrs	Nenu rendu gantalu aduthanu	నేనురెండుగంటలుఆడుతాను	telugu	
+sentence	285	43	Nothing much	Peddaga emi ledu	పెద్దగా ఏమీ లేదు	telugu	
+sentence	286	43	I tie my tie	Nenu na tie kattanu	నేనునా టై కట్టాను	telugu	
+sentence	287	43	That will do	Adi saripotundi	అది సరిపోతుంది	telugu	
+sentence	288	43	Speak slowly	Nemmadiga matladandi	నెమ్మదిగా మాట్లాడండి	telugu	
+sentence	289	43	Go and sleep	A Velli nidrapondi	వెళ్లినిద్రపోండి	telugu	
+sentence	290	43	It's raining	Varsham paduthundi It's Morning Idi suryodayamu	వర్షంపడుతుంది ఇది సూర్యోదయము	telugu	
+sentence	292	43	Come with me	Natho randi	నాతో రండి	telugu	
+sentence	293	43	You are good	Miru manchi varu	మీరుమంచి వారు	telugu	
+sentence	294	43	He had a pen	Ayana vadda oka kalam undi	అయనవద్దఒకకలంఉంది	telugu	
+sentence	295	44	We are yours	Memu mikee	మేముమీకే	telugu	
+sentence	296	44	Don't be shy	Siggupadakandi	సిగ్గుపడకండి	telugu	
+sentence	297	44	I didn't say	Nenu cheppaledu	నేనుచెప్పలేదు	telugu	
+sentence	298	44	It's my will	Idi na sankalpam	ఇది నా సంకల్పం	telugu	
+sentence	299	44	I will study	Nenu chaduvuthanu	నేనుచదువుతాను	telugu	
+sentence	300	44	This is too much	Idi chala ekkuva	ఇది చాలా ఎక్కువ	telugu	
+sentence	301	44	Listen to me	Na mata vinandi	నా మాటవినండి	telugu	
+sentence	302	44	I am smiling	Nenu navvuthunnanu	నేనునవ్వుతున్నాను	telugu	
+sentence	303	44	Let me speak	Nannu matladanivvandi	నన్నుమాట్లాడనివ్వండి	telugu	
+sentence	304	44	He is my cat	Athanu na pilli	అతనునా పిల్లి	telugu	
+sentence	305	44	He is asleep	Ayana nidrapothunnaru	అయననిద్రపోతున్నారు	telugu	
+sentence	306	44	Shall we go ?	Manam veldama	మనంవెళ్లామా	telugu	
+sentence	307	44	I took hrs	Nenu rendu gantalu teesukunnanu	నేనురెండ్గంటలుతీసుకున్నాను	telugu	
+sentence	308	45	I have a car	Naku karu undi	నాకుకారుఉంది	telugu	
+sentence	309	45	I have to go	Nenu vellali	నేనువెళ్ళాలి	telugu	
+sentence	310	45	Not to worry	Chinthinchakandi	చింతించకండి	telugu	
+sentence	311	45	He has fever	Ayanaki jvaram undi	ఆయనకి జ్వరంఉంది	telugu	
+sentence	312	45	He is unwell	Ayana anarogyam tho unnaru	అయనఅనారోగ్యంతో ఉన్నారు	telugu	
+sentence	313	45	I was scared	Nenu bhyapaddanu	నేనుభయపడ్డాను	telugu	
+sentence	314	45	I am doing it	Nenu chestunnanu	నేనుచేస్తున్నాను	telugu	
+sentence	315	45	Yes , I am sad	Avunu nenu vicharanga unnanu	అవునునేనువిచారంగా ఉన్నాను	telugu	
+sentence	316	45	I have a cold	Naku jalubu chesindi	నాకుజలుబుచేసింది	telugu	
+sentence	317	45	I don't open	Nenu teravanu	నేనుతెరవను	telugu	
+sentence	318	45	I didn't open	Nenu teravaledu	నేనుతెరవలేదు	telugu	
+sentence	319	45	He is opening	Ayana terustunnaru	అయనతెరుస్తున్నారు	telugu	
+sentence	320	45	Good morning !	Shubhodayam	శుభోదయం	telugu	
+sentence	321	45	Good evening !	Shubha sayanthram	శుభసాయంత్రం	telugu	
+sentence	322	46	That's right !	Adi sarainadi	అది సరైనది	telugu	
+sentence	323	46	Neither can I	Nenuu cheyalenu	నేనుచేయలేను	telugu	
+sentence	324	46	Who are you ??	Miru evaru ?	మీరుఎవరు?	telugu	
+sentence	325	46	Will it rain ?	Varsham paduthunda ?	వర్షంపడుతుందా?	telugu	
+sentence	326	46	Can I not go ?	Nenu vellakunda undocha ?	నేనువెళ్లకుండా ఉండొచ్చా?	telugu	
+sentence	327	46	Who hurt you ?	Evaru mimmalni badincharu ?	ఎవరుమిమ్మల్ని బాధించారు?	telugu	
+sentence	328	46	Can you swim ?				no-romanization no-script
+sentence	329	46					no-english no-romanization no-script
+sentence	330	46					no-english no-romanization no-script
+sentence	331	46	Don't hurt me	Nannu bhadinchakandi	నన్నుభాదించకండి	telugu	
+sentence	332	46	I can give it	Nenu ivvagalanu	నేనుఇవ్వగలను	telugu	
+sentence	333	46	Come let's go	Randi veldam	రండి వెళ్లాం	telugu	
+sentence	334	46	I was writing	Nenu vrasthunnanu	నేనువ్రాస్తున్నాను	telugu	
+sentence	335	47	He had a shop	Ayanaki oka dhukanam undi	ఆయనకి ఒకదుకాణంఉంది	telugu	
+sentence	336	47	It's not good	Idi manchidi kadu	ఇది మంచిది కాదు	telugu	
+sentence	337	47	Ring the bell	Bell moginchandi	బెల్ మోగించండి	telugu	
+sentence	338	47	Bring it soon	Tondaraga teesukurandi	తొందరగా తీసుకురండి	telugu	
+sentence	339	47	But I like it	Kani naku adi nachindi	కానీ నాకుఅది నచ్చింది	telugu	
+sentence	340	47	Lock the door	Talupuki talam veyandi	తలుపుకితాళంవేయండి	telugu	
+sentence	341	47	You tell once	Miru okkasari cheppani	మీరుఒకసారి చెప్పండి	telugu	
+sentence	342	47	It's not nice	Idi manchidi kadu	ఇది మంచిది కాదు	telugu	
+sentence	343	47	I don't drink	Nenu taganu	నేనుతాగను	telugu	
+sentence	344	47	They are fine	Avi bagunnayi	అవి బాగున్నాయి	telugu	
+sentence	345	47	Where are we ?	Manam ekkada unnamu ?	మనంఎక్కడఉన్నాము?	telugu	
+sentence	346	47	Where is she ?	Avida ekkada unnaru ?	ఆవిడా ఎక్కడఉన్నారు?	telugu	
+sentence	347	47	I need a taxi	Naku taxi kavali	నాకుటాక్సీ కావాలి	telugu	
+sentence	348	47	I am new here	Nenu ikkada kothaga vachanu	నేనుఇక్కడకొత్తగా వచ్చాను	telugu	
+sentence	349	48	Read the book	Pusthakam chadavandi	పుస్తకంచదవండి	telugu	
+sentence	350	48	Close the lid	Mutha moosiveyandi	మూతమూసివేయండి	telugu	
+sentence	351	48	Stop doing it	Cheyadam apandi	చేయడంఆపండి	telugu	
+sentence	352	48	Stop dreaming	Kalalu kanadam apandi	కలలుకనడంఆపండి	telugu	
+sentence	353	48	Show yourself	Mirento nirupinchukondi	మీరేంటో నిరూపించుకోండి	telugu	
+sentence	354	48	Keep it ready	Sidanga unchandi	సిద్ధంగాఉంచండి	telugu	
+sentence	355	48	Keep it going	Konasaginchandi	కొనసాగించండి	telugu	
+sentence	356	48	Is Suresh in ?	Suresh lopala unnara ?	సురేష్ లోపలఉన్నారా?	telugu	
+sentence	357	48	Don't fool me	Nannu mosam cheyakandi	నన్నుమోసంచేయకండి	telugu	
+sentence	358	48	I don't know	Naku teliyadu	నాకుతెలియదు	telugu	
+sentence	359	48	Kindly see it	Dayatho chudandi	దయతో చూడండి	telugu	
+sentence	360	48	You are wrong	Miru tappu	మీరుతప్పు	telugu	
+sentence	361	48	What do I do ?	Nenu emi cheyyali	నేనుఏమి చెయ్యాలి?	telugu	
+sentence	362	49	Repeat please	Dayachesi malli cheppandi	దయచేసి మళ్ళీ చెప్పండి	telugu	
+sentence	363	49	Wait a minute	Oka nimisham agandi	ఒకనిమిషంఆగండి	telugu	
+sentence	364	49	I go with him	Nenu ayanatho veltanu	నేనుఆయనతో వెళ్తాను	telugu	
+sentence	365	49	It is raining	Varsham paduthondi	వర్షంపడుతోంది	telugu	
+sentence	366	49	Give rupees	Aru rupayalu ivvandi	ఆరురూపాయలుఇవ్వండి	telugu	
+sentence	367	49	I need a room	Naku oka gadhi kavali	నాకుఒకగది కావాలి	telugu	
+sentence	368	49	In which way ?	Ye vidhanga ?	ఏవిధంగా?	telugu	
+sentence	369	49	It's my fault	Adi na porapatu			no-script
+sentence	370	49					no-english no-romanization no-script
+sentence	371	49	I give my pen	Nenu na kalam isthanu	నేనునా కలంఇస్తాను	telugu	
+sentence	372	49	I prefer milk	Nenu palanu istapadathanu	నేనుపాలనుఇష్టపడతాను	telugu	
+sentence	373	49	Try to say it	Cheppadaniki prayathninchandi	చెప్పడానికి ప్రయత్నించండి	telugu	
+sentence	374	49	What's wrong ?	Tappu enti ?	తప్పుఏంటి?	telugu	
+sentence	375	49	It is snowing	Manchu paduthunnadi	మంచుపడుతున్నది	telugu	
+sentence	376	50	Shall I wait ?	Nenu vechi undala ?	నేనువేచి ఉండాలా?	telugu	
+sentence	377	50	Mop the floor	Nela tudachandi	నేలతుదచండి	telugu	
+sentence	378	50	Wash the bike	Bike tudachandi	బైక్తుదచండి	telugu	
+sentence	379	50	I need a bath	Nenu snanam cheyali	నేనుస్నానంచేయాలి	telugu	
+sentence	380	50	What's in it ?	Indulo emundi ?	ఇందులో ఏముంది ?	telugu	
+sentence	381	50	Do you begin ?	Miru prarambisthara ?	మీరుప్రారంభిస్తారా?	telugu	
+sentence	382	50	This is cheap	Idi chaukaga untundi	ఇది చౌకగా ఉంటుంది	telugu	
+sentence	383	50	Do what I say	Nenu cheppedi cheyandi	నేనుచెప్పేదిచేయండి	telugu	
+sentence	384	50	Let him relax	Ayanni vishrathi teeskonivvandi	ఆయన్ని విశ్రాంతి తీసుకోనివ్వండి	telugu	
+sentence	385	50	I play soccer	Nenu soccer adathanu	నేనుసాకర్ ఆడుతాను	telugu	
+sentence	386	50	Do you smoke ?	Miru poga traguthara ?	మీరుపొగత్రాగుతారా?	telugu	
+sentence	387	50	I want to eat	Naku thinalani undi	నాకుతినాలని ఉంది	telugu	
+sentence	388	50	Speak quickly	Tvaraga matladandi	త్వరగా మాట్లాడండి	telugu	
+sentence	389	51	Learn driving	Driving nerchukondi	డ్రైవింగ్ నేర్చుకోండి	telugu	
+sentence	390	51	That is a boy	Adi abbayi	అది అబ్బాయి	telugu	
+sentence	391	51	He was asleep	Ayana nidrapoyaru	అయననిద్రపోయారు	telugu	
+sentence	392	51	She was tired	Avida alasipoyaru	ఆవిడఅలసిపోయారు	telugu	
+sentence	393	51	Ram is asleep	Ram nidrapoyaru	రామ్ నిద్రపోయారు	telugu	
+sentence	394	51	Help the poor	Pedavariki sahayam cheyandi	పేదవారికి సహాయంచేయండి	telugu	
+sentence	395	51	Comb the hair	Juttu duvvukondi	జుట్టుదువ్వుకోండి	telugu	
+sentence	396	51	Get well soon		తొందరగా కోలుకోండి	telugu	no-romanization
+sentence	397	51	Love yourself	Ninnu nuvvu preminchu	నిన్నునువ్వుప్రేమించు	telugu	
+sentence	398	51	Have patience	Opika kaligi undandi	ఓపికకలిగిఉండండి	telugu	
+sentence	399	51	You amazed	Miru nannu ascharyaparicharu	మీరునన్నుఆశ్చర్యపరిచారు	telugu	
+sentence	400	51	You are lying	Miru abadham chepthunnaru	మీరుఅబధంచెప్తున్నారు	telugu	
+sentence	401	52	You let us go	Miru mammalni vellanivvandi	మీరుమమ్మల్ని వెళ్లనివ్వండి	telugu	
+sentence	402	52	I have my car	Na deggara karu undi	నా దగ్గరకారుఉంది	telugu	
+sentence	403	52	He forgave me	Ayana nannu kshamincharu	అయననన్నుక్షమించారు	telugu	
+sentence	404	52	You look good	Miru chala baga unnaru	మీరుచాలా బాగా ఉన్నారు	telugu	
+sentence	405	52	Sumit is here	Sumit ikkada unnaru	సుమిత్ ఇక్కడఉన్నారు	telugu	
+sentence	406	52	See you again	Malli kaluddam	మళ్ళీ కలుద్దాం	telugu	
+sentence	407	52	I am teaching	Nenu bodhistunnanu	నేనుబోధిస్తున్నాను	telugu	
+sentence	408	52	I am laughing		నేనునవ్వుతున్నాను	telugu	no-romanization
+sentence	409	52	He is weeping	Ayana edusthunnaru	అయనఏడుస్తున్నారు	telugu	
+sentence	410	52	I am learning	Nenu nerchukuntunnanu	నేనునేర్చుకుంటున్నాను	telugu	
+sentence	411	52	I sell apples	Nenu yapil pandlu ammuthanu	నేనుయాపిల్ పండ్లుఅమ్ముతాను	telugu	
+sentence	412	52	Are you okay ?	Miru bagunnara ?	మీరుబాగున్నారా?	telugu	
+sentence	413	52	Here is a pen	Ikkada oka kalam undi	ఇక్కడఒకకలంఉంది	telugu	
+sentence	414	53	It is a chair	Adi oka kurchi	అది ఒకకుర్చీ	telugu	
+sentence	415	53	I am studying	Nenu chaduvukuntunnanu	నేనుచదువుకుంటున్నాను	telugu	
+sentence	416	53	Shall we eat ?	Manam thindama ?	మనంతిందామా?	telugu	
+sentence	417	53	Go right away	Ventane vellandi	వెంటనే వెళ్ళండి	telugu	
+sentence	418	53	Speak quietly	Nishabdanga matladandi	నిశ్శబ్దంగా మాట్లాడండి	telugu	
+sentence	419	53	It costs Rs	Dini dhara ayidu rupayalu	దీని ధరఅయిదురూపాయలు	telugu	
+sentence	420	53	I don't agree	Nenu angeekarinchanu	నేనుఅంగీకరించను	telugu	
+sentence	421	53	I spend a lot		నేనుచాలా ఖర్చుచేస్తాను	telugu	no-romanization
+sentence	422	53	Happy New Year	Nuthana samvathsara shubhakankshalu	నూతనసంవత్సరశుభాకాంక్షలు	telugu	
+sentence	423	53	Please come in	Dayachesi lopaliki randi	దయచేసి లోపలికి రండి	telugu	
+sentence	424	53	I have a cough	Naku dagguga undi	నాకుదగ్గుగాఉంది	telugu	
+sentence	425	53	He didn't open	Ayana teravaledu	అయనతెరవలేదు	telugu	
+sentence	426	53	Go downstairs !	Krindaki vellandi	క్రిందకి వెళ్ళండి	telugu	
+sentence	427	53	Never do that !	Eppudu ala cheyakandi	ఎప్పుడుఅలా చేయకండి	telugu	
+sentence	428	54	May I come in ?	Nenu lopaliki ravacha ?	నేనులోపలికి రావచ్చా?	telugu	
+sentence	429	54	Comb your hair	Thala duvvukondi	తలదువ్వుకోండి	telugu	
+sentence	430	54	Who has money ?	Evari deggara dabbu undi ?	ఎవరి దెగ్గరడబ్బుఉంది?	telugu	
+sentence	431	54	Whose is this ?	Idi evaridi	ఇది ఎవరిది?	telugu	
+sentence	432	54	You know what	Niku telusa	నీకుతెలుసా	telugu	
+sentence	433	54	I ate a little				no-romanization no-script
+sentence	434	54					no-english no-romanization no-script
+sentence	435	54					no-english no-romanization no-script
+sentence	438	54			నేనుచేయాల్సి వచ్చింది	telugu	no-english no-romanization
+sentence	439	54	Go to the left	Edama vaipu vellandi	ఎడమవైపువెళ్ళండి	telugu	
+sentence	440	54	No , it is mine	Ledu , adi naade	లేదు, అది నాదే	telugu	
+sentence	441	55	Ready to begin	Prarambinchadaniki siddanga undi	ప్రారంభించడానికి సిద్ధంగాఉంది	telugu	
+sentence	442	55	Go to the shop	Dukananiki vellandi	దుకాణానికి వెళ్ళండి	telugu	
+sentence	443	55	Don't blame me	Nannu nindinchavaddu	నన్నునిందించవద్దు	telugu	
+sentence	444	55	She is singing	Avida paduthunnaru	ఆవిడపడుతున్నారు	telugu	
+sentence	445	55	I shall not go	Nenu vellanu	నేనువెళ్ళను	telugu	
+sentence	446	55	Now I can talk	Ippudu nenu matladagalanu	ఇప్పుడునేనుమాట్లాడగలను	telugu	
+sentence	447	55	He is not well		Ayana ఆయనబాగా baga leru లేరు	telugu	no-romanization
+sentence	448	55	Bring my shirt	Na chokka teesukurandi	నా చొక్కా తీసుకురండి	telugu	
+sentence	449	55	I know Tamil				no-romanization no-script
+sentence	450	55					no-english no-romanization no-script
+sentence	451	55					no-english no-romanization no-script
+sentence	452	55	Is coffee hot ?	Coffee vediga unda ?	కాఫీ వేడిగాఉందా ?	telugu	
+sentence	453	55	It's very good	Idi chala bagundi	ఇది చాలా బాగుంది	telugu	
+sentence	454	55	Do this slowly	Dinni nemmadiga cheyandi	దీన్ని నెమ్మదిగా చేయండి	telugu	
+sentence	455	56	I can hear you	Nenu mimmalni vinagaluguthunnanu	నేనుమిమ్మల్ని వినగలుగుతున్నాను	telugu	
+sentence	456	56	Think about it	Dani gurinchi alochinchandi	దాని గురించి ఆలోచించండి	telugu	
+sentence	457	56	Enjoy yourself	Santhoshanga undandi	సంతోషంగా ఉండండి	telugu	
+sentence	458	56	I have no idea	Naku avagahana ledu	నాకుఅవగాహనలేదు	telugu	
+sentence	459	56	It's up to you	Meke vadilesthunnam	మీకే వదిలేస్తున్నాం	telugu	
+sentence	460	56	I came walking	Nenu nadusthu vachanu	నేనునడుస్తూవచ్చాను	telugu	
+sentence	461	56	Are you sick ?	Miku ontlo baleda ?	మీకుఒంట్లో బాలేదా?	telugu	
+sentence	462	56	Give it to him	A Ayanaki avvandi			no-script
+sentence	463	56	Do it properly	Sarigga cheyandi	సరిగ్గాచేయండి	telugu	
+sentence	464	56	Do it together	Kalisi cheyandi	కలిసి చేయండి	telugu	
+sentence	465	56	Read it for me	Na kosam chadavandi	నా కోసంచదవండి	telugu	
+sentence	466	56	Start doing it	Cheydam prarambinchandi	చేయడంప్రారంభించండి	telugu	
+sentence	467	56	It's delicious	Adi ruchikaramainadi	అది రుచికరమైనది	telugu	
+sentence	468	57	Just like that	Urike	ఊరికే	telugu	
+sentence	469	57	How did it go ?	Ela jarigindi ?	ఎలా జరిగింది ?	telugu	
+sentence	470	57	How big is it ?	Adi enta peddadi ?	అదిఎంతపెద్దది?	telugu	
+sentence	471	57	It can't be so	Adi ala kadu	అది అలా కాదు	telugu	
+sentence	472	57	It was my duty	Adi na karthavyam	అది నా కర్తవ్యం	telugu	
+sentence	473	57	Be good to all	Andaritho manchiga undandi	అందరితో మంచిగా ఉండండి	telugu	
+sentence	474	57	He needs money	Ayanaki dabbu kavali	ఆయనకి డబ్బుకావాలి	telugu	
+sentence	475	57	I'll come back	Nenu malli vasthanu	నేనుమల్లి వస్తాను	telugu	
+sentence	476	57	This is my bag	Idi na bag	ఇది నా బ్యాగ్	telugu	
+sentence	477	57	How is he now ?	Ayana ippudu ela unnaru ?	ఆయనఇప్పుడుఎలా ఉన్నారు?	telugu	
+sentence	478	57	It's cold here	Ikkada challaga undi	ఇక్కడచల్లగాఉంది	telugu	
+sentence	479	57	I was doing it	Nenu chestunnanu	నేనుచేస్తున్నాను	telugu	
+sentence	480	57	Allow me to do	Nannu cheyadaniki anumathinchandi	నన్నుచేయడానికి అనుమతించండి	telugu	
+sentence	481	57	Are they happy ?	Varu santhoshama ?	వారుసంతోషమా?	telugu	
+sentence	482	58	Give me a hand	Naku cheyi andinchandi	నాకుచేయి అందించండి	telugu	
+sentence	483	58	It will happen	Adi jaruguthundi	అది జరుగుతుంది	telugu	
+sentence	484	58	He will not do		Ayana ఆయనదానినిచేయరు danini cheyaru	telugu	no-romanization
+sentence	485	58	Yes , Of course	Avunu	అవును	telugu	
+sentence	486	58	That is my car	Adi na karu	అది నా కారు	telugu	
+sentence	487	58	Are they fine ?	Varu bagunnara ?	వారుబాగున్నారా?	telugu	
+sentence	488	58	Are they bold ?	Varu dhairyanga unnara ?	వారుధైర్యంగా ఉన్నారా?	telugu	
+sentence	489	58	Are they kind ?				no-romanization no-script
+sentence	490	58	Are they here ?	Varu ikkada unnara ?	వారుఇక్కడఉన్నారా?	telugu	
+sentence	491	58	I write a poem	Nenu oka padyam rasanu	నేనుఒకపద్యంవ్రాస్తాను	telugu	
+sentence	492	58	I import dates	Nenu kharjuralanu digumathi chestanu	నేనుఖర్జురాలనుదిగుమతి చేస్తాను	telugu	
+sentence	493	58	We are running	Memu parigeduthunnamu	మేముపరిగెడుతున్నాము	telugu	
+sentence	494	58	This is my pen	Idi na kalam	ఇది నా కలం	telugu	
+sentence	495	59	Yes , I like it	Avunu nakadistam	అవునునాకది ఇష్టం	telugu	
+sentence	496	59	It is very hot IRCHAND	Idi chala vediga untundi	ఇది చాలా వేడిగాఉంటుంది	telugu	
+sentence	497	59	I'm not afraid	Nenu bhayapadutaledu	నేనుభయపడుటలేదు	telugu	
+sentence	498	59	He's very lazy	Athanu chala somari	అతనుచాలా సోమరి	telugu	
+sentence	499	59	Don't be angry	Kopaginchakandi	కోపగించకండి	telugu	
+sentence	500	59	I am a teacher	Nenoka upadhyayudini Collection V	నేనొకఉపాధ్యాయుడిని	telugu	
+sentence	501	59	He took a book	Athanu oka pusthakam tesukunnaru	అతనుఒకపుస్తకంతీసుకున్నారు.	telugu	
+sentence	502	59	Are they rich ?	Varu dhanavanthula ?	వారుధనవంతులా?	telugu	
+sentence	503	59	This is a book	Idi oka pusthakam	ఇది ఒకపుస్తకం	telugu	
+sentence	504	59	It's It ' very cold	Idi chala challaga undi	ఇది చాలా చల్లగాఉంది	telugu	
+sentence	505	59	Use your brain	Mee medhadunu upayoginchandi	మీ మెదడునుఉపయోగించండి	telugu	
+sentence	506	59	Serve the food	Aharanni vaddinchandi	ఆహారాన్ని వడ్డించండి	telugu	
+sentence	507	59	Do not gesture	Sangnya cheyakandi	సంజ్ఞచేయకండి	telugu	
+sentence	508	60	Wear the shirt	Chokka dharinchandi	చొక్కా ధరించండి	telugu	
+sentence	509	60	You will learn	Miru nerchukuntaru	మీరునేర్చుకుంటారు	telugu	
+sentence	510	60	You are a girl	Miru oka ammayi	మీరుఒకఅమ్మాయి	telugu	
+sentence	511	60	It was written	Adi vrayabadinadi	అది వ్రాయబడినది	telugu	
+sentence	512	60	Think about me	Na gurinchi alochinchandi	నా గురించి ఆలోచించండి	telugu	
+sentence	513	60	Do not overeat	Athiga thinakandi	అతిగా తినకండి	telugu	
+sentence	514	60	Mend your ways	Mi margalanu chakkadiddukondi	మీ మార్గాలనుచక్కదిద్దుకోండి	telugu	
+sentence	515	60	He saddened me	Ayana nannu badhapettaru	ఆయననన్నుబాధపెట్టారు	telugu	
+sentence	516	60	Don't touch it	Danni thakakandi	దాన్ని తాకకండి	telugu	
+sentence	517	60	Don't be hasty	Thondarapadakandi	తొందరపడకండి	telugu	
+sentence	518	60	Don't hesitate	Mohamatam padakandi	మొహమాటంపడకండి	telugu	
+sentence	519	60	Remind me at	Enimidi gantalaku naku gurtu cheyandi	ఎనిమిది గంటలకునాకుగుర్తుచేయండి	telugu	
+sentence	520	60	Don't sit idle	Panilekunda kurchokandi	పనిలేకుండా కూర్చోకండి	telugu	
+sentence	521	61	Don't annoy me	Nannu badhinchakandi	నన్నుబాధించకండి	telugu	
+sentence	522	61	I play cricket	Nenu cricket aduthanu	నేనుక్రికెట్ఆడతాను	telugu	
+sentence	523	61	I have to play	Nenu adali	నేనుఆడాలి	telugu	
+sentence	524	61	Light the lamp	Deepam veliginchandi	దీపంవెలిగించండి	telugu	
+sentence	525	61	It's all right	Sare alage	సరే అలాగే	telugu	
+sentence	526	61	He was awkward	Ayana ibbandikaranga unnaru	ఆయనఇబ్బందికరంగా ఉన్నారు	telugu	
+sentence	527	61	Mom is at home	Amma intlo undi	అమ్మఇంట్లోఉంది	telugu	
+sentence	528	61	He makes me go	c nannu vellela chestaru	ఆయననన్నువెళ్లేలా చేస్తారు	telugu	
+sentence	529	61	You may go now	Miru ippudu vellavachu	మీరుఇప్పుడువెళ్ళవచ్చు	telugu	
+sentence	530	61	Please take it	Dayachesi tesukondi	దయచేసి తీసుకోండి	telugu	
+sentence	531	61	I like the dog	Naku kukka ante istam	నాకుకుక్కఅంటే ఇష్టం	telugu	
+sentence	532	61	Don't favor me	Naku anukulanga undakandi	నాకుఅనుకూలంగా ఉండకండి	telugu	
+sentence	533	61	I have my ways	Naku na margalu unnay	నాకునా మార్గాలుఉన్నాయి	telugu	
+sentence	534	61	Be comfortable	Soukaryanga undandi	సౌక్ర్ంగా ఉండండి	telugu	
+sentence	535	62	Who is guilty?	Evaru doshi?	ఎవరుదోషి?	telugu	
+sentence	536	62	What happened?	Emi jarigindi?	ఏమి జరిగింది?	telugu	
+sentence	537	62	He did nothing	Ayana emi cheyaledu	ఆయనఏమీ చేయలేదు	telugu	
+sentence	538	62	He got us coke	Ayana maku coke tesukunnaru	ఆయనమాకుకోక్ తీసుకునారు	telugu	
+sentence	539	62	He has nothing	Ayanaki emi ledu	ఆయనకి ఏమి లేదు	telugu	
+sentence	540	62	Don't you know?	Miku teliyada?	మీకుతెల్లయదా?	telugu	
+sentence	541	62	Bring some more	Marikonni tesukurandi	మరికొని తీసుకుర్ండి	telugu	
+sentence	542	62	Is Idi this pusthakama? a these? book?		ఇది ప్పసక్మా?	telugu	no-romanization
+sentence	543	62	What are	Ivi emiti?	ఇవి ఏమిట్ట?	telugu	
+sentence	544	62	What are those?	Avi emiti?	అవి ఏమిట్ట?	telugu	
+sentence	545	62	Are you a girl?	Nivu adapillava?	నీవ్వఆడపలవా?	telugu	
+sentence	546	62	He doesn't open	Ayana teravaru	ఆయనతెర్వరు	telugu	
+sentence	547	62	I will not open	Nenu teravanu	నేనుతెర్వను	telugu	
+sentence	548	63	Get in !	Lopaliki randi	లోపలి రండి	telugu	
+sentence	549	63	Get on the bus !	Bassulo ekkandi	బస్సులో ఎక్కండి	telugu	
+sentence	550	63	Get in the car !	Karu loki randi !	కారులోకి రండి !	telugu	
+sentence	551	63	Don't be silly !	Verri undakandi	వెర్రిఉండకండి	telugu	
+sentence	552	63	That's too bad !	Adi chala anyayam	అది చాలా అన్యాయం!	telugu	
+sentence	553	63	May I sit down ?	Nenu kurchovacha ?	నేనుకూర్చోవచ్చా?	telugu	
+sentence	554	63	Why are you so ?	Enduku miru antha ?	ఎందుకుమీరుఅంత?	telugu	
+sentence	555	63	Do you need it ?	Miku idi kavala ?	మీకుఇది కావాలా?	telugu	
+sentence	556	63	How ridiculous !	Enta hasyaspandanga undi !	ఎంతహాస్యాస్పదంగాఉంది !	telugu	
+sentence	557	63	How disgusting !	Enta asahyakaramainadi ! !	ఎంతఅసహ్యకరమైనది	telugu	
+sentence	558	63	How does he go ?	Ayana ela veltharu ?	ఆయనఎలా వెళ్తారు?	telugu	
+sentence	559	63	Where can I go ?	Nenu ekkadiki vellagalanu ?	నేనుఎక్కడికి వెళ్ళగలను?	telugu	
+sentence	560	63	Who doesn't go ?	Evaru vellaru ?	ఎవరువెళ్ళరు?	telugu	
+sentence	561	63	Don't scold him	Ayanni thittakandi	ఆయని తటక్ండి	telugu	
+sentence	562	64	That's not true	Adi nijam kadu	అది నిజంకాదు	telugu	
+sentence	563	64	Don't eat often	Tharachuga thinakandi	తర్చుగా తనక్ండి	telugu	
+sentence	564	64	I don't give it	Nenu ivvanu	నేనుఇవను	telugu	
+sentence	565	64	Shall we leave?	Manam veldama?	మనంవెళామా?	telugu	
+sentence	566	64	I Nenu have dinni to do cheyali it		నేనుదీని చేయాల్ల	telugu	no-romanization
+sentence	567	64	I may not do it	Nenu cheyakapovachu	నేనుచేయక్పోవచు	telugu	
+sentence	568	64	Don't compel me	Nannu balavantham cheyakandi	నను బ్లవంతం చేయక్ండి	telugu	
+sentence	569	64	Battery betternow isgone poindi		Battery బాటర్చపోయ్యంది	telugu	no-romanization
+sentence	570	64	Much	Ippudu chala manchidi	ఇప్పడుచలా మంచిది	telugu	
+sentence	571	64	I like them too	Naku avi nachayi	నాకుఅవి నచయ్య	telugu	
+sentence	572	64	I lost my watch	Nenu na gadiyaranni kolpoyanu	నేనునా గడియారాని కోలోయాను	telugu	
+sentence	573	64	So, who are you?	Ayte miru evaru?	అయ్యతే మీరుఎవరు?	telugu	
+sentence	574	64	It must be true	Adi nijam ayi undali	అది నిజంఅయ్యఉండాల్ల	telugu	
+sentence	575	65	We are all here	Memantha ikkada unnam	మేమంతా ఇక్కడఉన్నాం	telugu	
+sentence	576	65	Isn't he there ?	Ayana akkada lera ?	ఆయనఅక్కడలేరా?	telugu	
+sentence	577	65	Nobody is there	Evaru leru	ఎవరూలేరు	telugu	
+sentence	578	65	He became angry	Ayana kopanga unnaru	ఆయనకోపంగా ఉన్నారు	telugu	
+sentence	579	65	May I join you ?	Nenu mitho cheravacha ?	నేనుమీతో చేరవచ్చా?	telugu	
+sentence	580	65	I don't mind it	Nenu pattinchukonu	నేనుపట్టిచుకోను	telugu	
+sentence	581	65	I don't want it	Naku adi akkarledu	నాకుఅది అక్కరలేదు	telugu	
+sentence	582	65	I am in trouble	Nenu ibbandullo unnanu	నేనుఇబ్బందుల్లో ఉన్నాను	telugu	
+sentence	583	65	No , I don't eat	Ledu nenu thinanu	లేదునేనుతినను	telugu	
+sentence	584	65	Who called you ?	Mimmalni evaru pilicharu ?	మిమ్మల్ని ఎవరుపిలిచారు?	telugu	
+sentence	585	65	He is listening	Ayana vintunnaru	ఆయనవింటున్నారు	telugu	
+sentence	586	65	There is a lamp	Oka deepam undi	ఒకదీపంఉంది	telugu	
+sentence	587	65	Don't get angry	Kopam techukokandi	కోపంతెచ్చుకోకండి	telugu	
+sentence	588	65	Fix your collar	Mi collar parishkarinchandi	మీ కాలర్నుపరిష్కరించండి	telugu	
+sentence	589	66	Mosquito bit me	Nannu doma kuttindi	నన్నుదోమకుట్టింది	telugu	
+sentence	590	66	How's it going ?	Ela jaruguthondi	ఎలా జరుగుతోంది?	telugu	
+sentence	591	66	Where were you ?	Miru ekkada untiri ?	మీరుఎక్కడఉంటిరి?	telugu	
+sentence	592	66	Don't be afraid	Bhayapadakandi	భయపడకండి	telugu	
+sentence	593	66	Come let's play	Randi adudam	రండి ఆడుదాం	telugu	
+sentence	594	66	Shall we begin ?				no-romanization no-script
+sentence	595	66					no-english no-romanization no-script
+sentence	596	66					no-english no-romanization no-script
+sentence	597	66					no-english no-romanization no-script
+sentence	598	66	Don't tell lies	Abadhalu cheppakandi	అబద్ధాలుచెప్పకండి	telugu	
+sentence	599	66	Open your mouth	Noru teravandi	నోరుతెరవండి	telugu	
+sentence	600	66	That's my fault	Adi na tappu	అది నా తప్పు	telugu	
+sentence	601	67	It's on the top	Idi paina undi	ఇది పైనఉంది	telugu	
+sentence	602	67	I went with him	Nenu ayanatho vellanu	నేనుఆయనతో వెళ్ళాను	telugu	
+sentence	603	67	Are you at home	Miru inti deggare unnara ?	మీరుఇంటి దెగ్గరే ఉన్నారా?	telugu	
+sentence	604	67	They called you	Varu mimmalni pilicharu	వారుమిమ్మల్ని పిలిచారు	telugu	
+sentence	605	67	She is carrying	Avida mosthunnaru	ఆవిడమోస్తున్నారు	telugu	
+sentence	606	67	No , I like curd	Ledu nenu perugini istapadathanu	లేదునేనుపెరుగుని ఇష్టపడతాను	telugu	
+sentence	607	67	Do you like it ?	Miku nachinda ?	మీకునచ్చిందా?	telugu	
+sentence	608	67	I came train	Nenu railulo vachanu	నేనురైలులో వచ్చాను	telugu	
+sentence	609	67	I want to sleep	Nenu nidra povalanukuntunnanu	నేనునిద్రపోవాలనుకుంటున్నాను	telugu	
+sentence	610	67	Read the lesson	Patam chadavandi	పాఠంచదవండి	telugu	
+sentence	611	67	The gas is over	Gas ayipoindi	గ్యాస్ అయిపోయింది	telugu	
+sentence	612	67	I am yet to eat	Nenu inka thinaledu	నేనుఇంకా తినలేదు	telugu	
+sentence	613	67	I cannot write	Nenu vrayalenu	నేనువ్రాయలేను	telugu	
+sentence	614	68	That is a mango	Idi mamidi	ఇది మామిడి	telugu	
+sentence	615	68	Are they tired ?	Varu alasipoyara ?	వారుఅలసిపోయారా?	telugu	
+sentence	616	68	I want a camera	Naku camera kavali	నాకుకెమెరా కావాలి	telugu	
+sentence	617	68	They play chess	Varu chedarangam adutharu	వారుచెదరంగంఆడుతారు	telugu	
+sentence	618	68	They make dolls	Varu bommalu thayaruchestaru	వారుబొమ్మలనుతయారుచేస్తారు	telugu	
+sentence	619	68	I teach English	Nenu angla bhasha nerpisthanu	నేనుఆంగ్లభాషనేర్పిస్తాను	telugu	
+sentence	620	68	I study English	Nenu anglam chaduvuthanu	నేనుఆంగ్లంచదువుతాను	telugu	
+sentence	621	68	This is his pen	Idi ayana kalam	ఇది ఆయనకలం	telugu	
+sentence	622	68	How's the	Aaharam ela undi ?	ఆహారంఎలా ఉంది?	telugu	
+sentence	623	68	Drive Carefully	Jagrathaga nadapandi	జాగ్రత్తగా నడపండి	telugu	
+sentence	624	68	I'm feeling sad	Naku badhaga undi	నాకుబాధగా ఉంది	telugu	
+sentence	625	68	See you tonight	E rathriki kaluddam	ఈరాత్రికి కలుద్దాం	telugu	
+sentence	626	68	Is it possible ?	Idi sadhyamena ?	ఇది సాధ్యమేనా?	telugu	
+sentence	627	68	Sweep the floor	Nelanu thudachandi RCHAND	నేలనుతుదచండి	telugu	
+sentence	628	69	That smells bad	Chedu vasana vasthundi	చెడువాసనవస్తుంది	telugu	
+sentence	629	69	I don't like it	Idi naku istam ledu	ఇది నాకుఇష్టంలేదు	telugu	
+sentence	630	69	This is for you	Idi mi kosam	ఇది మీ కోసం	telugu	
+sentence	631	69	I will buy this	Nenu dinni kontanu	నేనుదీన్నికొంటాను	telugu	
+sentence	632	69	Can I sit here ?	Nenu ikkada kurchovacha ?	నేనుఇక్కడకూర్చోవచ్చా?	telugu	
+sentence	633	69	I need a doctor	Naku oka vaidyudu kavali	నాకుఒకవైద్యుడుకావాలి	telugu	
+sentence	634	69	Don't interrupt	Antharayam kaliginchakandi	అంతరాయంకలిగించకండి	telugu	
+sentence	635	69	He buys pens	Ayana iravai ayidu pennulu kontaru	ఆయనఇరవై అయిదు పెన్నులుకొంటారు	telugu	
+sentence	636	69	Why do you run ?	Miru enduku ?	మీరుఎందుకుపరిగెత్తుతారు?	telugu	
+sentence	637	69	Why did he run ?	Ayana enduku parigetharu ?	ఆయనఎందుకుపరిగెత్తారు?	telugu	
+sentence	638	69	Are you kidding ?	Miru tamasha chestunnara ?	మీరుతమాషా చేస్తున్నారా?	telugu	
+sentence	639	69	Call the police	Policulanu pilavandi	పోలీసులనుపిలవండి	telugu	
+sentence	640	69	These are books	Ivi pusthakalu	ఇవి పుస్తకాలు	telugu	
+sentence	641	70	I am not a girl	Nenu ammayini kadu	నేనుఅమ్మాయిని కాదు	telugu	
+sentence	642	70	It is difficult	Adi kastam	అది కష్టం	telugu	
+sentence	643	70	It is wonderful	Idi adbhuthamainadi	ఇది అద్భుతమైనది	telugu	
+sentence	644	70	I open the door	Nenu talupu terusthanu	నేనుతలుపుతీరుస్తాను	telugu	
+sentence	645	70	I don't get you	Naku miru cheppindi arthamkaledu	నాకుమీరుచెప్పింది అర్థంకాలేదు	telugu	
+sentence	646	70	Turn on the tap	Tap on cheyandi	ట్యాప్ ఆన్చేయండి	telugu	
+sentence	647	70	Knead the flour				no-romanization no-script
+sentence	648	70	Don't abuse him	Ayanni nindinchakandi	ఆయనన్నినిందించకండి	telugu	
+sentence	649	70	I live in Delhi	Nenu delhi lo nivasisthunnanu	నేనుఢిల్లీ లో నివసిస్తున్నాను	telugu	
+sentence	650	70	We were sitting	Memu kurchunnamu	మేముకూర్చున్నాము	telugu	
+sentence	651	70	There was a tap	Oka kulayi undi	ఒకకుళాయి ఉంది	telugu	
+sentence	652	70	It is lightning	Adi merupu	అది మెరుపు	telugu	
+sentence	653	70	He is shivering	Ayana vanukuthunnaru	ఆయనవణుకుతున్నారు	telugu	
+sentence	654	70	I am used to it	Naku adi alavate	నాకుఅది అలవాటే	telugu	
+sentence	655	71	You are welcome	Miku svagatham	మీకుస్వాగతం	telugu	
+sentence	656	71	It took years	Diniki aaru samvathsaralu pattindi	దీనికిఆరుసంవత్సరాలుపట్టింది	telugu	
+sentence	657	71	He seldom walks	Ayana aruduga nadustharu	ఆయనఅరుదుగా నడుస్తారు	telugu	
+sentence	658	71	I had been told	Naku cheppabadindi	నాకుచెప్పబడింది	telugu	
+sentence	659	71	I never met you	Nenu mimmalni eppudu kalavaledu	నేనుమిమ్మల్ని ఎప్పుడుకలవలేదు	telugu	
+sentence	660	71	I must go there	Nenu akkadiki vellali	నేనుఅక్కడికి వెళ్ళాలి	telugu	
+sentence	661	71	Rahul has to go	Rahul vellali	రాహుల్ వెళ్ళాలి	telugu	
+sentence	662	71	Ram never plays	Ram eppudu aadaru	రామ్ ఎప్పుడుఆడరు	telugu	
+sentence	663	71	Turn the tap on	Tap on cheyandi	ట్యాప్ ఆన్ చేయండి	telugu	
+sentence	664	71	Nothing special	Prathyekanga emi ledu	ప్రత్యేకంగాఏమీ లేదు	telugu	
+sentence	665	71	Clean the floor	Nela shubraparuchumu	నేలశుభ్రపరుచుము	telugu	
+sentence	666	71	Nothing , thanks	Emi ledu , dhanyavadalu	ఏమీ లేదు, ధన్యవాదాలు	telugu	
+sentence	667	71	Have it , please	Dayachesi idi tesukondi	దయచేసి ఇది తీసుకోండి	telugu	
+sentence	668	72	No matter what !	Edi emaina	ఏది ఏమైనా	telugu	
+sentence	669	72	I don't believe	Nenu nammanu	నేనునమ్మను	telugu	
+sentence	670	72	What do you do ?	Miru emi chestaru ?	మీరుఏమి చేస్తారు?	telugu	
+sentence	671	72	I go for a walk	Nenu nadaka kosam veltanu	నేనునడకకోసంవెళ్తాను	telugu	
+sentence	672	72	Keep it forever	Eppatiki unchandi	ఎప్పటికీఉంచండి	telugu	
+sentence	673	72	I am having fun	Nenu anandisthunnanu	నేనుఆనందిస్తున్నాను	telugu	
+sentence	674	72	This is a rumor	Idi oka pukaru	ఇది ఒకపుకారు	telugu	
+sentence	675	72	She talks a lot	Avida chala	ఆవిడచాలమాట్లాడుతుంది	telugu	
+sentence	676	72	I keep my words	Nenu na mata mida nilabaduthanu	నేనునా మాటమీదనిలబడతాను	telugu	
+sentence	677	72	Nothing as such	Alantidemi ledu	అలాంటిదేమీ లేదు	telugu	
+sentence	678	72	India will win	Bharatadesham gelustundi	భారతదేశంగెలుస్తుంది	telugu	
+sentence	679	72	I had food	Nenu aaharam thinnanu	నేనుఆహారంతిన్నాను	telugu	
+sentence	680	72	Don't bother me	Nannu ibbandi pettavaddu	నన్నుఇబ్బంది పెట్టవద్దు	telugu	
+sentence	681	73	Who do all know?	Miru enduku telusukovaali ?	మీరుఎందుకుతెలుసుకోవాలి?	telugu	
+sentence	682	73	I enjoyed a lot !	Nenu chala anandinchanu	నేనుచాలా ఆనందించాను	telugu	
+sentence	683	73	You are mistaken	Miru porapatu paddaru	మీరుపొరపాటుపడ్డారు	telugu	
+sentence	684	73	I am proud of it	Nenu garvapaduthunnanu	నేనుగర్వపడుతున్నాను	telugu	
+sentence	685	73	Yes , I am happy ?	Avunu nenu santhoshanga unnanu	అవునునేనుసంతోషంగా ఉన్నాను	telugu	
+sentence	686	73	Are these books ?	Ivi pusthakala ?	ఇవి పుస్తకాలా?	telugu	
+sentence	687	73	I have toothache	Naku dantha noppi undi	నాకుదంతనొప్పిఉంది	telugu	
+sentence	688	73	He will not open		Ayana ఆయనతెరవరు teravaru	telugu	no-romanization
+sentence	689	73	I am not opening	Nenu teravadam ledu	నేనుతెరవడంలేదు	telugu	
+sentence	690	73	Get off the bus !	Bassu nundi digipondi ! !	బస్సునుండి దిగిపోండి	telugu	
+sentence	691	73	Give a break !	Naku viramam ivvandi ! !	నాకువిరామంఇవ్వండి	telugu	
+sentence	692	73	What can I open ?	Nenu emi teravagalanu ?	నేనుఏమి తెరవగలను?	telugu	
+sentence	693	73	How are you now ?	Ippudu miru ela unnaru ?	ఇప్పుడుమీరుఎలా ఉన్నారు?	telugu	
+sentence	694	73	Is Shyam coming ?	Shyam vasthunnara ?	శ్యామ్ వస్తున్నారా?	telugu	
+sentence	695	74	Who am I to you ?	Nenu miku emi avathanu ?	నేనుమీకుఏమి అవుతాను?	telugu	
+sentence	696	74	Not even a bite !	Oka mudda kuda kadu	ఒకముద్దకూడా కాదు	telugu	
+sentence	697	74	What's going on ?	Em jaruguthondi ?	ఏంజరుగుతోంది?	telugu	
+sentence	698	74	Have a nice day !	Shubha dinam !	శుభదినం!	telugu	
+sentence	699	74	Who is that boy ?	A babu evaru ?	ఆబాబుఎవరు?	telugu	
+sentence	700	74	Why did you ask ?	Enduku adigaru ?	ఎందుకుఅడిగారు?	telugu	
+sentence	701	74	Get out of here !	Ikkada nundi vellipondi ! !	ఇక్కడనుండి వెళ్లిపోండి	telugu	
+sentence	702	74	Where do you go ?	Miru ekkadiki velatharu ?	మీరుఎక్కడికి వెళతారు?	telugu	
+sentence	703	74	How will you go ?	Miru ela veltaru ?	మీరుఎలా వెళ్తారు?	telugu	
+sentence	704	74	Please accept it	Dayachesi angeekarinchu	దయచేసి అంగీకరించండి	telugu	
+sentence	705	74	Don't yell at me	Na meeda aravakandi	నా మీదఅరవకండి	telugu	
+sentence	706	74	I missed the bus	Nenu bassunu andukolekapoyanu	నేనుబస్సునుఅందుకోలేకపోయాను	telugu	
+sentence	707	75	I am his brother	Nenu ayana sodarudini	నేనుఆయనసోదరుడిని	telugu	
+sentence	708	75	Can you do this ?	Miru dinni cheyagalara ?	మీరుదీన్నిచేయగలరా?	telugu	
+sentence	709	75	I cannot give it	Nenu ivvalenu	నేనుఇవ్వలేను	telugu	
+sentence	710	75	I didn't give it	Nenu ivvaledu	నేనుఇవ్వలేదు	telugu	
+sentence	711	75	I will not do it	Nenu cheyanu	నేనుచేయను	telugu	
+sentence	712	75	You are a genius	Miru medhavi	మీరుమేధావి	telugu	
+sentence	713	75	Long time no see		చాలా కాలంచూడలేదు	telugu	no-romanization
+sentence	714	75	It is in my home				no-romanization no-script
+sentence	715	75	Buy me a new one	Naku krotha danni konandi	నాకుక్రొత్తదాన్ని కొనండి	telugu	
+sentence	716	75	Show me this one	Idi naku chupinchandi	ఇది నాకుచూపించండి	telugu	
+sentence	717	75	There's one here	Ikkada oakti undi	ఇక్కడఒకటి ఉంది	telugu	
+sentence	718	75	Somehow , I got it	Elago naku arthamaindi	ఎలాగో నాకుఅర్థమైంది	telugu	
+sentence	719	75	Don't go so fast	Antha veganga vellakandi	అంతవేగంగా వెళ్ళకండి	telugu	
+sentence	720	75	Walk the bicycle	Cycle tho nadavandi	సైకిల్ తో నడవండి	telugu	
+sentence	721	76	I'm still eating	Nenu inka thintunnanu	నేనుఇంకా తింటున్నాను	telugu	
+sentence	722	76	Most of the time	Ekkuva samayam	ఎక్కువసమయం	telugu	
+sentence	723	76	Were you eating ?	Miru bhojanam chestundena ?	మీరుభోజనంచేస్తూండేనా?	telugu	
+sentence	724	76	Rare opportunity	Arudaina avakasham	అరుదైనఅవకాశం	telugu	
+sentence	725	76	It's very urgent	Idi chala athyavasaram	ఇది చాలా అత్యవసరం	telugu	
+sentence	726	76	I will try again	Nenu malli prayathnisthanu	నేనుమళ్ళీ ప్రయత్నిస్తాను	telugu	
+sentence	727	76	Orange is cheap	Narinja chaukaga untundi	నారింజచౌకగా ఉంటుంది	telugu	
+sentence	728	76	She is my sister	Avida na sodari	ఆవిడనా సోదరి	telugu	
+sentence	729	76	This is my house	Idi na illu	ఇది నా ఇల్లు	telugu	
+sentence	730	76	I could be wrong	Nenu tappu kavochu	నేనుతప్పుకావచ్చు	telugu	
+sentence	731	76	Do you know her ?	Miku avida telusa ?	మీకుఆవిడతెలుసా?	telugu	
+sentence	732	76	Can you show me ?	Naku chupistara ?	నాకుచూపిస్తారా?	telugu	
+sentence	733	76	That's beautiful	Adi andangavundi	అది అందంగావుంది	telugu	
+sentence	734	77	Is that too big ?	Adi chala peddada ?	అది చాలా పెద్దదా?	telugu	
+sentence	735	77	If so , it's okay	Ala ayithe , adi sare	అలా అయితే , అది సరే	telugu	
+sentence	736	77	Give this to her	Idi avidaku ivvandi	ఇది ఆవిడకుఇవ్వండి	telugu	
+sentence	737	77	I can't hear you	Naku mi mata vinipinchadamledu	నాకుమీ మాటవినిపించడంలేదు	telugu	
+sentence	738	77	Nothing but this	Idi tappa mari yemi ledu	ఇది తప్పమరేమీ లేదు	telugu	
+sentence	739	77	I care about you	Nenu mi gurinchi pattinchukuntanı	నేనుమీ గురించి పట్టించుకుంటాను	telugu	
+sentence	740	77	It's upside down	Idi thalakrinduluga undi	ఇది తలక్రిందులుగాఉంది	telugu	
+sentence	741	77	I have no choice	Naku vere margam ledu	నాకువేరే మార్గంలేదు	telugu	
+sentence	742	77	I wanna buy this	Nenu dinni konalanukuntunnanu	నేనుదీన్నికొనాలనుకుంటున్నాను	telugu	
+sentence	743	77	Blow the balloon	Gali budaga udandi	గాలి బుడగఊదండి	telugu	
+sentence	744	77	What is he like ?	Ayana ela untaru ?	ఆయనఎలా ఉంటారు?	telugu	
+sentence	745	77	Can I try it on ?	Nenu kastha prayathninchavacha ?	నేనుకాస్తప్రయత్నించవచ్చా?	telugu	
+sentence	746	77	He remembers you	Ayana mimmalni gurtunchukuntaru	ఆయనమిమ్మల్ని గుర్తుంచుకుంటారు	telugu	
+sentence	747	77	I don't like tea	Naku chai istam ledu	నాకుచాయ్ లేదు	telugu	
+sentence	748	78	What do you ask ?	Miru emi adugutharu ?	మీరుఏమి అడుగుతారు?	telugu	
+sentence	749	78	How many people ?	Enta mandi ?	ఎంతమంది ?	telugu	
+sentence	750	78	What is written ?	Emi vrayabadindi	ఏమి వ్రాయబడింది?	telugu	
+sentence	751	78	How is everyone ?	Prathiokkaru ela unnaru ?	ప్రతిఒక్కరు, ఎలా ఉన్నారు?	telugu	
+sentence	752	78	What to eat now ?	Ippudu emi thinali ?	ఇప్పుడుఏమి తినాలి?	telugu	
+sentence	753	78	Don't make noise	Shabdham cheyakandi	శబ్దంచేయకండి	telugu	
+sentence	754	78	This is not true	Idi nijam kadu	ఇది నిజంకాదు	telugu	
+sentence	755	78	What you do say ?	Miru emi chebutharu ?	మీరుఏమి చెబుతారు?	telugu	
+sentence	756	78	We have no money	Maku dabbu ledu	మాకుడబ్బులేదు	telugu	
+sentence	757	78	This is her book	Idi avida pusthakam	ఇది ఆవిడా పుస్తకం	telugu	
+sentence	758	78	This is my watch	Idi na gadiyaram	ఇది నా గడియారం	telugu	
+sentence	759	78	She is asking me	Avida nannu aduguthondi	ఆవిడా నన్నుఅడుగుతోంది.	telugu	
+sentence	760	78	He will be there	Ayana akkada untaru	ఆయనఅక్కడఉంటారు	telugu	
+sentence	761	79	I agree with you	Nenu mitho angeekaristhunnanu	నేనుమీతో అంగీక్రిసునాను	telugu	
+sentence	762	79	May I stay here?	Nenu ikkade undavacha?	నేనుఇక్డే ఉండవచ?	telugu	
+sentence	763	79	Are you at home?	Miru intlone unnara?	మీరుఇంటోనే ఉనారా?	telugu	
+sentence	764	79	I need your help		Naku నాకుమీ mi సహాయం sahayam kavali కావాల్ల	telugu	no-romanization
+sentence	765	79	Nothing happened	Emi jaragaledu	ఏమీ జర్గలేదు	telugu	
+sentence	766	79	Why is he angry?	Ayana enduku kopangaunnaru?	ఆయనఎందుకుకోపంగా ఉనారు?	telugu	
+sentence	767	79	I come with you	Nenu mitho vasthanu	నేనుమీతో వసాను	telugu	
+sentence	768	79	Yes, he is there	Avunu, athanu akkada unnaru	అవ్వను, అతనుఅక్డఉనారు	telugu	
+sentence	769	79	No, I am not sad	Ledu, naku badhaga ledu	లేదు, నాకుబాధగా లేదు	telugu	
+sentence	770	79	What do you buy?	Miru emi kontaru?	మీరుఏమి కొంటారు?	telugu	
+sentence	771	79	I buy vegetables	Nenu kooragayalu kontanu	నేనుకూర్గాయలుకొంటాను	telugu	
+sentence	772	79	What do they do?	Varu emi chestaru?	వారుఏమి చేసారు?	telugu	
+sentence	773	79	I write a letter	Nenu oka lekha rasthanu	నేనుఒక్ లేఖరాసాను	telugu	
+sentence	774	79	Yes, I have taken	Avunu nenu teesukunnanu	అవునునేనుతీసుకున్నాను	telugu	
+sentence	775	80	I don't like her	Nenu avidani istapadanu -- End - Other Books All of other language books This book is designed for those who are interested in learning Spoken 2000 Hindi . This book has 2000 Hindi words & sentences (1000 words & 1000 Words Sentences Hindi ( 1000Sentencesl &	నేనుఆవిడని ఇష్టపడను	telugu	

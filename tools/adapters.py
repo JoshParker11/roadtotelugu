@@ -79,4 +79,44 @@ def spoken_telugu(path=None):
     return out
 
 
-ALL = {'top1000': top1000, 'site': site_words, 'spoken-telugu': spoken_telugu}
+def _book(kind, path=None):
+    path = path or os.path.join(RAW, 'book1000.tsv')
+    if not os.path.exists(path):
+        return []
+    out = []
+    for r in csv.DictReader(open(path, encoding='utf-8'), delimiter='\t'):
+        if r['kind'] != kind:
+            continue
+        out.append({'telugu': r['telugu'].strip(), 'roman': '',
+                    'english': r['english'].strip(), 'pos': '',
+                    'source': 'book1000', 'raw_rom': r['raw_rom'].strip(),
+                    'rank': int(r['num']), 'book_flags': r['flags'],
+                    'notes': ''})
+    return out
+
+
+def book_words(path=None):
+    """225-word collection from the Gokila Agurchand book (see tools/parse_book.py)."""
+    return _book('word', path)
+
+
+def book_sentences(path=None):
+    """775-sentence collection from the same book."""
+    return _book('sentence', path)
+
+
+def site_sentences(path=None):
+    path = path or os.path.join(HERE, '..', 'anki', 'telugu_sentences.csv')
+    out = []
+    for r in csv.DictReader(open(path, encoding='utf-8')):
+        out.append({'telugu': r['TeluguScript'].strip(), 'roman': '',
+                    'english': r['EnglishPrompt'].strip(), 'pos': '',
+                    'source': 'site', 'raw_rom': r['Romanization'].strip(),
+                    'notes': r.get('Notes', '').strip(),
+                    'register': r.get('RegisterCue', '').strip()})
+    return out
+
+
+ALL = {'top1000': top1000, 'site': site_words, 'spoken-telugu': spoken_telugu,
+       'book1000': book_words}
+ALL_SENT = {'site': site_sentences, 'book1000': book_sentences}

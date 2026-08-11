@@ -78,7 +78,7 @@ def classify(rec):
 
 def main():
     records = []
-    for name in ('site', 'top1000', 'spoken-telugu'):     # site first so it wins merges
+    for name in ('site', 'book1000', 'top1000', 'spoken-telugu'):   # earlier sources win merges
         got = adapters.ALL[name]()
         print(f'  {name:<16} {len(got):>5} rows')
         records.extend(got)
@@ -113,6 +113,8 @@ def main():
                'example': r.get('example',''), 'rank': r.get('rank',''),
                'lemma': '', 'notes': r.get('notes',''), 'flags': set()}
         rec['flags'] = set(classify(rec))
+        if r.get('book_flags'):
+            rec['flags'] |= set(r['book_flags'].split())
         merged[key] = rec
 
     rows = list(merged.values())
