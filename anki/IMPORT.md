@@ -1,124 +1,161 @@
 # Importing into Anki
 
-Two files, both generated. Regenerate with `python3 tools/build_exports.py`.
+Two files, generated from the masters by `python3 tools/build_exports.py`:
 
 | File | Rows | Note type | Deck |
 |---|---|---|---|
-| `import_words.txt` | 2,010 | `Telugu Production` | `Telugu::Vocab` |
-| `import_sentences.txt` | 2,872 | `Telugu Sentence v3` | `Telugu::Sentences` |
+| `anki/import_words.txt` | 2,010 | `Telugu Production` | `Telugu::Vocab` |
+| `anki/import_sentences.txt` | 2,872 | `Telugu Sentence v3` | `Telugu::Sentences` |
 
-Both carry their own `#notetype`, `#deck`, `#separator` and `#guid column` headers, so Anki
-configures the import itself. You should not have to map a single column by hand.
+Both carry `#notetype`, `#deck`, `#guid column` and `#tags column` headers, so Anki configures
+the import itself — you should not have to set anything on the import screen except the
+duplicate-handling mode in step 4.
+
+**The import is idempotent.** Rows are matched on the master's stable id (`W0001`, `S0001`)
+carried in the guid column, not on the first field. Fix something in the master, re-export,
+re-import, and the existing note is updated in place. That is what makes this safe to redo,
+and it is the reason not to edit cards inside Anki — those edits are overwritten on the next
+import. Corrections go in `data/master_*.tsv`.
 
 ---
 
-## Before you start
+## 1. Back up first
 
-**1. Back up.** `File → Export → Anki Collection Package`, include scheduling, save it
-somewhere that isn't the Anki folder. You have 4,588 notes and this is worth two minutes.
+**File → Export → Anki Collection Package**, tick *Include media*. You have 4,588 existing
+notes and 25 of them are in live decks; this takes a minute and makes every later step
+reversible.
 
-**2. Add the missing field to `Telugu Sentence v3`.**
+## 2. Add the `EnglishAudio` field
 
-`Tools → Manage Note Types → Telugu Sentence v3 → Fields → Add`, name it exactly
-`EnglishAudio`, then use **Reposition** to move it to **position 2**. The final order must be:
+Only `Telugu Sentence v3` needs changing. `Telugu Production` already has exactly the right
+five fields.
+
+**Tools → Manage Note Types → Telugu Sentence v3 → Fields → Add** → name it `EnglishAudio`
+→ select it → **Reposition** → `2`.
+
+Field order must end up exactly:
 
 ```
-1. English      2. EnglishAudio     3. Romanized
-4. Telugu       5. Audio            6. Notes
+1. English        2. EnglishAudio   3. Romanized
+4. Telugu         5. Audio          6. Notes
 ```
 
-Field order is how the import maps columns. If `EnglishAudio` ends up anywhere else, the
-Telugu will land in the wrong field on every one of 2,872 notes.
+Anki maps import columns to fields positionally. If `EnglishAudio` sits anywhere but position
+2, every field after it lands in the wrong slot.
 
-`Telugu Production` already has the right five fields and needs no change.
+## 3. Delete the 15 old notes in the two target note types
 
----
+`Telugu Production` has 5 notes and `Telugu Sentence v3` has 10, all from earlier experiments.
+They carry Anki-generated guids, so the import cannot match them and would create duplicates
+alongside them.
 
-## The import
+All 15 are already in the masters — they were ingested as `src::anki`, so nothing is lost.
+`I am a programmer` is `S2348`, `nēnu` is `W0001`.
 
-`File → Import`, choose the file, and check the preview screen shows:
+In the Browse window, search each of these, select all (⌘A), and delete:
 
-- **Type**: the note type named in the table above
-- **Deck**: as above
-- **Existing notes**: **Update**
-- **Match scope**: Notes (not "Notes and deck")
-- First column mapped to **Guid**, last column to **Tags**
+```
+note:"Telugu Production"
+note:"Telugu Sentence v3"
+```
 
-Then Import. Words first, sentences second.
+Leave the `~Archive::` decks alone for now. Their content is in the masters too, but keep them
+until you have confirmed the new decks look right.
 
-### Why the GUID column matters
+## 4. Import
 
-Anki normally decides whether an incoming row is "the same note" by comparing the **first
-field**. Our first field is the English gloss, and it is not unique: వెయ్యి, వేయి and వేల are
-three real words all glossed "thousand"; ఈ రోజు and ఈరోజు are two spellings of "today". On
-first-field matching Anki would silently collapse 167 word rows and 95 sentence rows into
-each other and you would lose the variants.
+**File → Import** → `anki/import_words.txt`, then again for `anki/import_sentences.txt`.
 
-`#guid column:1` points Anki at the master's stable id instead. Two consequences:
+On the import screen check three things:
 
-- Nothing collapses. Every row lands as its own note.
-- **The import is idempotent.** Fix a row in `data/master_*.tsv`, re-export, re-import, and
-  Anki updates that note in place. It does not duplicate. This is the mechanism that makes
-  the master a real source of truth instead of a one-time dump.
+- Notetype and Deck are pre-filled from the file headers
+- **Existing notes: `Update`** — this is what makes re-imports update rather than duplicate
+- *Match scope* mentions the guid, not the first field
 
-So the loop for any future correction is: edit the master → `python3 tools/build_exports.py`
-→ import again. Never fix a card in Anki and expect it to survive.
+Expect **2,010 new notes** then **2,872 new notes**. If Anki reports a large number of
+*updated* notes on a first import, something is matching unexpectedly — stop and check.
 
----
+## 5. Set a sane pace
 
-## After the import
+You have just added 4,882 new cards. The export is already in study order — course material
+first, then sentences sorted by how much of each you already know — and Anki introduces new
+cards in import order, so the order needs no further work.
 
-### Generate the audio
+What needs setting is the daily limit. **Deck options** for each deck:
 
-Both audio fields are deliberately empty. In `Browse`, select the notes, then
-**Notes → HyperTTS → Add Audio**, once per field:
+- `Telugu::Vocab` → new cards/day **10**
+- `Telugu::Sentences` → new cards/day **5**
 
-| Deck | Read from | Write to | Voice |
+That is ~15 new cards a day, which at your two hours is sustainable and still gets you
+through the core in a few months. Raise it after a fortnight if reviews feel light.
+
+If you would rather control batches explicitly, suspend everything and unsuspend a set at a
+time instead:
+
+```
+deck:Telugu::Sentences            → select all → suspend
+tag:set::001                      → unsuspend
+```
+
+## 6. Generate the audio with HyperTTS
+
+Do this **in batches by set tag**, not all at once — a few thousand notes in one pass is slow
+and easy to interrupt halfway.
+
+Three passes. In Browse, search, select all, then **Notes → HyperTTS → Add Audio**:
+
+| Search | Source field | Target field | Voice |
 |---|---|---|---|
-| `Telugu::Vocab` | `TeluguScript` | `Audio` | Telugu |
-| `Telugu::Sentences` | `Telugu` | `Audio` | Telugu |
-| `Telugu::Sentences` | `English` | `EnglishAudio` | English |
+| `note:"Telugu Production" tag:set::001` | `TeluguScript` | `Audio` | Telugu |
+| `note:"Telugu Sentence v3" tag:set::001` | `Telugu` | `Audio` | Telugu |
+| `note:"Telugu Sentence v3" tag:set::001` | `English` | `EnglishAudio` | English |
 
-The English pass on the sentence deck is what makes the deck usable on the bus: prompt plays
-in English, you produce Telugu out loud, then flip and shadow the Telugu.
+The third pass is the one that makes the commute drill work: English audio on the front means
+you can be prompted without looking at the screen.
 
-Generate Telugu audio from the **script** field, never the romanization — TTS reads Telugu
-script correctly and reads `nēnu vidyārthini` as gibberish.
+Pick one Telugu voice and stay with it. Your archived research notes make the point — a single
+consistent model speaker is worth more early than variety.
 
-### Do not turn all of this on at once
+## 7. Add the English audio to the Production card front
 
-2,010 words and 2,872 sentences is roughly two years of intake at 5 new cards a day. Dumping
-it all into the new-card queue is how a deck becomes something you avoid.
+The `Production` template currently shows `{{English}}` as text only. Add the audio so it
+plays automatically:
 
-Suspend everything, then unsuspend in bands. The tags are there for exactly this:
+**Tools → Manage Note Types → Telugu Sentence v3 → Cards → Production**, front template:
 
 ```
-tag:known::100          sentences where you already know every word — 2,319 of them
-tag:src::site           the 272 words the course actually taught, in lesson order
-tag:src::book1000       the book's curated 225
-tag:flag::inflected     verb forms glossed as headwords — leave suspended
-deck:Telugu::Vocab -tag:src::site    everything beyond the course
+{{English}}
+{{EnglishAudio}}
 ```
 
-A reasonable start: unsuspend `tag:src::site`, and sentences matching
-`tag:known::100 tag:src::site`. That is a few hundred cards you have genuinely met, and it
-grows as you unsuspend further bands.
+The back already reveals `{{Romanized}}`, `{{Telugu}}` and `{{Audio}}`, which is the right
+order for produce-then-shadow.
 
-### What is deliberately missing
+## 8. Check it worked
 
-89 words and 8 sentences are held out of these files — Kannada typesetting, missing script,
-bound suffixes, English words respelled in Telugu letters. See `review/ERRORS.md`. They stay
-out until a decision is recorded in the triage files, so the deck cannot teach you something
-false. Re-export picks them up once they are fixed.
+In Browse:
+
+| Search | Expect |
+|---|---|
+| `note:"Telugu Production"` | 2,010 |
+| `note:"Telugu Sentence v3"` | 2,872 |
+| `tag:set::001` | 100 (50 words + 50 sentences) |
+| `"note:Telugu Sentence v3" EnglishAudio:` | notes still missing English audio |
+| `tag:known::100` | 2,315 sentences with no unknown words |
+
+Then open one card of each type and confirm the audio plays and the fields are in the right
+places.
 
 ---
 
-## Your old decks
+## What is deliberately not in the import
 
-The 4,561 notes under `~Archive::` have all been read into the masters — 854 words and 2,022
-sentences existed **only** there and are now preserved, along with 1,134 hand-written
-pronunciation guides (`NAY-noo`) and the `Island` topic groupings, which nothing else in the
-project had.
+89 words and 8 sentences are held back — Kannada-typeset entries, missing script, bound
+suffixes, English words respelled in Telugu letters. They stay in the masters and are listed
+in `review/ERRORS.md`. Once you have worked through `review/`, re-run:
 
-So the archive is now redundant. Leave it until you have imported and spot-checked, then
-delete it if you want the collection clean. Nothing in it is unique any more.
+```bash
+python3 tools/build_master.py && python3 tools/build_sentences.py && python3 tools/build_exports.py
+```
+
+and re-import. Existing notes update in place; the held-back rows join as new notes.
