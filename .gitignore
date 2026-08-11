@@ -25,3 +25,4 @@ sources/private/
 # Python bytecode from anki/tools
 __pycache__/
 *.pyc
+audio/
