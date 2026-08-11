@@ -78,7 +78,7 @@ def classify(rec):
 
 def main():
     records = []
-    for name in ('site', 'book1000', 'top1000', 'spoken-telugu'):   # earlier sources win merges
+    for name in ('site', 'anki', 'book1000', 'top1000', 'spoken-telugu'):  # earlier sources win merges
         got = adapters.ALL[name]()
         print(f'  {name:<16} {len(got):>5} rows')
         records.extend(got)
@@ -105,12 +105,17 @@ def main():
                 m['pos'] = r['pos']
             if not m.get('example') and r.get('example'):
                 m['example'] = r['example']
+            # keep whichever source supplied these, regardless of merge order
+            for extra in ('pronunciation', 'island'):
+                if not m.get(extra) and r.get(extra):
+                    m[extra] = r[extra]
             if r.get('rank') and not m.get('rank'):
                 m['rank'] = r['rank']
             continue
         rec = {'telugu': te, 'roman': rom, 'english': r['english'].strip(),
                'pos': r.get('pos',''), 'source': r['source'], 'raw_rom': r.get('raw_rom',''),
                'example': r.get('example',''), 'rank': r.get('rank',''),
+               'pronunciation': r.get('pronunciation',''), 'island': r.get('island',''),
                'lemma': '', 'notes': r.get('notes',''), 'flags': set()}
         rec['flags'] = set(classify(rec))
         if r.get('book_flags'):
@@ -124,7 +129,8 @@ def main():
     for i, r in enumerate(rows, 1):
         r['id'] = f'W{i:04d}'
 
-    cols = ['id','telugu','roman','english','pos','lemma','example','rank','source','raw_rom','flags','notes']
+    cols = ['id','telugu','roman','english','pronunciation','pos','island','lemma','example',
+            'rank','source','raw_rom','flags','notes']
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, 'w', newline='', encoding='utf-8') as f:
         w = csv.DictWriter(f, fieldnames=cols, delimiter='\t', extrasaction='ignore',

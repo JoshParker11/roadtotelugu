@@ -80,7 +80,7 @@ def is_known(tok_rom, tok_te, known):
 def main():
     known = load_known()
     records = []
-    for name in ('site', 'book1000'):
+    for name in ('site', 'anki', 'book1000'):
         got = adapters.ALL_SENT[name]()
         print(f'  {name:<12} {len(got):>5} rows')
         records.extend(got)
@@ -98,12 +98,16 @@ def main():
                 m['source'] += ',' + r['source']
             if r['english'] and r['english'].lower() not in m['english'].lower():
                 m['english'] += '; ' + r['english'].strip()
+            for extra in ('pronunciation', 'island'):
+                if not m.get(extra) and r.get(extra):
+                    m[extra] = r[extra]
             continue
         merged[key] = {'telugu': te, 'roman': rom, 'english': r['english'].strip(),
                        'register': r.get('register') or register_of(rom),
                        'source': r['source'], 'raw_rom': r.get('raw_rom', ''),
                        'rank': r.get('rank', ''), 'notes': r.get('notes', ''),
-                       'flags': set()}
+                       'pronunciation': r.get('pronunciation', ''),
+                       'island': r.get('island', ''), 'flags': set()}
 
     for m in merged.values():
         toks = [t for t in re.split(r'\s+', m['roman']) if t.strip('.,?!')]
@@ -127,8 +131,8 @@ def main():
     for i, r in enumerate(rows, 1):
         r['id'] = f'S{i:04d}'
 
-    cols = ['id', 'telugu', 'roman', 'english', 'register', 'known_pct', 'new_words',
-            'rank', 'source', 'raw_rom', 'flags', 'notes']
+    cols = ['id', 'telugu', 'roman', 'english', 'pronunciation', 'register', 'known_pct',
+            'new_words', 'island', 'rank', 'source', 'raw_rom', 'flags', 'notes']
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, 'w', newline='', encoding='utf-8') as f:
         w = csv.DictWriter(f, fieldnames=cols, delimiter='\t', extrasaction='ignore')

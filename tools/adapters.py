@@ -37,9 +37,13 @@ def top1000(path=None):
 
 
 def site_words(path=None):
-    """The words already extracted from the course website. These carry register cues and
-    example sentences the raw lists do not, so they win on merge."""
-    path = path or os.path.join(HERE, '..', 'anki', 'telugu_words.csv')
+    """Words extracted from the course website by anki/tools/build_csvs.py. They carry
+    register cues and worked examples the raw lists do not, so they win on merge.
+
+    Read from a frozen snapshot in sources/raw/, NOT from anki/telugu_words.csv. That file
+    is now generated from the master, so pointing here at it would make the pipeline eat its
+    own output and re-merge every row on each run."""
+    path = path or os.path.join(RAW, 'site_words.csv')
     out = []
     for r in csv.DictReader(open(path, encoding='utf-8')):
         out.append({'telugu': r['TeluguScript'].strip(),
@@ -106,7 +110,8 @@ def book_sentences(path=None):
 
 
 def site_sentences(path=None):
-    path = path or os.path.join(HERE, '..', 'anki', 'telugu_sentences.csv')
+    # frozen snapshot — see the note in site_words()
+    path = path or os.path.join(RAW, 'site_sentences.csv')
     out = []
     for r in csv.DictReader(open(path, encoding='utf-8')):
         out.append({'telugu': r['TeluguScript'].strip(), 'roman': '',
@@ -117,6 +122,35 @@ def site_sentences(path=None):
     return out
 
 
+def _anki(kind, path=None):
+    """Notes from the existing Anki collection (see tools/export_anki.py). Three
+    generations of note type, already normalised to canonical roles by the exporter."""
+    path = path or os.path.join(HERE, '..', 'sources', 'private', 'anki_notes.tsv')
+    if not os.path.exists(path):
+        return []
+    out = []
+    for r in csv.DictReader(open(path, encoding='utf-8'), delimiter='\t'):
+        if r['kind'] != kind or not r['telugu'].strip():
+            continue
+        out.append({'telugu': r['telugu'].strip(), 'roman': '',
+                    'english': r['english'].strip(), 'pos': '',
+                    'source': 'anki', 'raw_rom': r['raw_rom'].strip(),
+                    'pronunciation': r['pronunciation'].strip(),
+                    'island': r['island'].strip(),
+                    'rank': int(r['rank']) if r['rank'].strip().isdigit() else '',
+                    'example': r['example'].strip(),
+                    'notes': r['notes'].strip()})
+    return out
+
+
+def anki_words(path=None):
+    return _anki('word', path)
+
+
+def anki_sentences(path=None):
+    return _anki('sentence', path)
+
+
 ALL = {'top1000': top1000, 'site': site_words, 'spoken-telugu': spoken_telugu,
-       'book1000': book_words}
-ALL_SENT = {'site': site_sentences, 'book1000': book_sentences}
+       'book1000': book_words, 'anki': anki_words}
+ALL_SENT = {'site': site_sentences, 'book1000': book_sentences, 'anki': anki_sentences}
