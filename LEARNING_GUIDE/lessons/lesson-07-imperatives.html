@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Telugu · Lesson 7 — Command verbs &amp; the root form</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+Telugu:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#191915;--ink-2:#22221d;--ink-3:#2c2c25;
+  --cream:#f1ece0;--cream-dim:#b9b3a4;
+  --amber:#e8a33d;--moss:#8fa37e;--flame:#d96c47;
+  --line:rgba(241,236,224,.12);--radius:14px;--max:1000px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{background:var(--ink);color:var(--cream);font-family:'Inter',sans-serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.telugu{font-family:'Noto Sans Telugu','Inter',sans-serif}
+.mono{font-family:'JetBrains Mono',monospace}
+h1,h2,h3{font-family:'Young Serif',serif;font-weight:400;line-height:1.15}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+section{padding:72px 0;border-top:1px solid var(--line)}
+.eyebrow{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--amber);margin-bottom:14px;display:block}
+h2{font-size:clamp(26px,4.2vw,36px);margin-bottom:14px}
+.lede{color:var(--cream-dim);max-width:660px;font-size:16.5px}
+.lede b{color:var(--cream)}
+a{color:var(--amber)}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:4px}
+
+nav{position:sticky;top:0;z-index:50;background:rgba(25,25,21,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+.logo{font-family:'JetBrains Mono',monospace;font-size:13.5px;font-weight:700;color:var(--cream);text-decoration:none}
+.logo span{color:var(--amber)}
+nav ul{display:flex;gap:20px;list-style:none}
+nav ul a{color:var(--cream-dim);text-decoration:none;font-size:13px;font-weight:500}
+nav ul a:hover{color:var(--amber)}
+@media(max-width:720px){nav ul{display:none}}
+.home-crumb{display:inline-block;margin-bottom:18px;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--cream-dim);text-decoration:none}
+.home-crumb:hover{color:var(--amber)}
+
+header.hero{padding:80px 0 64px;position:relative;overflow:hidden}
+.hero-glyph{position:absolute;right:-30px;top:-70px;font-family:'Noto Sans Telugu',sans-serif;font-size:clamp(260px,40vw,480px);line-height:1;color:rgba(232,163,61,.05);user-select:none;pointer-events:none}
+.hero h1{font-size:clamp(34px,6vw,58px);margin:8px 0 10px;color:var(--cream)}
+.hero h1 em{color:var(--amber);font-style:normal}
+.hero p{max-width:620px;color:var(--cream-dim);font-size:17px}
+
+.note-box{background:rgba(217,108,71,.07);border:1px solid rgba(217,108,71,.3);border-radius:var(--radius);padding:20px 24px;margin-top:30px;max-width:720px}
+.note-box b{color:var(--flame);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;display:block;margin-bottom:8px}
+.note-box p{font-size:14px;color:var(--cream-dim)}
+.note-box p+p{margin-top:10px}
+.note-box.win{background:rgba(143,163,126,.08);border-color:rgba(143,163,126,.32)}
+.note-box.win b{color:var(--moss)}
+
+/* rule blocks */
+.rule{border-top:1px solid var(--line);padding:30px 0;display:grid;grid-template-columns:52px 1fr;gap:20px;counter-increment:r}
+.rules{counter-reset:r;margin-top:20px}
+.rule::before{content:counter(r,decimal-leading-zero);font-family:'JetBrains Mono',monospace;font-size:14px;color:var(--flame);padding-top:4px}
+.rule h3{font-size:19px;font-family:'Inter',sans-serif;font-weight:600;margin-bottom:8px;color:var(--cream)}
+.rule p{font-size:14.5px;color:var(--cream-dim);max-width:640px}
+.rule p+p{margin-top:10px}
+.rule b{color:var(--cream)}
+.rule-deep-link{display:inline-block;margin-top:13px;font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;text-decoration:none}
+.rule-deep-link::after{content:' →'}
+.ex{margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:14px;color:var(--moss);background:var(--ink-2);border:1px solid var(--line);border-radius:8px;padding:12px 16px;display:inline-block}
+.ex .en{color:var(--cream-dim);font-family:'Inter',sans-serif}
+.ex .tel{font-family:'Noto Sans Telugu',sans-serif;color:var(--cream)}
+.flag{margin-top:14px;border-left:3px solid var(--flame);background:rgba(217,108,71,.07);padding:11px 14px;font-size:13px;color:var(--cream-dim);border-radius:0 8px 8px 0}
+.flag b{color:var(--flame);font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;display:block;margin-bottom:5px}
+.flag.ok{border-left-color:var(--moss);background:rgba(143,163,126,.08)}
+.flag.ok b{color:var(--moss)}
+
+/* morpheme chips */
+.morph-row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:16px 0}
+.morph{border-radius:9px;padding:9px 14px;font-family:'JetBrains Mono',monospace;text-align:center;min-width:74px}
+.morph .p{font-size:16px;font-weight:700;display:block}
+.morph .r{font-size:9px;letter-spacing:.1em;text-transform:uppercase;opacity:.75;margin-top:3px;display:block}
+.morph.subj{background:rgba(232,163,61,.14);color:var(--amber);border:1px solid rgba(232,163,61,.35)}
+.morph.base{background:rgba(143,163,126,.14);color:var(--moss);border:1px solid rgba(143,163,126,.35)}
+.morph.mark{background:rgba(217,108,71,.14);color:var(--flame);border:1px solid rgba(217,108,71,.35)}
+.morph.op{background:none;border:none;color:var(--cream-dim);font-size:18px;min-width:auto;padding:0 2px}
+.morph.none{background:var(--ink-3);color:var(--cream-dim);border:1px dashed var(--line)}
+
+/* generic table */
+.tbl{width:100%;border-collapse:collapse;margin-top:22px;font-size:14.5px}
+.tbl th{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:11px 12px;color:var(--cream-dim);border-bottom:1px solid var(--line);vertical-align:bottom}
+.tbl td{padding:12px;border-bottom:1px solid var(--line);color:var(--cream-dim);vertical-align:top}
+.tbl td .rom{font-family:'JetBrains Mono',monospace;font-size:15px;color:var(--cream);font-weight:700}
+.tbl td .tel{font-family:'Noto Sans Telugu',sans-serif;font-size:15px;color:var(--cream-dim);opacity:.8}
+.tbl td small{display:block;font-size:12px;color:var(--cream-dim);margin-top:2px}
+.tbl .grp td{background:var(--ink-2);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--amber)}
+.tag{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:999px;margin-left:4px}
+.tag.neu{background:rgba(143,163,126,.16);color:var(--moss)}
+.tag.for{background:rgba(232,163,61,.16);color:var(--amber)}
+.tag.inf{background:rgba(217,108,71,.16);color:var(--flame)}
+.num{font-family:'JetBrains Mono',monospace;color:var(--flame);font-weight:700;font-size:15px}
+
+/* number grid */
+.numgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-top:24px}
+.numcell{background:var(--ink-2);padding:14px 12px;text-align:center}
+.numcell .d{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--flame);font-weight:700}
+.numcell .t{font-family:'Noto Sans Telugu',sans-serif;font-size:18px;color:var(--cream);display:block;margin:5px 0 3px}
+.numcell .r{font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--amber)}
+
+/* anki table */
+.anki-wrap{overflow-x:auto;margin-top:26px;border:1px solid var(--line);border-radius:var(--radius)}
+.anki{width:100%;border-collapse:collapse;font-size:14px;min-width:720px}
+.anki th{background:var(--ink-3);font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:12px 14px;color:var(--amber);border-bottom:1px solid var(--line);white-space:nowrap}
+.anki td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--cream-dim);vertical-align:top}
+.anki tr:last-child td{border-bottom:none}
+.anki .f-en{color:var(--cream);width:31%}
+.anki .f-rom{font-family:'JetBrains Mono',monospace;color:var(--amber);font-weight:700;white-space:nowrap}
+.anki .f-tel{font-family:'Noto Sans Telugu',sans-serif;color:var(--cream)}
+.anki .f-aud{color:var(--cream-dim);opacity:.4;font-family:'JetBrains Mono',monospace;font-size:12px;text-align:center}
+.anki .f-ex{font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--moss)}
+.anki .sec td{background:var(--ink-2);font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--cream-dim)}
+.field-key{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--cream-dim)}
+.field-key span{background:var(--ink-2);border:1px solid var(--line);border-radius:6px;padding:5px 10px}
+.field-key b{color:var(--amber);font-weight:500}
+
+/* lesson questions */
+.question-link{display:grid;grid-template-columns:80px 1fr auto;align-items:center;gap:22px;margin-top:26px;border:1px dashed var(--line);border-radius:var(--radius);background:var(--ink-2);color:inherit;padding:22px;text-decoration:none}
+.question-link:hover{border-color:rgba(232,163,61,.4);background:var(--ink-3)}
+.question-mark{display:grid;width:60px;height:60px;place-items:center;border:1px solid rgba(143,163,126,.35);border-radius:50%;color:var(--moss);font-family:'Young Serif',serif;font-size:28px}
+.question-link h3{margin-bottom:5px;font-family:'Inter',sans-serif;font-size:17px;font-weight:600}
+.question-link p{margin:0;color:var(--cream-dim);font-size:13px}
+.question-open{color:var(--amber);font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;white-space:nowrap}
+.question-open::after{content:' →'}
+
+footer{padding:52px 0 68px;border-top:1px solid var(--line)}
+footer p{font-size:13px;color:var(--cream-dim)}
+footer .mono{color:var(--amber)}
+.try{list-style:none;margin-top:18px;display:grid;gap:10px;max-width:640px}
+.try li{background:var(--ink-2);border:1px solid var(--line);border-radius:9px;padding:12px 16px;font-size:14px;color:var(--cream-dim)}
+.try li .q{color:var(--cream);font-weight:600}
+.try li .a{font-family:'JetBrains Mono',monospace;color:var(--moss);margin-top:4px;display:block}
+@media(max-width:720px){
+  .wrap{padding:0 16px}
+  .hero-glyph{right:0}
+  .rule{grid-template-columns:1fr;gap:8px}
+  .rule>div{min-width:0}
+  .tbl{display:block;width:100%;max-width:100%;overflow-x:auto;white-space:nowrap}
+  .numgrid{grid-template-columns:repeat(3,1fr)}
+  .question-link{grid-template-columns:52px 1fr;padding:18px 16px}
+  .question-mark{width:48px;height:48px}
+  .question-open{grid-column:2}
+}
+
+/* lesson 7 additions */
+.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));gap:10px;margin-top:20px}
+.vcell{border:1px solid var(--line);border-radius:11px;background:var(--ink-2);padding:13px 15px}
+.vcell .en{display:block;font-size:13px;color:var(--cream-dim)}
+.vcell .inf{display:block;font-family:'JetBrains Mono',monospace;font-size:15.5px;font-weight:700;color:var(--amber);margin-top:4px}
+.vcell .fml{display:block;font-family:'JetBrains Mono',monospace;font-size:13.5px;color:var(--moss)}
+.vcell .tel{display:block;font-family:'Noto Sans Telugu',sans-serif;font-size:14px;color:var(--cream-dim);margin-top:2px}
+.vcell.warn{border-color:rgba(217,108,71,.32)}
+.grp{margin-top:26px}
+.grp h4{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--amber);margin-bottom:2px}
+.grp p{font-size:13.5px;color:var(--cream-dim);margin-bottom:0}
+.stack{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin:14px 0}
+.stack .box{border-radius:8px;padding:8px 13px;font-family:'JetBrains Mono',monospace;font-size:14px}
+.stack .root{background:rgba(143,163,126,.14);color:var(--moss);border:1px solid rgba(143,163,126,.35)}
+.stack .neg{background:rgba(217,108,71,.14);color:var(--flame);border:1px solid rgba(217,108,71,.35)}
+.stack .pol{background:rgba(232,163,61,.14);color:var(--amber);border:1px solid rgba(232,163,61,.35)}
+.stack .op{color:var(--cream-dim);font-size:17px}
+.stack .out{background:var(--ink-3);color:var(--cream);border:1px solid var(--line)}
+</style>
+</head>
+<body>
+
+<nav aria-label="Main">
+  <div class="wrap">
+    <a class="logo" href="../index.html"><span>te</span> lesson-07 · imperatives</a>
+    <ul>
+      <li><a href="../index.html">Course home</a></li>
+      <li><a href="../../GRAMMAR_LAB/index.html">Verb Lab</a></li>
+      <li><a href="#rules">Rules</a></li>
+      <li><a href="#verbs">The 30 verbs</a></li>
+      <li><a href="#negation">Negation</a></li>
+      <li><a href="#anki">Anki list</a></li>
+      <li><a href="#try">Self-test</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-glyph telugu" aria-hidden="true">చేయి</div>
+  <div class="wrap">
+    <a class="home-crumb" href="../index.html">← Foundational Telugu / Learning path</a>
+    <span class="eyebrow">Course extraction · Lesson 7 · Week 2 begins</span>
+    <h1>Command verbs &amp; <em>the root form</em></h1>
+    <p>The first verb lesson, and the hinge of the whole course. A Telugu verb's <b>root form is its informal command</b> — <span class="mono">tinu</span> is both "eat" the dictionary entry and "eat!" the order. Everything else in the language is this root plus suffixes, stacked one on the next. Learn the roots now and the rest of the course is addition.</p>
+
+    <div class="note-box">
+      <b>How I processed this</b>
+      <p>The auto-captions were rough on this one — worse than Lesson 1. The suffix <span class="mono">-aṇḍi</span> came through as "undi", "unde", "Andy", "1d" and "Dundee"; <span class="mono">chēyi</span> as "che", "gee", "ki" and "j"; <span class="mono">tīsukō</span> as "disco"; <span class="mono">āgaṇḍi</span> as "agony"; <span class="mono">prēminchaṇḍi</span> as "Premchand"; <span class="mono">parugettu</span> as "Puttogether". I reconstructed each from the root-verb PDF and normalised spelling to the convention used across this site.</p>
+      <p>Where the captions and the PDF disagreed I followed the PDF, since it is the resource the lesson tells you to download. Two forms are flagged inline where I am not confident.</p>
+    </div>
+  </div>
+</header>
+
+<section id="rules">
+  <div class="wrap">
+    <span class="eyebrow">The grammar engine</span>
+    <h2>Structures &amp; rules introduced</h2>
+    <p class="lede">Colour code: <b style="color:var(--moss)">root verb</b> · <b style="color:var(--amber)">politeness suffix</b> · <b style="color:var(--flame)">negation suffix</b>. This lesson introduces only two suffixes, but it introduces the mechanism the entire rest of the course runs on.</p>
+
+    <div class="rules">
+
+      <div class="rule">
+        <div>
+          <h3>The root verb <em>is</em> the informal command</h3>
+          <p>In English "eat" the dictionary word and "Eat!" the order look the same by accident. In Telugu it is by design: the root form is the bare command, used to someone close to you or much younger. No suffix, no change.</p>
+          <span class="ex">tinu <span class="tel">తిను</span> <span class="en">— "eat" / "eat!"</span></span><br>
+          <span class="ex">chēyi <span class="tel">చేయి</span> <span class="en">— "do" / "do it!"</span></span>
+          <p style="margin-top:14px">This is why the verb list matters so much. Every tense, every mood, every politeness level in the coming lessons is built by attaching something to this form.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3><span class="mono">-aṇḍi</span> makes it polite — and it is the same suffix you already know</h3>
+          <p>Add <span class="mono">-aṇḍi</span> and the command becomes a request. You met this in <a href="lesson-03-greetings.html">Lesson 3</a> on <span class="mono">namaskāram aṇḍi</span> and <span class="mono">raṇḍi</span> — it is not verb-specific, it is the language's general politeness marker.</p>
+          <div class="morph-row">
+            <span class="morph base"><span class="p">tin-</span><span class="r">eat</span></span>
+            <span class="morph op">+</span>
+            <span class="morph subj"><span class="p">-aṇḍi</span><span class="r">polite</span></span>
+            <span class="morph op">→</span>
+            <span class="morph"><span class="p mono" style="color:var(--cream)">tinaṇḍi</span></span>
+          </div>
+          <p>There is no Telugu word for "please". Politeness is a suffix, not an extra word — which is why "please eat" is only an approximation of what <span class="mono">tinaṇḍi</span> actually does.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>The polite form <em>is</em> the plural form</h3>
+          <p>Speaking to a group and speaking respectfully use the identical form. The logic is the one you already met with <span class="mono">mīru</span> in <a href="lesson-01-pronouns.html">Lesson 1</a>: addressing someone as though they were more than one person is what respect looks like grammatically.</p>
+          <table class="tbl">
+            <thead><tr><th>Form</th><th>Who</th><th>Example</th></tr></thead>
+            <tbody>
+              <tr><td><span class="rom">tinu</span> <span class="tel">తిను</span></td><td>One person, close or much younger</td><td>your child, a close friend</td></tr>
+              <tr><td><span class="rom">tinaṇḍi</span> <span class="tel">తినండి</span></td><td>Anyone older, anyone you respect, <b>or any group</b></td><td>your mother-in-law, a colleague, a room</td></tr>
+            </tbody>
+          </table>
+          <div class="note-box win" style="margin-top:20px">
+            <b>Your default</b>
+            <p>Use the <span class="mono">-aṇḍi</span> form unless you have a specific reason not to. Getting this wrong is a social error, not a grammatical one — and it is the error a foreigner is most likely to make.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>The root's final vowel gets out of the way</h3>
+          <p>Every Telugu root verb ends in a vowel, and Telugu does not allow two vowels to sit next to each other. When <span class="mono">-aṇḍi</span> attaches, the root's vowel is deleted or merged. Three patterns cover everything in this lesson.</p>
+          <table class="tbl">
+            <thead><tr><th>Pattern</th><th>What happens</th><th>Example</th></tr></thead>
+            <tbody>
+              <tr><td><b>Deletion</b> — roots in <span class="mono">-u</span></td><td>The <span class="mono">-u</span> drops</td><td><span class="mono">tinu → tinaṇḍi</span>, <span class="mono">tāgu → tāgaṇḍi</span><br><span style="color:var(--flame)">not</span> <span class="mono">tinuaṇḍi</span></td></tr>
+              <tr><td><b>Merger</b> — roots in <span class="mono">-ā</span></td><td>The vowels fuse</td><td><span class="mono">rā → raṇḍi</span><br><span style="color:var(--flame)">not</span> <span class="mono">rāaṇḍi</span></td></tr>
+              <tr><td><b>Absorption</b> — roots in <span class="mono">-ō</span></td><td>The <span class="mono">ō</span> wins; the suffix shows up as just <span class="mono">-ṇḍi</span></td><td><span class="mono">kūrchō → kūrchōṇḍi</span>, <span class="mono">tīsukō → tīsukōṇḍi</span></td></tr>
+            </tbody>
+          </table>
+          <p style="margin-top:14px">One special case: <span class="mono">lē</span> ("get up") gains a <span class="mono">-v-</span> between the vowels rather than losing either — <span class="mono">lē + aṇḍi → lēvaṇḍi</span>. Telugu occasionally inserts a glide instead of deleting.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3><span class="mono">-vaddu</span> makes it negative, and suffixes stack</h3>
+          <p>Telugu has no "do not". Negation is another suffix, and it goes <b>between</b> the root and the politeness marker. This is the first time you see two suffixes on one verb, and it is the pattern the whole course is built on.</p>
+          <div class="stack">
+            <span class="box root">tin-</span><span class="op">+</span>
+            <span class="box neg">-a-vaddu</span><span class="op">+</span>
+            <span class="box pol">-aṇḍi</span><span class="op">→</span>
+            <span class="box out">tinavaddaṇḍi</span>
+          </div>
+          <table class="tbl">
+            <thead><tr><th>Verb</th><th>Don't — informal</th><th>Don't — polite</th></tr></thead>
+            <tbody>
+              <tr><td>come</td><td><span class="rom">rāvaddu</span> <span class="tel">రావద్దు</span></td><td><span class="rom">rāvaddaṇḍi</span> <span class="tel">రావద్దండి</span></td></tr>
+              <tr><td>do</td><td><span class="rom">chēyavaddu</span> <span class="tel">చేయవద్దు</span></td><td><span class="rom">chēyavaddaṇḍi</span> <span class="tel">చేయవద్దండి</span></td></tr>
+              <tr><td>eat</td><td><span class="rom">tinavaddu</span> <span class="tel">తినవద్దు</span></td><td><span class="rom">tinavaddaṇḍi</span> <span class="tel">తినవద్దండి</span></td></tr>
+              <tr><td>drink</td><td><span class="rom">tāgavaddu</span> <span class="tel">తాగవద్దు</span></td><td><span class="rom">tāgavaddaṇḍi</span> <span class="tel">తాగవద్దండి</span></td></tr>
+              <tr><td>tell</td><td><span class="rom">cheppavaddu</span> <span class="tel">చెప్పవద్దు</span></td><td><span class="rom">cheppavaddaṇḍi</span> <span class="tel">చెప్పవద్దండి</span></td></tr>
+              <tr><td>speak</td><td><span class="rom">māṭlāḍavaddu</span> <span class="tel">మాట్లాడవద్దు</span></td><td><span class="rom">māṭlāḍavaddaṇḍi</span> <span class="tel">మాట్లాడవద్దండి</span></td></tr>
+            </tbody>
+          </table>
+          <p style="margin-top:14px">In fast speech the <span class="mono">va</span> of <span class="mono">-vaddu</span> is barely pronounced after a strong consonant, so <span class="mono">tinavaddu</span> lands closer to <span class="mono">tinaddu</span>. Recognise it; don't imitate it yet.</p>
+          <div class="note-box">
+            <b>This disagrees with the Verb Lab — deliberately</b>
+            <p>The <a href="../../GRAMMAR_LAB/index.html">Verb Lab</a> gives the prohibitive as <span class="mono">-ku</span> / <span class="mono">-kaṇḍi</span> (<span class="mono">chēyaku</span>, <span class="mono">chēyakaṇḍi</span>). This lesson teaches <span class="mono">-vaddu</span>. <b>Both are real Telugu and they are not identical.</b> <span class="mono">chēyaku</span> is a direct prohibition, "don't do it"; <span class="mono">chēyavaddu</span> is closer to "it's not wanted / you shouldn't". The course chose <span class="mono">-vaddu</span>, which also matches <span class="mono">vaddu</span> "no thanks" from Lesson 3. Worth one question to your wife about which she reaches for.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>The <span class="mono">chēyi</span> hack — borrow any English verb</h3>
+          <p>Attach <span class="mono">chēyi</span> to an English word and you have a working Telugu verb. This is not a learner's crutch; native speakers do it constantly, and for many modern concepts there is no commonly used pure-Telugu alternative.</p>
+          <div class="morph-row">
+            <span class="morph base"><span class="p">email</span><span class="r">any noun</span></span>
+            <span class="morph op">+</span>
+            <span class="morph subj"><span class="p">chēyaṇḍi</span><span class="r">do — polite</span></span>
+            <span class="morph op">→</span>
+            <span class="morph"><span class="p mono" style="color:var(--cream)">email chēyaṇḍi</span></span>
+          </div>
+          <p><span class="mono">exercise chēyaṇḍi</span> · <span class="mono">drive chēyaṇḍi</span> · <span class="mono">wait chēyaṇḍi</span> · <span class="mono">bill chēyaṇḍi</span> · <span class="mono">send chēyaṇḍi</span> · <span class="mono">message chēyaṇḍi</span></p>
+          <p>The native pattern is the same: <span class="mono">pani</span> is "work", so <span class="mono">pani chēyaṇḍi</span> is "do the work". When you are stuck for a verb mid-sentence, this is the escape hatch.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Two length contrasts that change the word</h3>
+          <p>Vowel length is meaning-bearing, as it was with <span class="mono">nēnu</span> in Lesson 2. Two pairs in today's list are worth isolating now.</p>
+          <table class="tbl">
+            <thead><tr><th>Short</th><th>Long</th></tr></thead>
+            <tbody>
+              <tr><td><span class="rom">paḍu</span> <span class="tel">పడు</span> — to fall</td><td><span class="rom">pāḍu</span> <span class="tel">పాడు</span> — to sing</td></tr>
+              <tr><td><span class="rom">agu</span> — (not a word here)</td><td><span class="rom">āgu</span> <span class="tel">ఆగు</span> — to stop</td></tr>
+            </tbody>
+          </table>
+          <p style="margin-top:14px">Also note <span class="mono">veḷḷu</span> <span class="tel">వెళ్ళు</span>: the <span class="mono">ḷ</span> is <b>retroflex</b> — tongue curled back — not the English l. An English l is an acceptable approximation for now, but the two are different sounds and Telugu uses both.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="verbs">
+  <div class="wrap">
+    <span class="eyebrow">The core inventory</span>
+    <h2>The verbs, grouped the way the lesson teaches them</h2>
+    <p class="lede">Informal in amber, polite in green. These are the roots the rest of the course modifies — every one of them is already drillable in the <a href="../../GRAMMAR_LAB/index.html">Verb Lab</a> across fourteen paradigms.</p>
+
+    <div class="grp">
+      <h4>The welcoming four</h4>
+      <p>Walk into a Telugu house and you will hear these in the first thirty seconds.</p>
+      <div class="vgrid">
+        <div class="vcell"><span class="en">come</span><span class="inf">rā</span><span class="fml">raṇḍi</span><span class="tel">రా · రండి</span></div>
+        <div class="vcell"><span class="en">sit</span><span class="inf">kūrchō</span><span class="fml">kūrchōṇḍi</span><span class="tel">కూర్చో · కూర్చోండి</span></div>
+        <div class="vcell"><span class="en">eat</span><span class="inf">tinu</span><span class="fml">tinaṇḍi</span><span class="tel">తిను · తినండి</span></div>
+        <div class="vcell"><span class="en">drink</span><span class="inf">tāgu</span><span class="fml">tāgaṇḍi</span><span class="tel">తాగు · తాగండి</span></div>
+      </div>
+      <div class="note-box win">
+        <b>The sequence you will actually hear</b>
+        <p><span class="mono">raṇḍi, kūrchōṇḍi</span> — "please come in, please have a seat." Then food appears: <span class="mono">ēmainā tinaṇḍi</span> <span class="telugu">ఏమైనా తినండి</span> "have something to eat", <span class="mono">ēmainā tāgaṇḍi</span> "have something to drink". <span class="mono">ēmainā</span> is "something / anything".</p>
+      </div>
+    </div>
+
+    <div class="grp">
+      <h4>Doing &amp; going</h4>
+      <div class="vgrid">
+        <div class="vcell"><span class="en">do</span><span class="inf">chēyi</span><span class="fml">chēyaṇḍi</span><span class="tel">చేయి · చేయండి</span></div>
+        <div class="vcell"><span class="en">go</span><span class="inf">veḷḷu</span><span class="fml">veḷḷaṇḍi</span><span class="tel">వెళ్ళు · వెళ్ళండి</span></div>
+        <div class="vcell"><span class="en">go — blunter synonym</span><span class="inf">pō</span><span class="fml">pōṇḍi</span><span class="tel">పో · పోండి</span></div>
+        <div class="vcell warn"><span class="en">go away — emphatic</span><span class="inf">veḷḷipō</span><span class="fml">veḷḷipōṇḍi</span><span class="tel">వెళ్ళిపో · వెళ్ళిపోండి</span></div>
+        <div class="vcell"><span class="en">give</span><span class="inf">ivvu</span><span class="fml">ivvaṇḍi</span><span class="tel">ఇవ్వు · ఇవ్వండి</span></div>
+        <div class="vcell"><span class="en">take</span><span class="inf">tīsukō</span><span class="fml">tīsukōṇḍi</span><span class="tel">తీసుకో · తీసుకోండి</span></div>
+        <div class="vcell"><span class="en">stop</span><span class="inf">āgu</span><span class="fml">āgaṇḍi</span><span class="tel">ఆగు · ఆగండి</span></div>
+      </div>
+      <p style="font-size:13.5px;color:var(--cream-dim);margin-top:12px"><span class="mono">veḷḷu</span> is the standard word and your default. <span class="mono">pō</span> is harsher and dialectal. <span class="mono">veḷḷipō</span> — literally the two combined — is "go away", and it is the stock line of every Telugu film argument.</p>
+    </div>
+
+    <div class="grp">
+      <h4>Communicating</h4>
+      <div class="vgrid">
+        <div class="vcell"><span class="en">speak</span><span class="inf">māṭlāḍu</span><span class="fml">māṭlāḍaṇḍi</span><span class="tel">మాట్లాడు · మాట్లాడండి</span></div>
+        <div class="vcell"><span class="en">tell</span><span class="inf">cheppu</span><span class="fml">cheppaṇḍi</span><span class="tel">చెప్పు · చెప్పండి</span></div>
+        <div class="vcell"><span class="en">say</span><span class="inf">anu</span><span class="fml">anaṇḍi</span><span class="tel">అను · అనండి</span></div>
+        <div class="vcell"><span class="en">hear, listen</span><span class="inf">vinu</span><span class="fml">vinaṇḍi</span><span class="tel">విను · వినండి</span></div>
+        <div class="vcell"><span class="en">see, watch</span><span class="inf">chūḍu</span><span class="fml">chūḍaṇḍi</span><span class="tel">చూడు · చూడండి</span></div>
+        <div class="vcell"><span class="en">read, study</span><span class="inf">chaduvu</span><span class="fml">chadavaṇḍi</span><span class="tel">చదువు · చదవండి</span></div>
+        <div class="vcell"><span class="en">write</span><span class="inf">rāyi</span><span class="fml">rāyaṇḍi</span><span class="tel">రాయి · రాయండి</span></div>
+        <div class="vcell"><span class="en">learn</span><span class="inf">nērchukō</span><span class="fml">nērchukōṇḍi</span><span class="tel">నేర్చుకో · నేర్చుకోండి</span></div>
+        <div class="vcell"><span class="en">teach</span><span class="inf">nērpinchu</span><span class="fml">nērpinchaṇḍi</span><span class="tel">నేర్పించు · నేర్పించండి</span></div>
+      </div>
+      <p style="font-size:13.5px;color:var(--cream-dim);margin-top:12px"><span class="mono">māṭlāḍu</span> is <span class="mono">māṭa</span> ("speech") + <span class="mono">āḍu</span> ("play") — literally "to play speech". <span class="mono">nērchukō</span> is learning for yourself, <span class="mono">nērpinchu</span> is causing someone else to learn; the <span class="mono">-kō</span> / <span class="mono">-inchu</span> contrast recurs throughout Telugu. The written form of "write" is <span class="mono">vrāyi</span> <span class="telugu">వ్రాయి</span>, archaic in speech.</p>
+    </div>
+
+    <div class="grp">
+      <h4>Body &amp; movement</h4>
+      <div class="vgrid">
+        <div class="vcell"><span class="en">walk</span><span class="inf">naḍavu</span><span class="fml">naḍavaṇḍi</span><span class="tel">నడవు · నడవండి</span></div>
+        <div class="vcell warn"><span class="en">run</span><span class="inf">parugettu</span><span class="fml">parugettaṇḍi</span><span class="tel">పరుగెత్తు · పరుగెత్తండి</span></div>
+        <div class="vcell"><span class="en">stand, stand up</span><span class="inf">nilabaḍu</span><span class="fml">nilabaḍaṇḍi</span><span class="tel">నిలబడు · నిలబడండి</span></div>
+        <div class="vcell"><span class="en">sleep, lie down</span><span class="inf">paḍukō</span><span class="fml">paḍukōṇḍi</span><span class="tel">పడుకో · పడుకోండి</span></div>
+        <div class="vcell warn"><span class="en">get up, rise</span><span class="inf">lē</span><span class="fml">lēvaṇḍi</span><span class="tel">లే · లేవండి</span></div>
+      </div>
+    </div>
+
+    <div class="grp">
+      <h4>Play, sing, love</h4>
+      <div class="vgrid">
+        <div class="vcell"><span class="en">play — sport</span><span class="inf">āḍu</span><span class="fml">āḍaṇḍi</span><span class="tel">ఆడు · ఆడండి</span></div>
+        <div class="vcell"><span class="en">play — music</span><span class="inf">vāyinchu</span><span class="fml">vāyinchaṇḍi</span><span class="tel">వాయించు · వాయించండి</span></div>
+        <div class="vcell"><span class="en">sing</span><span class="inf">pāḍu</span><span class="fml">pāḍaṇḍi</span><span class="tel">పాడు · పాడండి</span></div>
+        <div class="vcell"><span class="en">love</span><span class="inf">prēminchu</span><span class="fml">prēminchaṇḍi</span><span class="tel">ప్రేమించు · ప్రేమించండి</span></div>
+      </div>
+      <p style="font-size:13.5px;color:var(--cream-dim);margin-top:12px">Telugu splits "play" into sport (<span class="mono">āḍu</span>) and instrument (<span class="mono">vāyinchu</span>). <span class="mono">prēminchu</span> is built from the Sanskrit noun <span class="mono">prēma</span> plus <span class="mono">-inchu</span>, the standard way Telugu turns a Sanskrit noun into a verb.</p>
+      <div class="note-box">
+        <b>Two flagged forms</b>
+        <p><span class="mono">parugettaṇḍi</span> and <span class="mono">lēvaṇḍi</span> are the two I am least sure of. The captions were badly mangled at both points, and the Verb Lab already flags <span class="mono">parugettu</span> as a verb where speakers commonly say <span class="mono">parigeḍatānu</span> instead. Check both.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="negation">
+  <div class="wrap">
+    <span class="eyebrow">Applying it</span>
+    <h2>Worked examples from the lesson</h2>
+    <table class="tbl">
+      <thead><tr><th>Telugu</th><th>Meaning</th><th>What is happening</th></tr></thead>
+      <tbody>
+        <tr><td><span class="rom">guitar vāyinchu</span><br><span class="tel">గిటార్ వాయించు</span></td><td>Play the guitar.</td><td>English noun + Telugu root verb. Informal.</td></tr>
+        <tr><td><span class="rom">guitar vāyinchavaddu</span><br><span class="tel">గిటార్ వాయించవద్దు</span></td><td>Don't play the guitar.</td><td>Same, negated with <span class="mono">-vaddu</span>.</td></tr>
+        <tr><td><span class="rom">paper chadavaṇḍi</span><br><span class="tel">పేపర్ చదవండి</span></td><td>Please read the newspaper.</td><td><span class="mono">paper</span> in colloquial Telugu means <b>newspaper</b> specifically, not paper in general.</td></tr>
+        <tr><td><span class="rom">veḷḷipōvaddu</span><br><span class="tel">వెళ్ళిపోవద్దు</span></td><td>Don't go away.</td><td>Compound verb, then negated. Film-dialogue register.</td></tr>
+        <tr><td><span class="rom">pani chēyaṇḍi</span><br><span class="tel">పని చేయండి</span></td><td>Please do the work.</td><td>Noun + <span class="mono">chēyi</span>. The informal <span class="mono">pani chēyi</span> is close friends only in a workplace.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="questions">
+  <div class="wrap">
+    <span class="eyebrow">Going deeper</span>
+    <h2>Questions this lesson raises</h2>
+    <a class="question-link" href="../../GRAMMAR_LAB/index.html">
+      <span class="question-mark">?</span>
+      <span><h3>These roots are already drillable</h3><p>All 35 verbs, 14 paradigms, 1,709 forms — the Verb Lab turns this vocabulary list into interleaved production practice. Start with the "essential 5" preset.</p></span>
+      <span class="question-open">Open the Verb Lab</span>
+    </a>
+    <p style="margin-top:15px;font-size:13px">Open question worth a deep dive later: <b>when does a Telugu speaker choose <span class="mono">-vaddu</span> over <span class="mono">-ku</span></b>? Both negate a command and the course only teaches one.</p>
+  </div>
+</section>
+
+<section id="anki">
+  <div class="wrap">
+    <span class="eyebrow">For import</span>
+    <h2>Anki word list — your 5 fields</h2>
+    <p class="lede">Roots only. The polite forms are regular enough that drilling them belongs in the Verb Lab rather than as separate cards — one card per verb, the paradigm handled elsewhere.</p>
+    <div class="field-key">
+      <span><b>1</b> English (+ cue)</span><span><b>2</b> Romanized</span><span><b>3</b> Telugu script</span><span><b>4</b> Audio (blank)</span><span><b>5</b> Example</span>
+    </div>
+    <div class="anki-wrap">
+      <table class="anki">
+        <thead><tr><th class="f-en">English (with cue)</th><th>Romanized</th><th>Telugu</th><th style="text-align:center">Audio</th><th>Example sentence</th></tr></thead>
+        <tbody>
+          <tr class="sec"><td colspan="5">The welcoming four</td></tr>
+          <tr><td class="f-en">come (root — becomes raṇḍi when polite)</td><td class="f-rom">rā</td><td class="f-tel">రా</td><td class="f-aud">[ ]</td><td class="f-ex">raṇḍi, kūrchōṇḍi.</td></tr>
+          <tr><td class="f-en">sit, sit down</td><td class="f-rom">kūrchō</td><td class="f-tel">కూర్చో</td><td class="f-aud">[ ]</td><td class="f-ex">kūrchōṇḍi.</td></tr>
+          <tr><td class="f-en">eat</td><td class="f-rom">tinu</td><td class="f-tel">తిను</td><td class="f-aud">[ ]</td><td class="f-ex">ēmainā tinaṇḍi.</td></tr>
+          <tr><td class="f-en">drink</td><td class="f-rom">tāgu</td><td class="f-tel">తాగు</td><td class="f-aud">[ ]</td><td class="f-ex">ēmainā tāgaṇḍi.</td></tr>
+          <tr class="sec"><td colspan="5">Doing &amp; going</td></tr>
+          <tr><td class="f-en">do, make — also carries any English verb</td><td class="f-rom">chēyi</td><td class="f-tel">చేయి</td><td class="f-aud">[ ]</td><td class="f-ex">pani chēyaṇḍi.</td></tr>
+          <tr><td class="f-en">go (the standard word)</td><td class="f-rom">veḷḷu</td><td class="f-tel">వెళ్ళు</td><td class="f-aud">[ ]</td><td class="f-ex">veḷḷaṇḍi.</td></tr>
+          <tr><td class="f-en">go (blunter synonym of veḷḷu)</td><td class="f-rom">pō</td><td class="f-tel">పో</td><td class="f-aud">[ ]</td><td class="f-ex">pōṇḍi.</td></tr>
+          <tr><td class="f-en">go away (emphatic — film register)</td><td class="f-rom">veḷḷipō</td><td class="f-tel">వెళ్ళిపో</td><td class="f-aud">[ ]</td><td class="f-ex">veḷḷipōvaddu.</td></tr>
+          <tr><td class="f-en">give</td><td class="f-rom">ivvu</td><td class="f-tel">ఇవ్వు</td><td class="f-aud">[ ]</td><td class="f-ex">ivvaṇḍi.</td></tr>
+          <tr><td class="f-en">take</td><td class="f-rom">tīsukō</td><td class="f-tel">తీసుకో</td><td class="f-aud">[ ]</td><td class="f-ex">tīsukōṇḍi.</td></tr>
+          <tr><td class="f-en">stop, halt (long ā — not agu)</td><td class="f-rom">āgu</td><td class="f-tel">ఆగు</td><td class="f-aud">[ ]</td><td class="f-ex">āgaṇḍi.</td></tr>
+          <tr class="sec"><td colspan="5">Communicating</td></tr>
+          <tr><td class="f-en">speak, talk (māṭa + āḍu)</td><td class="f-rom">māṭlāḍu</td><td class="f-tel">మాట్లాడు</td><td class="f-aud">[ ]</td><td class="f-ex">Telugu māṭlāḍaṇḍi.</td></tr>
+          <tr><td class="f-en">tell</td><td class="f-rom">cheppu</td><td class="f-tel">చెప్పు</td><td class="f-aud">[ ]</td><td class="f-ex">cheppaṇḍi.</td></tr>
+          <tr><td class="f-en">say</td><td class="f-rom">anu</td><td class="f-tel">అను</td><td class="f-aud">[ ]</td><td class="f-ex">anaṇḍi.</td></tr>
+          <tr><td class="f-en">hear, listen</td><td class="f-rom">vinu</td><td class="f-tel">విను</td><td class="f-aud">[ ]</td><td class="f-ex">vinaṇḍi.</td></tr>
+          <tr><td class="f-en">see, watch</td><td class="f-rom">chūḍu</td><td class="f-tel">చూడు</td><td class="f-aud">[ ]</td><td class="f-ex">chūḍaṇḍi.</td></tr>
+          <tr><td class="f-en">read (also "study")</td><td class="f-rom">chaduvu</td><td class="f-tel">చదువు</td><td class="f-aud">[ ]</td><td class="f-ex">paper chadavaṇḍi.</td></tr>
+          <tr><td class="f-en">write (spoken form — vrāyi is written)</td><td class="f-rom">rāyi</td><td class="f-tel">రాయి</td><td class="f-aud">[ ]</td><td class="f-ex">rāyaṇḍi.</td></tr>
+          <tr><td class="f-en">learn (for yourself — the -kō reflexive)</td><td class="f-rom">nērchukō</td><td class="f-tel">నేర్చుకో</td><td class="f-aud">[ ]</td><td class="f-ex">Telugu nērchukōṇḍi.</td></tr>
+          <tr><td class="f-en">teach (cause someone else to learn)</td><td class="f-rom">nērpinchu</td><td class="f-tel">నేర్పించు</td><td class="f-aud">[ ]</td><td class="f-ex">nērpinchaṇḍi.</td></tr>
+          <tr class="sec"><td colspan="5">Body &amp; movement</td></tr>
+          <tr><td class="f-en">walk</td><td class="f-rom">naḍavu</td><td class="f-tel">నడవు</td><td class="f-aud">[ ]</td><td class="f-ex">naḍavaṇḍi.</td></tr>
+          <tr><td class="f-en">run</td><td class="f-rom">parugettu</td><td class="f-tel">పరుగెత్తు</td><td class="f-aud">[ ]</td><td class="f-ex">parugettaṇḍi.</td></tr>
+          <tr><td class="f-en">stand, stand up</td><td class="f-rom">nilabaḍu</td><td class="f-tel">నిలబడు</td><td class="f-aud">[ ]</td><td class="f-ex">nilabaḍaṇḍi.</td></tr>
+          <tr><td class="f-en">sleep, lie down</td><td class="f-rom">paḍukō</td><td class="f-tel">పడుకో</td><td class="f-aud">[ ]</td><td class="f-ex">paḍukōṇḍi.</td></tr>
+          <tr><td class="f-en">get up, rise (takes -v- before the suffix)</td><td class="f-rom">lē</td><td class="f-tel">లే</td><td class="f-aud">[ ]</td><td class="f-ex">lēvaṇḍi.</td></tr>
+          <tr class="sec"><td colspan="5">Play, sing, love</td></tr>
+          <tr><td class="f-en">play a sport (not music)</td><td class="f-rom">āḍu</td><td class="f-tel">ఆడు</td><td class="f-aud">[ ]</td><td class="f-ex">āḍaṇḍi.</td></tr>
+          <tr><td class="f-en">play music, play an instrument</td><td class="f-rom">vāyinchu</td><td class="f-tel">వాయించు</td><td class="f-aud">[ ]</td><td class="f-ex">guitar vāyinchaṇḍi.</td></tr>
+          <tr><td class="f-en">sing (long ā — paḍu means "fall")</td><td class="f-rom">pāḍu</td><td class="f-tel">పాడు</td><td class="f-aud">[ ]</td><td class="f-ex">pāḍaṇḍi.</td></tr>
+          <tr><td class="f-en">love (prēma + -inchu)</td><td class="f-rom">prēminchu</td><td class="f-tel">ప్రేమించు</td><td class="f-aud">[ ]</td><td class="f-ex">prēminchaṇḍi.</td></tr>
+          <tr class="sec"><td colspan="5">The two suffixes &amp; one helper</td></tr>
+          <tr><td class="f-en">-aṇḍi — politeness suffix, also the plural</td><td class="f-rom">-aṇḍi</td><td class="f-tel">-ండి</td><td class="f-aud">[ ]</td><td class="f-ex">tinu → tinaṇḍi</td></tr>
+          <tr><td class="f-en">-vaddu — don't (goes before -aṇḍi)</td><td class="f-rom">-vaddu</td><td class="f-tel">-వద్దు</td><td class="f-aud">[ ]</td><td class="f-ex">tinavaddaṇḍi</td></tr>
+          <tr><td class="f-en">something, anything</td><td class="f-rom">ēmainā</td><td class="f-tel">ఏమైనా</td><td class="f-aud">[ ]</td><td class="f-ex">ēmainā tinaṇḍi.</td></tr>
+          <tr><td class="f-en">work, task (pairs with chēyi)</td><td class="f-rom">pani</td><td class="f-tel">పని</td><td class="f-aud">[ ]</td><td class="f-ex">pani chēyaṇḍi.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="try">
+  <div class="wrap">
+    <span class="eyebrow">From the lesson</span>
+    <h2>Quick self-test</h2>
+    <p class="lede">Cover the green line and say each aloud. Most of these are about choosing the right politeness level, not remembering the word.</p>
+    <ul class="try">
+      <li><span class="q">Your mother-in-law arrives at the door. Say the two things you say next.</span><span class="a">raṇḍi, kūrchōṇḍi. &nbsp; (please come in, please have a seat)</span></li>
+      <li><span class="q">Offer her something to eat.</span><span class="a">ēmainā tinaṇḍi. &nbsp; (ēmainā = something)</span></li>
+      <li><span class="q">Tell a colleague to do the work — politely.</span><span class="a">pani chēyaṇḍi. &nbsp; (pani chēyi is close friends only at work)</span></li>
+      <li><span class="q">Why is <span class="mono">tinaṇḍi</span> and not <span class="mono">tinuaṇḍi</span>?</span><span class="a">The root's final -u is deleted before the suffix. Telugu doesn't allow two vowels together.</span></li>
+      <li><span class="q">Turn <span class="mono">kūrchō</span> polite — and say what happened to the suffix.</span><span class="a">kūrchōṇḍi. &nbsp; The ō absorbs the a, so -aṇḍi surfaces as -ṇḍi.</span></li>
+      <li><span class="q">Turn <span class="mono">rā</span> polite — and say why it isn't <span class="mono">rāaṇḍi</span>.</span><span class="a">raṇḍi. &nbsp; The two vowels merge rather than both surviving.</span></li>
+      <li><span class="q">Tell someone politely not to speak.</span><span class="a">māṭlāḍavaddaṇḍi. &nbsp; (root + -vaddu + -aṇḍi, in that order)</span></li>
+      <li><span class="q">Don't drink — informally, to a close friend.</span><span class="a">tāgavaddu.</span></li>
+      <li><span class="q">You've forgotten the Telugu for "to park". What do you say?</span><span class="a">park chēyaṇḍi. &nbsp; Any English verb + chēyi.</span></li>
+      <li><span class="q">Say "please read the newspaper".</span><span class="a">paper chadavaṇḍi. &nbsp; paper = newspaper specifically.</span></li>
+      <li><span class="q">Which means "sing" — <span class="mono">paḍu</span> or <span class="mono">pāḍu</span>? What's the other one?</span><span class="a">pāḍu = sing. paḍu = fall. Vowel length carries the meaning.</span></li>
+      <li><span class="q">A traffic policeman wants you to stop. What does he say?</span><span class="a">āgaṇḍi. &nbsp; Strangers get the polite form.</span></li>
+      <li><span class="q">Say "learn Telugu" (to yourself) and "teach Telugu" (to someone else).</span><span class="a">Telugu nērchukōṇḍi. / Telugu nērpinchaṇḍi. &nbsp; -kō is reflexive, -inchu is causative.</span></li>
+      <li><span class="q">The film line: tell someone dramatically not to go away.</span><span class="a">veḷḷipōvaddu.</span></li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><span class="mono">Foundational Telugu</span> · Lesson 7 · roots from the course's own root-verb PDF, cross-checked against the <a href="../../GRAMMAR_LAB/index.html">Verb Lab</a></p>
+    <p><a href="lesson-06-numbers.html">← Lesson 6 · Numbers</a> · <a href="../index.html">Course home</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
