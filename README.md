@@ -24,6 +24,17 @@ Division of labour between the pieces:
 - **The Verb Lab** covers the one thing flashcards handle badly — producing an inflected form
   fast enough to speak it.
 
+## How it is actually used
+
+[`PRACTICE.md`](PRACTICE.md) holds the study-session structure, the review-load arithmetic, why
+the commute is the wrong place for production drilling, the verdict on sources that were
+evaluated and rejected, and every open thread. Read it before picking the project back up after
+a gap.
+
+[`LEARNING_GUIDE/concepts/verb-forms-explained.md`](LEARNING_GUIDE/concepts/verb-forms-explained.md)
+explains what tense, aspect, mood and polarity are, what all fourteen Verb Lab forms mean, and
+why three were deliberately left out.
+
 ## Honest limits
 
 **No native speaker has reviewed the Telugu here yet.** The lessons are extracted from an
