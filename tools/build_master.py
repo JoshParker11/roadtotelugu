@@ -22,9 +22,11 @@ from collections import defaultdict, OrderedDict
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 from te2rom import romanize
-import adapters
+import adapters, glosses, overrides
 
 ROOT = os.path.normpath(os.path.join(HERE, '..'))
+# lower is better: the course pages carry register cues the raw wordlists lack
+SOURCE_RANK = {'site': 0, 'anki': 1, 'book1000': 2, 'spoken-telugu': 3, 'top1000': 4}
 OUT = os.path.join(ROOT, 'data', 'master_words.tsv')
 VERBFORMS = json.load(open(os.path.join(HERE, 'verbforms.json'), encoding='utf-8'))
 
@@ -183,11 +185,8 @@ def main():
             m = merged[key]
             if r['source'] not in m['source'].split(','):
                 m['source'] += ',' + r['source']
-            # keep glosses distinct rather than letting one source overwrite another
-            gl = [g.strip() for g in m['english'].split(';')]
-            if r['english'] and r['english'].strip().lower() not in [g.lower() for g in gl]:
-                m['english'] += '; ' + r['english'].strip()
-                m['flags'].add('multi-gloss')
+            if r['english']:
+                m['gloss_list'].append((SOURCE_RANK.get(r['source'], 9), r['english'].strip()))
             if not m['pos'] and r.get('pos'):
                 m['pos'] = r['pos']
             if not m.get('example') and r.get('example'):
@@ -200,6 +199,7 @@ def main():
                 m['rank'] = r['rank']
             continue
         rec = {'telugu': te, 'roman': rom, 'english': r['english'].strip(),
+               'gloss_list': [(SOURCE_RANK.get(r['source'], 9), r['english'].strip())],
                'pos': r.get('pos',''), 'source': r['source'], 'raw_rom': r.get('raw_rom',''),
                'example': r.get('example',''), 'rank': r.get('rank',''),
                'pronunciation': r.get('pronunciation',''), 'island': r.get('island',''),
@@ -208,6 +208,14 @@ def main():
         if r.get('book_flags'):
             rec['flags'] |= set(r['book_flags'].split())
         merged[key] = rec
+
+    for m in merged.values():
+        front, extras = glosses.resolve(m.pop('gloss_list', []), prefer_detail=True)
+        if front:
+            m['english'] = front
+        if extras:
+            m['notes'] = (m['notes'] + ' · also: ' + '; '.join(extras[:4])).strip(' ·')
+            m['flags'].add('multi-gloss')
 
     dropped, flagged = reconcile_typos(merged)
     if flagged:
@@ -224,6 +232,16 @@ def main():
     # study order: site material first (already sequenced), then by source frequency rank
     rows.sort(key=lambda r: (0 if 'site' in r['source'] else 1,
                              int(r['rank']) if str(r.get('rank','')).isdigit() else 10**6))
+    for i, r in enumerate(rows, 1):
+        r['id'] = f'W{i:04d}'
+
+    ovp = os.path.join(ROOT, 'data', 'overrides_words.tsv')
+    overrides.template(ovp)
+    ed, dr, unmatched = overrides.apply(rows, ovp, 'word')
+    if ed or dr:
+        print(f'  overrides: {ed} edited, {dr} dropped')
+    if unmatched:
+        print(f'  overrides with no matching entry: {unmatched[:6]}')
     for i, r in enumerate(rows, 1):
         r['id'] = f'W{i:04d}'
 

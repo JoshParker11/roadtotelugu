@@ -5,8 +5,8 @@ S0003	మీరు టీచర్.	mīru ṭīchar.	"""You are a teacher"" (to 
 S0004	నువ్వు విద్యార్థివి.	nuvvu vidyārthivi.	"""You are a student"" (to a student) [informal]"		informal	100				site	nuvvu vidyārthivi.		informal → nuvvu + marker -vi
 S0005		manam championlamu.	"""We are the champions"" (you're a champion too)"			100				site	manam championlamu.	needs-script	inclusive we → -amu, vowel eaten
 S0006	ఈవిడ, ఇతను, ఇవి.	īviḍa, itanu, ivi.	Give the near partner for āviḍa, atanu, and avi.			100				site	īviḍa, itanu, ivi.		keep the same meaning/register; change distance
-S0007	నమస్కారం.	namaskāraṁ.	Hello. (from Lesson 1); Hello — palms together, fingers up			100				site	namaskāraṁ.		
-S0008	నా పేరు ______.	nā pēru ______.	My name is ______.			100				site,book1000	nā pēru ______.		
+S0007	నమస్కారం.	namaskāraṁ.	Hello. (from Lesson 1)			100				site	namaskāraṁ.		also: Hello — palms together, fingers up
+S0008	నా పేరు ______.	nā pēru ______.	My name is ______.			100				site,book1000	nā pēru ______.		also: My name is
 S0009	నా వయసు ______.	nā vayasu ______.	My age is ______.			100				site	nā vayasu ______.		e.g. nā vayasu muppai āru = 36
 S0010	నేను ______ ని.	nēnu ______ ni.	I am a ______. (English profession word is fine)			100				site	nēnu ______ ni.		
 S0011	నేను ______ ని. / మాది ______.	nēnu ______ ni. / mādi ______.	I am ______. / Ours is ______.			100				site	nēnu ______ ni. / mādi ______.		
@@ -30,17 +30,17 @@ S0028	నా స్నేహితుడు. / నా స్నేహితు�
 S0029	నా భర్త. / మా ఆయన.	nā bharta. / mā āyana.	"""My husband"" — everyday and traditional."			100				site	nā bharta. / mā āyana.		"""our respected he"""
 S0030	మా నాన్న ఒక టీచర్.	mā nānna oka ṭīchar.	"""My father is a teacher."""			100				site	mā nāna oka ṭīcharu.		mā for family, loanword profession
 S0031	రండి	raṇḍi	Please come in (rā + aṇḍi) [respectful]		respectful	100				site	raṇḍi		
-S0032	మీరు బాగున్నారా?	mīru bāgunnārā?	How are you? (lit. are you fine?) [respectful]; Are you okay ?		respectful	100				site,book1000	mīru bāgunnārā?		
-S0033	నేను బాగున్నాను.	nēnu bāgunnānu.	I'm fine.; I’m fine.; I am fine.; I feel good	NAY-noo BAA-goon-NAA-noo		100		Existence		site,anki,book1000	nēnu bāgunnānu.		
+S0032	మీరు బాగున్నారా?	mīru bāgunnārā?	How are you? (lit. are you fine?) [respectful]		respectful	100				site,book1000	mīru bāgunnārā?		also: Are you okay ?
+S0033	నేను బాగున్నాను.	nēnu bāgunnānu.	I'm fine.	NAY-noo BAA-goon-NAA-noo		100		Existence		site,anki,book1000	nēnu bāgunnānu.		also: I feel good
 S0034	అవునండి / సరే	avunaṇḍi / sarē	Yes / okay		respectful	100				site	avunandi / sarē		
 S0035	వద్దండి	vaddaṇḍi	Someone offers you more food. You've had enough. [respectful]		respectful	100				site	vaddandi		declining = vaddu, not lēdu
 S0036	కాదండి	kādaṇḍi	Someone assumes you're a teacher. You're not. [respectful]		respectful	100				site	kādandi		negating an identity statement = kādu
 S0037	లేదండి	lēdaṇḍi	Someone asks if there's any coffee left. There isn't. [respectful]		respectful	100				site	lēdandi		existence = lēdu
-S0038	క్షమించండి	kṣaminchaṇḍi	Sorry (lit. forgive me) [respectful]; Excuse me; Pardon me		respectful	100				site,book1000	kṣaminchandi		
-S0039	పర్వాలేదు	parvālēdu	It was okay. / Not bad. / It's fine, don't worry about it.; Never mind			100				site,book1000	parvālēdu		"Enormously versatile. It also means ""no problem"" when someone apologises, and ""it doesn't matter"" when someone offers something you're declining. Card this one today."
+S0038	క్షమించండి	kṣaminchaṇḍi	Sorry (lit. forgive me) [respectful]		respectful	100				site,book1000	kṣaminchandi		also: Excuse me; Pardon me
+S0039	పర్వాలేదు	parvālēdu	It was okay. / Not bad. / It's fine, don't worry about it.			100				site,book1000	parvālēdu		"Enormously versatile. It also means ""no problem"" when someone apologises, and ""it doesn't matter"" when someone offers something you're declining. Card this one today. · also: Never mind"
 S0040	థాంక్స్ అండి	thānks aṇḍi	Thank a colleague in the way people actually do.		respectful	100				site	thanks aṇḍi		dhanyavādālu is formal/ceremonial only
 S0041	శభాష్	śabhāṣ	Well done / congratulations			100				site	śabhāṣ		
-S0042	ఇది ఎంత?	idi enta?	Ask the price of something in front of you.; How much is this?; How much does it cost?; How much does this cost?	IH-dih EN-tuh		100		Questions		site,anki	idi enta?		idi from Lesson 1 + enta, no verb
+S0042	ఇది ఎంత?	idi enta?	Ask the price of something in front of you.	IH-dih EN-tuh		100		Questions		site,anki	idi enta?		idi from Lesson 1 + enta, no verb · also: How much is this?; How much does it cost?; How much does this cost?
 S0043	ఇదిగోండి	idigōṇḍi	Here you go [respectful]		respectful	100				site	idigōṇḍi		
 S0044	పదండి	padaṇḍi	Let's go [respectful]		respectful	100				site	padaṇḍi		
 S0045	తెలుగు రాదు.	telugu rādu.	Tell someone you don't know Telugu.			100				site	Telugu rādu.		"lit. ""Telugu doesn't come"""
@@ -58,7 +58,7 @@ S0056	తాత గారు.	tāta gāru.	Address your grandfather respectfully
 S0057	అత్త గారు / మామ గారు.	atta gāru / māma gāru.	Your mother-in-law and father-in-law.		respectful	100				site	atta gāru / māma gāru.		Same roots as the paternal aunt and maternal uncle.
 S0058	అల్లుడు / కోడలు.	alluḍu / kōḍalu.	Son-in-law and daughter-in-law.			100				site	alluḍu / kōḍalu.		
 S0059	నేను అల్లుడిని.	nēnu alluḍini.	"""I am the son-in-law."" — mind the Lesson 2 sound rule."			100				site	nēnu alluḍini.		-ḍu → -ḍi before the person marker
-S0060	మీ పేరు ఏమిటి?	mī pēru ēmiṭi?	Ask a stranger their name.; What’s your name? (formal)		respectful	100				site,anki	mī pēru ēmiṭi?		respectful · stranger → always mī, never nī
+S0060	మీ పేరు ఏమిటి?	mī pēru ēmiṭi?	Ask a stranger their name.		respectful	100				site,anki	mī pēru ēmiṭi?		respectful · stranger → always mī, never nī · also: What’s your name? (formal)
 S0061	మీ పేరెంటి?	mī pēreṇṭi?	Say that question the way it actually sounds at speed. [respectful]		respectful	100				site	mī pēreṇṭi?		pēru + ēnti — the vowel gets deleted
 S0062	ఆయన పేరు.	āyana pēru.	"""His name"" using the formal pronoun."			100				site	āyana pēru.		unchanged
 S0063	వాళ్ళ పేర్లు.	vāḷḷa pērlu.	"""Their names"" for a group of people."			100				site	vāḷḷa pērlu.		vāḷḷu → vāḷḷa, and pēru → pērlu
@@ -111,11 +111,11 @@ S0109	ఆమె ఒక మంచి డాక్టర్	āme oka manchi ḍāk
 S0110	ఆ పుస్తకం బల్ల మీద ఉంది	ā pustakaṁ balla mīda undi	That book is on the table.			100				site	ā pustakaṁ balla mīda undi		For an identifiable object, a demonstrative such as ā often does the job—not oka.
 S0111	పది నిమిషాలు ఆగండి	padi nimiṣālu āgaṇḍi	Please wait ten minutes. [respectful]		respectful	100				site	padi nimiṣālu āgaṇḍi		The quantity is presented directly.
 S0112	ఒక పది నిమిషాలు ఆగండి	oka padi nimiṣālu āgaṇḍi	Please wait about ten minutes. [respectful]		respectful	100				site	oka padi nimiṣālu āgaṇḍi		In contemporary speech, oka can soften a following quantity into an estimate.
-S0113	ఆయన మా నాన్న. ఆయన పేరు మూర్తి.	āyana mā nānna. āyana pēru mūrti.	That is my father. His name is Murthy. (formal — unchanged)			83	mūrti			site	āyana mā nāna. āyana pēru Murthy.		
-S0114	ఆవిడ మా అమ్మ. ఆవిడ పేరు సునీత.	āviḍa mā amma. āviḍa pēru sunīta.	That is my mother. Her name is Sunita. (formal — unchanged)			83	sunīta			site	āviḍa mā amma. āviḍa pēru Sunita.		
-S0115	ఆమె మా అక్క. ఆమె పేరు దివ్య.	āme mā akka. āme pēru divya.	She is my elder sister. Her name is Divya. (neutral — unchanged)			83	divya			site	āme mā akka. āme pēru Divya.		
-S0116	అతను మా చిన్నాన్న. అతని పేరు సంజయ్.	atanu mā chinnānna. atani pēru sanjay.	He is my father's younger brother. His name is Sanjay. (neutral — u→i)			83	sanjay			site	atanu mā chinnāna. atani pēru Sanjay.		
-S0117	వాడు నా ఫ్రెండ్. వాడి పేరు పీటర్.	vāḍu nā phreṇḍ. vāḍi pēru pīṭar.	He is my friend. His name is Peter. (informal — u→i)		informal	83	pīṭar			site	vāḍu nā friend. vāḍi pēru Peter.		
+S0113	ఆయన మా నాన్న. ఆయన పేరు మూర్తి.	āyana mā nānna. āyana pēru mūrti.	That is my father. His name is Murthy.			83	mūrti			site	āyana mā nāna. āyana pēru Murthy.		also: formal — unchanged
+S0114	ఆవిడ మా అమ్మ. ఆవిడ పేరు సునీత.	āviḍa mā amma. āviḍa pēru sunīta.	That is my mother. Her name is Sunita.			83	sunīta			site	āviḍa mā amma. āviḍa pēru Sunita.		also: formal — unchanged
+S0115	ఆమె మా అక్క. ఆమె పేరు దివ్య.	āme mā akka. āme pēru divya.	She is my elder sister. Her name is Divya.			83	divya			site	āme mā akka. āme pēru Divya.		also: neutral — unchanged
+S0116	అతను మా చిన్నాన్న. అతని పేరు సంజయ్.	atanu mā chinnānna. atani pēru sanjay.	He is my father's younger brother. His name is Sanjay.			83	sanjay			site	atanu mā chinnāna. atani pēru Sanjay.		also: neutral — u→i
+S0117	వాడు నా ఫ్రెండ్. వాడి పేరు పీటర్.	vāḍu nā phreṇḍ. vāḍi pēru pīṭar.	He is my friend. His name is Peter.		informal	83	pīṭar			site	vāḍu nā friend. vāḍi pēru Peter.		also: informal — u→i
 S0118	రవి విద్యార్థి. సీత కూడా విద్యార్థి.	ravi vidyārthi. sīta kūḍā vidyārthi.	Who is a student?			80	ravi			site	Ravi vidyārthi. Sīta kūḍā vidyārthi.		
 S0119	నా డాక్టర్ పేరు సోఫియా.	nā ḍākṭar pēru sōphiyā.	"""My doctor's name is Sophia."""			75	sōphiyā			site	nā ḍākṭar pēru Sophia.		no apostrophe-s, just stack
 S0120	నమస్కారం. నా పేరు రవి.	namaskāraṁ. nā pēru ravi.	Hello. My name is Ravi.			75	ravi			site	namaskāraṁ. nā pēru Ravi.		
@@ -128,7 +128,7 @@ S0126	వీళ్ళు / వాళ్ళు.	vīḷḷu / vāḷḷu.	"""These
 S0127	నా పేరు రాజ్.	nā pēru rāj.	My name is Raj.			67	rāj			site	nā pēru Raj.		
 S0128	మా ఊరు హైదరాబాద్.	mā ūru haidarābād.	Our town is Hyderabad.			67	haidarābād			site	mā ūru Hyderabad.		
 S0129	మా ఊరు హైదరాబాద్. / మాది హైదరాబాద్.	mā ūru haidarābād. / mādi haidarābād.	You're from Hyderabad — two ways.			67	haidarābād haidarābād			site	mā ūru Hyderabad. / mādi Hyderabad.		
-S0130	అది నా క్లాస్‌మేట్. దాని పేరు గీత.	adi nā klāsmēṭ. dāni pēru gīta.	That's my classmate. Her name is Gita. (informal — new form)			67	klāsmēṭ gīta			site	adi nā classmate. dāni pēru Gita.		
+S0130	అది నా క్లాస్‌మేట్. దాని పేరు గీత.	adi nā klāsmēṭ. dāni pēru gīta.	That's my classmate. Her name is Gita.			67	klāsmēṭ gīta			site	adi nā classmate. dāni pēru Gita.		also: informal — new form
 S0131	అతని పేరు సంజయ్.	atani pēru sanjay.	"""His name is Sanjay"" — neutral register."			67	sanjay			site	atani pēru Sanjay.		atanu → atani
 S0132	ఆమె పేరు దివ్య.	āme pēru divya.	"""Her name is Divya"" — neutral register."			67	divya			site	āme pēru Divya.		āme doesn't change
 S0133		oka maniṣi vaccāḍu.	“A man came.” He is new to the story.			67	vaccāḍu			site	oka maniṣi vaccāḍu.	needs-script	oka introduces one new participant.
@@ -138,7 +138,7 @@ S0136	రామయ్య ఫోన్ చేశాడు	rāmayya phōn chēśā
 S0137	రాజ్ విద్యార్థి.	rāj vidyārthi.	Raj is a student.			50	rāj			site	Raj vidyārthi.		
 S0138	మాది హైదరాబాద్.	mādi haidarābād.	Ours is Hyderabad.			50	haidarābād			site	mādi Hyderabad.		the common form
 S0139	ఇంగ్లీష్ తెలుసా?	inglīṣ telusā?	Do you know English?			50	inglīṣ			site	English telusā?		
-S0140	వాళ్ళ పేర్లు పీటర్, గీత.	vāḷḷa pērlu pīṭar, gīta.	Their names are Peter and Gita. (plural — u→a, noun takes -lu)			50	pīṭar gīta			site	vāḷḷa pērlu Peter, Gita.		
+S0140	వాళ్ళ పేర్లు పీటర్, గీత.	vāḷḷa pērlu pīṭar, gīta.	Their names are Peter and Gita.			50	pīṭar gīta			site	vāḷḷa pērlu Peter, Gita.		also: plural — u→a, noun takes -lu
 S0141		dāni (from adi) and vāṭi (from avi) — both neuter.	Which two possessives are completely new words?			50	(from and (from both neuter			site	dāni (from adi) and vāṭi (from avi) — both neuter.	needs-script	
 S0142	ఏం చేసారు?	ēṁ chēsāru?	What did you do? [respectful]		respectful	50	ēṁ			site	ēṁ chēsāru?		"Listen for: ēṁ (what). The -āru ending is the respectful ""you"" form — she's being polite to you."
 S0143	ఇతను రవి.	itanu ravi.	This nearby man/person is Ravi.			50	ravi			site	itanu Ravi.		
@@ -149,8 +149,8 @@ S0147	అవి కార్లు.	avi kārlu.	Those are cars.			50	kārlu			si
 S0148	ఇది తాజ్ మహల్. / అది తాజ్ మహల్.	idi tāj mahal. / adi tāj mahal.	"""This is the Taj Mahal / That is the Taj Mahal"""			43	tāj mahal tāj mahal			site	idi Tāj Mahal. / adi Tāj Mahal.		near i- vs distant a-
 S0149		okaṭi (alone) / oka (before a noun) — which is how oka became article-like.	Which number has two forms, and why?			43	(alone) (before noun) which is how became article-like			site	okaṭi (alone) / oka (before a noun) — which is how oka became article-like.	long needs-script	
 S0150	ఇది తాజ్ మహల్.	idi tāj mahal.	This is the Taj Mahal.			33	tāj mahal			site	idi Tāj Mahal.		
-S0151	నేను	nēnu	I am; I drank			100			1	book1000	Nenu		
-S0152	నేనుఇచ్చాను	nēnuichchānu	I gave; I gave it			100			2	book1000	Nenu ichanu		
+S0151	నేను	nēnu	I am			100			1	book1000	Nenu		also: I drank
+S0152	నేనుఇచ్చాను	nēnuichchānu	I gave			100			2	book1000	Nenu ichanu		also: I gave it
 S0153	నువ్వువెళ్ళు	nuvvuveḷḷu	You go			100			3	book1000	Nuvvu vellu		
 S0154	నేనుఎందుకు?	nēnuenduku?	Why me ?			100			5	book1000	Nenu enduku ?		
 S0155	నేనుకూడా	nēnukūḍā	So am I			100			6	book1000	Nenu kuda		
@@ -166,7 +166,7 @@ S0164	మేమువెళ్ళాము	mēmuveḷḷāmu	We went			100			22	
 S0165	వెళ్లిపోండి	veḷlipōṇḍi	Go away		respectful	100			23	book1000	Vellipondi		
 S0166	తీసుకోండి	tīsukōṇḍi	Take it		respectful	100			24	book1000	Teesukondi		
 S0167	అర్థమైందా?	arthamaindā?	Got it ?			100			25	book1000	Ardamainda ?		
-S0168	వెళాం	veḷāṁ	Let's go; Let's go !			100			26	book1000	Veldam		
+S0168	వెళాం	veḷāṁ	Let's go			100			26	book1000	Veldam		
 S0169	నేనుతెరిచాను	nēnuterichānu	I opened			100			27	book1000	Nenu terichanu		
 S0170	నేనుఅలా చేసాను	nēnualā chēsānu	So did I			100			29	book1000	Nenu ala chesanu		
 S0171	ఇప్పుడే	ippuḍē	Just now			100			30	book1000	Ippude		
@@ -194,8 +194,8 @@ S0192	నేనుకాదు	nēnukādu	I am not			100			55	book1000	Nenu kadu
 S0193	వదిలేయండి	vadilēyaṇḍi	Leave it		respectful	100			56	book1000	Vadileyandi		
 S0194	నిలబడండి !	nilabaḍaṇḍi !	Stand up !		respectful	100			58	book1000	Nilabadandi !		
 S0195	ఎవరుచెప్పారు?	evarucheppāru?	Who said ?			100			61	book1000	Evaru chepparu ?		
-S0196	ఎవరువెళ్తారు?	evaruveḷtāru?	Who goes ?; Who will go ?			100			62	book1000	Evaru veltaru ?		
-S0197	నేనుఇక్కడఉన్నాను	nēnuikkaḍaunnānu	Here I am; I am here			100			63	book1000	Nenu ikkada unnanu		
+S0196	ఎవరువెళ్తారు?	evaruveḷtāru?	Who goes ?			100			62	book1000	Evaru veltaru ?		also: Who will go ?
+S0197	నేనుఇక్కడఉన్నాను	nēnuikkaḍaunnānu	Here I am			100			63	book1000	Nenu ikkada unnanu		also: I am here
 S0198	ఇక్కడ	ikkaḍa	Over here			100			65	book1000	Ikkada		
 S0199	ఇంటికి రండి	iṇṭiki raṇḍi	Come home		respectful	100			66	book1000	Intiki randi		
 S0200	నేనుఅలిగాను	nēnualigānu	I am hurt			100			67	book1000	Nenu aliganu		
@@ -203,7 +203,7 @@ S0201	ఇప్పుడేచేయండి	ippuḍēchēyaṇḍi	Do it now		
 S0202	నేనుమాత్రమే	nēnumātramē	I am only			100			71	book1000	Nenu matrame		
 S0203	దూరంగా ఉండండి	dūrangā uṇḍaṇḍi	Stay away		respectful	100			72	book1000	Dooranga undandi		
 S0204	ఇది సులభం	idi sulabhaṁ	It's easy			100			74	book1000	Idi sulabham		
-S0205	అది కష్టం	adi kaṣṭaṁ	It's hard; It is difficult			100			75	book1000	Adi kastam		
+S0205	అది కష్టం	adi kaṣṭaṁ	It's hard			100			75	book1000	Adi kastam		also: It is difficult
 S0206	త్వరగా రండి	tvaragā raṇḍi	Come soon		respectful	100			77	book1000	Tvaraga randi		
 S0207	నన్నువెళ్లనివ్వండి	nannuveḷlanivvaṇḍi	Let me go		respectful	100			78	book1000	Nannu vellanivvandi		
 S0208	ఎవరువచ్చారు	evaruvachchāru	Who came ?			100			79	book1000	Evaru vacharu		
@@ -219,7 +219,7 @@ S0217	నాకుఎనిమిది సంవత్సరాలు	nākuenim
 S0218	సాయంత్రం6:30 గంటలు	sāyantraṁ6:30 gaṇṭalu	It's 6:30 pm			100			96	book1000	Sayantram 6 : 30gantalu		
 S0219	మర్చిపోండి	marchipōṇḍi	Forget it		respectful	100			97	book1000	Marchipondi		
 S0220	సిద్దంగాఉండండి	siddangāuṇḍaṇḍi	Get ready		respectful	100			102	book1000	Siddanga undandi		
-S0221	చాలా బాగుంది	chālā bāgundi	Chala bagundi; Very nice !			100			103	book1000			
+S0221	చాలా బాగుంది	chālā bāgundi	Chala bagundi			100			103	book1000			also: Very nice !
 S0222	అలా ఉండనివ్వండి	alā uṇḍanivvaṇḍi	Let it be		respectful	100			104	book1000	Ala undanivvandi		
 S0223	అవునా లేదా	avunā lēdā	Yes or no ?			100			105	book1000	Avuna leda		
 S0224	శుభమధ్యాహ్నం	śubhamadhyāhnaṁ	Good noon !			100			106	book1000	Shubha madyahnam		
@@ -227,17 +227,17 @@ S0225	అయితే సరే	ayitē sarē	All right !			100			107	book1000	Ay
 S0226	చాలా మంచిది	chālā manchidi	Very good !			100			108	book1000	Chala manchidi		
 S0227	ఎవరికీ తెలుసు	evarikī telusu	Who knows ?			100			110	book1000	Evariki telusu		
 S0228	దేవునికి ధన్యవాదాలు	dēvuniki dhanyavādālu	Thank God !			100			111	book1000	Devuniki danyavadalu		
-S0229	నేనుకూర్చోవచ్చా?	nēnukūrchōvachchā?	May I sit ?; May I sit down ?			100			112	book1000	Nenu kurchovacha		
+S0229	నేనుకూర్చోవచ్చా?	nēnukūrchōvachchā?	May I sit ?			100			112	book1000	Nenu kurchovacha		also: May I sit down ?
 S0230	నేనుసిద్ధంగా ఉన్నాను	nēnusiddhangā unnānu	I am ready			100			113	book1000	Nenu siddanga unnanu		
 S0231		Manam matladukundam	let's talk			100			114	book1000	Manam matladukundam	needs-script	
 S0232	భోజనంచేసారా	bhōjananchēsārā	Had lunch ?			100			119	book1000	Bhojanam chesara		
 S0233	దయచేసి కూర్చోండి	dayachēsi kūrchōṇḍi	Please sit		respectful	100			120	book1000	Dayachesi kurchondi		
-S0234	నేనువెళ్ళాలి	nēnuveḷḷāli	I gotta go; I have to go			100			122	book1000	Nenu vellali		
+S0234	నేనువెళ్ళాలి	nēnuveḷḷāli	I gotta go			100			122	book1000	Nenu vellali		also: I have to go
 S0235	నేనువిసుగుచెందాను	nēnuvisuguchendānu	I am bored			100			123	book1000	Nenu visugu chendanu		
 S0236	అవునుఅదే	avunuadē	Yes , it is			100			125	book1000	Avunu ade		
 S0237	ఏమిటి సంగతులు	ēmiṭi sangatulu	What's up ?			100			126	book1000	Emiti sangathulu		
 S0238	రుచి చూడండి	ruchi chūḍaṇḍi	Just taste it		respectful	100			127	book1000	Ruchi chudandi		
-S0239	నేనువెళ్ళను	nēnuveḷḷanu	I don't go; I shall not go			100			135	book1000	Nenu vellanu		
+S0239	నేనువెళ్ళను	nēnuveḷḷanu	I don't go			100			135	book1000	Nenu vellanu		also: I shall not go
 S0240	ఇదిగో	idigō	Here it is			100			136	book1000	Idigo		
 S0241	అయనచేస్తారు	ayanachēstāru	He will do			100			137	book1000	Ayana chestaru		
 S0242	నన్నుచుడండి	nannuchuḍaṇḍi	Look at me		respectful	100			138	book1000	Nannu chudandi		
@@ -247,7 +247,7 @@ S0245	నేనుఒంటరిగా ఉన్నాను	nēnuoṇṭarigā
 S0246	నాకుగుర్తుంది	nākugurtundi	I remember			100			143	book1000	Naku gurtundi		
 S0247	నేనుఅలసిపోయాను	nēnualasipōyānu	I am tired			100			144	book1000	Nenu alasipoyanu		
 S0248	నేనుభేషుగ్గా ఉన్నాను	nēnubhēṣuggā unnānu	I am great			100			145	book1000	Nenu beshugga unnanu		
-S0249	నన్నుచుడనివ్వండి	nannuchuḍanivvaṇḍi	Let me see; Let me check		respectful	100			151	book1000	Nannu chudanivvandi		
+S0249	నన్నుచుడనివ్వండి	nannuchuḍanivvaṇḍi	Let me see		respectful	100			151	book1000	Nannu chudanivvandi		also: Let me check
 S0250	నరకానికి వెళ్ళు	narakāniki veḷḷu	Go to hell			100			152	book1000	Narakaniki vellu		
 S0251	ఏమి ఇబ్బంది లేదు	ēmi ibbandi lēdu	No problem		respectful	100			155	book1000	Emi ibbandi ledu		
 S0252	ಇದಿ ನೆನ	ಇದಿ ನೆನ	This is me			100			156	book1000	Idi nene		
@@ -277,12 +277,12 @@ S0275	అయనపొట్టిగాఉన్నారు	ayanapoṭṭigāun
 S0276	ఇది ఇక్కడఉండే	idi ikkaḍauṇḍē	It was here			100			187	book1000	Idi ikkada unde		
 S0277	తాగకండి	tāgakaṇḍi	Don't drink		respectful	100			188	book1000	Thagakandi		
 S0278	స్వాగతంసార్	svāgataṁsār	Welcome sir			100			189	book1000	Svagatham saar		
-S0279	మనంవెళ్లామా	manaṁveḷlāmā	Shall we go; Shall we go ?			100			190	book1000	Manam veldama		
+S0279	మనంవెళ్లామా	manaṁveḷlāmā	Shall we go			100			190	book1000	Manam veldama		also: Shall we go ?
 S0280	కిందపెట్టండి	kindapeṭṭaṇḍi	Put it down		respectful	100			192	book1000	Kinda pettandi		
 S0281	నేనుఇంకా తింటాను	nēnuinkā tiṇṭānu	I still eat			100			193	book1000	Nenu inka thintanu		
 S0282	నేనుచింతిస్తున్నాను	nēnuchintistunnānu	I'm worried			100			199	book1000	Nenu chintistunnanu		
 S0283	మీ మీదనాకునమ్మకంఉంది	mī mīdanākunammakaṁundi	I trust you		respectful	100			201	book1000	Mi meeda nammakam undi		
-S0284	నేనుబయలుదేరుతున్నాను	nēnubayaludērutunnānu	I'm leaving; I am leaving			100			203	book1000	Nenu bayaluderuthunna		
+S0284	నేనుబయలుదేరుతున్నాను	nēnubayaludērutunnānu	I'm leaving			100			203	book1000	Nenu bayaluderuthunna		
 S0285	మీరువెళ్ళారా?	mīruveḷḷārā?	Did you go ?			100			204	book1000	Miru vellara ?		
 S0286	అవునునేనువెళ్ళాను	avununēnuveḷḷānu	Yes , I went			100			205	book1000	Avunu nenu vellanu		
 S0287	ఇది ఉప్పుగా ఉంది	idi uppugā undi	It is salty			100			207	book1000	Idi uppuga undi		
@@ -315,7 +315,7 @@ S0313	ఇంకేమి లేదు	inkēmi lēdu	Nothing else			100			240	boo
 S0314	కేవలంఊహించుకోండి	kēvalaṁūhinchukōṇḍi	Just imagine		respectful	100			242	book1000	Kevalam oohinchukondi		
 S0315	తరవాతఏంటి ?	taravātaēṇṭi ?	What's next ?			100			243	book1000	Taruvata enti ?		
 S0316	ఆలస్యంచేయకండి	ālasyanchēyakaṇḍi	Don't delay !		respectful	100			244	book1000	Alasyam cheyakandi		
-S0317	నేనుచదువుకుంటున్నాను	nēnuchaduvukuṇṭunnānu	I'm studying; I am studying			100			245	book1000	Nenu chaduvukuntunnanu		
+S0317	నేనుచదువుకుంటున్నాను	nēnuchaduvukuṇṭunnānu	I'm studying			100			245	book1000	Nenu chaduvukuntunnanu		
 S0318	నేనుఆడను	nēnuāḍanu	I won't play			100			247	book1000	Nenu adanu		
 S0319	నేనుతెచ్చాను	nēnutechchānu	I brought it			100			248	book1000	Nenu techanu		
 S0320	మీరువెళ్లరు	mīruveḷlaru	You don't go			100			249	book1000	Miru vellaru		
@@ -338,7 +338,7 @@ S0336	మీరుబాధలో ఉన్నారా?	mīrubādhalō unnārā
 S0337	నేనుపరిగెడుతున్నాను	nēnuparigeḍutunnānu	I am running			100			269	book1000	Nenu parigeduthunnanu		
 S0338	చూడటంఆపండి	chūḍaṭaṁāpaṇḍi	Stop staring		respectful	100			270	book1000	Chudatam apandi		
 S0339	అది విసుగ్గాఉంది	adi visuggāundi	It is boring			100			271	book1000	Adi visugga undi		
-S0340	అది సరైనది	adi sarainadi	That's right; That's right !			100			273	book1000	Adi sarainadi		
+S0340	అది సరైనది	adi sarainadi	That's right			100			273	book1000	Adi sarainadi		
 S0341	నేనుపట్టించుకోను	nēnupaṭṭinchukōnu	I don't care			100			274	book1000	Nenu pattinchukoni		
 S0342	నేనుపట్టించుకోవడంలేదు	nēnupaṭṭinchukōvaḍaṁlēdu	I don't mind			100			275	book1000	Nenu pattinchukovadam ledu		
 S0343	నాకుఖచ్చితంగా తెలియదు	nākukhachchitangā teliyadu	I'm not sure			100			276	book1000	Naku kachithanga teliyadu		
@@ -364,7 +364,7 @@ S0362	ఇది నా సంకల్పం	idi nā sankalpaṁ	It's my will			
 S0363	నేనుచదువుతాను	nēnuchaduvutānu	I will study			100			299	book1000	Nenu chaduvuthanu		
 S0364	ఇది చాలా ఎక్కువ	idi chālā ekkuva	This is too much			100			300	book1000	Idi chala ekkuva		
 S0365	నా మాటవినండి	nā māṭavinaṇḍi	Listen to me		respectful	100			301	book1000	Na mata vinandi		
-S0366	నేనునవ్వుతున్నాను	nēnunavvutunnānu	I am smiling; I am laughing			100			302	book1000	Nenu navvuthunnanu		
+S0366	నేనునవ్వుతున్నాను	nēnunavvutunnānu	I am smiling			100			302	book1000	Nenu navvuthunnanu		also: I am laughing
 S0367	నన్నుమాట్లాడనివ్వండి	nannumāṭlāḍanivvaṇḍi	Let me speak		respectful	100			303	book1000	Nannu matladanivvandi		
 S0368	అతనునా పిల్లి	atanunā pilli	He is my cat			100			304	book1000	Athanu na pilli		
 S0369	అయననిద్రపోతున్నారు	ayananidrapōtunnāru	He is asleep		respectful	100			305	book1000	Ayana nidrapothunnaru		
@@ -374,7 +374,7 @@ S0372	చింతించకండి	chintinchakaṇḍi	Not to worry		respec
 S0373	ఆయనకి జ్వరంఉంది	āyanaki jvaraṁundi	He has fever			100			311	book1000	Ayanaki jvaram undi		
 S0374	అయనఅనారోగ్యంతో ఉన్నారు	ayanaanārōgyantō unnāru	He is unwell		respectful	100			312	book1000	Ayana anarogyam tho unnaru		
 S0375	నేనుభయపడ్డాను	nēnubhayapaḍḍānu	I was scared			100			313	book1000	Nenu bhyapaddanu		
-S0376	నేనుచేస్తున్నాను	nēnuchēstunnānu	I am doing it; I was doing it			100			314	book1000	Nenu chestunnanu		
+S0376	నేనుచేస్తున్నాను	nēnuchēstunnānu	I am doing it			100			314	book1000	Nenu chestunnanu		also: I was doing it
 S0377	అవునునేనువిచారంగా ఉన్నాను	avununēnuvichārangā unnānu	Yes , I am sad			100			315	book1000	Avunu nenu vicharanga unnanu		
 S0378	నాకుజలుబుచేసింది	nākujalubuchēsindi	I have a cold			100			316	book1000	Naku jalubu chesindi		
 S0379	నేనుతెరవను	nēnuteravanu	I don't open			100			317	book1000	Nenu teravanu		
@@ -388,7 +388,7 @@ S0386	నన్నుభాదించకండి	nannubhādinchakaṇḍi	Don
 S0387	నేనుఇవ్వగలను	nēnuivvagalanu	I can give it			100			332	book1000	Nenu ivvagalanu		
 S0388	రండి వెళ్లాం	raṇḍi veḷlāṁ	Come let's go		respectful	100			333	book1000	Randi veldam		
 S0389	నేనువ్రాస్తున్నాను	nēnuvrāstunnānu	I was writing			100			334	book1000	Nenu vrasthunnanu		
-S0390	ఇది మంచిది కాదు	idi manchidi kādu	It's not good; It's not nice			100			336	book1000	Idi manchidi kadu		
+S0390	ఇది మంచిది కాదు	idi manchidi kādu	It's not good			100			336	book1000	Idi manchidi kadu		also: It's not nice
 S0391	బెల్ మోగించండి	bel mōginchaṇḍi	Ring the bell		respectful	100			337	book1000	Bell moginchandi		
 S0392	కానీ నాకుఅది నచ్చింది	kānī nākuadi nachchindi	But I like it			100			339	book1000	Kani naku adi nachindi		
 S0393	తలుపుకితాళంవేయండి	talupukitāḷaṁvēyaṇḍi	Lock the door		respectful	100			340	book1000	Talupuki talam veyandi		
@@ -724,25 +724,25 @@ S0722	వారుఏమి చేసారు?	vāruēmi chēsāru?	What do the
 S0723	నేనుఒక్ లేఖరాసాను	nēnuok lēkharāsānu	I write a letter			100			773	book1000	Nenu oka lekha rasthanu		
 S0724	అవునునేనుతీసుకున్నాను	avununēnutīsukunnānu	Yes, I have taken			100			774	book1000	Avunu nenu teesukunnanu		
 S0725	నేనుఆవిడని ఇష్టపడను	nēnuāviḍani iṣṭapaḍanu	I don't like her			100			775	book1000	Nenu avidani istapadanu -- End - Other Books All of other language books This book is designed for those who are interested in learning Spoken 2000 Hindi . This book has 2000 Hindi words & sentences (1000 words & 1000 Words Sentences Hindi ( 1000Sentencesl &		
-S0726	మీరు ఎలా ఉన్నారు?	mīru elā unnāru?	How are you? (formal); How are you doing?	MAY-roo EH-laa OON-naa-roo	respectful	100		Pronouns		anki	Mīru ēlā unnāru?		
+S0726	మీరు ఎలా ఉన్నారు?	mīru elā unnāru?	How are you? (formal)	MAY-roo EH-laa OON-naa-roo	respectful	100		Pronouns		anki	Mīru ēlā unnāru?		also: How are you doing?
 S0727	నువ్వు ఎలా ఉన్నావు?	nuvvu elā unnāvu?	How are you? (casual)		informal	100				anki	Nuvvu ēlā unnāvu?		
 S0728	మీరు తిన్నారా?	mīru tinnārā?	Did you eat? (formal)		respectful	100				anki	Mīru tinnārā?		
-S0729	నువ్వు తిన్నావా?	nuvvu tinnāvā?	Did you eat? (casual)	NOOV-voo TIHN-naa-vaa	informal	100		Pronouns		anki	Nuvvu tinnāvā?		
+S0729	నువ్వు తిన్నావా?	nuvvu tinnāvā?	Did you eat? (casual)	NOOV-voo TIHN-naa-vaa	informal	100		Pronouns		anki	Nuvvu tinnāvā?		also: Did you eat?
 S0730	అవును, తిన్నాను.	avunu, tinnānu.	Yes, I ate.			100				anki	Avunu, tinnānu.		
 S0731	లేదు, ఇంకా కాదు.	lēdu, inkā kādu.	No, not yet.			100				anki	Lēdu, inkā kādu.		
 S0732	స్వాగతం.	svāgataṁ.	You’re welcome.			100				anki	Swāgatam.		
-S0733	శుభోదయం.	śubhōdayaṁ.	Good morning.; Good morning !	shoo-BHOH-duh-yuhm		100		Time		anki,book1000	Śubhōdayam.		
-S0734	శుభ సాయంత్రం.	śubha sāyantraṁ.	Good evening.; Good evening !			100				anki,book1000	Śubha sāyantram.		
+S0733	శుభోదయం.	śubhōdayaṁ.	Good morning.	shoo-BHOH-duh-yuhm		100		Time		anki,book1000	Śubhōdayam.		
+S0734	శుభ సాయంత్రం.	śubha sāyantraṁ.	Good evening.			100				anki,book1000	Śubha sāyantram.		
 S0735	శుభ రాత్రి.	śubha rātri.	Good night.	SHOO-bhuh RAA-trih		100		Time		anki	Śubha rātri.		
 S0736	నీ పేరు ఏమిటి?	nī pēru ēmiṭi?	What’s your name? (casual)		informal	100				anki	Nī pēru ēmiṭi?		
 S0737	మీరు ఏమి చేస్తున్నారు?	mīru ēmi chēstunnāru?	What are you doing?		respectful	100				anki	Mīru ēmi chēstunnāru?		
-S0738	నేను నేర్చుకుంటున్నాను.	nēnu nērchukuṇṭunnānu.	I’m learning.; I am learning			100				anki,book1000	Nēnu nērchukuntunnānu.		
+S0738	నేను నేర్చుకుంటున్నాను.	nēnu nērchukuṇṭunnānu.	I’m learning.			100				anki,book1000	Nēnu nērchukuntunnānu.		
 S0739	నువ్వు సహాయం చేస్తావా?	nuvvu sahāyaṁ chēstāvā?	Can you help?		informal	100				anki	Nuvvu sahāyaṁ chēstāva?		
-S0740	ఇది చాలా బాగుంది.	idi chālā bāgundi.	This is very good.; This is very tasty.; It's very good	IH-dih CHAA-laa BAA-goon-dih		100		Pronouns		anki,book1000	Idi chālā bāgundi.		
+S0740	ఇది చాలా బాగుంది.	idi chālā bāgundi.	This is very good.	IH-dih CHAA-laa BAA-goon-dih		100		Pronouns		anki,book1000	Idi chālā bāgundi.		also: This is very tasty.; It's very good
 S0741	నేను వస్తున్నాను.	nēnu vastunnānu.	I am coming.	NAY-noo VUHS-toon-NAA-noo		100		Pronouns		anki	nEnu vastuMnaanu.		
 S0742	నాకు తెలీదు.	nāku telīdu.	I don't know.	NAA-koo TEH-lay-doo		100		Pronouns		anki	naaku teleedu.		
 S0743	నేను ఇప్పుడు బిజీగా ఉన్నాను.	nēnu ippuḍu bijīgā unnānu.	I am busy right now.	NAY-noo IHP-poo-doo BIH-zee-gaa OON-naa-noo		100		Pronouns		anki	nEnu ippuDu busy gaa unnaanu.		
-S0744	నేను చేస్తాను.	nēnu chēstānu.	I will do it.; I do it	NAY-noo CHASE-taa-noo		100		Pronouns		anki,book1000	nEnu chEstaanu.		
+S0744	నేను చేస్తాను.	nēnu chēstānu.	I will do it.	NAY-noo CHASE-taa-noo		100		Pronouns		anki,book1000	nEnu chEstaanu.		also: I do it
 S0745	నేను తిన్నేసాను.	nēnu tinnēsānu.	I ate already.	NAY-noo TIHN-nay-saa-noo		100		Pronouns		anki	nEnu tinnEsaanu.		
 S0746	నువ్వు ఫ్రీగా ఉన్నావా?	nuvvu phrīgā unnāvā?	Are you free?	NOOV-voo FREE-gaa OON-naa-vaa	informal	100		Pronouns		anki	nuvvu free gaa unnaavaa?		
 S0747	నువ్వు ఇక్కడికి రా.	nuvvu ikkaḍiki rā.	You come here.	NOOV-voo IHK-kuh-DIH-kih RAA	informal	100		Pronouns		anki	nuvvu ikkaDiki raa.		
@@ -779,7 +779,7 @@ S0777	ఇది మా ఆఫీస్.	idi mā āphīs.	This is our office.	IH-
 S0778	అది ఏమి?	adi ēmi?	What is that?	UH-dih AY-mih		100		Pronouns		anki	adi Emi?		
 S0779	అది సరి.	adi sari.	That is correct.	UH-dih SUH-rih		100		Pronouns		anki	adi sari.		
 S0780	అది అతని కార్.	adi atani kār.	That is his car.	UH-dih UH-tuh-nih KAR		100		Pronouns		anki	adi atani car.		
-S0781	అది చాలా ఎక్కువ.	adi chālā ekkuva.	That is too expensive.; That is too much.	UH-dih CHAA-laa EK-koo-vuh		100		Pronouns		anki	adi chaalaa ekkuva.		
+S0781	అది చాలా ఎక్కువ.	adi chālā ekkuva.	That is too expensive.	UH-dih CHAA-laa EK-koo-vuh		100		Pronouns		anki	adi chaalaa ekkuva.		also: That is too much.
 S0782	అది సరి కాదు.	adi sari kādu.	That is not right.	UH-dih SUH-rih KAA-doo		100		Pronouns		anki	adi sari kaadu.		
 S0783	ఇవి చాలా బాగున్నాయి.	ivi chālā bāgunnāyi.	These are very nice.	IH-vih CHAA-laa BAA-goon-NAA-yih		100		Pronouns		anki	ivi chaalaa baagunnaayi.		
 S0784	ఇవి కొత్తవి.	ivi kottavi.	These are new.	IH-vih KOHT-tuh vih		100		Pronouns		anki	ivi kotta vi.		
@@ -797,7 +797,7 @@ S0795	నీకు అర్థం అయ్యిందా?	nīku arthaṁ ayyi
 S0796	మీకు ఏమైనా కావాలా?	mīku ēmainā kāvālā?	Do you want anything?	MAY-koo AY-my-naa kaa-VAA-laa		100		Pronouns		anki	meeku eMaina kaavaalaa?		
 S0797	మీకు పంపిస్తాం.	mīku pampistāṁ.	I will send it to you.	MAY-koo PUHM-pihs-taam		100		Pronouns		anki	meeku paMpistaaM.		
 S0798	ఇది మీకు సర్.	idi mīku sar.	This is for you sir.	IH-dih MAY-koo SIR		100		Pronouns		anki	idi meeku sir.		
-S0799	మీకు నచ్చిందా?	mīku nachchindā?	Do you like it?; Do you like it ?	MAY-koo NUHCH-chihn-daa		100		Pronouns		anki,book1000	meeku nachchiMdaa?		
+S0799	మీకు నచ్చిందా?	mīku nachchindā?	Do you like it?	MAY-koo NUHCH-chihn-daa		100		Pronouns		anki,book1000	meeku nachchiMdaa?		also: Do you like it ?
 S0800	నా ఫోన్ మోగుతుంది.	nā phōn mōgutundi.	My phone is ringing.	NAA FOHN MOH-goo-toon-dih		100		Pronouns		anki	naa phone mogutuMdi.		
 S0801	నా భార్య తెలుగు.	nā bhārya telugu.	My wife is Telugu.	NAA BHAAR-yuh TEH-loo-goo		100		Pronouns		anki	naa bhaarya Telugu.		
 S0802	నా కార్ బయట ఉంది.	nā kār bayaṭa undi.	My car is outside.	NAA KAR BUH-yuh-tuh OON-dih		100		Pronouns		anki	naa car bayaTa undi.		
@@ -835,7 +835,7 @@ S0833	మనము అందరం వెళ్ళాలి.	manamu andaraṁ ve
 S0834	మనము రేపు డిస్కస్ చేద్దాం.	manamu rēpu ḍiskas chēddāṁ.	Let's discuss this tomorrow.	MUH-nuh-moo RAY-poo dih-SKUHS CHAYD-daam		100		Pronouns		anki	manamu rEpu discuss chEddaaM.		
 S0835	వాళ్ళు బయట ఉన్నారు.	vāḷḷu bayaṭa unnāru.	They are outside.	VAHL-loo BUH-yuh-tuh OON-naa-roo	respectful	100		Pronouns		anki	vaLLu bayaTa unnaaru.		
 S0836	వాళ్ళకు ఇంకా తిండి కావాలి.	vāḷḷaku inkā tiṇḍi kāvāli.	They want more food.	VAHL-luh-koo IHN-kaa TIHN-dih kaa-VAA-lih	respectful	100		Pronouns		anki	vaLLaku iMkaa tiMDi kaavaali.		
-S0837	ఇది పని చేయడం లేదు.	idi pani chēyaḍaṁ lēdu.	This is not working.; It is not working.	IH-dih PUH-nih CHAY-yuh-duhm LAY-doo		100		Pronouns		anki	idi pani chEyaDaM lEdu.		
+S0837	ఇది పని చేయడం లేదు.	idi pani chēyaḍaṁ lēdu.	This is not working.	IH-dih PUH-nih CHAY-yuh-duhm LAY-doo		100		Pronouns		anki	idi pani chEyaDaM lEdu.		also: It is not working.
 S0838	ఇది నాది.	idi nādi.	This is mine.	IH-dih NAA-dih		100		Pronouns		anki	idi naadi.		
 S0839	అది నిజమా?	adi nijamā?	Is that true?	UH-dih NIH-juh-maa		100		Pronouns		anki	adi nijamaa?		
 S0840	అది ప్రాబ్లమ్.	adi prāblam.	That is the problem.	UH-dih PRAHB-luhm		100		Pronouns		anki	adi problem.		
@@ -851,7 +851,7 @@ S0849	ఏంటి విషయం?	ēṇṭi viṣayaṁ?	What's the matter?	EN
 S0850	ఏంటి జరుగుతుంది?	ēṇṭi jarugutundi?	What's going on?	EN-tih JUH-roo-goo-TOON-dih		100		Questions		anki	enti jarugutuMdi?		
 S0851	ఏంటి అది?	ēṇṭi adi?	What is it?	EN-tih UH-dih		100		Questions		anki	enti adi?		
 S0852	నీకు ఏంటి అయ్యింది?	nīku ēṇṭi ayyindi?	What's wrong with you?	NAY-koo EN-tih EYE-yihn-dih	informal	100		Questions		anki	neeku enti ayyiMdi?		
-S0853	ఆయన ఎవరు?	āyana evaru?	Who is that?; Who is he ?	AA-yuh-nuh AY-vuh-roo		100		Questions		anki,book1000	aayana evaru?		
+S0853	ఆయన ఎవరు?	āyana evaru?	Who is that?	AA-yuh-nuh AY-vuh-roo		100		Questions		anki,book1000	aayana evaru?		also: Who is he ?
 S0854	అది ఎవరు చెప్పారు?	adi evaru cheppāru?	Who said that?	UH-dih AY-vuh-roo CHEP-paa-roo		100		Questions		anki	adi evaru cheppaaru?		
 S0855	ఎవరు వస్తున్నారు?	evaru vastunnāru?	Who is coming?	AY-vuh-roo VUHS-toon-NAA-roo	respectful	100		Questions		anki	evaru vastuMnaaru?		
 S0856	ఎవరు కాల్ చేసారు?	evaru kāl chēsāru?	Who called?	AY-vuh-roo KAWL CHAY-saa-roo	respectful	100		Questions		anki	evaru call chEsaaru?		
@@ -873,7 +873,7 @@ S0871	ఎందుకు లేట్?	enduku lēṭ?	Why are you late?	EN-doo-k
 S0872	ఎందుకు వెళ్ళారు?	enduku veḷḷāru?	Why did you go?	EN-doo-koo VEL-laa-roo		100		Questions		anki	enduku veLLaaru?		
 S0873	నాకు ఎందుకు చెప్పలేదు?	nāku enduku cheppalēdu?	Why didn't you tell me?	NAA-koo EN-doo-koo CHEP-puh-LAY-doo		100		Questions		anki	naaku enduku cheppalEdu?		
 S0874	ఆయన ఎందుకు కోపంగా ఉన్నాడు?	āyana enduku kōpangā unnāḍu?	Why is he angry?	AA-yuh-nuh EN-doo-koo KOH-puhm-gaa OON-naa-doo		100		Questions		anki	aayana enduku kOpaMgaa unnaaDu?		
-S0875	ఎందుకు కాదు?	enduku kādu?	Why not?; Why not ?	EN-doo-koo KAA-doo		100		Questions		anki,book1000	enduku kaadu?		
+S0875	ఎందుకు కాదు?	enduku kādu?	Why not?	EN-doo-koo KAA-doo		100		Questions		anki,book1000	enduku kaadu?		also: Why not ?
 S0876	ఎన్ని మంది?	enni mandi?	How many people?	EN-nih MUHN-dih		100		Questions		anki	enni maMdi?		
 S0877	ఎన్ని రోజులు?	enni rōjulu?	How many days?	EN-nih ROH-joo-loo		100		Questions		anki	enni rOjulu?		
 S0878	ఇంకా ఎన్ని ఉన్నాయి?	inkā enni unnāyi?	How many are left?	IHN-kaa EN-nih OON-naa-yih		100		Questions		anki	iMkaa enni unnaayi?		
@@ -882,7 +882,7 @@ S0880	ఎన్ని గంటలు?	enni gaṇṭalu?	How many hours?	EN-nih 
 S0881	ఎంత సమయం?	enta samayaṁ?	How much time?	EN-tuh suh-MUH-yuhm		100		Questions		anki	enta samayaM?		
 S0882	ఎంత డబ్బులు?	enta ḍabbulu?	How much money?	EN-tuh DUHB-boo-loo		100		Questions		anki	enta DabbuLu?		
 S0883	ఎంత దూరం?	enta dūraṁ?	How far is it?	EN-tuh DOO-ruhm		100		Questions		anki	enta dUraM?		
-S0884	ఇప్పుడు ఎంత అయ్యింది?	ippuḍu enta ayyindi?	What time is it?; What time is it now?	IHP-poo-doo EN-tuh EYE-yihn-dih		100		Questions		anki	ippuDu enta ayyiMdi?		
+S0884	ఇప్పుడు ఎంత అయ్యింది?	ippuḍu enta ayyindi?	What time is it?	IHP-poo-doo EN-tuh EYE-yihn-dih		100		Questions		anki	ippuDu enta ayyiMdi?		also: What time is it now?
 S0885	ఏమి అంటున్నారు?	ēmi aṇṭunnāru?	What are you saying?	AY-mih UHN-toon-NAA-roo	respectful	100		Questions		anki	Emi aMTuMnaaru?		
 S0886	ఇది ఎందుకు ఇంత ఎక్కువ?	idi enduku inta ekkuva?	Why is it so expensive?	IH-dih EN-doo-koo IHN-tuh EK-koo-vuh		100		Questions		anki	idi enduku iMta ekkuva?		
 S0887	మీరు ఎక్కడికి వెళ్తున్నారు?	mīru ekkaḍiki veḷtunnāru?	Where are you going?	MAY-roo EK-kuh-DIH-kih VEL-toon-NAA-roo	respectful	100		Pronouns		anki	meeru ekkaDiki veLtunnaaru?		
@@ -893,10 +893,10 @@ S0891	ఇక్కడ ఉండండి.	ikkaḍa uṇḍaṇḍi.	Please wait 
 S0892	ఈ రోజు ఇంట్లో ఉండు.	ī rōju iṇṭlō uṇḍu.	Stay at home today.	EE ROH-joo IHNT-loh OON-doo		100		Existence		anki	ee roju iMTlo unDu.		
 S0893	భోజనం రెడీగా ఉంది.	bhōjanaṁ reḍīgā undi.	The food is ready.	BHOH-juh-nuhm RED-ee-gaa OON-dih		100		Existence		anki	bhoojanaM ready gaa undi.		
 S0894	కార్ బయట ఉంది.	kār bayaṭa undi.	The car is outside.	KAR BUH-yuh-tuh OON-dih		100		Existence		anki	car bayaTa undi.		
-S0895	ఒక ప్రాబ్లమ్ ఉంది.	oka prāblam undi.	There is a problem.; There is one problem.	OH-kuh PRAHB-luhm OON-dih		100		Existence		anki	oka problem undi.		
+S0895	ఒక ప్రాబ్లమ్ ఉంది.	oka prāblam undi.	There is a problem.	OH-kuh PRAHB-luhm OON-dih		100		Existence		anki	oka problem undi.		also: There is one problem.
 S0896	మీటింగ్ నాలుగు గంటలకు ఉంది.	mīṭing nālugu gaṇṭalaku undi.	The meeting is at four.	MEE-ting NAA-loo-goo GUHN-tuh-luh-koo OON-dih		100		Existence		anki	meeting naalugu gaMTalaku undi.		
-S0897	ఈ రోజు చాలా వేడిగా ఉంది.	ī rōju chālā vēḍigā undi.	It is very hot today.; It's very hot today.	EE ROH-joo CHAA-laa VAY-dih-gaa OON-dih		100		Existence		anki	ee roju chaalaa veDi gaa undi.		
-S0898	నేను ఆఫీస్ లో ఉన్నాను.	nēnu āphīs lō unnānu.	I am at the office.; I am in the office.	NAY-noo AW-fiss loh OON-naa-noo		100		Existence		anki	nenu office lo unnaanu.		
+S0897	ఈ రోజు చాలా వేడిగా ఉంది.	ī rōju chālā vēḍigā undi.	It is very hot today.	EE ROH-joo CHAA-laa VAY-dih-gaa OON-dih		100		Existence		anki	ee roju chaalaa veDi gaa undi.		
+S0898	నేను ఆఫీస్ లో ఉన్నాను.	nēnu āphīs lō unnānu.	I am at the office.	NAY-noo AW-fiss loh OON-naa-noo		100		Existence		anki	nenu office lo unnaanu.		also: I am in the office.
 S0899	నేను రెడీగా ఉన్నాను.	nēnu reḍīgā unnānu.	I am ready.	NAY-noo RED-ee-gaa OON-naa-noo		100		Existence		anki	nenu ready gaa unnaanu.		
 S0900	నేను చాలా అలసిపోయాను.	nēnu chālā alasipōyānu.	I am very tired.	NAY-noo CHAA-laa UH-luh-sih-POH-yaa-noo		100		Existence		anki	nenu chaalaa alasipoyaanu.		
 S0901	మీరు ఇంట్లో ఉన్నారు?	mīru iṇṭlō unnāru?	Are you at home?	MAY-roo IHNT-loh OON-naa-roo	respectful	100		Existence		anki	meeru iMTlo unnaaru?		
@@ -912,7 +912,7 @@ S0910	నాకు సమయం లేదు.	nāku samayaṁ lēdu.	I don't hav
 S0911	ఏమి ప్రాబ్లమ్ లేదు.	ēmi prāblam lēdu.	There is no problem.	AY-mih PRAHB-luhm LAY-doo		100		Existence		anki	emi problem ledu.		
 S0912	నాకు ఆకలి లేదు.	nāku ākali lēdu.	I am not hungry.	NAA-koo AA-kuh-lih LAY-doo		100		Existence		anki	naaku aakali ledu.		
 S0913	ఆయన ఇక్కడ లేరు.	āyana ikkaḍa lēru.	He is not here.	AA-yuh-nuh IHK-kuh-duh LAY-roo		100		Existence		anki	aayana ikkaDa leru.		
-S0914	అది కాదు.	adi kādu.	That is not correct.; Not that	UH-dih KAA-doo		100		Existence		anki,book1000	adi kaadu.		
+S0914	అది కాదు.	adi kādu.	That is not correct.	UH-dih KAA-doo		100		Existence		anki,book1000	adi kaadu.		also: Not that
 S0915	ఇది నాది కాదు.	idi nādi kādu.	This is not mine.	IH-dih NAA-dih KAA-doo		100		Existence		anki	idi naadi kaadu.		
 S0916	అతను నా ఫ్రెండ్ కాదు.	atanu nā phreṇḍ kādu.	He is not my friend.	UH-tuh-noo NAA FREND KAA-doo		100		Existence		anki	atanu naa friend kaadu.		
 S0917	అది కాదు నాకు.	adi kādu nāku.	I don't want that.	UH-dih KAA-doo NAA-koo		100		Existence		anki	adi kaadu naaku.		
@@ -968,7 +968,7 @@ S0966	నేను ఇంటినుంచి వచ్చాను.	nēnu iṇ
 S0967	ఆయన ఈ రోజు లేట్ గా వచ్చాడు.	āyana ī rōju lēṭ gā vachchāḍu.	He came late today.	AA-yuh-nuh EE ROH-joo LAYT-gaa VUHCH-chaa-doo		100		Motion		anki	aayana ee roju late gaa vacchaaDu.		
 S0968	నేను ఇప్పుడు వస్తున్నాను.	nēnu ippuḍu vastunnānu.	I am coming now.	NAY-noo IHP-poo-doo VUHS-toon-NAA-noo		100		Motion		anki	nenu ippuDu vastuMnaanu.		
 S0969	వాళ్ళు రేపు వస్తున్నారు.	vāḷḷu rēpu vastunnāru.	They are coming tomorrow.	VAHL-loo RAY-poo VUHS-toon-NAA-roo	respectful	100		Motion		anki	vaLLu repu vastuMnaaru.		
-S0970	లోపలి రండి.	lōpali raṇḍi.	Please come inside.; Get in !	LOH-puh-lih RUHN-dih	respectful	100		Motion		anki,book1000	lopali raMDi.		
+S0970	లోపలి రండి.	lōpali raṇḍi.	Please come inside.	LOH-puh-lih RUHN-dih	respectful	100		Motion		anki,book1000	lopali raMDi.		also: Get in !
 S0971	రేపు రండి.	rēpu raṇḍi.	Please come tomorrow.	RAY-poo RUHN-dih	respectful	100		Motion		anki	repu raMDi.		
 S0972	మీటింగ్ కి రండి.	mīṭing ki raṇḍi.	Please come to the meeting.	MEE-ting kih RUHN-dih	respectful	100		Motion		anki	meeting ki raMDi.		
 S0973	ఇది తీసుకో.	idi tīsukō.	Take this.	IH-dih TAY-soo-koh		100		Motion		anki	idi teesuko.		
@@ -986,12 +986,12 @@ S0984	ఆయన నాకు ఇచ్చాడు.	āyana nāku ichchāḍu.	He
 S0985	ఇది మీకు ఎవరు ఇచ్చారు?	idi mīku evaru ichchāru?	Who gave you this?	IH-dih MAY-koo AY-vuh-roo IHCH-chaa-roo		100		Motion		anki	idi meeku evaru ichchaaru?		
 S0986	బిల్ ఇవ్వండి.	bil ivvaṇḍi.	Please give me the bill.	BIHL IHV-vuhn-dih	respectful	100		Motion		anki	bill ivvaMDi.		
 S0987	కొంచం నీళ్ళు ఇవ్వండి.	konchaṁ nīḷḷu ivvaṇḍi.	Please give me some water.	KOHN-chuhm NEEL-loo IHV-vuhn-dih	respectful	100		Motion		anki	konchaM neeLLu ivvaMDi.		
-S0988	ఇక్కడ పెట్టు.	ikkaḍa peṭṭu.	Put it here.; Keep it here.	IHK-kuh-duh PET-too		100		Motion		anki	ikkaDa peTTu.		
+S0988	ఇక్కడ పెట్టు.	ikkaḍa peṭṭu.	Put it here.	IHK-kuh-duh PET-too		100		Motion		anki	ikkaDa peTTu.		also: Keep it here.
 S0989	ఫోన్ కింద పెట్టు.	phōn kinda peṭṭu.	Put the phone down.	FOHN KIHN-duh PET-too		100		Motion		anki	phone kiMda peTTu.		
 S0990	బల్ల మీద పెట్టు.	balla mīda peṭṭu.	Put it on the table.	BUHL-luh MAY-duh PET-too		100		Motion		anki	balla meeda peTTu.		
 S0991	ఎక్కడ పెట్టావు?	ekkaḍa peṭṭāvu?	Where did you put it?	EK-kuh-duh PET-taa-voo		100		Motion		anki	ekkaDa peTTaavu?		
 S0992	ఇది కొంచం పట్టు.	idi konchaṁ paṭṭu.	Hold this for a minute.	IH-dih KOHN-chuhm PUHT-too		100		Motion		anki	idi konchaM paTTu.		
-S0993	గట్టిగ పట్టు.	gaṭṭiga paṭṭu.	Hold it tight.; Hold it firmly.	GUHT-tih-guh PUHT-too		100		Motion		anki	gaTTiga paTTu.		
+S0993	గట్టిగ పట్టు.	gaṭṭiga paṭṭu.	Hold it tight.	GUHT-tih-guh PUHT-too		100		Motion		anki	gaTTiga paTTu.		also: Hold it firmly.
 S0994	అక్కడ నిలబడు.	akkaḍa nilabaḍu.	Stand over there.	UHK-kuh-duh NIH-luh-buh-doo		100		Motion		anki	akkaDa nilabaDu.		
 S0995	ఇక్కడ నిలబడకు.	ikkaḍa nilabaḍaku.	Don't stand here.	IHK-kuh-duh NIH-luh-buh-DUH-koo		100		Motion		anki	ikkaDa nilabaDaku.		
 S0996	లైన్ లో నిలబడండి.	lain lō nilabaḍaṇḍi.	Please stand in line.	LINE loh NIH-luh-buh-DUHN-dih	respectful	100		Motion		anki	line lo nilabaDaMDi.		
@@ -1017,7 +1017,7 @@ S1015	ఏమి తింటారు?	ēmi tiṇṭāru?	What will you eat?	AY-
 S1016	నేను తిన్నాను.	nēnu tinnānu.	I already ate.	NAY-noo TIHN-naa-noo		100		DailyActivity		anki	nenu tinnaanu.		
 S1017	మీరు తిన్నారు?	mīru tinnāru?	Did you eat?	MAY-roo TIHN-naa-roo	respectful	100		DailyActivity		anki	meeru tinnaaru?		
 S1018	నేను ఈ రోజు బిర్యానీ తిన్నాను.	nēnu ī rōju biryānī tinnānu.	I ate biryani today.	NAY-noo EE ROH-joo bihr-YAA-nih TIHN-naa-noo		100		DailyActivity		anki	nenu ee roju biryani tinnaanu.		
-S1019	నేను ఇప్పుడు తింటున్నాను.	nēnu ippuḍu tiṇṭunnānu.	I am eating now.; I'm eating now.	NAY-noo IHP-poo-doo TIHN-toon-NAA-noo		100		DailyActivity		anki	nenu ippuDu tintunnaanu.		
+S1019	నేను ఇప్పుడు తింటున్నాను.	nēnu ippuḍu tiṇṭunnānu.	I am eating now.	NAY-noo IHP-poo-doo TIHN-toon-NAA-noo		100		DailyActivity		anki	nenu ippuDu tintunnaanu.		
 S1020	పిల్లలు తింటున్నారు.	pillalu tiṇṭunnāru.	The children are eating.	PIHL-luh-loo TIHN-toon-NAA-roo	respectful	100		DailyActivity		anki	piLLalu tintunnaaru.		
 S1021	నేను కాఫీ తాగుతాను.	nēnu kāphī tāgutānu.	I will drink coffee.	NAY-noo KAA-fee TAA-goo-taa-noo		100		DailyActivity		anki	nenu kaafee taagutaanu.		
 S1022	ఏమి తాగుతారు?	ēmi tāgutāru?	What do you want to drink?	AY-mih TAA-goo-taa-roo		100		DailyActivity		anki	emi taagutaaru?		
@@ -1051,7 +1051,7 @@ S1049	ఇది ఒకసారి చదువు.	idi okasāri chaduvu.	Read t
 S1050	నాకు వంట నేర్చుకోవాలి.	nāku vaṇṭa nērchukōvāli.	I want to learn cooking.	NAA-koo VUHN-tuh NAYR-choo-koh-VAA-lih		100		DailyActivity		anki	naaku vaMTa nerchukovaali.		
 S1051	మీకు తెలుగు ఎవరు నేర్పించారు?	mīku telugu evaru nērpinchāru?	Who taught you Telugu?	MAY-koo TEH-loo-goo AY-vuh-roo NAYR-pihn-CHAA-roo		100		DailyActivity		anki	meeku Telugu evaru nerpiMchaaru?		
 S1052	నా భార్య నాకు నేర్పిస్తుంది.	nā bhārya nāku nērpistundi.	My wife teaches me.	NAA BHAAR-yuh NAA-koo NAYR-pihs-TOON-dih		100		DailyActivity		anki	naa bhaarya naaku nerpistuMdi.		
-S1053	నాకు తెలుసు.	nāku telusu.	I know that.	NAA-koo TEH-loo-soo		100		DailyActivity		anki,book1000	naaku telusu.		
+S1053	నాకు తెలుసు.	nāku telusu.	I know that.	NAA-koo TEH-loo-soo		100		DailyActivity		anki,book1000	naaku telusu.		also: I know
 S1054	నాకు ఆయన తెలుసు.	nāku āyana telusu.	I know him.	NAA-koo AA-yuh-nuh TEH-loo-soo		100		DailyActivity		anki	naaku aayana telusu.		
 S1055	నాకు ఆయన పేరు తెలీదు.	nāku āyana pēru telīdu.	I don't know his name.	NAA-koo AA-yuh-nuh PAY-roo TEH-lay-doo		100		DailyActivity		anki	naaku aayana peru teleedu.		
 S1056	నాకు దారి తెలీదు.	nāku dāri telīdu.	I don't know the way.	NAA-koo DAA-rih TEH-lay-doo		100		DailyActivity		anki	naaku daari teleedu.		
@@ -1096,7 +1096,7 @@ S1094	మీకు నాకు చాలా సంతోషం.	mīku nāku ch�
 S1095	ఆ వార్త సంతోషం ఇచ్చింది.	ā vārta santōṣaṁ ichchindi.	That news made me happy.	AA VAAR-thuh suhn-TOH-shuhm IHCH-chihn-dih		100		Emotions		anki	aa vaarta santoshM ichchindi.		
 S1096	నాకు చాలా ఖుషీగా ఉంది.	nāku chālā khuṣīgā undi.	I am very happy.	NAA-koo CHAA-laa KOO-shih-gaa OON-dih		100		Emotions		anki	naaku chaalaa kushi gaa uMdi.		
 S1097	ఆయన ఈ రోజు చాలా ఖుషీగా ఉన్నాడు.	āyana ī rōju chālā khuṣīgā unnāḍu.	He is very happy today.	AA-yuh-nuh EE ROH-joo CHAA-laa KOO-shih-gaa OON-naa-doo		100		Emotions		anki	aayana ee roju chaalaa kushi gaa unnaaDu.		
-S1098	నాకు బాధగా ఉంది.	nāku bādhagā undi.	I am feeling sad.; I'm feeling sad.; I got sad	NAA-koo BAA-dhuh-gaa OON-dih		100		Emotions		anki,book1000	naaku baadha gaa uMdi.		
+S1098	నాకు బాధగా ఉంది.	nāku bādhagā undi.	I am feeling sad.	NAA-koo BAA-dhuh-gaa OON-dih		100		Emotions		anki,book1000	naaku baadha gaa uMdi.		also: I got sad
 S1099	బాధ పడకు.	bādha paḍaku.	Don't be sad.	BAA-dhuh PUH-duh-koo		100		Emotions		anki	baadha paDakuu.		
 S1100	అది చాలా బాధ.	adi chālā bādha.	That is very sad.	UH-dih CHAA-laa BAA-dhuh		100		Emotions		anki	adi chaalaa baadha.		
 S1101	నాకు కోపంగా ఉంది.	nāku kōpangā undi.	I am angry.	NAA-koo KOH-puhm-gaa OON-dih		100		Emotions		anki	naaku kopaM gaa uMdi.		
@@ -1131,7 +1131,7 @@ S1129	నా ఇల్లు చిన్నది.	nā illu chinnadi.	My house 
 S1130	అతను ఇంకా చిన్నవాడు.	atanu inkā chinnavāḍu.	He is still small.	UH-tuh-noo IHN-kaa CHIHN-nuh VAA-doo		100		Adjectives		anki	atanu iMkaa chinna vaaDu.		
 S1131	నేను కొత్త కార్ కొన్నాను.	nēnu kotta kār konnānu.	I bought a new car.	NAY-noo KOHT-tuh KAR KOHN-naa-noo		100		Adjectives		anki	nenu kotta car konnaanu.		
 S1132	ఇది కొత్తదా?	idi kottadā?	Is this new?	IH-dih KOHT-tuh DAA		100		Adjectives		anki	idi kotta daa?		
-S1133	ఆమె చాలా అందంగా ఉంది.	āme chālā andangā undi.	She is very beautiful.; She's dressed very beautifully.	AA-may CHAA-laa UHN-duhm-gaa OON-dih		100		Adjectives		anki	aame chaalaa aMdaMgaa uMdi.		
+S1133	ఆమె చాలా అందంగా ఉంది.	āme chālā andangā undi.	She is very beautiful.	AA-may CHAA-laa UHN-duhm-gaa OON-dih		100		Adjectives		anki	aame chaalaa aMdaMgaa uMdi.		also: She's dressed very beautifully.
 S1134	ఈ చోట చాలా అందంగా ఉంది.	ī chōṭa chālā andangā undi.	This place is beautiful.	EE CHOH-tuh CHAA-laa UHN-duhm-gaa OON-dih		100		Adjectives		anki	ee choTa chaalaa aMdaMgaa uMdi.		
 S1135	ఆయన చాలా పొడుగు.	āyana chālā poḍugu.	He is very tall.	AA-yuh-nuh CHAA-laa POH-doo-goo		100		Adjectives		anki	aayana chaalaa poDuguu.		
 S1136	ఆమె పొట్టిగా ఉంది.	āme poṭṭigā undi.	She is short.	AA-may POHT-tih-gaa OON-dih		100		Adjectives		anki	aame poTTi gaa uMdi.		
@@ -1178,13 +1178,13 @@ S1176	బయట చాలా వేడిగా ఉంది.	bayaṭa chālā v
 S1177	వేడి నీళ్ళు కావాలా?	vēḍi nīḷḷu kāvālā?	Do you want hot water?	VAY-dih NEEL-loo kaa-VAA-laa		100		Adjectives2		anki	veDi neeLLu kaavaalaa?		
 S1178	ఈ రోజు చాలా చల్లిగా ఉంది.	ī rōju chālā challigā undi.	It is very cold today.	EE ROH-joo CHAA-laa CHUHL-lih-gaa OON-dih		100		Adjectives2		anki	ee roju chaalaa challi gaa uMdi.		
 S1179	నాకు చల్లి నీళ్ళు కావాలి.	nāku challi nīḷḷu kāvāli.	I want cold water.	NAA-koo CHUHL-lih NEEL-loo kaa-VAA-lih		100		Adjectives2		anki	naaku challi neeLLu kaavaali.		
-S1180	నేల తడిగా ఉంది.	nēla taḍigā undi.	The floor is wet.; The ground is wet.	NAY-luh TUH-dih-gaa OON-dih		100		Adjectives2		anki	neela taDi gaa uMdi.		
+S1180	నేల తడిగా ఉంది.	nēla taḍigā undi.	The floor is wet.	NAY-luh TUH-dih-gaa OON-dih		100		Adjectives2		anki	neela taDi gaa uMdi.		also: The ground is wet.
 S1181	నా బట్టలు తడిగా ఉన్నాయి.	nā baṭṭalu taḍigā unnāyi.	My clothes are wet.	NAA BUHT-tuh-loo TUH-dih-gaa OON-naa-yih		100		Adjectives2		anki	naa baTTalu taDi gaa unnaayi.		
 S1182	బట్టలు ఇప్పుడు ఎండిపోయాయి.	baṭṭalu ippuḍu eṇḍipōyāyi.	The clothes are dry now.	BUHT-tuh-loo IHP-poo-doo EN-dih-POH-yaa-yih		100		Adjectives2		anki	baTTalu ippuDu endipoyaayi.		
 S1183	ఈ బ్యాగ్ చాలా బరువుగా ఉంది.	ī byāg chālā baruvugā undi.	This bag is very heavy.	EE BAG CHAA-laa BUH-roo-voo-gaa OON-dih		100		Adjectives2		anki	ee bag chaalaa baruvu gaa uMdi.		
 S1184	ఇది చాలా తేలికైనది.	idi chālā tēlikainadi.	This is very light.	IH-dih CHAA-laa TEH-lih-KY-nuh dih		100		Adjectives2		anki	idi chaalaa telikaina di.		
 S1185	మంచం చాలా మెత్తగా ఉంది.	manchaṁ chālā mettagā undi.	The bed is very soft.	MUHN-chuhm CHAA-laa METH-thuh-guh OON-dih		100		Adjectives2		anki	maMchaM chaalaa meththaga uMdi.		
-S1186	గట్టిగ చెప్పు.	gaṭṭiga cheppu.	Speak loudly.; Speak firmly.	GUHT-tih-guh CHEP-poo		100		Adjectives2		anki	gaTTiga cheppu.		
+S1186	గట్టిగ చెప్పు.	gaṭṭiga cheppu.	Speak loudly.	GUHT-tih-guh CHEP-poo		100		Adjectives2		anki	gaTTiga cheppu.		also: Speak firmly.
 S1187	సరి నాకు అర్ధమయ్యింది.	sari nāku ardhamayyindi.	Okay I understand.	SUH-rih NAA-koo UHR-thuhm EYE-yihn-dih		100		Adjectives2		anki	sari naaku arthaM ayyiMdi.		
 S1188	మీరు రెడీ ఆ?	mīru reḍī ā?	Are you ready?	MAY-roo RED-ee AA	respectful	100		Adjectives2		anki	meeru ready aa?		
 S1189	నేను ఇంకా రెడీ కాదు.	nēnu inkā reḍī kādu.	I am not ready yet.	NAY-noo IHN-kaa RED-ee KAA-doo		100		Adjectives2		anki	nenu iMkaa ready kaadu.		
@@ -1193,7 +1193,7 @@ S1191	ముందుంది మీటింగ్ ఎప్పుడు?	mund
 S1192	ఇది చివరిది ఛాన్స్.	idi chivaridi chhāns.	This is the last chance.	IH-dih CHIH-vuh-rih-dih CHAHNS		100		Adjectives2		anki	idi chivaridi chance.		
 S1193	ఆయన మొదటిగ వచ్చాడు.	āyana modaṭiga vachchāḍu.	He came first.	AA-yuh-nuh MOH-duh-tih-guh VUHCH-chaa-doo		100		Adjectives2		anki	aayana modaTiga vacchaaDu.		
 S1194	ఇది మొదటిసారి.	idi modaṭisāri.	This is the first time.	IH-dih MOH-duh-tih-SAA-rih		100		Adjectives2		anki	idi modaTisaari.		
-S1195	ఒక కాఫీ ఇవ్వండి.	oka kāphī ivvaṇḍi.	Give me one coffee.; Give me one coffee please.	OH-kuh KAA-fee IHV-vuhn-dih	respectful	100		Adjectives2		anki	oka kaafee ivvaMDi.		
+S1195	ఒక కాఫీ ఇవ్వండి.	oka kāphī ivvaṇḍi.	Give me one coffee.	OH-kuh KAA-fee IHV-vuhn-dih	respectful	100		Adjectives2		anki	oka kaafee ivvaMDi.		also: Give me one coffee please.
 S1196	ఒక నిమిషం ఆగు.	oka nimiṣaṁ āgu.	Wait one minute.	OH-kuh NIH-mih-shuhm AA-goo		100		Adjectives2		anki	oka nimiShaM Aagu.		
 S1197	ఇది ఒక ప్రత్యేకం.	idi oka pratyēkaṁ.	This is something special.	IH-dih OH-kuh pruh-TYAY-kuhm		100		Adjectives2		anki	idi oka pratyekaM.		
 S1198	ఇది సామాన్యంగా ఉంది.	idi sāmānyangā undi.	This is nothing special.	IH-dih SAA-maan-yuhm-guh OON-dih		100		Adjectives2		anki	idi saamaanyaM ga undi.		
@@ -1316,7 +1316,7 @@ S1314	ముందుకు నేరుగ వెళ్ళు.	munduku nēruga 
 S1315	నా వెనక నడవకు.	nā venaka naḍavaku.	Don't walk behind me.	NAA VEH-nuh-kuh NUH-duh-vuh-koo		100		Location		anki	naa venaka naDavakuu.		
 S1316	నా దగ్గరకి రా.	nā daggaraki rā.	Come near me.	NAA DUHG-guh-ruh kih RAA		100		Location		anki	naa daggara ki raa.		
 S1317	చాలా దూరమా?	chālā dūramā?	Is it very far?	CHAA-laa DOO-ruh-maa		100		Location		anki	chaalaa dUramaa?		
-S1318	ఎయిర్‌పోర్ట్ చాలా దూరం.	eyirpōrṭ chālā dūraṁ.	The airport is far.; The airport is very far.	AIR-port CHAA-laa DOO-ruhm		100		Location		anki	airport chaalaa dUraM.		
+S1318	ఎయిర్‌పోర్ట్ చాలా దూరం.	eyirpōrṭ chālā dūraṁ.	The airport is far.	AIR-port CHAA-laa DOO-ruhm		100		Location		anki	airport chaalaa dUraM.		also: The airport is very far.
 S1319	ఇక్కడ ఎడమకి తిరుగు.	ikkaḍa eḍamaki tirugu.	Turn left here.	IHK-kuh-duh EH-duh-muh kih TIH-roo-goo		100		Location		anki	ikkaDa eDama ki tirugu.		
 S1320	సిగ్నల్ దగ్గర కుడికి తిరుగు.	signal daggara kuḍiki tirugu.	Turn right at the signal.	SIG-nuhl DUHG-guh-ruh KOO-dih kih TIH-roo-goo		100		Location		anki	signal daggara kuDi ki tirugu.		
 S1321	అది రాస్తా మధ్యలో ఉంది.	adi rāstā madhyalō undi.	It is in the middle of the road.	UH-dih RAAS-taa MUHD-yuh-loh OON-dih		100		Location		anki	adi raastaa madhyalo undi.		
@@ -1427,7 +1427,7 @@ S1425	గంట్లు నొప్పిగా ఉన్నాయి.	gaṇ�
 S1426	లోతుగా శ్వాస తీసుకోండి.	lōtugā śvāsa tīsukōṇḍi.	Take a deep breath.	LOH-too-GAA SWUH-suhm TEE-soo-KOHN-dih	respectful	100		Body		anki	lotuugaa swasaM teesukoMDi.		
 S1427	నొప్పి ఎక్కడ ఉంది?	noppi ekkaḍa undi?	Where is the pain?	NOH-pih EK-kuh-duh OON-dih		100		Body		anki	noppi ekkaDa uMdi?		
 S1428	నీ మందు తీసుకున్నావా?	nī mandu tīsukunnāvā?	Did you take your medicine?	NEE MUHN-doo TEE-soo-koon-NAA-vaa	informal	100		Body		anki	nee mandhu teesukunnaaVaa?		
-S1429	ఈ మందు చేడుగా ఉంది.	ī mandu chēḍugā undi.	This medicine tastes bitter.; This medicine is bitter.	EE MUHN-doo CHAY-doo GAA OON-dih		100		Body		anki	ee mandhu cheDu gaa uMdi.		
+S1429	ఈ మందు చేడుగా ఉంది.	ī mandu chēḍugā undi.	This medicine tastes bitter.	EE MUHN-doo CHAY-doo GAA OON-dih		100		Body		anki	ee mandhu cheDu gaa uMdi.		also: This medicine is bitter.
 S1430	భోజనం రెడీ అయ్యింది.	bhōjanaṁ reḍī ayyindi.	Food is ready.	BHOO-juh-nuhm RED-ee AY-yeen-dih		100		Food		anki	bhoojanaM ready ayyiMdi.		
 S1431	భోజనం చేదామా?	bhōjanaṁ chēdāmā?	Shall we eat food?	BHOO-juh-nuhm CHAY-daa-MAA		100		Food		anki	bhoojanaM chedaamaa?		
 S1432	భోజనం చాలా బాగుంది.	bhōjanaṁ chālā bāgundi.	The food is very tasty.	BHOO-juh-nuhm CHAA-laa BAA-goon-dih		100		Food		anki	bhoojanaM chaalaa baagundi.		
@@ -1621,7 +1621,7 @@ S1619	క్షమించండి, నా తప్పు.	kṣaminchaṇḍi
 S1620	సరి, వస్తున్నా.	sari, vastunnā.	Okay, I'm coming.	SUH-rih VUHS-tuhn-nuh		100		Phrases		anki	sari, vastunna.		
 S1621	సరి, చేస్తా.	sari, chēstā.	Okay, I'll do it.	SUH-rih CHAYS-taa		100		Phrases		anki	sari, chestaa.		
 S1622	అవును, అది కరెక్ట్.	avunu, adi karekṭ.	Yeah, that's correct.	uh-VUH-noo UH-dih kuh-REKT		100		Phrases		anki	aunu, adi correct.		
-S1623	అన్నం నక్కో.	annaṁ nakkō.	I don't want rice.; Rice? I don't want.	UHN-nuhm NUK-koh		100		Phrases		anki	annaM nakko.		
+S1623	అన్నం నక్కో.	annaṁ nakkō.	I don't want rice.	UHN-nuhm NUK-koh		100		Phrases		anki	annaM nakko.		also: Rice? I don't want.
 S1624	ఏమి ఖబర్ భాయ్?	ēmi khabar bhāy?	What's the news brother?	AY-mih KUH-bur BYE		100		Phrases		anki	emi khabar bhai?		
 S1625	అరే, ఎలా ఉన్నావ్?	arē, elā unnāv?	Hey, how are you?	uh-RAY eh-LAA UHN-nahv		100		Phrases		anki	are, elaa unnav?		
 S1626	ఈ మధ్య ఎలా ఉన్నావ్?	ī madhya elā unnāv?	These days how are you?	EE MUHD-yuh eh-LAA UHN-nahv		100		Phrases		anki	ee madhya elaa unnav?		
@@ -1644,7 +1644,7 @@ S1642	మళ్ళీ తర్వాత కలుద్దాం.	maḷḷī ta
 S1643	దయచేసి లోపల రండి.	dayachēsi lōpala raṇḍi.	Please come inside.	duh-yuh-CHAY-sih LOH-puh-luh RAAN-dih	respectful	100		Phrases		anki	dayachesi lopala raaMDi.		
 S1644	దయచేసి నాకు హెల్ప్ చేయండి.	dayachēsi nāku help chēyaṇḍi.	Please help me.	duh-yuh-CHAY-sih NAA-koo HELP CHAY-yuhn-dih	respectful	100		Phrases		anki	dayachesi naaku help cheyaMDi.		
 S1645	వెళ్ళొస్తా, సరినా?	veḷḷostā, sarinā?	I'll leave now, okay?	vel-LOHS-taa SUH-rih NAA		100		Phrases		anki	veLLostaa, sari naa?		
-S1646	వెళ్ళొస్తా, రేపు కలుద్దాం.	veḷḷostā, rēpu kaluddāṁ.	I'll leave, see you tomorrow.; Bye, see you tomorrow.	vel-LOHS-taa RAY-poo kuh-LUHD-daam		100		Phrases		anki	veLLostaa, repu kaluddaaM.		
+S1646	వెళ్ళొస్తా, రేపు కలుద్దాం.	veḷḷostā, rēpu kaluddāṁ.	I'll leave, see you tomorrow.	vel-LOHS-taa RAY-poo kuh-LUHD-daam		100		Phrases		anki	veLLostaa, repu kaluddaaM.		also: Bye, see you tomorrow.
 S1647	రా బాబు, పోదాం.	rā bābu, pōdāṁ.	Come dude, let's go.	RAA BAA-boo POH-dhaam		100		Phrases		anki	raa baabu, podhaaM.		
 S1648	ఇక్కడికి రా బాబు.	ikkaḍiki rā bābu.	Come here dude.	ihk-KUH-dih-kih RAA BAA-boo		100		Phrases		anki	ikkaDiki raa baabu.		
 S1649	ఇది చూడు రా.	idi chūḍu rā.	Look at this dude.	IH-dih CHOH-doo RAA		100		Phrases		anki	idi choDu ra.		
@@ -2408,7 +2408,7 @@ S2406	పని అవుతుంది అని ఆశ.	pani avutundi ani ā�
 S2407	మీ ట్రిప్ ఎంజాయ్ చేయండి.	mī ṭrip enjāy chēyaṇḍi.	Enjoy your trip.	MAY TRIP en-JOY CHAY-yuhn-dih	respectful	75	ṭrip	Emotions		anki	mee trip eMjoii cheyaMDi.		
 S2408	నాకు హైదరాబాద్ మిస్ అవుతుంది.	nāku haidarābād mis avutundi.	I miss Hyderabad.	NAA-koo HIGH-duh-ruh-BAAD MISS UH-voo-TOON-dih		75	haidarābād	Emotions		anki	naaku Hyderabad miss avutuMdi.		
 S2409	ఈ బరువు బాక్స్ మోయగలరా?	ī baruvu bāks mōyagalarā?	Can you carry this heavy box?	EE BUH-roo-voo BOX MOH-yuh-guh-luh-raa		75	mōyagalarā	Adjectives2		anki	ee baruvu box moyagalaraa?		
-S2410	నిన్న రాత్రి నిద్ర రాలేదు.	ninna rātri nidra rālēdu.	I couldn't sleep last night.; I didn't get sleep last night.	NIHN-nuh RAA-trih NIHD-ruh RAA-nay-doo		75	rālēdu	Time		anki	ninna raatri nidra raanedu.		
+S2410	నిన్న రాత్రి నిద్ర రాలేదు.	ninna rātri nidra rālēdu.	I couldn't sleep last night.	NIHN-nuh RAA-trih NIHD-ruh RAA-nay-doo		75	rālēdu	Time		anki	ninna raatri nidra raanedu.		also: I didn't get sleep last night.
 S2411	మీ ఫ్లైట్ ఏమి టైం?	mī phlaiṭ ēmi ṭaiṁ?	What time is your flight?	MAY FLITE AY-mih TIME	respectful	75	ṭaiṁ	Time		anki	mee flight emi time?		
 S2412	శుక్రవారం లోగ ఫినిష్ చేద్దాం.	śukravāraṁ lōga phiniṣ chēddāṁ.	Let's finish it by Friday.	SHOOK-ruh-VAA-ruhm LOH-guh FIH-nish CHAYD-daam		75	lōga	Days		anki	shukravaaram loga finish cheddaaM.		
 S2413	నేను ఆరు గంటలకు లేస్తాను.	nēnu āru gaṇṭalaku lēstānu.	I wake up at six.	NAY-noo AA-roo GUHN-tuh-luh-koo LAYS-taa-noo		75	lēstānu	Numbers		anki	nenu aaru gaMTalaku lestaaanu.		
@@ -2496,7 +2496,7 @@ S2494	నేను ట్రాఫిక్ లో ఇరుక్కుకు�
 S2495	బస్ ఒక్క సారిగా ఆగిపోయింది.	bas okka sārigā āgipōyindi.	The bus stopped suddenly.	BUHS OHK-kuh SAA-rih-gaa AA-gih-poh-yihn-dih		75	okka	Transport		anki	bus okka saarigaa AgipooyiMdi.		
 S2496	నేను ఇవాళ లేట్ అయ్యాను.	nēnu ivāḷa lēṭ ayyānu.	I am late today.	NAY-noo IH-vuh-luh LAYT EYE-yaa-noo		75	ivāḷa	Transport		anki	nenu ivaLa late ayyaanu.		
 S2497	హాస్పిటల్ ఏ దిక్కున ఉంది?	hāspiṭal ē dikkuna undi?	Which direction is the hospital?	HAHS-pih-tuhl AY DIHK-koo-nuh UHN-dih		75	hāspiṭal	Transport		anki	hospital e dikkuna uMdi?		
-S2498	ఈ రోజు వెదర్ బాగుంది.	ī rōju vedar bāgundi.	The weather is nice today.; Today's weather is good.	EE ROH-joo WEH-thur BAA-goon-dih		75	vedar	Feelings		anki	ee roju weather baagunDi.		
+S2498	ఈ రోజు వెదర్ బాగుంది.	ī rōju vedar bāgundi.	The weather is nice today.	EE ROH-joo WEH-thur BAA-goon-dih		75	vedar	Feelings		anki	ee roju weather baagunDi.		also: Today's weather is good.
 S2499	వాళ్ళు వచ్చే వీక్ వెళ్తారు.	vāḷḷu vachchē vīk veḷtāru.	They will go next week.	VUHL-loo VUHCH-chay WEEK VEHL-taa-roo		75	vīk	Grammar		anki	vaLLu vacHche week veLtaaru.		
 S2500	నువ్వు టైమ్ కి తినాలి.	nuvvu ṭaim ki tināli.	You must eat on time.	NOOV-voo TIME kih TIH-naa-lih	informal	75	ṭaim	Grammar		anki	nuvvu time ki tinaali.		
 S2501	నేను చిన్నపుడు చాలా ఆడేవాడిని.	nēnu chinnapuḍu chālā āḍēvāḍini.	When I was young, I played a lot.	NAY-noo CHIHN-nuh-poo-doo CHAA-laa AA-day-vaa-dih-nih		75	āḍēvāḍini	Grammar		anki	nenu chinnapuDu chaalaa aaDevaaDini.		
@@ -2557,7 +2557,7 @@ S2555	సైకిల్ తో నడవండి	saikil tō naḍavaṇḍi	Wa
 S2556	నా పేరు జోష్.	nā pēru jōṣ.	My name is Josh.			67	jōṣ			anki	Nā pēru Josh.		
 S2557	నేను మిమ్మల్ని ప్రేమిస్తున్నాను.	nēnu mimmalni prēmistunnānu.	I love you.			67	mimmalni			anki	Nēnu mim’malni prēmistunnānu.		
 S2558	ఆవిడ చాలా స్మార్ట్.	āviḍa chālā smārṭ.	She is very smart.	AA-vih-duh CHAA-laa SMART		67	smārṭ	Pronouns		anki	aaviDa chaalaa smart.		
-S2559	మనము కలిసి వెళ్దాం.	manamu kalisi veḷdāṁ.	Let's go together.; We will go together.	MUH-nuh-moo KUH-lih-kaa VEL-daam		67	veḷdāṁ	Pronouns		anki	manamu kalikaa veLdaaM.		
+S2559	మనము కలిసి వెళ్దాం.	manamu kalisi veḷdāṁ.	Let's go together.	MUH-nuh-moo KUH-lih-kaa VEL-daam		67	veḷdāṁ	Pronouns		anki	manamu kalikaa veLdaaM.		also: We will go together.
 S2560	అవి నావి కాదు.	avi nāvi kādu.	Those are not mine.	UH-vih NAA vih KAA-doo		67	nāvi	Pronouns		anki	avi naa vi kaadu.		
 S2561	అవి ఫైల్స్ రెడీ.	avi phails reḍī.	Those files are ready.	UH-vih FILES RED-ee		67	phails	Pronouns		anki	avi files ready.		
 S2562	నేను ఎక్కడికి రావాలి?	nēnu ekkaḍiki rāvāli?	Where should I come?	NAY-noo EK-kuh-DIH-kih RAA-vaa-lih		67	rāvāli	Questions		anki	nEnu ekkaDiki raavaali?		
@@ -2734,7 +2734,7 @@ S2732	వారుమిమ్మల్ని పిలిచారు	vārumimm
 S2733	గ్యాస్ అయిపోయింది	gyās ayipōyindi	The gas is over			50	ayipōyindi		611	book1000	Gas ayipoindi		
 S2734	ఈరాత్రికి కలుద్దాం	īrātriki kaluddāṁ	See you tonight			50	īrātriki		625	book1000	E rathriki kaluddam		
 S2735	ఇది అద్భుతమైనది	idi adbhutamainadi	It is wonderful			50	adbhutamainadi		643	book1000	Idi adbhuthamainadi		
-S2736	ట్యాప్ ఆన్చేయండి	ṭyāp ānchēyaṇḍi	Turn on the tap; Turn the tap on		respectful	50	ṭyāp		646	book1000	Tap on cheyandi		
+S2736	ట్యాప్ ఆన్చేయండి	ṭyāp ānchēyaṇḍi	Turn on the tap		respectful	50	ṭyāp		646	book1000	Tap on cheyandi		also: Turn the tap on
 S2737	ఒకకుళాయి ఉంది	okakuḷāyi undi	There was a tap			50	okakuḷāyi		651	book1000	Oka kulayi undi		
 S2738	నాకుఅది అలవాటే	nākuadi alavāṭē	I am used to it			50	alavāṭē		654	book1000	Naku adi alavate		
 S2739	రాహుల్ వెళ్ళాలి	rāhul veḷḷāli	Rahul has to go			50	rāhul		661	book1000	Rahul vellali		

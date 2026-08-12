@@ -97,6 +97,36 @@ What it is good for is exactly what the textbooks miss. The highest-frequency un
 are colloquial Telangana: `ante`, `itla`/`atla`, `malla`, `monna`, `daaka`, `paapam`,
 `paisalu`. None of those come from an English frequency list.
 
+## Correcting things
+
+The masters are generated, so editing `data/master_*.tsv` is pointless — the next build
+overwrites it. Corrections go in:
+
+    data/overrides_words.tsv
+    data/overrides_sentences.tsv
+
+Columns: `telugu`, `action`, `english`, `example`, `notes`, `reason`. `action` is `edit`
+(replace any non-empty column, blanks leave the generated value alone) or `drop` (this
+should not be a card). Matched on the Telugu script, applied last, after merging and gloss
+resolution. `reason` is for you in six months.
+
+Two entries are seeded: తన, whose merged gloss had picked up "his" from the English frequency
+list when it is actually the reflexive "one's own"; and ది, dropped because Telugu has no
+definite article and "the = ది" is a word-by-word translation artefact.
+
+## One gloss per card
+
+Four sources describing the same entry used to concatenate into fronts like
+`I'm fine.; I'm fine.; I am fine.; I feel good`. `tools/glosses.py` now normalises for
+comparison (curly quotes, contractions, trailing punctuation), keeps the best-sourced
+wording, adds a second only when it is a genuinely different sense, and pushes the rest to
+the notes. Sentence prompts additionally drop the course pages' grammar annotations —
+`(neutral — u→i)` — to the back.
+
+Result: no sentence front contains a `;` at all, and the mean prompt is 20 characters. About
+100 word fronts keep two senses on purpose, where the word really has two: `aḍugu` is both
+"step, foot" and "to ask".
+
 ## Triage
 
 Every known defect, with counts and where to fix it, is in **`review/ERRORS.md`**. Nothing is

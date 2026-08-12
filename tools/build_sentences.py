@@ -18,9 +18,10 @@ from collections import OrderedDict, defaultdict
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 from te2rom import romanize
-import adapters
+import adapters, glosses, overrides
 
 ROOT = os.path.normpath(os.path.join(HERE, '..'))
+SOURCE_RANK = {'site': 0, 'anki': 1, 'book1000': 2}
 OUT = os.path.join(ROOT, 'data', 'master_sentences.tsv')
 WORDS = os.path.join(ROOT, 'data', 'master_words.tsv')
 
@@ -96,18 +97,33 @@ def main():
             m = merged[key]
             if r['source'] not in m['source'].split(','):
                 m['source'] += ',' + r['source']
-            if r['english'] and r['english'].lower() not in m['english'].lower():
-                m['english'] += '; ' + r['english'].strip()
+            if r['english']:
+                m['gloss_list'].append((SOURCE_RANK.get(r['source'], 9), r['english'].strip()))
             for extra in ('pronunciation', 'island'):
                 if not m.get(extra) and r.get(extra):
                     m[extra] = r[extra]
             continue
         merged[key] = {'telugu': te, 'roman': rom, 'english': r['english'].strip(),
+                       'gloss_list': [(SOURCE_RANK.get(r['source'], 9), r['english'].strip())],
                        'register': r.get('register') or register_of(rom),
                        'source': r['source'], 'raw_rom': r.get('raw_rom', ''),
                        'rank': r.get('rank', ''), 'notes': r.get('notes', ''),
                        'pronunciation': r.get('pronunciation', ''),
                        'island': r.get('island', ''), 'flags': set()}
+
+    for m in merged.values():
+        # one prompt per card: a sentence has one meaning, however many ways it was typed
+        front, extras = glosses.resolve(m.pop('gloss_list', []), max_senses=1)
+        # the course pages annotate their examples with the grammar point being demonstrated
+        # — "(neutral — u→i)". That belongs on the back, not in the production prompt.
+        ann = re.search(r'\s*\(([^)]*[—\u2192-][^)]*)\)\s*$', front)
+        if ann and len(ann.group(1)) > 3:
+            front = front[:ann.start()].strip()
+            extras.insert(0, ann.group(1).strip())
+        if front:
+            m['english'] = front
+        if extras:
+            m['notes'] = (m['notes'] + ' · also: ' + '; '.join(extras[:3])).strip(' ·')
 
     for m in merged.values():
         toks = [t for t in re.split(r'\s+', m['roman']) if t.strip('.,?!')]
@@ -128,6 +144,14 @@ def main():
     # site material first (already sequenced), then easiest-first by known-word coverage
     rows.sort(key=lambda r: (0 if 'site' in r['source'] else 1, -r['known_pct'],
                              int(r['rank']) if str(r.get('rank', '')).isdigit() else 10**6))
+    for i, r in enumerate(rows, 1):
+        r['id'] = f'S{i:04d}'
+
+    ovp = os.path.join(ROOT, 'data', 'overrides_sentences.tsv')
+    overrides.template(ovp)
+    ed, dr, unmatched = overrides.apply(rows, ovp, 'sentence')
+    if ed or dr:
+        print(f'  overrides: {ed} edited, {dr} dropped')
     for i, r in enumerate(rows, 1):
         r['id'] = f'S{i:04d}'
 
