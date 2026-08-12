@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Telugu · Week 1 test</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+Telugu:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#191915;--ink-2:#22221d;--ink-3:#2c2c25;--cream:#f1ece0;--cream-dim:#b9b3a4;
+ --amber:#e8a33d;--moss:#8fa37e;--flame:#d96c47;--line:rgba(241,236,224,.12);
+ --line-strong:rgba(241,236,224,.22);--radius:14px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--ink);color:var(--cream);font-family:'Inter',sans-serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:var(--amber)}
+h1,h2,h3{font-family:'Young Serif',serif;font-weight:400;line-height:1.14}
+.telugu,.tel{font-family:'Noto Sans Telugu',sans-serif}
+.mono{font-family:'JetBrains Mono',monospace}
+.wrap{width:min(880px,calc(100% - 40px));margin:0 auto}
+.site-nav{position:sticky;top:0;z-index:50;border-bottom:1px solid var(--line);background:rgba(25,25,21,.92);backdrop-filter:blur(12px)}
+.site-nav .wrap{display:flex;min-height:56px;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.logo{color:var(--cream);font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:700;text-decoration:none}
+.logo span{color:var(--amber)}
+.site-nav ul{display:flex;gap:18px;list-style:none;flex-wrap:wrap}
+.site-nav ul a{color:var(--cream-dim);font-size:13px;text-decoration:none}
+.site-nav ul a:hover{color:var(--amber)}
+header{border-bottom:1px solid var(--line);padding:clamp(44px,8vw,80px) 0 44px;position:relative;overflow:hidden}
+header::after{position:absolute;right:-20px;top:-60px;color:rgba(232,163,61,.05);content:"పరీక్ష";font-family:'Noto Sans Telugu',sans-serif;font-size:clamp(120px,22vw,260px);line-height:1;white-space:nowrap;pointer-events:none}
+header .wrap{position:relative;z-index:1}
+.eyebrow{display:block;margin-bottom:12px;color:var(--amber);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase}
+h1{font-size:clamp(36px,7vw,60px);margin-bottom:16px}
+h1 em{color:var(--amber);font-style:normal}
+.lede{color:var(--cream-dim);max-width:62ch}
+.rules{display:grid;gap:8px;margin-top:22px;list-style:none}
+.rules li{border:1px solid var(--line);border-left:2px solid var(--moss);border-radius:9px;background:var(--ink-2);padding:11px 15px;font-size:14px;color:var(--cream-dim)}
+.rules li b{color:var(--cream)}
+
+.sec{border-bottom:1px solid var(--line);padding:46px 0}
+.sec h2{font-size:clamp(24px,4.6vw,32px);margin-bottom:6px}
+.sec .cap{color:var(--cream-dim);font-size:14px;margin-bottom:6px}
+.sec .meta{color:var(--amber);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:24px}
+
+.q{border:1px solid var(--line);border-radius:var(--radius);background:var(--ink-2);padding:18px 20px;margin-bottom:12px}
+.q.right{border-color:rgba(143,163,126,.5);background:rgba(143,163,126,.07)}
+.q.wrong{border-color:rgba(217,108,71,.5);background:rgba(217,108,71,.07)}
+.qhead{display:flex;gap:12px;align-items:baseline;margin-bottom:10px}
+.qnum{color:var(--cream-dim);font-family:'JetBrains Mono',monospace;font-size:11px;min-width:26px}
+.qtext{font-size:17px;flex:1}
+.qtext .tel{font-size:21px;display:block;margin-bottom:3px}
+.hint{display:block;margin-top:5px;color:var(--cream-dim);font-size:13px}
+.q input[type=text]{width:100%;background:var(--ink-3);border:1px solid var(--line-strong);border-radius:9px;color:var(--cream);
+ font-family:'JetBrains Mono',monospace;font-size:16px;padding:10px 13px;margin-top:4px}
+.q input[type=text]:focus{outline:none;border-color:var(--amber)}
+.opts{display:grid;gap:7px;margin-top:6px}
+.opt{display:flex;gap:10px;align-items:flex-start;border:1px solid var(--line);border-radius:9px;background:var(--ink-3);padding:9px 13px;cursor:pointer;font-size:14.5px}
+.opt:hover{border-color:var(--line-strong)}
+.opt input{margin-top:4px;accent-color:var(--amber)}
+.opt.sel{border-color:var(--amber)}
+.fb{margin-top:11px;padding-top:11px;border-top:1px solid var(--line);font-size:14px;display:none}
+.fb.show{display:block}
+.fb .verdict{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.09em;text-transform:uppercase;margin-bottom:6px}
+.fb .verdict.ok{color:var(--moss)} .fb .verdict.no{color:var(--flame)}
+.fb .ans{font-family:'JetBrains Mono',monospace;color:var(--amber);font-size:15px}
+.fb .ans .tel{font-family:'Noto Sans Telugu',sans-serif;color:var(--cream);margin-left:8px}
+.fb .why{color:var(--cream-dim);font-size:13.5px;margin-top:6px}
+.fb .alt{color:var(--cream-dim);font-size:12.5px;margin-top:4px;font-family:'JetBrains Mono',monospace}
+.override{margin-top:9px;background:none;border:1px solid var(--line-strong);border-radius:7px;color:var(--cream-dim);
+ cursor:pointer;font-family:'JetBrains Mono',monospace;font-size:11px;padding:5px 11px}
+.override:hover{border-color:var(--moss);color:var(--moss)}
+
+.bar{position:sticky;bottom:0;border-top:1px solid var(--line);background:rgba(25,25,21,.95);backdrop-filter:blur(12px);padding:14px 0;z-index:40}
+.bar .wrap{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.btn{border:1px solid var(--amber);border-radius:9px;background:var(--amber);color:var(--ink);cursor:pointer;
+ font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:700;padding:12px 24px}
+.btn.ghost{background:none;color:var(--amber)}
+.btn:hover{filter:brightness(1.08)}
+.prog{color:var(--cream-dim);font-family:'JetBrains Mono',monospace;font-size:12px;margin-left:auto}
+
+#result{display:none;border-bottom:1px solid var(--line);padding:46px 0}
+#result.show{display:block}
+.score{font-family:'Young Serif',serif;font-size:clamp(44px,10vw,76px);line-height:1}
+.score.good{color:var(--moss)} .score.mid{color:var(--amber)} .score.bad{color:var(--flame)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:22px 0}
+.cell{border:1px solid var(--line);border-radius:11px;background:var(--ink-2);padding:15px}
+.cell span{display:block;color:var(--cream-dim);font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase}
+.cell b{display:block;margin-top:5px;font-family:'Young Serif',serif;font-size:26px;font-weight:400}
+.review{list-style:none;display:grid;gap:7px;margin-top:12px}
+.review li{border:1px solid var(--line);border-radius:9px;background:var(--ink-2);padding:10px 14px;font-size:14px}
+.review .lk{color:var(--amber);font-family:'JetBrains Mono',monospace;font-size:11px}
+footer{padding:36px 0 60px}
+footer p{color:var(--cream-dim);font-size:13px}
+@media print{.bar,.site-nav,.override{display:none}}
+</style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a class="logo" href="../index.html"><span>te</span> foundational-telugu</a>
+    <ul>
+      <li><a href="../index.html#course-path">Lessons</a></li>
+      <li><a href="../concepts/index.html">Deep dives</a></li>
+      <li><a href="../../GRAMMAR_LAB/index.html">Verb Lab</a></li>
+      <li><a href="../index.html">Course home</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header>
+  <div class="wrap">
+    <a class="mono" style="color:var(--cream-dim);text-decoration:none;font-size:12px" href="../index.html">← Course home</a>
+    <span class="eyebrow" style="margin-top:16px">Assessment · Part 01</span>
+    <h1>Week 1 test — <em>everything so far</em></h1>
+    <p class="lede">Lessons 1, 2, 3, 5 and 6. Family terms are deliberately left out. Most of this asks you to <b>produce</b> Telugu rather than recognise it, because recognising a form you cannot yet say is the failure mode this whole course is built to avoid.</p>
+    <ul class="rules">
+      <li><b>Say every answer aloud before you type it.</b> The typing is for grading; the speaking is the point.</li>
+      <li><b>Write romanization, not script.</b> Diacritics are optional — <span class="mono">nenu vidyarthini</span> marks the same as <span class="mono">nēnu vidyārthini</span>.</li>
+      <li><b>Nothing is timed and nothing is saved to a server.</b> Your last score is kept in this browser so you can compare next time.</li>
+      <li><b>If the grader marks you wrong but you were right</b>, use the override button. Telugu has more than one good answer and the grader only knows the ones I gave it.</li>
+    </ul>
+  </div>
+</header>
+
+<main id="paper"></main>
+
+<section id="result">
+  <div class="wrap">
+    <span class="eyebrow">Result</span>
+    <div class="score" id="pct">—</div>
+    <p class="lede" id="verdict"></p>
+    <div class="grid" id="bysec"></div>
+    <h3 style="font-size:20px;margin-bottom:4px">What to go back to</h3>
+    <ul class="review" id="review"></ul>
+  </div>
+</section>
+
+<div class="bar">
+  <div class="wrap">
+    <button class="btn" id="grade">Grade the test</button>
+    <button class="btn ghost" id="reset">Start over</button>
+    <span class="prog" id="prog"></span>
+  </div>
+</div>
+
+<footer><div class="wrap">
+  <p><span class="mono">Foundational Telugu</span> · every answer here is taken from the lesson pages, not invented</p>
+</div></footer>
+
+<script>
+/* ---------------------------------------------------------------------------
+   Question bank. Every Telugu answer is lifted from the lesson pages.
+     a  : accepted answers (first is shown as "the" answer). Matching is
+          diacritic-insensitive and ignores punctuation.
+     alt: shown after grading as "also fine", not required.
+     why: the rule being tested, so a miss teaches something.
+--------------------------------------------------------------------------- */
+const SECTIONS = [
+ { id:'A', title:'Production — say it in Telugu',
+   cap:'English situation in, Telugu out. This is the bulk of the test.',
+   type:'text',
+   qs:[
+    {l:1, q:'Raj is a student.', a:['raj vidyarthi','raj oka vidyarthi'], te:'రాజ్ విద్యార్థి.',
+     why:'Zero copula — no word for "is". Two nouns side by side is a complete sentence.'},
+    {l:1, q:'I am a student.', a:['nenu vidyarthini'], te:'నేను విద్యార్థిని.',
+     why:'The predicate takes the person marker -ni for "I".'},
+    {l:1, q:'You are a student. — to a close friend', a:['nuvvu vidyarthivi'], te:'నువ్వు విద్యార్థివి.',
+     why:'Informal nuvvu, and the marker is -vi.'},
+    {l:1, q:'You are a teacher. — to your actual teacher', a:['miru ticharu','miru teacher','miru ticaru'], te:'మీరు టీచర్.',
+     why:'Respectful mīru takes no person marker. Getting this wrong is a social error, not a grammatical one.'},
+    {l:1, q:'We are students. — including the person you are talking to', a:['manam vidyarthulamu','manamu vidyarthulamu','manam vidyarthulam'], te:'మనం విద్యార్థులము.',
+     why:'Inclusive manaṁ, plural -lu on the noun, then -amu.'},
+    {l:1, q:'This is the Taj Mahal.', a:['idi taj mahal'], te:'ఇది తాజ్ మహల్.', why:'Near demonstrative idi.'},
+    {l:1, q:'That is a car.', a:['adi karu','adi kaaru'], te:'అది కారు.', why:'Distant a-, near i-.'},
+    {l:2, q:'My name is Raj.', a:['na peru raj'], te:'నా పేరు రాజ్.', why:'nā for things that are yours alone.'},
+    {l:2, q:'My age is 20.', a:['na vayasu iravai'], te:'నా వయసు ఇరవై.', why:'Same frame, no verb.'},
+    {l:2, q:'My mother. — the way Telugu actually says it', a:['ma amma'], te:'మా అమ్మ.',
+     why:'Family takes mā ("our"), never nā. Saying nā amma marks you as an outsider.'},
+    {l:2, q:'Our town is Hyderabad.', a:['ma uru hyderabad','maa uru hyderabad'], te:'మా ఊరు హైదరాబాద్.',
+     why:'mādi Hyderabad is the shorter everyday alternative.', alt:'mādi Hyderabad'},
+    {l:2, q:'I am a boy.', a:['nenu abbayini'], te:'నేను అబ్బాయిని.', why:'abbāyi already ends in -i, so just add -ni.'},
+    {l:2, q:'My father is a teacher.', a:['ma nana oka ticharu','ma nanna oka ticharu','ma nana ticharu','ma nanna ticharu'], te:'మా నాన్న ఒక టీచర్.',
+     why:'mā for family, and the loanword profession is fine.'},
+    {l:3, q:'Greet someone respectfully.', a:['namaskaram andi','namaskaram'], te:'నమస్కారం అండి.',
+     why:'aṇḍi is the respectful softener. Palms together, fingers up.'},
+    {l:3, q:'How are you? — to a colleague', a:['miru bagunnara','bagunnara'], te:'మీరు బాగున్నారా?',
+     why:'The final -ā turns it into a yes/no question.'},
+    {l:3, q:'I am fine.', a:['nenu bagunnanu','bagunnanu'], te:'నేను బాగున్నాను.', why:'The pronoun is optional.'},
+    {l:3, q:'Someone offers you more food and you have had enough.', a:['vaddandi','vaddu'], te:'వద్దండి.',
+     why:'Declining an offer is vaddu — not lēdu, which is about existence.'},
+    {l:3, q:'Someone asks if there is any coffee left. There is not.', a:['ledandi','ledu'], te:'లేదండి.',
+     why:'lēdu negates existence.'},
+    {l:3, q:'Someone assumes you are a teacher. You are not.', a:['kadandi','kadu'], te:'కాదండి.',
+     why:'kādu negates an identity statement. Three different negatives, three different jobs.'},
+    {l:3, q:'Tell someone you do not know Telugu.', a:['telugu radu'], te:'తెలుగు రాదు.',
+     why:'Literally "Telugu doesn\'t come" — languages come to you in Telugu.'},
+    {l:3, q:'Ask the price of something in front of you.', a:['idi enta'], te:'ఇది ఎంత?', why:'No verb needed.'},
+    {l:3, q:'Say goodbye politely.', a:['vastanandi','vastanu'], te:'వస్తానండి.', why:'Literally "I\'ll come back".'},
+    {l:3, q:'This is not a car.', a:['idi karu kadu','idi kaaru kadu'], te:'ఇది కారు కాదు.', why:'kādu comes last.'},
+    {l:5, q:'Ask a stranger their name.', a:['mi peru emiti','mi peru enti','mi perenti'], te:'మీ పేరు ఏమిటి?',
+     why:'Always mī with a stranger, never nī.'},
+    {l:5, q:'His name is Sanjay. — neutral register', a:['atani peru sanjay'], te:'అతని పేరు సంజయ్.',
+     why:'atanu → atani. The final -u becomes -i in the possessive.'},
+    {l:5, q:'Her name is Divya. — neutral register', a:['ame peru divya'], te:'ఆమె పేరు దివ్య.',
+     why:'āme does not change at all.'},
+    {l:5, q:'Their names are Peter and Gita.', a:['valla perlu peter gita','valla perlu peter, gita','vaalla perlu peter gita'], te:'వాళ్ళ పేర్లు పీటర్, గీత.',
+     why:'vāḷḷu → vāḷḷa, and pēru → pērlu.'},
+    {l:5, q:'Our names — telling someone outside your group.', a:['ma perlu'], te:'మా పేర్లు.',
+     why:'Exclusive mā. mana pērlu would include your listener.'},
+    {l:6, q:'Say 42.', a:['nalabhai rendu'], te:'నలభై రెండు.', why:'Ten-word then unit, no connector.'},
+    {l:6, q:'Say 99.', a:['tombhai tommidi'], te:'తొంభై తొమ్మిది.', why:'Same pattern all the way up.'},
+    {l:6, q:'Say 300.', a:['mudu vandalu','moodu vandalu'], te:'మూడు వందలు.', why:'Multiplier plus plural base.'},
+    {l:6, q:'Say 2,700.', a:['rendu velu edu vandalu'], te:'రెండు వేలు ఏడు వందలు.', why:'Largest part first.'},
+    {l:6, q:'Fifty rupees.', a:['yabhai rupayalu'], te:'యాభై రూపాయలు.', why:''},
+    {l:6, q:'Ten people.', a:['padi mandi'], te:'పది మంది.',
+     why:'mandi is the counter for people from about five upwards.'},
+    {l:6, q:'Two people. — not "two cars"', a:['iddaru'], te:'ఇద్దరు.',
+     why:'Small numbers of people take their own words: okaru, iddaru, mugguru.'},
+   ]},
+
+ { id:'B', title:'Comprehension — what does this mean?',
+   cap:'Telugu in, English out. Type the meaning; close wording is accepted.',
+   type:'text',
+   qs:[
+    {l:1, q:'<span class="tel">వీళ్ళు విద్యార్థులు.</span> vīḷḷu vidyārthulu.', a:['these people are students','they are students','these are students'], te:'These (nearby) people are students.', why:'vīḷḷu is the near form of vāḷḷu.'},
+    {l:2, q:'<span class="tel">మాది హైదరాబాద్.</span> mādi Hyderabad.', a:['ours is hyderabad','we are from hyderabad','our town is hyderabad','im from hyderabad'], te:'Ours is Hyderabad. / We\'re from Hyderabad.', why:'The everyday way to say where you are from.'},
+    {l:3, q:'<span class="tel">పర్వాలేదు.</span> parvālēdu.', a:['no problem','its okay','its fine','not bad','never mind','it was okay'], te:'No problem / it\'s all right / not bad.', why:'Enormously versatile — possibly the most useful single word in Lesson 3.'},
+    {l:3, q:'<span class="tel">ఇదిగోండి.</span> idigōṇḍi.', a:['here you go','here it is','here you are'], te:'Here you go.', why:'Said while handing something over.'},
+    {l:3, q:'<span class="tel">ఇంగ్లీష్ తెలుసా?</span> English telusā?', a:['do you know english','do you speak english'], te:'Do you know English?', why:'The -ā question marker again.'},
+    {l:5, q:'<span class="tel">ఆయన మా నాన్న.</span> āyana mā nāna.', a:['he is my father','that is my father','hes my father'], te:'He is my father. (respectful)', why:'āyana is the respectful "he" — and it is unchanged as a possessive.'},
+    {l:5, q:'<span class="tel">మన పేర్లు.</span> mana pērlu.', a:['our names','our names including you'], te:'Our names — including the listener.', why:'mana includes you; mā excludes you.'},
+    {l:6, q:'<span class="tel">ఇది ఎంత?</span> idi enta?', a:['how much is this','what does this cost','how much'], te:'How much is this?', why:''},
+    {l:1, q:'<span class="tel">అవి కార్లు.</span> avi kārlu.', a:['those are cars','they are cars'], te:'Those are cars.', why:'avi for non-human plurals, -lu on the noun.'},
+    {l:3, q:'<span class="tel">క్షమించండి.</span> kṣaminchandi.', a:['sorry','excuse me','forgive me','i am sorry'], te:'Sorry (literally "forgive me").', why:''},
+   ]},
+
+ { id:'C', title:'Patterns — transform it',
+   cap:'No sentence, just the rule. Short answers.',
+   type:'text',
+   qs:[
+    {l:1, q:'Give the near partner of <span class="mono">āviḍa</span>.', a:['ividа','ivida','īviḍa','iviḍa'], te:'īviḍa · ఈవిడ', why:'Distant ā- becomes near ī-.'},
+    {l:1, q:'Give the near partner of <span class="mono">vāḷḷu</span>.', a:['villu','vīḷḷu','viḷḷu'], te:'vīḷḷu · వీళ్ళు', why:'Same swap, every time.'},
+    {l:1, q:'Make it plural: <span class="mono">kāru</span> →', a:['karlu','kaarlu'], te:'kārlu · కార్లు', why:'-lu is the plural, with the stem vowel dropping.'},
+    {l:2, q:'At conversational speed, <span class="mono">nēnu ammāyini</span> becomes what one word?', a:['nenammayini'], te:'nēnammāyini · నేనమ్మాయిని', why:'The -u of nēnu disappears before a vowel.'},
+    {l:5, q:'Possessive of <span class="mono">adi</span> →', a:['dani','daani'], te:'dāni · దాని', why:'One of only two possessives that are completely new words.'},
+    {l:5, q:'Possessive of <span class="mono">avi</span> →', a:['vati','vaati'], te:'vāṭi · వాటి', why:'The other new one. Both are the neuter forms.'},
+    {l:5, q:'Possessive of <span class="mono">vāḍu</span> →', a:['vadi','vaadi'], te:'vāḍi · వాడి', why:'-u becomes -i, the regular pattern.'},
+    {l:5, q:'Which three possessives are identical to their pronouns?', a:['ayana avida ame','ayana, avida, ame','ayana avida ame'], te:'āyana, āviḍa, āme', why:'The formal and neutral third-person forms never change.'},
+    {l:6, q:'Which number has two forms, and what are they?', a:['okati oka','okati and oka','oka okati'], te:'okaṭi (standing alone) / oka (before a noun)', why:'Exactly the distinction the oka deep dive is about.'},
+    {l:6, q:'How much is "fifty lakh" in plain digits?', a:['5000000','5,000,000','50 lakh','fifty lakh'], te:'5,000,000', why:'A lakh is 100,000.'},
+   ]},
+
+ { id:'D', title:'Register — who are you talking to?',
+   cap:'Choosing the wrong one here is a social mistake, not a grammar mistake.',
+   type:'choice',
+   qs:[
+    {l:1, q:'You are meeting your wife\'s boss for the first time. Which "you"?',
+     o:['nuvvu','mīru','vāḍu'], c:1, why:'mīru is the safe default with anyone you do not know well.'},
+    {l:1, q:'Which of these should you almost never use about an adult you have just met?',
+     o:['atanu','āyana','vāḍu'], c:2, why:'vāḍu is the informal "he" — intimates only, and insulting otherwise.'},
+    {l:3, q:'Your colleague hands you a coffee. What do you say?',
+     o:['dhanyavādālu','thanks aṇḍi','śabhāṣ'], c:1, why:'dhanyavādālu is formal and ceremonial; everyday thanks is thanks aṇḍi.'},
+    {l:2, q:'You want to say "my mother". Which is right?',
+     o:['nā amma','mā amma','nī amma'], c:1, why:'Family always takes mā, literally "our".'},
+    {l:5, q:'You are asking a shopkeeper their name. Which?',
+     o:['nī pēru ēnti?','mī pēru ēmiṭi?','vāḍi pēru ēmiṭi?'], c:1, why:'nī is for close friends or someone clearly younger.'},
+    {l:3, q:'Which word declines an offer of more food?',
+     o:['lēdu','kādu','vaddu'], c:2, why:'lēdu = it does not exist. kādu = that is not so. vaddu = I do not want it.'},
+   ]},
+];
+
+/* --------------------------- rendering --------------------------- */
+const fold = s => (s||'').toLowerCase()
+  .replace(/[āáà]/g,'a').replace(/[īíì]/g,'i').replace(/[ūúù]/g,'u')
+  .replace(/[ēéè]/g,'e').replace(/[ōóò]/g,'o')
+  .replace(/[ṭ]/g,'t').replace(/[ḍ]/g,'d').replace(/[ṇ]/g,'n').replace(/[ḷ]/g,'l')
+  .replace(/[ṁṃ]/g,'m').replace(/[ṣś]/g,'s').replace(/[ṛ]/g,'r')
+  .replace(/ch/g,'c').replace(/[^a-z0-9 ]/g,'').replace(/\s+/g,' ').trim();
+
+/* Lenient fallback: also forgives aspiration slips (vidhyarthini for vidyarthini) and
+   doubled letters. fold() stays strict, so this only ever rescues a near-miss. */
+const squash = s => fold(s)
+  .replace(/dh/g,'d').replace(/th/g,'t').replace(/bh/g,'b')
+  .replace(/gh/g,'g').replace(/kh/g,'k').replace(/ph/g,'p')
+  .replace(/(.)\1+/g,'$1').replace(/ /g,'');
+
+let items = [];
+const paper = document.getElementById('paper');
+SECTIONS.forEach(sec => {
+  const el = document.createElement('section');
+  el.className = 'sec';
+  const n = sec.qs.length;
+  el.innerHTML = `<div class="wrap"><h2>Section ${sec.id} · ${sec.title}</h2>
+    <p class="cap">${sec.cap}</p><p class="meta">${n} question${n>1?'s':''}</p>
+    <div id="s${sec.id}"></div></div>`;
+  paper.appendChild(el);
+  const host = el.querySelector('#s' + sec.id);
+  sec.qs.forEach((q, i) => {
+    const idx = items.length + 1;
+    const div = document.createElement('div');
+    div.className = 'q';
+    const body = sec.type === 'choice'
+      ? `<div class="opts">${q.o.map((o, j) =>
+          `<label class="opt"><input type="radio" name="q${idx}" value="${j}"><span>${o}</span></label>`).join('')}</div>`
+      : `<input type="text" autocomplete="off" autocapitalize="off" spellcheck="false"
+           placeholder="${sec.id==='B' ? 'in English…' : 'romanization…'}">`;
+    div.innerHTML = `<div class="qhead"><span class="qnum">${idx}.</span>
+        <span class="qtext">${q.q}${q.hint?`<span class="hint">${q.hint}</span>`:''}</span></div>
+      ${body}<div class="fb"></div>`;
+    host.appendChild(div);
+    items.push({ ...q, sec: sec.id, type: sec.type, el: div, n: idx });
+  });
+});
+
+function check(it) {
+  if (it.type === 'choice') {
+    const sel = it.el.querySelector('input:checked');
+    return { given: sel ? it.o[+sel.value] : '', ok: sel ? +sel.value === it.c : false };
+  }
+  const given = it.el.querySelector('input').value.trim();
+  if (!given) return { given: '', ok: false };
+  const g = fold(given), gs = squash(given);
+  const ok = it.a.some(a => fold(a) === g || squash(a) === gs);
+  return { given, ok };
+}
+
+function grade() {
+  let right = 0;
+  const bySec = {}, misses = [];
+  items.forEach(it => {
+    const { given, ok } = check(it);
+    it.ok = ok;
+    bySec[it.sec] = bySec[it.sec] || { r: 0, n: 0 };
+    bySec[it.sec].n++;
+    if (ok) { right++; bySec[it.sec].r++; } else misses.push(it);
+    it.el.classList.toggle('right', ok);
+    it.el.classList.toggle('wrong', !ok);
+    const answer = it.type === 'choice' ? it.o[it.c] : it.a[0];
+    const script = it.te ? `<span class="tel">${it.te}</span>` : '';
+    const fb = it.el.querySelector('.fb');
+    fb.className = 'fb show';
+    fb.innerHTML =
+      `<div class="verdict ${ok ? 'ok' : 'no'}">${ok ? 'correct' : (given ? 'not quite' : 'left blank')}</div>` +
+      (ok ? '' : `<div class="ans">${answer}${script}</div>`) +
+      (it.alt ? `<div class="alt">also fine: ${it.alt}</div>` : '') +
+      (it.why ? `<div class="why">${it.why}</div>` : '') +
+      (ok ? '' : `<button class="override">I was right — count it</button>`);
+    const btn = fb.querySelector('.override');
+    if (btn) btn.onclick = () => { it.ok = true; it.el.classList.remove('wrong'); it.el.classList.add('right');
+      fb.querySelector('.verdict').className = 'verdict ok';
+      fb.querySelector('.verdict').textContent = 'counted as correct'; btn.remove(); tally(); };
+  });
+  tally();
+  document.getElementById('result').classList.add('show');
+  document.getElementById('result').scrollIntoView({ behavior: 'smooth' });
+}
+
+const LESSON = {1:['Lesson 1 · Pronouns & "to be"','../lessons/lesson-01-pronouns.html'],
+                2:['Lesson 2 · Introductions','../lessons/lesson-02-introductions.html'],
+                3:['Lesson 3 · Greetings & courtesy','../lessons/lesson-03-greetings.html'],
+                5:['Lesson 5 · Possessives','../lessons/lesson-05-possessives.html'],
+                6:['Lesson 6 · Numbers','../lessons/lesson-06-numbers.html']};
+
+function tally() {
+  const total = items.length, right = items.filter(i => i.ok).length;
+  const pct = Math.round(100 * right / total);
+  const p = document.getElementById('pct');
+  p.textContent = pct + '%';
+  p.className = 'score ' + (pct >= 85 ? 'good' : pct >= 65 ? 'mid' : 'bad');
+  document.getElementById('verdict').textContent =
+    pct >= 85 ? `${right} of ${total}. Solid — move on to week 2 and let the misses come back through Anki.`
+    : pct >= 65 ? `${right} of ${total}. The shape is there. Re-read the lessons below before starting week 2.`
+    : `${right} of ${total}. Worth another pass through week 1 before adding new material.`;
+
+  const bs = {};
+  items.forEach(i => { bs[i.sec] = bs[i.sec] || { r:0, n:0 }; bs[i.sec].n++; if (i.ok) bs[i.sec].r++; });
+  document.getElementById('bysec').innerHTML = SECTIONS.map(s =>
+    `<div class="cell"><span>Section ${s.id} · ${s.title.split('—')[0].trim()}</span>
+     <b>${bs[s.id].r}/${bs[s.id].n}</b></div>`).join('');
+
+  const byL = {};
+  items.filter(i => !i.ok).forEach(i => { byL[i.l] = (byL[i.l] || 0) + 1; });
+  const ul = document.getElementById('review');
+  const keys = Object.keys(byL).sort((a, b) => byL[b] - byL[a]);
+  ul.innerHTML = keys.length
+    ? keys.map(l => `<li><a class="lk" href="${LESSON[l][1]}">${LESSON[l][0]}</a> — ${byL[l]} missed</li>`).join('')
+    : '<li>Nothing missed. Go and talk to someone.</li>';
+
+  try {
+    localStorage.setItem('telugu.test.week01',
+      JSON.stringify({ when: new Date().toISOString().slice(0,10), pct, right, total }));
+  } catch (e) {}
+}
+
+document.getElementById('grade').onclick = grade;
+document.getElementById('reset').onclick = () => {
+  if (!confirm('Clear all answers and start over?')) return;
+  items.forEach(it => {
+    it.el.className = 'q'; it.el.querySelector('.fb').className = 'fb';
+    it.el.querySelectorAll('input').forEach(i => { i.checked = false; i.value = ''; });
+  });
+  document.getElementById('result').classList.remove('show');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+document.querySelectorAll('.opt').forEach(o => o.addEventListener('click', () => {
+  o.closest('.opts').querySelectorAll('.opt').forEach(x => x.classList.remove('sel'));
+  o.classList.add('sel');
+}));
+
+const prev = (() => { try { return JSON.parse(localStorage.getItem('telugu.test.week01')); } catch (e) { return null; } })();
+document.getElementById('prog').textContent =
+  `${items.length} questions` + (prev ? ` · last attempt ${prev.pct}% on ${prev.when}` : '');
+</script>
+</body>
+</html>
