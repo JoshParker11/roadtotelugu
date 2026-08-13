@@ -74,8 +74,15 @@ required, benefits from massed repetition. It is also a prerequisite for compreh
 CI does not work if the stream is acoustic mush. The archived research roadmap already sets the
 target: *85% identification on trained sound contrasts*.
 
-**Not built.** A minimal-pair track generator was offered and deferred. It would pull
-contrasting pairs from the master automatically and produce "A … B … which was long?" drills.
+**Built.** `tools/minimal_pairs.py` scans the word master for pairs differing by exactly one
+of the three contrasts and writes `review/minimal-pairs.tsv`. The filter that matters is the
+gloss check — ṭamāṭa/ṭamāṭā and gaṭṭiga/gaṭṭigā fall out of a naive scan but are one word
+spelled two ways. 19 real pairs so far, and the list grows as the vocabulary does.
+
+It is a **recording script**: hand it to a native speaker, record the two columns, and it
+becomes the discrimination drill. Until there is audio it is still worth reading aloud.
+It also works as a data check — it surfaced `తను` glossed "Eat", which is the book's typo for
+`తిను` (`తను` means "himself").
 
 ---
 
@@ -116,12 +123,24 @@ convention not error, so it is mechanically convertible when wanted.
 ### Offered and deferred
 
 - **Minimal-pair audio generator** (see above).
-- **Session log** — for the YouTube-documentation goal, a record of what was practised, test
-  scores, and what you couldn't say. Vocab and sentences have a clean audit trail; daily
-  practice does not.
+- ~~**Session log**~~ — built, see below.
 - **Generated midterm/final** — the week-1 test is a fixed bank of 61. After two weeks it
   measures recall of the test rather than the language. The midterm should draw randomly from
   `data/master_sentences.tsv` by lesson tag so each sitting differs.
+
+## The practice log
+
+`python3 tools/session_log.py` appends a dated entry to `log/YYYY-MM.md` and opens it in
+`$EDITOR`. The Anki numbers — cards, minutes, retention, new vs review, split by note type —
+are read from the collection's revlog, because you will not reliably record "47 reviews in 11
+minutes at 84%" but your collection already knows. The prose is yours.
+
+`--show` prints today's numbers without writing. `--summary` gives streak and totals.
+
+Of the prompts, **"what I could not say"** is the one worth discipline. It is the bridge from
+practice back into the pipeline: those gaps become questions for a native speaker and rows in
+`review/`. Everything else in this project has an audit trail; this is the field that gives
+daily practice one.
 
 ### Latent asset nobody would find
 

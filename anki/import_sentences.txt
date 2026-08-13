@@ -1,5 +1,5 @@
 #separator:tab
-#html:false
+#html:true
 #notetype:Telugu Sentence v3
 #deck:Telugu::Sentences
 #guid column:1

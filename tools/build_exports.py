@@ -149,10 +149,10 @@ def main():
     wcols = ['guid', 'English', 'Romanized', 'TeluguScript', 'Audio', 'Example', 'Tags']
     scols = ['guid', 'English', 'EnglishAudio', 'Romanized', 'Telugu', 'Audio', 'Notes', 'Tags']
 
-    whdr = ['#separator:tab', '#html:false', f'#notetype:{WORD_NOTETYPE}',
+    whdr = ['#separator:tab', '#html:true', f'#notetype:{WORD_NOTETYPE}',
             f'#deck:{WORD_DECK}', '#guid column:1', f'#tags column:{len(wcols)}',
             '#columns:' + '\t'.join(wcols)]
-    shdr = ['#separator:tab', '#html:false', f'#notetype:{SENT_NOTETYPE}',
+    shdr = ['#separator:tab', '#html:true', f'#notetype:{SENT_NOTETYPE}',
             f'#deck:{SENT_DECK}', '#guid column:1', f'#tags column:{len(scols)}',
             '#columns:' + '\t'.join(scols)]
 
