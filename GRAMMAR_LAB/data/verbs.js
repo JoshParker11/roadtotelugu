@@ -35,11 +35,11 @@ const VERBS = [
 
   { id:'ra', en:{base:'come', ing:'coming', past:'came'}, gloss:'come',
     root:['rā','రా'], cls:'irregular', conf:'high',
-    np:['vas','వస్'], T:['t','త'], pst:['vacc','వచ్చ'],
+    np:['vas','వస్'], T:['t','త'], pst:['vachch','వచ్చ'],
     neg:['rā','రా'], a:['rāva','రావ'], inf:['rāvā','రావా'],
     hort:null,
     ov:{ impPol:['raṇḍi','రండి'], can:['rāgalanu','రాగలను'] },
-    note:'Suppletive: the non-past and past stems (vas-, vacc-) look nothing like the root rā. rādu “doesn’t/won’t come” is the one in “Telugu rādu.” The polite imperative is raṇḍi, not *rāvaṇḍi.' },
+    note:'Suppletive: the non-past and past stems (vas-, vachch-) look nothing like the root rā. rādu “doesn’t/won’t come” is the one in “Telugu rādu.” The polite imperative is raṇḍi, not *rāvaṇḍi.' },
 
   { id:'kurcho', en:{base:'sit', ing:'sitting', past:'sat'}, gloss:'sit, sit down',
     root:['kūrchō','కూర్చో'], cls:'-ko reflexive', conf:'high',
@@ -136,10 +136,10 @@ const VERBS = [
 
   { id:'ivvu', en:{base:'give', ing:'giving', past:'gave'}, gloss:'give',
     root:['ivvu','ఇవ్వు'], cls:'irregular', conf:'high',
-    np:['is','ఇస్'], T:['t','త'], pst:['icc','ఇచ్చ'],
+    np:['is','ఇస్'], T:['t','త'], pst:['ichch','ఇచ్చ'],
     neg:['ivva','ఇవ్వ'], a:['ivva','ఇవ్వ'], inf:['ivvā','ఇవ్వా'],
     hort:['iddāṁ','ఇద్దాం'],
-    note:'Three different-looking stems: ivvu / is- / icc-. ivvaṇḍi “please give” already appears in your oka deep dive.' },
+    note:'Three different-looking stems: ivvu / is- / ichch-. ivvaṇḍi “please give” already appears in your oka deep dive.' },
 
   { id:'chudu', en:{base:'see', ing:'seeing', past:'saw'}, gloss:'see, look, watch',
     root:['chūḍu','చూడు'], cls:'s-stem', conf:'high',

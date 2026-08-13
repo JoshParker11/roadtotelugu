@@ -90,7 +90,7 @@ read "↑ unchanged".
 1. `index.html` → pick verbs. Five is a good session. Presets: the essential five, random
    five, the irregulars, the `-ko` reflexives, or **weakest first**, which ranks by your own
    history.
-2. Pick a scope. Start at *the core five* paradigms and widen only when the endings arrive
+2. Pick a scope. Start at *the core six* paradigms and widen only when the endings arrive
    without hesitation.
 3. Start. `space` or tap reveals; `1` `2` `3` grade as missed / shaky / got it.
 

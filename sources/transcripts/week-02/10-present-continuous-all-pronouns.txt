@@ -1,0 +1,472 @@
+SOURCE: Udemy course, Week 2, video 10 — "Present Continuous Tense | Verb Conjugations for all pronouns" (16 min)
+CAPTURED: 2026-08-13
+STATUS: raw auto-generated captions, unedited. Reconstructed in
+        LEARNING_GUIDE/lessons/lesson-08-present-continuous.html.
+NOTE:   this is the video used to audit GRAMMAR_LAB/data/engine.js against an authoritative
+        source. Findings in review/verb-lab-audit.md.
+
+---
+
+Namaskaram.
+
+In the last video, we looked at how we conjugate verbs in the present tense when talking in the first
+
+person singular, that is to say I'm doing or I'm eating or I'm playing.
+
+You use the suffix to nanu where the nu indicates the person marker.
+
+For the first person.
+
+The person marker nu changes based on whether you're talking about the first person, second person,
+
+or third person, and has an easily identifiable pattern.
+
+When you look at the pronouns used for each of these conjugations.
+
+First I am doing something.
+
+So the conjugation with I which have already seen is to know the person marker is new.
+
+This is easy to remember because it mirrors the last syllable of the pronoun, which is nino.
+
+This will be even clearer when we look at the conjugation with you.
+
+The word for you is nuvvu and the conjugation suffix is the Nauvoo.
+
+Again, the last syllable vu mirrors the last syllable of the pronoun Nauvoo.
+
+So the Nauvoo.
+
+Nauvoo.
+
+To nanu for Nanu.
+
+The conjugation with he is tunna doo doo comes from the last syllable of Vadu, which is the informal
+
+version of he.
+
+The same conjugation tundu is also used with athanu.
+
+When we're using the feminine pronouns adi or ami, the suffix becomes adi.
+
+However, this is often shortened to tone thee.
+
+You can observe here that the person marker thee mirrors the last syllable of Adi.
+
+The reason that feminine suffixes get shortened, and we'll see similar shortening of the feminine suffixes
+
+in the later tenses as well.
+
+This is because in Telugu, feminine and neuter follow the same conjugations, and hence it's the most
+
+frequently used conjugation, which is why over the years feminine suffixes have often gotten shortened.
+
+So here with Adhi as well as ami, we use the suffix tondai.
+
+Next, we have two pronouns for the first person plural or we.
+
+That is, mimo and manamo.
+
+Both the pronouns end with the syllable mu, which is the person marker as well, so the suffix is namu.
+
+When it comes to the formal or plural suffix, the person marker derives from the last syllable of Miro,
+
+which is the respectful form of you.
+
+So to respectfully say you're doing something that is.
+
+For the conjugation.
+
+With Miro, we use the suffix ton naru.
+
+Similarly for Ayana, there's the respectful form of he Aveda.
+
+That's the respectful form of she and Waldo, which is the plural form they for all four pronouns,
+
+the suffix used is tun naru, with a person marker taking the form of ru.
+
+And finally, for neuter pronouns in the singular form it is A-D, which you will observe is the same
+
+as the most informal form of she.
+
+Because all objects are considered feminine in Telugu, here the suffix is the exact same as she which
+
+is Tondai, and this is the shortened form of Tondai.
+
+For the plural neuter pronoun rv, we have a slight exception.
+
+The suffix is tunna ye not to navy.
+
+This is an exception with the pronoun rv.
+
+We have the suffix tunna ye with the person marker ye.
+
+Now let's take an example of a real verb aadu, which means play.
+
+We've explored the first person conjugations in the previous lesson, so you know that with Nano we
+
+have the person marker now, so it becomes ATA nano.
+
+So to say I am playing, you say Nano ATA nano.
+
+To say you're playing.
+
+We have the pronoun nouveau, so it's easy to guess.
+
+The person marker, which is the last syllable of the suffix becomes vu.
+
+So you're playing is nouveau.
+
+Art nouveau.
+
+Once you understand the pattern and logic behind this, you'll note that the conjugation always follows
+
+the last syllable of the pronoun.
+
+So he's playing his Vado art.
+
+Now do the person marker here is du, derived from the last syllable of vado.
+
+Athena follows the same conjugation, since Athena is also a singular form of he.
+
+So you would say Athena.
+
+Athena.
+
+Du.
+
+For she's playing the person marker is the from the pronoun addie.
+
+However, we've seen that the suffix shortens to tone thee.
+
+So she's playing is addie are toned or arm are toned.
+
+V is either maimoh or manamo and the conjugation is r to namu.
+
+So mama earth namu or manam earth namu.
+
+For all the four formal or plural pronouns, we follow the same verb conjugation, which derives from
+
+the last syllable of Miro, which is ata naru.
+
+So to respectfully say your playing, we say Miro are too narrow to respectfully say he is playing.
+
+It is.
+
+Ayanna are too narrow to respectfully say she is playing.
+
+We say are wider, are too narrow, and the plural sentence they are playing is Waldo are narrow.
+
+Finally, we have the two neuter pronouns adi and avi.
+
+Adi is the same as the feminine conjugation, so we get adi are Tony, and Avi has the person marker
+
+yi.
+
+So we get Avi are Tony.
+
+Adi and Avi are used for neuter gender.
+
+These are used for inanimate nouns or non-human nouns.
+
+Now take a moment to try out the following sentences is the same as the previous example, but this
+
+time it is playing tennis.
+
+Nino.
+
+Tennis Arthur.
+
+Nanu.
+
+Novo tenis, Art Nouveau vada tenis.
+
+ATA nada or athanu.
+
+Tennis.
+
+ATA nada.
+
+Are they tennis?
+
+Are toned or are my tennis are toned?
+
+Memo.
+
+Tennis.
+
+Arthur.
+
+Namu.
+
+Miro tennis, Artun naru ayana tennis, Arta naru, Avida tennis Arta naru and wild tennis Arta naru.
+
+Are the tennis are on the are we tennis are tonigh.
+
+Let's look at another example.
+
+We'll use the verb working.
+
+We already know that the Telugu word for work is panchi, and when we conjugate it, it becomes Pani.
+
+Chase.
+
+She changes to chase when there is a suffix added to it.
+
+Take a moment to try out all the conjugations of the verb.
+
+Panchi.
+
+I'm working.
+
+Nano.
+
+Nano?
+
+You're working Nouveau punishes the novel.
+
+He's working.
+
+Vadu punishes the Nadu or Atanu punishes the Nadu.
+
+She's working.
+
+Aadhi punishes.
+
+Thonda or ami punishes.
+
+We're working.
+
+Mamu punishes the Namu or Manu punishes the Namu.
+
+Respectfully.
+
+Your working is Miru Naru.
+
+The respectful version of he's working in a pernicious the narrow.
+
+The respectful version of she's working with a pernicious to narrow the plural form.
+
+They are working while pernicious to narrow in the neuter form it is working are the pernicious and
+
+the plural neuter form.
+
+They are working.
+
+Are we pernicious to nigh?
+
+The next example is Speke which is marked ladoo.
+
+Let's try out all the conjugations for speaking in Telugu.
+
+Take a moment to try this out yourself.
+
+I'm speaking in Telugu.
+
+Is Nino Telugu mat Lata nanu.
+
+You know from the previous lessons that the suffix lo means in so Telugu.
+
+Lo means in Telugu.
+
+You're speaking in Telugu.
+
+Nouveau.
+
+Telugu.
+
+Lo art Nouveau.
+
+He is speaking in Telugu.
+
+Vadu Telugu.
+
+Naadu or Athanu Telugu Nadu.
+
+She is speaking in Telugu, Adi Telugu.
+
+Hindi or ami Telugu.
+
+Hindi.
+
+We are speaking in Telugu.
+
+Mami.
+
+Telugu.
+
+Lata.
+
+Namu or Manam.
+
+Telugu.
+
+Lata Namo.
+
+The formal or plural versions all use the conjugation mat Lata naru so your speaking in Telugu miru
+
+Telugu mat Lata naru.
+
+He is speaking in Telugu.
+
+Ayana Telugu mat Lata naru.
+
+She is speaking in Telugu.
+
+Alvida Telugu Lata Naru.
+
+They are speaking in Telugu Vaalu Telugu Lata Naru.
+
+The neuter form of it is speaking in Telugu or they are speaking in Telugu have the pronouns Adi and
+
+Avi.
+
+Here you might wonder how can objects speak in Telugu?
+
+The neuter gender is also used for non-human living beings.
+
+So animals and anything which has its gender unspecified.
+
+Whether you're talking about an animal mysteriously talking in Telugu or a robot talking in Telugu,
+
+or an alien talking in Telugu, you would use Adi and Avi.
+
+So in singular it is Adi Telugu Tundi, which is the same as the feminine conjugation and the plural
+
+is Avi Telugu Thunai.
+
+I hope you got a fair idea of how to conjugate verbs in Telugu across all the pronouns.
+
+I would suggest you to try this out with all the verbs you've learned in the last couple of lessons.
+
+Just remember the one simple rule that the last syllable of the conjugation follows the last syllable
+
+of the pronoun.
+
+Now let's look at negative verbs in the present tense.
+
+Here we add the word lido, which means something like no or not to the infinitive form of the verb,
+
+which is where we add the suffix dum.
+
+So to play is Adam and not play is Adam Lido.
+
+So I'm not playing becomes Nino Arden Lido.
+
+The lucky thing for us here is Lido does not have a person marker.
+
+So no matter which pronoun you use this with, you will always use Lido.
+
+It does not change as per the pronoun, and it retains the exact same form across all pronouns.
+
+So I am not working.
+
+Is Nino Pan Lido.
+
+You're not working is Nouveau Lido.
+
+And similarly you can go on for the other pronouns as Vaadu, Pani, Lido, Adi Panikkar, Lido, Mame,
+
+Upanishad, Lido, me, Upanishad, Lido, ion, Upanishad, Lido, avid Upanishad and Lido value Punchardon,
+
+Lido, Adi Pennisetum Lado, Avi.
+
+Punchardon.
+
+Lido.
+
+Take a moment to try out this next example for yourself.
+
+Here we use the verb ado, which means play.
+
+So the verb is not playing tennis.
+
+Here are the conjugation is tennis r Adam Lido and it stays the same across all pronouns.
+
+Now let me test the Telugu with a simple quiz.
+
+The first example question is he is singing.
+
+We've used the informal pronoun vadu and the verb is padu.
+
+The correct answer is Vaadu Pathu Naadu.
+
+Repeat.
+
+Vaadu.
+
+Partha Naadu.
+
+We learned the rules today through the pronouns, but of course, the same conjugation holds true even
+
+if you are using the name instead of the pronoun.
+
+In this case, the sentence is Rajpath, Nadu.
+
+Take a moment to guess the English translation.
+
+Raj is singing.
+
+Now let's try.
+
+Raj isn't singing.
+
+The root verb is still padu, but we need to conjugate it in the negative form.
+
+Raj Periderm Ledoux.
+
+I repeat, Raj Padam Ledoux.
+
+The next example is a slightly longer one.
+
+Murthy is working in the Telugu translation.
+
+We've written the name Murthy as Murthy.
+
+Garu.
+
+Garu is an honorific suffix which is commonly added to the names of people you want to speak respectfully
+
+to.
+
+So if we say murthy garu, it means we are giving some respect to murthy and it's equivalent to saying
+
+something like Mr. Murthy or Murthy sir.
+
+This should give the hint for what person marker to use when you conjugate.
+
+Punish her.
+
+If this was a younger person, we would have used the male conjugation puncheston naadu.
+
+However, since we've used murthy garu and not just murthy, we know that this is somebody we want to
+
+speak respectfully to.
+
+Hence the conjugation becomes puncheston naru, which is the formal or plural conjugation.
+
+The word for speak in Telugu is Mart Laddu.
+
+Take a moment to try the Telugu translation of your speaking Telugu in both the formal and informal
+
+variants.
+
+The formal pronoun for you is miru and the conjugation is ma la to naru.
+
+So we get miru Telugu ma la to naru.
+
+The informal pronoun you is coming to, and the connection is it with la tonnara.
+
+So we know who is the walgamott la.
+
+I hope you got most of these questions correct, and I hope you're making good progress in your Telugu
+
+learning journey.
+
+I suggest you to try out the conjugations for all the verbs that we have learned in the Command Verbs
+
+lesson.
+
+That's it for today.
+
+Thank you, Dhanyavad aloo.

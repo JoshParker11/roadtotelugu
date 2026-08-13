@@ -48,6 +48,15 @@ const FORMS = [
   { id:'negPast', person:true, invariant:true, label:'Negative past', short:"didn't ___",
     gloss:'One form for every person. Telugu marks who did not do it with the pronoun alone — nothing changes on the verb.',
     en:p => `${p.enSub} did not §`, tier:1 },
+  /* Added after auditing the course's all-pronouns video, which teaches this alongside the
+     positive present continuous. Not a suffix on the verb at all: -ḍaṁ makes a verbal noun
+     ("the doing") and lēdu says it is absent. Same -ḍaṁ that the purposive puts in the
+     dative, chēyaḍaṁ → chēyaḍāniki. Person-invariant, and dangerously close to the negative
+     past: chēyalēdu "didn't do" vs chēyaḍaṁ lēdu "am not doing". */
+  { id:'negPresent', person:true, invariant:true, label:'Negative present continuous',
+    short:"am not ___ing",
+    gloss:'Verbal noun in -ḍaṁ plus lēdu — literally “doing is not”. One form for every person. Do not confuse it with the negative past, which drops the -ḍaṁ.',
+    en:p => `${p.enSub} ${beVerb(p)} not ${'§ing'}`, tier:1 },
 
   { id:'impFam',  person:false, label:'Imperative — familiar', short:'do it!',
     gloss:'The bare root. Only for children, close friends, and people much younger than you. Getting this wrong is a social error, not a grammatical one.',
@@ -86,8 +95,17 @@ function beVerb(p){
 function shorten(pair){
   return [ pair[0].replace(/ā$/, 'a'), pair[1].replace(/ా$/, '') ];
 }
+/* Telugu writes the stem-final nasal of tinu, anu, vinu, uṇḍu and every -kō verb as an
+   anusvara (తిం), which is pronounced — and by this project's convention romanized — as
+   whatever nasal matches the following consonant. Before the retroflex ṭ of the tense
+   marker that is ṇ, not n: తింటున్నాను is tiṇṭunnānu. The stems are stored with a plain n
+   because the same anusvara surfaces as n before the dental d of the she/it past (తింది,
+   tindi), so the choice can only be made once the ending is attached. Matches tools/te2rom.py. */
+function assimilate(rom){
+  return rom.replace(/n(?=[ṭḍ])/g, 'ṇ');
+}
 function join(...parts){
-  return [ parts.map(p => p[0]).join(''), parts.map(p => p[1]).join('') ];
+  return [ assimilate(parts.map(p => p[0]).join('')), parts.map(p => p[1]).join('') ];
 }
 
 /* One cell of the paradigm. personIndex is ignored for person-less forms. */
@@ -104,6 +122,7 @@ function conjugate(v, formId, pi){
       case 'past':      return pastCell(v, pi);
       case 'negFuture': return join(v.neg, END.neg[pi]);
       case 'negPast':   return join(v.neg, ['lēdu','లేదు']);
+      case 'negPresent':return join(shorten(v.inf), ['ḍaṁ lēdu','డం లేదు']);
       case 'impFam':    return v.root;   /* prefix is added by withPre below */
       case 'impPol':    return join(v.a, ['ṇḍi','ండి']);
       case 'prohibFam': return join(v.neg, ['ku','కు']);
@@ -174,7 +193,7 @@ function segment(v, formId, pi){
   else if (['negFuture','negPast','prohibFam','prohibPol'].includes(formId)) stem = v.neg;
   else if (['impPol','can'].includes(formId)) stem = v.a;
   else if (formId === 'must') stem = v.inf;
-  else if (formId === 'purpose') stem = shorten(v.inf);
+  else if (['purpose','negPresent'].includes(formId)) stem = shorten(v.inf);
   if (!stem || (v.ov && v.ov[formId])) return { whole: full };
   const pre = v.pre ? v.pre[0] : '';
   const head = pre + stem[0] + (marker ? marker[0] : '');

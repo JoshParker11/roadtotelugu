@@ -929,7 +929,7 @@ W0954	busy	bijīgā	బిజీగా			src::top1000 set::019
 W0955	medicine	mandu	మందు			src::anki topic::body-senses set::019
 W0956	standing	balance	balance			src::anki topic::body-senses set::019
 W0957	record	rikārḍu	రికార్డు			src::top1000 set::019
-W0958	food / meal; MealsBhojanam	bhōjanaṁ	భోజనం			src::anki src::book1000 topic::food-drink set::019
+W0958	full meal, lunch (pairs with chēyi)	bhōjanaṁ	భోజనం		nēnu bhōjanaṁ chēstunnānu	src::anki src::book1000 topic::food-drink set::019
 W0959	boat	paḍava	పడవ			src::top1000 set::019
 W0960	snack / food (casual)	tiṇḍi	తిండి			src::anki topic::food-drink flag::inflected set::019
 W0961	rice (cooked)	annaṁ	అన్నం			src::anki topic::food-drink flag::multi-gloss set::019

@@ -956,7 +956,7 @@ W0954	బిజీగా	bijīgā	busy						368	top1000
 W0955	మందు	mandu	medicine	MUHN-dhoo		Body & Senses			369	anki	mandhu		
 W0956	balance	balance	standing	NIH-luh-buhd-tuhm		Body & Senses			370	anki	nilabaDTaM		
 W0957	రికార్డు	rikārḍu	record						370	top1000			
-W0958	భోజనం	bhōjanaṁ	food / meal; MealsBhojanam	BHOH-juh-nuhm		Food & Drink			371	anki,book1000	bhoojanaM		
+W0958	భోజనం	bhōjanaṁ	full meal, lunch (pairs with chēyi)	BHOH-juh-nuhm		Food & Drink		nēnu bhōjanaṁ chēstunnānu	371	anki,book1000	bhoojanaM	override	"Three words where English says ""meal"": tiṇḍi = snack, bhōjanaṁ = full meal/lunch, ṭiphin = breakfast."
 W0959	పడవ	paḍava	boat						371	top1000			
 W0960	తిండి	tiṇḍi	snack / food (casual)	TIHN-dih		Food & Drink			372	anki	tiMDi	inflected	
 W0961	అన్నం	annaṁ	rice (cooked)	UHN-nuhm		Food & Drink			373	anki	annaM	multi-gloss	also: rice

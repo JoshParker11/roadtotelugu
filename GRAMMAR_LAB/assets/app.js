@@ -11,12 +11,12 @@ const Lab = (() => {
 
   /* ---- scope presets: which paradigms a session covers ---- */
   const SCOPES = {
-    core: { label:'The core five',
-            blurb:'Habitual/future, present continuous, past, and both negatives — across all six persons.',
-            forms:['future','present','past','negFuture','negPast'] },
-    moods:{ label:'Core five + moods',
+    core: { label:'The core six',
+            blurb:'Habitual/future, present continuous, past, and all three negatives — across all six persons.',
+            forms:['future','present','past','negFuture','negPast','negPresent'] },
+    moods:{ label:'Core six + moods',
             blurb:'Adds the imperatives, prohibitives, let’s, must and can. This is the everyday working set.',
-            forms:['future','present','past','negFuture','negPast','impFam','impPol','prohibFam','prohibPol','hort','must','can'] },
+            forms:['future','present','past','negFuture','negPast','negPresent','impFam','impPol','prohibFam','prohibPol','hort','must','can'] },
     all:  { label:'Everything',
             blurb:'Adds the purposive and the conditional. The conditional is the least settled form here.',
             forms:null }

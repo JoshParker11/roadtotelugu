@@ -134,5 +134,5 @@ Safely ignorable for months, but real:
 ## Priority
 
 Of the 14, the five statement forms carry the overwhelming majority of real conversation, and
-the polite imperative gets you through most interactions. That's the "core five" default in the
+the polite imperative gets you through most interactions. That's the "core six" default in the
 Verb Lab, and it's the right place to stay until the endings come without hesitation.

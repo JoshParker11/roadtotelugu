@@ -1,0 +1,710 @@
+SOURCE: Udemy course, Week 2, video 9 — "Present Continuous Tense | Talk about what you are doing right now" (22 min)
+CAPTURED: 2026-08-13
+STATUS: raw auto-generated captions, unedited. Known-bad tokens are reconstructed in
+        LEARNING_GUIDE/lessons/lesson-08-present-continuous.html — see the "How I processed this" box.
+
+---
+
+Namaskaram.
+
+Welcome to our first lesson on using verbs with tenses and in full sentences.
+
+Today we learn the present tense, more specifically the present continuous tense.
+
+This is the equivalent of the ING tense in English.
+
+Like saying I'm going, I'm doing, I'm eating, and so on.
+
+Now, just like in English, the way we add ING to the root verb.
+
+In Telugu two, we have a suffix that we add to the root verb to express that the action is taking place
+
+right now.
+
+This suffix is to nanu.
+
+I repeat to Nanu.
+
+A simple example of this is to say going in Telugu.
+
+The root verb of go is po.
+
+Just like we add I and g to go and say going in Telugu, we add the suffix to nanu to po and say Po
+
+nanu.
+
+I repeat Pothan Nanu.
+
+Now here you need to keep in mind that this suffix to nanu consists of two parts the present tense suffix,
+
+which is tunna, and the person suffix, or the person marker which is nu.
+
+This changes depending on whether you're speaking in the first person or second person or third person.
+
+For example, to say we are doing you add the suffix mu, so tunna mu and so on.
+
+Don't worry about this right now.
+
+We'll look into the person markers in our next lesson, and it's far simpler than it looks.
+
+However, for this lesson, we are primarily going to focus on the first person.
+
+Here, the person marker is always going to be nu.
+
+So our suffix for all the examples in today's lesson is going to be ta nanu.
+
+Let's take another example of a verb which is playing.
+
+The root verb of play is aadu.
+
+When we add the suffix ta nanu to aadu, the word becomes ata nanu.
+
+I repeat ata nanu.
+
+Remember that most verbs end with a vowel, and when we add a suffix, the vowel gets deleted.
+
+The word I in Telugu is nanu to say I am playing.
+
+We say neno ata nanu.
+
+There are no auxiliary verbs like am in Telugu so it's simply nanu.
+
+ATA nanu.
+
+When we say this faster, it becomes ni na ta nanu.
+
+Always take note when a word ending with a vowel is followed by a word starting in a vowel, there is
+
+a liaison that happens over here where the two words merge together.
+
+So when you say this faster, it's ni nata nanu.
+
+To say, I'm playing tennis.
+
+We say nano tennis.
+
+ATA nano Telugu's word order is different from English.
+
+In Telugu, the verb always comes at the end of the sentence.
+
+Unlike English, where it comes in the middle of the subject and the object.
+
+Now, while verbs like ado, which end with an oo sound, simply have the oo vowel deleted.
+
+There are other types of verbs which take different endings when we add a suffix to them.
+
+For verbs that end with an a sound, the verb takes a new sa ending when we add a suffix to it, so
+
+che becomes chase.
+
+So doing is chase to Nanu, not che to Nanu.
+
+I repeat, Chase to Nanu.
+
+Similarly, words that end with an O sound like corcho, which means sit.
+
+To make this sitting, the root verb takes an un ending.
+
+So Corcho becomes ku chun and the entire word for sitting becomes kau shunten nanu.
+
+I repeat khubchand nanu.
+
+Here.
+
+You'll also observe that the two nano sometimes starts with a retroflex t like kurchan nano.
+
+This is just a quirk of pronunciation, where a retroflex consonant is usually preferred after an n
+
+sound.
+
+Let's take a few examples of full sentences.
+
+The first word is drink.
+
+This is tag.
+
+To say drinking.
+
+We add the suffix tun nanu and we get the word target.
+
+Nanu.
+
+So if you want to say I'm drinking tea in Telugu, the word for tea is the same as in English.
+
+So you would say nano tea.
+
+Tata nano I'm drinking tea.
+
+Observe the word order.
+
+The verb Tata Nano comes at the end.
+
+In Telugu, the main verb of a sentence invariably comes at the end.
+
+Unlike in English.
+
+Secondly, the object t in this sentence comes just before the verb in Telugu as it follows a subject
+
+object verb word order.
+
+You can add more meaning into the sentence by adding an adverb like ippu-do, which means now or right
+
+now.
+
+So I'm drinking tea right now becomes nano Ippudo tea.
+
+Tata nano observed that nano ends with a vowel and Ippudo starts with a vowel.
+
+So there is a liaison over here, and when you say this fast, it becomes Nenapu Nenapu tea Tata Nano.
+
+I repeat, need to talk to Nano.
+
+The next word is che to say doing che becomes che stanno.
+
+Take a moment to guess the meaning of the sentence.
+
+Nano yoga.
+
+Che sta nano.
+
+This means I'm doing yoga or I'm practicing yoga.
+
+The word for play is ado.
+
+Try translating the sentence I am playing badminton.
+
+We've already seen a very similar sentence in the intro.
+
+This is Nino badminton R2 nano R2 in the present continuous form becomes R2 nano.
+
+The word for eat in Telugu is Thinu.
+
+So eating is thinned to nanu.
+
+I repeat thin to nanu.
+
+Observe that the suffix to nanu starts with the retroflex t or tur.
+
+This is just a quirk of pronunciation whenever it is preceded by an na or n sound.
+
+The word for a small meal, sometimes used synonymously with breakfast is tindy.
+
+I repeat tindy.
+
+I am eating a meal.
+
+Try translating the sentence into Telugu.
+
+This is nano tin tin tin nano.
+
+I repeat, nano tin tin tin nano.
+
+To specifically mean breakfast, the word tiffin is used.
+
+You might recognize tiffin as an English word.
+
+However, in Telugu, this word has taken a life of its own and is by far the most commonly used word
+
+for breakfast across South India.
+
+So I am eating breakfast is Nino Tiffin Tintu Nanu.
+
+The word do is very commonly used in Telugu for a variety of scenarios, in English as well as in Telugu.
+
+We don't say that we eat lunch in English.
+
+We say I have lunch and Telugu has its own quirk where we say I do lunch.
+
+So here we've used the word chaste nanu, which is doing bhojanam means a large meal or specifically
+
+lunch.
+
+So the meaning of this sentence should be obvious.
+
+Nino Bhojanam chased the nano.
+
+This is.
+
+I'm having lunch.
+
+Literally translated it is.
+
+I'm doing lunch.
+
+But that's how we talk about lunch in Telugu using the verb taster nano.
+
+G is also used with the noun for work, which is punny, so work as a verb is punchy and working is
+
+pernicious to Nanu.
+
+Try to guess the meaning of this sentence.
+
+Nano punches the nano.
+
+It's simple.
+
+I'm working.
+
+Literally translated from Telugu.
+
+It's.
+
+I'm doing work.
+
+However, it has the same meaning as I'm working.
+
+The word che or do is a very versatile verb, as it combines with many other words to form new meanings.
+
+A beginner Telugu shortcut for the present tense is to use test on nanu.
+
+With common English words, this can either be used as a beginner Telugu hack for when you forget a
+
+Telugu word, and it's also used by native speakers for many English loan words.
+
+For example, to say I'm exercising, you can say Nanu exercise chase the nanu.
+
+I'm driving.
+
+Nano drive.
+
+Chase the nano.
+
+I'm jogging.
+
+Nino, jog.
+
+Chase the nano.
+
+I'm waiting in.
+
+Wait.
+
+Just a nano.
+
+Or I'm building something.
+
+Nano.
+
+Build nano.
+
+This can be used both as a beginner hack, and it's also used in many cases by native speakers.
+
+For example, Nino Georges Nanu is different from the Telugu word for running, which is Nino Parijatha
+
+nanu.
+
+Now let's move on to more examples.
+
+The word for learn is near Chico.
+
+Learning is near to Nanu.
+
+The word might be long, but it follows the exact same rules.
+
+I repeat near to Kunta.
+
+Nanu nanu.
+
+Telugu near Kunta.
+
+Nanu.
+
+Take a moment to guess the meaning of this sentence.
+
+It's what you're doing right now.
+
+This is.
+
+I am learning Telugu.
+
+The next word is speak, which is Matt Ladou speaking is Matt Lathoniana.
+
+I repeat, Matt Lathoniana.
+
+Try to guess the Telugu translation of I am speaking Telugu.
+
+This should be simple because the words are on the screen.
+
+Just pay attention to the word order.
+
+Nino Telugu mart Lata.
+
+Nanu.
+
+In Telugu Lata nanu.
+
+I am speaking Telugu.
+
+Let's try a longer example.
+
+The verb again is speaking, which is martellato nanu.
+
+The suffix toh is equivalent to the English preposition with na.
+
+Akka means my sister and na is my.
+
+Let's look at the sentence nano na avvocato martellato nano.
+
+No no no no no.
+
+Take a moment to guess the meaning of this sentence.
+
+Now Akoto means with my sister.
+
+Prepositions in English apply before the noun, so with comes before my sister.
+
+However, in Telugu they apply after the noun.
+
+So the equivalent word of with which is toh applies as a suffix to the word for sister, which is akka,
+
+which is why you get naa akoto for with my sister.
+
+So put together this means I'm speaking with my sister.
+
+The next verb is read, which is Chudovo.
+
+Reading is Chudovo.
+
+Nanu.
+
+The word for book is pusthakam.
+
+I repeat pusthakam.
+
+Try to guess the Telugu translation of this sentence.
+
+I am reading a book.
+
+Neenu.
+
+Pusthakam.
+
+Naanu.
+
+The next verb is velo, which means go.
+
+We've seen in previous examples in the intro that we can also use Po.
+
+Both Po and Well.do are used in different dialects, and well.do is more common in standard Telugu.
+
+I'm going to Paris.
+
+The Telugu equivalent of the English preposition two is key, and as always in Telugu, the preposition
+
+applies as a suffix after the noun, which is different from how English has prepositions before the
+
+noun.
+
+So two Paris is Paris.
+
+Key.
+
+Take a moment to translate the sentence I'm going to Paris by using the right conjugation of well.do.
+
+This is Nino.
+
+Parisi.
+
+Wilton.
+
+Nino.
+
+I repeat, Nino.
+
+Parisi.
+
+Wilton.
+
+Nanou.
+
+Paris.
+
+Key means to Paris.
+
+The word for sleep is baduku.
+
+Try to translate the sentence I am sleeping to Telugu.
+
+Keep in mind that this verb ends with an o sound.
+
+The sentence is nano nano.
+
+Till now, we've seen examples of activities that you're performing right now or at this moment.
+
+This tense can also be used to talk about more general actions, like where you're working or where
+
+you're staying.
+
+Let's look at one such sentence.
+
+That is where you're working.
+
+The word for work is Spanish.
+
+The suffix lo means in or at.
+
+Telugu does not differentiate between in and at.
+
+Try to guess the meaning of this sentence.
+
+Nanu.
+
+Acme lo puncheston.
+
+Nanu.
+
+I repeat Nino.
+
+Acme lo puncheston.
+
+Nanu.
+
+This means I'm working at Acme.
+
+Translated literally, this would be I'm doing work in Acme.
+
+Telugu doesn't have a word for working.
+
+So you say doing work punishes the nanu and Telugu does not differentiate between in and at.
+
+So we use the preposition that means in which is low.
+
+You can make a mental note to apply this to your own life if you're working somewhere, since this is
+
+an important sentence.
+
+Another important sentence that you would use in your daily life is to talk about where you stay or
+
+where you're staying right now.
+
+The word for stay is undo.
+
+When conjugated, it becomes undo nano.
+
+I repeat unto nano.
+
+In any language, the to be verb plays an important role and is the same in Telugu.
+
+And you will see a lot more of this word undo.
+
+In our Telugu learning journey.
+
+This word doubles up for both be or stay or live or exist.
+
+The Telugu sentence is nano.
+
+New York law unto nano.
+
+Take a moment to guess what this would mean.
+
+This means I'm living or I'm staying in New York.
+
+Since this is an important sentence that you come across in your daily life, you can make a mental
+
+note of how this applies to your life.
+
+That is, to talk about where you are staying right now.
+
+Next, we move on to using negative verbs in the present tense.
+
+As we know, Telugu works on suffixes and so to say things like I am not eating, I am not speaking
+
+and so on, you have another suffix that adds to the verb.
+
+We have already seen in the greetings video that this word ladoo means no.
+
+Now this suffix is added to the infinitive form of the verb.
+
+The infinitive form is nothing but the to be form of the verb, or in other cases it is to do or to
+
+eat to drink.
+
+In Telugu, to express the same, the verb takes on the suffix dum, where dum can be seen as the equivalent
+
+of the English word two.
+
+The word for do in Telugu is chhe.
+
+So two do is say dum.
+
+Similarly, eat is thinner, to eat is thinner.
+
+Derm.
+
+Drink is to go.
+
+To drink is to dumb.
+
+Sit is Curchoe.
+
+To sit is kirchhundem.
+
+When you're using the negative form of the present continuous tense.
+
+In Telugu, we use this infinitive form of the verbs.
+
+Let's take an example to say not eating.
+
+We start with the infinitive form to eat, which is thinner derm, thin derm when you say it faster.
+
+We suffix this with the word no, which is ledu.
+
+So we get tandem ledu.
+
+I repeat tandem ledu.
+
+In other words, it's something like to eat not here.
+
+Ledu does not have a person marker, so it stays the same whether you're speaking in the first person,
+
+second person, or third person, it doesn't matter who you're referring to.
+
+It always conjugates as Ledu to say I'm not eating, you would say no.
+
+Tandem Ledo.
+
+The suffix attaches itself to all verbs in a very regular manner, so there are no exceptions here.
+
+So not eating is Dumbledore not doing?
+
+Is Dumbledore not sitting?
+
+Is Dumbledore?
+
+So, Nino Mellado, I'm not eating an omelette.
+
+I'm not doing an omelette.
+
+I'm not sitting.
+
+So with this, I hope you understood how to conjugate negative verbs in the present continuous tense.
+
+It's pretty straightforward.
+
+You just add lido, which means no to the infinitive form of the verb.
+
+We've seen positive and negative verbs in the present tense.
+
+Now let's test your Telugu.
+
+What do you think the following sentence means?
+
+Nano part Apart.the nano.
+
+The meaning of the verb padu is given, which is sing.
+
+Another hint is the word pata means song.
+
+This means I'm singing a song.
+
+Nino.
+
+Part, a part.
+
+The nano.
+
+Let's try.
+
+I'm not singing a song.
+
+You know, part, a part I repeat in part, a part.
+
+Let's try another sentence.
+
+Nano.
+
+Nano.
+
+Cuckoo is the word for sit.
+
+So Kunta Nanu is sitting here.
+
+The sentence means I'm sitting.
+
+Let's try.
+
+I'm not sitting.
+
+Nino lado.
+
+I repeat Nino Lado.
+
+Let's try a simple but slightly longer example.
+
+Nano India low Puncheston nano.
+
+Take a moment to guess the meaning in English.
+
+Punish is the verb for work.
+
+So punish the nanu is working.
+
+India low means in India, so nano India also punishes the nano means.
+
+I am working in India.
+
+Imagine someone asks you where are you staying?
+
+And you want to reply, I'm staying at the Taj Hotel.
+
+What would your response be?
+
+Take a moment to guess the Telugu translation of this sentence.
+
+The answer is no.
+
+Taj hotel until nano.
+
+The verb for be or stay is undo, and it conjugates as undo.
+
+Nanu.
+
+And there is no distinction between at and in in Telugu, so the suffix lo works for both cases.
+
+So Taj Hotel lo means at the Taj Hotel.
+
+Nino.
+
+India.
+
+Well.
+
+Dumbledore.
+
+Take a moment to guess the meaning of this sentence.
+
+This means I'm not going to India.
+
+You can observe Ledo at the end of the verb, which is the negative form of the verb.
+
+The word weldu is go vella dum is to go and not going is well.
+
+Adam Ledo.
+
+You know India well.
+
+Dumbledore.
+
+Now let's try the positive version of this sentence.
+
+I'm going to India.
+
+Take a moment to guess this.
+
+The answer is Nano India.
+
+Well done.
+
+Nano.
+
+I repeat.
+
+Nano India and nano.
+
+Today, we learned to conjugate verbs in the present tense, specifically in the first person.
+
+In the next lesson, we learned to talk about the second person and third person, that is, with pronouns
+
+like you, he and she see you in the next lesson.
+
+Thank you, Dhanyavad aloo.
