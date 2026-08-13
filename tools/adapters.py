@@ -58,6 +58,51 @@ def site_words(path=None):
     return out
 
 
+def lessons(path=None):
+    """Vocabulary from the lesson pages in LEARNING_GUIDE/lessons/.
+
+    Every lesson page already ends in an "Anki word list" table whose columns are exactly the
+    five note fields, because it was written to be copied by hand. Parsing it instead closes
+    the loop: a word taught on a lesson page reaches the deck without anyone retyping it.
+
+    Before this existed the lesson pages were a dead end — వాయించు was taught in Lesson 7 and
+    never appeared in the master. These entries win merges: they are hand-written with a
+    register cue and a worked example, which no bulk source supplies.
+
+    Rows are matched structurally on the f-en / f-rom / f-tel / f-ex cell classes, so the
+    prose around the table can change freely without breaking the parse.
+    """
+    import glob, html
+    base = path or os.path.join(HERE, '..', 'LEARNING_GUIDE', 'lessons')
+    row_re = re.compile(
+        r'<td class="f-en">(?P<en>.*?)</td>\s*'
+        r'<td class="f-rom">(?P<rom>.*?)</td>\s*'
+        r'<td class="f-tel">(?P<tel>.*?)</td>.*?'
+        r'(?:<td class="f-ex">(?P<ex>.*?)</td>)?\s*</tr>', re.S)
+    strip_tags = re.compile(r'<[^>]+>')
+
+    def clean(s):
+        return html.unescape(strip_tags.sub('', s or '')).strip()
+
+    out = []
+    for page in sorted(glob.glob(os.path.join(base, 'lesson-*.html'))):
+        num = re.search(r'lesson-(\d+)', os.path.basename(page)).group(1)
+        text = open(page, encoding='utf-8').read()
+        for i, m in enumerate(row_re.finditer(text)):
+            en, rom, te = clean(m.group('en')), clean(m.group('rom')), clean(m.group('tel'))
+            if not en or not te:
+                continue
+            # "-aṇḍi", "-ండి": taught as morphemes, real, but not free-standing words.
+            bound = te.startswith('-') or rom.startswith('-')
+            out.append({'telugu': te.strip('-'), 'roman': '', 'english': en, 'pos': '',
+                        'source': 'lesson', 'raw_rom': rom.strip('-'),
+                        'example': clean(m.group('ex')),
+                        'lesson': num,
+                        'extra_flags': 'bound-suffix' if bound else '',
+                        'notes': ''})
+    return out
+
+
 def spoken_telugu(path=None):
     """Spoken Telugu book vocabulary. Tab-separated, and the English gloss is split across
     however many tab stops the original PDF happened to use:
@@ -152,5 +197,5 @@ def anki_sentences(path=None):
 
 
 ALL = {'top1000': top1000, 'site': site_words, 'spoken-telugu': spoken_telugu,
-       'book1000': book_words, 'anki': anki_words}
+       'book1000': book_words, 'anki': anki_words, 'lesson': lessons}
 ALL_SENT = {'site': site_sentences, 'book1000': book_sentences, 'anki': anki_sentences}

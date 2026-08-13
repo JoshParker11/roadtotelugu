@@ -12,7 +12,9 @@ field is the English gloss, and that is not unique — వెయ్యి, వ�
 words all glossed "thousand", and ఈ రోజు / ఈరోజు are two spellings of "today". Importing on
 first-field matching silently collapses those into one note and loses the variants.
 
-Declaring `#guid column:1` makes Anki match on the master's stable id (W0001, S0001) instead.
+Declaring `#guid column:1` makes Anki match on the master's guid instead. That guid is derived
+from the Telugu script, not from the row number — see tools/ids.py for why that distinction
+cost a deck once already.
 That fixes the collapse and makes the import idempotent: fix a row in the master, re-export,
 re-import, and the existing note is updated in place instead of duplicated. It is what stops
 this from becoming another restart.
@@ -126,7 +128,7 @@ def main():
         if not a.include_flagged and (BLOCK_W & set(r['flags'].split())):
             wheld += 1; continue
         eng = r['english'] + (f"  [form of {r['lemma']}]" if r['lemma'] else '')
-        wout.append({'guid': r['id'], 'English': eng, 'Romanized': r['roman'],
+        wout.append({'guid': r['guid'], 'English': eng, 'Romanized': r['roman'],
                      'TeluguScript': r['telugu'], 'Audio': '', 'Example': r['example'],
                      'Tags': tags_for_word(r)})
 
@@ -137,7 +139,7 @@ def main():
         prompt = r['english']
         if r['register'] and not re.search(r'formal|informal|respect|polite', prompt, re.I):
             prompt += f" [{r['register']}]"
-        sout.append({'guid': r['id'], 'English': prompt, 'EnglishAudio': '',
+        sout.append({'guid': r['guid'], 'English': prompt, 'EnglishAudio': '',
                      'Romanized': r['roman'], 'Telugu': r['telugu'], 'Audio': '',
                      'Notes': r['notes'], 'Tags': tags_for_sentence(r)})
 

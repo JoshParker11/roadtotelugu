@@ -18,7 +18,7 @@ from collections import OrderedDict, defaultdict
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 from te2rom import romanize
-import adapters, glosses, overrides
+import adapters, glosses, ids, overrides
 
 ROOT = os.path.normpath(os.path.join(HERE, '..'))
 SOURCE_RANK = {'site': 0, 'anki': 1, 'book1000': 2}
@@ -155,7 +155,9 @@ def main():
     for i, r in enumerate(rows, 1):
         r['id'] = f'S{i:04d}'
 
-    cols = ['id', 'telugu', 'roman', 'english', 'pronunciation', 'register', 'known_pct',
+    ids.assign(rows, 'S')
+
+    cols = ['id', 'guid', 'telugu', 'roman', 'english', 'pronunciation', 'register', 'known_pct',
             'new_words', 'island', 'rank', 'source', 'raw_rom', 'flags', 'notes']
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, 'w', newline='', encoding='utf-8') as f:

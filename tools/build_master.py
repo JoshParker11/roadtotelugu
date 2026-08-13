@@ -22,11 +22,12 @@ from collections import defaultdict, OrderedDict
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 from te2rom import romanize
-import adapters, glosses, overrides
+import adapters, glosses, ids, overrides
 
 ROOT = os.path.normpath(os.path.join(HERE, '..'))
-# lower is better: the course pages carry register cues the raw wordlists lack
-SOURCE_RANK = {'site': 0, 'anki': 1, 'book1000': 2, 'spoken-telugu': 3, 'top1000': 4}
+# lower is better: hand-written material carries register cues and examples the bulk lists lack,
+# and the lesson pages are the most recent and most carefully checked of it
+SOURCE_RANK = {'lesson': 0, 'site': 1, 'anki': 2, 'book1000': 3, 'spoken-telugu': 4, 'top1000': 5}
 OUT = os.path.join(ROOT, 'data', 'master_words.tsv')
 VERBFORMS = json.load(open(os.path.join(HERE, 'verbforms.json'), encoding='utf-8'))
 
@@ -167,7 +168,7 @@ def classify(rec):
 
 def main():
     records = []
-    for name in ('site', 'anki', 'book1000', 'top1000', 'spoken-telugu'):  # earlier sources win merges
+    for name in ('lesson', 'site', 'anki', 'book1000', 'top1000', 'spoken-telugu'):  # earlier wins
         got = adapters.ALL[name]()
         print(f'  {name:<16} {len(got):>5} rows')
         records.extend(got)
@@ -191,6 +192,10 @@ def main():
                 m['pos'] = r['pos']
             if not m.get('example') and r.get('example'):
                 m['example'] = r['example']
+            if not m.get('lesson') and r.get('lesson'):
+                m['lesson'] = r['lesson']
+            if r.get('extra_flags'):
+                m['flags'] |= set(r['extra_flags'].split())
             # keep whichever source supplied these, regardless of merge order
             for extra in ('pronunciation', 'island'):
                 if not m.get(extra) and r.get(extra):
@@ -203,10 +208,12 @@ def main():
                'pos': r.get('pos',''), 'source': r['source'], 'raw_rom': r.get('raw_rom',''),
                'example': r.get('example',''), 'rank': r.get('rank',''),
                'pronunciation': r.get('pronunciation',''), 'island': r.get('island',''),
+               'lesson': r.get('lesson',''),
                'lemma': '', 'notes': r.get('notes',''), 'flags': set()}
         rec['flags'] = set(classify(rec))
-        if r.get('book_flags'):
-            rec['flags'] |= set(r['book_flags'].split())
+        for extra in ('book_flags', 'extra_flags'):
+            if r.get(extra):
+                rec['flags'] |= set(r[extra].split())
         merged[key] = rec
 
     for m in merged.values():
@@ -229,8 +236,12 @@ def main():
                   f"  ->  {a['telugu']} {a['roman']}")
 
     rows = list(merged.values())
-    # study order: site material first (already sequenced), then by source frequency rank
-    rows.sort(key=lambda r: (0 if 'site' in r['source'] else 1,
+    # Study order: what a lesson actually taught, in lesson order, then the rest of the
+    # sequenced site material, then everything else by source frequency rank. Note this only
+    # affects the readable W#### id and the order of the file — the Anki guid is content-derived
+    # (tools/ids.py), so reordering here can no longer disturb an existing deck.
+    rows.sort(key=lambda r: (0 if r.get('lesson') else (1 if 'site' in r['source'] else 2),
+                             int(r['lesson']) if str(r.get('lesson','')).isdigit() else 0,
                              int(r['rank']) if str(r.get('rank','')).isdigit() else 10**6))
     for i, r in enumerate(rows, 1):
         r['id'] = f'W{i:04d}'
@@ -245,8 +256,10 @@ def main():
     for i, r in enumerate(rows, 1):
         r['id'] = f'W{i:04d}'
 
-    cols = ['id','telugu','roman','english','pronunciation','pos','island','lemma','example',
-            'rank','source','raw_rom','flags','notes']
+    ids.assign(rows, 'W')
+
+    cols = ['id','guid','telugu','roman','english','pronunciation','pos','island','lemma',
+            'example','lesson','rank','source','raw_rom','flags','notes']
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, 'w', newline='', encoding='utf-8') as f:
         w = csv.DictWriter(f, fieldnames=cols, delimiter='\t', extrasaction='ignore',

@@ -4,18 +4,34 @@ Two files, generated from the masters by `python3 tools/build_exports.py`:
 
 | File | Rows | Note type | Deck |
 |---|---|---|---|
-| `anki/import_words.txt` | 2,010 | `Telugu Production` | `Telugu::Vocab` |
+| `anki/import_words.txt` | 1,995 | `Telugu Production` | `Telugu::Vocab` |
 | `anki/import_sentences.txt` | 2,872 | `Telugu Sentence v3` | `Telugu::Sentences` |
 
 Both carry `#notetype`, `#deck`, `#guid column` and `#tags column` headers, so Anki configures
 the import itself — you should not have to set anything on the import screen except the
 duplicate-handling mode in step 4.
 
-**The import is idempotent.** Rows are matched on the master's stable id (`W0001`, `S0001`)
-carried in the guid column, not on the first field. Fix something in the master, re-export,
-re-import, and the existing note is updated in place. That is what makes this safe to redo,
-and it is the reason not to edit cards inside Anki — those edits are overwritten on the next
-import. Corrections go in `data/master_*.tsv`.
+**The import is idempotent.** Rows are matched on the guid column, not on the first field. Fix
+something in the master, re-export, re-import, and the existing note is updated in place. That
+is what makes this safe to redo, and it is the reason not to edit cards inside Anki — those
+edits are overwritten on the next import. Corrections go in `data/master_*.tsv`.
+
+> ### One-time break: the guid scheme changed on 2026-08-13
+>
+> The guid used to be the row number — `W0519`. That works until the master changes length.
+> Dropping a single bad entry renumbers every row after it, so `W0519` stops meaning తను and
+> starts meaning నివసిస్తున్నారు. Anki matches the guid, finds the note, and **overwrites it
+> with a different word while keeping its scheduling.** Measured on one real rebuild:
+> **1,431 of 1,927 shared guids had come to point at a different word.**
+>
+> Guids are now derived from the Telugu script (`tools/ids.py`), so the same word keeps the
+> same id forever no matter what else enters or leaves the master. Verified: dropping an entry
+> now moves **0** guids, where the old scheme moved 1,431.
+>
+> Because none of the new guids match the old ones, **the notes already in your collection
+> cannot be updated in place — they have to be replaced once.** Do the clean sweep in step 3
+> below. The deck is young enough that this costs almost nothing now and gets much more
+> expensive later. This is also where your 95 orphaned notes came from.
 
 ---
 
@@ -43,14 +59,16 @@ Field order must end up exactly:
 Anki maps import columns to fields positionally. If `EnglishAudio` sits anywhere but position
 2, every field after it lands in the wrong slot.
 
-## 3. Delete the 15 old notes in the two target note types
+## 3. Delete every note in the two target note types
 
-`Telugu Production` has 5 notes and `Telugu Sentence v3` has 10, all from earlier experiments.
-They carry Anki-generated guids, so the import cannot match them and would create duplicates
-alongside them.
+Not just the old experiments this time — **everything**, including what you imported earlier
+this week. The guid scheme changed (see the note above), so those notes can no longer be
+matched and updated; leaving them in place would give you two copies of every card.
 
-All 15 are already in the masters — they were ingested as `src::anki`, so nothing is lost.
-`I am a programmer` is `S2348`, `nēnu` is `W0001`.
+Nothing is lost. Every one of them came from the masters, and the masters are unchanged by
+this — you are re-importing the same content with ids that will survive the next rebuild.
+What you do lose is the scheduling on the ~29 cards you have reviewed, which is a day of
+work against a bug that would otherwise corrupt the deck silently every time it grows.
 
 In the Browse window, search each of these, select all (⌘A), and delete:
 
