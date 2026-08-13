@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Telugu · Lesson 9 — Past tense</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+Telugu:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#191915;--ink-2:#22221d;--ink-3:#2c2c25;
+  --cream:#f1ece0;--cream-dim:#b9b3a4;
+  --amber:#e8a33d;--moss:#8fa37e;--flame:#d96c47;
+  --line:rgba(241,236,224,.12);--radius:14px;--max:1000px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{background:var(--ink);color:var(--cream);font-family:'Inter',sans-serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.telugu{font-family:'Noto Sans Telugu','Inter',sans-serif}
+.mono{font-family:'JetBrains Mono',monospace}
+h1,h2,h3{font-family:'Young Serif',serif;font-weight:400;line-height:1.15}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+section{padding:72px 0;border-top:1px solid var(--line)}
+.eyebrow{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--amber);margin-bottom:14px;display:block}
+h2{font-size:clamp(26px,4.2vw,36px);margin-bottom:14px}
+.lede{color:var(--cream-dim);max-width:660px;font-size:16.5px}
+.lede b{color:var(--cream)}
+a{color:var(--amber)}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:4px}
+
+nav{position:sticky;top:0;z-index:50;background:rgba(25,25,21,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+.logo{font-family:'JetBrains Mono',monospace;font-size:13.5px;font-weight:700;color:var(--cream);text-decoration:none}
+.logo span{color:var(--amber)}
+nav ul{display:flex;gap:20px;list-style:none}
+nav ul a{color:var(--cream-dim);text-decoration:none;font-size:13px;font-weight:500}
+nav ul a:hover{color:var(--amber)}
+@media(max-width:720px){nav ul{display:none}}
+.home-crumb{display:inline-block;margin-bottom:18px;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--cream-dim);text-decoration:none}
+.home-crumb:hover{color:var(--amber)}
+
+header.hero{padding:80px 0 64px;position:relative;overflow:hidden}
+.hero-glyph{position:absolute;right:-30px;top:-70px;font-family:'Noto Sans Telugu',sans-serif;font-size:clamp(260px,40vw,480px);line-height:1;color:rgba(232,163,61,.05);user-select:none;pointer-events:none}
+.hero h1{font-size:clamp(34px,6vw,58px);margin:8px 0 10px;color:var(--cream)}
+.hero h1 em{color:var(--amber);font-style:normal}
+.hero p{max-width:620px;color:var(--cream-dim);font-size:17px}
+
+.note-box{background:rgba(217,108,71,.07);border:1px solid rgba(217,108,71,.3);border-radius:var(--radius);padding:20px 24px;margin-top:30px;max-width:720px}
+.note-box b{color:var(--flame);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;display:block;margin-bottom:8px}
+.note-box p{font-size:14px;color:var(--cream-dim)}
+.note-box p+p{margin-top:10px}
+.note-box.win{background:rgba(143,163,126,.08);border-color:rgba(143,163,126,.32)}
+.note-box.win b{color:var(--moss)}
+
+/* rule blocks */
+.rule{border-top:1px solid var(--line);padding:30px 0;display:grid;grid-template-columns:52px 1fr;gap:20px;counter-increment:r}
+.rules{counter-reset:r;margin-top:20px}
+.rule::before{content:counter(r,decimal-leading-zero);font-family:'JetBrains Mono',monospace;font-size:14px;color:var(--flame);padding-top:4px}
+.rule h3{font-size:19px;font-family:'Inter',sans-serif;font-weight:600;margin-bottom:8px;color:var(--cream)}
+.rule p{font-size:14.5px;color:var(--cream-dim);max-width:640px}
+.rule p+p{margin-top:10px}
+.rule b{color:var(--cream)}
+.ex{margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:14px;color:var(--moss);background:var(--ink-2);border:1px solid var(--line);border-radius:8px;padding:12px 16px;display:inline-block}
+.ex .en{color:var(--cream-dim);font-family:'Inter',sans-serif}
+.ex .tel{font-family:'Noto Sans Telugu',sans-serif;color:var(--cream)}
+.flag{margin-top:14px;border-left:3px solid var(--flame);background:rgba(217,108,71,.07);padding:11px 14px;font-size:13px;color:var(--cream-dim);border-radius:0 8px 8px 0}
+.flag b{color:var(--flame);font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;display:block;margin-bottom:5px}
+.flag.ok{border-left-color:var(--moss);background:rgba(143,163,126,.08)}
+.flag.ok b{color:var(--moss)}
+
+/* morpheme chips */
+.morph-row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:16px 0}
+.morph{border-radius:9px;padding:9px 14px;font-family:'JetBrains Mono',monospace;text-align:center;min-width:74px}
+.morph .p{font-size:16px;font-weight:700;display:block}
+.morph .r{font-size:9px;letter-spacing:.1em;text-transform:uppercase;opacity:.75;margin-top:3px;display:block}
+.morph.subj{background:rgba(232,163,61,.14);color:var(--amber);border:1px solid rgba(232,163,61,.35)}
+.morph.base{background:rgba(143,163,126,.14);color:var(--moss);border:1px solid rgba(143,163,126,.35)}
+.morph.mark{background:rgba(217,108,71,.14);color:var(--flame);border:1px solid rgba(217,108,71,.35)}
+.morph.op{background:none;border:none;color:var(--cream-dim);font-size:18px;min-width:auto;padding:0 2px}
+.morph.none{background:var(--ink-3);color:var(--cream-dim);border:1px dashed var(--line)}
+
+/* generic table */
+.tbl{width:100%;border-collapse:collapse;margin-top:22px;font-size:14.5px}
+.tbl th{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:11px 12px;color:var(--cream-dim);border-bottom:1px solid var(--line);vertical-align:bottom}
+.tbl td{padding:12px;border-bottom:1px solid var(--line);color:var(--cream-dim);vertical-align:top}
+.tbl td .rom{font-family:'JetBrains Mono',monospace;font-size:15px;color:var(--cream);font-weight:700}
+.tbl td .tel{font-family:'Noto Sans Telugu',sans-serif;font-size:15px;color:var(--cream-dim);opacity:.8}
+.tbl td small{display:block;font-size:12px;color:var(--cream-dim);margin-top:2px}
+.tag{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:999px;margin-left:4px}
+.tag.neu{background:rgba(143,163,126,.16);color:var(--moss)}
+.tag.for{background:rgba(232,163,61,.16);color:var(--amber)}
+.tag.inf{background:rgba(217,108,71,.16);color:var(--flame)}
+
+/* anki table */
+.anki-wrap{overflow-x:auto;margin-top:26px;border:1px solid var(--line);border-radius:var(--radius)}
+.anki{width:100%;border-collapse:collapse;font-size:14px;min-width:720px}
+.anki th{background:var(--ink-3);font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:12px 14px;color:var(--amber);border-bottom:1px solid var(--line);white-space:nowrap}
+.anki td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--cream-dim);vertical-align:top}
+.anki tr:last-child td{border-bottom:none}
+.anki .f-en{color:var(--cream);width:31%}
+.anki .f-rom{font-family:'JetBrains Mono',monospace;color:var(--amber);font-weight:700;white-space:nowrap}
+.anki .f-tel{font-family:'Noto Sans Telugu',sans-serif;color:var(--cream)}
+.anki .f-aud{color:var(--cream-dim);opacity:.4;font-family:'JetBrains Mono',monospace;font-size:12px;text-align:center}
+.anki .f-ex{font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--moss)}
+.anki .sec td{background:var(--ink-2);font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--cream-dim)}
+.field-key{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--cream-dim)}
+.field-key span{background:var(--ink-2);border:1px solid var(--line);border-radius:6px;padding:5px 10px}
+.field-key b{color:var(--amber);font-weight:500}
+
+/* lesson questions */
+.question-link{display:grid;grid-template-columns:80px 1fr auto;align-items:center;gap:22px;margin-top:26px;border:1px dashed var(--line);border-radius:var(--radius);background:var(--ink-2);color:inherit;padding:22px;text-decoration:none}
+.question-link:hover{border-color:rgba(232,163,61,.4);background:var(--ink-3)}
+.question-mark{display:grid;width:60px;height:60px;place-items:center;border:1px solid rgba(143,163,126,.35);border-radius:50%;color:var(--moss);font-family:'Young Serif',serif;font-size:28px}
+.question-link h3{margin-bottom:5px;font-family:'Inter',sans-serif;font-size:17px;font-weight:600}
+.question-link p{margin:0;color:var(--cream-dim);font-size:13px}
+.question-open{color:var(--amber);font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;white-space:nowrap}
+.question-open::after{content:' →'}
+
+footer{padding:52px 0 68px;border-top:1px solid var(--line)}
+footer p{font-size:13px;color:var(--cream-dim)}
+footer .mono{color:var(--amber)}
+.try{list-style:none;margin-top:18px;display:grid;gap:10px;max-width:640px}
+.try li{background:var(--ink-2);border:1px solid var(--line);border-radius:9px;padding:12px 16px;font-size:14px;color:var(--cream-dim)}
+.try li .q{color:var(--cream);font-weight:600}
+.try li .a{font-family:'JetBrains Mono',monospace;color:var(--moss);margin-top:4px;display:block}
+
+/* lesson 7 additions, reused */
+.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));gap:10px;margin-top:20px}
+.vcell{border:1px solid var(--line);border-radius:11px;background:var(--ink-2);padding:13px 15px}
+.vcell .en{display:block;font-size:13px;color:var(--cream-dim)}
+.vcell .inf{display:block;font-family:'JetBrains Mono',monospace;font-size:15.5px;font-weight:700;color:var(--amber);margin-top:4px}
+.vcell .fml{display:block;font-family:'JetBrains Mono',monospace;font-size:13.5px;color:var(--moss)}
+.vcell .tel{display:block;font-family:'Noto Sans Telugu',sans-serif;font-size:14px;color:var(--cream-dim);margin-top:2px}
+.vcell.warn{border-color:rgba(217,108,71,.32)}
+.grp{margin-top:26px}
+.grp h4{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--amber);margin-bottom:2px}
+.grp p{font-size:13.5px;color:var(--cream-dim);margin-bottom:0}
+.stack{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin:14px 0}
+.stack .box{border-radius:8px;padding:8px 13px;font-family:'JetBrains Mono',monospace;font-size:14px}
+.stack .root{background:rgba(143,163,126,.14);color:var(--moss);border:1px solid rgba(143,163,126,.35)}
+.stack .neg{background:rgba(217,108,71,.14);color:var(--flame);border:1px solid rgba(217,108,71,.35)}
+.stack .pol{background:rgba(232,163,61,.14);color:var(--amber);border:1px solid rgba(232,163,61,.35)}
+.stack .op{color:var(--cream-dim);font-size:17px}
+.stack .out{background:var(--ink-3);color:var(--cream);border:1px solid var(--line)}
+
+/* lesson 8 additions, reused */
+.para{width:100%;border-collapse:collapse;margin-top:22px;font-size:14.5px;min-width:660px}
+.para th{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:11px 12px;color:var(--cream-dim);border-bottom:1px solid var(--line)}
+.para td{padding:10px 12px;border-bottom:1px solid var(--line);color:var(--cream-dim)}
+.para .pron{font-family:'JetBrains Mono',monospace;color:var(--cream);font-weight:700;white-space:nowrap}
+.para .pron small{display:block;font-family:'Inter',sans-serif;font-weight:400;font-size:11.5px;opacity:.65}
+.para .mk{font-family:'JetBrains Mono',monospace;color:var(--flame);font-weight:700;text-align:center}
+.para .form{font-family:'JetBrains Mono',monospace;color:var(--amber);font-weight:700;white-space:nowrap}
+.para .telc{font-family:'Noto Sans Telugu',sans-serif;color:var(--cream-dim);opacity:.8}
+.para tr.odd td{background:rgba(143,163,126,.05)}
+.scroll{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);margin-top:22px}
+.scroll .para{margin-top:0;border-radius:var(--radius)}
+.audit{border:1px solid rgba(143,163,126,.3);background:rgba(143,163,126,.06);border-radius:var(--radius);padding:20px 24px;margin-top:22px}
+.audit h4{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--moss);margin-bottom:10px}
+.audit p{font-size:14px;color:var(--cream-dim)}
+.audit p+p{margin-top:9px}
+.audit.warn{border-color:rgba(217,108,71,.3);background:rgba(217,108,71,.06)}
+.audit.warn h4{color:var(--flame)}
+.caption-list{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:7px;margin-top:14px}
+.caption-list li{background:var(--ink-2);border:1px solid var(--line);border-radius:8px;padding:9px 12px;font-size:13px;color:var(--cream-dim)}
+.caption-list .real{font-family:'JetBrains Mono',monospace;color:var(--moss);font-weight:700}
+.caption-list .heard{color:var(--flame);font-style:italic}
+@media(max-width:720px){
+  .wrap{padding:0 16px}
+  .hero-glyph{right:0}
+  .rule{grid-template-columns:1fr;gap:8px}
+  .rule>div{min-width:0}
+  .tbl{display:block;width:100%;max-width:100%;overflow-x:auto;white-space:nowrap}
+  .question-link{grid-template-columns:52px 1fr;padding:18px 16px}
+  .question-mark{width:48px;height:48px}
+  .question-open{grid-column:2}
+}
+</style>
+</head>
+<body>
+
+<nav aria-label="Main">
+  <div class="wrap">
+    <a class="logo" href="../index.html"><span>te</span> lesson-09 · past tense</a>
+    <ul>
+      <li><a href="../index.html">Course home</a></li>
+      <li><a href="../../GRAMMAR_LAB/index.html">Verb Lab</a></li>
+      <li><a href="#rules">Rules</a></li>
+      <li><a href="#stems">Stems</a></li>
+      <li><a href="#persons">All pronouns</a></li>
+      <li><a href="#perfect">The perfect</a></li>
+      <li><a href="#audit">Verb Lab audit</a></li>
+      <li><a href="#try">Self-test</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-glyph telugu" aria-hidden="true">ఆను</div>
+  <div class="wrap">
+    <a class="home-crumb" href="../index.html">← Foundational Telugu / Learning path</a>
+    <span class="eyebrow">Course extraction · Lesson 9 · Videos 13 &amp; 14</span>
+    <h1>Past tense — <em>and the stem you have to memorise</em></h1>
+    <p>Structurally this is <a href="lesson-08-present-continuous.html">Lesson 8</a> with one piece swapped: <span class="mono">-tunnā-</span> becomes <span class="mono">-ā-</span> and the person markers are unchanged. <b>The catch is the stem.</b> The past is the one tense where a verb's stem is often unpredictable from both its root and its present tense — <span class="mono">chaduvu</span> gives <span class="mono">chaduvutunnānu</span> but <span class="mono">chadivānu</span>. This is the paradigm to over-learn.</p>
+
+    <div class="note-box">
+      <b>How I processed this</b>
+      <p>Videos 13 and 14 merged, same as the last lesson: the second is the pronoun table, not new grammar.</p>
+      <p>Video 13's captions open with the word <b>"Anarchy."</b>, which is <span class="mono">namaskāraṁ</span>. It does not improve from there — <span class="mono">āḍānu</span> is <b>"Adorno"</b> and <b>"Arduino"</b>, <span class="mono">chēsānu</span> is <b>"chasanow"</b>, <span class="mono">vachchānu</span> is <b>"Vatsyayana"</b>, <span class="mono">paḍukunnānu</span> is <b>"Paducah Nano"</b>, and <span class="mono">rātri match chūsānu</span> is <b>"Ratira Matsuzono"</b>. Full list at the bottom.</p>
+      <p>Every form here was generated from the <a href="../../GRAMMAR_LAB/index.html">Verb Lab</a> stems and checked against <span class="mono">tools/te2rom.py</span>. Nineteen of them are directly attested in the videos and were used to audit the generator — see <a href="#audit">below</a>.</p>
+    </div>
+  </div>
+</header>
+
+<section id="rules">
+  <div class="wrap">
+    <span class="eyebrow">The grammar engine</span>
+    <h2>Structures &amp; rules introduced</h2>
+    <p class="lede">Colour code: <b style="color:var(--moss)">past stem</b> · <b style="color:var(--flame)">tense marker</b> · <b style="color:var(--amber)">person marker</b>. Most of this lesson is a substitution into machinery you already have. Rules 3 and 6 are the genuinely new work.</p>
+
+    <div class="rules">
+
+      <div class="rule">
+        <div>
+          <h3>Swap the middle piece, keep the endings</h3>
+          <p>The person markers are <b>identical</b> to the present continuous. Only the tense slot changes, and in the past it is barely there — just a long <span class="mono">ā</span>.</p>
+          <div class="morph-row">
+            <span class="morph base"><span class="p">āḍ-</span><span class="r">past stem</span></span>
+            <span class="morph op">+</span>
+            <span class="morph mark"><span class="p">-ā-</span><span class="r">past</span></span>
+            <span class="morph op">+</span>
+            <span class="morph subj"><span class="p">-nu</span><span class="r">I</span></span>
+            <span class="morph op">→</span>
+            <span class="morph"><span class="p mono" style="color:var(--cream)">āḍānu</span></span>
+          </div>
+          <p>Compare: <span class="mono">āḍu·<b style="color:var(--flame)">tunnā</b>·nu</span> "I am playing" against <span class="mono">āḍ·<b style="color:var(--flame)">ā</b>·nu</span> "I played". <b>Learning a new tense in Telugu costs one morpheme, not a new table.</b> That is the payoff for the effort you put into Lesson 8.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>The <span class="mono">ā</span> is shorter than it looks</h3>
+          <p>The instructor stops to flag this and it is worth heeding: the long vowel in <span class="mono">-ānu</span> is often pronounced closer to the vowel in English <em>ant</em> than to a full long <span class="mono">ā</span>. Written long, said short.</p>
+          <p>This matters because it is the <b>only</b> thing separating some past forms from other tenses in fast speech. Do not lengthen it artificially to be clear — that marks you as reading rather than speaking. Let it be casual and let context carry it.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>The past stem is not the present stem</h3>
+          <p>The video says the exceptions "are the same as the ones we saw in the previous lesson". <b>For two of the four classes that is true, and for a third of the verb list it is false.</b> Getting this straight now is the difference between a rule and a memorisation load you were not expecting.</p>
+          <table class="tbl">
+            <thead><tr><th>Verb</th><th>Present</th><th>Past</th><th></th></tr></thead>
+            <tbody>
+              <tr><td><span class="rom">chēyi</span></td><td><span class="mono">chēs·tunnānu</span></td><td><span class="mono">chēs·ānu</span></td><td><span style="color:var(--moss)">same stem ✓</span></td></tr>
+              <tr><td><span class="rom">kūrchō</span></td><td><span class="mono">kūrchuṇ·ṭunnānu</span></td><td><span class="mono">kūrchunn·ānu</span></td><td><span style="color:var(--moss)">predictable ✓</span></td></tr>
+              <tr><td><span class="rom">chaduvu</span></td><td><span class="mono">chaduvu·tunnānu</span></td><td><span class="mono">chadiv·ānu</span></td><td><span style="color:var(--flame)">u → i, unpredictable</span></td></tr>
+              <tr><td><span class="rom">naḍavu</span></td><td><span class="mono">naḍus·tunnānu</span></td><td><span class="mono">naḍich·ānu</span></td><td><span style="color:var(--flame)">three different stems</span></td></tr>
+              <tr><td><span class="rom">ivvu</span></td><td><span class="mono">is·tunnānu</span></td><td><span class="mono">ichch·ānu</span></td><td><span style="color:var(--flame)">three different stems</span></td></tr>
+              <tr><td><span class="rom">rā</span></td><td><span class="mono">vas·tunnānu</span></td><td><span class="mono">vachch·ānu</span></td><td><span style="color:var(--flame)">suppletive</span></td></tr>
+              <tr><td><span class="rom">nilabaḍu</span></td><td><span class="mono">nilabaḍu·tunnānu</span></td><td><span class="mono">nilabaḍḍ·ānu</span></td><td><span style="color:var(--flame)">gemination</span></td></tr>
+            </tbody>
+          </table>
+          <p style="margin-top:14px"><b>Nine of the 35 verbs have a past stem you cannot derive.</b> They are listed and marked in the <a href="#stems">next section</a>. Everything else follows one of four rules.</p>
+          <div class="note-box win">
+            <b>Why this is the good news, not the bad news</b>
+            <p>Nine irregular stems is <em>tiny</em>. English has around 180 irregular past tenses and you absorbed all of them. The reason Telugu feels harder is only that you are meeting them as a list instead of one at a time over six years.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>The negative past is the root plus <span class="mono">lēdu</span> — and it ignores the stem entirely</h3>
+          <p>After all that: <b>the negative does not use the past stem.</b> It attaches <span class="mono">lēdu</span> to the plain negative stem, which is close to the root.</p>
+          <div class="stack">
+            <span class="box root">chadava-</span><span class="op">+</span>
+            <span class="box neg">lēdu</span><span class="op">→</span>
+            <span class="box out">chadavalēdu</span>
+            <span class="op" style="padding:0 8px">“didn’t read”</span>
+          </div>
+          <p>So <span class="mono">chadivānu</span> "I read" but <span class="mono">chadavalēdu</span> "I didn't read"; <span class="mono">vachchānu</span> "I came" but <span class="mono">rālēdu</span> "I didn't come". <b>The irregular stems disappear in the negative.</b> If you are unsure of a past form, the negative is the safe one.</p>
+          <p><span class="mono">lēdu</span> is invariant across all eight pronouns, exactly as in Lesson 8.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>The negative past and the negative present are one syllable apart</h3>
+          <p>You met this warning last lesson; here is where it becomes live, because now you can build both.</p>
+          <table class="tbl">
+            <thead><tr><th>Telugu</th><th>English</th><th>Built from</th></tr></thead>
+            <tbody>
+              <tr><td><span class="rom">pāḍalēdu</span> <span class="tel">పాడలేదు</span></td><td>I didn't sing</td><td>negative stem + <span class="mono">lēdu</span></td></tr>
+              <tr><td><span class="rom">pāḍaḍaṁ lēdu</span> <span class="tel">పాడడం లేదు</span></td><td>I'm not singing</td><td>verbal noun + <span class="mono">lēdu</span></td></tr>
+            </tbody>
+          </table>
+          <p style="margin-top:14px">Video 13 ends with exactly this four-way table for <span class="mono">pāḍu</span>, and it is the single most useful thing in the lesson:</p>
+          <div class="scroll">
+            <table class="para">
+              <thead><tr><th></th><th>Positive</th><th>Negative</th></tr></thead>
+              <tbody>
+                <tr><td class="pron">Present<small>right now</small></td><td class="form">pāḍutunnānu <span class="telc">పాడుతున్నాను</span></td><td class="form">pāḍaḍaṁ lēdu <span class="telc">పాడడం లేదు</span></td></tr>
+                <tr class="odd"><td class="pron">Past<small>finished</small></td><td class="form">pāḍānu <span class="telc">పాడాను</span></td><td class="form">pāḍalēdu <span class="telc">పాడలేదు</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p style="margin-top:14px">Four cells. Drill them as a block for every verb you care about — this is now the whole of what you can say about an action, and it covers most of ordinary conversation.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Two verbs in one sentence: the second one becomes a noun</h3>
+          <p>New syntax, and it reuses the <span class="mono">-ḍaṁ</span> you learned for the negative. <b>When a sentence has two verbs, the main one goes last and the other becomes a verbal noun.</b></p>
+          <span class="ex">nēnu telugu <span style="color:var(--amber)">māṭlāḍaḍaṁ</span> <span style="color:var(--cream)">nērchukunnānu</span> <span class="tel">నేను తెలుగు మాట్లాడడం నేర్చుకున్నాను</span><br><span class="en">— I have learned to speak Telugu · literally "I learned Telugu speaking"</span></span>
+          <p style="margin-top:14px">English says "learned <em>to speak</em>" with an infinitive. Telugu says "learned <em>speaking</em>" with a noun — the same <span class="mono">-ḍaṁ</span> form that <span class="mono">pāḍaḍaṁ lēdu</span> uses. One suffix, three jobs so far: negation, purpose (<span class="mono">-ḍāniki</span>), and now verb complements.</p>
+          <span class="ex">nēnu guitar <span style="color:var(--amber)">vāyinchaḍaṁ</span> <span style="color:var(--cream)">nērchukunnānu</span> <span class="en">— I have learned to play the guitar</span></span>
+          <p style="margin-top:14px"><b>This is the most productive single pattern in the lesson.</b> Any "I want to ___", "I started to ___", "I forgot to ___" will be built this way.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Time words come before the object, and don't need "in"</h3>
+          <p>Telugu word order inside the sentence is looser than the verb-final rule suggests, but adverbs of time have a normal home: <b>right after the subject, before the object</b>.</p>
+          <span class="ex">nēnu <span style="color:var(--flame)">ninna</span> yōgā chēsānu <span class="tel">నేను నిన్న యోగా చేసాను</span> <span class="en">— I did yoga yesterday</span></span>
+          <p style="margin-top:14px">And there is <b>no preposition</b>. English needs "<em>in</em> the morning"; Telugu just uses the time word: <span class="mono">podduna</span> is both "morning" and "in the morning". Adding <span class="mono">-lō</span> here would be wrong.</p>
+          <div class="vgrid" style="margin-top:16px">
+            <div class="vcell"><span class="en">yesterday</span><span class="inf">ninna</span><span class="tel">నిన్న</span></div>
+            <div class="vcell"><span class="en">morning / in the morning</span><span class="inf">podduna</span><span class="tel">పొద్దున</span></div>
+            <div class="vcell"><span class="en">afternoon</span><span class="inf">madhyāhnaṁ</span><span class="tel">మధ్యాహ్నం</span></div>
+            <div class="vcell"><span class="en">evening</span><span class="inf">sāyantraṁ</span><span class="tel">సాయంత్రం</span></div>
+            <div class="vcell"><span class="en">night</span><span class="inf">rātri</span><span class="tel">రాత్రి</span></div>
+            <div class="vcell"><span class="en">afterwards</span><span class="inf">tarvāta</span><span class="tel">తర్వాత</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>"I came home" takes the <span class="mono">-ki</span> that English drops</h3>
+          <p>English has an irregularity here that you have never noticed: you say "I went <em>to</em> the office" but "I came home", with no <em>to</em>. Telugu is regular — a destination always takes <span class="mono">-ki</span>.</p>
+          <span class="ex">nēnu <span style="color:var(--amber)">iṇṭiki</span> vachchānu <span class="tel">నేను ఇంటికి వచ్చాను</span> <span class="en">— I came home</span></span>
+          <p style="margin-top:14px">Note the stem too: <span class="mono">illu</span> <span class="telugu">ఇల్లు</span> is "house", but it becomes <span class="mono">iṇṭi-</span> before a case ending. Telugu nouns have oblique stems the way verbs do; <span class="mono">iṇṭiki</span> is the first one you meet, and it is high-frequency enough to learn whole.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Plurals in <span class="mono">-lu</span></h3>
+          <p>Slipped in without comment during the video-14 quiz: <span class="mono">pāṭa</span> <span class="telugu">పాట</span> is "song", <span class="mono">pāṭalu</span> <span class="telugu">పాటలు</span> is "songs". <span class="mono">-lu</span> is the general plural suffix.</p>
+          <p><b>Note what does <em>not</em> happen.</b> <span class="mono">vāḷḷu pāṭalu pāḍāru</span> — the verb agrees with the <em>subject</em> (<span class="mono">vāḷḷu</span>, hence <span class="mono">-ru</span>), and the plural object changes nothing. Same as English, but worth confirming because Telugu marks so much else on the verb.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="stems">
+  <div class="wrap">
+    <span class="eyebrow">The inventory</span>
+    <h2>Every root in the past tense</h2>
+    <p class="lede">All 35 verbs, first person, grouped by how the past stem is formed. <b>Read the last group carefully</b> — those are the ones no rule will generate for you.</p>
+
+    <div class="grp">
+      <h4>Regular · the root, minus its final vowel</h4>
+      <p>The majority. Drop the <span class="mono">-u</span> and add <span class="mono">-ānu</span>.</p>
+      <div class="vgrid">
+        <div class="vcell"><span class="en">play · āḍu</span><span class="inf">āḍānu</span><span class="tel">ఆడాను</span></div>
+        <div class="vcell"><span class="en">drink · tāgu</span><span class="inf">tāgānu</span><span class="tel">తాగాను</span></div>
+        <div class="vcell"><span class="en">sing · pāḍu</span><span class="inf">pāḍānu</span><span class="tel">పాడాను</span></div>
+        <div class="vcell"><span class="en">speak · māṭlāḍu</span><span class="inf">māṭlāḍānu</span><span class="tel">మాట్లాడాను</span></div>
+        <div class="vcell"><span class="en">tell · cheppu</span><span class="inf">cheppānu</span><span class="tel">చెప్పాను</span></div>
+        <div class="vcell"><span class="en">stop · āgu</span><span class="inf">āgānu</span><span class="tel">ఆగాను</span></div>
+        <div class="vcell"><span class="en">jump · gentu</span><span class="inf">gentānu</span><span class="tel">గెంతాను</span></div>
+        <div class="vcell"><span class="en">run · parugettu</span><span class="inf">parugettānu</span><span class="tel">పరుగెత్తాను</span></div>
+        <div class="vcell"><span class="en">teach · nērpinchu</span><span class="inf">nērpinchānu</span><span class="tel">నేర్పించాను</span></div>
+        <div class="vcell"><span class="en">play music · vāyinchu</span><span class="inf">vāyinchānu</span><span class="tel">వాయించాను</span></div>
+        <div class="vcell"><span class="en">love · prēminchu</span><span class="inf">prēminchānu</span><span class="tel">ప్రేమించాను</span></div>
+        <div class="vcell"><span class="en">go · veḷḷu</span><span class="inf">veḷḷānu</span><span class="tel">వెళ్ళాను</span></div>
+        <div class="vcell"><span class="en">hit · koṭṭu</span><span class="inf">koṭṭānu</span><span class="tel">కొట్టాను</span></div>
+      </div>
+      <p style="font-size:13.5px;color:var(--cream-dim);margin-top:12px">Two of these are worth noticing as <em>relief</em>: <span class="mono">veḷḷu</span> and <span class="mono">koṭṭu</span> are irregular in the present (<span class="mono">veḷtunnānu</span>, <span class="mono">koḍatunnānu</span>) and perfectly regular here.</p>
+    </div>
+
+    <div class="grp">
+      <h4>s-stem · same as the present</h4>
+      <p>The class the video says carries over, and it does.</p>
+      <div class="vgrid">
+        <div class="vcell"><span class="en">do, make · chēyi</span><span class="inf">chēsānu</span><span class="tel">చేసాను</span></div>
+        <div class="vcell"><span class="en">see, watch · chūḍu</span><span class="inf">chūsānu</span><span class="tel">చూసాను</span></div>
+        <div class="vcell"><span class="en">write · rāyi</span><span class="inf">rāsānu</span><span class="tel">రాసాను</span></div>
+      </div>
+      <p style="font-size:13.5px;color:var(--cream-dim);margin-top:12px">The video pauses on <span class="mono">chūḍu → chūsānu</span> — "why is the <em>da</em> sound replaced by a <em>sa</em> sound?" No reason you can use; it is just what this class does, and it does it in every tense.</p>
+    </div>
+
+    <div class="grp">
+      <h4>Nasal · the stem doubles its n</h4>
+      <p>Where the present went retroflex (<span class="mono">tiṇṭunnānu</span>), the past geminates instead. Different mechanism, same trigger.</p>
+      <div class="vgrid">
+        <div class="vcell"><span class="en">eat · tinu</span><span class="inf">tinnānu</span><span class="tel">తిన్నాను</span></div>
+        <div class="vcell"><span class="en">hear · vinu</span><span class="inf">vinnānu</span><span class="tel">విన్నాను</span></div>
+        <div class="vcell"><span class="en">say · anu</span><span class="inf">annānu</span><span class="tel">అన్నాను</span></div>
+        <div class="vcell warn"><span class="en">be, stay · uṇḍu</span><span class="inf">unnānu</span><span class="tel">ఉన్నాను</span></div>
+      </div>
+      <div class="flag">
+        <b>unnānu does double duty</b>
+        <span class="mono">unnānu</span> is the past of <span class="mono">uṇḍu</span> <em>and</em> the ordinary way to say "I am (here / located)". <span class="mono">nēnu iṇṭlō unnānu</span> is "I'm at home", present tense. Context separates them, and this is the one place in the tense system where that is genuinely ambiguous.
+      </div>
+    </div>
+
+    <div class="grp">
+      <h4>-kō reflexive · ō becomes -unn</h4>
+      <p>The other class that carries over from the present, near enough. <span class="mono">kūrchuṇṭunnānu</span> / <span class="mono">kūrchunnānu</span>.</p>
+      <div class="vgrid">
+        <div class="vcell"><span class="en">sit · kūrchō</span><span class="inf">kūrchunnānu</span><span class="tel">కూర్చున్నాను</span></div>
+        <div class="vcell"><span class="en">sleep · paḍukō</span><span class="inf">paḍukunnānu</span><span class="tel">పడుకున్నాను</span></div>
+        <div class="vcell"><span class="en">learn · nērchukō</span><span class="inf">nērchukunnānu</span><span class="tel">నేర్చుకున్నాను</span></div>
+        <div class="vcell"><span class="en">study · chaduvukō</span><span class="inf">chaduvukunnānu</span><span class="tel">చదువుకున్నాను</span></div>
+        <div class="vcell"><span class="en">take · tīsukō</span><span class="inf">tīsukunnānu</span><span class="tel">తీసుకున్నాను</span></div>
+        <div class="vcell"><span class="en">hold · paṭṭukō</span><span class="inf">paṭṭukunnānu</span><span class="tel">పట్టుకున్నాను</span></div>
+      </div>
+    </div>
+
+    <div class="grp">
+      <h4>Unpredictable · store these as words</h4>
+      <p>Nine verbs whose past stem you cannot derive from anything you already know. Learn them the way you learned <em>went</em>, <em>brought</em>, <em>caught</em> — as vocabulary, not as output of a rule.</p>
+      <div class="vgrid">
+        <div class="vcell warn"><span class="en">come · rā <span class="tag inf">suppletive</span></span><span class="inf">vachchānu</span><span class="tel">వచ్చాను</span></div>
+        <div class="vcell warn"><span class="en">give · ivvu</span><span class="inf">ichchānu</span><span class="tel">ఇచ్చాను</span></div>
+        <div class="vcell warn"><span class="en">read · chaduvu</span><span class="inf">chadivānu</span><span class="tel">చదివాను</span></div>
+        <div class="vcell warn"><span class="en">walk · naḍavu</span><span class="inf">naḍichānu</span><span class="tel">నడిచాను</span></div>
+        <div class="vcell warn"><span class="en">drive, lead · naḍupu</span><span class="inf">naḍipānu</span><span class="tel">నడిపాను</span></div>
+        <div class="vcell warn"><span class="en">throw · visiru</span><span class="inf">visirānu</span><span class="tel">విసిరాను</span></div>
+        <div class="vcell warn"><span class="en">fly · eguru</span><span class="inf">egirānu</span><span class="tel">ఎగిరాను</span></div>
+        <div class="vcell warn"><span class="en">stand · nilabaḍu</span><span class="inf">nilabaḍḍānu</span><span class="tel">నిలబడ్డాను</span></div>
+        <div class="vcell warn"><span class="en">dance · nāṭyaṁ chēyi</span><span class="inf">nāṭyaṁ chēsānu</span><span class="tel">నాట్యం చేసాను</span></div>
+      </div>
+      <p style="font-size:13.5px;color:var(--cream-dim);margin-top:12px">There is a faint pattern in four of them — <span class="mono">chaduvu/chadiv</span>, <span class="mono">naḍavu/naḍich</span>, <span class="mono">visiru/visir</span>, <span class="mono">eguru/egir</span> all shift a vowel to <span class="mono">i</span>. It is a real historical class but not reliable enough to lean on. Treat it as a memory hook, not a rule.</p>
+    </div>
+  </div>
+</section>
+
+<section id="persons">
+  <div class="wrap">
+    <span class="eyebrow">Video 14 · the full table</span>
+    <h2>All eight pronouns</h2>
+    <p class="lede"><b>The markers are the same ones you learned last lesson.</b> Only the she/it row differs from a straight copy, and it differs in the same direction — a contraction.</p>
+
+    <div class="scroll">
+    <table class="para">
+      <thead><tr><th>Pronoun</th><th style="text-align:center">Marker</th><th>āḍu — play</th><th>Telugu</th><th>vs present</th></tr></thead>
+      <tbody>
+        <tr><td class="pron">nēnu<small>I</small></td><td class="mk">-nu</td><td class="form">āḍānu</td><td class="telc">ఆడాను</td><td>same marker</td></tr>
+        <tr class="odd"><td class="pron">nuvvu<small>you — informal</small></td><td class="mk">-vu</td><td class="form">āḍāvu</td><td class="telc">ఆడావు</td><td>same marker</td></tr>
+        <tr><td class="pron">vāḍu / atanu<small>he</small></td><td class="mk">-ḍu</td><td class="form">āḍāḍu</td><td class="telc">ఆడాడు</td><td>same marker</td></tr>
+        <tr class="odd"><td class="pron">adi / āme<small>she</small></td><td class="mk">-di</td><td class="form">āḍindi <span class="tag inf">-i-, not -ā-</span></td><td class="telc">ఆడింది</td><td><span style="color:var(--flame)">the exception</span></td></tr>
+        <tr><td class="pron">mēmu / manamu<small>we</small></td><td class="mk">-mu</td><td class="form">āḍāmu</td><td class="telc">ఆడాము</td><td>same marker</td></tr>
+        <tr class="odd"><td class="pron">mīru · āyana · āviḍa · vāḷḷu<small>formal / plural</small></td><td class="mk">-ru</td><td class="form">āḍāru</td><td class="telc">ఆడారు</td><td>same marker</td></tr>
+        <tr><td class="pron">adi<small>it</small></td><td class="mk">-di</td><td class="form">āḍindi</td><td class="telc">ఆడింది</td><td>= she</td></tr>
+        <tr class="odd"><td class="pron">avi<small>they — non-human</small></td><td class="mk" style="color:var(--amber)">-yi <span class="tag for">exception</span></td><td class="form">āḍāyi</td><td class="telc">ఆడాయి</td><td>same exception</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="note-box">
+      <b>The she/it row eats the tense marker</b>
+      <p>Every other cell is <span class="mono">stem + ā + marker</span>. This one is <span class="mono">stem + <b>i</b> + ndi</span> — <span class="mono">āḍindi</span>, not <span class="mono">*āḍādi</span>. The same cell contracted in the present too (<span class="mono">āḍutōndi</span>, not <span class="mono">*āḍutunnadi</span>), for the same reason: it is the most-used cell in the language, because feminine and non-human share it.</p>
+      <p><b>Expect this cell to be irregular in every tense.</b> That is now a prediction you can carry into the future tense rather than a surprise.</p>
+    </div>
+
+    <p style="margin-top:24px;font-size:14.5px;color:var(--cream-dim);max-width:660px">Three verbs, drilled across the table the way video 14 does it:</p>
+
+    <div class="scroll">
+      <table class="para">
+        <thead><tr><th>Pronoun</th><th>played</th><th>worked</th><th>spoke</th></tr></thead>
+        <tbody>
+          <tr><td class="pron">nēnu</td><td class="form">āḍānu</td><td class="form">pani chēsānu</td><td class="form">māṭlāḍānu</td></tr>
+          <tr class="odd"><td class="pron">nuvvu</td><td class="form">āḍāvu</td><td class="form">pani chēsāvu</td><td class="form">māṭlāḍāvu</td></tr>
+          <tr><td class="pron">vāḍu / atanu</td><td class="form">āḍāḍu</td><td class="form">pani chēsāḍu</td><td class="form">māṭlāḍāḍu</td></tr>
+          <tr class="odd"><td class="pron">adi / āme</td><td class="form">āḍindi</td><td class="form">pani chēsindi</td><td class="form">māṭlāḍindi</td></tr>
+          <tr><td class="pron">mēmu / manamu</td><td class="form">āḍāmu</td><td class="form">pani chēsāmu</td><td class="form">māṭlāḍāmu</td></tr>
+          <tr class="odd"><td class="pron">mīru · āyana · āviḍa · vāḷḷu</td><td class="form">āḍāru</td><td class="form">pani chēsāru</td><td class="form">māṭlāḍāru</td></tr>
+          <tr><td class="pron">avi</td><td class="form">āḍāyi</td><td class="form">pani chēsāyi</td><td class="form">māṭlāḍāyi</td></tr>
+          <tr class="odd"><td class="pron"><b>any</b><small>negative</small></td><td class="form" style="color:var(--flame)">āḍalēdu</td><td class="form" style="color:var(--flame)">pani chēyalēdu</td><td class="form" style="color:var(--flame)">māṭlāḍalēdu</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:14px;font-size:13.5px;color:var(--cream-dim)">That last row is seven cells collapsing into one. It is the cheapest thing in Telugu grammar and worth exploiting: <b>when you are unsure of a past form, negate it.</b></p>
+  </div>
+</section>
+
+<section id="perfect">
+  <div class="wrap">
+    <span class="eyebrow">The part with no English equivalent</span>
+    <h2>Telugu has no perfect tense — and doesn't need one</h2>
+    <p class="lede">English distinguishes "I studied engineering" from "I have studied engineering". <b>Telugu uses one form for both</b>, and lets context do the work. This is the most useful thing in the lesson for a learner who is over-thinking.</p>
+
+    <table class="tbl">
+      <thead><tr><th>Telugu</th><th>Both of these</th></tr></thead>
+      <tbody>
+        <tr><td><span class="rom">nēnu injanīring chaduvukunnānu</span><br><span class="tel">నేను ఇంజనీరింగ్ చదువుకున్నాను</span></td><td>I studied engineering.<br>I have studied engineering.</td></tr>
+        <tr><td><span class="rom">nēnu telugu nērchukunnānu</span><br><span class="tel">నేను తెలుగు నేర్చుకున్నాను</span></td><td>I learned Telugu.<br>I have learned Telugu.</td></tr>
+        <tr><td><span class="rom">nēnu marketing lō pani chēsānu</span><br><span class="tel">నేను marketing లో పని చేసాను</span></td><td>I worked in marketing.<br>I have worked in marketing.</td></tr>
+      </tbody>
+    </table>
+
+    <p style="margin-top:20px;font-size:14.5px;color:var(--cream-dim);max-width:660px">The instructor's reasoning is worth keeping: nobody learns a language or a degree <em>yesterday</em>, so the "have" reading falls out of what the sentence is about. Telugu leaves it to be inferred rather than marking it.</p>
+
+    <div class="note-box win">
+      <b>This confirms a decision made earlier in this project</b>
+      <p>The <a href="../concepts/verb-forms-explained.md">verb forms deep dive</a> left the perfect out of the Verb Lab on the grounds that <em>"Telugu's perfect is not where English's 'have done' goes — most of the time English 'I have eaten' is just the plain past, <span class="mono">tinnānu</span>. Generating a 'perfect' column would teach a false equivalence."</em></p>
+      <p>The course now says the same thing outright. <b>Nothing to add to the Verb Lab.</b> Stop looking for a perfect tense; you already have it.</p>
+    </div>
+  </div>
+</section>
+
+<section id="sentences">
+  <div class="wrap">
+    <span class="eyebrow">Applying it</span>
+    <h2>Worked sentences from the lesson</h2>
+    <table class="tbl">
+      <thead><tr><th>Telugu</th><th>Meaning</th><th>What is happening</th></tr></thead>
+      <tbody>
+        <tr><td><span class="rom">nēnu ṭī tāgānu</span><br><span class="tel">నేను టీ తాగాను</span></td><td>I drank tea.</td><td>Regular past.</td></tr>
+        <tr><td><span class="rom">nēnu podduna ṭī tāgānu</span><br><span class="tel">నేను పొద్దున టీ తాగాను</span></td><td>I drank tea in the morning.</td><td>No word for "in". <span class="mono">podduna</span> alone carries it.</td></tr>
+        <tr><td><span class="rom">nēnu ninna yōgā chēsānu</span><br><span class="tel">నేను నిన్న యోగా చేసాను</span></td><td>I did yoga yesterday.</td><td>Time word before the object.</td></tr>
+        <tr><td><span class="rom">tarvāta nēnu ṭiphin tinnānu</span><br><span class="tel">తర్వాత నేను టిఫిన్ తిన్నాను</span></td><td>Afterwards I ate breakfast.</td><td>Nasal stem geminates: <span class="mono">tin- → tinn-</span>.</td></tr>
+        <tr><td><span class="rom">nēnu ninna āphīsuki veḷḷānu</span><br><span class="tel">నేను నిన్న ఆఫీసుకి వెళ్ళాను</span></td><td>I went to the office yesterday.</td><td>The English loan is said <span class="mono">āphīsu</span>. Destination takes <span class="mono">-ki</span>.</td></tr>
+        <tr><td><span class="rom">nēnu āphīsulō pani chēsānu</span><br><span class="tel">నేను ఆఫీసులో పని చేసాను</span></td><td>I worked in the office.</td><td><span class="mono">-lō</span> for location, <span class="mono">-ki</span> for destination.</td></tr>
+        <tr><td><span class="rom">nēnu madhyāhnaṁ bhōjanaṁ chēsānu</span><br><span class="tel">నేను మధ్యాహ్నం భోజనం చేసాను</span></td><td>I had lunch in the afternoon.</td><td>Still "doing" lunch, as in Lesson 8.</td></tr>
+        <tr><td><span class="rom">nēnu sāyantraṁ iṇṭiki vachchānu</span><br><span class="tel">నేను సాయంత్రం ఇంటికి వచ్చాను</span></td><td>I came home in the evening.</td><td>Suppletive stem, and <span class="mono">iṇṭiki</span> takes the <span class="mono">-ki</span> English omits.</td></tr>
+        <tr><td><span class="rom">nēnu phōnlō nā phreṇḍtō māṭlāḍānu</span><br><span class="tel">నేను ఫోన్‌లో నా ఫ్రెండ్‌తో మాట్లాడాను</span></td><td>I spoke with my friend on the phone.</td><td>Two postpositions in one sentence — <span class="mono">-lō</span> also means "on" for phones.</td></tr>
+        <tr><td><span class="rom">nēnu rātri match chūsānu</span><br><span class="tel">నేను రాత్రి match చూసాను</span></td><td>I watched the match at night.</td><td>s-stem past.</td></tr>
+        <tr><td><span class="rom">tarvāta nēnu paḍukunnānu</span><br><span class="tel">తర్వాత నేను పడుకున్నాను</span></td><td>Afterwards I slept.</td><td><span class="mono">-kō</span> reflexive past.</td></tr>
+        <tr class="grp"><td colspan="3">Negatives, paired with their positives</td></tr>
+        <tr><td><span class="rom">nēnu ninna basketball āḍalēdu</span><br><span class="tel">నేను నిన్న basketball ఆడలేదు</span></td><td>I didn't play basketball yesterday.</td><td rowspan="2">The negative uses the plain stem; the positive uses the past stem.</td></tr>
+        <tr><td><span class="rom">nēnu badminton āḍānu</span><br><span class="tel">నేను badminton ఆడాను</span></td><td>I played badminton.</td></tr>
+        <tr><td><span class="rom">nēnu nā pustakaṁ chadavalēdu</span><br><span class="tel">నేను నా పుస్తకం చదవలేదు</span></td><td>I didn't read my book.</td><td>Not <span class="mono">*chadivalēdu</span> — the irregular stem vanishes.</td></tr>
+        <tr class="grp"><td colspan="3">From the video-14 quiz</td></tr>
+        <tr><td><span class="rom">vāḷḷu pāṭalu pāḍāru</span><br><span class="tel">వాళ్ళు పాటలు పాడారు</span></td><td>They sang songs.</td><td>Plural object, subject agreement only.</td></tr>
+        <tr><td><span class="rom">Sunīta gāru iṇṭiki veḷḷāru</span><br><span class="tel">సునీత గారు ఇంటికి వెళ్ళారు</span></td><td>Sunita went home.</td><td><span class="mono">gāru</span> forces <span class="mono">-ru</span>, as in Lesson 8.</td></tr>
+        <tr><td><span class="rom">mīru paḍukōlēdu</span><br><span class="tel">మీరు పడుకోలేదు</span><br><span class="rom">nuvvu paḍukōlēdu</span><br><span class="tel">నువ్వు పడుకోలేదు</span></td><td>You didn't sleep — formal, then informal.</td><td>Identical verb. Only the pronoun carries register.</td></tr>
+      </tbody>
+    </table>
+
+    <div class="note-box win" style="margin-top:26px">
+      <b>The exercise the video sets you</b>
+      <p>Describe yesterday, broken down by time of day: <span class="mono">podduna</span> · <span class="mono">madhyāhnaṁ</span> · <span class="mono">sāyantraṁ</span> · <span class="mono">rātri</span>. Then go further back — where you have lived and worked, what you studied. <b>Everything is the <span class="mono">-ānu</span> ending.</b></p>
+      <p>This is the best free-production prompt the course has given so far. Do it aloud in your <a href="../../PRACTICE.md">daily block</a> and write down what you could not say.</p>
+    </div>
+  </div>
+</section>
+
+<section id="audit">
+  <div class="wrap">
+    <span class="eyebrow">Cross-check</span>
+    <h2>What this lesson found in the Verb Lab</h2>
+    <p class="lede">Second of the three authoritative paradigm statements in week 2. Nineteen forms are stated outright across the two videos — thirteen positives and six negatives — and the past stem is the one most likely to be wrong, since it is the least derivable.</p>
+
+    <div class="audit">
+      <h4>✓ Clean — 19 of 19</h4>
+      <p>Every form the course states matches the generator, including all the awkward ones: <span class="mono">vachchānu</span>, <span class="mono">kūrchunnānu</span>, <span class="mono">chadivānu</span>, <span class="mono">chūsānu</span>, <span class="mono">paḍukunnānu</span>, <span class="mono">nērchukunnānu</span>, <span class="mono">chaduvukunnānu</span>, and the negatives <span class="mono">chadavalēdu</span> and <span class="mono">paḍukōlēdu</span>.</p>
+      <p>The <span class="mono">pst</span> stem in <span class="mono">verbs.js</span> exists precisely because the past cannot be derived from the non-past, and this confirms it was worth storing separately for all 35 verbs.</p>
+    </div>
+
+    <div class="audit">
+      <h4>△ Same two gaps as last lesson, unchanged</h4>
+      <p>The <span class="mono">avi</span> row (<span class="mono">āḍāyi</span>) is still not drillable, and "we" is still <span class="mono">manaṁ</span> / <span class="mono">-āṁ</span> where the course teaches <span class="mono">manamu</span> / <span class="mono">-āmu</span>. Neither is wrong; both are noted in <span class="mono">review/verb-lab-audit.md</span>.</p>
+    </div>
+
+    <a class="question-link" href="../../GRAMMAR_LAB/index.html">
+      <span class="question-mark">?</span>
+      <span><h3>Now drill the four-cell block</h3><p>Present, past, and both negatives, across six persons. That is the core six minus the habitual — and with Lessons 8 and 9 done you can now say most of what ordinary conversation requires about any action.</p></span>
+      <span class="question-open">Open the Verb Lab</span>
+    </a>
+  </div>
+</section>
+
+<section id="captions">
+  <div class="wrap">
+    <span class="eyebrow">Provenance</span>
+    <h2>What the auto-captions actually said</h2>
+    <p class="lede">Video 13 opens by transcribing <span class="mono">namaskāraṁ</span> as <b>"Anarchy."</b> Raw text is in <span class="mono">sources/transcripts/week-02/</span>.</p>
+    <ul class="caption-list">
+      <li><span class="real">āḍānu</span> → <span class="heard">"Adorno"</span>, <span class="heard">"Arduino"</span></li>
+      <li><span class="real">āḍalēdu</span> → <span class="heard">"Ardleigh though"</span>, <span class="heard">"Adelardo"</span></li>
+      <li><span class="real">chēsānu</span> → <span class="heard">"chasanow"</span>, <span class="heard">"Chissano"</span></li>
+      <li><span class="real">vachchānu</span> → <span class="heard">"Vatsyayana"</span>, <span class="heard">"watch channel"</span></li>
+      <li><span class="real">paḍukunnānu</span> → <span class="heard">"Paducah Nano"</span></li>
+      <li><span class="real">rātri match chūsānu</span> → <span class="heard">"Ratira Matsuzono"</span></li>
+      <li><span class="real">tāgānu</span> → <span class="heard">"dagano"</span>, <span class="heard">"organo"</span>, <span class="heard">"to Ghana"</span></li>
+      <li><span class="real">podduna</span> → <span class="heard">"pudina"</span>, <span class="heard">"perdona"</span></li>
+      <li><span class="real">kūrchunnānu</span> → <span class="heard">"kucha nanu"</span></li>
+      <li><span class="real">nērchukunnānu</span> → <span class="heard">"nayako nanu"</span>, <span class="heard">"near nano"</span></li>
+      <li><span class="real">māṭlāḍaḍaṁ</span> → <span class="heard">"martyrdom"</span>, <span class="heard">"Matlab diderm"</span></li>
+      <li><span class="real">vāyinchaḍaṁ</span> → <span class="heard">"vine Saddam"</span></li>
+      <li><span class="real">pāḍalēdu</span> → <span class="heard">"perdido"</span></li>
+      <li><span class="real">madhyāhnaṁ</span> → <span class="heard">"madhyamam"</span></li>
+      <li><span class="real">sāyantraṁ</span> → <span class="heard">"Santham"</span></li>
+      <li><span class="real">āḍāvu</span> → <span class="heard">"ared avou"</span>, <span class="heard">"Nevada"</span></li>
+      <li><span class="real">veḷḷāru</span> → <span class="heard">"Varalaru Uru Uru Uru"</span></li>
+      <li><span class="real">namaskāraṁ</span> → <span class="heard">"Anarchy."</span></li>
+    </ul>
+  </div>
+</section>
+
+<section id="anki">
+  <div class="wrap">
+    <span class="eyebrow">For import</span>
+    <h2>Anki additions — your 5 fields</h2>
+    <p class="lede">This table is now parsed straight into <span class="mono">data/master_words.tsv</span> by <span class="mono">tools/adapters.py</span> — no retyping. Conjugated forms are deliberately absent; they belong in the Verb Lab.</p>
+    <div class="field-key">
+      <span><b>1</b> English (+ cue)</span><span><b>2</b> Romanized</span><span><b>3</b> Telugu script</span><span><b>4</b> Audio (blank)</span><span><b>5</b> Example</span>
+    </div>
+    <div class="anki-wrap">
+      <table class="anki">
+        <thead><tr><th class="f-en">English (with cue)</th><th>Romanized</th><th>Telugu</th><th style="text-align:center">Audio</th><th>Example sentence</th></tr></thead>
+        <tbody>
+          <tr class="sec"><td colspan="5">Times of day — the lesson's own practice set</td></tr>
+          <tr><td class="f-en">yesterday</td><td class="f-rom">ninna</td><td class="f-tel">నిన్న</td><td class="f-aud">[ ]</td><td class="f-ex">nēnu ninna yōgā chēsānu.</td></tr>
+          <tr><td class="f-en">morning, in the morning (no "in" needed)</td><td class="f-rom">podduna</td><td class="f-tel">పొద్దున</td><td class="f-aud">[ ]</td><td class="f-ex">nēnu podduna ṭī tāgānu.</td></tr>
+          <tr><td class="f-en">afternoon, in the afternoon</td><td class="f-rom">madhyāhnaṁ</td><td class="f-tel">మధ్యాహ్నం</td><td class="f-aud">[ ]</td><td class="f-ex">nēnu madhyāhnaṁ bhōjanaṁ chēsānu.</td></tr>
+          <tr><td class="f-en">evening, in the evening</td><td class="f-rom">sāyantraṁ</td><td class="f-tel">సాయంత్రం</td><td class="f-aud">[ ]</td><td class="f-ex">nēnu sāyantraṁ iṇṭiki vachchānu.</td></tr>
+          <tr><td class="f-en">night, at night</td><td class="f-rom">rātri</td><td class="f-tel">రాత్రి</td><td class="f-aud">[ ]</td><td class="f-ex">nēnu rātri match chūsānu.</td></tr>
+          <tr><td class="f-en">afterwards, later, after</td><td class="f-rom">tarvāta</td><td class="f-tel">తర్వాత</td><td class="f-aud">[ ]</td><td class="f-ex">tarvāta nēnu paḍukunnānu.</td></tr>
+          <tr class="sec"><td colspan="5">Nouns</td></tr>
+          <tr><td class="f-en">house, home (becomes iṇṭi- before an ending)</td><td class="f-rom">illu</td><td class="f-tel">ఇల్లు</td><td class="f-aud">[ ]</td><td class="f-ex">nēnu iṇṭiki vachchānu.</td></tr>
+          <tr><td class="f-en">to home, homewards (illu + -ki)</td><td class="f-rom">iṇṭiki</td><td class="f-tel">ఇంటికి</td><td class="f-aud">[ ]</td><td class="f-ex">Sunīta gāru iṇṭiki veḷḷāru.</td></tr>
+          <tr><td class="f-en">office (English loan, said āphīsu)</td><td class="f-rom">āphīsu</td><td class="f-tel">ఆఫీసు</td><td class="f-aud">[ ]</td><td class="f-ex">nēnu ninna āphīsuki veḷḷānu.</td></tr>
+          <tr><td class="f-en">songs (plural of pāṭa — the -lu plural)</td><td class="f-rom">pāṭalu</td><td class="f-tel">పాటలు</td><td class="f-aud">[ ]</td><td class="f-ex">vāḷḷu pāṭalu pāḍāru.</td></tr>
+          <tr class="sec"><td colspan="5">Grammar</td></tr>
+          <tr><td class="f-en">-lu — the general plural suffix</td><td class="f-rom">-lu</td><td class="f-tel">-లు</td><td class="f-aud">[ ]</td><td class="f-ex">pāṭa → pāṭalu</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="try">
+  <div class="wrap">
+    <span class="eyebrow">From the lesson</span>
+    <h2>Quick self-test</h2>
+    <p class="lede">Cover the green line and say each aloud.</p>
+    <ul class="try">
+      <li><span class="q">What changes between <span class="mono">āḍutunnānu</span> and <span class="mono">āḍānu</span>?</span><span class="a">Only the tense slot: -tunnā- becomes -ā-. The person marker -nu is untouched.</span></li>
+      <li><span class="q">Past of <span class="mono">chaduvu</span> — and why can't you guess it?</span><span class="a">chadivānu. The present is chaduvutunnānu; the past shifts the vowel to i. Unpredictable.</span></li>
+      <li><span class="q">Now negate it.</span><span class="a">chadavalēdu. The irregular stem disappears — the negative uses the plain stem.</span></li>
+      <li><span class="q">Say "I came home in the evening."</span><span class="a">nēnu sāyantraṁ iṇṭiki vachchānu.</span></li>
+      <li><span class="q">Why <span class="mono">iṇṭiki</span> and not <span class="mono">illu</span>?</span><span class="a">A destination takes -ki, and illu becomes the oblique stem iṇṭi- before an ending. English is the odd one for saying "came home" with no "to".</span></li>
+      <li><span class="q">Give all four cells for <span class="mono">pāḍu</span>: am singing, am not singing, sang, didn't sing.</span><span class="a">pāḍutunnānu · pāḍaḍaṁ lēdu · pāḍānu · pāḍalēdu</span></li>
+      <li><span class="q">"She played." Why isn't it <span class="mono">*āḍādi</span>?</span><span class="a">āḍindi. The she/it cell contracts in every tense — it's the most-used cell in the language.</span></li>
+      <li><span class="q">Say "I have learned to speak Telugu."</span><span class="a">nēnu telugu māṭlāḍaḍaṁ nērchukunnānu. — second verb becomes a -ḍaṁ noun, main verb last.</span></li>
+      <li><span class="q">How do you say "I have studied engineering" as opposed to "I studied engineering"?</span><span class="a">Identically. nēnu injanīring chaduvukunnānu. Telugu has no perfect tense.</span></li>
+      <li><span class="q">Say "I drank tea in the morning" — watch for a word you should NOT add.</span><span class="a">nēnu podduna ṭī tāgānu. No -lō. The time word carries "in" by itself.</span></li>
+      <li><span class="q">Your mother-in-law went home. Say it.</span><span class="a">... gāru iṇṭiki veḷḷāru. — gāru forces the -ru ending.</span></li>
+      <li><span class="q">Which is easier to get right, the past positive or the past negative — and why?</span><span class="a">Negative. One invariant form (verb + lēdu) for all eight pronouns, and it ignores the irregular past stems.</span></li>
+      <li><span class="q">Now describe your actual yesterday, four sentences, one per time of day.</span><span class="a">podduna ... / madhyāhnaṁ ... / sāyantraṁ ... / rātri ... — all ending -ānu.</span></li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><span class="mono">Foundational Telugu</span> · Lesson 9 · videos 13 &amp; 14, reconstructed against the <a href="../../GRAMMAR_LAB/index.html">Verb Lab</a> stems · raw captions in <span class="mono">sources/transcripts/week-02/</span></p>
+    <p><a href="lesson-08-present-continuous.html">← Lesson 8 · Present continuous</a> · <a href="../index.html">Course home</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,416 @@
+SOURCE: Udemy course, Week 2, video 14 — "Past Tense | Verb Conjugations for all pronouns" (12 min)
+CAPTURED: 2026-08-13
+STATUS: raw auto-generated captions, unedited. Reconstructed in
+        LEARNING_GUIDE/lessons/lesson-09-past-tense.html.
+NOTE:   second of the three authoritative paradigm statements used to audit
+        GRAMMAR_LAB/data/engine.js. Findings in review/verb-lab-audit.md.
+
+---
+
+Namaskaram.
+
+In the previous lesson, we learned how to conjugate verbs in the past tense in the first person, that
+
+is to say things like I played or I did, and so on.
+
+To do this, we use the suffix ano with a person marker no.
+
+Today we'll learn to use the past tense across all pronouns with all their respective person markers.
+
+Primarily, it is the person marker new that changes when we talk in the first person, or second person
+
+or third person, as per the pronoun.
+
+Everything else remains exactly the same.
+
+If you look at all the conjugations, you can see the person marker marked in green.
+
+It's quite easy to spot that the person marker exactly mirrors the last syllable of the pronouns.
+
+This is why verb conjugations in Telugu, although plenty in number, are very easy to follow because
+
+they exactly mirror the pronoun.
+
+So Nino, which means I, takes the past tense suffix ano.
+
+And we've seen this in the last video in detail.
+
+Nouveau takes the suffix a where vu comes from the last syllable of nouveau.
+
+The pattern repeats very similarly for the remaining pronouns with he that is vadu, we use ado, and
+
+it's the same for Athena, because Athena is also a singular masculine pronoun with she, that is adi,
+
+we use inde, and it's the same suffix that we use with ami as well.
+
+You'll observe here that the feminine suffix is a bit of an exception, and deviates slightly from the
+
+pattern of the remaining suffixes.
+
+The words for we are mamo and manamu, and the past tense conjugation becomes amu, where mu is derived
+
+from the last syllable of both mamo and manamu.
+
+For all the formal and plural pronouns miru, ayana, aveda, and vadu, we use the suffix aru, where
+
+ru derives from the root of miru.
+
+The neuter pronoun it, which is A.D., follows the exact same pattern as the feminine pronoun, so
+
+it has the suffix in the neuter plural pronoun for they has its own independent pronoun, which is av,
+
+and this has the suffix I.
+
+Now let's look at an example using an actual verb aadu, which means play.
+
+Pause the video and take a moment to try out Aadu according to all the different pronouns.
+
+The first person pronoun is Nino.
+
+We've seen this in detail in the last video, so I played becomes Nino.
+
+Danno.
+
+The word for you is nouvo, so the suffix is ared.
+
+So you played is nuvvu ared avou.
+
+He played.
+
+Takes the conjugation.
+
+In order to do so, the sentences are ordered and other ordered.
+
+She has two pronouns, adi and ami.
+
+It takes the conjugation ardinda.
+
+So are the ard in the ami ardinda.
+
+We, that is, mamu and Manamu has the person marker mu.
+
+So we played is Mamu Adamu or Manamu Adamo.
+
+All the formal or plural pronouns use the person marker ru derived from miru.
+
+So when you're speaking respectfully or formally, you played is mir ard arrow.
+
+He played his iron ard arrow.
+
+She played is ard arrow.
+
+They played is Vadu ard ru.
+
+The neuter pronouns are adi in the singular and avi in the plural.
+
+Addie is exactly same as the informal feminine pronoun, and its conjugation is exactly the same.
+
+So we get are the are in the they is, are we?
+
+And they played is are we are.
+
+The person marker for Avi is an exception, as we've seen in the present tense as well.
+
+It takes the person marker e, so we get ard.
+
+Note here that in all of these cases, the pronoun ends with a vowel and the verb starts with a vowel.
+
+So you'll see a liaison here when you speak these sentences fast.
+
+So Nanu ard becomes Nenad.
+
+Ano nuevo, ard becomes Nevada.
+
+What do I do?
+
+Ah, the ard in the army.
+
+ARD in the name.
+
+Adamo.
+
+Adamo.
+
+Miradero.
+
+Ion.
+
+ARD.
+
+Arrow.
+
+Avid.
+
+Arrow.
+
+White arrow.
+
+Ah!
+
+The ard in the.
+
+Ah!
+
+We are a.
+
+If the verb is played tennis, you get nano tennis, Arduino Nouveau tennis, Arduino Vadu or Athanu
+
+tennis.
+
+Aadu Adi or Aami tennis.
+
+Ardinda mimo tennis.
+
+Adamu miru tennis.
+
+Aard Aaru iena tennis.
+
+Arduino avida tennis.
+
+Ighodaro Vala tennis.
+
+Aard.
+
+Arrow.
+
+Ada.
+
+Tennis aard.
+
+Indi avi.
+
+Tennis.
+
+Aard.
+
+I.e..
+
+For the next example, let's use the verb worked, which is Paniki.
+
+Take a moment to try it out yourself.
+
+Remember that the verb che, when conjugated in different tenses, takes the form chase.
+
+I worked is neno sanu.
+
+You worked nuvvu Savo he worked vadu or Sadu.
+
+She worked adi or am pani Sindhi.
+
+We worked mamu or manamu panis samu in respectful situations.
+
+You worked is maru pani Cesaro.
+
+He worked in Saru.
+
+She worked Saru.
+
+They worked vadu pani.
+
+Cesaro knew to pronounce.
+
+It worked.
+
+They worked.
+
+Are we pani isi?
+
+For the next example, let's use mat ladoo, which means speak and let's say spoke in Telugu across
+
+the different pronouns.
+
+A hint I've already given is Telugu.
+
+Lo means in Telugu because the suffix lo means in.
+
+Pause this video and try the verb conjugations yourself.
+
+I spoke in Telugu.
+
+Telugu?
+
+You spoke in Telugu.
+
+Telugu.
+
+He spoke in Telugu.
+
+Telugu.
+
+Telugu.
+
+Telugu and Urdu.
+
+She spoke in Telugu.
+
+Telugu.
+
+Hindi.
+
+Telugu and Hindi.
+
+We spoke in Telugu.
+
+Telugu.
+
+Tamil.
+
+Telugu.
+
+Tamil.
+
+Let's look at the formal and plural conjugations.
+
+You spoke in Telugu?
+
+Mira.
+
+Telugu.
+
+He spoke in Telugu and Telugu.
+
+She spoke in Telugu.
+
+Telugu.
+
+They spoke in Telugu.
+
+Telugu and Urdu.
+
+Let's look at neuter pronouns here.
+
+Speaking in Telugu is a very human activity, so it might seem strange to use it with it.
+
+And they.
+
+But there are many situations where you might use something like this.
+
+Take the case of a GPS giving directions or a voice assistant speaking in Telugu, so it's not too hard
+
+to imagine it.
+
+Spoke in Telugu is Telugu Hindi, which is the same as the informal feminine form they spoke in Telugu
+
+when talking about neuter gender is Awadhi Telugu?
+
+Now let's look at negative verb conjugations in the past tense.
+
+Here it's extremely simple.
+
+We just add the suffix ledu, which means no or not.
+
+So I didn't play becomes nano.
+
+Oddly though, where we add ledu to the root verb aadu.
+
+Whether you're talking about.
+
+I didn't play, you didn't play, he didn't play, she didn't play, and so on.
+
+The conjugation is always odd.
+
+Similarly, the word for speak is martellato.
+
+The conjugation for all the pronouns is mottled.
+
+So I didn't speak is you didn't speak?
+
+No, he didn't speak.
+
+Vadu or she didn't speak?
+
+Adi or ami?
+
+We didn't speak.
+
+Mamu or Manu?
+
+Matlab with the formal or plural pronouns.
+
+Mere mortals and Matlab.
+
+Toledo.
+
+Toledo.
+
+Vala.
+
+Matlab and the neuter pronouns Matlab and Matlab.
+
+I hope you've got a fair idea of verb conjugations in the past tense.
+
+Both the positive forms of it and the negative forms of it.
+
+Now let's do a couple of exercises and test your Telugu.
+
+Try and translate this sentence.
+
+I'll give you a couple of hints.
+
+Waldo Paartalu Paderu Pata is the word for song.
+
+Paartalu is just the plural form and it means songs.
+
+Take a moment and try and guess the meaning of this sentence.
+
+This means they sang songs.
+
+Waldo is they.
+
+Paderu is the plural conjugation of Padu.
+
+Patalu.
+
+As I said, is.
+
+Songs.
+
+The word order, as usual, is different from English, where paderu, which means sang, comes at the
+
+end of the sentence.
+
+Next, Sunita went home.
+
+Here you just have to fill the conjugation of the verb vellu and observe that we have used Sunita.
+
+Garoo.
+
+Garoo is an honorific suffix.
+
+We use it when we want to refer to someone respectfully.
+
+It's very similar to sir or ma'am.
+
+However, it's used very commonly in Telugu.
+
+We being respectful to Sunita garu.
+
+Hence the conjugation is the respectful or formal form which is Varalaru Uru Uru Uru.
+
+Next, let's try the negative verb conjugations in the past tense.
+
+Try to guess the Telugu sentence for.
+
+You didn't sleep in the formal version as well as informal version.
+
+I'll give you a hint.
+
+The formal version of you is Miro, and the informal version of you is Nouveau.
+
+The word for sleep is paduka, and the past tense conjugation is very simple.
+
+We just add the word for not, which is ledu.
+
+So formally the sentence would be miro colado and informally the sentence would be nouveau paduka.
+
+That's it for today's lesson on the past tense.
+
+In the next videos, we have a couple of delightful stories, after which we'll look into the future
+
+tense.
+
+Thank you.
+
+Dhanyavad.
+
+Hello.

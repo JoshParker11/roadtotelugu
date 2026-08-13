@@ -79,11 +79,36 @@ that the ending cannot distinguish inclusive from exclusive — only the pronoun
 
 ---
 
-## Past — video 14
+## Past — videos 13 & 14, audited 2026-08-13
 
-Not yet audited. The past stem is the one that varies most from the root, so this is the audit
-with the highest chance of finding a real error.
+**Verdict: clean. 19 of 19 course-attested forms match.**
+
+This was the audit most likely to find something — the past stem is the least derivable part of
+the paradigm, which is why `verbs.js` stores `pst` separately for all 35 verbs rather than
+computing it. Thirteen positives and six negatives are stated outright across the two videos,
+including every awkward case: `vachchānu`, `kūrchunnānu`, `chadivānu`, `chūsānu`,
+`paḍukunnānu`, `nērchukunnānu`, `chaduvukunnānu`, and the negatives `chadavalēdu` and
+`paḍukōlēdu`. All correct.
+
+One thing the course gets wrong that the Verb Lab gets right: video 13 says the stem exceptions
+"are the same as the ones we saw in the previous lesson on the present tense". True for the
+s-stem and `-kō` classes, false for nine verbs — `chaduvu`/`chadiv`, `naḍavu`/`naḍich`,
+`ivvu`/`ichch`, `rā`/`vachch`, `nilabaḍu`/`nilabaḍḍ`, `visiru`/`visir`, `eguru`/`egir`,
+`naḍupu`/`naḍip`, plus the `nāṭyaṁ chēyi` compound. The separate `pst` stem was the right call.
+
+No change needed. Confirms one existing decision too: the course states outright that Telugu
+does not distinguish the perfect from the simple past, which is exactly why
+`concepts/verb-forms-explained.md` left it out of the Verb Lab.
 
 ## Habitual & future — video 19
 
 Not yet audited.
+
+---
+
+## Standing gaps, unchanged after two audits
+
+- **The `avi` row** (non-human plural, `-tunnāyi` / `-āyi`) is not drillable. Six persons drilled,
+  eight taught.
+- **"We" is `manaṁ` / `-āṁ`** where the course teaches `manamu` / `mēmu` with `-āmu`. Same cell,
+  colloquial vs careful register.
