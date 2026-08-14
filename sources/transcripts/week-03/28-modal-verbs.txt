@@ -1,0 +1,8 @@
+SOURCE: Udemy course, Week 3 — modal verbs: can, cannot, must, must not, want to, don't want to.
+CAPTURED: 2026-08-14
+STATUS: raw auto-generated captions, unedited. Reconstructed in
+        LEARNING_GUIDE/lessons/lesson-19-modals.html.
+NOTE:   -galanu is transcribed as "galeno" and then as "Gullah, Gullah, Gullah" when the
+        instructor runs the person markers; -kūḍadu as "kudzu", "koudou" and "acuerdo";
+        chēyalēnu as "Jay Leno" throughout. This video is why the Verb Lab's `can` was
+        corrected from person-invariant to inflecting.

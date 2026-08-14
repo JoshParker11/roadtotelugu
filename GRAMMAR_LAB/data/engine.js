@@ -84,9 +84,24 @@ const FORMS = [
   { id:'must',    person:true, invariant:true, label:'Obligation — must', short:'must ___',
     gloss:'-āli on the long infinitive. Person-invariant, like the negative past: who must do it is carried by the pronoun.',
     en:p => `${p.enSub} must §`, tier:2 },
-  { id:'can',     person:false, label:'Ability — can',       short:'can ___',
-    gloss:'-galanu on the short-a stem. Shown in the “I” form; the ending changes with person like any other.',
-    en:() => `I can §`, tier:2 },
+  /* The modals, from the course's modal-verb video. Only can/cannot inflect for person; the
+     other four are the same for every subject, which the video states outright. `cannot` is
+     the inflected lēdu again — the same lēnu/lēvu/lēḍu/lēru set that uṇḍu's negative uses. */
+  { id:'can',     person:true, label:'Ability — can',       short:'can ___',
+    gloss:'-gala on the short-a stem, then the ordinary person endings. chēyagalanu, chēyagalavu, chēyagaladu.',
+    en:p => `${p.enSub} can §`, tier:2 },
+  { id:'cannot',  person:true, label:'Inability — cannot',  short:"can't ___",
+    gloss:'-lē plus the person endings: chēyalēnu, chēyalēvu, chēyalēru. That is lēdu itself taking person markers, exactly as it does for uṇḍu.',
+    en:p => `${p.enSub} cannot §`, tier:2 },
+  { id:'mustNot', person:true, invariant:true, label:'Prohibition — must not', short:"must not ___",
+    gloss:'-kūḍadu on the short-a stem. One form for every person. Stronger than the prohibitive -ku: this is “ought not”, not “don’t”.',
+    en:p => `${p.enSub} must not §`, tier:2 },
+  { id:'wantTo',  person:true, invariant:true, label:'Desire — want to', short:'want to ___',
+    gloss:'The obligation form plus ani undi — literally “it is that [I] should”. Takes a dative subject: nāku chēyālani undi, never nēnu.',
+    en:p => `${p.enSub} want${p.id === 'he' || p.id === 'she' ? 's' : ''} to §`, tier:2 },
+  { id:'dontWant', person:true, invariant:true, label:'Desire — don’t want to', short:"don't want to ___",
+    gloss:'Same frame with lēdu in place of undi. Also a dative subject.',
+    en:p => `${p.enSub} ${p.id === 'he' || p.id === 'she' ? 'does' : 'do'} not want to §`, tier:2 },
   { id:'purpose', person:false, label:'Purposive — in order to', short:'to ___',
     gloss:'-ḍāniki, “for the purpose of”. The way to attach a reason to any sentence.',
     en:() => `in order to §`, tier:3 },
@@ -144,7 +159,11 @@ function conjugate(v, formId, pi){
       case 'prohibPol': return join(v.neg, ['kaṇḍi','కండి']);
       case 'hort':      return v.hort;
       case 'must':      return join(v.inf, ['li','లి']);
-      case 'can':       return join(v.a, ['galanu','గలను']);
+      case 'can':       return join(v.a, ['gala','గల'], END.neg[pi]);
+      case 'cannot':    return join(v.a, ['lē','లే'], END.neg[pi]);
+      case 'mustNot':   return join(v.a, ['kūḍadu','కూడదు']);
+      case 'wantTo':    return join(v.inf, ['lani undi','లని ఉంది']);
+      case 'dontWant':  return join(v.inf, ['lani lēdu','లని లేదు']);
       case 'purpose':   return join(shorten(v.inf), ['ḍāniki','డానికి']);
       case 'cond':      return join(v.np, v.T, ['ē','ే']);
       default:          return null;
@@ -214,8 +233,8 @@ function segment(v, formId, pi){
   if (['future','present','cond'].includes(formId)) stem = v.np;
   else if (formId === 'past') stem = (pi === 3 && v.T[0] === 'ṭ') ? v.np : v.pst;
   else if (['negFuture','negPast','prohibFam','prohibPol','immFuture'].includes(formId)) stem = v.neg;
-  else if (['impPol','can'].includes(formId)) stem = v.a;
-  else if (formId === 'must') stem = v.inf;
+  else if (['impPol','can','cannot','mustNot'].includes(formId)) stem = v.a;
+  else if (['must','wantTo','dontWant'].includes(formId)) stem = v.inf;
   else if (['purpose','negPresent'].includes(formId)) stem = shorten(v.inf);
   if (!stem || (v.ov && v.ov[formId])) return { whole: full };
   const pre = v.pre ? v.pre[0] : '';

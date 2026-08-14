@@ -16,7 +16,7 @@ const Lab = (() => {
             forms:['future','present','past','negFuture','negPast','negPresent'] },
     moods:{ label:'Core six + moods',
             blurb:'Adds the immediate future, the imperatives, prohibitives, let’s, must and can. This is the everyday working set.',
-            forms:['future','present','past','negFuture','negPast','negPresent','immFuture','impFam','impPol','prohibFam','prohibPol','hort','must','can'] },
+            forms:['future','present','past','negFuture','negPast','negPresent','immFuture','impFam','impPol','prohibFam','prohibPol','hort','must','mustNot','can','cannot','wantTo','dontWant'] },
     all:  { label:'Everything',
             blurb:'Adds the purposive and the conditional. The conditional is the least settled form here.',
             forms:null }
