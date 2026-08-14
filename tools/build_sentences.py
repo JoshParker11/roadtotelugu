@@ -68,6 +68,51 @@ def load_known():
     return exact, stems, verbforms
 
 
+def unglue(rom, tel, free):
+    """Split tokens where two free-standing words were typed without a space.
+
+    176 of these came in with the book and the old Anki decks — `nēnuichchānu` for `nēnu
+    ichchānu`, `nuvvuveḷḷu` for `nuvvu veḷḷu`. They matter beyond tidiness: the four-letter stem
+    rule matches the first half, so a glued token silently counts as *known* and inflates every
+    coverage figure the study order is built from.
+
+    A split is only made when **both** halves are free-standing words in the master. That guard
+    is what keeps `tīsukōṇḍi` and `vaddaṇḍi` intact — their second half, `-ṇḍi`, is a bound
+    suffix, not a word. Only the romanization is split; the Telugu script is left alone, since
+    Telugu writes these together often enough that respacing it would be a guess."""
+    out = []
+    for tok in rom.split():
+        f = fold(tok)
+        if len(f) < 8 or f in free:
+            out.append(tok); continue
+        cut = next((i for i in range(3, len(f) - 2) if f[:i] in free and f[i:] in free), None)
+        if cut is None:
+            out.append(tok); continue
+        # map the fold offset back onto the original spelling, diacritics intact
+        n = 0
+        for k, ch in enumerate(tok):
+            if fold(ch):
+                n += 1
+            if n == cut:
+                out.extend([tok[:k + 1], tok[k + 1:]]); break
+        else:
+            out.append(tok)
+    return ' '.join(out)
+
+
+def free_words():
+    """Words that can stand alone — bound suffixes excluded, since a suffix is not a word."""
+    free = set()
+    if os.path.exists(WORDS):
+        for r in csv.DictReader(open(WORDS, encoding='utf-8'), delimiter='\t'):
+            if 'bound-suffix' in (r['flags'] or ''):
+                continue
+            f = fold(r['roman'])
+            if f:
+                free.add(f)
+    return free
+
+
 def is_known(tok_rom, tok_te, known):
     exact, stems, verbforms = known
     f = fold(tok_rom)
@@ -80,6 +125,7 @@ def is_known(tok_rom, tok_te, known):
 
 def main():
     known = load_known()
+    free = free_words()
     records = []
     for name in ('site', 'anki', 'book1000'):
         got = adapters.ALL_SENT[name]()
@@ -110,6 +156,14 @@ def main():
                        'rank': r.get('rank', ''), 'notes': r.get('notes', ''),
                        'pronunciation': r.get('pronunciation', ''),
                        'island': r.get('island', ''), 'flags': set()}
+
+    unglued = 0
+    for m in merged.values():
+        fixed = unglue(m['roman'], m['telugu'], free)
+        if fixed != m['roman']:
+            m['roman'] = fixed
+            m['flags'].add('respaced')
+            unglued += 1
 
     for m in merged.values():
         # one prompt per card: a sentence has one meaning, however many ways it was typed
@@ -173,6 +227,7 @@ def main():
     band = defaultdict(int)
     for r in rows:
         band[min(100, (r['known_pct'] // 20) * 20)] += 1
+    print(f'\n  respaced {unglued} glued tokens (nēnuichchānu -> nēnu ichchānu)')
     print(f'\n  master: {len(rows)} sentences -> {os.path.relpath(OUT, ROOT)}')
     print('    flags     :', dict(fc) or 'none')
     print('    known-word coverage:', {f'{k}-{k+19}%': v for k, v in sorted(band.items())})

@@ -123,6 +123,17 @@ def main():
 
     words, sents = read(os.path.join(DATA, 'master_words.tsv')), read(os.path.join(DATA, 'master_sentences.tsv'))
 
+    # File order is the order Anki assigns new-card positions in, so it *is* the study order.
+    # tools/sequence.py computes it: words greedily by how many sentences each one finishes,
+    # sentences by the day their last unknown word arrives. Anything sequence.py could not
+    # place — a word held back by a flag, a sentence needing vocabulary we do not have — sorts
+    # to the end rather than being dropped.
+    def seq(r, key):
+        v = r.get(key, '')
+        return int(v) if str(v).isdigit() else 10 ** 6
+    words.sort(key=lambda r: seq(r, 'study_order'))
+    sents.sort(key=lambda r: (seq(r, 'unlock_order'), seq(r, 'known_pct') and -int(r['known_pct'] or 0)))
+
     wout, wheld = [], 0
     for r in words:
         if not a.include_flagged and (BLOCK_W & set(r['flags'].split())):
@@ -147,6 +158,19 @@ def main():
         r['Tags'] += f' set::{i // 50 + 1:03d}'
     for i, r in enumerate(sout):
         r['Tags'] += f' set::{i // 50 + 1:03d}'
+    # day::NNN is the projected day this item comes up at 15 words/day — the handle for
+    # "give me only what I can already read" filtered decks.
+    for r, src in list(zip(wout, [w for w in words if w['guid'] in {x['guid'] for x in wout}])):
+        pass
+    wmap = {r['guid']: r for r in words}
+    smap = {r['guid']: r for r in sents}
+    for r in wout:
+        d = wmap[r['guid']].get('study_day', '')
+        if str(d).isdigit():
+            r['Tags'] += f' day::{int(d):03d}'
+    for r in sout:
+        d = smap[r['guid']].get('unlock_day', '')
+        r['Tags'] += f' day::{int(d):03d}' if str(d).isdigit() else ' day::later'
 
     wcols = ['guid', 'English', 'Romanized', 'TeluguScript', 'Audio', 'Example', 'Tags']
     scols = ['guid', 'English', 'EnglishAudio', 'Romanized', 'Telugu', 'Audio', 'Notes', 'Tags']

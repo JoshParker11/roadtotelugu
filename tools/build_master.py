@@ -33,7 +33,8 @@ VERBFORMS = json.load(open(os.path.join(HERE, 'verbforms.json'), encoding='utf-8
 
 # Bound morphemes: real and worth learning, but they are suffixes, not free-standing words.
 # A flashcard "in = లో" teaches a preposition Telugu does not have.
-BOUND = {'గా','న','తో','కు','కి','లో','ది','ను','నుండి','వరకు','లాగా','పై','చే','యొక్క','కూడా'}
+BOUND = {'గా','న','తో','కు','కి','లో','ది','ను','నుండి','వరకు','లాగా','పై','చే','యొక్క','కూడా',
+         'ండి','డం','తున్నా','లు','బోతున్నాను'}
 
 # Inflected endings that mark a finite verb rather than a dictionary headword.
 INFLECTED_END = ('ింది','ాడు','ారు','ాను','ావు','ాము','ాయి','ుంది','ండి','తాను','తాడు','న్నాను','న్నారు')
@@ -148,6 +149,10 @@ def reconcile_typos(merged):
 def classify(rec):
     flags = []
     te, rom, en = rec['telugu'], rec['roman'], rec['english']
+    # A leading hyphen is how the old decks wrote a suffix (-లో, -ండి). Strip it before the
+    # lookup, or those rows read as free-standing words — which let the sentence respacer split
+    # tīsukōṇḍi into "tīsukō ṇḍi".
+    te = te.lstrip('-')
     if te and te in BOUND:
         flags.append('bound-suffix')
     if te and te.endswith(INFLECTED_END) and te not in BOUND:
