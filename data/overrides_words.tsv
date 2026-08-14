@@ -3,3 +3,6 @@ telugu	action	english	example	notes	reason
 ది	drop				Telugu has no definite article. "the = ది" is an artefact of translating an English frequency list word by word.
 తను	drop				The book prints తను for "eat", but తను is "himself/herself" — తిను is eat. Surfaced by tools/minimal_pairs.py as a bogus tanu/tānu contrast.
 భోజనం	edit	full meal, lunch (pairs with chēyi)	nēnu bhōjanaṁ chēstunnānu	Three words where English says "meal": tiṇḍi = snack, bhōjanaṁ = full meal/lunch, ṭiphin = breakfast.	Generated gloss was "food / meal; MealsBhojanam" — the second half is a source's own header row leaking through. Surfaced while writing lesson 8.
+ऊदా	drop				Devanagari script, not Telugu — junk row from the old decks
+కీ	drop				fold collision with the dative -ki; not worth a card
+ఆ	edit	that (far demonstrative — ā pustakaṁ, "that book")	ā pustakaṁ balla mīda undi		The old deck glossed it "um... (pause filler)". It is the far demonstrative, pair of ī. Frequency put it at position 9, so it would have been the ninth word learned.

@@ -26,6 +26,20 @@ with four other unknowns. So the ordering is greedy on marginal unlock: repeated
 that moves the most sentences to fully-known, breaking ties on frequency. Both orderings are
 computed and compared on every run, so the choice stays evidence-based rather than assumed.
 
+THE ORDER IS APPEND-ONLY ONCE SET
+A word that already carries a `study_order` keeps it. New words are appended after the highest
+existing position, in greedy order among themselves. This is deliberate and it is not an
+optimisation: re-sorting the whole list every time vocabulary is added would renumber cards the
+learner has already met, and the only way to make Anki honour a new order is to delete and
+re-import, which destroys scheduling. Append-only means new material costs one import that adds
+cards and touches nothing else.
+
+It also keeps the path linear, which matters for reconstructing it later: "word 312 came on day
+21" stays true forever instead of being rewritten by a rebuild six weeks from now.
+
+`--reorder` forces a full recompute. That is correct exactly once, before the first import, and
+a mistake after it.
+
 THE FREQUENCY SIGNAL IS WEIGHTED
 Two corpora, and they are not equally relevant. The sentence master is course and textbook
 material. `sources/private/conversations/` is 513 lines of the learner's own family talking,
@@ -156,11 +170,21 @@ def score_words(words, sents, fam):
     return out
 
 
-def greedy_order(eligible, reqs, score):
-    """Repeatedly take the word that finishes the most sentences; ties go to frequency.
+def greedy_order(eligible, reqs, score, k=12):
+    """Order by `frequency + k × sentences-this-word-would-finish`, recomputed each step.
+
+    Pure greedy on unlock alone looked better on the headline curve and was badly wrong. A word
+    only scores if it *finishes* a sentence, so words appearing solely in sentences that can
+    never unlock — 53% of the corpus is blocked by missing vocabulary — score zero forever and
+    sink below every rare word that happened to complete one short sentence. It buried `nāku`,
+    the second most frequent token in the corpus, at position 727.
+
+    Combining the two fixes it: k is how many occurrences one finished sentence is worth. At
+    k=12 a word that completes a sentence outranks a word seen a dozen times, which is about
+    right, and high-frequency words can no longer be deferred indefinitely by a corpus artefact.
 
     Kept tractable by an inverted index from word to the sentences still waiting on it, and by
-    only recomputing gain for words that a just-satisfied sentence touched."""
+    only recomputing gain for the words a just-satisfied sentence touched."""
     waiting = defaultdict(set)          # word index -> sentences still needing it
     remaining = {}                      # sentence -> count of its words not yet taken
     for si, (need, gaps) in enumerate(reqs):
@@ -178,7 +202,7 @@ def greedy_order(eligible, reqs, score):
     order, taken = [], set()
     pool = set(eligible)
     while pool:
-        best = max(pool, key=lambda wi: (gain.get(wi, 0), score[wi], -wi))
+        best = max(pool, key=lambda wi: (score[wi] + k * gain.get(wi, 0), -wi))
         order.append(best); pool.discard(best); taken.add(best)
         for si in list(waiting.get(best, ())):
             remaining[si] -= 1
@@ -210,10 +234,34 @@ def curve(order, reqs, points):
     return out
 
 
+def apply_existing(words, order):
+    """Keep every position already assigned; append the rest after the last one."""
+    fixed = {i: int(w['study_order']) for i, w in enumerate(words)
+             if str(w.get('study_order', '')).isdigit()}
+    if not fixed:
+        return order, 0
+    nxt = max(fixed.values())
+    out = [None] * (nxt + 1)
+    for i, p in fixed.items():
+        if p - 1 < len(out):
+            out[p - 1] = i
+    appended = 0
+    for wi in order:
+        if wi in fixed:
+            continue
+        out.append(wi); appended += 1
+    return [wi for wi in out if wi is not None], appended
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--dry', action='store_true', help='compare orderings, write nothing')
+    ap.add_argument('--reorder', action='store_true',
+                    help='discard existing positions and re-sort everything. Correct once, '
+                         'before the first import; destroys deck order afterwards.')
     ap.add_argument('--rate', type=int, default=WORDS_PER_DAY)
+    ap.add_argument('--k', type=int, default=12,
+                    help='occurrences one finished sentence is worth')
     ap.add_argument('--day', type=int, help='list what unlocks on this day')
     a = ap.parse_args()
 
@@ -229,7 +277,7 @@ def main():
 
     ingest = eligible
     byfreq = sorted(eligible, key=lambda i: (-score[i], i))
-    greedy = greedy_order(eligible, reqs, score)
+    greedy = greedy_order(eligible, reqs, score, a.k)
 
     pts = [45, 150, 300, 450, 900, 1500]
     print(f'\n{"words":>6}{"day":>5}   {"ingestion":>16}{"frequency":>16}{"greedy":>16}   (fully known / +1 away)')
@@ -238,6 +286,13 @@ def main():
         print(f'{n:>6}{n // a.rate:>5}   {f0:>7} /{n0:>6}   {f1:>7} /{n1:>6}   {f2:>7} /{n2:>6}')
 
     best = greedy
+    if not a.reorder:
+        best, appended = apply_existing(words, greedy)
+        if appended:
+            print(f'\n  {appended} new words appended after position '
+                  f'{len(best) - appended}; existing positions untouched')
+        elif any(str(w.get('study_order', '')).isdigit() for w in words):
+            print('\n  order unchanged (append-only; use --reorder to re-sort from scratch)')
     if a.day:
         pos = {wi: k for k, wi in enumerate(best)}
         show_day(words, sents, reqs, pos, a.day, a.rate)
