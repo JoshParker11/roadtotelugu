@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Telugu · Lesson 17 — Postpositions: -ki and -ni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+Telugu:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#191915;--ink-2:#22221d;--ink-3:#2c2c25;
+  --cream:#f1ece0;--cream-dim:#b9b3a4;
+  --amber:#e8a33d;--moss:#8fa37e;--flame:#d96c47;
+  --line:rgba(241,236,224,.12);--radius:14px;--max:1000px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{background:var(--ink);color:var(--cream);font-family:'Inter',sans-serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.telugu{font-family:'Noto Sans Telugu','Inter',sans-serif}
+.mono{font-family:'JetBrains Mono',monospace}
+h1,h2,h3{font-family:'Young Serif',serif;font-weight:400;line-height:1.15}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+section{padding:72px 0;border-top:1px solid var(--line)}
+.eyebrow{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--amber);margin-bottom:14px;display:block}
+h2{font-size:clamp(26px,4.2vw,36px);margin-bottom:14px}
+.lede{color:var(--cream-dim);max-width:660px;font-size:16.5px}
+.lede b{color:var(--cream)}
+a{color:var(--amber)}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:4px}
+
+nav{position:sticky;top:0;z-index:50;background:rgba(25,25,21,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+.logo{font-family:'JetBrains Mono',monospace;font-size:13.5px;font-weight:700;color:var(--cream);text-decoration:none}
+.logo span{color:var(--amber)}
+nav ul{display:flex;gap:20px;list-style:none}
+nav ul a{color:var(--cream-dim);text-decoration:none;font-size:13px;font-weight:500}
+nav ul a:hover{color:var(--amber)}
+@media(max-width:720px){nav ul{display:none}}
+.home-crumb{display:inline-block;margin-bottom:18px;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--cream-dim);text-decoration:none}
+.home-crumb:hover{color:var(--amber)}
+
+header.hero{padding:80px 0 64px;position:relative;overflow:hidden}
+.hero-glyph{position:absolute;right:-30px;top:-70px;font-family:'Noto Sans Telugu',sans-serif;font-size:clamp(260px,40vw,480px);line-height:1;color:rgba(232,163,61,.05);user-select:none;pointer-events:none}
+.hero h1{font-size:clamp(34px,6vw,58px);margin:8px 0 10px;color:var(--cream)}
+.hero h1 em{color:var(--amber);font-style:normal}
+.hero p{max-width:620px;color:var(--cream-dim);font-size:17px}
+
+.note-box{background:rgba(217,108,71,.07);border:1px solid rgba(217,108,71,.3);border-radius:var(--radius);padding:20px 24px;margin-top:30px;max-width:720px}
+.note-box b{color:var(--flame);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;display:block;margin-bottom:8px}
+.note-box p{font-size:14px;color:var(--cream-dim)}
+.note-box p+p{margin-top:10px}
+.note-box.win{background:rgba(143,163,126,.08);border-color:rgba(143,163,126,.32)}
+.note-box.win b{color:var(--moss)}
+
+/* rule blocks */
+.rule{border-top:1px solid var(--line);padding:30px 0;display:grid;grid-template-columns:52px 1fr;gap:20px;counter-increment:r}
+.rules{counter-reset:r;margin-top:20px}
+.rule::before{content:counter(r,decimal-leading-zero);font-family:'JetBrains Mono',monospace;font-size:14px;color:var(--flame);padding-top:4px}
+.rule h3{font-size:19px;font-family:'Inter',sans-serif;font-weight:600;margin-bottom:8px;color:var(--cream)}
+.rule p{font-size:14.5px;color:var(--cream-dim);max-width:640px}
+.rule p+p{margin-top:10px}
+.rule b{color:var(--cream)}
+.ex{margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:14px;color:var(--moss);background:var(--ink-2);border:1px solid var(--line);border-radius:8px;padding:12px 16px;display:inline-block}
+.ex .en{color:var(--cream-dim);font-family:'Inter',sans-serif}
+.ex .tel{font-family:'Noto Sans Telugu',sans-serif;color:var(--cream)}
+.flag{margin-top:14px;border-left:3px solid var(--flame);background:rgba(217,108,71,.07);padding:11px 14px;font-size:13px;color:var(--cream-dim);border-radius:0 8px 8px 0}
+.flag b{color:var(--flame);font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;display:block;margin-bottom:5px}
+.flag.ok{border-left-color:var(--moss);background:rgba(143,163,126,.08)}
+.flag.ok b{color:var(--moss)}
+
+/* morpheme chips */
+.morph-row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:16px 0}
+.morph{border-radius:9px;padding:9px 14px;font-family:'JetBrains Mono',monospace;text-align:center;min-width:74px}
+.morph .p{font-size:16px;font-weight:700;display:block}
+.morph .r{font-size:9px;letter-spacing:.1em;text-transform:uppercase;opacity:.75;margin-top:3px;display:block}
+.morph.subj{background:rgba(232,163,61,.14);color:var(--amber);border:1px solid rgba(232,163,61,.35)}
+.morph.base{background:rgba(143,163,126,.14);color:var(--moss);border:1px solid rgba(143,163,126,.35)}
+.morph.mark{background:rgba(217,108,71,.14);color:var(--flame);border:1px solid rgba(217,108,71,.35)}
+.morph.op{background:none;border:none;color:var(--cream-dim);font-size:18px;min-width:auto;padding:0 2px}
+.morph.none{background:var(--ink-3);color:var(--cream-dim);border:1px dashed var(--line)}
+
+/* generic table */
+.tbl{width:100%;border-collapse:collapse;margin-top:22px;font-size:14.5px}
+.tbl th{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:11px 12px;color:var(--cream-dim);border-bottom:1px solid var(--line);vertical-align:bottom}
+.tbl td{padding:12px;border-bottom:1px solid var(--line);color:var(--cream-dim);vertical-align:top}
+.tbl td .rom{font-family:'JetBrains Mono',monospace;font-size:15px;color:var(--cream);font-weight:700}
+.tbl td .tel{font-family:'Noto Sans Telugu',sans-serif;font-size:15px;color:var(--cream-dim);opacity:.8}
+.tbl td small{display:block;font-size:12px;color:var(--cream-dim);margin-top:2px}
+.tag{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:999px;margin-left:4px}
+.tag.neu{background:rgba(143,163,126,.16);color:var(--moss)}
+.tag.for{background:rgba(232,163,61,.16);color:var(--amber)}
+.tag.inf{background:rgba(217,108,71,.16);color:var(--flame)}
+
+/* anki table */
+.anki-wrap{overflow-x:auto;margin-top:26px;border:1px solid var(--line);border-radius:var(--radius)}
+.anki{width:100%;border-collapse:collapse;font-size:14px;min-width:720px}
+.anki th{background:var(--ink-3);font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:12px 14px;color:var(--amber);border-bottom:1px solid var(--line);white-space:nowrap}
+.anki td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--cream-dim);vertical-align:top}
+.anki tr:last-child td{border-bottom:none}
+.anki .f-en{color:var(--cream);width:31%}
+.anki .f-rom{font-family:'JetBrains Mono',monospace;color:var(--amber);font-weight:700;white-space:nowrap}
+.anki .f-tel{font-family:'Noto Sans Telugu',sans-serif;color:var(--cream)}
+.anki .f-aud{color:var(--cream-dim);opacity:.4;font-family:'JetBrains Mono',monospace;font-size:12px;text-align:center}
+.anki .f-ex{font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--moss)}
+.anki .sec td{background:var(--ink-2);font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--cream-dim)}
+.field-key{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--cream-dim)}
+.field-key span{background:var(--ink-2);border:1px solid var(--line);border-radius:6px;padding:5px 10px}
+.field-key b{color:var(--amber);font-weight:500}
+
+/* lesson questions */
+.question-link{display:grid;grid-template-columns:80px 1fr auto;align-items:center;gap:22px;margin-top:26px;border:1px dashed var(--line);border-radius:var(--radius);background:var(--ink-2);color:inherit;padding:22px;text-decoration:none}
+.question-link:hover{border-color:rgba(232,163,61,.4);background:var(--ink-3)}
+.question-mark{display:grid;width:60px;height:60px;place-items:center;border:1px solid rgba(143,163,126,.35);border-radius:50%;color:var(--moss);font-family:'Young Serif',serif;font-size:28px}
+.question-link h3{margin-bottom:5px;font-family:'Inter',sans-serif;font-size:17px;font-weight:600}
+.question-link p{margin:0;color:var(--cream-dim);font-size:13px}
+.question-open{color:var(--amber);font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;white-space:nowrap}
+.question-open::after{content:' →'}
+
+footer{padding:52px 0 68px;border-top:1px solid var(--line)}
+footer p{font-size:13px;color:var(--cream-dim)}
+footer .mono{color:var(--amber)}
+.try{list-style:none;margin-top:18px;display:grid;gap:10px;max-width:640px}
+.try li{background:var(--ink-2);border:1px solid var(--line);border-radius:9px;padding:12px 16px;font-size:14px;color:var(--cream-dim)}
+.try li .q{color:var(--cream);font-weight:600}
+.try li .a{font-family:'JetBrains Mono',monospace;color:var(--moss);margin-top:4px;display:block}
+
+/* lesson 7 additions, reused */
+.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));gap:10px;margin-top:20px}
+.vcell{border:1px solid var(--line);border-radius:11px;background:var(--ink-2);padding:13px 15px}
+.vcell .en{display:block;font-size:13px;color:var(--cream-dim)}
+.vcell .inf{display:block;font-family:'JetBrains Mono',monospace;font-size:15.5px;font-weight:700;color:var(--amber);margin-top:4px}
+.vcell .fml{display:block;font-family:'JetBrains Mono',monospace;font-size:13.5px;color:var(--moss)}
+.vcell .tel{display:block;font-family:'Noto Sans Telugu',sans-serif;font-size:14px;color:var(--cream-dim);margin-top:2px}
+.vcell.warn{border-color:rgba(217,108,71,.32)}
+.grp{margin-top:26px}
+.grp h4{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--amber);margin-bottom:2px}
+.grp p{font-size:13.5px;color:var(--cream-dim);margin-bottom:0}
+.stack{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin:14px 0}
+.stack .box{border-radius:8px;padding:8px 13px;font-family:'JetBrains Mono',monospace;font-size:14px}
+.stack .root{background:rgba(143,163,126,.14);color:var(--moss);border:1px solid rgba(143,163,126,.35)}
+.stack .neg{background:rgba(217,108,71,.14);color:var(--flame);border:1px solid rgba(217,108,71,.35)}
+.stack .pol{background:rgba(232,163,61,.14);color:var(--amber);border:1px solid rgba(232,163,61,.35)}
+.stack .op{color:var(--cream-dim);font-size:17px}
+.stack .out{background:var(--ink-3);color:var(--cream);border:1px solid var(--line)}
+
+/* lesson 8 additions, reused */
+.para{width:100%;border-collapse:collapse;margin-top:22px;font-size:14.5px;min-width:660px}
+.para th{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:11px 12px;color:var(--cream-dim);border-bottom:1px solid var(--line)}
+.para td{padding:10px 12px;border-bottom:1px solid var(--line);color:var(--cream-dim)}
+.para .pron{font-family:'JetBrains Mono',monospace;color:var(--cream);font-weight:700;white-space:nowrap}
+.para .pron small{display:block;font-family:'Inter',sans-serif;font-weight:400;font-size:11.5px;opacity:.65}
+.para .mk{font-family:'JetBrains Mono',monospace;color:var(--flame);font-weight:700;text-align:center}
+.para .form{font-family:'JetBrains Mono',monospace;color:var(--amber);font-weight:700;white-space:nowrap}
+.para .telc{font-family:'Noto Sans Telugu',sans-serif;color:var(--cream-dim);opacity:.8}
+.para tr.odd td{background:rgba(143,163,126,.05)}
+.scroll{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);margin-top:22px}
+.scroll .para{margin-top:0;border-radius:var(--radius)}
+.audit{border:1px solid rgba(143,163,126,.3);background:rgba(143,163,126,.06);border-radius:var(--radius);padding:20px 24px;margin-top:22px}
+.audit h4{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--moss);margin-bottom:10px}
+.audit p{font-size:14px;color:var(--cream-dim)}
+.audit p+p{margin-top:9px}
+.audit.warn{border-color:rgba(217,108,71,.3);background:rgba(217,108,71,.06)}
+.audit.warn h4{color:var(--flame)}
+.caption-list{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:7px;margin-top:14px}
+.caption-list li{background:var(--ink-2);border:1px solid var(--line);border-radius:8px;padding:9px 12px;font-size:13px;color:var(--cream-dim)}
+.caption-list .real{font-family:'JetBrains Mono',monospace;color:var(--moss);font-weight:700}
+.caption-list .heard{color:var(--flame);font-style:italic}
+@media(max-width:720px){
+  .wrap{padding:0 16px}
+  .hero-glyph{right:0}
+  .rule{grid-template-columns:1fr;gap:8px}
+  .rule>div{min-width:0}
+  .tbl{display:block;width:100%;max-width:100%;overflow-x:auto;white-space:nowrap}
+  .question-link{grid-template-columns:52px 1fr;padding:18px 16px}
+  .question-mark{width:48px;height:48px}
+  .question-open{grid-column:2}
+}
+
+/* conjugation matrix — the course's own table shape, in this site's palette.
+   Rows are pronouns, columns are tenses, and the boxed cells make it scannable
+   in both directions, which a flat table is not. */
+.matrix{width:100%;border-collapse:separate;border-spacing:5px;font-size:14px;min-width:760px}
+.matrix th{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--cream);background:var(--ink-3);border:1px solid var(--line);border-radius:9px;padding:10px 12px;text-align:center;vertical-align:middle}
+.matrix th small{display:block;font-family:'Inter',sans-serif;font-size:11px;letter-spacing:0;text-transform:none;color:var(--cream-dim);font-weight:400;margin-top:3px}
+.matrix th.grp,.matrix th.en,.matrix th.pn{background:none;border:none}
+.matrix td.grp{background:none;border:none;font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--cream-dim);text-align:right;padding-right:6px;vertical-align:middle;width:72px;line-height:1.3}
+.matrix td.grp.lab{color:var(--flame)}
+.matrix td.en{background:var(--ink-3);border:1px solid var(--line);border-radius:9px;padding:9px 12px;color:var(--cream);font-weight:600;text-align:center;white-space:nowrap;font-size:13px;line-height:1.4}
+.matrix td.pn{background:rgba(232,163,61,.12);border:1px solid rgba(232,163,61,.32);border-radius:9px;padding:9px 14px;font-family:'JetBrains Mono',monospace;font-size:13.5px;color:var(--amber);font-weight:700;text-align:center;white-space:nowrap;line-height:1.45}
+.matrix td.pn .tel{display:block;font-family:'Noto Sans Telugu',sans-serif;font-size:12px;color:var(--cream-dim);font-weight:400;margin-top:2px;opacity:.75}
+.matrix td.sfx{background:rgba(143,163,126,.13);border:1px solid rgba(143,163,126,.3);border-radius:9px;padding:9px 14px;font-family:'JetBrains Mono',monospace;font-size:14.5px;color:var(--moss);font-weight:700;text-align:center;white-space:nowrap}
+.matrix td.sfx .tel{display:block;font-family:'Noto Sans Telugu',sans-serif;font-size:12.5px;color:var(--cream-dim);font-weight:400;margin-top:2px;opacity:.8}
+.matrix.neg td.sfx{background:rgba(217,108,71,.11);border-color:rgba(217,108,71,.3);color:var(--flame)}
+.matrix td.sfx.off{opacity:.32}
+.matrix td.sfx.on{box-shadow:0 0 0 1px var(--moss)}
+.matrix.neg td.sfx.on{box-shadow:0 0 0 1px var(--flame)}
+.matrix.suffixes td.sfx{font-size:15px}
+.matrix-key{display:flex;gap:14px;flex-wrap:wrap;margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:11.5px;color:var(--cream-dim)}
+.matrix-key b{font-weight:500}
+@media(max-width:720px){.matrix{border-spacing:3px;font-size:13px}}
+</style></head>
+<body>
+
+<nav aria-label="Main">
+  <div class="wrap">
+    <a class="logo" href="../index.html"><span>te</span> lesson-17 · postpositions</a>
+    <ul>
+      <li><a href="../index.html">Course home</a></li>
+      <li><a href="../../GRAMMAR_LAB/index.html">Verb Lab</a></li>
+      <li><a href="#ki">-ki / -ku</a></li>
+      <li><a href="#dative">“I can’t want”</a></li>
+      <li><a href="#ni">-ni / -nu</a></li>
+      <li><a href="#pronouns">Pronoun tables</a></li>
+      <li><a href="#try">Self-test</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-glyph telugu" aria-hidden="true">కి</div>
+  <div class="wrap">
+    <a class="home-crumb" href="../index.html">← Foundational Telugu / Learning path</a>
+    <span class="eyebrow">Course extraction · Lesson 17 · Week 3, postpositions part 1</span>
+    <h1>Two suffixes that <em>carry the whole sentence</em></h1>
+    <p>English strings nouns together with little words in front of them. Telugu glues endings on behind. The video's demonstration is the clearest way to see it — <span class="mono">Raj school bus Pooja veḷḷāḍu</span> means almost nothing until the endings arrive.</p>
+    <p style="margin-top:12px">This first pair is not the easy set. <span class="mono">-ki</span> and <span class="mono">-ni</span> <b>do not map onto English words</b>, and one of them is behind the biggest structural difference between the two languages you have met so far.</p>
+
+    <div class="note-box">
+      <b>How I processed this</b>
+      <p>The accusative pronouns are where the captions collapse: <span class="mono">nannu / ninnu / mimmalni</span> arrive as <b>"Nunu / ninu / Memani"</b>, and the third-person set as <b>"Ionone Vardhini Akkineni"</b>. Those were rebuilt from the possessive stems already in the masters rather than from the audio, and every form on this page is checked against <span class="mono">tools/te2rom.py</span>.</p>
+      <p>Part 2 — <span class="mono">-lō</span>, <span class="mono">-tō</span>, <span class="mono">nunchi</span> and the rest — is a separate video and will be a separate page. The instructor separates them deliberately: those behave like their English equivalents, and these two do not.</p>
+    </div>
+  </div>
+</header>
+
+<section id="frame">
+  <div class="wrap">
+    <span class="eyebrow">The idea</span>
+    <h2>Behind the noun, not in front of it</h2>
+    <table class="tbl">
+      <thead><tr><th></th><th>Without</th><th>With</th></tr></thead>
+      <tbody>
+        <tr><td><b>English</b></td><td>Raj went school bus Pooja</td><td>Raj went <b>to</b> school <b>by</b> bus <b>with</b> Pooja</td></tr>
+        <tr><td><b>Telugu</b></td><td><span class="rom">Raj skūl bas Pūja veḷḷāḍu</span></td><td><span class="rom">Raj skūl<b>ki</b> bas<b>lō</b> Pūja<b>tō</b> veḷḷāḍu</span></td></tr>
+      </tbody>
+    </table>
+    <p style="margin-top:18px;font-size:14.5px;color:var(--cream-dim);max-width:660px">Same three relations, same information. English puts them <em>before</em> the noun as separate words; Telugu welds them <em>onto</em> the end. That is the whole reason for the name: <b>post</b>positions.</p>
+    <p style="margin-top:12px;font-size:14.5px;color:var(--cream-dim);max-width:660px">You have been using them since Lesson 8 without a name — <span class="mono">-lō</span>, <span class="mono">-tō</span>, <span class="mono">-ki</span>. This lesson is where two of them get examined properly.</p>
+  </div>
+</section>
+
+<section id="ki">
+  <div class="wrap">
+    <span class="eyebrow">The dative</span>
+    <h2><span class="mono">-ki</span> / <span class="mono">-ku</span> — motion, recipients, and more</h2>
+    <p class="lede">Two spellings of one suffix. Written Telugu picks between them by what precedes; <b>spoken Telugu treats them as interchangeable</b>, with <span class="mono">-ki</span> commoner.</p>
+
+    <table class="tbl">
+      <thead><tr><th>Telugu</th><th></th><th></th></tr></thead>
+      <tbody>
+        <tr><td><span class="rom">nēnu iṇḍiyāki veḷtunnānu</span><br><span class="tel">నేను ఇండియాకి వెళ్తున్నాను</span></td><td>I'm going to India.</td><td>destination</td></tr>
+        <tr><td><span class="rom">Rāj Gītaki giphṭ ichchāḍu</span><br><span class="tel">రాజ్ గీతకి గిఫ్ట్ ఇచ్చాడు</span></td><td>Raj gave Gita a gift.</td><td>recipient</td></tr>
+        <tr><td><span class="rom">ḍākṭar gāru iṇṭiki vachchāru</span><br><span class="tel">డాక్టర్ గారు ఇంటికి వచ్చారు</span></td><td>The doctor came home.</td><td><span class="mono">illu</span> → <span class="mono">iṇṭi-</span>, from Lesson 9</td></tr>
+      </tbody>
+    </table>
+
+    <div class="rules">
+      <div class="rule">
+        <div>
+          <h3>On a pronoun, use the <em>possessive</em> stem — never the subject form</h3>
+          <p>This is the rule that makes the pronoun tables below look strange, and it applies to <b>every</b> postposition, not just this one.</p>
+          <div class="stack">
+            <span class="box root">nā</span><span class="op">+</span><span class="box pol">-ku</span><span class="op">→</span><span class="box out">nāku</span>
+            <span class="op" style="padding:0 10px">to me</span>
+          </div>
+          <p style="margin-top:6px">Built on <span class="mono">nā</span> "my", not on <span class="mono">nēnu</span> "I". <span class="mono" style="color:var(--flame)">*nēnuku</span> does not exist.</p>
+          <p><b>And the three that take <span class="mono">-ku</span> rather than <span class="mono">-ki</span> are exactly the ones built on a long <span class="mono">ā</span>:</b> <span class="mono">nāku</span>, <span class="mono">māku</span>, <span class="mono">manaku</span> — plus <span class="mono">nīku</span> and <span class="mono">mīku</span>. Everything third-person takes <span class="mono">-ki</span>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="dative">
+  <div class="wrap">
+    <span class="eyebrow">The part that is not English</span>
+    <h2>In Telugu you cannot want something</h2>
+    <p class="lede">"I like cricket" and "I want water" do not use <span class="mono">nēnu</span>. <b>You are not the subject of liking or wanting</b> — those things happen <em>to</em> you, and the sentence says so.</p>
+
+    <div class="scroll">
+      <table class="para">
+        <thead><tr><th>English thinks</th><th>Telugu says</th><th>Literally</th></tr></thead>
+        <tbody>
+          <tr><td class="pron">I like cricket</td><td class="form">nāku krikeṭ aṇṭē iṣṭaṁ</td><td>to-me cricket is liked</td></tr>
+          <tr class="odd"><td class="pron">I want water</td><td class="form">nāku nīḷḷu kāvāli</td><td>to-me water is wanted</td></tr>
+          <tr><td class="pron">I don't know Telugu</td><td class="form">nāku telugu rādu</td><td>to-me Telugu does not come</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note-box win">
+      <b>You have already been doing this since Lesson 10</b>
+      <p><span class="mono">nāku telugu rādu</span> was presented then as a fixed phrase. It is not — <b>it is this construction</b>, and so are liking, wanting, knowing, being hungry, having a headache, and being cold. Telugu treats all of them as things that arrive at you rather than acts you perform.</p>
+      <p>Once you see the shape, a large family of sentences opens at once, and they all start <span class="mono">nāku</span>.</p>
+    </div>
+
+    <div class="rules">
+      <div class="rule">
+        <div>
+          <h3><span class="mono">aṇṭē</span> is the hinge, and it means almost nothing</h3>
+          <p>You do not say <span class="mono" style="color:var(--flame)">*nāku krikeṭ iṣṭaṁ</span>. You need <span class="mono">aṇṭē</span> between them — roughly "as for", "the thing about". The instructor's gloss is "<em>to me, cricket is what I like</em>".</p>
+          <p><b>It is the quotative <span class="mono">ani</span> again</b>, in another guise — the same particle from <a href="lesson-11-immediate-future.html">Lesson 11</a>. Fourth sighting of that family. Still filed, not taught.</p>
+          <span class="ex">nāku krikeṭ aṇṭē <span style="color:var(--amber)">chālā</span> iṣṭaṁ <span class="tel">నాకు క్రికెట్ అంటే చాలా ఇష్టం</span> <span class="en">— I like cricket very much</span></span>
+          <p style="margin-top:14px"><span class="mono">chālā</span> for "very much", <span class="mono">koncheṁ</span> for "a little", and <span class="mono">iṣṭaṁ lēdu</span> to negate: <span class="mono">nāku krikeṭ aṇṭē iṣṭaṁ lēdu</span>.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Liking a person, and liking to do something</h3>
+          <p>Same frame. When the thing you like is a pronoun, its final vowel is eaten by <span class="mono">aṇṭē</span>:</p>
+          <table class="tbl">
+            <thead><tr><th>Slowly</th><th>At speed</th><th></th></tr></thead>
+            <tbody>
+              <tr><td><span class="mono">nāku nuvvu aṇṭē iṣṭaṁ</span></td><td><span class="rom">nāku nuvvaṇṭē iṣṭaṁ</span> <span class="tel">నాకు నువ్వంటే ఇష్టం</span></td><td>I like you</td></tr>
+              <tr><td><span class="mono">nāku āme aṇṭē iṣṭaṁ</span></td><td><span class="rom">nāku āmaṇṭē iṣṭaṁ</span> <span class="tel">నాకు ఆమంటే ఇష్టం</span></td><td>I like her</td></tr>
+            </tbody>
+          </table>
+          <p style="margin-top:14px">And to like <em>doing</em> something, drop in the <span class="mono">-ḍaṁ</span> verbal noun from <a href="lesson-08-present-continuous.html">Lesson 8</a>:</p>
+          <span class="ex">nāku krikeṭ <span style="color:var(--moss)">āḍaḍaṁ</span> aṇṭē iṣṭaṁ <span class="tel">నాకు క్రికెట్ ఆడడం అంటే ఇష్టం</span> <span class="en">— I like playing cricket</span></span>
+          <p style="margin-top:14px">Fourth job for <span class="mono">-ḍaṁ</span>: negation, purpose, verb complements, and now this.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3><span class="mono">kāvāli</span> and <span class="mono">vaddu</span> — want and don't want</h3>
+          <span class="ex">nāku oka glās nīḷḷu kāvāli <span class="tel">నాకు ఒక గ్లాస్ నీళ్ళు కావాలి</span> <span class="en">— I want a glass of water</span></span>
+          <span class="ex" style="margin-top:10px">nāku nīḷḷu vaddu <span class="tel">నాకు నీళ్ళు వద్దు</span> <span class="en">— I don't want water</span></span>
+          <p style="margin-top:14px"><span class="mono">vaddu</span> is the same word you learned in <a href="lesson-03-greetings.html">Lesson 3</a> for refusing an offer, and in <a href="lesson-07-imperatives.html">Lesson 7</a> as the prohibitive. One word, three uses, all of them "no thanks" in some form.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ni">
+  <div class="wrap">
+    <span class="eyebrow">The accusative</span>
+    <h2><span class="mono">-ni</span> marks who it happens to — so word order stops mattering</h2>
+    <p class="lede">There is no English equivalent, because English does this job with position. Put the noun before the verb and it acts; put it after and it receives. <b>Telugu marks it instead, which frees the order entirely.</b></p>
+
+    <div class="scroll">
+      <table class="para">
+        <thead><tr><th>Telugu</th><th>Script</th><th>Means</th></tr></thead>
+        <tbody>
+          <tr><td class="pron">Gīta bāl<b>ni</b> koṭṭindi</td><td class="telc">గీత బాల్‌ని కొట్టింది</td><td>Gita hit the ball</td></tr>
+          <tr class="odd"><td class="pron">Gīta<b>ni</b> bāl koṭṭindi</td><td class="telc">గీతని బాల్ కొట్టింది</td><td>The ball hit Gita</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p style="margin-top:20px;font-size:14.5px;color:var(--cream-dim);max-width:660px"><b>Read those two again.</b> Gita comes first in both. The ball comes second in both. The verb is identical. <b>The only thing that moved is the suffix</b> — and the meaning reversed.</p>
+
+    <table class="tbl" style="margin-top:26px">
+      <thead><tr><th>Telugu</th><th>Means</th></tr></thead>
+      <tbody>
+        <tr><td><span class="rom">Rāj kukkani karichāḍu</span><br><span class="tel">రాజ్ కుక్కని కరిచాడు</span></td><td>Raj bit the dog.</td></tr>
+        <tr><td><span class="rom">Rājni kukka karichindi</span><br><span class="tel">రాజ్‌ని కుక్క కరిచింది</span></td><td>The dog bit Raj. <small>— the likelier of the two</small></td></tr>
+        <tr><td><span class="rom">Rāj Gītani prēmistāḍu</span><br><span class="tel">రాజ్ గీతని ప్రేమిస్తాడు</span></td><td>Raj loves Gita.</td></tr>
+        <tr><td><span class="rom">Rājni Gīta prēmistundi</span><br><span class="tel">రాజ్‌ని గీత ప్రేమిస్తుంది</span></td><td>Gita loves Raj.</td></tr>
+      </tbody>
+    </table>
+
+    <div class="flag">
+      <b>Put it on the wrong noun and you get nonsense, not an accent</b>
+      <span class="mono">nēnu abbāyini skūlki pampānu</span> is "I sent the boy to school". Swap the suffixes — <span class="mono">nēnu abbāyiki skūlni pampānu</span> — and you have said <b>"I sent the school to the boy."</b> Grammatical, parseable, and absurd. There is no version of this where the listener works out what you meant from context.
+    </div>
+
+    <div class="note-box win">
+      <b>Why this is worth the effort</b>
+      <p>English speakers spend years learning that Telugu word order is "free". It is not free — it is <b>marked</b>. The order can move because the endings already say who did what, and that is a better system than English's, not a looser one.</p>
+      <p>It also explains something you have already seen: why the verb sits at the end and everything before it can shuffle. <b>The endings hold the sentence together, so the order is available for emphasis instead.</b></p>
+    </div>
+  </div>
+</section>
+
+<section id="pronouns">
+  <div class="wrap">
+    <span class="eyebrow">Learn these as tables</span>
+    <h2>Both suffixes on every pronoun</h2>
+    <p class="lede">The dative is regular once you know it builds on the possessive. <b>The accusative is not</b> — the first and second person are suppletive and have to be memorised.</p>
+
+    <div class="scroll">
+      <table class="matrix">
+        <thead><tr><th class="grp"></th><th>Subject</th><th>to ___ <small>dative -ki/-ku</small></th><th>___ (object) <small>accusative -ni</small></th></tr></thead>
+        <tbody>
+          <tr><td class="grp lab">I / me</td><td class="pn">nēnu<span class="tel">నేను</span></td><td class="sfx">nāku<span class="tel">నాకు</span></td><td class="sfx">nannu<span class="tel">నన్ను</span></td></tr>
+          <tr><td class="grp lab">you</td><td class="pn">nuvvu<span class="tel">నువ్వు</span></td><td class="sfx">nīku<span class="tel">నీకు</span></td><td class="sfx">ninnu<span class="tel">నిన్ను</span></td></tr>
+          <tr><td class="grp lab">you<br>formal</td><td class="pn">mīru<span class="tel">మీరు</span></td><td class="sfx">mīku<span class="tel">మీకు</span></td><td class="sfx">mimmalni<span class="tel">మిమ్మల్ని</span></td></tr>
+          <tr><td class="grp lab">we<br>incl.</td><td class="pn">manamu<span class="tel">మనము</span></td><td class="sfx">manaku<span class="tel">మనకు</span></td><td class="sfx">manalni<span class="tel">మనల్ని</span></td></tr>
+          <tr><td class="grp lab">we<br>excl.</td><td class="pn">mēmu<span class="tel">మేము</span></td><td class="sfx">māku<span class="tel">మాకు</span></td><td class="sfx">mammalni<span class="tel">మమ్మల్ని</span></td></tr>
+          <tr><td class="grp lab">he</td><td class="pn">atanu<span class="tel">అతను</span></td><td class="sfx">ataniki<span class="tel">అతనికి</span></td><td class="sfx">atanini<span class="tel">అతనిని</span></td></tr>
+          <tr><td class="grp lab">he<br>formal</td><td class="pn">āyana<span class="tel">ఆయన</span></td><td class="sfx">āyanaki<span class="tel">ఆయనకి</span></td><td class="sfx">āyanani<span class="tel">ఆయనని</span></td></tr>
+          <tr><td class="grp lab">she</td><td class="pn">āme<span class="tel">ఆమె</span></td><td class="sfx">āmeki<span class="tel">ఆమెకి</span></td><td class="sfx">āmeni<span class="tel">ఆమెని</span></td></tr>
+          <tr><td class="grp lab">they</td><td class="pn">vāḷḷu<span class="tel">వాళ్ళు</span></td><td class="sfx">vāḷḷaki<span class="tel">వాళ్ళకి</span></td><td class="sfx">vāḷḷani<span class="tel">వాళ్ళని</span></td></tr>
+          <tr><td class="grp lab">it</td><td class="pn">adi<span class="tel">అది</span></td><td class="sfx">dāniki<span class="tel">దానికి</span></td><td class="sfx">dānini<span class="tel">దానిని</span></td></tr>
+          <tr><td class="grp lab">those</td><td class="pn">avi<span class="tel">అవి</span></td><td class="sfx">vāṭiki<span class="tel">వాటికి</span></td><td class="sfx">vāṭini<span class="tel">వాటిని</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note-box">
+      <b>Where to spend your attention</b>
+      <p><b>Four accusatives are suppletive</b> and have to be learned outright: <span class="mono">nannu</span>, <span class="mono">ninnu</span>, <span class="mono">mimmalni</span>, <span class="mono">mammalni</span>. They do not come from the possessive the way everything else does.</p>
+      <p><b>Two datives are irregular too</b>: <span class="mono">adi</span> → <span class="mono">dāniki</span> and <span class="mono">avi</span> → <span class="mono">vāṭiki</span>. The stems <span class="mono">dāni-</span> and <span class="mono">vāṭi-</span> appear from nowhere. Everything else in the table is its possessive plus an ending.</p>
+    </div>
+  </div>
+</section>
+
+<section id="anki">
+  <div class="wrap">
+    <span class="eyebrow">For import</span>
+    <h2>The list</h2>
+    <div class="anki-wrap">
+      <table class="anki">
+        <thead><tr><th class="f-en">English (with cue)</th><th>Romanized</th><th>Telugu</th><th style="text-align:center">Audio</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr class="sec"><td colspan="5">The construction</td></tr>
+          <tr><td class="f-en">liking — used as "nāku X aṇṭē iṣṭaṁ", not with nēnu</td><td class="f-rom">iṣṭaṁ</td><td class="f-tel">ఇష్టం</td><td class="f-aud">[ ]</td><td class="f-ex">nāku krikeṭ aṇṭē iṣṭaṁ.</td></tr>
+          <tr><td class="f-en">is wanted — "nāku X kāvāli" = I want X</td><td class="f-rom">kāvāli</td><td class="f-tel">కావాలి</td><td class="f-aud">[ ]</td><td class="f-ex">nāku nīḷḷu kāvāli.</td></tr>
+          <tr><td class="f-en">as for, the thing about (hinge in the iṣṭaṁ frame)</td><td class="f-rom">aṇṭē</td><td class="f-tel">అంటే</td><td class="f-aud">[ ]</td><td class="f-ex">nāku nuvvaṇṭē iṣṭaṁ.</td></tr>
+          <tr><td class="f-en">a little, somewhat</td><td class="f-rom">koncheṁ</td><td class="f-tel">కొంచెం</td><td class="f-aud">[ ]</td><td class="f-ex">nāku koncheṁ iṣṭaṁ.</td></tr>
+          <tr class="sec"><td colspan="5">Dative — to ___</td></tr>
+          <tr><td class="f-en">to me (nā + ku, never nēnu + ku)</td><td class="f-rom">nāku</td><td class="f-tel">నాకు</td><td class="f-aud">[ ]</td><td class="f-ex">nāku nīḷḷu kāvāli.</td></tr>
+          <tr><td class="f-en">to you (informal)</td><td class="f-rom">nīku</td><td class="f-tel">నీకు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">to you (formal)</td><td class="f-rom">mīku</td><td class="f-tel">మీకు</td><td class="f-aud">[ ]</td><td class="f-ex">mīku ēmi kāvāli?</td></tr>
+          <tr><td class="f-en">to us (inclusive)</td><td class="f-rom">manaku</td><td class="f-tel">మనకు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">to us (exclusive)</td><td class="f-rom">māku</td><td class="f-tel">మాకు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">to him (neutral)</td><td class="f-rom">ataniki</td><td class="f-tel">అతనికి</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">to her (neutral)</td><td class="f-rom">āmeki</td><td class="f-tel">ఆమెకి</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">to them (people)</td><td class="f-rom">vāḷḷaki</td><td class="f-tel">వాళ్ళకి</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">to it (irregular stem dāni-)</td><td class="f-rom">dāniki</td><td class="f-tel">దానికి</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr class="sec"><td colspan="5">Accusative — the object</td></tr>
+          <tr><td class="f-en">me (object) — suppletive, not from nā</td><td class="f-rom">nannu</td><td class="f-tel">నన్ను</td><td class="f-aud">[ ]</td><td class="f-ex">nannu chūḍaṇḍi.</td></tr>
+          <tr><td class="f-en">you (object, informal) — suppletive</td><td class="f-rom">ninnu</td><td class="f-tel">నిన్ను</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">you (object, formal) — suppletive</td><td class="f-rom">mimmalni</td><td class="f-tel">మిమ్మల్ని</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">us (object, exclusive) — suppletive</td><td class="f-rom">mammalni</td><td class="f-tel">మమ్మల్ని</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">him (object)</td><td class="f-rom">atanini</td><td class="f-tel">అతనిని</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">her (object)</td><td class="f-rom">āmeni</td><td class="f-tel">ఆమెని</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">them (object, people)</td><td class="f-rom">vāḷḷani</td><td class="f-tel">వాళ్ళని</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr class="sec"><td colspan="5">Nouns from the lesson</td></tr>
+          <tr><td class="f-en">boy</td><td class="f-rom">abbāyi</td><td class="f-tel">అబ్బాయి</td><td class="f-aud">[ ]</td><td class="f-ex">nēnu abbāyini skūlki pampānu.</td></tr>
+          <tr><td class="f-en">to bite</td><td class="f-rom">karuvu</td><td class="f-tel">కరువు</td><td class="f-aud">[ ]</td><td class="f-ex">kukka Rājni karichindi.</td></tr>
+          <tr><td class="f-en">to send</td><td class="f-rom">pampu</td><td class="f-tel">పంపు</td><td class="f-aud">[ ]</td><td class="f-ex">nēnu abbāyini pampānu.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="try">
+  <div class="wrap">
+    <span class="eyebrow">From the lesson</span>
+    <h2>Quick self-test</h2>
+    <ul class="try">
+      <li><span class="q">Why is it <span class="mono">nāku</span> and not <span class="mono">*nēnuku</span>?</span><span class="a">Postpositions attach to the possessive stem, nā, not the subject form nēnu. True of every postposition.</span></li>
+      <li><span class="q">"I like cricket." Do not use <span class="mono">nēnu</span>.</span><span class="a">nāku krikeṭ aṇṭē iṣṭaṁ. — "to me cricket is liked".</span></li>
+      <li><span class="q">Why can't you say <span class="mono">*nēnu krikeṭ iṣṭaṁ</span>?</span><span class="a">You're not the subject of liking — it happens to you. Same shape as nāku telugu rādu.</span></li>
+      <li><span class="q">"I like playing cricket."</span><span class="a">nāku krikeṭ āḍaḍaṁ aṇṭē iṣṭaṁ. — the -ḍaṁ verbal noun again, fourth job for it.</span></li>
+      <li><span class="q">Ask for a glass of water, then refuse one.</span><span class="a">nāku oka glās nīḷḷu kāvāli. / nāku nīḷḷu vaddu.</span></li>
+      <li><span class="q">Translate both: <span class="mono">Gīta bālni koṭṭindi</span> and <span class="mono">Gītani bāl koṭṭindi</span>.</span><span class="a">Gita hit the ball / The ball hit Gita. Word order identical — only the -ni moved.</span></li>
+      <li><span class="q">"Gita loves Raj." Which noun gets <span class="mono">-ni</span>?</span><span class="a">Rājni Gīta prēmistundi. Raj receives the loving, so Raj takes -ni.</span></li>
+      <li><span class="q">What does <span class="mono">nēnu abbāyiki skūlni pampānu</span> mean?</span><span class="a">"I sent the school to the boy." Suffixes swapped — grammatical and absurd.</span></li>
+      <li><span class="q">Object forms of "me", "you", "you formal".</span><span class="a">nannu, ninnu, mimmalni. Suppletive — they don't come from the possessive.</span></li>
+      <li><span class="q">"to it" and "to those".</span><span class="a">dāniki and vāṭiki. Irregular stems dāni- and vāṭi-.</span></li>
+      <li><span class="q">Say three things you like and one you don't, about your real life.</span><span class="a">nāku ___ aṇṭē iṣṭaṁ ×3, nāku ___ aṇṭē iṣṭaṁ lēdu.</span></li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><span class="mono">Foundational Telugu</span> · Lesson 17 · postpositions part 1 · raw captions in <span class="mono">sources/transcripts/week-03/</span></p>
+    <p><a href="lesson-16-questions.html">← Lesson 16 · Questions</a> · <a href="../index.html">Course home</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

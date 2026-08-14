@@ -1,0 +1,7 @@
+SOURCE: Udemy course, Week 3 — "Postpositions part 1": -ki/-ku (dative) and -ni/-nu (accusative).
+CAPTURED: 2026-08-14
+STATUS: raw auto-generated captions, unedited. Reconstructed in
+        LEARNING_GUIDE/lessons/lesson-17-postpositions.html.
+NOTE:   the accusative pronoun set is where the captions fail worst — nannu/ninnu/mimmalni come
+        through as "Nunu / ninu / Memani", and the third-person set as "Ionone Vardhini
+        Akkineni". Rebuilt against the possessive stems already in the masters.
