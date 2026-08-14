@@ -177,6 +177,29 @@ footer .mono{color:var(--amber)}
   .question-mark{width:48px;height:48px}
   .question-open{grid-column:2}
 }
+
+/* conjugation matrix — the course's own table shape, in this site's palette.
+   Rows are pronouns, columns are tenses, and the boxed cells make it scannable
+   in both directions, which a flat table is not. */
+.matrix{width:100%;border-collapse:separate;border-spacing:5px;font-size:14px;min-width:760px}
+.matrix th{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--cream);background:var(--ink-3);border:1px solid var(--line);border-radius:9px;padding:10px 12px;text-align:center;vertical-align:middle}
+.matrix th small{display:block;font-family:'Inter',sans-serif;font-size:11px;letter-spacing:0;text-transform:none;color:var(--cream-dim);font-weight:400;margin-top:3px}
+.matrix th.grp,.matrix th.en,.matrix th.pn{background:none;border:none}
+.matrix td.grp{background:none;border:none;font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--cream-dim);text-align:right;padding-right:6px;vertical-align:middle;width:72px;line-height:1.3}
+.matrix td.grp.lab{color:var(--flame)}
+.matrix td.en{background:var(--ink-3);border:1px solid var(--line);border-radius:9px;padding:9px 12px;color:var(--cream);font-weight:600;text-align:center;white-space:nowrap;font-size:13px;line-height:1.4}
+.matrix td.pn{background:rgba(232,163,61,.12);border:1px solid rgba(232,163,61,.32);border-radius:9px;padding:9px 14px;font-family:'JetBrains Mono',monospace;font-size:13.5px;color:var(--amber);font-weight:700;text-align:center;white-space:nowrap;line-height:1.45}
+.matrix td.pn .tel{display:block;font-family:'Noto Sans Telugu',sans-serif;font-size:12px;color:var(--cream-dim);font-weight:400;margin-top:2px;opacity:.75}
+.matrix td.sfx{background:rgba(143,163,126,.13);border:1px solid rgba(143,163,126,.3);border-radius:9px;padding:9px 14px;font-family:'JetBrains Mono',monospace;font-size:14.5px;color:var(--moss);font-weight:700;text-align:center;white-space:nowrap}
+.matrix td.sfx .tel{display:block;font-family:'Noto Sans Telugu',sans-serif;font-size:12.5px;color:var(--cream-dim);font-weight:400;margin-top:2px;opacity:.8}
+.matrix.neg td.sfx{background:rgba(217,108,71,.11);border-color:rgba(217,108,71,.3);color:var(--flame)}
+.matrix td.sfx.off{opacity:.32}
+.matrix td.sfx.on{box-shadow:0 0 0 1px var(--moss)}
+.matrix.neg td.sfx.on{box-shadow:0 0 0 1px var(--flame)}
+.matrix.suffixes td.sfx{font-size:15px}
+.matrix-key{display:flex;gap:14px;flex-wrap:wrap;margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:11.5px;color:var(--cream-dim)}
+.matrix-key b{font-weight:500}
+@media(max-width:720px){.matrix{border-spacing:3px;font-size:13px}}
 </style>
 </head>
 <body>
@@ -191,6 +214,7 @@ footer .mono{color:var(--amber)}
       <li><a href="#stems">Stems</a></li>
       <li><a href="#persons">All pronouns</a></li>
       <li><a href="#negation">Negation</a></li>
+      <li><a href="#wherefits">Full grid</a></li>
       <li><a href="#audit">Verb Lab audit</a></li>
       <li><a href="#try">Self-test</a></li>
     </ul>
@@ -606,6 +630,40 @@ footer .mono{color:var(--amber)}
       <li><span class="real">avi</span> → <span class="heard">"rv"</span>, <span class="heard">"are we"</span></li>
       <li><span class="real">paḍukuṇṭunnānu</span> → <span class="heard">"nano nano"</span> <em>(lost entirely)</em></li>
     </ul>
+  </div>
+</section>
+
+<section id="wherefits">
+  <div class="wrap">
+    <span class="eyebrow">Where this fits</span>
+    <h2>The present continuous in the full grid</h2>
+    <p class="lede">The whole tense system on one verb, <span class="mono">āḍu</span> “play”, with this lesson's column lit. <b>The suffixes are identical for every regular verb</b> — this table plus a stem is a complete paradigm. Full version, all six stem classes, on the <a href="lesson-13-recap.html">recap page</a>.</p>
+    <div class="scroll"><table class="matrix suffixes">
+<thead><tr><th class="grp"></th><th class="en"></th><th class="pn"></th><th>Past<small>Did…</small></th><th>Present<small>Doing…</small></th><th>Future / habit<small>Will do / does…</small></th></tr></thead>
+<tbody>
+  <tr><td class="grp" rowspan="5"></td><td class="en">I</td><td class="pn">Nēnu<span class="tel">నేను</span></td><td class="sfx off">-ānu</td><td class="sfx on">-tunnānu</td><td class="sfx off">-tānu</td></tr>
+  <tr><td class="en">You</td><td class="pn">Nuvvu<span class="tel">నువ్వు</span></td><td class="sfx off">-āvu</td><td class="sfx on">-tunnāvu</td><td class="sfx off">-tāvu</td></tr>
+  <tr><td class="en">He</td><td class="pn">Vāḍu, Atanu<span class="tel">వాడు, అతను</span></td><td class="sfx off">-āḍu</td><td class="sfx on">-tunnāḍu</td><td class="sfx off">-tāḍu</td></tr>
+  <tr><td class="en">She</td><td class="pn">Adi, Āme<span class="tel">అది, ఆమె</span></td><td class="sfx off">-indi</td><td class="sfx on">-tōndi</td><td class="sfx off">-tundi</td></tr>
+  <tr><td class="en">We</td><td class="pn">Mēmu, Manamu<span class="tel">మేము, మనము</span></td><td class="sfx off">-āmu</td><td class="sfx on">-tunnāmu</td><td class="sfx off">-tāmu</td></tr>
+  <tr class="sec"><td class="grp lab" rowspan="1">Formal /<br>plural</td><td class="en">You<br>He<br>She<br>They</td><td class="pn">Mīru<br>Āyana<br>Āviḍa<br>Vāḷḷu<span class="tel">మీరు · ఆయన<br>ఆవిడ · వాళ్ళు</span></td><td class="sfx off">-āru</td><td class="sfx on">-tunnāru</td><td class="sfx off">-tāru</td></tr>
+  <tr class="sec"><td class="grp lab" rowspan="2">Neuter</td><td class="en">It</td><td class="pn">Adi<span class="tel">అది</span></td><td class="sfx off">-indi</td><td class="sfx on">-tōndi</td><td class="sfx off">-tundi</td></tr>
+  <tr><td class="en">They</td><td class="pn">Avi<span class="tel">అవి</span></td><td class="sfx off">-āyi</td><td class="sfx on">-tunnāyi</td><td class="sfx off">-tāyi</td></tr>
+</tbody></table></div>
+
+    <div class="scroll"><table class="matrix neg suffixes">
+<thead><tr><th class="grp"></th><th class="en"></th><th class="pn"></th><th>Past<small>Did not…</small></th><th>Present<small>Not doing…</small></th><th>Future / habit<small>Won’t / doesn’t…</small></th></tr></thead>
+<tbody>
+  <tr><td class="grp" rowspan="5"></td><td class="en">I</td><td class="pn">Nēnu<span class="tel">నేను</span></td><td class="sfx off">-alēdu</td><td class="sfx on">-aḍaṁ lēdu</td><td class="sfx off">-anu</td></tr>
+  <tr><td class="en">You</td><td class="pn">Nuvvu<span class="tel">నువ్వు</span></td><td class="sfx off">-alēdu</td><td class="sfx on">-aḍaṁ lēdu</td><td class="sfx off">-avu</td></tr>
+  <tr><td class="en">He</td><td class="pn">Vāḍu, Atanu<span class="tel">వాడు, అతను</span></td><td class="sfx off">-alēdu</td><td class="sfx on">-aḍaṁ lēdu</td><td class="sfx off">-aḍu</td></tr>
+  <tr><td class="en">She</td><td class="pn">Adi, Āme<span class="tel">అది, ఆమె</span></td><td class="sfx off">-alēdu</td><td class="sfx on">-aḍaṁ lēdu</td><td class="sfx off">-adu</td></tr>
+  <tr><td class="en">We</td><td class="pn">Mēmu, Manamu<span class="tel">మేము, మనము</span></td><td class="sfx off">-alēdu</td><td class="sfx on">-aḍaṁ lēdu</td><td class="sfx off">-amu</td></tr>
+  <tr class="sec"><td class="grp lab" rowspan="1">Formal /<br>plural</td><td class="en">You<br>He<br>She<br>They</td><td class="pn">Mīru<br>Āyana<br>Āviḍa<br>Vāḷḷu<span class="tel">మీరు · ఆయన<br>ఆవిడ · వాళ్ళు</span></td><td class="sfx off">-alēdu</td><td class="sfx on">-aḍaṁ lēdu</td><td class="sfx off">-aru</td></tr>
+  <tr class="sec"><td class="grp lab" rowspan="2">Neuter</td><td class="en">It</td><td class="pn">Adi<span class="tel">అది</span></td><td class="sfx off">-alēdu</td><td class="sfx on">-aḍaṁ lēdu</td><td class="sfx off">-adu</td></tr>
+  <tr><td class="en">They</td><td class="pn">Avi<span class="tel">అవి</span></td><td class="sfx off">-alēdu</td><td class="sfx on">-aḍaṁ lēdu</td><td class="sfx off">-avu</td></tr>
+</tbody></table></div>
+
   </div>
 </section>
 

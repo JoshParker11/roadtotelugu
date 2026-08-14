@@ -120,8 +120,13 @@ function join(...parts){
 function conjugate(v, formId, pi){
   const f = FORMS.find(x => x.id === formId);
   const ov = v.ov && v.ov[formId];
-  /* overrides cover whole-form irregularities: any form that does not vary by person */
-  if (ov && (!f.person || f.invariant)) return withPre(v, ov);
+  /* Overrides cover whole-form irregularities: any form that does not vary by person. An
+     override may also be an array of six pairs, for the one case where a form is invariant
+     for every other verb but not for this one — uṇḍu's negative, where lēdu itself takes
+     person markers: lēnu, lēvu, lēḍu, lēdu, lēmu, lēru. */
+  if (ov && (!f.person || f.invariant)) {
+    return withPre(v, Array.isArray(ov[0]) ? ov[pi] : ov);
+  }
 
   const out = (() => {
     switch (formId) {
@@ -220,7 +225,17 @@ function segment(v, formId, pi){
   return { stem:[head, headT], end:[full[0].slice(head.length), full[1].slice(headT.length)], full };
 }
 
+/* Does this form actually stay still for this verb? FORMS marks the general case; a verb may
+   override it with a per-person array. The paradigm tables need this to know whether to print
+   "↑ unchanged" or six distinct cells. */
+function invariantFor(v, formId){
+  const f = FORMS.find(x => x.id === formId);
+  if (!f || !f.invariant) return false;
+  const ov = v.ov && v.ov[formId];
+  return !(ov && Array.isArray(ov[0]));
+}
+
 /* Headword as displayed: the compound verbs carry their invariant first word. */
 function rootOf(v){ return withPre(v, v.root); }
 
-if (typeof module !== 'undefined') module.exports = { PERSONS, FORMS, conjugate, cells, cue, segment, rootOf };
+if (typeof module !== 'undefined') module.exports = { PERSONS, FORMS, conjugate, cells, cue, segment, rootOf, invariantFor };

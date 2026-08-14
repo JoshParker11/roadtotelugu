@@ -259,7 +259,13 @@ const VERBS = [
     np:['un','ఉం'], T:['ṭ','ట'], pst:['unn','ఉన్న'],
     neg:['uṇḍa','ఉండ'], a:['uṇḍa','ఉండ'], inf:['uṇḍā','ఉండా'],
     hort:['undāṁ','ఉందాం'],
-    ov:{ negPast:['lēdu','లేదు'] },
+    /* lēdu is not one word here. The conjugation PDF and course video 22 both give it person
+       markers — "nēnu lēnu, nuvvu lēvu, vāḍu lēḍu, mēmu lēmu, mīru lēru" — and these are
+       high-frequency: lēru "they aren't in / aren't available" is what you hear on the phone.
+       Every other verb's negative past is genuinely invariant, so this is stored as a
+       six-cell override rather than by changing the paradigm. */
+    ov:{ negPast:[['lēnu','లేను'], ['lēvu','లేవు'], ['lēḍu','లేడు'],
+                  ['lēdu','లేదు'], ['lēmu','లేము'], ['lēru','లేరు']] },
     /* Lesson 12 / course video 23. This verb's tense labels do not mean what they say, and it
        is too important to leave mislabelled. The row the engine calls `past` is the ordinary
        present copula — nēnu santōṣangā unnānu "I am happy", right now — and the row it calls

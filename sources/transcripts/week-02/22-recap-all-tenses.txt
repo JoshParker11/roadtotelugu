@@ -1,0 +1,1295 @@
+SOURCE: Udemy course, Week 2, video 22 — "Recap of All Tenses & Verb Conjugation Tables in Telugu" (31 min)
+CAPTURED: 2026-08-13
+STATUS: raw auto-generated captions, unedited. Reconstructed in
+        LEARNING_GUIDE/lessons/lesson-13-recap.html.
+RESOURCE: the lesson links a PDF, "Telugu Verb Conjugations" (bhashafy.com), 18 verbs over 36
+        pages. Parsed by tools/parse_conjugations.py into sources/raw/conjugations.tsv and
+        diffed against the generator by tools/check_conjugations.py.
+NOTE:   this video is where the uṇḍu negative was caught — lēdu takes person markers
+        (lēnu / lēvu / lēḍu / lēmu / lēru) and the Verb Lab had it flat.
+
+---
+
+Congratulations on reaching this far in the course.
+
+If you're on this lesson, it means that you've gone through the entire section on verbs and tenses
+
+you would have surely observed.
+
+The Telugu verb conjugations are quite straightforward as long as you understand the pattern they repeat
+
+in a very predictable and regular manner.
+
+The challenge, however, is to not get confused between the different tenses and suffixes.
+
+Broadly, there are three tenses the past, present, and the combined future and habitual tense.
+
+Of course, there are many more tenses as you deep dive into Telugu, but everything is a derivative
+
+of these three tenses.
+
+In today's lesson, I'll cover a few common verbs where you can see the suffixes change across the different
+
+tenses.
+
+I'll also cover a few verbs that are kind of irregular and require special attention.
+
+There's also a PDF attached with this lesson in the resources section that has all the conjugations
+
+for many more verbs.
+
+So once you're done with this lesson, you can go through the PDF and practice many more verbs in their
+
+conjugations.
+
+Now coming to the table in front of you, we'll cover the three tenses in the three columns and all
+
+the conjugations or the suffixes across each pronoun.
+
+Let's start by looking at the suffixes pronoun by pronoun starting with I that is nano.
+
+We look at the suffixes in the past, present, and the future tense.
+
+The past tense suffix is ano.
+
+The present tense suffix is nano.
+
+The future tense suffix is tanu.
+
+These suffixes only make sense with a verb.
+
+Let's take the example of the verb for play that is Aadu.
+
+I played is Nino Adorno.
+
+I am playing Nino Artinano.
+
+I will play Nino Adorno.
+
+The suffixes for you, that is novo or avo to Nauvoo to view with the verb ado.
+
+You played Nauvoo Adabu.
+
+You're playing Nauvoo art.
+
+Nauvoo you will play Nauvoo art with he that is Vadu or Athanu.
+
+The suffixes are ado, ton, naadu, tatu.
+
+With the verb aadu.
+
+He played Vaadu Aadu.
+
+He is playing Vaadu Artha naadu.
+
+He will play Vaadu Aadu.
+
+The suffixes for adi and ami are in the tondi and tondi.
+
+However, in the present tense, tondi gets shortened to tondi, so we have indi tondi and tondi with
+
+the verb aadu.
+
+She played the ad indi.
+
+She is playing the ah tondi.
+
+She will play ah the ah tondi with the pronouns mamu or manamo, which mean we the suffixes ah amu,
+
+tun, amu tamu with the verb aadu.
+
+We played mamu Adamu.
+
+We are playing mamo ah to Nammu we will play Mamo ah tamu.
+
+With the formal or plural pronouns miru, ayana, avida, and waldo.
+
+The suffixes are aru to naru and taru with the verb aru.
+
+In the past tense we have, you played miradero, he played I and ard arrow, she played Avida.
+
+ARD arrow they played Waldo.
+
+ARD arrow.
+
+In the present tense.
+
+You are playing Moero Arthur Naru.
+
+He is playing Eien art Naru.
+
+She is playing Alvida art Naru.
+
+They are playing wild.
+
+Art Naru.
+
+In the future tense.
+
+You will play Meiro Ataru.
+
+He will play in Ataru.
+
+She will play Avida Ataru.
+
+They will play Voldo Ataru.
+
+Finally we have the neuter gender pronouns it and they, that is adi and avi.
+
+The suffixes for it or adi follows the same suffixes as the feminine conjugations in the past tense.
+
+The suffix for adi is indi, for avi is I.
+
+The present tense.
+
+For Addie, it is Tony.
+
+For Abby it is Thunai in the future tense.
+
+For Addie it is Tundi.
+
+And for Avi it is Ty.
+
+Let's see this with the verb ado.
+
+It played at the ARD Indy.
+
+They played a vadai.
+
+It is playing are the are too and they are playing are we are tonigh it will play are the are they will
+
+play.
+
+Are we are they.
+
+So here we go.
+
+These are all the verb conjugations of Urdu across the three tenses.
+
+Essentially, these are only three verb conjugations.
+
+You can look at it as nano, Arduino nano, ATA nano, and Nano ATA.
+
+No, it's just that the person marker now changes to wu do thee mu, and so on according to the pronoun
+
+being used.
+
+Once you understand this pattern, verb conjugations in Telugu become really straightforward and simple.
+
+Now.
+
+Telugu also has different suffixes for negative sentences.
+
+Let's look at the suffixes and verb conjugations for the negative tenses.
+
+First, in the past tense to say I did not.
+
+The suffix is simply lho, which is actually the Telugu word for no.
+
+In the present tense to say not doing, we have only one suffix, which is dum la.
+
+Do you add the suffix dum to make a verb into its infinitive form?
+
+And then you add ledu to the infinitive form of the verb.
+
+And finally, the future tense has person markers, so this changes for every pronoun.
+
+So the suffix can be anu, awu, aadu, aadu, and so on based on the pronoun being used.
+
+Let's see this in action using the verb aadu in the past tense.
+
+Across all pronouns we say Aadi ledu.
+
+So I did not play is Nino Adelaide.
+
+You did not play Nouveau Aadi, Ledu and so on across the pronouns.
+
+There is no person marker here, so this does not change depending on the pronoun.
+
+In the present tense, we use the infinitive form of the verb for order, that is ard Adam, and then
+
+we add a little to the infinitive form, so it becomes ard Adam Ledoux.
+
+Here too, there is no person marker, so this stays same across all pronouns.
+
+So I am not playing is nano Adam Ledoux.
+
+You're not playing is Nouveau Adam Ledoux and so on across the pronouns.
+
+For the future or habitual tense, the person marker is used, so this changes depending on the pronoun
+
+being used.
+
+So I won't play or I don't play is Nino Adorno.
+
+You won't play Nouveau Adabu.
+
+He won't play Vado Ado.
+
+She won't play Adda ado.
+
+We won't play mama Adamo.
+
+The formal versions are arderiu.
+
+So.
+
+Miro.
+
+Ah ah ah ah ah ah ah.
+
+Duru and Waldo.
+
+Ah.
+
+Daru.
+
+The neuter it is are the Urdu and the neuter plural they won't play is Avi ardha vu.
+
+So here we see both the positive as well as the negative conjugations of the verb aadu.
+
+I have used Aadu as an example.
+
+These conjugations work exactly the same way across most verbs in Telugu.
+
+In the coming few examples, I'm going to be looking at some noteworthy or irregular verbs.
+
+Most regular verbs follow the same pattern as Aadu, but there are a few other types of verbs which
+
+have some slight exceptions.
+
+Let's start with a very important verb that is chai.
+
+This means do chai breaks from the pattern slightly, because in the positive conjugation, chai becomes
+
+chase.
+
+In fact, in all Telugu verbs that end with a yi sound, the ending becomes a sa sound when it conjugates
+
+in the positive tenses.
+
+So here too, chai becomes chase.
+
+Let's go through the conjugations of chai row by row, starting with ei that is nano.
+
+I did Nino Chissano.
+
+I am doing Nino Chesta Nanu.
+
+I will do Nino Castano.
+
+You did not survive.
+
+You're doing Nauvoo.
+
+Nauvoo.
+
+You will do Nauvoo.
+
+He did what she said he is doing.
+
+Vaadu shastha naadu.
+
+He will do vaadu chase tadu she did Adhi chase and she is doing Adhi chase.
+
+Tondi she will do the chase tondi.
+
+We did.
+
+Mamushi Samu.
+
+We are doing Mamushi Namu.
+
+We will do Mamushi tamu.
+
+The formal and plural pronouns use Cesaro, chase to Nauru and chase through.
+
+You did me wrong.
+
+Cesaro.
+
+He did.
+
+I know Cesaro.
+
+She did.
+
+Cesaro.
+
+They did.
+
+Wild.
+
+Cesaro.
+
+You are doing me Rajasthan.
+
+Naru.
+
+He is doing Hina.
+
+Chester.
+
+Naru.
+
+She is doing Aveda.
+
+Chester.
+
+Naru.
+
+They are doing Wilder.
+
+Chester.
+
+Naru.
+
+You will do me through.
+
+He will do.
+
+I know she's through.
+
+She will do a chase through.
+
+They will do.
+
+Wild chase through.
+
+Next we see the neuter pronouns.
+
+It did, added she Cindy.
+
+They did away che ci it is doing added che stoned.
+
+They are doing away chased anni it will do, added Chase Dundee.
+
+They will do away chase they.
+
+In the negative conjugations of the verb che, the verb doesn't change form to chase.
+
+It stays che in the past tense across all pronouns, it is che ledu.
+
+I did not know che ledu, you did not know che Ledoux, and so on across all the pronouns in the present
+
+tense to say I am not doing.
+
+We use the infinitive form of the verb che dum and ad ledu.
+
+So we get che dum ledu.
+
+I am not doing nano che Adam ledu you are not doing novel che Adam ledu.
+
+This stays the same across all the pronouns.
+
+The future tense conjugations have the person markers.
+
+I won't do Nina Quijano.
+
+You won't do Nueva Ecija.
+
+He won't do Vadakadu.
+
+She won't do Adithya do we won't do Mamu Yamu.
+
+The formal pronouns you won't do miru che yaru, he won't do ina chaaru, she won't do avida chaaru.
+
+They won't do varda chaaru the neuter pronouns.
+
+It won't do Adithya do, they won't do avichi.
+
+Now let's look at the verb eat.
+
+That is Theano.
+
+I've included Theano in today's recap because the suffixes for Theano take the retroflex t sound, that
+
+is, its tun nanu, not tun, nanu or tanu and not tanu.
+
+This is because it is common in Telugu phonology that verbs that end with a na or n sound have the conjugation
+
+take up a retroflex sound, so it's not thin tun nanu, it's thin tun nanu that is tha versus ta.
+
+Let's go through this row by row.
+
+I ate nano thin nano.
+
+I am eating nano thin nano.
+
+I will eat nano thin.
+
+Tanu.
+
+You ate Nauvoo.
+
+Nauvoo?
+
+You're eating Nauvoo into Nauvoo.
+
+You will eat Nauvoo into.
+
+He ate vada thinadhoo.
+
+He is eating Vada Tintu Nadu.
+
+He will eat vada tentado.
+
+She ate are the thin and she is eating are the thin and she will eat are the thin tondi.
+
+V8 mammoth in Namu we are eating mammoth into Namu.
+
+We will eat Mammoth in Tamu.
+
+The formal or plural suffixes are aro to naru and taru you ate maru naru, he ate aina tin naru she
+
+ate, or within naru they ate wada tin naru.
+
+You're eating me.
+
+Tinto.
+
+Naru.
+
+He is eating iron.
+
+Tinto.
+
+Naru.
+
+She is eating out.
+
+Tinto.
+
+Naru.
+
+They are eating wild.
+
+Tinto.
+
+Naru.
+
+You will eat me thin taro.
+
+He will eat I thin taro.
+
+She will eat taro.
+
+They will eat wild taro.
+
+The neuter pronouns are thee and avi.
+
+Eat ate Aditi in Hindi.
+
+They ate are within Nai.
+
+It is eating, Aditi intoned.
+
+They are eating a within ton nai.
+
+It will eat other things and they will eat a within Thai.
+
+Let's look at the negative conjugations of the verb Theano.
+
+In the past tense it is simply thinner.
+
+Ledoux.
+
+So I did not eat his nano thinner.
+
+Ledoux.
+
+This stays the same across all pronouns.
+
+In the present tense, we use the infinitive form theraderm and add Ledoux.
+
+So we get thinner.
+
+Derm Ledoux.
+
+I am not eating is nano thinner term Ledoux.
+
+This stays the same across all pronouns.
+
+The future tense has the person markers, as always.
+
+I won't eat Nanu nanu.
+
+You won't eat novotelnov.
+
+He won't eat Varda.
+
+Thinadhoo.
+
+She won't eat Aditi.
+
+Naadu.
+
+We won't eat Mammooty.
+
+Nomu.
+
+The formal and plural pronouns use thin aru.
+
+You won't eat Miru.
+
+Tenaru.
+
+He won't eat Ayana tenaru.
+
+She won't eat Avara Tenaru.
+
+They won't eat Vilde Tenaru.
+
+The neuter pronouns.
+
+It won't eat Ada Thinadhoo.
+
+They won't eat a within Abu.
+
+Next, let's look at the verb go.
+
+That is well do.
+
+I went Nano.
+
+Well, nano, I am going nano.
+
+Nano.
+
+I will go nano well.
+
+Tanu.
+
+You went Nova.
+
+Well, you're going Nova.
+
+Well, now you will go Nova Vltavou.
+
+He went valluvanadu.
+
+He is going vaadu welldone naadu.
+
+He will go vaadu well-to-do.
+
+She went at the well in the she is going at the well toned.
+
+She will go at the well toned.
+
+We went maimoh well I am we are going maimoh Welton Namu we will go maimoh well.
+
+Tamu the formal pronouns.
+
+You went mirror welder.
+
+He went iron welder.
+
+She went out welder.
+
+Arrow.
+
+They went wild.
+
+Weld arrow.
+
+You're going.
+
+Mira.
+
+Naru!
+
+He is going.
+
+I know Welton Naru.
+
+She is going away to Welton Naru.
+
+They are going wild.
+
+Welton Naru.
+
+You will go.
+
+Mira.
+
+Well-to-do.
+
+He will go.
+
+Ayana.
+
+Well-to-do.
+
+She will go.
+
+Arvida.
+
+Well-to-do.
+
+They will go.
+
+Valda.
+
+Well-to-do.
+
+The neuter pronouns it went are the well in thee.
+
+They went away well, I.
+
+It is going are the well toned they are going.
+
+Are we well tonigh it will go are the well tuned?
+
+They will go away well I.
+
+Let's look at the negative conjugations.
+
+The past tense conjugation of weldu is vellido and the present tense conjugation of weldu is velodrome
+
+ledu.
+
+I didn't go is nano weldu.
+
+I am not going.
+
+Is nano well?
+
+Dumbledore.
+
+This stays the same across all pronouns as it doesn't have a person marker.
+
+The future tense has a person marker.
+
+I won't go.
+
+No, no, no, you won't go.
+
+No vuelvo.
+
+He won't go.
+
+Vado.
+
+Vedado.
+
+She won't go.
+
+Ah!
+
+The well-to-do.
+
+We won't go.
+
+Mama.
+
+Amu!
+
+The formal pronouns.
+
+You won't go.
+
+Mir Daru.
+
+He won't go.
+
+I know well, Daru.
+
+She won't go.
+
+Avida.
+
+Daru.
+
+They won't go wild.
+
+Daru.
+
+The neuter pronouns.
+
+It won't go.
+
+Are the well-to-do?
+
+They won't go away.
+
+Well.
+
+Next, let's look at a different type of verb.
+
+This is a verb that ends with an o sound.
+
+Here, the exception is that the o sound turns into un when it's conjugated, so curchoe becomes caution
+
+in all the positive verb conjugations.
+
+Let's go through this row by row.
+
+I sat near Neukirchen Nanu.
+
+I am sitting near Neukirchen to Nanu.
+
+I will sit near Neukirchen.
+
+Tano.
+
+You sat Neukirchen, now you're sitting Neukirchen.
+
+Now you will sit Neukirchen.
+
+He sat Waakirchen Nadu.
+
+He is sitting vadakku Chinta Nadu.
+
+He will sit vadakku.
+
+Aadu.
+
+She sat at the church and she is sitting at the cushion and she will sit at the cushion turned.
+
+We sat memikirkan Namu.
+
+We are sitting memikirkan to Namu.
+
+We will sit memikirkan tamu.
+
+The formal pronouns you sat miruku.
+
+Naru he sat I, and naru she sat.
+
+I would caution naru.
+
+They said Wilde.
+
+Kirchner.
+
+You're sitting mere cushion to Naru.
+
+He is sitting on a cushion to Naru.
+
+She is sitting out a cushion to Naru.
+
+They are sitting wild cushion to Naru.
+
+You will sit near Shintaro.
+
+He will sit I and Aku Shintaro.
+
+She will sit.
+
+I will occur, Shintaro.
+
+They will sit wild.
+
+Shintaro.
+
+The neuter pronouns are thee and avi.
+
+It sat on the couch and they sat avi kursenai.
+
+It is sitting on the couch and they are sitting on the couch and I.
+
+It will sit at the kitchen and they will sit of a Sunday.
+
+In the negative conjugations, Kershaw does not change to Kirchhundem.
+
+It stays Kershaw in the past tense, we say.
+
+Kershaw.
+
+Ledoux I didn't sit.
+
+Kershaw.
+
+Ledoux.
+
+There is no person marker so this stays the same across pronouns.
+
+In the present tense we use the infinitive form.
+
+Kershaw, Adam and add Ledoux.
+
+So we get Kershaw, Dumbledore.
+
+I am not sitting is name.
+
+Kershaw.
+
+Dumbledore.
+
+In the future tense.
+
+We have person markers and the suffix anu or awu merges with the o sound at the end of Corso, so we
+
+get suffixes like onu, ovo, odu and so on.
+
+I won't sit near Neukirchen.
+
+You won't sit Neukirchen.
+
+He won't sit Vadakkur.
+
+She won't sit at the Kuusalu.
+
+We won't sit mame kurumu the formal pronouns you won't sit me kurukuru he won't sit in a kurukuru she
+
+won't sit with a kurukuru.
+
+They won't sit wild.
+
+Kurukuru the neuter pronouns.
+
+It won't sit at the korkadu they won't sit.
+
+Are we kirkovo?
+
+Next we look at an irregular verb that is, the verb for come.
+
+In its imperative form it is ra.
+
+However, when it conjugates, it becomes watch.
+
+There are very few verbs in the Telugu language which are irregular to the point where they completely
+
+change form when they are conjugated.
+
+The verb come is one of the very few exceptions, and that's why we need to take note of it.
+
+Now let's look at all the positive conjugations row by row.
+
+I came Nino Vacchiano.
+
+I am coming, Nino Nanu.
+
+I will come, Nino.
+
+Vastano.
+
+You came.
+
+Novovax.
+
+You are coming.
+
+Nauvoo was Nauvoo.
+
+You will come.
+
+Nuvvu.
+
+Vastavani.
+
+He came vadakadu.
+
+He is coming.
+
+Vada vasta nadu.
+
+He will come.
+
+Vada vastadu.
+
+She came.
+
+Adivasi.
+
+Hindi.
+
+She is coming.
+
+Adivasi Tundi.
+
+She will come.
+
+Adivasi Tundi.
+
+We came.
+
+Mame.
+
+Watamu.
+
+We are coming.
+
+Mame.
+
+Vasten.
+
+Namu.
+
+We will come.
+
+Mame.
+
+Vastaamo.
+
+The formal pronouns you came me Vakaru.
+
+He came Inawashiro.
+
+She came Avada Vakaru.
+
+They came Varld.
+
+Vakaru.
+
+You're coming.
+
+Mere Vastaan Naru.
+
+He is coming even worse than Naru.
+
+She is coming out!
+
+Vastaan Naru!
+
+They are coming wild!
+
+Vastaan naru.
+
+You will come.
+
+Miroirs Tarrou.
+
+He will come and watch Tarrou.
+
+She will come out of Tarrou.
+
+They will come.
+
+Valluvars.
+
+Tarrou.
+
+The neuter pronouns.
+
+It came Adivasi Hindi.
+
+They came Avakai.
+
+It is coming.
+
+Adivasi.
+
+They are coming.
+
+Are we Vastu nai?
+
+It will come Adivasi.
+
+And they will come Avasthe.
+
+Next we see the negative conjugations of the verb rah.
+
+Here the form does not change to watch it stays.
+
+Rah!
+
+In the past tense we say ra ledu.
+
+In the present tense we say ra Dumbledore.
+
+These two stay the same across pronouns.
+
+So I didn't come is Nino ra.
+
+Though I am not coming.
+
+Is Nino ra Dumbledore?
+
+Finally, the future tense has person markers, and the vowel at the start of the suffix gets merged
+
+with the vowel at the end of RA.
+
+Let's go through it.
+
+I won't come, Nino ra.
+
+No, you won't come.
+
+No, he won't come.
+
+Varda.
+
+Radu!
+
+She won't come.
+
+Adi.
+
+Radu!
+
+We won't come.
+
+Mami.
+
+Ramu.
+
+You won't come.
+
+Mira.
+
+Radu.
+
+He won't come.
+
+Ina.
+
+Radu.
+
+She won't come out.
+
+Radu.
+
+They won't come.
+
+Vilde.
+
+Radu!
+
+It won't come.
+
+Adorado.
+
+They won't come away.
+
+Ravu.
+
+So as you see, we've seen the positive and negative verb conjugations of come.
+
+In the positive conjugations.
+
+The verb changes completely to either watch or worse, whereas in the negative conjugations it stays
+
+as RA.
+
+Everything else, all the suffixes, they stay almost exactly the same and follow the same pattern with
+
+person markers.
+
+The next verb is undo, which means be or stay or exist in any language.
+
+The two be verb is very important and Telugu is no different.
+
+In English, the verb be conjugates to form the auxiliary verbs is, was, will be, and so on.
+
+The conjugations of undo are the equivalents of these in Telugu.
+
+Undo is a highly irregular verb and is the only verb that breaks many of the rules of tenses that we
+
+have learnt till now.
+
+For instance, the past tense also doubles up as the present tense.
+
+For example, un nanu, which is technically the past tense form or the equivalent of was also acts
+
+as the present tense is or am.
+
+Similarly, there are other irregularities in the negative forms.
+
+Because of these irregularities and the verb's importance, I have made an entire lesson.
+
+That is the next lesson dedicated to the usage of undo.
+
+You can perhaps make out why this happens.
+
+You may recognize the similarity of un nanu with our tense suffix ton nanu.
+
+Essentially, the conjugations of undo are the basis of all the verb suffixes in Telugu.
+
+This is why the conjugations of undo behave irregularly.
+
+For now, let's simply go through the conjugations of this verb.
+
+We learn further details in the next video.
+
+We start with the past tense, which also doubles up as the present tense.
+
+Let me go through this tense pronoun by pronoun to say I am.
+
+We use nano UN nano.
+
+You are Nauvoo.
+
+UN Nauvoo.
+
+He is Vaadu Unnadu.
+
+She is Adhi anadhai.
+
+Her anadhai contracts to Undi.
+
+So we can also say Adi undi.
+
+We are mammo unnam in the plural or formal forms.
+
+You are Mira Unaru.
+
+He is Ayan Unaru.
+
+She is Alvida Unaru.
+
+They are called Unaru.
+
+The neuter forms it is are the unde.
+
+They are are we un I?
+
+Next we have the present continuous form.
+
+There is no English equivalent for this.
+
+You can roughly translate it as I am being or I am staying.
+
+Let's go through it.
+
+Pronoun by pronoun.
+
+Nano unto nano.
+
+Nouveau unto Nauvoo vaadu unto naadu adhai unto nadi or contracted.
+
+This becomes adhe unto thee.
+
+Mammo unto namo.
+
+Miro unto Naru.
+
+Ayana unto Naru.
+
+Avada unto Naru.
+
+Waldo unto naru.
+
+Addy unto thee.
+
+Avi unto Nagi.
+
+Finally, let's go through the future tense, which can be translated as I will be, you will be, and
+
+so on.
+
+Nino.
+
+UN tano nuevo.
+
+UN tabu.
+
+Vado un tatu.
+
+Adi UN tondi.
+
+Memo.
+
+UN tamu miro.
+
+Untrue and untrue.
+
+Avida.
+
+Untrue.
+
+Waldo.
+
+Untrue.
+
+Adi un tondi.
+
+AWI.
+
+Untie.
+
+These are all the positive conjugations.
+
+They follow the same rules of suffixes, but they are tense that they correspond to is irregular or
+
+breaks from the norm.
+
+Next, let us look at the negative forms.
+
+Here too, the present and past tense are combined, and they take a completely different format to
+
+what we've seen in other verbs.
+
+You might recognize the word ladoo, which means no in Telugu.
+
+This word ladoo takes different person markers across the pronouns.
+
+I am not is Nino Lleno.
+
+You are not Novo Levo.
+
+He is not Vado Lado.
+
+She is not Adi Lado.
+
+We are not Mamu Lamu.
+
+The formal or plural forms.
+
+You are not Miru Laru.
+
+He is not Ayana Laru.
+
+She is not Avida.
+
+Laru.
+
+They are not wild.
+
+Laru.
+
+It is not a delay, though they are not of a level.
+
+Next the present continuous form, which means something like not staying or not being, follows our
+
+usual rules.
+
+So this is under Derm lido.
+
+This stays the same across all pronouns.
+
+I repeat under Dumbledore.
+
+Next we look at the combined habitual future tense.
+
+This translates to I will not do or I do not do.
+
+Based on the context.
+
+This follows our usual pattern.
+
+Pronoun by pronoun.
+
+It is as follows.
+
+Nano under GNU.
+
+Nouveau under vu.
+
+Vaudou under ado.
+
+Addie.
+
+Under du Mamou.
+
+Under mu miru under gnu ayana under arvida under gnu Waldo.
+
+Under gnu addie.
+
+Under ado avi under vu.
+
+In today's recap, I've covered a bunch of regular verbs as well as some irregular verbs.
+
+There are other verbs listed in the PDF document for further reference.
+
+The beauty of Telugu verbs is that there are far more regular verbs than there are irregular verbs.
+
+These verbs follow the pattern of person markers in an almost algorithmic and predictable fashion.
+
+So as long as you know the pattern of person markers, you can easily conjugate them in any tense.
+
+That's it for today's lesson.
+
+Thank you.
+
+Dhanyavad aloo.

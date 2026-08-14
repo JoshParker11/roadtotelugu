@@ -134,7 +134,7 @@ function paradigmTable(v, formIds) {
     personForms.forEach(f => {
       /* person-invariant forms are printed once and then marked, so the eye can see
          at a glance that the verb genuinely does not move */
-      h += (f.invariant && i > 0)
+      h += (invariantFor(v, f.id) && i > 0)
         ? '<td><span class="same">↑ unchanged</span></td>'
         : `<td>${segCell(segment(v, f.id, i))}</td>`;
     });

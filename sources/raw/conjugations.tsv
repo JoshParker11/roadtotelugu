@@ -1,0 +1,881 @@
+verb_en	root	irregular	polarity	person	tense	form
+Play	Āḍu		pos	i	past	āḍ-ānu
+Play	Āḍu		pos	you	past	āḍ-āvu
+Play	Āḍu		pos	he	past	āḍ-āḍu
+Play	Āḍu		pos	she	past	āḍ-indi
+Play	Āḍu		pos	we	past	āḍ-āmu
+Play	Āḍu		pos	formal	past	āḍ-āru
+Play	Āḍu		pos	it	past	āḍ-indi
+Play	Āḍu		pos	they-n	past	āḍ-āyi
+Play	Āḍu		pos	i	present	āḍ-tunnānu
+Play	Āḍu		pos	you	present	āḍ-tunnāvu
+Play	Āḍu		pos	he	present	āḍ-tunnāḍu
+Play	Āḍu		pos	she	present	āḍ-tōndi
+Play	Āḍu		pos	we	present	āḍ-tunnāmu
+Play	Āḍu		pos	formal	present	āḍ-tunnāru
+Play	Āḍu		pos	it	present	āḍ-tōndi
+Play	Āḍu		pos	they-n	present	āḍ-tunnāyi
+Play	Āḍu		pos	i	future	āḍ-tānu
+Play	Āḍu		pos	you	future	āḍ-tāvu
+Play	Āḍu		pos	he	future	āḍ-tāḍu
+Play	Āḍu		pos	she	future	āḍ-tundi
+Play	Āḍu		pos	we	future	āḍ-tāmu
+Play	Āḍu		pos	formal	future	āḍ-tāru
+Play	Āḍu		pos	it	future	āḍ-tundi
+Play	Āḍu		pos	they-n	future	āḍ-tāyi
+Play	Āḍu		neg	i	future	āḍ-anu
+Play	Āḍu		neg	you	future	āḍ-avu
+Play	Āḍu		neg	he	future	āḍ-aḍu
+Play	Āḍu		neg	she	future	āḍ-adu
+Play	Āḍu		neg	we	future	āḍ-amu
+Play	Āḍu		neg	formal	future	āḍ-aru
+Play	Āḍu		neg	it	future	āḍ-adu
+Play	Āḍu		neg	they-n	future	āḍ-avu
+Play	Āḍu		neg	i	past	āḍ-lēdu
+Play	Āḍu		neg	you	past	āḍ-lēdu
+Play	Āḍu		neg	he	past	āḍ-lēdu
+Play	Āḍu		neg	she	past	āḍ-lēdu
+Play	Āḍu		neg	we	past	āḍ-lēdu
+Play	Āḍu		neg	formal	past	āḍ-lēdu
+Play	Āḍu		neg	it	past	āḍ-lēdu
+Play	Āḍu		neg	they-n	past	āḍ-lēdu
+Play	Āḍu		neg	i	present	āḍ-ḍam-lēdu
+Play	Āḍu		neg	you	present	āḍ-ḍam-lēdu
+Play	Āḍu		neg	he	present	āḍ-ḍam-lēdu
+Play	Āḍu		neg	she	present	āḍ-ḍam-lēdu
+Play	Āḍu		neg	we	present	āḍ-ḍam-lēdu
+Play	Āḍu		neg	formal	present	āḍ-ḍam-lēdu
+Play	Āḍu		neg	it	present	āḍ-ḍam-lēdu
+Play	Āḍu		neg	they-n	present	āḍ-ḍam-lēdu
+Go	Veḷḷu		pos	i	past	veḷḷ-ānu
+Go	Veḷḷu		pos	you	past	veḷḷ-āvu
+Go	Veḷḷu		pos	he	past	veḷḷ-āḍu
+Go	Veḷḷu		pos	she	past	veḷḷ-indi
+Go	Veḷḷu		pos	we	past	veḷḷ-āmu
+Go	Veḷḷu		pos	formal	past	veḷḷ-āru
+Go	Veḷḷu		pos	it	past	veḷḷ-indi
+Go	Veḷḷu		pos	they-n	past	veḷḷ-āyi
+Go	Veḷḷu		pos	i	present	veḷḷ-tunnānu
+Go	Veḷḷu		pos	you	present	veḷḷ-tunnāvu
+Go	Veḷḷu		pos	he	present	veḷḷ-tunnāḍu
+Go	Veḷḷu		pos	she	present	veḷḷ-tōndi
+Go	Veḷḷu		pos	we	present	veḷḷ-tunnāmu
+Go	Veḷḷu		pos	formal	present	veḷḷ-tunnāru
+Go	Veḷḷu		pos	it	present	veḷḷ-tōndi
+Go	Veḷḷu		pos	they-n	present	veḷḷ-tunnāyi
+Go	Veḷḷu		pos	i	future	veḷḷ-tānu
+Go	Veḷḷu		pos	you	future	veḷḷ-tāvu
+Go	Veḷḷu		pos	he	future	veḷḷ-tāḍu
+Go	Veḷḷu		pos	she	future	veḷḷ-tundi
+Go	Veḷḷu		pos	we	future	veḷḷ-tāmu
+Go	Veḷḷu		pos	formal	future	veḷḷ-tāru
+Go	Veḷḷu		pos	it	future	veḷḷ-tundi
+Go	Veḷḷu		pos	they-n	future	veḷḷ-tāyi
+Go	Veḷḷu		neg	i	future	veḷḷ-anu
+Go	Veḷḷu		neg	you	future	veḷḷ-avu
+Go	Veḷḷu		neg	he	future	veḷḷ-aḍu
+Go	Veḷḷu		neg	she	future	veḷḷ-adu
+Go	Veḷḷu		neg	we	future	veḷḷ-amu
+Go	Veḷḷu		neg	formal	future	veḷḷ-aru
+Go	Veḷḷu		neg	it	future	veḷḷ-adu
+Go	Veḷḷu		neg	they-n	future	veḷḷ-avu
+Go	Veḷḷu		neg	i	past	veḷḷ-lēdu
+Go	Veḷḷu		neg	you	past	veḷḷ-lēdu
+Go	Veḷḷu		neg	he	past	veḷḷ-lēdu
+Go	Veḷḷu		neg	she	past	veḷḷ-lēdu
+Go	Veḷḷu		neg	we	past	veḷḷ-lēdu
+Go	Veḷḷu		neg	formal	past	veḷḷ-lēdu
+Go	Veḷḷu		neg	it	past	veḷḷ-lēdu
+Go	Veḷḷu		neg	they-n	past	veḷḷ-lēdu
+Go	Veḷḷu		neg	i	present	veḷḷ-ḍam-lēdu
+Go	Veḷḷu		neg	you	present	veḷḷ-ḍam-lēdu
+Go	Veḷḷu		neg	he	present	veḷḷ-ḍam-lēdu
+Go	Veḷḷu		neg	she	present	veḷḷ-ḍam-lēdu
+Go	Veḷḷu		neg	we	present	veḷḷ-ḍam-lēdu
+Go	Veḷḷu		neg	formal	present	veḷḷ-ḍam-lēdu
+Go	Veḷḷu		neg	it	present	veḷḷ-ḍam-lēdu
+Go	Veḷḷu		neg	they-n	present	veḷḷ-ḍam-lēdu
+Eat	Tinu		pos	i	past	tinn-ānu
+Eat	Tinu		pos	you	past	tinn-āvu
+Eat	Tinu		pos	he	past	tinn-āḍu
+Eat	Tinu		pos	she	past	tinn-indi
+Eat	Tinu		pos	we	past	tinn-āmu
+Eat	Tinu		pos	formal	past	tinn-āru
+Eat	Tinu		pos	it	past	tinn-indi
+Eat	Tinu		pos	they-n	past	tinn-āyi
+Eat	Tinu		pos	i	present	tin-ṭunnānu
+Eat	Tinu		pos	you	present	tin-ṭunnāvu
+Eat	Tinu		pos	he	present	tin-ṭunnāḍu
+Eat	Tinu		pos	she	present	tin-ṭondi
+Eat	Tinu		pos	we	present	tin-ṭunnāmu
+Eat	Tinu		pos	formal	present	tin-ṭunnāru
+Eat	Tinu		pos	it	present	tin-ṭondi
+Eat	Tinu		pos	they-n	present	tin-ṭunnāyi
+Eat	Tinu		pos	i	future	tin-ṭānu
+Eat	Tinu		pos	you	future	tin-ṭāvu
+Eat	Tinu		pos	he	future	tin-ṭāḍu
+Eat	Tinu		pos	she	future	tin-ṭundi
+Eat	Tinu		pos	we	future	tin-ṭāmu
+Eat	Tinu		pos	formal	future	tin-ṭāru
+Eat	Tinu		pos	it	future	tin-ṭundi
+Eat	Tinu		pos	they-n	future	tin-ṭāyi
+Eat	Tinu		neg	i	future	tin-anu
+Eat	Tinu		neg	you	future	tin-avu
+Eat	Tinu		neg	he	future	tin-aḍu
+Eat	Tinu		neg	she	future	tin-adu
+Eat	Tinu		neg	we	future	tin-amu
+Eat	Tinu		neg	formal	future	tin-aru
+Eat	Tinu		neg	it	future	tin-adu
+Eat	Tinu		neg	they-n	future	tin-avu
+Eat	Tinu		neg	i	past	tin-lēdu
+Eat	Tinu		neg	you	past	tin-lēdu
+Eat	Tinu		neg	he	past	tin-lēdu
+Eat	Tinu		neg	she	past	tin-lēdu
+Eat	Tinu		neg	we	past	tin-lēdu
+Eat	Tinu		neg	formal	past	tin-lēdu
+Eat	Tinu		neg	it	past	tin-lēdu
+Eat	Tinu		neg	they-n	past	tin-lēdu
+Eat	Tinu		neg	i	present	tin-ḍam-lēdu
+Eat	Tinu		neg	you	present	tin-ḍam-lēdu
+Eat	Tinu		neg	he	present	tin-ḍam-lēdu
+Eat	Tinu		neg	she	present	tin-ḍam-lēdu
+Eat	Tinu		neg	we	present	tin-ḍam-lēdu
+Eat	Tinu		neg	formal	present	tin-ḍam-lēdu
+Eat	Tinu		neg	it	present	tin-ḍam-lēdu
+Eat	Tinu		neg	they-n	present	tin-ḍam-lēdu
+Drink	Tāgu		pos	i	past	tāg-ānu
+Drink	Tāgu		pos	you	past	tāg-āvu
+Drink	Tāgu		pos	he	past	tāg-tāgu
+Drink	Tāgu		pos	she	past	tāg-indi
+Drink	Tāgu		pos	we	past	tāg-āmu
+Drink	Tāgu		pos	formal	past	tāg-āru
+Drink	Tāgu		pos	it	past	tāg-indi
+Drink	Tāgu		pos	they-n	past	tāg-āyi
+Drink	Tāgu		pos	i	present	tāg-tunnānu
+Drink	Tāgu		pos	you	present	tāg-tunnāvu
+Drink	Tāgu		pos	he	present	tāg-tunntāgu
+Drink	Tāgu		pos	she	present	tāg-tōndi
+Drink	Tāgu		pos	we	present	tāg-tunnāmu
+Drink	Tāgu		pos	formal	present	tāg-tunnāru
+Drink	Tāgu		pos	it	present	tāg-tōndi
+Drink	Tāgu		pos	they-n	present	tāg-tunnāyi
+Drink	Tāgu		pos	i	future	tāg-tānu
+Drink	Tāgu		pos	you	future	tāg-tāvu
+Drink	Tāgu		pos	he	future	tāg-ttāgu
+Drink	Tāgu		pos	she	future	tāg-tundi
+Drink	Tāgu		pos	we	future	tāg-tāmu
+Drink	Tāgu		pos	formal	future	tāg-tāru
+Drink	Tāgu		pos	it	future	tāg-tundi
+Drink	Tāgu		pos	they-n	future	tāg-tāyi
+Drink	Tāgu		neg	i	future	tāg-anu
+Drink	Tāgu		neg	you	future	tāg-avu
+Drink	Tāgu		neg	he	future	tāg-aḍu
+Drink	Tāgu		neg	she	future	tāg-adu
+Drink	Tāgu		neg	we	future	tāg-amu
+Drink	Tāgu		neg	formal	future	tāg-aru
+Drink	Tāgu		neg	it	future	tāg-adu
+Drink	Tāgu		neg	they-n	future	tāg-avu
+Drink	Tāgu		neg	i	past	tāg-lēdu
+Drink	Tāgu		neg	you	past	tāg-lēdu
+Drink	Tāgu		neg	he	past	tāg-lēdu
+Drink	Tāgu		neg	she	past	tāg-lēdu
+Drink	Tāgu		neg	we	past	tāg-lēdu
+Drink	Tāgu		neg	formal	past	tāg-lēdu
+Drink	Tāgu		neg	it	past	tāg-lēdu
+Drink	Tāgu		neg	they-n	past	tāg-lēdu
+Drink	Tāgu		neg	i	present	tāg-ḍam-lēdu
+Drink	Tāgu		neg	you	present	tāg-ḍam-lēdu
+Drink	Tāgu		neg	he	present	tāg-ḍam-lēdu
+Drink	Tāgu		neg	she	present	tāg-ḍam-lēdu
+Drink	Tāgu		neg	we	present	tāg-ḍam-lēdu
+Drink	Tāgu		neg	formal	present	tāg-ḍam-lēdu
+Drink	Tāgu		neg	it	present	tāg-ḍam-lēdu
+Drink	Tāgu		neg	they-n	present	tāg-ḍam-lēdu
+Tell	Cheppu		pos	i	past	chepp-ānu
+Tell	Cheppu		pos	you	past	chepp-āvu
+Tell	Cheppu		pos	he	past	chepp-cheppu
+Tell	Cheppu		pos	she	past	chepp-indi
+Tell	Cheppu		pos	we	past	chepp-āmu
+Tell	Cheppu		pos	formal	past	chepp-āru
+Tell	Cheppu		pos	it	past	chepp-indi
+Tell	Cheppu		pos	they-n	past	chepp-āyi
+Tell	Cheppu		pos	i	present	chepp-tunnānu
+Tell	Cheppu		pos	you	present	chepp-tunnāvu
+Tell	Cheppu		pos	he	present	chepp-tunncheppu
+Tell	Cheppu		pos	she	present	chepp-tōndi
+Tell	Cheppu		pos	we	present	chepp-tunnāmu
+Tell	Cheppu		pos	formal	present	chepp-tunnāru
+Tell	Cheppu		pos	it	present	chepp-tōndi
+Tell	Cheppu		pos	they-n	present	chepp-tunnāyi
+Tell	Cheppu		pos	i	future	chepp-tānu
+Tell	Cheppu		pos	you	future	chepp-tāvu
+Tell	Cheppu		pos	he	future	chepp-tcheppu
+Tell	Cheppu		pos	she	future	chepp-tundi
+Tell	Cheppu		pos	we	future	chepp-tāmu
+Tell	Cheppu		pos	formal	future	chepp-tāru
+Tell	Cheppu		pos	it	future	chepp-tundi
+Tell	Cheppu		pos	they-n	future	chepp-tāyi
+Tell	Cheppu		neg	i	future	chepp-anu
+Tell	Cheppu		neg	you	future	chepp-avu
+Tell	Cheppu		neg	he	future	chepp-aḍu
+Tell	Cheppu		neg	she	future	chepp-adu
+Tell	Cheppu		neg	we	future	chepp-amu
+Tell	Cheppu		neg	formal	future	chepp-aru
+Tell	Cheppu		neg	it	future	chepp-adu
+Tell	Cheppu		neg	they-n	future	chepp-avu
+Tell	Cheppu		neg	i	past	chepp-lēdu
+Tell	Cheppu		neg	you	past	chepp-lēdu
+Tell	Cheppu		neg	he	past	chepp-lēdu
+Tell	Cheppu		neg	she	past	chepp-lēdu
+Tell	Cheppu		neg	we	past	chepp-lēdu
+Tell	Cheppu		neg	formal	past	chepp-lēdu
+Tell	Cheppu		neg	it	past	chepp-lēdu
+Tell	Cheppu		neg	they-n	past	chepp-lēdu
+Tell	Cheppu		neg	i	present	chepp-ḍam-lēdu
+Tell	Cheppu		neg	you	present	chepp-ḍam-lēdu
+Tell	Cheppu		neg	he	present	chepp-ḍam-lēdu
+Tell	Cheppu		neg	she	present	chepp-ḍam-lēdu
+Tell	Cheppu		neg	we	present	chepp-ḍam-lēdu
+Tell	Cheppu		neg	formal	present	chepp-ḍam-lēdu
+Tell	Cheppu		neg	it	present	chepp-ḍam-lēdu
+Tell	Cheppu		neg	they-n	present	chepp-ḍam-lēdu
+Sing	Pāḍu		pos	i	past	pāḍ-ānu
+Sing	Pāḍu		pos	you	past	pāḍ-āvu
+Sing	Pāḍu		pos	he	past	pāḍ-pāḍu
+Sing	Pāḍu		pos	she	past	pāḍ-indi
+Sing	Pāḍu		pos	we	past	pāḍ-āmu
+Sing	Pāḍu		pos	formal	past	pāḍ-āru
+Sing	Pāḍu		pos	it	past	pāḍ-indi
+Sing	Pāḍu		pos	they-n	past	pāḍ-āyi
+Sing	Pāḍu		pos	i	present	pāḍ-tunnānu
+Sing	Pāḍu		pos	you	present	pāḍ-tunnāvu
+Sing	Pāḍu		pos	he	present	pāḍ-tunnpāḍu
+Sing	Pāḍu		pos	she	present	pāḍ-tōndi
+Sing	Pāḍu		pos	we	present	pāḍ-tunnāmu
+Sing	Pāḍu		pos	formal	present	pāḍ-tunnāru
+Sing	Pāḍu		pos	it	present	pāḍ-tōndi
+Sing	Pāḍu		pos	they-n	present	pāḍ-tunnāyi
+Sing	Pāḍu		pos	i	future	pāḍ-tānu
+Sing	Pāḍu		pos	you	future	pāḍ-tāvu
+Sing	Pāḍu		pos	he	future	pāḍ-tpāḍu
+Sing	Pāḍu		pos	she	future	pāḍ-tundi
+Sing	Pāḍu		pos	we	future	pāḍ-tāmu
+Sing	Pāḍu		pos	formal	future	pāḍ-tāru
+Sing	Pāḍu		pos	it	future	pāḍ-tundi
+Sing	Pāḍu		pos	they-n	future	pāḍ-tāyi
+Sing	Pāḍu		neg	i	future	pāḍ-anu
+Sing	Pāḍu		neg	you	future	pāḍ-avu
+Sing	Pāḍu		neg	he	future	pāḍ-aḍu
+Sing	Pāḍu		neg	she	future	pāḍ-adu
+Sing	Pāḍu		neg	we	future	pāḍ-amu
+Sing	Pāḍu		neg	formal	future	pāḍ-aru
+Sing	Pāḍu		neg	it	future	pāḍ-adu
+Sing	Pāḍu		neg	they-n	future	pāḍ-avu
+Sing	Pāḍu		neg	i	past	pāḍ-lēdu
+Sing	Pāḍu		neg	you	past	pāḍ-lēdu
+Sing	Pāḍu		neg	he	past	pāḍ-lēdu
+Sing	Pāḍu		neg	she	past	pāḍ-lēdu
+Sing	Pāḍu		neg	we	past	pāḍ-lēdu
+Sing	Pāḍu		neg	formal	past	pāḍ-lēdu
+Sing	Pāḍu		neg	it	past	pāḍ-lēdu
+Sing	Pāḍu		neg	they-n	past	pāḍ-lēdu
+Sing	Pāḍu		neg	i	present	pāḍ-ḍam-lēdu
+Sing	Pāḍu		neg	you	present	pāḍ-ḍam-lēdu
+Sing	Pāḍu		neg	he	present	pāḍ-ḍam-lēdu
+Sing	Pāḍu		neg	she	present	pāḍ-ḍam-lēdu
+Sing	Pāḍu		neg	we	present	pāḍ-ḍam-lēdu
+Sing	Pāḍu		neg	formal	present	pāḍ-ḍam-lēdu
+Sing	Pāḍu		neg	it	present	pāḍ-ḍam-lēdu
+Sing	Pāḍu		neg	they-n	present	pāḍ-ḍam-lēdu
+Speak	Māṭlāḍu		pos	i	past	māṭlāḍ-ānu
+Speak	Māṭlāḍu		pos	you	past	māṭlāḍ-āvu
+Speak	Māṭlāḍu		pos	he	past	māṭlāḍ-āḍu
+Speak	Māṭlāḍu		pos	she	past	māṭlāḍ-indi
+Speak	Māṭlāḍu		pos	we	past	māṭlāḍ-āmu
+Speak	Māṭlāḍu		pos	formal	past	māṭlāḍ-āru
+Speak	Māṭlāḍu		pos	it	past	māṭlāḍ-indi
+Speak	Māṭlāḍu		pos	they-n	past	māṭlāḍ-āyi
+Speak	Māṭlāḍu		pos	i	present	māṭlāḍ-tunnānu
+Speak	Māṭlāḍu		pos	you	present	māṭlāḍ-tunnāvu
+Speak	Māṭlāḍu		pos	he	present	māṭlāḍ-tunnāḍu
+Speak	Māṭlāḍu		pos	she	present	māṭlāḍ-tōndi
+Speak	Māṭlāḍu		pos	we	present	māṭlāḍ-tunnāmu
+Speak	Māṭlāḍu		pos	formal	present	māṭlāḍ-tunnāru
+Speak	Māṭlāḍu		pos	it	present	māṭlāḍ-tōndi
+Speak	Māṭlāḍu		pos	they-n	present	māṭlāḍ-tunnāyi
+Speak	Māṭlāḍu		pos	i	future	māṭlāḍ-tānu
+Speak	Māṭlāḍu		pos	you	future	māṭlāḍ-tāvu
+Speak	Māṭlāḍu		pos	he	future	māṭlāḍ-tāḍu
+Speak	Māṭlāḍu		pos	she	future	māṭlāḍ-tundi
+Speak	Māṭlāḍu		pos	we	future	māṭlāḍ-tāmu
+Speak	Māṭlāḍu		pos	formal	future	māṭlāḍ-tāru
+Speak	Māṭlāḍu		pos	it	future	māṭlāḍ-tundi
+Speak	Māṭlāḍu		pos	they-n	future	māṭlāḍ-tāyi
+Speak	Māṭlāḍu		neg	i	future	māṭlāḍ-anu
+Speak	Māṭlāḍu		neg	you	future	māṭlāḍ-avu
+Speak	Māṭlāḍu		neg	he	future	māṭlāḍ-aḍu
+Speak	Māṭlāḍu		neg	she	future	māṭlāḍ-adu
+Speak	Māṭlāḍu		neg	we	future	māṭlāḍ-amu
+Speak	Māṭlāḍu		neg	formal	future	māṭlāḍ-aru
+Speak	Māṭlāḍu		neg	it	future	māṭlāḍ-adu
+Speak	Māṭlāḍu		neg	they-n	future	māṭlāḍ-avu
+Speak	Māṭlāḍu		neg	i	past	-lēdu
+Speak	Māṭlāḍu		neg	you	past	-lēdu
+Speak	Māṭlāḍu		neg	he	past	-lēdu
+Speak	Māṭlāḍu		neg	she	past	-lēdu
+Speak	Māṭlāḍu		neg	we	past	-lēdu
+Speak	Māṭlāḍu		neg	formal	past	-lēdu
+Speak	Māṭlāḍu		neg	it	past	-lēdu
+Speak	Māṭlāḍu		neg	they-n	past	-lēdu
+Speak	Māṭlāḍu		neg	i	present	māṭlāḍ-ḍam-lēdu
+Speak	Māṭlāḍu		neg	you	present	māṭlāḍ-ḍam-lēdu
+Speak	Māṭlāḍu		neg	he	present	māṭlāḍ-ḍam-lēdu
+Speak	Māṭlāḍu		neg	she	present	māṭlāḍ-ḍam-lēdu
+Speak	Māṭlāḍu		neg	we	present	māṭlāḍ-ḍam-lēdu
+Speak	Māṭlāḍu		neg	formal	present	māṭlāḍ-ḍam-lēdu
+Speak	Māṭlāḍu		neg	it	present	māṭlāḍ-ḍam-lēdu
+Speak	Māṭlāḍu		neg	they-n	present	māṭlāḍ-ḍam-lēdu
+Do	Chēyi		pos	i	past	chēs-ānu
+Do	Chēyi		pos	you	past	chēs-āvu
+Do	Chēyi		pos	he	past	chēs-āḍu
+Do	Chēyi		pos	she	past	chēs-indi
+Do	Chēyi		pos	we	past	chēs-āmu
+Do	Chēyi		pos	formal	past	chēs-āru
+Do	Chēyi		pos	it	past	chēs-indi
+Do	Chēyi		pos	they-n	past	chēs-āyi
+Do	Chēyi		pos	i	present	chēs-tunnānu
+Do	Chēyi		pos	you	present	chēs-tunnāvu
+Do	Chēyi		pos	he	present	chēs-tunnāḍu
+Do	Chēyi		pos	she	present	chēs-tōndi
+Do	Chēyi		pos	we	present	chēs-tunnāmu
+Do	Chēyi		pos	formal	present	chēs-tunnāru
+Do	Chēyi		pos	it	present	chēs-tōndi
+Do	Chēyi		pos	they-n	present	chēs-tunnāyi
+Do	Chēyi		pos	i	future	chēs-tānu
+Do	Chēyi		pos	you	future	chēs-tāvu
+Do	Chēyi		pos	he	future	chēs-tāḍu
+Do	Chēyi		pos	she	future	chēs-tundi
+Do	Chēyi		pos	we	future	chēs-tāmu
+Do	Chēyi		pos	formal	future	chēs-tāru
+Do	Chēyi		pos	it	future	chēs-tundi
+Do	Chēyi		pos	they-n	future	chēs-tāyi
+Do	Chēyi		neg	i	future	chēy-anu
+Do	Chēyi		neg	you	future	chēy-avu
+Do	Chēyi		neg	he	future	chēy-aḍu
+Do	Chēyi		neg	she	future	chēy-adu
+Do	Chēyi		neg	we	future	chēy-amu
+Do	Chēyi		neg	formal	future	chēy-aru
+Do	Chēyi		neg	it	future	chēy-adu
+Do	Chēyi		neg	they-n	future	chēy-avu
+Do	Chēyi		neg	i	past	chēy-lēdu
+Do	Chēyi		neg	you	past	chēy-lēdu
+Do	Chēyi		neg	he	past	chēy-lēdu
+Do	Chēyi		neg	she	past	chēy-lēdu
+Do	Chēyi		neg	we	past	chēy-lēdu
+Do	Chēyi		neg	formal	past	chēy-lēdu
+Do	Chēyi		neg	it	past	chēy-lēdu
+Do	Chēyi		neg	they-n	past	chēy-lēdu
+Do	Chēyi		neg	i	present	chēy-ḍam-lēdu
+Do	Chēyi		neg	you	present	chēy-ḍam-lēdu
+Do	Chēyi		neg	he	present	chēy-ḍam-lēdu
+Do	Chēyi		neg	she	present	chēy-ḍam-lēdu
+Do	Chēyi		neg	we	present	chēy-ḍam-lēdu
+Do	Chēyi		neg	formal	present	chēy-ḍam-lēdu
+Do	Chēyi		neg	it	present	chēy-ḍam-lēdu
+Do	Chēyi		neg	they-n	present	chēy-ḍam-lēdu
+Write	Rāyi		pos	i	past	rās-ānu
+Write	Rāyi		pos	you	past	rās-āvu
+Write	Rāyi		pos	he	past	rās-āḍu
+Write	Rāyi		pos	she	past	rās-indi
+Write	Rāyi		pos	we	past	rās-āmu
+Write	Rāyi		pos	formal	past	rās-āru
+Write	Rāyi		pos	it	past	rās-indi
+Write	Rāyi		pos	they-n	past	rās-āyi
+Write	Rāyi		pos	i	present	rās-tunnānu
+Write	Rāyi		pos	you	present	rās-tunnāvu
+Write	Rāyi		pos	he	present	rās-tunnāḍu
+Write	Rāyi		pos	she	present	rās-tōndi
+Write	Rāyi		pos	we	present	rās-tunnāmu
+Write	Rāyi		pos	formal	present	rās-tunnāru
+Write	Rāyi		pos	it	present	rās-tōndi
+Write	Rāyi		pos	they-n	present	rās-tunnāyi
+Write	Rāyi		pos	i	future	rās-tānu
+Write	Rāyi		pos	you	future	rās-tāvu
+Write	Rāyi		pos	he	future	rās-tāḍu
+Write	Rāyi		pos	she	future	rās-tundi
+Write	Rāyi		pos	we	future	rās-tāmu
+Write	Rāyi		pos	formal	future	rās-tāru
+Write	Rāyi		pos	it	future	rās-tundi
+Write	Rāyi		pos	they-n	future	rās-tāyi
+Write	Rāyi		neg	i	future	rāy-anu
+Write	Rāyi		neg	you	future	rāy-avu
+Write	Rāyi		neg	he	future	rāy-aḍu
+Write	Rāyi		neg	she	future	rāy-adu
+Write	Rāyi		neg	we	future	rāy-amu
+Write	Rāyi		neg	formal	future	rāy-aru
+Write	Rāyi		neg	it	future	rāy-adu
+Write	Rāyi		neg	they-n	future	rāy-avu
+Write	Rāyi		neg	i	past	rāy-lēdu
+Write	Rāyi		neg	you	past	rāy-lēdu
+Write	Rāyi		neg	he	past	rāy-lēdu
+Write	Rāyi		neg	she	past	rāy-lēdu
+Write	Rāyi		neg	we	past	rāy-lēdu
+Write	Rāyi		neg	formal	past	rāy-lēdu
+Write	Rāyi		neg	it	past	rāy-lēdu
+Write	Rāyi		neg	they-n	past	rāy-lēdu
+Write	Rāyi		neg	i	present	rāy-ḍam-lēdu
+Write	Rāyi		neg	you	present	rāy-ḍam-lēdu
+Write	Rāyi		neg	he	present	rāy-ḍam-lēdu
+Write	Rāyi		neg	she	present	rāy-ḍam-lēdu
+Write	Rāyi		neg	we	present	rāy-ḍam-lēdu
+Write	Rāyi		neg	formal	present	rāy-ḍam-lēdu
+Write	Rāyi		neg	it	present	rāy-ḍam-lēdu
+Write	Rāyi		neg	they-n	present	rāy-ḍam-lēdu
+Sit	Kūrcho		pos	i	past	kūrchun-ānu
+Sit	Kūrcho		pos	you	past	kūrchun-āvu
+Sit	Kūrcho		pos	he	past	kūrchun-āḍu
+Sit	Kūrcho		pos	she	past	kūrchun-di
+Sit	Kūrcho		pos	we	past	kūrchun-āmu
+Sit	Kūrcho		pos	formal	past	kūrchun-āru
+Sit	Kūrcho		pos	it	past	kūrchun-di
+Sit	Kūrcho		pos	they-n	past	kūrchun-āyi
+Sit	Kūrcho		pos	i	present	kūrchun-ṭunnānu
+Sit	Kūrcho		pos	you	present	kūrchun-ṭunnāvu
+Sit	Kūrcho		pos	he	present	kūrchun-ṭunnāḍu
+Sit	Kūrcho		pos	she	present	kūrchun-ṭondi
+Sit	Kūrcho		pos	we	present	kūrchun-ṭunnāmu
+Sit	Kūrcho		pos	formal	present	kūrchun-ṭunnāru
+Sit	Kūrcho		pos	it	present	kūrchun-ṭondi
+Sit	Kūrcho		pos	they-n	present	kūrchun-ṭunnāyi
+Sit	Kūrcho		pos	i	future	kūrchun-ṭānu
+Sit	Kūrcho		pos	you	future	kūrchun-ṭāvu
+Sit	Kūrcho		pos	he	future	kūrchun-ṭāḍu
+Sit	Kūrcho		pos	she	future	kūrchun-ṭundi
+Sit	Kūrcho		pos	we	future	kūrchun-ṭāmu
+Sit	Kūrcho		pos	formal	future	kūrchun-ṭāru
+Sit	Kūrcho		pos	it	future	kūrchun-ṭundi
+Sit	Kūrcho		pos	they-n	future	kūrchun-ṭāyi
+Sit	Kūrcho		neg	i	future	kūrch-ōnu
+Sit	Kūrcho		neg	you	future	kūrch-ōvu
+Sit	Kūrcho		neg	he	future	kūrch-ōḍu
+Sit	Kūrcho		neg	she	future	kūrch-ōdu
+Sit	Kūrcho		neg	we	future	kūrch-ōmu
+Sit	Kūrcho		neg	formal	future	kūrch-ōru
+Sit	Kūrcho		neg	it	future	kūrch-ōdu
+Sit	Kūrcho		neg	they-n	future	kūrch-ōvu
+Sit	Kūrcho		neg	i	past	-lēdu
+Sit	Kūrcho		neg	you	past	-lēdu
+Sit	Kūrcho		neg	he	past	-lēdu
+Sit	Kūrcho		neg	she	past	-lēdu
+Sit	Kūrcho		neg	we	past	-lēdu
+Sit	Kūrcho		neg	formal	past	-lēdu
+Sit	Kūrcho		neg	it	past	-lēdu
+Sit	Kūrcho		neg	they-n	past	-lēdu
+Sit	Kūrcho		neg	i	present	kūrcho-ḍam-lēdu
+Sit	Kūrcho		neg	you	present	kūrcho-ḍam-lēdu
+Sit	Kūrcho		neg	he	present	kūrcho-ḍam-lēdu
+Sit	Kūrcho		neg	she	present	kūrcho-ḍam-lēdu
+Sit	Kūrcho		neg	we	present	kūrcho-ḍam-lēdu
+Sit	Kūrcho		neg	formal	present	kūrcho-ḍam-lēdu
+Sit	Kūrcho		neg	it	present	kūrcho-ḍam-lēdu
+Sit	Kūrcho		neg	they-n	present	kūrcho-ḍam-lēdu
+Sleep	paḍuko		pos	i	past	paḍukun-ānu
+Sleep	paḍuko		pos	you	past	paḍukun-āvu
+Sleep	paḍuko		pos	he	past	paḍukun-āḍu
+Sleep	paḍuko		pos	she	past	paḍukun-di
+Sleep	paḍuko		pos	we	past	paḍukun-āmu
+Sleep	paḍuko		pos	formal	past	paḍukun-āru
+Sleep	paḍuko		pos	it	past	paḍukun-di
+Sleep	paḍuko		pos	they-n	past	paḍukun-āyi
+Sleep	paḍuko		pos	i	present	paḍukun-ṭunnānu
+Sleep	paḍuko		pos	you	present	paḍukun-ṭunnāvu
+Sleep	paḍuko		pos	he	present	paḍukun-ṭunnāḍu
+Sleep	paḍuko		pos	she	present	paḍukun-ṭondi
+Sleep	paḍuko		pos	we	present	paḍukun-ṭunnāmu
+Sleep	paḍuko		pos	formal	present	paḍukun-ṭunnāru
+Sleep	paḍuko		pos	it	present	paḍukun-ṭondi
+Sleep	paḍuko		pos	they-n	present	paḍukun-ṭunnāyi
+Sleep	paḍuko		pos	i	future	paḍukun-ṭānu
+Sleep	paḍuko		pos	you	future	paḍukun-ṭāvu
+Sleep	paḍuko		pos	he	future	paḍukun-ṭāḍu
+Sleep	paḍuko		pos	she	future	paḍukun-ṭundi
+Sleep	paḍuko		pos	we	future	paḍukun-ṭāmu
+Sleep	paḍuko		pos	formal	future	paḍukun-ṭāru
+Sleep	paḍuko		pos	it	future	paḍukun-ṭundi
+Sleep	paḍuko		pos	they-n	future	paḍukun-ṭāyi
+Sleep	paḍuko		neg	i	future	paḍuk-ōnu
+Sleep	paḍuko		neg	you	future	paḍuk-ōvu
+Sleep	paḍuko		neg	he	future	paḍuk-ōḍu
+Sleep	paḍuko		neg	she	future	paḍuk-ōdu
+Sleep	paḍuko		neg	we	future	paḍuk-ōmu
+Sleep	paḍuko		neg	formal	future	paḍuk-ōru
+Sleep	paḍuko		neg	it	future	paḍuk-ōdu
+Sleep	paḍuko		neg	they-n	future	paḍuk-ōvu
+Sleep	paḍuko		neg	i	past	-lēdu
+Sleep	paḍuko		neg	you	past	-lēdu
+Sleep	paḍuko		neg	he	past	-lēdu
+Sleep	paḍuko		neg	she	past	-lēdu
+Sleep	paḍuko		neg	we	past	-lēdu
+Sleep	paḍuko		neg	formal	past	-lēdu
+Sleep	paḍuko		neg	it	past	-lēdu
+Sleep	paḍuko		neg	they-n	past	-lēdu
+Sleep	paḍuko		neg	i	present	paḍuko-ḍam-lēdu
+Sleep	paḍuko		neg	you	present	paḍuko-ḍam-lēdu
+Sleep	paḍuko		neg	he	present	paḍuko-ḍam-lēdu
+Sleep	paḍuko		neg	she	present	paḍuko-ḍam-lēdu
+Sleep	paḍuko		neg	we	present	paḍuko-ḍam-lēdu
+Sleep	paḍuko		neg	formal	present	paḍuko-ḍam-lēdu
+Sleep	paḍuko		neg	it	present	paḍuko-ḍam-lēdu
+Sleep	paḍuko		neg	they-n	present	paḍuko-ḍam-lēdu
+Learn	Nērchuko		pos	i	past	nērchukun-ānu
+Learn	Nērchuko		pos	you	past	nērchukun-āvu
+Learn	Nērchuko		pos	he	past	nērchukun-āḍu
+Learn	Nērchuko		pos	she	past	nērchukun-di
+Learn	Nērchuko		pos	we	past	nērchukun-āmu
+Learn	Nērchuko		pos	formal	past	nērchukun-āru
+Learn	Nērchuko		pos	it	past	nērchukun-di
+Learn	Nērchuko		pos	they-n	past	nērchukun-āyi
+Learn	Nērchuko		pos	i	present	nērchukun-ṭunnānu
+Learn	Nērchuko		pos	you	present	nērchukun-ṭunnāvu
+Learn	Nērchuko		pos	he	present	nērchukun-ṭunnāḍu
+Learn	Nērchuko		pos	she	present	nērchukun-ṭondi
+Learn	Nērchuko		pos	we	present	nērchukun-ṭunnāmu
+Learn	Nērchuko		pos	formal	present	nērchukun-ṭunnāru
+Learn	Nērchuko		pos	it	present	nērchukun-ṭondi
+Learn	Nērchuko		pos	they-n	present	nērchukun-ṭunnāyi
+Learn	Nērchuko		pos	i	future	nērchukun-ṭānu
+Learn	Nērchuko		pos	you	future	nērchukun-ṭāvu
+Learn	Nērchuko		pos	he	future	nērchukun-ṭāḍu
+Learn	Nērchuko		pos	she	future	nērchukun-ṭundi
+Learn	Nērchuko		pos	we	future	nērchukun-ṭāmu
+Learn	Nērchuko		pos	formal	future	nērchukun-ṭāru
+Learn	Nērchuko		pos	it	future	nērchukun-ṭundi
+Learn	Nērchuko		pos	they-n	future	nērchukun-ṭāyi
+Learn	Nērchuko		neg	i	future	nērchuk-ōnu
+Learn	Nērchuko		neg	you	future	nērchuk-ōvu
+Learn	Nērchuko		neg	he	future	nērchuk-ōḍu
+Learn	Nērchuko		neg	she	future	nērchuk-ōdu
+Learn	Nērchuko		neg	we	future	nērchuk-ōmu
+Learn	Nērchuko		neg	formal	future	nērchuk-ōru
+Learn	Nērchuko		neg	it	future	nērchuk-ōdu
+Learn	Nērchuko		neg	they-n	future	nērchuk-ōvu
+Learn	Nērchuko		neg	i	past	-lēdu
+Learn	Nērchuko		neg	you	past	-lēdu
+Learn	Nērchuko		neg	he	past	-lēdu
+Learn	Nērchuko		neg	she	past	-lēdu
+Learn	Nērchuko		neg	we	past	-lēdu
+Learn	Nērchuko		neg	formal	past	-lēdu
+Learn	Nērchuko		neg	it	past	-lēdu
+Learn	Nērchuko		neg	they-n	past	-lēdu
+Learn	Nērchuko		neg	i	present	nērchuko-ḍam-lēdu
+Learn	Nērchuko		neg	you	present	nērchuko-ḍam-lēdu
+Learn	Nērchuko		neg	he	present	nērchuko-ḍam-lēdu
+Learn	Nērchuko		neg	she	present	nērchuko-ḍam-lēdu
+Learn	Nērchuko		neg	we	present	nērchuko-ḍam-lēdu
+Learn	Nērchuko		neg	formal	present	nērchuko-ḍam-lēdu
+Learn	Nērchuko		neg	it	present	nērchuko-ḍam-lēdu
+Learn	Nērchuko		neg	they-n	present	nērchuko-ḍam-lēdu
+Go	Po		pos	i	past	poy-ānu
+Go	Po		pos	you	past	poy-āvu
+Go	Po		pos	he	past	poy-āḍu
+Go	Po		pos	she	past	poy-indi
+Go	Po		pos	we	past	poy-āmu
+Go	Po		pos	formal	past	poy-āru
+Go	Po		pos	it	past	poy-indi
+Go	Po		pos	they-n	past	poy-āyi
+Go	Po		pos	i	present	po-ṭunnānu
+Go	Po		pos	you	present	po-ṭunnāvu
+Go	Po		pos	he	present	po-ṭunnāḍu
+Go	Po		pos	she	present	po-ṭondi
+Go	Po		pos	we	present	po-ṭunnāmu
+Go	Po		pos	formal	present	po-ṭunnāru
+Go	Po		pos	it	present	po-ṭondi
+Go	Po		pos	they-n	present	po-ṭunnāyi
+Go	Po		pos	i	future	po-ṭānu
+Go	Po		pos	you	future	po-ṭāvu
+Go	Po		pos	he	future	po-ṭāḍu
+Go	Po		pos	she	future	po-ṭundi
+Go	Po		pos	we	future	po-ṭāmu
+Go	Po		pos	formal	future	po-ṭāru
+Go	Po		pos	it	future	po-ṭundi
+Go	Po		pos	they-n	future	po-ṭāyi
+Go	Po		neg	i	future	pōnu
+Go	Po		neg	you	future	pōvu
+Go	Po		neg	he	future	pōḍu
+Go	Po		neg	she	future	pōdu
+Go	Po		neg	we	future	pōmu
+Go	Po		neg	formal	future	pōru
+Go	Po		neg	it	future	pōdu
+Go	Po		neg	they-n	future	pōvu
+Go	Po		neg	i	past	po-lēdu
+Go	Po		neg	you	past	po-lēdu
+Go	Po		neg	he	past	po-lēdu
+Go	Po		neg	she	past	po-lēdu
+Go	Po		neg	we	past	po-lēdu
+Go	Po		neg	formal	past	po-lēdu
+Go	Po		neg	it	past	po-lēdu
+Go	Po		neg	they-n	past	po-lēdu
+Go	Po		neg	i	present	po-ḍam-lēdu
+Go	Po		neg	you	present	po-ḍam-lēdu
+Go	Po		neg	he	present	po-ḍam-lēdu
+Go	Po		neg	she	present	po-ḍam-lēdu
+Go	Po		neg	we	present	po-ḍam-lēdu
+Go	Po		neg	formal	present	po-ḍam-lēdu
+Go	Po		neg	it	present	po-ḍam-lēdu
+Go	Po		neg	they-n	present	po-ḍam-lēdu
+Come	Rā/Vach	yes	pos	i	past	vach-ānu
+Come	Rā/Vach	yes	pos	you	past	vach-āvu
+Come	Rā/Vach	yes	pos	he	past	vach-āḍu
+Come	Rā/Vach	yes	pos	she	past	vach-indi
+Come	Rā/Vach	yes	pos	we	past	vach-āmu
+Come	Rā/Vach	yes	pos	formal	past	vach-āru
+Come	Rā/Vach	yes	pos	it	past	vach-indi
+Come	Rā/Vach	yes	pos	they-n	past	vach-āyi
+Come	Rā/Vach	yes	pos	i	present	vas-tunnānu
+Come	Rā/Vach	yes	pos	you	present	vas-tunnāvu
+Come	Rā/Vach	yes	pos	he	present	vas-tunnāḍu
+Come	Rā/Vach	yes	pos	she	present	vas-tōndi
+Come	Rā/Vach	yes	pos	we	present	vas-tunnāmu
+Come	Rā/Vach	yes	pos	formal	present	vas-tunnāru
+Come	Rā/Vach	yes	pos	it	present	vas-tōndi
+Come	Rā/Vach	yes	pos	they-n	present	vas-tunnāyi
+Come	Rā/Vach	yes	pos	i	future	vas-tānu
+Come	Rā/Vach	yes	pos	you	future	vas-tāvu
+Come	Rā/Vach	yes	pos	he	future	vas-tāḍu
+Come	Rā/Vach	yes	pos	she	future	vas-tundi
+Come	Rā/Vach	yes	pos	we	future	vas-tāmu
+Come	Rā/Vach	yes	pos	formal	future	vas-tāru
+Come	Rā/Vach	yes	pos	it	future	vas-tundi
+Come	Rā/Vach	yes	pos	they-n	future	vas-tāyi
+Come	Rā/Vach	yes	neg	i	future	rā-nu
+Come	Rā/Vach	yes	neg	you	future	rā-vu
+Come	Rā/Vach	yes	neg	he	future	rā-ḍu
+Come	Rā/Vach	yes	neg	she	future	rā-du
+Come	Rā/Vach	yes	neg	we	future	rā-mu
+Come	Rā/Vach	yes	neg	formal	future	rā-ru
+Come	Rā/Vach	yes	neg	it	future	rā-du
+Come	Rā/Vach	yes	neg	they-n	future	rā-vu
+Come	Rā/Vach	yes	neg	i	past	rā-lēdu
+Come	Rā/Vach	yes	neg	you	past	rā-lēdu
+Come	Rā/Vach	yes	neg	he	past	rā-lēdu
+Come	Rā/Vach	yes	neg	she	past	rā-lēdu
+Come	Rā/Vach	yes	neg	we	past	rā-lēdu
+Come	Rā/Vach	yes	neg	formal	past	rā-lēdu
+Come	Rā/Vach	yes	neg	it	past	rā-lēdu
+Come	Rā/Vach	yes	neg	they-n	past	rā-lēdu
+Come	Rā/Vach	yes	neg	i	present	rā-ḍam-lēdu
+Come	Rā/Vach	yes	neg	you	present	rā-ḍam-lēdu
+Come	Rā/Vach	yes	neg	he	present	rā-ḍam-lēdu
+Come	Rā/Vach	yes	neg	she	present	rā-ḍam-lēdu
+Come	Rā/Vach	yes	neg	we	present	rā-ḍam-lēdu
+Come	Rā/Vach	yes	neg	formal	present	rā-ḍam-lēdu
+Come	Rā/Vach	yes	neg	it	present	rā-ḍam-lēdu
+Come	Rā/Vach	yes	neg	they-n	present	rā-ḍam-lēdu
+Give	Ivvu	yes	pos	i	past	ich-ānu
+Give	Ivvu	yes	pos	you	past	ich-āvu
+Give	Ivvu	yes	pos	he	past	ich-ivvu
+Give	Ivvu	yes	pos	she	past	ich-indi
+Give	Ivvu	yes	pos	we	past	ich-āmu
+Give	Ivvu	yes	pos	formal	past	ich-āru
+Give	Ivvu	yes	pos	it	past	ich-indi
+Give	Ivvu	yes	pos	they-n	past	ich-āyi
+Give	Ivvu	yes	pos	i	present	is-tunnānu
+Give	Ivvu	yes	pos	you	present	is-tunnāvu
+Give	Ivvu	yes	pos	he	present	is-tunnivvu
+Give	Ivvu	yes	pos	she	present	is-tōndi
+Give	Ivvu	yes	pos	we	present	is-tunnāmu
+Give	Ivvu	yes	pos	formal	present	is-tunnāru
+Give	Ivvu	yes	pos	it	present	is-tōndi
+Give	Ivvu	yes	pos	they-n	present	is-tunnāyi
+Give	Ivvu	yes	pos	i	future	is-tānu
+Give	Ivvu	yes	pos	you	future	is-tāvu
+Give	Ivvu	yes	pos	he	future	is-tivvu
+Give	Ivvu	yes	pos	she	future	is-tundi
+Give	Ivvu	yes	pos	we	future	is-tāmu
+Give	Ivvu	yes	pos	formal	future	is-tāru
+Give	Ivvu	yes	pos	it	future	is-tundi
+Give	Ivvu	yes	pos	they-n	future	is-tāyi
+Give	Ivvu	yes	neg	i	future	ivv-anu
+Give	Ivvu	yes	neg	you	future	ivv-avu
+Give	Ivvu	yes	neg	he	future	ivv-aḍu
+Give	Ivvu	yes	neg	she	future	ivv-adu
+Give	Ivvu	yes	neg	we	future	ivv-amu
+Give	Ivvu	yes	neg	formal	future	ivv-aru
+Give	Ivvu	yes	neg	it	future	ivv-adu
+Give	Ivvu	yes	neg	they-n	future	ivv-avu
+Give	Ivvu	yes	neg	i	past	ivva-lēdu
+Give	Ivvu	yes	neg	you	past	ivva-lēdu
+Give	Ivvu	yes	neg	he	past	ivva-lēdu
+Give	Ivvu	yes	neg	she	past	ivva-lēdu
+Give	Ivvu	yes	neg	we	past	ivva-lēdu
+Give	Ivvu	yes	neg	formal	past	ivva-lēdu
+Give	Ivvu	yes	neg	it	past	ivva-lēdu
+Give	Ivvu	yes	neg	they-n	past	ivva-lēdu
+Give	Ivvu	yes	neg	i	present	ivva-ḍam-lēdu
+Give	Ivvu	yes	neg	you	present	ivva-ḍam-lēdu
+Give	Ivvu	yes	neg	he	present	ivva-ḍam-lēdu
+Give	Ivvu	yes	neg	she	present	ivva-ḍam-lēdu
+Give	Ivvu	yes	neg	we	present	ivva-ḍam-lēdu
+Give	Ivvu	yes	neg	formal	present	ivva-ḍam-lēdu
+Give	Ivvu	yes	neg	it	present	ivva-ḍam-lēdu
+Give	Ivvu	yes	neg	they-n	present	ivva-ḍam-lēdu
+Teach	Nērpinchu	yes	pos	i	past	nērpinch-ānu
+Teach	Nērpinchu	yes	pos	you	past	nērpinch-āvu
+Teach	Nērpinchu	yes	pos	he	past	nērpinch-āḍu
+Teach	Nērpinchu	yes	pos	she	past	nērpinch-indi
+Teach	Nērpinchu	yes	pos	we	past	nērpinch-āmu
+Teach	Nērpinchu	yes	pos	formal	past	nērpinch-āru
+Teach	Nērpinchu	yes	pos	it	past	nērpinch-indi
+Teach	Nērpinchu	yes	pos	they-n	past	nērpinch-āyi
+Teach	Nērpinchu	yes	pos	i	present	nērpis-tunnānu
+Teach	Nērpinchu	yes	pos	you	present	nērpis-tunnāvu
+Teach	Nērpinchu	yes	pos	he	present	nērpis-tunnāḍu
+Teach	Nērpinchu	yes	pos	she	present	nērpis-tōndi
+Teach	Nērpinchu	yes	pos	we	present	nērpis-tunnāmu
+Teach	Nērpinchu	yes	pos	formal	present	nērpis-tunnāru
+Teach	Nērpinchu	yes	pos	it	present	nērpis-tōndi
+Teach	Nērpinchu	yes	pos	they-n	present	nērpis-tunnāyi
+Teach	Nērpinchu	yes	pos	i	future	nērpis-tānu
+Teach	Nērpinchu	yes	pos	you	future	nērpis-tāvu
+Teach	Nērpinchu	yes	pos	he	future	nērpis-tāḍu
+Teach	Nērpinchu	yes	pos	she	future	nērpis-tundi
+Teach	Nērpinchu	yes	pos	we	future	nērpis-tāmu
+Teach	Nērpinchu	yes	pos	formal	future	nērpis-tāru
+Teach	Nērpinchu	yes	pos	it	future	nērpis-tundi
+Teach	Nērpinchu	yes	pos	they-n	future	nērpis-tāyi
+Teach	Nērpinchu	yes	neg	i	future	nērpinch-anu
+Teach	Nērpinchu	yes	neg	you	future	nērpinch-avu
+Teach	Nērpinchu	yes	neg	he	future	nērpinch-aḍu
+Teach	Nērpinchu	yes	neg	she	future	nērpinch-adu
+Teach	Nērpinchu	yes	neg	we	future	nērpinch-amu
+Teach	Nērpinchu	yes	neg	formal	future	nērpinch-aru
+Teach	Nērpinchu	yes	neg	it	future	nērpinch-adu
+Teach	Nērpinchu	yes	neg	they-n	future	nērpinch-avu
+Teach	Nērpinchu	yes	neg	i	past	-lēdu
+Teach	Nērpinchu	yes	neg	you	past	-lēdu
+Teach	Nērpinchu	yes	neg	he	past	-lēdu
+Teach	Nērpinchu	yes	neg	she	past	-lēdu
+Teach	Nērpinchu	yes	neg	we	past	-lēdu
+Teach	Nērpinchu	yes	neg	formal	past	-lēdu
+Teach	Nērpinchu	yes	neg	it	past	-lēdu
+Teach	Nērpinchu	yes	neg	they-n	past	-lēdu
+Teach	Nērpinchu	yes	neg	i	present	nērpincha-ḍam-lēdu
+Teach	Nērpinchu	yes	neg	you	present	nērpincha-ḍam-lēdu
+Teach	Nērpinchu	yes	neg	he	present	nērpincha-ḍam-lēdu
+Teach	Nērpinchu	yes	neg	she	present	nērpincha-ḍam-lēdu
+Teach	Nērpinchu	yes	neg	we	present	nērpincha-ḍam-lēdu
+Teach	Nērpinchu	yes	neg	formal	present	nērpincha-ḍam-lēdu
+Teach	Nērpinchu	yes	neg	it	present	nērpincha-ḍam-lēdu
+Teach	Nērpinchu	yes	neg	they-n	present	nērpincha-ḍam-lēdu
+Love (v.)	Prēminchu	yes	pos	i	past	prēminch-ānu
+Love (v.)	Prēminchu	yes	pos	you	past	prēminch-āvu
+Love (v.)	Prēminchu	yes	pos	he	past	prēminch-āḍu
+Love (v.)	Prēminchu	yes	pos	she	past	prēminch-indi
+Love (v.)	Prēminchu	yes	pos	we	past	prēminch-āmu
+Love (v.)	Prēminchu	yes	pos	formal	past	prēminch-āru
+Love (v.)	Prēminchu	yes	pos	it	past	prēminch-indi
+Love (v.)	Prēminchu	yes	pos	they-n	past	prēminch-āyi
+Love (v.)	Prēminchu	yes	pos	i	present	prēmis-tunnānu
+Love (v.)	Prēminchu	yes	pos	you	present	prēmis-tunnāvu
+Love (v.)	Prēminchu	yes	pos	he	present	prēmis-tunnāḍu
+Love (v.)	Prēminchu	yes	pos	she	present	prēmis-tōndi
+Love (v.)	Prēminchu	yes	pos	we	present	prēmis-tunnāmu
+Love (v.)	Prēminchu	yes	pos	formal	present	prēmis-tunnāru
+Love (v.)	Prēminchu	yes	pos	it	present	prēmis-tōndi
+Love (v.)	Prēminchu	yes	pos	they-n	present	prēmis-tunnāyi
+Love (v.)	Prēminchu	yes	pos	i	future	prēmis-tānu
+Love (v.)	Prēminchu	yes	pos	you	future	prēmis-tāvu
+Love (v.)	Prēminchu	yes	pos	he	future	prēmis-tāḍu
+Love (v.)	Prēminchu	yes	pos	she	future	prēmis-tundi
+Love (v.)	Prēminchu	yes	pos	we	future	prēmis-tāmu
+Love (v.)	Prēminchu	yes	pos	formal	future	prēmis-tāru
+Love (v.)	Prēminchu	yes	pos	it	future	prēmis-tundi
+Love (v.)	Prēminchu	yes	pos	they-n	future	prēmis-tāyi
+Love (v.)	Prēminchu	yes	neg	i	future	prēminch-anu
+Love (v.)	Prēminchu	yes	neg	you	future	prēminch-avu
+Love (v.)	Prēminchu	yes	neg	he	future	prēminch-aḍu
+Love (v.)	Prēminchu	yes	neg	she	future	prēminch-adu
+Love (v.)	Prēminchu	yes	neg	we	future	prēminch-amu
+Love (v.)	Prēminchu	yes	neg	formal	future	prēminch-aru
+Love (v.)	Prēminchu	yes	neg	it	future	prēminch-adu
+Love (v.)	Prēminchu	yes	neg	they-n	future	prēminch-avu
+Love (v.)	Prēminchu	yes	neg	i	past	-lēduprēmincha-ḍam-
+Love (v.)	Prēminchu	yes	neg	you	past	-lēduprēmincha-ḍam-
+Love (v.)	Prēminchu	yes	neg	he	past	-lēduprēmincha-ḍam-
+Love (v.)	Prēminchu	yes	neg	she	past	-lēduprēmincha-ḍam-
+Love (v.)	Prēminchu	yes	neg	we	past	-lēduprēmincha-ḍam-
+Love (v.)	Prēminchu	yes	neg	formal	past	-lēduprēmincha-ḍam-
+Love (v.)	Prēminchu	yes	neg	it	past	-lēduprēmincha-ḍam-
+Love (v.)	Prēminchu	yes	neg	they-n	past	-lēduprēmincha-ḍam-
+Love (v.)	Prēminchu	yes	neg	i	present	lēdu
+Love (v.)	Prēminchu	yes	neg	you	present	lēdu
+Love (v.)	Prēminchu	yes	neg	he	present	lēdu
+Love (v.)	Prēminchu	yes	neg	she	present	lēdu
+Love (v.)	Prēminchu	yes	neg	we	present	lēdu
+Love (v.)	Prēminchu	yes	neg	formal	present	lēdu
+Love (v.)	Prēminchu	yes	neg	it	present	lēdu
+Love (v.)	Prēminchu	yes	neg	they-n	present	lēdu
+Be/Stay	Unḍu	yes	pos	i	past	unn-ānu
+Be/Stay	Unḍu	yes	pos	you	past	unn-āvu
+Be/Stay	Unḍu	yes	pos	he	past	unn-āḍu
+Be/Stay	Unḍu	yes	pos	she	past	unn-ādi /un-di
+Be/Stay	Unḍu	yes	pos	we	past	unn-āmu
+Be/Stay	Unḍu	yes	pos	formal	past	unn-āru
+Be/Stay	Unḍu	yes	pos	it	past	unn-ādi /un-di
+Be/Stay	Unḍu	yes	pos	they-n	past	unn-āyi
+Be/Stay	Unḍu	yes	pos	i	present	unn-ānu
+Be/Stay	Unḍu	yes	pos	you	present	unn-āvu
+Be/Stay	Unḍu	yes	pos	he	present	unn-āḍu
+Be/Stay	Unḍu	yes	pos	she	present	unn-ādi /un-di
+Be/Stay	Unḍu	yes	pos	we	present	unn-āmu
+Be/Stay	Unḍu	yes	pos	formal	present	unn-āru
+Be/Stay	Unḍu	yes	pos	it	present	unn-ādi /un-di
+Be/Stay	Unḍu	yes	pos	they-n	present	unn-āyi
+Be/Stay	Unḍu	yes	pos	i	present	un-ṭunnānu
+Be/Stay	Unḍu	yes	pos	you	present	un-ṭunnāvu
+Be/Stay	Unḍu	yes	pos	he	present	un-ṭunnāḍu
+Be/Stay	Unḍu	yes	pos	she	present	un-ṭunnādi/ un-ṭōndi
+Be/Stay	Unḍu	yes	pos	we	present	un-ṭunnāmu
+Be/Stay	Unḍu	yes	pos	formal	present	un-ṭunnāru
+Be/Stay	Unḍu	yes	pos	it	present	un-ṭunnādi/ un-ṭōndi
+Be/Stay	Unḍu	yes	pos	they-n	present	un-ṭunnāyi
+Be/Stay	Unḍu	yes	pos	i	future	un-ṭānu
+Be/Stay	Unḍu	yes	pos	you	future	un-ṭāvu
+Be/Stay	Unḍu	yes	pos	he	future	un-ṭāḍu
+Be/Stay	Unḍu	yes	pos	she	future	un-ṭundi
+Be/Stay	Unḍu	yes	pos	we	future	un-ṭāmu
+Be/Stay	Unḍu	yes	pos	formal	future	un-ṭāru
+Be/Stay	Unḍu	yes	pos	it	future	un-ṭundi
+Be/Stay	Unḍu	yes	pos	they-n	future	un-ṭāyi
+Be/Stay	Unḍu	yes	neg	i	past	lēnu
+Be/Stay	Unḍu	yes	neg	you	past	lēvu
+Be/Stay	Unḍu	yes	neg	he	past	lēḍu
+Be/Stay	Unḍu	yes	neg	she	past	lēdu
+Be/Stay	Unḍu	yes	neg	we	past	lēmu
+Be/Stay	Unḍu	yes	neg	formal	past	lēru
+Be/Stay	Unḍu	yes	neg	it	past	lēdu
+Be/Stay	Unḍu	yes	neg	they-n	past	lēvu
+Be/Stay	Unḍu	yes	neg	i	present	lēnu
+Be/Stay	Unḍu	yes	neg	you	present	lēvu
+Be/Stay	Unḍu	yes	neg	he	present	lēḍu
+Be/Stay	Unḍu	yes	neg	she	present	lēdu
+Be/Stay	Unḍu	yes	neg	we	present	lēmu
+Be/Stay	Unḍu	yes	neg	formal	present	lēru
+Be/Stay	Unḍu	yes	neg	it	present	lēdu
+Be/Stay	Unḍu	yes	neg	they-n	present	lēvu
+Be/Stay	Unḍu	yes	neg	i	future	unḍ-anu
+Be/Stay	Unḍu	yes	neg	you	future	unḍ-avu
+Be/Stay	Unḍu	yes	neg	he	future	unḍ-aḍu
+Be/Stay	Unḍu	yes	neg	she	future	unḍ-adu
+Be/Stay	Unḍu	yes	neg	we	future	unḍ-amu
+Be/Stay	Unḍu	yes	neg	formal	future	unḍ-aru
+Be/Stay	Unḍu	yes	neg	it	future	unḍ-adu
+Be/Stay	Unḍu	yes	neg	they-n	future	unḍ-avu
+Be/Stay	Unḍu	yes	neg	i	present	unḍa-ḍam-lēdu
+Be/Stay	Unḍu	yes	neg	you	present	unḍa-ḍam-lēdu
+Be/Stay	Unḍu	yes	neg	he	present	unḍa-ḍam-lēdu
+Be/Stay	Unḍu	yes	neg	she	present	unḍa-ḍam-lēdu
+Be/Stay	Unḍu	yes	neg	we	present	unḍa-ḍam-lēdu
+Be/Stay	Unḍu	yes	neg	formal	present	unḍa-ḍam-lēdu
+Be/Stay	Unḍu	yes	neg	it	present	unḍa-ḍam-lēdu
+Be/Stay	Unḍu	yes	neg	they-n	present	unḍa-ḍam-lēdu

@@ -183,6 +183,51 @@ The captions give "vikramgad" for **"sad"**. `vichārangā` fits the sounds and 
 
 ---
 
+## The conjugation PDF — video 22's resource, audited 2026-08-13
+
+**Verdict: one real error, and it was the biggest one yet.**
+
+Video 22 links a PDF, *Telugu Verb Conjugations* (bhashafy.com): 18 verbs over 36 pages, a
+positive and a negative grid each. `tools/parse_conjugations.py` reads it positionally — the
+text layer splits cells mid-word and interleaves the columns — and recovers **880 cells**.
+`tools/check_conjugations.py` diffs them against the generator.
+
+**Compare rows, not cells.** A first pass compared cell against cell and reported 375
+disagreements, nearly all four systematic things wearing 375 faces. A Telugu form is a stem plus
+an ending and those fail independently: a wrong stem breaks six cells while every ending stays
+perfect. Splitting them gives 612 comparable cells in 102 rows, **69 rows clean outright**, 25
+more differing only in the stem.
+
+### The finding: `lēdu` inflects
+
+For every other verb the negative past is one invariant form. For `uṇḍu` it takes person
+markers — `lēnu · lēvu · lēḍu · lēdu · lēmu · lēru` — and the PDF and video 22 agree on this.
+`verbs.js` carried a single flat override.
+
+These are high-frequency: `lēru` is what you get told on the phone. **Fixed** — `ov` now accepts
+a six-cell array, and `invariantFor()` tells the paradigm tables to stop printing "↑ unchanged"
+for this verb only. Every other verb still renders as invariant.
+
+### Where the PDF is wrong and the generator is right
+
+- **Missing gemination**: `ich-ānu`, `vach-āmu`, `kūrchun-ānu` for `ichchānu`, `vachchāmu`,
+  `kūrchunnānu`.
+- **Vowel length**: four verbs print `-ṭondi` where the PDF's own summary table says `-tōndi`.
+- **Find-and-replace damage**: four pages were cloned from the Play page with "āḍu" replaced by
+  the new root, and the replace ran over the body text — the Drink page prints the pronoun
+  `Vāḍu` as "Vtāgu" and the he-row ending `-āḍu` as "-tāgu". 9 cells.
+
+### Deliberate differences, not errors
+
+- **The `-va-` glide**: PDF `kūrchō-ḍam-lēdu`, ours `kūrchōvaḍaṁ lēdu`. Both heard; ours is the
+  standard written form. Four verbs. **Worth asking about.**
+- **"We"**: PDF `-āmu` (manamu), ours `-āṁ` (manaṁ). 49 cells, the standing scope choice.
+- **Nasal assimilation**: PDF `kūrchun-ṭānu`, ours `kūrchuṇṭānu`. Notation, not pronunciation.
+- **Stem contraction**: PDF `veḷḷu-tunnānu` and `cheppu-tunnānu` in full where we contract to
+  `veḷtunnānu` / `cheptunnānu`. Ours is what the videos say and what Hyderabad speaks.
+
+---
+
 ## Scorecard after week 2
 
 | Tense | Video | Forms checked | Mismatches |
@@ -192,7 +237,8 @@ The captions give "vikramgad" for **"sad"**. `vichārangā` fits the sounds and 
 | Habitual & future | 16, 19 | 47 | 0 |
 | Immediate future | 21 | 10 | 0 (paradigm added) |
 | Adjectives & uṇḍu | 23 | 7 | forms 0, **labels wrong** |
-| **Total** | | **110** | **1 real error** |
+| Conjugation PDF | 22 + resource | 612 | **1 real error** |
+| **Total** | | **722** | **2 real errors** |
 
 The Verb Lab's 1,919 forms were generated from a PDF and inference, with no native-speaker or
 authoritative check. Week 2 has now verified the three tenses that carry ordinary conversation —
@@ -204,14 +250,14 @@ The generator went from 1,709 forms to 2,129 over the week.
 
 ---
 
-## Standing gaps, unchanged after five audits
+## Standing gaps, unchanged after six audits
 
 - **The `avi` row** (non-human plural, `-tunnāyi` / `-āyi`) is not drillable. Six persons drilled,
   eight taught.
 - **"We" is `manaṁ` / `-āṁ`** where the course teaches `manamu` / `mēmu` with `-āmu`. Same cell,
   colloquial vs careful register.
 
-Both are cosmetic and both are now five-for-five, so they are a deliberate scope choice rather
+Both are cosmetic and both are now six-for-six, so they are a deliberate scope choice rather
 than an oversight. Worth revisiting only if the `avi` row starts coming up in real conversation,
 which for a household and an office is unlikely.
 
