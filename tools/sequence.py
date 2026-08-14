@@ -89,6 +89,18 @@ def family_counts():
     return c
 
 
+from te2rom import romanize
+
+
+def rfold(telugu):
+    """Fold a Telugu string the same way fold() folds a romanization.
+
+    fold() strips everything outside [a-z], so handing it Telugu script returns the empty
+    string — which is what silently emptied form_owner and disabled the verb-form route
+    entirely. Romanize first."""
+    return fold(romanize(telugu))
+
+
 def build_index(words, vf):
     """token-key -> the study item that covers it.
 
@@ -112,11 +124,18 @@ def build_index(words, vf):
             by_fold.setdefault(f, i)
             if len(f) >= 4:
                 by_prefix.setdefault(f, i)
+    # A Verb Lab cell is covered once you know its headword. Index it under both the Telugu
+    # surface form and its folded romanization: build_sentences respaces the romanization of
+    # glued tokens but deliberately leaves the script alone, so the two token lists are not
+    # always the same length and position-based lookup silently misses. Keying on the
+    # romanization as well makes the match alignment-free.
     form_owner = {}
     for surface, meta in vf.items():
-        owner = by_fold.get(fold(meta.get('root', '')))
-        if owner is not None:
-            form_owner[surface] = owner
+        owner = by_fold.get(rfold(meta.get('root', '')))
+        if owner is None:
+            continue
+        form_owner[surface] = owner
+        by_fold.setdefault(rfold(surface), owner)
     return by_fold, by_prefix, form_owner
 
 
@@ -127,12 +146,26 @@ def sentence_requirements(sents, words, index):
     by_fold, by_prefix, form_owner = index
     MAX_ENDING = 4        # longest plausible inflectional tail; beyond that it is a second word
 
-    def cover(f):
+    def base(f):
         if f in by_fold:
             return by_fold[f]
         for cut in range(len(f) - 1, max(3, len(f) - MAX_ENDING) - 1, -1):
             if f[:cut] in by_prefix:
                 return by_prefix[f[:cut]]
+        return None
+
+    def cover(f):
+        hit = base(f)
+        if hit is not None:
+            return hit
+        # Lesson 16's yes/no particle: any statement takes a final -ā and becomes a question,
+        # and the vowel it replaces is gone. undā, unnārā, kāvālā are undi, unnāru, kāvāli
+        # asked rather than told, so try the stem again with the particle removed.
+        if len(f) > 3 and f.endswith('a'):
+            for tail in ('i', 'u', ''):
+                hit = base(f[:-1] + tail)
+                if hit is not None:
+                    return hit
         return None
     reqs, missing = [], Counter()
     for s in sents:

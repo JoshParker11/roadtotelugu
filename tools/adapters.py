@@ -58,6 +58,27 @@ def site_words(path=None):
     return out
 
 
+def core_gaps(path=None):
+    """A short hand-curated list of words the corpus uses but no source supplied.
+
+    Every entry here was surfaced by tools/sequence.py's shopping list — the tokens that appear
+    in the sentence master and block sentences from ever unlocking. Most of that list is
+    spelling variants and inflections, which belong in the pipeline rather than here; these are
+    the residue that are simply absent. `telugu` was top of it, appearing nineteen times in the
+    corpus and nowhere in the word master."""
+    path = path or os.path.join(RAW, 'core_gaps.tsv')
+    if not os.path.exists(path):
+        return []
+    out = []
+    for line in open(path, encoding='utf-8'):
+        parts = [p.strip() for p in line.rstrip('\n').split('\t')]
+        if len(parts) < 3 or not parts[1]:
+            continue
+        out.append({'telugu': parts[1], 'roman': '', 'english': parts[2], 'pos': '',
+                    'source': 'core-gaps', 'raw_rom': parts[0], 'notes': ''})
+    return out
+
+
 def lessons(path=None):
     """Vocabulary from the lesson pages in LEARNING_GUIDE/lessons/.
 
@@ -197,5 +218,5 @@ def anki_sentences(path=None):
 
 
 ALL = {'top1000': top1000, 'site': site_words, 'spoken-telugu': spoken_telugu,
-       'book1000': book_words, 'anki': anki_words, 'lesson': lessons}
+       'book1000': book_words, 'anki': anki_words, 'lesson': lessons, 'core-gaps': core_gaps}
 ALL_SENT = {'site': site_sentences, 'book1000': book_sentences, 'anki': anki_sentences}

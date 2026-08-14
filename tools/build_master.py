@@ -27,7 +27,7 @@ import adapters, glosses, ids, overrides
 ROOT = os.path.normpath(os.path.join(HERE, '..'))
 # lower is better: hand-written material carries register cues and examples the bulk lists lack,
 # and the lesson pages are the most recent and most carefully checked of it
-SOURCE_RANK = {'lesson': 0, 'site': 1, 'anki': 2, 'book1000': 3, 'spoken-telugu': 4, 'top1000': 5}
+SOURCE_RANK = {'lesson': 0, 'core-gaps': 0, 'site': 1, 'anki': 2, 'book1000': 3, 'spoken-telugu': 4, 'top1000': 5}
 OUT = os.path.join(ROOT, 'data', 'master_words.tsv')
 VERBFORMS = json.load(open(os.path.join(HERE, 'verbforms.json'), encoding='utf-8'))
 
@@ -173,7 +173,7 @@ def classify(rec):
 
 def main():
     records = []
-    for name in ('lesson', 'site', 'anki', 'book1000', 'top1000', 'spoken-telugu'):  # earlier wins
+    for name in ('lesson', 'core-gaps', 'site', 'anki', 'book1000', 'top1000', 'spoken-telugu'):  # earlier wins
         got = adapters.ALL[name]()
         print(f'  {name:<16} {len(got):>5} rows')
         records.extend(got)
