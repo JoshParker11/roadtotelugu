@@ -260,7 +260,16 @@ const VERBS = [
     neg:['uṇḍa','ఉండ'], a:['uṇḍa','ఉండ'], inf:['uṇḍā','ఉండా'],
     hort:['undāṁ','ఉందాం'],
     ov:{ negPast:['lēdu','లేదు'] },
-    note:'The most important verb here, and the reason the drill cues say “wait” rather than “be”: English “be” will not go through the cue templates (“I did not be”), and the PDF glosses this verb “Wait / Be” anyway. Read every cue as be / stay / wait / be present. undi “there is” and unnānu “I am, I’m well” are all over your existing decks — both are cells in this table. Its negative past is simply lēdu, not *uṇḍalēdu.' }
+    /* Lesson 12 / course video 23. This verb's tense labels do not mean what they say, and it
+       is too important to leave mislabelled. The row the engine calls `past` is the ordinary
+       present copula — nēnu santōṣangā unnānu "I am happy", right now — and the row it calls
+       `future` is the general-fact present: Hyderabad vēḍigā uṇṭundi "Hyderabad is hot (as a
+       rule)". Telugu splits "is" into observation vs property, and those two rows are the
+       split. The forms are right; only the labels were wrong. */
+    cueOv:{ past:    '§subj §be ___  (right now — an observation)',
+            future:  '§subj §be ___  (in general — a standing fact)',
+            present: '§subj §be staying / living ___' },
+    note:'The most important verb here, and its tense labels lie. “Past” unnānu is the everyday present “I am”; “habitual/future” uṇṭundi is the general-fact present. Telugu splits English “is” into an observation now (undi) and a permanent property (uṇṭundi) — Taj Mahal andangā undi vs andangā uṇṭundi. Both rows are cells in this table; read the cues, not the column headings. Negative past is simply lēdu, not *uṇḍalēdu.' }
 ];
 
 if (typeof module !== 'undefined') module.exports = { VERBS };

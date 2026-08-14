@@ -154,6 +154,35 @@ so how? Until that is answered the paradigm ships positive-only.
 
 ---
 
+## Adjectives & uṇḍu — video 23, audited 2026-08-13
+
+**Verdict: the first real error, and it was on the most-used verb in the language.**
+
+The engine produced all the right forms for `uṇḍu`. The *labels* were wrong. The row the engine
+calls `past` — `unnānu · unnāvu · unnāḍu · undi · unnāru` — is precisely what this video teaches
+as the **present**: `nēnu santōṣangā unnānu`, "I am happy, right now". And the row labelled
+`future` is the **general-fact present**: `Hyderabad vēḍigā uṇṭundi`.
+
+Telugu splits English "is" into an observation now (`undi`) and a standing property
+(`uṇṭundi`). Those two rows *are* the split. Nothing about them is past or future.
+
+Left alone the drill would have cued `unnānu` as **"I waited"**. It means **"I am"**. That is not
+a cosmetic mislabel — it is a card teaching the wrong meaning for the highest-frequency verb in
+the deck, and the one whose forms are already scattered through the existing collection.
+
+**Fix:** a per-verb `cueOv` map in `verbs.js`, read by `cue()` in `engine.js`. Six lines. Chosen
+over special-casing the tense machinery, which is correct for the other 34 verbs — the problem is
+that one verb's semantics do not fit the labels, not that the labels are wrong in general.
+`uṇḍu` now cues *"I am ___ (right now — an observation)"* and *"I am ___ (in general — a standing
+fact)"*, and its `note` says the headings lie.
+
+### Question for a native speaker
+
+The captions give "vikramgad" for **"sad"**. `vichārangā` fits the sounds and is correct Telugu;
+`bādhagā` is likely commoner in Hyderabad. Which does she reach for?
+
+---
+
 ## Scorecard after week 2
 
 | Tense | Video | Forms checked | Mismatches |
@@ -162,7 +191,8 @@ so how? Until that is answered the paradigm ships positive-only.
 | Past | 13, 14 | 19 | 0 |
 | Habitual & future | 16, 19 | 47 | 0 |
 | Immediate future | 21 | 10 | 0 (paradigm added) |
-| **Total** | | **103** | **0** |
+| Adjectives & uṇḍu | 23 | 7 | forms 0, **labels wrong** |
+| **Total** | | **110** | **1 real error** |
 
 The Verb Lab's 1,919 forms were generated from a PDF and inference, with no native-speaker or
 authoritative check. Week 2 has now verified the three tenses that carry ordinary conversation —
@@ -174,14 +204,14 @@ The generator went from 1,709 forms to 2,129 over the week.
 
 ---
 
-## Standing gaps, unchanged after four audits
+## Standing gaps, unchanged after five audits
 
 - **The `avi` row** (non-human plural, `-tunnāyi` / `-āyi`) is not drillable. Six persons drilled,
   eight taught.
 - **"We" is `manaṁ` / `-āṁ`** where the course teaches `manamu` / `mēmu` with `-āmu`. Same cell,
   colloquial vs careful register.
 
-Both are cosmetic and both are now four-for-four, so they are a deliberate scope choice rather
+Both are cosmetic and both are now five-for-five, so they are a deliberate scope choice rather
 than an oversight. Worth revisiting only if the `avi` row starts coming up in real conversation,
 which for a household and an office is unlikely.
 

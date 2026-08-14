@@ -159,10 +159,18 @@ function withPre(v, pair){
   return v.pre ? join(v.pre, pair) : pair;
 }
 
-/* The English cue for a cell, e.g. "she is eating", "please don't come". */
+/* The English cue for a cell, e.g. "she is eating", "please don't come".
+ *
+ * A verb may override the cue for a form via `cueOv`. This exists for uṇḍu, where the tense
+ * labels genuinely do not map: unnānu is the ordinary present copula "I am", not a past, and
+ * uṇṭundi is the general-fact present, not a future. Cueing them "I waited" / "it will wait"
+ * would drill the wrong meaning into the most-used verb in the language. §subj and §be expand
+ * to the pronoun and the right form of "to be". */
 function cue(v, formId, pi){
   const f = FORMS.find(x => x.id === formId);
   const p = PERSONS[pi] || PERSONS[0];
+  const ov = v.cueOv && v.cueOv[formId];
+  if (ov) return ov.replace('§subj', p.enSub).replace('§be', beVerb(p));
   return f.en(p)
     .replace('§ing', v.en.ing)
     .replace('§past', v.en.past)

@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Telugu · Lesson 12 — Adjectives &amp; the two ways to say “is”</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+Telugu:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#191915;--ink-2:#22221d;--ink-3:#2c2c25;
+  --cream:#f1ece0;--cream-dim:#b9b3a4;
+  --amber:#e8a33d;--moss:#8fa37e;--flame:#d96c47;
+  --line:rgba(241,236,224,.12);--radius:14px;--max:1000px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{background:var(--ink);color:var(--cream);font-family:'Inter',sans-serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.telugu{font-family:'Noto Sans Telugu','Inter',sans-serif}
+.mono{font-family:'JetBrains Mono',monospace}
+h1,h2,h3{font-family:'Young Serif',serif;font-weight:400;line-height:1.15}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+section{padding:72px 0;border-top:1px solid var(--line)}
+.eyebrow{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--amber);margin-bottom:14px;display:block}
+h2{font-size:clamp(26px,4.2vw,36px);margin-bottom:14px}
+.lede{color:var(--cream-dim);max-width:660px;font-size:16.5px}
+.lede b{color:var(--cream)}
+a{color:var(--amber)}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:4px}
+
+nav{position:sticky;top:0;z-index:50;background:rgba(25,25,21,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+.logo{font-family:'JetBrains Mono',monospace;font-size:13.5px;font-weight:700;color:var(--cream);text-decoration:none}
+.logo span{color:var(--amber)}
+nav ul{display:flex;gap:20px;list-style:none}
+nav ul a{color:var(--cream-dim);text-decoration:none;font-size:13px;font-weight:500}
+nav ul a:hover{color:var(--amber)}
+@media(max-width:720px){nav ul{display:none}}
+.home-crumb{display:inline-block;margin-bottom:18px;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--cream-dim);text-decoration:none}
+.home-crumb:hover{color:var(--amber)}
+
+header.hero{padding:80px 0 64px;position:relative;overflow:hidden}
+.hero-glyph{position:absolute;right:-30px;top:-70px;font-family:'Noto Sans Telugu',sans-serif;font-size:clamp(260px,40vw,480px);line-height:1;color:rgba(232,163,61,.05);user-select:none;pointer-events:none}
+.hero h1{font-size:clamp(34px,6vw,58px);margin:8px 0 10px;color:var(--cream)}
+.hero h1 em{color:var(--amber);font-style:normal}
+.hero p{max-width:620px;color:var(--cream-dim);font-size:17px}
+
+.note-box{background:rgba(217,108,71,.07);border:1px solid rgba(217,108,71,.3);border-radius:var(--radius);padding:20px 24px;margin-top:30px;max-width:720px}
+.note-box b{color:var(--flame);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;display:block;margin-bottom:8px}
+.note-box p{font-size:14px;color:var(--cream-dim)}
+.note-box p+p{margin-top:10px}
+.note-box.win{background:rgba(143,163,126,.08);border-color:rgba(143,163,126,.32)}
+.note-box.win b{color:var(--moss)}
+
+/* rule blocks */
+.rule{border-top:1px solid var(--line);padding:30px 0;display:grid;grid-template-columns:52px 1fr;gap:20px;counter-increment:r}
+.rules{counter-reset:r;margin-top:20px}
+.rule::before{content:counter(r,decimal-leading-zero);font-family:'JetBrains Mono',monospace;font-size:14px;color:var(--flame);padding-top:4px}
+.rule h3{font-size:19px;font-family:'Inter',sans-serif;font-weight:600;margin-bottom:8px;color:var(--cream)}
+.rule p{font-size:14.5px;color:var(--cream-dim);max-width:640px}
+.rule p+p{margin-top:10px}
+.rule b{color:var(--cream)}
+.ex{margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:14px;color:var(--moss);background:var(--ink-2);border:1px solid var(--line);border-radius:8px;padding:12px 16px;display:inline-block}
+.ex .en{color:var(--cream-dim);font-family:'Inter',sans-serif}
+.ex .tel{font-family:'Noto Sans Telugu',sans-serif;color:var(--cream)}
+.flag{margin-top:14px;border-left:3px solid var(--flame);background:rgba(217,108,71,.07);padding:11px 14px;font-size:13px;color:var(--cream-dim);border-radius:0 8px 8px 0}
+.flag b{color:var(--flame);font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;display:block;margin-bottom:5px}
+.flag.ok{border-left-color:var(--moss);background:rgba(143,163,126,.08)}
+.flag.ok b{color:var(--moss)}
+
+/* morpheme chips */
+.morph-row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:16px 0}
+.morph{border-radius:9px;padding:9px 14px;font-family:'JetBrains Mono',monospace;text-align:center;min-width:74px}
+.morph .p{font-size:16px;font-weight:700;display:block}
+.morph .r{font-size:9px;letter-spacing:.1em;text-transform:uppercase;opacity:.75;margin-top:3px;display:block}
+.morph.subj{background:rgba(232,163,61,.14);color:var(--amber);border:1px solid rgba(232,163,61,.35)}
+.morph.base{background:rgba(143,163,126,.14);color:var(--moss);border:1px solid rgba(143,163,126,.35)}
+.morph.mark{background:rgba(217,108,71,.14);color:var(--flame);border:1px solid rgba(217,108,71,.35)}
+.morph.op{background:none;border:none;color:var(--cream-dim);font-size:18px;min-width:auto;padding:0 2px}
+.morph.none{background:var(--ink-3);color:var(--cream-dim);border:1px dashed var(--line)}
+
+/* generic table */
+.tbl{width:100%;border-collapse:collapse;margin-top:22px;font-size:14.5px}
+.tbl th{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:11px 12px;color:var(--cream-dim);border-bottom:1px solid var(--line);vertical-align:bottom}
+.tbl td{padding:12px;border-bottom:1px solid var(--line);color:var(--cream-dim);vertical-align:top}
+.tbl td .rom{font-family:'JetBrains Mono',monospace;font-size:15px;color:var(--cream);font-weight:700}
+.tbl td .tel{font-family:'Noto Sans Telugu',sans-serif;font-size:15px;color:var(--cream-dim);opacity:.8}
+.tbl td small{display:block;font-size:12px;color:var(--cream-dim);margin-top:2px}
+.tag{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:999px;margin-left:4px}
+.tag.neu{background:rgba(143,163,126,.16);color:var(--moss)}
+.tag.for{background:rgba(232,163,61,.16);color:var(--amber)}
+.tag.inf{background:rgba(217,108,71,.16);color:var(--flame)}
+
+/* anki table */
+.anki-wrap{overflow-x:auto;margin-top:26px;border:1px solid var(--line);border-radius:var(--radius)}
+.anki{width:100%;border-collapse:collapse;font-size:14px;min-width:720px}
+.anki th{background:var(--ink-3);font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:12px 14px;color:var(--amber);border-bottom:1px solid var(--line);white-space:nowrap}
+.anki td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--cream-dim);vertical-align:top}
+.anki tr:last-child td{border-bottom:none}
+.anki .f-en{color:var(--cream);width:31%}
+.anki .f-rom{font-family:'JetBrains Mono',monospace;color:var(--amber);font-weight:700;white-space:nowrap}
+.anki .f-tel{font-family:'Noto Sans Telugu',sans-serif;color:var(--cream)}
+.anki .f-aud{color:var(--cream-dim);opacity:.4;font-family:'JetBrains Mono',monospace;font-size:12px;text-align:center}
+.anki .f-ex{font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--moss)}
+.anki .sec td{background:var(--ink-2);font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--cream-dim)}
+.field-key{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--cream-dim)}
+.field-key span{background:var(--ink-2);border:1px solid var(--line);border-radius:6px;padding:5px 10px}
+.field-key b{color:var(--amber);font-weight:500}
+
+/* lesson questions */
+.question-link{display:grid;grid-template-columns:80px 1fr auto;align-items:center;gap:22px;margin-top:26px;border:1px dashed var(--line);border-radius:var(--radius);background:var(--ink-2);color:inherit;padding:22px;text-decoration:none}
+.question-link:hover{border-color:rgba(232,163,61,.4);background:var(--ink-3)}
+.question-mark{display:grid;width:60px;height:60px;place-items:center;border:1px solid rgba(143,163,126,.35);border-radius:50%;color:var(--moss);font-family:'Young Serif',serif;font-size:28px}
+.question-link h3{margin-bottom:5px;font-family:'Inter',sans-serif;font-size:17px;font-weight:600}
+.question-link p{margin:0;color:var(--cream-dim);font-size:13px}
+.question-open{color:var(--amber);font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;white-space:nowrap}
+.question-open::after{content:' →'}
+
+footer{padding:52px 0 68px;border-top:1px solid var(--line)}
+footer p{font-size:13px;color:var(--cream-dim)}
+footer .mono{color:var(--amber)}
+.try{list-style:none;margin-top:18px;display:grid;gap:10px;max-width:640px}
+.try li{background:var(--ink-2);border:1px solid var(--line);border-radius:9px;padding:12px 16px;font-size:14px;color:var(--cream-dim)}
+.try li .q{color:var(--cream);font-weight:600}
+.try li .a{font-family:'JetBrains Mono',monospace;color:var(--moss);margin-top:4px;display:block}
+
+/* lesson 7 additions, reused */
+.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));gap:10px;margin-top:20px}
+.vcell{border:1px solid var(--line);border-radius:11px;background:var(--ink-2);padding:13px 15px}
+.vcell .en{display:block;font-size:13px;color:var(--cream-dim)}
+.vcell .inf{display:block;font-family:'JetBrains Mono',monospace;font-size:15.5px;font-weight:700;color:var(--amber);margin-top:4px}
+.vcell .fml{display:block;font-family:'JetBrains Mono',monospace;font-size:13.5px;color:var(--moss)}
+.vcell .tel{display:block;font-family:'Noto Sans Telugu',sans-serif;font-size:14px;color:var(--cream-dim);margin-top:2px}
+.vcell.warn{border-color:rgba(217,108,71,.32)}
+.grp{margin-top:26px}
+.grp h4{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--amber);margin-bottom:2px}
+.grp p{font-size:13.5px;color:var(--cream-dim);margin-bottom:0}
+.stack{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin:14px 0}
+.stack .box{border-radius:8px;padding:8px 13px;font-family:'JetBrains Mono',monospace;font-size:14px}
+.stack .root{background:rgba(143,163,126,.14);color:var(--moss);border:1px solid rgba(143,163,126,.35)}
+.stack .neg{background:rgba(217,108,71,.14);color:var(--flame);border:1px solid rgba(217,108,71,.35)}
+.stack .pol{background:rgba(232,163,61,.14);color:var(--amber);border:1px solid rgba(232,163,61,.35)}
+.stack .op{color:var(--cream-dim);font-size:17px}
+.stack .out{background:var(--ink-3);color:var(--cream);border:1px solid var(--line)}
+
+/* lesson 8 additions, reused */
+.para{width:100%;border-collapse:collapse;margin-top:22px;font-size:14.5px;min-width:660px}
+.para th{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:11px 12px;color:var(--cream-dim);border-bottom:1px solid var(--line)}
+.para td{padding:10px 12px;border-bottom:1px solid var(--line);color:var(--cream-dim)}
+.para .pron{font-family:'JetBrains Mono',monospace;color:var(--cream);font-weight:700;white-space:nowrap}
+.para .pron small{display:block;font-family:'Inter',sans-serif;font-weight:400;font-size:11.5px;opacity:.65}
+.para .mk{font-family:'JetBrains Mono',monospace;color:var(--flame);font-weight:700;text-align:center}
+.para .form{font-family:'JetBrains Mono',monospace;color:var(--amber);font-weight:700;white-space:nowrap}
+.para .telc{font-family:'Noto Sans Telugu',sans-serif;color:var(--cream-dim);opacity:.8}
+.para tr.odd td{background:rgba(143,163,126,.05)}
+.scroll{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);margin-top:22px}
+.scroll .para{margin-top:0;border-radius:var(--radius)}
+.audit{border:1px solid rgba(143,163,126,.3);background:rgba(143,163,126,.06);border-radius:var(--radius);padding:20px 24px;margin-top:22px}
+.audit h4{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--moss);margin-bottom:10px}
+.audit p{font-size:14px;color:var(--cream-dim)}
+.audit p+p{margin-top:9px}
+.audit.warn{border-color:rgba(217,108,71,.3);background:rgba(217,108,71,.06)}
+.audit.warn h4{color:var(--flame)}
+.caption-list{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:7px;margin-top:14px}
+.caption-list li{background:var(--ink-2);border:1px solid var(--line);border-radius:8px;padding:9px 12px;font-size:13px;color:var(--cream-dim)}
+.caption-list .real{font-family:'JetBrains Mono',monospace;color:var(--moss);font-weight:700}
+.caption-list .heard{color:var(--flame);font-style:italic}
+@media(max-width:720px){
+  .wrap{padding:0 16px}
+  .hero-glyph{right:0}
+  .rule{grid-template-columns:1fr;gap:8px}
+  .rule>div{min-width:0}
+  .tbl{display:block;width:100%;max-width:100%;overflow-x:auto;white-space:nowrap}
+  .question-link{grid-template-columns:52px 1fr;padding:18px 16px}
+  .question-mark{width:48px;height:48px}
+  .question-open{grid-column:2}
+}
+</style>
+</head>
+<body>
+
+<nav aria-label="Main">
+  <div class="wrap">
+    <a class="logo" href="../index.html"><span>te</span> lesson-12 · adjectives &amp; undi</a>
+    <ul>
+      <li><a href="../index.html">Course home</a></li>
+      <li><a href="../../GRAMMAR_LAB/index.html">Verb Lab</a></li>
+      <li><a href="#split">The split</a></li>
+      <li><a href="#ga">The -gā suffix</a></li>
+      <li><a href="#people">Describing people</a></li>
+      <li><a href="#audit">Verb Lab audit</a></li>
+      <li><a href="#try">Self-test</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-glyph telugu" aria-hidden="true">ఉంది</div>
+  <div class="wrap">
+    <a class="home-crumb" href="../index.html">← Foundational Telugu / Learning path</a>
+    <span class="eyebrow">Course extraction · Lesson 12 · Video 23</span>
+    <h1>Adjectives, and <em>the two ways to say “is”</em></h1>
+    <p>Telugu makes a distinction English simply does not have. <span class="mono">undi</span> says something <b>is a certain way right now, as you observe it</b>. <span class="mono">uṇṭundi</span> says something <b>is a certain way as a rule</b>. Same English word, two different Telugu sentences, and choosing wrong is not a grammar mistake — it changes what you claimed.</p>
+    <p style="margin-top:12px">Stand in front of the Taj Mahal and it is <span class="mono">andangā undi</span>. Read about it in a book and it is <span class="mono">andangā uṇṭundi</span>.</p>
+
+    <div class="note-box">
+      <b>How I processed this</b>
+      <p>The worst-transcribed of the twelve, and the failures are all on the adjectives — which are the content. <span class="mono">peddagā</span> came through as <b>"pedagogue"</b> and <b>"pedagogy"</b>, <span class="mono">kōpangā</span> as <b>"Kapamilya"</b>, <span class="mono">kāraṁ</span> as <b>"Karamoja"</b> and <b>"Charanga"</b>, <span class="mono">tīpigā</span> as <b>"the pig"</b>, <span class="mono">vēḍigā</span> as <b>"verdigre"</b>. The opening line — <em>"Something be is very at and Telugu is and isn't"</em> — is unrecoverable; I reconstructed it from what the lesson goes on to do.</p>
+      <p><b>One reconstruction I am not certain of.</b> "The word for sad is <b>vikramgad</b>" is almost certainly <span class="mono">vichārangā</span> <span class="telugu">విచారంగా</span>, but <span class="mono">bādhagā</span> <span class="telugu">బాధగా</span> is the more common word in Hyderabad speech and fits the audio about as well. Flagged inline and in <span class="mono">review/</span> — worth one question.</p>
+      <p>This lesson also turned up a real error in the Verb Lab rather than confirming it. See <a href="#audit">the audit</a>.</p>
+    </div>
+  </div>
+</header>
+
+<section id="split">
+  <div class="wrap">
+    <span class="eyebrow">The whole lesson</span>
+    <h2>Observation vs. property</h2>
+    <p class="lede">Both of these are "is" in English. In Telugu they are different verbs forms and they make different claims.</p>
+
+    <div class="scroll">
+      <table class="para">
+        <thead><tr><th></th><th style="width:26%">Telugu</th><th>What you are claiming</th><th>When</th></tr></thead>
+        <tbody>
+          <tr><td class="pron">undi<small>ఉంది</small></td><td class="form">Taj Mahal andangā undi</td><td>“It looks beautiful.”</td><td>You are looking at it. Observation, opinion, right now.</td></tr>
+          <tr class="odd"><td class="pron">uṇṭundi<small>ఉంటుంది</small></td><td class="form">Taj Mahal andangā uṇṭundi</td><td>“It is a beautiful thing.”</td><td>A standing fact. It was, it is, it will be.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note-box win">
+      <b>You already have both forms</b>
+      <p><span class="mono">undi</span> and <span class="mono">uṇṭundi</span> are not new vocabulary. They are the she/it cells of two paradigms you drilled in <a href="lesson-09-past-tense.html">Lesson 9</a> and <a href="lesson-10-future-habitual.html">Lesson 10</a>. <b>What is new is that for this one verb, those two rows are not a past and a future at all</b> — they are two flavours of the present.</p>
+    </div>
+
+    <p style="margin-top:26px;font-size:14.5px;color:var(--cream-dim);max-width:660px">The video's worked pairs. Read them as claims, not translations:</p>
+
+    <table class="tbl">
+      <thead><tr><th>Observation — <span class="mono">undi</span></th><th>Property — <span class="mono">uṇṭundi</span></th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="rom">kāphī vēḍigā undi</span><br><span class="tel">కాఫీ వేడిగా ఉంది</span><br><small>this cup, now</small></td>
+          <td><span class="rom">Hyderabad vēḍigā uṇṭundi</span><br><span class="tel">Hyderabad వేడిగా ఉంటుంది</span><br><small>the climate, as a rule</small></td>
+        </tr>
+        <tr>
+          <td><span class="rom">ais krīṁ tīpigā undi</span><br><span class="tel">ఐస్ క్రీం తీపిగా ఉంది</span><br><small>this one, in front of you</small></td>
+          <td><span class="rom">ais krīṁ tīpigā uṇṭundi</span><br><span class="tel">ఐస్ క్రీం తీపిగా ఉంటుంది</span><br><small>ice cream in general</small></td>
+        </tr>
+        <tr>
+          <td><span class="rom">ī chiken biryānī kārangā undi</span><br><span class="tel">ఈ చికెన్ బిర్యానీ కారంగా ఉంది</span><br><small>this plate is spicy</small></td>
+          <td><span class="rom">chiken biryānī kārangā uṇṭundi</span><br><span class="tel">చికెన్ బిర్యానీ కారంగా ఉంటుంది</span><br><small>biryani is usually spicy</small></td>
+        </tr>
+        <tr>
+          <td><span class="rom">nā kurchī chinnagā undi</span><br><span class="tel">నా కుర్చీ చిన్నగా ఉంది</span><br><small>noticing it right now</small></td>
+          <td><span class="rom">nā skūl peddagā uṇṭundi</span><br><span class="tel">నా స్కూల్ పెద్దగా ఉంటుంది</span><br><small>describing what it is like</small></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="note-box">
+      <b>English has the distinction too — it just doesn't mark it</b>
+      <p>The video makes a good point in passing: "the ice cream is sweet" and "ice cream is sweet" differ in English by nothing but the article. The distinction exists in your head already; Telugu puts it on the verb where you cannot skip it.</p>
+      <p>So the work is not learning a new concept. It is learning to <b>decide before you speak</b>, every time, which of the two you mean.</p>
+    </div>
+
+    <div class="flag">
+      <b>Where this will bite you</b>
+      Applied to a person, the choice is socially loaded. <span class="mono">mīru andangā unnāru</span> is "you look beautiful (today)". <span class="mono">mīru andangā uṇṭāru</span> is "you are a beautiful person (always)". Same for tall, clever, kind. <b>Pick the wrong one and you have said something you did not mean</b> — usually more, occasionally less.
+    </div>
+  </div>
+</section>
+
+<section id="ga">
+  <div class="wrap">
+    <span class="eyebrow">The other half of the lesson</span>
+    <h2><span class="mono">-gā</span> turns a noun into a description</h2>
+    <p class="lede">Telugu adjectives in this construction are not adjectives. They are nouns wearing a suffix.</p>
+
+    <div class="morph-row">
+      <span class="morph base"><span class="p">andaṁ</span><span class="r">beauty (noun)</span></span>
+      <span class="morph op">+</span>
+      <span class="morph subj"><span class="p">-gā</span><span class="r">adverbialiser</span></span>
+      <span class="morph op">→</span>
+      <span class="morph"><span class="p mono" style="color:var(--cream)">andangā</span></span>
+      <span class="morph op">+</span>
+      <span class="morph mark"><span class="p">undi</span><span class="r">is</span></span>
+    </div>
+
+    <p style="font-size:14.5px;color:var(--cream-dim);max-width:660px">So <span class="mono">Taj Mahal andangā undi</span> is literally <b>"the Taj Mahal exists beautifully"</b>. Telugu describes things by saying <em>how they exist</em> rather than <em>what they are</em>. Once you see that, the requirement for <span class="mono">undi</span> stops looking like an extra word and starts looking like the main verb, which is what it is.</p>
+
+    <div class="grp">
+      <h4>The adjective set from the video</h4>
+      <p>Noun on the left, <span class="mono">-gā</span> form on the right. Learn the pairs — the bare noun is useful on its own.</p>
+      <div class="vgrid">
+        <div class="vcell"><span class="en">happy · from santōṣaṁ “happiness”</span><span class="inf">santōṣangā</span><span class="tel">సంతోషంగా</span></div>
+        <div class="vcell warn"><span class="en">sad <span class="tag inf">check</span></span><span class="inf">vichārangā</span><span class="tel">విచారంగా</span></div>
+        <div class="vcell"><span class="en">angry · from kōpaṁ “anger”</span><span class="inf">kōpangā</span><span class="tel">కోపంగా</span></div>
+        <div class="vcell"><span class="en">tall · from poḍugu</span><span class="inf">poḍuggā</span><span class="tel">పొడుగ్గా</span></div>
+        <div class="vcell"><span class="en">short · from poṭṭi</span><span class="inf">poṭṭigā</span><span class="tel">పొట్టిగా</span></div>
+        <div class="vcell"><span class="en">beautiful · from andaṁ “beauty”</span><span class="inf">andangā</span><span class="tel">అందంగా</span></div>
+        <div class="vcell"><span class="en">big · from pedda</span><span class="inf">peddagā</span><span class="tel">పెద్దగా</span></div>
+        <div class="vcell"><span class="en">small · from chinna</span><span class="inf">chinnagā</span><span class="tel">చిన్నగా</span></div>
+        <div class="vcell"><span class="en">sweet · from tīpi</span><span class="inf">tīpigā</span><span class="tel">తీపిగా</span></div>
+        <div class="vcell"><span class="en">spicy · from kāraṁ “chilli heat”</span><span class="inf">kārangā</span><span class="tel">కారంగా</span></div>
+        <div class="vcell"><span class="en">hot · from vēḍi</span><span class="inf">vēḍigā</span><span class="tel">వేడిగా</span></div>
+        <div class="vcell"><span class="en">cold · from challa</span><span class="inf">challagā</span><span class="tel">చల్లగా</span></div>
+      </div>
+      <div class="flag">
+        <b>“sad” is the one I am unsure of</b>
+        The captions give <b>"vikramgad"</b>. <span class="mono">vichārangā</span> fits the sounds and is correct Telugu, but <span class="mono">bādhagā</span> <span class="telugu">బాధగా</span> is what you are more likely to hear in Hyderabad. Ask which one your wife reaches for; the other is still worth knowing.
+      </div>
+    </div>
+
+    <div class="note-box win">
+      <b>The <span class="mono">-gā</span> hack — and you have seen this trick before</b>
+      <p>Attach <span class="mono">-gā</span> to an English adjective and it works: <span class="mono">sweet gā undi</span>, <span class="mono">spicy gā undi</span>, <span class="mono">fast gā undi</span>, <span class="mono">beautiful gā undi</span>. The video is explicit that native speakers do this too, not just learners.</p>
+      <p>This is the exact same move as the <span class="mono">chēyi</span> hack from <a href="lesson-07-imperatives.html">Lesson 7</a> — <span class="mono">park chēyaṇḍi</span>, <span class="mono">drive chēstānu</span>. <b>Telugu has two general-purpose adapters for English words</b>: <span class="mono">chēyi</span> makes them verbs, <span class="mono">-gā</span> makes them descriptions. Between them you are never fully stuck mid-sentence.</p>
+    </div>
+  </div>
+</section>
+
+<section id="people">
+  <div class="wrap">
+    <span class="eyebrow">Person marking</span>
+    <h2>Describing people takes the full paradigm</h2>
+    <p class="lede"><span class="mono">undi</span> and <span class="mono">uṇṭundi</span> are the she/it cells. They cover <b>every object, feeling and abstraction</b>, which is why they dominate. For people, the verb agrees like any other.</p>
+
+    <div class="scroll">
+      <table class="para">
+        <thead><tr><th>Person</th><th>Observation — now</th><th>Script</th><th>Property — in general</th><th>Script</th></tr></thead>
+        <tbody>
+          <tr><td class="pron">nēnu<small>I</small></td><td class="form">unnānu</td><td class="telc">ఉన్నాను</td><td class="form">uṇṭānu</td><td class="telc">ఉంటాను</td></tr>
+          <tr class="odd"><td class="pron">nuvvu<small>you — informal</small></td><td class="form">unnāvu</td><td class="telc">ఉన్నావు</td><td class="form">uṇṭāvu</td><td class="telc">ఉంటావు</td></tr>
+          <tr><td class="pron">vāḍu / atanu<small>he</small></td><td class="form">unnāḍu</td><td class="telc">ఉన్నాడు</td><td class="form">uṇṭāḍu</td><td class="telc">ఉంటాడు</td></tr>
+          <tr class="odd"><td class="pron">adi / āme<small>she, it</small></td><td class="form">undi</td><td class="telc">ఉంది</td><td class="form">uṇṭundi</td><td class="telc">ఉంటుంది</td></tr>
+          <tr><td class="pron">mēmu / manamu<small>we</small></td><td class="form">unnāmu</td><td class="telc">ఉన్నాము</td><td class="form">uṇṭāmu</td><td class="telc">ఉంటాము</td></tr>
+          <tr class="odd"><td class="pron">mīru · āyana · āviḍa · vāḷḷu<small>formal / plural</small></td><td class="form">unnāru</td><td class="telc">ఉన్నారు</td><td class="form">uṇṭāru</td><td class="telc">ఉంటారు</td></tr>
+          <tr><td class="pron">avi<small>they — non-human</small></td><td class="form">unnāyi</td><td class="telc">ఉన్నాయి</td><td class="form">uṇṭāyi</td><td class="telc">ఉంటాయి</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <table class="tbl">
+      <thead><tr><th>Telugu</th><th>Meaning</th><th>What is happening</th></tr></thead>
+      <tbody>
+        <tr><td><span class="rom">Gīta poḍuggā uṇṭundi</span><br><span class="tel">గీత పొడుగ్గా ఉంటుంది</span></td><td>Geeta is tall.</td><td>A fact about her. Feminine shares the neuter form.</td></tr>
+        <tr><td><span class="rom">Raj poṭṭigā uṇṭāḍu</span><br><span class="tel">Raj పొట్టిగా ఉంటాడు</span></td><td>Raj is short.</td><td>Masculine <span class="mono">-ṭāḍu</span>, from <span class="mono">vāḍu</span>.</td></tr>
+        <tr><td><span class="rom">Gīta santōṣangā undi</span><br><span class="tel">గీత సంతోషంగా ఉంది</span></td><td>Geeta is happy.</td><td>Right now — a mood, not a personality.</td></tr>
+        <tr><td><span class="rom">Raj vichārangā unnāḍu</span><br><span class="tel">Raj విచారంగా ఉన్నాడు</span></td><td>Raj is sad.</td><td>Right now.</td></tr>
+        <tr><td><span class="rom">Sunīta gāru santōṣangā unnāru</span><br><span class="tel">సునీత గారు సంతోషంగా ఉన్నారు</span></td><td>Sunita is happy.</td><td><span class="mono">gāru</span> forces <span class="mono">-nnāru</span>, as always.</td></tr>
+        <tr><td><span class="rom">Mūrti gāru kōpangā unnāru</span><br><span class="tel">మూర్తి గారు కోపంగా ఉన్నారు</span></td><td>Murthy is angry.</td><td>Same respectful form.</td></tr>
+        <tr><td><span class="rom">nēnu santōṣangā unnānu</span><br><span class="tel">నేను సంతోషంగా ఉన్నాను</span></td><td>I am happy.</td><td><b>Learn this one whole.</b> It is the answer to “how are you?”</td></tr>
+      </tbody>
+    </table>
+
+    <div class="note-box">
+      <b>Mood vs. character is the same choice as observation vs. property</b>
+      <p><span class="mono">Gīta santōṣangā undi</span> — she is happy today. <span class="mono">Gīta santōṣangā uṇṭundi</span> — she is a cheerful person. The grammar that distinguishes hot coffee from a hot city distinguishes a mood from a temperament, and it does it with the same two forms.</p>
+    </div>
+
+    <div class="note-box win">
+      <b>This closes a loop from Lesson 1</b>
+      <p><a href="lesson-01-pronouns.html">Lesson 1</a> taught the missing “to be”: <span class="mono">nēnu vidyārthini</span>, “I am a student”, with no verb at all. <b>That rule is about identity.</b> Say what something <em>is</em> — a student, a doctor, my sister — and Telugu needs no verb.</p>
+      <p>This lesson is about <b>states and properties</b>. Say how something <em>is</em> — happy, hot, tall — and you need <span class="mono">uṇḍu</span>. Two different jobs that English hands to the same word "be", and Telugu splits cleanly:</p>
+      <div class="stack" style="margin-top:14px">
+        <span class="box root">nēnu vidyārthini</span><span class="op">·</span><span class="box out">identity — no verb</span>
+      </div>
+      <div class="stack">
+        <span class="box neg">nēnu santōṣangā unnānu</span><span class="op">·</span><span class="box out">state — uṇḍu required</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="audit">
+  <div class="wrap">
+    <span class="eyebrow">Cross-check</span>
+    <h2>What this lesson found in the Verb Lab</h2>
+    <p class="lede">The first lesson in week 2 to find an actual error rather than confirm the generator or fill a gap.</p>
+
+    <div class="audit warn">
+      <h4>✗ <span class="mono">uṇḍu</span>'s tense labels were wrong — and it is the most-used verb in the language</h4>
+      <p>The engine produced <b>all the right forms</b>. But the row it calls <span class="mono">past</span> — <span class="mono">unnānu · unnāvu · unnāḍu · undi · unnāru</span> — is precisely the set this video teaches as the <b>present</b>. And the row labelled <span class="mono">future</span> is the general-fact present.</p>
+      <p>Left alone, the drill would have cued <span class="mono">unnānu</span> as <b>“I waited”</b>. It means <b>“I am”</b>. That is not a mislabelled column, it is a card teaching the wrong meaning for the single highest-frequency verb you own.</p>
+      <p><b>Fixed</b> by adding a per-verb cue override (<span class="mono">cueOv</span>) rather than special-casing the engine's tense machinery, which is correct for the other 34 verbs. <span class="mono">uṇḍu</span> now cues <em>“I am ___ (right now — an observation)”</em> and <em>“I am ___ (in general — a standing fact)”</em>. Its <span class="mono">note</span> now says the labels lie and why.</p>
+    </div>
+
+    <div class="audit">
+      <h4>✓ Everything else holds</h4>
+      <p>2,129 generated forms, still zero disagreements with <span class="mono">tools/te2rom.py</span>. All the <span class="mono">uṇḍu</span> forms the video states — <span class="mono">undi</span>, <span class="mono">uṇṭundi</span>, <span class="mono">unnānu</span>, <span class="mono">unnāḍu</span>, <span class="mono">unnāru</span>, <span class="mono">uṇṭāḍu</span>, <span class="mono">uṇṭāru</span> — are cells that already existed and are correct.</p>
+    </div>
+
+    <div class="audit warn">
+      <h4>△ Two questions for a native speaker</h4>
+      <p><b>1.</b> Is “sad” <span class="mono">vichārangā</span> or <span class="mono">bādhagā</span> in ordinary Hyderabad speech?</p>
+      <p><b>2.</b> Still open from Lesson 11: is “I'm not about to ___” expressible at all?</p>
+    </div>
+  </div>
+</section>
+
+<section id="captions">
+  <div class="wrap">
+    <span class="eyebrow">Provenance</span>
+    <h2>What the auto-captions actually said</h2>
+    <p class="lede">Raw text in <span class="mono">sources/transcripts/week-02/23-adjectives-undi.txt</span>.</p>
+    <ul class="caption-list">
+      <li><span class="real">peddagā</span> → <span class="heard">"pedagogue"</span>, <span class="heard">"pedagogy"</span></li>
+      <li><span class="real">kōpangā</span> → <span class="heard">"Kapamilya"</span></li>
+      <li><span class="real">kāraṁ / kārangā</span> → <span class="heard">"Karamoja"</span>, <span class="heard">"Charanga"</span></li>
+      <li><span class="real">tīpigā</span> → <span class="heard">"the pig"</span>, <span class="heard">"te paga"</span></li>
+      <li><span class="real">vēḍigā</span> → <span class="heard">"verdigre"</span>, <span class="heard">"vedika"</span></li>
+      <li><span class="real">challagā</span> → <span class="heard">"Chal Laga"</span></li>
+      <li><span class="real">chinnagā</span> → <span class="heard">"Chin Naga"</span>, <span class="heard">"tenaga"</span></li>
+      <li><span class="real">poḍuggā</span> → <span class="heard">"ports"</span>, <span class="heard">"podhuvaga"</span></li>
+      <li><span class="real">poṭṭigā</span> → <span class="heard">"potyguar"</span>, <span class="heard">"Portigal"</span></li>
+      <li><span class="real">andangā</span> → <span class="heard">"adamg"</span>, <span class="heard">"Ondonga"</span></li>
+      <li><span class="real">vichārangā</span> → <span class="heard">"vikramgad"</span></li>
+      <li><span class="real">uṇṭundi</span> → <span class="heard">"Tundi"</span>, <span class="heard">"one tondai"</span></li>
+      <li><span class="real">kurchī</span> → <span class="heard">"Curci"</span></li>
+      <li><span class="real">the opening sentence</span> → <span class="heard">"Something be is very at and Telugu is and isn't"</span></li>
+    </ul>
+    <p style="margin-top:18px;font-size:13.5px;color:var(--cream-dim);max-width:660px">This is the lesson where the captions did the most damage, because <b>the adjectives are the content</b> — there is no grammatical scaffolding to reconstruct them from, only the sounds. Every one of the twelve was rebuilt from the sound plus what Telugu actually uses, and one (<span class="mono">vichārangā</span>) is still flagged.</p>
+  </div>
+</section>
+
+<section id="anki">
+  <div class="wrap">
+    <span class="eyebrow">For import</span>
+    <h2>Anki additions — your 5 fields</h2>
+    <p class="lede">Both halves of each pair: the bare noun and the <span class="mono">-gā</span> form. The noun is worth having on its own — <span class="mono">kōpaṁ</span> and <span class="mono">santōṣaṁ</span> are common words.</p>
+    <div class="field-key">
+      <span><b>1</b> English (+ cue)</span><span><b>2</b> Romanized</span><span><b>3</b> Telugu script</span><span><b>4</b> Audio (blank)</span><span><b>5</b> Example</span>
+    </div>
+    <div class="anki-wrap">
+      <table class="anki">
+        <thead><tr><th class="f-en">English (with cue)</th><th>Romanized</th><th>Telugu</th><th style="text-align:center">Audio</th><th>Example sentence</th></tr></thead>
+        <tbody>
+          <tr class="sec"><td colspan="5">The grammar</td></tr>
+          <tr><td class="f-en">-gā — turns a noun into a description</td><td class="f-rom">-gā</td><td class="f-tel">-గా</td><td class="f-aud">[ ]</td><td class="f-ex">andaṁ → andangā</td></tr>
+          <tr><td class="f-en">is — observation right now (she/it)</td><td class="f-rom">undi</td><td class="f-tel">ఉంది</td><td class="f-aud">[ ]</td><td class="f-ex">kāphī vēḍigā undi.</td></tr>
+          <tr><td class="f-en">is — a standing fact, in general (she/it)</td><td class="f-rom">uṇṭundi</td><td class="f-tel">ఉంటుంది</td><td class="f-aud">[ ]</td><td class="f-ex">Hyderabad vēḍigā uṇṭundi.</td></tr>
+          <tr class="sec"><td colspan="5">Feelings</td></tr>
+          <tr><td class="f-en">happiness (noun)</td><td class="f-rom">santōṣaṁ</td><td class="f-tel">సంతోషం</td><td class="f-aud">[ ]</td><td class="f-ex">nēnu santōṣangā unnānu.</td></tr>
+          <tr><td class="f-en">happy, happily</td><td class="f-rom">santōṣangā</td><td class="f-tel">సంతోషంగా</td><td class="f-aud">[ ]</td><td class="f-ex">nēnu santōṣangā unnānu.</td></tr>
+          <tr><td class="f-en">anger (noun)</td><td class="f-rom">kōpaṁ</td><td class="f-tel">కోపం</td><td class="f-aud">[ ]</td><td class="f-ex">Mūrti gāru kōpangā unnāru.</td></tr>
+          <tr><td class="f-en">angry, angrily</td><td class="f-rom">kōpangā</td><td class="f-tel">కోపంగా</td><td class="f-aud">[ ]</td><td class="f-ex">Mūrti gāru kōpangā unnāru.</td></tr>
+          <tr><td class="f-en">sad (check: bādhagā may be commoner in Hyderabad)</td><td class="f-rom">vichārangā</td><td class="f-tel">విచారంగా</td><td class="f-aud">[ ]</td><td class="f-ex">Raj vichārangā unnāḍu.</td></tr>
+          <tr class="sec"><td colspan="5">Describing people &amp; things</td></tr>
+          <tr><td class="f-en">beauty (noun)</td><td class="f-rom">andaṁ</td><td class="f-tel">అందం</td><td class="f-aud">[ ]</td><td class="f-ex">Taj Mahal andangā undi.</td></tr>
+          <tr><td class="f-en">beautiful, beautifully</td><td class="f-rom">andangā</td><td class="f-tel">అందంగా</td><td class="f-aud">[ ]</td><td class="f-ex">Taj Mahal andangā undi.</td></tr>
+          <tr><td class="f-en">tall (of a person)</td><td class="f-rom">poḍuggā</td><td class="f-tel">పొడుగ్గా</td><td class="f-aud">[ ]</td><td class="f-ex">Gīta poḍuggā uṇṭundi.</td></tr>
+          <tr><td class="f-en">short (of a person — not of time)</td><td class="f-rom">poṭṭigā</td><td class="f-tel">పొట్టిగా</td><td class="f-aud">[ ]</td><td class="f-ex">Raj poṭṭigā uṇṭāḍu.</td></tr>
+          <tr><td class="f-en">big, large (as a description)</td><td class="f-rom">peddagā</td><td class="f-tel">పెద్దగా</td><td class="f-aud">[ ]</td><td class="f-ex">nā skūl peddagā uṇṭundi.</td></tr>
+          <tr><td class="f-en">small, little (as a description)</td><td class="f-rom">chinnagā</td><td class="f-tel">చిన్నగా</td><td class="f-aud">[ ]</td><td class="f-ex">nā kurchī chinnagā undi.</td></tr>
+          <tr><td class="f-en">chair</td><td class="f-rom">kurchī</td><td class="f-tel">కుర్చీ</td><td class="f-aud">[ ]</td><td class="f-ex">nā kurchī chinnagā undi.</td></tr>
+          <tr class="sec"><td colspan="5">Food &amp; temperature</td></tr>
+          <tr><td class="f-en">sweetness (noun)</td><td class="f-rom">tīpi</td><td class="f-tel">తీపి</td><td class="f-aud">[ ]</td><td class="f-ex">ais krīṁ tīpigā uṇṭundi.</td></tr>
+          <tr><td class="f-en">sweet</td><td class="f-rom">tīpigā</td><td class="f-tel">తీపిగా</td><td class="f-aud">[ ]</td><td class="f-ex">ais krīṁ tīpigā undi.</td></tr>
+          <tr><td class="f-en">chilli heat, spice (noun)</td><td class="f-rom">kāraṁ</td><td class="f-tel">కారం</td><td class="f-aud">[ ]</td><td class="f-ex">chiken biryānī kārangā uṇṭundi.</td></tr>
+          <tr><td class="f-en">spicy (chilli-hot, not temperature)</td><td class="f-rom">kārangā</td><td class="f-tel">కారంగా</td><td class="f-aud">[ ]</td><td class="f-ex">ī chiken biryānī kārangā undi.</td></tr>
+          <tr><td class="f-en">heat (noun)</td><td class="f-rom">vēḍi</td><td class="f-tel">వేడి</td><td class="f-aud">[ ]</td><td class="f-ex">Hyderabad vēḍigā uṇṭundi.</td></tr>
+          <tr><td class="f-en">hot (temperature — not spicy)</td><td class="f-rom">vēḍigā</td><td class="f-tel">వేడిగా</td><td class="f-aud">[ ]</td><td class="f-ex">kāphī vēḍigā undi.</td></tr>
+          <tr><td class="f-en">cold</td><td class="f-rom">challagā</td><td class="f-tel">చల్లగా</td><td class="f-aud">[ ]</td><td class="f-ex">kāphī challagā undi.</td></tr>
+          <tr><td class="f-en">sari (the garment)</td><td class="f-rom">chīra</td><td class="f-tel">చీర</td><td class="f-aud">[ ]</td><td class="f-ex">chīra andangā undi.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="try">
+  <div class="wrap">
+    <span class="eyebrow">From the lesson</span>
+    <h2>Quick self-test</h2>
+    <p class="lede">Most of these are not "what is the word" — they are "which of the two do you mean". That is the skill.</p>
+    <ul class="try">
+      <li><span class="q">You are standing in front of the Taj Mahal. Say it's beautiful.</span><span class="a">Taj Mahal andangā undi. — observation, right now.</span></li>
+      <li><span class="q">Now you're describing it to someone who has never been.</span><span class="a">Taj Mahal andangā uṇṭundi. — a standing fact.</span></li>
+      <li><span class="q">This cup of coffee is hot.</span><span class="a">kāphī vēḍigā undi.</span></li>
+      <li><span class="q">Hyderabad is hot.</span><span class="a">Hyderabad vēḍigā uṇṭundi. — the climate, not today's weather.</span></li>
+      <li><span class="q">What is <span class="mono">andangā</span> made of, and what does the sentence literally say?</span><span class="a">andaṁ "beauty" + -gā. Literally "the Taj Mahal exists beautifully."</span></li>
+      <li><span class="q">You've forgotten the Telugu for "comfortable". What do you say?</span><span class="a">comfortable gā undi. Any English adjective + gā — natives do it too.</span></li>
+      <li><span class="q">Which Lesson 7 trick is that the twin of?</span><span class="a">The chēyi hack — park chēyaṇḍi. chēyi makes English words verbs, -gā makes them descriptions.</span></li>
+      <li><span class="q">"I am happy."</span><span class="a">nēnu santōṣangā unnānu.</span></li>
+      <li><span class="q">Why is there a verb here, when <span class="mono">nēnu vidyārthini</span> ("I am a student") has none?</span><span class="a">Identity needs no verb. A state or property needs uṇḍu. English uses "be" for both jobs; Telugu splits them.</span></li>
+      <li><span class="q">Murthy — much older than you — is angry.</span><span class="a">Mūrti gāru kōpangā unnāru.</span></li>
+      <li><span class="q">Raj is short, as a fact about him.</span><span class="a">Raj poṭṭigā uṇṭāḍu. — masculine -ṭāḍu.</span></li>
+      <li><span class="q">Two ways to tell your wife she looks beautiful. What's the difference?</span><span class="a">... andangā unnāvu = you look beautiful right now. ... andangā uṇṭāvu = you are a beautiful person. Pick deliberately.</span></li>
+      <li><span class="q">"Geeta is happy" vs "Geeta is a cheerful person".</span><span class="a">Gīta santōṣangā undi. / Gīta santōṣangā uṇṭundi. — mood vs temperament, same grammar as coffee vs climate.</span></li>
+      <li><span class="q">Describe three things around you right now, then the same three as general facts.</span><span class="a">___ gā undi ×3, then ___ gā uṇṭundi ×3. Notice which ones don't work as facts.</span></li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><span class="mono">Foundational Telugu</span> · Lesson 12 · video 23, reconstructed against the <a href="../../GRAMMAR_LAB/index.html">Verb Lab</a> stems · raw captions in <span class="mono">sources/transcripts/week-02/</span></p>
+    <p><a href="lesson-11-immediate-future.html">← Lesson 11 · Immediate future</a> · <a href="../index.html">Course home</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
