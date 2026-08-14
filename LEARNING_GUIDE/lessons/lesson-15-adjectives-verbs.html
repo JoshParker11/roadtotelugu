@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Telugu · Lesson 15 — Adjectives &amp; the extended verb list</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+Telugu:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#191915;--ink-2:#22221d;--ink-3:#2c2c25;
+  --cream:#f1ece0;--cream-dim:#b9b3a4;
+  --amber:#e8a33d;--moss:#8fa37e;--flame:#d96c47;
+  --line:rgba(241,236,224,.12);--radius:14px;--max:1000px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{background:var(--ink);color:var(--cream);font-family:'Inter',sans-serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.telugu{font-family:'Noto Sans Telugu','Inter',sans-serif}
+.mono{font-family:'JetBrains Mono',monospace}
+h1,h2,h3{font-family:'Young Serif',serif;font-weight:400;line-height:1.15}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+section{padding:72px 0;border-top:1px solid var(--line)}
+.eyebrow{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--amber);margin-bottom:14px;display:block}
+h2{font-size:clamp(26px,4.2vw,36px);margin-bottom:14px}
+.lede{color:var(--cream-dim);max-width:660px;font-size:16.5px}
+.lede b{color:var(--cream)}
+a{color:var(--amber)}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:4px}
+
+nav{position:sticky;top:0;z-index:50;background:rgba(25,25,21,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+.logo{font-family:'JetBrains Mono',monospace;font-size:13.5px;font-weight:700;color:var(--cream);text-decoration:none}
+.logo span{color:var(--amber)}
+nav ul{display:flex;gap:20px;list-style:none}
+nav ul a{color:var(--cream-dim);text-decoration:none;font-size:13px;font-weight:500}
+nav ul a:hover{color:var(--amber)}
+@media(max-width:720px){nav ul{display:none}}
+.home-crumb{display:inline-block;margin-bottom:18px;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--cream-dim);text-decoration:none}
+.home-crumb:hover{color:var(--amber)}
+
+header.hero{padding:80px 0 64px;position:relative;overflow:hidden}
+.hero-glyph{position:absolute;right:-30px;top:-70px;font-family:'Noto Sans Telugu',sans-serif;font-size:clamp(260px,40vw,480px);line-height:1;color:rgba(232,163,61,.05);user-select:none;pointer-events:none}
+.hero h1{font-size:clamp(34px,6vw,58px);margin:8px 0 10px;color:var(--cream)}
+.hero h1 em{color:var(--amber);font-style:normal}
+.hero p{max-width:620px;color:var(--cream-dim);font-size:17px}
+
+.note-box{background:rgba(217,108,71,.07);border:1px solid rgba(217,108,71,.3);border-radius:var(--radius);padding:20px 24px;margin-top:30px;max-width:720px}
+.note-box b{color:var(--flame);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;display:block;margin-bottom:8px}
+.note-box p{font-size:14px;color:var(--cream-dim)}
+.note-box p+p{margin-top:10px}
+.note-box.win{background:rgba(143,163,126,.08);border-color:rgba(143,163,126,.32)}
+.note-box.win b{color:var(--moss)}
+
+/* rule blocks */
+.rule{border-top:1px solid var(--line);padding:30px 0;display:grid;grid-template-columns:52px 1fr;gap:20px;counter-increment:r}
+.rules{counter-reset:r;margin-top:20px}
+.rule::before{content:counter(r,decimal-leading-zero);font-family:'JetBrains Mono',monospace;font-size:14px;color:var(--flame);padding-top:4px}
+.rule h3{font-size:19px;font-family:'Inter',sans-serif;font-weight:600;margin-bottom:8px;color:var(--cream)}
+.rule p{font-size:14.5px;color:var(--cream-dim);max-width:640px}
+.rule p+p{margin-top:10px}
+.rule b{color:var(--cream)}
+.ex{margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:14px;color:var(--moss);background:var(--ink-2);border:1px solid var(--line);border-radius:8px;padding:12px 16px;display:inline-block}
+.ex .en{color:var(--cream-dim);font-family:'Inter',sans-serif}
+.ex .tel{font-family:'Noto Sans Telugu',sans-serif;color:var(--cream)}
+.flag{margin-top:14px;border-left:3px solid var(--flame);background:rgba(217,108,71,.07);padding:11px 14px;font-size:13px;color:var(--cream-dim);border-radius:0 8px 8px 0}
+.flag b{color:var(--flame);font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;display:block;margin-bottom:5px}
+.flag.ok{border-left-color:var(--moss);background:rgba(143,163,126,.08)}
+.flag.ok b{color:var(--moss)}
+
+/* morpheme chips */
+.morph-row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:16px 0}
+.morph{border-radius:9px;padding:9px 14px;font-family:'JetBrains Mono',monospace;text-align:center;min-width:74px}
+.morph .p{font-size:16px;font-weight:700;display:block}
+.morph .r{font-size:9px;letter-spacing:.1em;text-transform:uppercase;opacity:.75;margin-top:3px;display:block}
+.morph.subj{background:rgba(232,163,61,.14);color:var(--amber);border:1px solid rgba(232,163,61,.35)}
+.morph.base{background:rgba(143,163,126,.14);color:var(--moss);border:1px solid rgba(143,163,126,.35)}
+.morph.mark{background:rgba(217,108,71,.14);color:var(--flame);border:1px solid rgba(217,108,71,.35)}
+.morph.op{background:none;border:none;color:var(--cream-dim);font-size:18px;min-width:auto;padding:0 2px}
+.morph.none{background:var(--ink-3);color:var(--cream-dim);border:1px dashed var(--line)}
+
+/* generic table */
+.tbl{width:100%;border-collapse:collapse;margin-top:22px;font-size:14.5px}
+.tbl th{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:11px 12px;color:var(--cream-dim);border-bottom:1px solid var(--line);vertical-align:bottom}
+.tbl td{padding:12px;border-bottom:1px solid var(--line);color:var(--cream-dim);vertical-align:top}
+.tbl td .rom{font-family:'JetBrains Mono',monospace;font-size:15px;color:var(--cream);font-weight:700}
+.tbl td .tel{font-family:'Noto Sans Telugu',sans-serif;font-size:15px;color:var(--cream-dim);opacity:.8}
+.tbl td small{display:block;font-size:12px;color:var(--cream-dim);margin-top:2px}
+.tag{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:999px;margin-left:4px}
+.tag.neu{background:rgba(143,163,126,.16);color:var(--moss)}
+.tag.for{background:rgba(232,163,61,.16);color:var(--amber)}
+.tag.inf{background:rgba(217,108,71,.16);color:var(--flame)}
+
+/* anki table */
+.anki-wrap{overflow-x:auto;margin-top:26px;border:1px solid var(--line);border-radius:var(--radius)}
+.anki{width:100%;border-collapse:collapse;font-size:14px;min-width:720px}
+.anki th{background:var(--ink-3);font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:12px 14px;color:var(--amber);border-bottom:1px solid var(--line);white-space:nowrap}
+.anki td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--cream-dim);vertical-align:top}
+.anki tr:last-child td{border-bottom:none}
+.anki .f-en{color:var(--cream);width:31%}
+.anki .f-rom{font-family:'JetBrains Mono',monospace;color:var(--amber);font-weight:700;white-space:nowrap}
+.anki .f-tel{font-family:'Noto Sans Telugu',sans-serif;color:var(--cream)}
+.anki .f-aud{color:var(--cream-dim);opacity:.4;font-family:'JetBrains Mono',monospace;font-size:12px;text-align:center}
+.anki .f-ex{font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--moss)}
+.anki .sec td{background:var(--ink-2);font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--cream-dim)}
+.field-key{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--cream-dim)}
+.field-key span{background:var(--ink-2);border:1px solid var(--line);border-radius:6px;padding:5px 10px}
+.field-key b{color:var(--amber);font-weight:500}
+
+/* lesson questions */
+.question-link{display:grid;grid-template-columns:80px 1fr auto;align-items:center;gap:22px;margin-top:26px;border:1px dashed var(--line);border-radius:var(--radius);background:var(--ink-2);color:inherit;padding:22px;text-decoration:none}
+.question-link:hover{border-color:rgba(232,163,61,.4);background:var(--ink-3)}
+.question-mark{display:grid;width:60px;height:60px;place-items:center;border:1px solid rgba(143,163,126,.35);border-radius:50%;color:var(--moss);font-family:'Young Serif',serif;font-size:28px}
+.question-link h3{margin-bottom:5px;font-family:'Inter',sans-serif;font-size:17px;font-weight:600}
+.question-link p{margin:0;color:var(--cream-dim);font-size:13px}
+.question-open{color:var(--amber);font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;white-space:nowrap}
+.question-open::after{content:' →'}
+
+footer{padding:52px 0 68px;border-top:1px solid var(--line)}
+footer p{font-size:13px;color:var(--cream-dim)}
+footer .mono{color:var(--amber)}
+.try{list-style:none;margin-top:18px;display:grid;gap:10px;max-width:640px}
+.try li{background:var(--ink-2);border:1px solid var(--line);border-radius:9px;padding:12px 16px;font-size:14px;color:var(--cream-dim)}
+.try li .q{color:var(--cream);font-weight:600}
+.try li .a{font-family:'JetBrains Mono',monospace;color:var(--moss);margin-top:4px;display:block}
+
+/* lesson 7 additions, reused */
+.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));gap:10px;margin-top:20px}
+.vcell{border:1px solid var(--line);border-radius:11px;background:var(--ink-2);padding:13px 15px}
+.vcell .en{display:block;font-size:13px;color:var(--cream-dim)}
+.vcell .inf{display:block;font-family:'JetBrains Mono',monospace;font-size:15.5px;font-weight:700;color:var(--amber);margin-top:4px}
+.vcell .fml{display:block;font-family:'JetBrains Mono',monospace;font-size:13.5px;color:var(--moss)}
+.vcell .tel{display:block;font-family:'Noto Sans Telugu',sans-serif;font-size:14px;color:var(--cream-dim);margin-top:2px}
+.vcell.warn{border-color:rgba(217,108,71,.32)}
+.grp{margin-top:26px}
+.grp h4{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--amber);margin-bottom:2px}
+.grp p{font-size:13.5px;color:var(--cream-dim);margin-bottom:0}
+.stack{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin:14px 0}
+.stack .box{border-radius:8px;padding:8px 13px;font-family:'JetBrains Mono',monospace;font-size:14px}
+.stack .root{background:rgba(143,163,126,.14);color:var(--moss);border:1px solid rgba(143,163,126,.35)}
+.stack .neg{background:rgba(217,108,71,.14);color:var(--flame);border:1px solid rgba(217,108,71,.35)}
+.stack .pol{background:rgba(232,163,61,.14);color:var(--amber);border:1px solid rgba(232,163,61,.35)}
+.stack .op{color:var(--cream-dim);font-size:17px}
+.stack .out{background:var(--ink-3);color:var(--cream);border:1px solid var(--line)}
+
+/* lesson 8 additions, reused */
+.para{width:100%;border-collapse:collapse;margin-top:22px;font-size:14.5px;min-width:660px}
+.para th{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:11px 12px;color:var(--cream-dim);border-bottom:1px solid var(--line)}
+.para td{padding:10px 12px;border-bottom:1px solid var(--line);color:var(--cream-dim)}
+.para .pron{font-family:'JetBrains Mono',monospace;color:var(--cream);font-weight:700;white-space:nowrap}
+.para .pron small{display:block;font-family:'Inter',sans-serif;font-weight:400;font-size:11.5px;opacity:.65}
+.para .mk{font-family:'JetBrains Mono',monospace;color:var(--flame);font-weight:700;text-align:center}
+.para .form{font-family:'JetBrains Mono',monospace;color:var(--amber);font-weight:700;white-space:nowrap}
+.para .telc{font-family:'Noto Sans Telugu',sans-serif;color:var(--cream-dim);opacity:.8}
+.para tr.odd td{background:rgba(143,163,126,.05)}
+.scroll{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);margin-top:22px}
+.scroll .para{margin-top:0;border-radius:var(--radius)}
+.audit{border:1px solid rgba(143,163,126,.3);background:rgba(143,163,126,.06);border-radius:var(--radius);padding:20px 24px;margin-top:22px}
+.audit h4{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--moss);margin-bottom:10px}
+.audit p{font-size:14px;color:var(--cream-dim)}
+.audit p+p{margin-top:9px}
+.audit.warn{border-color:rgba(217,108,71,.3);background:rgba(217,108,71,.06)}
+.audit.warn h4{color:var(--flame)}
+.caption-list{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:7px;margin-top:14px}
+.caption-list li{background:var(--ink-2);border:1px solid var(--line);border-radius:8px;padding:9px 12px;font-size:13px;color:var(--cream-dim)}
+.caption-list .real{font-family:'JetBrains Mono',monospace;color:var(--moss);font-weight:700}
+.caption-list .heard{color:var(--flame);font-style:italic}
+@media(max-width:720px){
+  .wrap{padding:0 16px}
+  .hero-glyph{right:0}
+  .rule{grid-template-columns:1fr;gap:8px}
+  .rule>div{min-width:0}
+  .tbl{display:block;width:100%;max-width:100%;overflow-x:auto;white-space:nowrap}
+  .question-link{grid-template-columns:52px 1fr;padding:18px 16px}
+  .question-mark{width:48px;height:48px}
+  .question-open{grid-column:2}
+}
+
+/* conjugation matrix — the course's own table shape, in this site's palette.
+   Rows are pronouns, columns are tenses, and the boxed cells make it scannable
+   in both directions, which a flat table is not. */
+.matrix{width:100%;border-collapse:separate;border-spacing:5px;font-size:14px;min-width:760px}
+.matrix th{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--cream);background:var(--ink-3);border:1px solid var(--line);border-radius:9px;padding:10px 12px;text-align:center;vertical-align:middle}
+.matrix th small{display:block;font-family:'Inter',sans-serif;font-size:11px;letter-spacing:0;text-transform:none;color:var(--cream-dim);font-weight:400;margin-top:3px}
+.matrix th.grp,.matrix th.en,.matrix th.pn{background:none;border:none}
+.matrix td.grp{background:none;border:none;font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--cream-dim);text-align:right;padding-right:6px;vertical-align:middle;width:72px;line-height:1.3}
+.matrix td.grp.lab{color:var(--flame)}
+.matrix td.en{background:var(--ink-3);border:1px solid var(--line);border-radius:9px;padding:9px 12px;color:var(--cream);font-weight:600;text-align:center;white-space:nowrap;font-size:13px;line-height:1.4}
+.matrix td.pn{background:rgba(232,163,61,.12);border:1px solid rgba(232,163,61,.32);border-radius:9px;padding:9px 14px;font-family:'JetBrains Mono',monospace;font-size:13.5px;color:var(--amber);font-weight:700;text-align:center;white-space:nowrap;line-height:1.45}
+.matrix td.pn .tel{display:block;font-family:'Noto Sans Telugu',sans-serif;font-size:12px;color:var(--cream-dim);font-weight:400;margin-top:2px;opacity:.75}
+.matrix td.sfx{background:rgba(143,163,126,.13);border:1px solid rgba(143,163,126,.3);border-radius:9px;padding:9px 14px;font-family:'JetBrains Mono',monospace;font-size:14.5px;color:var(--moss);font-weight:700;text-align:center;white-space:nowrap}
+.matrix td.sfx .tel{display:block;font-family:'Noto Sans Telugu',sans-serif;font-size:12.5px;color:var(--cream-dim);font-weight:400;margin-top:2px;opacity:.8}
+.matrix.neg td.sfx{background:rgba(217,108,71,.11);border-color:rgba(217,108,71,.3);color:var(--flame)}
+.matrix td.sfx.off{opacity:.32}
+.matrix td.sfx.on{box-shadow:0 0 0 1px var(--moss)}
+.matrix.neg td.sfx.on{box-shadow:0 0 0 1px var(--flame)}
+.matrix.suffixes td.sfx{font-size:15px}
+.matrix-key{display:flex;gap:14px;flex-wrap:wrap;margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:11.5px;color:var(--cream-dim)}
+.matrix-key b{font-weight:500}
+@media(max-width:720px){.matrix{border-spacing:3px;font-size:13px}}
+</style></head>
+<body>
+
+<nav aria-label="Main">
+  <div class="wrap">
+    <a class="logo" href="../index.html"><span>te</span> lesson-15 · adjectives &amp; verbs</a>
+    <ul>
+      <li><a href="../index.html">Course home</a></li>
+      <li><a href="../../GRAMMAR_LAB/index.html">Verb Lab</a></li>
+      <li><a href="#slots">-gā vs -aina</a></li>
+      <li><a href="#errors">Four list errors</a></li>
+      <li><a href="#verbs">The new verbs</a></li>
+      <li><a href="#anki">The lists</a></li>
+      <li><a href="#try">Self-test</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-glyph telugu" aria-hidden="true">ఐన</div>
+  <div class="wrap">
+    <a class="home-crumb" href="../index.html">← Foundational Telugu / Learning path</a>
+    <span class="eyebrow">Course extraction · Lesson 15 · Adjectives &amp; the extended verbs</span>
+    <h1>Two slots for a description, <em>and 19 new verbs</em></h1>
+    <p><a href="lesson-12-adjectives-undi.html">Lesson 12</a> gave you <span class="mono">-gā</span>: <span class="mono">andangā undi</span>, "it is beautiful". That form <b>cannot go in front of a noun</b>. For that you need a different suffix, and this list is where it turns up.</p>
+    <p style="margin-top:12px">The 50-verb list is mostly verbs you already have. The 19 that are new are now in the Verb Lab, which is up to <b>54 verbs and 3,282 drillable forms</b>.</p>
+
+    <div class="note-box">
+      <b>How I processed this</b>
+      <p>Written source again, so the same class of damage: <span class="mono">nērpinchu</span> arrived as <span class="mono">ేర్పించు</span> and <span class="mono">lekkapeṭṭu</span> as <span class="mono">ెక్కపెట్టు</span> — first consonant dropped, orphan vowel sign left behind. Repaired.</p>
+      <p>Romanization re-derived from script throughout, correcting five spellings. The one that mattered: <b>"torn" is listed as <span class="mono">cimpa</span> but the script says <span class="mono">chimpina</span></b> — a different word, and a more interesting one.</p>
+      <p><b>Four entries in the adjective list are not adjectives, or not the form given.</b> Those are <a href="#errors">below</a>; the Anki list has them corrected.</p>
+    </div>
+  </div>
+</header>
+
+<section id="slots">
+  <div class="wrap">
+    <span class="eyebrow">The grammar</span>
+    <h2>Two suffixes, two slots</h2>
+    <p class="lede">English uses one word in both places — "the flower is beautiful", "a beautiful flower". Telugu uses two different forms, and they are not interchangeable.</p>
+
+    <div class="scroll">
+      <table class="para">
+        <thead><tr><th>Slot</th><th>Suffix</th><th>Example</th><th>Script</th></tr></thead>
+        <tbody>
+          <tr><td class="pron">After the noun<small>predicate — "it IS beautiful"</small></td><td class="mk">-gā</td><td class="form">puvvu andangā undi</td><td class="telc">పువ్వు అందంగా ఉంది</td></tr>
+          <tr class="odd"><td class="pron">Before the noun<small>attributive — "a beautiful flower"</small></td><td class="mk">-aina</td><td class="form">andamaina puvvu</td><td class="telc">అందమైన పువ్వు</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p style="margin-top:22px;font-size:14.5px;color:var(--cream-dim);max-width:660px">Both come off the same noun, <span class="mono">andaṁ</span> ("beauty"). <b>Neither is the adjective — the noun is.</b> <span class="mono">-gā</span> sends it to the predicate, <span class="mono">-aina</span> sends it in front of a noun. Miss the distinction and <span class="mono" style="color:var(--flame)">*andangā puvvu</span> comes out, which is not a phrase.</p>
+
+    <div class="rules">
+      <div class="rule">
+        <div>
+          <h3>Some adjectives need no suffix at all</h3>
+          <p>A dozen of these are bare stems that sit in front of a noun as they are — no <span class="mono">-aina</span> required.</p>
+          <span class="ex">pedda illu <span class="tel">పెద్ద ఇల్లు</span> <span class="en">— a big house</span></span>
+          <span class="ex" style="margin-top:10px">kotta kāru <span class="tel">కొత్త కారు</span> <span class="en">— a new car</span></span>
+          <p style="margin-top:14px">The bare set: <span class="mono">pedda</span>, <span class="mono">chinna</span>, <span class="mono">kotta</span>, <span class="mono">manchi</span>, <span class="mono">gaṭṭi</span>, <span class="mono">sanna</span>, <span class="mono">tīpi</span>, <span class="mono">vēḍi</span>, <span class="mono">kāraṁ</span>, <span class="mono">muriki</span>, <span class="mono">chavaka</span>, <span class="mono">pēda</span>, <span class="mono">cheḍu</span>. <b>Learn which class a word is in when you learn the word</b> — there is no rule that predicts it.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3><span class="mono">-ani</span> is a third ending doing the same job</h3>
+          <p>"Cold" is <span class="mono">challani</span> before a noun, but you already met <span class="mono">challagā</span> in the predicate. Same word, same two slots, a different attributive ending.</p>
+          <div class="stack">
+            <span class="box root">challa</span><span class="op">+</span><span class="box pol">-gā</span><span class="op">→</span><span class="box out">challagā undi</span>
+            <span class="op" style="padding:0 6px">it is cold</span>
+          </div>
+          <div class="stack">
+            <span class="box root">challa</span><span class="op">+</span><span class="box neg">-ani</span><span class="op">→</span><span class="box out">challani nīḷḷu</span>
+            <span class="op" style="padding:0 6px">cold water</span>
+          </div>
+          <p style="margin-top:14px">Also <span class="mono">pullani</span> (sour). <span class="mono">-aina</span> is much the commoner of the two; treat <span class="mono">-ani</span> as a small closed set to recognise.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Where the nouns from Lesson 14 pay off</h3>
+          <p>You now have both halves of an enormous number of true sentences:</p>
+          <span class="ex">ī kāphī chālā vēḍigā undi <span class="tel">ఈ కాఫీ చాలా వేడిగా ఉంది</span> <span class="en">— this coffee is very hot</span></span>
+          <span class="ex" style="margin-top:10px">nāku rucikaramaina bhōjanaṁ kāvāli <span class="tel">నాకు రుచికరమైన భోజనం కావాలి</span> <span class="en">— I want a delicious meal</span></span>
+          <p style="margin-top:14px">The second is worth memorising as a frame: <span class="mono">nāku + [adjective]aina + [noun] + kāvāli</span>. <b>That is a complete request</b>, and it recombines with everything in Lesson 14.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="errors">
+  <div class="wrap">
+    <span class="eyebrow">Corrected before import</span>
+    <h2>Four entries that are not what the list says</h2>
+    <p class="lede">Worth reading rather than skipping — each one is a grammar point wearing a mistake.</p>
+
+    <div class="audit warn">
+      <h4>✗ <span class="mono">buddhimantuḍu</span> and <span class="mono">dhanavantuḍu</span> are nouns, not adjectives</h4>
+      <p>Listed as "clever" and "rich". They are <b>masculine nouns</b> — "a clever man", "a rich man". The <span class="mono">-uḍu</span> ending is the masculine agent marker you have seen on <span class="mono">vāḍu</span> and every <span class="mono">-āḍu</span> verb ending.</p>
+      <p>Applied to a woman they are simply wrong; the feminine is <span class="mono">-urālu</span> — <span class="mono">dhanavanturālu</span>. To use them as actual adjectives you want <span class="mono">telivaina</span> and <span class="mono">dhanavantamaina</span>.</p>
+    </div>
+
+    <div class="audit warn">
+      <h4>✗ <span class="mono">pullanivi</span> is plural</h4>
+      <p>Listed as "sour". It is <span class="mono">pullani</span> + <span class="mono">-vi</span>, the neuter plural — "they are sour". The adjective is <span class="mono">pullani</span>. Corrected in the list below.</p>
+    </div>
+
+    <div class="audit">
+      <h4>△ <span class="mono">chimpina</span> ("torn") is a verb in disguise</h4>
+      <p>The source romanizes it <span class="mono">cimpa</span>, but the script says <span class="mono">chimpina</span> — and that is not a basic adjective at all. It is <span class="mono">chimpu</span> ("tear") turned into one.</p>
+      <p><b>This is the relative participle</b>, the big structure the <a href="../concepts/verb-forms-explained.md">verb forms deep dive</a> flags as waiting past the Verb Lab: Telugu has no "which/that" clauses, so it makes the verb into an adjective instead. <span class="mono">chimpina chokkā</span> is "a torn shirt", literally "a tore shirt". Third sighting this month after <span class="mono">vachchē</span> and <span class="mono">ani</span>. Still filed, not taught.</p>
+    </div>
+
+    <div class="audit">
+      <h4>△ Two pairs are the same word listed twice</h4>
+      <p><span class="mono">telivaina</span> appears as both "intelligent" and "smart"; <span class="mono">poḍavaina</span> as both "long" and "high". For height specifically you want <span class="mono">etthaina</span> (from <span class="mono">ettu</span>, height) — <span class="mono">poḍavaina</span> is length. And <span class="mono">manchidi</span> ("good") is <span class="mono">manchi</span> + <span class="mono">di</span>, so it means "a good one" and cannot go in front of a noun; the attributive is plain <span class="mono">manchi</span>.</p>
+    </div>
+  </div>
+</section>
+
+<section id="verbs">
+  <div class="wrap">
+    <span class="eyebrow">Verb Lab</span>
+    <h2>19 new verbs, 54 total</h2>
+    <p class="lede">Most of the 50-verb list you already had — <span class="mono">cheyyi</span>, <span class="mono">vrāyi</span>, <span class="mono">naḍuvu</span> and <span class="mono">visuru</span> are spelling variants of verbs already in the Lab, not new entries. Nineteen are genuinely new and are now generated across every paradigm.</p>
+
+    <div class="note-box win">
+      <b>Three that are worth more than the other sixteen</b>
+      <p><b><span class="mono">paḍu</span> "fall".</b> The minimal pair of <span class="mono">pāḍu</span> "sing", which you already have. <span class="mono">paḍānu</span> "I fell" against <span class="mono">pāḍānu</span> "I sang" — one vowel. Already seeded in <span class="mono">review/minimal-pairs.tsv</span>; this is the day it becomes drillable in both directions.</p>
+      <p><b><span class="mono">vāḍu</span> "use".</b> Spelled and pronounced identically to <span class="mono">vāḍu</span> "he". Only position separates them — a pronoun opens the sentence, a verb closes it. <span class="mono">vāḍu vāḍutāḍu</span> is a real sentence: "he will use it".</p>
+      <p><b><span class="mono">tinipinchu</span> "feed".</b> The causative of <span class="mono">tinu</span> "eat" — literally "cause to eat". Put them side by side and the <span class="mono">-inchu</span> causative stops being a class label and becomes obvious: what you do versus what you make someone else do. Same relationship as <span class="mono">nērchukō</span> / <span class="mono">nērpinchu</span> from Lesson 7.</p>
+    </div>
+
+    <div class="scroll">
+      <table class="para">
+        <thead><tr><th>Verb</th><th>Class</th><th>past</th><th>present</th><th>fut / hab</th><th>won't</th></tr></thead>
+        <tbody>
+          <tr><td class="pron">navvu<small>laugh</small></td><td>u-stem</td><td class="form">navvānu</td><td class="form">navvutunnānu</td><td class="form">navvutānu</td><td class="form">navvanu</td></tr>
+          <tr class="odd"><td class="pron">paḍu<small>fall</small></td><td>-aḍu</td><td class="form">paḍḍānu</td><td class="form">paḍutunnānu</td><td class="form">paḍutānu</td><td class="form">paḍanu</td></tr>
+          <tr><td class="pron">tirugu<small>roam</small></td><td>three-stem</td><td class="form">tirigānu</td><td class="form">tirugutunnānu</td><td class="form">tirugutānu</td><td class="form">tiraganu</td></tr>
+          <tr class="odd"><td class="pron">kaḍugu<small>wash</small></td><td>three-stem</td><td class="form">kaḍigānu</td><td class="form">kaḍugutunnānu</td><td class="form">kaḍugutānu</td><td class="form">kaḍaganu</td></tr>
+          <tr><td class="pron">tinipinchu<small>feed</small></td><td>-inchu</td><td class="form">tinipinchānu</td><td class="form">tinipistunnānu</td><td class="form">tinipistānu</td><td class="form">tinipinchanu</td></tr>
+          <tr class="odd"><td class="pron">ēḍuvu<small>cry <span class="tag inf">check</span></small></td><td>three-stem</td><td class="form">ēḍchānu</td><td class="form">ēḍustunnānu</td><td class="form">ēḍustānu</td><td class="form">ēḍavanu</td></tr>
+          <tr><td class="pron">arthaṁ chēsukō<small>understand</small></td><td>-kō compound</td><td class="form">arthaṁ chēsukunnānu</td><td class="form">arthaṁ chēsukuṇṭunnānu</td><td class="form">arthaṁ chēsukuṇṭānu</td><td class="form">—</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="audit warn" style="margin-top:24px">
+      <h4>△ Six of the nineteen are flagged</h4>
+      <p><span class="mono">ēḍuvu</span>, <span class="mono">aruvu</span>, <span class="mono">neṭṭu</span>, <span class="mono">kālchu</span>, <span class="mono">modaleṭṭu</span>, <span class="mono">lekkapeṭṭu</span>. <b>No source lists their stems</b> — I derived them from the class patterns the audited verbs establish, which is reliable for the regular classes and a guess for these.</p>
+      <p>Specifically: <span class="mono">neṭṭu</span> and the two <span class="mono">peṭṭu</span> compounds are assumed to soften <span class="mono">ṭṭ → ḍ</span> in the non-past the way <span class="mono">koṭṭu → koḍatānu</span> does, giving <span class="mono">neḍatānu</span> and <span class="mono">modaleḍatānu</span>. That is the pattern, but <span class="mono">neṭṭutānu</span> is also heard. They carry <span class="mono">conf:'check'</span> and surface in the Verb Lab's review page.</p>
+    </div>
+
+    <div class="audit">
+      <h4>One change to an existing entry</h4>
+      <p>"Dance" was stored as <span class="mono">nāṭyaṁ chēyi</span>. The course teaches <span class="mono">nṛtyaṁ chēyi</span>, which is the general word — <span class="mono">nāṭyaṁ</span> is classical dance specifically. Updated.</p>
+    </div>
+
+    <a class="question-link" href="../../GRAMMAR_LAB/index.html">
+      <span class="question-mark">?</span>
+      <span><h3>54 verbs, 3,282 forms</h3><p>Every one of the new forms was checked against <span class="mono">tools/te2rom.py</span> — 3,282 cells, zero disagreements between the script and its romanization.</p></span>
+      <span class="question-open">Open the Verb Lab</span>
+    </a>
+  </div>
+</section>
+
+<section id="anki">
+  <div class="wrap">
+    <span class="eyebrow">For import</span>
+    <h2>Adjectives</h2>
+    <p class="lede">Split by which slot they go in. Corrections from <a href="#errors">above</a> are applied here.</p>
+    <div class="anki-wrap">
+      <table class="anki">
+        <thead><tr><th class="f-en">English (with cue)</th><th>Romanized</th><th>Telugu</th><th style="text-align:center">Audio</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr class="sec"><td colspan="5">Bare stems — go straight before the noun</td></tr>
+          <tr><td class="f-en">bad</td><td class="f-rom">cheḍu</td><td class="f-tel">చెడు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">big (bare: pedda illu)</td><td class="f-rom">pedda</td><td class="f-tel">పెద్ద</td><td class="f-aud">[ ]</td><td class="f-ex">pedda illu — a big house</td></tr>
+          <tr><td class="f-en">small (bare: chinna pillavāḍu)</td><td class="f-rom">chinna</td><td class="f-tel">చిన్న</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">thin, slender</td><td class="f-rom">sanna</td><td class="f-tel">సన్న</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">heat; hot (bare, also the noun)</td><td class="f-rom">vēḍi</td><td class="f-tel">వేడి</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">dirt; dirty</td><td class="f-rom">muriki</td><td class="f-tel">మురికి</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">poor</td><td class="f-rom">pēda</td><td class="f-tel">పేద</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">new (bare: kotta kāru)</td><td class="f-rom">kotta</td><td class="f-tel">కొత్త</td><td class="f-aud">[ ]</td><td class="f-ex">kotta kāru — a new car</td></tr>
+          <tr><td class="f-en">cheap</td><td class="f-rom">chavaka</td><td class="f-tel">చవక</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">chilli heat; spicy (bare)</td><td class="f-rom">kāraṁ</td><td class="f-tel">కారం</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">sweetness; sweet (bare)</td><td class="f-rom">tīpi</td><td class="f-tel">తీపి</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">good, fine (goes straight before a noun: manchi pani)</td><td class="f-rom">manchi</td><td class="f-tel">మంచి</td><td class="f-aud">[ ]</td><td class="f-ex">manchi pani — good work</td></tr>
+          <tr><td class="f-en">hard, firm (bare: gaṭṭi gōḍa)</td><td class="f-rom">gaṭṭi</td><td class="f-tel">గట్టి</td><td class="f-aud">[ ]</td><td class="f-ex">gaṭṭi gōḍa — a hard wall</td></tr>
+          <tr class="sec"><td colspan="5">Derived with -aina / -ani</td></tr>
+          <tr><td class="f-en">good — &quot;a good one&quot;; manchidi is manchi + di</td><td class="f-rom">manchidi</td><td class="f-tel">మంచిది</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">beautiful (attributive: andamaina ammāyi)</td><td class="f-rom">andamaina</td><td class="f-tel">అందమైన</td><td class="f-aud">[ ]</td><td class="f-ex">andamaina puvvu — a beautiful flower</td></tr>
+          <tr><td class="f-en">ugly</td><td class="f-rom">vikāramaina</td><td class="f-tel">వికారమైన</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">intelligent, clever</td><td class="f-rom">telivaina</td><td class="f-tel">తెలివైన</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">a clever man — NOT an adjective; -uḍu is masculine</td><td class="f-rom">buddhimantuḍu</td><td class="f-tel">బుద్ధిమంతుడు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">cunning, deceitful</td><td class="f-rom">vanchanātmakamaina</td><td class="f-tel">వంచనాత్మకమైన</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">fragrant</td><td class="f-rom">sugandhamayamaina</td><td class="f-tel">సుగంధమయమైన</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">a bad smell (noun)</td><td class="f-rom">durvāsana</td><td class="f-tel">దుర్వాసన</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">long, tall</td><td class="f-rom">poḍavaina</td><td class="f-tel">పొడవైన</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">fat</td><td class="f-rom">lāvaina</td><td class="f-tel">లావైన</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">cold (attributive — cf. challagā)</td><td class="f-rom">challani</td><td class="f-tel">చల్లని</td><td class="f-aud">[ ]</td><td class="f-ex">challani nīḷḷu — cold water</td></tr>
+          <tr><td class="f-en">clean</td><td class="f-rom">śubhramaina</td><td class="f-tel">శుభ్రమైన</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">a rich man — NOT an adjective; fem. dhanavanturālu</td><td class="f-rom">dhanavantuḍu</td><td class="f-tel">ధనవంతుడు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">deep</td><td class="f-rom">lōtaina</td><td class="f-tel">లోతైన</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">sacred, pure</td><td class="f-rom">pavitramaina</td><td class="f-tel">పవిత్రమైన</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">impure</td><td class="f-rom">apavitramaina</td><td class="f-tel">అపవిత్రమైన</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">torn — a participle of chimpu, not a basic adjective</td><td class="f-rom">chimpina</td><td class="f-tel">చింపిన</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">ancient</td><td class="f-rom">prāchīnamaina</td><td class="f-tel">ప్రాచీనమైన</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">expensive</td><td class="f-rom">kharīdaina</td><td class="f-tel">ఖరీదైన</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">sour (the list gives the plural pullanivi)</td><td class="f-rom">pullani</td><td class="f-tel">పుల్లని</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">delicious, tasty</td><td class="f-rom">ruchikaramaina</td><td class="f-tel">రుచికరమైన</td><td class="f-aud">[ ]</td><td class="f-ex">rucikaramaina bhōjanaṁ</td></tr>
+          <tr><td class="f-en">excellent, wonderful</td><td class="f-rom">adbhutamaina</td><td class="f-tel">అద్భుతమైన</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">strong</td><td class="f-rom">balamaina</td><td class="f-tel">బలమైన</td><td class="f-aud">[ ]</td><td class="f-ex">balamaina kāphī — strong coffee</td></tr>
+          <tr><td class="f-en">weak</td><td class="f-rom">balahīnamaina</td><td class="f-tel">బలహీనమైన</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 style="margin-top:44px">New verbs</h2>
+    <p class="lede">Roots only — the paradigms live in the Verb Lab, not in Anki.</p>
+    <div class="anki-wrap">
+      <table class="anki">
+        <thead><tr><th class="f-en">English (with cue)</th><th>Romanized</th><th>Telugu</th><th style="text-align:center">Audio</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td class="f-en">laugh</td><td class="f-rom">navvu</td><td class="f-tel">నవ్వు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">dig</td><td class="f-rom">tavvu</td><td class="f-tel">తవ్వు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">swim</td><td class="f-rom">īdu</td><td class="f-tel">ఈదు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">use (identical to vāḍu &quot;he&quot; — position tells them apart)</td><td class="f-rom">vāḍu</td><td class="f-tel">వాడు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">fall, drop (paḍu — cf. pāḍu &quot;sing&quot;)</td><td class="f-rom">paḍu</td><td class="f-tel">పడు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">roam, wander</td><td class="f-rom">tirugu</td><td class="f-tel">తిరుగు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">wash</td><td class="f-rom">kaḍugu</td><td class="f-tel">కడుగు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">cry, weep</td><td class="f-rom">ēḍuvu</td><td class="f-tel">ఏడువు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">scream</td><td class="f-rom">aruvu</td><td class="f-tel">అరువు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">push</td><td class="f-rom">neṭṭu</td><td class="f-tel">నెట్టు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">burn</td><td class="f-rom">kālchu</td><td class="f-tel">కాల్చు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">start</td><td class="f-rom">modaleṭṭu</td><td class="f-tel">మొదలెట్టు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">count</td><td class="f-rom">lekkapeṭṭu</td><td class="f-tel">లెక్కపెట్టు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">feed someone — the causative of tinu</td><td class="f-rom">tinipinchu</td><td class="f-tel">తినిపించు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">explain</td><td class="f-rom">vivarinchu</td><td class="f-tel">వివరించు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">think, consider</td><td class="f-rom">ālōchinchu</td><td class="f-tel">ఆలోచించు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">command, order (formal/Sanskritic)</td><td class="f-rom">ājñāpinchu</td><td class="f-tel">ఆజ్ఞాపించు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">smell (lit. &quot;look at the smell&quot;)</td><td class="f-rom">vāsana chūḍu</td><td class="f-tel">వాసన చూడు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">understand (lit. &quot;make meaning for oneself&quot;)</td><td class="f-rom">arthaṁ chēsukō</td><td class="f-tel">అర్థం చేసుకో</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="try">
+  <div class="wrap">
+    <span class="eyebrow">From the lesson</span>
+    <h2>Quick self-test</h2>
+    <ul class="try">
+      <li><span class="q">"The flower is beautiful" and "a beautiful flower".</span><span class="a">puvvu andangā undi. / andamaina puvvu. — -gā for the predicate, -aina before a noun.</span></li>
+      <li><span class="q">Why is <span class="mono">*andangā puvvu</span> wrong?</span><span class="a">-gā only works after the noun. It's not the attributive form.</span></li>
+      <li><span class="q">"A big house" — does <span class="mono">pedda</span> need a suffix?</span><span class="a">No. pedda illu. A dozen adjectives are bare stems; there's no rule, learn the class with the word.</span></li>
+      <li><span class="q">Say "cold water" and "the water is cold".</span><span class="a">challani nīḷḷu. / nīḷḷu challagā unnāyi. — -ani attributive, -gā predicate, and nīḷḷu is plural.</span></li>
+      <li><span class="q">Why can't you call your wife <span class="mono">dhanavantuḍu</span>?</span><span class="a">It's a masculine noun — "a rich man". -uḍu is the masculine agent ending; the feminine is dhanavanturālu.</span></li>
+      <li><span class="q">"I want a delicious meal."</span><span class="a">nāku rucikaramaina bhōjanaṁ kāvāli.</span></li>
+      <li><span class="q">Difference between <span class="mono">paḍānu</span> and <span class="mono">pāḍānu</span>?</span><span class="a">I fell / I sang. One vowel.</span></li>
+      <li><span class="q">Translate <span class="mono">vāḍu vāḍutāḍu</span>.</span><span class="a">"He will use it." Same word twice — pronoun first, verb last.</span></li>
+      <li><span class="q">What is <span class="mono">tinipinchu</span> made of?</span><span class="a">tinu "eat" + the -inchu causative: cause to eat, i.e. feed.</span></li>
+      <li><span class="q">Describe five things around you, once before the noun and once after.</span><span class="a">[adj]aina [noun] / [noun] [adj]gā undi. Watch which adjectives are bare.</span></li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><span class="mono">Foundational Telugu</span> · Lesson 15 · adjectives and the extended verb list · 3,282 Verb Lab forms checked against <span class="mono">tools/te2rom.py</span></p>
+    <p><a href="lesson-14-nouns.html">← Lesson 14 · Nouns</a> · <a href="../index.html">Course home</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

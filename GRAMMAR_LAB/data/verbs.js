@@ -162,7 +162,7 @@ const VERBS = [
 
   { id:'natyam', en:{base:'dance', ing:'dancing', past:'danced'}, gloss:'dance',
     root:['chēyi','చేయి'], cls:'compound with chēyi', conf:'high',
-    pre:['nāṭyaṁ ','నాట్యం '],
+    pre:['nṛtyaṁ ','నృత్యం '],
     np:['chēs','చేస్'], T:['t','త'], pst:['chēs','చేస'],
     neg:['chēya','చేయ'], a:['chēya','చేయ'], inf:['chēyā','చేయా'],
     hort:['chēddāṁ','చేద్దాం'],
@@ -275,7 +275,144 @@ const VERBS = [
     cueOv:{ past:    '§subj §be ___  (right now — an observation)',
             future:  '§subj §be ___  (in general — a standing fact)',
             present: '§subj §be staying / living ___' },
-    note:'The most important verb here, and its tense labels lie. “Past” unnānu is the everyday present “I am”; “habitual/future” uṇṭundi is the general-fact present. Telugu splits English “is” into an observation now (undi) and a permanent property (uṇṭundi) — Taj Mahal andangā undi vs andangā uṇṭundi. Both rows are cells in this table; read the cues, not the column headings. Negative past is simply lēdu, not *uṇḍalēdu.' }
+    note:'The most important verb here, and its tense labels lie. “Past” unnānu is the everyday present “I am”; “habitual/future” uṇṭundi is the general-fact present. Telugu splits English “is” into an observation now (undi) and a permanent property (uṇṭundi) — Taj Mahal andangā undi vs andangā uṇṭundi. Both rows are cells in this table; read the cues, not the column headings. Negative past is simply lēdu, not *uṇḍalēdu.' },
+  /* ---- Added from the course's extended verb list (lesson 15). ------------------------
+     Stems are derived from the class patterns established above, not from a source that
+     lists them, so anything whose past stem is not predictable from its class carries
+     conf:'check'. review.html is where those get confirmed. */
+
+  { id:'navvu', en:{base:'laugh', ing:'laughing', past:'laughed'}, gloss:'laugh',
+    root:['navvu','నవ్వు'], cls:'u-stem', conf:'high',
+    np:['navvu','నవ్వు'], T:['t','త'], pst:['navv','నవ్వ'],
+    neg:['navva','నవ్వ'], a:['navva','నవ్వ'], inf:['navvā','నవ్వా'],
+    hort:['navvudāṁ','నవ్వుదాం'],
+    note:'Also the noun for a laugh or a smile.' },
+
+  { id:'tavvu', en:{base:'dig', ing:'digging', past:'dug'}, gloss:'dig',
+    root:['tavvu','తవ్వు'], cls:'u-stem', conf:'high',
+    np:['tavvu','తవ్వు'], T:['t','త'], pst:['tavv','తవ్వ'],
+    neg:['tavva','తవ్వ'], a:['tavva','తవ్వ'], inf:['tavvā','తవ్వా'],
+    hort:['tavvudāṁ','తవ్వుదాం'] },
+
+  { id:'idu', en:{base:'swim', ing:'swimming', past:'swam'}, gloss:'swim',
+    root:['īdu','ఈదు'], cls:'u-stem', conf:'high',
+    np:['īdu','ఈదు'], T:['t','త'], pst:['īd','ఈద'],
+    neg:['īda','ఈద'], a:['īda','ఈద'], inf:['īdā','ఈదా'],
+    hort:['īdudāṁ','ఈదుదాం'] },
+
+  { id:'vadu', en:{base:'use', ing:'using', past:'used'}, gloss:'use',
+    root:['vāḍu','వాడు'], cls:'u-stem', conf:'high',
+    np:['vāḍu','వాడు'], T:['t','త'], pst:['vāḍ','వాడ'],
+    neg:['vāḍa','వాడ'], a:['vāḍa','వాడ'], inf:['vāḍā','వాడా'],
+    hort:['vāḍudāṁ','వాడుదాం'],
+    note:'Spelled and pronounced exactly like vāḍu “he”. Only position separates them: a pronoun opens the sentence, a verb closes it. nēnu vāḍutānu “I will use it” vs vāḍu chēstāḍu “he will do it”.' },
+
+  { id:'padufall', en:{base:'fall', ing:'falling', past:'fell'}, gloss:'fall, drop',
+    root:['paḍu','పడు'], cls:'-aḍu intransitive', conf:'high',
+    np:['paḍu','పడు'], T:['t','త'], pst:['paḍḍ','పడ్డ'],
+    neg:['paḍa','పడ'], a:['paḍa','పడ'], inf:['paḍā','పడా'],
+    hort:null,
+    note:'Minimal pair with pāḍu “sing”, already in this list — paḍānu “I fell” vs pāḍānu “I sang”, one vowel apart. Doubles the ḍ in the past like nilabaḍu. Also the verb for rain: varṣaṁ paḍutōndi.' },
+
+  { id:'tirugu', en:{base:'roam', ing:'roaming', past:'roamed'}, gloss:'roam, wander, turn',
+    root:['tirugu','తిరుగు'], cls:'three-stem', conf:'high',
+    np:['tirugu','తిరుగు'], T:['t','త'], pst:['tirig','తిరిగ'],
+    neg:['tiraga','తిరగ'], a:['tiraga','తిరగ'], inf:['tiragā','తిరగా'],
+    hort:['tirugudāṁ','తిరుగుదాం'],
+    note:'The same u/i/a three-stem shape as chaduvu. Covers wandering about, going around, and a wheel turning.' },
+
+  { id:'kadugu', en:{base:'wash', ing:'washing', past:'washed'}, gloss:'wash',
+    root:['kaḍugu','కడుగు'], cls:'three-stem', conf:'high',
+    np:['kaḍugu','కడుగు'], T:['t','త'], pst:['kaḍig','కడిగ'],
+    neg:['kaḍaga','కడగ'], a:['kaḍaga','కడగ'], inf:['kaḍagā','కడగా'],
+    hort:['kaḍugudāṁ','కడుగుదాం'] },
+
+  { id:'eduvu', en:{base:'cry', ing:'crying', past:'cried'}, gloss:'cry, weep',
+    root:['ēḍuvu','ఏడువు'], cls:'three-stem', conf:'check',
+    np:['ēḍus','ఏడుస్'], T:['t','త'], pst:['ēḍch','ఏడ్చ'],
+    neg:['ēḍava','ఏడవ'], a:['ēḍava','ఏడవ'], inf:['ēḍavā','ఏడవా'],
+    hort:null,
+    note:'Flagged. Three stems that share little: ēḍus- / ēḍch- / ēḍava-. ēḍustunnāḍu and ēḍchāḍu are both common; confirm the rest.' },
+
+  { id:'aruvu', en:{base:'scream', ing:'screaming', past:'screamed'}, gloss:'scream, shout',
+    root:['aruvu','అరువు'], cls:'three-stem', conf:'check',
+    np:['aruvu','అరువు'], T:['t','త'], pst:['arich','అరిచ'],
+    neg:['arava','అరవ'], a:['arava','అరవ'], inf:['aravā','అరవా'],
+    hort:null,
+    note:'Flagged. The past arichānu is certain; the non-past is also heard as arustānu.' },
+
+  { id:'nettu', en:{base:'push', ing:'pushing', past:'pushed'}, gloss:'push',
+    root:['neṭṭu','నెట్టు'], cls:'irregular', conf:'check',
+    np:['neḍa','నెడ'], T:['t','త'], pst:['neṭṭ','నెట్ట'],
+    neg:['neṭṭa','నెట్ట'], a:['neṭṭa','నెట్ట'], inf:['neṭṭā','నెట్టా'],
+    hort:['neḍadāṁ','నెడదాం'],
+    note:'Flagged. Assumed to soften ṭṭ → ḍ in the non-past like koṭṭu, giving neḍatānu; neṭṭutānu is also heard.' },
+
+  { id:'kalchu', en:{base:'burn', ing:'burning', past:'burnt'}, gloss:'burn, set alight',
+    root:['kālchu','కాల్చు'], cls:'-chu', conf:'check',
+    np:['kālus','కాలుస్'], T:['t','త'], pst:['kālch','కాల్చ'],
+    neg:['kālcha','కాల్చ'], a:['kālcha','కాల్చ'], inf:['kālchā','కాల్చా'],
+    hort:null,
+    note:'Flagged. Transitive — burning something. The intransitive “it is burning” is kālutōndi. Also grilling and roasting food.' },
+
+  { id:'modalettu', en:{base:'start', ing:'starting', past:'started'}, gloss:'start, begin',
+    root:['modaleṭṭu','మొదలెట్టు'], cls:'peṭṭu compound', conf:'check',
+    np:['modaleḍa','మొదలెడ'], T:['t','త'], pst:['modaleṭṭ','మొదలెట్ట'],
+    neg:['modaleṭṭa','మొదలెట్ట'], a:['modaleṭṭa','మొదలెట్ట'], inf:['modaleṭṭā','మొదలెట్టా'],
+    hort:['modaleḍadāṁ','మొదలెడదాం'],
+    note:'Flagged. Built on peṭṭu “put”, which softens like koṭṭu. modalu is “beginning”, so literally “put a beginning”.' },
+
+  { id:'lekkapettu', en:{base:'count', ing:'counting', past:'counted'}, gloss:'count',
+    root:['lekkapeṭṭu','లెక్కపెట్టు'], cls:'peṭṭu compound', conf:'check',
+    np:['lekkapeḍa','లెక్కపెడ'], T:['t','త'], pst:['lekkapeṭṭ','లెక్కపెట్ట'],
+    neg:['lekkapeṭṭa','లెక్కపెట్ట'], a:['lekkapeṭṭa','లెక్కపెట్ట'], inf:['lekkapeṭṭā','లెక్కపెట్టా'],
+    hort:['lekkapeḍadāṁ','లెక్కపెడదాం'],
+    note:'Flagged, same peṭṭu shape as modaleṭṭu. lekka is “a count”, so literally “put a count”.' },
+
+  { id:'tinipinchu', en:{base:'feed', ing:'feeding', past:'fed'}, gloss:'feed (someone)',
+    root:['tinipinchu','తినిపించు'], cls:'-inchu causative', conf:'high',
+    np:['tinipis','తినిపిస్'], T:['t','త'], pst:['tinipinch','తినిపించ'],
+    neg:['tinipincha','తినిపించ'], a:['tinipincha','తినిపించ'], inf:['tinipinchā','తినిపించా'],
+    hort:['tinipiddāṁ','తినిపిద్దాం'],
+    note:'The causative of tinu “eat” — literally “cause to eat”. tinu and tinipinchu side by side are the clearest example of -inchu in the whole list: what you do versus what you make someone else do.' },
+
+  { id:'vivarinchu', en:{base:'explain', ing:'explaining', past:'explained'}, gloss:'explain',
+    root:['vivarinchu','వివరించు'], cls:'-inchu causative', conf:'high',
+    np:['vivaris','వివరిస్'], T:['t','త'], pst:['vivarinch','వివరించ'],
+    neg:['vivarincha','వివరించ'], a:['vivarincha','వివరించ'], inf:['vivarinchā','వివరించా'],
+    hort:['vivariddāṁ','వివరిద్దాం'] },
+
+  { id:'alochinchu', en:{base:'think', ing:'thinking', past:'thought'}, gloss:'think, consider',
+    root:['ālōchinchu','ఆలోచించు'], cls:'-inchu causative', conf:'high',
+    np:['ālōchis','ఆలోచిస్'], T:['t','త'], pst:['ālōchinch','ఆలోచించ'],
+    neg:['ālōchincha','ఆలోచించ'], a:['ālōchincha','ఆలోచించ'], inf:['ālōchinchā','ఆలోచించా'],
+    hort:['ālōchiddāṁ','ఆలోచిద్దాం'],
+    note:'Thinking as in pondering or considering. “I think that…” as an opinion is anukuṇṭānu, a different verb.' },
+
+  { id:'ajnapinchu', en:{base:'command', ing:'commanding', past:'commanded'}, gloss:'command, order',
+    root:['ājñāpinchu','ఆజ్ఞాపించు'], cls:'-inchu causative', conf:'high',
+    np:['ājñāpis','ఆజ్ఞాపిస్'], T:['t','త'], pst:['ājñāpinch','ఆజ్ఞాపించ'],
+    neg:['ājñāpincha','ఆజ్ఞాపించ'], a:['ājñāpincha','ఆజ్ఞాపించ'], inf:['ājñāpinchā','ఆజ్ఞాపించా'],
+    hort:null,
+    note:'Formal and Sanskritic — courtrooms and scripture, not kitchens. For everyday “tell someone to do something”, use cheppu.' },
+
+  { id:'vasanachudu', en:{base:'smell', ing:'smelling', past:'smelt'}, gloss:'smell (something)',
+    root:['chūḍu','చూడు'], cls:'compound with chūḍu', conf:'high',
+    pre:['vāsana ','వాసన '],
+    np:['chūs','చూస్'], T:['t','త'], pst:['chūs','చూస'],
+    neg:['chūḍa','చూడ'], a:['chūḍa','చూడ'], inf:['chūḍā','చూడా'],
+    hort:['chūddāṁ','చూద్దాం'],
+    note:'Literally “look at the smell”. chūḍu is doing the work of “perceive” here rather than “see”.' },
+
+  { id:'arthamchesuko', en:{base:'understand', ing:'understanding', past:'understood'},
+    gloss:'understand',
+    root:['chēsukō','చేసుకో'], cls:'compound, -kō reflexive', conf:'high',
+    pre:['arthaṁ ','అర్థం '],
+    np:['chēsukun','చేసుకుం'], T:['ṭ','ట'], pst:['chēsukunn','చేసుకున్న'],
+    neg:['chēsukō','చేసుకో'], a:['chēsukō','చేసుకో'], inf:['chēsukōvā','చేసుకోవా'],
+    hort:null,
+    note:'Literally “make meaning for oneself” — arthaṁ is “meaning”, and -kō marks it as done for yourself. The everyday negative is the fixed phrase nāku arthaṁ kālēdu “I didn’t understand”, which uses a different verb again. Learn that one whole.' }
 ];
+
 
 if (typeof module !== 'undefined') module.exports = { VERBS };
