@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Telugu · Lesson 14 — Nouns: colours, food, animals, flowers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+Telugu:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#191915;--ink-2:#22221d;--ink-3:#2c2c25;
+  --cream:#f1ece0;--cream-dim:#b9b3a4;
+  --amber:#e8a33d;--moss:#8fa37e;--flame:#d96c47;
+  --line:rgba(241,236,224,.12);--radius:14px;--max:1000px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{background:var(--ink);color:var(--cream);font-family:'Inter',sans-serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.telugu{font-family:'Noto Sans Telugu','Inter',sans-serif}
+.mono{font-family:'JetBrains Mono',monospace}
+h1,h2,h3{font-family:'Young Serif',serif;font-weight:400;line-height:1.15}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+section{padding:72px 0;border-top:1px solid var(--line)}
+.eyebrow{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--amber);margin-bottom:14px;display:block}
+h2{font-size:clamp(26px,4.2vw,36px);margin-bottom:14px}
+.lede{color:var(--cream-dim);max-width:660px;font-size:16.5px}
+.lede b{color:var(--cream)}
+a{color:var(--amber)}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:4px}
+
+nav{position:sticky;top:0;z-index:50;background:rgba(25,25,21,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+.logo{font-family:'JetBrains Mono',monospace;font-size:13.5px;font-weight:700;color:var(--cream);text-decoration:none}
+.logo span{color:var(--amber)}
+nav ul{display:flex;gap:20px;list-style:none}
+nav ul a{color:var(--cream-dim);text-decoration:none;font-size:13px;font-weight:500}
+nav ul a:hover{color:var(--amber)}
+@media(max-width:720px){nav ul{display:none}}
+.home-crumb{display:inline-block;margin-bottom:18px;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--cream-dim);text-decoration:none}
+.home-crumb:hover{color:var(--amber)}
+
+header.hero{padding:80px 0 64px;position:relative;overflow:hidden}
+.hero-glyph{position:absolute;right:-30px;top:-70px;font-family:'Noto Sans Telugu',sans-serif;font-size:clamp(260px,40vw,480px);line-height:1;color:rgba(232,163,61,.05);user-select:none;pointer-events:none}
+.hero h1{font-size:clamp(34px,6vw,58px);margin:8px 0 10px;color:var(--cream)}
+.hero h1 em{color:var(--amber);font-style:normal}
+.hero p{max-width:620px;color:var(--cream-dim);font-size:17px}
+
+.note-box{background:rgba(217,108,71,.07);border:1px solid rgba(217,108,71,.3);border-radius:var(--radius);padding:20px 24px;margin-top:30px;max-width:720px}
+.note-box b{color:var(--flame);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;display:block;margin-bottom:8px}
+.note-box p{font-size:14px;color:var(--cream-dim)}
+.note-box p+p{margin-top:10px}
+.note-box.win{background:rgba(143,163,126,.08);border-color:rgba(143,163,126,.32)}
+.note-box.win b{color:var(--moss)}
+
+/* rule blocks */
+.rule{border-top:1px solid var(--line);padding:30px 0;display:grid;grid-template-columns:52px 1fr;gap:20px;counter-increment:r}
+.rules{counter-reset:r;margin-top:20px}
+.rule::before{content:counter(r,decimal-leading-zero);font-family:'JetBrains Mono',monospace;font-size:14px;color:var(--flame);padding-top:4px}
+.rule h3{font-size:19px;font-family:'Inter',sans-serif;font-weight:600;margin-bottom:8px;color:var(--cream)}
+.rule p{font-size:14.5px;color:var(--cream-dim);max-width:640px}
+.rule p+p{margin-top:10px}
+.rule b{color:var(--cream)}
+.ex{margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:14px;color:var(--moss);background:var(--ink-2);border:1px solid var(--line);border-radius:8px;padding:12px 16px;display:inline-block}
+.ex .en{color:var(--cream-dim);font-family:'Inter',sans-serif}
+.ex .tel{font-family:'Noto Sans Telugu',sans-serif;color:var(--cream)}
+.flag{margin-top:14px;border-left:3px solid var(--flame);background:rgba(217,108,71,.07);padding:11px 14px;font-size:13px;color:var(--cream-dim);border-radius:0 8px 8px 0}
+.flag b{color:var(--flame);font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;display:block;margin-bottom:5px}
+.flag.ok{border-left-color:var(--moss);background:rgba(143,163,126,.08)}
+.flag.ok b{color:var(--moss)}
+
+/* morpheme chips */
+.morph-row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:16px 0}
+.morph{border-radius:9px;padding:9px 14px;font-family:'JetBrains Mono',monospace;text-align:center;min-width:74px}
+.morph .p{font-size:16px;font-weight:700;display:block}
+.morph .r{font-size:9px;letter-spacing:.1em;text-transform:uppercase;opacity:.75;margin-top:3px;display:block}
+.morph.subj{background:rgba(232,163,61,.14);color:var(--amber);border:1px solid rgba(232,163,61,.35)}
+.morph.base{background:rgba(143,163,126,.14);color:var(--moss);border:1px solid rgba(143,163,126,.35)}
+.morph.mark{background:rgba(217,108,71,.14);color:var(--flame);border:1px solid rgba(217,108,71,.35)}
+.morph.op{background:none;border:none;color:var(--cream-dim);font-size:18px;min-width:auto;padding:0 2px}
+.morph.none{background:var(--ink-3);color:var(--cream-dim);border:1px dashed var(--line)}
+
+/* generic table */
+.tbl{width:100%;border-collapse:collapse;margin-top:22px;font-size:14.5px}
+.tbl th{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:11px 12px;color:var(--cream-dim);border-bottom:1px solid var(--line);vertical-align:bottom}
+.tbl td{padding:12px;border-bottom:1px solid var(--line);color:var(--cream-dim);vertical-align:top}
+.tbl td .rom{font-family:'JetBrains Mono',monospace;font-size:15px;color:var(--cream);font-weight:700}
+.tbl td .tel{font-family:'Noto Sans Telugu',sans-serif;font-size:15px;color:var(--cream-dim);opacity:.8}
+.tbl td small{display:block;font-size:12px;color:var(--cream-dim);margin-top:2px}
+.tag{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:999px;margin-left:4px}
+.tag.neu{background:rgba(143,163,126,.16);color:var(--moss)}
+.tag.for{background:rgba(232,163,61,.16);color:var(--amber)}
+.tag.inf{background:rgba(217,108,71,.16);color:var(--flame)}
+
+/* anki table */
+.anki-wrap{overflow-x:auto;margin-top:26px;border:1px solid var(--line);border-radius:var(--radius)}
+.anki{width:100%;border-collapse:collapse;font-size:14px;min-width:720px}
+.anki th{background:var(--ink-3);font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:12px 14px;color:var(--amber);border-bottom:1px solid var(--line);white-space:nowrap}
+.anki td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--cream-dim);vertical-align:top}
+.anki tr:last-child td{border-bottom:none}
+.anki .f-en{color:var(--cream);width:31%}
+.anki .f-rom{font-family:'JetBrains Mono',monospace;color:var(--amber);font-weight:700;white-space:nowrap}
+.anki .f-tel{font-family:'Noto Sans Telugu',sans-serif;color:var(--cream)}
+.anki .f-aud{color:var(--cream-dim);opacity:.4;font-family:'JetBrains Mono',monospace;font-size:12px;text-align:center}
+.anki .f-ex{font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--moss)}
+.anki .sec td{background:var(--ink-2);font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--cream-dim)}
+.field-key{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--cream-dim)}
+.field-key span{background:var(--ink-2);border:1px solid var(--line);border-radius:6px;padding:5px 10px}
+.field-key b{color:var(--amber);font-weight:500}
+
+/* lesson questions */
+.question-link{display:grid;grid-template-columns:80px 1fr auto;align-items:center;gap:22px;margin-top:26px;border:1px dashed var(--line);border-radius:var(--radius);background:var(--ink-2);color:inherit;padding:22px;text-decoration:none}
+.question-link:hover{border-color:rgba(232,163,61,.4);background:var(--ink-3)}
+.question-mark{display:grid;width:60px;height:60px;place-items:center;border:1px solid rgba(143,163,126,.35);border-radius:50%;color:var(--moss);font-family:'Young Serif',serif;font-size:28px}
+.question-link h3{margin-bottom:5px;font-family:'Inter',sans-serif;font-size:17px;font-weight:600}
+.question-link p{margin:0;color:var(--cream-dim);font-size:13px}
+.question-open{color:var(--amber);font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;white-space:nowrap}
+.question-open::after{content:' →'}
+
+footer{padding:52px 0 68px;border-top:1px solid var(--line)}
+footer p{font-size:13px;color:var(--cream-dim)}
+footer .mono{color:var(--amber)}
+.try{list-style:none;margin-top:18px;display:grid;gap:10px;max-width:640px}
+.try li{background:var(--ink-2);border:1px solid var(--line);border-radius:9px;padding:12px 16px;font-size:14px;color:var(--cream-dim)}
+.try li .q{color:var(--cream);font-weight:600}
+.try li .a{font-family:'JetBrains Mono',monospace;color:var(--moss);margin-top:4px;display:block}
+
+/* lesson 7 additions, reused */
+.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));gap:10px;margin-top:20px}
+.vcell{border:1px solid var(--line);border-radius:11px;background:var(--ink-2);padding:13px 15px}
+.vcell .en{display:block;font-size:13px;color:var(--cream-dim)}
+.vcell .inf{display:block;font-family:'JetBrains Mono',monospace;font-size:15.5px;font-weight:700;color:var(--amber);margin-top:4px}
+.vcell .fml{display:block;font-family:'JetBrains Mono',monospace;font-size:13.5px;color:var(--moss)}
+.vcell .tel{display:block;font-family:'Noto Sans Telugu',sans-serif;font-size:14px;color:var(--cream-dim);margin-top:2px}
+.vcell.warn{border-color:rgba(217,108,71,.32)}
+.grp{margin-top:26px}
+.grp h4{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--amber);margin-bottom:2px}
+.grp p{font-size:13.5px;color:var(--cream-dim);margin-bottom:0}
+.stack{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin:14px 0}
+.stack .box{border-radius:8px;padding:8px 13px;font-family:'JetBrains Mono',monospace;font-size:14px}
+.stack .root{background:rgba(143,163,126,.14);color:var(--moss);border:1px solid rgba(143,163,126,.35)}
+.stack .neg{background:rgba(217,108,71,.14);color:var(--flame);border:1px solid rgba(217,108,71,.35)}
+.stack .pol{background:rgba(232,163,61,.14);color:var(--amber);border:1px solid rgba(232,163,61,.35)}
+.stack .op{color:var(--cream-dim);font-size:17px}
+.stack .out{background:var(--ink-3);color:var(--cream);border:1px solid var(--line)}
+
+/* lesson 8 additions, reused */
+.para{width:100%;border-collapse:collapse;margin-top:22px;font-size:14.5px;min-width:660px}
+.para th{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:11px 12px;color:var(--cream-dim);border-bottom:1px solid var(--line)}
+.para td{padding:10px 12px;border-bottom:1px solid var(--line);color:var(--cream-dim)}
+.para .pron{font-family:'JetBrains Mono',monospace;color:var(--cream);font-weight:700;white-space:nowrap}
+.para .pron small{display:block;font-family:'Inter',sans-serif;font-weight:400;font-size:11.5px;opacity:.65}
+.para .mk{font-family:'JetBrains Mono',monospace;color:var(--flame);font-weight:700;text-align:center}
+.para .form{font-family:'JetBrains Mono',monospace;color:var(--amber);font-weight:700;white-space:nowrap}
+.para .telc{font-family:'Noto Sans Telugu',sans-serif;color:var(--cream-dim);opacity:.8}
+.para tr.odd td{background:rgba(143,163,126,.05)}
+.scroll{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);margin-top:22px}
+.scroll .para{margin-top:0;border-radius:var(--radius)}
+.audit{border:1px solid rgba(143,163,126,.3);background:rgba(143,163,126,.06);border-radius:var(--radius);padding:20px 24px;margin-top:22px}
+.audit h4{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--moss);margin-bottom:10px}
+.audit p{font-size:14px;color:var(--cream-dim)}
+.audit p+p{margin-top:9px}
+.audit.warn{border-color:rgba(217,108,71,.3);background:rgba(217,108,71,.06)}
+.audit.warn h4{color:var(--flame)}
+.caption-list{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:7px;margin-top:14px}
+.caption-list li{background:var(--ink-2);border:1px solid var(--line);border-radius:8px;padding:9px 12px;font-size:13px;color:var(--cream-dim)}
+.caption-list .real{font-family:'JetBrains Mono',monospace;color:var(--moss);font-weight:700}
+.caption-list .heard{color:var(--flame);font-style:italic}
+@media(max-width:720px){
+  .wrap{padding:0 16px}
+  .hero-glyph{right:0}
+  .rule{grid-template-columns:1fr;gap:8px}
+  .rule>div{min-width:0}
+  .tbl{display:block;width:100%;max-width:100%;overflow-x:auto;white-space:nowrap}
+  .question-link{grid-template-columns:52px 1fr;padding:18px 16px}
+  .question-mark{width:48px;height:48px}
+  .question-open{grid-column:2}
+}
+
+/* conjugation matrix — the course's own table shape, in this site's palette.
+   Rows are pronouns, columns are tenses, and the boxed cells make it scannable
+   in both directions, which a flat table is not. */
+.matrix{width:100%;border-collapse:separate;border-spacing:5px;font-size:14px;min-width:760px}
+.matrix th{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--cream);background:var(--ink-3);border:1px solid var(--line);border-radius:9px;padding:10px 12px;text-align:center;vertical-align:middle}
+.matrix th small{display:block;font-family:'Inter',sans-serif;font-size:11px;letter-spacing:0;text-transform:none;color:var(--cream-dim);font-weight:400;margin-top:3px}
+.matrix th.grp,.matrix th.en,.matrix th.pn{background:none;border:none}
+.matrix td.grp{background:none;border:none;font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--cream-dim);text-align:right;padding-right:6px;vertical-align:middle;width:72px;line-height:1.3}
+.matrix td.grp.lab{color:var(--flame)}
+.matrix td.en{background:var(--ink-3);border:1px solid var(--line);border-radius:9px;padding:9px 12px;color:var(--cream);font-weight:600;text-align:center;white-space:nowrap;font-size:13px;line-height:1.4}
+.matrix td.pn{background:rgba(232,163,61,.12);border:1px solid rgba(232,163,61,.32);border-radius:9px;padding:9px 14px;font-family:'JetBrains Mono',monospace;font-size:13.5px;color:var(--amber);font-weight:700;text-align:center;white-space:nowrap;line-height:1.45}
+.matrix td.pn .tel{display:block;font-family:'Noto Sans Telugu',sans-serif;font-size:12px;color:var(--cream-dim);font-weight:400;margin-top:2px;opacity:.75}
+.matrix td.sfx{background:rgba(143,163,126,.13);border:1px solid rgba(143,163,126,.3);border-radius:9px;padding:9px 14px;font-family:'JetBrains Mono',monospace;font-size:14.5px;color:var(--moss);font-weight:700;text-align:center;white-space:nowrap}
+.matrix td.sfx .tel{display:block;font-family:'Noto Sans Telugu',sans-serif;font-size:12.5px;color:var(--cream-dim);font-weight:400;margin-top:2px;opacity:.8}
+.matrix.neg td.sfx{background:rgba(217,108,71,.11);border-color:rgba(217,108,71,.3);color:var(--flame)}
+.matrix td.sfx.off{opacity:.32}
+.matrix td.sfx.on{box-shadow:0 0 0 1px var(--moss)}
+.matrix.neg td.sfx.on{box-shadow:0 0 0 1px var(--flame)}
+.matrix.suffixes td.sfx{font-size:15px}
+.matrix-key{display:flex;gap:14px;flex-wrap:wrap;margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:11.5px;color:var(--cream-dim)}
+.matrix-key b{font-weight:500}
+@media(max-width:720px){.matrix{border-spacing:3px;font-size:13px}}
+</style></head>
+<body>
+
+<nav aria-label="Main">
+  <div class="wrap">
+    <a class="logo" href="../index.html"><span>te</span> lesson-14 · nouns</a>
+    <ul>
+      <li><a href="../index.html">Course home</a></li>
+      <li><a href="../../GRAMMAR_LAB/index.html">Verb Lab</a></li>
+      <li><a href="#kaya">kāya vs paṇḍu</a></li>
+      <li><a href="#grammar">What nouns need</a></li>
+      <li><a href="#doubles">Words doing two jobs</a></li>
+      <li><a href="#anki">The list</a></li>
+      <li><a href="#try">Self-test</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-glyph telugu" aria-hidden="true">కాయ</div>
+  <div class="wrap">
+    <a class="home-crumb" href="../index.html">← Foundational Telugu / Learning path</a>
+    <span class="eyebrow">Course extraction · Lesson 14 · The vocabulary week</span>
+    <h1>Nouns — <em>and the two words that classify them</em></h1>
+    <p>Ninety-three nouns across colours, fruit, vegetables, groceries, animals and flowers. The videos are word lists with no explanation, so <b>everything on this page beyond the list is the pattern underneath it</b> — and there is a good one.</p>
+    <p style="margin-top:12px">Telugu does not split produce into fruit and vegetables. It splits it into <span class="mono">kāya</span> and <span class="mono">paṇḍu</span>, and the line falls somewhere English speakers do not expect.</p>
+
+    <div class="note-box">
+      <b>How I processed this</b>
+      <p>No audio to reconstruct this time — the source is written, which brings a different problem. <b>Three entries arrived with their first letter missing</b>: garlic as <span class="mono">ెల్లుల్లి</span> (should be వెల్లుల్లి), bread as <span class="mono">్రెడ్</span> (బ్రెడ్), noodles as <span class="mono">ూడిల్స్</span> (నూడిల్స్). A leading consonant had been dropped, leaving an orphan vowel sign. Repaired.</p>
+      <p>Every romanization here is re-derived from the script rather than taken from the source, which corrected sixteen spellings — <span class="mono">paṇḍu</span> not "panḍu", <span class="mono">drākṣa</span> not "Drāksha", <span class="mono">chekka</span> not "ceḵka". Water was written <span class="mono">నీళ్లు</span>; the standard spelling is <span class="mono">నీళ్ళు</span>.</p>
+      <p>One I am not sure of: <b>papad as <span class="mono">పాపడు</span></b>. The usual Telugu is <span class="mono">appaḍaṁ</span> <span class="telugu">అప్పడం</span>. Flagged rather than changed.</p>
+    </div>
+  </div>
+</header>
+
+<section id="kaya">
+  <div class="wrap">
+    <span class="eyebrow">The pattern the videos don't mention</span>
+    <h2><span class="mono">kāya</span> and <span class="mono">paṇḍu</span></h2>
+    <p class="lede">Fifteen of these nouns are compounds ending in one of two words. Which one you get is not arbitrary.</p>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px;margin-top:24px">
+      <div>
+        <h4 style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--moss);margin-bottom:10px">paṇḍu <span class="telugu">పండు</span> — the ripe thing</h4>
+        <div class="vgrid" style="grid-template-columns:1fr">
+          <div class="vcell"><span class="en">mango</span><span class="inf">māmiḍi paṇḍu</span></div>
+          <div class="vcell"><span class="en">banana</span><span class="inf">araṭipaṇḍu</span></div>
+          <div class="vcell"><span class="en">guava</span><span class="inf">jāmapaṇḍu</span></div>
+          <div class="vcell"><span class="en">pomegranate</span><span class="inf">dānimma paṇḍu</span></div>
+        </div>
+      </div>
+      <div>
+        <h4 style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--flame);margin-bottom:10px">kāya <span class="telugu">కాయ</span> — the unripe thing</h4>
+        <div class="vgrid" style="grid-template-columns:1fr">
+          <div class="vcell warn"><span class="en">brinjal</span><span class="inf">vankāya</span></div>
+          <div class="vcell warn"><span class="en">okra</span><span class="inf">beṇḍakāya</span></div>
+          <div class="vcell warn"><span class="en">bitter gourd</span><span class="inf">kākarakāya</span></div>
+          <div class="vcell warn"><span class="en">watermelon</span><span class="inf">puchchakāya</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="note-box win">
+      <b>The same plant gives you both</b>
+      <p><span class="mono">māmiḍi paṇḍu</span> <span class="telugu">మామిడి పండు</span> is a ripe mango, sweet, eaten as fruit. <span class="mono">māmiḍikāya</span> <span class="telugu">మామిడికాయ</span> is a <em>green</em> mango — sour, and what goes into pickle. <b>Same fruit, different word, because Telugu names the state rather than the species.</b></p>
+      <p>This is why watermelon is <span class="mono">puchchakāya</span> despite being sweet: it is a gourd, and gourds are named as <span class="mono">kāya</span>. English's fruit/vegetable line is culinary. Telugu's is about ripeness and plant type, and the two lines cross.</p>
+    </div>
+
+    <p style="margin-top:24px;font-size:14.5px;color:var(--cream-dim);max-width:660px">A third compound works the same way and needs no explanation: <span class="mono">puvvu</span> <span class="telugu">పువ్వు</span>, "flower". Every flower on the list is <span class="mono">X puvvu</span> — <span class="mono">gulābi puvvu</span>, <span class="mono">malle puvvu</span>, <span class="mono">tāmara puvvu</span>. <b>Learn <span class="mono">puvvu</span> and each flower costs you one word, not two.</b> The same trick works for <span class="mono">gōbhi puvvu</span>, cauliflower — literally "cabbage flower".</p>
+  </div>
+</section>
+
+<section id="grammar">
+  <div class="wrap">
+    <span class="eyebrow">Connecting to what you know</span>
+    <h2>What these nouns need from the grammar</h2>
+    <p class="lede">A vocabulary list is inert until it meets a sentence frame. You already have the frame — this is the lesson that makes <a href="lesson-12-adjectives-undi.html">Lesson 12</a> pay off.</p>
+
+    <div class="rules">
+      <div class="rule">
+        <div>
+          <h3>Every noun here is neuter — so they all take <span class="mono">undi</span> / <span class="mono">uṇṭundi</span></h3>
+          <p>Objects, animals, food. That means the whole list plugs straight into the split you learned last lesson:</p>
+          <span class="ex">ṭamāṭa erupugā <span style="color:var(--amber)">undi</span> <span class="tel">టమాట ఎరుపుగా ఉంది</span> <span class="en">— this tomato is red (look at it)</span></span>
+          <span class="ex" style="margin-top:10px">ṭamāṭa erupugā <span style="color:var(--amber)">uṇṭundi</span> <span class="tel">టమాట ఎరుపుగా ఉంటుంది</span> <span class="en">— tomatoes are red (as a rule)</span></span>
+          <p style="margin-top:14px"><b>That is the sentence frame this lesson unlocks</b>, and it generates hundreds of true sentences: <span class="mono">noun + colour·gā + uṇṭundi</span>. Say ten of them about your kitchen tonight.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Colours are nouns, and <span class="mono">-gā</span> makes them describe</h3>
+          <p><span class="mono">erupu</span> is not "red", it is <em>redness</em>. <span class="mono">telupu</span> is whiteness, <span class="mono">nalupu</span> blackness. Adding <span class="mono">-gā</span> — the same suffix from Lesson 12 — turns each into the description.</p>
+          <div class="morph-row">
+            <span class="morph base"><span class="p">erupu</span><span class="r">redness</span></span>
+            <span class="morph op">+</span>
+            <span class="morph subj"><span class="p">-gā</span></span>
+            <span class="morph op">→</span>
+            <span class="morph"><span class="p mono" style="color:var(--cream)">erupugā undi</span></span>
+          </div>
+          <p>So the colour list is not eight new adjectives. It is eight nouns joining a machine you already own.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Nine of these are grammatically plural — and the verb has to agree</h3>
+          <p>This is the one that will trip you. <span class="mono">nīḷḷu</span> ("water") is <b>plural in Telugu</b>. So is milk, and most of the things that come in grains or pods.</p>
+          <div class="vgrid">
+            <div class="vcell warn"><span class="en">water</span><span class="inf">nīḷḷu</span><span class="tel">నీళ్ళు</span></div>
+            <div class="vcell warn"><span class="en">milk</span><span class="inf">pālu</span><span class="tel">పాలు</span></div>
+            <div class="vcell warn"><span class="en">eggs</span><span class="inf">guḍlu</span><span class="tel">గుడ్లు</span></div>
+            <div class="vcell warn"><span class="en">dal</span><span class="inf">pappulu</span><span class="tel">పప్పులు</span></div>
+            <div class="vcell warn"><span class="en">peas</span><span class="inf">baṭānīlu</span><span class="tel">బటానీలు</span></div>
+            <div class="vcell warn"><span class="en">peppercorns</span><span class="inf">miriyālu</span><span class="tel">మిరియాలు</span></div>
+            <div class="vcell warn"><span class="en">cardamom</span><span class="inf">yālakulu</span><span class="tel">యాలకులు</span></div>
+            <div class="vcell warn"><span class="en">mustard seed</span><span class="inf">āvālu</span><span class="tel">ఆవాలు</span></div>
+          </div>
+          <span class="ex" style="margin-top:16px">nīḷḷu challagā <span style="color:var(--moss)">unnāyi</span> <span class="tel">నీళ్ళు చల్లగా ఉన్నాయి</span> <span class="en">— the water is cold</span></span>
+          <p style="margin-top:14px">Not <span class="mono" style="color:var(--flame)">*nīḷḷu challagā undi</span>. The verb takes the <span class="mono">avi</span> ending <span class="mono">-āyi</span> — the neuter-plural row you met in <a href="lesson-13-recap.html">Lesson 13</a> and have not needed until now. <b>This is where that row starts earning its place.</b></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="doubles">
+  <div class="wrap">
+    <span class="eyebrow">Free vocabulary</span>
+    <h2>Four words doing two jobs</h2>
+    <p class="lede">Not coincidences — each pair is one word whose two senses are obviously related once you see them.</p>
+    <table class="tbl">
+      <thead><tr><th>Word</th><th></th><th></th><th>Why</th></tr></thead>
+      <tbody>
+        <tr><td><span class="rom">pasupu</span> <span class="tel">పసుపు</span></td><td>yellow</td><td>turmeric</td><td>Turmeric <em>is</em> the yellow thing. The spice named the colour.</td></tr>
+        <tr><td><span class="rom">gulābī</span> <span class="tel">గులాబీ</span></td><td>pink</td><td>rose</td><td>From Persian <span class="mono">gulāb</span>. English did the same with "rose" → "rosy".</td></tr>
+        <tr><td><span class="rom">nārinja</span> <span class="tel">నారింజ</span></td><td>orange</td><td>orange</td><td>Fruit first, colour second — exactly as in English.</td></tr>
+        <tr><td><span class="rom">chēpa</span> <span class="tel">చేప</span></td><td>fish (food)</td><td>fish (animal)</td><td>One word, listed twice by the course.</td></tr>
+      </tbody>
+    </table>
+
+    <div class="note-box">
+      <b>Which words stayed English tells you a small history</b>
+      <p><span class="mono">ṭamāṭa</span>, <span class="mono">kyāreṭ</span>, <span class="mono">kābēji</span>, <span class="mono">āpil</span>, <span class="mono">breḍ</span>, <span class="mono">chiken</span>, <span class="mono">maṭan</span>, <span class="mono">nūḍils</span> — all loans. <span class="mono">vankāya</span>, <span class="mono">beṇḍakāya</span>, <span class="mono">kākarakāya</span>, <span class="mono">gummaḍikāya</span> — all native.</p>
+      <p>The split is not random: <b>produce that arrived with colonial trade kept its English name, and what was already growing there did not.</b> Useful as a guessing heuristic — if a vegetable feels European, try the English word with a Telugu ending.</p>
+    </div>
+  </div>
+</section>
+
+<section id="anki">
+  <div class="wrap">
+    <span class="eyebrow">For import</span>
+    <h2>All 93 nouns</h2>
+    <p class="lede">Parsed into <span class="mono">data/master_words.tsv</span> by <span class="mono">tools/adapters.py</span>. Romanization derived from the script, so it follows this site's convention rather than the source's.</p>
+    <div class="field-key">
+      <span><b>1</b> English (+ cue)</span><span><b>2</b> Romanized</span><span><b>3</b> Telugu script</span><span><b>4</b> Audio (blank)</span><span><b>5</b> Example</span>
+    </div>
+    <div class="anki-wrap">
+      <table class="anki">
+        <thead><tr><th class="f-en">English (with cue)</th><th>Romanized</th><th>Telugu</th><th style="text-align:center">Audio</th><th>Example sentence</th></tr></thead>
+        <tbody>
+          <tr class="sec"><td colspan="5">Colours</td></tr>
+          <tr><td class="f-en">white</td><td class="f-rom">telupu</td><td class="f-tel">తెలుపు</td><td class="f-aud">[ ]</td><td class="f-ex">ā chīra telupugā undi.</td></tr>
+          <tr><td class="f-en">black</td><td class="f-rom">nalupu</td><td class="f-tel">నలుపు</td><td class="f-aud">[ ]</td><td class="f-ex">ā kāru nalupugā undi.</td></tr>
+          <tr><td class="f-en">blue</td><td class="f-rom">nīlaṁ</td><td class="f-tel">నీలం</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">green</td><td class="f-rom">pachcha</td><td class="f-tel">పచ్చ</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">red</td><td class="f-rom">erupu</td><td class="f-tel">ఎరుపు</td><td class="f-aud">[ ]</td><td class="f-ex">ṭamāṭa erupugā uṇṭundi.</td></tr>
+          <tr><td class="f-en">pink (from gulābi, the rose)</td><td class="f-rom">gulābī</td><td class="f-tel">గులాబీ</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">yellow (also the word for turmeric)</td><td class="f-rom">pasupu</td><td class="f-tel">పసుపు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">orange — the colour and the fruit</td><td class="f-rom">nārinja</td><td class="f-tel">నారింజ</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr class="sec"><td colspan="5">Fruit</td></tr>
+          <tr><td class="f-en">mango</td><td class="f-rom">māmiḍi paṇḍu</td><td class="f-tel">మామిడి పండు</td><td class="f-aud">[ ]</td><td class="f-ex">nāku māmiḍi paṇḍu iṣṭaṁ.</td></tr>
+          <tr><td class="f-en">banana</td><td class="f-rom">araṭipaṇḍu</td><td class="f-tel">అరటిపండు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">apple (English loan)</td><td class="f-rom">āpil</td><td class="f-tel">ఆపిల్</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">grapes</td><td class="f-rom">drākṣa</td><td class="f-tel">ద్రాక్ష</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">lemon</td><td class="f-rom">nimma paṇḍu</td><td class="f-tel">నిమ్మ పండు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">watermelon</td><td class="f-rom">puchchakāya</td><td class="f-tel">పుచ్చకాయ</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">pineapple</td><td class="f-rom">anāsa paṇḍu</td><td class="f-tel">అనాస పండు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">pomegranate</td><td class="f-rom">dānimma paṇḍu</td><td class="f-tel">దానిమ్మ పండు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">guava</td><td class="f-rom">jāmapaṇḍu</td><td class="f-tel">జామపండు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">jackfruit</td><td class="f-rom">panasapaṇḍu</td><td class="f-tel">పనసపండు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">coconut</td><td class="f-rom">kobbari kāya</td><td class="f-tel">కొబ్బరి కాయ</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr class="sec"><td colspan="5">Vegetables</td></tr>
+          <tr><td class="f-en">potato</td><td class="f-rom">bangāḷādumpa</td><td class="f-tel">బంగాళాదుంప</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">tomato (English loan)</td><td class="f-rom">ṭamāṭa</td><td class="f-tel">టమాట</td><td class="f-aud">[ ]</td><td class="f-ex">ṭamāṭa erupugā uṇṭundi.</td></tr>
+          <tr><td class="f-en">onion</td><td class="f-rom">ulli</td><td class="f-tel">ఉల్లి</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">garlic</td><td class="f-rom">vellulli</td><td class="f-tel">వెల్లుల్లి</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">carrot (English loan)</td><td class="f-rom">kyāreṭ</td><td class="f-tel">క్యారెట్</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">brinjal</td><td class="f-rom">vankāya</td><td class="f-tel">వంకాయ</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">okra</td><td class="f-rom">beṇḍakāya</td><td class="f-tel">బెండకాయ</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">bottle gourd</td><td class="f-rom">sorakāya</td><td class="f-tel">సొరకాయ</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">bitter gourd</td><td class="f-rom">kākarakāya</td><td class="f-tel">కాకరకాయ</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">pumpkin</td><td class="f-rom">gummaḍikāya</td><td class="f-tel">గుమ్మడికాయ</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">peas (plural)</td><td class="f-rom">baṭānīlu</td><td class="f-tel">బటానీలు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">spinach</td><td class="f-rom">pālakūra</td><td class="f-tel">పాలకూర</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">cabbage (English loan)</td><td class="f-rom">kābēji</td><td class="f-tel">కాబేజి</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">cauliflower</td><td class="f-rom">gōbhi puvvu</td><td class="f-tel">గోభి పువ్వు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">radish</td><td class="f-rom">mullangi</td><td class="f-tel">ముల్లంగి</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">ginger</td><td class="f-rom">allaṁ</td><td class="f-tel">అల్లం</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">curry leaves</td><td class="f-rom">karivēpāku</td><td class="f-tel">కరివేపాకు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">coriander</td><td class="f-rom">kottimīra</td><td class="f-tel">కొత్తిమీర</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">chilli</td><td class="f-rom">mirapakāya</td><td class="f-tel">మిరపకాయ</td><td class="f-aud">[ ]</td><td class="f-ex">mirapakāya kārangā uṇṭundi.</td></tr>
+          <tr class="sec"><td colspan="5">Kitchen &amp; groceries</td></tr>
+          <tr><td class="f-en">water (grammatically plural — takes unnāyi)</td><td class="f-rom">nīḷḷu</td><td class="f-tel">నీళ్ళు</td><td class="f-aud">[ ]</td><td class="f-ex">ikkaḍa nīḷḷu unnāyi.</td></tr>
+          <tr><td class="f-en">milk (grammatically plural)</td><td class="f-rom">pālu</td><td class="f-tel">పాలు</td><td class="f-aud">[ ]</td><td class="f-ex">pālu challagā unnāyi.</td></tr>
+          <tr><td class="f-en">rice</td><td class="f-rom">biyyaṁ</td><td class="f-tel">బియ్యం</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">toor dal</td><td class="f-rom">kandipappu</td><td class="f-tel">కందిపప్పు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">chana dal</td><td class="f-rom">śanagapappu</td><td class="f-tel">శనగపప్పు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">curd</td><td class="f-rom">perugu</td><td class="f-tel">పెరుగు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">papad (check: appaḍaṁ is the commoner word)</td><td class="f-rom">pāpaḍu</td><td class="f-tel">పాపడు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">eggs (plural of guḍḍu)</td><td class="f-rom">guḍlu</td><td class="f-tel">గుడ్లు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">chicken — the meat (English loan)</td><td class="f-rom">chiken</td><td class="f-tel">చికెన్</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">mutton (English loan)</td><td class="f-rom">maṭan</td><td class="f-tel">మటన్</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">fish</td><td class="f-rom">chēpa</td><td class="f-tel">చేప</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">oil</td><td class="f-rom">nūne</td><td class="f-tel">నూనె</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">salt</td><td class="f-rom">uppu</td><td class="f-tel">ఉప్పు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">peppercorns (plural)</td><td class="f-rom">miriyālu</td><td class="f-tel">మిరియాలు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">sugar</td><td class="f-rom">chakkera</td><td class="f-tel">చక్కెర</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">flour</td><td class="f-rom">piṇḍi</td><td class="f-tel">పిండి</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">rice flour</td><td class="f-rom">biyyaṁ piṇḍi</td><td class="f-tel">బియ్యం పిండి</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">butter</td><td class="f-rom">venna</td><td class="f-tel">వెన్న</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">paneer</td><td class="f-rom">panīr</td><td class="f-tel">పనీర్</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">tea</td><td class="f-rom">ṭī</td><td class="f-tel">టీ</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">coffee</td><td class="f-rom">kāphī</td><td class="f-tel">కాఫీ</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">bread (English loan)</td><td class="f-rom">breḍ</td><td class="f-tel">బ్రెడ్</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">noodles (English loan)</td><td class="f-rom">nūḍils</td><td class="f-tel">నూడిల్స్</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">dal, lentils (plural)</td><td class="f-rom">pappulu</td><td class="f-tel">పప్పులు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">cumin</td><td class="f-rom">jīlakarra</td><td class="f-tel">జీలకర్ర</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">turmeric (also the word for yellow)</td><td class="f-rom">pasupu</td><td class="f-tel">పసుపు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">cinnamon</td><td class="f-rom">dālchina chekka</td><td class="f-tel">దాల్చిన చెక్క</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">cardamom pods (plural)</td><td class="f-rom">yālakulu</td><td class="f-tel">యాలకులు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">mustard seeds (plural)</td><td class="f-rom">āvālu</td><td class="f-tel">ఆవాలు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr class="sec"><td colspan="5">Animals</td></tr>
+          <tr><td class="f-en">dog</td><td class="f-rom">kukka</td><td class="f-tel">కుక్క</td><td class="f-aud">[ ]</td><td class="f-ex">ā kukka peddagā undi.</td></tr>
+          <tr><td class="f-en">cat</td><td class="f-rom">pilli</td><td class="f-tel">పిల్లి</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">cow</td><td class="f-rom">āvu</td><td class="f-tel">ఆవు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">bull</td><td class="f-rom">eddu</td><td class="f-tel">ఎద్దు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">buffalo</td><td class="f-rom">gēde</td><td class="f-tel">గేదె</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">pig</td><td class="f-rom">pandi</td><td class="f-tel">పంది</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">elephant</td><td class="f-rom">ēnugu</td><td class="f-tel">ఏనుగు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">lion</td><td class="f-rom">siṁhaṁ</td><td class="f-tel">సింహం</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">goat</td><td class="f-rom">mēka</td><td class="f-tel">మేక</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">camel</td><td class="f-rom">oṇṭe</td><td class="f-tel">ఒంటె</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">pigeon</td><td class="f-rom">pāvuraṁ</td><td class="f-tel">పావురం</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">crow</td><td class="f-rom">kāki</td><td class="f-tel">కాకి</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">rat</td><td class="f-rom">eluka</td><td class="f-tel">ఎలుక</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">monkey</td><td class="f-rom">kōti</td><td class="f-tel">కోతి</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">donkey</td><td class="f-rom">gāḍida</td><td class="f-tel">గాడిద</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">sheep</td><td class="f-rom">gorre</td><td class="f-tel">గొర్రె</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">snake</td><td class="f-rom">pāmu</td><td class="f-tel">పాము</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">rabbit</td><td class="f-rom">kundēlu</td><td class="f-tel">కుందేలు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">horse</td><td class="f-rom">gurraṁ</td><td class="f-tel">గుర్రం</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr class="sec"><td colspan="5">Flowers</td></tr>
+          <tr><td class="f-en">rose</td><td class="f-rom">gulābi puvvu</td><td class="f-tel">గులాబి పువ్వు</td><td class="f-aud">[ ]</td><td class="f-ex">gulābi puvvu andangā undi.</td></tr>
+          <tr><td class="f-en">jasmine</td><td class="f-rom">malle puvvu</td><td class="f-tel">మల్లె పువ్వు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">lily</td><td class="f-rom">kaluva puvvu</td><td class="f-tel">కలువ పువ్వు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">sunflower</td><td class="f-rom">sūryakānti puvvu</td><td class="f-tel">సూర్యకాంతి పువ్వు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">lotus</td><td class="f-rom">tāmara puvvu</td><td class="f-tel">తామర పువ్వు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">marigold</td><td class="f-rom">banti puvvu</td><td class="f-tel">బంతి పువ్వు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">hibiscus</td><td class="f-rom">mandāra puvvu</td><td class="f-tel">మందార పువ్వు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="flag" style="margin-top:20px">
+      <b>These will not arrive on day one</b>
+      Concrete nouns are frequent in life but rare in the sentence corpus, so <span class="mono">tools/sequence.py</span> will place most of them well down the queue. That is correct for the deck and wrong for your kitchen — if you want to talk about food this week, pull them forward by hand rather than waiting.
+    </div>
+  </div>
+</section>
+
+<section id="try">
+  <div class="wrap">
+    <span class="eyebrow">From the lesson</span>
+    <h2>Quick self-test</h2>
+    <p class="lede">Mostly about the patterns, not the words — the words are a list, the patterns are the lesson.</p>
+    <ul class="try">
+      <li><span class="q">What is the difference between <span class="mono">māmiḍi paṇḍu</span> and <span class="mono">māmiḍikāya</span>?</span><span class="a">Ripe mango vs green mango. paṇḍu = ripened, kāya = unripe. Same plant, different word.</span></li>
+      <li><span class="q">Why is watermelon <span class="mono">puchchakāya</span> when it's sweet?</span><span class="a">It's a gourd, and gourds take kāya. Telugu's line is ripeness and plant type; English's is culinary. They cross.</span></li>
+      <li><span class="q">Say "this tomato is red" and "tomatoes are red".</span><span class="a">ṭamāṭa erupugā undi. / ṭamāṭa erupugā uṇṭundi. — observation vs standing fact.</span></li>
+      <li><span class="q">What does <span class="mono">erupu</span> literally mean, and what turns it into "red"?</span><span class="a">Redness. -gā makes it a description — same suffix as Lesson 12.</span></li>
+      <li><span class="q">"The water is cold." Careful with the verb.</span><span class="a">nīḷḷu challagā unnāyi. — nīḷḷu is plural, so -āyi, not undi.</span></li>
+      <li><span class="q">Name three more nouns that take the plural verb.</span><span class="a">pālu, guḍlu, pappulu, baṭānīlu, miriyālu, yālakulu, āvālu.</span></li>
+      <li><span class="q">You know <span class="mono">puvvu</span>. How many flower names does that give you?</span><span class="a">All of them — each is X puvvu. gulābi, malle, kaluva, sūryakānti, tāmara, banti, mandāra.</span></li>
+      <li><span class="q">Two meanings of <span class="mono">pasupu</span>, and why they're the same word.</span><span class="a">Yellow and turmeric. The spice named the colour.</span></li>
+      <li><span class="q">You've forgotten the Telugu for "beetroot". What's your best guess and why?</span><span class="a">Try the English word. Produce introduced by colonial trade kept English names — ṭamāṭa, kyāreṭ, kābēji, āpil.</span></li>
+      <li><span class="q">Describe five things in your kitchen right now, aloud.</span><span class="a">noun + colour·gā + undi (looking at it) or uṇṭundi (in general). Watch the plurals.</span></li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><span class="mono">Foundational Telugu</span> · Lesson 14 · the vocabulary week · romanization derived from script by <span class="mono">tools/te2rom.py</span></p>
+    <p><a href="lesson-13-recap.html">← Lesson 13 · Recap</a> · <a href="../index.html">Course home</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
