@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Telugu · Lesson 20 — Conjunctions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+Telugu:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#191915;--ink-2:#22221d;--ink-3:#2c2c25;
+  --cream:#f1ece0;--cream-dim:#b9b3a4;
+  --amber:#e8a33d;--moss:#8fa37e;--flame:#d96c47;
+  --line:rgba(241,236,224,.12);--radius:14px;--max:1000px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{background:var(--ink);color:var(--cream);font-family:'Inter',sans-serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.telugu{font-family:'Noto Sans Telugu','Inter',sans-serif}
+.mono{font-family:'JetBrains Mono',monospace}
+h1,h2,h3{font-family:'Young Serif',serif;font-weight:400;line-height:1.15}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+section{padding:72px 0;border-top:1px solid var(--line)}
+.eyebrow{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--amber);margin-bottom:14px;display:block}
+h2{font-size:clamp(26px,4.2vw,36px);margin-bottom:14px}
+.lede{color:var(--cream-dim);max-width:660px;font-size:16.5px}
+.lede b{color:var(--cream)}
+a{color:var(--amber)}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:4px}
+
+nav{position:sticky;top:0;z-index:50;background:rgba(25,25,21,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+.logo{font-family:'JetBrains Mono',monospace;font-size:13.5px;font-weight:700;color:var(--cream);text-decoration:none}
+.logo span{color:var(--amber)}
+nav ul{display:flex;gap:20px;list-style:none}
+nav ul a{color:var(--cream-dim);text-decoration:none;font-size:13px;font-weight:500}
+nav ul a:hover{color:var(--amber)}
+@media(max-width:720px){nav ul{display:none}}
+.home-crumb{display:inline-block;margin-bottom:18px;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--cream-dim);text-decoration:none}
+.home-crumb:hover{color:var(--amber)}
+
+header.hero{padding:80px 0 64px;position:relative;overflow:hidden}
+.hero-glyph{position:absolute;right:-30px;top:-70px;font-family:'Noto Sans Telugu',sans-serif;font-size:clamp(260px,40vw,480px);line-height:1;color:rgba(232,163,61,.05);user-select:none;pointer-events:none}
+.hero h1{font-size:clamp(34px,6vw,58px);margin:8px 0 10px;color:var(--cream)}
+.hero h1 em{color:var(--amber);font-style:normal}
+.hero p{max-width:620px;color:var(--cream-dim);font-size:17px}
+
+.note-box{background:rgba(217,108,71,.07);border:1px solid rgba(217,108,71,.3);border-radius:var(--radius);padding:20px 24px;margin-top:30px;max-width:720px}
+.note-box b{color:var(--flame);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;display:block;margin-bottom:8px}
+.note-box p{font-size:14px;color:var(--cream-dim)}
+.note-box p+p{margin-top:10px}
+.note-box.win{background:rgba(143,163,126,.08);border-color:rgba(143,163,126,.32)}
+.note-box.win b{color:var(--moss)}
+
+/* rule blocks */
+.rule{border-top:1px solid var(--line);padding:30px 0;display:grid;grid-template-columns:52px 1fr;gap:20px;counter-increment:r}
+.rules{counter-reset:r;margin-top:20px}
+.rule::before{content:counter(r,decimal-leading-zero);font-family:'JetBrains Mono',monospace;font-size:14px;color:var(--flame);padding-top:4px}
+.rule h3{font-size:19px;font-family:'Inter',sans-serif;font-weight:600;margin-bottom:8px;color:var(--cream)}
+.rule p{font-size:14.5px;color:var(--cream-dim);max-width:640px}
+.rule p+p{margin-top:10px}
+.rule b{color:var(--cream)}
+.ex{margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:14px;color:var(--moss);background:var(--ink-2);border:1px solid var(--line);border-radius:8px;padding:12px 16px;display:inline-block}
+.ex .en{color:var(--cream-dim);font-family:'Inter',sans-serif}
+.ex .tel{font-family:'Noto Sans Telugu',sans-serif;color:var(--cream)}
+.flag{margin-top:14px;border-left:3px solid var(--flame);background:rgba(217,108,71,.07);padding:11px 14px;font-size:13px;color:var(--cream-dim);border-radius:0 8px 8px 0}
+.flag b{color:var(--flame);font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;display:block;margin-bottom:5px}
+.flag.ok{border-left-color:var(--moss);background:rgba(143,163,126,.08)}
+.flag.ok b{color:var(--moss)}
+
+/* morpheme chips */
+.morph-row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:16px 0}
+.morph{border-radius:9px;padding:9px 14px;font-family:'JetBrains Mono',monospace;text-align:center;min-width:74px}
+.morph .p{font-size:16px;font-weight:700;display:block}
+.morph .r{font-size:9px;letter-spacing:.1em;text-transform:uppercase;opacity:.75;margin-top:3px;display:block}
+.morph.subj{background:rgba(232,163,61,.14);color:var(--amber);border:1px solid rgba(232,163,61,.35)}
+.morph.base{background:rgba(143,163,126,.14);color:var(--moss);border:1px solid rgba(143,163,126,.35)}
+.morph.mark{background:rgba(217,108,71,.14);color:var(--flame);border:1px solid rgba(217,108,71,.35)}
+.morph.op{background:none;border:none;color:var(--cream-dim);font-size:18px;min-width:auto;padding:0 2px}
+.morph.none{background:var(--ink-3);color:var(--cream-dim);border:1px dashed var(--line)}
+
+/* generic table */
+.tbl{width:100%;border-collapse:collapse;margin-top:22px;font-size:14.5px}
+.tbl th{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:11px 12px;color:var(--cream-dim);border-bottom:1px solid var(--line);vertical-align:bottom}
+.tbl td{padding:12px;border-bottom:1px solid var(--line);color:var(--cream-dim);vertical-align:top}
+.tbl td .rom{font-family:'JetBrains Mono',monospace;font-size:15px;color:var(--cream);font-weight:700}
+.tbl td .tel{font-family:'Noto Sans Telugu',sans-serif;font-size:15px;color:var(--cream-dim);opacity:.8}
+.tbl td small{display:block;font-size:12px;color:var(--cream-dim);margin-top:2px}
+.tag{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:999px;margin-left:4px}
+.tag.neu{background:rgba(143,163,126,.16);color:var(--moss)}
+.tag.for{background:rgba(232,163,61,.16);color:var(--amber)}
+.tag.inf{background:rgba(217,108,71,.16);color:var(--flame)}
+
+/* anki table */
+.anki-wrap{overflow-x:auto;margin-top:26px;border:1px solid var(--line);border-radius:var(--radius)}
+.anki{width:100%;border-collapse:collapse;font-size:14px;min-width:720px}
+.anki th{background:var(--ink-3);font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:12px 14px;color:var(--amber);border-bottom:1px solid var(--line);white-space:nowrap}
+.anki td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--cream-dim);vertical-align:top}
+.anki tr:last-child td{border-bottom:none}
+.anki .f-en{color:var(--cream);width:31%}
+.anki .f-rom{font-family:'JetBrains Mono',monospace;color:var(--amber);font-weight:700;white-space:nowrap}
+.anki .f-tel{font-family:'Noto Sans Telugu',sans-serif;color:var(--cream)}
+.anki .f-aud{color:var(--cream-dim);opacity:.4;font-family:'JetBrains Mono',monospace;font-size:12px;text-align:center}
+.anki .f-ex{font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--moss)}
+.anki .sec td{background:var(--ink-2);font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--cream-dim)}
+.field-key{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--cream-dim)}
+.field-key span{background:var(--ink-2);border:1px solid var(--line);border-radius:6px;padding:5px 10px}
+.field-key b{color:var(--amber);font-weight:500}
+
+/* lesson questions */
+.question-link{display:grid;grid-template-columns:80px 1fr auto;align-items:center;gap:22px;margin-top:26px;border:1px dashed var(--line);border-radius:var(--radius);background:var(--ink-2);color:inherit;padding:22px;text-decoration:none}
+.question-link:hover{border-color:rgba(232,163,61,.4);background:var(--ink-3)}
+.question-mark{display:grid;width:60px;height:60px;place-items:center;border:1px solid rgba(143,163,126,.35);border-radius:50%;color:var(--moss);font-family:'Young Serif',serif;font-size:28px}
+.question-link h3{margin-bottom:5px;font-family:'Inter',sans-serif;font-size:17px;font-weight:600}
+.question-link p{margin:0;color:var(--cream-dim);font-size:13px}
+.question-open{color:var(--amber);font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;white-space:nowrap}
+.question-open::after{content:' →'}
+
+footer{padding:52px 0 68px;border-top:1px solid var(--line)}
+footer p{font-size:13px;color:var(--cream-dim)}
+footer .mono{color:var(--amber)}
+.try{list-style:none;margin-top:18px;display:grid;gap:10px;max-width:640px}
+.try li{background:var(--ink-2);border:1px solid var(--line);border-radius:9px;padding:12px 16px;font-size:14px;color:var(--cream-dim)}
+.try li .q{color:var(--cream);font-weight:600}
+.try li .a{font-family:'JetBrains Mono',monospace;color:var(--moss);margin-top:4px;display:block}
+
+/* lesson 7 additions, reused */
+.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));gap:10px;margin-top:20px}
+.vcell{border:1px solid var(--line);border-radius:11px;background:var(--ink-2);padding:13px 15px}
+.vcell .en{display:block;font-size:13px;color:var(--cream-dim)}
+.vcell .inf{display:block;font-family:'JetBrains Mono',monospace;font-size:15.5px;font-weight:700;color:var(--amber);margin-top:4px}
+.vcell .fml{display:block;font-family:'JetBrains Mono',monospace;font-size:13.5px;color:var(--moss)}
+.vcell .tel{display:block;font-family:'Noto Sans Telugu',sans-serif;font-size:14px;color:var(--cream-dim);margin-top:2px}
+.vcell.warn{border-color:rgba(217,108,71,.32)}
+.grp{margin-top:26px}
+.grp h4{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--amber);margin-bottom:2px}
+.grp p{font-size:13.5px;color:var(--cream-dim);margin-bottom:0}
+.stack{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin:14px 0}
+.stack .box{border-radius:8px;padding:8px 13px;font-family:'JetBrains Mono',monospace;font-size:14px}
+.stack .root{background:rgba(143,163,126,.14);color:var(--moss);border:1px solid rgba(143,163,126,.35)}
+.stack .neg{background:rgba(217,108,71,.14);color:var(--flame);border:1px solid rgba(217,108,71,.35)}
+.stack .pol{background:rgba(232,163,61,.14);color:var(--amber);border:1px solid rgba(232,163,61,.35)}
+.stack .op{color:var(--cream-dim);font-size:17px}
+.stack .out{background:var(--ink-3);color:var(--cream);border:1px solid var(--line)}
+
+/* lesson 8 additions, reused */
+.para{width:100%;border-collapse:collapse;margin-top:22px;font-size:14.5px;min-width:660px}
+.para th{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:11px 12px;color:var(--cream-dim);border-bottom:1px solid var(--line)}
+.para td{padding:10px 12px;border-bottom:1px solid var(--line);color:var(--cream-dim)}
+.para .pron{font-family:'JetBrains Mono',monospace;color:var(--cream);font-weight:700;white-space:nowrap}
+.para .pron small{display:block;font-family:'Inter',sans-serif;font-weight:400;font-size:11.5px;opacity:.65}
+.para .mk{font-family:'JetBrains Mono',monospace;color:var(--flame);font-weight:700;text-align:center}
+.para .form{font-family:'JetBrains Mono',monospace;color:var(--amber);font-weight:700;white-space:nowrap}
+.para .telc{font-family:'Noto Sans Telugu',sans-serif;color:var(--cream-dim);opacity:.8}
+.para tr.odd td{background:rgba(143,163,126,.05)}
+.scroll{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);margin-top:22px}
+.scroll .para{margin-top:0;border-radius:var(--radius)}
+.audit{border:1px solid rgba(143,163,126,.3);background:rgba(143,163,126,.06);border-radius:var(--radius);padding:20px 24px;margin-top:22px}
+.audit h4{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--moss);margin-bottom:10px}
+.audit p{font-size:14px;color:var(--cream-dim)}
+.audit p+p{margin-top:9px}
+.audit.warn{border-color:rgba(217,108,71,.3);background:rgba(217,108,71,.06)}
+.audit.warn h4{color:var(--flame)}
+.caption-list{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:7px;margin-top:14px}
+.caption-list li{background:var(--ink-2);border:1px solid var(--line);border-radius:8px;padding:9px 12px;font-size:13px;color:var(--cream-dim)}
+.caption-list .real{font-family:'JetBrains Mono',monospace;color:var(--moss);font-weight:700}
+.caption-list .heard{color:var(--flame);font-style:italic}
+@media(max-width:720px){
+  .wrap{padding:0 16px}
+  .hero-glyph{right:0}
+  .rule{grid-template-columns:1fr;gap:8px}
+  .rule>div{min-width:0}
+  .tbl{display:block;width:100%;max-width:100%;overflow-x:auto;white-space:nowrap}
+  .question-link{grid-template-columns:52px 1fr;padding:18px 16px}
+  .question-mark{width:48px;height:48px}
+  .question-open{grid-column:2}
+}
+
+/* conjugation matrix — the course's own table shape, in this site's palette.
+   Rows are pronouns, columns are tenses, and the boxed cells make it scannable
+   in both directions, which a flat table is not. */
+.matrix{width:100%;border-collapse:separate;border-spacing:5px;font-size:14px;min-width:760px}
+.matrix th{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--cream);background:var(--ink-3);border:1px solid var(--line);border-radius:9px;padding:10px 12px;text-align:center;vertical-align:middle}
+.matrix th small{display:block;font-family:'Inter',sans-serif;font-size:11px;letter-spacing:0;text-transform:none;color:var(--cream-dim);font-weight:400;margin-top:3px}
+.matrix th.grp,.matrix th.en,.matrix th.pn{background:none;border:none}
+.matrix td.grp{background:none;border:none;font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--cream-dim);text-align:right;padding-right:6px;vertical-align:middle;width:72px;line-height:1.3}
+.matrix td.grp.lab{color:var(--flame)}
+.matrix td.en{background:var(--ink-3);border:1px solid var(--line);border-radius:9px;padding:9px 12px;color:var(--cream);font-weight:600;text-align:center;white-space:nowrap;font-size:13px;line-height:1.4}
+.matrix td.pn{background:rgba(232,163,61,.12);border:1px solid rgba(232,163,61,.32);border-radius:9px;padding:9px 14px;font-family:'JetBrains Mono',monospace;font-size:13.5px;color:var(--amber);font-weight:700;text-align:center;white-space:nowrap;line-height:1.45}
+.matrix td.pn .tel{display:block;font-family:'Noto Sans Telugu',sans-serif;font-size:12px;color:var(--cream-dim);font-weight:400;margin-top:2px;opacity:.75}
+.matrix td.sfx{background:rgba(143,163,126,.13);border:1px solid rgba(143,163,126,.3);border-radius:9px;padding:9px 14px;font-family:'JetBrains Mono',monospace;font-size:14.5px;color:var(--moss);font-weight:700;text-align:center;white-space:nowrap}
+.matrix td.sfx .tel{display:block;font-family:'Noto Sans Telugu',sans-serif;font-size:12.5px;color:var(--cream-dim);font-weight:400;margin-top:2px;opacity:.8}
+.matrix.neg td.sfx{background:rgba(217,108,71,.11);border-color:rgba(217,108,71,.3);color:var(--flame)}
+.matrix td.sfx.off{opacity:.32}
+.matrix td.sfx.on{box-shadow:0 0 0 1px var(--moss)}
+.matrix.neg td.sfx.on{box-shadow:0 0 0 1px var(--flame)}
+.matrix.suffixes td.sfx{font-size:15px}
+.matrix-key{display:flex;gap:14px;flex-wrap:wrap;margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:11.5px;color:var(--cream-dim)}
+.matrix-key b{font-weight:500}
+@media(max-width:720px){.matrix{border-spacing:3px;font-size:13px}}
+</style></head>
+<body>
+
+<nav aria-label="Main">
+  <div class="wrap">
+    <a class="logo" href="../index.html"><span>te</span> lesson-20 · conjunctions</a>
+    <ul>
+      <li><a href="../index.html">Course home</a></li>
+      <li><a href="../../GRAMMAR_LAB/index.html">Verb Lab</a></li>
+      <li><a href="#andor">and / or</a></li>
+      <li><a href="#ante">aṇṭē solved</a></li>
+      <li><a href="#rest">but, so, because</a></li>
+      <li><a href="#try">Self-test</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-glyph telugu" aria-hidden="true">అంటే</div>
+  <div class="wrap">
+    <a class="home-crumb" href="../index.html">← Foundational Telugu / Learning path</a>
+    <span class="eyebrow">Course extraction · Lesson 20 · Week 3, conjunctions</span>
+    <h1>Joining clauses — <em>and the word that was hiding in five lessons</em></h1>
+    <p>Seven conjunctions, two of which are suffixes rather than words. Straightforward on its own terms.</p>
+    <p style="margin-top:12px">But three of them contain <span class="mono">aṇṭē</span>, and <b><span class="mono">aṇṭē</span> is not a conjunction.</b> It is a cell in a paradigm you have been drilling since Lesson 7 — and once you see which one, five loose ends from five different lessons close at once.</p>
+
+    <div class="note-box">
+      <b>How I processed this</b>
+      <p><b>The most damaged transcript in the course.</b> <span class="mono">kabaṭṭi</span> survives only as <b>"cuppa tea"</b> and <b>"kava tea"</b>; <span class="mono">endukaṇṭē</span> as <b>"yenikent"</b>; the whole final example, <span class="mono">kāvālaṇṭē tvaragā raṇḍi</span>, as <b>"Cavalcante Tverraga Randy"</b>. The <span class="mono">-ō</span> suffix demonstration collapses into <b>"Narasimha Naidu"</b>.</p>
+      <p>Almost everything here was rebuilt from the grammar rather than the audio. That is safe because the pieces are all forms the Verb Lab already generates — see <a href="#ante">below</a>.</p>
+    </div>
+  </div>
+</header>
+
+<section id="andor">
+  <div class="wrap">
+    <span class="eyebrow">Two ways each</span>
+    <h2>"And" and "or" can be suffixes</h2>
+    <p class="lede">Telugu will let you use a word — <span class="mono">mariyu</span>, <span class="mono">lēdā</span> — but in speech it more often attaches a vowel <b>to both items</b>.</p>
+
+    <div class="scroll">
+      <table class="para">
+        <thead><tr><th></th><th>Telugu</th><th>Script</th><th>Verb</th></tr></thead>
+        <tbody>
+          <tr><td class="pron">and<small>suffix -ū on both</small></td><td class="form">Rāmū Śyāmū naḍustunnāru</td><td class="telc">రామూ శ్యామూ నడుస్తున్నారు</td><td><b>plural</b></td></tr>
+          <tr class="odd"><td class="pron">and<small>the word</small></td><td class="form">Rām mariyu Śyām naḍustunnāru</td><td class="telc">రామ్ మరియు శ్యామ్ నడుస్తున్నారు</td><td><b>plural</b></td></tr>
+          <tr><td class="pron">or<small>suffix -ō on both</small></td><td class="form">Rāmō Śyāmō naḍustunnāḍu</td><td class="telc">రామో శ్యామో నడుస్తున్నాడు</td><td><b>singular</b></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note-box win">
+      <b>The verb tells you which one it was</b>
+      <p><span class="mono">-ū</span> makes two people into a plural subject, so the verb takes <span class="mono">-āru</span>. <span class="mono">-ō</span> means only one of them is doing it, so the verb stays singular, <span class="mono">-āḍu</span>.</p>
+      <p><b>That is a second, redundant signal</b> — the suffix and the agreement say the same thing. Useful when the vowel gets lost in fast speech, which it will.</p>
+    </div>
+
+    <p style="margin-top:24px;font-size:14.5px;color:var(--cream-dim);max-width:660px">Note that both suffixes go on <em>both</em> items, unlike English where the conjunction sits between them once. And note the shape: <span class="mono">-ū</span> and <span class="mono">-ō</span> are single vowels, so they merge with whatever they attach to — <span class="mono">Rām</span> + <span class="mono">ū</span> → <span class="mono">Rāmū</span>.</p>
+
+    <p style="margin-top:18px;font-size:14.5px;color:var(--cream-dim);max-width:660px"><span class="mono">lēdā</span> is for a genuine choice between two named options:</p>
+    <span class="ex">mīku ṭī kāvālā <span style="color:var(--amber)">lēdā</span> kāphī kāvālā? <span class="tel">మీకు టీ కావాలా లేదా కాఫీ కావాలా?</span> <span class="en">— do you want tea or coffee?</span></span>
+    <p style="margin-top:12px;font-size:13.5px;color:var(--cream-dim)">Note the whole question is built from Lesson 16's <span class="mono">-ā</span> particle and Lesson 17's <span class="mono">mīku ... kāvāli</span>. Nothing here is new except the joining word.</p>
+  </div>
+</section>
+
+<section id="ante">
+  <div class="wrap">
+    <span class="eyebrow">The payoff</span>
+    <h2><span class="mono">aṇṭē</span> is the conditional of "to say"</h2>
+    <p class="lede">You have met this particle five times without being told what it is. Here is what it is.</p>
+
+    <div class="stack">
+      <span class="box root">anu</span><span class="op">·</span>
+      <span class="box out">to say — Verb Lab entry since Lesson 7</span>
+    </div>
+    <div class="stack">
+      <span class="box root">anu</span><span class="op">+</span>
+      <span class="box pol">-tē (conditional)</span><span class="op">→</span>
+      <span class="box out">aṇṭē</span>
+      <span class="op" style="padding:0 10px">"if one says"</span>
+    </div>
+
+    <p style="margin-top:20px;font-size:14.5px;color:var(--cream-dim);max-width:660px"><b>The Verb Lab already generates it.</b> <span class="mono">anu</span> has been in the 35 since the first verb lesson, and its <span class="mono">cond</span> cell is <span class="mono">aṇṭē</span>. Every appearance of this particle across five lessons has been one table cell of one ordinary verb.</p>
+
+    <div class="scroll">
+      <table class="matrix">
+        <thead><tr><th class="grp"></th><th>Where you met it</th><th>Literally</th></tr></thead>
+        <tbody>
+          <tr><td class="grp lab">L11</td><td class="pn">RRR ani sinimā</td><td class="sfx">"RRR", saying — a film called RRR</td></tr>
+          <tr><td class="grp lab">L11</td><td class="pn">vastānu ani cheppāḍu</td><td class="sfx">"I'll come", saying, he said</td></tr>
+          <tr><td class="grp lab">L17</td><td class="pn">nāku krikeṭ aṇṭē iṣṭaṁ</td><td class="sfx">if one says cricket — to me, liked</td></tr>
+          <tr><td class="grp lab">L19</td><td class="pn">nāku chēyālani undi</td><td class="sfx">that I should do — it is</td></tr>
+          <tr><td class="grp lab">L20</td><td class="pn">enduka<b>ṇṭē</b></td><td class="sfx"><b>if one asks why</b> — because</td></tr>
+          <tr><td class="grp lab">L20</td><td class="pn">kāvāla<b>ṇṭē</b></td><td class="sfx"><b>if one says "want"</b> — if you want</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note-box win">
+      <b>So "because" is a question with an answer attached</b>
+      <p><span class="mono">endukaṇṭē</span> is <span class="mono">enduku</span> ("why", Lesson 16) + <span class="mono">aṇṭē</span> ("if one asks"). Telugu's word for <em>because</em> is literally <b>"if you ask why"</b> — the speaker anticipates the question and answers it.</p>
+      <p>And <span class="mono">kāvālaṇṭē</span> is <span class="mono">kāvāli</span> + <span class="mono">aṇṭē</span>: "if [you] say you want". <b>That is how Telugu builds "if" clauses with anything that is not a plain verb.</b></p>
+    </div>
+
+    <p style="margin-top:24px;font-size:14.5px;color:var(--cream-dim);max-width:660px">For plain verbs, "if" is the <span class="mono">-tē</span> conditional directly — <span class="mono">chēstē</span> "if I do", <span class="mono">vastē</span> "if he comes". That paradigm is in the Verb Lab and has been flagged <span class="mono">conf:'check'</span> since it was built. <b>This lesson is the confirmation it was waiting for.</b></p>
+
+    <span class="ex" style="margin-top:16px">vēḍi kāphī kāvālaṇṭē tvaragā raṇḍi <span class="tel">వేడి కాఫీ కావాలంటే త్వరగా రండి</span><br><span class="en">— if you want hot coffee, come soon</span></span>
+    <p style="margin-top:12px;font-size:13.5px;color:var(--cream-dim)"><span class="mono">vēḍi</span> from Lesson 12, <span class="mono">kāvāli</span> from Lesson 17, <span class="mono">raṇḍi</span> from Lesson 7. <b>Every word in that sentence is something you already have.</b></p>
+  </div>
+</section>
+
+<section id="rest">
+  <div class="wrap">
+    <span class="eyebrow">The remaining four</span>
+    <h2>but · that · therefore · because</h2>
+
+    <table class="tbl">
+      <thead><tr><th>Telugu</th><th>Meaning</th><th></th></tr></thead>
+      <tbody>
+        <tr><td><span class="rom">Rām naḍustunnāḍu kānī Śyām parugettutunnāḍu</span><br><span class="tel">రామ్ నడుస్తున్నాడు కానీ శ్యామ్ పరుగెత్తుతున్నాడు</span></td><td>Ram is walking but Shyam is running.</td><td><span class="mono">kānī</span> sits between the clauses, exactly like English.</td></tr>
+        <tr><td><span class="rom">nēnu rōju jāging veḷtānu ani Jān annāḍu</span><br><span class="tel">నేను రోజు జాగింగ్ వెళ్తాను అని జాన్ అన్నాడు</span></td><td>John said he goes jogging every day.</td><td><b>Reversed.</b> See below.</td></tr>
+        <tr><td><span class="rom">Gīta iṇṭiki vastōndi kābaṭṭi Rāj kāphī chēsāḍu</span><br><span class="tel">గీత ఇంటికి వస్తోంది కాబట్టి రాజ్ కాఫీ చేసాడు</span></td><td>Gita is coming home, therefore Raj made coffee.</td><td rowspan="2">Same two clauses, opposite order — mirror images, as in English.</td></tr>
+        <tr><td><span class="rom">Rāj kāphī chēsāḍu endukaṇṭē Gīta iṇṭiki vastōndi</span><br><span class="tel">రాజ్ కాఫీ చేసాడు ఎందుకంటే గీత ఇంటికి వస్తోంది</span></td><td>Raj made coffee because Gita is coming home.</td></tr>
+      </tbody>
+    </table>
+
+    <div class="flag">
+      <b><span class="mono">ani</span> runs backwards from English "that"</b>
+      English: <em>John said <b>that</b> he goes jogging</em> — the marker comes <b>before</b> the quoted content. Telugu puts the content first and tags it: <span class="mono">nēnu rōju jāging veḷtānu <b>ani</b> Jān annāḍu</span>, roughly <em>"I go jogging every day," is what John said.</em>
+      <p style="margin-top:8px">And notice the quote stays in the <b>first person</b> — <span class="mono">nēnu</span>, not "he". Telugu quotes verbatim rather than shifting the pronoun. That is the single most alien thing about reported speech here, and it is why <span class="mono">ani</span> deserved a lesson of its own long before this one.</p>
+    </div>
+  </div>
+</section>
+
+<section id="anki">
+  <div class="wrap">
+    <span class="eyebrow">For import</span>
+    <h2>The list</h2>
+    <div class="anki-wrap">
+      <table class="anki">
+        <thead><tr><th class="f-en">English (with cue)</th><th>Romanized</th><th>Telugu</th><th style="text-align:center">Audio</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td class="f-en">and (the word; -ū on both items is commoner in speech)</td><td class="f-rom">mariyu</td><td class="f-tel">మరియు</td><td class="f-aud">[ ]</td><td class="f-ex">Rām mariyu Śyām naḍustunnāru.</td></tr>
+          <tr><td class="f-en">or (between two named options)</td><td class="f-rom">lēdā</td><td class="f-tel">లేదా</td><td class="f-aud">[ ]</td><td class="f-ex">ṭī kāvālā lēdā kāphī kāvālā?</td></tr>
+          <tr><td class="f-en">but</td><td class="f-rom">kānī</td><td class="f-tel">కానీ</td><td class="f-aud">[ ]</td><td class="f-ex">Rām naḍustunnāḍu kānī Śyām parugettutunnāḍu.</td></tr>
+          <tr><td class="f-en">therefore, so (after the cause)</td><td class="f-rom">kābaṭṭi</td><td class="f-tel">కాబట్టి</td><td class="f-aud">[ ]</td><td class="f-ex">Gīta vastōndi kābaṭṭi Rāj kāphī chēsāḍu.</td></tr>
+          <tr><td class="f-en">because — literally "if you ask why" (enduku + aṇṭē)</td><td class="f-rom">endukaṇṭē</td><td class="f-tel">ఎందుకంటే</td><td class="f-aud">[ ]</td><td class="f-ex">Rāj kāphī chēsāḍu endukaṇṭē Gīta vastōndi.</td></tr>
+          <tr><td class="f-en">that (quotative — goes AFTER the quoted words)</td><td class="f-rom">ani</td><td class="f-tel">అని</td><td class="f-aud">[ ]</td><td class="f-ex">vastānu ani cheppāḍu.</td></tr>
+          <tr><td class="f-en">if / as for — the conditional of anu, "if one says"</td><td class="f-rom">aṇṭē</td><td class="f-tel">అంటే</td><td class="f-aud">[ ]</td><td class="f-ex">vēḍi kāphī kāvālaṇṭē tvaragā raṇḍi.</td></tr>
+          <tr><td class="f-en">quickly, soon</td><td class="f-rom">tvaragā</td><td class="f-tel">త్వరగా</td><td class="f-aud">[ ]</td><td class="f-ex">tvaragā raṇḍi.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="try">
+  <div class="wrap">
+    <span class="eyebrow">From the lesson</span>
+    <h2>Quick self-test</h2>
+    <ul class="try">
+      <li><span class="q">"Ram and Shyam are walking" — twice, one with a word and one with a suffix.</span><span class="a">Rām mariyu Śyām naḍustunnāru. / Rāmū Śyāmū naḍustunnāru.</span></li>
+      <li><span class="q">Change it to "Ram or Shyam is walking". Two things change.</span><span class="a">Rāmō Śyāmō naḍustunnāḍu. — the suffix, and the verb drops to singular.</span></li>
+      <li><span class="q">What is <span class="mono">aṇṭē</span>, grammatically?</span><span class="a">The conditional of anu, "to say" — "if one says". Already a cell in the Verb Lab.</span></li>
+      <li><span class="q">Break down <span class="mono">endukaṇṭē</span>.</span><span class="a">enduku (why) + aṇṭē (if one says) = "if you ask why" = because.</span></li>
+      <li><span class="q">"John said he goes jogging every day."</span><span class="a">nēnu rōju jāging veḷtānu ani Jān annāḍu — content first, ani after, and the quote stays in the first person.</span></li>
+      <li><span class="q">Why is <span class="mono">nēnu</span> in that sentence when John is the subject?</span><span class="a">Telugu quotes verbatim. It doesn't shift the pronoun the way English does.</span></li>
+      <li><span class="q">Say the same fact twice, with <span class="mono">kābaṭṭi</span> and with <span class="mono">endukaṇṭē</span>.</span><span class="a">Cause first + kābaṭṭi + effect. / Effect first + endukaṇṭē + cause. Mirror images.</span></li>
+      <li><span class="q">"If you want hot coffee, come soon."</span><span class="a">vēḍi kāphī kāvālaṇṭē tvaragā raṇḍi. — every word already known.</span></li>
+      <li><span class="q">How do you say "if" with a plain verb, rather than with <span class="mono">kāvāli</span>?</span><span class="a">The -tē conditional directly: chēstē, vastē. Drillable in the Verb Lab.</span></li>
+      <li><span class="q">Join two true facts about your day with "but", then with "because".</span><span class="a">... kānī ... / ... endukaṇṭē ...</span></li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><span class="mono">Foundational Telugu</span> · Lesson 20 · conjunctions · raw captions in <span class="mono">sources/transcripts/week-03/</span></p>
+    <p><a href="lesson-19-modals.html">← Lesson 19 · Modal verbs</a> · <a href="../index.html">Course home</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

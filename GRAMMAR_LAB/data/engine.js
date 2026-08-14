@@ -106,8 +106,8 @@ const FORMS = [
     gloss:'-ḍāniki, “for the purpose of”. The way to attach a reason to any sentence.',
     en:() => `in order to §`, tier:3 },
   { id:'cond',    person:true, invariant:true, label:'Conditional — if', short:'if ___',
-    gloss:'-tē on the non-past stem, person-invariant. Reliable for the common verbs; for a few of the rarer ones it is the form most worth checking.',
-    en:p => `if ${p.enSub} ${p.id === 'he' || p.id === 'she' ? '§s' : '§'}`, tier:3, conf:'check' }
+    gloss:'-tē on the non-past stem, person-invariant. Confirmed by the conjunctions lesson: aṇṭē, endukaṇṭē and kāvālaṇṭē are all this form of anu “to say”, which is why the particle turns up everywhere.',
+    en:p => `if ${p.enSub} ${p.id === 'he' || p.id === 'she' ? '§s' : '§'}`, tier:3 }
 ];
 
 function beVerb(p){
