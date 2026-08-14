@@ -58,6 +58,14 @@ const FORMS = [
     gloss:'Verbal noun in -ḍaṁ plus lēdu — literally “doing is not”. One form for every person. Do not confuse it with the negative past, which drops the -ḍaṁ.',
     en:p => `${p.enSub} ${beVerb(p)} not ${'§ing'}`, tier:1 },
 
+  /* Video 21. Not really a separate tense: it is pōtunnānu "I am going" fused onto the verb as
+     a suffix, with p softening to b. So it is literally the present continuous of "go", and it
+     builds on the plain stem — the same one every negative uses — never on the s-stem.
+     chēyabōtunnānu, not *chēsabōtunnānu. */
+  { id:'immFuture', person:true, label:'Immediate future', short:'about to ___',
+    gloss:'“Going to / about to.” The verb pōvu “go” fused on as a suffix, exactly as English uses “going to”. Built on the plain stem, so chēyi stays chēya- here.',
+    en:p => `${p.enSub} ${beVerb(p)} about to ${'§'}`, tier:2 },
+
   { id:'impFam',  person:false, label:'Imperative — familiar', short:'do it!',
     gloss:'The bare root. Only for children, close friends, and people much younger than you. Getting this wrong is a social error, not a grammatical one.',
     en:() => `§ ! (to a close friend or child)`, tier:2, reg:'informal' },
@@ -123,6 +131,8 @@ function conjugate(v, formId, pi){
       case 'negFuture': return join(v.neg, END.neg[pi]);
       case 'negPast':   return join(v.neg, ['lēdu','లేదు']);
       case 'negPresent':return join(shorten(v.inf), ['ḍaṁ lēdu','డం లేదు']);
+      /* bō always takes the dental t: it ends in a vowel, so v.T's retroflex never applies */
+      case 'immFuture': return join(v.neg, ['bō','బో'], ['t','త'], END.cont[pi]);
       case 'impFam':    return v.root;   /* prefix is added by withPre below */
       case 'impPol':    return join(v.a, ['ṇḍi','ండి']);
       case 'prohibFam': return join(v.neg, ['ku','కు']);
@@ -190,7 +200,7 @@ function segment(v, formId, pi){
   let stem = null;
   if (['future','present','cond'].includes(formId)) stem = v.np;
   else if (formId === 'past') stem = (pi === 3 && v.T[0] === 'ṭ') ? v.np : v.pst;
-  else if (['negFuture','negPast','prohibFam','prohibPol'].includes(formId)) stem = v.neg;
+  else if (['negFuture','negPast','prohibFam','prohibPol','immFuture'].includes(formId)) stem = v.neg;
   else if (['impPol','can'].includes(formId)) stem = v.a;
   else if (formId === 'must') stem = v.inf;
   else if (['purpose','negPresent'].includes(formId)) stem = shorten(v.inf);

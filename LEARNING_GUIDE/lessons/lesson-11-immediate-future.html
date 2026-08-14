@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Telugu · Lesson 11 — Immediate future</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+Telugu:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#191915;--ink-2:#22221d;--ink-3:#2c2c25;
+  --cream:#f1ece0;--cream-dim:#b9b3a4;
+  --amber:#e8a33d;--moss:#8fa37e;--flame:#d96c47;
+  --line:rgba(241,236,224,.12);--radius:14px;--max:1000px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{background:var(--ink);color:var(--cream);font-family:'Inter',sans-serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.telugu{font-family:'Noto Sans Telugu','Inter',sans-serif}
+.mono{font-family:'JetBrains Mono',monospace}
+h1,h2,h3{font-family:'Young Serif',serif;font-weight:400;line-height:1.15}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+section{padding:72px 0;border-top:1px solid var(--line)}
+.eyebrow{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--amber);margin-bottom:14px;display:block}
+h2{font-size:clamp(26px,4.2vw,36px);margin-bottom:14px}
+.lede{color:var(--cream-dim);max-width:660px;font-size:16.5px}
+.lede b{color:var(--cream)}
+a{color:var(--amber)}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:4px}
+
+nav{position:sticky;top:0;z-index:50;background:rgba(25,25,21,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+.logo{font-family:'JetBrains Mono',monospace;font-size:13.5px;font-weight:700;color:var(--cream);text-decoration:none}
+.logo span{color:var(--amber)}
+nav ul{display:flex;gap:20px;list-style:none}
+nav ul a{color:var(--cream-dim);text-decoration:none;font-size:13px;font-weight:500}
+nav ul a:hover{color:var(--amber)}
+@media(max-width:720px){nav ul{display:none}}
+.home-crumb{display:inline-block;margin-bottom:18px;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--cream-dim);text-decoration:none}
+.home-crumb:hover{color:var(--amber)}
+
+header.hero{padding:80px 0 64px;position:relative;overflow:hidden}
+.hero-glyph{position:absolute;right:-30px;top:-70px;font-family:'Noto Sans Telugu',sans-serif;font-size:clamp(260px,40vw,480px);line-height:1;color:rgba(232,163,61,.05);user-select:none;pointer-events:none}
+.hero h1{font-size:clamp(34px,6vw,58px);margin:8px 0 10px;color:var(--cream)}
+.hero h1 em{color:var(--amber);font-style:normal}
+.hero p{max-width:620px;color:var(--cream-dim);font-size:17px}
+
+.note-box{background:rgba(217,108,71,.07);border:1px solid rgba(217,108,71,.3);border-radius:var(--radius);padding:20px 24px;margin-top:30px;max-width:720px}
+.note-box b{color:var(--flame);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;display:block;margin-bottom:8px}
+.note-box p{font-size:14px;color:var(--cream-dim)}
+.note-box p+p{margin-top:10px}
+.note-box.win{background:rgba(143,163,126,.08);border-color:rgba(143,163,126,.32)}
+.note-box.win b{color:var(--moss)}
+
+/* rule blocks */
+.rule{border-top:1px solid var(--line);padding:30px 0;display:grid;grid-template-columns:52px 1fr;gap:20px;counter-increment:r}
+.rules{counter-reset:r;margin-top:20px}
+.rule::before{content:counter(r,decimal-leading-zero);font-family:'JetBrains Mono',monospace;font-size:14px;color:var(--flame);padding-top:4px}
+.rule h3{font-size:19px;font-family:'Inter',sans-serif;font-weight:600;margin-bottom:8px;color:var(--cream)}
+.rule p{font-size:14.5px;color:var(--cream-dim);max-width:640px}
+.rule p+p{margin-top:10px}
+.rule b{color:var(--cream)}
+.ex{margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:14px;color:var(--moss);background:var(--ink-2);border:1px solid var(--line);border-radius:8px;padding:12px 16px;display:inline-block}
+.ex .en{color:var(--cream-dim);font-family:'Inter',sans-serif}
+.ex .tel{font-family:'Noto Sans Telugu',sans-serif;color:var(--cream)}
+.flag{margin-top:14px;border-left:3px solid var(--flame);background:rgba(217,108,71,.07);padding:11px 14px;font-size:13px;color:var(--cream-dim);border-radius:0 8px 8px 0}
+.flag b{color:var(--flame);font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;display:block;margin-bottom:5px}
+.flag.ok{border-left-color:var(--moss);background:rgba(143,163,126,.08)}
+.flag.ok b{color:var(--moss)}
+
+/* morpheme chips */
+.morph-row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:16px 0}
+.morph{border-radius:9px;padding:9px 14px;font-family:'JetBrains Mono',monospace;text-align:center;min-width:74px}
+.morph .p{font-size:16px;font-weight:700;display:block}
+.morph .r{font-size:9px;letter-spacing:.1em;text-transform:uppercase;opacity:.75;margin-top:3px;display:block}
+.morph.subj{background:rgba(232,163,61,.14);color:var(--amber);border:1px solid rgba(232,163,61,.35)}
+.morph.base{background:rgba(143,163,126,.14);color:var(--moss);border:1px solid rgba(143,163,126,.35)}
+.morph.mark{background:rgba(217,108,71,.14);color:var(--flame);border:1px solid rgba(217,108,71,.35)}
+.morph.op{background:none;border:none;color:var(--cream-dim);font-size:18px;min-width:auto;padding:0 2px}
+.morph.none{background:var(--ink-3);color:var(--cream-dim);border:1px dashed var(--line)}
+
+/* generic table */
+.tbl{width:100%;border-collapse:collapse;margin-top:22px;font-size:14.5px}
+.tbl th{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:11px 12px;color:var(--cream-dim);border-bottom:1px solid var(--line);vertical-align:bottom}
+.tbl td{padding:12px;border-bottom:1px solid var(--line);color:var(--cream-dim);vertical-align:top}
+.tbl td .rom{font-family:'JetBrains Mono',monospace;font-size:15px;color:var(--cream);font-weight:700}
+.tbl td .tel{font-family:'Noto Sans Telugu',sans-serif;font-size:15px;color:var(--cream-dim);opacity:.8}
+.tbl td small{display:block;font-size:12px;color:var(--cream-dim);margin-top:2px}
+.tag{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:999px;margin-left:4px}
+.tag.neu{background:rgba(143,163,126,.16);color:var(--moss)}
+.tag.for{background:rgba(232,163,61,.16);color:var(--amber)}
+.tag.inf{background:rgba(217,108,71,.16);color:var(--flame)}
+
+/* anki table */
+.anki-wrap{overflow-x:auto;margin-top:26px;border:1px solid var(--line);border-radius:var(--radius)}
+.anki{width:100%;border-collapse:collapse;font-size:14px;min-width:720px}
+.anki th{background:var(--ink-3);font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:12px 14px;color:var(--amber);border-bottom:1px solid var(--line);white-space:nowrap}
+.anki td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--cream-dim);vertical-align:top}
+.anki tr:last-child td{border-bottom:none}
+.anki .f-en{color:var(--cream);width:31%}
+.anki .f-rom{font-family:'JetBrains Mono',monospace;color:var(--amber);font-weight:700;white-space:nowrap}
+.anki .f-tel{font-family:'Noto Sans Telugu',sans-serif;color:var(--cream)}
+.anki .f-aud{color:var(--cream-dim);opacity:.4;font-family:'JetBrains Mono',monospace;font-size:12px;text-align:center}
+.anki .f-ex{font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--moss)}
+.anki .sec td{background:var(--ink-2);font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--cream-dim)}
+.field-key{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--cream-dim)}
+.field-key span{background:var(--ink-2);border:1px solid var(--line);border-radius:6px;padding:5px 10px}
+.field-key b{color:var(--amber);font-weight:500}
+
+/* lesson questions */
+.question-link{display:grid;grid-template-columns:80px 1fr auto;align-items:center;gap:22px;margin-top:26px;border:1px dashed var(--line);border-radius:var(--radius);background:var(--ink-2);color:inherit;padding:22px;text-decoration:none}
+.question-link:hover{border-color:rgba(232,163,61,.4);background:var(--ink-3)}
+.question-mark{display:grid;width:60px;height:60px;place-items:center;border:1px solid rgba(143,163,126,.35);border-radius:50%;color:var(--moss);font-family:'Young Serif',serif;font-size:28px}
+.question-link h3{margin-bottom:5px;font-family:'Inter',sans-serif;font-size:17px;font-weight:600}
+.question-link p{margin:0;color:var(--cream-dim);font-size:13px}
+.question-open{color:var(--amber);font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;white-space:nowrap}
+.question-open::after{content:' →'}
+
+footer{padding:52px 0 68px;border-top:1px solid var(--line)}
+footer p{font-size:13px;color:var(--cream-dim)}
+footer .mono{color:var(--amber)}
+.try{list-style:none;margin-top:18px;display:grid;gap:10px;max-width:640px}
+.try li{background:var(--ink-2);border:1px solid var(--line);border-radius:9px;padding:12px 16px;font-size:14px;color:var(--cream-dim)}
+.try li .q{color:var(--cream);font-weight:600}
+.try li .a{font-family:'JetBrains Mono',monospace;color:var(--moss);margin-top:4px;display:block}
+
+/* lesson 7 additions, reused */
+.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));gap:10px;margin-top:20px}
+.vcell{border:1px solid var(--line);border-radius:11px;background:var(--ink-2);padding:13px 15px}
+.vcell .en{display:block;font-size:13px;color:var(--cream-dim)}
+.vcell .inf{display:block;font-family:'JetBrains Mono',monospace;font-size:15.5px;font-weight:700;color:var(--amber);margin-top:4px}
+.vcell .fml{display:block;font-family:'JetBrains Mono',monospace;font-size:13.5px;color:var(--moss)}
+.vcell .tel{display:block;font-family:'Noto Sans Telugu',sans-serif;font-size:14px;color:var(--cream-dim);margin-top:2px}
+.vcell.warn{border-color:rgba(217,108,71,.32)}
+.grp{margin-top:26px}
+.grp h4{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--amber);margin-bottom:2px}
+.grp p{font-size:13.5px;color:var(--cream-dim);margin-bottom:0}
+.stack{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin:14px 0}
+.stack .box{border-radius:8px;padding:8px 13px;font-family:'JetBrains Mono',monospace;font-size:14px}
+.stack .root{background:rgba(143,163,126,.14);color:var(--moss);border:1px solid rgba(143,163,126,.35)}
+.stack .neg{background:rgba(217,108,71,.14);color:var(--flame);border:1px solid rgba(217,108,71,.35)}
+.stack .pol{background:rgba(232,163,61,.14);color:var(--amber);border:1px solid rgba(232,163,61,.35)}
+.stack .op{color:var(--cream-dim);font-size:17px}
+.stack .out{background:var(--ink-3);color:var(--cream);border:1px solid var(--line)}
+
+/* lesson 8 additions, reused */
+.para{width:100%;border-collapse:collapse;margin-top:22px;font-size:14.5px;min-width:660px}
+.para th{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:11px 12px;color:var(--cream-dim);border-bottom:1px solid var(--line)}
+.para td{padding:10px 12px;border-bottom:1px solid var(--line);color:var(--cream-dim)}
+.para .pron{font-family:'JetBrains Mono',monospace;color:var(--cream);font-weight:700;white-space:nowrap}
+.para .pron small{display:block;font-family:'Inter',sans-serif;font-weight:400;font-size:11.5px;opacity:.65}
+.para .mk{font-family:'JetBrains Mono',monospace;color:var(--flame);font-weight:700;text-align:center}
+.para .form{font-family:'JetBrains Mono',monospace;color:var(--amber);font-weight:700;white-space:nowrap}
+.para .telc{font-family:'Noto Sans Telugu',sans-serif;color:var(--cream-dim);opacity:.8}
+.para tr.odd td{background:rgba(143,163,126,.05)}
+.scroll{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);margin-top:22px}
+.scroll .para{margin-top:0;border-radius:var(--radius)}
+.audit{border:1px solid rgba(143,163,126,.3);background:rgba(143,163,126,.06);border-radius:var(--radius);padding:20px 24px;margin-top:22px}
+.audit h4{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--moss);margin-bottom:10px}
+.audit p{font-size:14px;color:var(--cream-dim)}
+.audit p+p{margin-top:9px}
+.audit.warn{border-color:rgba(217,108,71,.3);background:rgba(217,108,71,.06)}
+.audit.warn h4{color:var(--flame)}
+.caption-list{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:7px;margin-top:14px}
+.caption-list li{background:var(--ink-2);border:1px solid var(--line);border-radius:8px;padding:9px 12px;font-size:13px;color:var(--cream-dim)}
+.caption-list .real{font-family:'JetBrains Mono',monospace;color:var(--moss);font-weight:700}
+.caption-list .heard{color:var(--flame);font-style:italic}
+@media(max-width:720px){
+  .wrap{padding:0 16px}
+  .hero-glyph{right:0}
+  .rule{grid-template-columns:1fr;gap:8px}
+  .rule>div{min-width:0}
+  .tbl{display:block;width:100%;max-width:100%;overflow-x:auto;white-space:nowrap}
+  .question-link{grid-template-columns:52px 1fr;padding:18px 16px}
+  .question-mark{width:48px;height:48px}
+  .question-open{grid-column:2}
+}
+</style>
+</head>
+<body>
+
+<nav aria-label="Main">
+  <div class="wrap">
+    <a class="logo" href="../index.html"><span>te</span> lesson-11 · immediate future</a>
+    <ul>
+      <li><a href="../index.html">Course home</a></li>
+      <li><a href="../../GRAMMAR_LAB/index.html">Verb Lab</a></li>
+      <li><a href="#rules">Rules</a></li>
+      <li><a href="#contrast">Four-way contrast</a></li>
+      <li><a href="#persons">All pronouns</a></li>
+      <li><a href="#ani">The quotative</a></li>
+      <li><a href="#audit">Verb Lab audit</a></li>
+      <li><a href="#try">Self-test</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-glyph telugu" aria-hidden="true">బోతున్నా</div>
+  <div class="wrap">
+    <a class="home-crumb" href="../index.html">← Foundational Telugu / Learning path</a>
+    <span class="eyebrow">Course extraction · Lesson 11 · Video 21</span>
+    <h1>“About to” — <em>and the one place Telugu copies English</em></h1>
+    <p>The instructor opens by saying this is <b>"not exactly a different tense"</b>, and he is right. <span class="mono">-bōtunnānu</span> is the verb <span class="mono">pō</span> ("go") fused onto the end of another verb, with the <span class="mono">p</span> softening to <span class="mono">b</span>. It is literally <b>"I am going to ___"</b>.</p>
+    <p style="margin-top:12px">English built its future the same way, out of the same verb, for the same reason. <b>This is the only structure in the course so far where the two languages independently arrived at the identical metaphor</b> — so it is also the least effort per unit of new expressive power you will get all week.</p>
+
+    <div class="note-box">
+      <b>How I processed this</b>
+      <p>Short video, and the captions held up better than videos 16 and 19 — but <span class="mono">-bōtunnānu</span> still came through as <b>"both nanu"</b> throughout, which reads as English and is easy to skim past. <span class="mono">chūḍabōtunnānu</span> became <b>"Kubota Nano"</b> and <b>"turabo nano"</b>, <span class="mono">nērchukōbōtunnānu</span> became <b>"Near Kabutar Nanu"</b>, and <span class="mono">dhanyavādālu</span> signs off as <b>"The Nevada blue"</b>.</p>
+      <p>One stretch collapses entirely — <em>"The beauty to do yoga usefully. Verb. Other words."</em> — and I reconstructed it from the surrounding examples rather than the audio.</p>
+      <p><b>A naming note.</b> The course titles this "future continuous". That is not what it is: a future continuous would be "I will be playing". This is the <b>immediate future</b> (or prospective) — "about to", "going to". The instructor's own explanation says so; only the title disagrees. Named accurately here and in the Verb Lab.</p>
+    </div>
+  </div>
+</header>
+
+<section id="rules">
+  <div class="wrap">
+    <span class="eyebrow">The grammar engine</span>
+    <h2>Structures &amp; rules introduced</h2>
+    <p class="lede">Colour code: <b style="color:var(--moss)">plain stem</b> · <b style="color:var(--flame)">the fused verb</b> · <b style="color:var(--amber)">person marker</b>. Three rules, and the first one explains the other two.</p>
+
+    <div class="rules">
+
+      <div class="rule">
+        <div>
+          <h3>The suffix is a whole verb that got glued on</h3>
+          <p>You already know <span class="mono">pōtunnānu</span> — "I am going", the present continuous of <span class="mono">pō</span> from <a href="lesson-08-present-continuous.html">Lesson 8</a>. Attach it to another verb and the <span class="mono">p</span> softens to <span class="mono">b</span>, which is what Telugu does routinely when a word becomes a suffix.</p>
+          <div class="morph-row">
+            <span class="morph base"><span class="p">āḍa-</span><span class="r">plain stem</span></span>
+            <span class="morph op">+</span>
+            <span class="morph mark"><span class="p">bōtunnānu</span><span class="r">pōtunnānu, softened</span></span>
+            <span class="morph op">→</span>
+            <span class="morph"><span class="p mono" style="color:var(--cream)">āḍabōtunnānu</span></span>
+          </div>
+          <p><b>Nothing here is new.</b> You are gluing a form you already know onto a stem you already know. That is why this lesson is eleven minutes and the last one was twenty-one.</p>
+          <div class="note-box win">
+            <b>English did exactly this</b>
+            <p>"I am going to eat" is not about going anywhere either — it is the verb <em>go</em> bleached into a future marker, which is why it contracts to "gonna". Telugu bleached the same verb into the same suffix and softened it to <span class="mono">-bō-</span> instead of contracting it.</p>
+            <p>So the mental model is free: <b>whenever you would say "I'm going to ___" in English, Telugu uses this form.</b> Very little else in the course transfers this cleanly.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>The person endings are Lesson 8's, untouched</h3>
+          <p>Because the suffix <em>is</em> a present continuous, the endings are the present continuous endings. You are not learning a fourth set.</p>
+          <table class="tbl">
+            <thead><tr><th></th><th>“I am going”</th><th>“I am going to play”</th></tr></thead>
+            <tbody>
+              <tr><td>I</td><td><span class="rom">pōtunnānu</span></td><td><span class="rom">āḍabōtunnānu</span></td></tr>
+              <tr><td>she / it</td><td><span class="rom">pōtōndi</span></td><td><span class="rom">āḍabōtōndi</span></td></tr>
+              <tr><td>they / formal</td><td><span class="rom">pōtunnāru</span></td><td><span class="rom">āḍabōtunnāru</span></td></tr>
+            </tbody>
+          </table>
+          <p style="margin-top:14px">The she/it cell contracts to <span class="mono">-tōndi</span>, exactly as it did in Lesson 8 and for the same reason. <b>Third tense in a row where that cell behaves the same way</b> — by now it should be a reflex rather than an exception.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>It uses the plain stem — the one every negative uses</h3>
+          <p>This is the rule that actually needs learning, and the video states it twice.</p>
+          <table class="tbl">
+            <thead><tr><th>Verb</th><th>Elsewhere</th><th>Here</th></tr></thead>
+            <tbody>
+              <tr><td><span class="rom">chēyi</span></td><td><span class="mono">chēs·tunnānu</span> · <span class="mono">chēs·ānu</span></td><td><span class="mono" style="color:var(--moss)">chēya</span>·bōtunnānu <span class="tag inf">not chēsa-</span></td></tr>
+              <tr><td><span class="rom">chūḍu</span></td><td><span class="mono">chūs·tānu</span></td><td><span class="mono" style="color:var(--moss)">chūḍa</span>·bōtunnānu</td></tr>
+              <tr><td><span class="rom">kūrchō</span></td><td><span class="mono">kūrchuṇ·ṭunnānu</span></td><td><span class="mono" style="color:var(--moss)">kūrchō</span>·bōtunnānu <span class="tag inf">ō survives</span></td></tr>
+              <tr><td><span class="rom">rā</span></td><td><span class="mono">vas·tānu</span> · <span class="mono">vachch·ānu</span></td><td><span class="mono" style="color:var(--moss)">rā</span>·bōtunnānu</td></tr>
+            </tbody>
+          </table>
+          <p style="margin-top:14px">Every irregular stem you have fought with disappears. <span class="mono">chēyi</span> stays <span class="mono">chēya-</span>; <span class="mono">rā</span> stays <span class="mono">rā-</span>; the <span class="mono">-ō</span> verbs keep their <span class="mono">ō</span> instead of turning into <span class="mono">-uṇ-</span>.</p>
+          <div class="flag ok">
+            <b>This is the same stem as all three negatives</b>
+            <span class="mono">āḍanu</span> · <span class="mono">āḍalēdu</span> · <span class="mono">āḍaḍaṁ lēdu</span> · <span class="mono">āḍabōtunnānu</span>. Four forms, one stem. Telugu keeps its irregularity in the <em>positive non-past</em> and the <em>past</em>, and everything else builds on something close to the root. Learn the plain stem for a verb and you get most of its paradigm for nothing.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="contrast">
+  <div class="wrap">
+    <span class="eyebrow">The point of the video</span>
+    <h2>Four forms that all mean roughly "play"</h2>
+    <p class="lede">The instructor stops mid-lesson to lay these side by side, and it is the most useful minute in the video. <b>All four are the same verb and they differ only in what sits between stem and person marker.</b></p>
+
+    <div class="scroll">
+      <table class="para">
+        <thead><tr><th>English</th><th>What sits in the middle</th><th>Telugu</th><th>Script</th></tr></thead>
+        <tbody>
+          <tr><td class="pron">I'm about to play<small>immediate future</small></td><td class="mk">-bōtunnā-</td><td class="form">āḍabōtunnānu</td><td class="telc">ఆడబోతున్నాను</td></tr>
+          <tr class="odd"><td class="pron">I'm playing<small>present continuous</small></td><td class="mk">-tunnā-</td><td class="form">āḍutunnānu</td><td class="telc">ఆడుతున్నాను</td></tr>
+          <tr><td class="pron">I play / I will play<small>habitual &amp; future</small></td><td class="mk">-tā-</td><td class="form">āḍutānu</td><td class="telc">ఆడుతాను</td></tr>
+          <tr class="odd"><td class="pron">I played<small>past</small></td><td class="mk">-ā-</td><td class="form">āḍānu</td><td class="telc">ఆడాను</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note-box">
+      <b>Where the confusion actually is</b>
+      <p>Not with the immediate future — <span class="mono">-bōtunnā-</span> is four syllables long and unmistakable. <b>The dangerous pair is still <span class="mono">āḍutunnānu</span> and <span class="mono">āḍutānu</span></b>, from Lessons 8 and 10: one syllable apart, both extremely common, and both about the present.</p>
+      <p>If anything, this lesson <em>helps</em> — <span class="mono">-bōtunnā-</span> contains <span class="mono">-tunnā-</span> visibly, which is a reminder that the continuous marker is the same piece everywhere it appears.</p>
+    </div>
+
+    <div class="note-box">
+      <b>There is no negative for this one</b>
+      <p>The video does not teach one, and it is genuinely uncommon — to say you are <em>not</em> about to do something, Telugu reaches for the ordinary negative future <span class="mono">āḍanu</span> ("I won't play"). The Verb Lab therefore has no negative cell here either.</p>
+      <p>Worth one question to a native speaker: <b>is there a natural way to say "I'm not about to ___"</b>, or does the language simply not make that distinction? Added to <span class="mono">review/</span>.</p>
+    </div>
+  </div>
+</section>
+
+<section id="persons">
+  <div class="wrap">
+    <span class="eyebrow">The full table</span>
+    <h2>All eight pronouns</h2>
+    <p class="lede">The video runs through these at the end. Nothing surprises — which is the point.</p>
+
+    <div class="scroll">
+    <table class="para">
+      <thead><tr><th>Pronoun</th><th style="text-align:center">Marker</th><th>āḍu — about to play</th><th>Script</th><th>chēyi — about to do</th></tr></thead>
+      <tbody>
+        <tr><td class="pron">nēnu<small>I</small></td><td class="mk">-nu</td><td class="form">āḍabōtunnānu</td><td class="telc">ఆడబోతున్నాను</td><td class="form">chēyabōtunnānu</td></tr>
+        <tr class="odd"><td class="pron">nuvvu<small>you — informal</small></td><td class="mk">-vu</td><td class="form">āḍabōtunnāvu</td><td class="telc">ఆడబోతున్నావు</td><td class="form">chēyabōtunnāvu</td></tr>
+        <tr><td class="pron">vāḍu / atanu<small>he</small></td><td class="mk">-ḍu</td><td class="form">āḍabōtunnāḍu</td><td class="telc">ఆడబోతున్నాడు</td><td class="form">chēyabōtunnāḍu</td></tr>
+        <tr class="odd"><td class="pron">adi / āme<small>she</small></td><td class="mk">-di</td><td class="form">āḍabōtōndi <span class="tag inf">contracts</span></td><td class="telc">ఆడబోతోంది</td><td class="form">chēyabōtōndi</td></tr>
+        <tr><td class="pron">mēmu / manamu<small>we</small></td><td class="mk">-mu</td><td class="form">āḍabōtunnāmu</td><td class="telc">ఆడబోతున్నాము</td><td class="form">chēyabōtunnāmu</td></tr>
+        <tr class="odd"><td class="pron">mīru · āyana · āviḍa · vāḷḷu<small>formal / plural</small></td><td class="mk">-ru</td><td class="form">āḍabōtunnāru</td><td class="telc">ఆడబోతున్నారు</td><td class="form">chēyabōtunnāru</td></tr>
+        <tr><td class="pron">adi<small>it</small></td><td class="mk">-di</td><td class="form">āḍabōtōndi</td><td class="telc">ఆడబోతోంది</td><td class="form">chēyabōtōndi</td></tr>
+        <tr class="odd"><td class="pron">avi<small>they — non-human</small></td><td class="mk" style="color:var(--amber)">-yi</td><td class="form">āḍabōtunnāyi</td><td class="telc">ఆడబోతున్నాయి</td><td class="form">chēyabōtunnāyi</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p style="margin-top:14px;font-size:13.5px;color:var(--cream-dim)">Compare the <span class="mono">chēyi</span> column against Lesson 10's, where every positive cell was <span class="mono">chēs-</span>. Here every cell is <span class="mono">chēya-</span>.</p>
+  </div>
+</section>
+
+<section id="ani">
+  <div class="wrap">
+    <span class="eyebrow">Slipped in without warning</span>
+    <h2>The quotative <span class="mono">ani</span> — your first sighting</h2>
+    <p class="lede">The last example in the video contains a word the course does not explain and will not return to for a long time. It is worth stopping on, because it is one of the genuinely major structures of the language.</p>
+
+    <span class="ex">nēnu ī rōju RRR <span style="color:var(--flame)">ani</span> sinimā chūḍabōtunnānu<br><span class="tel">నేను ఈ రోజు RRR అని సినిమా చూడబోతున్నాను</span><br><span class="en">— I'm about to watch a movie called RRR today</span></span>
+
+    <p style="margin-top:20px;font-size:14.5px;color:var(--cream-dim);max-width:660px"><span class="mono">ani</span> is glossed here as "called / named", which is true but undersells it. <b><span class="mono">ani</span> is how Telugu quotes.</b> It marks the material before it as <em>something said, named, or thought</em>, and it comes <em>after</em> that material rather than before.</p>
+
+    <table class="tbl">
+      <thead><tr><th>Structure</th><th>English</th><th>Telugu</th></tr></thead>
+      <tbody>
+        <tr><td>Naming</td><td>a movie <b>called</b> RRR</td><td>RRR <span class="mono" style="color:var(--flame)">ani</span> sinimā</td></tr>
+        <tr><td>Reported speech</td><td>he said <b>that</b> he's coming</td><td>vastānu <span class="mono" style="color:var(--flame)">ani</span> chepp&#8203;āḍu <small>literally "I'll come" + ani + he said</small></td></tr>
+      </tbody>
+    </table>
+
+    <p style="margin-top:18px;font-size:14.5px;color:var(--cream-dim);max-width:660px">Look at the second row carefully. Telugu has <b>no word for "that"</b> in the reported-speech sense. It quotes the original sentence <em>verbatim, in the first person</em>, and tags it with <span class="mono">ani</span>. "He said that he's coming" is built as <em>"'I'll come,' he said"</em>.</p>
+
+    <div class="note-box">
+      <b>Filed, not learned</b>
+      <p>The <a href="../concepts/verb-forms-explained.md">verb forms deep dive</a> lists <span class="mono">ani</span> as one of the four big things waiting past the Verb Lab: <em>"the quotative ani — how reported speech works. Common, very unlike English."</em></p>
+      <p>You now have one concrete example. <b>Do not try to learn the system yet</b> — memorise <span class="mono">___ ani</span> as "called ___" and let the rest arrive when the course gets there. This is the second structure this week to show up early; <span class="mono">vachchē</span> in Lesson 10 was the first.</p>
+    </div>
+  </div>
+</section>
+
+<section id="sentences">
+  <div class="wrap">
+    <span class="eyebrow">Applying it</span>
+    <h2>Worked sentences from the lesson</h2>
+    <table class="tbl">
+      <thead><tr><th>Telugu</th><th>Meaning</th><th>What is happening</th></tr></thead>
+      <tbody>
+        <tr><td><span class="rom">nēnu ṭī tāgabōtunnānu</span><br><span class="tel">నేను టీ తాగబోతున్నాను</span></td><td>I'm about to drink tea.</td><td>Plain stem <span class="mono">tāga-</span> + the suffix.</td></tr>
+        <tr><td><span class="rom">nēnu yōgā chēyabōtunnānu</span><br><span class="tel">నేను యోగా చేయబోతున్నాను</span></td><td>I'm going to do yoga.</td><td><span class="mono">chēya-</span>, not <span class="mono">chēsa-</span>. The video says so explicitly.</td></tr>
+        <tr><td><span class="rom">nēnu telugu nērchukōbōtunnānu</span><br><span class="tel">నేను తెలుగు నేర్చుకోబోతున్నాను</span></td><td>I'm going to learn Telugu.</td><td><span class="mono">-kō</span> keeps its <span class="mono">ō</span> here.</td></tr>
+        <tr><td><span class="rom">nēnu iṇḍiyāki veḷḷabōtunnānu</span><br><span class="tel">నేను ఇండియాకి వెళ్ళబోతున్నాను</span></td><td>I'm going to go to India.</td><td>Note this is not redundant in Telugu — <span class="mono">bō</span> has bleached to a tense marker.</td></tr>
+        <tr><td><span class="rom">nēnu basketball āḍabōtunnānu</span><br><span class="tel">నేను basketball ఆడబోతున్నాను</span></td><td>I'm about to play basketball.</td><td>English loan word, unchanged.</td></tr>
+        <tr><td><span class="rom">nēnu uttaraṁ rāyabōtunnānu</span><br><span class="tel">నేను ఉత్తరం రాయబోతున్నాను</span></td><td>I'm about to write a letter.</td><td><span class="mono">uttaraṁ</span> — see the flag below.</td></tr>
+        <tr><td><span class="rom">nēnu pāṭa pāḍabōtunnānu</span><br><span class="tel">నేను పాట పాడబోతున్నాను</span></td><td>I'm going to sing a song.</td><td>Same <span class="mono">pāṭa</span> / <span class="mono">pāḍu</span> pair as Lesson 9 — one syllable apart.</td></tr>
+        <tr><td><span class="rom">nēnu ī rōju RRR ani sinimā chūḍabōtunnānu</span><br><span class="tel">నేను ఈ రోజు RRR అని సినిమా చూడబోతున్నాను</span></td><td>I'm about to watch a movie called RRR today.</td><td>The long one. <span class="mono">chūḍa-</span>, not <span class="mono">chūsa-</span>, plus the quotative.</td></tr>
+      </tbody>
+    </table>
+
+    <div class="flag">
+      <b>uttaraṁ has two meanings and you already had the other one</b>
+      <span class="mono">ఉత్తరం</span> is in your deck glossed <b>"north"</b>. It is also <b>"letter / written reply"</b>. Both are correct and common — the sense is entirely contextual. The master now carries both.
+    </div>
+  </div>
+</section>
+
+<section id="audit">
+  <div class="wrap">
+    <span class="eyebrow">Cross-check</span>
+    <h2>What this lesson added to the Verb Lab</h2>
+
+    <div class="audit">
+      <h4>✓ 10 of 10 attested forms match — and the paradigm is now generated</h4>
+      <p>Unlike the last three lessons, this one required a <b>change</b> rather than just a check: the immediate future was not in the Verb Lab at all. It is now, as <span class="mono">immFuture</span>.</p>
+      <p>It is fully derivable, which is why it was worth adding rather than listing: <b>plain stem + <span class="mono">bō</span> + <span class="mono">t</span> + the present-continuous endings</b>, all of which the engine already had. Ten lines of code, <b>210 new drillable forms</b>, and every one of the ten forms the video states outright comes out correct — including <span class="mono">kūrchōbōtunnānu</span> and <span class="mono">nērchukōbōtunnānu</span>, where the <span class="mono">-ō</span> survives.</p>
+      <p>Total generated forms: <b>2,129</b>, all still agreeing with <span class="mono">tools/te2rom.py</span>. It sits in the "core six + moods" scope, not the default core.</p>
+    </div>
+
+    <div class="audit warn">
+      <h4>△ One open question for a native speaker</h4>
+      <p>There is no negative cell, because the course teaches none and the ordinary negative future (<span class="mono">āḍanu</span>) appears to cover it. <b>Is "I'm not about to ___" expressible in Telugu, and if so how?</b> Logged in <span class="mono">review/</span>.</p>
+    </div>
+
+    <a class="question-link" href="../../GRAMMAR_LAB/paradigms.html">
+      <span class="question-mark">?</span>
+      <span><h3>Every tense in week 2 is now drillable</h3><p>Immediate future, present continuous, past, habitual/future, and all three negatives — generated, audited against the course, and colour-coded by stem and ending.</p></span>
+      <span class="question-open">Open the paradigm tables</span>
+    </a>
+  </div>
+</section>
+
+<section id="captions">
+  <div class="wrap">
+    <span class="eyebrow">Provenance</span>
+    <h2>What the auto-captions actually said</h2>
+    <p class="lede">Raw text in <span class="mono">sources/transcripts/week-02/21-future-continuous.txt</span>.</p>
+    <ul class="caption-list">
+      <li><span class="real">-bōtunnānu</span> → <span class="heard">"both nanu"</span>, <span class="heard">"Boton nano"</span></li>
+      <li><span class="real">chūḍabōtunnānu</span> → <span class="heard">"Kubota Nano"</span>, <span class="heard">"turabo nano"</span></li>
+      <li><span class="real">nērchukōbōtunnānu</span> → <span class="heard">"Near Kabutar Nanu"</span></li>
+      <li><span class="real">rāyabōtunnānu</span> → <span class="heard">"Ribo Nano"</span></li>
+      <li><span class="real">chēyabōtunnānu</span> → <span class="heard">"makes a che agnano"</span></li>
+      <li><span class="real">āḍabōtunnāvu</span> → <span class="heard">"ardboe na vu"</span></li>
+      <li><span class="real">pāḍabōtunnānu</span> → <span class="heard">"part apart. Both nano"</span></li>
+      <li><span class="real">RRR ani sinimā</span> → <span class="heard">"ah ah ah ah ni cinema"</span></li>
+      <li><span class="real">basketball</span> → <span class="heard">"casket ball"</span></li>
+      <li><span class="real">veḷḷu</span> → <span class="heard">"villu"</span></li>
+      <li><span class="real">rāyi</span> → <span class="heard">"right"</span></li>
+      <li><span class="real">dhanyavādālu</span> → <span class="heard">"The Nevada blue"</span></li>
+    </ul>
+    <p style="margin-top:18px;font-size:13.5px;color:var(--cream-dim);max-width:660px"><b>The subtle one is <span class="heard" style="font-family:'JetBrains Mono',monospace">"both nanu"</span>.</b> It is two ordinary English words, so it slides past without registering as a transcription failure the way "Kubota Nano" does. Every instance of the lesson's central suffix looks like plain English in the transcript — which is exactly the kind of error that would survive into notes if these were not being reconstructed against the generator.</p>
+  </div>
+</section>
+
+<section id="anki">
+  <div class="wrap">
+    <span class="eyebrow">For import</span>
+    <h2>Anki additions — your 5 fields</h2>
+    <p class="lede">Small lesson, small list. Parsed into <span class="mono">data/master_words.tsv</span> by <span class="mono">tools/adapters.py</span>.</p>
+    <div class="field-key">
+      <span><b>1</b> English (+ cue)</span><span><b>2</b> Romanized</span><span><b>3</b> Telugu script</span><span><b>4</b> Audio (blank)</span><span><b>5</b> Example</span>
+    </div>
+    <div class="anki-wrap">
+      <table class="anki">
+        <thead><tr><th class="f-en">English (with cue)</th><th>Romanized</th><th>Telugu</th><th style="text-align:center">Audio</th><th>Example sentence</th></tr></thead>
+        <tbody>
+          <tr><td class="f-en">letter, written message (also means "north")</td><td class="f-rom">uttaraṁ</td><td class="f-tel">ఉత్తరం</td><td class="f-aud">[ ]</td><td class="f-ex">nēnu uttaraṁ rāyabōtunnānu.</td></tr>
+          <tr><td class="f-en">movie, cinema</td><td class="f-rom">sinimā</td><td class="f-tel">సినిమా</td><td class="f-aud">[ ]</td><td class="f-ex">RRR ani sinimā chūḍabōtunnānu.</td></tr>
+          <tr><td class="f-en">called, named — the quotative; goes AFTER the name</td><td class="f-rom">ani</td><td class="f-tel">అని</td><td class="f-aud">[ ]</td><td class="f-ex">RRR ani sinimā — a movie called RRR.</td></tr>
+          <tr><td class="f-en">-bōtunnānu — about to, going to (pō fused on)</td><td class="f-rom">-bōtunnānu</td><td class="f-tel">-బోతున్నాను</td><td class="f-aud">[ ]</td><td class="f-ex">āḍu → āḍabōtunnānu</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="try">
+  <div class="wrap">
+    <span class="eyebrow">From the lesson</span>
+    <h2>Quick self-test</h2>
+    <p class="lede">Cover the green line and say each aloud.</p>
+    <ul class="try">
+      <li><span class="q">Where does <span class="mono">-bōtunnānu</span> come from?</span><span class="a">pōtunnānu, "I am going" — the p softens to b when it becomes a suffix. Identical to English "going to".</span></li>
+      <li><span class="q">"I'm about to do yoga." Watch the stem.</span><span class="a">nēnu yōgā chēyabōtunnānu. — chēya-, not chēsa-. This form never uses the s-stem.</span></li>
+      <li><span class="q">Which other forms use that same stem?</span><span class="a">All three negatives: āḍanu, āḍalēdu, āḍaḍaṁ lēdu. Four forms, one stem.</span></li>
+      <li><span class="q">Give all four: about to play, am playing, play/will play, played.</span><span class="a">āḍabōtunnānu · āḍutunnānu · āḍutānu · āḍānu</span></li>
+      <li><span class="q">Which two of those four are actually easy to confuse — and why isn't it the new one?</span><span class="a">āḍutunnānu and āḍutānu. -bōtunnā- is four syllables and unmistakable.</span></li>
+      <li><span class="q">"She's about to sing."</span><span class="a">āme pāḍabōtōndi. — the she/it cell contracts to -tōndi, third tense running.</span></li>
+      <li><span class="q">"I'm about to sit down." Careful with the -ō.</span><span class="a">nēnu kūrchōbōtunnānu. — the ō survives here, unlike kūrchuṇṭunnānu.</span></li>
+      <li><span class="q">Say "a movie called RRR" and explain the word order.</span><span class="a">RRR ani sinimā. — ani comes after the name, not before. It's the quotative.</span></li>
+      <li><span class="q">How would Telugu build "he said that he's coming"?</span><span class="a">vastānu ani cheppāḍu — literally "'I'll come,' he said." No word for "that"; the original sentence is quoted verbatim in the first person.</span></li>
+      <li><span class="q">"I'm about to write a letter" — and what else does that noun mean?</span><span class="a">nēnu uttaraṁ rāyabōtunnānu. uttaraṁ is also "north".</span></li>
+      <li><span class="q">How do you say "I'm not about to play"?</span><span class="a">Trick question — the course teaches no negative here. Use āḍanu, "I won't play". Worth asking a native speaker whether the distinction exists.</span></li>
+      <li><span class="q">Say three true things you are about to do in the next hour.</span><span class="a">nēnu ___ bōtunnānu. ×3 — use the plain stem every time.</span></li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><span class="mono">Foundational Telugu</span> · Lesson 11 · video 21, reconstructed against the <a href="../../GRAMMAR_LAB/index.html">Verb Lab</a> stems · raw captions in <span class="mono">sources/transcripts/week-02/</span></p>
+    <p><a href="lesson-10-future-habitual.html">← Lesson 10 · Future &amp; habitual</a> · <a href="../index.html">Course home</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

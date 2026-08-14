@@ -121,6 +121,39 @@ play" and "they (things) don't play".
 
 ---
 
+## Immediate future — video 21, audited 2026-08-13
+
+**Verdict: 10 of 10 attested forms match — but this one required a change, not just a check.**
+
+The immediate future was not in the Verb Lab at all. It is now, as `immFuture`.
+
+Worth adding rather than listing because it is fully derivable from pieces the engine already
+had: **plain stem + `bō` + `t` + the present-continuous endings**. It is not really a tense —
+it is `pōtunnānu` ("I am going") fused on as a suffix with p softening to b, exactly as English
+bleached *go* into "going to". Ten lines of code, **210 new drillable forms**.
+
+All ten forms the video states outright come out correct, including the two that could have gone
+wrong: `kūrchōbōtunnānu` and `nērchukōbōtunnānu`, where the `-ō` survives instead of becoming
+`-uṇ-` as it does in the present.
+
+It uses `v.neg`, the same stem as all three negatives — so `chēyabōtunnānu`, never
+`*chēsabōtunnānu`. Four forms off one stem.
+
+Total generated forms: **2,129**, all agreeing with `tools/te2rom.py`. Placed in the
+`moods` scope, not the default `core`.
+
+**Naming:** the course titles this "future continuous". It is not — a future continuous would be
+"I will be playing". The instructor's own explanation describes the prospective/immediate future.
+Named `immFuture` / "Immediate future" here.
+
+### Open question for a native speaker
+
+There is **no negative cell**, because the course teaches none and the ordinary negative future
+(`āḍanu`) appears to cover the ground. Is *"I'm not about to ___"* expressible in Telugu, and if
+so how? Until that is answered the paradigm ships positive-only.
+
+---
+
 ## Scorecard after week 2
 
 | Tense | Video | Forms checked | Mismatches |
@@ -128,24 +161,30 @@ play" and "they (things) don't play".
 | Present continuous | 9, 10 | 27 | 0 |
 | Past | 13, 14 | 19 | 0 |
 | Habitual & future | 16, 19 | 47 | 0 |
-| **Total** | | **93** | **0** |
+| Immediate future | 21 | 10 | 0 (paradigm added) |
+| **Total** | | **103** | **0** |
 
 The Verb Lab's 1,919 forms were generated from a PDF and inference, with no native-speaker or
 authoritative check. Week 2 has now verified the three tenses that carry ordinary conversation —
 every paradigm in the default `core` drill scope except the two negatives derived from them.
 
-Two fixes came out of this, both from the Lesson 8 pass: the nasal-assimilation bug in
-romanization (180 forms) and the missing `negPresent` paradigm (210 forms added).
+Three changes came out of this: the nasal-assimilation bug in romanization (180 forms), the
+missing `negPresent` paradigm (+210 forms), and the missing `immFuture` paradigm (+210 forms).
+The generator went from 1,709 forms to 2,129 over the week.
 
 ---
 
-## Standing gaps, unchanged after three audits
+## Standing gaps, unchanged after four audits
 
 - **The `avi` row** (non-human plural, `-tunnāyi` / `-āyi`) is not drillable. Six persons drilled,
   eight taught.
 - **"We" is `manaṁ` / `-āṁ`** where the course teaches `manamu` / `mēmu` with `-āmu`. Same cell,
   colloquial vs careful register.
 
-Both are cosmetic and both are now three-for-three, so they are a deliberate scope choice rather
+Both are cosmetic and both are now four-for-four, so they are a deliberate scope choice rather
 than an oversight. Worth revisiting only if the `avi` row starts coming up in real conversation,
 which for a household and an office is unlikely.
+
+The cost is visible on the lesson pages: four cells in Lesson 11's tables (`āḍabōtunnāmu`,
+`āḍabōtunnāyi`, and the `chēyi` equivalents) are correct Telugu taught by the course but are not
+drillable, because they are the `mēmu` and `avi` rows.
