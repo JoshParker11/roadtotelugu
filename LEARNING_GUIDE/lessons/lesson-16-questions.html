@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Telugu · Lesson 16 — Questions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+Telugu:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#191915;--ink-2:#22221d;--ink-3:#2c2c25;
+  --cream:#f1ece0;--cream-dim:#b9b3a4;
+  --amber:#e8a33d;--moss:#8fa37e;--flame:#d96c47;
+  --line:rgba(241,236,224,.12);--radius:14px;--max:1000px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{background:var(--ink);color:var(--cream);font-family:'Inter',sans-serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.telugu{font-family:'Noto Sans Telugu','Inter',sans-serif}
+.mono{font-family:'JetBrains Mono',monospace}
+h1,h2,h3{font-family:'Young Serif',serif;font-weight:400;line-height:1.15}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+section{padding:72px 0;border-top:1px solid var(--line)}
+.eyebrow{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--amber);margin-bottom:14px;display:block}
+h2{font-size:clamp(26px,4.2vw,36px);margin-bottom:14px}
+.lede{color:var(--cream-dim);max-width:660px;font-size:16.5px}
+.lede b{color:var(--cream)}
+a{color:var(--amber)}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:4px}
+
+nav{position:sticky;top:0;z-index:50;background:rgba(25,25,21,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+.logo{font-family:'JetBrains Mono',monospace;font-size:13.5px;font-weight:700;color:var(--cream);text-decoration:none}
+.logo span{color:var(--amber)}
+nav ul{display:flex;gap:20px;list-style:none}
+nav ul a{color:var(--cream-dim);text-decoration:none;font-size:13px;font-weight:500}
+nav ul a:hover{color:var(--amber)}
+@media(max-width:720px){nav ul{display:none}}
+.home-crumb{display:inline-block;margin-bottom:18px;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--cream-dim);text-decoration:none}
+.home-crumb:hover{color:var(--amber)}
+
+header.hero{padding:80px 0 64px;position:relative;overflow:hidden}
+.hero-glyph{position:absolute;right:-30px;top:-70px;font-family:'Noto Sans Telugu',sans-serif;font-size:clamp(260px,40vw,480px);line-height:1;color:rgba(232,163,61,.05);user-select:none;pointer-events:none}
+.hero h1{font-size:clamp(34px,6vw,58px);margin:8px 0 10px;color:var(--cream)}
+.hero h1 em{color:var(--amber);font-style:normal}
+.hero p{max-width:620px;color:var(--cream-dim);font-size:17px}
+
+.note-box{background:rgba(217,108,71,.07);border:1px solid rgba(217,108,71,.3);border-radius:var(--radius);padding:20px 24px;margin-top:30px;max-width:720px}
+.note-box b{color:var(--flame);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;display:block;margin-bottom:8px}
+.note-box p{font-size:14px;color:var(--cream-dim)}
+.note-box p+p{margin-top:10px}
+.note-box.win{background:rgba(143,163,126,.08);border-color:rgba(143,163,126,.32)}
+.note-box.win b{color:var(--moss)}
+
+/* rule blocks */
+.rule{border-top:1px solid var(--line);padding:30px 0;display:grid;grid-template-columns:52px 1fr;gap:20px;counter-increment:r}
+.rules{counter-reset:r;margin-top:20px}
+.rule::before{content:counter(r,decimal-leading-zero);font-family:'JetBrains Mono',monospace;font-size:14px;color:var(--flame);padding-top:4px}
+.rule h3{font-size:19px;font-family:'Inter',sans-serif;font-weight:600;margin-bottom:8px;color:var(--cream)}
+.rule p{font-size:14.5px;color:var(--cream-dim);max-width:640px}
+.rule p+p{margin-top:10px}
+.rule b{color:var(--cream)}
+.ex{margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:14px;color:var(--moss);background:var(--ink-2);border:1px solid var(--line);border-radius:8px;padding:12px 16px;display:inline-block}
+.ex .en{color:var(--cream-dim);font-family:'Inter',sans-serif}
+.ex .tel{font-family:'Noto Sans Telugu',sans-serif;color:var(--cream)}
+.flag{margin-top:14px;border-left:3px solid var(--flame);background:rgba(217,108,71,.07);padding:11px 14px;font-size:13px;color:var(--cream-dim);border-radius:0 8px 8px 0}
+.flag b{color:var(--flame);font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;display:block;margin-bottom:5px}
+.flag.ok{border-left-color:var(--moss);background:rgba(143,163,126,.08)}
+.flag.ok b{color:var(--moss)}
+
+/* morpheme chips */
+.morph-row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:16px 0}
+.morph{border-radius:9px;padding:9px 14px;font-family:'JetBrains Mono',monospace;text-align:center;min-width:74px}
+.morph .p{font-size:16px;font-weight:700;display:block}
+.morph .r{font-size:9px;letter-spacing:.1em;text-transform:uppercase;opacity:.75;margin-top:3px;display:block}
+.morph.subj{background:rgba(232,163,61,.14);color:var(--amber);border:1px solid rgba(232,163,61,.35)}
+.morph.base{background:rgba(143,163,126,.14);color:var(--moss);border:1px solid rgba(143,163,126,.35)}
+.morph.mark{background:rgba(217,108,71,.14);color:var(--flame);border:1px solid rgba(217,108,71,.35)}
+.morph.op{background:none;border:none;color:var(--cream-dim);font-size:18px;min-width:auto;padding:0 2px}
+.morph.none{background:var(--ink-3);color:var(--cream-dim);border:1px dashed var(--line)}
+
+/* generic table */
+.tbl{width:100%;border-collapse:collapse;margin-top:22px;font-size:14.5px}
+.tbl th{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:11px 12px;color:var(--cream-dim);border-bottom:1px solid var(--line);vertical-align:bottom}
+.tbl td{padding:12px;border-bottom:1px solid var(--line);color:var(--cream-dim);vertical-align:top}
+.tbl td .rom{font-family:'JetBrains Mono',monospace;font-size:15px;color:var(--cream);font-weight:700}
+.tbl td .tel{font-family:'Noto Sans Telugu',sans-serif;font-size:15px;color:var(--cream-dim);opacity:.8}
+.tbl td small{display:block;font-size:12px;color:var(--cream-dim);margin-top:2px}
+.tag{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:999px;margin-left:4px}
+.tag.neu{background:rgba(143,163,126,.16);color:var(--moss)}
+.tag.for{background:rgba(232,163,61,.16);color:var(--amber)}
+.tag.inf{background:rgba(217,108,71,.16);color:var(--flame)}
+
+/* anki table */
+.anki-wrap{overflow-x:auto;margin-top:26px;border:1px solid var(--line);border-radius:var(--radius)}
+.anki{width:100%;border-collapse:collapse;font-size:14px;min-width:720px}
+.anki th{background:var(--ink-3);font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:12px 14px;color:var(--amber);border-bottom:1px solid var(--line);white-space:nowrap}
+.anki td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--cream-dim);vertical-align:top}
+.anki tr:last-child td{border-bottom:none}
+.anki .f-en{color:var(--cream);width:31%}
+.anki .f-rom{font-family:'JetBrains Mono',monospace;color:var(--amber);font-weight:700;white-space:nowrap}
+.anki .f-tel{font-family:'Noto Sans Telugu',sans-serif;color:var(--cream)}
+.anki .f-aud{color:var(--cream-dim);opacity:.4;font-family:'JetBrains Mono',monospace;font-size:12px;text-align:center}
+.anki .f-ex{font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--moss)}
+.anki .sec td{background:var(--ink-2);font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--cream-dim)}
+.field-key{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--cream-dim)}
+.field-key span{background:var(--ink-2);border:1px solid var(--line);border-radius:6px;padding:5px 10px}
+.field-key b{color:var(--amber);font-weight:500}
+
+/* lesson questions */
+.question-link{display:grid;grid-template-columns:80px 1fr auto;align-items:center;gap:22px;margin-top:26px;border:1px dashed var(--line);border-radius:var(--radius);background:var(--ink-2);color:inherit;padding:22px;text-decoration:none}
+.question-link:hover{border-color:rgba(232,163,61,.4);background:var(--ink-3)}
+.question-mark{display:grid;width:60px;height:60px;place-items:center;border:1px solid rgba(143,163,126,.35);border-radius:50%;color:var(--moss);font-family:'Young Serif',serif;font-size:28px}
+.question-link h3{margin-bottom:5px;font-family:'Inter',sans-serif;font-size:17px;font-weight:600}
+.question-link p{margin:0;color:var(--cream-dim);font-size:13px}
+.question-open{color:var(--amber);font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;white-space:nowrap}
+.question-open::after{content:' →'}
+
+footer{padding:52px 0 68px;border-top:1px solid var(--line)}
+footer p{font-size:13px;color:var(--cream-dim)}
+footer .mono{color:var(--amber)}
+.try{list-style:none;margin-top:18px;display:grid;gap:10px;max-width:640px}
+.try li{background:var(--ink-2);border:1px solid var(--line);border-radius:9px;padding:12px 16px;font-size:14px;color:var(--cream-dim)}
+.try li .q{color:var(--cream);font-weight:600}
+.try li .a{font-family:'JetBrains Mono',monospace;color:var(--moss);margin-top:4px;display:block}
+
+/* lesson 7 additions, reused */
+.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));gap:10px;margin-top:20px}
+.vcell{border:1px solid var(--line);border-radius:11px;background:var(--ink-2);padding:13px 15px}
+.vcell .en{display:block;font-size:13px;color:var(--cream-dim)}
+.vcell .inf{display:block;font-family:'JetBrains Mono',monospace;font-size:15.5px;font-weight:700;color:var(--amber);margin-top:4px}
+.vcell .fml{display:block;font-family:'JetBrains Mono',monospace;font-size:13.5px;color:var(--moss)}
+.vcell .tel{display:block;font-family:'Noto Sans Telugu',sans-serif;font-size:14px;color:var(--cream-dim);margin-top:2px}
+.vcell.warn{border-color:rgba(217,108,71,.32)}
+.grp{margin-top:26px}
+.grp h4{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--amber);margin-bottom:2px}
+.grp p{font-size:13.5px;color:var(--cream-dim);margin-bottom:0}
+.stack{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin:14px 0}
+.stack .box{border-radius:8px;padding:8px 13px;font-family:'JetBrains Mono',monospace;font-size:14px}
+.stack .root{background:rgba(143,163,126,.14);color:var(--moss);border:1px solid rgba(143,163,126,.35)}
+.stack .neg{background:rgba(217,108,71,.14);color:var(--flame);border:1px solid rgba(217,108,71,.35)}
+.stack .pol{background:rgba(232,163,61,.14);color:var(--amber);border:1px solid rgba(232,163,61,.35)}
+.stack .op{color:var(--cream-dim);font-size:17px}
+.stack .out{background:var(--ink-3);color:var(--cream);border:1px solid var(--line)}
+
+/* lesson 8 additions, reused */
+.para{width:100%;border-collapse:collapse;margin-top:22px;font-size:14.5px;min-width:660px}
+.para th{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:11px 12px;color:var(--cream-dim);border-bottom:1px solid var(--line)}
+.para td{padding:10px 12px;border-bottom:1px solid var(--line);color:var(--cream-dim)}
+.para .pron{font-family:'JetBrains Mono',monospace;color:var(--cream);font-weight:700;white-space:nowrap}
+.para .pron small{display:block;font-family:'Inter',sans-serif;font-weight:400;font-size:11.5px;opacity:.65}
+.para .mk{font-family:'JetBrains Mono',monospace;color:var(--flame);font-weight:700;text-align:center}
+.para .form{font-family:'JetBrains Mono',monospace;color:var(--amber);font-weight:700;white-space:nowrap}
+.para .telc{font-family:'Noto Sans Telugu',sans-serif;color:var(--cream-dim);opacity:.8}
+.para tr.odd td{background:rgba(143,163,126,.05)}
+.scroll{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);margin-top:22px}
+.scroll .para{margin-top:0;border-radius:var(--radius)}
+.audit{border:1px solid rgba(143,163,126,.3);background:rgba(143,163,126,.06);border-radius:var(--radius);padding:20px 24px;margin-top:22px}
+.audit h4{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--moss);margin-bottom:10px}
+.audit p{font-size:14px;color:var(--cream-dim)}
+.audit p+p{margin-top:9px}
+.audit.warn{border-color:rgba(217,108,71,.3);background:rgba(217,108,71,.06)}
+.audit.warn h4{color:var(--flame)}
+.caption-list{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:7px;margin-top:14px}
+.caption-list li{background:var(--ink-2);border:1px solid var(--line);border-radius:8px;padding:9px 12px;font-size:13px;color:var(--cream-dim)}
+.caption-list .real{font-family:'JetBrains Mono',monospace;color:var(--moss);font-weight:700}
+.caption-list .heard{color:var(--flame);font-style:italic}
+@media(max-width:720px){
+  .wrap{padding:0 16px}
+  .hero-glyph{right:0}
+  .rule{grid-template-columns:1fr;gap:8px}
+  .rule>div{min-width:0}
+  .tbl{display:block;width:100%;max-width:100%;overflow-x:auto;white-space:nowrap}
+  .question-link{grid-template-columns:52px 1fr;padding:18px 16px}
+  .question-mark{width:48px;height:48px}
+  .question-open{grid-column:2}
+}
+
+/* conjugation matrix — the course's own table shape, in this site's palette.
+   Rows are pronouns, columns are tenses, and the boxed cells make it scannable
+   in both directions, which a flat table is not. */
+.matrix{width:100%;border-collapse:separate;border-spacing:5px;font-size:14px;min-width:760px}
+.matrix th{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--cream);background:var(--ink-3);border:1px solid var(--line);border-radius:9px;padding:10px 12px;text-align:center;vertical-align:middle}
+.matrix th small{display:block;font-family:'Inter',sans-serif;font-size:11px;letter-spacing:0;text-transform:none;color:var(--cream-dim);font-weight:400;margin-top:3px}
+.matrix th.grp,.matrix th.en,.matrix th.pn{background:none;border:none}
+.matrix td.grp{background:none;border:none;font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--cream-dim);text-align:right;padding-right:6px;vertical-align:middle;width:72px;line-height:1.3}
+.matrix td.grp.lab{color:var(--flame)}
+.matrix td.en{background:var(--ink-3);border:1px solid var(--line);border-radius:9px;padding:9px 12px;color:var(--cream);font-weight:600;text-align:center;white-space:nowrap;font-size:13px;line-height:1.4}
+.matrix td.pn{background:rgba(232,163,61,.12);border:1px solid rgba(232,163,61,.32);border-radius:9px;padding:9px 14px;font-family:'JetBrains Mono',monospace;font-size:13.5px;color:var(--amber);font-weight:700;text-align:center;white-space:nowrap;line-height:1.45}
+.matrix td.pn .tel{display:block;font-family:'Noto Sans Telugu',sans-serif;font-size:12px;color:var(--cream-dim);font-weight:400;margin-top:2px;opacity:.75}
+.matrix td.sfx{background:rgba(143,163,126,.13);border:1px solid rgba(143,163,126,.3);border-radius:9px;padding:9px 14px;font-family:'JetBrains Mono',monospace;font-size:14.5px;color:var(--moss);font-weight:700;text-align:center;white-space:nowrap}
+.matrix td.sfx .tel{display:block;font-family:'Noto Sans Telugu',sans-serif;font-size:12.5px;color:var(--cream-dim);font-weight:400;margin-top:2px;opacity:.8}
+.matrix.neg td.sfx{background:rgba(217,108,71,.11);border-color:rgba(217,108,71,.3);color:var(--flame)}
+.matrix td.sfx.off{opacity:.32}
+.matrix td.sfx.on{box-shadow:0 0 0 1px var(--moss)}
+.matrix.neg td.sfx.on{box-shadow:0 0 0 1px var(--flame)}
+.matrix.suffixes td.sfx{font-size:15px}
+.matrix-key{display:flex;gap:14px;flex-wrap:wrap;margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:11.5px;color:var(--cream-dim)}
+.matrix-key b{font-weight:500}
+@media(max-width:720px){.matrix{border-spacing:3px;font-size:13px}}
+</style></head>
+<body>
+
+<nav aria-label="Main">
+  <div class="wrap">
+    <a class="logo" href="../index.html"><span>te</span> lesson-16 · questions</a>
+    <ul>
+      <li><a href="../index.html">Course home</a></li>
+      <li><a href="../../GRAMMAR_LAB/index.html">Verb Lab</a></li>
+      <li><a href="#easy">The -ā particle</a></li>
+      <li><a href="#words">Question words</a></li>
+      <li><a href="#eia">e- / i- / a-</a></li>
+      <li><a href="#anki">The list</a></li>
+      <li><a href="#try">Self-test</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-glyph telugu" aria-hidden="true">ఎలా</div>
+  <div class="wrap">
+    <a class="home-crumb" href="../index.html">← Foundational Telugu / Learning path</a>
+    <span class="eyebrow">Course extraction · Lesson 16 · Week 3, videos 1–2</span>
+    <h1>Questions — <em>one vowel, then one letter</em></h1>
+    <p>Any Telugu statement becomes a yes/no question by adding <b>one vowel</b> to the end. And every question word starts with <span class="mono">e-</span>, has a near answer starting <span class="mono">i-</span> and a far answer starting <span class="mono">a-</span>.</p>
+    <p style="margin-top:12px"><b>That second pattern is the most elegant thing in the course.</b> English has a broken fragment of it — <em>where / here / there</em>, <em>this / that</em>. Telugu has it complete, across seven question words, with no exceptions.</p>
+
+    <div class="note-box">
+      <b>How I processed this</b>
+      <p>Opens with <b>"Anarchy."</b> again. The question words come through as <b>"yella"</b>, <b>"EMT"</b>, <b>"Jakarta"</b>, <b>"Hebrew"</b>, <b>"yavru"</b>, <b>"Yentha"</b>, <b>"Yeni"</b> — recoverable. The correlative pairs at the end collapse almost entirely (<span class="mono">inta/anta</span> as "into or onto", <span class="mono">inni/anni</span> as "any or any"), so <b>those were rebuilt from the pattern rather than from the audio</b>. The pattern is exceptionless, which is what makes that safe.</p>
+      <p>Every form here is checked against <span class="mono">tools/te2rom.py</span>.</p>
+    </div>
+  </div>
+</header>
+
+<section id="easy">
+  <div class="wrap">
+    <span class="eyebrow">The easy way</span>
+    <h2>Add <span class="mono">-ā</span> and you have a question</h2>
+    <p class="lede">No word order change, no auxiliary, no rising intonation required. <b>Any statement, any length.</b></p>
+
+    <div class="stack">
+      <span class="box root">mīru bāgunnāru</span><span class="op">+</span><span class="box pol">-ā</span>
+      <span class="op">→</span><span class="box out">mīru bāgunnārā?</span>
+    </div>
+
+    <table class="tbl">
+      <thead><tr><th>Statement</th><th>Question</th></tr></thead>
+      <tbody>
+        <tr><td><span class="rom">mīru bāgunnāru</span><br><span class="tel">మీరు బాగున్నారు</span><small>you are fine</small></td><td><span class="rom">mīru bāgunnārā?</span><br><span class="tel">మీరు బాగున్నారా?</span><small>are you fine? — <b>the standard greeting</b></small></td></tr>
+        <tr><td><span class="rom">nuvvu bāgunnāvu</span><br><span class="tel">నువ్వు బాగున్నావు</span></td><td><span class="rom">nuvvu bāgunnāvā?</span><br><span class="tel">నువ్వు బాగున్నావా?</span><small>informal</small></td></tr>
+        <tr><td><span class="rom">mīru telugu māṭlāḍutāru</span><br><span class="tel">మీరు తెలుగు మాట్లాడుతారు</span></td><td><span class="rom">mīru telugu māṭlāḍutārā?</span><br><span class="tel">మీరు తెలుగు మాట్లాడుతారా?</span><small>do you speak Telugu?</small></td></tr>
+        <tr><td><span class="rom">āme telugu māṭlāḍutundi</span><br><span class="tel">ఆమె తెలుగు మాట్లాడుతుంది</span></td><td><span class="rom">āme telugu māṭlāḍutundā?</span><br><span class="tel">ఆమె తెలుగు మాట్లాడుతుందా?</span><small><b>-tundi loses its i</b></small></td></tr>
+      </tbody>
+    </table>
+
+    <div class="note-box win">
+      <b>Drop the pronoun and you have the greeting</b>
+      <p>The verb already carries the person, so <span class="mono">mīru</span> is optional. <span class="mono">bāgunnārā?</span> on its own is <b>"how are you?"</b> respectfully, and <span class="mono">bāgunnāvā?</span> is the casual version. This is very likely the first Telugu anyone will say to you.</p>
+      <p>Note what it literally asks: not "how are you" but <b>"are you well?"</b> — a yes/no question. The answer is <span class="mono">bāgunnānu</span>, "I am well".</p>
+    </div>
+
+    <div class="flag">
+      <b>The vowel replaces, it doesn't just append</b>
+      <span class="mono">-tundi</span> → <span class="mono">-tundā</span>, not <span class="mono">*-tundiā</span>. Telugu will not put two vowels together, the rule you met back in <a href="lesson-07-imperatives.html">Lesson 7</a>. The final vowel of the verb gives way to the <span class="mono">ā</span>.
+    </div>
+  </div>
+</section>
+
+<section id="words">
+  <div class="wrap">
+    <span class="eyebrow">The regular way</span>
+    <h2>The question words</h2>
+    <p class="lede">All nine begin with <span class="mono">e-</span>. Said alone they sound closer to <em>ye-</em>, which is why the captions render every one of them starting with a Y.</p>
+
+    <div class="vgrid">
+      <div class="vcell"><span class="en">how</span><span class="inf">elā</span><span class="tel">ఎలా</span></div>
+      <div class="vcell"><span class="en">what — no verb in the sentence</span><span class="inf">ēmiṭi</span><span class="tel">ఏమిటి</span></div>
+      <div class="vcell"><span class="en">what — before a verb</span><span class="inf">ēmi</span><span class="tel">ఏమి</span></div>
+      <div class="vcell"><span class="en">where</span><span class="inf">ekkaḍa</span><span class="tel">ఎక్కడ</span></div>
+      <div class="vcell"><span class="en">who</span><span class="inf">evaru</span><span class="tel">ఎవరు</span></div>
+      <div class="vcell"><span class="en">when</span><span class="inf">eppuḍu</span><span class="tel">ఎప్పుడు</span></div>
+      <div class="vcell"><span class="en">why</span><span class="inf">enduku</span><span class="tel">ఎందుకు</span></div>
+      <div class="vcell"><span class="en">how much — uncountable</span><span class="inf">enta</span><span class="tel">ఎంత</span></div>
+      <div class="vcell"><span class="en">how many — countable</span><span class="inf">enni</span><span class="tel">ఎన్ని</span></div>
+      <div class="vcell"><span class="en">which — no verb</span><span class="inf">ēdi</span><span class="tel">ఏది</span></div>
+      <div class="vcell"><span class="en">which — before a noun</span><span class="inf">ē</span><span class="tel">ఏ</span></div>
+      <div class="vcell"><span class="en">from where</span><span class="inf">ekkaḍa nunchi</span><span class="tel">ఎక్కడ నుంచి</span></div>
+    </div>
+
+    <div class="rules">
+      <div class="rule">
+        <div>
+          <h3>The question word goes immediately before the verb</h3>
+          <p>Not at the front, as in English. The verb stays last — as it always has — and the question word slots in right in front of it.</p>
+          <span class="ex">mīru <span style="color:var(--flame)">elā</span> unnāru? <span class="tel">మీరు ఎలా ఉన్నారు?</span> <span class="en">— how are you?</span></span>
+          <span class="ex" style="margin-top:10px">chārminār <span style="color:var(--flame)">ekkaḍa</span> undi? <span class="tel">చార్మినార్ ఎక్కడ ఉంది?</span> <span class="en">— where is the Charminar?</span></span>
+          <p style="margin-top:14px">Said at speed the vowels run together: <span class="mono">mīrelā unnāru</span>, <span class="mono">nuvvelā unnāvu</span>. The same liaison as <span class="mono">nēnippuḍu</span> from Lesson 8.</p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3><span class="mono">ēmiṭi</span> or <span class="mono">ēmi</span> — decided by whether there is a verb</h3>
+          <table class="tbl">
+            <thead><tr><th>No verb → <span class="mono">ēmiṭi</span>, at the end</th><th>Verb → <span class="mono">ēmi</span>, just before it</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><span class="rom">mī pēru ēmiṭi?</span><br><span class="tel">మీ పేరు ఏమిటి?</span><small>what is your name?</small></td>
+                <td><span class="rom">mīru ēmi chēstāru?</span><br><span class="tel">మీరు ఏమి చేస్తారు?</span><small>what do you do?</small></td>
+              </tr>
+            </tbody>
+          </table>
+          <p style="margin-top:14px">Both are pronounced <span class="mono">ēṇṭi</span> as often as <span class="mono">ēmiṭi</span> — the same word, and the course says so explicitly. Fast: <span class="mono">mī pērēmiṭi?</span></p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>One question, five different verbs</h3>
+          <p>"How is your ___?" is the same question word every time. <b>What changes is the agreement</b>, and this set is the clearest drill of Lesson 13's table you will get.</p>
+          <table class="tbl">
+            <thead><tr><th>Telugu</th><th></th><th>why that ending</th></tr></thead>
+            <tbody>
+              <tr><td><span class="rom">mī nānna elā unnāru?</span> <span class="tel">మీ నాన్న</span></td><td>your father</td><td><span class="mono">-āru</span> — respect</td></tr>
+              <tr><td><span class="rom">mī amma elā unnāru?</span> <span class="tel">మీ అమ్మ</span></td><td>your mother</td><td><span class="mono">-āru</span> — respect</td></tr>
+              <tr><td><span class="rom">mī pillalu elā unnāru?</span> <span class="tel">మీ పిల్లలు</span></td><td>your kids</td><td><span class="mono">-āru</span> — plural</td></tr>
+              <tr><td><span class="rom">mī koḍuku elā unnāḍu?</span> <span class="tel">మీ కొడుకు</span></td><td>your son</td><td><span class="mono">-āḍu</span> — masculine</td></tr>
+              <tr><td><span class="rom">mī kūturu elā undi?</span> <span class="tel">మీ కూతురు</span></td><td>your daughter</td><td><span class="mono">undi</span> — feminine</td></tr>
+              <tr><td><span class="rom">mī kotta illu elā undi?</span> <span class="tel">మీ కొత్త ఇల్లు</span></td><td>your new house</td><td><span class="mono">undi</span> — neuter</td></tr>
+            </tbody>
+          </table>
+          <div class="flag">
+            <b>Parents get the respectful ending, children do not</b>
+            <span class="mono">nānna</span> and <span class="mono">amma</span> are singular people but take <span class="mono">-āru</span>. Your son takes <span class="mono">-āḍu</span>. That is not grammar, it is <b>respect encoded as plural</b> — the same logic as <span class="mono">mīru</span>, and getting it backwards is a social error, not a grammatical one.
+          </div>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3>Telugu has no "where are you from?"</h3>
+          <p>You ask <b>where you <em>come</em> from</b>, in the habitual — which is what the habitual tense is for.</p>
+          <span class="ex">mīru ekkaḍa nunchi vastāru? <span class="tel">మీరు ఎక్కడ నుంచి వస్తారు?</span> <span class="en">— where are you from?</span></span>
+          <p style="margin-top:14px">Swap to the present continuous and it becomes a different question: <span class="mono">mīru ekkaḍa nunchi vastunnāru?</span> is "where are you coming from <em>right now</em>". <b>One morpheme apart, and you will be asked both.</b></p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div>
+          <h3><span class="mono">enta</span> and <span class="mono">enni</span> — Telugu makes you choose</h3>
+          <p>English says "how much" and "how many" too, but is lazy about it. Telugu is not.</p>
+          <span class="ex">idi enta? <span class="tel">ఇది ఎంత?</span> <span class="en">— how much is this? (shopping)</span></span>
+          <span class="ex" style="margin-top:10px">enni paṇḍlu unnāyi? <span class="tel">ఎన్ని పండ్లు ఉన్నాయి?</span> <span class="en">— how many fruit are there?</span></span>
+          <p style="margin-top:14px">Note <span class="mono">paṇḍlu</span>, the plural of <span class="mono">paṇḍu</span> from <a href="lesson-14-nouns.html">Lesson 14</a> — and <span class="mono">unnāyi</span>, the neuter-plural verb.</p>
+          <p><b>Age uses <span class="mono">enta</span>, not <span class="mono">ēmiṭi</span>.</b> Telugu asks <em>how much is your age</em>: <span class="mono">mī vayasu enta?</span> <span class="telugu">మీ వయసు ఎంత?</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="eia">
+  <div class="wrap">
+    <span class="eyebrow">The pattern worth the whole lesson</span>
+    <h2><span class="mono">e-</span> asks · <span class="mono">i-</span> is near · <span class="mono">a-</span> is far</h2>
+    <p class="lede">Every question word has two matched answers. Change the first letter and you have them. <b>No exceptions.</b></p>
+
+    <div class="scroll">
+      <table class="matrix">
+        <thead><tr><th class="grp"></th><th>Question <small>e-</small></th><th>Near <small>i-</small></th><th>Far <small>a-</small></th></tr></thead>
+        <tbody>
+          <tr><td class="grp lab">how</td><td class="pn">elā<span class="tel">ఎలా</span></td><td class="sfx">ilā<span class="tel">ఇలా</span></td><td class="sfx">alā<span class="tel">అలా</span></td></tr>
+          <tr><td class="grp lab">where</td><td class="pn">ekkaḍa<span class="tel">ఎక్కడ</span></td><td class="sfx">ikkaḍa<span class="tel">ఇక్కడ</span></td><td class="sfx">akkaḍa<span class="tel">అక్కడ</span></td></tr>
+          <tr><td class="grp lab">when</td><td class="pn">eppuḍu<span class="tel">ఎప్పుడు</span></td><td class="sfx">ippuḍu<span class="tel">ఇప్పుడు</span></td><td class="sfx">appuḍu<span class="tel">అప్పుడు</span></td></tr>
+          <tr><td class="grp lab">how much</td><td class="pn">enta<span class="tel">ఎంత</span></td><td class="sfx">inta<span class="tel">ఇంత</span></td><td class="sfx">anta<span class="tel">అంత</span></td></tr>
+          <tr><td class="grp lab">how many</td><td class="pn">enni<span class="tel">ఎన్ని</span></td><td class="sfx">inni<span class="tel">ఇన్ని</span></td><td class="sfx">anni<span class="tel">అన్ని</span></td></tr>
+          <tr><td class="grp lab">why</td><td class="pn">enduku<span class="tel">ఎందుకు</span></td><td class="sfx">induku<span class="tel">ఇందుకు</span></td><td class="sfx">anduku<span class="tel">అందుకు</span></td></tr>
+          <tr><td class="grp lab">which</td><td class="pn">ēdi<span class="tel">ఏది</span></td><td class="sfx">idi<span class="tel">ఇది</span></td><td class="sfx">adi<span class="tel">అది</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note-box win">
+      <b>You already know four of these fourteen</b>
+      <p><span class="mono">ikkaḍa</span>, <span class="mono">ippuḍu</span>, <span class="mono">idi</span> and <span class="mono">adi</span> are all in your deck already, learned as unrelated vocabulary. <b>They are one system, and the other ten come free.</b></p>
+      <p>English has fragments of this — <em>where / here / there</em>, <em>this / that</em>, and the archaic <em>thus</em>. Telugu kept the whole thing, which means <span class="mono">inta</span> "this much", <span class="mono">anni</span> "that many", <span class="mono">anduku</span> "that's why" are all derivable rather than memorised.</p>
+    </div>
+
+    <table class="tbl" style="margin-top:28px">
+      <thead><tr><th>Ask</th><th>Answer near</th><th>Answer far</th></tr></thead>
+      <tbody>
+        <tr><td><span class="rom">dōsa elā tiṇṭāru?</span><small>how do you eat a dosa?</small></td><td><span class="rom">ilā</span><small>like this</small></td><td><span class="rom">alā</span><small>like that</small></td></tr>
+        <tr><td><span class="rom">hōṭal ekkaḍa undi?</span><small>where is the restaurant?</small></td><td><span class="rom">ikkaḍa undi</span></td><td><span class="rom">akkaḍa undi</span></td></tr>
+        <tr><td><span class="rom">rent enta?</span><small>how much is the rent?</small></td><td><span class="rom">inta</span><small>this much</small></td><td><span class="rom">anta</span></td></tr>
+        <tr><td><span class="rom">ṭrain eppuḍu vastundi?</span></td><td><span class="rom">ippuḍu</span><small>now</small></td><td><span class="rom">appuḍu</span><small>then</small></td></tr>
+        <tr><td><span class="rom">ṭrain enduku ālasyaṁ?</span></td><td><span class="rom">induku</span><small>this is why</small></td><td><span class="rom">anduku</span><small>that is why</small></td></tr>
+      </tbody>
+    </table>
+
+    <p style="margin-top:20px;font-size:14.5px;color:var(--cream-dim);max-width:660px">And the two systems combine. <span class="mono">ēdi bāgundi?</span> asks "which is good?" — but to ask "<em>this</em> one?" you take the answer word and add the <span class="mono">-ā</span> particle: <span class="mono">idā? adā?</span> <span class="telugu">ఇదా? అదా?</span></p>
+  </div>
+</section>
+
+<section id="worked">
+  <div class="wrap">
+    <span class="eyebrow">Applying it</span>
+    <h2>Worked sentences</h2>
+    <table class="tbl">
+      <thead><tr><th>Telugu</th><th>Meaning</th><th></th></tr></thead>
+      <tbody>
+        <tr><td><span class="rom">mī pēru ēmiṭi?</span><br><span class="tel">మీ పేరు ఏమిటి?</span></td><td>What's your name?</td><td>No verb → <span class="mono">ēmiṭi</span> at the end.</td></tr>
+        <tr><td><span class="rom">mīru ēmi chēstunnāru?</span><br><span class="tel">మీరు ఏమి చేస్తున్నారు?</span></td><td>What are you doing?</td><td>Verb → <span class="mono">ēmi</span> before it.</td></tr>
+        <tr><td><span class="rom">mīru ekkaḍa veḷtunnāru?</span><br><span class="tel">మీరు ఎక్కడ వెళ్తున్నారు?</span></td><td>Where are you going?</td><td></td></tr>
+        <tr><td><span class="rom">ṭrain eppuḍu vastundi?</span><br><span class="tel">ట్రైన్ ఎప్పుడు వస్తుంది?</span></td><td>When will the train come?</td><td>Neuter subject → <span class="mono">vastundi</span>.</td></tr>
+        <tr><td><span class="rom">mīru evaru?</span><br><span class="tel">మీరు ఎవరు?</span></td><td>Who are you?</td><td>Default to <span class="mono">mīru</span> — you don't know them yet.</td></tr>
+        <tr><td><span class="rom">mī vayasu enta?</span><br><span class="tel">మీ వయసు ఎంత?</span></td><td>How old are you?</td><td>Literally "how much is your age".</td></tr>
+        <tr><td><span class="rom">ākāśaṁ enduku nīlangā uṇṭundi?</span><br><span class="tel">ఆకాశం ఎందుకు నీలంగా ఉంటుంది?</span></td><td>Why is the sky blue?</td><td><span class="mono">uṇṭundi</span>, not <span class="mono">undi</span> — a permanent property. Lesson 12.</td></tr>
+        <tr><td><span class="rom">ikkaḍa ē hōṭal bāgā uṇṭundi?</span><br><span class="tel">ఇక్కడ ఏ హోటల్ బాగా ఉంటుంది?</span></td><td>Which restaurant here is good?</td><td><span class="mono">ē</span> before a noun. In India <b>hotel means restaurant</b>.</td></tr>
+        <tr><td><span class="rom">nā rūm ēdi?</span><br><span class="tel">నా రూమ్ ఏది?</span></td><td>Which is my room?</td><td>No verb → the long form <span class="mono">ēdi</span>.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="anki">
+  <div class="wrap">
+    <span class="eyebrow">For import</span>
+    <h2>Question and answer words</h2>
+    <p class="lede">All twenty-one, as one system.</p>
+    <div class="anki-wrap">
+      <table class="anki">
+        <thead><tr><th class="f-en">English (with cue)</th><th>Romanized</th><th>Telugu</th><th style="text-align:center">Audio</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr class="sec"><td colspan="5">Question words — e-</td></tr>
+          <tr><td class="f-en">how</td><td class="f-rom">elā</td><td class="f-tel">ఎలా</td><td class="f-aud">[ ]</td><td class="f-ex">mīru elā unnāru?</td></tr>
+          <tr><td class="f-en">what (no verb in the sentence)</td><td class="f-rom">ēmiṭi</td><td class="f-tel">ఏమిటి</td><td class="f-aud">[ ]</td><td class="f-ex">mī pēru ēmiṭi?</td></tr>
+          <tr><td class="f-en">what (goes right before a verb)</td><td class="f-rom">ēmi</td><td class="f-tel">ఏమి</td><td class="f-aud">[ ]</td><td class="f-ex">mīru ēmi chēstāru?</td></tr>
+          <tr><td class="f-en">where</td><td class="f-rom">ekkaḍa</td><td class="f-tel">ఎక్కడ</td><td class="f-aud">[ ]</td><td class="f-ex">chārminār ekkaḍa undi?</td></tr>
+          <tr><td class="f-en">from where</td><td class="f-rom">ekkaḍa nunchi</td><td class="f-tel">ఎక్కడ నుంచి</td><td class="f-aud">[ ]</td><td class="f-ex">mīru ekkaḍa nunchi vastāru?</td></tr>
+          <tr><td class="f-en">who</td><td class="f-rom">evaru</td><td class="f-tel">ఎవరు</td><td class="f-aud">[ ]</td><td class="f-ex">mīru evaru?</td></tr>
+          <tr><td class="f-en">whose</td><td class="f-rom">evari</td><td class="f-tel">ఎవరి</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">when</td><td class="f-rom">eppuḍu</td><td class="f-tel">ఎప్పుడు</td><td class="f-aud">[ ]</td><td class="f-ex">ṭrain eppuḍu vastundi?</td></tr>
+          <tr><td class="f-en">why</td><td class="f-rom">enduku</td><td class="f-tel">ఎందుకు</td><td class="f-aud">[ ]</td><td class="f-ex">mīru enduku vastunnāru?</td></tr>
+          <tr><td class="f-en">how much (uncountable)</td><td class="f-rom">enta</td><td class="f-tel">ఎంత</td><td class="f-aud">[ ]</td><td class="f-ex">idi enta?</td></tr>
+          <tr><td class="f-en">how many (countable)</td><td class="f-rom">enni</td><td class="f-tel">ఎన్ని</td><td class="f-aud">[ ]</td><td class="f-ex">enni paṇḍlu unnāyi?</td></tr>
+          <tr><td class="f-en">which (no verb)</td><td class="f-rom">ēdi</td><td class="f-tel">ఏది</td><td class="f-aud">[ ]</td><td class="f-ex">nā rūm ēdi?</td></tr>
+          <tr><td class="f-en">which (before a noun)</td><td class="f-rom">ē</td><td class="f-tel">ఏ</td><td class="f-aud">[ ]</td><td class="f-ex">ē hōṭal bāgā uṇṭundi?</td></tr>
+          <tr class="sec"><td colspan="5">Answer words — near i- / far a-</td></tr>
+          <tr><td class="f-en">like this (answer to elā)</td><td class="f-rom">ilā</td><td class="f-tel">ఇలా</td><td class="f-aud">[ ]</td><td class="f-ex">dōsa ilā tiṇṭāru.</td></tr>
+          <tr><td class="f-en">like that</td><td class="f-rom">alā</td><td class="f-tel">అలా</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">there (far — cf. ikkaḍa)</td><td class="f-rom">akkaḍa</td><td class="f-tel">అక్కడ</td><td class="f-aud">[ ]</td><td class="f-ex">hōṭal akkaḍa undi.</td></tr>
+          <tr><td class="f-en">then, at that time (cf. ippuḍu)</td><td class="f-rom">appuḍu</td><td class="f-tel">అప్పుడు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">this much (answer to enta)</td><td class="f-rom">inta</td><td class="f-tel">ఇంత</td><td class="f-aud">[ ]</td><td class="f-ex">rent inta.</td></tr>
+          <tr><td class="f-en">that much</td><td class="f-rom">anta</td><td class="f-tel">అంత</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">this many (answer to enni)</td><td class="f-rom">inni</td><td class="f-tel">ఇన్ని</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">that many</td><td class="f-rom">anni</td><td class="f-tel">అన్ని</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">this is why (answer to enduku)</td><td class="f-rom">induku</td><td class="f-tel">ఇందుకు</td><td class="f-aud">[ ]</td><td class="f-ex"></td></tr>
+          <tr><td class="f-en">that is why, therefore</td><td class="f-rom">anduku</td><td class="f-tel">అందుకు</td><td class="f-aud">[ ]</td><td class="f-ex">varṣaṁ paḍindi, anduku ṭrain ālasyaṁ.</td></tr>
+          <tr class="sec"><td colspan="5">Other words from the lesson</td></tr>
+          <tr><td class="f-en">age (asked with enta, not ēmiṭi)</td><td class="f-rom">vayasu</td><td class="f-tel">వయసు</td><td class="f-aud">[ ]</td><td class="f-ex">mī vayasu enta?</td></tr>
+          <tr><td class="f-en">son</td><td class="f-rom">koḍuku</td><td class="f-tel">కొడుకు</td><td class="f-aud">[ ]</td><td class="f-ex">mī koḍuku elā unnāḍu?</td></tr>
+          <tr><td class="f-en">daughter</td><td class="f-rom">kūturu</td><td class="f-tel">కూతురు</td><td class="f-aud">[ ]</td><td class="f-ex">mī kūturu elā undi?</td></tr>
+          <tr><td class="f-en">children, kids</td><td class="f-rom">pillalu</td><td class="f-tel">పిల్లలు</td><td class="f-aud">[ ]</td><td class="f-ex">mī pillalu elā unnāru?</td></tr>
+          <tr><td class="f-en">sky</td><td class="f-rom">ākāśaṁ</td><td class="f-tel">ఆకాశం</td><td class="f-aud">[ ]</td><td class="f-ex">ākāśaṁ nīlangā uṇṭundi.</td></tr>
+          <tr><td class="f-en">restaurant (in India, hotel = eatery)</td><td class="f-rom">hōṭal</td><td class="f-tel">హోటల్</td><td class="f-aud">[ ]</td><td class="f-ex">ē hōṭal bāgā uṇṭundi?</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="try">
+  <div class="wrap">
+    <span class="eyebrow">From the lesson</span>
+    <h2>Quick self-test</h2>
+    <ul class="try">
+      <li><span class="q">Turn <span class="mono">mīru telugu māṭlāḍutāru</span> into a question.</span><span class="a">mīru telugu māṭlāḍutārā? — just add -ā.</span></li>
+      <li><span class="q">Greet someone respectfully, then casually, with no pronoun.</span><span class="a">bāgunnārā? / bāgunnāvā? — the verb already carries the person.</span></li>
+      <li><span class="q">Why is it <span class="mono">māṭlāḍutundā</span> and not <span class="mono">*māṭlāḍutundiā</span>?</span><span class="a">Telugu won't put two vowels together. The final i gives way to the ā.</span></li>
+      <li><span class="q">"What is your name?" and "What are you doing?" — and why different words for "what"?</span><span class="a">mī pēru ēmiṭi? / mīru ēmi chēstunnāru? — ēmiṭi with no verb, ēmi before one.</span></li>
+      <li><span class="q">Where does a question word go?</span><span class="a">Immediately before the verb. The verb still comes last.</span></li>
+      <li><span class="q">"How is your daughter?" and "How is your son?"</span><span class="a">mī kūturu elā undi? / mī koḍuku elā unnāḍu? — feminine takes undi, masculine -āḍu.</span></li>
+      <li><span class="q">Why does "how is your father" use <span class="mono">-āru</span>?</span><span class="a">Respect encoded as plural, same as mīru. Children get the singular.</span></li>
+      <li><span class="q">Ask someone where they're from.</span><span class="a">mīru ekkaḍa nunchi vastāru? — habitual. The continuous vastunnāru? asks where they're coming from right now.</span></li>
+      <li><span class="q">Fill in: elā / ikkaḍa / ___ / eppuḍu / ippuḍu / ___</span><span class="a">ilā-alā, ekkaḍa, akkaḍa, appuḍu. e- asks, i- is near, a- is far.</span></li>
+      <li><span class="q">You know <span class="mono">enni</span>. What are "this many" and "that many"?</span><span class="a">inni and anni. Swap the first letter.</span></li>
+      <li><span class="q">"It rained, that's why the train is late."</span><span class="a">varṣaṁ paḍindi, anduku ṭrain ālasyaṁ. — anduku is the far answer to enduku.</span></li>
+      <li><span class="q">How old are you? Careful which question word.</span><span class="a">mī vayasu enta? — how much, not what.</span></li>
+      <li><span class="q">Ask five real questions about the room you're in.</span><span class="a">Question word immediately before the verb, verb last.</span></li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><span class="mono">Foundational Telugu</span> · Lesson 16 · week 3, questions · raw captions in <span class="mono">sources/transcripts/week-03/</span></p>
+    <p><a href="lesson-15-adjectives-verbs.html">← Lesson 15 · Adjectives &amp; verbs</a> · <a href="../index.html">Course home</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
