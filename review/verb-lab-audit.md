@@ -264,3 +264,5 @@ which for a household and an office is unlikely.
 The cost is visible on the lesson pages: four cells in Lesson 11's tables (`āḍabōtunnāmu`,
 `āḍabōtunnāyi`, and the `chēyi` equivalents) are correct Telugu taught by the course but are not
 drillable, because they are the `mēmu` and `avi` rows.
+
+All open native-speaker questions from every lesson are consolidated in `review/questions.md`.

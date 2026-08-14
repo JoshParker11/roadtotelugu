@@ -1,28 +1,84 @@
 # Practice, and what is still open
 
-Decisions and reasoning that were worked out in conversation and would otherwise be lost.
-Written 2026-08-12, at the point where week 1 was finished and week 2 had just started.
+Decisions and reasoning worked out in conversation that would otherwise be lost.
+Started 2026-08-12; the strategy below was rewritten 2026-08-14, after the course extraction
+finished and the masters were re-sequenced.
 
 ---
 
-## The focused hour
+## The hour — phase A, roughly day 4 to day 30
 
-Steady state, once Anki reviews have built up:
+Morning Anki (15 new words, 3 new sentences, reviews) and the commute are separate. This is the
+dedicated block, and **its job is converting recognition into production, not meeting new
+vocabulary.** New vocabulary is the morning's job.
 
-| | |
-|---|---|
-| **25 min** | **Anki.** Reviews first, then new cards. Non-negotiable — skipping a day costs more than it saves. Every answer spoken aloud. |
-| **15 min** | **Verb Lab.** 5 verbs, "weakest first" preset. Notice step off once familiar. |
-| **10 min** | **One lesson section or deep dive**, ~3× a week. Otherwise a song or story page. |
-| **10 min** | **Free production.** Five true sentences about your actual day, aloud. Write down what you couldn't say — that list is the next question for a native speaker. |
+| min | | |
+|---|---|---|
+| **10** | **Yesterday's misses** | Retrieve what you wrote in the inbox. This is the loop that makes the log worth keeping. |
+| **20** | **Today's unlocked sentences** | ~30 land per day. Read → cover → produce from English → then **vary them** (change person, tense, negate). |
+| **10** | **Verb Lab** | Weakest-first. |
+| **10** | **Native content** | One short clip. No obligation to understand — exposure, and anything recognised goes in the inbox. |
+| **10** | **Free production + inbox** | Five true sentences about your day. Write down what you could not say. |
 
-**Why that order.** Reviews and new cards are the only genuinely time-bounded thing and need
-the freshest attention. The Verb Lab is also high-effort retrieval, so it comes second — which
-means ~40 minutes of hard retrieval before anything easy. The reading at the end is not filler,
-it is recovery that makes the hard part sustainable daily. Don't cut it to drill more.
+**The 20-minute block is the hour.** Everything else supports it. Those sentences use exactly the
+words learned that morning, which is what makes them worth more than anything else at this stage.
 
-The free-production block is the one people skip and the one that converts knowledge into
-speech.
+This shifts around day 30–45, when the N+1 sentences stop being a stretch and native content
+takes over the middle twenty.
+
+### When there is only fifteen minutes
+
+Ranked, so the choice is never in question:
+
+1. **Anki reviews** — always; the only genuinely time-bounded thing
+2. **The N+1 set** — the day's highest-value retrieval
+3. **Verb Lab, weakest-first**
+4. **One native clip, once through**
+5. **Minimal pairs aloud** — `review/minimal-pairs.tsv`
+
+### Two systems, deliberately separate
+
+| | owns | state |
+|---|---|---|
+| **Anki** | the permanent core — 15 words + 3 sentences a day | scheduled forever |
+| **The drill** (to build) | wide practice over everything unlocked | lightweight, disposable |
+
+They never conflict because they do different work, and **the queue will always exceed the
+time**. That is correct: the drill's job is triage, not completion. Nothing breaks when a
+practice item slides, which is exactly why it cannot live in Anki.
+
+### Why Anki stays at 3 sentences a day
+
+Every Anki card is a lifetime commitment at roughly a 10× review multiplier. 15 words + 3
+sentences already projects to the ceiling below. What should change is *which* three — the most
+reusable, not merely the next in unlock order. The other ~27 that unlock each day are practice
+material, not deck material: you do not need to retain them, you need to process them.
+
+---
+
+## Standing constraints
+
+Three decisions that should not be quietly reversed later.
+
+**Do not generate novel Telugu.** Every Telugu string in this project traces to a verified
+source, and that discipline is why the deck is trustworthy. Generated sentences are *plausible*
+but unverified, and would be automating errors into a deck reviewed daily and not yet auditable
+by the learner. Generating **exercises from verified Telugu** — cloze, recombination through the
+audited conjugation engine, English→Telugu prompts — is unlimited and safe. Revisit generation
+only when a native speaker can spot-check a batch, or when the 1,419 unlockable sentences run
+dry, whichever comes first.
+
+**The review deck is a closed set.** Mined native sentences do not go into it. The phase-one
+sentences are *sequenced* — `unlock_day` makes them a curriculum — and dropping an eight-unknown
+native sentence in destroys that property. Mined **words** append to the word queue; mined
+**sentences** are held separately with a computed unlock day and graduate into the reviewable set
+on their own when vocabulary catches up.
+
+**The study order is append-only.** A word that has a `study_order` keeps it forever; new words
+append. Re-sorting would renumber cards already in the deck, and the only way to make Anki honour
+a new order is delete-and-reimport, which destroys scheduling. It also keeps the path linear —
+"word 312 came on day 21" stays true. `sequence.py --reorder` forces a full recompute and is
+correct exactly once, before the first import.
 
 ### The review-load ceiling
 
@@ -109,24 +165,54 @@ convention not error, so it is mechanically convertible when wanted.
 
 ---
 
-## Open threads
+## What to build next, in order
 
-### Blocked on you
+1. **Inbox + weekly ingest.** `log/inbox.md`, append-only, no format — type a line whenever, from
+   anywhere. One weekly command parses what it can, stages new words for the masters, and folds
+   the rest into dated log entries with the Anki numbers auto-filled. **This is the only item with
+   a deadline**: numbers can be reconstructed later, what you were thinking on day 4 cannot.
+   Weekly rather than daily, so the append-only order stays stable.
+
+2. **The recombination drill.** A page, not a terminal tool — it has to run during the session,
+   record state for free, and work on a phone. Same architecture as the Verb Lab: data generated
+   offline into JSON, drill runs static, state in `localStorage`.
+
+   *Design settled in conversation:* the drill item is the **transformation**, not the sentence —
+   72 variants per sentence is not a space to enumerate, and what is being trained is the
+   operation. Each sentence is served with one transformation, chosen by which operation is
+   weakest. Revisits escalate through modes rather than repeating: **comprehend** (day it
+   unlocks) → **produce** (+1) → **cloze** (+3) → **transform** (+7, +16, +35), on the Verb Lab's
+   existing Leitner gaps.
+
+   *Measured against the corpus:* **468** unlockable sentences contain a Verb Lab form and are
+   recombinable by tense and polarity; **131** also have a bare pronoun subject and can be
+   recombined by person. Tense swaps are always safe. **Person swaps are not** — `ikkaḍa okaṭi
+   undi` → `nēnu ikkaḍa okaṭi unnānu` is grammatical and nonsense — so restrict them to the 131.
+
+3. **Text-analysis page.** Paste Telugu, get: coverage against the known set; the unlock curve
+   ("learn the top 20 unknown words from *this text* and coverage goes 34% → 58%"); the text
+   rendered with known words dimmed; and the sentences already at N+1. **Split unknown words into
+   two piles** — already in the master at position 400 (arrives day 27) versus not in the master
+   at all. Those need opposite actions and lumping them hides the only decision the page exists
+   to support. Plus **projected comprehensibility**: a day slider turns "someday" into a date.
+
+4. **The podcast.** An hour of audio with a timestamped transcript, supplied but not yet ingested.
+   At this vocabulary the point is not comprehension: it is (a) becoming a frequency corpus that
+   votes on the word order, as the family recordings already do, (b) the playlist of lines already
+   at 100% coverage — real native audio, comprehensible now, and (c) a number to aim at.
+
+5. **Course leftovers, not blocking.** Six one-minute story videos (11, 12, 15, 17, 18, 20), Quiz
+   5 and Practice Test 2, and ~20 minutes of conversation and cultural-immersion lessons the
+   learner has deliberately deferred as outside the core.
+
+### Blocked on the learner
 
 | Thread | Blocked on |
 |---|---|
-| Re-import to Anki | Deliberately deferred. Word file is 1,993 rows with clean fronts; current deck has the old concatenated glosses. |
-| `review/*.tsv` — 355 rows total, **0 decided** | The 16 in `book-script-mismatch.tsv` are the only actively wrong Telugu in the project. Highest value per minute of anything on this list. |
-| Commute audio | `brew install ffmpeg`, plus HyperTTS actually run. `tools/build_audio.py` is written and untested against real audio. |
-| Spoken Telugu vocab source | Adapter written in `tools/adapters.py`; file never supplied. |
-
-### Offered and deferred
-
-- **Minimal-pair audio generator** (see above).
-- ~~**Session log**~~ — built, see below.
-- **Generated midterm/final** — the week-1 test is a fixed bank of 61. After two weeks it
-  measures recall of the test rather than the language. The midterm should draw randomly from
-  `data/master_sentences.tsv` by lesson tag so each sitting differs.
+| The clean re-import | Ready. See `anki/IMPORT.md` — delete both note types, then import. One time only. |
+| `review/questions.md` | 12 questions for a native speaker, consolidated. Ten minutes with his wife clears most of them. |
+| `review/*.tsv` triage | 355 rows, 0 decided. `book-script-mismatch.tsv` is the only actively wrong Telugu in the project. |
+| Commute audio | `brew install ffmpeg`, plus HyperTTS actually run. |
 
 ## The practice log
 
