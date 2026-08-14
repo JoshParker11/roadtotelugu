@@ -100,15 +100,52 @@ No change needed. Confirms one existing decision too: the course states outright
 does not distinguish the perfect from the simple past, which is exactly why
 `concepts/verb-forms-explained.md` left it out of the Verb Lab.
 
-## Habitual & future — video 19
+## Habitual & future — videos 16 & 19, audited 2026-08-13
 
-Not yet audited.
+**Verdict: clean. 47 of 47 course-attested forms match.**
+
+The largest of the three: video 19 gives full positive *and* negative tables across all pronouns
+for `āḍu`, `chēyi` and `māṭlāḍu`. Eleven first-person positives, six first-person negatives, and
+thirty cells from the pronoun tables.
+
+Two results worth naming, because neither had been checked against any source before today:
+
+- **The she/it negative ending is `-du`, not `-di`** — `chēyadu`, `āḍadu`. `END.neg[3]` had this
+  right. The video explains the reason, which is a good one: `*āḍadi` would be identical to the
+  pronoun `adi` sitting next to it, so the vowel shifted to keep them apart.
+- **`kūrchōnu`** matches the vowel merger the video describes for `-ō` verbs.
+
+One ambiguity the course does not mention and the Verb Lab cannot show, since it has no `avi`
+row: the `avi` negative ending is `-vu`, **identical to `nuvvu`**. `āḍavu` is both "you don't
+play" and "they (things) don't play".
 
 ---
 
-## Standing gaps, unchanged after two audits
+## Scorecard after week 2
+
+| Tense | Video | Forms checked | Mismatches |
+|---|---|---|---|
+| Present continuous | 9, 10 | 27 | 0 |
+| Past | 13, 14 | 19 | 0 |
+| Habitual & future | 16, 19 | 47 | 0 |
+| **Total** | | **93** | **0** |
+
+The Verb Lab's 1,919 forms were generated from a PDF and inference, with no native-speaker or
+authoritative check. Week 2 has now verified the three tenses that carry ordinary conversation —
+every paradigm in the default `core` drill scope except the two negatives derived from them.
+
+Two fixes came out of this, both from the Lesson 8 pass: the nasal-assimilation bug in
+romanization (180 forms) and the missing `negPresent` paradigm (210 forms added).
+
+---
+
+## Standing gaps, unchanged after three audits
 
 - **The `avi` row** (non-human plural, `-tunnāyi` / `-āyi`) is not drillable. Six persons drilled,
   eight taught.
 - **"We" is `manaṁ` / `-āṁ`** where the course teaches `manamu` / `mēmu` with `-āmu`. Same cell,
   colloquial vs careful register.
+
+Both are cosmetic and both are now three-for-three, so they are a deliberate scope choice rather
+than an oversight. Worth revisiting only if the `avi` row starts coming up in real conversation,
+which for a household and an office is unlikely.

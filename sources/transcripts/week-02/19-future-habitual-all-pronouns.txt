@@ -1,0 +1,588 @@
+SOURCE: Udemy course, Week 2, video 19 — "Combined Future & Habitual Tense | Verb Conjugations for all Pronouns" (16 min)
+CAPTURED: 2026-08-13
+STATUS: raw auto-generated captions, unedited. Reconstructed in
+        LEARNING_GUIDE/lessons/lesson-10-future-habitual.html.
+NOTE:   last of the three authoritative paradigm statements used to audit
+        GRAMMAR_LAB/data/engine.js. Findings in review/verb-lab-audit.md.
+
+---
+
+Namaskaram.
+
+Today we're going to look at all the verb conjugations of Telugu s unique, combined, habitual and
+
+future tense.
+
+In the last lesson we looked at the suffix tanu and this was specific to the first person, so you would
+
+use it with Nanu.
+
+The new part of Tanu is the person marker and this changes based on who you're referring to.
+
+Let's look at a table with all the verb conjugations across all the pronouns.
+
+As we've seen with the previous tenses.
+
+Here2 the person marker mirrors the last syllable of the pronoun.
+
+We've already seen the person marker for the sentences of the form I do I in Telugu is nano.
+
+So the suffix is tanu.
+
+The new, which is the person marker, mirrors the last syllable of nano.
+
+Nouveau is the word for you, so the suffix is tabu, where wu is the person marker derived from the
+
+last syllable of nuvo.
+
+This pattern repeats across all pronouns, so once you understand the pattern, it's very easy to conjugate
+
+verbs in Telugu.
+
+To say he does something we use the suffix da do.
+
+Do comes from vadu.
+
+Athanu is also a singular form of he, so it shares the same suffix.
+
+The words for she are adi and ami.
+
+Here the person marker is d, which is derived from adi.
+
+However, as we've seen in other tenses, the feminine suffixes usually deviate from the pattern, so
+
+here the suffix is tundi.
+
+Next, the words for we are mamu and manamu, and the suffix is tamu.
+
+For the formal and plural pronouns miru, ayana, aveda and vadu, the suffix is taru, where ru is
+
+derived from the last syllable of Miro coming to.
+
+The two neuter pronouns are thee and avi.
+
+Adi is exactly the same as the feminine pronoun, so the suffix stays tondai.
+
+The plural form avi has the suffix tai.
+
+The suffixes don't mean much by themselves, so let's try them out with a verb.
+
+Aadu is the verb play.
+
+Pause the video and take a moment to complete the words given here.
+
+To say I play.
+
+We say Nino and Tanu.
+
+To say you play, we say nguvu ata vo to say he plays.
+
+We say vadakadu or athanata kadu for she plays.
+
+The suffix breaks from the pattern.
+
+So we get r d r d r or arm are tuned for we play we get Mame Adamo or Manu Adamo for all the formal
+
+or plural pronouns we use are so you play is mere Ataru.
+
+He plays is Ayana Ataru, she plays avid Ataru.
+
+They play waldo Ataru.
+
+The neuter singular pronoun adhi is the exact same as the feminine informal pronoun, so it plays is
+
+adhi artandi.
+
+The neuter plural pronoun is av.
+
+To say they play, we say av aarthi.
+
+Please note that this tense in Telugu refers to both habitual as well as future tense.
+
+So this could be I play or I will play depending on the context.
+
+Let's add some more detail to the sentence I play tennis.
+
+Neno.
+
+Tennis.
+
+Ah, Tanu, you play tennis Nouveau tennis.
+
+And he plays tennis.
+
+With tennis or tennis?
+
+And she plays tennis.
+
+The tennis R or tennis?
+
+Artandi.
+
+We play tennis.
+
+Tennis R or tennis?
+
+Adamo.
+
+In the formal or plural pronouns you play tennis is mere tennis.
+
+He plays tennis and tennis R she plays tennis.
+
+Avid tennis R they play tennis.
+
+Waldo tennis R2 it plays tennis.
+
+Other tennis r they play tennis r v tennis.
+
+Aarthi.
+
+Let's try a different verb this time.
+
+Do that is Chay.
+
+Take a moment, pause the video and try these conjugations out yourself.
+
+You can look at the correct conjugations.
+
+They follow the exact same pattern.
+
+Nino Castano, Nuevo Chester, Vadu Estado de gestion de Mamou, Chesta mu miru iena avida vadu all
+
+follow Chester Ru and RV Chester I.
+
+To say I do yoga, we can say Nino yoga.
+
+Chester.
+
+Do you do yoga?
+
+Yoga?
+
+Chester Wu he does yoga, Vodou or yoga?
+
+Chester do she does yoga or yoga?
+
+Chester we do yoga Mamu or yoga Chester mu with a formal or plural pronouns.
+
+You do.
+
+Yoga is yoga.
+
+Chester.
+
+He does yoga and yoga.
+
+Chester.
+
+She does yoga.
+
+and yoga.
+
+They do yoga well.
+
+Yoga?
+
+It does yoga.
+
+The yoga chest.
+
+They do yoga.
+
+Yoga?
+
+Chest high.
+
+Let's try another verb this time.
+
+Mat ladoo.
+
+Which means speak.
+
+Pause the video and try it out.
+
+I speak Telugu is Nino Telugu?
+
+Mat la Tanu.
+
+You speak Telugu?
+
+Telugu.
+
+He speaks Telugu.
+
+Vadhu or Athanu.
+
+Telugu.
+
+Matlab.
+
+Tada.
+
+She speaks Telugu.
+
+Adi or Telugu.
+
+Hindi.
+
+We speak Telugu Mimo or Manamu.
+
+Telugu Matlab Tamu.
+
+When you speaking formally or to a group you speak Telugu Mira.
+
+Telugu.
+
+Matlab.
+
+Rue.
+
+He speaks Telugu and Telugu.
+
+Matt La rue.
+
+She speaks Telugu.
+
+Telugu.
+
+Matt la rue.
+
+They speak Telugu.
+
+Telugu.
+
+Matt.
+
+La rue.
+
+The neuter singular.
+
+It speaks Telugu, Telugu, Hindi and the neuter plural.
+
+They speak Telugu.
+
+Telugu.
+
+Mathlouthi.
+
+Now let's look at negative verbs in this combined habitual or future tense.
+
+Here we use the suffix r followed by the person marker.
+
+So in the first person it becomes anu.
+
+Where nu is the person marker, of course, depending on who you are referring to.
+
+This changes to avo.
+
+Adieu, adieu aru and so on.
+
+For example, nano Arduino means I don't play or I won't play depending on the context.
+
+The root verb for play is aadu and the suffix since you're referring to I or Nino is Uno.
+
+Let's look at all the negative suffixes in this tense with Nino.
+
+We get anu with.
+
+The suffix is avo for vadu or athanu, the suffix is aadu for adi and ami.
+
+The suffix is adu.
+
+And you can imagine why if we use the person marker that we usually use, which is d, the suffix just
+
+becomes adi, which is exactly the same as the pronoun.
+
+So the suffix here changes slightly to adu.
+
+With mammo and manamu we get amu with the.
+
+For formal or plural pronouns, we use the suffix aru with it, that is, adi.
+
+It is the exact same as the feminine conjugation.
+
+So adu and with avi we use avo.
+
+Let's look at this with a verb che that means do.
+
+So to say don't.
+
+Across pronouns, we use the negative verb conjugation.
+
+Remember that in the negative form, j does not change to chase as it does in the positive forms, so
+
+it remains j in the verb conjugation.
+
+Pause the video and take a moment to try it out for yourself.
+
+To say I don't, we say Nino Jaanu.
+
+Bear in mind that Nino Jaanu and all the conjugations in this table refer to both.
+
+Don't as well as won't you don't is.
+
+No, he doesn't vadakadu.
+
+She doesn't Adhi or Amit jaadoo we don't mami or manam shyamu you don't in a respectful fashion is miru
+
+chaaru.
+
+He doesn't in a respectful context is Ayana Chaaru.
+
+She doesn't have a chaaru and they don't value chaaru For the neuter singular, we follow the same pattern
+
+as feminine.
+
+So do, and they don't.
+
+When we're talking about neuter gender is Avi Chai uwu.
+
+I don't do yoga.
+
+Nino yoga?
+
+No, you don't do yoga.
+
+Yoga?
+
+He doesn't do yoga.
+
+Why do yoga or yoga?
+
+She doesn't do yoga or yoga or yoga.
+
+We don't do yoga, yoga or yoga.
+
+The formal versions.
+
+You don't do yoga, Miru yoga, aru.
+
+He doesn't do yoga.
+
+Ayano yoga aru she doesn't do yoga.
+
+Yoga Aru they don't do yoga.
+
+Yoga aru it doesn't do yoga.
+
+The yoga, do they?
+
+Or those don't do yoga.
+
+Yoga?
+
+Let's try another verb this time.
+
+Aadu to say don't play tennis.
+
+I don't play tennis.
+
+Tennis?
+
+Adorno, you don't play tennis?
+
+No tennis.
+
+Adorno.
+
+He doesn't play tennis.
+
+Vadu or Adorno.
+
+Tennis.
+
+Aadu.
+
+She doesn't play tennis.
+
+The tennis Aadu or tennis Aadu.
+
+We don't play tennis.
+
+Mammo or manamu.
+
+Tennis.
+
+Adamou, the formal or plural forms.
+
+Miru.
+
+Tennis.
+
+Aadu ayana.
+
+Tennis.
+
+Aadu avida.
+
+Tennis.
+
+Aadu waldo tennis.
+
+Aadu the neuter form.
+
+It doesn't play tennis.
+
+The tennis.
+
+Aadu the neuter form of.
+
+They don't play tennis.
+
+Havi tennis.
+
+Aadu.
+
+The last example uses mart laddu which means speak.
+
+Pause the video and try to say don't speak Telugu.
+
+Nino.
+
+Telugu.
+
+Nuvvu.
+
+Telugu.
+
+Matina, Davao.
+
+Vaadu.
+
+Telugu.
+
+Telugu.
+
+Malayalam.
+
+Telugu.
+
+Malayalam and Telugu.
+
+Malayalam.
+
+Telugu.
+
+Malayalam.
+
+Telugu.
+
+Malayalam.
+
+Tamil.
+
+Telugu.
+
+Malayalam and Telugu.
+
+Malayalam.
+
+Telugu.
+
+Telugu.
+
+Malayalam.
+
+Telugu.
+
+Malayalam.
+
+Telugu.
+
+Malayalam.
+
+I hope you understood the pattern behind the negative verb conjugations in the combined habitual and
+
+future tense across both the positive conjugations as well as the negative conjugations.
+
+As long as you understand the pattern, you can frame sentences easily.
+
+Let's test your Telugu with some quick exercises, especially using verbs that we haven't covered in
+
+this video.
+
+This is because as long as you know the pattern, it follows exactly in the same manner for any verb.
+
+Pause the video and try to guess the English meaning of this sentence.
+
+Vadu Repu Padu.
+
+Padu is the verb sing.
+
+Padu means won't sing.
+
+Repu means tomorrow.
+
+Vadu, of course, is the informal form of saying he.
+
+So this sentence means he won't sing tomorrow.
+
+You can note here that the person marker is do which mirrors the last syllable of vadu.
+
+Let's try the positive version of this sentence.
+
+He will sing tomorrow.
+
+Will sing is pathar do.
+
+The suffix taru mirrors the pronoun vadu.
+
+Do so I repeat the sentence.
+
+What to do?
+
+The next example is slightly longer.
+
+Murthy garu India punishes Tharu.
+
+This means murthy works in India.
+
+The verb work is punish and it conjugates as punish.
+
+Tharu.
+
+We use the respectful person marker ru.
+
+So the respectful conjugation chase Tharu.
+
+Because murthy is somebody older or somebody we want to show respect to.
+
+We know this because we've called him murthy.
+
+Garoo.
+
+Garoo is the honorific suffix which means something like sir or madam.
+
+Let's try the negative version of this.
+
+Murthy doesn't work in India.
+
+And remember to use the respectful suffixes for murthy.
+
+Murthy garu.
+
+India.
+
+We use the respectful conjugation chaaru to say doesn't.
+
+Next we have a verb that we've seen in this video Mart Laddu, which means speak.
+
+You speak Telugu.
+
+Pause the video and try both the formal and informal versions of the sentence.
+
+The formal version of you is Miru, so the sentence is Miru.
+
+Telugu matlab Tharu.
+
+The informal version of you is Nuvvu.
+
+So the sentence is Nuvvu Telugu Matlab.
+
+I hope you two have begun to speak some Telugu.
+
+That's it for today's lesson.
+
+Thank you.
+
+Dhanyavad allu.

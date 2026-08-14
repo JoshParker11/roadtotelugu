@@ -210,6 +210,16 @@ W225d04bfec7a	to home, homewards (illu + -ki)	iṇṭiki	ఇంటికి		Sun
 Wb8cda5ef17c5	"morning, in the morning (no ""in"" needed)"	podduna	పొద్దున		nēnu podduna ṭī tāgānu.	src::lesson set::005
 W321bbcc07a33	office (English loan, said āphīsu)	āphīsu	ఆఫీసు		nēnu ninna āphīsuki veḷḷānu.	src::lesson set::005
 W3f4301b5c6cc	songs (plural of pāṭa — the -lu plural)	pāṭalu	పాటలు		vāḷḷu pāṭalu pāḍāru.	src::lesson set::005
+Wa965f03f301d	day; every day (on its own, before a verb)	rōju	రోజు		nēnu rōju ṭī tāgutānu.	src::lesson src::anki src::book1000 src::top1000 topic::time-words flag::multi-gloss set::005
+W4d976b30ff1e	tomorrow	rēpu	రేపు		nēnu rēpu ṭī tāgutānu.	src::lesson src::anki src::book1000 topic::time-words set::005
+W67013b50d662	day after tomorrow	elluṇḍi	ఎల్లుండి		elluṇḍi veḷtānu.	src::lesson src::anki topic::time-words flag::inflected set::005
+W5b927e9a0aab	week	vāraṁ	వారం		prati vāraṁ — every week.	src::lesson src::anki src::top1000 topic::time-words set::005
+W8c1a72d1ccc4	month	nela	నెల		prati nela oka pustakaṁ chaduvutānu.	src::lesson src::anki src::top1000 topic::time-words set::005
+Wbd0ac31bcf14	every, each (goes before the noun)	prati	ప్రతి		prati vāraṁ guḍiki veḷtānu.	src::lesson src::anki src::top1000 topic::postpositions-connectors flag::multi-gloss set::005
+W90c3cc058adf	temple	guḍi	గుడి		nēnu prati vāraṁ guḍiki veḷtānu.	src::lesson src::anki topic::remaining-high-utility-words flag::multi-gloss set::005
+Wd4580833747e	year	ēḍādi	ఏడాది		prati ēḍādi — every year.	src::lesson set::005
+W68b8c86776e4	"next, coming (a form of rā — ""the coming week"")"	vachchē	వచ్చే		vachchē vāraṁ guḍiki veḷtānu.	src::lesson set::005
+W2c9b5fc302b6	"hours, o'clock (takes -ki for ""at"")"	gaṇṭalu	గంటలు		ēḍu gaṇṭalaki — at seven o'clock.	src::lesson set::005
 W4c4ece041865	own (his/her own — points back to the subject)	tana	తన		vāḍu tana nānna lāgā māṭlāḍtāḍu	src::site src::top1000 cat::grammar flag::multi-gloss set::005
 W3d8ade866d06	what	ēmi	ఏమి		ēmi jarigindi?	src::site src::anki src::top1000 cat::grammar topic::question-words set::005
 W075506f24420	who	evaru	ఎవరు		evaru vastunnāru?	src::site src::anki src::top1000 src::book1000 cat::grammar topic::question-words set::005
@@ -245,16 +255,16 @@ W069f6692a10b	summer	vēsavi	వేసవి		vēsavilō	src::site src::top1000 
 W6eab88753e39	to turn, to roam	tirugu	తిరుగు		tirigi — having turned	src::site src::anki cat::verb topic::transport-travel flag::multi-gloss set::005
 Wface8fdc36a0	moment	kṣaṇaṁ	క్షణం		ā kṣaṇaṁ	src::site src::top1000 cat::noun set::005
 W2de2c3eb36f1	way, road, route; lead	dāri	దారి		dārilō — on the way	src::site src::anki src::top1000 cat::other topic::transport-travel flag::multi-gloss set::005
-W1c61677ebc86	to join, to mix	kalupu	కలుపు		aḍugu kalipi	src::site src::anki cat::verb topic::useful-action-verbs flag::multi-gloss set::005
-Wec2273d3e053	at all, really; original	asalu	అసలు		asalu vinaḍu	src::site src::top1000 cat::grammar set::005
-W85b0ccf71f90	world (Urdu)	duniyā	దునియా		mogōḷḷa duniyā	src::site src::anki cat::urdu topic::hyderabadi-specials-slang set::005
-Wd34e29cc830b	wedding	peḷḷi	పెళ్ళి		pelli pāṭa	src::site src::anki cat::noun topic::remaining-high-utility-words set::005
-Wdcdca81fe114	dream	kala	కల		kalalu — dreams	src::site src::anki cat::noun topic::practical-daily-nouns set::005
-W9a99684e37d5	doll; Picture	bomma	బొమ్మ		the Telugu word for guḍiyā	src::site src::anki src::book1000 cat::noun topic::practical-daily-nouns flag::multi-gloss set::005
-W517b6e314590	How are you? (respectful)	mīru eṭla unnāru?	మీరు ఎట్ల ఉన్నారు?		always return the question	src::site cat::other flag::phrase set::005
-W8ec706f73626	aunty / mother-in-law (address)	attayya	అత్తయ్య		bāgundi attayya	src::site cat::other set::005
-W6305e75bddc5	not yet	inkā lēdu	ఇంకా లేదు		inkā tinalēdu	src::site cat::other flag::phrase set::005
-W264f61d31acc	at the office	āphīsulō	ఆఫీసులో		āphīsulō chālā pani undi	src::site cat::other set::005
+W1c61677ebc86	to join, to mix	kalupu	కలుపు		aḍugu kalipi	src::site src::anki cat::verb topic::useful-action-verbs flag::multi-gloss set::006
+Wec2273d3e053	at all, really; original	asalu	అసలు		asalu vinaḍu	src::site src::top1000 cat::grammar set::006
+W85b0ccf71f90	world (Urdu)	duniyā	దునియా		mogōḷḷa duniyā	src::site src::anki cat::urdu topic::hyderabadi-specials-slang set::006
+Wd34e29cc830b	wedding	peḷḷi	పెళ్ళి		pelli pāṭa	src::site src::anki cat::noun topic::remaining-high-utility-words set::006
+Wdcdca81fe114	dream	kala	కల		kalalu — dreams	src::site src::anki cat::noun topic::practical-daily-nouns set::006
+W9a99684e37d5	doll; Picture	bomma	బొమ్మ		the Telugu word for guḍiyā	src::site src::anki src::book1000 cat::noun topic::practical-daily-nouns flag::multi-gloss set::006
+W517b6e314590	How are you? (respectful)	mīru eṭla unnāru?	మీరు ఎట్ల ఉన్నారు?		always return the question	src::site cat::other flag::phrase set::006
+W8ec706f73626	aunty / mother-in-law (address)	attayya	అత్తయ్య		bāgundi attayya	src::site cat::other set::006
+W6305e75bddc5	not yet	inkā lēdu	ఇంకా లేదు		inkā tinalēdu	src::site cat::other flag::phrase set::006
+W264f61d31acc	at the office	āphīsulō	ఆఫీసులో		āphīsulō chālā pani undi	src::site cat::other set::006
 Wdb7c9131d0d3	everyone, all	antā	అంతా		intlō antā	src::site cat::other set::006
 Wa038c8645427	I'm tired	alisipōyānu	అలిసిపోయాను		block — konchaṁ alisipōyānu	src::site cat::other flag::inflected set::006
 Wea880d859bd8	How did it go? (of a day)	eṭla gaḍichindi?	ఎట్ల గడిచింది?		mī rōju eṭla gaḍichindi?	src::site cat::other flag::phrase set::006
@@ -295,16 +305,16 @@ W43448228fc80	hair bun	koppu	కొప్పు		koppulō mallelu	src::site cat:
 Wb9ee63cfd616	jasmine — everywhere in Hyderabad	malle	మల్లె		malle daṇḍa	src::site cat::noun set::006
 W355017676428	water pot, large vessel	kaḍava	కడవ		bhujaṁ mīda kaḍava	src::site cat::noun set::006
 W33701f10c103	garland	daṇḍa	దండ		malle daṇḍa	src::site cat::noun set::006
-Wb1aa44f0c79a	earrings	duddulu	దుద్దులు		sevulaku duddulu	src::site cat::noun set::006
-W5510c0b82754	shine, flash, lightning	merupu	మెరుపు		meriyā (song form)	src::site cat::noun set::006
-Wce2b9ba56510	pearls	mutyālu	ముత్యాలు		navvula mutyāl	src::site cat::noun set::006
-Wd41529519aa9	blouse (Telangana term)	raika	రైక		raikalu	src::site cat::noun set::006
-W007e84e898ec	anklet bells	gajjelu	గజ్జెలు		gajjel lēkunnā	src::site cat::noun set::006
-W91ce0d3b1480	moonlight (Telangana: ennela)	vennela	వెన్నెల		ennela kuriyā	src::site cat::noun set::006
-Wdc1328147f74	heart (Urdu) — very common in Hyderabad	dil	దిల్		mana dil	src::site cat::urdu set::006
-Webfee9b57d67	doll (Urdu) — affectionate	guḍiyā	గుడియా		guḍiyā	src::site cat::urdu set::006
-W7ebf15cb278b	little bird (Urdu) — affectionate	chiḍiyā	చిడియా		chikkani chiḍiyā	src::site cat::urdu set::006
-W906f6d37f2bf	kohl, eyeliner (Urdu)	surmā	సుర్మా		surmā peṭṭina	src::site cat::urdu set::006
+Wb1aa44f0c79a	earrings	duddulu	దుద్దులు		sevulaku duddulu	src::site cat::noun set::007
+W5510c0b82754	shine, flash, lightning	merupu	మెరుపు		meriyā (song form)	src::site cat::noun set::007
+Wce2b9ba56510	pearls	mutyālu	ముత్యాలు		navvula mutyāl	src::site cat::noun set::007
+Wd41529519aa9	blouse (Telangana term)	raika	రైక		raikalu	src::site cat::noun set::007
+W007e84e898ec	anklet bells	gajjelu	గజ్జెలు		gajjel lēkunnā	src::site cat::noun set::007
+W91ce0d3b1480	moonlight (Telangana: ennela)	vennela	వెన్నెల		ennela kuriyā	src::site cat::noun set::007
+Wdc1328147f74	heart (Urdu) — very common in Hyderabad	dil	దిల్		mana dil	src::site cat::urdu set::007
+Webfee9b57d67	doll (Urdu) — affectionate	guḍiyā	గుడియా		guḍiyā	src::site cat::urdu set::007
+W7ebf15cb278b	little bird (Urdu) — affectionate	chiḍiyā	చిడియా		chikkani chiḍiyā	src::site cat::urdu set::007
+W906f6d37f2bf	kohl, eyeliner (Urdu)	surmā	సుర్మా		surmā peṭṭina	src::site cat::urdu set::007
 W63c78b76867c	dagger, blade (Urdu)	churiyā	చురియా		churiyā	src::site cat::urdu set::007
 Wae1c56c2ac2d	cannon (Persian via Urdu)	phirangi	ఫిరంగి		adi phirangi	src::site cat::urdu set::007
 W0c0770bfbe72	even without ___ (from lēdu)	lēkunnā	లేకున్నా		gajjel lēkunnā	src::site cat::grammar set::007
@@ -345,16 +355,16 @@ Wde8e76386bd4	to where	ekkaḍiki	ఎక్కడికి			src::anki topic::qu
 W49d4f7426398	he/she/it eats (3rd person)  [form of తిను]	tiṇṭundi	తింటుంది			src::anki topic::verb-drill flag::inflected flag::verbform set::007
 W651a754a7f1c	Allow	anumatinchu	అనుమతించు			src::book1000 set::007
 W1204e5204eb1	when	eppuḍu	ఎప్పుడు			src::anki topic::question-words set::007
-Wf74ccd84b7db	how	elā	ఎలా			src::anki src::top1000 topic::question-words set::007
-W0d87413930bf	I am sitting (present)  [form of కూర్చో]	kūrchuṇṭunnānu	కూర్చుంటున్నాను			src::anki topic::verb-drill flag::inflected flag::verbform set::007
-W4e77b626cb3e	Stop	āpaṇḍi	ఆపండి			src::book1000 flag::inflected set::007
-W2d45dffe1311	why	enduku	ఎందుకు			src::anki src::top1000 src::book1000 topic::question-words set::007
-W760fa2a33caf	I sat (past)  [form of కూర్చో]	kūrchunnānu	కూర్చున్నాను			src::anki topic::verb-drill flag::inflected flag::verbform set::007
-W2a996868ab64	came; had  [form of రా]	vachchindi	వచ్చింది			src::top1000 flag::inflected flag::multi-gloss flag::verbform set::007
-W95644cfcc524	how many	enni	ఎన్ని			src::anki topic::question-words set::007
-W9d171e748a46	I will sit (future)  [form of కూర్చో]	kūrchuṇṭānu	కూర్చుంటాను			src::anki topic::verb-drill flag::inflected flag::verbform set::007
-W5c36a176bf9c	To Buy	konaḍaṁ	కొనడం			src::book1000 set::007
-Wcba950e208f8	he/she/it sits (3rd person)  [form of కూర్చో]	kūrchuṇṭundi	కూర్చుంటుంది			src::anki topic::verb-drill flag::inflected flag::verbform set::007
+Wf74ccd84b7db	how	elā	ఎలా			src::anki src::top1000 topic::question-words set::008
+W0d87413930bf	I am sitting (present)  [form of కూర్చో]	kūrchuṇṭunnānu	కూర్చుంటున్నాను			src::anki topic::verb-drill flag::inflected flag::verbform set::008
+W4e77b626cb3e	Stop	āpaṇḍi	ఆపండి			src::book1000 flag::inflected set::008
+W2d45dffe1311	why	enduku	ఎందుకు			src::anki src::top1000 src::book1000 topic::question-words set::008
+W760fa2a33caf	I sat (past)  [form of కూర్చో]	kūrchunnānu	కూర్చున్నాను			src::anki topic::verb-drill flag::inflected flag::verbform set::008
+W2a996868ab64	came; had  [form of రా]	vachchindi	వచ్చింది			src::top1000 flag::inflected flag::multi-gloss flag::verbform set::008
+W95644cfcc524	how many	enni	ఎన్ని			src::anki topic::question-words set::008
+W9d171e748a46	I will sit (future)  [form of కూర్చో]	kūrchuṇṭānu	కూర్చుంటాను			src::anki topic::verb-drill flag::inflected flag::verbform set::008
+W5c36a176bf9c	To Buy	konaḍaṁ	కొనడం			src::book1000 set::008
+Wcba950e208f8	he/she/it sits (3rd person)  [form of కూర్చో]	kūrchuṇṭundi	కూర్చుంటుంది			src::anki topic::verb-drill flag::inflected flag::verbform set::008
 Waf51173ac3ef	Drinking	trāgi	త్రాగి			src::book1000 set::008
 W8b11ef84fae5	it is / it exists (3rd person)  [form of ఉండు]	undi	ఉంది			src::anki src::top1000 topic::essential-verbs-existence-state flag::multi-gloss flag::verbform set::008
 W39f778e52c27	Understand	arthanchēsukō	అర్థంచేసుకో			src::book1000 set::008
@@ -395,16 +405,16 @@ Wd91b286a8534	he/she is sleeping (3rd person)	nidra pōtundi	నిద్ర ప
 W9a44bae64601	Coconuts	kobbari kāya	కొబ్బరి కాయ			src::book1000 flag::phrase set::008
 Wee303e95de7f	Mint	pudīnā	పుదీనా			src::book1000 set::008
 Wc2dd639d8ff1	I will go (future)  [form of వెళ్ళు]	veḷtānu	వెళ్తాను			src::anki topic::core-motion-verbs flag::inflected flag::multi-gloss flag::verbform set::008
-W2d6646c07f0e	I am sending (present)	pamputunnānu	పంపుతున్నాను			src::anki topic::verb-drill flag::inflected set::008
-W9d776f5eef25	Peas	baṭhāṇi	బఠాణి			src::book1000 set::008
-W8d4be4975ee2	I went (past)  [form of వెళ్ళు]	veḷḷānu	వెళ్ళాను			src::anki topic::core-motion-verbs flag::inflected flag::multi-gloss flag::verbform set::008
-W35a3fa03340f	I am going (present)  [form of వెళ్ళు]	veḷtunnānu	వెళ్తున్నాను			src::anki topic::core-motion-verbs flag::inflected flag::multi-gloss flag::verbform set::008
-We04f0767cde8	I will send (future)	pamputānu	పంపుతాను			src::anki topic::verb-drill flag::inflected set::008
-W377991595190	Garlic	vellullipāya	వెల్లుల్లిపాయ			src::book1000 set::008
-W83eefcab6d1c	want	kāvalasina	కావలసిన			src::top1000 set::008
-Wdba1e4f6608f	please go (formal)  [form of వెళ్ళు]	veḷḷaṇḍi	వెళ్ళండి			src::anki src::book1000 topic::core-motion-verbs flag::inflected flag::multi-gloss flag::verbform set::008
-W00527aedc7c5	he/she/it sends (3rd person)	pamputundi	పంపుతుంది			src::anki topic::verb-drill flag::inflected set::008
-W465d4f397979	Potato	bangāḷādumpa	బంగాళాదుంప			src::book1000 set::008
+W2d6646c07f0e	I am sending (present)	pamputunnānu	పంపుతున్నాను			src::anki topic::verb-drill flag::inflected set::009
+W9d776f5eef25	Peas	baṭhāṇi	బఠాణి			src::book1000 set::009
+W8d4be4975ee2	I went (past)  [form of వెళ్ళు]	veḷḷānu	వెళ్ళాను			src::anki topic::core-motion-verbs flag::inflected flag::multi-gloss flag::verbform set::009
+W35a3fa03340f	I am going (present)  [form of వెళ్ళు]	veḷtunnānu	వెళ్తున్నాను			src::anki topic::core-motion-verbs flag::inflected flag::multi-gloss flag::verbform set::009
+We04f0767cde8	I will send (future)	pamputānu	పంపుతాను			src::anki topic::verb-drill flag::inflected set::009
+W377991595190	Garlic	vellullipāya	వెల్లుల్లిపాయ			src::book1000 set::009
+W83eefcab6d1c	want	kāvalasina	కావలసిన			src::top1000 set::009
+Wdba1e4f6608f	please go (formal)  [form of వెళ్ళు]	veḷḷaṇḍi	వెళ్ళండి			src::anki src::book1000 topic::core-motion-verbs flag::inflected flag::multi-gloss flag::verbform set::009
+W00527aedc7c5	he/she/it sends (3rd person)	pamputundi	పంపుతుంది			src::anki topic::verb-drill flag::inflected set::009
+W465d4f397979	Potato	bangāḷādumpa	బంగాళాదుంప			src::book1000 set::009
 W3f95162aba61	to like / to please (base)	nachchu	నచ్చు			src::anki topic::verb-drill set::009
 W6e528b3e60ec	Tomato	ṭamāṭā	టమాటా			src::book1000 set::009
 Wba68d5b740d6	it is pleasing me (present)	nachchutundi	నచ్చుతుంది			src::anki topic::verb-drill flag::inflected flag::multi-gloss set::009
@@ -445,16 +455,16 @@ W59831eb1e7bc	I took (past)  [form of తీసుకో]	tīsukunnānu	తీ�
 Wfaf36e2c0a86	Rice	biyyaṁ	బియ్యం			src::book1000 set::009
 We9da7e94e649	to walk (base)	naḍuchu	నడుచు			src::anki topic::core-motion-verbs flag::multi-gloss set::009
 W9b9240dedfbb	I will take (future)  [form of తీసుకో]	tīsukuṇṭānu	తీసుకుంటాను			src::anki topic::verb-drill flag::inflected flag::verbform set::009
-Wef661c35d407	Wheat	gōdhumalu	గోధుమలు			src::book1000 set::009
-W6743ed3f4cb9	high	adhika	అధిక			src::top1000 set::009
-W928c71b05c3e	he/she/it takes (3rd person)  [form of తీసుకో]	tīsukuṇṭundi	తీసుకుంటుంది			src::anki topic::verb-drill flag::inflected flag::verbform set::009
-Wa7d906fa0b82	such	iṭuvaṇṭi	ఇటువంటి			src::top1000 set::009
-W9e53532eb198	follow	anusarinchaṇḍi	అనుసరించండి			src::top1000 flag::inflected set::009
-Wf19f290d791f	I will eat (future)  [form of తిను]	tiṇṭānu	తింటాను			src::anki topic::daily-activity-verbs flag::inflected flag::multi-gloss flag::verbform set::009
-W701bc8e61771	I am giving (present)  [form of ఇవ్వు]	istunnānu	ఇస్తున్నాను			src::anki topic::verb-drill flag::inflected flag::verbform set::009
-Wee59ad48ede6	act; law	chaṭṭaṁ	చట్టం			src::top1000 set::009
-W58950bd17b46	Sugar	panchadāra	పంచదార			src::book1000 set::009
-Webadae5b486e	I am eating (present)  [form of తిను]	tiṇṭunnānu	తింటున్నాను			src::anki topic::daily-activity-verbs flag::inflected flag::multi-gloss flag::verbform set::009
+Wef661c35d407	Wheat	gōdhumalu	గోధుమలు			src::book1000 set::010
+W6743ed3f4cb9	high	adhika	అధిక			src::top1000 set::010
+W928c71b05c3e	he/she/it takes (3rd person)  [form of తీసుకో]	tīsukuṇṭundi	తీసుకుంటుంది			src::anki topic::verb-drill flag::inflected flag::verbform set::010
+Wa7d906fa0b82	such	iṭuvaṇṭi	ఇటువంటి			src::top1000 set::010
+W9e53532eb198	follow	anusarinchaṇḍi	అనుసరించండి			src::top1000 flag::inflected set::010
+Wf19f290d791f	I will eat (future)  [form of తిను]	tiṇṭānu	తింటాను			src::anki topic::daily-activity-verbs flag::inflected flag::multi-gloss flag::verbform set::010
+W701bc8e61771	I am giving (present)  [form of ఇవ్వు]	istunnānu	ఇస్తున్నాను			src::anki topic::verb-drill flag::inflected flag::verbform set::010
+Wee59ad48ede6	act; law	chaṭṭaṁ	చట్టం			src::top1000 set::010
+W58950bd17b46	Sugar	panchadāra	పంచదార			src::book1000 set::010
+Webadae5b486e	I am eating (present)  [form of తిను]	tiṇṭunnānu	తింటున్నాను			src::anki topic::daily-activity-verbs flag::inflected flag::multi-gloss flag::verbform set::010
 W9dcc00c88c4e	ask	gōvā	గోవా			src::top1000 set::010
 Wdf6b7f9afd77	he/she/it gives (3rd person)  [form of ఇవ్వు]	istundi	ఇస్తుంది			src::anki topic::verb-drill flag::inflected flag::verbform set::010
 W82b1a50dbca5	men	puruṣulu	పురుషులు			src::top1000 set::010
@@ -495,16 +505,16 @@ Wdc696526d4b1	point	pāyiṇṭ	పాయింట్			src::top1000 set::010
 W5876e3b02860	I told (past)  [form of చెప్పు]	cheppānu	చెప్పాను			src::anki topic::daily-activity-verbs flag::inflected flag::multi-gloss flag::verbform set::010
 W9db9ca3c8d3b	I will stand (future)	nilabaḍatānu	నిలబడతాను			src::anki topic::verb-drill flag::inflected set::010
 Wc4740a8eb110	mother	talli	తల్లి			src::top1000 set::010
-W39fa6164ac02	I will tell (future)  [form of చెప్పు]	cheptānu	చెప్తాను			src::anki topic::daily-activity-verbs flag::inflected flag::multi-gloss flag::verbform set::010
-W101a838ab8d5	he/she/it stands (3rd person)  [form of నిలబడు]	nilabaḍutundi	నిలబడుతుంది			src::anki topic::verb-drill flag::inflected flag::verbform set::010
-W7bc079d866de	world	prapancha	ప్రపంచ			src::top1000 set::010
-W11aa50968a16	please tell (formal)  [form of చెప్పు]	cheppaṇḍi	చెప్పండి			src::anki src::top1000 topic::daily-activity-verbs flag::inflected flag::multi-gloss flag::verbform set::010
-W12c725cd9efd	Bad	cheḍu	చెడు			src::book1000 src::top1000 set::010
-W0df660cc2f69	build	nirminchaḍāniki	నిర్మించడానికి			src::top1000 set::010
-W9dff4b7539c7	I spoke  [form of మాట్లాడు]	māṭlāḍānu	మాట్లాడాను			src::anki topic::daily-activity-verbs flag::inflected flag::verbform set::010
-W11676d1910fd	I fell (past)	paḍḍānu	పడ్డాను			src::anki topic::verb-drill flag::inflected set::010
-W9137b92dbec3	self	svīya	స్వీయ			src::top1000 set::010
-W5c65ae77feff	please speak (formal)  [form of మాట్లాడు]	māṭlāḍaṇḍi	మాట్లాడండి			src::anki topic::daily-activity-verbs flag::inflected flag::verbform set::010
+W39fa6164ac02	I will tell (future)  [form of చెప్పు]	cheptānu	చెప్తాను			src::anki topic::daily-activity-verbs flag::inflected flag::multi-gloss flag::verbform set::011
+W101a838ab8d5	he/she/it stands (3rd person)  [form of నిలబడు]	nilabaḍutundi	నిలబడుతుంది			src::anki topic::verb-drill flag::inflected flag::verbform set::011
+W7bc079d866de	world	prapancha	ప్రపంచ			src::top1000 set::011
+W11aa50968a16	please tell (formal)  [form of చెప్పు]	cheppaṇḍi	చెప్పండి			src::anki src::top1000 topic::daily-activity-verbs flag::inflected flag::multi-gloss flag::verbform set::011
+W12c725cd9efd	Bad	cheḍu	చెడు			src::book1000 src::top1000 set::011
+W0df660cc2f69	build	nirminchaḍāniki	నిర్మించడానికి			src::top1000 set::011
+W9dff4b7539c7	I spoke  [form of మాట్లాడు]	māṭlāḍānu	మాట్లాడాను			src::anki topic::daily-activity-verbs flag::inflected flag::verbform set::011
+W11676d1910fd	I fell (past)	paḍḍānu	పడ్డాను			src::anki topic::verb-drill flag::inflected set::011
+W9137b92dbec3	self	svīya	స్వీయ			src::top1000 set::011
+W5c65ae77feff	please speak (formal)  [form of మాట్లాడు]	māṭlāḍaṇḍi	మాట్లాడండి			src::anki topic::daily-activity-verbs flag::inflected flag::verbform set::011
 Wc49ea648ca87	What ?	ēmi ?	ఏమి ?			src::book1000 flag::phrase set::011
 W825ad5a0c45e	to write	rāsu	రాసు			src::anki topic::daily-activity-verbs set::011
 W6dec295242c4	it fell (3rd person)	paḍindi	పడింది			src::anki topic::verb-drill flag::inflected set::011
@@ -545,16 +555,16 @@ W1d8aa92f2034	he/she/it becomes (3rd person)	avutundi	అవుతుంది		
 Wd9e8af67f604	only	mātramē	మాత్రమే			src::top1000 set::011
 Wc2fc3b1554dc	to sell	ammu	అమ్ము			src::anki topic::daily-activity-verbs set::011
 W347a8cd7cf0a	ClothBatta	bṭa	బ్ట			src::book1000 set::011
-Wee95143620e5	round	rauṇḍ	రౌండ్			src::top1000 set::011
-W6c66f3d05f73	to work	pani chēyu	పని చేయు			src::anki topic::daily-activity-verbs flag::phrase set::011
-Wf3e187ec30e0	to appear / to be visible (base)	kanipinchu	కనిపించు			src::anki topic::verb-drill set::011
-Wf0152367f3e8	I am appearing (present)	kanipistunnānu	కనిపిస్తున్నాను			src::anki topic::verb-drill flag::inflected set::011
-W9d57ac48c0dd	Number(number)Ankelu	ankelu	అంకెలు			src::book1000 set::011
-W340ac714589f	it appeared (past)	kanipinchindi	కనిపించింది			src::anki topic::verb-drill flag::inflected set::011
-Wd3d5eca1da95	it will appear (future)	kanipistundi	కనిపిస్తుంది			src::anki topic::verb-drill flag::inflected set::011
-W9682a5d008cb	Apple	āpal paṇḍu	ఆపల్ పండు			src::book1000 flag::phrase set::011
-W2ad8235436ee	show	ṣō	షో			src::top1000 set::011
-W7db8274bc1c1	to swim	īdu	ఈదు			src::anki topic::daily-activity-verbs set::011
+Wee95143620e5	round	rauṇḍ	రౌండ్			src::top1000 set::012
+W6c66f3d05f73	to work	pani chēyu	పని చేయు			src::anki topic::daily-activity-verbs flag::phrase set::012
+Wf3e187ec30e0	to appear / to be visible (base)	kanipinchu	కనిపించు			src::anki topic::verb-drill set::012
+Wf0152367f3e8	I am appearing (present)	kanipistunnānu	కనిపిస్తున్నాను			src::anki topic::verb-drill flag::inflected set::012
+W9d57ac48c0dd	Number(number)Ankelu	ankelu	అంకెలు			src::book1000 set::012
+W340ac714589f	it appeared (past)	kanipinchindi	కనిపించింది			src::anki topic::verb-drill flag::inflected set::012
+Wd3d5eca1da95	it will appear (future)	kanipistundi	కనిపిస్తుంది			src::anki topic::verb-drill flag::inflected set::012
+W9682a5d008cb	Apple	āpal paṇḍu	ఆపల్ పండు			src::book1000 flag::phrase set::012
+W2ad8235436ee	show	ṣō	షో			src::top1000 set::012
+W7db8274bc1c1	to swim	īdu	ఈదు			src::anki topic::daily-activity-verbs set::012
 We511b787f879	he/she/it appears (3rd person)	kanipistunnāḍu	కనిపిస్తున్నాడు			src::anki topic::verb-drill flag::inflected set::012
 Wa1e1c2c5dbc7	Banana	arṭṭapaṇḍu	అర్ట్టపండు			src::book1000 set::012
 W77fd5124891c	like / liking	iṣṭaṁ	ఇష్టం			src::anki src::book1000 topic::emotional-mental-verbs flag::multi-gloss set::012
@@ -595,16 +605,16 @@ W31080515165d	East	tūrpu	తూర్పు			src::book1000 src::top1000 set::0
 W619a144db6b6	courage	dhairyaṁ	ధైర్యం			src::anki topic::emotional-mental-verbs set::012
 Wfdf60cd769b4	West	paśchima	పశ్చిమ			src::book1000 src::top1000 set::012
 W7448f3fc189d	pride	garvaṁ	గర్వం			src::anki topic::emotional-mental-verbs set::012
-W8b861fe5b9d1	North	uttaraṁ	ఉత్తరం			src::book1000 set::012
-Wf8ad7df75334	line	lain	లైన్			src::top1000 set::012
-W28e978bd2aeb	shame / shyness	siggu	సిగ్గు			src::anki topic::emotional-mental-verbs set::012
-Wc2c2f98c1ed1	South	dakṣiṇaṁ	దక్షిణం			src::book1000 set::012
-W1c41ba49c818	differ	tēḍā	తేడా			src::top1000 set::012
-W56796d9548e5	boredom / tiredness	visugu	విసుగు			src::anki topic::emotional-mental-verbs set::012
-Wae3049ae9c47	satisfaction	santṛpti	సంతృప్తి			src::anki topic::emotional-mental-verbs set::012
-W85af6f542988	enjoy (loanword, common)	enjāy	ఎంజాయ్			src::anki topic::emotional-mental-verbs set::012
-W1970752efd0f	to miss (someone)	mis avvu	మిస్ అవ్వు			src::anki topic::emotional-mental-verbs flag::phrase set::012
-W9c3a1c57c93d	That way	āmārgaṁlō	ఆమార్గంలో			src::book1000 set::012
+W8b861fe5b9d1	North	uttaraṁ	ఉత్తరం			src::book1000 set::013
+Wf8ad7df75334	line	lain	లైన్			src::top1000 set::013
+W28e978bd2aeb	shame / shyness	siggu	సిగ్గు			src::anki topic::emotional-mental-verbs set::013
+Wc2c2f98c1ed1	South	dakṣiṇaṁ	దక్షిణం			src::book1000 set::013
+W1c41ba49c818	differ	tēḍā	తేడా			src::top1000 set::013
+W56796d9548e5	boredom / tiredness	visugu	విసుగు			src::anki topic::emotional-mental-verbs set::013
+Wae3049ae9c47	satisfaction	santṛpti	సంతృప్తి			src::anki topic::emotional-mental-verbs set::013
+W85af6f542988	enjoy (loanword, common)	enjāy	ఎంజాయ్			src::anki topic::emotional-mental-verbs set::013
+W1970752efd0f	to miss (someone)	mis avvu	మిస్ అవ్వు			src::anki topic::emotional-mental-verbs flag::phrase set::013
+W9c3a1c57c93d	That way	āmārgaṁlō	ఆమార్గంలో			src::book1000 set::013
 W36b45eca8dde	Turn left	eḍamavaiputirugu	ఎడమవైపుతిరుగు			src::book1000 set::013
 W8bd24f67638d	comfort / ease	sukhaṁ	సుఖం			src::anki topic::emotional-mental-verbs set::013
 W84a39ed202c3	Tur Turn right	kuḍivaiputirugu	కుడివైపుతిరుగు			src::book1000 set::013
@@ -645,16 +655,16 @@ W349b403b4bbc	Drive carefully	jāgrattagā naḍapanundi	జాగ్రత్�
 W933690033f34	might; them	vāṭini	వాటిని			src::top1000 set::013
 Wdf8fe062a22e	quickly / soon	tvaraga	త్వరగ			src::anki topic::common-adjectives flag::multi-gloss set::013
 W172c6ceea46b	write  [form of రాయి]	rāyaḍāniki	రాయడానికి			src::top1000 flag::verbform set::013
-W2303b75a1536	less / few; low	takkuva	తక్కువ			src::anki src::top1000 topic::common-adjectives flag::multi-gloss set::013
-W515d40499ced	like	vaṇṭi	వంటి			src::top1000 set::013
-W4b13ca8cc285	very / a lot; much	chālā	చాలా			src::anki src::top1000 topic::common-adjectives flag::multi-gloss set::013
-W949a8644525a	People	prajalu	ప్రజలు			src::book1000 src::top1000 set::013
-Wcb8ff7858e94	so	kābaṭṭi	కాబట్టి			src::top1000 set::013
-We0eb8ce0cf87	completely	pūrtiga	పూర్తిగ			src::anki topic::common-adjectives set::013
-W9f628c4e66d8	her	āme yokka	ఆమె యొక్క			src::top1000 flag::phrase set::013
-Wdbf297bbb5d8	correct / right	saraindi	సరైంది			src::anki topic::common-adjectives set::013
-W5041b1bf85f4	Mad	pichchi	పిచ్చి			src::book1000 set::013
-Wf5c228d064f9	long	dīrgha	దీర్ఘ			src::top1000 set::013
+W2303b75a1536	less / few; low	takkuva	తక్కువ			src::anki src::top1000 topic::common-adjectives flag::multi-gloss set::014
+W515d40499ced	like	vaṇṭi	వంటి			src::top1000 set::014
+W4b13ca8cc285	very / a lot; much	chālā	చాలా			src::anki src::top1000 topic::common-adjectives flag::multi-gloss set::014
+W949a8644525a	People	prajalu	ప్రజలు			src::book1000 src::top1000 set::014
+Wcb8ff7858e94	so	kābaṭṭi	కాబట్టి			src::top1000 set::014
+We0eb8ce0cf87	completely	pūrtiga	పూర్తిగ			src::anki topic::common-adjectives set::014
+W9f628c4e66d8	her	āme yokka	ఆమె యొక్క			src::top1000 flag::phrase set::014
+Wdbf297bbb5d8	correct / right	saraindi	సరైంది			src::anki topic::common-adjectives set::014
+W5041b1bf85f4	Mad	pichchi	పిచ్చి			src::book1000 set::014
+Wf5c228d064f9	long	dīrgha	దీర్ఘ			src::top1000 set::014
 Wf805fb02f7a5	wrong / mistake	tappu	తప్పు			src::anki src::top1000 topic::common-adjectives flag::multi-gloss set::014
 W9935b30d7ea7	Question	praśna	ప్రశ్న			src::book1000 src::top1000 set::014
 W022c6cd83eaf	easy (loanword)	ījī	ఈజీ			src::anki topic::common-adjectives set::014
@@ -695,16 +705,16 @@ Wff41a2da6100	ready (loanword)	reḍī	రెడీ			src::anki src::top1000 top
 W4c59e46c6b7c	Elders	peddavāḷlu	పెద్దవాళ్లు			src::book1000 set::014
 We8f2cb5a31ce	water	nīṭi	నీటి			src::top1000 set::014
 W2e8f1eb014af	next / coming	mundundi	ముందుంది			src::anki topic::common-adjectives flag::inflected set::014
-Wdba7156b22ee	than	kaṇṭē	కంటే			src::top1000 set::014
-Wec046862d6a5	last	chivaridi	చివరిది			src::anki topic::common-adjectives set::014
-Wc8321c4d2659	first; 1st	modaṭidi	మొదటిది			src::anki topic::common-adjectives set::014
-W35cfaa7101af	Clean	śubhramaina	శుభ్రమైన			src::book1000 set::014
-W7c3dd0298f9c	second	reṇḍava	రెండవ			src::anki src::top1000 topic::common-adjectives set::014
-W2e00accc6836	Print	mudraṇa	ముద్రణ			src::book1000 src::top1000 set::014
-W8599507e19c8	Best	uttama	ఉత్తమ			src::book1000 src::top1000 set::014
-W9524b4aaea32	may	mē	మే			src::top1000 set::014
-Wb14210a143bb	special / separate	pratyēkaṁ	ప్రత్యేకం			src::anki topic::common-adjectives set::014
-Wa1801892c833	down	ḍaun	డౌన్			src::top1000 set::014
+Wdba7156b22ee	than	kaṇṭē	కంటే			src::top1000 set::015
+Wec046862d6a5	last	chivaridi	చివరిది			src::anki topic::common-adjectives set::015
+Wc8321c4d2659	first; 1st	modaṭidi	మొదటిది			src::anki topic::common-adjectives set::015
+W35cfaa7101af	Clean	śubhramaina	శుభ్రమైన			src::book1000 set::015
+W7c3dd0298f9c	second	reṇḍava	రెండవ			src::anki src::top1000 topic::common-adjectives set::015
+W2e00accc6836	Print	mudraṇa	ముద్రణ			src::book1000 src::top1000 set::015
+W8599507e19c8	Best	uttama	ఉత్తమ			src::book1000 src::top1000 set::015
+W9524b4aaea32	may	mē	మే			src::top1000 set::015
+Wb14210a143bb	special / separate	pratyēkaṁ	ప్రత్యేకం			src::anki topic::common-adjectives set::015
+Wa1801892c833	down	ḍaun	డౌన్			src::top1000 set::015
 Wf197051899ee	ordinary / normal	sāmānyaṁ	సామాన్యం			src::anki topic::common-adjectives set::015
 W958e2fc07df7	Promise	pramāṇaṁ	ప్రమాణం			src::book1000 set::015
 W88402fd25787	toward; side	vaipu	వైపు			src::top1000 set::015
@@ -712,16 +722,13 @@ W81350883f784	true / real	nijaṁ	నిజం			src::anki topic::common-adjecti
 W8efc851495f5	lie / false	abaddhaṁ	అబద్ధం			src::anki src::top1000 topic::common-adjectives flag::multi-gloss set::015
 Wf86ec679e5d3	brand new	sarikotta	సరికొత్త			src::anki topic::common-adjectives set::015
 W0cb62e5c891d	find	kanugonēnduku	కనుగొనేందుకు			src::top1000 set::015
-Wa965f03f301d	day	rōju	రోజు			src::anki src::book1000 src::top1000 topic::time-words set::015
 Wcfd6ad9d4930	Attraction	ākarṣaṇa	ఆకర్షణ			src::book1000 set::015
 Wf389794c896e	Hate	dvēṣaṁ	ద్వేషం			src::book1000 set::015
 W5abddbe44933	Marriage	peḷli	పెళ్లి			src::book1000 set::015
 W2ed5893671a4	own	sonta	సొంత			src::top1000 set::015
-W4d976b30ff1e	tomorrow	rēpu	రేపు			src::anki src::book1000 topic::time-words set::015
 W77decba62f93	School	pāṭhaśāla	పాఠశాల			src::book1000 src::top1000 set::015
 W84907a9833a7	page	pējī	పేజీ			src::top1000 set::015
 Wa84b2990ec29	day before yesterday	monna	మొన్న			src::anki topic::time-words set::015
-W67013b50d662	day after tomorrow	elluṇḍi	ఎల్లుండి			src::anki topic::time-words flag::inflected set::015
 W449c4512d761	morning	udayaṁ	ఉదయం			src::anki src::top1000 topic::time-words set::015
 W64f1c3582f43	Cry	ēḍupu	ఏడుపు			src::book1000 set::015
 W3edc9bcb14c5	found	dorakalēdu	దొరకలేదు			src::top1000 set::015
@@ -745,16 +752,14 @@ W81c96fd2a6a2	before / earlier / front	mundu	ముందు			src::anki src::to
 W0b5323715468	Squirrel	uḍuta	ఉడుత			src::book1000 set::015
 W0b0b6ef76f05	sun	sūryuḍu	సూర్యుడు			src::top1000 set::015
 Wd6a06f4670b7	Cradle	ūyala	ఊయల			src::book1000 set::015
-W5b927e9a0aab	week	vāraṁ	వారం			src::anki src::top1000 topic::time-words set::015
 W791f1a657a12	Rishi	riṣi	రిషి			src::book1000 set::015
 W304a160fa443	between; among	madhya	మధ్య			src::top1000 flag::multi-gloss set::015
-W8c1a72d1ccc4	month	nela	నెల			src::anki src::top1000 topic::time-words set::015
 Wf654e9775908	Rat	eluka	ఎలుక			src::book1000 set::015
-W0368faed3d20	state	rāṣṭra	రాష్ట్ర			src::top1000 set::015
-W05dea39cc828	year	saṁvatsaraṁ	సంవత్సరం			src::anki src::top1000 topic::time-words set::015
-Wd24b882e801a	keep	unchēnduku	ఉంచేందుకు			src::top1000 set::015
-W9058df5c3cfa	every day	prati rōju	ప్రతి రోజు			src::anki topic::time-words flag::phrase set::015
-W107703320ab6	eye	kaṇṭi	కంటి			src::top1000 set::015
+W0368faed3d20	state	rāṣṭra	రాష్ట్ర			src::top1000 set::016
+W05dea39cc828	year	saṁvatsaraṁ	సంవత్సరం			src::anki src::top1000 topic::time-words set::016
+Wd24b882e801a	keep	unchēnduku	ఉంచేందుకు			src::top1000 set::016
+W9058df5c3cfa	every day	prati rōju	ప్రతి రోజు			src::anki topic::time-words flag::phrase set::016
+W107703320ab6	eye	kaṇṭi	కంటి			src::top1000 set::016
 Wd2299e6a75e8	every week	prati vāraṁ	ప్రతి వారం			src::anki topic::time-words flag::phrase set::016
 W3e162a693b86	never; ever	eppuḍū	ఎప్పుడూ			src::top1000 set::016
 W072907a24fe5	how long (duration)	entasēpu	ఎంతసేపు			src::anki topic::time-words set::016
@@ -800,11 +805,11 @@ W89ed2b049f4d	there	akkaḍa	అక్కడ			src::anki src::book1000 src::top1
 We911e9dba448	stop	āpaḍāniki	ఆపడానికి			src::top1000 set::016
 W99be38e3c8a5	inside	lōpala	లోపల			src::anki topic::location-direction set::016
 W15951d7f8c9e	once	okasāri	ఒకసారి			src::top1000 set::016
-Wa96b3d7e59ff	outside	bayaṭa	బయట			src::anki topic::location-direction set::016
-W37e15d91715a	base	bēs	బేస్			src::top1000 set::016
-W0f5378884378	on top / above	paina	పైన			src::anki src::book1000 src::top1000 topic::location-direction flag::multi-gloss set::016
-W51da267db6b2	below / under	kinda	కింద			src::anki src::book1000 src::top1000 topic::location-direction flag::multi-gloss set::016
-W199758fadf2c	horse	gurraṁ	గుర్రం			src::top1000 set::016
+Wa96b3d7e59ff	outside	bayaṭa	బయట			src::anki topic::location-direction set::017
+W37e15d91715a	base	bēs	బేస్			src::top1000 set::017
+W0f5378884378	on top / above	paina	పైన			src::anki src::book1000 src::top1000 topic::location-direction flag::multi-gloss set::017
+W51da267db6b2	below / under	kinda	కింద			src::anki src::book1000 src::top1000 topic::location-direction flag::multi-gloss set::017
+W199758fadf2c	horse	gurraṁ	గుర్రం			src::top1000 set::017
 W24bcbe0b47dd	cut	kaṭ	కట్			src::top1000 set::017
 W42cbd237c8cc	beside / next to	pakkana	పక్కన			src::anki topic::location-direction set::017
 W6434f1a2dbfb	watch	chūḍaṭāniki	చూడటానికి			src::top1000 set::017
@@ -850,11 +855,11 @@ W6234df05f45b	plain	sādā	సాదా			src::top1000 set::017
 Wc3754ac585ae	general; usual	sādhāraṇa	సాధారణ			src::top1000 flag::multi-gloss set::017
 Wb05a55f4ee3a	elder brother	anna	అన్న			src::anki topic::people-family set::017
 Wcba723f573d8	ready	siddhangā	సిద్ధంగా			src::top1000 set::017
-Wd0e715d03f77	younger sister	chellelu	చెల్లెలు			src::anki topic::people-family set::017
-W8f37039ccfc0	grandfather	tātayya	తాతయ్య			src::anki topic::people-family set::017
-Wda404a833427	red	erupu	ఎరుపు			src::top1000 set::017
-Wa054c861a3f5	list	jābitā	జాబితా			src::top1000 set::017
-We7c831e4c1e1	maternal uncle	māma	మామ			src::anki topic::people-family set::017
+Wd0e715d03f77	younger sister	chellelu	చెల్లెలు			src::anki topic::people-family set::018
+W8f37039ccfc0	grandfather	tātayya	తాతయ్య			src::anki topic::people-family set::018
+Wda404a833427	red	erupu	ఎరుపు			src::top1000 set::018
+Wa054c861a3f5	list	jābitā	జాబితా			src::top1000 set::018
+We7c831e4c1e1	maternal uncle	māma	మామ			src::anki topic::people-family set::018
 W609acada766a	feel	anubhūti	అనుభూతి			src::top1000 set::018
 W58d7fde0ca55	talk	charcha	చర్చ			src::top1000 set::018
 W3407bef24a5f	soon	tvaralō	త్వరలో			src::top1000 set::018
@@ -900,11 +905,11 @@ W72123533e1b7	piece	mukka	ముక్క			src::top1000 set::018
 W595ac81e1d83	face	mukhaṁ	ముఖం			src::anki src::book1000 src::top1000 topic::body-senses set::018
 Wb97b46cdffe2	told  [form of చెప్పు]	cheppāru	చెప్పారు			src::top1000 flag::inflected flag::verbform set::018
 Wa7e5d6a473cf	eye	kannu	కన్ను			src::anki topic::body-senses set::018
-W1279f3e0a8c8	eyes	kaḷḷu	కళ్ళు			src::anki topic::body-senses set::018
-We07cb405ce68	ear; key	chevi	చెవి			src::anki src::top1000 topic::body-senses set::018
-Wbacc2e5a03ef	nose	mukku	ముక్కు			src::anki src::top1000 topic::body-senses set::018
-W38a36e10c742	top	ṭāp	టాప్			src::top1000 set::018
-W770fe743bcf0	mouth	nōru	నోరు			src::anki src::top1000 topic::body-senses set::018
+W1279f3e0a8c8	eyes	kaḷḷu	కళ్ళు			src::anki topic::body-senses set::019
+We07cb405ce68	ear; key	chevi	చెవి			src::anki src::top1000 topic::body-senses set::019
+Wbacc2e5a03ef	nose	mukku	ముక్కు			src::anki src::top1000 topic::body-senses set::019
+W38a36e10c742	top	ṭāp	టాప్			src::top1000 set::019
+W770fe743bcf0	mouth	nōru	నోరు			src::anki src::top1000 topic::body-senses set::019
 Wdf78cd2c5af1	whole; total	mottaṁ	మొత్తం			src::top1000 set::019
 Wd1851ac84f8b	tongue	nāluka	నాలుక			src::anki topic::body-senses set::019
 W05ae01857167	king	rāju	రాజు			src::top1000 set::019
@@ -950,11 +955,11 @@ W416376871c81	stead	mārugā	మారుగా			src::top1000 set::019
 W393f5ceb83eb	dry	poḍi	పొడి			src::top1000 set::019
 Wd11e8da461b8	wonder	āścharyāniki	ఆశ్చర్యానికి			src::top1000 set::019
 W09d80e4d89c7	curry / gravy	pulusu	పులుసు			src::anki topic::food-drink set::019
-W5eaafe8339d2	thousand	vēla	వేల			src::top1000 set::019
-Wde3395b56998	vegetable dish / curry	kūra	కూర			src::anki topic::food-drink set::019
-Wdf6c78edd12c	ago	kritaṁ	క్రితం			src::top1000 set::019
-W9ff49746e228	chutney / pickle	pachchaḍi	పచ్చడి			src::anki topic::food-drink set::019
-W07ea86c642e1	ran  [form of నడవు]	naḍichindi	నడిచింది			src::top1000 flag::inflected flag::verbform set::019
+W5eaafe8339d2	thousand	vēla	వేల			src::top1000 set::020
+Wde3395b56998	vegetable dish / curry	kūra	కూర			src::anki topic::food-drink set::020
+Wdf6c78edd12c	ago	kritaṁ	క్రితం			src::top1000 set::020
+W9ff49746e228	chutney / pickle	pachchaḍi	పచ్చడి			src::anki topic::food-drink set::020
+W07ea86c642e1	ran  [form of నడవు]	naḍichindi	నడిచింది			src::top1000 flag::inflected flag::verbform set::020
 Wd88ec1f0efbe	curd / yogurt	perugu	పెరుగు			src::anki src::book1000 topic::food-drink flag::multi-gloss set::020
 Wc25249854bf1	check	tanikhī	తనిఖీ			src::top1000 set::020
 W08b83a2cfeb3	milk	pālu	పాలు			src::anki src::book1000 src::top1000 topic::food-drink set::020
@@ -1000,11 +1005,11 @@ W409d26caacc1	spoon (loanword)	spūn	స్పూన్			src::anki topic::food-
 W474e812825ca	cry	krai	క్రై			src::top1000 set::020
 W0449c63a253a	dark	kṛṣṇa	కృష్ణ			src::top1000 set::020
 W00cd2e031ff5	lunch (loanword)	lanch	లంచ్			src::anki topic::food-drink set::020
-Wbc45f23e7eb1	machine	yantraṁ	యంత్రం			src::top1000 set::020
-W1f3ba0373c3e	dinner (loanword)	ḍinnar	డిన్నర్			src::anki topic::food-drink set::020
-W96a87702a9de	note	gamanika	గమనిక			src::top1000 set::020
-W0889fb195bf7	order (loanword)	ārḍar	ఆర్డర్			src::anki src::top1000 topic::food-drink flag::multi-gloss set::020
-W3ca8141bcbca	wait	vēchi	వేచి			src::top1000 set::020
+Wbc45f23e7eb1	machine	yantraṁ	యంత్రం			src::top1000 set::021
+W1f3ba0373c3e	dinner (loanword)	ḍinnar	డిన్నర్			src::anki topic::food-drink set::021
+W96a87702a9de	note	gamanika	గమనిక			src::top1000 set::021
+W0889fb195bf7	order (loanword)	ārḍar	ఆర్డర్			src::anki src::top1000 topic::food-drink flag::multi-gloss set::021
+W3ca8141bcbca	wait	vēchi	వేచి			src::top1000 set::021
 W2af30d46b56b	bill (loanword)	bil	బిల్			src::anki topic::food-drink set::021
 Wc25125a50bf2	figure	phigar	ఫిగర్			src::top1000 set::021
 W57b4440ad3e0	hunger	ākali	ఆకలి			src::anki topic::food-drink set::021
@@ -1050,11 +1055,11 @@ Wbc9e40c619e2	snake	pāmu	పాము			src::anki topic::nature-weather flag::i
 W2e3e85ec2f83	free	uchita	ఉచిత			src::top1000 set::021
 W35d34c4e9d7f	bird	pakṣi	పక్షి			src::anki src::top1000 topic::nature-weather set::021
 Wcd7003b7e508	strong	balamaina	బలమైన			src::top1000 set::021
-Wce86f8541ca1	elephant	ēnugu	ఏనుగు			src::anki src::book1000 topic::nature-weather set::021
-Wdbd221a4828d	particular; special	pratyēka	ప్రత్యేక			src::top1000 flag::multi-gloss set::021
-Wdc4d80e4bf75	lotus	padma	పద్మ			src::anki topic::nature-weather set::021
-W6d581fbcb747	sea / ocean	samudraṁ	సముద్రం			src::anki src::book1000 src::top1000 topic::nature-weather flag::multi-gloss set::021
-Wc7be64a15ad2	river	nadi	నది			src::anki src::top1000 topic::nature-weather set::021
+Wce86f8541ca1	elephant	ēnugu	ఏనుగు			src::anki src::book1000 topic::nature-weather set::022
+Wdbd221a4828d	particular; special	pratyēka	ప్రత్యేక			src::top1000 flag::multi-gloss set::022
+Wdc4d80e4bf75	lotus	padma	పద్మ			src::anki topic::nature-weather set::022
+W6d581fbcb747	sea / ocean	samudraṁ	సముద్రం			src::anki src::book1000 src::top1000 topic::nature-weather flag::multi-gloss set::022
+Wc7be64a15ad2	river	nadi	నది			src::anki src::top1000 topic::nature-weather set::022
 W816582ead3ff	clear	spaṣṭamaina	స్పష్టమైన			src::top1000 set::022
 Wfbae6f32c5f8	hill / mountain	koṇḍa	కొండ			src::anki src::top1000 topic::nature-weather flag::multi-gloss set::022
 W4e552630ac87	tail	tōka	తోక			src::top1000 set::022
@@ -1100,13 +1105,12 @@ Wbaccc96ec385	only / emphasis marker	-ē	-ఏ			src::anki topic::postpositions-c
 We6db46b70441	for everything	anniṭikī	అన్నిటికీ			src::anki topic::postpositions-connectors set::022
 W37bf62ffb6d7	someone / anyone	evarainā	ఎవరైనా			src::anki topic::postpositions-connectors set::022
 Wfce56e8a76b0	somewhere / anywhere	ekkaḍainā	ఎక్కడైనా			src::anki topic::postpositions-connectors set::022
-Wa7c663ae7700	sometime / ever	eppuḍainā	ఎప్పుడైనా			src::anki topic::postpositions-connectors set::022
-We6102c868cb1	vowel	achchu	అచ్చు			src::top1000 set::022
-W65d6340d7e17	however much	entainā	ఎంతైనా			src::anki topic::postpositions-connectors set::022
-W994cf3317a1c	all (things)	anni	అన్ని			src::anki src::top1000 topic::postpositions-connectors flag::multi-gloss set::022
-W4ef9fac8b06c	war	yuddhaṁ	యుద్ధం			src::top1000 set::022
+Wa7c663ae7700	sometime / ever	eppuḍainā	ఎప్పుడైనా			src::anki topic::postpositions-connectors set::023
+We6102c868cb1	vowel	achchu	అచ్చు			src::top1000 set::023
+W65d6340d7e17	however much	entainā	ఎంతైనా			src::anki topic::postpositions-connectors set::023
+W994cf3317a1c	all (things)	anni	అన్ని			src::anki src::top1000 topic::postpositions-connectors flag::multi-gloss set::023
+W4ef9fac8b06c	war	yuddhaṁ	యుద్ధం			src::top1000 set::023
 W0f4eb32eb748	all (people)	andaru	అందరు			src::anki topic::postpositions-connectors set::023
-Wbd0ac31bcf14	every / each	prati	ప్రతి			src::anki src::top1000 topic::postpositions-connectors flag::multi-gloss set::023
 W1699430bb0da	against	vyatirēkangā	వ్యతిరేకంగా			src::top1000 set::023
 W784d1a8208d0	some (things)	konni	కొన్ని			src::anki src::book1000 src::top1000 topic::postpositions-connectors flag::multi-gloss set::023
 W74d9fe8aa991	pattern	namūnā	నమూనా			src::top1000 set::023
@@ -1151,10 +1155,10 @@ W32f22848de43	don't want (Hyd casual)	nakkō	నక్కో			src::anki topic::
 W38d31b4d6429	choose; pick	enchukōṇḍi	ఎంచుకోండి			src::top1000 flag::inflected flag::multi-gloss set::023
 W2c013b32dec7	what's the news? (Hyd)	ēmi khabar	ఏమి ఖబర్			src::anki topic::common-phrases-greetings flag::phrase set::023
 We83e581bdac7	sudden	ākasmika	ఆకస్మిక			src::top1000 set::023
-W3ca7e86e2e4e	how are you? (casual)	elā unnāv	ఎలా ఉన్నావ్			src::anki topic::common-phrases-greetings flag::phrase set::023
-W02ade4fbac66	count	kauṇṭ	కౌంట్			src::top1000 set::023
-W86e83a7196d4	I'm fine (casual)	bāgunna	బాగున్న			src::anki topic::common-phrases-greetings set::023
-W4ac24a246669	square	chadarapu	చదరపు			src::top1000 set::023
+W3ca7e86e2e4e	how are you? (casual)	elā unnāv	ఎలా ఉన్నావ్			src::anki topic::common-phrases-greetings flag::phrase set::024
+W02ade4fbac66	count	kauṇṭ	కౌంట్			src::top1000 set::024
+W86e83a7196d4	I'm fine (casual)	bāgunna	బాగున్న			src::anki topic::common-phrases-greetings set::024
+W4ac24a246669	square	chadarapu	చదరపు			src::top1000 set::024
 Wb7affd8f50a7	I'm going (casual)	veḷtā	వెళ్తా			src::anki topic::common-phrases-greetings set::024
 W4c5c552c5d51	I'll tell (casual)	cheptā	చెప్తా			src::anki topic::common-phrases-greetings set::024
 W707c9e6370e4	length	poḍavu	పొడవు			src::top1000 set::024
@@ -1201,10 +1205,10 @@ W53907d25175d	is that so? / really?	avunā?	అవునా?			src::anki topic::
 W3fa8cbb4b3c2	really? / is it true?	nijamā?	నిజమా?			src::anki topic::discourse-markers-fillers set::024
 Weee95fa224a6	broad; wide	vistṛta	విస్తృత			src::top1000 set::024
 Weea7f37307ba	sail	prayāṇamayyāru	ప్రయాణమయ్యారు			src::top1000 flag::inflected set::024
-W1c2b6b2ee11d	sorted / arranged (Hyd)	seṭṭing	సెట్టింగ్			src::anki topic::discourse-markers-fillers flag::multi-gloss set::024
-W00a29850fee6	material	padārthaṁ	పదార్థం			src::top1000 set::024
-W148418a5d11c	fraction	bhinnaṁ	భిన్నం			src::top1000 set::024
-W150616c0a705	red	errapu	ఎర్రపు			src::anki topic::colors set::024
+W1c2b6b2ee11d	sorted / arranged (Hyd)	seṭṭing	సెట్టింగ్			src::anki topic::discourse-markers-fillers flag::multi-gloss set::025
+W00a29850fee6	material	padārthaṁ	పదార్థం			src::top1000 set::025
+W148418a5d11c	fraction	bhinnaṁ	భిన్నం			src::top1000 set::025
+W150616c0a705	red	errapu	ఎర్రపు			src::anki topic::colors set::025
 W99f22836f89a	forest	aṭavī	అటవీ			src::top1000 set::025
 W9524b5ce275a	blue	nīlaṁ	నీలం			src::anki src::top1000 topic::colors set::025
 Wa6cb49cbe122	sit	kūrchuni	కూర్చుని			src::top1000 set::025
@@ -1251,10 +1255,10 @@ Wfccadf071abc	grass	gaḍḍi	గడ్డి			src::top1000 set::025
 W131c25322b4a	neat / clean (appearance)	śubhrangā	శుభ్రంగా			src::anki src::top1000 topic::clothing-appearance flag::multi-gloss set::025
 W77fbc5da0435	dirty	masilina	మసిలిన			src::anki topic::clothing-appearance set::025
 W65234ce03727	to tie	kaṭṭu	కట్టు			src::anki topic::clothing-appearance set::025
-Wec7666213178	edge	anchu	అంచు			src::top1000 set::025
-W1a8fea902ff2	long shirt / kurta	jubba	జుబ్బ			src::anki topic::clothing-appearance set::025
-Wb33d9d905c7a	sign	sain	సైన్			src::top1000 set::025
-Wade1ac571846	visit	paryaṭana	పర్యటన			src::top1000 set::025
+Wec7666213178	edge	anchu	అంచు			src::top1000 set::026
+W1a8fea902ff2	long shirt / kurta	jubba	జుబ్బ			src::anki topic::clothing-appearance set::026
+Wb33d9d905c7a	sign	sain	సైన్			src::top1000 set::026
+Wade1ac571846	visit	paryaṭana	పర్యటన			src::top1000 set::026
 Wbfa98ecb6105	jewelry	nagalu	నగలు			src::anki topic::clothing-appearance set::026
 Wc096485193c5	soft	sāphṭ	సాఫ్ట్			src::top1000 set::026
 W1b885bdd91c4	fun	saradāgā	సరదాగా			src::top1000 set::026
@@ -1301,10 +1305,10 @@ Wc755c452bca1	expenses	kharchulu	ఖర్చులు			src::anki topic::work-t
 W8fed9980401c	least	kanīsaṁ	కనీసం			src::top1000 set::026
 W8d4c76fb32bf	profit	lābhaṁ	లాభం			src::anki topic::work-technology set::026
 W12ec8dbbb1c6	loss	naṣṭaṁ	నష్టం			src::anki topic::work-technology set::026
-We6184d1017e8	shout	aravaḍaṁ	అరవడం			src::top1000 set::026
-W6a528954c530	to send (base)	pampu	పంపు			src::anki topic::work-technology flag::multi-gloss set::026
-W2f58e010245b	except	tappa	తప్ప			src::top1000 set::026
-W6d1aa0d77394	I sent (past)	pampānu	పంపాను			src::anki topic::work-technology flag::inflected flag::multi-gloss set::026
+We6184d1017e8	shout	aravaḍaṁ	అరవడం			src::top1000 set::027
+W6a528954c530	to send (base)	pampu	పంపు			src::anki topic::work-technology flag::multi-gloss set::027
+W2f58e010245b	except	tappa	తప్ప			src::top1000 set::027
+W6d1aa0d77394	I sent (past)	pampānu	పంపాను			src::anki topic::work-technology flag::inflected flag::multi-gloss set::027
 W7972c13ae8fc	wrote	vrāsāru	వ్రాసారు			src::top1000 flag::inflected set::027
 Wae31806cd19b	to receive	risīv chēyu	రిసీవ్ చేయు			src::anki topic::work-technology flag::phrase set::027
 W374055bd1115	seed	vittanaṁ	విత్తనం			src::top1000 set::027
@@ -1351,10 +1355,10 @@ W1e385d5c1263	equal	samāna	సమాన			src::top1000 set::027
 Wf4d5f9988513	sent	pampina	పంపిన			src::top1000 set::027
 Wc7f4dec49228	car (loanword)	kār	కార్			src::anki topic::transport-travel set::027
 W49d0098fff1d	bus (loanword)	bas	బస్			src::anki topic::transport-travel set::027
-W7d62f380dbc4	fell	paḍipōyindi	పడిపోయింది			src::top1000 flag::inflected set::027
-W1c6d207a507d	auto-rickshaw	āṭō	ఆటో			src::anki topic::transport-travel set::027
-W0e54be56e213	fit	saripōyē	సరిపోయే			src::top1000 set::027
-Wa37265ad6e4f	flow	pravāhaṁ	ప్రవాహం			src::top1000 set::027
+W7d62f380dbc4	fell	paḍipōyindi	పడిపోయింది			src::top1000 flag::inflected set::028
+W1c6d207a507d	auto-rickshaw	āṭō	ఆటో			src::anki topic::transport-travel set::028
+W0e54be56e213	fit	saripōyē	సరిపోయే			src::top1000 set::028
+Wa37265ad6e4f	flow	pravāhaṁ	ప్రవాహం			src::top1000 set::028
 W579b97dcf83d	flight (loanword)	phlaiṭ	ఫ్లైట్			src::anki topic::transport-travel set::028
 Wa282339eb374	fair	nyāyamaina	న్యాయమైన			src::top1000 set::028
 W72329176c250	motorcycle (loanword)	baik	బైక్			src::anki topic::transport-travel set::028
@@ -1401,10 +1405,10 @@ W6cd9a795ad0f	room	gadi	గది			src::anki src::book1000 src::top1000 topic::
 W776313a3f3c9	method	paddhati	పద్ధతి			src::top1000 set::028
 We4f0d7ddef2a	organ	avayava	అవయవ			src::top1000 set::028
 W4b8e7a086ac4	bathroom (loanword)	bātrūm	బాత్రూమ్			src::anki topic::home-household set::028
-W9e20bfed1c50	pay	chellinchaṭāniki	చెల్లించటానికి			src::top1000 set::028
-Wee24d8786663	kitchen	vaṇṭillu	వంటిల్లు			src::anki topic::home-household set::028
-W216cb935a7e8	age	vayassu	వయస్సు			src::top1000 set::028
-Web73a15d7e30	living room (loanword)	hāl	హాల్			src::anki topic::home-household set::028
+W9e20bfed1c50	pay	chellinchaṭāniki	చెల్లించటానికి			src::top1000 set::029
+Wee24d8786663	kitchen	vaṇṭillu	వంటిల్లు			src::anki topic::home-household set::029
+W216cb935a7e8	age	vayassu	వయస్సు			src::top1000 set::029
+Web73a15d7e30	living room (loanword)	hāl	హాల్			src::anki topic::home-household set::029
 W3fb69d58966b	section	vibhāgaṁ	విభాగం			src::top1000 set::029
 W7b369e1993d5	door	talupu	తలుపు			src::anki src::top1000 topic::home-household set::029
 W60a8ba8746b6	dress	dustula	దుస్తుల			src::top1000 set::029
@@ -1451,10 +1455,10 @@ W371d7bb91a09	meet	mīṭ	మీట్			src::top1000 set::029
 W0db9e2aed8cf	sleep	nidra	నిద్ర			src::anki src::top1000 topic::feelings-states set::029
 W3e3bc9034e27	root	rūṭ	రూట్			src::top1000 set::029
 W49b307596683	I'm sleepy	nidra vastundi	నిద్ర వస్తుంది			src::anki topic::feelings-states flag::inflected flag::phrase set::029
-W80d5633ce712	bought; buy	konugōlu	కొనుగోలు			src::top1000 set::029
-W8d960ce6f189	I'm hungry	ākali vēstundi	ఆకలి వేస్తుంది			src::anki topic::feelings-states flag::inflected flag::phrase set::029
-W4104592412e7	raise	penchaḍāniki	పెంచడానికి			src::top1000 set::029
-We6b1cdff9d9c	I'm thirsty	dāhaṁ vēstundi	దాహం వేస్తుంది			src::anki topic::feelings-states flag::inflected flag::phrase set::029
+W80d5633ce712	bought; buy	konugōlu	కొనుగోలు			src::top1000 set::030
+W8d960ce6f189	I'm hungry	ākali vēstundi	ఆకలి వేస్తుంది			src::anki topic::feelings-states flag::inflected flag::phrase set::030
+W4104592412e7	raise	penchaḍāniki	పెంచడానికి			src::top1000 set::030
+We6b1cdff9d9c	I'm thirsty	dāhaṁ vēstundi	దాహం వేస్తుంది			src::anki topic::feelings-states flag::inflected flag::phrase set::030
 W57b25bb0da27	solve	pariṣkarinchaḍāniki	పరిష్కరించడానికి			src::top1000 set::030
 W866454150c8d	cold (feeling)	chali	చలి			src::anki topic::feelings-states set::030
 W7136f0c71293	whether	lēdō	లేదో			src::top1000 set::030
@@ -1501,10 +1505,10 @@ W2dbd27da670e	phrase	padabandhaṁ	పదబంధం			src::top1000 set::030
 W48a0edf227f5	I (future)	-tānu	-తాను			src::anki topic::grammar-particles-verb-endings flag::inflected set::030
 Wb0ed41598947	you-formal / they (future)	-tāru	-తారు			src::anki topic::grammar-particles-verb-endings flag::inflected set::030
 W181f4d130216	tall	poḍavaina	పొడవైన			src::top1000 set::030
-W831217499f55	he (future)	-tāḍau	-తాడu			src::anki topic::grammar-particles-verb-endings set::030
-W6c13f158be54	it/she (present continuous)	-tundi	-తుంది			src::anki topic::grammar-particles-verb-endings flag::inflected flag::multi-gloss set::030
-W267af81ed8a7	I am (present continuous)	-tunnānu	-తున్నాను			src::anki topic::grammar-particles-verb-endings flag::inflected set::030
-W3a14d55ef851	you-formal (present cont.)	-tunnāru	-తున్నారు			src::anki topic::grammar-particles-verb-endings flag::inflected set::030
+W831217499f55	he (future)	-tāḍau	-తాడu			src::anki topic::grammar-particles-verb-endings set::031
+W6c13f158be54	it/she (present continuous)	-tundi	-తుంది			src::anki topic::grammar-particles-verb-endings flag::inflected flag::multi-gloss set::031
+W267af81ed8a7	I am (present continuous)	-tunnānu	-తున్నాను			src::anki topic::grammar-particles-verb-endings flag::inflected set::031
+W3a14d55ef851	you-formal (present cont.)	-tunnāru	-తున్నారు			src::anki topic::grammar-particles-verb-endings flag::inflected set::031
 Wf706bb3d7bf5	temperature	uṣṇōgrata	ఉష్ణోగ్రత			src::top1000 set::031
 W1ba82b85e65a	he (present continuous)	-tunnāḍu	-తున్నాడు			src::anki topic::grammar-particles-verb-endings flag::inflected set::031
 Wa5a544387977	industry	pariśrama	పరిశ్రమ			src::top1000 set::031
@@ -1551,10 +1555,10 @@ We5f376eb24e6	element	mūlakaṁ	మూలకం			src::top1000 set::031
 Wb4df36bfc9c9	situation; condition	paristhiti	పరిస్థితి			src::anki src::top1000 topic::abstract-common-nouns set::031
 W6a1d11d34530	corner	mūlalō	మూలలో			src::top1000 set::031
 Wfccf0cda30d2	reason; cause	kāraṇaṁ	కారణం			src::anki src::book1000 src::top1000 topic::abstract-common-nouns set::031
-W1d1e4d89826c	supply	sarapharā	సరఫరా			src::top1000 set::031
-W9f9ec397c6e6	result	phalitaṁ	ఫలితం			src::anki topic::abstract-common-nouns set::031
-W69e692e9dc6c	whose	dīni	దీని			src::top1000 set::031
-W1509fa45eff6	meaning; mean	arthaṁ	అర్థం			src::anki src::top1000 topic::abstract-common-nouns flag::multi-gloss set::031
+W1d1e4d89826c	supply	sarapharā	సరఫరా			src::top1000 set::032
+W9f9ec397c6e6	result	phalitaṁ	ఫలితం			src::anki topic::abstract-common-nouns set::032
+W69e692e9dc6c	whose	dīni	దీని			src::top1000 set::032
+W1509fa45eff6	meaning; mean	arthaṁ	అర్థం			src::anki src::top1000 topic::abstract-common-nouns flag::multi-gloss set::032
 W70dbfaf41f2d	locate	gurtinchaḍaṁ	గుర్తించడం			src::top1000 set::032
 W8db3bf44eb9d	purpose / aim	uddēśaṁ	ఉద్దేశం			src::anki topic::abstract-common-nouns set::032
 Weaf588029f02	opportunity / holiday	avakāśaṁ	అవకాశం			src::anki topic::abstract-common-nouns set::032
@@ -1601,10 +1605,10 @@ W5025a7b8921b	to close / shut	mūyu	మూయు			src::anki topic::useful-actio
 Wb7250fca3a84	sharp	padunaina	పదునైన			src::top1000 set::032
 We1e59b76a47c	please close (formal)	mūyaṇḍi	మూయండి			src::anki topic::useful-action-verbs flag::inflected set::032
 W9f8f1aba7886	wing	ving	వింగ్			src::top1000 set::032
-Wfcf0e3150626	to push	tōsukō	తోసుకో			src::anki topic::useful-action-verbs set::032
-W286fcfe84c36	create	sṛṣṭinchaḍāniki	సృష్టించడానికి			src::top1000 set::032
-W36dee9ce59ab	to pull	lāgu	లాగు			src::anki topic::useful-action-verbs set::032
-W7763d87fe6a0	neighbor	porugu	పొరుగు			src::top1000 set::032
+Wfcf0e3150626	to push	tōsukō	తోసుకో			src::anki topic::useful-action-verbs set::033
+W286fcfe84c36	create	sṛṣṭinchaḍāniki	సృష్టించడానికి			src::top1000 set::033
+W36dee9ce59ab	to pull	lāgu	లాగు			src::anki topic::useful-action-verbs set::033
+W7763d87fe6a0	neighbor	porugu	పొరుగు			src::top1000 set::033
 Wa036ef74e466	to press / crush	nokku	నొక్కు			src::anki topic::useful-action-verbs set::033
 Wd00980033fec	wash	vāṣ	వాష్			src::top1000 set::033
 W5c7dce1b3f91	to hit / knock  [form of కొట్టు]	koṭṭu	కొట్టు			src::anki topic::useful-action-verbs flag::verbform set::033
@@ -1651,10 +1655,10 @@ W805cdac039d5	mine	main	మైన్			src::top1000 set::033
 W7ff3f7bf4421	gratitude / thanks (formal)	kṛtajñatalu	కృతజ్ఞతలు			src::anki topic::social-polite-expressions set::033
 Wf5667e3a603e	tie	ṭai	టై			src::top1000 set::033
 W37adab4b43fb	because of you	mī valla	మీ వల్ల			src::anki topic::social-polite-expressions flag::phrase set::033
-W8d27c794f4e9	enter	namōdu	నమోదు			src::top1000 set::033
-Wbda70c80d238	for your help	mī sahāyāniki	మీ సహాయానికి			src::anki topic::social-polite-expressions flag::phrase set::033
-Wf428ccc1e296	what you said is true	mīru cheppindi nijaṁ	మీరు చెప్పింది నిజం			src::anki topic::social-polite-expressions flag::phrase set::033
-Wc68e0fccba56	fresh	tājā	తాజా			src::top1000 set::033
+W8d27c794f4e9	enter	namōdu	నమోదు			src::top1000 set::034
+Wbda70c80d238	for your help	mī sahāyāniki	మీ సహాయానికి			src::anki topic::social-polite-expressions flag::phrase set::034
+Wf428ccc1e296	what you said is true	mīru cheppindi nijaṁ	మీరు చెప్పింది నిజం			src::anki topic::social-polite-expressions flag::phrase set::034
+Wc68e0fccba56	fresh	tājā	తాజా			src::top1000 set::034
 Wacb728abf0be	search	śōdhana	శోధన			src::top1000 set::034
 Wb940f301c309	fantastic (loanword)	pheṇṭāsṭik	ఫెంటాస్టిక్			src::anki topic::social-polite-expressions set::034
 Wa4fc30b22adb	send	pampaṇḍi	పంపండి			src::top1000 flag::inflected set::034
@@ -1701,10 +1705,10 @@ W4062a02c5205	bread	breḍ	బ్రెడ్			src::top1000 set::034
 Wad83c1b725e2	benefit / advantage (Urdu)	phāyidā	ఫాయిదా			src::anki topic::hyderabadi-specials-slang set::034
 Wd537f9d1168d	charge	vasūlu	వసూలు			src::top1000 set::034
 W3b49b32c612f	damage / loss (Urdu)	nuksānaṁ	నుక్సానం			src::anki topic::hyderabadi-specials-slang set::034
-W36d9d8863a42	offer	āphar	ఆఫర్			src::top1000 set::034
-W8ad03bd82746	definitely (Urdu)	jarūr	జరూర్			src::anki topic::hyderabadi-specials-slang set::034
-W80b00877c2f7	slave	bānisa	బానిస			src::top1000 set::034
-W31336c30be64	yours (Urdu, very casual)	tērā	తేరా			src::anki topic::hyderabadi-specials-slang set::034
+W36d9d8863a42	offer	āphar	ఆఫర్			src::top1000 set::035
+W8ad03bd82746	definitely (Urdu)	jarūr	జరూర్			src::anki topic::hyderabadi-specials-slang set::035
+W80b00877c2f7	slave	bānisa	బానిస			src::top1000 set::035
+W31336c30be64	yours (Urdu, very casual)	tērā	తేరా			src::anki topic::hyderabadi-specials-slang set::035
 We23327c63f18	duck	ḍak	డక్			src::top1000 set::035
 W37291723fa37	mine (Urdu, very casual)	mērā	మేరా			src::anki topic::hyderabadi-specials-slang set::035
 We369f6d08093	instant	takṣaṇa	తక్షణ			src::top1000 set::035
@@ -1751,10 +1755,10 @@ W8142c77cc52b	world	prapanchaṁ	ప్రపంచం			src::anki topic::remain
 We0b632892bf3	sugar	chakkera	చక్కెర			src::top1000 set::035
 W64d618e2fcae	society / organization	sanghaṁ	సంఘం			src::anki topic::remaining-high-utility-words set::035
 We5b43c07662f	death	maraṇaṁ	మరణం			src::top1000 set::035
-W81e76416a0cb	expense; spend	kharchu	ఖర్చు			src::anki src::top1000 topic::remaining-high-utility-words set::035
-W09ff35bffb49	income	ādāyaṁ	ఆదాయం			src::anki topic::remaining-high-utility-words set::035
-Wefc7f218f5ee	skill	naipuṇyaṁ	నైపుణ్యం			src::top1000 set::035
-W31c27fca1f3b	bank (loanword)	byānk	బ్యాంక్			src::anki topic::remaining-high-utility-words set::035
+W81e76416a0cb	expense; spend	kharchu	ఖర్చు			src::anki src::top1000 topic::remaining-high-utility-words set::036
+W09ff35bffb49	income	ādāyaṁ	ఆదాయం			src::anki topic::remaining-high-utility-words set::036
+Wefc7f218f5ee	skill	naipuṇyaṁ	నైపుణ్యం			src::top1000 set::036
+W31c27fca1f3b	bank (loanword)	byānk	బ్యాంక్			src::anki topic::remaining-high-utility-words set::036
 W0d54d3b30073	women	mahiḷalu	మహిళలు			src::top1000 set::036
 W4f73f5a2524f	money / coin (Urdu)	paisā	పైసా			src::anki topic::remaining-high-utility-words set::036
 Wac860dc1d8a6	season	sījan	సీజన్			src::top1000 set::036
@@ -1801,10 +1805,10 @@ W240618709985	responsibility	bādhyata	బాధ్యత			src::anki topic::rem
 W3f2551bb304d	promise / guarantee	hāmī	హామీ			src::anki topic::remaining-high-utility-words set::036
 W0947257444a2	card	kārḍ	కార్డ్			src::top1000 set::036
 W361184921d1f	change	mārpu	మార్పు			src::anki src::top1000 topic::remaining-high-utility-words set::036
-W2ddb7ddf5701	band	byāṇḍ	బ్యాండ్			src::top1000 set::036
-W1fb1a4bcb6b4	past	gataṁ	గతం			src::anki topic::remaining-high-utility-words set::036
-Wadebd34ae862	present (time)	vartamānaṁ	వర్తమానం			src::anki topic::remaining-high-utility-words set::036
-W178bb7f60de2	future	bhaviṣyat	భవిష్యత్			src::anki topic::remaining-high-utility-words set::036
+W2ddb7ddf5701	band	byāṇḍ	బ్యాండ్			src::top1000 set::037
+W1fb1a4bcb6b4	past	gataṁ	గతం			src::anki topic::remaining-high-utility-words set::037
+Wadebd34ae862	present (time)	vartamānaṁ	వర్తమానం			src::anki topic::remaining-high-utility-words set::037
+W178bb7f60de2	future	bhaviṣyat	భవిష్యత్			src::anki topic::remaining-high-utility-words set::037
 W959a818d8ad6	dream	kāvālani	కావాలని			src::top1000 set::037
 We9b206b83a5d	thought / consideration; idea	ālōchana	ఆలోచన			src::anki src::top1000 topic::remaining-high-utility-words flag::multi-gloss set::037
 W0c7c189ae776	place / spot	chōṭa	చోట			src::anki topic::remaining-high-utility-words set::037
@@ -1825,7 +1829,6 @@ Wb8ff1f4451a0	continue	konasāgutundi	కొనసాగుతుంది			src
 W26465abfc4b9	the bell rang / time's up	gaṇṭa koṭṭindi	గంట కొట్టింది			src::anki topic::remaining-high-utility-words flag::inflected flag::phrase set::037
 We02c6a2800c5	block	blāk	బ్లాక్			src::top1000 set::037
 Wb2ea948bc5bc	mirror	addamu	అద్దము			src::anki topic::remaining-high-utility-words set::037
-W90c3cc058adf	temple (common)	guḍi	గుడి			src::anki topic::remaining-high-utility-words set::037
 Wa408f8b2cda1	hat	ṭōpī	టోపీ			src::top1000 set::037
 Wb785c9750928	prayer / worship	pūja	పూజ			src::anki topic::remaining-high-utility-words set::037
 We4be24d82a70	sell	ammē	అమ్మే			src::top1000 set::037
@@ -1852,9 +1855,9 @@ W6c86ee3fa493	attention / notice	gamanaṁ	గమనం			src::anki topic::remai
 W2fe522c9aff6	camp	śibiraṁ	శిబిరం			src::top1000 set::037
 Wa8910eb69106	average	sarāsari	సరాసరి			src::anki topic::remaining-high-utility-words set::037
 W92c5c5c0e2e0	invent	kanugonaḍamē	కనుగొనడమే			src::top1000 set::037
-Wa9af6930601c	strongly / firmly	gaṭṭigā	గట్టిగా			src::anki topic::remaining-high-utility-words set::037
-W768f4949645c	cotton	patti	పత్తి			src::top1000 set::037
-W62c10242b646	born	puṭṭinappaṭi	పుట్టినప్పటి			src::top1000 set::037
+Wa9af6930601c	strongly / firmly	gaṭṭigā	గట్టిగా			src::anki topic::remaining-high-utility-words set::038
+W768f4949645c	cotton	patti	పత్తి			src::top1000 set::038
+W62c10242b646	born	puṭṭinappaṭi	పుట్టినప్పటి			src::top1000 set::038
 W106cce662134	comfortably / peacefully	hāyigā	హాయిగా			src::anki topic::remaining-high-utility-words set::038
 W5aeaeac5bbfe	determine	gurtinchaḍāniki	గుర్తించడానికి			src::top1000 set::038
 W2d955a25792a	carefully	jāgrattaga	జాగ్రత్తగ			src::anki topic::remaining-high-utility-words set::038
@@ -1902,9 +1905,9 @@ Wc5c100c82f01	lemon / lime	nimmakāya	నిమ్మకాయ			src::anki topic
 W6382ffd3a1af	papaya	boppāyi	బొప్పాయి			src::anki topic::fruits flag::inflected set::038
 W54a1ba62bd43	guava	jāmakāya	జామకాయ			src::anki topic::fruits set::038
 We09f6dc748bb	orange (fruit)	nārinja	నారింజ			src::anki topic::fruits set::038
-W9448bb2e1b8a	potato	ālugaḍḍa	ఆలుగడ్డ			src::anki topic::vegetables set::038
-W2ddf2497d57f	onion; Onions	ullipāya	ఉల్లిపాయ			src::anki src::book1000 topic::vegetables set::038
-Wba7dd956e176	tomato	ṭamāṭa	టమాట			src::anki topic::vegetables set::038
+W9448bb2e1b8a	potato	ālugaḍḍa	ఆలుగడ్డ			src::anki topic::vegetables set::039
+W2ddf2497d57f	onion; Onions	ullipāya	ఉల్లిపాయ			src::anki src::book1000 topic::vegetables set::039
+Wba7dd956e176	tomato	ṭamāṭa	టమాట			src::anki topic::vegetables set::039
 Wf4baad2a8671	brinjal / eggplant	vankāya	వంకాయ			src::anki src::book1000 topic::vegetables flag::multi-gloss set::039
 Wdfb7abbf5c44	okra / lady finger; Ladyfinger	beṇḍakāya	బెండకాయ			src::anki src::book1000 topic::vegetables set::039
 W8b7b28ca0205	spinach	pālakūra	పాలకూర			src::anki topic::vegetables set::039
@@ -1952,9 +1955,9 @@ Wce34ac5a4568	wood	chekka	చెక్క			src::anki src::top1000 topic::materi
 Wb9a3008ce14a	cotton	pratti	ప్రత్తి			src::anki topic::materials set::039
 Wf386fbdee693	glass (material)	gāju	గాజు			src::anki src::top1000 topic::materials flag::multi-gloss set::039
 W05fc43018620	sand	isuka	ఇసుక			src::anki src::top1000 topic::materials set::039
-W98a801d2bc7e	steel (loanword)	sṭīl	స్టీల్			src::anki src::top1000 topic::materials flag::multi-gloss set::039
-W89dd763fc1a1	lamp / diya	dīpaṁ	దీపం			src::anki src::book1000 topic::culture-religion flag::multi-gloss set::039
-W5f92f8c199ef	garland	māla	మాల			src::anki topic::culture-religion set::039
+W98a801d2bc7e	steel (loanword)	sṭīl	స్టీల్			src::anki src::top1000 topic::materials flag::multi-gloss set::040
+W89dd763fc1a1	lamp / diya	dīpaṁ	దీపం			src::anki src::book1000 topic::culture-religion flag::multi-gloss set::040
+W5f92f8c199ef	garland	māla	మాల			src::anki topic::culture-religion set::040
 Web70b40c5d0f	sacred mark / bindi	boṭṭu	బొట్టు			src::anki topic::culture-religion set::040
 W0d8d79bf5808	incense stick	agarabatti	అగరబత్తి			src::anki topic::culture-religion set::040
 W1b8dfc900a3b	offering / prasad	prasādaṁ	ప్రసాదం			src::anki topic::culture-religion set::040
@@ -2002,4 +2005,4 @@ W8c2169493120	sex (the act) - sexual act	laingika kriya	లైంగిక క�
 W82f8d1621a36	marriage	vivāhaṁ	వివాహం			src::anki set::040
 W91d0b25520d4	January	janavari	జనవరి			src::anki set::040
 W37b9dd8b7d2e	sport	krīḍa	క్రీడ			src::anki set::040
-W2e74e6c9bf10	healthy	ārōgyamaina	ఆరోగ్యమైన			src::anki set::040
+W2e74e6c9bf10	healthy	ārōgyamaina	ఆరోగ్యమైన			src::anki set::041
