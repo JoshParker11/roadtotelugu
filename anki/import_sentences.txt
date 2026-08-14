@@ -129,9 +129,9 @@ S674946c80a99	Take those. [respectful]		avi tīsukōṇḍi.	అవి తీస
 S275e9f445d36	one book		oka pustakaṁ	ఒక పుస్తకం		or “a book.” Oka modifies the noun that follows it.	src::site known::100 len::1-3 set::003 day::005
 S270b5c9d8d6f	Take a/one book. [respectful]		oka pustakaṁ tīsukōṇḍi	ఒక పుస్తకం తీసుకోండి		Context decides how strongly the count matters.	src::site reg::respectful known::100 len::1-3 form::request set::003 day::005
 S7ee809112e56	This is a book		idi oka pustakaṁ	ఇది ఒకపుస్తకం			src::book1000 known::100 len::1-3 flag::respaced set::003 day::005
-Sbf35b412ecd8	Which possessives are identical to their pronouns?		āyana, āviḍa, āme.	ఆయన, ఆవిడ, ఆమె.			src::site known::100 len::1-3 form::question set::003 day::005
-Sf7c8c4e9211f	Who is she ?		āviḍa evaru?	ఆవిడఎవరు?			src::book1000 known::100 len::1-3 form::question flag::respaced set::003 day::005
-Sd04513358a70	This is her book		idi āviḍā pustakaṁ	ఇది ఆవిడా పుస్తకం			src::book1000 known::100 len::1-3 set::003 day::005
+Sbf35b412ecd8	Which possessives are identical to their pronouns?		āyana, āviḍa, āme.	ఆయన, ఆవిడ, ఆమె.			src::site known::100 len::1-3 form::question set::003 day::006
+Sf7c8c4e9211f	Who is she ?		āviḍa evaru?	ఆవిడఎవరు?			src::book1000 known::100 len::1-3 form::question flag::respaced set::003 day::006
+Sd04513358a70	This is her book		idi āviḍā pustakaṁ	ఇది ఆవిడా పుస్తకం			src::book1000 known::100 len::1-3 set::003 day::006
 S4034e0d1f6bb	You go		nuvvu veḷḷu	నువ్వువెళ్ళు			src::book1000 known::100 len::1-3 flag::respaced set::003 day::006
 Sbcd805501df4	Take this and go.		idi tīsukoni veḷḷu.	ఇది తీసుకొని వెళ్ళు.			src::anki known::100 len::1-3 form::request set::003 day::006
 S93fc4df6500e	Go over there.		akkaḍiki veḷḷu.	అక్కడికి వెళ్ళు.			src::anki known::100 len::1-3 form::request set::003 day::006
@@ -140,10 +140,6 @@ S456511fad695	I want two of those.		nāku avi reṇḍu kāvāli.	నాకు �
 S0f3e5a0c111b	Please sit [respectful]		dayachēsi kūrchōṇḍi	దయచేసి కూర్చోండి			src::book1000 reg::respectful known::100 len::1-3 form::request set::003 day::006
 Se98f06d8a2c7	Please take it [respectful]		dayachēsi tīsukōṇḍi	దయచేసి తీసుకోండి			src::book1000 reg::respectful known::100 len::1-3 form::request set::003 day::006
 S92c1ba11c806	Have it , please [respectful]		dayachēsi idi tīsukōṇḍi	దయచేసి ఇది తీసుకోండి			src::book1000 reg::respectful known::100 len::1-3 form::request set::003 day::006
-Sdfac874a3503	Come in [respectful]		lōpaliki raṇḍi	లోపలికి రండి			src::book1000 reg::respectful known::100 len::1-3 form::request set::003 day::006
-S295599c5ab1b	Please come in [respectful]		dayachēsi lōpaliki raṇḍi	దయచేసి లోపలికి రండి			src::book1000 reg::respectful known::100 len::1-3 form::request set::003 day::006
-S6dc2b35a1474	Please come in. [respectful]		mīru lōpali raṇḍi.	మీరు లోపలి రండి.			src::anki reg::respectful known::100 len::1-3 form::request set::003 day::006
-S2b750939c0db	Please come inside. [respectful]		lōpali raṇḍi.	లోపలి రండి.		also: Get in !	src::anki src::book1000 reg::respectful known::100 len::1-3 form::request set::003 day::006
 S79c3bf656694	How was it ?		adi elā undi ?	అది ఎలా ఉంది ?			src::book1000 known::100 len::1-3 form::past form::question set::003 day::006
 Sada9f1440759	How did this happen?		idi elā ayyindi?	ఇది ఎలా అయ్యింది?			src::anki known::100 len::1-3 form::question set::003 day::006
 S3ca1adf3a80c	How are you? [respectful]		mīru eṭla unnāru?	మీరు ఎట్ల ఉన్నారు?		Why you can already say this: mīru from Lesson 1, unnāru is the same existence verb with the respectful ending. The only new piece is eṭla.	src::site reg::respectful known::100 len::1-3 form::past form::question set::003 day::006
@@ -155,10 +151,10 @@ Sfc5806ff3415	Where is she ? [respectful]		āviḍā ekkaḍa unnāru?	ఆవి
 S81cfc51762f5	This is my bag		idi nā byāg	ఇది నా బ్యాగ్			src::book1000 known::100 len::1-3 set::003 day::006
 Sc0e2fd2907e9	Is this your bag? [respectful]		idi mī byāg ā?	ఇది మీ బ్యాగ్ ఆ?			src::anki reg::respectful known::100 len::4-6 form::question set::003 day::006
 Secbaaf8d5b47	Where is my bag?		nā byāg ekkaḍa?	నా బ్యాగ్ ఎక్కడ?			src::anki known::100 len::1-3 form::question set::003 day::006
-S3dd5d683034a	Are you at home? [respectful]		mīru iṇṭlō unnāru?	మీరు ఇంట్లో ఉన్నారు?			src::anki reg::respectful known::100 len::1-3 form::past form::question set::004 day::006
-S6da961787cdf	Is anybody at home? [respectful]		iṇṭlō evaru unnāru?	ఇంట్లో ఎవరు ఉన్నారు?			src::anki reg::respectful known::100 len::1-3 form::past form::question set::004 day::006
-S93a078de7de4	I want a snack. [respectful]		nāku tiṇḍi kāvāli.	నాకు తిండి కావాలి.			src::anki reg::respectful known::100 len::1-3 set::004 day::006
-S5da2ef098e1b	There is no snack at home. [respectful]		iṇṭlō tiṇḍi lēdu.	ఇంట్లో తిండి లేదు.			src::anki reg::respectful known::100 len::1-3 form::negative set::004 day::006
+S3dd5d683034a	Are you at home? [respectful]		mīru iṇṭlō unnāru?	మీరు ఇంట్లో ఉన్నారు?			src::anki reg::respectful known::100 len::1-3 form::past form::question set::003 day::006
+S6da961787cdf	Is anybody at home? [respectful]		iṇṭlō evaru unnāru?	ఇంట్లో ఎవరు ఉన్నారు?			src::anki reg::respectful known::100 len::1-3 form::past form::question set::003 day::006
+S93a078de7de4	I want a snack. [respectful]		nāku tiṇḍi kāvāli.	నాకు తిండి కావాలి.			src::anki reg::respectful known::100 len::1-3 set::003 day::006
+S5da2ef098e1b	There is no snack at home. [respectful]		iṇṭlō tiṇḍi lēdu.	ఇంట్లో తిండి లేదు.			src::anki reg::respectful known::100 len::1-3 form::negative set::003 day::006
 S523eb220ea4d	The food is good. [respectful]		tiṇḍi bāgundi.	తిండి బాగుంది.			src::anki reg::respectful known::100 len::1-3 set::004 day::006
 Sf8a6e499e5b2	Not yet		inkā lēdu	ఇంకా లేదు			src::book1000 known::100 len::1-3 form::negative set::004 day::006
 Sfd98a34d8c76	No, not yet.		lēdu, inkā kādu.	లేదు, ఇంకా కాదు.			src::anki known::100 len::1-3 form::negative set::004 day::006
@@ -205,10 +201,10 @@ S71953f903daf	How many people?		enni mandi?	ఎన్ని మంది?			src:
 S227b52e75678	There is no water.		nīḷḷu lēdu.	నీళ్ళు లేదు.			src::anki known::100 len::1-3 form::negative set::004 day::007
 S9c237924731a	I want more water.		nāku inkā nīḷḷu kāvāli.	నాకు ఇంకా నీళ్ళు కావాలి.			src::anki known::100 len::4-6 set::004 day::007
 S9ad9ba9ad6f9	Remember		gurtu	గుర్తు			src::book1000 known::100 len::1-3 set::004 day::007
-S1ec17067ea31	Do you remember me?		nēnu gurtundā?	నేను గుర్తుందా?			src::anki known::100 len::1-3 form::question set::005 day::007
-S44e6d324a0e7	I don't remember.		nāku gurtu lēdu.	నాకు గుర్తులేదు.			src::anki known::100 len::1-3 form::negative flag::respaced set::005 day::007
-Sc66e239d158f	I remember everything.		nāku antā gurtundi.	నాకు అంతా గుర్తుంది.			src::anki known::100 len::1-3 set::005 day::007
-S0c772895e3fc	Are you ready? [respectful]		mīru reḍī ā?	మీరు రెడీ ఆ?			src::anki reg::respectful known::100 len::1-3 form::question set::005 day::008
+S1ec17067ea31	Do you remember me?		nēnu gurtundā?	నేను గుర్తుందా?			src::anki known::100 len::1-3 form::question set::004 day::007
+S44e6d324a0e7	I don't remember.		nāku gurtu lēdu.	నాకు గుర్తులేదు.			src::anki known::100 len::1-3 form::negative flag::respaced set::004 day::007
+Sc66e239d158f	I remember everything.		nāku antā gurtundi.	నాకు అంతా గుర్తుంది.			src::anki known::100 len::1-3 set::004 day::007
+S0c772895e3fc	Are you ready? [respectful]		mīru reḍī ā?	మీరు రెడీ ఆ?			src::anki reg::respectful known::100 len::1-3 form::question set::004 day::008
 Sbbb1336218ce	I am not ready yet.		nēnu inkā reḍī kādu.	నేను ఇంకా రెడీ కాదు.			src::anki known::100 len::4-6 form::negative set::005 day::008
 Sef9769c65894	Everything is ready.		antā reḍī.	అంతా రెడీ.			src::anki known::100 len::1-3 set::005 day::008
 S9e1eed28b557	Your food is ready. [respectful]		mī bhōjanaṁ reḍī.	మీ భోజనం రెడీ.			src::anki reg::respectful known::100 len::1-3 set::005 day::008
@@ -255,10 +251,10 @@ Sa60626508d55	This is for you [respectful]		idi mī kōsaṁ	ఇది మీ �
 S6816d3e45fb1	I did this for you. [informal]		idi nī kōsaṁ chēsānu.	ఇది నీ కోసం చేసాను.			src::anki reg::informal known::100 len::4-6 form::past set::005 day::009
 Se1be7b430a76	He is here.		āyana ikkaḍa unnāḍu.	ఆయన ఇక్కడ ఉన్నాడు.			src::anki known::100 len::1-3 form::past set::005 day::009
 S83696ccc4b01	He is over there.		āyana akkaḍa unnāḍu.	ఆయన అక్కడ ఉన్నాడు.			src::anki known::100 len::1-3 form::past set::005 day::009
-Sc7e633b27fbb	He became angry [respectful]		āyana kōpangā unnāru	ఆయనకోపంగా ఉన్నారు			src::book1000 reg::respectful known::100 len::1-3 form::past flag::respaced set::006 day::009
-Se334eb92ece8	Why is he angry?		āyana enduku kōpangā unnāḍu?	ఆయన ఎందుకు కోపంగా ఉన్నాడు?			src::anki known::100 len::4-6 form::past form::question set::006 day::009
-Sd522378f2261	I am angry.		nāku kōpangā undi.	నాకు కోపంగా ఉంది.			src::anki known::100 len::1-3 form::past set::006 day::009
-S727ed7a2737d	Is it possible ?		idi sādhyamēnā?	ఇది సాధ్యమేనా?			src::book1000 known::100 len::1-3 form::question set::006 day::009
+Sc7e633b27fbb	He became angry [respectful]		āyana kōpangā unnāru	ఆయనకోపంగా ఉన్నారు			src::book1000 reg::respectful known::100 len::1-3 form::past flag::respaced set::005 day::009
+Se334eb92ece8	Why is he angry?		āyana enduku kōpangā unnāḍu?	ఆయన ఎందుకు కోపంగా ఉన్నాడు?			src::anki known::100 len::4-6 form::past form::question set::005 day::009
+Sd522378f2261	I am angry.		nāku kōpangā undi.	నాకు కోపంగా ఉంది.			src::anki known::100 len::1-3 form::past set::005 day::009
+S727ed7a2737d	Is it possible ?		idi sādhyamēnā?	ఇది సాధ్యమేనా?			src::book1000 known::100 len::1-3 form::question set::005 day::009
 S1d38106d102e	Is it possible?		sādhyamā?	సాధ్యమా?			src::anki known::100 len::1-3 form::question set::006 day::009
 Sf8cbef5f6629	That is impossible.		adi sādhyaṁ kādu.	అది సాధ్యం కాదు.			src::anki known::100 len::1-3 form::negative set::006 day::009
 S98a66630f790	You tell once [respectful]		mīru okasāri cheppaṇḍi	మీరుఒకసారి చెప్పండి			src::book1000 reg::respectful known::100 len::1-3 form::request flag::respaced set::006 day::009
@@ -280,8 +276,8 @@ Sd4fd019bf07f	For sure, I'm coming tomorrow.		pakkā, rēpu vastā.	పక్క
 S154046da4331	Is this for sure?		idi pakkā nā?	ఇది పక్కా నా?			src::anki known::100 len::1-3 form::question set::006 day::009
 S90edf09b76e2	I don't go		nēnu veḷḷanu	నేనువెళ్ళను		also: I shall not go	src::book1000 known::100 len::1-3 flag::respaced set::006 day::009
 S75bc87c06030	I left after the meeting.		mīṭing tarvāta nēnu veḷḷānu.	మీటింగ్ తర్వాత నేను వెళ్ళాను.			src::anki known::100 len::4-6 form::past set::006 day::009
-S87206cbab83d	I went yesterday.		nēnu ninna veḷḷānu.	నేను నిన్న వెళ్ళాను.			src::anki known::100 len::1-3 form::past set::006 day::010
-Sbbf3508c5c90	I went there yesterday.		nēnu ninna akkaḍiki veḷḷānu.	నేను నిన్న అక్కడికి వెళ్ళాను.			src::anki known::100 len::4-6 form::past set::006 day::010
+S87206cbab83d	I went yesterday.		nēnu ninna veḷḷānu.	నేను నిన్న వెళ్ళాను.			src::anki known::100 len::1-3 form::past set::006 day::009
+Sbbf3508c5c90	I went there yesterday.		nēnu ninna akkaḍiki veḷḷānu.	నేను నిన్న అక్కడికి వెళ్ళాను.			src::anki known::100 len::4-6 form::past set::006 day::009
 S6ba26d0fadda	How did it go ?		elā jarigindi ?	ఎలా జరిగింది ?			src::book1000 known::100 len::1-3 form::question set::006 day::010
 S0249310bed28	What happened?		ēmi jarigindi?	ఏమి జరిగింది?			src::book1000 known::100 len::1-3 form::question set::006 day::010
 S0eaf7927351b	What happened yesterday?		ninna ēmi jarigindi?	నిన్న ఏమి జరిగింది?			src::anki known::100 len::1-3 form::question set::006 day::010
@@ -305,10 +301,10 @@ S39047341668d	This is very necessary.		idi chālā avasaraṁ.	ఇది చా�
 Sfeb388451354	I really need this.		nāku idi chālā avasaraṁ.	నాకు ఇది చాలా అవసరం.			src::anki known::100 len::4-6 set::006 day::010
 Scdd289288cb1	She is a doctor.		āme ḍākṭar	ఆమె డాక్టర్		This is the normal classification pattern. English requires a; Telugu does not.	src::site known::100 len::1-3 set::006 day::010
 Sacf16dd4f914	She is a good doctor.		āme oka manchi ḍākṭar	ఆమె ఒక మంచి డాక్టర్		Oka presents her more deliberately as one member/example of that category. Bare āme manci ḍākṭar is also natural.	src::site known::100 len::4-6 set::006 day::010
-S0e0ae4ba1164	Let's meet in the evening.		sāyantraṁ kaluddāṁ.	సాయంత్రం కలుద్దాం.			src::anki known::100 len::1-3 set::007 day::011
-Scbcbc96d1866	I'll come in the evening.		sāyantraṁ vastā.	సాయంత్రం వస్తా.			src::anki known::100 len::1-3 set::007 day::011
-Sf414011696ea	It's 6:30 pm		sāyantraṁ6:30 gaṇṭalu	సాయంత్రం6:30 గంటలు			src::book1000 known::100 len::1-3 set::007 day::011
-S174bc5b69f98	How many hours?		enni gaṇṭalu?	ఎన్ని గంటలు?			src::anki known::100 len::1-3 form::question set::007 day::011
+S0e0ae4ba1164	Let's meet in the evening.		sāyantraṁ kaluddāṁ.	సాయంత్రం కలుద్దాం.			src::anki known::100 len::1-3 set::006 day::010
+Scbcbc96d1866	I'll come in the evening.		sāyantraṁ vastā.	సాయంత్రం వస్తా.			src::anki known::100 len::1-3 set::006 day::010
+Sf414011696ea	It's 6:30 pm		sāyantraṁ6:30 gaṇṭalu	సాయంత్రం6:30 గంటలు			src::book1000 known::100 len::1-3 set::006 day::011
+S174bc5b69f98	How many hours?		enni gaṇṭalu?	ఎన్ని గంటలు?			src::anki known::100 len::1-3 form::question set::006 day::011
 Sac5e824f0c36	How many hours of work?		enni gaṇṭalu pani?	ఎన్ని గంటలు పని?			src::anki known::100 len::1-3 form::question set::007 day::011
 S3e95ee291478	It is three o'clock now.		ippuḍu mūḍu gaṇṭalu.	ఇప్పుడు మూడు గంటలు.			src::anki known::100 len::1-3 set::007 day::011
 S5a7528ea049c	There are three people. [respectful]		mūḍu mandi unnāru.	మూడు మంది ఉన్నారు.			src::anki reg::respectful known::100 len::1-3 form::past set::007 day::011
@@ -342,25 +338,23 @@ Se0026365a988	The coffee is very hot.		kāphī chālā vēḍigā undi.	కా�
 S684816bf3459	I had coffee		nēnu kāphī tāgānu	నేనుకాఫీ తాగాను			src::book1000 known::100 len::1-3 form::past flag::respaced set::007 day::011
 S8a2024b6ea59	I don't drink		nēnu tāganu	నేనుతాగను			src::book1000 known::100 len::1-3 flag::respaced set::007 day::011
 S7373e5fa8772	I drank tea.		nēnu chāy tāgānu.	నేను చాయ్ తాగాను.			src::anki known::100 len::1-3 form::past set::007 day::011
-Sd2226486bcb6	They are outside. [respectful]		vāḷḷu bayaṭa unnāru.	వాళ్ళు బయట ఉన్నారు.			src::anki reg::respectful known::100 len::1-3 form::past set::007 day::012
-Sbf9947de210a	It is very hot outside.		bayaṭa chālā vēḍigā undi.	బయట చాలా వేడిగా ఉంది.			src::anki known::100 len::4-6 form::past set::007 day::012
+Sd2226486bcb6	They are outside. [respectful]		vāḷḷu bayaṭa unnāru.	వాళ్ళు బయట ఉన్నారు.			src::anki reg::respectful known::100 len::1-3 form::past set::007 day::011
+Sbf9947de210a	It is very hot outside.		bayaṭa chālā vēḍigā undi.	బయట చాలా వేడిగా ఉంది.			src::anki known::100 len::4-6 form::past set::007 day::011
 Sd80434b25a30	My car is outside.		nā kār bayaṭa undi.	నా కార్ బయట ఉంది.			src::anki known::100 len::4-6 form::past set::007 day::012
 Sf485af6049ad	That is their car.		adi vāḷḷa kār.	అది వాళ్ళ కార్.			src::anki known::100 len::1-3 set::007 day::012
 S0fc17e7709c0	The car is outside.		kār bayaṭa undi.	కార్ బయట ఉంది.			src::anki known::100 len::1-3 form::past set::007 day::012
-S019393d52dd7	Step out [respectful]		bayaṭaki veḷḷaṇḍi	బయటకి వెళ్ళండి			src::book1000 reg::respectful known::100 len::1-3 form::request set::007 day::012
-S21258266a7f1	Please go inside. [respectful]		lōpali veḷḷaṇḍi.	లోపలి వెళ్ళండి.			src::anki reg::respectful known::100 len::1-3 form::request set::007 day::012
 S12c5cb2d18a8	I am cooking.		nēnu vaṇṭa chēstunnānu.	నేను వంట చేస్తున్నాను.			src::anki known::100 len::1-3 form::present set::007 day::012
 S1ff029427a32	I am doing cooking now.		nēnu ippuḍu vaṇṭa chēstunnānu.	నేను ఇప్పుడు వంట చేస్తున్నాను.			src::anki known::100 len::4-6 form::present set::007 day::012
 S68a21bda835e	Those are old.		avi pātavi.	అవి పాతవి.			src::anki known::100 len::1-3 set::007 day::012
 S4710b4229a09	I like this song.		nāku ī pāṭa iṣṭaṁ.	నాకు ఈ పాట ఇష్టం.			src::anki known::100 len::4-6 set::007 day::012
 Sd3e23daea415	I am at home.		nēnu iṇṭlō unnānu.	నేను ఇంట్లో ఉన్నాను.			src::anki known::100 len::1-3 form::past set::007 day::012
 S2a2c5c1dd2ec	I am very happy today.		nēnu ī rōju chālā santōṣangā unnānu.	నేను ఈ రోజు చాలా సంతోషంగా ఉన్నాను.			src::anki known::100 len::4-6 form::past set::007 day::012
-S603db4fb369b	I'm very happy today.		ī rōju nēnu santōṣangā unnānu.	ఈ రోజు నేను సంతోషంగా ఉన్నాను.			src::anki known::100 len::4-6 form::past set::008 day::012
-S07686aaee9b0	She is very happy.		āme chālā santōṣangā undi.	ఆమె చాలా సంతోషంగా ఉంది.			src::anki known::100 len::4-6 form::past set::008 day::012
-S4bbbf5a7726d	I was there at that time.		appuḍu nēnu akkaḍa unnānu.	అప్పుడు నేను అక్కడ ఉన్నాను.			src::anki known::100 len::4-6 form::past set::008 day::012
-Sda029a3941f7	What happened then?		appuḍu ēmi jarigindi?	అప్పుడు ఏమి జరిగింది?			src::anki known::100 len::1-3 form::question set::008 day::012
-S78f57effce4d	Speak loudly.		gaṭṭiga cheppu.	గట్టిగ చెప్పు.		also: Speak firmly.	src::anki known::100 len::1-3 form::request set::008 day::012
-S254755cf1be9	Make strong coffee please. [respectful]		gaṭṭigā kāphī chēyaṇḍi.	గట్టిగా కాఫీ చేయండి.			src::anki reg::respectful known::100 len::1-3 form::request set::008 day::012
+S603db4fb369b	I'm very happy today.		ī rōju nēnu santōṣangā unnānu.	ఈ రోజు నేను సంతోషంగా ఉన్నాను.			src::anki known::100 len::4-6 form::past set::007 day::012
+S07686aaee9b0	She is very happy.		āme chālā santōṣangā undi.	ఆమె చాలా సంతోషంగా ఉంది.			src::anki known::100 len::4-6 form::past set::007 day::012
+S4bbbf5a7726d	I was there at that time.		appuḍu nēnu akkaḍa unnānu.	అప్పుడు నేను అక్కడ ఉన్నాను.			src::anki known::100 len::4-6 form::past set::007 day::012
+Sda029a3941f7	What happened then?		appuḍu ēmi jarigindi?	అప్పుడు ఏమి జరిగింది?			src::anki known::100 len::1-3 form::question set::007 day::012
+S78f57effce4d	Speak loudly.		gaṭṭiga cheppu.	గట్టిగ చెప్పు.		also: Speak firmly.	src::anki known::100 len::1-3 form::request set::007 day::012
+S254755cf1be9	Make strong coffee please. [respectful]		gaṭṭigā kāphī chēyaṇḍi.	గట్టిగా కాఫీ చేయండి.			src::anki reg::respectful known::100 len::1-3 form::request set::007 day::012
 Sb867550e4089	That is his car.		adi atani kār.	అది అతని కార్.			src::anki known::100 len::1-3 set::008 day::012
 Sba98fd37cd2b	His father is a doctor.		atani nānna ḍākṭar.	అతని నాన్న డాక్టర్.			src::anki known::100 len::1-3 set::008 day::012
 Sa33f8cf49c69	Nobody is there		evarū lēru	ఎవరూలేరు			src::book1000 known::100 len::1-3 form::negative flag::respaced set::008 day::012
@@ -374,11 +368,11 @@ Sfe3f5ca09450	She sings very well.		āme chālā bāgā pāḍutundi.	ఆమె 
 S61fa3895f437	She sings beautifully.		āme andangā pāḍutundi.	ఆమె అందంగా పాడుతుంది.			src::anki known::100 len::1-3 form::future set::008 day::012
 Sb1d884bc002c	When will it be ready?		eppuḍu reḍī avutundi?	ఎప్పుడు రెడీ అవుతుంది?			src::anki known::100 len::1-3 form::question set::008 day::012
 S39875bbbbb34	It will be fine.		adi avutundi.	అది అవుతుంది.			src::anki known::100 len::1-3 set::008 day::012
-Sf9cb7523d825	Is that so? I didn't know.		avunā? nāku telīdu.	అవునా? నాకు తెలీదు.			src::anki known::100 len::1-3 set::008 day::013
-S0e740253ee77	Is that so? Tell me more.		avunā? inkā cheppu.	అవునా? ఇంకా చెప్పు.			src::anki known::100 len::1-3 form::request set::008 day::013
-S0dc2a6e386d0	Oh really? Is that so?		achchhā, avunā?	అచ్ఛా, అవునా?			src::anki known::100 len::1-3 form::question set::008 day::013
-S54e43a95c793	Oh really, that's nice.		achchhā, bāgundi.	అచ్ఛా, బాగుంది.			src::anki known::100 len::1-3 set::008 day::013
-Safb910428093	Oh okay, I'll come.		achchhā, vastā.	అచ్ఛా, వస్తా.			src::anki known::100 len::1-3 set::008 day::013
+Sf9cb7523d825	Is that so? I didn't know.		avunā? nāku telīdu.	అవునా? నాకు తెలీదు.			src::anki known::100 len::1-3 set::008 day::012
+S0e740253ee77	Is that so? Tell me more.		avunā? inkā cheppu.	అవునా? ఇంకా చెప్పు.			src::anki known::100 len::1-3 form::request set::008 day::012
+S0dc2a6e386d0	Oh really? Is that so?		achchhā, avunā?	అచ్ఛా, అవునా?			src::anki known::100 len::1-3 form::question set::008 day::012
+S54e43a95c793	Oh really, that's nice.		achchhā, bāgundi.	అచ్ఛా, బాగుంది.			src::anki known::100 len::1-3 set::008 day::012
+Safb910428093	Oh okay, I'll come.		achchhā, vastā.	అచ్ఛా, వస్తా.			src::anki known::100 len::1-3 set::008 day::012
 S5a15052a2215	Yes / okay [respectful]		avunaṇḍi / sarē	అవునండి / సరే			src::site reg::respectful known::100 len::1-3 set::008 day::013
 Scf7460cb1f64	Okay Doctor		sarē ḍākṭar	సరే డాక్టర్			src::book1000 known::100 len::1-3 set::008 day::013
 Sa0d449bfc1f4	I'll leave now, okay?		veḷḷostā, sarinā?	వెళ్ళొస్తా, సరినా?			src::anki known::100 len::1-3 form::question set::008 day::013
@@ -405,12 +399,12 @@ Sf29f4f53f67c	I told you again and again.		nēnu maḷḷī maḷḷī cheppānu
 S7061e90d6341	I won't tell anyone.		nēnu evariki cheppanu.	నేను ఎవరికి చెప్పను.			src::anki known::100 len::1-3 form::negative set::008 day::013
 Sb3dbdee7d34e	What do you know about this? [informal]		dāni gurinchi nīku ēmi telusu?	దాని గురించి నీకు ఏమి తెలుసు?			src::anki reg::informal known::100 len::4-6 form::question set::008 day::013
 S07c1d7681339	There's no need for that.		dāni avasaraṁ lēdu.	దాని అవసరం లేదు.			src::anki known::100 len::1-3 form::negative set::008 day::013
-S1c6942339792	It's hard		adi kaṣṭaṁ	అది కష్టం		also: It is difficult	src::book1000 known::100 len::1-3 set::009 day::013
-Sfe6ef5b0fc88	This is very difficult.		idi chālā kaṣṭaṁ.	ఇది చాలా కష్టం.			src::anki known::100 len::1-3 set::009 day::013
-S72dc5aceb6e4	Call your mother. [informal]		nī ammaki kāl chēyu.	నీ అమ్మకి కాల్ చేయు.			src::anki reg::informal known::100 len::4-6 set::009 day::014
-S7387624206fd	I am only		nēnu mātramē	నేనుమాత్రమే			src::book1000 known::100 len::1-3 flag::respaced set::009 day::014
-S2e2268a87778	There is only one left.		okaṭi mātramē undi.	ఒకటి మాత్రమే ఉంది.			src::anki known::100 len::1-3 form::past set::009 day::014
-S2f582135810a	That's true		adi nijaṁ	అది నిజం			src::book1000 known::100 len::1-3 set::009 day::014
+S1c6942339792	It's hard		adi kaṣṭaṁ	అది కష్టం		also: It is difficult	src::book1000 known::100 len::1-3 set::008 day::013
+Sfe6ef5b0fc88	This is very difficult.		idi chālā kaṣṭaṁ.	ఇది చాలా కష్టం.			src::anki known::100 len::1-3 set::008 day::013
+S72dc5aceb6e4	Call your mother. [informal]		nī ammaki kāl chēyu.	నీ అమ్మకి కాల్ చేయు.			src::anki reg::informal known::100 len::4-6 set::008 day::013
+S7387624206fd	I am only		nēnu mātramē	నేనుమాత్రమే			src::book1000 known::100 len::1-3 flag::respaced set::008 day::013
+S2e2268a87778	There is only one left.		okaṭi mātramē undi.	ఒకటి మాత్రమే ఉంది.			src::anki known::100 len::1-3 form::past set::008 day::013
+S2f582135810a	That's true		adi nijaṁ	అది నిజం			src::book1000 known::100 len::1-3 set::008 day::014
 Se88f7019e590	Please tell me the truth. [respectful]		nijaṁ cheppaṇḍi.	నిజం చెప్పండి.			src::anki reg::respectful known::100 len::1-3 form::request set::009 day::014
 S4440b329cd9d	Welcome sir		svāgataṁ sār	స్వాగతంసార్			src::book1000 known::100 len::1-3 flag::respaced set::009 day::014
 S5956f2e68ae0	This is for you sir.		idi mīku sar.	ఇది మీకు సర్.			src::anki known::100 len::1-3 set::009 day::014
@@ -437,10 +431,10 @@ S4f01777c53e1	I will eat later.		nēnu tarvāta tiṇṭānu.	నేను త�
 S8d15cf0dc32c	I will eat rice.		nēnu annaṁ tiṇṭānu.	నేను అన్నం తింటాను.			src::anki known::100 len::1-3 form::future set::009 day::014
 Sda1a5c0eb901	Bring water.		nīḷḷu tīsukurā.	నీళ్ళు తీసుకురా.			src::anki known::100 len::1-3 set::009 day::014
 S464c68ae5a0c	Bring the bag.		byāg tīsukurā.	బ్యాగ్ తీసుకురా.			src::anki known::100 len::1-3 set::009 day::014
-Sdfa00b12e31c	It is a chair		adi oka kurchī	అది ఒకకుర్చీ			src::book1000 known::100 len::1-3 flag::respaced set::009 day::015
-Sea2540a35bf6	There are four chairs.		nālugu kurchīlu unnāyi.	నాలుగు కుర్చీలు ఉన్నాయి.			src::anki known::100 len::1-3 set::009 day::015
-Sc43b611db2a2	Bring a chair.		kurchī tīsukurā.	కుర్చీ తీసుకురా.			src::anki known::100 len::1-3 set::009 day::015
-Sa1b515486096	Put it here.		ikkaḍa peṭṭu.	ఇక్కడ పెట్టు.		also: Keep it here.	src::anki known::100 len::1-3 set::009 day::015
+Sdfa00b12e31c	It is a chair		adi oka kurchī	అది ఒకకుర్చీ			src::book1000 known::100 len::1-3 flag::respaced set::009 day::014
+Sea2540a35bf6	There are four chairs.		nālugu kurchīlu unnāyi.	నాలుగు కుర్చీలు ఉన్నాయి.			src::anki known::100 len::1-3 set::009 day::014
+Sc43b611db2a2	Bring a chair.		kurchī tīsukurā.	కుర్చీ తీసుకురా.			src::anki known::100 len::1-3 set::009 day::014
+Sa1b515486096	Put it here.		ikkaḍa peṭṭu.	ఇక్కడ పెట్టు.		also: Keep it here.	src::anki known::100 len::1-3 set::009 day::014
 Sbb86eed8caa9	is it clean ?		idi śubhrangāundā?	ఇది శుభ్రంగాఉందా?			src::book1000 known::100 len::1-3 form::question set::009 day::015
 Sef80377422dc	The house is clean.		illu śubhrangā undi.	ఇల్లు శుభ్రంగా ఉంది.			src::anki known::100 len::1-3 form::past set::009 day::015
 S37fff46d3c18	Keep it clean.		śubhrangā peṭṭu.	శుభ్రంగా పెట్టు.			src::anki known::100 len::1-3 set::009 day::015
@@ -455,12 +449,12 @@ S03f3e6128ce1	He is not my friend.		atanu nā phreṇḍ kādu.	అతను న
 S53586456752e	There is no water at home.		iṇṭlō nīru lēdu.	ఇంట్లో నీరు లేదు.			src::anki known::100 len::1-3 form::negative set::009 day::015
 S661362fc1e79	I want only water.		nāku nīru mātramē kāvāli.	నాకు నీరు మాత్రమే కావాలి.			src::anki known::100 len::4-6 set::009 day::015
 Se61b46aab432	This is mine.		idi nādi.	ఇది నాది.			src::anki known::100 len::1-3 set::009 day::015
-S4a9d8c67cb80	This is not mine.		idi nādi kādu.	ఇది నాది కాదు.			src::anki known::100 len::1-3 form::negative set::010 day::015
-S8f4d3ba7c294	The river water is clean.		nadi nīru śubhrangā undi.	నది నీరు శుభ్రంగా ఉంది.			src::anki known::100 len::4-6 form::past set::010 day::015
-Sbda9f0c150b1	It's It ' very cold		idi chālā challagā undi	ఇది చాలా చల్లగాఉంది			src::book1000 known::100 len::4-6 flag::respaced set::010 day::015
-Sb39ab7f4de88	The water is very cold.		nīru chālā challagā undi.	నీరు చాలా చల్లగా ఉంది.			src::anki known::100 len::4-6 form::past set::010 day::015
-S341961c6f0dd	Someone assumes you're a teacher. You're not. [respectful]		kādaṇḍi	కాదండి		negating an identity statement = kādu	src::site reg::respectful known::100 len::1-3 set::010 day::015
-S659f3764c61b	This is good, isn't it?		idi bāgundi kadā?	ఇది బాగుంది కదా?			src::anki known::100 len::1-3 form::question set::010 day::015
+S4a9d8c67cb80	This is not mine.		idi nādi kādu.	ఇది నాది కాదు.			src::anki known::100 len::1-3 form::negative set::009 day::015
+S8f4d3ba7c294	The river water is clean.		nadi nīru śubhrangā undi.	నది నీరు శుభ్రంగా ఉంది.			src::anki known::100 len::4-6 form::past set::009 day::015
+Sbda9f0c150b1	It's It ' very cold		idi chālā challagā undi	ఇది చాలా చల్లగాఉంది			src::book1000 known::100 len::4-6 flag::respaced set::009 day::015
+Sb39ab7f4de88	The water is very cold.		nīru chālā challagā undi.	నీరు చాలా చల్లగా ఉంది.			src::anki known::100 len::4-6 form::past set::009 day::015
+S341961c6f0dd	Someone assumes you're a teacher. You're not. [respectful]		kādaṇḍi	కాదండి		negating an identity statement = kādu	src::site reg::respectful known::100 len::1-3 set::009 day::015
+S659f3764c61b	This is good, isn't it?		idi bāgundi kadā?	ఇది బాగుంది కదా?			src::anki known::100 len::1-3 form::question set::009 day::015
 S8dc41d513a71	They are fine		avi bāg unnāyi	అవి బాగున్నాయి			src::book1000 known::100 len::1-3 flag::respaced set::010 day::015
 Sf6fb7fcf5434	These are very nice.		ivi chālā bāg unnāyi.	ఇవి చాలా బాగున్నాయి.			src::anki known::100 len::4-6 flag::respaced set::010 day::015
 S556f08958b40	Put these here.		ivi ikkaḍa peṭṭu.	ఇవి ఇక్కడ పెట్టు.			src::anki known::100 len::1-3 set::010 day::015
@@ -468,14 +462,18 @@ S040f4e50a36d	These are new.		ivi kottavi.	ఇవి కొత్తవి.			sr
 S63b6783f3360	Is this new?		idi kottadā?	ఇది కొత్తదా?			src::anki known::100 len::1-3 form::question set::010 day::015
 S43560ace77fb	I need new clothes.		nāku kotta baṭṭalu kāvāli.	నాకు కొత్త బట్టలు కావాలి.			src::anki known::100 len::4-6 set::010 day::015
 Sb77374ff8ecd	These clothes are old.		ī baṭṭalu pātavi.	ఈ బట్టలు పాతవి.			src::anki known::100 len::1-3 set::010 day::015
-S4622618ecb32	Drive slowly.		mellaga naḍupu.	మెల్లగ నడుపు.			src::anki known::100 len::1-3 form::request set::010 day::016
-Sd79bb0c3162f	I'll drive the car.		nēnu kār naḍuputā.	నేను కార్ నడుపుతా.			src::anki known::100 len::1-3 set::010 day::016
-Sf7da37e50ee0	The match is today evening.		myāch ī rōju sāyantraṁ.	మ్యాచ్ ఈ రోజు సాయంత్రం.			src::anki known::100 len::4-6 set::010 day::016
-S6e034977006f	It was a great match.		chālā manchi myāch.	చాలా మంచి మ్యాచ్.			src::anki known::100 len::1-3 set::010 day::016
+S4622618ecb32	Drive slowly.		mellaga naḍupu.	మెల్లగ నడుపు.			src::anki known::100 len::1-3 form::request set::010 day::015
+Sd79bb0c3162f	I'll drive the car.		nēnu kār naḍuputā.	నేను కార్ నడుపుతా.			src::anki known::100 len::1-3 set::010 day::015
+Sf7da37e50ee0	The match is today evening.		myāch ī rōju sāyantraṁ.	మ్యాచ్ ఈ రోజు సాయంత్రం.			src::anki known::100 len::4-6 set::010 day::015
+S6e034977006f	It was a great match.		chālā manchi myāch.	చాలా మంచి మ్యాచ్.			src::anki known::100 len::1-3 set::010 day::015
 Sad170caef7c3	Let's go [respectful]		padaṇḍi	పదండి			src::site reg::respectful known::100 len::1-3 set::010 day::016
 S2492832be52f	I like singing.		nāku pāḍaḍaṁ iṣṭaṁ.	నాకు పాడడం ఇష్టం.			src::anki known::100 len::1-3 set::010 day::016
 S273c73e293f7	Don't be sad.		bādha paḍaku.	బాధ పడకు.			src::anki known::100 len::1-3 form::negative set::010 day::016
 Sffb5d5014334	That is very sad.		adi chālā bādha.	అది చాలా బాధ.			src::anki known::100 len::1-3 set::010 day::016
+S3db48a02d3ae	Go inside.		lōpala veḷḷu.	లోపల వెళ్ళు.			src::anki known::100 len::1-3 form::request set::010 day::016
+S0cde738fcad6	Please come inside. [respectful]		dayachēsi lōpala raṇḍi.	దయచేసి లోపల రండి.			src::anki reg::respectful known::100 len::1-3 form::request set::010 day::016
+S8cc9f0760e09	This room is very big.		ī gadi chālā peddadi.	ఈ గది చాలా పెద్దది.			src::anki known::100 len::4-6 set::010 day::016
+S9277c16d3199	He is inside the room.		āyana gadi lōpala unnāḍu.	ఆయన గది లోపల ఉన్నాడు.			src::anki known::100 len::4-6 form::past set::010 day::016
 S34a21f803618	Give me one minute.		oka nimiṣaṁ ivvu.	ఒక నిమిషం ఇవ్వు.			src::anki known::100 len::1-3 form::request set::010 day::016
 S75afb7eb2db8	I need one minute.		nāku oka nimiṣaṁ kāvāli.	నాకు ఒక నిమిషం కావాలి.			src::anki known::100 len::4-6 set::010 day::016
 S5b9cc76c8477	Wait one minute.		oka nimiṣaṁ āgu.	ఒక నిమిషం ఆగు.			src::anki known::100 len::1-3 form::request set::010 day::016
@@ -490,27 +488,23 @@ S1aea87fa2d10	Hold it tight.		gaṭṭiga paṭṭu.	గట్టిగ పట�
 Sd83bdfb8aefe	Hold it strongly.		gaṭṭigā paṭṭukō.	గట్టిగా పట్టుకో.			src::anki known::100 len::1-3 form::request set::010 day::016
 S30746ee8ca1e	I am very happy.		nāku chālā khuṣīgā undi.	నాకు చాలా ఖుషీగా ఉంది.			src::anki known::100 len::4-6 form::past set::010 day::016
 S4c76b340897e	He is very happy today.		āyana ī rōju chālā khuṣīgā unnāḍu.	ఆయన ఈ రోజు చాలా ఖుషీగా ఉన్నాడు.			src::anki known::100 len::4-6 form::past set::010 day::016
-S3db48a02d3ae	Go inside.		lōpala veḷḷu.	లోపల వెళ్ళు.			src::anki known::100 len::1-3 form::request set::010 day::016
-S0cde738fcad6	Please come inside. [respectful]		dayachēsi lōpala raṇḍi.	దయచేసి లోపల రండి.			src::anki reg::respectful known::100 len::1-3 form::request set::010 day::016
-S8cc9f0760e09	This room is very big.		ī gadi chālā peddadi.	ఈ గది చాలా పెద్దది.			src::anki known::100 len::4-6 set::010 day::016
-S9277c16d3199	He is inside the room.		āyana gadi lōpala unnāḍu.	ఆయన గది లోపల ఉన్నాడు.			src::anki known::100 len::4-6 form::past set::010 day::016
 Sadfe9d96abf9	This is very less.		idi chālā takkuva.	ఇది చాలా తక్కువ.			src::anki known::100 len::1-3 set::010 day::016
 S22181247ef47	There is very little time.		samayaṁ chālā takkuva.	సమయం చాలా తక్కువ.			src::anki known::100 len::1-3 set::010 day::016
-Sc4641b3921fb	It's on the top		idi paina undi	ఇది పైనఉంది			src::book1000 known::100 len::1-3 flag::respaced set::010 day::017
-S56e54a408b6b	The book is on top.		pustakaṁ paina undi.	పుస్తకం పైన ఉంది.			src::anki known::100 len::1-3 form::past set::010 day::017
-S5a98f42b8a8a	How far is it?		enta dūraṁ?	ఎంత దూరం?			src::anki known::100 len::1-3 form::question set::010 day::017
-S969f3f4e1bed	Is it very far?		chālā dūramā?	చాలా దూరమా?			src::anki known::100 len::1-3 form::question set::010 day::017
+Sc4641b3921fb	It's on the top		idi paina undi	ఇది పైనఉంది			src::book1000 known::100 len::1-3 flag::respaced set::010 day::016
+S56e54a408b6b	The book is on top.		pustakaṁ paina undi.	పుస్తకం పైన ఉంది.			src::anki known::100 len::1-3 form::past set::010 day::016
+S5a98f42b8a8a	How far is it?		enta dūraṁ?	ఎంత దూరం?			src::anki known::100 len::1-3 form::question set::010 day::016
+S969f3f4e1bed	Is it very far?		chālā dūramā?	చాలా దూరమా?			src::anki known::100 len::1-3 form::question set::010 day::016
 S0b4b72d827f5	I am not hungry.		nāku ākali lēdu.	నాకు ఆకలి లేదు.			src::anki known::100 len::1-3 form::negative set::010 day::017
 S3327262cd9a5	I am very hungry.		nāku chālā ākaligā undi.	నాకు చాలా ఆకలిగా ఉంది.			src::anki known::100 len::4-6 form::past set::010 day::017
 S6b7b4edc08fd	I'm very hungry.		nāku chālā ākali vēst undi.	నాకు చాలా ఆకలి వేస్తుంది.			src::anki known::100 len::4-6 flag::respaced set::010 day::017
 Sb049f10e85d4	When does hunger come?		eppuḍu ākali vēst undi?	ఎప్పుడు ఆకలి వేస్తుంది?			src::anki known::100 len::4-6 form::question flag::respaced set::010 day::017
 S4b4e005c6c56	I don't like cold weather.		nāku chali iṣṭaṁ lēdu.	నాకు చలి ఇష్టం లేదు.			src::anki known::100 len::4-6 form::negative set::010 day::017
-Sb998147d3e1a	It's very cold outside.		bayaṭa chālā chaligā undi.	బయట చాలా చలిగా ఉంది.			src::anki known::100 len::4-6 form::past set::011 day::017
-S309daec694bd	I'm feeling cold.		nāku chali vēst undi.	నాకు చలి వేస్తుంది.			src::anki known::100 len::4-6 flag::respaced set::011 day::017
-S70bf91dc97e4	I don't want rice.		annaṁ nakkō.	అన్నం నక్కో.		also: Rice? I don't want.	src::anki known::100 len::1-3 set::011 day::017
-S6351cfa5bd95	I don't want it.		nāku nakkō.	నాకు నక్కో.			src::anki known::100 len::1-3 set::011 day::017
-S30b27cf191f4	How does he go ?		āyana elā veḷtāru?	ఆయనఎలా వెళ్తారు?			src::book1000 known::100 len::1-3 form::future form::question flag::respaced set::011 day::017
-S3d375d325784	How will you go ?		mīruelā veḷtāru?	మీరుఎలా వెళ్తారు?			src::book1000 known::100 len::1-3 form::future form::question set::011 day::017
+Sb998147d3e1a	It's very cold outside.		bayaṭa chālā chaligā undi.	బయట చాలా చలిగా ఉంది.			src::anki known::100 len::4-6 form::past set::010 day::017
+S309daec694bd	I'm feeling cold.		nāku chali vēst undi.	నాకు చలి వేస్తుంది.			src::anki known::100 len::4-6 flag::respaced set::010 day::017
+S70bf91dc97e4	I don't want rice.		annaṁ nakkō.	అన్నం నక్కో.		also: Rice? I don't want.	src::anki known::100 len::1-3 set::010 day::017
+S6351cfa5bd95	I don't want it.		nāku nakkō.	నాకు నక్కో.			src::anki known::100 len::1-3 set::010 day::017
+S30b27cf191f4	How does he go ?		āyana elā veḷtāru?	ఆయనఎలా వెళ్తారు?			src::book1000 known::100 len::1-3 form::future form::question flag::respaced set::010 day::017
+S3d375d325784	How will you go ?		mīruelā veḷtāru?	మీరుఎలా వెళ్తారు?			src::book1000 known::100 len::1-3 form::future form::question set::010 day::017
 S4dffdd067e2a	What is the problem?		samasyā ēṇṭi?	సమస్యా ఏంటి?			src::anki known::100 len::1-3 form::question set::011 day::017
 S9d13b67ec175	This problem is very difficult.		ī samasyā chālā kaṣṭaṁ.	ఈ సమస్యా చాలా కష్టం.			src::anki known::100 len::4-6 set::011 day::017
 Sf398994e8a48	Is that too big ?		adi chālā peddadā?	అది చాలా పెద్దదా?			src::book1000 known::100 len::1-3 form::question set::011 day::017
@@ -528,10 +522,10 @@ S09a99a6d55c3	I don't have money.		nā daggarā paisā lēdu.	నా దగ్�
 S437fac626bfe	This is a waste of money.		idi paisā vēsṭ.	ఇది పైసా వేస్ట్.			src::anki known::100 len::1-3 set::011 day::017
 Sde271691b094	My age is ______.		nā vayasu ______.	నా వయసు ______.		e.g. nā vayasu muppai āru = 36	src::site known::100 len::1-3 set::011 day::017
 Sca3c3fcfdb7d	How old are you?		mīku enta vayasu?	మీకు ఎంత వయసు?			src::anki known::100 len::1-3 form::question set::011 day::017
-S672c9950b5c1	My age is 20.		nā vayasu iravai.	నా వయసు ఇరవై.		iravai = 20, muppai = 30	src::site known::100 len::1-3 set::011 day::018
-Sa609d95a71ac	21		iravai okaṭi	ఇరవై ఒకటి			src::site known::100 len::1-3 set::011 day::018
-S6fcd7fec187f	Sorry (lit. forgive me) [respectful]		kṣaminchaṇḍi	క్షమించండి		also: Excuse me; Pardon me	src::site src::book1000 reg::respectful known::100 len::1-3 set::011 day::018
-Sb9dad9018e39	Forgive me, it was my mistake. [respectful]		kṣaminchaṇḍi, nā tappu.	క్షమించండి, నా తప్పు.			src::anki reg::respectful known::100 len::1-3 set::011 day::018
+S672c9950b5c1	My age is 20.		nā vayasu iravai.	నా వయసు ఇరవై.		iravai = 20, muppai = 30	src::site known::100 len::1-3 set::011 day::017
+Sa609d95a71ac	21		iravai okaṭi	ఇరవై ఒకటి			src::site known::100 len::1-3 set::011 day::017
+S6fcd7fec187f	Sorry (lit. forgive me) [respectful]		kṣaminchaṇḍi	క్షమించండి		also: Excuse me; Pardon me	src::site src::book1000 reg::respectful known::100 len::1-3 set::011 day::017
+Sb9dad9018e39	Forgive me, it was my mistake. [respectful]		kṣaminchaṇḍi, nā tappu.	క్షమించండి, నా తప్పు.			src::anki reg::respectful known::100 len::1-3 set::011 day::017
 S1858e1363367	Look at me [respectful]		nannu chuḍaṇḍi	నన్నుచుడండి			src::book1000 reg::respectful known::100 len::1-3 flag::respaced set::011 day::018
 S39a4bd43d78a	Please forgive me. [respectful]		nannu kṣaminchaṇḍi.	నన్ను క్షమించండి.			src::anki reg::respectful known::100 len::1-3 set::011 day::018
 S53c26b67d8b1	Don't hit him.		vāḍini koṭṭaku.	వాడిని కొట్టకు.			src::anki known::100 len::1-3 form::negative set::011 day::018
@@ -555,12 +549,12 @@ Sa87dd0c09e1d	Can we meet on Tuesday?		mangaḷavāraṁ kaluddāmā?	మంగ�
 S49d0b1e46fc6	The deadline is Tuesday.		ḍeḍlain mangaḷavāraṁ.	డెడ్‌లైన్ మంగళవారం.			src::anki known::100 len::1-3 set::011 day::018
 S4ea8577a8c96	The deadline is tomorrow.		ḍeḍlain rēpu.	డెడ్‌లైన్ రేపు.			src::anki known::100 len::1-3 set::011 day::018
 S31b208c93309	Just taste it [respectful]		ruchi chūḍaṇḍi	రుచి చూడండి			src::book1000 reg::respectful known::100 len::1-3 form::request set::011 day::018
-S78e65b7d9c86	The taste is amazing.		ruchi chālā bāgundi.	రుచి చాలా బాగుంది.			src::anki known::100 len::1-3 set::012 day::018
-S40d019a367bf	Oh my, it's very hot!		abba, chālā eṇḍa!	అబ్బ, చాలా ఎండ!			src::anki known::100 len::1-3 set::012 day::019
-S53210c255004	The clothes are drying.		baṭṭalu eṇḍalō unnāyi.	బట్టలు ఎండలో ఉన్నాయి.			src::anki known::100 len::1-3 set::012 day::019
-Sb5b9d57506b1	It's very hot today.		ī rōju phul eṇḍa.	ఈ రోజు ఫుల్ ఎండ.			src::anki known::100 len::4-6 set::012 day::019
-S51f18297eae2	I'm very happy today.		ī rōju phul khuṣī.	ఈ రోజు ఫుల్ ఖుషీ.			src::anki known::100 len::4-6 set::012 day::019
-S4d65bb38cc48	Someone asks if there's any coffee left. There isn't. [respectful]		lēdaṇḍi	లేదండి		existence = lēdu	src::site reg::respectful known::100 len::1-3 set::012 day::019
+S78e65b7d9c86	The taste is amazing.		ruchi chālā bāgundi.	రుచి చాలా బాగుంది.			src::anki known::100 len::1-3 set::011 day::018
+S40d019a367bf	Oh my, it's very hot!		abba, chālā eṇḍa!	అబ్బ, చాలా ఎండ!			src::anki known::100 len::1-3 set::011 day::018
+S53210c255004	The clothes are drying.		baṭṭalu eṇḍalō unnāyi.	బట్టలు ఎండలో ఉన్నాయి.			src::anki known::100 len::1-3 set::011 day::018
+Sb5b9d57506b1	It's very hot today.		ī rōju phul eṇḍa.	ఈ రోజు ఫుల్ ఎండ.			src::anki known::100 len::4-6 set::011 day::018
+S51f18297eae2	I'm very happy today.		ī rōju phul khuṣī.	ఈ రోజు ఫుల్ ఖుషీ.			src::anki known::100 len::4-6 set::011 day::018
+S4d65bb38cc48	Someone asks if there's any coffee left. There isn't. [respectful]		lēdaṇḍi	లేదండి		existence = lēdu	src::site reg::respectful known::100 len::1-3 set::011 day::019
 S9e47a0168716	Yes or no ?		avunā lēdā	అవునా లేదా			src::book1000 known::100 len::1-3 form::question set::012 day::019
 S5d6eef72daa7	Tea or coffee, which do you want?		ṭī lēdā kāphī, ēmi kāvāli?	టీ లేదా కాఫీ, ఏమి కావాలి?			src::anki known::100 len::4-6 form::question set::012 day::019
 S7dd627d2ea9f	This tea is too hot.		ī ṭī chālā vēḍigā undi.	ఈ టీ చాలా వేడిగా ఉంది.			src::anki known::100 len::4-6 form::past set::012 day::019
@@ -584,10 +578,10 @@ Se7efcd5df6fa	I saw the news yesterday.		ninna vārtalu chūsānu.	నిన్�
 Sb68c31710c3d	That is today's big news.		adi ī rōju pedda vārta.	అది ఈ రోజు పెద్ద వార్త.			src::anki known::100 len::4-6 set::012 day::019
 Sb247344974bf	This place is beautiful.		ī chōṭa chālā andangā undi.	ఈ చోట చాలా అందంగా ఉంది.			src::anki known::100 len::4-6 form::past set::012 day::019
 S833932a37346	This is a nice place.		idi manchi chōṭa.	ఇది మంచి చోట.			src::anki known::100 len::1-3 set::012 day::019
-S51f656fc59a9	Save your money. [informal]		nī paisā sēv chēyu.	నీ పైసా సేవ్ చేయు.			src::anki reg::informal known::100 len::4-6 set::012 day::020
-Se8d6a46f97fa	Save a place for me.		nāku oka chōṭa sēv chēyu.	నాకు ఒక చోట సేవ్ చేయు.			src::anki known::100 len::4-6 set::012 day::020
-S2093156eb568	He has a lot of strength.		vāḍiki chālā balaṁ undi.	వాడికి చాలా బలం ఉంది.			src::anki known::100 len::4-6 form::past set::012 day::020
-S52f7382289d7	You need strength for this.		dīni kōsaṁ balaṁ kāvāli.	దీని కోసం బలం కావాలి.			src::anki known::100 len::4-6 set::012 day::020
+S51f656fc59a9	Save your money. [informal]		nī paisā sēv chēyu.	నీ పైసా సేవ్ చేయు.			src::anki reg::informal known::100 len::4-6 set::012 day::019
+Se8d6a46f97fa	Save a place for me.		nāku oka chōṭa sēv chēyu.	నాకు ఒక చోట సేవ్ చేయు.			src::anki known::100 len::4-6 set::012 day::019
+S2093156eb568	He has a lot of strength.		vāḍiki chālā balaṁ undi.	వాడికి చాలా బలం ఉంది.			src::anki known::100 len::4-6 form::past set::012 day::019
+S52f7382289d7	You need strength for this.		dīni kōsaṁ balaṁ kāvāli.	దీని కోసం బలం కావాలి.			src::anki known::100 len::4-6 set::012 day::019
 S78dcac4c0733	He sings really well. [informal]		vāḍu bāgā pāḍa tāḍu.	వాడు బాగా పాడతాడు.			src::anki reg::informal known::100 len::4-6 form::request flag::respaced set::012 day::020
 Sdd13aefbec2c	He drives very well. [informal]		vāḍu chālā bāgā naḍupu tāḍu.	వాడు చాలా బాగా నడుపుతాడు.			src::anki reg::informal known::100 len::4-6 form::future form::request flag::respaced set::012 day::020
 S95ab5b87102f	This is my first time.		idi nā modaṭi sāri.	ఇది నా మొదటిసారి.			src::anki known::100 len::4-6 flag::respaced set::012 day::020
@@ -605,18 +599,18 @@ S6ce58417de61	I will drink coffee.		nēnu kāphī tāgutānu.	నేను క�
 Se4dbe907146d	I drink coffee daily.		nēnu rōjū kāphī tāgutānu.	నేను రోజూ కాఫీ తాగుతాను.			src::anki known::100 len::4-6 form::future set::012 day::020
 S81385b6c0e02	I'm leaving		nēnu bayaludērutunnānu	నేనుబయలుదేరుతున్నాను			src::book1000 known::100 len::1-3 flag::respaced set::012 day::020
 S48ae3d03d962	I am departing now.		nēnu ippuḍu bayaludērutunnānu.	నేను ఇప్పుడు బయలుదేరుతున్నాను.			src::anki known::100 len::1-3 set::012 day::020
-S85667ed4972a	Too bad !		chālā cheḍḍadi	చాలా చెడ్డది			src::book1000 known::100 len::1-3 set::013 day::020
-Sd00287a9c111	That is bad.		adi cheḍḍadi.	అది చెడ్డది.			src::anki known::100 len::1-3 set::013 day::020
-S028170553853	That is a lie.		adi abaddhaṁ.	అది అబద్ధం.			src::anki known::100 len::1-3 set::013 day::020
-S2179abbefbea	No way dude, that's a lie!		kadu rā, adi abaddhaṁ!	కదు రా, అది అబద్ధం!			src::anki known::100 len::4-6 form::request set::013 day::020
-S1ff552452ed3	There are many people here. [respectful]		ikkaḍa chālā mandi janālu unnāru.	ఇక్కడ చాలా మంది జనాలు ఉన్నారు.			src::anki reg::respectful known::100 len::4-6 form::past set::013 day::020
-S4409ac9bf96d	Too many people today.		ī rōju janālu chālā ekkuva.	ఈ రోజు జనాలు చాలా ఎక్కువ.			src::anki known::100 len::4-6 set::013 day::020
+S85667ed4972a	Too bad !		chālā cheḍḍadi	చాలా చెడ్డది			src::book1000 known::100 len::1-3 set::012 day::020
+Sd00287a9c111	That is bad.		adi cheḍḍadi.	అది చెడ్డది.			src::anki known::100 len::1-3 set::012 day::020
+S028170553853	That is a lie.		adi abaddhaṁ.	అది అబద్ధం.			src::anki known::100 len::1-3 set::012 day::020
+S2179abbefbea	No way dude, that's a lie!		kadu rā, adi abaddhaṁ!	కదు రా, అది అబద్ధం!			src::anki known::100 len::4-6 form::request set::012 day::020
+S1ff552452ed3	There are many people here. [respectful]		ikkaḍa chālā mandi janālu unnāru.	ఇక్కడ చాలా మంది జనాలు ఉన్నారు.			src::anki reg::respectful known::100 len::4-6 form::past set::012 day::020
+S4409ac9bf96d	Too many people today.		ī rōju janālu chālā ekkuva.	ఈ రోజు జనాలు చాలా ఎక్కువ.			src::anki known::100 len::4-6 set::012 day::020
 S813fd0055103	I am busy right now.		nēnu ippuḍu bijīgā unnānu.	నేను ఇప్పుడు బిజీగా ఉన్నాను.			src::anki known::100 len::4-6 form::past set::013 day::020
 Sa017b581e5f7	He is busy.		āyana bijīgā unnāḍu.	ఆయన బిజీగా ఉన్నాడు.			src::anki known::100 len::1-3 form::past set::013 day::020
-Sc4d85973179c	I'm very thirsty.		nāku chālā dāhaṁ vēst undi.	నాకు చాలా దాహం వేస్తుంది.			src::anki known::100 len::4-6 flag::respaced set::013 day::021
-S42df8ff78aca	Give me water, I'm thirsty.		nīḷḷu ivvu, dāhaṁ vēst undi.	నీళ్ళు ఇవ్వు, దాహం వేస్తుంది.			src::anki known::100 len::4-6 form::request flag::respaced set::013 day::021
-S13887c49d830	All right !		ayitē sarē	అయితే సరే			src::book1000 known::100 len::1-3 set::013 day::021
-S9404261ad294	If so , it's okay		alā ayitē , adi sarē	అలా అయితే , అది సరే			src::book1000 known::100 len::4-6 set::013 day::021
+Sc4d85973179c	I'm very thirsty.		nāku chālā dāhaṁ vēst undi.	నాకు చాలా దాహం వేస్తుంది.			src::anki known::100 len::4-6 flag::respaced set::013 day::020
+S42df8ff78aca	Give me water, I'm thirsty.		nīḷḷu ivvu, dāhaṁ vēst undi.	నీళ్ళు ఇవ్వు, దాహం వేస్తుంది.			src::anki known::100 len::4-6 form::request flag::respaced set::013 day::020
+S13887c49d830	All right !		ayitē sarē	అయితే సరే			src::book1000 known::100 len::1-3 set::013 day::020
+S9404261ad294	If so , it's okay		alā ayitē , adi sarē	అలా అయితే , అది సరే			src::book1000 known::100 len::4-6 set::013 day::020
 S61f19ca8cca4	He needs money		āyanaki ḍabbu kāvāli	ఆయనకి డబ్బుకావాలి			src::book1000 known::100 len::1-3 flag::respaced set::013 day::021
 S449e06995649	I don't have that much money.		nā daggara anta ḍabbu lēdu.	నా దగ్గర అంత డబ్బులేదు.			src::anki known::100 len::4-6 form::negative flag::respaced set::013 day::021
 S411356f46cfb	Please sit down.		plīj kūrchō.	ప్లీజ్ కూర్చో.			src::anki known::100 len::1-3 form::request set::013 day::021
@@ -643,36 +637,36 @@ Sc1751f001371	It's your responsibility. [informal]		idi nī bādhyata.	ఇది
 S154dc97a0f00	Take responsibility.		bādhyata tīsukō.	బాధ్యత తీసుకో.			src::anki known::100 len::1-3 form::request set::013 day::021
 S7328efd0fb4e	Here you go [respectful]		idigōṇḍi	ఇదిగోండి			src::site reg::respectful known::100 len::1-3 set::013 day::021
 S4675eb7c480f	Here it is		idigō	ఇదిగో			src::book1000 known::100 len::1-3 set::013 day::021
-S1fbb2d3a82bd	It is very hot IRCHAND		idi chālā vēḍigā uṇṭundi	ఇది చాలా వేడిగాఉంటుంది			src::book1000 known::100 len::4-6 flag::respaced set::013 day::022
-S89c1fcf3ed2d	Don't worry about it. [respectful]		dāni gurinchi chintapaḍakaṇḍi.	దాని గురించి చింతపడకండి.			src::anki reg::respectful known::100 len::1-3 set::013 day::022
-S63fd0ff237f2	Don't worry, everything will be fine. [respectful]		chintapaḍakaṇḍi, antā bāg uṇṭundi.	చింతపడకండి, అంతా బాగుంటుంది.			src::anki reg::respectful known::100 len::4-6 flag::respaced set::013 day::022
+S1fbb2d3a82bd	It is very hot IRCHAND		idi chālā vēḍigā uṇṭundi	ఇది చాలా వేడిగాఉంటుంది			src::book1000 known::100 len::4-6 flag::respaced set::013 day::021
+S89c1fcf3ed2d	Don't worry about it. [respectful]		dāni gurinchi chintapaḍakaṇḍi.	దాని గురించి చింతపడకండి.			src::anki reg::respectful known::100 len::1-3 set::013 day::021
+S63fd0ff237f2	Don't worry, everything will be fine. [respectful]		chintapaḍakaṇḍi, antā bāg uṇṭundi.	చింతపడకండి, అంతా బాగుంటుంది.			src::anki reg::respectful known::100 len::4-6 flag::respaced set::013 day::021
 S63a9f35c8c37	Which day works for you?		mīku ē rōju bāg uṇṭundi?	మీకు ఏ రోజు బాగుంటుంది?			src::anki known::100 len::4-6 form::question flag::respaced set::013 day::022
-S0e5d52ff1558	Forget it [respectful]		marchipōṇḍi	మర్చిపోండి			src::book1000 reg::respectful known::100 len::1-3 set::013 day::022
-S8271c7a9613f	I forgot his name.		nēnu āyana pēru marchipōyānu.	నేను ఆయన పేరు మర్చిపోయాను.			src::anki known::100 len::4-6 set::013 day::022
 Sf1ed45930c8c	Don't sit on the floor.		nēla mīda kūrchōku.	నేల మీద కూర్చోకు.			src::anki known::100 len::1-3 form::negative set::013 day::022
 S334a471986ad	How many months?		enni nelalu?	ఎన్ని నెలలు?			src::anki known::100 len::1-3 form::question set::013 day::022
 S4b25a8221a07	Sit on the ground.		nēla mīda kūrchō.	నేల మీద కూర్చో.			src::anki known::100 len::1-3 form::request set::013 day::022
 Sf3ee3297ee9a	Don't sit on the bed.		manchaṁ mīda kūrchōku.	మంచం మీద కూర్చోకు.			src::anki known::100 len::1-3 form::negative set::013 day::022
 S37f6ca4d0c1a	Sit on the bed.		manchaṁ mīda kūrchō.	మంచం మీద కూర్చో.			src::anki known::100 len::1-3 form::request set::013 day::022
 S01606a724071	Look under the bed.		manchaṁ kinda chūḍu.	మంచం కింద చూడు.			src::anki known::100 len::1-3 form::request set::013 day::022
-S5589b91e614e	The shoes are under the bed.		cheppulu manchaṁ kinda unnāyi.	చెప్పులు మంచం కింద ఉన్నాయి.			src::anki known::100 len::4-6 set::014 day::022
-S5673816d4cb8	My salary came this month.		ī nela nā jītaṁ vachchindi.	ఈ నెల నా జీతం వచ్చింది.			src::anki known::100 len::4-6 form::past set::014 day::022
-Sb1fc0127767d	I like my job.		nāku nā jāb iṣṭaṁ.	నాకు నా జాబ్ ఇష్టం.			src::anki known::100 len::4-6 set::014 day::022
-Sffe11b4bb9ac	I got a new job.		nāku kotta jāb vachchindi.	నాకు కొత్త జాబ్ వచ్చింది.			src::anki known::100 len::4-6 form::past set::014 day::022
-S651404eed62a	I got a new watch.		nāku kotta vāch vachchindi.	నాకు కొత్త వాచ్ వచ్చింది.			src::anki known::100 len::4-6 form::past set::014 day::022
-S2bb8940a13e0	He's very happy about the job.		vāḍiki jāb vachchi phul khuṣī.	వాడికి జాబ్ వచ్చి ఫుల్ ఖుషీ.			src::anki known::100 len::4-6 set::014 day::022
-S9ff9824d48fe	Can you swim? [informal]		nīku īdu vachchā?	నీకు ఈదు వచ్చా?			src::anki reg::informal known::100 len::1-3 form::question form::request set::014 day::022
-S4b387d48ad68	I don't know swimming.		nāku īdu rādu.	నాకు ఈదు రాదు.			src::anki known::100 len::1-3 form::negative form::request set::014 day::022
+S5589b91e614e	The shoes are under the bed.		cheppulu manchaṁ kinda unnāyi.	చెప్పులు మంచం కింద ఉన్నాయి.			src::anki known::100 len::4-6 set::013 day::022
+S5673816d4cb8	My salary came this month.		ī nela nā jītaṁ vachchindi.	ఈ నెల నా జీతం వచ్చింది.			src::anki known::100 len::4-6 form::past set::013 day::022
+Sb1fc0127767d	I like my job.		nāku nā jāb iṣṭaṁ.	నాకు నా జాబ్ ఇష్టం.			src::anki known::100 len::4-6 set::013 day::022
+Sffe11b4bb9ac	I got a new job.		nāku kotta jāb vachchindi.	నాకు కొత్త జాబ్ వచ్చింది.			src::anki known::100 len::4-6 form::past set::013 day::022
+S651404eed62a	I got a new watch.		nāku kotta vāch vachchindi.	నాకు కొత్త వాచ్ వచ్చింది.			src::anki known::100 len::4-6 form::past set::013 day::022
+S2bb8940a13e0	He's very happy about the job.		vāḍiki jāb vachchi phul khuṣī.	వాడికి జాబ్ వచ్చి ఫుల్ ఖుషీ.			src::anki known::100 len::4-6 set::013 day::022
+S9ff9824d48fe	Can you swim? [informal]		nīku īdu vachchā?	నీకు ఈదు వచ్చా?			src::anki reg::informal known::100 len::1-3 form::question form::request set::013 day::022
+S4b387d48ad68	I don't know swimming.		nāku īdu rādu.	నాకు ఈదు రాదు.			src::anki known::100 len::1-3 form::negative form::request set::013 day::022
 Sc0288298ec25	Watch this video.		ī vīḍiyō chūḍu.	ఈ వీడియో చూడు.			src::anki known::100 len::1-3 form::request set::014 day::022
 Se5cce529bf65	Watch this video.		ī vīḍiyō vāchchi.	ఈ వీడియో వాచ్చి.			src::anki known::100 len::1-3 set::014 day::022
 Sed909455c19b	What was the result?		phalitaṁ ēṇṭi?	ఫలితం ఏంటి?			src::anki known::100 len::1-3 form::question set::014 day::022
 Sfb6f983856fe	The result was good.		phalitaṁ bāgā vachchindi.	ఫలితం బాగా వచ్చింది.			src::anki known::100 len::1-3 form::past set::014 day::022
+S0e5d52ff1558	Forget it [respectful]		marchipōṇḍi	మర్చిపోండి			src::book1000 reg::respectful known::100 len::1-3 set::014 day::022
+S8271c7a9613f	I forgot his name.		nēnu āyana pēru marchipōyānu.	నేను ఆయన పేరు మర్చిపోయాను.			src::anki known::100 len::4-6 set::014 day::022
 S11edde7a61b5	It is very cold today.		ī rōju chālā challigā undi.	ఈ రోజు చాలా చల్లిగా ఉంది.			src::anki known::100 len::4-6 form::past set::014 day::022
 Sc70b300d2d82	I want cold water.		nāku challi nīḷḷu kāvāli.	నాకు చల్లి నీళ్ళు కావాలి.			src::anki known::100 len::4-6 set::014 day::022
-S90dac4466b33	The floor is wet.		nēla taḍigā undi.	నేల తడిగా ఉంది.		also: The ground is wet.	src::anki known::100 len::1-3 form::past set::014 day::023
-S7d60b22d9579	My clothes are wet.		nā baṭṭalu taḍigā unnāyi.	నా బట్టలు తడిగా ఉన్నాయి.			src::anki known::100 len::4-6 set::014 day::023
-S3fa178f8c266	Sing a song.		oka pāṭa pāḍu.	ఒక పాట పాడు.			src::anki known::100 len::1-3 form::request set::014 day::023
-S89f545e0f44a	She sings beautifully.		āme andangā pāḍu tadi.	ఆమె అందంగా పాడుతది.			src::anki known::100 len::4-6 flag::respaced set::014 day::023
+S90dac4466b33	The floor is wet.		nēla taḍigā undi.	నేల తడిగా ఉంది.		also: The ground is wet.	src::anki known::100 len::1-3 form::past set::014 day::022
+S7d60b22d9579	My clothes are wet.		nā baṭṭalu taḍigā unnāyi.	నా బట్టలు తడిగా ఉన్నాయి.			src::anki known::100 len::4-6 set::014 day::022
+S3fa178f8c266	Sing a song.		oka pāṭa pāḍu.	ఒక పాట పాడు.			src::anki known::100 len::1-3 form::request set::014 day::022
+S89f545e0f44a	She sings beautifully.		āme andangā pāḍu tadi.	ఆమె అందంగా పాడుతది.			src::anki known::100 len::4-6 flag::respaced set::014 day::022
 Sd7071099ddf7	Please wait for me. [respectful]		mīru nāku veyiṭ chēyaṇḍi.	మీరు నాకు వెయిట్ చేయండి.			src::anki reg::respectful known::100 len::4-6 form::request set::014 day::023
 Sb0583bacaf53	I am waiting for you. [informal]		nī kōsaṁ veyiṭ chēstunnānu.	నీ కోసం వెయిట్ చేస్తున్నాను.			src::anki reg::informal known::100 len::4-6 form::present set::014 day::023
 Sfacdb1a0dbd6	This is our office.		idi mā āphīs.	ఇది మా ఆఫీస్.			src::anki known::100 len::1-3 set::014 day::023
@@ -695,22 +689,22 @@ S06ddcdcb8a57	I have been waiting for one week.		nēnu oka vāraṁ nunchi veyi�
 S1883eb297be3	What day is tomorrow?		rēpu ēmi vāraṁ?	రేపు ఏమి వారం?			src::anki known::100 len::1-3 form::question set::014 day::023
 S36637a01c5ba	How did today go?		ī rōju eṭla gaḍichindi?	ఈ రోజు ఎట్ల గడిచింది?		Listen for: rōju (day) and eṭla (how). Those two words are enough to identify it.	src::site known::100 len::4-6 form::question set::014 day::023
 Sff7cf9397624	How did your day go? [respectful]		mī rōju eṭla gaḍichindi?	మీ రోజు ఎట్ల గడిచింది?		"Straight mirroring. Take her question and swap in mī (""your,"" Lesson 5). Reusing someone's own construction back at them is the cheapest fluency trick there is, and it always fits."	src::site reg::respectful known::100 len::4-6 form::question set::014 day::023
-Sd5fa12fb93d0	Give me the answer.		javābu ivvu.	జవాబు ఇవ్వు.			src::anki known::100 len::1-3 form::request set::014 day::024
-Sf58ed45fe483	I will answer later.		tarvāta javābu istānu.	తర్వాత జవాబు ఇస్తాను.			src::anki known::100 len::1-3 form::future set::014 day::024
-S10a8e93fbde7	We missed the deadline.		ḍeḍlain mis ayyindi.	డెడ్‌లైన్ మిస్ అయ్యింది.			src::anki known::100 len::1-3 set::014 day::024
-S9c2e8e18fc20	I missed the bus.		nāku bas mis ayyindi.	నాకు బస్ మిస్ అయ్యింది.			src::anki known::100 len::4-6 set::014 day::024
+Sd5fa12fb93d0	Give me the answer.		javābu ivvu.	జవాబు ఇవ్వు.			src::anki known::100 len::1-3 form::request set::014 day::023
+Sf58ed45fe483	I will answer later.		tarvāta javābu istānu.	తర్వాత జవాబు ఇస్తాను.			src::anki known::100 len::1-3 form::future set::014 day::023
+S10a8e93fbde7	We missed the deadline.		ḍeḍlain mis ayyindi.	డెడ్‌లైన్ మిస్ అయ్యింది.			src::anki known::100 len::1-3 set::014 day::023
+S9c2e8e18fc20	I missed the bus.		nāku bas mis ayyindi.	నాకు బస్ మిస్ అయ్యింది.			src::anki known::100 len::4-6 set::014 day::023
 S5cee3fb6c0d4	What's the news?		ēmi khabar?	ఏమి ఖబర్?			src::anki known::100 len::1-3 form::question set::014 day::024
 S5a5343e0958b	Any news about the job?		jāb gurinchi ēmi khabar?	జాబ్ గురించి ఏమి ఖబర్?			src::anki known::100 len::4-6 form::question set::014 day::024
 Sd7fb0b54b46f	The clothes are dirty.		baṭṭalu māsinagā unnāyi.	బట్టలు మాసినగా ఉన్నాయి.			src::anki known::100 len::1-3 set::014 day::024
 S5261ba8becb2	This room is dirty.		ī gadi māsinagā undi.	ఈ గది మాసినగా ఉంది.			src::anki known::100 len::4-6 form::past set::014 day::024
 Sfcf225065b48	I am feeling sad.		nāku bādhagā undi.	నాకు బాధగా ఉంది.		also: I got sad	src::anki src::book1000 known::100 len::1-3 form::past set::014 day::024
 S1d43c90f8f08	He is very sad.		āyanaki chālā bādhagā undi.	ఆయనకి చాలా బాధగా ఉంది.			src::anki known::100 len::4-6 form::past set::014 day::024
-S9bfb4844dadd	The food is ready.		bhōjanaṁ reḍīgā undi.	భోజనం రెడీగా ఉంది.			src::anki known::100 len::1-3 form::past set::015 day::024
-Saa3e8737f12d	I am ready.		nēnu reḍīgā unnānu.	నేను రెడీగా ఉన్నాను.			src::anki known::100 len::1-3 form::past set::015 day::024
-S7e7c02e6a7c2	Thank you for the help.		sahāyāniki dhanyavādālu.	సహాయానికి ధన్యవాదాలు.			src::anki known::100 len::1-3 set::015 day::024
-Sae7bb6f30e22	Thanks for your help. [respectful]		mī sahāyāniki dhanyavādālu.	మీ సహాయానికి ధన్యవాదాలు.			src::anki reg::respectful known::100 len::1-3 set::015 day::024
-S38ea629d0186	Thank you very much.		chālā kṛtajñatalu.	చాలా కృతజ్ఞతలు.			src::anki known::100 len::1-3 set::015 day::024
-Sec73bbc93eba	I'm grateful for your help. [respectful]		mī sahāyāniki kṛtajñatalu.	మీ సహాయానికి కృతజ్ఞతలు.			src::anki reg::respectful known::100 len::1-3 set::015 day::024
+S9bfb4844dadd	The food is ready.		bhōjanaṁ reḍīgā undi.	భోజనం రెడీగా ఉంది.			src::anki known::100 len::1-3 form::past set::014 day::024
+Saa3e8737f12d	I am ready.		nēnu reḍīgā unnānu.	నేను రెడీగా ఉన్నాను.			src::anki known::100 len::1-3 form::past set::014 day::024
+S7e7c02e6a7c2	Thank you for the help.		sahāyāniki dhanyavādālu.	సహాయానికి ధన్యవాదాలు.			src::anki known::100 len::1-3 set::014 day::024
+Sae7bb6f30e22	Thanks for your help. [respectful]		mī sahāyāniki dhanyavādālu.	మీ సహాయానికి ధన్యవాదాలు.			src::anki reg::respectful known::100 len::1-3 set::014 day::024
+S38ea629d0186	Thank you very much.		chālā kṛtajñatalu.	చాలా కృతజ్ఞతలు.			src::anki known::100 len::1-3 set::014 day::024
+Sec73bbc93eba	I'm grateful for your help. [respectful]		mī sahāyāniki kṛtajñatalu.	మీ సహాయానికి కృతజ్ఞతలు.			src::anki reg::respectful known::100 len::1-3 set::014 day::024
 Sece40bf96ec3	What you said is true. [respectful]		mīru cheppindi nijaṁ.	మీరు చెప్పింది నిజం.			src::anki reg::respectful known::100 len::1-3 form::past set::015 day::024
 Scc0a7823ba10	Yes, what you said is right. [respectful]		avunu, mīru cheppindi nijaṁ.	అవును, మీరు చెప్పింది నిజం.			src::anki reg::respectful known::100 len::4-6 form::past set::015 day::024
 Sf36599563e2c	Good morning.		śubhōdayaṁ.	శుభోదయం.			src::anki src::book1000 known::100 len::1-3 set::015 day::024
@@ -722,14 +716,15 @@ S1420ff258793	All the best, do well!		āl da besṭ, bāgā chēyu!	ఆల్ �
 Scfb6b6b1889e	I got bored at home.		iṇṭlō bōr koṭṭindi.	ఇంట్లో బోర్ కొట్టింది.			src::anki known::100 len::1-3 form::past set::015 day::024
 S217a6fb0a9bd	Time's up!		gaṇṭa koṭṭindi!	గంట కొట్టింది!			src::anki known::100 len::1-3 form::past set::015 day::024
 S505701d5a9f6	"""Ten people."""		padi mandi.	పది మంది.		mandi is the counter for larger groups	src::site known::100 len::1-3 set::015 day::024
-S4af0a1c9696f	It didn't rain today.		ī rōju varṣaṁ paḍa lēdu.	ఈ రోజు వర్షం పడలేదు.			src::anki known::100 len::4-6 form::negative flag::respaced set::015 day::025
-S7ba25e172652	If it rains, I won't go.		varṣaṁ paḍistē, nēnu veḷḷanu.	వర్షం పడిస్తే, నేను వెళ్ళను.			src::anki known::100 len::4-6 form::negative set::015 day::025
-S68eec77e06e9	Be careful don't fall.		jāgratta paḍipōku.	జాగ్రత్త పడిపోకు.			src::anki known::100 len::1-3 set::015 day::025
-Scdfdff659987	Take care, bye.		jāgratta, veḷḷōstā.	జాగ్రత్త, వెళ్ళోస్తా.			src::anki known::100 len::1-3 set::015 day::025
-Se8506e5dffea	Take care of your health. [respectful]		mī ārōgyaṁ jāgratta chēyaṇḍi.	మీ ఆరోగ్యం జాగ్రత్త చేయండి.			src::anki reg::respectful known::100 len::4-6 form::request set::015 day::025
-Sabead483e6a1	Take care of your health. [informal]		nī ārōgyaṁ jāgratta.	నీ ఆరోగ్యం జాగ్రత్త.			src::anki reg::informal known::100 len::1-3 set::015 day::025
+S4af0a1c9696f	It didn't rain today.		ī rōju varṣaṁ paḍa lēdu.	ఈ రోజు వర్షం పడలేదు.			src::anki known::100 len::4-6 form::negative flag::respaced set::015 day::024
+S7ba25e172652	If it rains, I won't go.		varṣaṁ paḍistē, nēnu veḷḷanu.	వర్షం పడిస్తే, నేను వెళ్ళను.			src::anki known::100 len::4-6 form::negative set::015 day::024
+S68eec77e06e9	Be careful don't fall.		jāgratta paḍipōku.	జాగ్రత్త పడిపోకు.			src::anki known::100 len::1-3 set::015 day::024
+Scdfdff659987	Take care, bye.		jāgratta, veḷḷōstā.	జాగ్రత్త, వెళ్ళోస్తా.			src::anki known::100 len::1-3 set::015 day::024
+Se8506e5dffea	Take care of your health. [respectful]		mī ārōgyaṁ jāgratta chēyaṇḍi.	మీ ఆరోగ్యం జాగ్రత్త చేయండి.			src::anki reg::respectful known::100 len::4-6 form::request set::015 day::024
+Sabead483e6a1	Take care of your health. [informal]		nī ārōgyaṁ jāgratta.	నీ ఆరోగ్యం జాగ్రత్త.			src::anki reg::informal known::100 len::1-3 set::015 day::024
 Sac1081bedd32	He said okay.		atanu sari annāḍu.	అతను సరి అన్నాడు.			src::anki known::100 len::1-3 form::past set::015 day::025
 Sa6a88e1a4b5e	I will go later.		nēnu tarvāta veḷtānu.	నేను తర్వాత వెళ్తాను.			src::anki known::100 len::1-3 form::future set::015 day::025
+S019393d52dd7	Step out [respectful]		bayaṭaki veḷḷaṇḍi	బయటకి వెళ్ళండి			src::book1000 reg::respectful known::100 len::1-3 form::request set::015 day::025
 Sea9acf3081fd	Where are the children?		pillalu ekkaḍa?	పిల్లలు ఎక్కడ?			src::anki known::100 len::1-3 form::question set::015 day::025
 Sc85f5357bfc5	Do you want something?		mīku ēmainā kāvalinā?	మీకు ఏమైనా కావలినా?			src::anki known::100 len::1-3 form::question set::015 day::025
 Sbd7d65ba5f79	We have a meeting every week.		prati vāraṁ mīṭing undi.	ప్రతి వారం మీటింగ్ ఉంది.			src::anki known::100 len::4-6 form::past set::015 day::025
@@ -743,9 +738,9 @@ Sf743b33b3534	That is my wife		āme nā bhārya	ఆమె నా భార్య
 S0b5cd455ebf9	My wife's / husband's name is ______.		nā bhārya / nā bharta pēru ______.	నా భార్య / నా భర్త పేరు ______.			src::site known::100 len::7plus set::015 day::025
 S8c6c8c437de3	"""My husband"" — everyday and traditional."		nā bharta. / mā āyana.	నా భర్త. / మా ఆయన.		"""our respected he"""	src::site known::100 len::4-6 set::015 day::025
 Sc31ec2608086	You are my son [informal]		nuvvu nā koḍukuvi	నువ్వు నా కొడుకువి		"Informal ""you"" (own child) + marker -vi. Reuses koḍuku from #4."	src::anki reg::informal known::100 len::1-3 set::015 day::025
-S2c023b7b84a7	I will come at five.		nēnu aidu gaṇṭalaku vastānu.	నేను ఐదు గంటలకు వస్తాను.			src::anki known::100 len::4-6 form::future set::015 day::026
-Sb28fa30b4d2d	Come before five.		aidu gaṇṭala mundu rā.	ఐదు గంటల ముందు రా.			src::anki known::100 len::4-6 form::request set::015 day::026
-S5d81fea6fd82	Come before 5 o'clock.		aidu gaṇṭalaki mundu rā.	ఐదు గంటలకి ముందు రా.			src::anki known::100 len::4-6 form::request set::015 day::026
+S2c023b7b84a7	I will come at five.		nēnu aidu gaṇṭalaku vastānu.	నేను ఐదు గంటలకు వస్తాను.			src::anki known::100 len::4-6 form::future set::015 day::025
+Sb28fa30b4d2d	Come before five.		aidu gaṇṭala mundu rā.	ఐదు గంటల ముందు రా.			src::anki known::100 len::4-6 form::request set::015 day::025
+S5d81fea6fd82	Come before 5 o'clock.		aidu gaṇṭalaki mundu rā.	ఐదు గంటలకి ముందు రా.			src::anki known::100 len::4-6 form::request set::015 day::025
 S2aee40934e9a	The situation is not good.		paristhiti bāgalēdu.	పరిస్థితి బాగలేదు.			src::anki known::100 len::1-3 set::015 day::026
 S29c98c590134	Understand the situation first.		mundu paristhiti arthaṁ chēsukō.	ముందు పరిస్థితి అర్థం చేసుకో.			src::anki known::100 len::4-6 set::015 day::026
 Sbd06e9fdd3ca	We got a problem because of that.		dāni valla māku prāblaṁ ayyindi.	దాని వల్ల మాకు ప్రాబ్లం అయ్యింది.			src::anki known::100 len::4-6 set::015 day::026
@@ -755,15 +750,15 @@ Sa81f7e74c57e	This is very easy.		idi chālā ījī.	ఇది చాలా ఈ�
 S56e6e2b177fd	What's the matter?		ēṇṭi viṣayaṁ?	ఏంటి విషయం?			src::anki known::100 len::1-3 form::question set::015 day::026
 S2583cd3d8156	I will tell you later.		tarvāta cheptānu.	తర్వాత చెప్తాను.			src::anki known::100 len::1-3 form::future set::015 day::026
 Sa6ad49ef823a	I will tell you the matter.		nēnu viṣayaṁ cheptānu.	నేను విషయం చెప్తాను.			src::anki known::100 len::1-3 form::future set::015 day::026
-S885250b8b330	That is a different matter.		adi vērē viṣayaṁ.	అది వేరే విషయం.			src::anki known::100 len::1-3 set::016 day::026
-S64c9696d119a	My opinion is different.		nā abhiprāyaṁ vērē.	నా అభిప్రాయం వేరే.			src::anki known::100 len::1-3 set::016 day::026
-Seed0646dcc22	This is a very important meeting.		idi chālā mukhyamaina mīṭing.	ఇది చాలా ముఖ్యమైన మీటింగ్.			src::anki known::100 len::4-6 set::016 day::026
-Sb73efe2723b1	This is an important matter.		idi chālā mukhyamaina viṣayaṁ.	ఇది చాలా ముఖ్యమైన విషయం.			src::anki known::100 len::4-6 set::016 day::026
-S4acc19c899de	Come quickly.		vēgangā rā.	వేగంగా రా.			src::anki known::100 len::1-3 form::request set::016 day::026
+S885250b8b330	That is a different matter.		adi vērē viṣayaṁ.	అది వేరే విషయం.			src::anki known::100 len::1-3 set::015 day::026
+S64c9696d119a	My opinion is different.		nā abhiprāyaṁ vērē.	నా అభిప్రాయం వేరే.			src::anki known::100 len::1-3 set::015 day::026
+Seed0646dcc22	This is a very important meeting.		idi chālā mukhyamaina mīṭing.	ఇది చాలా ముఖ్యమైన మీటింగ్.			src::anki known::100 len::4-6 set::015 day::026
+Sb73efe2723b1	This is an important matter.		idi chālā mukhyamaina viṣayaṁ.	ఇది చాలా ముఖ్యమైన విషయం.			src::anki known::100 len::4-6 set::015 day::026
+S4acc19c899de	Come quickly.		vēgangā rā.	వేగంగా రా.			src::anki known::100 len::1-3 form::request set::015 day::026
 Sd079ecc72fe4	Go quickly.		tvaragā pō.	త్వరగా పో.			src::anki known::100 len::1-3 set::016 day::026
-Sa3eb3f9ceded	Sit comfortably.		hāyigā kūrchō.	హాయిగా కూర్చో.			src::anki known::100 len::1-3 form::request set::016 day::027
-S349500cbc813	Sleep peacefully.		hāyigā nidrā pō.	హాయిగా నిద్రా పో.			src::anki known::100 len::1-3 set::016 day::027
-S9e9e2625ba63	Rice with curd is the best.		perugu annaṁ chālā bāg uṇṭundi.	పెరుగు అన్నం చాలా బాగుంటుంది.			src::anki known::100 len::4-6 flag::respaced set::016 day::027
+Sa3eb3f9ceded	Sit comfortably.		hāyigā kūrchō.	హాయిగా కూర్చో.			src::anki known::100 len::1-3 form::request set::016 day::026
+S349500cbc813	Sleep peacefully.		hāyigā nidrā pō.	హాయిగా నిద్రా పో.			src::anki known::100 len::1-3 set::016 day::026
+S9e9e2625ba63	Rice with curd is the best.		perugu annaṁ chālā bāg uṇṭundi.	పెరుగు అన్నం చాలా బాగుంటుంది.			src::anki known::100 len::4-6 flag::respaced set::016 day::026
 S83a28dae343d	The curd has gone sour.		perugu pulupugā ayyindi.	పెరుగు పులుపుగా అయ్యింది.			src::anki known::100 len::1-3 set::016 day::027
 S233a4ca38c0c	I don't like sour food. [respectful]		nāku pulupu tiṇḍi iṣṭaṁ lēdu.	నాకు పులుపు తిండి ఇష్టం లేదు.			src::anki reg::respectful known::100 len::4-6 form::negative set::016 day::027
 S27b2768569d7	Please enjoy the food. [respectful]		tiṇḍi enjāy chēyaṇḍi.	తిండి ఎంజాయ్ చేయండి.			src::anki reg::respectful known::100 len::1-3 form::request set::016 day::027
@@ -802,14 +797,14 @@ S03fcc1168c40	It is salty		idi uppugā undi	ఇది ఉప్పుగా ఉ�
 Sca334cbdc147	The curry needs more salt.		kūralō uppu takkuva.	కూరలో ఉప్పు తక్కువ.			src::anki known::100 len::1-3 set::016 day::028
 S9194becf6ca7	And you ?		mariyu mīru	మరియుమీరు			src::book1000 known::100 len::1-3 form::question flag::respaced set::016 day::028
 S219e0ac9c085	Rice and curry are ready.		annaṁ mariyu kūra reḍī.	అన్నం మరియు కూర రెడీ.			src::anki known::100 len::4-6 set::016 day::028
-S4bae77a57d0b	He is my cat		atanunā pilli	అతనునా పిల్లి			src::book1000 known::100 len::1-3 set::016 day::029
-S4201e86da560	Today was a bit hard.		ī rōju koncheṁ kaṣṭaṁ	ఈ రోజు కొంచెం కష్టం		Why you can already say this: zero copula from Lesson 1 — no verb at all. Today a-little difficulty. kaṣṭaṁ is a high-frequency word worth knowing.	src::site known::100 len::4-6 set::016 day::029
+S4bae77a57d0b	He is my cat		atanunā pilli	అతనునా పిల్లి			src::book1000 known::100 len::1-3 set::016 day::028
+S4201e86da560	Today was a bit hard.		ī rōju koncheṁ kaṣṭaṁ	ఈ రోజు కొంచెం కష్టం		Why you can already say this: zero copula from Lesson 1 — no verb at all. Today a-little difficulty. kaṣṭaṁ is a high-frequency word worth knowing.	src::site known::100 len::4-6 set::016 day::028
 S1a8d395a6202	Send it quickly.		tvaragā pampu.	త్వరగా పంపు.			src::anki known::100 len::1-3 set::016 day::029
-See2cf8fb0eac	Send me a message.		nāku oka mesēj pampu.	నాకు ఒక మెసేజ్ పంపు.			src::anki known::100 len::4-6 set::017 day::029
-S1933a56d9eeb	I'll send a message later.		tarvāta mesēj pamputā.	తర్వాత మెసేజ్ పంపుతా.			src::anki known::100 len::1-3 set::017 day::029
-S86b23360ad4f	I am going home.		nēnu iṇṭiki veḷtunnānu.	నేను ఇంటికి వెళ్తున్నాను.			src::anki known::100 len::1-3 form::present set::017 day::029
-S8a66e912a46f	Take your medicine. [informal]		nī mandu tīsukō.	నీ మందు తీసుకో.			src::anki reg::informal known::100 len::1-3 form::request set::017 day::029
-S85803f492537	Not bad		cheḍu kādu	చెడుకాదు			src::book1000 known::100 len::1-3 form::negative flag::respaced set::017 day::029
+See2cf8fb0eac	Send me a message.		nāku oka mesēj pampu.	నాకు ఒక మెసేజ్ పంపు.			src::anki known::100 len::4-6 set::016 day::029
+S1933a56d9eeb	I'll send a message later.		tarvāta mesēj pamputā.	తర్వాత మెసేజ్ పంపుతా.			src::anki known::100 len::1-3 set::016 day::029
+S86b23360ad4f	I am going home.		nēnu iṇṭiki veḷtunnānu.	నేను ఇంటికి వెళ్తున్నాను.			src::anki known::100 len::1-3 form::present set::016 day::029
+S8a66e912a46f	Take your medicine. [informal]		nī mandu tīsukō.	నీ మందు తీసుకో.			src::anki reg::informal known::100 len::1-3 form::request set::016 day::029
+S85803f492537	Not bad		cheḍu kādu	చెడుకాదు			src::book1000 known::100 len::1-3 form::negative flag::respaced set::016 day::029
 Sdf7c14ccaf5d	This medicine tastes bitter.		ī mandu chēḍugā undi.	ఈ మందు చేడుగా ఉంది.		also: This medicine is bitter.	src::anki known::100 len::4-6 form::past set::017 day::029
 Sbafe966f2534	Ghee rice is delicious.		neyyi annaṁ chālā ruchigā uṇṭundi.	నెయ్యి అన్నం చాలా రుచిగా ఉంటుంది.			src::anki known::100 len::4-6 form::future set::017 day::029
 S725cc1161ded	Best wishes to you. [informal]		nīku śubhākānkṣalu.	నీకు శుభాకాంక్షలు.			src::anki reg::informal known::100 len::1-3 set::017 day::029
@@ -824,15 +819,9 @@ S800ffc23b11a	What's the scene tonight?		ī rātri sīn ēṇṭi?	ఈ రాత
 S4cc6c1371fbc	What's the scene?		sīn ēṇṭi?	సీన్ ఏంటి?			src::anki known::100 len::1-3 form::question set::017 day::029
 Sef02de902aed	I need your help. [informal]		nī sahāyaṁ kāvāli.	నీ సహాయం కావాలి.			src::anki reg::informal known::100 len::1-3 set::017 day::029
 S923167a491ab	Take my bike [respectful]		nā baik tīsukōṇḍi	నా బైక్ తీసుకోండి			src::book1000 reg::respectful known::100 len::1-3 form::request set::017 day::029
-S2eb24ac52471	Give me one chance.		nāku oka chhāns ivvu.	నాకు ఒక ఛాన్స్ ఇవ్వు.			src::anki known::100 len::4-6 form::request set::017 day::030
-S824be3e1fe00	Stay at home today.		ī rōju iṇṭlō uṇḍu.	ఈ రోజు ఇంట్లో ఉండు.			src::anki known::100 len::4-6 form::request set::017 day::030
+S2eb24ac52471	Give me one chance.		nāku oka chhāns ivvu.	నాకు ఒక ఛాన్స్ ఇవ్వు.			src::anki known::100 len::4-6 form::request set::017 day::029
+S824be3e1fe00	Stay at home today.		ī rōju iṇṭlō uṇḍu.	ఈ రోజు ఇంట్లో ఉండు.			src::anki known::100 len::4-6 form::request set::017 day::029
 S78d981de3403	Don't be angry.		kōpaṁ paḍaku.	కోపం పడకు.			src::anki known::100 len::1-3 form::negative set::017 day::030
-S521dfd1f6a28	Step inside		lōpaliki aḍugu	లోపలికి అడుగు			src::book1000 known::100 len::1-3 set::017 day::030
-S728fd42f0be7	What do you ask ?		mīruēmi aḍugu tāru?	మీరుఏమి అడుగుతారు?			src::book1000 known::100 len::1-3 form::question flag::respaced set::017 day::030
-S9404315736a0	What do you want to drink?		ēmi tāgu tāru?	ఏమి తాగుతారు?			src::anki known::100 len::1-3 form::future form::question flag::respaced set::017 day::030
-Sab75fe17f873	Let's have tea.		chāy tāgundāṁ rā.	చాయ్ తాగుందాం రా.			src::anki known::100 len::1-3 form::request set::017 day::030
-Sb5b0eb5e2a87	When are you leaving?		eppuḍu bayaludēru tāru?	ఎప్పుడు బయలుదేరుతారు?			src::anki known::100 len::1-3 form::question flag::respaced set::017 day::030
-Sd7abad94a567	When are you departing? [informal]		nuvvu eppuḍu bayaludērutāvu?	నువ్వు ఎప్పుడు బయలుదేరుతావు?			src::anki reg::informal known::100 len::1-3 form::question set::017 day::030
 S9e467d733f2c	Please come this way. [respectful]		ī vaipu rāṇḍi.	ఈ వైపు రాండి.			src::anki reg::respectful known::100 len::1-3 set::017 day::030
 S185c24d64e65	She is our manager.		āviḍa mā mēnējar.	ఆవిడ మా మేనేజర్.			src::anki known::100 len::1-3 set::017 day::030
 Sd357b95c6346	Your hair looks very nice. [respectful]		mī juṭṭu chālā bāgundi.	మీ జుట్టు చాలా బాగుంది.			src::anki reg::respectful known::100 len::4-6 set::017 day::030
@@ -843,26 +832,31 @@ S3ed00cf76afb	He has fever		āyanaki jvaraṁ undi	ఆయనకి జ్వర�
 Sfd9a1b904f15	Please take our order. [respectful]		mā ārḍar tīsukōṇḍi.	మా ఆర్డర్ తీసుకోండి.			src::anki reg::respectful known::100 len::1-3 form::request set::017 day::030
 Sb0abe4413be4	Cancel the order.		ārḍar raddu chēyu.	ఆర్డర్ రద్దు చేయు.			src::anki known::100 len::1-3 set::017 day::030
 Sc0e57cfdef0e	The meeting got canceled.		mīṭing raddu ayyindi.	మీటింగ్ రద్దు అయ్యింది.			src::anki known::100 len::1-3 set::017 day::030
-S164bfe0a6257	Speak slowly [respectful]		nemmadigā māṭlāḍaṇḍi	నెమ్మదిగా మాట్లాడండి			src::book1000 reg::respectful known::100 len::1-3 form::request set::017 day::031
-S240a1098f58d	Where is the station?		sṭēṣan ekkaḍa?	స్టేషన్ ఎక్కడ?			src::anki known::100 len::1-3 form::question set::017 day::031
-Se37b9db80153	This movie is nice.		ī sinimā bāvundi.	ఈ సినిమా బావుంది.			src::anki known::100 len::1-3 set::017 day::031
-Sa1b544802a6b	What's the news brother?		ēmi khabar bhāy?	ఏమి ఖబర్ భాయ్?			src::anki known::100 len::1-3 form::question set::017 day::031
-S7d9bc44ab563	Bro, listen to this.		bhāy, idi vinu.	భాయ్, ఇది విను.			src::anki known::100 len::1-3 form::request set::017 day::031
-Sdb68a2cf0d2f	Hey girl, come fast.		ri, tvaragā rā.	రి, త్వరగా రా.			src::anki known::100 len::1-3 form::request set::017 day::031
-S64d20b2b85e0	Hey, listen to this.		ri, idi vinu.	రి, ఇది విను.			src::anki known::100 len::1-3 form::request set::017 day::031
+S164bfe0a6257	Speak slowly [respectful]		nemmadigā māṭlāḍaṇḍi	నెమ్మదిగా మాట్లాడండి			src::book1000 reg::respectful known::100 len::1-3 form::request set::017 day::030
+S240a1098f58d	Where is the station?		sṭēṣan ekkaḍa?	స్టేషన్ ఎక్కడ?			src::anki known::100 len::1-3 form::question set::017 day::030
+Se37b9db80153	This movie is nice.		ī sinimā bāvundi.	ఈ సినిమా బావుంది.			src::anki known::100 len::1-3 set::017 day::030
+Sa1b544802a6b	What's the news brother?		ēmi khabar bhāy?	ఏమి ఖబర్ భాయ్?			src::anki known::100 len::1-3 form::question set::017 day::030
+S7d9bc44ab563	Bro, listen to this.		bhāy, idi vinu.	భాయ్, ఇది విను.			src::anki known::100 len::1-3 form::request set::017 day::030
+Sdb68a2cf0d2f	Hey girl, come fast.		ri, tvaragā rā.	రి, త్వరగా రా.			src::anki known::100 len::1-3 form::request set::017 day::030
+S64d20b2b85e0	Hey, listen to this.		ri, idi vinu.	రి, ఇది విను.			src::anki known::100 len::1-3 form::request set::017 day::030
 Sda4162607fb6	Go upstairs ! [respectful]		paiki veḷḷaṇḍi	పైకి వెళ్ళండి			src::book1000 reg::respectful known::100 len::1-3 form::request set::017 day::031
 Sdac785d4404a	This is my son		itanu nā koḍuku	ఇతను నా కొడుకు		New word: koḍuku = son. Uses itanu, the near form of atanu (a→i rule from Lesson 1) — this is that rule in real use.	src::anki known::100 len::1-3 set::017 day::031
 S5086cf0773ed	This village is very beautiful.		ī ūru chālā andangā undi.	ఈ ఊరు చాలా అందంగా ఉంది.			src::anki known::100 len::4-6 form::past set::017 day::031
 Sbe3ce5d273ac	You know what		nīku telusā	నీకుతెలుసా			src::book1000 known::100 len::1-3 flag::respaced set::017 day::031
 Sea6067d94f6d	Your mother-in-law and father-in-law. [respectful]		atta gāru / māma gāru.	అత్త గారు / మామ గారు.		Same roots as the paternal aunt and maternal uncle.	src::site reg::respectful known::100 len::4-6 set::017 day::031
-S85a241eea304	I will come at eight.		nēnu enimidi gaṇṭalaku vastānu.	నేను ఎనిమిది గంటలకు వస్తాను.			src::anki known::100 len::4-6 form::future set::018 day::031
-S163409917930	A hundred rupees.		vanda rūpāyalu.	వంద రూపాయలు.			src::site known::100 len::1-3 set::018 day::031
-Sc12a71c46ddd	Fifty rupees.		yābhai rūpāyalu.	యాభై రూపాయలు.			src::site known::100 len::1-3 set::018 day::031
-S9b5cf48c2b11	"""How much is this?"" — then answer ""fifty rupees."""		idi enta? / yābhai rūpāyalu.	ఇది ఎంత? / యాభై రూపాయలు.			src::site known::100 len::4-6 set::018 day::031
-Sb18103b6c423	The milk is hot.		pālu vāḍigā unnāyi.	పాలు వాడిగా ఉన్నాయి.			src::anki known::100 len::1-3 set::018 day::031
-S75e35043350b	The fish is in the water.		chēpa nīrulō undi.	చేప నీరులో ఉంది.			src::anki known::100 len::1-3 form::past set::018 day::032
-Scc9b143320e9	This pulusu has nice taste.		ī pulusu chālā ruchigā undi.	ఈ పులుసు చాలా రుచిగా ఉంది.			src::anki known::100 len::4-6 form::past set::018 day::032
-Sca4aa8f85a71	Fish curry is tasty.		chēpa pulusu chālā ruchigā uṇṭundi.	చేప పులుసు చాలా రుచిగా ఉంటుంది.			src::anki known::100 len::4-6 form::future set::018 day::032
+S85a241eea304	I will come at eight.		nēnu enimidi gaṇṭalaku vastānu.	నేను ఎనిమిది గంటలకు వస్తాను.			src::anki known::100 len::4-6 form::future set::017 day::031
+S163409917930	A hundred rupees.		vanda rūpāyalu.	వంద రూపాయలు.			src::site known::100 len::1-3 set::017 day::031
+Sc12a71c46ddd	Fifty rupees.		yābhai rūpāyalu.	యాభై రూపాయలు.			src::site known::100 len::1-3 set::017 day::031
+S9b5cf48c2b11	"""How much is this?"" — then answer ""fifty rupees."""		idi enta? / yābhai rūpāyalu.	ఇది ఎంత? / యాభై రూపాయలు.			src::site known::100 len::4-6 set::017 day::031
+Sab75fe17f873	Let's have tea.		chāy tāgundāṁ rā.	చాయ్ తాగుందాం రా.			src::anki known::100 len::1-3 form::request set::017 day::031
+S9404315736a0	What do you want to drink?		ēmi tāgu tāru?	ఏమి తాగుతారు?			src::anki known::100 len::1-3 form::future form::question flag::respaced set::017 day::031
+Sb5b0eb5e2a87	When are you leaving?		eppuḍu bayaludēru tāru?	ఎప్పుడు బయలుదేరుతారు?			src::anki known::100 len::1-3 form::question flag::respaced set::017 day::031
+Sd7abad94a567	When are you departing? [informal]		nuvvu eppuḍu bayaludērutāvu?	నువ్వు ఎప్పుడు బయలుదేరుతావు?			src::anki reg::informal known::100 len::1-3 form::question set::017 day::031
+S728fd42f0be7	What do you ask ?		mīruēmi aḍugu tāru?	మీరుఏమి అడుగుతారు?			src::book1000 known::100 len::1-3 form::question flag::respaced set::017 day::031
+Sb18103b6c423	The milk is hot.		pālu vāḍigā unnāyi.	పాలు వాడిగా ఉన్నాయి.			src::anki known::100 len::1-3 set::017 day::031
+S75e35043350b	The fish is in the water.		chēpa nīrulō undi.	చేప నీరులో ఉంది.			src::anki known::100 len::1-3 form::past set::017 day::031
+Scc9b143320e9	This pulusu has nice taste.		ī pulusu chālā ruchigā undi.	ఈ పులుసు చాలా రుచిగా ఉంది.			src::anki known::100 len::4-6 form::past set::018 day::031
+Sca4aa8f85a71	Fish curry is tasty.		chēpa pulusu chālā ruchigā uṇṭundi.	చేప పులుసు చాలా రుచిగా ఉంటుంది.			src::anki known::100 len::4-6 form::future set::018 day::031
 Se8397b234c12	We need money for that.		dāniki ḍabbulu kāvāli.	దానికి డబ్బులు కావాలి.			src::anki known::100 len::1-3 set::018 day::032
 S74042baa5bf5	Say sorry to her.		āmeki sārī cheppu.	ఆమెకి సారీ చెప్పు.			src::anki known::100 len::1-3 form::request set::018 day::032
 S1397d407bc90	My elder sister got married.		nā akka peḷḷi ayyindi.	నా అక్క పెళ్ళి అయ్యింది.			src::anki known::100 len::4-6 set::018 day::032
@@ -877,8 +871,8 @@ S49dc3b99ea16	Please go ahead. [respectful]		munduku veḷḷaṇḍi.	ముం
 S5d575a695da9	Go straight ahead.		munduku nēruga veḷḷu.	ముందుకు నేరుగ వెళ్ళు.			src::anki known::100 len::1-3 form::request set::018 day::032
 Sdcbfc96698c9	Where is the nearest school?		daggaralō skūl ekkaḍa?	దగ్గరలో స్కూల్ ఎక్కడ?			src::anki known::100 len::1-3 form::question set::018 day::032
 S2e5a0c4b90ca	I am ready		nēnu siddhangā unnānu	నేనుసిద్ధంగా ఉన్నాను			src::book1000 known::100 len::1-3 form::past flag::respaced set::018 day::032
-S7b8480d9ea4b	Our team is very good.		mā ṭīm chālā manchidi.	మా టీమ్ చాలా మంచిది.			src::anki known::100 len::4-6 set::018 day::033
-S9f4493a1acb2	How is the project going?		prājekṭ elā vastundi?	ప్రాజెక్ట్ ఎలా వస్తుంది?			src::anki known::100 len::1-3 form::future form::question set::018 day::033
+S7b8480d9ea4b	Our team is very good.		mā ṭīm chālā manchidi.	మా టీమ్ చాలా మంచిది.			src::anki known::100 len::4-6 set::018 day::032
+S9f4493a1acb2	How is the project going?		prājekṭ elā vastundi?	ప్రాజెక్ట్ ఎలా వస్తుంది?			src::anki known::100 len::1-3 form::future form::question set::018 day::032
 Sabf85fe62c7e	The project is completed.		prājekṭ kamplīṭ ayyindi.	ప్రాజెక్ట్ కంప్లీట్ అయ్యింది.			src::anki known::100 len::1-3 set::018 day::033
 S4f1c277f9f48	Everything is completed.		antā kamplīṭ ayyindi.	అంతా కంప్లీట్ అయ్యింది.			src::anki known::100 len::1-3 set::018 day::033
 Sc85311df8634	The project deadline is Friday.		prājekṭ ḍeḍlain śukravāraṁ.	ప్రాజెక్ట్ డెడ్‌లైన్ శుక్రవారం.			src::anki known::100 len::1-3 set::018 day::033
@@ -894,9 +888,9 @@ S60f6ede50208	Is that true?		adi nijamā?	అది నిజమా?			src::anki
 S22d557c82edd	Really? I can't believe it.		nijamā? nammakaṁ lēdu.	నిజమా? నమ్మకం లేదు.			src::anki known::100 len::1-3 form::negative set::018 day::033
 Sf078ab512b36	I trust you. [informal]		nāku nī mīda nammakaṁ undi.	నాకు నీ మీద నమ్మకం ఉంది.			src::anki reg::informal known::100 len::4-6 form::past set::018 day::033
 S1710cf317c33	That black car is nice.		ā nallapu kār bāgundi.	ఆ నల్లపు కార్ బాగుంది.			src::anki known::100 len::4-6 set::018 day::033
-S3c92a9125fe8	I don't like black color.		nāku nallapu rangu iṣṭaṁ lēdu.	నాకు నల్లపు రంగు ఇష్టం లేదు.			src::anki known::100 len::4-6 form::negative set::018 day::034
-S31b1e48d5953	She wore a blue saree.		āme nīlaṁ sārī vēsukondi.	ఆమె నీలం సారీ వేసుకొంది.			src::anki known::100 len::4-6 set::018 day::034
-Sc3068f40d0b3	Blue is a very nice color.		nīlaṁ chālā manchi rangu.	నీలం చాలా మంచి రంగు.			src::anki known::100 len::4-6 set::018 day::034
+S3c92a9125fe8	I don't like black color.		nāku nallapu rangu iṣṭaṁ lēdu.	నాకు నల్లపు రంగు ఇష్టం లేదు.			src::anki known::100 len::4-6 form::negative set::018 day::033
+S31b1e48d5953	She wore a blue saree.		āme nīlaṁ sārī vēsukondi.	ఆమె నీలం సారీ వేసుకొంది.			src::anki known::100 len::4-6 set::018 day::033
+Sc3068f40d0b3	Blue is a very nice color.		nīlaṁ chālā manchi rangu.	నీలం చాలా మంచి రంగు.			src::anki known::100 len::4-6 set::018 day::033
 Sd49b53680664	I like red color.		nāku errapu rangu iṣṭaṁ.	నాకు ఎర్రపు రంగు ఇష్టం.			src::anki known::100 len::4-6 set::018 day::034
 S9b725fab2db3	Give me the red one.		nāku errapudi ivvu.	నాకు ఎర్రపుది ఇవ్వు.			src::anki known::100 len::1-3 form::request set::018 day::034
 Sd15d83638059	I like orange color.		nāku nāranji rangu iṣṭaṁ.	నాకు నారంజి రంగు ఇష్టం.			src::anki known::100 len::4-6 set::018 day::034
@@ -905,17 +899,17 @@ S41bb14b7bac0	I don't have a job.		nāku udyōgaṁ lēdu.	నాకు ఉద�
 S3614680949dc	Bring the laptop.		lyāpṭāp tīsukurā.	ల్యాప్‌టాప్ తీసుకురా.			src::anki known::100 len::1-3 set::018 day::034
 S55825a9f1e72	I need two tickets.		nāku reṇḍu ṭikeṭs kāvāli.	నాకు రెండు టికెట్స్ కావాలి.			src::anki known::100 len::4-6 set::018 day::034
 S0dc1eab7e8ac	Come on time.		samayāniki rā.	సమయానికి రా.			src::anki known::100 len::1-3 form::request set::018 day::034
-S81fea27dde1a	What's the value of this?		dīniki viluva ēṇṭi?	దీనికి విలువ ఏంటి?			src::anki known::100 len::1-3 form::question set::019 day::034
-S3930721422d0	Time has great value.		samayāniki chālā viluva undi.	సమయానికి చాలా విలువ ఉంది.			src::anki known::100 len::4-6 form::past set::019 day::034
-Sf5cd50d0602c	Where is the bathroom?		bātrūm ekkaḍa?	బాత్రూమ్ ఎక్కడ?			src::anki known::100 len::1-3 form::question set::019 day::034
-S5ba21eefc58d	I arranged everything.		nēnu antā sardu chēsānu.	నేను అంతా సర్దు చేసాను.			src::anki known::100 len::4-6 form::past set::019 day::034
-Sf0e8388b0500	I am reading a book.		nēnu pustakaṁ chaduvu tunnānu.	నేను పుస్తకం చదువుతున్నాను.			src::anki known::100 len::4-6 form::present flag::respaced set::019 day::034
-S7d5fa0714280	I'm saving money for that.		nēnu dānikōsaṁ ḍabbulu iḍu tunnānu.	నేను దానికోసం డబ్బులు ఇడుతున్నాను.			src::anki known::100 len::4-6 flag::respaced set::019 day::034
+S81fea27dde1a	What's the value of this?		dīniki viluva ēṇṭi?	దీనికి విలువ ఏంటి?			src::anki known::100 len::1-3 form::question set::018 day::034
+S3930721422d0	Time has great value.		samayāniki chālā viluva undi.	సమయానికి చాలా విలువ ఉంది.			src::anki known::100 len::4-6 form::past set::018 day::034
+Sf5cd50d0602c	Where is the bathroom?		bātrūm ekkaḍa?	బాత్రూమ్ ఎక్కడ?			src::anki known::100 len::1-3 form::question set::018 day::034
+S5ba21eefc58d	I arranged everything.		nēnu antā sardu chēsānu.	నేను అంతా సర్దు చేసాను.			src::anki known::100 len::4-6 form::past set::018 day::034
+Sf0e8388b0500	I am reading a book.		nēnu pustakaṁ chaduvu tunnānu.	నేను పుస్తకం చదువుతున్నాను.			src::anki known::100 len::4-6 form::present flag::respaced set::018 day::034
+S7d5fa0714280	I'm saving money for that.		nēnu dānikōsaṁ ḍabbulu iḍu tunnānu.	నేను దానికోసం డబ్బులు ఇడుతున్నాను.			src::anki known::100 len::4-6 flag::respaced set::018 day::034
 Sc8dc964a49a7	I'm waiting for that only.		nēnu dānikōsaṁ veyiṭ chēstunnānu.	నేను దానికోసం వెయిట్ చేస్తున్నాను.			src::anki known::100 len::4-6 form::present set::019 day::034
 S098f93c7e70e	I'll tell you about that later.		dānigurinchi tarvāta cheptānu.	దానిగురించి తర్వాత చెప్తాను.			src::anki known::100 len::1-3 form::future set::019 day::034
-S8307f424d96e	He has a lot of knowledge.		vāḍiki chālā jñānaṁ undi.	వాడికి చాలా జ్ఞానం ఉంది.			src::anki known::100 len::4-6 form::past set::019 day::035
-Sc05eba6876f8	Knowledge is power.		jñānaṁ oka śakti.	జ్ఞానం ఒక శక్తి.			src::anki known::100 len::1-3 set::019 day::035
-Sbbb18f7ed47f	He has a lot of inner strength.		vāḍiki chālā śakti undi.	వాడికి చాలా శక్తి ఉంది.			src::anki known::100 len::4-6 form::past set::019 day::035
+S8307f424d96e	He has a lot of knowledge.		vāḍiki chālā jñānaṁ undi.	వాడికి చాలా జ్ఞానం ఉంది.			src::anki known::100 len::4-6 form::past set::019 day::034
+Sc05eba6876f8	Knowledge is power.		jñānaṁ oka śakti.	జ్ఞానం ఒక శక్తి.			src::anki known::100 len::1-3 set::019 day::034
+Sbbb18f7ed47f	He has a lot of inner strength.		vāḍiki chālā śakti undi.	వాడికి చాలా శక్తి ఉంది.			src::anki known::100 len::4-6 form::past set::019 day::034
 S8e25dd727d72	It is love		idi prēma	ఇదిప్రేమ			src::book1000 known::100 len::1-3 flag::respaced set::019 day::035
 S33e4de6f1bef	Love is the biggest power.		prēma aṇṭē pedda śakti.	ప్రేమ అంటే పెద్ద శక్తి.			src::anki known::100 len::4-6 form::if set::019 day::035
 S3dbb8917e22e	Found it!		dorikindi!	దొరికింది!			src::anki known::100 len::1-3 set::019 day::035
@@ -932,9 +926,9 @@ S5ce5c3ba5fee	Use this opportunity well.		ī chhāns bāgā yūj chēyu.	ఈ ఛ
 Sdf5ed57f9293	Victory is ours!		jayaṁ manadē!	జయం మనదే!			src::anki known::100 len::1-3 set::019 day::035
 S4a5c37a9fd10	Give the near partner for āviḍa, atanu, and avi.		īviḍa, itanu, ivi.	ఈవిడ, ఇతను, ఇవి.		keep the same meaning/register; change distance	src::site known::100 len::1-3 set::019 day::035
 S4f392d3cc514	"""These people / those people"""		vīḷḷu / vāḷḷu.	వీళ్ళు / వాళ్ళు.		near ī- vs distant ā-	src::site known::100 len::1-3 set::019 day::035
-Saf743b06e6dc	Produce: “These people are students.”		vīḷḷu vidyārthulu.	వీళ్ళు విద్యార్థులు.			src::site known::100 len::1-3 set::019 day::036
-S70fcce27601f	Those people are students.		vāḷḷu vidyārthulu.	వాళ్ళు విద్యార్థులు.			src::site known::100 len::1-3 set::019 day::036
-S9531e35bea13	37		muppai ēḍu	ముప్పై ఏడు			src::site known::100 len::1-3 set::019 day::036
+Saf743b06e6dc	Produce: “These people are students.”		vīḷḷu vidyārthulu.	వీళ్ళు విద్యార్థులు.			src::site known::100 len::1-3 set::019 day::035
+S70fcce27601f	Those people are students.		vāḷḷu vidyārthulu.	వాళ్ళు విద్యార్థులు.			src::site known::100 len::1-3 set::019 day::035
+S9531e35bea13	37		muppai ēḍu	ముప్పై ఏడు			src::site known::100 len::1-3 set::019 day::035
 S90d1ad01f0ae	Address your grandfather respectfully.		tāta gāru.	తాత గారు.		gāru attaches to people, aṇḍi to phrases	src::site reg::respectful known::100 len::1-3 set::019 day::036
 S397784849a47	Your father's younger brother.		chinnānna.	చిన్నాన్న.		"chinna + nāna — ""younger father"""	src::site known::100 len::1-3 set::019 day::036
 S297658512a4a	The office starts at nine.		āphīs tommidi gaṇṭalaku sṭārṭ.	ఆఫీస్ తొమ్మిది గంటలకు స్టార్ట్.			src::anki known::100 len::4-6 set::019 day::036
@@ -948,23 +942,23 @@ S2877d049f982	Let's go roaming around.		tirugudāṁ rā.	తిరుగుద�
 S03e7a49bc0ee	Come here like this.		ilā ikkaḍaki rā.	ఇలా ఇక్కడకి రా.			src::anki known::100 len::1-3 form::request set::019 day::036
 S647a33056e46	I hope it works.		pani avutundi ani āśa.	పని అవుతుంది అని ఆశ.			src::anki known::100 len::4-6 set::019 day::036
 S22468dca9cbc	Put your hand on your head.		tala mīda chēyi peṭṭu.	తల మీద చేయి పెట్టు.			src::anki known::100 len::4-6 form::request set::019 day::036
-Sdc9c1f9eee72	My shoulder is stiff.		nā bhujaṁ gaṭṭigā undi.	నా భుజం గట్టిగా ఉంది.			src::anki known::100 len::4-6 form::past set::019 day::037
+Sdc9c1f9eee72	My shoulder is stiff.		nā bhujaṁ gaṭṭigā undi.	నా భుజం గట్టిగా ఉంది.			src::anki known::100 len::4-6 form::past set::019 day::036
 Sb64fd1368d0a	I don't know the way.		nāku dāri telīdu.	నాకు దారి తెలీదు.			src::anki known::100 len::1-3 set::019 day::037
 S4e468ffb8a77	But there was a lot of traffic on the way.		kānī dārilō ṭrāphik chālā ekkuva undi	కానీ దారిలో ట్రాఫిక్ చాలా ఎక్కువ ఉంది		Only three new words. kāni (but), dāri (way, road), ekkuva (a lot, excessive). Everything else you have: -lō from āphīsulō, plus chālā and undi.	src::site known::100 len::4-6 form::past set::019 day::037
 S69a75d8c5c54	But I like it		kānī nākuadi nachchindi	కానీ నాకుఅది నచ్చింది			src::book1000 known::100 len::1-3 set::019 day::037
 Sf4e846c35fed	I like this very much.		nāku idi chālā nachchindi.	నాకు ఇది చాలా నచ్చింది.			src::anki known::100 len::4-6 set::019 day::037
 Sb76f931397d7	It's a big world.		pedda duniyā idi.	పెద్ద దునియా ఇది.			src::anki known::100 len::1-3 set::019 day::037
 Sea8d7c33c2b2	Don't be scared.		bhayaṁ paḍaku.	భయం పడకు.			src::anki known::100 len::1-3 form::negative set::019 day::037
-S643451228f15	No problem [respectful]		ēmi ibbandi lēdu	ఏమి ఇబ్బంది లేదు			src::book1000 reg::respectful known::100 len::1-3 form::negative set::020 day::037
-S3b58519e2230	The bed is very soft.		manchaṁ chālā mettagā undi.	మంచం చాలా మెత్తగా ఉంది.			src::anki known::100 len::4-6 form::past set::020 day::037
-S13afcbe52608	When is the next meeting?		mundundi mīṭing eppuḍu?	ముందుంది మీటింగ్ ఎప్పుడు?			src::anki known::100 len::1-3 form::question set::020 day::037
-Sb7a94cb60743	This is the last chance.		idi chivaridi chhāns.	ఇది చివరిది ఛాన్స్.			src::anki known::100 len::1-3 set::020 day::037
-Sac61814450ee	I saw that recently.		adi īmadhya chūsānu.	అది ఈమధ్య చూసాను.			src::anki known::100 len::1-3 form::past set::020 day::037
-S9f17be526d90	Let him come [respectful]		āyanani rān ivvaṇḍi	ఆయనని రానివ్వండి			src::book1000 reg::respectful known::100 len::1-3 flag::respaced set::020 day::037
+S643451228f15	No problem [respectful]		ēmi ibbandi lēdu	ఏమి ఇబ్బంది లేదు			src::book1000 reg::respectful known::100 len::1-3 form::negative set::019 day::037
+S3b58519e2230	The bed is very soft.		manchaṁ chālā mettagā undi.	మంచం చాలా మెత్తగా ఉంది.			src::anki known::100 len::4-6 form::past set::019 day::037
+S13afcbe52608	When is the next meeting?		mundundi mīṭing eppuḍu?	ముందుంది మీటింగ్ ఎప్పుడు?			src::anki known::100 len::1-3 form::question set::019 day::037
+Sb7a94cb60743	This is the last chance.		idi chivaridi chhāns.	ఇది చివరిది ఛాన్స్.			src::anki known::100 len::1-3 set::019 day::037
+Sac61814450ee	I saw that recently.		adi īmadhya chūsānu.	అది ఈమధ్య చూసాను.			src::anki known::100 len::1-3 form::past set::019 day::037
+S9f17be526d90	Let him come [respectful]		āyanani rān ivvaṇḍi	ఆయనని రానివ్వండి			src::book1000 reg::respectful known::100 len::1-3 flag::respaced set::019 day::037
 Sc044973a7bee	Bring some more [respectful]		marikoni tīsukurṇḍi	మరికొని తీసుకుర్ండి			src::book1000 reg::respectful known::100 len::1-3 set::020 day::037
 Sa87d69a38d57	I need to cut my hair.		nāku juṭṭu kaṭ chēsukōvāli.	నాకు జుట్టు కట్ చేసుకోవాలి.			src::anki known::100 len::4-6 set::020 day::037
-S6908840d12ce	The shop is in front.		angaḍi mundu undi.	అంగడి ముందు ఉంది.			src::anki known::100 len::1-3 form::past set::020 day::038
-S52cf0be158cc	We are girls		mēmu ammāyilu	మేముఅమ్మాయిలు			src::book1000 known::100 len::1-3 flag::respaced set::020 day::038
+S6908840d12ce	The shop is in front.		angaḍi mundu undi.	అంగడి ముందు ఉంది.			src::anki known::100 len::1-3 form::past set::020 day::037
+S52cf0be158cc	We are girls		mēmu ammāyilu	మేముఅమ్మాయిలు			src::book1000 known::100 len::1-3 flag::respaced set::020 day::037
 S3985affc26fd	Open your mouth.		nōru teravu.	నోరు తెరవు.			src::anki known::100 len::1-3 set::020 day::038
 S74aa78902d48	My teeth are hurting.		nā paḷḷu noppigā unnāyi.	నా పళ్ళు నొప్పిగా ఉన్నాయి.			src::anki known::100 len::4-6 set::020 day::038
 S570c7333a0bf	He has a good heart.		atani guṇḍe chālā manchidi.	అతని గుండె చాలా మంచిది.			src::anki known::100 len::4-6 set::020 day::038
@@ -978,8 +972,8 @@ S60e93a3e9c15	Cut the cake please. [respectful]		kēk kaṭ chēyaṇḍi.	క�
 S00af4fb59c5b	Where is the spoon?		spūn ekkaḍa undi?	స్పూన్ ఎక్కడ ఉంది?			src::anki known::100 len::1-3 form::past form::question set::020 day::038
 S0906414872e0	Dinner is ready, come. [respectful]		ḍinnar reḍī ayyindi, raṇḍi.	డిన్నర్ రెడీ అయ్యింది, రండి.			src::anki reg::respectful known::100 len::4-6 form::request set::020 day::038
 Sb3a557501fde	It is very cold because of the dew.		manchu valla chālā challagā undi.	మంచు వల్ల చాలా చల్లగా ఉంది.			src::anki known::100 len::4-6 form::past set::020 day::038
-S37e035f45284	The sea looks beautiful at night.		rātri samudraṁ chālā andangā undi.	రాత్రి సముద్రం చాలా అందంగా ఉంది.			src::anki known::100 len::4-6 form::past set::020 day::039
-S9f31aa4b364b	Perhaps he will come tomorrow.		okavēḷa āyana rēpu vastāḍu.	ఒకవేళ ఆయన రేపు వస్తాడు.			src::anki known::100 len::4-6 form::future set::020 day::039
+S37e035f45284	The sea looks beautiful at night.		rātri samudraṁ chālā andangā undi.	రాత్రి సముద్రం చాలా అందంగా ఉంది.			src::anki known::100 len::4-6 form::past set::020 day::038
+S9f31aa4b364b	Perhaps he will come tomorrow.		okavēḷa āyana rēpu vastāḍu.	ఒకవేళ ఆయన రేపు వస్తాడు.			src::anki known::100 len::4-6 form::future set::020 day::038
 Sfef7c78b1df9	I'm fine, you tell. [informal]		bāgunnā, nuvvu cheppu.	బాగున్నా, నువ్వు చెప్పు.			src::anki reg::informal known::100 len::1-3 form::request set::020 day::039
 S8d823dbe56df	Come here quickly.		tvaragā rārā.	త్వరగా రారా.			src::anki known::100 len::1-3 set::020 day::039
 S4412483d17b5	Oh no! I forgot.		ayyō! nēnu marchipōyā.	అయ్యో! నేను మర్చిపోయా.			src::anki known::100 len::1-3 set::020 day::039
@@ -993,8 +987,8 @@ S55156399164d	Send me the data.		nāku ḍēṭā pampu.	నాకు డేట�
 S9381e4559e65	I found a solution.		nāku pariṣkāraṁ dorikindi.	నాకు పరిష్కారం దొరికింది.			src::anki known::100 len::1-3 set::020 day::039
 Sa3f6de1f593a	We have a plan.		māku oka praṇāḷika undi.	మాకు ఒక ప్రణాళిక ఉంది.			src::anki known::100 len::4-6 form::past set::020 day::039
 Sa6d5378caeda	The expenses are high this month.		ī nela kharchulu ekkuva.	ఈ నెల ఖర్చులు ఎక్కువ.			src::anki known::100 len::4-6 set::020 day::039
-Sd814233e92e8	We got good profit.		māku manchi lābhaṁ vachchindi.	మాకు మంచి లాభం వచ్చింది.			src::anki known::100 len::4-6 form::past set::020 day::040
-Sf69b0ecb0f55	Deploy is done.		ḍiplāy ayyindi.	డిప్లాయ్ అయ్యింది.			src::anki known::100 len::1-3 set::020 day::040
+Sd814233e92e8	We got good profit.		māku manchi lābhaṁ vachchindi.	మాకు మంచి లాభం వచ్చింది.			src::anki known::100 len::4-6 form::past set::020 day::039
+Sf69b0ecb0f55	Deploy is done.		ḍiplāy ayyindi.	డిప్లాయ్ అయ్యింది.			src::anki known::100 len::1-3 set::020 day::039
 Sae0b367d55a0	This is a new feature.		idi kotta phīchar.	ఇది కొత్త ఫీచర్.			src::anki known::100 len::1-3 set::020 day::040
 S41fb41a76772	The design is nice.		ḍijain bāgundi.	డిజైన్ బాగుంది.			src::anki known::100 len::1-3 set::020 day::040
 S2bb9a09c8edf	The airport is far.		eyirpōrṭ chālā dūraṁ.	ఎయిర్‌పోర్ట్ చాలా దూరం.		also: The airport is very far.	src::anki known::100 len::1-3 set::020 day::040
@@ -1005,12 +999,12 @@ S273244cff4c1	Turn on the light.		laiṭ veyyi.	లైట్ వెయ్యి.
 S4623f8616036	Close the door.		talupu veyyi.	తలుపు వెయ్యి.			src::anki known::100 len::1-3 set::020 day::040
 S15e1bcb154c3	Pull the rope.		tāḍu lāgu.	తాడు లాగు.			src::anki known::100 len::1-3 set::020 day::040
 S07e63b8286e5	Pull the door towards you. [informal]		talupu nī vaipu lāgu.	తలుపు నీ వైపు లాగు.			src::anki reg::informal known::100 len::4-6 set::020 day::040
-Sbe0dd67647dc	Close the window, it's cold.		kiṭikī veyyi, chaligā undi.	కిటికీ వెయ్యి, చలిగా ఉంది.			src::anki known::100 len::4-6 form::past set::021 day::040
-Sba80e47091a0	Turn on the TV.		ṭīvī veyyi.	టీవీ వెయ్యి.			src::anki known::100 len::1-3 set::021 day::040
-Sc264f0f78995	Turn on the AC.		ēsī veyyi.	ఏసీ వెయ్యి.			src::anki known::100 len::1-3 set::021 day::040
-Sa9359d563127	Turn on the fan.		phyān veyyi.	ఫ్యాన్ వెయ్యి.			src::anki known::100 len::1-3 set::021 day::040
-Sca98ed87a315	The fan is on the ceiling.		phyān paikappu mīda undi.	ఫ్యాన్ పైకప్పు మీద ఉంది.			src::anki known::100 len::4-6 form::past set::021 day::041
-S47bd0f6bdd06	What is the reason for this?		dīniki kāraṇaṁ ēṇṭi?	దీనికి కారణం ఏంటి?			src::anki known::100 len::1-3 form::question set::021 day::041
+Sbe0dd67647dc	Close the window, it's cold.		kiṭikī veyyi, chaligā undi.	కిటికీ వెయ్యి, చలిగా ఉంది.			src::anki known::100 len::4-6 form::past set::020 day::040
+Sba80e47091a0	Turn on the TV.		ṭīvī veyyi.	టీవీ వెయ్యి.			src::anki known::100 len::1-3 set::020 day::040
+Sc264f0f78995	Turn on the AC.		ēsī veyyi.	ఏసీ వెయ్యి.			src::anki known::100 len::1-3 set::020 day::040
+Sa9359d563127	Turn on the fan.		phyān veyyi.	ఫ్యాన్ వెయ్యి.			src::anki known::100 len::1-3 set::020 day::040
+Sca98ed87a315	The fan is on the ceiling.		phyān paikappu mīda undi.	ఫ్యాన్ పైకప్పు మీద ఉంది.			src::anki known::100 len::4-6 form::past set::020 day::040
+S47bd0f6bdd06	What is the reason for this?		dīniki kāraṇaṁ ēṇṭi?	దీనికి కారణం ఏంటి?			src::anki known::100 len::1-3 form::question set::020 day::041
 S11236188a770	What is your purpose? [informal]		nī uddēśaṁ ēṇṭi?	నీ ఉద్దేశం ఏంటి?			src::anki reg::informal known::100 len::1-3 form::question set::021 day::041
 S4211bc7c6100	She got good education.		āmeki manchi vidya vachchindi.	ఆమెకి మంచి విద్య వచ్చింది.			src::anki known::100 len::4-6 form::past set::021 day::041
 Sd5d582c65f7a	Changes are needed.		mārpulu kāvāli.	మార్పులు కావాలి.			src::anki known::100 len::1-3 set::021 day::041
@@ -1023,8 +1017,8 @@ Sa87bece759a6	There was a lot of damage.		chālā nuksānaṁ ayyindi.	చాల
 S05994094541c	I'll definitely come.		nēnu jarūr vastā.	నేను జరూర్ వస్తా.			src::anki known::100 len::1-3 set::021 day::041
 Sfd5ca21702a7	This is mine.		idi mērā.	ఇది మేరా.			src::anki known::100 len::1-3 set::021 day::041
 S9abf178b5d9b	That seat is mine.		ā sīṭ mērā.	ఆ సీట్ మేరా.			src::anki known::100 len::1-3 set::021 day::041
-Sea83e8547cf5	You're a good friend, dude. [informal]		nuvvu manchi yār.	నువ్వు మంచి యార్.			src::anki reg::informal known::100 len::1-3 set::021 day::042
-S7cda3d5485b1	He's very classy. [informal]		vāḍu chālā khandāni.	వాడు చాలా ఖందాని.			src::anki reg::informal known::100 len::1-3 form::request set::021 day::042
+Sea83e8547cf5	You're a good friend, dude. [informal]		nuvvu manchi yār.	నువ్వు మంచి యార్.			src::anki reg::informal known::100 len::1-3 set::021 day::041
+S7cda3d5485b1	He's very classy. [informal]		vāḍu chālā khandāni.	వాడు చాలా ఖందాని.			src::anki reg::informal known::100 len::1-3 form::request set::021 day::041
 S40b89d187d6a	The feast was amazing.		dāvat chālā bāvundi.	దావత్ చాలా బావుంది.			src::anki known::100 len::1-3 set::021 day::042
 S9714d1c83249	I'm present today.		ī rōju nēnu hājiru.	ఈ రోజు నేను హాజిరు.			src::anki known::100 len::4-6 set::021 day::042
 S1ac958128474	Everyone is present, sir.		andarū hājiru, sar.	అందరూ హాజిరు, సర్.			src::anki known::100 len::1-3 set::021 day::042
@@ -1038,8 +1032,8 @@ Sd94903680428	Think about the future.		bhaviṣyat gurinchi ālōchinchu.	భవ
 Sf94e5f6997ac	He got a high position.		vāḍiki manchi sthānaṁ vachchindi.	వాడికి మంచి స్థానం వచ్చింది.			src::anki known::100 len::4-6 form::past set::021 day::042
 S45d0308216ba	When is the function?		phankṣan eppuḍu?	ఫంక్షన్ ఎప్పుడు?			src::anki known::100 len::1-3 form::question set::021 day::042
 S711f6c656c38	The function is on Sunday.		phankṣan ādivāraṁ.	ఫంక్షన్ ఆదివారం.			src::anki known::100 len::1-3 set::021 day::042
-S5c2fcc202ad6	The prayer is at seven o'clock.		pūjā ēḍu gaṇṭalaku.	పూజా ఏడు గంటలకు.			src::anki known::100 len::1-3 set::021 day::043
-Sf8a22df66213	Give your blessing please. [respectful]		mī āśīrvādaṁ ivvaṇḍi.	మీ ఆశీర్వాదం ఇవ్వండి.			src::anki reg::respectful known::100 len::1-3 form::request set::021 day::043
+S5c2fcc202ad6	The prayer is at seven o'clock.		pūjā ēḍu gaṇṭalaku.	పూజా ఏడు గంటలకు.			src::anki known::100 len::1-3 set::021 day::042
+Sf8a22df66213	Give your blessing please. [respectful]		mī āśīrvādaṁ ivvaṇḍi.	మీ ఆశీర్వాదం ఇవ్వండి.			src::anki reg::respectful known::100 len::1-3 form::request set::021 day::042
 Sf9dfc91fac07	Practice every day.		rōjū abhyāsaṁ chēyu.	రోజూ అభ్యాసం చేయు.			src::anki known::100 len::1-3 set::021 day::043
 S3b0c69be26cb	I got the certificate.		nāku sarṭiphikēṭ vachchindi.	నాకు సర్టిఫికేట్ వచ్చింది.			src::anki known::100 len::1-3 form::past set::021 day::043
 Sfd338506515a	Pay attention to this.		dīniki gamanaṁ peṭṭu.	దీనికి గమనం పెట్టు.			src::anki known::100 len::1-3 set::021 day::043
@@ -1053,22 +1047,23 @@ Sf3d29d4c0032	Our mother tongue is ______.		mā mātṛbhāṣa ______.	మా �
 S9eebc155c7bf	Well done / congratulations		śabhāṣ	శభాష్			src::site known::100 len::1-3 set::021 day::043
 Sb5d323504d76	My grandmother makes good food.		mā ammamma vaṇṭa chālā bāgā chēstundi.	మా అమ్మమ్మ వంట చాలా బాగా చేస్తుంది.			src::anki known::100 len::4-6 form::future set::021 day::043
 S6d1de060c311	Elder sister and younger sister.		akka / chelli.	అక్క / చెల్లి.			src::site known::100 len::1-3 set::021 day::043
-Sf7aeb984aa7b	Your mother's elder sister.		peddamma.	పెద్దమ్మ.		"pedda + amma — ""elder mother"""	src::site known::100 len::1-3 set::021 day::044
-S4c275da054ce	Your mother's younger sister.		pinni.	పిన్ని.		not a compound — its own word	src::site known::100 len::1-3 set::021 day::044
-Sc461d6312927	I have eleven meetings this week.		ī vāraṁ nāku padakoṇḍu mīṭings unnāyi.	ఈ వారం నాకు పదకొండు మీటింగ్స్ ఉన్నాయి.			src::anki known::100 len::4-6 set::022 day::044
-S807e1f357874	It is twelve o'clock.		panneṇḍu gaṇṭalu ayyindi.	పన్నెండు గంటలు అయ్యింది.			src::anki known::100 len::1-3 set::022 day::044
-S0aba9ac3c810	Zero problems today.		ī rōju sunna prāblamlu.	ఈ రోజు సున్న ప్రాబ్లమ్లు.			src::anki known::100 len::4-6 set::022 day::044
-S9eb008513b4e	Stand over there.		akkaḍa nilabaḍu.	అక్కడ నిలబడు.			src::anki known::100 len::1-3 form::request set::022 day::044
-Sf5dac9dd466e	I have a meeting in the afternoon.		madhyāhnaṁ nāku mīṭing undi.	మధ్యాహ్నం నాకు మీటింగ్ ఉంది.			src::anki known::100 len::4-6 form::past set::022 day::044
-S8866cdaec752	The day after tomorrow works. [respectful]		elluṇḍi bāg uṇṭundi.	ఎల్లుండి బాగుంటుంది.			src::anki reg::respectful known::100 len::1-3 flag::respaced set::022 day::044
+Sf7aeb984aa7b	Your mother's elder sister.		peddamma.	పెద్దమ్మ.		"pedda + amma — ""elder mother"""	src::site known::100 len::1-3 set::021 day::043
+S4c275da054ce	Your mother's younger sister.		pinni.	పిన్ని.		not a compound — its own word	src::site known::100 len::1-3 set::021 day::043
+Sc461d6312927	I have eleven meetings this week.		ī vāraṁ nāku padakoṇḍu mīṭings unnāyi.	ఈ వారం నాకు పదకొండు మీటింగ్స్ ఉన్నాయి.			src::anki known::100 len::4-6 set::021 day::044
+S807e1f357874	It is twelve o'clock.		panneṇḍu gaṇṭalu ayyindi.	పన్నెండు గంటలు అయ్యింది.			src::anki known::100 len::1-3 set::021 day::044
+S0aba9ac3c810	Zero problems today.		ī rōju sunna prāblamlu.	ఈ రోజు సున్న ప్రాబ్లమ్లు.			src::anki known::100 len::4-6 set::021 day::044
+S9eb008513b4e	Stand over there.		akkaḍa nilabaḍu.	అక్కడ నిలబడు.			src::anki known::100 len::1-3 form::request set::021 day::044
+Sf5dac9dd466e	I have a meeting in the afternoon.		madhyāhnaṁ nāku mīṭing undi.	మధ్యాహ్నం నాకు మీటింగ్ ఉంది.			src::anki known::100 len::4-6 form::past set::021 day::044
+S8866cdaec752	The day after tomorrow works. [respectful]		elluṇḍi bāg uṇṭundi.	ఎల్లుండి బాగుంటుంది.			src::anki reg::respectful known::100 len::1-3 flag::respaced set::021 day::044
 S4b1e884b48d0	She is short.		āme poṭṭigā undi.	ఆమె పొట్టిగా ఉంది.			src::anki known::100 len::1-3 form::past set::022 day::044
 S26744a6f279c	This curry is very spicy.		ī kūra chālā kārangā undi.	ఈ కూర చాలా కారంగా ఉంది.			src::anki known::100 len::4-6 form::past set::022 day::044
 Sa37e596c7d80	Are you afraid of dogs? [informal]		nīku kukkalu aṇṭē bhayamā?	నీకు కుక్కలు అంటే భయమా?			src::anki reg::informal known::100 len::4-6 form::if form::question set::022 day::044
 S51b39d1821a6	A snake came into the house.		iṇṭlōki pāmu vachchindi.	ఇంట్లోకి పాము వచ్చింది.			src::anki known::100 len::1-3 form::past set::022 day::044
 Scd8ea60b8ccd	No matter what !		ēdi ēmainā	ఏది ఏమైనా			src::book1000 known::100 len::1-3 set::022 day::044
 S9e436abd0e9b	Why is it so expensive?		idi enduku inta ekkuva?	ఇది ఎందుకు ఇంత ఎక్కువ?			src::anki known::100 len::4-6 form::question set::022 day::044
+Sd063c25d8a6f	Sit next to me.		nā pakkana kūrchō.	నా పక్కన కూర్చో.			src::anki known::100 len::1-3 form::request set::022 day::044
 S32afcf2ced23	It was good — a good piece of work got finished.		bāgundi, oka manchi pani pūrti ayyindi	బాగుంది, ఒక మంచి పని పూర్తి అయ్యింది		Look at oka doing exactly its job. This is the deep-dive use: one newly introduced thing the listener doesn't know about yet. Drop it and the sentence goes vague. And manchi is the Lesson 3 “good” — the adjective form of manchidi.	src::site known::100 len::4-6 set::022 day::044
-Se95cea49e422	Very good, aunty.		chālā bāgundi attayya	చాలా బాగుంది అత్తయ్య		"Why you can already say this: chālā (""very"") plus attayya — the address form of atta from Lesson 4, the word that does double duty for aunt and mother-in-law."	src::site known::100 len::1-3 set::022 day::045
+Se95cea49e422	Very good, aunty.		chālā bāgundi attayya	చాలా బాగుంది అత్తయ్య		"Why you can already say this: chālā (""very"") plus attayya — the address form of atta from Lesson 4, the word that does double duty for aunt and mother-in-law."	src::site known::100 len::1-3 set::022 day::044
 S5497650be3cb	There was a lot of work at the office today.		ī rōju āphīsulō chālā pani undi	ఈ రోజు ఆఫీసులో చాలా పని ఉంది		"Why you can already say this: -lō is the ""in"" ending, and undi is Lesson 1's ""there is."" Literally: today office-in much work is. No verb conjugation anywhere."	src::site known::100 len::4-6 form::past set::022 day::045
 S8ddea585c960	I'm a bit tired.		koncheṁ alisipōyānu	కొంచెం అలిసిపోయాను		"Learn this as a block. alisipōyānu is past tense with a first-person ending — Lesson 9 territory. You'll take it apart later; for now it's one word. konchaṁ (""a little"") is independently useful and softens almost anything."	src::site known::100 len::1-3 set::022 day::045
 Sbb50331ea5bc	It is lightning		adi merupu	అది మెరుపు			src::book1000 known::100 len::1-3 set::022 day::045
@@ -1083,7 +1078,7 @@ Sf97b64c6ae62	Write your name here. [respectful]		ikkaḍa mī pēru rāsu.	ఇ�
 S5fe9fd739074	I walk every morning.		nēnu prati udayaṁ naḍustānu.	నేను ప్రతి ఉదయం నడుస్తాను.			src::anki known::100 len::4-6 form::future set::022 day::045
 Sd58c5cf474fe	Call the doctor.		ḍākṭar ni piluchu.	డాక్టర్ ని పిలుచు.			src::anki known::100 len::1-3 set::022 day::045
 S075aa8a32c0f	I see a lot of change here.		ikkaḍa chālā mārpu kanipistundi.	ఇక్కడ చాలా మార్పు కనిపిస్తుంది.			src::anki known::100 len::4-6 set::022 day::045
-S3465fa96e490	What a surprise!		enta āścharyaṁ!	ఎంత ఆశ్చర్యం!			src::anki known::100 len::1-3 set::022 day::046
+S3465fa96e490	What a surprise!		enta āścharyaṁ!	ఎంత ఆశ్చర్యం!			src::anki known::100 len::1-3 set::022 day::045
 Sce5409521fef	Don't be shy.		siggu paḍaku.	సిగ్గు పడకు.			src::anki known::100 len::1-3 form::negative set::022 day::046
 S8165a2da2487	I have no choice		nāku vērē mārgaṁ lēdu	నాకువేరే మార్గంలేదు			src::book1000 known::100 len::4-6 form::negative flag::respaced set::022 day::046
 Sc22457a3d08b	This is my watch		idi nā gaḍiyāraṁ	ఇది నా గడియారం			src::book1000 known::100 len::1-3 set::022 day::046
@@ -1096,24 +1091,23 @@ S3e659d46f75e	By when do you need it?		mīku eppaṭikī kāvāli?	మీకు 
 Sb0184594eca9	Neither can I		nēnu chēyalēnu	నేనుచేయలేను			src::book1000 known::100 len::1-3 flag::respaced set::022 day::046
 Scf501ac54f3c	Life is not easy.		jīvitaṁ ījī kādu.	జీవితం ఈజీ కాదు.			src::anki known::100 len::1-3 form::negative set::022 day::046
 S3e6ecaf6585f	Give me something to eat.		nāku ēmainā tinaḍāniki ivvu.	నాకు ఏమైనా తినడానికి ఇవ్వు.			src::anki known::100 len::4-6 form::request set::022 day::046
-Sd063c25d8a6f	Sit next to me.		nā pakkana kūrchō.	నా పక్కన కూర్చో.			src::anki known::100 len::1-3 form::request set::022 day::046
 Sd5f9e9a13e01	Turn left here.		ikkaḍa eḍamaki tirugu.	ఇక్కడ ఎడమకి తిరుగు.			src::anki known::100 len::1-3 form::request set::022 day::046
-S6554cd93ceba	It's easy		idi sulabhaṁ	ఇది సులభం			src::book1000 known::100 len::1-3 set::022 day::047
-S8e3314447dd0	Which state are you from? [respectful]		mīru ē pradēśaṁ?	మీరు ఏ ప్రదేశం?			src::anki reg::respectful known::100 len::1-3 form::question set::022 day::047
+S6554cd93ceba	It's easy		idi sulabhaṁ	ఇది సులభం			src::book1000 known::100 len::1-3 set::022 day::046
+S8e3314447dd0	Which state are you from? [respectful]		mīru ē pradēśaṁ?	మీరు ఏ ప్రదేశం?			src::anki reg::respectful known::100 len::1-3 form::question set::022 day::046
 S78f63485cd92	My younger sister is a doctor.		nā chellelu ḍākṭar.	నా చెల్లెలు డాక్టర్.			src::anki known::100 len::1-3 set::022 day::047
 S183d8c4416f1	We are family		manaṁ oka kuṭumbaṁ	మనం ఒక కుటుంబం		"New word: kuṭumbaṁ = family. Inclusive ""we"" + oka for emphasis — nice callback to the oka lesson."	src::anki known::100 len::1-3 set::022 day::047
 Sa856df7ea0a9	Thank you madam.		dhanyavādālu mēḍaṁ.	ధన్యవాదాలు మేడం.			src::anki known::100 len::1-3 set::022 day::047
 S23d0999c2a35	The teacher is very good.		māsṭar chālā manchidi.	మాస్టర్ చాలా మంచిది.			src::anki known::100 len::1-3 set::022 day::047
 Sd2b4fc08cfeb	The boys are outside. [respectful]		abbāyilu bayaṭa unnāru.	అబ్బాయిలు బయట ఉన్నారు.			src::anki reg::respectful known::100 len::1-3 form::past set::022 day::047
-Sabe0a1af4602	How many customers today?		ī rōju enni mandi kasṭamars?	ఈ రోజు ఎన్ని మంది కస్టమర్స్?			src::anki known::100 len::4-6 form::question set::023 day::047
-Sbb6a01ea42c9	We have a group discussion.		māku grūp ḍiskaṣan undi.	మాకు గ్రూప్ డిస్కషన్ ఉంది.			src::anki known::100 len::4-6 form::past set::023 day::047
-S1a973b0df818	My ear is hurting.		nā chevi noppigā undi.	నా చెవి నొప్పిగా ఉంది.			src::anki known::100 len::4-6 form::past set::023 day::047
-S4e7c58d5da86	Keep all the things here.		anni vastuvulu ikkaḍa peṭṭu.	అన్ని వస్తువులు ఇక్కడ పెట్టు.			src::anki known::100 len::4-6 set::023 day::047
-Sef36603ef23f	This sweet is very tasty.		ī tīga chālā bāgundi.	ఈ తీగ చాలా బాగుంది.			src::anki known::100 len::4-6 set::023 day::047
-Sa6cb6dd24c05	I want egg curry.		nāku guḍḍu kūra kāvāli.	నాకు గుడ్డు కూర కావాలి.			src::anki known::100 len::4-6 set::023 day::047
+Sabe0a1af4602	How many customers today?		ī rōju enni mandi kasṭamars?	ఈ రోజు ఎన్ని మంది కస్టమర్స్?			src::anki known::100 len::4-6 form::question set::022 day::047
+Sbb6a01ea42c9	We have a group discussion.		māku grūp ḍiskaṣan undi.	మాకు గ్రూప్ డిస్కషన్ ఉంది.			src::anki known::100 len::4-6 form::past set::022 day::047
+S1a973b0df818	My ear is hurting.		nā chevi noppigā undi.	నా చెవి నొప్పిగా ఉంది.			src::anki known::100 len::4-6 form::past set::022 day::047
+S4e7c58d5da86	Keep all the things here.		anni vastuvulu ikkaḍa peṭṭu.	అన్ని వస్తువులు ఇక్కడ పెట్టు.			src::anki known::100 len::4-6 set::022 day::047
+Sef36603ef23f	This sweet is very tasty.		ī tīga chālā bāgundi.	ఈ తీగ చాలా బాగుంది.			src::anki known::100 len::4-6 set::022 day::047
+Sa6cb6dd24c05	I want egg curry.		nāku guḍḍu kūra kāvāli.	నాకు గుడ్డు కూర కావాలి.			src::anki known::100 len::4-6 set::022 day::047
 Sb326232b1719	That news made me happy.		ā vārta santōṣaṁ ichchindi.	ఆ వార్త సంతోషం ఇచ్చింది.			src::anki known::100 len::4-6 form::past set::023 day::047
 Se33d3b4978fb	I like animals.		nāku jantuvulu iṣṭaṁ.	నాకు జంతువులు ఇష్టం.			src::anki known::100 len::1-3 set::023 day::047
-Sb6ceb4fa28bf	Nature is very beautiful here.		ikkaḍa prakṛti chālā andangā undi.	ఇక్కడ ప్రకృతి చాలా అందంగా ఉంది.			src::anki known::100 len::4-6 form::past set::023 day::048
+Sb6ceb4fa28bf	Nature is very beautiful here.		ikkaḍa prakṛti chālā andangā undi.	ఇక్కడ ప్రకృతి చాలా అందంగా ఉంది.			src::anki known::100 len::4-6 form::past set::023 day::047
 Sbb8e3c5d86b5	Give me the green shirt.		nāku ākupachcha ṣarṭ ivvu.	నాకు ఆకుపచ్చ షర్ట్ ఇవ్వు.			src::anki known::100 len::4-6 form::request set::023 day::048
 S2ca5b352d87d	Wash the dirty clothes.		masilina baṭṭalu utuku.	మసిలిన బట్టలు ఉతుకు.			src::anki known::100 len::1-3 set::023 day::048
 Sf7bfc904be34	I need a taxi		nāku ṭāksī kāvāli	నాకుటాక్సీ కావాలి			src::book1000 known::100 len::1-3 flag::respaced set::023 day::048
@@ -1126,9 +1120,9 @@ S5f309d1b911b	Success will come definitely.		vijayaṁ tappakuṇḍā vastundi.
 S0b0f085bc2a5	How many languages do you know? [informal]		nīku enni bhāṣalu vachchu?	నీకు ఎన్ని భాషలు వచ్చు?			src::anki reg::informal known::100 len::4-6 form::question set::023 day::048
 S32f242a78032	Close the book.		pustakaṁ mūyu.	పుస్తకం మూయు.			src::anki known::100 len::1-3 set::023 day::048
 S8452d18db9cb	Leave it, come on.		idi viḍipō, rā.	ఇది విడిపో, రా.			src::anki known::100 len::1-3 form::request set::023 day::048
-S43de74f301c7	Welcome to our house.		mā iṇṭiki velkam.	మా ఇంటికి వెల్కమ్.			src::anki known::100 len::1-3 set::023 day::049
-S8b735d55c665	She is my sister		āviḍanā sōdari	ఆవిడనా సోదరి			src::book1000 known::100 len::1-3 set::023 day::049
-S5eaff9073268	That's a good thought.		adi manchi ālōchana.	అది మంచి ఆలోచన.			src::anki known::100 len::1-3 set::023 day::049
+S43de74f301c7	Welcome to our house.		mā iṇṭiki velkam.	మా ఇంటికి వెల్కమ్.			src::anki known::100 len::1-3 set::023 day::048
+S8b735d55c665	She is my sister		āviḍanā sōdari	ఆవిడనా సోదరి			src::book1000 known::100 len::1-3 set::023 day::048
+S5eaff9073268	That's a good thought.		adi manchi ālōchana.	అది మంచి ఆలోచన.			src::anki known::100 len::1-3 set::023 day::048
 S7e193449201a	There is one condition.		oka nibandhana undi.	ఒక నిబంధన ఉంది.			src::anki known::100 len::1-3 form::past set::023 day::049
 S6ca1b3b36bc6	Her husband is an engineer.		āme bharta injanīr.	ఆమె భర్త ఇంజనీర్.			src::anki known::100 len::1-3 set::023 day::049
 Sbc700102b147	I want to learn cooking.		nāku vaṇṭa nērchukōvāli.	నాకు వంట నేర్చుకోవాలి.			src::anki known::100 len::1-3 form::must set::023 day::049
@@ -1140,9 +1134,9 @@ S2a2e4e8eec0f	Look at me! [respectful]		nanu chuḍaṇḍi	నను చుడ�
 S675e5d1f2c85	Someone offers you more food. You've had enough. [respectful]		vaddaṇḍi	వద్దండి		declining = vaddu, not lēdu	src::site reg::respectful known::100 len::1-3 set::023 day::049
 S810e8f5ab59a	The cat is sleeping on the chair.		pilli kurchīlō nidrā pōtundi.	పిల్లి కుర్చీలో నిద్రా పోతుంది.			src::anki known::100 len::4-6 set::023 day::049
 S1e90fe68fb7c	She doesn't like it.		āviḍaku nachchaḍaṁ lēdu.	ఆవిడకు నచ్చడం లేదు.			src::anki known::100 len::1-3 form::negative set::023 day::049
-S929241d1d831	That is very strange.		adi chālā vintagā undi.	అది చాలా వింతగా ఉంది.			src::anki known::100 len::4-6 form::past set::023 day::050
-S7f710e14afce	I feel sorry for him.		āyana mīda jāligā undi.	ఆయన మీద జాలిగా ఉంది.			src::anki known::100 len::4-6 form::past set::023 day::050
-S11379ad0d952	I am bored.		nāku visugugā undi.	నాకు విసుగుగా ఉంది.			src::anki known::100 len::1-3 form::past set::023 day::050
+S929241d1d831	That is very strange.		adi chālā vintagā undi.	అది చాలా వింతగా ఉంది.			src::anki known::100 len::4-6 form::past set::023 day::049
+S7f710e14afce	I feel sorry for him.		āyana mīda jāligā undi.	ఆయన మీద జాలిగా ఉంది.			src::anki known::100 len::4-6 form::past set::023 day::049
+S11379ad0d952	I am bored.		nāku visugugā undi.	నాకు విసుగుగా ఉంది.			src::anki known::100 len::1-3 form::past set::023 day::049
 S1c6367e11d98	Mom is in the kitchen.		amma vaṇṭillō undi.	అమ్మ వంటిల్లో ఉంది.			src::anki known::100 len::1-3 form::past set::023 day::050
 S43fbffdeb13b	The bus is empty.		bas khāḷīgā undi.	బస్ ఖాళీగా ఉంది.			src::anki known::100 len::1-3 form::past set::023 day::050
 S7f6bcefe0846	I am free tomorrow.		nēnu rēpu khāḷīgā uṇṭānu.	నేను రేపు ఖాళీగా ఉంటాను.			src::anki known::100 len::4-6 form::future set::023 day::050
@@ -1155,12 +1149,12 @@ S14b52f10f95a	Nobody is at home now.		ippuḍu iṇṭlō evvarū lēru.	ఇప�
 S3795db7012be	Where is the ticket counter?		ṭikeṭ kauṇṭar ekkaḍa?	టికెట్ కౌంటర్ ఎక్కడ?			src::anki known::100 len::1-3 form::question set::023 day::050
 S7214cdffba12	I am an engineer.		nēnu injinīrni.	నేను ఇంజినీర్‌ని.		the normal way	src::site known::100 len::1-3 set::023 day::050
 Sc77dbe8c34a2	I can't do this alone.		oṇṭarigā idi nā valla kādu.	ఒంటరిగా ఇది నా వల్ల కాదు.			src::anki known::100 len::4-6 form::negative set::023 day::050
-S36c003700960	I received the message.		nāku mesēj risīv ayyindi.	నాకు మెసేజ్ రిసీవ్ అయ్యింది.			src::anki known::100 len::4-6 set::024 day::051
-S42eb8adad586	I fixed the bug.		nēnu bag phiks chēsānu.	నేను బగ్ ఫిక్స్ చేసాను.			src::anki known::100 len::4-6 form::past set::024 day::051
-S1d9b9e5cf5cc	Finish it quickly. [respectful]		tvaraga phiniṣ chēyaṇḍi.	త్వరగ ఫినిష్ చేయండి.			src::anki reg::respectful known::100 len::1-3 form::request set::024 day::051
-S91d5fa6c96bd	Meanwhile I will finish this.		īlōga nēnu idi phiniṣ chēstānu.	ఈలోగ నేను ఇది ఫినిష్ చేస్తాను.			src::anki known::100 len::4-6 form::future set::024 day::051
-S79263046dd42	Speak quietly [respectful]		niśśabdangā māṭlāḍaṇḍi	నిశ్శబ్దంగా మాట్లాడండి			src::book1000 reg::respectful known::100 len::1-3 form::request set::024 day::051
-Sf4fc3876b4ba	I am scared.		nāku bhayangā undi.	నాకు భయంగా ఉంది.			src::anki known::100 len::1-3 form::past set::024 day::051
+S36c003700960	I received the message.		nāku mesēj risīv ayyindi.	నాకు మెసేజ్ రిసీవ్ అయ్యింది.			src::anki known::100 len::4-6 set::023 day::050
+S42eb8adad586	I fixed the bug.		nēnu bag phiks chēsānu.	నేను బగ్ ఫిక్స్ చేసాను.			src::anki known::100 len::4-6 form::past set::023 day::050
+S1d9b9e5cf5cc	Finish it quickly. [respectful]		tvaraga phiniṣ chēyaṇḍi.	త్వరగ ఫినిష్ చేయండి.			src::anki reg::respectful known::100 len::1-3 form::request set::023 day::050
+S91d5fa6c96bd	Meanwhile I will finish this.		īlōga nēnu idi phiniṣ chēstānu.	ఈలోగ నేను ఇది ఫినిష్ చేస్తాను.			src::anki known::100 len::4-6 form::future set::023 day::051
+S79263046dd42	Speak quietly [respectful]		niśśabdangā māṭlāḍaṇḍi	నిశ్శబ్దంగా మాట్లాడండి			src::book1000 reg::respectful known::100 len::1-3 form::request set::023 day::051
+Sf4fc3876b4ba	I am scared.		nāku bhayangā undi.	నాకు భయంగా ఉంది.			src::anki known::100 len::1-3 form::past set::023 day::051
 S2bdf2576f5d3	This is very difficult.		idi chālā kaṣṭangā undi.	ఇది చాలా కష్టంగా ఉంది.			src::anki known::100 len::4-6 form::past set::024 day::051
 Sc0db3fb686eb	Are you free? [informal]		nuvvu phrīgā unnāvā?	నువ్వు ఫ్రీగా ఉన్నావా?			src::anki reg::informal known::100 len::1-3 form::question set::024 day::051
 Sf38ec83db559	I'm confused about this.		nēnu dāni gurinchi kanphyūj ayyānu.	నేను దాని గురించి కన్ఫ్యూజ్ అయ్యాను.			src::anki known::100 len::4-6 set::024 day::051
@@ -1170,47 +1164,47 @@ S2542cd25dbaa	Prepare the food. [respectful]		tiṇḍi tayyāru chēyu.	తి�
 Sa5176d9029f6	Fine, I accept.		sarē, nēnu oppukoṇṭānu.	సరే, నేను ఒప్పుకొంటాను.			src::anki known::100 len::1-3 set::024 day::051
 S5f2954e41fe2	I accept this offer.		nēnu ī āphar oppukoṇṭānu.	నేను ఈ ఆఫర్ ఒప్పుకొంటాను.			src::anki known::100 len::4-6 set::024 day::051
 S61b2ac33d1a8	Never do that ! [respectful]		eppuḍu alā chēyakaṇḍi	ఎప్పుడుఅలా చేయకండి			src::book1000 reg::respectful known::100 len::1-3 form::negative flag::respaced set::024 day::051
-S7ae5c2f06c19	Don't worry about money. [respectful]		paisā gurinchi phikar chēyakaṇḍi.	పైసా గురించి ఫికర్ చేయకండి.			src::anki reg::respectful known::100 len::4-6 form::negative set::024 day::052
-S47647860993a	Say that question the way it actually sounds at speed. [respectful]		mī pēreṇṭi?	మీ పేరెంటి?		pēru + ēnti — the vowel gets deleted	src::site reg::respectful known::100 len::1-3 form::question set::024 day::052
-S7bb51ce3e28c	I'm scared of the dark.		nāku chīkaṭi aṇṭē bhayangā undi.	నాకు చీకటి అంటే భయంగా ఉంది.			src::anki known::100 len::4-6 form::if form::past set::024 day::052
+S7ae5c2f06c19	Don't worry about money. [respectful]		paisā gurinchi phikar chēyakaṇḍi.	పైసా గురించి ఫికర్ చేయకండి.			src::anki reg::respectful known::100 len::4-6 form::negative set::024 day::051
+S47647860993a	Say that question the way it actually sounds at speed. [respectful]		mī pēreṇṭi?	మీ పేరెంటి?		pēru + ēnti — the vowel gets deleted	src::site reg::respectful known::100 len::1-3 form::question set::024 day::051
+S7bb51ce3e28c	I'm scared of the dark.		nāku chīkaṭi aṇṭē bhayangā undi.	నాకు చీకటి అంటే భయంగా ఉంది.			src::anki known::100 len::4-6 form::if form::past set::024 day::051
 Sa9eab45f2477	Forward this message.		ī mesēj phārvarḍ chēyu.	ఈ మెసేజ్ ఫార్వర్డ్ చేయు.			src::anki known::100 len::4-6 set::024 day::052
 Sb26985d20d15	Type a message.		oka mesēj ṭaip chēyu.	ఒక మెసేజ్ టైప్ చేయు.			src::anki known::100 len::4-6 set::024 day::052
 S66e2da6c62b3	Friendship is precious.		snēhaṁ viluva galavadi.	స్నేహం విలువ గలవది.			src::anki known::100 len::1-3 set::024 day::052
 Scc0c8edb929d	He's a man of good manners. [informal]		vāḍu maryāda galavāḍu.	వాడు మర్యాద గలవాడు.			src::anki reg::informal known::100 len::1-3 form::request set::024 day::052
-Sd5b4574670dd	Even if he comes, I won't go.		āyana vachchinā ainā, nēnu veḷḷanu.	ఆయన వచ్చినా ఐనా, నేను వెళ్ళను.			src::anki known::100 len::4-6 form::negative set::024 day::053
+Sd5b4574670dd	Even if he comes, I won't go.		āyana vachchinā ainā, nēnu veḷḷanu.	ఆయన వచ్చినా ఐనా, నేను వెళ్ళను.			src::anki known::100 len::4-6 form::negative set::024 day::052
 Se868e29b9cdf	It is raining, therefore I stayed home.		vāna paḍutundi andukani iṇṭlō unnānu.	వాన పడుతుంది అందుకని ఇంట్లో ఉన్నాను.			src::anki known::100 len::4-6 form::future form::past set::024 day::053
-S158d8272e89c	Wash your face.		mukhaṁ kaḍugukō.	ముఖం కడుగుకో.			src::anki known::100 len::1-3 set::024 day::054
+S158d8272e89c	Wash your face.		mukhaṁ kaḍugukō.	ముఖం కడుగుకో.			src::anki known::100 len::1-3 set::024 day::053
 S12fd8d89807c	It is in the middle of the road.		adi rāstā madhyalō undi.	అది రాస్తా మధ్యలో ఉంది.			src::anki known::100 len::4-6 form::past set::024 day::054
 S5961c3853b3c	I sent the email.		nēnu īmeyil pampānu.	నేను ఈమెయిల్ పంపాను.			src::anki known::100 len::1-3 set::024 day::054
 S2bf9e9068c1e	Check your email once. [respectful]		mī īmeyil okasāri chek chēyaṇḍi.	మీ ఈమెయిల్ ఒకసారి చెక్ చేయండి.			src::anki reg::respectful known::100 len::4-6 form::request set::024 day::054
 Se490e36c487e	I sent you an email.		mīku oka īmeyil pampinānu.	మీకు ఒక ఈమెయిల్ పంపినాను.			src::anki known::100 len::4-6 set::024 day::054
-S53b075496505	My skin is very dry.		nā charmaṁ chālā poḍigā undi.	నా చర్మం చాలా పొడిగా ఉంది.			src::anki known::100 len::4-6 form::past set::024 day::057
+S53b075496505	My skin is very dry.		nā charmaṁ chālā poḍigā undi.	నా చర్మం చాలా పొడిగా ఉంది.			src::anki known::100 len::4-6 form::past set::024 day::056
 S90a8e95e07e8	That tree is very tall.		ā cheṭṭu chālā poḍuggā undi.	ఆ చెట్టు చాలా పొడుగ్గా ఉంది.			src::anki known::100 len::4-6 form::past set::024 day::057
-S7a26884b78e4	Just chill out, relax.		chil avvu, rilāks.	చిల్ అవ్వు, రిలాక్స్.			src::anki known::100 len::1-3 set::024 day::058
-S51992f6ff292	Eat this, or else nothing.		idi tinu, giṭṭē ēmi lēdu.	ఇది తిను, గిట్టే ఏమి లేదు.			src::anki known::100 len::4-6 form::negative form::request set::024 day::059
+S7a26884b78e4	Just chill out, relax.		chil avvu, rilāks.	చిల్ అవ్వు, రిలాక్స్.			src::anki known::100 len::1-3 set::024 day::057
+S51992f6ff292	Eat this, or else nothing.		idi tinu, giṭṭē ēmi lēdu.	ఇది తిను, గిట్టే ఏమి లేదు.			src::anki known::100 len::4-6 form::negative form::request set::024 day::058
 Scd33436d865d	Eat rice with hand.		chētitō annaṁ tinu.	చేతితో అన్నం తిను.			src::anki known::100 len::1-3 form::request set::024 day::059
 S526a09d15ac0	I believe you.		nēnu ninnu nammu tunnānu.	నేను నిన్ను నమ్ముతున్నాను.			src::anki known::100 len::4-6 flag::respaced set::024 day::059
 Sea3a44057aa0	My nose is blocked.		nā mukku blāk ayyindi.	నా ముక్కు బ్లాక్ అయ్యింది.			src::anki known::100 len::4-6 set::024 day::060
-S9632b8299034	Coconut chutney is my favorite.		kobbari pachchaḍi nāku chālā iṣṭaṁ.	కొబ్బరి పచ్చడి నాకు చాలా ఇష్టం.			src::anki known::100 len::4-6 set::024 day::061
+S9632b8299034	Coconut chutney is my favorite.		kobbari pachchaḍi nāku chālā iṣṭaṁ.	కొబ్బరి పచ్చడి నాకు చాలా ఇష్టం.			src::anki known::100 len::4-6 set::024 day::060
 Scc0f149b26ec	That hill is very high.		ā koṇḍa chālā ettugā undi.	ఆ కొండ చాలా ఎత్తుగా ఉంది.			src::anki known::100 len::4-6 form::past set::024 day::061
-S27d1c9ec4024	She wore gold jewelry.		āme bangāru nagalu vēsukondi.	ఆమె బంగారు నగలు వేసుకొంది.			src::anki known::100 len::4-6 set::024 day::062
+S27d1c9ec4024	She wore gold jewelry.		āme bangāru nagalu vēsukondi.	ఆమె బంగారు నగలు వేసుకొంది.			src::anki known::100 len::4-6 set::024 day::061
 S99335860626a	I need fast internet.		nāku phāsṭ iṇṭarneṭ kāvāli.	నాకు ఫాస్ట్ ఇంటర్నెట్ కావాలి.			src::anki known::100 len::4-6 set::024 day::062
-S8c6f211fc201	Press the switch.		svich nokku.	స్విచ్ నొక్కు.			src::anki known::100 len::1-3 set::024 day::063
+S8c6f211fc201	Press the switch.		svich nokku.	స్విచ్ నొక్కు.			src::anki known::100 len::1-3 set::024 day::062
 Sb73851ee174b	Study, otherwise you'll fail.		chaduvu, lēkapōtē pheyil avutāvu.	చదువు, లేకపోతే ఫెయిల్ అవుతావు.			src::anki known::100 len::4-6 form::request set::024 day::063
 S33e1026f543e	Hurry up, otherwise we'll be late.		tvaragā rā, lēkapōtē lēṭ avutaṁ.	త్వరగా రా, లేకపోతే లేట్ అవుతం.			src::anki known::100 len::4-6 form::request set::024 day::063
 Sdcbc1cd92344	Our culture is very rich.		mana saṁskṛti chālā goppadigā undi.	మన సంస్కృతి చాలా గొప్పదిగా ఉంది.			src::anki known::100 len::4-6 form::past set::024 day::063
 S5e7ac053bb55	My income increased this month.		ī nela nā ādāyaṁ perigindi.	ఈ నెల నా ఆదాయం పెరిగింది.			src::anki known::100 len::4-6 set::024 day::064
-S8e9affcb6719	"How do you say ""my friend"" when it's a boy? A girl?"		nā snēhituḍu. / nā snēhiturālu.	నా స్నేహితుడు. / నా స్నేహితురాలు.		or just nā friend	src::site known::100 len::4-6 form::question set::024 day::065
+S8e9affcb6719	"How do you say ""my friend"" when it's a boy? A girl?"		nā snēhituḍu. / nā snēhiturālu.	నా స్నేహితుడు. / నా స్నేహితురాలు.		or just nā friend	src::site known::100 len::4-6 form::question set::024 day::064
 S9e483f8d3333	Son-in-law and daughter-in-law.		alluḍu / kōḍalu.	అల్లుడు / కోడలు.			src::site known::100 len::1-3 set::024 day::065
 S735aaaef827a	There is a big stone on the road.		rōḍḍu mīda pedda rāyi undi.	రోడ్డు మీద పెద్ద రాయి ఉంది.			src::anki known::100 len::4-6 form::past form::request set::024 day::065
-S791f74760c9c	The leaf is green.		āku pachcha rangulō undi.	ఆకు పచ్చ రంగులో ఉంది.			src::anki known::100 len::4-6 form::past set::024 day::066
+S791f74760c9c	The leaf is green.		āku pachcha rangulō undi.	ఆకు పచ్చ రంగులో ఉంది.			src::anki known::100 len::4-6 form::past set::024 day::065
 S03b17d41be5c	Even though it is expensive, buy it.		kharīdainā ainā, konukkō.	ఖరీదైనా ఐనా, కొనుక్కో.			src::anki known::100 len::1-3 set::024 day::066
-S6427c533256e	Stop talking [respectful]		māṭlāḍaṭaṁ āpaṇḍi	మాట్లాడటంఆపండి			src::book1000 reg::respectful known::100 len::1-3 flag::respaced set::025 day::067
-Sc1c97e3f715b	Turn right at the signal.		signal daggara kuḍiki tirugu.	సిగ్నల్ దగ్గర కుడికి తిరుగు.			src::anki known::100 len::4-6 form::request set::025 day::068
-S665a3e82cb91	Failure is normal.		apajayaṁ sādhāraṇaṁ.	అపజయం సాధారణం.			src::anki known::100 len::1-3 set::025 day::069
-S8f6b7f71bb9b	The parking is full.		pārking niṇḍagā undi.	పార్కింగ్ నిండగా ఉంది.			src::anki known::100 len::1-3 form::past set::025 day::097
-Sf75b078a6706	The children want ice cream.		pillalaki ais krīm kāvāli.	పిల్లలకి ఐస్ క్రీమ్ కావాలి.			src::anki known::100 len::4-6 set::025 day::106
-Sd4f00841816f	We are students.		manaṁ vidyārthulamu.	మనం విద్యార్థులము.		colloquially often -am	src::site known::100 len::1-3 set::025 day::later
+S6427c533256e	Stop talking [respectful]		māṭlāḍaṭaṁ āpaṇḍi	మాట్లాడటంఆపండి			src::book1000 reg::respectful known::100 len::1-3 flag::respaced set::024 day::066
+Sc1c97e3f715b	Turn right at the signal.		signal daggara kuḍiki tirugu.	సిగ్నల్ దగ్గర కుడికి తిరుగు.			src::anki known::100 len::4-6 form::request set::024 day::067
+S665a3e82cb91	Failure is normal.		apajayaṁ sādhāraṇaṁ.	అపజయం సాధారణం.			src::anki known::100 len::1-3 set::024 day::069
+S8f6b7f71bb9b	The parking is full.		pārking niṇḍagā undi.	పార్కింగ్ నిండగా ఉంది.			src::anki known::100 len::1-3 form::past set::024 day::096
+Sf75b078a6706	The children want ice cream.		pillalaki ais krīm kāvāli.	పిల్లలకి ఐస్ క్రీమ్ కావాలి.			src::anki known::100 len::4-6 set::024 day::105
+Sd4f00841816f	We are students.		manaṁ vidyārthulamu.	మనం విద్యార్థులము.		colloquially often -am	src::site known::100 len::1-3 set::024 day::later
 S263cf2f14282	"""I am an Indian"" (male speaker)."		nēnu bhāratīyuḍini.	నేను భారతీయుడిని.		male · -ḍu → -ḍi before -ni	src::site known::100 len::1-3 set::025 day::later
 Sf66387c5d7ac	Thank a colleague in the way people actually do. [respectful]		thānks aṇḍi	థాంక్స్ అండి		dhanyavādālu is formal/ceremonial only	src::site reg::respectful known::100 len::1-3 set::025 day::later
 S7479319731c9	Tell someone you don't know Telugu.		telugu rādu.	తెలుగు రాదు.		"lit. ""Telugu doesn't come"""	src::site known::100 len::1-3 form::negative set::025 day::later
@@ -1233,6 +1227,7 @@ S5ce98a26e839	I wrote		nēnuvrāsānu	నేనువ్రాసాను			src
 S7179a1515178	Hold on [respectful]		paṭṭukōṇḍi	పట్టుకోండి			src::book1000 reg::respectful known::100 len::1-3 form::request set::025 day::later
 S19667478fac0	Pull it [respectful]		dīnini lāgumu/lāgaṇḍi	దీనిని లాగుము/లాగండి			src::book1000 reg::respectful known::100 len::1-3 set::025 day::later
 Sa0dab3ecef86	It's me		ಅದಿ ನನ	ಅದಿ ನನ			src::book1000 known::100 len::1-3 set::025 day::later
+Sdfac874a3503	Come in [respectful]		lōpaliki raṇḍi	లోపలికి రండి			src::book1000 reg::respectful known::100 len::1-3 form::request set::025 day::later
 S860c3579220a	Go back [respectful]		venakki veḷḷaṇḍi	వెనక్కి వెళ్ళండి			src::book1000 reg::respectful known::100 len::1-3 form::request set::025 day::later
 Sfa9829b46c07	We went		mēmuveḷḷāmu	మేమువెళ్ళాము			src::book1000 known::100 len::1-3 set::025 day::later
 S6c53027d0f52	Got it ?		arthamaindā?	అర్థమైందా?			src::book1000 known::100 len::1-3 form::question set::025 day::later
@@ -1255,11 +1250,11 @@ Se5c8c6e08177	Leave it [respectful]		vadilēyaṇḍi	వదిలేయండ�
 Sf37cfe78373c	Stand up ! [respectful]		nilabaḍaṇḍi !	నిలబడండి !			src::book1000 reg::respectful known::100 len::1-3 form::request set::025 day::later
 S12f238c80003	Who goes ?		evaruveḷtāru?	ఎవరువెళ్తారు?		also: Who will go ?	src::book1000 known::100 len::1-3 form::question set::025 day::later
 S452066d555d2	Here I am		nēnuikkaḍaunnānu	నేనుఇక్కడఉన్నాను		also: I am here	src::book1000 known::100 len::1-3 set::025 day::later
-Sbeccd38f8839	I am hurt		nēnualigānu	నేనుఅలిగాను			src::book1000 known::100 len::1-3 set::026 day::later
-S0b2be2c4fab0	Don't cry [respectful]		ēḍavakaṇḍi	ఏడవకండి			src::book1000 reg::respectful known::100 len::1-3 form::negative set::026 day::later
-Sf40e7774cf57	Do it now [respectful]		ippuḍēchēyaṇḍi	ఇప్పుడేచేయండి			src::book1000 reg::respectful known::100 len::1-3 set::026 day::later
-S7fbcb0d55fb7	Stay away [respectful]		dūrangā uṇḍaṇḍi	దూరంగా ఉండండి			src::book1000 reg::respectful known::100 len::1-3 form::request set::026 day::later
-Sb48ab1f1d56c	Let me go [respectful]		nannuveḷlanivvaṇḍi	నన్నువెళ్లనివ్వండి			src::book1000 reg::respectful known::100 len::1-3 set::026 day::later
+Sbeccd38f8839	I am hurt		nēnualigānu	నేనుఅలిగాను			src::book1000 known::100 len::1-3 set::025 day::later
+S0b2be2c4fab0	Don't cry [respectful]		ēḍavakaṇḍi	ఏడవకండి			src::book1000 reg::respectful known::100 len::1-3 form::negative set::025 day::later
+Sf40e7774cf57	Do it now [respectful]		ippuḍēchēyaṇḍi	ఇప్పుడేచేయండి			src::book1000 reg::respectful known::100 len::1-3 set::025 day::later
+S7fbcb0d55fb7	Stay away [respectful]		dūrangā uṇḍaṇḍi	దూరంగా ఉండండి			src::book1000 reg::respectful known::100 len::1-3 form::request set::025 day::later
+Sb48ab1f1d56c	Let me go [respectful]		nannuveḷlanivvaṇḍi	నన్నువెళ్లనివ్వండి			src::book1000 reg::respectful known::100 len::1-3 set::025 day::later
 S10bff5c5199a	Who came ?		evaruvachchāru	ఎవరువచ్చారు			src::book1000 known::100 len::1-3 form::question set::026 day::later
 S5a37d14873e3	Don't hit [respectful]		koṭṭakaṇḍi	కొట్టకండి			src::book1000 reg::respectful known::100 len::1-3 form::negative set::026 day::later
 S689017e6b73a	Walk slowly [respectful]		nemmadigā naḍavaṇḍi	నెమ్మదిగా నడవండి			src::book1000 reg::respectful known::100 len::1-3 form::request set::026 day::later
@@ -1299,16 +1294,17 @@ S83c9a583b238	Don't trust [respectful]		nammakaṇḍi	నమ్మకండి	
 S34657ba9b807	Nobody gave		evarūivvalēdu	ఎవరూఇవ్వలేదు			src::book1000 known::100 len::1-3 set::026 day::later
 S68e461cb4de2	I am hungry		nākuākaligā undi	నాకుఆకలిగా ఉంది			src::book1000 known::100 len::1-3 form::past set::026 day::later
 S335cb0f39690	Do it later [respectful]		taruvātachēyaṇḍi	తరువాతచేయండి			src::book1000 reg::respectful known::100 len::1-3 set::026 day::later
+S521dfd1f6a28	Step inside		lōpaliki aḍugu	లోపలికి అడుగు			src::book1000 known::100 len::1-3 set::026 day::later
 S29b83b25b4e0	Write to me [respectful]		nākurāyaṇḍi	నాకురాయండి			src::book1000 reg::respectful known::100 len::1-3 set::026 day::later
 S9fdac1f9decb	Just coming		ippuḍē vastōndi	ఇప్పుడే వస్తోంది			src::book1000 known::100 len::1-3 form::present set::026 day::later
 S6e0b892506b6	He is short [respectful]		ayanapoṭṭigāunnāru	అయనపొట్టిగాఉన్నారు			src::book1000 reg::respectful known::100 len::1-3 set::026 day::later
 S251c7c3d884d	Don't drink [respectful]		tāgakaṇḍi	తాగకండి			src::book1000 reg::respectful known::100 len::1-3 form::negative set::026 day::later
 S0bafb1b93f97	Shall we go		manaṁveḷlāmā	మనంవెళ్లామా		also: Shall we go ?	src::book1000 known::100 len::1-3 set::026 day::later
 S56e66be82cf1	Put it down [respectful]		kindapeṭṭaṇḍi	కిందపెట్టండి			src::book1000 reg::respectful known::100 len::1-3 set::026 day::later
-Sd1c11f75d1e0	I'm worried		nēnuchintistunnānu	నేనుచింతిస్తున్నాను			src::book1000 known::100 len::1-3 set::027 day::later
-S7c438738779f	I trust you [respectful]		mī mīdanākunammakaṁundi	మీ మీదనాకునమ్మకంఉంది			src::book1000 reg::respectful known::100 len::1-3 set::027 day::later
-S5e9cc7b61a32	Did you go ?		mīruveḷḷārā?	మీరువెళ్ళారా?			src::book1000 known::100 len::1-3 form::question set::027 day::later
-S72e9cabe0d2f	Yes , I went		avununēnuveḷḷānu	అవునునేనువెళ్ళాను			src::book1000 known::100 len::1-3 set::027 day::later
+Sd1c11f75d1e0	I'm worried		nēnuchintistunnānu	నేనుచింతిస్తున్నాను			src::book1000 known::100 len::1-3 set::026 day::later
+S7c438738779f	I trust you [respectful]		mī mīdanākunammakaṁundi	మీ మీదనాకునమ్మకంఉంది			src::book1000 reg::respectful known::100 len::1-3 set::026 day::later
+S5e9cc7b61a32	Did you go ?		mīruveḷḷārā?	మీరువెళ్ళారా?			src::book1000 known::100 len::1-3 form::question set::026 day::later
+S72e9cabe0d2f	Yes , I went		avununēnuveḷḷānu	అవునునేనువెళ్ళాను			src::book1000 known::100 len::1-3 set::026 day::later
 S011d7c1c5d5c	Start a job [respectful]		udyōgamprārambhinchaṇḍi	ఉద్యోగంప్రారంభించండి			src::book1000 reg::respectful known::100 len::1-3 set::027 day::later
 S5d4896c2d1a4	Let them go [respectful]		vāḷḷani veḷlanivvaṇḍi	వాళ్ళని వెళ్లనివ్వండి			src::book1000 reg::respectful known::100 len::1-3 set::027 day::later
 Sff188cd33499	Smile a lot [respectful]		chālā navvaṇḍi	చాలా నవ్వండి			src::book1000 reg::respectful known::100 len::1-3 form::request set::027 day::later
@@ -1355,10 +1351,10 @@ S3eaf5aae35d7	I don't care		nēnupaṭṭinchukōnu	నేనుపట్టి�
 S5666cc0e6fce	I don't mind		nēnupaṭṭinchukōvaḍaṁlēdu	నేనుపట్టించుకోవడంలేదు			src::book1000 known::100 len::1-3 set::027 day::later
 S1ff6e24c3090	I'm not sure		nāku khachchitangā teliyadu	నాకుఖచ్చితంగా తెలియదు			src::book1000 known::100 len::1-3 flag::respaced set::027 day::later
 S57985043d69f	Is ready ?		idi siddhangā undā?	ఇది సిద్ధంగా ఉందా?			src::book1000 known::100 len::1-3 form::question set::027 day::later
-S95d9d483fece	Wash the car [respectful]		kārukaḍagaṇḍi	కారుకడగండి			src::book1000 reg::respectful known::100 len::1-3 set::028 day::later
-Sb7751f1caf91	Yes , I begin		avununēnuprārambhistānu	అవునునేనుప్రారంభిస్తాను			src::book1000 known::100 len::1-3 set::028 day::later
-Saa07fb9fe7c9	I understood		arthamaindi	అర్థమైంది			src::book1000 known::100 len::1-3 set::028 day::later
-Scbc89bf358fc	I play hrs		nēnureṇḍugaṇṭaluāḍutānu	నేనురెండుగంటలుఆడుతాను			src::book1000 known::100 len::1-3 set::028 day::later
+S95d9d483fece	Wash the car [respectful]		kārukaḍagaṇḍi	కారుకడగండి			src::book1000 reg::respectful known::100 len::1-3 set::027 day::later
+Sb7751f1caf91	Yes , I begin		avununēnuprārambhistānu	అవునునేనుప్రారంభిస్తాను			src::book1000 known::100 len::1-3 set::027 day::later
+Saa07fb9fe7c9	I understood		arthamaindi	అర్థమైంది			src::book1000 known::100 len::1-3 set::027 day::later
+Scbc89bf358fc	I play hrs		nēnureṇḍugaṇṭaluāḍutānu	నేనురెండుగంటలుఆడుతాను			src::book1000 known::100 len::1-3 set::027 day::later
 S46df4286e679	I tie my tie		nēnunā ṭai kaṭṭānu	నేనునా టై కట్టాను			src::book1000 known::100 len::1-3 set::028 day::later
 S1f5687439144	That will do		adi saripōtundi	అది సరిపోతుంది			src::book1000 known::100 len::1-3 set::028 day::later
 S55b0f856cfa5	Go and sleep [respectful]		veḷlinidrapōṇḍi	వెళ్లినిద్రపోండి			src::book1000 reg::respectful known::100 len::1-3 set::028 day::later
@@ -1405,10 +1401,10 @@ S64de8fabe7eb	I go with him		nēnuāyanatō veḷtānu	నేనుఆయనత�
 Sa0987fb88896	It is raining		varṣampaḍutōndi	వర్షంపడుతోంది			src::book1000 known::100 len::1-3 set::028 day::later
 S72b46322e5b9	I need a room		nākuokagadi kāvāli	నాకుఒకగది కావాలి			src::book1000 known::100 len::1-3 set::028 day::later
 Sb72f690f17a4	I prefer milk		nēnupālanuiṣṭapaḍatānu	నేనుపాలనుఇష్టపడతాను			src::book1000 known::100 len::1-3 set::028 day::later
-Sfed1c4bc7af5	Try to say it [respectful]		cheppaḍāniki prayatninchaṇḍi	చెప్పడానికి ప్రయత్నించండి			src::book1000 reg::respectful known::100 len::1-3 set::029 day::later
-Sbb1398c09a91	It is snowing		manchupaḍutunnadi	మంచుపడుతున్నది			src::book1000 known::100 len::1-3 set::029 day::later
-S447795d078bd	Shall I wait ?		nēnu vēchi uṇḍālā?	నేనువేచి ఉండాలా?			src::book1000 known::100 len::1-3 form::question flag::respaced set::029 day::later
-Sfbb054456020	Mop the floor [respectful]		nēlatudachaṇḍi	నేలతుదచండి			src::book1000 reg::respectful known::100 len::1-3 set::029 day::later
+Sfed1c4bc7af5	Try to say it [respectful]		cheppaḍāniki prayatninchaṇḍi	చెప్పడానికి ప్రయత్నించండి			src::book1000 reg::respectful known::100 len::1-3 set::028 day::later
+Sbb1398c09a91	It is snowing		manchupaḍutunnadi	మంచుపడుతున్నది			src::book1000 known::100 len::1-3 set::028 day::later
+S447795d078bd	Shall I wait ?		nēnu vēchi uṇḍālā?	నేనువేచి ఉండాలా?			src::book1000 known::100 len::1-3 form::question flag::respaced set::028 day::later
+Sfbb054456020	Mop the floor [respectful]		nēlatudachaṇḍi	నేలతుదచండి			src::book1000 reg::respectful known::100 len::1-3 set::028 day::later
 S856c8dd2f388	Wash the bike [respectful]		baiktudachaṇḍi	బైక్తుదచండి			src::book1000 reg::respectful known::100 len::1-3 set::029 day::later
 S6ec235e117f8	I need a bath		nēnusnānanchēyāli	నేనుస్నానంచేయాలి			src::book1000 known::100 len::1-3 set::029 day::later
 Se53c70f7293a	Do you begin ?		mīruprārambhistārā?	మీరుప్రారంభిస్తారా?			src::book1000 known::100 len::1-3 form::question set::029 day::later
@@ -1437,6 +1433,7 @@ Se5cbda8959fc	Go right away [respectful]		veṇṭanē veḷḷaṇḍi	వె�
 Scac76451800f	It costs Rs		dīni dharaayidurūpāyalu	దీని ధరఅయిదురూపాయలు			src::book1000 known::100 len::1-3 set::029 day::later
 Sdd141d25d6af	I don't agree		nēnuangīkarinchanu	నేనుఅంగీకరించను			src::book1000 known::100 len::1-3 set::029 day::later
 Sccadfd04cbac	Happy New Year		nūtanasaṁvatsaraśubhākānkṣalu	నూతనసంవత్సరశుభాకాంక్షలు			src::book1000 known::100 len::1-3 set::029 day::later
+S295599c5ab1b	Please come in [respectful]		dayachēsi lōpaliki raṇḍi	దయచేసి లోపలికి రండి			src::book1000 reg::respectful known::100 len::1-3 form::request set::029 day::later
 S1f79a828c5be	I have a cough		nākudaggugāundi	నాకుదగ్గుగాఉంది			src::book1000 known::100 len::1-3 set::029 day::later
 Sbc11883bb972	He didn't open		ayanateravalēdu	అయనతెరవలేదు			src::book1000 known::100 len::1-3 set::029 day::later
 S78c84e7855f1	Comb your hair [respectful]		taladuvvukōṇḍi	తలదువ్వుకోండి			src::book1000 reg::respectful known::100 len::1-3 set::029 day::later
@@ -1455,9 +1452,9 @@ S91eb779f3257	I came walking		nēnunaḍustūvachchānu	నేనునడుస
 S42d62982e44f	Do it properly [respectful]		sariggāchēyaṇḍi	సరిగ్గాచేయండి			src::book1000 reg::respectful known::100 len::1-3 set::029 day::later
 S056033993f6f	Read it for me [respectful]		nā kōsanchadavaṇḍi	నా కోసంచదవండి			src::book1000 reg::respectful known::100 len::1-3 set::029 day::later
 S881b13db6881	Start doing it [respectful]		chēyaḍamprārambhinchaṇḍi	చేయడంప్రారంభించండి			src::book1000 reg::respectful known::100 len::1-3 set::029 day::later
-S814cb41b0256	Be good to all [respectful]		andaritō manchigā uṇḍaṇḍi	అందరితో మంచిగా ఉండండి			src::book1000 reg::respectful known::100 len::1-3 form::request set::030 day::later
-S0fa459b7d507	How is he now ? [respectful]		āyanaippuḍuelā unnāru?	ఆయనఇప్పుడుఎలా ఉన్నారు?			src::book1000 reg::respectful known::100 len::1-3 form::past form::question set::030 day::later
-S706335a9453a	It's cold here		ikkaḍachallagāundi	ఇక్కడచల్లగాఉంది			src::book1000 known::100 len::1-3 set::030 day::later
+S814cb41b0256	Be good to all [respectful]		andaritō manchigā uṇḍaṇḍi	అందరితో మంచిగా ఉండండి			src::book1000 reg::respectful known::100 len::1-3 form::request set::029 day::later
+S0fa459b7d507	How is he now ? [respectful]		āyanaippuḍuelā unnāru?	ఆయనఇప్పుడుఎలా ఉన్నారు?			src::book1000 reg::respectful known::100 len::1-3 form::past form::question set::029 day::later
+S706335a9453a	It's cold here		ikkaḍachallagāundi	ఇక్కడచల్లగాఉంది			src::book1000 known::100 len::1-3 set::029 day::later
 See6c3acc2022	Allow me to do [respectful]		nannuchēyaḍāniki anumatinchaṇḍi	నన్నుచేయడానికి అనుమతించండి			src::book1000 reg::respectful known::100 len::1-3 set::030 day::later
 Sdda4dff3c0d9	Are they happy ?		vārusantōṣamā?	వారుసంతోషమా?			src::book1000 known::100 len::1-3 form::question set::030 day::later
 S49ef96fdd469	Give me a hand [respectful]		nāku chēyi andinchaṇḍi	నాకుచేయి అందించండి			src::book1000 reg::respectful known::100 len::1-3 flag::respaced set::030 day::later
@@ -1505,9 +1502,9 @@ S741330a6d833	How ridiculous !		entahāsyāspadangāundi !	ఎంతహాస్
 S107aada3af59	How disgusting !		entaasahyakaramainadi	ఎంతఅసహ్యకరమైనది			src::book1000 known::100 len::1-3 set::030 day::later
 Sa3336039d857	Where can I go ?		nēnu ekkaḍiki veḷḷagalanu?	నేనుఎక్కడికి వెళ్ళగలను?			src::book1000 known::100 len::1-3 form::can form::question flag::respaced set::030 day::later
 Sc31f3da99b03	Who doesn't go ?		evaruveḷḷaru?	ఎవరువెళ్ళరు?			src::book1000 known::100 len::1-3 form::question set::030 day::later
-S180512fb4978	Don't scold him [respectful]		āyani taṭakṇḍi	ఆయని తటక్ండి			src::book1000 reg::respectful known::100 len::1-3 set::031 day::later
-S98a7795eea24	That's not true		adi nijankādu	అది నిజంకాదు			src::book1000 known::100 len::1-3 set::031 day::later
-S274544600064	I don't give it		nēnuivanu	నేనుఇవను			src::book1000 known::100 len::1-3 set::031 day::later
+S180512fb4978	Don't scold him [respectful]		āyani taṭakṇḍi	ఆయని తటక్ండి			src::book1000 reg::respectful known::100 len::1-3 set::030 day::later
+S98a7795eea24	That's not true		adi nijankādu	అది నిజంకాదు			src::book1000 known::100 len::1-3 set::030 day::later
+S274544600064	I don't give it		nēnuivanu	నేనుఇవను			src::book1000 known::100 len::1-3 set::030 day::later
 S7ba325deb617	Shall we leave?		manaṁveḷāmā?	మనంవెళామా?			src::book1000 known::100 len::1-3 form::question set::031 day::later
 Sbe04e07f49b8	I Nenu have dinni to do cheyali it		nēnu dīni chēyālla	నేనుదీని చేయాల్ల			src::book1000 known::100 len::1-3 flag::respaced set::031 day::later
 Sb9306d0aeb04	I may not do it		nēnuchēyakpōvachu	నేనుచేయక్పోవచు			src::book1000 known::100 len::1-3 set::031 day::later
@@ -1555,9 +1552,9 @@ Sfd21f7832223	I will buy this		nēnudīnnikoṇṭānu	నేనుదీన్�
 Se0205650d7a5	Can I sit here ?		nēnuikkaḍakūrchōvachchā?	నేనుఇక్కడకూర్చోవచ్చా?			src::book1000 known::100 len::1-3 form::question set::031 day::later
 S1de4ab7d303c	I need a doctor		nākuokavaidyuḍukāvāli	నాకుఒకవైద్యుడుకావాలి			src::book1000 known::100 len::1-3 set::031 day::later
 Sa2c8f78cb8c2	Don't interrupt [respectful]		antarāyankaliginchakaṇḍi	అంతరాయంకలిగించకండి			src::book1000 reg::respectful known::100 len::1-3 set::031 day::later
-S0aac4094e328	Why do you run ?		mīruendukuparigettutāru?	మీరుఎందుకుపరిగెత్తుతారు?			src::book1000 known::100 len::1-3 form::question set::032 day::later
-S4533ecdf0327	Why did he run ?		āyanaendukuparigettāru?	ఆయనఎందుకుపరిగెత్తారు?			src::book1000 known::100 len::1-3 form::question set::032 day::later
-S244af423f4ae	Are you kidding ? [respectful]		mīrutamāṣā chēstunnārā?	మీరుతమాషా చేస్తున్నారా?			src::book1000 reg::respectful known::100 len::1-3 form::question set::032 day::later
+S0aac4094e328	Why do you run ?		mīruendukuparigettutāru?	మీరుఎందుకుపరిగెత్తుతారు?			src::book1000 known::100 len::1-3 form::question set::031 day::later
+S4533ecdf0327	Why did he run ?		āyanaendukuparigettāru?	ఆయనఎందుకుపరిగెత్తారు?			src::book1000 known::100 len::1-3 form::question set::031 day::later
+S244af423f4ae	Are you kidding ? [respectful]		mīrutamāṣā chēstunnārā?	మీరుతమాషా చేస్తున్నారా?			src::book1000 reg::respectful known::100 len::1-3 form::question set::031 day::later
 S058900db30bf	Call the police [respectful]		pōlīsulanupilavaṇḍi	పోలీసులనుపిలవండి			src::book1000 reg::respectful known::100 len::1-3 set::032 day::later
 S953f8114d05e	These are books		ivi pustakālu	ఇవి పుస్తకాలు			src::book1000 known::100 len::1-3 set::032 day::later
 S885bb23de71d	I am not a girl		nēnuammāyini kādu	నేనుఅమ్మాయిని కాదు			src::book1000 known::100 len::1-3 form::negative set::032 day::later
@@ -1605,9 +1602,9 @@ S019191f5bca4	Please accept it [respectful]		dayachēsi angīkarinchaṇḍi	ద
 S627f39599d37	Don't yell at me [respectful]		nā mīdaaravakaṇḍi	నా మీదఅరవకండి			src::book1000 reg::respectful known::100 len::1-3 set::032 day::later
 S7c88b7649e44	I missed the bus		nēnubassunuandukōlēkapōyānu	నేనుబస్సునుఅందుకోలేకపోయాను			src::book1000 known::100 len::1-3 set::032 day::later
 S95f30f8bf9fc	I am his brother		nēnuāyanasōdaruḍini	నేనుఆయనసోదరుడిని			src::book1000 known::100 len::1-3 set::032 day::later
-S1f5f1d2a73cc	Can you do this ?		mīrudīnnichēyagalarā?	మీరుదీన్నిచేయగలరా?			src::book1000 known::100 len::1-3 form::question set::033 day::later
-S628b0a412cd9	I cannot give it		nēnuivvalēnu	నేనుఇవ్వలేను			src::book1000 known::100 len::1-3 set::033 day::later
-S54b8d8326ade	I didn't give it		nēnuivvalēdu	నేనుఇవ్వలేదు			src::book1000 known::100 len::1-3 set::033 day::later
+S1f5f1d2a73cc	Can you do this ?		mīrudīnnichēyagalarā?	మీరుదీన్నిచేయగలరా?			src::book1000 known::100 len::1-3 form::question set::032 day::later
+S628b0a412cd9	I cannot give it		nēnuivvalēnu	నేనుఇవ్వలేను			src::book1000 known::100 len::1-3 set::032 day::later
+S54b8d8326ade	I didn't give it		nēnuivvalēdu	నేనుఇవ్వలేదు			src::book1000 known::100 len::1-3 set::032 day::later
 Sbf948994d69e	I will not do it		nēnuchēyanu	నేనుచేయను			src::book1000 known::100 len::1-3 set::033 day::later
 S92661f5f2a80	You are a genius		mīrumēdhāvi	మీరుమేధావి			src::book1000 known::100 len::1-3 set::033 day::later
 S76a1c52f1b06	Long time no see		chālā kālanchūḍalēdu	చాలా కాలంచూడలేదు			src::book1000 known::100 len::1-3 set::033 day::later
@@ -1655,9 +1652,10 @@ Sf45a2aac9888	Can you help? [informal]		nuvvu sahāyaṁ chēstāvā?	నువ�
 Sf3d1ac96b1fb	I love you.		nēnu mimmalni prēmistunnānu.	నేను మిమ్మల్ని ప్రేమిస్తున్నాను.			src::anki known::100 len::1-3 form::present set::033 day::later
 S5500434e83d1	Long time no see		chālā kālamaindi mimmalni chūsi	చాలా కాలమైంది మిమ్మల్ని చూసి			src::anki known::100 len::4-6 set::033 day::later
 Sd9fd2ba270d4	I ate already.		nēnu tinnēsānu.	నేను తిన్నేసాను.			src::anki known::100 len::1-3 set::033 day::later
-Sb3874846088b	You come here. [informal]		nuvvu ikkaḍiki rā.	నువ్వు ఇక్కడికి రా.			src::anki reg::informal known::100 len::1-3 form::request set::034 day::later
-S002b46f917bc	Where are you going? [respectful]		ekkaḍiki veḷtunnāru?	ఎక్కడికి వెళ్తున్నారు?			src::anki reg::respectful known::100 len::1-3 form::present form::question set::034 day::later
-S193c3ce87696	Did you have lunch? [respectful]		mīru lanch chēsārā?	మీరు లంచ్ చేసారా?			src::anki reg::respectful known::100 len::1-3 form::question set::034 day::later
+Sb3874846088b	You come here. [informal]		nuvvu ikkaḍiki rā.	నువ్వు ఇక్కడికి రా.			src::anki reg::informal known::100 len::1-3 form::request set::033 day::later
+S002b46f917bc	Where are you going? [respectful]		ekkaḍiki veḷtunnāru?	ఎక్కడికి వెళ్తున్నారు?			src::anki reg::respectful known::100 len::1-3 form::present form::question set::033 day::later
+S193c3ce87696	Did you have lunch? [respectful]		mīru lanch chēsārā?	మీరు లంచ్ చేసారా?			src::anki reg::respectful known::100 len::1-3 form::question set::033 day::later
+S6dc2b35a1474	Please come in. [respectful]		mīru lōpali raṇḍi.	మీరు లోపలి రండి.			src::anki reg::respectful known::100 len::1-3 form::request set::034 day::later
 S22b08f49f69e	He went home.		atanu iṇṭiki veḷḷāḍu.	అతను ఇంటికి వెళ్ళాడు.			src::anki known::100 len::1-3 form::past set::034 day::later
 S9d07d5f5effd	He is sleeping.		atanu nidrā pōtunnāḍu.	అతను నిద్రా పోతున్నాడు.			src::anki known::100 len::1-3 set::034 day::later
 Sed078bfea1e5	He is in the meeting.		āyana mīṭing lō unnāḍu.	ఆయన మీటింగ్ లో ఉన్నాడు.			src::anki known::100 len::4-6 form::past set::034 day::later
@@ -1705,8 +1703,8 @@ Scb52df79cc6e	Please wait here. [respectful]		ikkaḍa uṇḍaṇḍi.	ఇక�
 Seb501701d51f	I am at the office.		nēnu āphīs lō unnānu.	నేను ఆఫీస్ లో ఉన్నాను.		also: I am in the office.	src::anki known::100 len::4-6 form::past set::034 day::later
 Sf6bd9b3e3e0c	You are looking good. [respectful]		mīru bāgā kanipistunnāru.	మీరు బాగా కనిపిస్తున్నారు.			src::anki reg::respectful known::100 len::1-3 set::034 day::later
 S1cbd6d483349	She is sleeping.		āme nidra pōtunnadi.	ఆమె నిద్ర పోతున్నది.			src::anki known::100 len::1-3 set::034 day::later
-Sf7d0b8ec7279	The shops are open.		angaḍulu ōpen gā unnāyi.	అంగడులు ఓపెన్ గా ఉన్నాయి.			src::anki known::100 len::4-6 set::035 day::later
-S392fe759b79f	Yes I understand.		avunu nāku ardhamayyindi.	అవును నాకు అర్ధమయ్యింది.			src::anki known::100 len::1-3 set::035 day::later
+Sf7d0b8ec7279	The shops are open.		angaḍulu ōpen gā unnāyi.	అంగడులు ఓపెన్ గా ఉన్నాయి.			src::anki known::100 len::4-6 set::034 day::later
+S392fe759b79f	Yes I understand.		avunu nāku ardhamayyindi.	అవును నాకు అర్ధమయ్యింది.			src::anki known::100 len::1-3 set::034 day::later
 Sb6ce6b46e833	I need five minutes.		nāku aidu nimiṣālu kāvāli.	నాకు ఐదు నిమిషాలు కావాలి.			src::anki known::100 len::4-6 set::035 day::later
 S751b8bab5d75	I don't want rice.		nāku annaṁ vaddu.	నాకు అన్నం వద్దు.			src::anki known::100 len::1-3 form::negative set::035 day::later
 Sf1cc6c10e335	I don't want to go now.		ippuḍu veḷḷaḍaṁ vaddu.	ఇప్పుడు వెళ్ళడం వద్దు.			src::anki known::100 len::1-3 form::negative set::035 day::later
@@ -1722,10 +1720,12 @@ S7727bb9c31d2	Don't go now.		ippuḍu veḷḷaku.	ఇప్పుడు వె�
 S3c59b1c1eac8	I will go to the office.		nēnu āphīs ki veḷtānu.	నేను ఆఫీస్ కి వెళ్తాను.			src::anki known::100 len::4-6 form::future set::035 day::later
 Sc1f0addcb407	I am going to the market.		nēnu bajār ki veḷtunnānu.	నేను బజార్ కి వెళ్తున్నాను.			src::anki known::100 len::4-6 form::present set::035 day::later
 Sc62ae80fdb0c	She is going to school.		āme skūl ki veḷtundi.	ఆమె స్కూల్ కి వెళ్తుంది.			src::anki known::100 len::4-6 form::future set::035 day::later
+S21258266a7f1	Please go inside. [respectful]		lōpali veḷḷaṇḍi.	లోపలి వెళ్ళండి.			src::anki reg::respectful known::100 len::1-3 form::request set::035 day::later
 S5a61fda77f67	Come here.		ikkaḍiki rā.	ఇక్కడికి రా.			src::anki known::100 len::1-3 form::request set::035 day::later
 S1f2a2be0ef4e	I will come right away.		nēnu veṇṭanē vastānu.	నేను వెంటనే వస్తాను.			src::anki known::100 len::1-3 form::future set::035 day::later
 Sc7b379509e6e	I came from home.		nēnu iṇṭinunchi vachchānu.	నేను ఇంటినుంచి వచ్చాను.			src::anki known::100 len::1-3 form::past set::035 day::later
 S31b33e942579	He came late today.		āyana ī rōju lēṭ gā vachchāḍu.	ఆయన ఈ రోజు లేట్ గా వచ్చాడు.			src::anki known::100 len::4-6 form::past set::035 day::later
+S2b750939c0db	Please come inside. [respectful]		lōpali raṇḍi.	లోపలి రండి.		also: Get in !	src::anki src::book1000 reg::respectful known::100 len::1-3 form::request set::035 day::later
 Sf76a21601af6	Please come to the meeting. [respectful]		mīṭing ki raṇḍi.	మీటింగ్ కి రండి.			src::anki reg::respectful known::100 len::1-3 form::request set::035 day::later
 S2ab9196d0925	Take this to the office.		idi āphīs ki tīsukeḷḷu.	ఇది ఆఫీస్ కి తీసుకెళ్ళు.			src::anki known::100 len::4-6 set::035 day::later
 S9c715be0699f	Give me your phone. [informal]		nī phōn ivvu.	నీ ఫోన్ ఇవ్వు.			src::anki reg::informal known::100 len::1-3 form::request set::035 day::later
