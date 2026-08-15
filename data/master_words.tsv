@@ -17,7 +17,7 @@ W0015	W68b384520d02	ఒక	oka	a / an (indefinite — optional, for emphasis)	OH
 W0016	W02aa1a0e6128	కారు	kāru	car (loanword)		noun			idi kāru.	01	297	lesson,site,top1000	kāru	inflected multi-gloss	also: car	51	4
 W0017	Wdc5c0b1ca1f9	నమస్కారం	namaskāraṁ	"a greeting — ""hello / greetings"""	nuh-muh-SKAA-ruhm	formula	Common Phrases & Greetings		namaskāraṁ aṇḍi.	01	501	lesson,site,anki	namaskāraṁ	multi-gloss	also: hello / greetings	222	15
 W0018	W46dd18abe93e	విద్యార్థి	vidyārthi	student		noun			Raj vidyārthi.	01	772	lesson,site,top1000	vidyārthi			212	15
-W0019	W3845f2d1cc76	వాడు	vāḍu	"use (identical to vāḍu ""he"" — position tells them apart)"		pronoun		వాడు	vāḍu vidyārthi.	01		lesson,site	vāḍu	inflected multi-gloss verbform	impFam of వాడు · also: he (informal — intimates only, caution)	40	3
+W0019	W3845f2d1cc76	వాడు	vāḍu	"he (informal — intimates only, can be rude); also the verb ""use"", position tells them apart"		pronoun		వాడు	vāḍu nā phreṇḍ.	01		lesson,site	vāḍu	inflected multi-gloss override verbform	"Two different words spelled the same. Default to atanu for ""he""."	40	3
 W0020	Wdf9172422870	ఈయన	īyana	he (formal, nearby — near form of āyana)		pronoun			īyana ṭīcharu.	01		lesson,site	īyana			1059	71
 W0021	Wf061152a1e80	ఇతను	itanu	he (neutral, nearby — near form of atanu)		pronoun			itanu vidyārthi.	01		lesson,site	itanu			502	34
 W0022	W6d02115fd9f3	వీడు	vīḍu	he (informal, nearby — near form of vāḍu)		pronoun			vīḍu vidyārthi.	01		lesson,site	vīḍu			1060	71
@@ -214,7 +214,7 @@ W0212	Wb8cda5ef17c5	పొద్దున	podduna	"morning, in the morning (no "
 W0213	W321bbcc07a33	ఆఫీసు	āphīsu	office (English loan, said āphīsu)					nēnu ninna āphīsuki veḷḷānu.	09		lesson	āphīsu			1094	73
 W0214	W3f4301b5c6cc	పాటలు	pāṭalu	songs (plural of pāṭa — the -lu plural)					vāḷḷu pāṭalu pāḍāru.	09		lesson	pāṭalu			907	61
 W0215	Wd7b9c8b99265	లు	lu	-lu — the general plural suffix					pāṭa → pāṭalu	09		lesson	lu	bound-suffix			
-W0216	Wa965f03f301d	రోజు	rōju	day; every day (on its own, before a verb)	ROH-joo		Time Words		nēnu rōju ṭī tāgutānu.	10	201	lesson,anki,book1000,top1000	rōju	multi-gloss	also: day	11	1
+W0216	Wa965f03f301d	రోజు	rōju	"day (ī rōju ""today""); for ""daily"" the vowel lengthens to rōjū"	ROH-joo		Time Words		ī rōju evaru vaṇḍāru?	10	201	lesson,anki,book1000,top1000	rōju	multi-gloss override	"Corpus: 52 uses, all ""day"". The ""every day"" sense is rōjū with a long ū."	11	1
 W0217	W4d976b30ff1e	రేపు	rēpu	tomorrow	RAY-poo		Time Words		nēnu rēpu ṭī tāgutānu.	10	204	lesson,anki,book1000	rēpu			24	2
 W0218	W67013b50d662	ఎల్లుండి	elluṇḍi	day after tomorrow	EL-loon-dih		Time Words		elluṇḍi veḷtānu.	10	206	lesson,anki	elluṇḍi	inflected		682	46
 W0219	W5b927e9a0aab	వారం	vāraṁ	week	VAA-ruhm		Time Words		prati vāraṁ — every week.	10	219	lesson,anki,top1000	vāraṁ			390	26
@@ -226,7 +226,7 @@ W0224	W68b8c86776e4	వచ్చే	vachchē	"next, coming (a form of rā — ""
 W0225	W2c9b5fc302b6	గంటలు	gaṇṭalu	"hours, o'clock (takes -ki for ""at"")"					ēḍu gaṇṭalaki — at seven o'clock.	10		lesson	gaṇṭalu			189	13
 W0226	W8b861fe5b9d1	ఉత్తరం	uttaraṁ	"letter, written message (also means ""north"")"					nēnu uttaraṁ rāyabōtunnānu.	11	137	lesson,book1000	uttaraṁ	multi-gloss	also: North	1096	74
 W0227	W28937601d082	సినిమా	sinimā	movie, cinema	SIH-nih-maa		Abstract & Common Nouns		RRR ani sinimā chūḍabōtunnānu.	11	797	lesson,anki	sinimā	multi-gloss	also: movie / cinema	180	12
-W0228	W8e29e21df7fc	అని	ani	that (quotative — goes AFTER the quoted words)					RRR ani sinimā — a movie called RRR.	11		lesson	ani	multi-gloss	also: called, named — the quotative; goes AFTER the name	13	1
+W0228	W8e29e21df7fc	అని	ani	"quotative particle — closes quoted or named material (RRR ani sinimā, ""a movie called RRR"")"					RRR ani sinimā — a movie called RRR.	11		lesson	ani	multi-gloss override	"Goes AFTER the words it quotes, where English puts ""that"" before. Also ""called, named""."	13	1
 W0229	W07aebee53368	బోతున్నాను	bōtunnānu	-bōtunnānu — about to, going to (pō fused on)					āḍu → āḍabōtunnānu	11		lesson	bōtunnānu	bound-suffix english-respelled			
 W0230	W51717b974297	గా	gā	-gā — turns a noun into a description					andaṁ → andangā	12	1	lesson,top1000	gā	bound-suffix multi-gloss	also: as		
 W0231	Wc6ad6b6a5d59	ఉంటుంది	uṇṭundi	is — a standing fact, in general (she/it)				ఉండు	Hyderabad vēḍigā uṇṭundi.	12	12	lesson,top1000	uṇṭundi	inflected multi-gloss verbform	future of ఉండు · also: be	372	25
@@ -894,7 +894,7 @@ W0892	Wd4f02286bfea	సాధ్యం	sādhyaṁ	possible	SUH-kuh-rih		Common A
 W0893	W137c922136ab	తినండి	tinaṇḍi	Eat ( Respect				తిను			174	book1000	Thinandi	inflected verbform	impPol of తిను	1027	69
 W0894	W03c51765bb89	సాధ్యం కాదు	sādhyaṁ kādu	impossible	SAADH-yuhm KAA-doo		Common Adjectives				175	anki	saadhyaM kaadu	phrase		1448	97
 W0895	Wd49c86c19876	నివాసస్థుడు	nivāsasthuḍu	Resident							175	book1000	Nivasasthudu			1449	97
-W0896	Wacea7b9047af	రోజూ	rōjū	daily	ROH-joo		Common Adjectives				176	anki	rojuu			12	1
+W0896	Wacea7b9047af	రోజూ	rōjū	daily, every day (rōju with the vowel lengthened)	ROH-joo		Common Adjectives		nēnu rōjū kāphī tāgutānu.		176	anki	rojuu	override	"The long ū is what makes it distributive. Contrast rōju ""day""."	12	1
 W0897	Wcd32ba628b76	కుటుంభం	kuṭumbhaṁ	Family							176	book1000	Kutumbam			1450	97
 W0898	Waa063448e5d1	మరింత	marinta	more							176	top1000				1451	97
 W0899	W2ac1808c78e1	ఇబ్బంది	ibbandi	Trouble							177	book1000,top1000	Ibbandi			588	40
@@ -1125,7 +1125,7 @@ W1123	W2e8c8848d626	అంగుళం	anguḷaṁ	inch							351	top1000				155
 W1124	W36f78b62ff3b	చేతులు	chētulu	hands	CHAY-too-loo		Body & Senses				352	anki	chEtulu			495	33
 W1125	W59cab29c3bf1	గుణిస్తారు	guṇistāru	multiply							352	top1000		inflected		1553	104
 W1126	W19effbde6775	కాలు	kālu	leg / foot	KAA-loo		Body & Senses				353	anki	kaalu			527	36
-W1127	Wb0b11993a5ef	ఏమీ	ēmī	nothing							353	top1000				42	3
+W1127	Wb0b11993a5ef	ఏమీ	ēmī	"not any / nothing at all — needs a negative verb (ēmī lēdu ""there is nothing"")"					peddagā ēmī lēdu		353	top1000		override	"Negative polarity: never stands alone. Contrast ēmi (short i) ""what""."	42	3
 W1128	Wdcf8f7fa4dd0	వేలు	vēlu	finger	VAY-loo		Body & Senses				354	anki,top1000	vElu			461	31
 W1129	W2e9313c2ed88	కోర్సు	kōrsu	course							354	top1000				1554	104
 W1130	W0e5a6300325f	గుండె	guṇḍe	heart	GOON-day		Body & Senses				355	anki,top1000	guMDE			600	40
@@ -1374,7 +1374,7 @@ W1372	Wa08cfd01c204	అచ్ఛా	achchhā	oh really? / I see (Hyd)	UHCH-chaa	
 W1373	W75d64198aa46	జత	jata	pair							530	top1000				1656	111
 W1374	W711ed894e298	కదా	kadā	right? / isn't it?	KUH-daa		Discourse Markers & Fillers				532	anki	kadaa			124	9
 W1375	W2c151c28ddc7	విభజన	vibhajana	division; divide							532	top1000				1657	111
-W1376	W64f82a50eb7e	ఆ	ā	"that (far demonstrative — ā pustakaṁ, ""that book"")"	AA		Discourse Markers & Fillers		ā pustakaṁ balla mīda undi		533	anki,top1000	aa	multi-gloss override	also: that; those	9	1
+W1376	W64f82a50eb7e	ఆ	ā	"that / those (before a noun — ā pustakaṁ ""that book""; standalone ""that"" is adi)"	AA		Discourse Markers & Fillers		ā pustakaṁ balla mīda undi		533	anki,top1000	aa	multi-gloss override	"Attributive only. Near pair: ī. Standalone: adi ""that one"", avi ""those""."	9	1
 W1377	W44c22a614813	అక్షరం	akṣaraṁ	syllable							533	top1000				1658	111
 W1378	W57e54f48cd0b	అరే	arē	hey! / oh! (casual surprise)	UH-ray		Discourse Markers & Fillers				534	anki	arE			185	13
 W1379	Wdcfb696471cd	భావించాడు	bhāvinchāḍu	felt							534	top1000		inflected		1659	111

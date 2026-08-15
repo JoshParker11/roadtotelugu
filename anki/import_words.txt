@@ -13,11 +13,11 @@ W7af1f0718300	to me (nā + ku, never nēnu + ku)	nāku	నాకు		nāku nī�
 W9291356a08ff	this / it — the near form of adi; which	idi	ఇది		idi kāru.	src::lesson src::site src::anki src::book1000 src::top1000 cat::pronoun-demonstrative topic::pronouns-demonstratives flag::multi-gloss set::001 day::001
 Wf4b10b40df0e	my (before a noun)	nā	నా		nā pēru Raj.	src::lesson src::site src::anki src::top1000 cat::possessive topic::pronouns-demonstratives flag::multi-gloss set::001 day::001
 W68b384520d02	a / an (indefinite — optional, for emphasis)	oka	ఒక		oka vidyārthi.	src::lesson src::site src::anki src::top1000 cat::numeral-determiner topic::common-adjectives flag::multi-gloss set::001 day::001
-W64f82a50eb7e	"that (far demonstrative — ā pustakaṁ, ""that book"")"	ā	ఆ		ā pustakaṁ balla mīda undi	src::anki src::top1000 topic::discourse-markers-fillers flag::multi-gloss set::001 day::001
+W64f82a50eb7e	"that / those (before a noun — ā pustakaṁ ""that book""; standalone ""that"" is adi)"	ā	ఆ		ā pustakaṁ balla mīda undi	src::anki src::top1000 topic::discourse-markers-fillers flag::multi-gloss set::001 day::001
 Wf911a2a79b7f	elder sister	akka	అక్క		mā akka vidyārthi.	src::lesson src::site src::anki src::book1000 cat::noun-family topic::people-family set::001 day::001
-Wa965f03f301d	day; every day (on its own, before a verb)	rōju	రోజు		nēnu rōju ṭī tāgutānu.	src::lesson src::anki src::book1000 src::top1000 topic::time-words flag::multi-gloss set::001 day::001
-Wacea7b9047af	daily	rōjū	రోజూ			src::anki topic::common-adjectives set::001 day::001
-W8e29e21df7fc	that (quotative — goes AFTER the quoted words)	ani	అని		RRR ani sinimā — a movie called RRR.	src::lesson flag::multi-gloss set::001 day::001
+Wa965f03f301d	"day (ī rōju ""today""); for ""daily"" the vowel lengthens to rōjū"	rōju	రోజు		ī rōju evaru vaṇḍāru?	src::lesson src::anki src::book1000 src::top1000 topic::time-words flag::multi-gloss set::001 day::001
+Wacea7b9047af	daily, every day (rōju with the vowel lengthened)	rōjū	రోజూ		nēnu rōjū kāphī tāgutānu.	src::anki topic::common-adjectives set::001 day::001
+W8e29e21df7fc	"quotative particle — closes quoted or named material (RRR ani sinimā, ""a movie called RRR"")"	ani	అని		RRR ani sinimā — a movie called RRR.	src::lesson flag::multi-gloss set::001 day::001
 Wbd1a73b9fc12	he (formal — to/about an elder)	āyana	ఆయన		āyana ṭīcharu.	src::lesson src::site src::anki cat::pronoun topic::pronouns-demonstratives flag::multi-gloss set::001 day::001
 W3d8ade866d06	what (goes right before a verb)	ēmi	ఏమి		mīru ēmi chēstāru?	src::lesson src::site src::anki src::top1000 cat::grammar topic::question-words flag::multi-gloss set::001 day::001
 Wd2954b58191c	do, make — also carries any English verb; hand  [form of చేయి]	chēyi	చేయి		pani chēyaṇḍi.	src::lesson src::anki src::top1000 topic::body-senses flag::multi-gloss flag::verbform set::001 day::002
@@ -44,9 +44,9 @@ Wdda716e6a32f	be, stay, live, exist (the to-be verb)  [form of ఉండు]	u�
 Wf74ccd84b7db	how	elā	ఎలా		mīru elā unnāru?	src::lesson src::anki src::top1000 topic::question-words set::001 day::003
 W10af7daa25f1	sit, sit down  [form of కూర్చో]	kūrchō	కూర్చో		kūrchōṇḍi.	src::lesson src::anki src::book1000 topic::core-motion-verbs flag::multi-gloss flag::verbform set::001 day::003
 Wa6f2c0ae3aa2	no — it doesn't exist / isn't there / I don't have it  [form of ఉండు]	lēdu	లేదు		lēdandi.	src::lesson src::site src::anki cat::negation topic::essential-verbs-existence-state flag::multi-gloss flag::verbform set::001 day::003
-W3845f2d1cc76	"use (identical to vāḍu ""he"" — position tells them apart)  [form of వాడు]"	vāḍu	వాడు		vāḍu vidyārthi.	src::lesson src::site cat::pronoun flag::inflected flag::multi-gloss flag::verbform set::001 day::003
+W3845f2d1cc76	"he (informal — intimates only, can be rude); also the verb ""use"", position tells them apart  [form of వాడు]"	vāḍu	వాడు		vāḍu nā phreṇḍ.	src::lesson src::site cat::pronoun flag::inflected flag::multi-gloss flag::verbform set::001 day::003
 Wc49ea648ca87	What ?	ēmi ?	ఏమి ?			src::book1000 flag::phrase set::001 day::003
-Wb0b11993a5ef	nothing	ēmī	ఏమీ			src::top1000 set::001 day::003
+Wb0b11993a5ef	"not any / nothing at all — needs a negative verb (ēmī lēdu ""there is nothing"")"	ēmī	ఏమీ		peddagā ēmī lēdu	src::top1000 set::001 day::003
 Wc848a05384a8	your (informal — close friends, younger people)	nī	నీ		nī pēru ēnti?	src::lesson src::site cat::possessive set::001 day::003
 W95644cfcc524	how many (countable)	enni	ఎన్ని		enni paṇḍlu unnāyi?	src::lesson src::anki topic::question-words flag::multi-gloss set::001 day::003
 Wde8e76386bd4	to where	ekkaḍiki	ఎక్కడికి			src::anki topic::question-words set::001 day::003

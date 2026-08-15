@@ -75,18 +75,42 @@ course never draws the line and I am inferring it.
 **Why it matters:** the Verb Lab cues it, and the recombination drill will not offer it as a
 transformation target until the cue is trustworthy. One sentence settles it.
 
-## 8. `pāpaḍu` for papad?
+## 8. `eṭla` or `elā` for "how"?
+
+*Surfaced in review.* Both are in the deck. `ఎట్ల` (eṭla) is the Telangana form, `ఎలా` (elā)
+the standard one, and the corpus has **16 elā against 3 eṭla** — but the three eṭla rows are
+exactly the everyday greetings: `mīru eṭla unnāru?`, `ī rōju eṭla gaḍichindi?`
+
+The learner's ear says `elā`, which is evidence, since the target register is what he actually
+hears at home.
+
+**Why it matters:** `mīru eṭla unnāru?` is position 58 — one of the first hundred things he
+will say out loud, and he will say it to family. Whichever she uses should be the one on the
+card and the other should be a note.
+
+## 9. Can `rōju` alone mean "every day"?
+
+*Surfaced in review.* `రోజు` (rōju) is "day" and `రోజూ` (rōjū) is "daily" — the long ū is the
+distributive. The corpus is clean on this: all 52 uses of rōju mean "day", all 9 of rōjū mean
+"daily". But the course lesson taught `rōju` before a verb as "every day", and its example was
+`nēnu rōju ṭī tāgutānu`.
+
+Both may be true in speech, where the length is not always audible. **Is `nēnu rōju ṭī
+tāgutānu` natural, or should it be `rōjū`?** The gloss currently leads with "day" and keeps the
+other sense as a note.
+
+## 10. `pāpaḍu` for papad?
 
 *Lesson 14.* The source gives `పాపడు`. The usual Telugu is `appaḍaṁ` (అప్పడం). Flagged rather
 than changed, and currently held out of the deck.
 
-## 9. Numbers just past 100
+## 11. Numbers just past 100
 
 *Lesson 6.* The traditional combining form is `nūṭa` — 150 as *nūṭa yābhai*, 101 as *nūṭa okaṭi* —
 but `vanda` is also heard directly. The one place in the number system where regional and
 generational variation is likely.
 
-## 10. `nuvva` — is it real?
+## 12. `nuvva` — is it real?
 
 *Earlier.* The book prints `నువ్వ` where the corpus overwhelmingly has `నువ్వు`. It was folded as
 a misprint on corpus evidence, but a bound-stem reading is plausible (`nuvva` before some
