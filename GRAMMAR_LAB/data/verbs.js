@@ -274,7 +274,12 @@ const VERBS = [
        split. The forms are right; only the labels were wrong. */
     cueOv:{ past:    '§subj §be ___  (right now — an observation)',
             future:  '§subj §be ___  (in general — a standing fact)',
-            present: '§subj §be staying / living ___' },
+            present: '§subj §be staying / living ___',
+            /* Without this the generic cue reads "did not wait", which lēnu/lēdu/lēru
+               emphatically do not mean — they are the negative of the present copula, the
+               "aren't in / aren't available" of the ov note directly above. Same reason the
+               other three are overridden: the forms are right, the labels lie. */
+            negPast: '§subj §be not  (not there / not available)' },
     note:'The most important verb here, and its tense labels lie. “Past” unnānu is the everyday present “I am”; “habitual/future” uṇṭundi is the general-fact present. Telugu splits English “is” into an observation now (undi) and a permanent property (uṇṭundi) — Taj Mahal andangā undi vs andangā uṇṭundi. Both rows are cells in this table; read the cues, not the column headings. Negative past is simply lēdu, not *uṇḍalēdu.' },
   /* ---- Added from the course's extended verb list (lesson 15). ------------------------
      Stems are derived from the class patterns established above, not from a source that

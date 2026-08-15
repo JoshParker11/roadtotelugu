@@ -104,9 +104,9 @@ footer p+p{margin-top:5px}
       <a class="card" href="STUDY/words.html">
         <span class="glyph">ప</span>
         <h3>Study desk</h3>
-        <p>The vocabulary queue: every word in the deck in study order. Set the day you started and it works out what you have met; mark by hand what you actually know, including words you already picked up at home.</p>
-        <div class="meta"><span>2,215 words</span><span>141 days</span><span>known / needs work</span></div>
-        <span class="go">Open the queue</span>
+        <p>The vocabulary queue and the sentence drill. Set the day you started and it works out what you have met; mark what you already know. The drill then serves every sentence you can read, escalating from understanding it to producing it to changing its tense and person.</p>
+        <div class="meta"><span>2,215 words</span><span>1,409 sentences</span><span>3,154 transformations</span></div>
+        <span class="go">Open the study desk</span>
       </a>
 
     </div>
@@ -123,6 +123,7 @@ footer p+p{margin-top:5px}
       <div class="row"><b>tools/build_exports.py</b><span>Regenerates both from data/master_*.tsv</span></div>
       <div class="row"><b>tools/sequence.py</b><span>Sets the study order and the day each sentence becomes readable</span></div>
       <div class="row"><b>tools/build_studydata.py</b><span>Publishes the same master to the study desk, so the site and the deck cannot drift</span></div>
+      <div class="row"><b>tools/build_drill.py</b><span>Publishes the unlockable sentences, with the words each one needs, to the drill</span></div>
     </div>
     <p class="sub" style="margin:18px 0 0">Details and the Anki import mapping are in <a href="anki/README.md">anki/README.md</a>.</p>
   </div>

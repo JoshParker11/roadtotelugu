@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sentence drill | Study desk</title>
+<meta name="description" content="Spaced recombination practice over every sentence whose words you have met.">
+<meta name="theme-color" content="#191915">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;700&amp;family=Noto+Sans+Telugu:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/study.css">
+</head>
+<body>
+
+<a class="skip-link" href="#overview">Skip to the drill</a>
+
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="wrap">
+    <a class="logo" href="../index.html"><span>ప</span> study-desk</a>
+    <ul>
+      <li><a href="words.html">Vocabulary queue</a></li>
+      <li><a href="drill.html" aria-current="page">Sentence drill</a></li>
+      <li><a href="../LEARNING_GUIDE/index.html">Course</a></li>
+      <li><a href="../GRAMMAR_LAB/index.html">Verb Lab</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="stats" aria-label="Drill status">
+  <div class="wrap">
+    <div class="stat"><span>Today</span><div id="st-day"></div></div>
+    <div class="stat"><span>Due</span><div id="st-due"></div></div>
+    <div class="stat"><span>New</span><div id="st-new"></div></div>
+    <div class="stat"><span>Ahead</span><div id="st-ahead"></div></div>
+    <div class="stat"><span>Corpus</span><div id="st-corpus"></div></div>
+  </div>
+</div>
+
+<main>
+
+<!-- ============ overview ============ -->
+<section id="overview">
+  <div class="wrap">
+
+    <div class="note-box caution" id="setup-warn" hidden>
+      <b>No start date yet</b>
+      <p>The drill only serves sentences whose words you have already met, and it works that out
+        from your start date. Set one on the <a href="words.html">vocabulary queue</a> and this
+        page fills up.</p>
+    </div>
+
+    <div id="start-row">
+      <h2>Sentence drill</h2>
+      <p class="sub">Every sentence whose words you have met, on a spacing schedule. Revisits do
+        not repeat the sentence — they escalate: understand it, then produce it, then fill the
+        verb back in, then change it.</p>
+
+      <div class="ladder">
+        <div class="rung"><b>Comprehend</b><span>What does this mean?</span><i>day 1</i></div>
+        <div class="rung"><b>Produce</b><span>Say it from the English.</span><i>+1</i></div>
+        <div class="rung"><b>Cloze</b><span>Fill the missing verb.</span><i>+3</i></div>
+        <div class="rung"><b>Transform</b><span>Change tense, polarity or person.</span><i>+7, +16, +35</i></div>
+      </div>
+
+      <div class="controls-row" style="margin:22px 0 14px">
+        <span class="seg" id="lens" role="group" aria-label="Session length">
+          <button type="button" data-len="20">20</button>
+          <button type="button" data-len="40">40</button>
+          <button type="button" data-len="80">80</button>
+          <button type="button" data-len="0">All</button>
+        </span>
+        <button class="btn primary" id="btn-start" type="button">Start</button>
+        <button class="btn" id="btn-extra" type="button">Extra practice</button>
+      </div>
+      <p class="hint">“Extra practice” keeps going past what is due, pulling in sentences that are
+        not scheduled yet. Use it when there is time going spare — early reviews are marked as
+        such and do not pretend to be scheduled ones.</p>
+
+      <h3 class="ophead">Weakest operations</h3>
+      <p class="sub">Which transformations you miss most. The drill serves these more often —
+        this is what makes the item the operation rather than the sentence.</p>
+      <div id="ops"></div>
+
+      <p class="hint" style="margin-top:26px">
+        <button class="btn danger" id="btn-reset" type="button">Reset drill scheduling</button>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ the card ============ -->
+<section id="card" hidden>
+  <div class="wrap">
+    <div class="cardbar">
+      <span class="modetag" id="modetag"></span>
+      <span class="tag" id="newtag">new</span>
+      <span class="tag" id="daytag"></span>
+      <span class="counter" id="counter"></span>
+      <button class="btn small" id="btn-quit" type="button">End</button>
+    </div>
+    <div class="progress" id="progress"><i></i></div>
+
+    <div class="drillcard">
+      <p class="instruction" id="instruction"></p>
+      <div class="prompt" id="prompt"></div>
+      <button class="btn primary wide" id="btn-reveal" type="button">Show answer <kbd>space</kbd></button>
+      <div class="answer" id="answer" hidden></div>
+      <div class="grades" id="grades" hidden>
+        <button class="grade missed" data-g="0" type="button">Missed <kbd>1</kbd></button>
+        <button class="grade shaky"  data-g="1" type="button">Shaky <kbd>2</kbd></button>
+        <button class="grade got"    data-g="2" type="button">Got it <kbd>3</kbd></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ done ============ -->
+<section id="done" hidden>
+  <div class="wrap">
+    <div class="drillcard" id="done-body"></div>
+    <div class="controls-row" style="margin-top:18px">
+      <button class="btn primary" id="btn-again" type="button">Back to the drill</button>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="note-box">
+      <b>What is generated and what is not</b>
+      <p>Every sentence here came from a source. In transform mode the verb is swapped for
+        another cell of the <em>same verb</em>, produced by the Verb Lab's engine — so the
+        sentence is real and the swapped form is one the Lab already drills, but that exact
+        sentence is assembled rather than attested. Answers say so.</p>
+      <p>Transformations that would break the sentence are not offered: the imperatives and
+        “let's” delete the subject, <span class="mono">wantTo</span> needs a dative subject, and
+        the conditional makes a fragment. Person swaps are only offered where there is a bare
+        pronoun subject to move — otherwise <span class="mono">ikkaḍa okaṭi undi</span> would
+        become <span class="mono">nēnu ikkaḍa okaṭi unnānu</span>, which is grammatical and
+        nonsense. Verbs whose tense labels are known to lie only offer the cells whose meaning
+        has been pinned down.</p>
+      <p>Generated <span class="mono" id="generated"></span> by
+        <span class="mono">tools/build_drill.py</span>. Conjugation comes from
+        <span class="mono">GRAMMAR_LAB/data/</span> at page load, so a stem correction reaches
+        this drill with no rebuild.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><span class="mono">road-to-telugu</span> · study desk</p>
+    <p>Scheduling lives in this browser only, and is deliberately disposable — Anki owns
+      anything that matters permanently.</p>
+  </div>
+</footer>
+
+<script src="../GRAMMAR_LAB/data/verbs.js"></script>
+<script src="../GRAMMAR_LAB/data/engine.js"></script>
+<script src="data/words.js"></script>
+<script src="data/sentences.js"></script>
+<script src="assets/progress.js"></script>
+<script src="assets/recombine.js"></script>
+<script src="assets/drill.js"></script>
+</body>
+</html>

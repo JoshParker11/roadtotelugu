@@ -15,7 +15,7 @@ vocabulary.** New vocabulary is the morning's job.
 | min | | |
 |---|---|---|
 | **10** | **Yesterday's misses** | Retrieve what you wrote down yesterday. This is the loop that makes writing it down worth anything. |
-| **20** | **Today's unlocked sentences** | ~30 land per day. Read → cover → produce from English → then **vary them** (change person, tense, negate). |
+| **20** | **The sentence drill** | `STUDY/drill.html`. ~30 sentences land per day; the drill escalates them from comprehension to production to transformation. |
 | **10** | **Verb Lab** | Weakest-first. |
 | **10** | **Native content** | One short clip. No obligation to understand — exposure, and anything recognised gets noted. |
 | **10** | **Free production** | Five true sentences about your day. Write down what you could not say. |
@@ -44,7 +44,7 @@ Ranked, so the choice is never in question:
 | | owns | state |
 |---|---|---|
 | **Anki** | the permanent core — 15 words + 3 sentences a day | scheduled forever |
-| **The drill** (to build) | wide practice over everything unlocked | lightweight, disposable |
+| **The drill** (`STUDY/drill.html`) | wide practice over everything unlocked | lightweight, disposable |
 
 They never conflict because they do different work, and **the queue will always exceed the
 time**. That is correct: the drill's job is triage, not completion. Nothing breaks when a
@@ -68,7 +68,7 @@ source, and that discipline is why the deck is trustworthy. Generated sentences 
 but unverified, and would be automating errors into a deck reviewed daily and not yet auditable
 by the learner. Generating **exercises from verified Telugu** — cloze, recombination through the
 audited conjugation engine, English→Telugu prompts — is unlimited and safe. Revisit generation
-only when a native speaker can spot-check a batch, or when the 1,419 unlockable sentences run
+only when a native speaker can spot-check a batch, or when the 1,409 unlockable sentences run
 dry, whichever comes first.
 
 **The review deck is a closed set.** Mined native sentences do not go into it. The phase-one
@@ -229,6 +229,84 @@ longer a daily ritual.
 
 ---
 
+## The sentence drill
+
+`STUDY/drill.html`, built 2026-08-15. The 20-minute block at the centre of the hour, which was
+until now being done by hand.
+
+**The item is the transformation, not the sentence.** A sentence with a verb has around eight
+safe transformations, and enumerating them as separate cards would be wrong twice over: it
+turns 1,400 sentences into an unreviewable pile, and it trains nothing, because what is being
+learned is the *operation* — "make this negative", "move this to she" — not eight memorised
+strings. So each sentence is one scheduled item, served with one transformation, chosen by
+which operation is currently weakest (Laplace-smoothed error rate, so unseen operations
+outrank ones you reliably get right).
+
+**Revisits escalate instead of repeating**, on the Verb Lab's Leitner gaps — the box doubles as
+a difficulty ladder:
+
+| box | mode | | gap |
+|---|---|---|---|
+| 0 | comprehend | what does this mean? | day it unlocks |
+| 1 | produce | say it from the English | +1 |
+| 2 | cloze | fill the missing verb | +3 |
+| 3+ | transform | change tense, polarity, person | +7, +16, +35 |
+
+A miss drops **one rung**, not to the floor. These boxes are a difficulty ladder as much as a
+memory-strength one, and failing to transform a sentence is not evidence you no longer
+understand it; resetting would waste the next three reviews re-proving something never in
+doubt. Modes downgrade when unavailable, so a sentence with no verb still reviews.
+
+### Measured against the corpus, and where the earlier numbers were wrong
+
+PRACTICE.md previously recorded **468** tense-recombinable and **131** person-recombinable. The
+real figures, from the built pipeline:
+
+| | |
+|---|---|
+| unlockable sentences | **1,409** (10 fill-in-the-blank templates dropped) |
+| contain exactly one Verb Lab form | **390** |
+| total safe transformations | **3,154** (~8 per sentence) |
+| of those, person swaps | **96** sentences |
+| cloze available | **963** |
+| comprehend/produce only | **446** |
+
+The gap is mostly stricter safety rules, not a shrinking corpus — and 3,154 transformations
+across 963 cloze-able sentences is more practice material than the hour can absorb, which was
+the requirement.
+
+### What is deliberately not offered
+
+Transformations that would break the sentence, each excluded for a grammatical reason rather
+than caution: **imperatives, prohibitives and hortative** delete the subject; **wantTo /
+dontWant** take a dative subject (`nāku`, never `nēnu`); **purposive and conditional** produce
+fragments needing a main clause. **Person swaps** only where a bare pronoun subject agrees with
+the verb — without that guard `ikkaḍa okaṭi undi` becomes `nēnu ikkaḍa okaṭi unnānu`, which is
+grammatical and nonsense. Sentences with **two** recognisable verb forms are skipped: "→ past"
+is meaningless if you cannot tell which verb it means.
+
+**Verbs whose labels lie only offer the cells whose meaning is pinned down.** The rule is
+written against `cueOv` rather than against `uṇḍu` by name, so it stays correct as `cueOv`
+grows. Building this surfaced that `cueOv` covered three of `uṇḍu`'s cells and not `negPast` —
+the Lab was cueing `lēdu` as "she did not wait". Fixed; `negFuture` is now question 7 in
+`review/questions.md`.
+
+The instruction is the target cell's **English cue**, not the paradigm name — "→ *he will do*"
+rather than "→ future". It is the better instruction anyway (produce this meaning, not name
+this tense) and it is the only phrasing that stays correct for `uṇḍu`.
+
+### Architecture
+
+Nothing about conjugation is precomputed. The page loads `GRAMMAR_LAB/data/verbs.js` and
+`engine.js` directly and transforms live, so **a stem correction reaches the drill on the next
+page load with no rebuild**. `tools/build_drill.py` ships only the sentences, each carrying the
+`study_order` of every word it needs — which lets the drill ask "do I know every word in this?"
+against the study desk's marked-known set, rather than the proxy question "has enough time
+passed?". Marking words known early therefore pulls sentences into the drill, which is most of
+the point of marking them.
+
+---
+
 ## What to build next, in order
 
 1. **Word capture.** The half of the dropped inbox that was never about journaling. When a word
@@ -240,35 +318,19 @@ longer a daily ritual.
    re-runs the exports. No format, no schedule, no prompts to ignore. Build it when the first
    word actually needs capturing rather than in advance.
 
-2. **The recombination drill.** A page, not a terminal tool — it has to run during the session,
-   record state for free, and work on a phone. Same architecture as the Verb Lab: data generated
-   offline into JSON, drill runs static, state in `localStorage`.
-
-   *Design settled in conversation:* the drill item is the **transformation**, not the sentence —
-   72 variants per sentence is not a space to enumerate, and what is being trained is the
-   operation. Each sentence is served with one transformation, chosen by which operation is
-   weakest. Revisits escalate through modes rather than repeating: **comprehend** (day it
-   unlocks) → **produce** (+1) → **cloze** (+3) → **transform** (+7, +16, +35), on the Verb Lab's
-   existing Leitner gaps.
-
-   *Measured against the corpus:* **468** unlockable sentences contain a Verb Lab form and are
-   recombinable by tense and polarity; **131** also have a bare pronoun subject and can be
-   recombined by person. Tense swaps are always safe. **Person swaps are not** — `ikkaḍa okaṭi
-   undi` → `nēnu ikkaḍa okaṭi unnānu` is grammatical and nonsense — so restrict them to the 131.
-
-3. **Text-analysis page.** Paste Telugu, get: coverage against the known set; the unlock curve
+2. **Text-analysis page.** Paste Telugu, get: coverage against the known set; the unlock curve
    ("learn the top 20 unknown words from *this text* and coverage goes 34% → 58%"); the text
    rendered with known words dimmed; and the sentences already at N+1. **Split unknown words into
    two piles** — already in the master at position 400 (arrives day 27) versus not in the master
    at all. Those need opposite actions and lumping them hides the only decision the page exists
    to support. Plus **projected comprehensibility**: a day slider turns "someday" into a date.
 
-4. **The podcast.** An hour of audio with a timestamped transcript, supplied but not yet ingested.
+3. **The podcast.** An hour of audio with a timestamped transcript, supplied but not yet ingested.
    At this vocabulary the point is not comprehension: it is (a) becoming a frequency corpus that
    votes on the word order, as the family recordings already do, (b) the playlist of lines already
    at 100% coverage — real native audio, comprehensible now, and (c) a number to aim at.
 
-5. **Course leftovers, not blocking.** Six one-minute story videos (11, 12, 15, 17, 18, 20), Quiz
+4. **Course leftovers, not blocking.** Six one-minute story videos (11, 12, 15, 17, 18, 20), Quiz
    5 and Practice Test 2, and ~20 minutes of conversation and cultural-immersion lessons the
    learner has deliberately deferred as outside the core.
 
@@ -307,3 +369,15 @@ is **not emitted to Anki**. Adding it to a note type would cost one line in
 `review/ERRORS.md` is regenerated from the data and stays accurate. The short version: 3 Kannada
 entries, 16 book script/romanization mismatches, 89 inflected verbs glossed as headwords, 12
 bound suffixes, 66 respelled English words. All flagged, none shipped to the deck.
+
+**Glued Telugu script — 152 sentences, 116 of them in the drill.** `నేనుకాదు` where the
+romanization correctly reads `nēnu kādu`. `build_sentences.unglue()` respaces the romanization
+and deliberately leaves the script alone, on the grounds that Telugu does write some of these
+together and respacing would be a guess. That reasoning still holds, but the drill puts the
+script up as the primary prompt, so it is now much more visible than it was on an Anki card.
+
+**Do not fix this casually.** The guid is a hash of the Telugu script, so respacing renames the
+note: 116 cards orphaned and 116 created, scheduling lost on every one. It is worth doing only
+as a deliberate batch, alongside whatever other content corrections have accumulated, and only
+after a native speaker confirms which of them are genuinely wrong rather than acceptable
+orthography. Until then the romanization beside it is correct and the meaning is unaffected.

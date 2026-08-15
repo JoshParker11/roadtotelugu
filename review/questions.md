@@ -65,18 +65,28 @@ confirmation unlocks a whole paradigm.
 My guess is **`daggara` for things you could put down, `nāku` for things you cannot** — but the
 course never draws the line and I am inferring it.
 
-## 7. `pāpaḍu` for papad?
+## 7. What is `uṇḍanu` — "won't stay", or "won't be"?
+
+*From the drill build.* `uṇḍu`'s tense labels are overridden for four cells now (`past`,
+`future`, `present`, `negPast`) because the generic ones are wrong for this verb. `negFuture`
+— `uṇḍanu`, `uṇḍavu`, `uṇḍaḍu` — is still cued generically as "I will not wait", which is
+*possible* but probably not what it usually means.
+
+**Why it matters:** the Verb Lab cues it, and the recombination drill will not offer it as a
+transformation target until the cue is trustworthy. One sentence settles it.
+
+## 8. `pāpaḍu` for papad?
 
 *Lesson 14.* The source gives `పాపడు`. The usual Telugu is `appaḍaṁ` (అప్పడం). Flagged rather
 than changed, and currently held out of the deck.
 
-## 8. Numbers just past 100
+## 9. Numbers just past 100
 
 *Lesson 6.* The traditional combining form is `nūṭa` — 150 as *nūṭa yābhai*, 101 as *nūṭa okaṭi* —
 but `vanda` is also heard directly. The one place in the number system where regional and
 generational variation is likely.
 
-## 9. `nuvva` — is it real?
+## 10. `nuvva` — is it real?
 
 *Earlier.* The book prints `నువ్వ` where the corpus overwhelmingly has `నువ్వు`. It was folded as
 a misprint on corpus evidence, but a bound-stem reading is plausible (`nuvva` before some
