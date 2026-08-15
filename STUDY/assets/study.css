@@ -273,6 +273,76 @@ details.drawer>summary:hover{color:var(--cream)}
   .oprow .bar{grid-column:1/-1;order:3}
 }
 
+/* ---------- reader ---------- */
+.readbar{position:sticky;top:0;z-index:45;background:rgba(25,25,21,.95);backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);padding:16px 0 14px}
+.chip b{font-weight:400;opacity:.6;margin-left:5px;font-size:10px;text-transform:uppercase}
+.cover{margin-top:12px}
+.coverbar{display:flex;height:7px;border-radius:99px;overflow:hidden;background:var(--ink-3)}
+.coverbar span{display:block}
+.seg-known{background:var(--moss)} .seg-seen{background:rgba(143,163,126,.4)}
+.seg-learning{background:var(--amber)} .seg-new{background:rgba(143,127,184,.75)}
+.seg-unseen{background:var(--flame)} .seg-english{background:rgba(241,236,224,.16)}
+.seg-ignore{background:rgba(241,236,224,.08)}
+.covnum{margin:8px 0 0;color:var(--cream-dim);font-size:13px}
+.covnum b{color:var(--moss)} .covnum b.warn{color:var(--flame)}
+.legend{display:flex;flex-wrap:wrap;gap:5px 14px;margin-top:8px}
+.legend span{display:flex;align-items:center;gap:5px;color:var(--cream-dim);
+  font-family:'JetBrains Mono',monospace;font-size:10.5px}
+.sw{width:9px;height:9px;border-radius:2px;display:inline-block}
+.sw.known{background:var(--moss)} .sw.seen{background:rgba(143,163,126,.4)}
+.sw.learning{background:var(--amber)} .sw.new{background:rgba(143,127,184,.75)}
+.sw.unseen{background:var(--flame)} .sw.english{background:rgba(241,236,224,.16)}
+.sw.ignore{background:rgba(241,236,224,.08)}
+
+.readtext{max-width:70ch}
+.rline{display:block;margin:0 0 18px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.rte{display:block;font-size:clamp(17px,4.2vw,21px);line-height:2}
+.ren{display:block;margin-top:7px;color:var(--cream-dim);font-size:14px;line-height:1.5}
+.tk{border-radius:4px;cursor:pointer;padding:2px 1px;transition:background .1s}
+.tk:hover{outline:1px solid var(--amber)}
+.tk.known,.tk.ignore{color:var(--cream)}
+.tk.ignore,.tk.english{color:var(--cream-dim);opacity:.65}
+.tk.seen{background:rgba(143,163,126,.16)}
+.tk.learning{background:rgba(232,163,61,.3)}
+.tk.new{background:rgba(143,127,184,.3)}
+.tk.unseen{background:rgba(217,108,71,.28)}
+.tk.approx{border-bottom:1px dotted var(--cream-dim)}
+.approx-demo{border-bottom:1px dotted var(--cream-dim);background:rgba(143,127,184,.3);border-radius:4px;padding:1px 3px}
+
+.wordpanel{position:fixed;right:0;bottom:0;left:0;z-index:80;border-top:1px solid var(--line-strong);
+  background:var(--ink-2);padding:20px 22px 18px;box-shadow:0 -18px 40px rgba(0,0,0,.45)}
+@media(min-width:820px){.wordpanel{left:auto;bottom:24px;right:24px;width:400px;
+  border:1px solid var(--line-strong);border-radius:var(--radius)}}
+.panel-close{position:absolute;top:10px;right:12px;border:none;background:transparent;
+  color:var(--cream-dim);cursor:pointer;font-size:22px;line-height:1}
+.panel-close:hover{color:var(--cream)}
+/* Both scripts land here, so Inter leads and Telugu falls in behind it — with the Telugu face
+   first, a Latin token like "ll" renders in it and comes out looking like "||". */
+.wordpanel h3{font-family:'Inter','Noto Sans Telugu',sans-serif;font-size:26px;margin-bottom:10px;padding-right:26px}
+.pgloss{font-size:16px;margin-bottom:8px}
+.pforms{margin-bottom:8px;font-size:15px}
+.pmeta,.pctx{color:var(--cream-dim);font-size:12.5px;margin-bottom:8px}
+.pctx{border-left:2px solid var(--line-strong);padding-left:10px;font-style:italic}
+.pwarn{color:var(--flame);font-size:12.5px;margin-bottom:8px}
+.panel-actions{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-top:12px}
+.panel-actions button{border:1px solid var(--line-strong);border-radius:9px;background:transparent;
+  color:var(--cream);cursor:pointer;font-family:'JetBrains Mono',monospace;font-size:11.5px;padding:10px 4px}
+.panel-actions button kbd{display:block;margin-top:4px;color:var(--cream-dim);font-family:inherit;font-size:9.5px}
+.panel-actions button[data-set="known"].on,.panel-actions button[data-set="known"]:hover{border-color:var(--moss);color:var(--moss)}
+.panel-actions button[data-set="learning"].on,.panel-actions button[data-set="learning"]:hover{border-color:var(--amber);color:var(--amber)}
+.panel-actions button[data-set="ignore"].on,.panel-actions button[data-set="ignore"]:hover{border-color:var(--cream-dim)}
+.panel-actions button.on{background:rgba(241,236,224,.07);font-weight:700}
+
+.minecount{color:var(--cream-dim);font-family:'JetBrains Mono',monospace;font-size:13px}
+.minerow{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;border:1px solid var(--line);
+  border-radius:9px;background:var(--ink-2);padding:9px 13px;margin-bottom:5px}
+.minerow .telugu{font-size:15px}
+.minerow .mg{color:var(--cream-dim);font-size:13px;flex:1;min-width:140px}
+.minerow .need{color:var(--flame);font-family:'JetBrains Mono',monospace;font-size:11px;flex:1;min-width:140px}
+.minerow .tag.new{border-color:rgba(217,108,71,.5);color:var(--flame)}
+.amber{color:var(--amber)}
+
 footer{padding:34px 0 50px}
 footer p{color:var(--cream-dim);font-size:12.5px}
 footer p+p{margin-top:5px}

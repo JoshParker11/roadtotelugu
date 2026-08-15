@@ -26,3 +26,6 @@ sources/private/
 __pycache__/
 *.pyc
 audio/
+
+# Reader pages baked from private sources — same rule as sources/private itself.
+STUDY/data/reader/private-*.js

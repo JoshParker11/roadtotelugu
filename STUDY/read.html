@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reader | Study desk</title>
+<meta name="description" content="Read Telugu with every word marked known, learning or new — and mine the rest into the deck.">
+<meta name="theme-color" content="#191915">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;700&amp;family=Noto+Sans+Telugu:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/study.css">
+</head>
+<body>
+
+<a class="skip-link" href="#reader">Skip to the text</a>
+
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="wrap">
+    <a class="logo" href="../index.html"><span>ప</span> study-desk</a>
+    <ul>
+      <li><a href="read.html" aria-current="page">Reader</a></li>
+      <li><a href="words.html">Vocabulary queue</a></li>
+      <li><a href="drill.html">Sentence drill</a></li>
+      <li><a href="../LEARNING_GUIDE/index.html">Course</a></li>
+      <li><a href="../GRAMMAR_LAB/index.html">Verb Lab</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+<section class="readbar">
+  <div class="wrap">
+    <div class="controls-row" id="texts" role="group" aria-label="Text"></div>
+    <p class="sub" id="blurb" style="margin:12px 0 10px"></p>
+    <div class="controls-row" id="sections" role="group" aria-label="Section"></div>
+
+    <div class="cover">
+      <div class="coverbar" id="coverage"></div>
+      <p class="covnum" id="covnum"></p>
+      <div class="legend" id="legend"></div>
+    </div>
+
+    <div class="controls-row" style="margin-top:12px">
+      <button class="chip on" id="toggle-en" type="button">Translation shown</button>
+      <button class="chip" id="btn-known-all" type="button">Mark the rest of this section known</button>
+      <span class="say" id="say"></span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div id="reader" class="readtext"></div>
+  </div>
+</section>
+
+<section id="mine">
+  <div class="wrap">
+    <h2>Words you're working on <span class="minecount" id="minecount"></span></h2>
+    <p class="sub">Everything marked <b>learning</b>. Words already in the deck just need
+      unsuspending; the rest need a definition before they can be imported — that is the list
+      to take to a dictionary, or to your wife.</p>
+    <div class="btn-row">
+      <button class="btn" id="btn-copy" type="button">Copy as TSV</button>
+      <button class="btn" id="btn-download" type="button">Download</button>
+    </div>
+    <textarea id="io" hidden spellcheck="false"></textarea>
+    <div id="minelist"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="note-box">
+      <b>How the matching works, and where it is guessing</b>
+      <p>Words are resolved against the word master before the page is built. An exact match is
+        reliable. A match marked <span class="approx-demo">like this</span> is approximate: the
+        text and the deck use different romanization conventions —
+        <span class="mono">adhi</span> against <span class="mono">adi</span>,
+        <span class="mono">kooda</span> against <span class="mono">kūḍā</span> — and the two are
+        collapsed onto one skeleton to match at all. Usually right, occasionally not, so it is
+        flagged rather than trusted.</p>
+      <p>Marking a word <b>known</b> writes to the same store the vocabulary queue uses, so it
+        also unlocks sentences in the drill. That only happens for words that exist in the
+        master; anything else has no deck identity yet, which is exactly why it is worth mining.</p>
+      <p>Baked <span class="mono" id="generated"></span> by
+        <span class="mono">tools/build_reader.py</span>. Texts derived from the family recordings
+        are generated locally and never committed — the people in them did not agree to be
+        published.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<aside class="wordpanel" id="panel" hidden>
+  <button class="panel-close" id="panel-close" type="button" aria-label="Close">×</button>
+  <div id="panel-body"></div>
+  <div class="panel-actions">
+    <button data-set="known" type="button">Known <kbd>1</kbd></button>
+    <button data-set="learning" type="button">Learning <kbd>2</kbd></button>
+    <button data-set="ignore" type="button">Ignore <kbd>3</kbd></button>
+    <button data-set="clear" type="button">Reset <kbd>0</kbd></button>
+  </div>
+</aside>
+
+<footer>
+  <div class="wrap">
+    <p><span class="mono">road-to-telugu</span> · study desk</p>
+    <p>Marks live in this browser. The vocabulary queue's backup drawer moves them between devices.</p>
+  </div>
+</footer>
+
+<script src="data/words.js"></script>
+<script src="assets/progress.js"></script>
+<script src="data/reader/textbook.js"></script>
+<!-- Present only on a machine that has the private sources; 404s harmlessly elsewhere. -->
+<script src="data/reader/private-conversations.js"></script>
+<script src="assets/reader.js"></script>
+</body>
+</html>
