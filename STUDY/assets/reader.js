@@ -25,6 +25,9 @@
   const read = (k, d) => { try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch { return d; } };
   const write = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} };
 
+  const _FOLD = { 'ā':'a','ī':'i','ū':'u','ē':'e','ō':'o','ṭ':'t','ḍ':'d','ṇ':'n','ḷ':'l','ṁ':'m','ṣ':'s','ś':'s','ṛ':'r' };
+  const fold = s => (s || '').toLowerCase().replace(/[āīūēōṭḍṇḷṁṣśṛ]/g, c => _FOLD[c]).replace(/[^a-z]/g, '');
+
   const TEXTS = window.READER_TEXTS || {};
   const SLUGS = Object.keys(TEXTS);
   if (!SLUGS.length) {
@@ -40,6 +43,10 @@
   let slug = read(K.pos, {}).slug || SLUGS[0];
   if (!TEXTS[slug]) slug = SLUGS[0];
   let section = 0, showEn = true, focus = null;
+  /* Script or romanization for the body text. Defaults to romanization: the script is
+     unreadable to the learner today, and a page of it is a wall rather than practice.
+     Persisted, because it is the setting most likely to change as reading improves. */
+  let script = read('rtt.readScript', false);
 
   const text = () => TEXTS[slug];
   const lexOf = i => text().lex[i];
@@ -75,6 +82,7 @@
       `<button class="chip${s === slug ? ' on' : ''}" data-slug="${esc(s)}">${esc(TEXTS[s].title)}${TEXTS[s].private ? ' <b>private</b>' : ''}</button>`).join('');
     const t = text();
     $('#blurb').textContent = t.blurb || '';
+    $('#toggle-script').hidden = !t.script;
     $('#sections').innerHTML = t.sections.map((s, i) =>
       `<button class="chip${i === section ? ' on' : ''}" data-section="${i}">${esc(s.title)}</button>`).join('');
   }
@@ -88,7 +96,9 @@
         if (kind === 'p') return esc(surface);
         const st = stateOf(tok);
         const key = lx >= 0 ? lexOf(lx).k : '';
-        return `<span class="tk ${st}${kind === '~' ? ' approx' : ''}" data-l="${li}" data-t="${ti}" data-k="${esc(key)}">${esc(surface)}</span>`;
+        const shown = (!script && tok[3]) ? tok[3] : surface;
+        return `<span class="tk ${st}${kind === '~' ? ' approx' : ''}${script && tok[3] ? ' script' : ''}"`
+             + ` data-l="${li}" data-t="${ti}" data-k="${esc(key)}">${esc(shown)}</span>`;
       }).join('');
       const cue = ln.s != null
         ? `<button class="cue" data-seek="${ln.s}" title="Play from here">${clock(ln.s)}</button>` : '';
@@ -136,12 +146,21 @@
     const lx = lxi >= 0 ? lexOf(lxi) : null;
     const st = stateOf(tok);
 
-    let head = `<h3>${esc(surface)}</h3>`;
+    const rom = tok[3] || null;
+    let head = rom
+      ? `<h3>${esc(script ? surface : rom)}</h3>
+         <p class="palt ${script ? 'mono' : 'telugu'}">${esc(script ? rom : surface)}</p>`
+      : `<h3>${esc(surface)}</h3>`;
     let body = '';
     if (lx && lx.en) {
       body += `<p class="pgloss">${esc(lx.en)}</p>`;
-      body += `<p class="pforms"><span class="mono amber">${esc(lx.r)}</span>` +
-              (lx.te ? ` <span class="telugu">${esc(lx.te)}</span>` : '') + '</p>';
+      /* The heading already shows both forms for a script token. Repeat the deck's spelling
+         only when it differs from what is on the page — which is the case worth seeing. */
+      const sameAsHead = rom && fold(lx.r) === fold(rom);
+      if (!sameAsHead) {
+        body += `<p class="pforms"><span class="mono amber">${esc(lx.r)}</span>` +
+                (lx.te && lx.te !== surface ? ` <span class="telugu">${esc(lx.te)}</span>` : '') + '</p>';
+      }
       if (kind === '~') {
         body += `<p class="pwarn">Matched approximately — the text spells it <span class="mono">${esc(surface.toLowerCase())}</span>,
           the deck spells it <span class="mono">${esc(lx.r)}</span>. Usually the same word, occasionally not.</p>`;
@@ -243,6 +262,14 @@
     section = +b.dataset.section; curLine = -1;
     renderPicker(); repaint(); closePanel();
     $('#reader').scrollIntoView({ block: 'start' });
+  });
+
+  $('#toggle-script').addEventListener('click', () => {
+    script = !script;
+    write('rtt.readScript', script);
+    $('#toggle-script').classList.toggle('on', script);
+    $('#toggle-script').textContent = script ? 'Telugu script' : 'Romanized';
+    renderText();
   });
 
   $('#toggle-en').addEventListener('click', () => {
@@ -455,5 +482,7 @@
 
   /* ---------- boot ---------- */
   $('#generated').textContent = text().generated;
+  $('#toggle-script').classList.toggle('on', script);
+  $('#toggle-script').textContent = script ? 'Telugu script' : 'Romanized';
   renderPicker(); repaint(); setupAudio(); syncPlay();
 })();

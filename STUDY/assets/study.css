@@ -327,6 +327,9 @@ details.drawer>summary:hover{color:var(--cream)}
 .tk.new{background:rgba(143,127,184,.3)}
 .tk.unseen{background:rgba(217,108,71,.28)}
 .tk.approx{border-bottom:1px dotted var(--cream-dim)}
+.tk.script{font-family:'Noto Sans Telugu',sans-serif}
+.rte{font-family:'Inter',sans-serif}
+.palt{margin:-4px 0 10px;color:var(--cream-dim);font-size:17px}
 .approx-demo{border-bottom:1px dotted var(--cream-dim);background:rgba(143,127,184,.3);border-radius:4px;padding:1px 3px}
 
 .wordpanel{position:fixed;right:0;bottom:0;left:0;z-index:80;border-top:1px solid var(--line-strong);

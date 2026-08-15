@@ -236,7 +236,15 @@ def bare(k, piece, lex, lexidx):
 
 
 def resolve_line(text, exact, approx, english, lex, lexidx):
-    """-> [surface, kind, lexIndex]. kind: t=exact ~=approx e=english n=name w=unknown p=punct"""
+    """-> [surface, kind, lexIndex, roman?]
+
+    kind: t=exact ~=approx e=english n=name w=unknown p=punct
+
+    Script tokens carry a fourth element: their romanization, from the same te2rom the whole
+    pipeline uses. The reader shows that instead of the script — the learner cannot read Telugu
+    letters yet, and a page of them is not reading practice, it is a wall. The script is kept
+    on the token so the word panel can show both and the display can be flipped later.
+    """
     out = []
     seen_word = False
     for piece in TOKEN.findall(text):
@@ -250,20 +258,22 @@ def resolve_line(text, exact, approx, english, lex, lexidx):
         is_name = (seen_word and piece[:1].isupper() and not TELUGU.search(piece)
                    and k not in exact and k not in english and not approx.get(loose(k)))
         seen_word = True
+        rom = romanize(piece) if TELUGU.search(piece) else None
+
         if is_name:
-            out.append([piece, 'n', bare(k, piece, lex, lexidx)])
+            out.append(tok_row(piece, 'n', bare(k, piece, lex, lexidx), rom))
             continue
         hit = exact.get(k)
         kind = 't'
         if hit is None and k in english:
-            out.append([piece, 'e', bare(k, piece, lex, lexidx)])
+            out.append(tok_row(piece, 'e', bare(k, piece, lex, lexidx), rom))
             continue
         if hit is None:
             cands = approx.get(loose(k))
             if cands:
                 hit, kind = cands[0], '~'
         if hit is None:
-            out.append([piece, 'w', bare(k, piece, lex, lexidx)])
+            out.append(tok_row(piece, 'w', bare(k, piece, lex, lexidx), rom))
             continue
         gk = hit['guid']
         if gk not in lexidx:
@@ -271,8 +281,12 @@ def resolve_line(text, exact, approx, english, lex, lexidx):
             lex.append({'k': k, 'r': hit['roman'], 'te': hit['telugu'], 'en': hit['english'],
                         'o': int(hit['study_order']) if str(hit['study_order']).isdigit() else 0,
                         'g': hit['guid']})
-        out.append([piece, kind, lexidx[gk]])
+        out.append(tok_row(piece, kind, lexidx[gk], rom))
     return out
+
+
+def tok_row(surface, kind, li, rom):
+    return [surface, kind, li, rom] if rom else [surface, kind, li]
 
 
 def build(name, exact, approx, english):
@@ -290,9 +304,9 @@ def build(name, exact, approx, english):
             te, en = row[0], row[1]
             t0 = row[2] if len(row) > 2 else None
             toks = resolve_line(te, exact, approx, english, lex, lexidx)
-            for _, kind, _ in toks:
-                if kind != 'p':
-                    counts[kind] += 1
+            for t in toks:
+                if t[1] != 'p':
+                    counts[t[1]] += 1
             ln = {'t': toks, 'en': en}
             if t0 is not None:
                 ln['s'] = round(t0, 2)          # seek offset in seconds
@@ -304,13 +318,16 @@ def build(name, exact, approx, english):
     freq = Counter()
     for sec in sections:
         for ln in sec['lines']:
-            for _, kind, li in ln['t']:
-                if kind != 'p' and li >= 0:
-                    freq[li] += 1
+            for t in ln['t']:
+                if t[1] != 'p' and t[2] >= 0:
+                    freq[t[2]] += 1
     for i, l in enumerate(lex):
         l['n'] = freq.get(i, 0)
 
+    has_script = any(len(t) > 3 for sec in sections for ln in sec['lines'] for t in ln['t'])
+
     data = {'slug': name, 'title': spec['title'], 'blurb': spec['blurb'],
+            'script': has_script,
             'private': spec['private'], 'audio': spec.get('audio', ''),
             'generated': date.today().isoformat(),
             'counts': dict(counts), 'lex': lex, 'sections': sections}
