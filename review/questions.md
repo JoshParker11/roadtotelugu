@@ -97,7 +97,7 @@ suffixes). Currently merged away; worth a sanity check.
 ## The ongoing list
 
 Everything above came out of the sources. **The more valuable list is the one that comes out of
-your own mouth** — the "what I could not say" field in the daily log, and `log/inbox.md` once it
-exists. Those are gaps in what you actually want to express, which no course can anticipate.
+your own mouth** — whatever you could not say, wherever you note it down. Those are gaps in what
+you actually want to express, which no course can anticipate.
 
 Bring both lists to the same conversation.

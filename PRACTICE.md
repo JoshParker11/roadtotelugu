@@ -14,11 +14,14 @@ vocabulary.** New vocabulary is the morning's job.
 
 | min | | |
 |---|---|---|
-| **10** | **Yesterday's misses** | Retrieve what you wrote in the inbox. This is the loop that makes the log worth keeping. |
+| **10** | **Yesterday's misses** | Retrieve what you wrote down yesterday. This is the loop that makes writing it down worth anything. |
 | **20** | **Today's unlocked sentences** | ~30 land per day. Read → cover → produce from English → then **vary them** (change person, tense, negate). |
 | **10** | **Verb Lab** | Weakest-first. |
-| **10** | **Native content** | One short clip. No obligation to understand — exposure, and anything recognised goes in the inbox. |
-| **10** | **Free production + inbox** | Five true sentences about your day. Write down what you could not say. |
+| **10** | **Native content** | One short clip. No obligation to understand — exposure, and anything recognised gets noted. |
+| **10** | **Free production** | Five true sentences about your day. Write down what you could not say. |
+
+Wherever "write it down" appears above, the destination is **your own notes** — the formal log
+was considered and dropped (see below). The habit is what matters; the file format does not.
 
 **The 20-minute block is the hour.** Everything else supports it. Those sentences use exactly the
 words learned that morning, which is what makes them worth more than anything else at this stage.
@@ -203,26 +206,41 @@ they are. The "By theme" grouping exists for exactly that sweep.
 
 ---
 
+### Dropped 2026-08-15: the formal daily log
+
+A page for daily entries was planned and is **not being built**. The learner's call, and the
+reasoning survives scrutiny: the path is already reconstructible without it, and a ritual that
+stops feeling worth it gets abandoned anyway — at which point the record has a hole in it that
+is worse than never having started.
+
+What makes this safe rather than merely convenient: **Anki's revlog is already recording the
+objective half, automatically and retroactively.** Every review, lapse, interval and ease is in
+the collection whether or not anybody writes an entry. `tools/session_log.py --summary` reads it
+on demand, so "how did week 3 actually go" remains answerable in six months from data nobody had
+to type. The decision is reversible at zero cost, which is why it is the right one to take now.
+
+What is genuinely lost is **"what I could not say"** — the gaps between what you wanted to
+express and what you could. No collection records that. The learner is keeping this
+informally, which is the same content without the tooling, and it stays the highest-value
+thing to write down. It feeds `review/questions.md` and the shopping list for the masters.
+
+`tools/session_log.py` stays as an on-demand stats reader (`--show`, `--summary`). It is no
+longer a daily ritual.
+
+---
+
 ## What to build next, in order
 
-1. **The daily log, as a page.** Requested alongside the word list and deliberately deferred to
-   second. Constraint from the learner, and it is the right one: *it must not be overhead that
-   gets dropped when it stops feeling worth it.* So the entry writes itself — the day's fifteen
-   words are already known from the schedule, and the marks made that day are already dated in
-   `rtt.known` / `rtt.hard`. What is left for a human is one optional prose box.
+1. **Word capture.** The half of the dropped inbox that was never about journaling. When a word
+   turns up in native content or in conversation and belongs in the deck, something has to get
+   it into `data/master_words.tsv` — appended to the end of the study order, never inserted.
+   That is a pipeline function and it survives the log's cancellation on its own merits.
 
-   Keep the two halves separate the way `session_log.py` already does: the objective half is read
-   from data nobody has to type, and the only field worth discipline is **"what I could not
-   say"**. See the inbox item below — they are the same feature approached from two directions,
-   and should be built as one.
+   Small: a plain append-only text file plus a command that folds it into the master and
+   re-runs the exports. No format, no schedule, no prompts to ignore. Build it when the first
+   word actually needs capturing rather than in advance.
 
-2. **Inbox + weekly ingest.** `log/inbox.md`, append-only, no format — type a line whenever, from
-   anywhere. One weekly command parses what it can, stages new words for the masters, and folds
-   the rest into dated log entries with the Anki numbers auto-filled. **This is the only item with
-   a deadline**: numbers can be reconstructed later, what you were thinking on day 4 cannot.
-   Weekly rather than daily, so the append-only order stays stable.
-
-3. **The recombination drill.** A page, not a terminal tool — it has to run during the session,
+2. **The recombination drill.** A page, not a terminal tool — it has to run during the session,
    record state for free, and work on a phone. Same architecture as the Verb Lab: data generated
    offline into JSON, drill runs static, state in `localStorage`.
 
@@ -238,19 +256,19 @@ they are. The "By theme" grouping exists for exactly that sweep.
    recombined by person. Tense swaps are always safe. **Person swaps are not** — `ikkaḍa okaṭi
    undi` → `nēnu ikkaḍa okaṭi unnānu` is grammatical and nonsense — so restrict them to the 131.
 
-4. **Text-analysis page.** Paste Telugu, get: coverage against the known set; the unlock curve
+3. **Text-analysis page.** Paste Telugu, get: coverage against the known set; the unlock curve
    ("learn the top 20 unknown words from *this text* and coverage goes 34% → 58%"); the text
    rendered with known words dimmed; and the sentences already at N+1. **Split unknown words into
    two piles** — already in the master at position 400 (arrives day 27) versus not in the master
    at all. Those need opposite actions and lumping them hides the only decision the page exists
    to support. Plus **projected comprehensibility**: a day slider turns "someday" into a date.
 
-5. **The podcast.** An hour of audio with a timestamped transcript, supplied but not yet ingested.
+4. **The podcast.** An hour of audio with a timestamped transcript, supplied but not yet ingested.
    At this vocabulary the point is not comprehension: it is (a) becoming a frequency corpus that
    votes on the word order, as the family recordings already do, (b) the playlist of lines already
    at 100% coverage — real native audio, comprehensible now, and (c) a number to aim at.
 
-6. **Course leftovers, not blocking.** Six one-minute story videos (11, 12, 15, 17, 18, 20), Quiz
+5. **Course leftovers, not blocking.** Six one-minute story videos (11, 12, 15, 17, 18, 20), Quiz
    5 and Practice Test 2, and ~20 minutes of conversation and cultural-immersion lessons the
    learner has deliberately deferred as outside the core.
 
