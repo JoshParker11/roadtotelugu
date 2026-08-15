@@ -171,6 +171,50 @@ def classify(rec):
     return flags
 
 
+def carry_sequencing(rows):
+    """Copy study_order / study_day from the master being replaced, matched on guid.
+
+    THIS IS LOAD-BEARING. This script regenerates the master from the adapters, and until
+    this existed it wrote a fresh file without the two sequencing columns — so the documented
+    way to fix a gloss ("edit data/overrides_words.tsv, re-run build_master.py") silently
+    erased the study order for all 2,103 positioned words.
+
+    That is not a recoverable inconvenience. The order is append-only precisely because Anki
+    cannot be told to renumber: `sequence.py` reads the existing positions and keeps them, so
+    with them gone it would re-sort from scratch, and honouring a new order in Anki means
+    delete-and-reimport, which destroys every card's scheduling. One rebuild after the first
+    import would have cost the whole review history.
+
+    Matching on guid rather than row id is what makes this safe: the guid is a hash of the
+    Telugu script (tools/ids.py), so it survives rows being added, dropped or reordered, which
+    is exactly what a rebuild does. Entries that are genuinely new get no position here and
+    are appended by sequence.py, in greedy order among themselves.
+    """
+    if not os.path.exists(OUT):
+        return 0
+    prev = {}
+    with open(OUT, encoding='utf-8', newline='') as f:
+        for r in csv.DictReader(f, delimiter='\t'):
+            if str(r.get('study_order', '')).strip().isdigit():
+                prev[r['guid']] = (r['study_order'], r.get('study_day', ''))
+    if not prev:
+        return 0
+
+    hit = 0
+    for r in rows:
+        got = prev.get(r.get('guid', ''))
+        r['study_order'], r['study_day'] = got if got else ('', '')
+        if got:
+            hit += 1
+
+    lost = len(prev) - hit
+    if lost:
+        # A positioned word vanishing means an override dropped it or a source changed its
+        # script. Either is a real decision, but it must not happen by accident.
+        print(f'  WARNING: {lost} words had a study position and are no longer in the master')
+    return hit
+
+
 def main():
     records = []
     for name in ('lesson', 'core-gaps', 'site', 'anki', 'book1000', 'top1000', 'spoken-telugu'):  # earlier wins
@@ -263,8 +307,11 @@ def main():
 
     ids.assign(rows, 'W')
 
+    carried = carry_sequencing(rows)
+
     cols = ['id','guid','telugu','roman','english','pronunciation','pos','island','lemma',
-            'example','lesson','rank','source','raw_rom','flags','notes']
+            'example','lesson','rank','source','raw_rom','flags','notes',
+            'study_order','study_day']
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, 'w', newline='', encoding='utf-8') as f:
         w = csv.DictWriter(f, fieldnames=cols, delimiter='\t', extrasaction='ignore',
@@ -279,6 +326,8 @@ def main():
         for fl in r['flags']: fc[fl] += 1
         if not r['flags']: fc['clean'] += 1
     print(f'\n  master: {len(rows)} entries -> {os.path.relpath(OUT, ROOT)}')
+    if carried:
+        print(f'  carried {carried} existing study positions forward')
     for k in sorted(fc, key=lambda k: -fc[k]):
         print(f'    {k:<20} {fc[k]}')
 

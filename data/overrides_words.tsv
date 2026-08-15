@@ -6,3 +6,4 @@ telugu	action	english	example	notes	reason
 ऊदా	drop				Devanagari script, not Telugu — junk row from the old decks
 కీ	drop				fold collision with the dative -ki; not worth a card
 ఆ	edit	that (far demonstrative — ā pustakaṁ, "that book")	ā pustakaṁ balla mīda undi		The old deck glossed it "um... (pause filler)". It is the far demonstrative, pair of ī. Frequency put it at position 9, so it would have been the ninth word learned.
+ఈ	edit	this / these (before a noun — ī rōju "today"; standalone "these" is ivi)	ī rōju chālā vēḍigā undi.	Attributive only — ī never stands alone. Standalone: idi "this", ivi "these". Far pair: ā.	Was glossed bare "these", which is ivi's job and collides with it at position 235. The corpus has ī exclusively before a noun and ivi exclusively standalone. Its far pair ā was already corrected the same way; this one was missed. Surfaced on day 1 of review — it is card 2.

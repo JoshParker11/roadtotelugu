@@ -6,7 +6,7 @@
 #tags column:7
 #columns:guid	English	Romanized	TeluguScript	Audio	Example	Tags
 We62b6060c262	I	nēnu	నేను		nēnu vidyārthini.	src::lesson src::site src::anki src::book1000 src::top1000 cat::pronoun topic::pronouns-demonstratives set::001 day::001
-W4064f4d17d89	these	ī	ఈ			src::top1000 flag::multi-gloss set::001 day::001
+W4064f4d17d89	"this / these (before a noun — ī rōju ""today""; standalone ""these"" is ivi)"	ī	ఈ		ī rōju chālā vēḍigā undi.	src::top1000 flag::multi-gloss set::001 day::001
 W4b13ca8cc285	very / a lot; much	chālā	చాలా			src::anki src::top1000 topic::common-adjectives flag::multi-gloss set::001 day::001
 W8b11ef84fae5	is — observation right now (she/it)  [form of ఉండు]	undi	ఉంది		kāphī vēḍigā undi.	src::lesson src::anki src::top1000 topic::essential-verbs-existence-state flag::multi-gloss flag::verbform set::001 day::001
 W7af1f0718300	to me (nā + ku, never nēnu + ku)	nāku	నాకు		nāku nīḷḷu kāvāli.	src::lesson src::anki src::top1000 topic::pronouns-demonstratives flag::multi-gloss set::001 day::001

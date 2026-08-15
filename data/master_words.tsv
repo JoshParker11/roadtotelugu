@@ -579,7 +579,7 @@ W0577	Wdf8b2d8538fb	ఎలా ?	elā ?	How ?							14	book1000	Ela ?	phrase		450
 W0578	W9bb071edb475		Edi ? 2 ?	Which ?							15	book1000	Edi ? 2 ?	needs-script no-script			
 W0579	W4f668f6bbebc	కలిగి	kaligi	contain; have							15	top1000				1270	85
 W0580	Wf5e01b0d1ac4		Enni ? 2 ?	How Many ?							16	book1000	Enni ? 2 ?	needs-script no-script			
-W0581	W4064f4d17d89	ఈ	ī	these							16	top1000		multi-gloss	also: this	2	1
+W0581	W4064f4d17d89	ఈ	ī	"this / these (before a noun — ī rōju ""today""; standalone ""these"" is ivi)"					ī rōju chālā vēḍigā undi.		16	top1000		multi-gloss override	"Attributive only — ī never stands alone. Standalone: idi ""this"", ivi ""these"". Far pair: ā."	2	1
 W0582	W22e7bb271085	నుండి	nuṇḍi	since							17	top1000		bound-suffix multi-gloss	also: from		
 W0583	W66c0fe5aa421	ద్వారా	dvārā	through							18	top1000		multi-gloss	also: by	1271	85
 W0584	Wcfb6c89d2788	చేస్తుంది	chēstundi	he/she/it does (3rd person)	CHASE-toon-dih		Verb Drill	చేయి			20	anki,top1000	chestuMdi	inflected multi-gloss verbform	future of చేయి · also: does	833	56
