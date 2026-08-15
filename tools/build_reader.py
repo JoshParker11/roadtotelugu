@@ -119,6 +119,59 @@ def src_conversations():
     return out
 
 
+TS = re.compile(r'^(\d{2}):(\d{2}):(\d{2})\.(\d+)\s+(.*)$')
+
+
+def src_podcast():
+    """Raw Talks #139, 1h16m, Telugu script with a start time on every line.
+
+    LOCAL ONLY. A copyrighted YouTube episode: the audio is 105 MB — past GitHub's per-file
+    limit before the licence question even arises — and the transcript is the entire work.
+
+    Consecutive lines are merged up to a sentence-ish length. The transcript is auto-generated
+    caption chunks of two or three words each, and reading 2,595 fragments is nothing like
+    reading; but the *first* chunk's timestamp is kept so audio still seeks to the right place.
+    """
+    path = os.path.join(ROOT, 'sources', 'local', 'podcast-rawtalks-139.txt')
+    if not os.path.exists(path):
+        return []
+    raw = []
+    for line in open(path, encoding='utf-8'):
+        m = TS.match(line.rstrip('\n'))
+        if not m:
+            continue
+        h, mi, sec, ms, txt = m.groups()
+        t = int(h) * 3600 + int(mi) * 60 + int(sec) + int(ms) / 1000
+        if txt.strip():
+            raw.append((t, txt.strip()))
+
+    merged, buf, t0 = [], [], None
+    for t, txt in raw:
+        if t0 is None:
+            t0 = t
+        buf.append(txt)
+        if sum(len(x) for x in buf) >= 90:
+            merged.append((t0, ' '.join(buf)))
+            buf, t0 = [], None
+    if buf:
+        merged.append((t0, ' '.join(buf)))
+
+    # Sections of roughly five minutes, so the picker is navigable.
+    out, cur, start = [], [], merged[0][0] if merged else 0
+    for t, txt in merged:
+        if t - start > 300 and cur:
+            out.append({'title': stamp(start), 'lines': cur})
+            cur, start = [], t
+        cur.append((txt, '', t))
+    if cur:
+        out.append({'title': stamp(start), 'lines': cur})
+    return out
+
+
+def stamp(sec):
+    return f'{int(sec // 60):d}:{int(sec % 60):02d}'
+
+
 def src_textbook():
     """Public proxy: sentences already in the repo, so the live site has something to read."""
     with open(SENTS, encoding='utf-8', newline='') as f:
@@ -134,6 +187,11 @@ def src_textbook():
 
 
 SOURCES = {
+    'podcast': {'fn': src_podcast, 'private': True, 'prefix': 'local-',
+                'audio': 'audio/podcast-rawtalks-139.mp3',
+                'title': 'Raw Talks #139',
+                'blurb': 'Naga Vamsi on Raw Talks with VK — 1h16m of unscripted Telugu, with a '
+                         'lot of English written in Telugu script. Real speech, and hard.'},
     'conversations': {'fn': src_conversations, 'private': True,
                       'title': 'Family conversations',
                       'blurb': 'Recorded at home. Code-switched, Hyderabad register, and the '
@@ -228,19 +286,36 @@ def build(name, exact, approx, english):
     counts = Counter()
     for part in parts:
         lines = []
-        for te, en in part['lines']:
+        for row in part['lines']:
+            te, en = row[0], row[1]
+            t0 = row[2] if len(row) > 2 else None
             toks = resolve_line(te, exact, approx, english, lex, lexidx)
             for _, kind, _ in toks:
                 if kind != 'p':
                     counts[kind] += 1
-            lines.append({'t': toks, 'en': en})
+            ln = {'t': toks, 'en': en}
+            if t0 is not None:
+                ln['s'] = round(t0, 2)          # seek offset in seconds
+            lines.append(ln)
         sections.append({'title': part['title'], 'lines': lines})
 
+    # How often each word occurs in this text. The mining list is only useful sorted by it —
+    # a word said forty times is worth a decision, a hapax is not.
+    freq = Counter()
+    for sec in sections:
+        for ln in sec['lines']:
+            for _, kind, li in ln['t']:
+                if kind != 'p' and li >= 0:
+                    freq[li] += 1
+    for i, l in enumerate(lex):
+        l['n'] = freq.get(i, 0)
+
     data = {'slug': name, 'title': spec['title'], 'blurb': spec['blurb'],
-            'private': spec['private'], 'generated': date.today().isoformat(),
+            'private': spec['private'], 'audio': spec.get('audio', ''),
+            'generated': date.today().isoformat(),
             'counts': dict(counts), 'lex': lex, 'sections': sections}
 
-    prefix = 'private-' if spec['private'] else ''
+    prefix = spec.get('prefix', 'private-' if spec['private'] else '')
     out = os.path.join(OUTDIR, f'{prefix}{name}.js')
     os.makedirs(OUTDIR, exist_ok=True)
     var = 'READER_' + re.sub(r'[^A-Z0-9]', '', name.upper())

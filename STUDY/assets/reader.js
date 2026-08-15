@@ -90,7 +90,10 @@
         const key = lx >= 0 ? lexOf(lx).k : '';
         return `<span class="tk ${st}${kind === '~' ? ' approx' : ''}" data-l="${li}" data-t="${ti}" data-k="${esc(key)}">${esc(surface)}</span>`;
       }).join('');
-      return `<p class="rline"><span class="rte">${body}</span>` +
+      const cue = ln.s != null
+        ? `<button class="cue" data-seek="${ln.s}" title="Play from here">${clock(ln.s)}</button>` : '';
+      return `<p class="rline" data-li="${li}"${ln.s != null ? ` data-s="${ln.s}"` : ''}>` +
+             cue + `<span class="rte">${body}</span>` +
              (showEn && ln.en ? `<span class="ren">${esc(ln.en)}</span>` : '') + '</p>';
     }).join('');
   }
@@ -229,15 +232,15 @@
   $('#texts').addEventListener('click', e => {
     const b = e.target.closest('[data-slug]');
     if (!b) return;
-    slug = b.dataset.slug; section = 0;
+    slug = b.dataset.slug; section = 0; curLine = -1;
     write(K.pos, { slug });
-    renderPicker(); repaint(); closePanel();
+    renderPicker(); repaint(); closePanel(); setupAudio();
   });
 
   $('#sections').addEventListener('click', e => {
     const b = e.target.closest('[data-section]');
     if (!b) return;
-    section = +b.dataset.section;
+    section = +b.dataset.section; curLine = -1;
     renderPicker(); repaint(); closePanel();
     $('#reader').scrollIntoView({ block: 'start' });
   });
@@ -298,7 +301,159 @@
     }
   });
 
+  /* ---------- audio ----------
+   * One file, seeked — not 2,595 sliced clips. Slicing an hour of audio would mean shipping
+   * thousands of files, re-cutting them whenever the transcript changed, and losing the ability
+   * to run past the end of a line into the next. A timestamp per line does everything the
+   * clips would, and the transcript already carries one.
+   */
+  const clock = s => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, '0')}`;
+  const audio = new Audio();
+  let follow = true, sentence = false, curLine = -1;
+
+  function lineTimes() {
+    const sec = text().sections[section];
+    return sec ? sec.lines.map(l => (l.s == null ? null : l.s)) : [];
+  }
+
+  function setupAudio() {
+    const t = text();
+    $('#player').hidden = !t.audio;
+    if (!t.audio) { audio.pause(); audio.removeAttribute('src'); return; }
+    if (!audio.src.endsWith(t.audio)) {
+      audio.preload = 'metadata';
+      audio.src = t.audio;
+      pendingSeek = null;
+      audio.load();
+    }
+  }
+  audio.addEventListener('error', () => {
+    say('Audio not found — it is kept locally, not committed. Check STUDY/audio/.');
+  });
+
+  /* Seeking a file the browser has not read metadata for silently snaps back to 0 — which is
+     exactly what an hour-long mp3 does on the first click. Queue the seek until it can be
+     honoured, and re-apply once, rather than assuming currentTime is writable yet. */
+  let pendingSeek = null;
+  function seekTo(sec0) {
+    if (audio.readyState >= 1) { audio.currentTime = sec0; return true; }
+    pendingSeek = sec0;
+    return false;
+  }
+  audio.addEventListener('loadedmetadata', () => {
+    if (pendingSeek != null) { audio.currentTime = pendingSeek; pendingSeek = null; }
+  });
+
+  function playLine(sec0, li) {
+    curLine = li == null ? curLineAt(sec0) : li;
+    paintCurrent();
+    const ready = seekTo(sec0);
+    audio.play().catch(() => say('The browser blocked playback — press play once.'));
+    if (!ready) say('Loading the audio…');
+  }
+
+  function curLineAt(t) {
+    const ts = lineTimes();
+    let best = -1;
+    for (let i = 0; i < ts.length; i++) if (ts[i] != null && ts[i] <= t + 0.01) best = i;
+    return best;
+  }
+
+  function paintCurrent() {
+    document.querySelectorAll('.rline.playing').forEach(e => e.classList.remove('playing'));
+    const el = document.querySelector(`.rline[data-li="${curLine}"]`);
+    if (!el) return;
+    el.classList.add('playing');
+    if (follow) {
+      const r = el.getBoundingClientRect();
+      if (r.top < 90 || r.bottom > innerHeight - 80) el.scrollIntoView({ block: 'center', behavior: 'smooth' });
+    }
+  }
+
+  /* End of a line is the next line's start — the transcript gives starts only, which is all
+     that is needed for both sentence mode and looping. */
+  function endOf(li) {
+    const ts = lineTimes();
+    for (let i = li + 1; i < ts.length; i++) if (ts[i] != null) return ts[i];
+    return Infinity;
+  }
+
+  audio.addEventListener('timeupdate', () => {
+    if (pendingSeek != null) return;      // position is not meaningful until the seek lands
+    const ts = lineTimes();
+    if (!ts.length) return;
+    if (curLine >= 0 && (sentence || loopOn) && audio.currentTime >= endOf(curLine) - 0.05) {
+      if (loopOn) { audio.currentTime = ts[curLine]; return; }
+      audio.pause();
+      return;
+    }
+    const i = curLineAt(audio.currentTime);
+    if (i !== curLine) { curLine = i; paintCurrent(); }
+    $('#elapsed').textContent = clock(audio.currentTime);
+  });
+
+  let loopOn = false;
+
+  $('#reader').addEventListener('click', e => {
+    const c = e.target.closest('.cue');
+    if (!c) return;
+    e.stopPropagation();
+    playLine(+c.dataset.seek, +c.closest('.rline').dataset.li);
+  });
+
+  $('#play').addEventListener('click', () => {
+    if (audio.paused) {
+      if (curLine < 0) { const ts = lineTimes(); const i = ts.findIndex(x => x != null); if (i >= 0) return playLine(ts[i], i); }
+      audio.play();
+    } else audio.pause();
+  });
+  const syncPlay = () => { $('#play').textContent = audio.paused ? '▶' : '❚❚'; };
+  audio.addEventListener('play', syncPlay);
+  audio.addEventListener('pause', syncPlay);
+
+  $('#prev').addEventListener('click', () => step(-1));
+  $('#next').addEventListener('click', () => step(1));
+  function step(d) {
+    const ts = lineTimes();
+    let i = curLine + d;
+    while (i >= 0 && i < ts.length && ts[i] == null) i += d;
+    if (i < 0 || i >= ts.length) return;
+    playLine(ts[i], i);
+  }
+
+  $('#loop').addEventListener('click', () => {
+    loopOn = !loopOn;
+    $('#loop').classList.toggle('on', loopOn);
+    if (loopOn && audio.paused && curLine >= 0) playLine(lineTimes()[curLine], curLine);
+  });
+  $('#sentence').addEventListener('click', () => {
+    sentence = !sentence;
+    $('#sentence').classList.toggle('on', sentence);
+    $('#sentence').textContent = sentence ? 'Sentence mode' : 'Continuous';
+  });
+  $('#follow').addEventListener('click', () => {
+    follow = !follow;
+    $('#follow').classList.toggle('on', follow);
+    $('#follow').textContent = follow ? 'Following' : 'Not following';
+  });
+  $('#rate').addEventListener('input', e => {
+    audio.playbackRate = +e.target.value;
+    $('#ratenum').textContent = (+e.target.value).toFixed(2) + '×';
+  });
+
+  /* Space plays/pauses, arrows step lines — but only when no word panel is open, or the
+     shortcuts fight each other. */
+  document.addEventListener('keydown', e => {
+    const t = e.target;
+    if (t instanceof Element && t.matches('input, textarea')) return;
+    if (!$('#panel').hidden || $('#player').hidden) return;
+    if (e.key === ' ') { e.preventDefault(); $('#play').click(); }
+    else if (e.key === 'ArrowLeft') { e.preventDefault(); step(-1); }
+    else if (e.key === 'ArrowRight') { e.preventDefault(); step(1); }
+    else if (e.key.toLowerCase() === 'l') { e.preventDefault(); $('#loop').click(); }
+  });
+
   /* ---------- boot ---------- */
   $('#generated').textContent = text().generated;
-  renderPicker(); repaint();
+  renderPicker(); repaint(); setupAudio(); syncPlay();
 })();

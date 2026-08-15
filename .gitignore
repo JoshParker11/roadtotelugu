@@ -29,3 +29,9 @@ audio/
 
 # Reader pages baked from private sources — same rule as sources/private itself.
 STUDY/data/reader/private-*.js
+
+# Third-party content kept for personal study, not redistributed. The podcast is a copyrighted
+# YouTube episode: the audio alone is 105 MB (over GitHub's per-file limit anyway) and the full
+# transcript is the whole work. Both stay local; only the tooling that reads them is committed.
+sources/local/
+STUDY/data/reader/local-*.js

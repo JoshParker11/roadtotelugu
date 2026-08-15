@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Text analyzer | Study desk</title>
+<meta name="description" content="Paste Telugu and find out which words are worth learning first.">
+<meta name="theme-color" content="#191915">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;700&amp;family=Noto+Sans+Telugu:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/study.css">
+</head>
+<body>
+
+<a class="skip-link" href="#input">Skip to the input</a>
+
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="wrap">
+    <a class="logo" href="../index.html"><span>ప</span> study-desk</a>
+    <ul>
+      <li><a href="read.html">Reader</a></li>
+      <li><a href="analyze.html" aria-current="page">Analyzer</a></li>
+      <li><a href="words.html">Vocabulary queue</a></li>
+      <li><a href="drill.html">Sentence drill</a></li>
+      <li><a href="../GRAMMAR_LAB/index.html">Verb Lab</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="desk-header">
+  <div class="wrap">
+    <span class="eyebrow">Study desk · analysis</span>
+    <h1>Which words <em>first</em></h1>
+    <p class="lede">Paste a transcript, lyrics, anything in Telugu. It counts what is there,
+      checks it against what you know, and tells you how far twenty more words would get you.
+      Nothing is baked and nothing is uploaded — this runs in the page, so it can answer
+      “is this worth my time” before you commit to ingesting it.</p>
+  </div>
+</header>
+
+<main>
+
+<section>
+  <div class="wrap">
+    <div class="field" style="margin-bottom:12px">
+      <label for="name">Name this source</label>
+      <input type="text" id="name" placeholder="Raw Talks 139, Saranga Dariya, …" style="max-width:380px">
+    </div>
+    <textarea id="input" class="bigbox" spellcheck="false"
+      placeholder="Paste Telugu script or romanization here…"></textarea>
+    <div class="btn-row" style="margin-top:12px">
+      <button class="btn primary" id="btn-run" type="button">Analyse</button>
+      <button class="btn" id="btn-save" type="button">Save as a source</button>
+      <button class="btn" id="btn-csv" type="button">Export this as CSV</button>
+    </div>
+  </div>
+</section>
+
+<section id="result" hidden>
+  <div class="wrap">
+    <h2 id="r-title"></h2>
+    <div class="stats inline"><div class="wrap" id="r-stats"></div></div>
+    <div id="r-curve" style="margin-top:20px"></div>
+    <div id="r-split" class="splits"></div>
+    <h3 class="ophead">Every word, most frequent first</h3>
+    <div class="tablewrap" id="r-rows"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Saved sources</h2>
+    <p class="sub">Only the word counts are kept, never the text you pasted — the counts are the
+      point, and the source may not be yours to store.</p>
+    <div id="saved"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Across everything</h2>
+    <div id="totals"></div>
+    <div class="btn-row" style="margin-top:14px">
+      <button class="btn" id="btn-csv-all" type="button">Export all sources as CSV</button>
+      <button class="btn danger" id="btn-clear" type="button">Clear saved sources</button>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="note-box">
+      <b>How matching works here</b>
+      <p>Telugu script matches the master's script directly; romanization matches the folded
+        romanization. Both are exact — unlike the reader, this page does no approximate
+        matching, because a frequency table full of wrong glosses is worse than one with
+        honest gaps. Inflected forms will therefore show as unknown even when you know the
+        stem, which inflates the unknown count somewhat.</p>
+      <p>“Known” comes from the same store the reader and the vocabulary queue write, so all
+        three agree about what you know.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><span class="mono">road-to-telugu</span> · study desk</p>
+  </div>
+</footer>
+
+<script src="data/words.js"></script>
+<script src="assets/progress.js"></script>
+<script src="assets/analyze.js"></script>
+</body>
+</html>

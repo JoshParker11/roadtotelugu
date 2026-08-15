@@ -273,6 +273,25 @@ details.drawer>summary:hover{color:var(--cream)}
   .oprow .bar{grid-column:1/-1;order:3}
 }
 
+/* ---------- reader: audio ---------- */
+.player{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:12px;padding:10px 12px;
+  border:1px solid var(--line);border-radius:11px;background:var(--ink-2)}
+.pbtn{min-width:38px;height:34px;border:1px solid var(--line-strong);border-radius:9px;background:transparent;
+  color:var(--cream);cursor:pointer;font-size:12px;padding:0 9px}
+.pbtn:hover{border-color:var(--amber);color:var(--amber)}
+.pbtn.big{min-width:46px;font-size:14px}
+.player .chip kbd{margin-left:5px;border:1px solid var(--line-strong);border-radius:3px;font-family:inherit;font-size:9px;padding:0 4px}
+.rate{display:flex;align-items:center;gap:8px;color:var(--cream-dim);
+  font-family:'JetBrains Mono',monospace;font-size:11px}
+.rate input{width:96px;accent-color:var(--amber)}
+.elapsed{margin-left:auto;color:var(--cream-dim);font-family:'JetBrains Mono',monospace;font-size:12px}
+.cue{float:left;margin:4px 10px 0 0;border:1px solid var(--line-strong);border-radius:6px;background:transparent;
+  color:var(--cream-dim);cursor:pointer;font-family:'JetBrains Mono',monospace;font-size:10.5px;padding:2px 7px}
+.cue:hover{border-color:var(--amber);color:var(--amber)}
+.rline.playing{background:rgba(232,163,61,.07);border-left:2px solid var(--amber);
+  margin-left:-12px;padding-left:10px;border-radius:0 8px 8px 0}
+.rline.playing .cue{border-color:var(--amber);color:var(--amber)}
+
 /* ---------- reader ---------- */
 .readbar{position:sticky;top:0;z-index:45;background:rgba(25,25,21,.95);backdrop-filter:blur(12px);
   border-bottom:1px solid var(--line);padding:16px 0 14px}
@@ -342,6 +361,42 @@ details.drawer>summary:hover{color:var(--cream)}
 .minerow .need{color:var(--flame);font-family:'JetBrains Mono',monospace;font-size:11px;flex:1;min-width:140px}
 .minerow .tag.new{border-color:rgba(217,108,71,.5);color:var(--flame)}
 .amber{color:var(--amber)}
+
+/* ---------- analyzer ---------- */
+.bigbox{width:100%;min-height:220px;border:1px solid var(--line-strong);border-radius:var(--radius);
+  background:var(--ink-2);color:var(--cream);font-family:'Noto Sans Telugu','Inter',sans-serif;
+  font-size:15px;line-height:1.8;padding:16px;resize:vertical}
+.bigbox::placeholder{color:var(--cream-dim);font-family:'Inter',sans-serif}
+.stats.inline{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-top:6px}
+.stats.inline .wrap{width:100%;display:grid;grid-template-columns:repeat(auto-fit,minmax(118px,1fr))}
+.curve{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.cpt{display:flex;flex-direction:column;gap:2px;border:1px solid var(--line);border-radius:10px;
+  background:var(--ink-2);padding:10px 14px;min-width:92px}
+.cpt b{color:var(--amber);font-family:'Young Serif',serif;font-size:20px;font-weight:400}
+.cpt i{color:var(--cream-dim);font-family:'JetBrains Mono',monospace;font-size:10.5px;font-style:normal}
+.splits{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:9px;margin-top:16px}
+.split{border:1px solid var(--line);border-left:2px solid var(--moss);border-radius:10px;
+  background:var(--ink-2);padding:12px 15px;color:var(--cream-dim);font-size:13px}
+.split.warn{border-left-color:var(--flame)}
+.split b{color:var(--cream);font-family:'Young Serif',serif;font-size:19px;font-weight:400;margin-right:4px}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius)}
+table.freq{width:100%;border-collapse:collapse;font-size:13.5px;min-width:560px}
+table.freq th{position:sticky;top:0;background:var(--ink-3);color:var(--cream-dim);text-align:left;
+  font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;
+  padding:9px 12px;border-bottom:1px solid var(--line)}
+table.freq td{padding:7px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+table.freq tr:last-child td{border-bottom:none}
+table.freq .fn{color:var(--cream-dim);font-family:'JetBrains Mono',monospace;font-size:12px;text-align:right;width:1%}
+table.freq .fg{color:var(--cream-dim);max-width:34ch}
+table.freq .telugu{font-size:16px}
+.tag.known{border-color:rgba(143,163,126,.5);color:var(--moss)}
+.tag.seen{border-color:rgba(143,163,126,.3)}
+.tag.unseen{border-color:rgba(217,108,71,.5);color:var(--flame)}
+.tag.new{border-color:rgba(143,127,184,.5);color:var(--violet)}
+.srow{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;border:1px solid var(--line);
+  border-radius:10px;background:var(--ink-2);padding:10px 14px;margin-bottom:6px}
+.srow b{font-size:14.5px}
+.srow span{color:var(--cream-dim);font-family:'JetBrains Mono',monospace;font-size:11.5px;flex:1;min-width:140px}
 
 footer{padding:34px 0 50px}
 footer p{color:var(--cream-dim);font-size:12.5px}
