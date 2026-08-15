@@ -75,30 +75,38 @@ footer p+p{margin-top:5px}
   <div class="wrap">
     <span class="eyebrow">Personal learning system</span>
     <h1>Road to <em>Telugu</em></h1>
-    <p class="lede">A grammar-backed course built from one external resource, a conjugation lab for the 35 root verbs, and the Anki decks both of them feed. Built to be used every day rather than admired.</p>
+    <p class="lede">A grammar-backed course built from one external resource, a conjugation lab for 54 root verbs, a vocabulary queue that knows what you have met, and the Anki decks all of them feed. Built to be used every day rather than admired.</p>
   </div>
 </header>
 
 <section>
   <div class="wrap">
-    <h2>The two sites</h2>
-    <p class="sub">Both are static and work offline once loaded. Progress in the verb lab is stored in whichever browser you use it in — phone and laptop keep separate histories.</p>
+    <h2>The three sites</h2>
+    <p class="sub">All static, and all work offline once loaded. Progress is stored in whichever browser you use — phone and laptop keep separate histories, and each site can export its state.</p>
     <div class="cards">
 
       <a class="card" href="LEARNING_GUIDE/index.html">
         <span class="glyph">తె</span>
         <h3>Foundational Telugu</h3>
         <p>The course. Lessons in source order with morphology diagrams, deep dives written from real questions, controlled-input mini stories, song breakdowns, and an English sentence-stem list.</p>
-        <div class="meta"><span>6 lessons</span><span>2 deep dives</span><span>1 mini story</span><span>2 songs</span></div>
+        <div class="meta"><span>20 lessons</span><span>2 deep dives</span><span>1 mini story</span><span>2 songs</span></div>
         <span class="go">Open the course</span>
       </a>
 
       <a class="card" href="GRAMMAR_LAB/index.html">
         <span class="glyph">క్రి</span>
         <h3>Verb Lab</h3>
-        <p>Conjugation practice for 35 root verbs across 14 paradigms. Pick your verbs, drill interleaved cued production out loud, self-grade. Reference tables show stem and ending colour-coded.</p>
-        <div class="meta"><span>35 verbs</span><span>1,709 forms</span><span>spaced drill</span></div>
+        <p>Conjugation practice for 54 root verbs across 20 paradigms. Pick your verbs, drill interleaved cued production out loud, self-grade. Reference tables show stem and ending colour-coded.</p>
+        <div class="meta"><span>54 verbs</span><span>2,963 forms</span><span>spaced drill</span></div>
         <span class="go">Start a session</span>
+      </a>
+
+      <a class="card" href="STUDY/words.html">
+        <span class="glyph">ప</span>
+        <h3>Study desk</h3>
+        <p>The vocabulary queue: every word in the deck in study order. Set the day you started and it works out what you have met; mark by hand what you actually know, including words you already picked up at home.</p>
+        <div class="meta"><span>2,215 words</span><span>141 days</span><span>known / needs work</span></div>
+        <span class="go">Open the queue</span>
       </a>
 
     </div>
@@ -110,9 +118,11 @@ footer p+p{margin-top:5px}
     <h2>Anki source of truth</h2>
     <p class="sub">Two CSVs extracted from the course. Edit these and re-import; don't edit cards in Anki and expect the change to survive.</p>
     <div class="rows">
-      <div class="row"><b>anki/import_words.txt</b><span>2,010 words in the five-field note format, audio left blank</span></div>
+      <div class="row"><b>anki/import_words.txt</b><span>2,103 words in the five-field note format, in study order, audio left blank</span></div>
       <div class="row"><b>anki/import_sentences.txt</b><span>2,872 production sentences, with the extra English-audio field for HyperTTS</span></div>
       <div class="row"><b>tools/build_exports.py</b><span>Regenerates both from data/master_*.tsv</span></div>
+      <div class="row"><b>tools/sequence.py</b><span>Sets the study order and the day each sentence becomes readable</span></div>
+      <div class="row"><b>tools/build_studydata.py</b><span>Publishes the same master to the study desk, so the site and the deck cannot drift</span></div>
     </div>
     <p class="sub" style="margin:18px 0 0">Details and the Anki import mapping are in <a href="anki/README.md">anki/README.md</a>.</p>
   </div>

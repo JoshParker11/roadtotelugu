@@ -8,7 +8,7 @@ conjugation lab, and the Anki decks both feed. Static HTML, no build step, no de
 | Directory | What it is |
 |---|---|
 | [`LEARNING_GUIDE/`](LEARNING_GUIDE/) | The course — lessons in source order, deep dives, mini stories, songs, sentence stems |
-| [`GRAMMAR_LAB/`](GRAMMAR_LAB/) | Verb Lab — 35 root verbs, 14 paradigms, interleaved production drill ([readme](GRAMMAR_LAB/README.md)) |
+| [`GRAMMAR_LAB/`](GRAMMAR_LAB/) | Verb Lab — 54 root verbs, 20 paradigms, interleaved production drill ([readme](GRAMMAR_LAB/README.md)) |
 | [`anki/`](anki/) | Source-of-truth CSVs for the word and sentence decks ([readme](anki/README.md)) |
 
 ## The idea

@@ -165,15 +165,64 @@ convention not error, so it is mechanically convertible when wanted.
 
 ---
 
+## The study desk
+
+`STUDY/words.html` — the whole word master as one ordered queue, built 2026-08-14. Third static
+site alongside the course and the Verb Lab, and the surface the drill and the daily log will
+share.
+
+**Two kinds of state, and the split is the design.** Which words you have *met* is derived, not
+stored: the master is already an ordered curriculum, so a start date and a rate settle all 2,103
+at once, and storing 2,103 booleans to represent one date would be a database that can disagree
+with itself. Which words you *know* cannot be derived from anything — it is a judgement — so it
+is stored per word.
+
+| | where | shape |
+|---|---|---|
+| Schedule | `rtt.setup` | `{start, rate, skip}` — `skip` subtracts days you took no new cards |
+| Known | `rtt.known` | `{guid: date-marked}` |
+| Needs work | `rtt.hard` | `{guid: date-marked}` |
+
+**Keyed by guid**, the sha1 of the Telugu script from `tools/ids.py` — which is what makes hand
+marking safe to keep. Re-run the pipeline, re-export, re-import, and every mark still points at
+the word it was made about. A row number would not survive one insertion.
+
+`STUDY/assets/progress.js` owns all of it and touches no DOM, so the log and the drill read the
+same state rather than each inventing their own. `exportState()` emits `{setup, known, hard}` —
+already the shape a Python consumer would want, so nothing has to be reshaped later.
+
+`tools/build_studydata.py` publishes `data/master_words.tsv` to `STUDY/data/words.js`. It reads
+the **master**, not `anki/import_words.txt`: the Anki file is disposable output with five fields
+and no order, day, island or lesson. A `.js` file rather than `.json` because `fetch()` is
+blocked under `file://` and the site has to work opened from the folder — the same reason the
+Verb Lab ships `verbs.js`.
+
+**Marking words known ahead of schedule is the point**, not a side feature. Words picked up at
+home are free vocabulary the sentence drill can use immediately, and nothing but you knows which
+they are. The "By theme" grouping exists for exactly that sweep.
+
+---
+
 ## What to build next, in order
 
-1. **Inbox + weekly ingest.** `log/inbox.md`, append-only, no format — type a line whenever, from
+1. **The daily log, as a page.** Requested alongside the word list and deliberately deferred to
+   second. Constraint from the learner, and it is the right one: *it must not be overhead that
+   gets dropped when it stops feeling worth it.* So the entry writes itself — the day's fifteen
+   words are already known from the schedule, and the marks made that day are already dated in
+   `rtt.known` / `rtt.hard`. What is left for a human is one optional prose box.
+
+   Keep the two halves separate the way `session_log.py` already does: the objective half is read
+   from data nobody has to type, and the only field worth discipline is **"what I could not
+   say"**. See the inbox item below — they are the same feature approached from two directions,
+   and should be built as one.
+
+2. **Inbox + weekly ingest.** `log/inbox.md`, append-only, no format — type a line whenever, from
    anywhere. One weekly command parses what it can, stages new words for the masters, and folds
    the rest into dated log entries with the Anki numbers auto-filled. **This is the only item with
    a deadline**: numbers can be reconstructed later, what you were thinking on day 4 cannot.
    Weekly rather than daily, so the append-only order stays stable.
 
-2. **The recombination drill.** A page, not a terminal tool — it has to run during the session,
+3. **The recombination drill.** A page, not a terminal tool — it has to run during the session,
    record state for free, and work on a phone. Same architecture as the Verb Lab: data generated
    offline into JSON, drill runs static, state in `localStorage`.
 
@@ -189,19 +238,19 @@ convention not error, so it is mechanically convertible when wanted.
    recombined by person. Tense swaps are always safe. **Person swaps are not** — `ikkaḍa okaṭi
    undi` → `nēnu ikkaḍa okaṭi unnānu` is grammatical and nonsense — so restrict them to the 131.
 
-3. **Text-analysis page.** Paste Telugu, get: coverage against the known set; the unlock curve
+4. **Text-analysis page.** Paste Telugu, get: coverage against the known set; the unlock curve
    ("learn the top 20 unknown words from *this text* and coverage goes 34% → 58%"); the text
    rendered with known words dimmed; and the sentences already at N+1. **Split unknown words into
    two piles** — already in the master at position 400 (arrives day 27) versus not in the master
    at all. Those need opposite actions and lumping them hides the only decision the page exists
    to support. Plus **projected comprehensibility**: a day slider turns "someday" into a date.
 
-4. **The podcast.** An hour of audio with a timestamped transcript, supplied but not yet ingested.
+5. **The podcast.** An hour of audio with a timestamped transcript, supplied but not yet ingested.
    At this vocabulary the point is not comprehension: it is (a) becoming a frequency corpus that
    votes on the word order, as the family recordings already do, (b) the playlist of lines already
    at 100% coverage — real native audio, comprehensible now, and (c) a number to aim at.
 
-5. **Course leftovers, not blocking.** Six one-minute story videos (11, 12, 15, 17, 18, 20), Quiz
+6. **Course leftovers, not blocking.** Six one-minute story videos (11, 12, 15, 17, 18, 20), Quiz
    5 and Practice Test 2, and ~20 minutes of conversation and cultural-immersion lessons the
    learner has deliberately deferred as outside the core.
 
@@ -209,7 +258,7 @@ convention not error, so it is mechanically convertible when wanted.
 
 | Thread | Blocked on |
 |---|---|
-| The clean re-import | Ready. See `anki/IMPORT.md` — delete both note types, then import. One time only. |
+| The clean re-import | **Done 2026-08-14.** Both note types deleted and re-imported against content-derived guids. The order is now append-only; `sequence.py --reorder` is a mistake from here on. |
 | `review/questions.md` | 12 questions for a native speaker, consolidated. Ten minutes with his wife clears most of them. |
 | `review/*.tsv` triage | 355 rows, 0 decided. `book-script-mismatch.tsv` is the only actively wrong Telugu in the project. |
 | Commute audio | `brew install ffmpeg`, plus HyperTTS actually run. |

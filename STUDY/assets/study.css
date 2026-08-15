@@ -1,0 +1,206 @@
+/* Study desk — shares the Foundational Telugu design tokens. */
+
+:root{
+  --ink:#191915; --ink-2:#22221d; --ink-3:#2c2c25;
+  --cream:#f1ece0; --cream-dim:#b9b3a4;
+  --amber:#e8a33d; --moss:#8fa37e; --flame:#d96c47; --violet:#8f7fb8;
+  --line:rgba(241,236,224,.12); --line-strong:rgba(241,236,224,.22);
+  --radius:14px; --max:1180px; --navh:60px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{background:var(--ink);color:var(--cream);font-family:'Inter',sans-serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%}
+a{color:var(--amber)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--amber);outline-offset:2px;border-radius:4px}
+h1,h2,h3{font-family:'Young Serif',serif;font-weight:400;line-height:1.14;text-wrap:balance}
+.telugu,.tel{font-family:'Noto Sans Telugu',sans-serif}
+.mono{font-family:'JetBrains Mono',monospace}
+.wrap{width:min(var(--max),calc(100% - 40px));margin:0 auto}
+.skip-link{position:fixed;top:12px;left:12px;z-index:100;transform:translateY(-190%);background:var(--amber);color:var(--ink);padding:8px 12px;font-weight:700}
+.skip-link:focus{transform:none}
+[hidden]{display:none!important}
+
+/* nav */
+.site-nav{position:sticky;top:0;z-index:60;border-bottom:1px solid var(--line);background:rgba(25,25,21,.92);backdrop-filter:blur(12px)}
+.site-nav .wrap{display:flex;min-height:var(--navh);align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.logo{color:var(--cream);font-family:'JetBrains Mono',monospace;font-size:13.5px;font-weight:700;text-decoration:none}
+.logo span{color:var(--amber)}
+.site-nav ul{display:flex;align-items:center;gap:18px;list-style:none;flex-wrap:wrap}
+.site-nav ul a{color:var(--cream-dim);font-size:13px;font-weight:500;text-decoration:none}
+.site-nav ul a:hover,.site-nav ul a[aria-current="page"]{color:var(--amber)}
+
+/* header */
+.desk-header{position:relative;overflow:hidden;border-bottom:1px solid var(--line);padding:clamp(38px,7vw,64px) 0 clamp(28px,5vw,44px)}
+.desk-header::after{position:absolute;right:-24px;top:-64px;color:rgba(232,163,61,.05);content:"పదాలు";font-family:'Noto Sans Telugu',sans-serif;font-size:clamp(120px,22vw,280px);line-height:1;pointer-events:none;white-space:nowrap}
+.desk-header .wrap{position:relative;z-index:1}
+.eyebrow{display:block;margin-bottom:12px;color:var(--amber);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase}
+.desk-header h1{max-width:16ch;margin-bottom:14px;font-size:clamp(34px,6.2vw,58px)}
+.desk-header h1 em{color:var(--amber);font-style:normal}
+.lede{max-width:66ch;color:var(--cream-dim);font-size:clamp(14.5px,3.6vw,16.5px)}
+
+/* stats strip */
+.stats{border-bottom:1px solid var(--line)}
+.stats .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(132px,1fr));padding:0}
+.stat{min-height:88px;padding:16px 18px}
+.stat+.stat{border-left:1px solid var(--line)}
+.stat span{display:block;color:var(--cream-dim);font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase}
+.stat strong{display:block;margin-top:6px;font-family:'Young Serif',serif;font-size:22px;font-weight:400;line-height:1.1}
+.stat strong.amber{color:var(--amber)}
+.stat strong.moss{color:var(--moss)}
+.stat strong.flame{color:var(--flame)}
+.stat i{display:block;color:var(--cream-dim);font-size:11.5px;font-style:normal;margin-top:2px}
+@media(max-width:640px){.stat{min-height:0;padding:13px 14px}.stat+.stat{border-left:none}
+  .stats .wrap{grid-template-columns:repeat(2,1fr);gap:0}
+  .stat:nth-child(even){border-left:1px solid var(--line)}
+  .stat:nth-child(n+3){border-top:1px solid var(--line)}}
+
+section{border-bottom:1px solid var(--line);padding:clamp(30px,5vw,48px) 0}
+section h2{font-size:clamp(23px,4.4vw,31px);margin-bottom:6px}
+section .sub{color:var(--cream-dim);font-size:14px;margin-bottom:20px;max-width:70ch}
+
+/* ---------- schedule setup ---------- */
+.setup{border:1px solid var(--line);border-radius:var(--radius);background:var(--ink-2);padding:20px 22px}
+.setup.unset{border-color:rgba(232,163,61,.5)}
+.setup-grid{display:flex;flex-wrap:wrap;align-items:flex-end;gap:16px 22px}
+.field{display:flex;flex-direction:column;gap:5px}
+.field label{color:var(--cream-dim);font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase}
+.field input{width:100%;border:1px solid var(--line-strong);border-radius:9px;background:var(--ink);color:var(--cream);
+  font-family:'JetBrains Mono',monospace;font-size:14px;padding:9px 11px}
+.field input::-webkit-calendar-picker-indicator{filter:invert(.75) sepia(1) saturate(3) hue-rotate(1deg)}
+.field.date input{min-width:170px}
+.field.num input{width:86px}
+.field small{color:var(--cream-dim);font-size:11.5px;max-width:26ch;line-height:1.45}
+.setup-note{margin-top:14px;color:var(--cream-dim);font-size:12.5px;border-top:1px solid var(--line);padding-top:12px}
+.setup-note b{color:var(--amber);font-weight:600}
+
+/* ---------- today ---------- */
+.today-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 16px;margin-bottom:14px}
+.today-head h2{margin:0}
+.today-head .when{color:var(--cream-dim);font-family:'JetBrains Mono',monospace;font-size:12.5px}
+.today-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:9px}
+.twd{border:1px solid var(--line);border-radius:11px;background:var(--ink-2);padding:12px 14px;position:relative}
+.twd.is-known{border-color:rgba(143,163,126,.45);background:rgba(143,163,126,.07)}
+.twd.is-hard{border-color:rgba(217,108,71,.45);background:rgba(217,108,71,.07)}
+.twd .en{display:block;font-size:14.5px;font-weight:600;line-height:1.35}
+.twd .rom{display:block;color:var(--amber);font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:700;margin-top:4px}
+.twd .tg{display:block;color:var(--cream-dim);font-family:'Noto Sans Telugu',sans-serif;font-size:14.5px}
+.empty{border:1px dashed var(--line-strong);border-radius:var(--radius);color:var(--cream-dim);font-size:14px;padding:24px;text-align:center}
+
+/* ---------- controls ---------- */
+.controls{position:sticky;top:var(--navh);z-index:40;margin:-4px 0 18px;padding:14px 0 12px;
+  background:rgba(25,25,21,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.controls-row{display:flex;flex-wrap:wrap;align-items:center;gap:9px}
+.chip{border:1px solid var(--line-strong);border-radius:999px;background:transparent;color:var(--cream-dim);cursor:pointer;
+  font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:.03em;padding:6px 13px;white-space:nowrap}
+.chip:hover{border-color:var(--amber);color:var(--amber)}
+.chip.on{background:var(--amber);border-color:var(--amber);color:var(--ink);font-weight:700}
+.chip b{font-weight:400;opacity:.65;margin-left:5px}
+.chip.on b{opacity:.7}
+.search{flex:1;min-width:190px;border:1px solid var(--line-strong);border-radius:999px;background:var(--ink-2);color:var(--cream);
+  font-family:'Inter',sans-serif;font-size:14px;padding:8px 15px}
+.search::placeholder{color:var(--cream-dim)}
+.result-count{color:var(--cream-dim);font-family:'JetBrains Mono',monospace;font-size:12px;white-space:nowrap}
+.result-count b{color:var(--amber)}
+.seg{display:inline-flex;border:1px solid var(--line-strong);border-radius:999px;overflow:hidden}
+.seg button{border:none;background:transparent;color:var(--cream-dim);cursor:pointer;
+  font-family:'JetBrains Mono',monospace;font-size:11.5px;padding:6px 13px}
+.seg button.on{background:var(--line-strong);color:var(--cream)}
+
+/* ---------- the list ---------- */
+/* --stick is measured from the real nav + controls heights in words.js. Hard-coding it meant
+   day headers slid under the filter bar the moment the chips wrapped to another line. */
+.group-head{position:sticky;top:var(--stick,120px);z-index:30;display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;
+  margin:22px 0 7px;padding:8px 12px;border:1px solid var(--line);border-radius:10px;background:var(--ink-3)}
+.group-head:first-child{margin-top:0}
+.group-head b{font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--amber);letter-spacing:.04em}
+.group-head .gmeta{color:var(--cream-dim);font-family:'JetBrains Mono',monospace;font-size:11px}
+.group-head .gmark{margin-left:auto;border:1px solid var(--line-strong);border-radius:999px;background:transparent;color:var(--cream-dim);
+  cursor:pointer;font-family:'JetBrains Mono',monospace;font-size:10.5px;padding:3px 10px}
+.group-head .gmark:hover{border-color:var(--moss);color:var(--moss)}
+.group-head.past{border-left:2px solid var(--moss)}
+.group-head.now{border-color:rgba(232,163,61,.55);background:rgba(232,163,61,.09)}
+
+/* English glosses run long ("a / an (indefinite — optional, for emphasis)") while a
+   romanization is seven characters on average, so the columns are nothing like equal. */
+.wrow{display:grid;grid-template-columns:74px 42px minmax(0,2fr) minmax(0,.8fr) minmax(0,.8fr) minmax(0,1.15fr);
+  align-items:center;gap:12px;border:1px solid var(--line);border-left-width:2px;border-radius:10px;background:var(--ink-2);
+  padding:8px 12px;margin-bottom:5px;
+  /* Unfiltered, the list is a ~238,000px document. Skip layout and paint for rows that are
+     nowhere near the viewport; `auto` remembers each row's real height once measured, so the
+     scrollbar does not jump around as you go. */
+  content-visibility:auto;contain-intrinsic-size:auto 46px}
+.wrow.queued{opacity:.5}
+.wrow.seen{border-left-color:var(--line-strong)}
+.wrow.known{border-left-color:var(--moss);background:rgba(143,163,126,.06);opacity:1}
+.wrow.hard{border-left-color:var(--flame);background:rgba(217,108,71,.06)}
+.wrow.held{opacity:.45;border-left-color:var(--violet)}
+.wrow .ord{color:var(--cream-dim);font-family:'JetBrains Mono',monospace;font-size:11px;text-align:right}
+.wrow .en{font-size:14px;line-height:1.4;overflow-wrap:anywhere}
+.wrow .rom{color:var(--amber);font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:500;overflow-wrap:anywhere}
+.wrow .tg{font-family:'Noto Sans Telugu',sans-serif;font-size:15px;overflow-wrap:anywhere}
+.wrow .meta{display:flex;flex-wrap:wrap;gap:4px;justify-content:flex-end}
+.tag{border:1px solid var(--line);border-radius:999px;color:var(--cream-dim);font-family:'JetBrains Mono',monospace;
+  font-size:9.5px;letter-spacing:.05em;padding:2px 7px;white-space:nowrap}
+.tag.held{border-color:rgba(143,127,184,.5);color:var(--violet)}
+.tag.day{border-color:rgba(232,163,61,.35);color:var(--amber)}
+
+.marks{display:flex;gap:5px}
+.mk{width:32px;height:30px;border:1px solid var(--line-strong);border-radius:8px;background:transparent;color:var(--cream-dim);
+  cursor:pointer;font-family:'JetBrains Mono',monospace;font-size:13px;line-height:1;padding:0}
+.mk:hover{border-color:var(--cream-dim);color:var(--cream)}
+.mk.known.on{background:var(--moss);border-color:var(--moss);color:var(--ink);font-weight:700}
+.mk.hard.on{background:var(--flame);border-color:var(--flame);color:var(--ink);font-weight:700}
+
+@media(max-width:820px){
+  /* Six columns will not fit a phone, and stacking them one per line makes every row four
+     deep. Named areas instead: gloss on top, romanization and script sharing the second
+     line, tags on the third. */
+  .wrow{grid-template-columns:74px minmax(0,1fr) auto;
+    grid-template-areas:"mk en ord" "mk rom tg" "mk meta meta";
+    gap:2px 12px;padding:10px 12px}
+  .wrow .marks{grid-area:mk;align-self:start;margin-top:2px}
+  .wrow .en{grid-area:en}
+  .wrow .ord{grid-area:ord;align-self:start;font-size:10px}
+  .wrow .rom{grid-area:rom}
+  .wrow .tg{grid-area:tg;text-align:right}
+  .wrow .meta{grid-area:meta;justify-content:flex-start;margin-top:4px}
+  .wrow .meta .tag+.tag+.tag{display:none}   /* the third tag is always the least useful */
+
+  /* One scrolling row of chips rather than four stacked ones — at 375px the wrapped bar plus
+     the nav was taking 40% of the screen before a single word appeared. */
+  #filters{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  #filters::-webkit-scrollbar{display:none}
+  .controls-row .seg{order:2}
+  .result-count{order:3}
+}
+
+/* ---------- data drawer ---------- */
+details.drawer{border:1px solid var(--line);border-radius:var(--radius);background:var(--ink-2);padding:0}
+details.drawer>summary{cursor:pointer;list-style:none;padding:15px 20px;color:var(--cream-dim);
+  font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.05em}
+details.drawer>summary::-webkit-details-marker{display:none}
+details.drawer>summary::before{content:'▸ ';color:var(--amber)}
+details.drawer[open]>summary::before{content:'▾ '}
+details.drawer>summary:hover{color:var(--cream)}
+.drawer-body{border-top:1px solid var(--line);padding:18px 20px}
+.drawer-body p{color:var(--cream-dim);font-size:13px;margin-bottom:12px;max-width:70ch}
+.btn-row{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:12px}
+.btn{border:1px solid var(--line-strong);border-radius:9px;background:transparent;color:var(--cream);cursor:pointer;
+  font-family:'JetBrains Mono',monospace;font-size:12px;padding:8px 14px}
+.btn:hover{border-color:var(--amber);color:var(--amber)}
+.btn.danger:hover{border-color:var(--flame);color:var(--flame)}
+.drawer-body textarea{width:100%;min-height:120px;border:1px solid var(--line-strong);border-radius:9px;background:var(--ink);
+  color:var(--cream);font-family:'JetBrains Mono',monospace;font-size:11.5px;line-height:1.5;padding:11px;resize:vertical}
+.say{color:var(--moss);font-family:'JetBrains Mono',monospace;font-size:12px;min-height:1.4em}
+.say.bad{color:var(--flame)}
+
+/* note boxes */
+.note-box{border:1px solid var(--line);border-left:2px solid var(--moss);border-radius:var(--radius);background:var(--ink-2);padding:16px 20px}
+.note-box b{display:block;margin-bottom:6px;color:var(--moss);font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase}
+.note-box p{margin:0;color:var(--cream-dim);font-size:13.5px}
+.note-box p+p{margin-top:8px}
+
+footer{padding:34px 0 50px}
+footer p{color:var(--cream-dim);font-size:12.5px}
+footer p+p{margin-top:5px}

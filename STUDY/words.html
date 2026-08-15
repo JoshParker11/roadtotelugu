@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vocabulary queue | Study desk</title>
+<meta name="description" content="Every word in the Telugu deck in study order, with what has been introduced so far and what is already known.">
+<meta name="theme-color" content="#191915">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;700&amp;family=Noto+Sans+Telugu:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/study.css">
+</head>
+<body>
+
+<a class="skip-link" href="#queue">Skip to the word list</a>
+
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="wrap">
+    <a class="logo" href="../index.html"><span>ప</span> study-desk</a>
+    <ul>
+      <li><a href="words.html" aria-current="page">Vocabulary queue</a></li>
+      <li><a href="../LEARNING_GUIDE/index.html">Course</a></li>
+      <li><a href="../GRAMMAR_LAB/index.html">Verb Lab</a></li>
+      <li><a href="#backup">Backup</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="desk-header">
+  <div class="wrap">
+    <span class="eyebrow">Study desk · vocabulary</span>
+    <h1>Every word, <em>in order</em></h1>
+    <p class="lede">The whole deck as a single ordered queue — what has been introduced, what is coming, and
+      what you already know. Introduced is worked out from a start date and fifteen words a day. Known is
+      yours to mark, and nothing else can tell you.</p>
+  </div>
+</header>
+
+<div class="stats" aria-label="Progress">
+  <div class="wrap">
+    <div class="stat"><span>Today</span><div id="st-day"></div></div>
+    <div class="stat"><span>Introduced</span><div id="st-seen"></div></div>
+    <div class="stat"><span>Marked known</span><div id="st-known"></div></div>
+    <div class="stat"><span>Needs work</span><div id="st-hard"></div></div>
+    <div class="stat"><span>Sentences open</span><div id="st-sent"></div></div>
+    <div class="stat"><span>Queue remaining</span><div id="st-left"></div></div>
+  </div>
+</div>
+
+<main>
+
+<section id="schedule">
+  <div class="wrap">
+    <h2>The schedule</h2>
+    <p class="sub">Which words you have met is not something to tick off one by one — the master is already an
+      ordered curriculum, so a start date and a rate settle all 2,103 of them at once.</p>
+
+    <div class="setup" id="setup">
+      <div class="setup-grid">
+        <div class="field date">
+          <label for="in-start">Day 1 — first day of new cards</label>
+          <input type="date" id="in-start">
+        </div>
+        <div class="field num">
+          <label for="in-rate">New words / day</label>
+          <input type="number" id="in-rate" min="1" max="60" step="1">
+        </div>
+        <div class="field num">
+          <label for="in-skip">Days missed</label>
+          <input type="number" id="in-skip" min="0" step="1">
+        </div>
+        <div class="field">
+          <small>The calendar keeps moving whether or not you opened Anki. Bump “days missed”
+            when it gets ahead of you.</small>
+        </div>
+        <button class="btn" id="btn-today" type="button">Start today</button>
+      </div>
+      <p class="setup-note" id="setup-read"></p>
+    </div>
+  </div>
+</section>
+
+<section id="today">
+  <div class="wrap">
+    <div class="today-head">
+      <h2>Today's words</h2>
+      <span class="when" id="today-when"></span>
+    </div>
+    <div class="today-grid" id="today-list"></div>
+  </div>
+</section>
+
+<section id="queue">
+  <div class="wrap">
+    <h2>The queue</h2>
+    <p class="sub">✓ marks a word you know — worth doing for words further down the list that you already
+      picked up at home, since that is exactly what a sentence drill needs to know. ! flags one to come
+      back to.</p>
+
+    <div class="controls">
+      <div class="controls-row" id="filters" role="group" aria-label="Filter"></div>
+      <div class="controls-row" style="margin-top:9px">
+        <input class="search" id="search" type="search" placeholder="Search English, romanization or Telugu — diacritics optional" aria-label="Search words">
+        <span class="seg" id="grouping" role="group" aria-label="Grouping">
+          <button type="button" class="on" data-group="day">By day</button>
+          <button type="button" data-group="island">By theme</button>
+        </span>
+        <span class="result-count" id="count"></span>
+      </div>
+    </div>
+
+    <div id="list"></div>
+  </div>
+</section>
+
+<section id="backup">
+  <div class="wrap">
+    <details class="drawer">
+      <summary>Backup, and moving between devices</summary>
+      <div class="drawer-body">
+        <p>Marks are stored in this browser only, so your phone and your laptop keep separate lists —
+          the same caveat the Verb Lab carries. Export here, paste there.</p>
+        <p>Words are keyed by a hash of their Telugu script rather than a row number, so an export stays
+          valid across a rebuild of the deck: re-run the pipeline, re-import, and every mark still points
+          at the word it was made about.</p>
+        <div class="btn-row">
+          <button class="btn" id="btn-export" type="button">Show export</button>
+          <button class="btn" id="btn-download" type="button">Download</button>
+          <button class="btn" id="btn-import" type="button">Load from box</button>
+          <button class="btn danger" id="btn-reset" type="button">Clear everything</button>
+        </div>
+        <textarea id="io" spellcheck="false" placeholder="Progress JSON appears here on export — or paste one in and press Load."></textarea>
+        <p class="say" id="say"></p>
+      </div>
+    </details>
+
+    <div class="note-box" style="margin-top:20px">
+      <b>Where this data comes from</b>
+      <p>Generated from <span class="mono">data/master_words.tsv</span> by
+        <span class="mono">tools/build_studydata.py</span> — the same master that produces the Anki import,
+        so this list and the deck cannot drift apart. Last generated <span class="mono" id="generated"></span>.</p>
+      <p>Held-out rows are shown but carry no position: bound endings, words still missing their Telugu
+        script, and English words respelled in Telugu letters. They are excluded from the deck by
+        <span class="mono">tools/sequence.py</span>, and hiding them here would make the page quietly
+        disagree with the master about how many words exist.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><span class="mono">road-to-telugu</span> · study desk</p>
+    <p>Telugu here is draft until a native speaker has seen it — see the <a href="../review/questions.md">open questions</a>.</p>
+  </div>
+</footer>
+
+<script src="data/words.js"></script>
+<script src="assets/progress.js"></script>
+<script src="assets/words.js"></script>
+</body>
+</html>
