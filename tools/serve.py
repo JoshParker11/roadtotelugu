@@ -27,6 +27,11 @@ class RangeHandler(SimpleHTTPRequestHandler):
 
     def end_headers(self):
         self.send_header('Accept-Ranges', 'bytes')
+        # A dev server that lets the browser cache is a trap: re-run build_reader.py, reload,
+        # and the page quietly keeps serving the previous bake. Audio is exempt — caching a
+        # 105 MB file across seeks is the entire point of Range support.
+        if not self.path.lower().endswith(('.mp3', '.m4a', '.ogg', '.wav')):
+            self.send_header('Cache-Control', 'no-store')
         super().end_headers()
 
     def send_head(self):

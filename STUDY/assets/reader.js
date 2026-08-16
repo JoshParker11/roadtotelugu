@@ -28,6 +28,14 @@
   const _FOLD = { 'ā':'a','ī':'i','ū':'u','ē':'e','ō':'o','ṭ':'t','ḍ':'d','ṇ':'n','ḷ':'l','ṁ':'m','ṣ':'s','ś':'s','ṛ':'r' };
   const fold = s => (s || '').toLowerCase().replace(/[āīūēōṭḍṇḷṁṣśṛ]/g, c => _FOLD[c]).replace(/[^a-z]/g, '');
 
+  /* Paradigm ids as they read to a person. */
+  const FORMLABEL = { future: 'habitual / future', present: 'present continuous', past: 'past',
+    negFuture: 'negative future', negPast: 'negative past', negPresent: 'negative present',
+    immFuture: 'immediate future', impFam: 'imperative', impPol: 'polite imperative',
+    prohibFam: 'prohibitive', prohibPol: 'polite prohibitive', hort: "let's", must: 'must',
+    mustNot: 'must not', can: 'can', cannot: 'cannot', wantTo: 'want to',
+    dontWant: "don't want to", purpose: 'purposive', cond: 'conditional' };
+
   const TEXTS = window.READER_TEXTS || {};
 
   /* ---------- transcripts loaded in the browser ----------
@@ -181,7 +189,7 @@
         const st = stateOf(tok);
         const key = lx >= 0 ? lexOf(lx).k : '';
         const shown = (!script && tok[3]) ? tok[3] : surface;
-        return `<span class="tk ${st}${kind === '~' ? ' approx' : ''}${script && tok[3] ? ' script' : ''}"`
+        return `<span class="tk ${st}${(kind === '~' || kind === 's') ? ' approx' : ''}${script && tok[3] ? ' script' : ''}"`
              + ` data-l="${li}" data-t="${ti}" data-k="${esc(key)}">${esc(shown)}</span>`;
       }).join('');
       const cue = ln.s != null
@@ -237,13 +245,24 @@
       : `<h3>${esc(surface)}</h3>`;
     let body = '';
     if (lx && lx.en) {
-      body += `<p class="pgloss">${esc(lx.en)}</p>`;
+      if (!lx.p) body += `<p class="pgloss">${esc(lx.en)}</p>`;
       /* The heading already shows both forms for a script token. Repeat the deck's spelling
          only when it differs from what is on the page — which is the case worth seeing. */
       const sameAsHead = rom && fold(lx.r) === fold(rom);
       if (!sameAsHead) {
         body += `<p class="pforms"><span class="mono amber">${esc(lx.r)}</span>` +
                 (lx.te && lx.te !== surface ? ` <span class="telugu">${esc(lx.te)}</span>` : '') + '</p>';
+      }
+      if (lx.p) {
+        body += '<p class="pparts">' + lx.p.map(([a, b]) =>
+          `<span><b class="mono amber">${esc(a)}</b> ${esc(b)}</span>`).join('') + '</p>';
+        body += `<p class="pwarn">Split into a stem and an ending automatically. Right about
+          five times in six — check it reads sensibly before trusting it.</p>`;
+      }
+      if (lx.head) {
+        const f = FORMLABEL[lx.form] || lx.form;
+        body += `<p class="pmeta">${f ? esc(f) + ' of ' : 'a form of '}
+          <b class="mono amber">${esc(lx.head[0])}</b> — ${esc(lx.head[1])}</p>`;
       }
       if (kind === '~') {
         body += `<p class="pwarn">Matched approximately — the text spells it <span class="mono">${esc(surface.toLowerCase())}</span>,
@@ -481,11 +500,17 @@
     });
   };
 
+  function measureBars() {
+    const nav = document.querySelector('.site-nav').getBoundingClientRect().height;
+    const bar = $('#player').hidden ? 0 : $('#player').getBoundingClientRect().height;
+    document.documentElement.style.setProperty('--navh', nav + 'px');
+    document.documentElement.style.setProperty('--playh', bar + 'px');
+  }
+
   function setupPlayer() {
     const t = text();
     mode = t.youtube ? 'yt' : (t.audio ? 'audio' : 'none');
     $('#player').hidden = mode === 'none';
-    $('#ytwrap').hidden = mode !== 'yt';
 
     if (mode === 'audio') {
       if (!audio.src.endsWith(t.audio)) {
@@ -495,7 +520,9 @@
       audio.pause();
     }
     if (mode === 'yt' && !yt && window.YT && YT.Player) window.onYouTubeIframeAPIReady();
+    paintVideo();
     if (mode !== 'none' && !tick) tick = setInterval(onTick, 250);
+    measureBars();
   }
 
   function lineTimes() {
@@ -524,8 +551,14 @@
     if (!el) return;
     el.classList.add('playing');
     if (follow) {
+      /* The top of the readable area is whatever the nav and the transport strip leave behind.
+         Measured, because a constant here is what put the playing line under the header. */
+      const top = document.querySelector('.site-nav').getBoundingClientRect().height
+                + $('#player').getBoundingClientRect().height;
       const r = el.getBoundingClientRect();
-      if (r.top < 90 || r.bottom > innerHeight - 80) el.scrollIntoView({ block: 'center', behavior: 'smooth' });
+      if (r.top < top + 8 || r.bottom > innerHeight - 80) {
+        el.scrollIntoView({ block: 'center', behavior: 'smooth' });
+      }
     }
   }
 
@@ -604,6 +637,23 @@
 
   /* Fixed steps rather than a slider: YouTube only honours its own set of rates and silently
      ignores anything else, so a free slider would lie about what it was doing. */
+  let showVideo = read('rtt.readVideo', false);
+  function paintVideo() {
+    const t = text();
+    const on = showVideo && !!t.youtube;
+    /* The iframe must never be removed from the DOM — that tears the player down and makes the
+       next seek re-download. Hide the wrapper, keep the player alive. */
+    $('#ytwrap').hidden = !on;
+    $('#toggle-video').hidden = !t.youtube;
+    $('#toggle-video').classList.toggle('on', on);
+    measureBars();
+  }
+  $('#toggle-video').addEventListener('click', () => {
+    showVideo = !showVideo;
+    write('rtt.readVideo', showVideo);
+    paintVideo();
+  });
+
   $('#rates').addEventListener('click', e => {
     const b = e.target.closest('[data-rate]');
     if (!b) return;
@@ -674,5 +724,7 @@
   $('#generated').textContent = text().generated;
   $('#toggle-script').classList.toggle('on', script);
   $('#toggle-script').textContent = script ? 'Telugu script' : 'Romanized';
-  renderPicker(); repaint(); setupPlayer(); syncPlay();
+  renderPicker(); repaint(); setupPlayer(); syncPlay(); measureBars();
+  addEventListener('resize', measureBars);
+  if (window.ResizeObserver) new ResizeObserver(measureBars).observe($('#player'));
 })();

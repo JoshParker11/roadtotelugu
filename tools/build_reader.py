@@ -79,6 +79,44 @@ def loose(s):
     return t
 
 
+def load_verbforms(exact_by_te):
+    """Every conjugated cell the Verb Lab generates, keyed by its Telugu surface.
+
+    The Lab already produces ~2,900 of these and the reader was ignoring all of them, so
+    `untadi`, `chēstunnāru` and their kin fell through to "unknown" even though the headword
+    is in the deck and the paradigm is on another page of this same site. verbforms.json maps
+    surface -> {lemma, root, form}; the root is the headword's script, which the master can
+    gloss."""
+    path = os.path.join(HERE, 'verbforms.json')
+    if not os.path.exists(path):
+        return {}
+    vf = json.load(open(path, encoding='utf-8'))
+    out = {}
+    for surface, meta in vf.items():
+        head = exact_by_te.get((meta.get('root') or '').strip())
+        if head:
+            out[surface] = (head, meta.get('form', ''))
+    return out
+
+
+def load_suffixes(exact_by_te):
+    """The bound suffixes the master already glosses — -ki, -lō, -tō, -lu, -gā and friends.
+
+    Telugu is agglutinative, so matching whole surface forms against a headword list misses
+    most of a real transcript. Decomposing is not stripping: the word on the page is untouched
+    and both halves get shown, which for a case ending is the more useful half of the lesson.
+
+    Longest first, or -lu would win over -lugā."""
+    out = []
+    for te, r in exact_by_te.items():
+        if 'bound-suffix' not in r['flags']:
+            continue
+        t = te.strip('-').strip()
+        if len(t) >= 1:
+            out.append((t, r))
+    return sorted(out, key=lambda x: -len(x[0]))
+
+
 def load_lexicon():
     exact, approx = {}, defaultdict(list)
     with open(WORDS, encoding='utf-8', newline='') as f:
@@ -95,7 +133,14 @@ def load_lexicon():
             approx[loose(rom)].append(r)
     for k in approx:
         approx[k].sort(key=lambda r: int(r['study_order']) if str(r['study_order']).isdigit() else 99999)
-    return exact, approx
+
+    by_te = {}
+    with open(WORDS, encoding='utf-8', newline='') as f:
+        for r in csv.DictReader(f, delimiter='\t'):
+            te = (r['telugu'] or '').strip()
+            if te:
+                by_te.setdefault(te, r)
+    return exact, approx, by_te
 
 
 def load_english():
@@ -248,7 +293,7 @@ def bare(k, piece, lex, lexidx):
     return lexidx[k]
 
 
-def resolve_line(text, exact, approx, english, lex, lexidx):
+def resolve_line(text, LX, lex, lexidx):
     """-> [surface, kind, lexIndex, roman?]
 
     kind: t=exact ~=approx e=english n=name w=unknown p=punct
@@ -269,40 +314,98 @@ def resolve_line(text, exact, approx, english, lex, lexidx):
         # or place. These are a large share of the unknown tokens in real conversation, and
         # every one of them would otherwise land in the list of words to look up.
         is_name = (seen_word and piece[:1].isupper() and not TELUGU.search(piece)
-                   and k not in exact and k not in english and not approx.get(loose(k)))
+                   and k not in LX['exact'] and k not in LX['english']
+                   and not LX['approx'].get(loose(k)))
         seen_word = True
         rom = romanize(piece) if TELUGU.search(piece) else None
+        # The script form without trailing punctuation — what the verb-form and suffix indexes
+        # are keyed on, since both were built from clean master entries.
+        bare_te = piece.strip('.,?!;:"“”\'') if TELUGU.search(piece) else ''
 
         if is_name:
             out.append(tok_row(piece, 'n', bare(k, piece, lex, lexidx), rom))
             continue
-        hit = exact.get(k)
+        hit = LX['exact'].get(k)
         kind = 't'
-        if hit is None and k in english:
+        parts = None
+
+        # A conjugated cell the Verb Lab already generates. High confidence: the surface came
+        # out of the audited engine, and the headword is in the deck.
+        vform = ''
+        if hit is None and bare_te in LX['verbforms']:
+            hit, vform = LX['verbforms'][bare_te]
+            kind = 'v'
+
+        # Stem + a bound suffix the master glosses. Telugu is agglutinative; without this,
+        # sinimāki misses even though both halves are known.
+        if hit is None and bare_te:
+            got = decompose(bare_te, LX)
+            if got:
+                hit, parts = got
+                kind = 's'
+
+        if hit is None and k in LX['english']:
             out.append(tok_row(piece, 'e', bare(k, piece, lex, lexidx), rom))
             continue
         if hit is None:
-            cands = approx.get(loose(k))
+            cands = LX['approx'].get(loose(k))
             if cands:
                 hit, kind = cands[0], '~'
         if hit is None:
             out.append(tok_row(piece, 'w', bare(k, piece, lex, lexidx), rom))
             continue
-        gk = hit['guid']
+        # Decomposed words key on their own surface, not the stem's guid: marking sinimāki
+        # known must not silently mark every other form of sinimā known too.
+        gk = ('s:' + k) if parts else (('v:' + k) if kind == 'v' else hit['guid'])
         if gk not in lexidx:
             lexidx[gk] = len(lex)
-            lex.append({'k': k, 'r': hit['roman'], 'te': hit['telugu'], 'en': hit['english'],
-                        'o': int(hit['study_order']) if str(hit['study_order']).isdigit() else 0,
-                        'g': hit['guid']})
+            e = {'k': k, 'r': hit['roman'], 'te': hit['telugu'], 'en': hit['english'],
+                 'o': int(hit['study_order']) if str(hit['study_order']).isdigit() else 0,
+                 'g': '' if (parts or kind == 'v') else hit['guid']}
+            if kind == 'v':
+                # The form you clicked, plus the headword it belongs to — the headword alone
+                # would answer a question you did not ask.
+                e['r'] = rom or hit['roman']
+                e['te'] = bare_te
+                e['head'] = [hit['roman'], hit['english'][:60]]
+                e['form'] = vform
+            if parts:
+                e['p'] = parts
+                e['r'] = rom or hit['roman']
+                e['te'] = bare_te
+                e['en'] = ' + '.join(f'{a} ({b})' for a, b in parts)
+            lex.append(e)
         out.append(tok_row(piece, kind, lexidx[gk], rom))
     return out
+
+
+def decompose(te, LX):
+    """Split a Telugu surface into a known stem plus a known bound suffix.
+
+    Returns (stem_row, [[roman, gloss], ...]) or None. Only one suffix deep — two-suffix
+    stacks exist but each extra layer multiplies the chance of a wrong split, and one layer
+    already covers the case endings that do the damage."""
+    for suf, srow in LX['suffixes']:
+        if len(te) <= len(suf) or not te.endswith(suf):
+            continue
+        stem = te[:-len(suf)]
+        if len(stem) < 2:
+            continue
+        row = LX['by_te'].get(stem)
+        if row is None:
+            row = LX['exact'].get(fold(romanize(stem)))
+        if row is None:
+            continue
+        return row, [[row['roman'], row['english'][:60]],
+                     ['-' + srow['roman'].lstrip('-'), srow['english'][:60]]]
+    return None
 
 
 def tok_row(surface, kind, li, rom):
     return [surface, kind, li, rom] if rom else [surface, kind, li]
 
 
-def build(name, exact, approx, english):
+def build(name, LX):
     spec = SOURCES[name]
     parts = spec['fn']()
     if not parts:
@@ -316,7 +419,7 @@ def build(name, exact, approx, english):
         for row in part['lines']:
             te, en = row[0], row[1]
             t0 = row[2] if len(row) > 2 else None
-            toks = resolve_line(te, exact, approx, english, lex, lexidx)
+            toks = resolve_line(te, LX, lex, lexidx)
             for t in toks:
                 if t[1] != 'p':
                     counts[t[1]] += 1
@@ -361,8 +464,9 @@ def build(name, exact, approx, english):
           f'{"   [PRIVATE — gitignored]" if spec["private"] else ""}')
     print(f'    {len(sections)} sections, {tot} words, {len(lex)} distinct')
     if tot:
-        for kind, label in (('t', 'matched exactly'), ('~', 'matched approximately'),
-                            ('e', 'English'), ('w', 'unknown — to mine')):
+        for kind, label in (('t', 'matched exactly'), ('v', 'a Verb Lab form'),
+                            ('s', 'stem + suffix'), ('~', 'matched approximately'),
+                            ('e', 'English'), ('n', 'a name'), ('w', 'unknown — to mine')):
             n = counts.get(kind, 0)
             print(f'      {label:<24}{n:>6}  {n/tot*100:>4.0f}%')
     return out
@@ -382,16 +486,19 @@ def main():
             print(f"  {k:<16}{'PRIVATE  ' if v['private'] else '         '}{avail}")
         return
 
-    exact, approx = load_lexicon()
-    english = load_english()
-    print(f'lexicon: {len(exact)} exact keys, {len(approx)} loose keys, '
-          f'{len(english)} English words\n')
+    exact, approx, by_te = load_lexicon()
+    LX = {'exact': exact, 'approx': approx, 'by_te': by_te,
+          'english': load_english(),
+          'verbforms': load_verbforms(by_te),
+          'suffixes': load_suffixes(by_te)}
+    print(f"lexicon: {len(exact)} words, {len(LX['verbforms'])} verb forms, "
+          f"{len(LX['suffixes'])} bound suffixes, {len(LX['english'])} English words\n")
 
     names = list(SOURCES) if a.all else [a.source]
     for n in names:
         if n not in SOURCES:
             print(f'unknown source: {n}'); sys.exit(1)
-        build(n, exact, approx, english)
+        build(n, LX)
 
 
 if __name__ == '__main__':
