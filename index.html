@@ -4,152 +4,150 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Road to Telugu</title>
-<meta name="description" content="A personal Telugu learning system: a grammar-backed course, a verb conjugation lab, and the Anki source of truth.">
+<meta name="description" content="Course vocabulary progress, the lessons, and the reader.">
 <meta name="theme-color" content="#191915">
 <meta name="robots" content="noindex">
 <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23191915'/%3E%3Ctext x='32' y='45' font-size='38' text-anchor='middle' fill='%23e8a33d'%3E%E0%B0%A4%3C/text%3E%3C/svg%3E">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23191915'/%3E%3Ctext x='32' y='45' font-size='38' text-anchor='middle' fill='%23e8a33d'%3E%E0%B0%A4%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+Telugu:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-:root{
-  --ink:#191915;--ink-2:#22221d;--ink-3:#2c2c25;
-  --cream:#f1ece0;--cream-dim:#b9b3a4;
-  --amber:#e8a33d;--moss:#8fa37e;--flame:#d96c47;
-  --line:rgba(241,236,224,.12);--line-strong:rgba(241,236,224,.22);--radius:14px;
-}
-*{margin:0;padding:0;box-sizing:border-box}
-body{background:var(--ink);color:var(--cream);font-family:'Inter',sans-serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%}
-a{color:var(--amber)}
-h1,h2,h3{font-family:'Young Serif',serif;font-weight:400;line-height:1.12;text-wrap:balance}
-.telugu{font-family:'Noto Sans Telugu',sans-serif}
-.mono{font-family:'JetBrains Mono',monospace}
-.wrap{width:min(1080px,calc(100% - 40px));margin:0 auto}
-
-header{position:relative;overflow:hidden;border-bottom:1px solid var(--line);padding:clamp(48px,11vw,104px) 0 clamp(36px,7vw,60px)}
-header::after{position:absolute;right:-24px;top:-70px;color:rgba(232,163,61,.055);content:"తెలుగు";font-family:'Noto Sans Telugu',sans-serif;font-size:clamp(140px,30vw,330px);line-height:1;pointer-events:none;white-space:nowrap}
-header .wrap{position:relative;z-index:1}
-.eyebrow{display:block;margin-bottom:14px;color:var(--amber);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase}
-h1{max-width:14ch;margin-bottom:18px;font-size:clamp(42px,11vw,80px)}
-h1 em{color:var(--amber);font-style:normal}
-.lede{max-width:56ch;color:var(--cream-dim);font-size:clamp(15px,4vw,17px)}
-
-section{border-bottom:1px solid var(--line);padding:clamp(40px,8vw,64px) 0}
-h2{font-size:clamp(26px,6vw,36px);margin-bottom:8px}
-.sub{color:var(--cream-dim);font-size:14.5px;margin-bottom:26px;max-width:62ch}
-
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px}
-.card{display:block;border:1px solid var(--line);border-radius:var(--radius);background:var(--ink-2);
-  padding:26px 24px 22px;text-decoration:none;color:inherit;transition:border-color .12s,background .12s}
-.card:hover,.card:focus-visible{border-color:rgba(232,163,61,.45);background:var(--ink-3);outline:none}
-.card .glyph{display:block;font-family:'Noto Sans Telugu',sans-serif;font-size:34px;color:var(--amber);line-height:1;margin-bottom:16px}
-.card h3{font-family:'Inter',sans-serif;font-size:20px;font-weight:600;margin-bottom:8px}
-.card p{color:var(--cream-dim);font-size:14px;margin-bottom:14px}
-.card .meta{display:flex;flex-wrap:wrap;gap:7px}
-.card .meta span{border:1px solid var(--line);border-radius:999px;color:var(--cream-dim);
-  font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;padding:3px 9px}
-.card .go{display:block;margin-top:16px;color:var(--amber);font-family:'JetBrains Mono',monospace;font-size:11.5px;font-weight:700}
-.card .go::after{content:' →'}
-
-.rows{display:grid;gap:9px}
-.row{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 14px;border:1px solid var(--line);border-radius:11px;background:var(--ink-2);padding:13px 16px}
-.row b{font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:500;color:var(--amber)}
-.row span{color:var(--cream-dim);font-size:13.5px;flex:1;min-width:190px}
-
-.note{border:1px solid var(--line);border-left:2px solid var(--moss);border-radius:var(--radius);background:var(--ink-2);padding:18px 22px;margin-top:24px}
-.note b{display:block;margin-bottom:6px;color:var(--moss);font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase}
-.note p{color:var(--cream-dim);font-size:13.5px}
-.note p+p{margin-top:8px}
-.note.warn{border-left-color:var(--flame)}
-.note.warn b{color:var(--flame)}
-
-footer{padding:38px 0 54px}
-footer p{color:var(--cream-dim);font-size:13px}
-footer p+p{margin-top:5px}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;700&amp;family=Noto+Sans+Telugu:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="STUDY/assets/study.css">
 </head>
 <body>
 
-<header>
+<a class="skip-link" href="#do">Skip to today</a>
+
+<nav class="site-nav" aria-label="Main navigation">
   <div class="wrap">
-    <span class="eyebrow">Personal learning system</span>
-    <h1>Road to <em>Telugu</em></h1>
-    <p class="lede">A grammar-backed course built from one external resource, a conjugation lab for 54 root verbs, a vocabulary queue that knows what you have met, and the Anki decks all of them feed. Built to be used every day rather than admired.</p>
+    <a class="logo" href="index.html"><span>త</span> road-to-telugu</a>
+    <ul>
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="STUDY/read.html">Reader</a></li>
+      <li><a href="STUDY/words.html">Vocabulary</a></li>
+      <li><a href="LEARNING_GUIDE/index.html">Course</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="desk-header">
+  <div class="wrap">
+    <span class="eyebrow">Course vocabulary</span>
+    <h1 id="headline"></h1>
+    <div class="bigbar" id="bar"></div>
+    <p class="barkey">
+      <span><i class="sw b-known"></i>known</span>
+      <span><i class="sw b-met"></i>met in Anki, not yet marked</span>
+      <span><i class="sw b-rest"></i>still to come</span>
+    </p>
   </div>
 </header>
 
-<section>
+<div class="stats"><div class="wrap" id="nums"></div></div>
+
+<main>
+
+<section id="do">
   <div class="wrap">
-    <h2>The three sites</h2>
-    <p class="sub">All static, and all work offline once loaded. Progress is stored in whichever browser you use — phone and laptop keep separate histories, and each site can export its state.</p>
-    <div class="cards">
+    <div class="note-box caution" id="setup-warn" hidden>
+      <b>No start date yet</b>
+      <p>Everything on this page counts from the day you took your first new cards. Set it on
+        the <a href="STUDY/words.html">vocabulary queue</a> and the numbers fill in.</p>
+    </div>
 
-      <a class="card" href="LEARNING_GUIDE/index.html">
-        <span class="glyph">తె</span>
-        <h3>Foundational Telugu</h3>
-        <p>The course. Lessons in source order with morphology diagrams, deep dives written from real questions, controlled-input mini stories, song breakdowns, and an English sentence-stem list.</p>
-        <div class="meta"><span>20 lessons</span><span>2 deep dives</span><span>1 mini story</span><span>2 songs</span></div>
-        <span class="go">Open the course</span>
-      </a>
-
-      <a class="card" href="GRAMMAR_LAB/index.html">
-        <span class="glyph">క్రి</span>
-        <h3>Verb Lab</h3>
-        <p>Conjugation practice for 54 root verbs across 20 paradigms. Pick your verbs, drill interleaved cued production out loud, self-grade. Reference tables show stem and ending colour-coded.</p>
-        <div class="meta"><span>54 verbs</span><span>2,963 forms</span><span>spaced drill</span></div>
-        <span class="go">Start a session</span>
-      </a>
-
-      <a class="card" href="STUDY/words.html">
+    <div class="cards two">
+      <a class="card" href="STUDY/read.html">
         <span class="glyph">ప</span>
-        <h3>Study desk</h3>
-        <p>The reader, the vocabulary queue and the sentence drill. Read a text with every word marked known, learning or new, mine the rest into the deck, and drill the sentences your vocabulary has already opened.</p>
-        <div class="meta"><span>reader</span><span>2,215 words</span><span>1,409 sentences</span></div>
-        <span class="go">Open the study desk</span>
+        <h3>Reader</h3>
+        <p>Audio with the transcript, every word marked known, learning or new. This is the
+          hour.</p>
+        <span class="go">Open the reader</span>
       </a>
+      <a class="card" href="STUDY/words.html">
+        <span class="glyph">జా</span>
+        <h3>Vocabulary queue</h3>
+        <p>The whole deck in study order. Filter it to just the course words, and mark what you
+          already know.</p>
+        <span class="go">Open the queue</span>
+      </a>
+    </div>
 
+    <div id="today-wrap" hidden>
+      <div class="today-head" style="margin-top:30px">
+        <h2>Today's course words</h2>
+        <span class="when" id="today-when"></span>
+      </div>
+      <div class="today-grid" id="today"></div>
     </div>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <h2>Anki source of truth</h2>
-    <p class="sub">Two CSVs extracted from the course. Edit these and re-import; don't edit cards in Anki and expect the change to survive.</p>
-    <div class="rows">
-      <div class="row"><b>anki/import_words.txt</b><span>2,103 words in the five-field note format, in study order, audio left blank</span></div>
-      <div class="row"><b>anki/import_sentences.txt</b><span>2,872 production sentences, with the extra English-audio field for HyperTTS</span></div>
-      <div class="row"><b>tools/build_exports.py</b><span>Regenerates both from data/master_*.tsv</span></div>
-      <div class="row"><b>tools/sequence.py</b><span>Sets the study order and the day each sentence becomes readable</span></div>
-      <div class="row"><b>tools/build_studydata.py</b><span>Publishes the same master to the study desk, so the site and the deck cannot drift</span></div>
-      <div class="row"><b>tools/build_drill.py</b><span>Publishes the unlockable sentences, with the words each one needs, to the drill</span></div>
-    </div>
-    <p class="sub" style="margin:18px 0 0">Details and the Anki import mapping are in <a href="anki/README.md">anki/README.md</a>.</p>
+    <h2>The course</h2>
+    <p class="sub">Twenty lessons, and how much of each one's vocabulary you have marked known.
+      This is the finite part — when it runs out, mined words take over.</p>
+    <div id="lessons" class="lessons"></div>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <h2>Where this is honest with you</h2>
-    <div class="note warn">
-      <b>Telugu here is draft until a native speaker sees it</b>
-      <p>The course lessons are extracted from an external resource. The mini story, the assembled sentence scripts, and every verb paradigm in the Verb Lab were generated and have not been checked by a proficient Telangana speaker. Individual forms cross-check against each other, which is reassuring about the method, not proof about any given cell.</p>
-      <p>The Verb Lab's <a href="GRAMMAR_LAB/review.html">review page</a> exists for exactly this: six questions settle a verb, and a correction to one stem fixes its whole paradigm.</p>
-    </div>
-    <div class="note">
-      <b>Register</b>
-      <p>Everything targets educated colloquial Hyderabad/Telangana speech. A coastal speaker or a textbook will differ in places — <span class="mono">chebutānu</span> against <span class="mono">cheptānu</span>, <span class="mono">-āmu</span> against <span class="mono">-āṁ</span>. Neither is wrong. Follow what you actually hear at home.</p>
-    </div>
+    <details class="drawer">
+      <summary>Everything else — parked for now</summary>
+      <div class="drawer-body">
+        <p>All of this works and none of it is going away. It is folded up because the plan is
+          Anki plus the reader until the course vocabulary is exhausted, and a home page that
+          offers eight things is a home page that makes you choose between them.</p>
+        <div class="rows">
+          <div class="row"><b><a href="GRAMMAR_LAB/index.html">Verb Lab</a></b>
+            <span>54 root verbs, 20 paradigms, spaced production drill. Ten minutes when you feel like it.</span></div>
+          <div class="row"><b><a href="STUDY/drill.html">Sentence drill</a></b>
+            <span>1,409 sentences that escalate comprehend → produce → cloze → transform. Overlaps with reading; revisit later.</span></div>
+          <div class="row"><b><a href="STUDY/analyze.html">Text analyzer</a></b>
+            <span>Paste Telugu, get frequency and a coverage curve. A monthly tool, not a daily one.</span></div>
+          <div class="row"><b><a href="GRAMMAR_LAB/paradigms.html">Paradigm tables</a></b>
+            <span>Every conjugation, stem and ending colour-coded.</span></div>
+          <div class="row"><b><a href="GRAMMAR_LAB/review.html">Native review</a></b>
+            <span>The verbs whose stems are still unconfirmed.</span></div>
+          <div class="row"><b><a href="LEARNING_GUIDE/stems/index.html">Sentence stems</a></b>
+            <span>English frames to fill with what you know.</span></div>
+          <div class="row"><b><a href="LEARNING_GUIDE/songs/index.html">Songs</a></b>
+            <span>Two breakdowns, line by line.</span></div>
+          <div class="row"><b><a href="LEARNING_GUIDE/stories/index.html">Mini stories</a></b>
+            <span>Controlled input built from words already met.</span></div>
+        </div>
+      </div>
+    </details>
+
+    <details class="drawer" style="margin-top:10px">
+      <summary>Data and pipeline</summary>
+      <div class="drawer-body">
+        <div class="rows">
+          <div class="row"><b>data/master_*.tsv</b><span>Source of truth. Everything else is generated from these.</span></div>
+          <div class="row"><b>anki/import_words.txt</b><span>2,103 words in study order, regenerated by tools/build_exports.py</span></div>
+          <div class="row"><b>tools/build_reader.py</b><span>Bakes a text into the reader</span></div>
+          <div class="row"><b>tools/serve.py</b><span>Local server with Range support — needed for audio seeking</span></div>
+          <div class="row"><b><a href="review/questions.md">review/questions.md</a></b><span>Open questions for a native speaker</span></div>
+        </div>
+        <p style="margin-top:14px">Telugu here is draft until a native speaker has seen it. The
+          lessons are extracted from an external paid resource and are not a substitute for it.</p>
+      </div>
+    </details>
   </div>
 </section>
+
+</main>
 
 <footer>
   <div class="wrap">
-    <p><span class="mono">road-to-telugu</span> · a personal study project, shared in case it is useful</p>
-    <p>Course material is derived from an external paid resource and is not a substitute for it. The root-verb PDF it draws on is not redistributed here.</p>
+    <p><span class="mono">road-to-telugu</span> · a personal study project</p>
   </div>
 </footer>
 
+<script src="STUDY/data/words.js"></script>
+<script src="STUDY/data/lessons.js"></script>
+<script src="STUDY/assets/progress.js"></script>
+<script src="STUDY/assets/home.js"></script>
 </body>
 </html>

@@ -10,6 +10,10 @@
 (() => {
   const $ = s => document.querySelector(s);
   const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  /* This page reads everything else through Progress, but the scope toggle is a view
+     preference rather than learning state, so it does not belong in that store. */
+  const read = (k, d) => { try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch { return d; } };
+  const write = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} };
 
   /* rows are arrays; hydrate once */
   const F = WORD_DATA.fields;
@@ -26,9 +30,17 @@
   WORDS.forEach(w => { w.hay = fold(w.roman + ' ' + w.english + ' ' + w.island + ' ' + w.pos) + ' ' + w.telugu; });
 
   const BY_GUID = new Map(WORDS.map(w => [w.guid, w]));
+  /* Anything the lesson pages or the course site taught — 540 of the 2,103 scheduled words.
+     The rest came from frequency lists and the old decks, and are parked. */
+  const isCourse = w => /\b(lesson|site)\b/.test(w.source || '');
 
   /* ---------- view state (not persisted; it is a lens, not a decision) ---------- */
   let filter = 'all', group = 'day', query = '';
+  /* Course-vs-everything is a different axis from the status filters, so it is its own toggle
+     rather than another chip: "course words I have not learned yet" is the question, and one
+     chip list cannot answer a two-part question. Persisted — while the course is the plan,
+     this is set once and left. */
+  let scope = read('rtt.wordScope', 'all');
 
   /* One definition per filter, used by both the list and the chip counts. When those were two
      switch statements they disagreed about whether a known word still counts as introduced,
@@ -51,20 +63,23 @@
                        known: Progress.getKnown(), hard: Progress.getHard() });
 
   const matchesQuery = w => !query || w.hay.includes(query);
+  const inScope = w => scope === 'all' || isCourse(w);
 
   /* ---------- stats ---------- */
   const nf = n => n.toLocaleString('en-US');
 
   function renderStats() {
-    const s = Progress.summary(WORDS);
+    const pool = WORDS.filter(inScope);
+    const s = Progress.summary(pool);
     const configured = Progress.isConfigured();
-    const cap = Math.min(s.introduced, WORD_DATA.counts.scheduled);
+    const total = pool.filter(w => w.order).length;
+    const cap = Math.min(s.introduced, total);
 
     $('#st-day').innerHTML = configured
       ? `<strong class="amber">Day ${nf(s.day)}</strong><i>${dayDateLabel(s.day)}</i>`
       : `<strong class="amber">—</strong><i>set a start date</i>`;
     $('#st-seen').innerHTML =
-      `<strong>${nf(cap)}</strong><i>of ${nf(WORD_DATA.counts.scheduled)} · ${pct(cap, WORD_DATA.counts.scheduled)}</i>`;
+      `<strong>${nf(cap)}</strong><i>of ${nf(total)} · ${pct(cap, total)}</i>`;
     $('#st-known').innerHTML =
       `<strong class="moss">${nf(s.known)}</strong><i>${s.knownAhead ? nf(s.knownAhead) + ' ahead of schedule' : 'marked by hand'}</i>`;
     $('#st-hard').innerHTML =
@@ -72,7 +87,7 @@
     $('#st-sent').innerHTML =
       `<strong>${nf(sentencesUpTo(s.day))}</strong><i>of ${nf(WORD_DATA.counts.sentencesDated)} readable</i>`;
 
-    const left = WORD_DATA.counts.scheduled - cap;
+    const left = total - cap;
     $('#st-left').innerHTML = left > 0
       ? `<strong>${nf(Math.ceil(left / Progress.getSetup().rate))}</strong><i>days of new words left</i>`
       : `<strong class="moss">0</strong><i>queue complete</i>`;
@@ -194,8 +209,11 @@
 
   function renderList() {
     const c = ctx(), pred = PRED[filter];
-    const rows = WORDS.filter(w => pred(w, c) && matchesQuery(w));
-    $('#count').innerHTML = `<b>${nf(rows.length)}</b> of ${nf(WORDS.length)}`;
+    const rows = WORDS.filter(w => inScope(w) && pred(w, c) && matchesQuery(w));
+    // Denominator follows the scope, or "564 of 2,215" invites the question it just answered.
+    const pool = WORDS.filter(inScope).length;
+    $('#count').innerHTML = `<b>${nf(rows.length)}</b> of ${nf(pool)}`
+      + (scope === 'course' ? ' course words' : '');
     const host = $('#list');
     if (!rows.length) {
       host.innerHTML = `<p class="empty">Nothing matches. ${query ? 'Try a different search.' : 'Try another filter.'}</p>`;
@@ -209,7 +227,8 @@
   function renderChips() {
     const c = ctx();
     const n = Object.fromEntries(FILTERS.map(([id]) => [id, 0]));
-    WORDS.forEach(w => FILTERS.forEach(([id, , fn]) => { if (fn(w, c)) n[id]++; }));
+    // Counts respect the scope, or the chips would promise rows the list will not show.
+    WORDS.filter(inScope).forEach(w => FILTERS.forEach(([id, , fn]) => { if (fn(w, c)) n[id]++; }));
     $('#filters').innerHTML = FILTERS.map(([id, label]) =>
       `<button class="chip${filter === id ? ' on' : ''}" data-filter="${id}">${label}<b>${nf(n[id])}</b></button>`).join('');
   }
@@ -259,6 +278,15 @@
     const c = e.target.closest('.chip');
     if (!c) return;
     filter = c.dataset.filter; renderChips(); renderList();
+  });
+
+  $('#scope').addEventListener('click', e => {
+    const b = e.target.closest('button');
+    if (!b) return;
+    scope = b.dataset.scope;
+    write('rtt.wordScope', scope);
+    $('#scope').querySelectorAll('button').forEach(x => x.classList.toggle('on', x === b));
+    renderStats(); renderChips(); renderList();
   });
 
   $('#grouping').addEventListener('click', e => {
@@ -337,6 +365,7 @@
 
   /* ---------- boot ---------- */
   $('#generated').textContent = WORD_DATA.generated;
+  $('#scope').querySelectorAll('button').forEach(b => b.classList.toggle('on', b.dataset.scope === scope));
   renderSetup(); renderStats(); renderToday(); renderChips(); renderList();
   measureStick();
 })();

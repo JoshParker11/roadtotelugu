@@ -100,14 +100,20 @@
       back to.</p>
 
     <div class="controls">
-      <div class="controls-row" id="filters" role="group" aria-label="Filter"></div>
+      <div class="controls-row">
+        <span class="seg" id="scope" role="group" aria-label="Which words">
+          <button type="button" data-scope="all">All words</button>
+          <button type="button" data-scope="course">Course only</button>
+        </span>
+        <span class="result-count" id="count"></span>
+      </div>
+      <div class="controls-row" id="filters" role="group" aria-label="Filter" style="margin-top:9px"></div>
       <div class="controls-row" style="margin-top:9px">
         <input class="search" id="search" type="search" placeholder="Search English, romanization or Telugu — diacritics optional" aria-label="Search words">
         <span class="seg" id="grouping" role="group" aria-label="Grouping">
           <button type="button" class="on" data-group="day">By day</button>
           <button type="button" data-group="island">By theme</button>
         </span>
-        <span class="result-count" id="count"></span>
       </div>
     </div>
 
