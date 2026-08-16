@@ -121,9 +121,10 @@
     return document.body;
   }
 
-  function doPanel() {
+  function doPanel(root) {
     if (!opts.panel) return;
-    teluguNodes(panelRoot(), false).forEach(node => {
+    const scope = root && root.isConnected ? root : panelRoot();
+    teluguNodes(scope, false).forEach(node => {
       if (seen.has(node)) return;
       const original = node.nodeValue;
       const rom = romanize(original);
@@ -231,27 +232,62 @@
     n.dataset.trUnclipped = '1';
   }
 
-  /* ---------- run loop ---------- */
-  let timer = null, observer = null;
+  /* ---------- run loop ----------
+   * The panel used to be updated on a debounced observer: wait 250ms after the last mutation,
+   * then re-scan everything. Both halves of that were wrong.
+   *
+   * Debouncing waits for quiet, and a playing video never goes quiet — Language Reactor keeps
+   * touching the panel to track the active line, so each mutation reset the timer and the
+   * romanization could stay un-applied for as long as playback continued. That is the lag
+   * after clicking a word or reloading. A throttle runs *at least* every interval instead,
+   * which is what a continuously-changing page needs.
+   *
+   * And re-scanning the whole panel meant walking every row to find the one that changed.
+   * Only the added subtrees are scanned now, so a re-render costs work proportional to what
+   * was re-rendered rather than to the length of the transcript.
+   */
+  const INTERVAL = 60;
+  let timer = null, observer = null, sweep = null, lastRun = 0;
+  const pending = new Set();
+
+  function schedule() {
+    if (sweep) return;
+    const wait = Math.max(0, INTERVAL - (Date.now() - lastRun));
+    sweep = setTimeout(() => {
+      sweep = null;
+      lastRun = Date.now();
+      const roots = [...pending];
+      pending.clear();
+      if (roots.length > 40) doPanel();          // a wholesale repaint; one sweep is cheaper
+      else roots.forEach(r => doPanel(r));
+    }, wait);
+  }
 
   function start() {
     stop();
     if (!opts.enabled) return;
-    // Captions change several times a minute; polling is steadier and cheaper than observing
-    // a page that mutates constantly for reasons unrelated to us.
     timer = setInterval(doCaptions, 300);
-    observer = new MutationObserver(() => {
-      clearTimeout(observer._t);
-      observer._t = setTimeout(doPanel, 250);   // LR repaints its list in bursts
+    observer = new MutationObserver(muts => {
+      for (const m of muts) {
+        for (const n of m.addedNodes) {
+          if (n.nodeType === 1) pending.add(n);
+          else if (n.nodeType === 3 && n.parentElement) pending.add(n.parentElement);
+        }
+        // A row whose text was rewritten in place reports no added nodes, only characterData.
+        if (m.type === 'characterData' && m.target.parentElement) pending.add(m.target.parentElement);
+      }
+      if (pending.size) schedule();
     });
-    observer.observe(document.body, { childList: true, subtree: true });
+    observer.observe(document.body, { childList: true, subtree: true, characterData: true });
     doCaptions();
     doPanel();
   }
 
   function stop() {
     if (timer) { clearInterval(timer); timer = null; }
+    if (sweep) { clearTimeout(sweep); sweep = null; }
     if (observer) { observer.disconnect(); observer = null; }
+    pending.clear();
   }
 
   /* Put the page back the way it was, so switching schemes does not need a reload — and a
