@@ -149,49 +149,80 @@
     });
   }
 
-  /* Romanization runs longer than the script it replaces — often by half again — so rows that
-     were sized for Telugu clip it. LR's own classes are off limits, so instead: walk up from a
-     line we just changed and relax whatever is doing the clipping, on that element only.
-     Bounded to a few levels so a stray `overflow:hidden` high up in the page is left alone. */
+  /* Romanization runs about half again longer than the script it replaces, so rows sized for
+     Telugu cut it off.
+     
+     TWO EARLIER ATTEMPTS GUESSED AT WHICH PROPERTY WAS DOING THE CLIPPING — max-height, then
+     a fixed height — and each time some rows still clipped because it was the other one, or
+     something else again. Language Reactor's markup is not mine to read, so this measures
+     instead: an element that clips has scrollHeight greater than clientHeight. Find the one
+     that actually does, relax it, and check whether that worked.
+
+     And if it did not work, stop fighting the layout. A virtualised list positions every row
+     at a computed offset, so making a row taller makes it overlap its neighbour rather than
+     fit; there is no way to win that from outside. In that case the romanization is shrunk
+     just enough to fit the space that exists, which no layout can refuse. */
   function unclip(el) {
-    for (let n = el.parentElement, depth = 0; n && depth < 4; n = n.parentElement, depth++) {
-      if (n.dataset.trUnclipped) return;
-      const cs = getComputedStyle(n);
+    const box = clippingBox(el);
+    if (!box) return;
 
-      /* Stop at a scroll container and do not touch it. This is the fix for the transcript
-         list going blank: the previous version relaxed height and overflow on up to five
-         ancestors, one of which is the panel's own scroller, and a scroller with
-         overflow:visible and height:auto stops being a list. A scroller declares itself with
-         overflow-y auto or scroll — a clipped row never does. */
-      if (cs.overflowY === 'auto' || cs.overflowY === 'scroll') return;
-
-      // Rows are short. Anything tall is a container, and containers are not ours to resize.
-      const box = n.getBoundingClientRect();
-      if (box.height > 300) return;
-
-      let touched = false;
-      if (cs.webkitLineClamp && cs.webkitLineClamp !== 'none') {
-        n.style.webkitLineClamp = 'unset';
-        if (cs.display === '-webkit-box') n.style.display = 'block';
-        touched = true;
-      }
-      if (cs.maxHeight && cs.maxHeight !== 'none' && parseFloat(cs.maxHeight) < 300) {
-        n.style.maxHeight = 'none'; touched = true;
-      }
-      /* A fixed height clips just as effectively as max-height, and dropping this when the
-         function was made conservative is why three-line rows stayed cut off. Safe to handle
-         now: the scroller check above has already returned, so this only ever reaches a row. */
-      if (/^\d/.test(cs.height) && parseFloat(cs.height) < 300 &&
-          (cs.overflowY === 'hidden' || cs.overflow === 'hidden' ||
-           (cs.webkitLineClamp && cs.webkitLineClamp !== 'none'))) {
-        n.style.height = 'auto'; n.style.minHeight = '0'; touched = true;
-      }
-      // Only once something above actually needed unclipping, and only vertically.
-      if (touched && (cs.overflowY === 'hidden' || cs.overflow === 'hidden')) {
-        n.style.overflowY = 'visible';
-      }
-      if (touched) n.dataset.trUnclipped = '1';
+    /* A row the layout positions by hand cannot be made taller: its neighbour's offset was
+       computed for the old height, so growing it overlaps rather than fits. The harness caught
+       exactly that — rows went from 46px to 70px while their tops stayed 46px apart. Skip
+       straight to shrinking for those. */
+    if (!positioned(box)) {
+      relax(box);
+      if (!overflows(box)) return;               // expanding was enough
     }
+
+    /* Still clipped. Shrink the romanization — never the script or anything else — a step at
+       a time, and stop the moment it fits. The floor is 78%, below which it stops being
+       easier to read than the script was. */
+    for (let scale = 95; scale >= 78; scale -= 4) {
+      el.style.fontSize = scale + '%';
+      if (!overflows(box)) return;
+    }
+  }
+
+  const overflows = n => n.scrollHeight > n.clientHeight + 1;
+
+  /* Absolutely positioned, or sitting among siblings that are — the signature of a virtualised
+     list, where every row's top is computed and heights are assumed fixed. */
+  function positioned(n) {
+    if (/absolute|fixed/.test(getComputedStyle(n).position)) return true;
+    const sib = n.parentElement && n.parentElement.children;
+    if (!sib) return false;
+    for (const c of sib) {
+      if (c !== n && /absolute|fixed/.test(getComputedStyle(c).position)) return true;
+    }
+    return false;
+  }
+
+  /* The nearest ancestor that is actually clipping. Stops at a scroll container: that is the
+     panel's own list, it is *supposed* to overflow, and relaxing it is what made the whole
+     transcript disappear once already. */
+  function clippingBox(el) {
+    for (let n = el.parentElement, depth = 0; n && depth < 5; n = n.parentElement, depth++) {
+      const cs = getComputedStyle(n);
+      if (cs.overflowY === 'auto' || cs.overflowY === 'scroll') return null;
+      if (n.getBoundingClientRect().height > 300) return null;   // a container, not a row
+      if (overflows(n)) return n;
+    }
+    return null;
+  }
+
+  /* Relax every mechanism that can clip, on one element, rather than trying to work out which
+     one is in play. Cheap, and it cannot reach past the row. */
+  function relax(n) {
+    if (n.dataset.trUnclipped) return;
+    const cs = getComputedStyle(n);
+    if (cs.display === '-webkit-box') n.style.display = 'block';
+    n.style.webkitLineClamp = 'unset';
+    n.style.maxHeight = 'none';
+    n.style.height = 'auto';
+    n.style.minHeight = '0';
+    n.style.overflowY = 'visible';
+    n.dataset.trUnclipped = '1';
   }
 
   /* ---------- run loop ---------- */
@@ -236,6 +267,7 @@
     document.querySelectorAll('[data-tr-unclipped]').forEach(e => {
       e.style.webkitLineClamp = ''; e.style.maxHeight = ''; e.style.display = '';
       e.style.overflowY = ''; e.style.height = ''; e.style.minHeight = '';
+      delete e.dataset.trUnclipped;
       delete e.dataset.trUnclipped;
     });
   }
