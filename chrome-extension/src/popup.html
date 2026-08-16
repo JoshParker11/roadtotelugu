@@ -11,7 +11,11 @@
   <label class="row"><input type="checkbox" id="captions"> <span>Under video captions</span></label>
   <label class="row"><input type="checkbox" id="panel"> <span>In the side panel</span></label>
   <label class="row"><input type="checkbox" id="hideScriptInPanel"> <span>Hide script in the panel</span></label>
-  <p class="hint">Changes apply immediately — no reload.</p>
+  <label class="row" style="display:block">
+    <span>Panel text size <b id="scaleval">100%</b></span>
+    <input type="range" id="panelScale" min="60" max="100" step="5" style="width:100%;accent-color:#e8a33d">
+  </label>
+  <p class="hint">Turn this down if transcript lines are cut off.</p>
   <a class="opts" href="#" id="more">More settings</a>
   <script src="popup.js"></script>
 </body>

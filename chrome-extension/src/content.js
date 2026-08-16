@@ -31,6 +31,7 @@
     panelSelector: '',
     hideScriptInPanel: true,
     relaxClipping: true,
+    panelScale: 100,   // manual size for panel romanization, 60–100
   };
 
   let opts = { ...DEFAULTS };
@@ -131,6 +132,10 @@
       const span = document.createElement('span');
       span.className = 'tr-rom-inline';
       span.textContent = rom;
+      /* A manual size, because automatic fitting has not been reliable here. Four attempts to
+         detect what clips these rows all failed, and the measurement that would settle it can
+         only be taken inside the real page. A control the reader sets once always works. */
+      if (opts.panelScale && opts.panelScale !== 100) span.style.fontSize = opts.panelScale + '%';
 
       // The script stays in the DOM but hidden: one setting turns it back on, and any handler
       // the host attached to the parent still finds its text where it left it.
@@ -178,7 +183,8 @@
     /* Still clipped. Shrink the romanization — never the script or anything else — a step at
        a time, and stop the moment it fits. The floor is 78%, below which it stops being
        easier to read than the script was. */
-    for (let scale = 95; scale >= 78; scale -= 4) {
+    const floor = Math.min(78, opts.panelScale || 100);
+    for (let scale = 95; scale >= floor; scale -= 4) {
       el.style.fontSize = scale + '%';
       if (!overflows(box)) return;
     }

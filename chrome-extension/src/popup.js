@@ -1,7 +1,7 @@
 /* The popup is the fast path: the four switches worth flipping mid-video. Anything that needs
    typing lives in options.html instead. */
 const DEFAULTS = { enabled: true, scheme: 'iso', captions: true, panel: true,
-                   hideScriptInPanel: true };
+                   hideScriptInPanel: true, panelScale: 100 };
 const BOOLS = ['enabled', 'captions', 'panel', 'hideScriptInPanel'];
 
 chrome.storage.sync.get(DEFAULTS, o => {
@@ -9,6 +9,13 @@ chrome.storage.sync.get(DEFAULTS, o => {
     const el = document.getElementById(k);
     el.checked = !!o[k];
     el.addEventListener('change', () => chrome.storage.sync.set({ [k]: el.checked }));
+  });
+  const sc = document.getElementById('panelScale');
+  sc.value = o.panelScale || 100;
+  document.getElementById('scaleval').textContent = sc.value + '%';
+  sc.addEventListener('input', () => {
+    document.getElementById('scaleval').textContent = sc.value + '%';
+    chrome.storage.sync.set({ panelScale: +sc.value });
   });
   paintScheme(o.scheme);
 });
