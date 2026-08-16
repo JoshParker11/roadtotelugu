@@ -58,35 +58,54 @@
     return out;
   };
 
+  /* The nearest ancestor that lays out as a block — which is the caption *line*.
+     Language Reactor splits a caption into one inline span per word so it can make each one
+     clickable. Annotating per text node therefore produced one romanization per word, each in
+     a block element, which stacked the whole caption vertically down the screen. Grouping by
+     the line container is what keeps a line a line. */
+  function lineBox(node) {
+    let el = node.parentElement;
+    while (el && el !== document.body) {
+      const d = getComputedStyle(el).display;
+      if (d !== 'inline' && d !== 'contents') return el;
+      el = el.parentElement;
+    }
+    return node.parentElement;
+  }
+
   /* ---------- captions ---------- */
   function doCaptions() {
     if (!opts.captions) return;
     const player = document.querySelector('#movie_player') || document.body;
 
+    // Group the words of a caption back into the line they belong to, in document order.
+    const groups = new Map();
     teluguNodes(player, true).forEach(node => {
-      const host = node.parentElement;
-      if (!host) return;
-      const text = node.nodeValue;
+      const box = lineBox(node);
+      if (!box) return;
+      if (!groups.has(box)) groups.set(box, []);
+      groups.get(box).push(node);
+    });
+
+    groups.forEach((nodes, box) => {
+      const text = nodes.map(n => n.nodeValue).join('').replace(/\s+/g, ' ').trim();
+      if (!text) return;
+      if (box.getAttribute(MARK) === text) return;      // same cue, nothing to redo
+      box.setAttribute(MARK, text);
 
       if (opts.captionMode === 'replace') {
-        // Writing the node in place keeps whatever wraps it — including LR's per-word spans if
-        // it has split the line — so the layout survives even though the letters change.
-        if (host.getAttribute(MARK) === text) return;
-        host.setAttribute(MARK, text);
-        node.nodeValue = romanize(text);
+        // Rewrite each word in place. The spans stay, so LR's per-word structure survives.
+        nodes.forEach(n => { n.nodeValue = romanize(n.nodeValue); });
         return;
       }
 
-      // 'under': one extra line per caption host, refreshed when the cue changes.
-      if (host.getAttribute(MARK) === text) return;
-      host.setAttribute(MARK, text);
-      let line = host.querySelector(':scope > .tr-rom');
+      let line = box.querySelector(':scope > .tr-rom');
       if (!line) {
         line = document.createElement('div');
         line.className = 'tr-rom';
-        host.appendChild(line);
+        box.appendChild(line);
       }
-      line.textContent = romanize(host.getAttribute(MARK));
+      line.textContent = romanize(text);
     });
   }
 
@@ -132,22 +151,33 @@
      line we just changed and relax whatever is doing the clipping, on that element only.
      Bounded to a few levels so a stray `overflow:hidden` high up in the page is left alone. */
   function unclip(el) {
-    for (let n = el.parentElement, depth = 0; n && depth < 5; n = n.parentElement, depth++) {
+    for (let n = el.parentElement, depth = 0; n && depth < 3; n = n.parentElement, depth++) {
       if (n.dataset.trUnclipped) return;
       const cs = getComputedStyle(n);
+
+      /* Stop at a scroll container and do not touch it. This is the fix for the transcript
+         list going blank: the previous version relaxed height and overflow on up to five
+         ancestors, one of which is the panel's own scroller, and a scroller with
+         overflow:visible and height:auto stops being a list. A scroller declares itself with
+         overflow-y auto or scroll — a clipped row never does. */
+      if (cs.overflowY === 'auto' || cs.overflowY === 'scroll') return;
+
+      // Rows are short. Anything tall is a container, and containers are not ours to resize.
+      if (n.getBoundingClientRect().height > 300) return;
+
       let touched = false;
       if (cs.webkitLineClamp && cs.webkitLineClamp !== 'none') {
-        n.style.webkitLineClamp = 'unset'; touched = true;
+        n.style.webkitLineClamp = 'unset';
+        if (cs.display === '-webkit-box') n.style.display = 'block';
+        touched = true;
       }
-      if (cs.maxHeight && cs.maxHeight !== 'none') { n.style.maxHeight = 'none'; touched = true; }
-      if (/^\d/.test(cs.height) && cs.overflow !== 'visible') {
-        n.style.height = 'auto'; n.style.minHeight = '0'; touched = true;
+      if (cs.maxHeight && cs.maxHeight !== 'none' && parseFloat(cs.maxHeight) < 300) {
+        n.style.maxHeight = 'none'; touched = true;
       }
-      if (cs.overflow === 'hidden' || cs.overflowY === 'hidden') {
-        // Only the vertical clip — leaving overflow-x alone keeps horizontal scrollers working.
-        n.style.overflowY = 'visible'; touched = true;
+      // Only once something above actually needed unclipping, and only vertically.
+      if (touched && (cs.overflowY === 'hidden' || cs.overflow === 'hidden')) {
+        n.style.overflowY = 'visible';
       }
-      if (cs.whiteSpace === 'nowrap') { n.style.whiteSpace = 'normal'; touched = true; }
       if (touched) n.dataset.trUnclipped = '1';
     }
   }
@@ -192,8 +222,8 @@
       e.removeAttribute(MARK);
     });
     document.querySelectorAll('[data-tr-unclipped]').forEach(e => {
-      e.style.webkitLineClamp = ''; e.style.maxHeight = ''; e.style.height = '';
-      e.style.minHeight = ''; e.style.overflowY = ''; e.style.whiteSpace = '';
+      e.style.webkitLineClamp = ''; e.style.maxHeight = ''; e.style.display = '';
+      e.style.overflowY = '';
       delete e.dataset.trUnclipped;
     });
   }
