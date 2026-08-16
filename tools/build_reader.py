@@ -286,10 +286,19 @@ def bare(k, piece, lex, lexidx):
 
     Every non-punctuation token needs one, even English words and names. The slot is what
     carries the *key*, and without a key a token cannot be marked — the panel would offer
-    "ignore" on a name and silently do nothing."""
+    "ignore" on a name and silently do nothing.
+
+    Script goes in `te` and its romanization in `r`, the same way a matched entry is laid out.
+    It used to put the script in `r` and leave `te` empty, which meant the mining export — the
+    one artefact whose whole job is to be filled in with definitions — came out with the
+    Telugu in the romanization column and nothing in the Telugu column."""
     if k not in lexidx:
         lexidx[k] = len(lex)
-        lex.append({'k': k, 'r': piece.lower(), 'te': '', 'en': '', 'o': 0, 'g': ''})
+        is_te = bool(TELUGU.search(piece))
+        lex.append({'k': k,
+                    'r': romanize(piece) if is_te else piece.lower(),
+                    'te': piece if is_te else '',
+                    'en': '', 'o': 0, 'g': ''})
     return lexidx[k]
 
 
