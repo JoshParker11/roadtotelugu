@@ -137,6 +137,12 @@ def src_podcast():
         return []
     raw = []
     for line in open(path, encoding='utf-8'):
+        # tactiq writes the source URL in a header comment; take the id from there rather than
+        # hard-coding it, so the next transcript needs no code change
+        if line.startswith('#') and 'youtube.com' in line:
+            m2 = re.search(r'(?:watch/|watch\?v=|youtu\.be/)([\w-]{11})', line)
+            if m2:
+                SOURCES['podcast']['youtube'] = m2.group(1)
         m = TS.match(line.rstrip('\n'))
         if not m:
             continue
@@ -327,7 +333,7 @@ def build(name, exact, approx, english):
     has_script = any(len(t) > 3 for sec in sections for ln in sec['lines'] for t in ln['t'])
 
     data = {'slug': name, 'title': spec['title'], 'blurb': spec['blurb'],
-            'script': has_script,
+            'script': has_script, 'youtube': spec.get('youtube', ''),
             'private': spec['private'], 'audio': spec.get('audio', ''),
             'generated': date.today().isoformat(),
             'counts': dict(counts), 'lex': lex, 'sections': sections}

@@ -281,9 +281,10 @@ details.drawer>summary:hover{color:var(--cream)}
 .pbtn:hover{border-color:var(--amber);color:var(--amber)}
 .pbtn.big{min-width:46px;font-size:14px}
 .player .chip kbd{margin-left:5px;border:1px solid var(--line-strong);border-radius:3px;font-family:inherit;font-size:9px;padding:0 4px}
-.rate{display:flex;align-items:center;gap:8px;color:var(--cream-dim);
-  font-family:'JetBrains Mono',monospace;font-size:11px}
-.rate input{width:96px;accent-color:var(--amber)}
+#rates button{padding:6px 9px}
+.ytwrap{margin-top:10px;border:1px solid var(--line);border-radius:11px;overflow:hidden;background:#000}
+.ytwrap #ytframe,.ytwrap iframe{display:block;width:100%;aspect-ratio:16/9;border:0}
+@media(min-width:820px){.ytwrap{max-width:520px}}
 .elapsed{margin-left:auto;color:var(--cream-dim);font-family:'JetBrains Mono',monospace;font-size:12px}
 .cue{float:left;margin:4px 10px 0 0;border:1px solid var(--line-strong);border-radius:6px;background:transparent;
   color:var(--cream-dim);cursor:pointer;font-family:'JetBrains Mono',monospace;font-size:10.5px;padding:2px 7px}

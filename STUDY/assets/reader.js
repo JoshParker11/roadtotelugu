@@ -253,7 +253,7 @@
     if (!b) return;
     slug = b.dataset.slug; section = 0; curLine = -1;
     write(K.pos, { slug });
-    renderPicker(); repaint(); closePanel(); setupAudio();
+    renderPicker(); repaint(); closePanel(); setupPlayer();
   });
 
   $('#sections').addEventListener('click', e => {
@@ -328,55 +328,103 @@
     }
   });
 
-  /* ---------- audio ----------
-   * One file, seeked — not 2,595 sliced clips. Slicing an hour of audio would mean shipping
-   * thousands of files, re-cutting them whenever the transcript changed, and losing the ability
-   * to run past the end of a line into the next. A timestamp per line does everything the
-   * clips would, and the transcript already carries one.
+  /* ---------- playback ----------
+   * One interface over two backends. A local mp3 is the better experience — instant seeks,
+   * works offline — but it cannot be published: the file is 105 MB and the episode is not
+   * ours to redistribute. Embedding YouTube moves both problems to Google, at the cost of
+   * needing a network and an http(s) origin (an embed will not run from file://).
+   *
+   * THE IFRAME IS CREATED ONCE AND NEVER REPLACED. That is the whole caching story. Seeking a
+   * live player reuses whatever YouTube has already buffered and costs nothing; calling
+   * loadVideoById, or re-rendering the container, tears the player down and re-downloads from
+   * scratch. So switching sections only seeks, and the player survives every repaint.
    */
   const clock = s => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, '0')}`;
+  let follow = true, sentence = false, curLine = -1, loopOn = false;
+
   const audio = new Audio();
-  let follow = true, sentence = false, curLine = -1;
+  let yt = null, ytReady = false, ytPending = null, mode = 'none', tick = null;
+
+  const P = {
+    get paused() {
+      if (mode === 'yt') return !yt || !ytReady || yt.getPlayerState() !== 1;
+      return audio.paused;
+    },
+    get time() {
+      if (mode === 'yt') return (yt && ytReady) ? yt.getCurrentTime() : 0;
+      return audio.currentTime;
+    },
+    play() {
+      if (mode === 'yt') { if (ytReady) yt.playVideo(); }
+      else audio.play().catch(() => say('The browser blocked playback — press play once.'));
+    },
+    pause() { mode === 'yt' ? (ytReady && yt.pauseVideo()) : audio.pause(); },
+    seek(sec) {
+      if (mode === 'yt') {
+        if (ytReady) yt.seekTo(sec, true); else ytPending = sec;
+        return ytReady;
+      }
+      /* Seeking a file whose metadata has not loaded snaps silently back to zero, which is
+         exactly what an hour-long mp3 does on the first click. Queue it instead. */
+      if (audio.readyState >= 1) { audio.currentTime = sec; return true; }
+      pendingSeek = sec;
+      return false;
+    },
+    rate(r) { mode === 'yt' ? (ytReady && yt.setPlaybackRate(r)) : (audio.playbackRate = r); },
+  };
+
+  let pendingSeek = null;
+  audio.addEventListener('loadedmetadata', () => {
+    if (pendingSeek != null) { audio.currentTime = pendingSeek; pendingSeek = null; }
+  });
+  audio.addEventListener('error', () => {
+    if (mode === 'audio') say('Audio not found — it is kept locally, not committed.');
+  });
+
+  window.onYouTubeIframeAPIReady = () => {
+    const t = text();
+    if (!t.youtube) return;
+    yt = new YT.Player('ytframe', {
+      videoId: t.youtube,
+      playerVars: { rel: 0, modestbranding: 1, playsinline: 1 },
+      events: {
+        onReady: () => {
+          ytReady = true;
+          if (ytPending != null) { yt.seekTo(ytPending, true); yt.playVideo(); ytPending = null; }
+        },
+        onStateChange: syncPlay,
+      },
+    });
+  };
+
+  function setupPlayer() {
+    const t = text();
+    mode = t.youtube ? 'yt' : (t.audio ? 'audio' : 'none');
+    $('#player').hidden = mode === 'none';
+    $('#ytwrap').hidden = mode !== 'yt';
+
+    if (mode === 'audio') {
+      if (!audio.src.endsWith(t.audio)) {
+        audio.preload = 'metadata'; audio.src = t.audio; pendingSeek = null; audio.load();
+      }
+    } else {
+      audio.pause();
+    }
+    if (mode === 'yt' && !yt && window.YT && YT.Player) window.onYouTubeIframeAPIReady();
+    if (mode !== 'none' && !tick) tick = setInterval(onTick, 250);
+  }
 
   function lineTimes() {
     const sec = text().sections[section];
     return sec ? sec.lines.map(l => (l.s == null ? null : l.s)) : [];
   }
 
-  function setupAudio() {
-    const t = text();
-    $('#player').hidden = !t.audio;
-    if (!t.audio) { audio.pause(); audio.removeAttribute('src'); return; }
-    if (!audio.src.endsWith(t.audio)) {
-      audio.preload = 'metadata';
-      audio.src = t.audio;
-      pendingSeek = null;
-      audio.load();
-    }
-  }
-  audio.addEventListener('error', () => {
-    say('Audio not found — it is kept locally, not committed. Check STUDY/audio/.');
-  });
-
-  /* Seeking a file the browser has not read metadata for silently snaps back to 0 — which is
-     exactly what an hour-long mp3 does on the first click. Queue the seek until it can be
-     honoured, and re-apply once, rather than assuming currentTime is writable yet. */
-  let pendingSeek = null;
-  function seekTo(sec0) {
-    if (audio.readyState >= 1) { audio.currentTime = sec0; return true; }
-    pendingSeek = sec0;
-    return false;
-  }
-  audio.addEventListener('loadedmetadata', () => {
-    if (pendingSeek != null) { audio.currentTime = pendingSeek; pendingSeek = null; }
-  });
-
   function playLine(sec0, li) {
     curLine = li == null ? curLineAt(sec0) : li;
     paintCurrent();
-    const ready = seekTo(sec0);
-    audio.play().catch(() => say('The browser blocked playback — press play once.'));
-    if (!ready) say('Loading the audio…');
+    const ok = P.seek(sec0);
+    P.play();
+    if (!ok) say('Loading…');
   }
 
   function curLineAt(t) {
@@ -397,29 +445,34 @@
     }
   }
 
-  /* End of a line is the next line's start — the transcript gives starts only, which is all
-     that is needed for both sentence mode and looping. */
+  /* The transcript gives starts only; a line ends where the next one begins, which is all
+     sentence mode and looping need. */
   function endOf(li) {
     const ts = lineTimes();
     for (let i = li + 1; i < ts.length; i++) if (ts[i] != null) return ts[i];
     return Infinity;
   }
 
-  audio.addEventListener('timeupdate', () => {
-    if (pendingSeek != null) return;      // position is not meaningful until the seek lands
+  /* Polled rather than event-driven: YouTube has no timeupdate, and one timer for both
+     backends keeps the two paths from drifting apart in behaviour. */
+  function onTick() {
+    if (mode === 'none' || pendingSeek != null || ytPending != null) return;
     const ts = lineTimes();
     if (!ts.length) return;
-    if (curLine >= 0 && (sentence || loopOn) && audio.currentTime >= endOf(curLine) - 0.05) {
-      if (loopOn) { audio.currentTime = ts[curLine]; return; }
-      audio.pause();
+    const now = P.time;
+    $('#elapsed').textContent = clock(now);
+    if (curLine >= 0 && (sentence || loopOn) && now >= endOf(curLine) - 0.15) {
+      if (loopOn) { P.seek(ts[curLine]); return; }
+      P.pause();
       return;
     }
-    const i = curLineAt(audio.currentTime);
+    const i = curLineAt(now);
     if (i !== curLine) { curLine = i; paintCurrent(); }
-    $('#elapsed').textContent = clock(audio.currentTime);
-  });
+  }
 
-  let loopOn = false;
+  const syncPlay = () => { $('#play').textContent = P.paused ? '▶' : '❚❚'; };
+  audio.addEventListener('play', syncPlay);
+  audio.addEventListener('pause', syncPlay);
 
   $('#reader').addEventListener('click', e => {
     const c = e.target.closest('.cue');
@@ -429,14 +482,15 @@
   });
 
   $('#play').addEventListener('click', () => {
-    if (audio.paused) {
-      if (curLine < 0) { const ts = lineTimes(); const i = ts.findIndex(x => x != null); if (i >= 0) return playLine(ts[i], i); }
-      audio.play();
-    } else audio.pause();
+    if (P.paused) {
+      if (curLine < 0) {
+        const ts = lineTimes(); const i = ts.findIndex(x => x != null);
+        if (i >= 0) return playLine(ts[i], i);
+      }
+      P.play();
+    } else P.pause();
+    setTimeout(syncPlay, 120);
   });
-  const syncPlay = () => { $('#play').textContent = audio.paused ? '▶' : '❚❚'; };
-  audio.addEventListener('play', syncPlay);
-  audio.addEventListener('pause', syncPlay);
 
   $('#prev').addEventListener('click', () => step(-1));
   $('#next').addEventListener('click', () => step(1));
@@ -451,7 +505,7 @@
   $('#loop').addEventListener('click', () => {
     loopOn = !loopOn;
     $('#loop').classList.toggle('on', loopOn);
-    if (loopOn && audio.paused && curLine >= 0) playLine(lineTimes()[curLine], curLine);
+    if (loopOn && P.paused && curLine >= 0) playLine(lineTimes()[curLine], curLine);
   });
   $('#sentence').addEventListener('click', () => {
     sentence = !sentence;
@@ -463,13 +517,16 @@
     $('#follow').classList.toggle('on', follow);
     $('#follow').textContent = follow ? 'Following' : 'Not following';
   });
-  $('#rate').addEventListener('input', e => {
-    audio.playbackRate = +e.target.value;
-    $('#ratenum').textContent = (+e.target.value).toFixed(2) + '×';
+
+  /* Fixed steps rather than a slider: YouTube only honours its own set of rates and silently
+     ignores anything else, so a free slider would lie about what it was doing. */
+  $('#rates').addEventListener('click', e => {
+    const b = e.target.closest('[data-rate]');
+    if (!b) return;
+    $('#rates').querySelectorAll('button').forEach(x => x.classList.toggle('on', x === b));
+    P.rate(+b.dataset.rate);
   });
 
-  /* Space plays/pauses, arrows step lines — but only when no word panel is open, or the
-     shortcuts fight each other. */
   document.addEventListener('keydown', e => {
     const t = e.target;
     if (t instanceof Element && t.matches('input, textarea')) return;
@@ -484,5 +541,5 @@
   $('#generated').textContent = text().generated;
   $('#toggle-script').classList.toggle('on', script);
   $('#toggle-script').textContent = script ? 'Telugu script' : 'Romanized';
-  renderPicker(); repaint(); setupAudio(); syncPlay();
+  renderPicker(); repaint(); setupPlayer(); syncPlay();
 })();
