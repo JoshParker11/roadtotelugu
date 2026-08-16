@@ -29,8 +29,84 @@
   const fold = s => (s || '').toLowerCase().replace(/[āīūēōṭḍṇḷṁṣśṛ]/g, c => _FOLD[c]).replace(/[^a-z]/g, '');
 
   const TEXTS = window.READER_TEXTS || {};
-  const SLUGS = Object.keys(TEXTS);
-  if (!SLUGS.length) {
+
+  /* ---------- transcripts loaded in the browser ----------
+   * The public site ships the tooling, not other people's content. A transcript you hold is
+   * parsed, resolved and stored here on your own machine — nothing is uploaded, and nothing
+   * copyrighted has to enter the repository for the page to be fully usable.
+   *
+   * The offline pipeline is still the better resolver where it can be used: it romanizes
+   * script with te2rom, filters English against a real dictionary, and does the loose
+   * chat-romanization match. This path is exact-only. For Telugu-script transcripts that is
+   * most of the difference anyway, since script matches the master's script directly.
+   */
+  const LK = 'rtt.readLocal';
+  const TSLINE = /^(\d{2}):(\d{2}):(\d{2})[.,](\d+)\s+(.*)$/;
+
+  function parseTranscript(raw, name) {
+    let ytid = '';
+    const lines = [];
+    for (const line of raw.split(/\r?\n/)) {
+      if (line.startsWith('#')) {
+        const m = line.match(/(?:watch\/|watch\?v=|youtu\.be\/|embed\/)([\w-]{11})/);
+        if (m) ytid = m[1];
+        continue;
+      }
+      const m = TSLINE.exec(line.trim());
+      if (m) {
+        const t = +m[1] * 3600 + +m[2] * 60 + +m[3] + +('0.' + m[4]);
+        if (m[5].trim()) lines.push([t, m[5].trim()]);
+      } else if (line.trim()) {
+        lines.push([null, line.trim()]);
+      }
+    }
+    if (!lines.length) return null;
+
+    // Caption chunks are two or three words each; reading 2,500 fragments is not reading.
+    // Merge to a sentence-ish length but keep the first chunk's time, so seeking still lands.
+    const merged = [];
+    let buf = [], t0 = null;
+    for (const [t, txt] of lines) {
+      if (t0 === null) t0 = t;
+      buf.push(txt);
+      if (buf.join(' ').length >= 90) { merged.push([t0, buf.join(' ')]); buf = []; t0 = null; }
+    }
+    if (buf.length) merged.push([t0, buf.join(' ')]);
+
+    const lex = [], lexidx = new Map(), sections = [];
+    let cur = [], start = merged[0][0] ?? 0;
+    const flush = () => { if (cur.length) sections.push({ title: fmtStamp(start), lines: cur }); };
+    for (const [t, txt] of merged) {
+      if (t != null && t - start > 300 && cur.length) { flush(); cur = []; start = t; }
+      const ln = { t: Lex.resolveLine(txt, lex, lexidx), en: '' };
+      if (t != null) ln.s = Math.round(t * 100) / 100;
+      cur.push(ln);
+    }
+    flush();
+
+    const freq = new Map();
+    sections.forEach(sc => sc.lines.forEach(l => l.t.forEach(tk => {
+      if (tk[1] !== 'p' && tk[2] >= 0) freq.set(tk[2], (freq.get(tk[2]) || 0) + 1);
+    })));
+    lex.forEach((l, i) => l.n = freq.get(i) || 0);
+
+    return { slug: 'yours:' + name, title: name, local: true, youtube: ytid, audio: '',
+             script: lex.some(l => l.te), generated: new Date().toISOString().slice(0, 10),
+             blurb: 'Loaded from your machine. Not stored in the repository.',
+             lex, sections };
+  }
+
+  const fmtStamp = s => `${Math.floor((s || 0) / 60)}:${String(Math.floor((s || 0) % 60)).padStart(2, '0')}`;
+
+  /* Restore anything loaded previously, before the picker is built. */
+  (() => {
+    let saved = [];
+    try { saved = JSON.parse(localStorage.getItem(LK)) || []; } catch {}
+    saved.forEach(t => { TEXTS[t.slug] = t; });
+  })();
+  const slugs = () => Object.keys(TEXTS);
+  const SLUGS = slugs();
+  if (!slugs().length) {
     $('#reader').innerHTML = '<p class="empty">No texts are baked yet. Run <span class="mono">python3 tools/build_reader.py --all</span>.</p>';
     return;
   }
@@ -40,8 +116,8 @@
   let status = read(K.st, {});
   const saveStatus = () => write(K.st, status);
 
-  let slug = read(K.pos, {}).slug || SLUGS[0];
-  if (!TEXTS[slug]) slug = SLUGS[0];
+  let slug = read(K.pos, {}).slug || slugs()[0];
+  if (!TEXTS[slug]) slug = slugs()[0];
   let section = 0, showEn = true, focus = null;
   /* Script or romanization for the body text. Defaults to romanization: the script is
      unreadable to the learner today, and a page of it is a wall rather than practice.
@@ -78,11 +154,19 @@
 
   /* ---------- rendering ---------- */
   function renderPicker() {
-    $('#texts').innerHTML = SLUGS.map(s =>
-      `<button class="chip${s === slug ? ' on' : ''}" data-slug="${esc(s)}">${esc(TEXTS[s].title)}${TEXTS[s].private ? ' <b>private</b>' : ''}</button>`).join('');
+    $('#texts').innerHTML = slugs().map(s =>
+      `<button class="chip${s === slug ? ' on' : ''}" data-slug="${esc(s)}">${esc(TEXTS[s].title)}${
+        TEXTS[s].local ? ' <b>yours</b>' : TEXTS[s].private ? ' <b>private</b>' : ''}</button>`).join('');
     const t = text();
     $('#blurb').textContent = t.blurb || '';
     $('#toggle-script').hidden = !t.script;
+    $('#btn-forget').hidden = !t.local;
+    $('#credit').hidden = !t.youtube;
+    if (t.youtube) {
+      $('#credit').innerHTML = `Audio and transcript belong to the original creator and are used
+        here for private study. Watch the source on
+        <a href="https://www.youtube.com/watch?v=${esc(t.youtube)}" target="_blank" rel="noopener">YouTube</a>.`;
+    }
     $('#sections').innerHTML = t.sections.map((s, i) =>
       `<button class="chip${i === section ? ' on' : ''}" data-section="${i}">${esc(s.title)}</button>`).join('');
   }
@@ -193,10 +277,10 @@
     const out = [];
     Object.keys(status).forEach(k => { if (status[k] === 'learning') out.push(k); });
     const byKey = new Map();
-    SLUGS.forEach(s => TEXTS[s].lex.forEach(l => { if (!byKey.has(l.k)) byKey.set(l.k, l); }));
+    slugs().forEach(s => TEXTS[s].lex.forEach(l => { if (!byKey.has(l.k)) byKey.set(l.k, l); }));
     // first line each word appears in, so the export carries its context
     const ctx = new Map();
-    SLUGS.forEach(s => TEXTS[s].sections.forEach(sec => sec.lines.forEach(ln => {
+    slugs().forEach(s => TEXTS[s].sections.forEach(sec => sec.lines.forEach(ln => {
       ln.t.forEach(tok => {
         if (tok[2] < 0) return;
         const key = TEXTS[s].lex[tok[2]].k;
@@ -535,6 +619,55 @@
     else if (e.key === 'ArrowLeft') { e.preventDefault(); step(-1); }
     else if (e.key === 'ArrowRight') { e.preventDefault(); step(1); }
     else if (e.key.toLowerCase() === 'l') { e.preventDefault(); $('#loop').click(); }
+  });
+
+  /* ---------- loading and forgetting your own transcripts ---------- */
+  function persistLocal() {
+    const mine = slugs().filter(k => TEXTS[k].local).map(k => TEXTS[k]);
+    try { localStorage.setItem(LK, JSON.stringify(mine)); return true; }
+    catch { say('Too large to keep between visits — it will work until you reload.'); return false; }
+  }
+
+  function addText(t) {
+    TEXTS[t.slug] = t;
+    slug = t.slug; section = 0; curLine = -1;
+    write(K.pos, { slug });
+    persistLocal();
+    renderPicker(); repaint(); setupPlayer();
+    const words = t.lex.reduce((a, l) => a + l.n, 0);
+    say(`Loaded ${t.sections.length} section${t.sections.length === 1 ? '' : 's'}, ${nf(words)} words.`);
+  }
+
+  function ingest(raw, name) {
+    const t = parseTranscript(raw, name);
+    if (!t) return say('Could not find any lines in that file.');
+    addText(t);
+    $('#loadbox').open = false;
+  }
+
+  $('#file').addEventListener('change', e => {
+    const f = e.target.files[0];
+    if (!f) return;
+    const r = new FileReader();
+    r.onload = () => ingest(String(r.result), $('#tname').value.trim() || f.name.replace(/\.[^.]+$/, ''));
+    r.readAsText(f);
+    e.target.value = '';
+  });
+
+  $('#btn-paste').addEventListener('click', () => {
+    const raw = $('#paste').value.trim();
+    if (!raw) return say('Nothing pasted.');
+    ingest(raw, $('#tname').value.trim() || 'Pasted transcript');
+    $('#paste').value = '';
+  });
+
+  $('#btn-forget').addEventListener('click', () => {
+    if (!TEXTS[slug] || !TEXTS[slug].local) return say('That one is built into the site.');
+    if (!confirm(`Remove "${TEXTS[slug].title}"? Your word marks are kept.`)) return;
+    delete TEXTS[slug];
+    slug = slugs()[0]; section = 0; curLine = -1;
+    persistLocal();
+    renderPicker(); repaint(); setupPlayer();
   });
 
   /* ---------- boot ---------- */

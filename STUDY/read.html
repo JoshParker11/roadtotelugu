@@ -63,12 +63,37 @@
 
     <div class="ytwrap" id="ytwrap" hidden><div id="ytframe"></div></div>
 
+    <p class="credit" id="credit" hidden></p>
+
     <div class="controls-row" style="margin-top:12px">
       <button class="chip" id="toggle-script" type="button" hidden>Romanized</button>
       <button class="chip on" id="toggle-en" type="button">Translation shown</button>
       <button class="chip" id="btn-known-all" type="button">Mark the rest of this section known</button>
+      <button class="chip" id="btn-forget" type="button" hidden>Remove this text</button>
       <span class="say" id="say"></span>
     </div>
+
+    <details class="drawer" id="loadbox" style="margin-top:12px">
+      <summary>Load a transcript from your machine</summary>
+      <div class="drawer-body">
+        <p>Timestamped transcripts (tactiq, SRT-style <span class="mono">00:00:00.000 text</span>)
+          or plain lines. It is parsed and resolved in this page — nothing is uploaded, and
+          nothing is added to the repository. If the file names a YouTube URL in a header
+          comment, the player wires itself up to that video automatically.</p>
+        <p>Word matching here is exact only: Telugu script against the deck's Telugu script.
+          The offline pipeline does better where it can be used, because it can romanize and
+          filter English — but it can only be used on material that may be committed.</p>
+        <div class="field" style="margin-bottom:10px">
+          <label for="tname">Name (optional)</label>
+          <input type="text" id="tname" placeholder="Raw Talks 139" style="max-width:320px">
+        </div>
+        <div class="btn-row">
+          <label class="btn" for="file">Choose a file<input type="file" id="file" accept=".txt,.srt,.vtt,text/plain" hidden></label>
+          <button class="btn" id="btn-paste" type="button">Use pasted text</button>
+        </div>
+        <textarea id="paste" spellcheck="false" placeholder="…or paste the transcript here"></textarea>
+      </div>
+    </details>
   </div>
 </section>
 
@@ -137,10 +162,11 @@
 
 <script src="data/words.js"></script>
 <script src="assets/progress.js"></script>
+<script src="assets/te2rom.js"></script>
+<script src="assets/lex.js"></script>
 <script src="data/reader/textbook.js"></script>
 <!-- Present only on a machine that has the private sources; 404s harmlessly elsewhere. -->
 <script src="data/reader/private-conversations.js"></script>
-<script src="data/reader/local-podcast.js"></script>
 <script src="assets/reader.js"></script>
 <!-- Loaded after reader.js, which defines onYouTubeIframeAPIReady for it to call. -->
 <script src="https://www.youtube.com/iframe_api"></script>

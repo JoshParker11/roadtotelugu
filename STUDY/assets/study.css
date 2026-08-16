@@ -315,6 +315,10 @@ details.drawer>summary:hover{color:var(--cream)}
 .sw.unseen{background:var(--flame)} .sw.english{background:rgba(241,236,224,.16)}
 .sw.ignore{background:rgba(241,236,224,.08)}
 
+.credit{margin:10px 0 0;color:var(--cream-dim);font-size:11.5px;line-height:1.5;max-width:70ch}
+label.btn{display:inline-block;cursor:pointer}
+#loadbox textarea{min-height:110px;margin-top:10px}
+
 .readtext{max-width:70ch}
 .rline{display:block;margin:0 0 18px;padding-bottom:14px;border-bottom:1px solid var(--line)}
 .rte{display:block;font-size:clamp(17px,4.2vw,21px);line-height:2}

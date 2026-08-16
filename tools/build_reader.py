@@ -123,7 +123,15 @@ TS = re.compile(r'^(\d{2}):(\d{2}):(\d{2})\.(\d+)\s+(.*)$')
 
 
 def src_podcast():
-    """Raw Talks #139, 1h16m, Telugu script with a start time on every line.
+    """Raw Talks #139 — kept as a worked example of the timestamped-transcript format.
+
+    NOT WIRED INTO SOURCES. Baking it produced a page that could not be committed, which made
+    the feature useless on the live site. The reader parses this exact format in the browser
+    instead: the tooling ships, the transcript stays on the machine that holds it, and any
+    future transcript works with no rebuild. Kept here because it documents the format and
+    the merge rule the client-side parser mirrors.
+
+    Original shape: 1h16m, Telugu script with a start time on every line.
 
     LOCAL ONLY. A copyrighted YouTube episode: the audio is 105 MB — past GitHub's per-file
     limit before the licence question even arises — and the transcript is the entire work.
@@ -193,11 +201,6 @@ def src_textbook():
 
 
 SOURCES = {
-    'podcast': {'fn': src_podcast, 'private': True, 'prefix': 'local-',
-                'audio': 'audio/podcast-rawtalks-139.mp3',
-                'title': 'Raw Talks #139',
-                'blurb': 'Naga Vamsi on Raw Talks with VK — 1h16m of unscripted Telugu, with a '
-                         'lot of English written in Telugu script. Real speech, and hard.'},
     'conversations': {'fn': src_conversations, 'private': True,
                       'title': 'Family conversations',
                       'blurb': 'Recorded at home. Code-switched, Hyderabad register, and the '

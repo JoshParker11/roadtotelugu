@@ -4,12 +4,11 @@
  * is "is this worth my time, and which twenty words would make it readable" — and you need
  * that answer while deciding, not after committing to a build step.
  *
- * WHY IT CAN MATCH WITHOUT A ROMANIZER
- * te2rom is Python and there is no JS port. But the master carries the Telugu script for every
- * word, so script input matches directly on script and never needs romanizing. Romanized input
- * falls back to the folded romanization. Each path is exact within itself; nothing here guesses
- * the way the reader's loose fold does, because a frequency table full of wrong matches is
- * worse than one with honest gaps.
+ * MATCHING
+ * Telugu script matches the master's script directly, romanization matches the folded
+ * romanization, and anything unmatched still gets romanized by the te2rom port so the table is
+ * readable. Every path is exact — nothing here guesses the way the reader's loose fold does,
+ * because a frequency table full of wrong matches is worse than one with honest gaps.
  *
  * SAVED SOURCES AND THE CUMULATIVE VIEW
  * One text tells you what that text needs. Several tell you what *your* Telugu needs, which is
@@ -26,40 +25,19 @@
   const read = () => { try { return JSON.parse(localStorage.getItem(K)) ?? []; } catch { return []; } };
   const write = v => { try { localStorage.setItem(K, JSON.stringify(v)); } catch (e) { alert('Could not save — storage may be full.'); } };
 
-  const FOLD = { 'ā': 'a', 'ī': 'i', 'ū': 'u', 'ē': 'e', 'ō': 'o', 'ṭ': 't', 'ḍ': 'd', 'ṇ': 'n', 'ḷ': 'l', 'ṁ': 'm', 'ṣ': 's', 'ś': 's', 'ṛ': 'r' };
-  const fold = s => (s || '').toLowerCase().replace(/[āīūēōṭḍṇḷṁṣśṛ]/g, c => FOLD[c]).replace(/[^a-z]/g, '');
-
-  /* Same two-branch tokenizer the ingest uses: Telugu as a run, because its vowel signs are
-     combining marks that \w does not match. */
-  const TOKEN = /[ఀ-౿]+|[^\W\d_]+(?:['’][^\W\d_]+)*/gu;
-  const isTelugu = s => /[ఀ-౿]/.test(s);
-
-  /* ---------- master index ---------- */
-  const F = WORD_DATA.fields;
-  const WORDS = WORD_DATA.words.map(r => { const o = {}; F.forEach((k, i) => o[k] = r[i]); return o; });
-  const byScript = new Map(), byRoman = new Map();
-  WORDS.forEach(w => {
-    if (w.telugu) byScript.set(w.telugu.trim(), w);
-    const f = fold((w.roman || '').split(' ')[0]);
-    if (f && !byRoman.has(f)) byRoman.set(f, w);
-  });
-
-  function lookup(tok) {
-    if (isTelugu(tok)) return byScript.get(tok) || null;
-    return byRoman.get(fold(tok)) || null;
-  }
+  /* Tokenizing and matching live in Lex, shared with the reader's transcript loader. Two
+     copies of that logic would drift, and a frequency table built by a different matcher than
+     the reader uses would quietly disagree with it about what counts as known. */
+  const { fold, isTelugu, lookup, keyOf, tokens } = Lex;
 
   /* ---------- analysis ---------- */
   function analyse(text) {
     const counts = new Map();
     let total = 0;
-    for (const m of text.matchAll(TOKEN)) {
-      const tok = m[0];
-      if (isTelugu(tok)) {
-        if (!tok.trim()) continue;
-      } else if (!fold(tok)) continue;
+    for (const tok of tokens(text)) {
+      const key = keyOf(tok);
+      if (!key) continue;
       total++;
-      const key = isTelugu(tok) ? tok : fold(tok);
       const e = counts.get(key) || { key, surface: tok, n: 0, telugu: isTelugu(tok) };
       e.n++; counts.set(key, e);
     }
@@ -67,7 +45,8 @@
       const w = lookup(e.surface);
       return Object.assign(e, {
         order: w ? w.order : 0, gloss: w ? w.english : '', guid: w ? w.guid : '',
-        roman: w ? w.roman : (e.telugu ? '' : e.surface),
+        /* Unmatched script still gets a romanization — the whole point of the port. */
+        roman: w ? w.roman : (e.telugu ? Te2Rom.romanize(e.surface) : e.surface),
       });
     });
     rows.sort((a, b) => b.n - a.n || a.key.localeCompare(b.key));
