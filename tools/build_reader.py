@@ -123,18 +123,17 @@ TS = re.compile(r'^(\d{2}):(\d{2}):(\d{2})\.(\d+)\s+(.*)$')
 
 
 def src_podcast():
-    """Raw Talks #139 — kept as a worked example of the timestamped-transcript format.
+    """Raw Talks #139 — 1h16m, Telugu script with a start time on every line.
 
-    NOT WIRED INTO SOURCES. Baking it produced a page that could not be committed, which made
-    the feature useless on the live site. The reader parses this exact format in the browser
-    instead: the tooling ships, the transcript stays on the machine that holds it, and any
-    future transcript works with no rebuild. Kept here because it documents the format and
-    the merge rule the client-side parser mirrors.
+    BAKED LOCALLY, NEVER COMMITTED. The output goes to a gitignored local-*.js, because the
+    transcript is the whole of a copyrighted episode. Baking it anyway is worth doing: it makes
+    the episode a permanent entry in the reader rather than something to re-load by hand each
+    session, and the offline resolver is simply better than the in-browser one — it has the
+    English dictionary, the loose chat-romanization fold, and name detection, none of which
+    can ship to a page at a sane size.
 
-    Original shape: 1h16m, Telugu script with a start time on every line.
-
-    LOCAL ONLY. A copyrighted YouTube episode: the audio is 105 MB — past GitHub's per-file
-    limit before the licence question even arises — and the transcript is the entire work.
+    The browser can still parse this exact format, which is what any machine without the file
+    uses; the two paths agree because the client-side parser mirrors the merge rule below.
 
     Consecutive lines are merged up to a sentence-ish length. The transcript is auto-generated
     caption chunks of two or three words each, and reading 2,595 fragments is nothing like
@@ -201,6 +200,11 @@ def src_textbook():
 
 
 SOURCES = {
+    'podcast': {'fn': src_podcast, 'private': True, 'prefix': 'local-',
+                'audio': 'audio/podcast-rawtalks-139.mp3',
+                'title': 'Raw Talks #139',
+                'blurb': 'Naga Vamsi on Raw Talks with VK — 1h16m of unscripted Telugu, with a '
+                         'lot of English written in Telugu script. Real speech, and hard.'},
     'conversations': {'fn': src_conversations, 'private': True,
                       'title': 'Family conversations',
                       'blurb': 'Recorded at home. Code-switched, Hyderabad register, and the '
