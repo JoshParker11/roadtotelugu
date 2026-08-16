@@ -88,7 +88,10 @@
     });
 
     groups.forEach((nodes, box) => {
-      const text = nodes.map(n => n.nodeValue).join('').replace(/\s+/g, ' ').trim();
+      /* Join on a space, not on nothing. The gaps between Language Reactor's per-word spans
+         are whitespace-only text nodes, which contain no Telugu and so never reach here —
+         concatenating what is left ran the whole caption together as one word. */
+      const text = nodes.map(n => n.nodeValue.trim()).filter(Boolean).join(' ');
       if (!text) return;
       if (box.getAttribute(MARK) === text) return;      // same cue, nothing to redo
       box.setAttribute(MARK, text);
@@ -151,7 +154,7 @@
      line we just changed and relax whatever is doing the clipping, on that element only.
      Bounded to a few levels so a stray `overflow:hidden` high up in the page is left alone. */
   function unclip(el) {
-    for (let n = el.parentElement, depth = 0; n && depth < 3; n = n.parentElement, depth++) {
+    for (let n = el.parentElement, depth = 0; n && depth < 4; n = n.parentElement, depth++) {
       if (n.dataset.trUnclipped) return;
       const cs = getComputedStyle(n);
 
@@ -163,7 +166,8 @@
       if (cs.overflowY === 'auto' || cs.overflowY === 'scroll') return;
 
       // Rows are short. Anything tall is a container, and containers are not ours to resize.
-      if (n.getBoundingClientRect().height > 300) return;
+      const box = n.getBoundingClientRect();
+      if (box.height > 300) return;
 
       let touched = false;
       if (cs.webkitLineClamp && cs.webkitLineClamp !== 'none') {
@@ -173,6 +177,14 @@
       }
       if (cs.maxHeight && cs.maxHeight !== 'none' && parseFloat(cs.maxHeight) < 300) {
         n.style.maxHeight = 'none'; touched = true;
+      }
+      /* A fixed height clips just as effectively as max-height, and dropping this when the
+         function was made conservative is why three-line rows stayed cut off. Safe to handle
+         now: the scroller check above has already returned, so this only ever reaches a row. */
+      if (/^\d/.test(cs.height) && parseFloat(cs.height) < 300 &&
+          (cs.overflowY === 'hidden' || cs.overflow === 'hidden' ||
+           (cs.webkitLineClamp && cs.webkitLineClamp !== 'none'))) {
+        n.style.height = 'auto'; n.style.minHeight = '0'; touched = true;
       }
       // Only once something above actually needed unclipping, and only vertically.
       if (touched && (cs.overflowY === 'hidden' || cs.overflow === 'hidden')) {
@@ -223,7 +235,7 @@
     });
     document.querySelectorAll('[data-tr-unclipped]').forEach(e => {
       e.style.webkitLineClamp = ''; e.style.maxHeight = ''; e.style.display = '';
-      e.style.overflowY = '';
+      e.style.overflowY = ''; e.style.height = ''; e.style.minHeight = '';
       delete e.dataset.trUnclipped;
     });
   }
