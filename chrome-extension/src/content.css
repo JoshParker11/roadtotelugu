@@ -1,0 +1,14 @@
+/* Sits under the caption line inside the player, so it has to survive YouTube's own styles. */
+.tr-rom {
+  display: block;
+  margin-top: 2px;
+  color: #ffd479;
+  font-family: ui-monospace, "JetBrains Mono", Menlo, monospace;
+  font-size: 0.82em;
+  line-height: 1.35;
+  letter-spacing: .01em;
+  text-shadow: 0 0 4px rgba(0,0,0,.9), 0 1px 2px rgba(0,0,0,.9);
+}
+/* In the panel the romanization replaces the script inline, so it inherits the host's layout
+   and only shifts colour enough to read as an annotation. */
+.tr-rom-inline { font-family: inherit; }

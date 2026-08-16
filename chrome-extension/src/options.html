@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Telugu Romanizer — settings</title>
+<link rel="stylesheet" href="ui.css">
+<body class="options">
+  <h1>Telugu Romanizer</h1>
+
+  <h2>Scheme</h2>
+  <div class="seg" id="scheme">
+    <button data-scheme="iso">Project scheme<i>nēnu · kūḍā · tinu</i></button>
+    <button data-scheme="colloquial">Colloquial<i>nenu · kooda · thinu</i></button>
+  </div>
+  <p class="hint">The project scheme marks vowel length and retroflexion, so it always maps back
+    to one spelling. The colloquial one is what people actually type — lossy on purpose:
+    <b>ē</b> and <b>e</b> both become “e”, so it reads well but cannot be looked up.</p>
+
+  <div class="demo" id="demo"></div>
+
+  <h2>Where</h2>
+  <label class="row"><input type="checkbox" id="captions"> <span>Under the video captions (added below the script)</span></label>
+  <label class="row"><input type="checkbox" id="panel"> <span>In the side panel (replaces the script)</span></label>
+  <label class="row"><input type="checkbox" id="hideScriptInPanel"> <span>Hide the original script in the panel</span></label>
+
+  <h2>Panel selector</h2>
+  <p class="hint">Leave empty to scan the whole page outside the player. Language Reactor is a
+    separate extension whose markup can change between releases, so nothing here hard-codes its
+    classes. If it annotates things it should not, right-click its panel → Inspect, find a
+    container, and paste a CSS selector for it here.</p>
+  <input type="text" id="panelSelector" placeholder="e.g. #lr-panel  or  .lr-sidebar">
+
+  <p class="hint" id="saved"></p>
+  <script src="te2rom.js"></script>
+  <script src="colloquial.js"></script>
+  <script src="options.js"></script>
+</body>

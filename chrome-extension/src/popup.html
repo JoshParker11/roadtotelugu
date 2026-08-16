@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="ui.css">
+<body class="popup">
+  <h1>Telugu Romanizer</h1>
+  <label class="row"><input type="checkbox" id="enabled"> <span>Enabled</span></label>
+  <div class="seg" id="scheme">
+    <button data-scheme="iso">Project scheme<i>nēnu · kūḍā</i></button>
+    <button data-scheme="colloquial">Colloquial<i>nenu · kooda</i></button>
+  </div>
+  <label class="row"><input type="checkbox" id="captions"> <span>Under video captions</span></label>
+  <label class="row"><input type="checkbox" id="panel"> <span>In the side panel</span></label>
+  <label class="row"><input type="checkbox" id="hideScriptInPanel"> <span>Hide script in the panel</span></label>
+  <p class="hint">Changes apply immediately — no reload.</p>
+  <a class="opts" href="#" id="more">More settings</a>
+  <script src="popup.js"></script>
+</body>

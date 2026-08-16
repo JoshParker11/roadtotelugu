@@ -70,6 +70,13 @@ console.log(JSON.stringify(toks.map(t => romanize(t))));
             print('node failed:\n' + e.stderr); sys.exit(1)
     js = json.loads(res.stdout)
 
+    ext = os.path.join(ROOT, 'chrome-extension', 'src', 'te2rom.js')
+    if os.path.exists(ext):
+        same = open(ext, encoding='utf-8').read() == open(JS, encoding='utf-8').read()
+        print(f'  chrome-extension copy: {"identical" if same else "DIFFERS — re-copy it"}')
+        if not same:
+            sys.exit(1)
+
     bad = [(t, romanize(t), j) for t, j in zip(toks, js) if romanize(t) != j]
     if not bad:
         print('  identical output on every token')
