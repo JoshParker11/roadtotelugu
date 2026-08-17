@@ -6,7 +6,68 @@ finished and the masters were re-sequenced.
 
 ---
 
-## The hour — phase A, roughly day 4 to day 30
+## THE CURRENT PLAN — 2026-08-16, supersedes the hour and the build order below
+
+Everything past this section is still accurate about *what was built and why*. It is out of
+date about *what to do daily*. Read this first.
+
+**Two things, nothing else, until the course vocabulary runs out.**
+
+1. **Anki each morning** — course words only. ~540 of them, roughly seven weeks at 15/day.
+2. **Language Reactor on YouTube** — the comprehensible-input half, replacing the reader.
+
+The Verb Lab comes back "a bit, when I feel like it" once the course words are done. The
+sentence drill, the analyzer and the reader are parked, not deleted: they are behind the
+collapsed drawer on the home page with a line each on why.
+
+### Why Language Reactor replaced the reader
+
+It does word lookup, click-to-define, and export to Anki on *any* YouTube video with captions.
+The reader would have needed a dictionary, a mining pipeline and per-video ingestion to reach
+the same place. Building more of it would have been rebuilding something that already exists
+and works better. The reader still runs and still has the podcast baked into it locally.
+
+**What LR lacks is romanization**, which is why `chrome-extension/` exists.
+
+### Suspending everything but the course, in Anki
+
+    "deck:Telugu::Vocab" -tag:src::lesson -tag:src::site
+
+Select all, Ctrl/Cmd+J to suspend. Leaves 540 of 2,103 active. Check with
+`"deck:Telugu::Vocab" -is:suspended`. The same split is the **Course only** toggle on the
+vocabulary queue.
+
+### The home page
+
+`index.html` is a dashboard now: progress through the 540 course words, today's course words,
+and the twenty lessons each showing how much of its own vocabulary is marked known. Course
+words are the denominator throughout — measuring against all 2,103 would show a finished
+course as a quarter done.
+
+---
+
+## Two findings worth keeping, both of which contradicted an assumption
+
+**The reader's remaining unknown words are morphology, not a missing dictionary.** This was the
+crux of the whole "how do I get definitions" question and the answer was not what either of us
+expected. Of the podcast's unmatched tokens: a large share are inflected forms of verbs already
+in the deck (`untadi`, `untayi`, `unna` are all uṇḍu), another large share are English written
+in Telugu script (`dat`, `yu`, `muvi`, `prodyusar`, `rilij`), and only the remainder is
+genuinely new vocabulary. A dictionary of headwords would not have fixed most of it, because
+the inflected form is never the entry. Telugu is agglutinative and any lookup has to lemmatise
+first. Indexing the Verb Lab's own generated forms and decomposing stem+suffix moved unknown
+from 46% to 42% — real, but small, because the transcript uses Telangana forms the Lab does not
+generate.
+
+**Romanization is the same length as the script, character for character** — 1:1 median across
+295 measured lines. The assumption that it "runs half again longer" was wrong and drove four
+failed attempts at the Language Reactor panel clipping. What actually differs is *rendered
+width*: Telugu glyph clusters are wide, Latin letters are narrow, and that ratio cannot be
+computed from outside the page.
+
+---
+
+## The hour — phase A, roughly day 4 to day 30 (SUPERSEDED — see the current plan above)
 
 Morning Anki (15 new words, 3 new sentences, reviews) and the commute are separate. This is the
 dedicated block, and **its job is converting recognition into production, not meeting new
@@ -307,7 +368,13 @@ the point of marking them.
 
 ---
 
-## What to build next, in order
+## What to build next, in order (SUPERSEDED — see the current plan above)
+
+**Nothing, for two weeks.** The stop rule agreed on 2026-08-15: no new surfaces until the
+Anki-plus-Language-Reactor routine has been run daily for a fortnight. The list below is what
+was queued before the pivot and is kept for when it is worth revisiting.
+
+
 
 1. **Word capture.** The half of the dropped inbox that was never about journaling. When a word
    turns up in native content or in conversation and belongs in the deck, something has to get

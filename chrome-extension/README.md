@@ -71,6 +71,31 @@ That is deliberately broad. If it annotates something it should not:
 3. Copy a CSS selector for it (right-click the node → Copy → Copy selector)
 4. Paste it into **Panel selector** in the options page
 
+## The one thing that does not work: panel rows still clip
+
+Long transcript rows in the Language Reactor panel are cut off. **Four attempts failed**, and
+they are recorded here so the fifth does not repeat them:
+
+1. relax `max-height` on ancestors — some rows use a fixed `height` instead
+2. relax fixed `height` too — over-reached, hit the panel's scroll container, and the whole
+   transcript went blank
+3. measure instead of guess: find the ancestor whose `scrollHeight` exceeds its `clientHeight`,
+   relax only that one, stop at any scroller — still clipped
+4. never grow an absolutely positioned row, since a virtualised list computes each row's top
+   and growing one overlaps its neighbour; shrink the text instead — still clipped
+
+The premise behind all four was wrong. Romanization is **1:1 with the script character for
+character** (median over 295 measured lines), not "half again longer". What differs is rendered
+width — Telugu glyph clusters are wide, Latin letters narrow — and that ratio cannot be computed
+from outside the page.
+
+**The working answer is the manual one:** the popup's *Panel text size* slider, 60–100%. It does
+not fight the layout, so it cannot fail. Try 85%.
+
+**What would settle it properly:** right-click a clipped row → Inspect → Computed tab, and read
+off `height`, `max-height`, `overflow-y`, `display`, `position` and `-webkit-line-clamp` for the
+row and its two or three ancestors. Everything above was inferred from screenshots.
+
 ## What is unverified
 
 The caption selector (`.ytp-caption-segment`) is YouTube's own and stable. The panel behaviour
