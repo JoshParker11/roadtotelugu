@@ -35,6 +35,7 @@ you to their choices.
 
 | | |
 |---|---|
+| [BRIEF.md](BRIEF.md) | **Start here.** The ethos, a map of the rest, a worked example, and the mistakes a fresh assistant makes by default |
 | [STYLE.md](STYLE.md) | Register, dialect, the three-bucket rule, and the stitching convention |
 | [ADDRESS.md](ADDRESS.md) | Why address matters so much in Telugu, and how to read the matrix |
 | [address.tsv](address.tsv) | Who says నువ్వు vs మీరు to whom, and third-person respect |
