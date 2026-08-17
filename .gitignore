@@ -35,3 +35,15 @@ STUDY/data/reader/private-*.js
 # transcript is the whole work. Both stay local; only the tooling that reads them is committed.
 sources/local/
 STUDY/data/reader/local-*.js
+
+# The Harry Potter translation project. Two separate reasons, and the second is the one people
+# forget:
+#   source/ is the English novel, in copyright.
+#   work/   is our Telugu translation of it. A translation is a *derivative work* — it is no
+#           more publishable than the original, and Rowling's rights holders have a long record
+#           of pursuing exactly this. This repo is public, so the translation never lands in it.
+# What IS committed: the tooling, the style guide, the address matrix and the glossary. Those
+# are our own analysis and a term list, not the book. If work/ is ever lost, everything needed
+# to redo it consistently survives in the committed half.
+translate/source/
+translate/work/

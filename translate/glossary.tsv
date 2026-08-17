@@ -1,0 +1,157 @@
+term	category	gender	respect	variants	note
+Bertie Bott	coined	n	అది		
+Chocolate Frog	coined	n	అది		Chocolate Frog-లు.
+Every Flavor Beans	coined	n	అది		
+Galleon	coined	n	అది		Galleon-లు.
+Invisibility Cloak	coined	n	అది		
+Knut	coined	n	అది		
+Muggle	coined	m	అతను		Plural Muggle-లు. 42 occurrences — the highest-frequency coinage in the book.
+Nimbus Two Thousand	coined	n	అది		
+Put-Outer	coined	n	అది		
+Remembrall	coined	n	అది		
+Sickle	coined	n	అది		
+Sorcerer's Stone	coined	n	అది	Sorcerer’s Stone	The official Telugu edition renders this పరుసవేది. We anchor it instead; noted so the difference is deliberate.
+Sorcerer’s Stone	coined	n	అది		
+Sorting Hat	coined	n	అది		
+Fang	creature	n	అది		
+Fluffy	creature	n	అది		
+Hedwig	creature	n	అది		
+Norbert	creature	n	అది		"Hagrid calls him ""he"" — follow the source and use వాడు in Hagrid dialogue."
+Scabbers	creature	n	అది		
+Trevor	creature	n	అది		
+Bonfire Night	culture	n	అది		A British calendar event with no Indian counterpart.
+Christmas	culture	n	అది		25 occurrences. Widely known in India; anchor it.
+Easter	culture	n	అది		
+Halloween	culture	n	అది		
+Yorkshire pudding	culture	n	అది		
+crumpet	culture	n	అది		
+treacle tart	culture	n	అది		No Telugu equivalent and it matters to Harry. Anchor.
+Daily Prophet	institution	n	అది		
+Gringotts	institution	n	అది		
+Grunnings	institution	n	అది		
+Gryffindor	institution	n	అది		Also a plural for its members: Gryffindor-లు.
+Hogwarts	institution	n	అది		
+Hogwarts Express	institution	n	అది		
+Hufflepuff	institution	n	అది		
+Ministry of Magic	institution	n	అది		
+Ravenclaw	institution	n	అది		
+Slytherin	institution	n	అది		
+Smeltings	institution	n	అది		
+Stonewall High	institution	n	అది		
+Bloody Baron	meaningful	m	అతను		
+Fat Lady	meaningful	f	ఆవిడ		
+Mirror of Erised	meaningful	n	అది		"""Desire"" reversed. The pun dies either way; anchoring at least keeps it recoverable."
+Nearly Headless Nick	meaningful	m	అతను		
+The Boy Who Lived	meaningful	m	అతను		
+You-Know-Who	meaningful	m	అతను	YouKnow-Who|You- Know-Who|You-Know-	A euphemism, not a name. Anchoring it keeps the taboo visible but loses the meaning — consider a Telugu rendering if chapter 1 reads badly.
+Albus	person	m	ఆయన		
+Albus Dumbledore	person	m	ఆయన		
+Aunt Petunia	person	f	ఆమె		Consider Petunia అత్త.
+Bane	person	m	అతను		
+Bill	person	m	అతను		
+Charlie	person	m	అతను		
+Crabbe	person	m	వాడు		
+Dean	person	m	అతను		
+Dedalus Diggle	person	m	అతను		
+Draco	person	m	వాడు		Back vowel: Draco-కు, not Draco-కి.
+Draco Malfoy	person	m	వాడు		
+Dudley	person	m	వాడు		వాడు deliberately — the narration is contemptuous of him and Telugu can say so.
+Dumbledore	person	m	ఆయన		ఆయన, not అతను. The narration treats him as venerable throughout.
+Dursley	person	m	అతను		"Surname. Plural ""the Dursleys"" -> Dursley-లు."
+Filch	person	m	అతను		
+Firenze	person	m	అతను		
+Flamel	person	m	ఆయన		
+Flint	person	m	అతను		
+Fred	person	m	అతను		
+George	person	m	అతను		
+Ginny	person	f	ఆమె		
+Goyle	person	m	వాడు		
+Griphook	person	m	అతను		
+Hagrid	person	m	అతను		Dialect speaker — the only one. See STYLE.md §2.
+Harry	person	m	అతను		The protagonist. Narration is close third on him.
+Harry Potter	person	m	అతను		Full name; use where the source does.
+Harvey	person	m	అతను		Mentioned once.
+Hermione	person	f	ఆమె		
+Hermione Granger	person	f	ఆమె		
+James	person	m	అతను		
+Jim McGuffin	person	m	అతను		Newsreader, one line.
+Lavender	person	f	ఆమె		
+Lee Jordan	person	m	అతను		
+Lily	person	f	ఆమె		
+Longbottom	person	m	అతను		
+Madam Hooch	person	f	ఆవిడ		
+Madam Pomfrey	person	f	ఆవిడ		
+Malfoy	person	m	వాడు		Same reasoning as Dudley.
+Marge	person	f	ఆవిడ		
+McGonagall	person	f	ఆవిడ		
+Minerva	person	f	ఆవిడ		Dumbledore alone uses the given name.
+Mr. Dursley	person	m	అతను		
+Mr. Weasley	person	m	ఆయన		
+Mrs. Dursley	person	f	ఆమె		
+Mrs. Figg	person	f	ఆవిడ		
+Mrs. Weasley	person	f	ఆవిడ		
+Neville	person	m	అతను		
+Nicolas Flamel	person	m	ఆయన		
+Oliver Wood	person	m	అతను		
+Ollivander	person	m	ఆయన		
+Pansy	person	f	ఆమె		
+Parvati	person	f	ఆమె		
+Peeves	person	m	వాడు		A poltergeist, but grammatically animate and rude.
+Percy	person	m	అతను		
+Petunia	person	f	ఆమె		
+Piers	person	m	వాడు		
+Potter	person	m	అతను		Surname alone — Snape and Malfoy use it as an insult.
+Professor Binns	person	m	ఆయన		
+Professor Dumbledore	person	m	ఆయన		Title is part of the anchor. Never add గారు.
+Professor Flitwick	person	m	ఆయన		
+Professor McGonagall	person	f	ఆవిడ		
+Professor Quirrell	person	m	అతను		
+Professor Snape	person	m	అతను		
+Professor Sprout	person	f	ఆవిడ		
+Quirrell	person	m	అతను		
+Ron	person	m	అతను		
+Ron Weasley	person	m	అతను		
+Ronan	person	m	అతను		
+Rubeus Hagrid	person	m	అతను		
+Seamus	person	m	అతను		
+Seamus Finnigan	person	m	అతను		
+Severus	person	m	అతను		
+Sirius	person	m	అతను		
+Sirius Black	person	m	అతను		
+Snape	person	m	అతను		
+Ted	person	m	అతను		Newsreader, one line.
+Uncle Vernon	person	m	అతను		Consider Vernon మామయ్య — keeps the anchor, teaches the kinship term. STYLE.md §4.
+Vernon	person	m	అతను		
+Voldemort	person	m	అతను		
+Weasley	person	m	అతను		Plural: Weasley-లు.
+Wood	person	m	అతను		
+Bristol	place	n	అది		
+Britain	place	n	అది		
+Diagon Alley	place	n	అది		A pun that cannot survive. Anchoring it is the honest option.
+Dundee	place	n	అది		
+Forbidden Forest	place	n	అది		
+Godric's Hollow	place	n	అది		
+Great Hall	place	n	అది		
+Kent	place	n	అది		
+King's Cross	place	n	అది	King’s Cross	
+King’s Cross	place	n	అది		
+Leaky Cauldron	place	n	అది		
+Little Whinging	place	n	అది		
+London	place	n	అది		
+London Underground	place	n	అది		
+Platform Nine and Three-Quarters	place	n	అది		
+Privet Drive	place	n	అది		
+Surrey	place	n	అది		
+Yorkshire	place	n	అది		
+Beater	quidditch	m	అతను		
+Bludger	quidditch	n	అది		Bludger-లు.
+Chaser	quidditch	m	అతను		Chaser-లు.
+Keeper	quidditch	m	అతను		
+Quaffle	quidditch	n	అది		
+Quidditch	quidditch	n	అది		
+Seeker	quidditch	m	అతను		
+Snitch	quidditch	n	అది		
+Alohomora	spell	n	అది		
+Locomotor Mortis	spell	n	అది		
+Petrificus Totalus	spell	n	అది		
+Wingardium Leviosa	spell	n	అది		Pseudo-Latin in the original too. Never translate a spell.

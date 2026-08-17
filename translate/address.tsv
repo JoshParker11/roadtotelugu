@@ -1,0 +1,54 @@
+speaker	addressee	second	third	vocative	note
+*any	*teacher	మీరు	ఆయన/ఆవిడ		Every student to every member of staff, without exception.
+*adult	*child	నువ్వు	వాడు/ఆమె		Default downward. Warmth or contempt shows in the vocative, not the pronoun.
+*child	*adult	మీరు	ఆయన/ఆవిడ		Telugu keeps మీరు for adults however close the friendship becomes. Harry never drops it with Hagrid.
+*child	*child	నువ్వు	వాడు/ఆమె		వాడు between boys is ordinary affection here, not an insult.
+narrator	*	—	see glossary.tsv		Narration is close third on Harry. The respect column in glossary.tsv is the narrator default.
+Vernon	Petunia	నువ్వు	ఆమె		Traditional marital asymmetry: husband down, wife up. See ADDRESS.md — this is a characterisation choice, not the only option.
+Petunia	Vernon	మీరు	ఆయన		The other half of the same choice.
+Vernon	Harry	నువ్వు	వాడు	ఒరేయ్	ఒరేయ్ is genuinely rough. It is the right register for how he speaks to Harry.
+Petunia	Harry	నువ్వు	వాడు		Colder than Vernon but never formal.
+Vernon	Dudley	నువ్వు	వాడు	బాబూ	Same pronouns as for Harry. The entire difference is the vocative and the verb choice — that contrast is the point.
+Petunia	Dudley	నువ్వు	వాడు	కన్నా	Saccharine. Reach for diminutives freely.
+Dudley	Harry	నువ్వు	వాడు	ఒరేయ్	
+Dudley	Vernon	నువ్వు	ఆయన	నాన్నా	Children use నువ్వు to parents in Telugu; respect is in the address term, not the pronoun.
+Dudley	Petunia	నువ్వు	అమ్మ	అమ్మా	
+Harry	Vernon	మీరు	అతను		Cold distance. మీరు here is not respect, it is the absence of family.
+Harry	Petunia	మీరు	ఆమె		
+Harry	Dudley	నువ్వు	వాడు		
+Harry	Ron	నువ్వు	వాడు	ఒరేయ్	ఒరేయ్ between friends is warm, not rude. Context does the work.
+Harry	Hermione	నువ్వు	ఆమె		Not అది. It is what a Telugu boy might actually say about a girl, and it is rude — wrong for this friendship.
+Ron	Harry	నువ్వు	వాడు	ఒరేయ్	
+Ron	Hermione	నువ్వు	ఆమె		Early chapters: he is dismissive. Let that show in vocabulary, not in a downgraded pronoun.
+Hermione	Harry	నువ్వు	వాడు		
+Hermione	Ron	నువ్వు	వాడు		
+Harry	Neville	నువ్వు	వాడు		
+Harry	Malfoy	నువ్వు	వాడు	ఒరేయ్	Same forms as for Ron. Hostility is carried by the verbs.
+Malfoy	Harry	నువ్వు	వాడు	ఒరేయ్	
+Harry	Dumbledore	మీరు	ఆయన		
+Dumbledore	Harry	నువ్వు	అతను		Warm elder to child. Never condescending.
+Dumbledore	McGonagall	మీరు	ఆవిడ		Equals, long acquainted. He is unfailingly courteous — no downgrade.
+McGonagall	Dumbledore	మీరు	ఆయన		
+Dumbledore	Hagrid	నువ్వు	అతను		Affectionate seniority.
+Hagrid	Dumbledore	మీరు	ఆయన		Reverent. Hagrid drops his dialect a notch when speaking to him.
+McGonagall	Hagrid	మీరు	అతను		DELIBERATE: she outranks him and could use నువ్వు. Scrupulous correctness with everyone is her character. Flip it if it reads stiff in chapter 1.
+Hagrid	McGonagall	మీరు	ఆవిడ		
+Hagrid	Harry	నువ్వు	వాడు	బాబూ	బాబూ is the single most characterising word available for Hagrid. Use it often.
+Hagrid	Vernon	నువ్వు	వాడు		Hagrid has no respect for the Dursleys and Telugu lets him say so in one syllable.
+Snape	Harry	నువ్వు	వాడు		Teacher-to-student నువ్వు is unremarkable. His contempt has to come from vocabulary and clipped verb forms — do not reach for అది or similar.
+Harry	Snape	మీరు	వాడు		The asymmetry is the characterisation: మీరు to his face, వాడు the moment his back is turned.
+Snape	Dumbledore	మీరు	ఆయన		
+Snape	Malfoy	నువ్వు	వాడు		Audibly warmer than to Harry. Same pronouns.
+Quirrell	Harry	నువ్వు	అతను		Stammering deference early; it hardens in chapter 17.
+Filch	*student	నువ్వు	వాడు	ఒరేయ్	Contemptuous throughout.
+Ollivander	Harry	మీరు	అతను		DELIBERATE: an adult shopkeeper would normally use నువ్వు to a child. మీరు makes him unsettling, which is right.
+Griphook	*	మీరు	ఆయన		Service formality.
+Firenze	Harry	మీరు	అతను		Centaurs are archaic and formal. Keep all three of them elevated.
+Ronan	*	మీరు	ఆయన		
+Bane	*	మీరు	ఆయన		
+Wood	Harry	నువ్వు	వాడు		
+Percy	Harry	నువ్వు	వాడు		Pompous. The pomposity is in the vocabulary.
+Molly Weasley	*child	నువ్వు	వాడు/ఆమె	బాబూ	Maternal to everyone, Harry included.
+Voldemort	Harry	నువ్వు	వాడు		No respect to anyone, ever.
+Voldemort	Quirrell	నువ్వు	వాడు		
+Quirrell	Voldemort	మీరు	ఆయన		Abject.
