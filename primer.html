@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pattern primer · Road to Telugu</title>
+<meta name="description" content="The shortcuts, the endings, and the shape of a Telugu sentence — everything from the 20 course lessons on one page.">
+<meta name="theme-color" content="#191915">
+<meta name="robots" content="noindex">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23191915'/%3E%3Ctext x='32' y='45' font-size='38' text-anchor='middle' fill='%23e8a33d'%3E%E0%B0%A4%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23191915'/%3E%3Ctext x='32' y='45' font-size='38' text-anchor='middle' fill='%23e8a33d'%3E%E0%B0%A4%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;700&amp;family=Noto+Sans+Telugu:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="STUDY/assets/study.css">
+<style>
+/* ---- primer-only ---- */
+.te{font-family:'Noto Sans Telugu','Inter',sans-serif}
+.mono{font-family:'JetBrains Mono',monospace}
+.rom{font-family:'JetBrains Mono',monospace;color:var(--amber);font-size:.95em}
+
+/* contents rail */
+.toc{position:sticky;top:var(--navh);z-index:40;background:rgba(25,25,21,.94);backdrop-filter:blur(12px);
+     border-bottom:1px solid var(--line);padding:9px 0}
+.toc .wrap{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none}
+.toc .wrap::-webkit-scrollbar{display:none}
+.toc a{flex:0 0 auto;color:var(--cream-dim);text-decoration:none;font-family:'JetBrains Mono',monospace;
+       font-size:11px;letter-spacing:.06em;padding:5px 10px;border:1px solid var(--line);border-radius:999px;white-space:nowrap}
+.toc a:hover{color:var(--amber);border-color:var(--amber)}
+
+h2{font-family:'Young Serif',serif;font-weight:400;font-size:clamp(23px,4vw,32px);line-height:1.15;margin-bottom:10px}
+h3{font-family:'Young Serif',serif;font-weight:400;font-size:clamp(17px,2.6vw,20px);margin:30px 0 10px}
+section{scroll-margin-top:calc(var(--navh) + 46px)}
+p+p{margin-top:11px}
+.sub b,p b{color:var(--cream);font-weight:600}
+
+/* the hack cards */
+.hacks{display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:14px;margin-top:22px}
+.hack{border:1px solid var(--line);border-radius:var(--radius);background:var(--ink-2);padding:17px 18px;position:relative}
+.hack.star{border-color:rgba(232,163,61,.45);background:rgba(232,163,61,.06)}
+.hack h4{font-size:14.5px;font-weight:600;color:var(--cream);margin-bottom:3px}
+.hack .tag{display:block;font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.14em;
+           text-transform:uppercase;color:var(--amber);margin-bottom:9px}
+.hack p{font-size:13.3px;color:var(--cream-dim);margin-top:8px}
+.hack .ex{margin-top:11px;padding-top:11px;border-top:1px solid var(--line);font-size:13px;line-height:1.9}
+.hack .ex div{display:flex;gap:9px;flex-wrap:wrap;align-items:baseline}
+.hack .ex .g{color:var(--cream-dim);font-size:12px}
+
+/* generic table */
+.tbl{width:100%;border-collapse:collapse;margin-top:16px;font-size:13.5px}
+.tbl th{text-align:left;font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.13em;
+        text-transform:uppercase;color:var(--amber);font-weight:500;padding:0 12px 8px 0;border-bottom:1px solid var(--line-strong);vertical-align:bottom}
+.tbl td{padding:9px 12px 9px 0;border-bottom:1px solid var(--line);vertical-align:top}
+.tbl tr:last-child td{border-bottom:none}
+.tbl td.k{white-space:nowrap;font-family:'JetBrains Mono',monospace;color:var(--amber);font-weight:500}
+.tbl td.t{white-space:nowrap}
+.tbl td.g{color:var(--cream-dim);font-size:12.7px}
+.tbl tr.grp td{padding-top:20px;font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.13em;
+               text-transform:uppercase;color:var(--moss);border-bottom:1px solid var(--line-strong)}
+.tbl tr.grp:first-child td{padding-top:4px}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.scroll .tbl{min-width:540px}
+
+/* slot machine */
+.slots{display:flex;gap:10px;flex-wrap:wrap;align-items:stretch;margin:20px 0 6px}
+.slot{flex:1 1 150px;border:1px solid var(--line);border-radius:var(--radius);background:var(--ink-2);padding:14px 15px}
+.slot .n{font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--amber);display:block;margin-bottom:7px}
+.slot .v{display:block;font-family:'JetBrains Mono',monospace;font-size:15px;color:var(--cream);line-height:1.7}
+.slot .d{display:block;color:var(--cream-dim);font-size:12.3px;margin-top:7px}
+.slot.sp{background:rgba(143,163,126,.07);border-color:rgba(143,163,126,.3)}
+.slot.sp .n{color:var(--moss)}
+
+/* callout */
+.note{border:1px solid rgba(217,108,71,.32);background:rgba(217,108,71,.07);border-radius:var(--radius);
+      padding:16px 19px;margin-top:22px}
+.note b{display:block;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.14em;
+        text-transform:uppercase;color:var(--flame);margin-bottom:7px}
+.note p{font-size:13.4px;color:var(--cream-dim)}
+.note.win{border-color:rgba(143,163,126,.34);background:rgba(143,163,126,.08)}
+.note.win b{color:var(--moss)}
+
+/* two-column compare */
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-top:18px}
+.pair>div{padding:16px 18px}
+.pair>div+div{border-left:1px solid var(--line)}
+.pair .n{font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--amber);display:block;margin-bottom:8px}
+.pair p{font-size:13.2px;color:var(--cream-dim);margin-top:7px}
+@media(max-width:620px){.pair{grid-template-columns:1fr}.pair>div+div{border-left:none;border-top:1px solid var(--line)}}
+
+.foot{color:var(--cream-dim);font-size:12.5px;padding:30px 0 60px}
+.foot a{color:var(--amber)}
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#hacks">Skip to the shortcuts</a>
+
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="wrap">
+    <a class="logo" href="index.html"><span>త</span> road-to-telugu</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="STUDY/words.html">Vocabulary</a></li>
+      <li><a href="LEARNING_GUIDE/index.html">Course</a></li>
+      <li><a href="primer.html" aria-current="page">Primer</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="toc" aria-label="On this page">
+  <div class="wrap">
+    <a href="#hacks">Shortcuts</a>
+    <a href="#shape">Sentence shape</a>
+    <a href="#verbs">Verb endings</a>
+    <a href="#nouns">Noun endings</a>
+    <a href="#adj">Adjectives &amp; adverbs</a>
+    <a href="#eia">e- i- a-</a>
+    <a href="#missing">What's missing</a>
+    <a href="#decoder">Full decoder</a>
+  </div>
+</div>
+
+<header class="desk-header">
+  <div class="wrap">
+    <span class="eyebrow">Pattern primer</span>
+    <h1>Get your ear <em>looking for the pattern</em></h1>
+    <p class="lede">Everything structural from the twenty course lessons, compressed to one page. Not a
+      grammar course — a set of shapes to recognise, so that when Telugu goes past at speed some part of
+      your brain says <i>that's a dative</i> or <i>that's a past tense</i> before the meaning arrives.
+      Read it in fifteen minutes, then come back to the decoder whenever an ending stops making sense.</p>
+  </div>
+</header>
+
+<!-- ============================================ SHORTCUTS -->
+<section id="hacks">
+  <div class="wrap">
+    <span class="eyebrow">Part one</span>
+    <h2>The shortcuts</h2>
+    <p class="sub">Places where the language lets you off. These are not learner's crutches — every one of
+      them is what native speakers actually do, and the course says so explicitly each time.</p>
+
+    <div class="hacks">
+
+      <div class="hack star">
+        <span class="tag">The big one</span>
+        <h4>Any English verb + <span class="rom">chēyi</span></h4>
+        <p>Stick <span class="rom">chēyi</span> (“do”) after an English word and you have a working Telugu
+          verb. There is no pure-Telugu alternative in common use for most modern concepts.</p>
+        <div class="ex">
+          <div><span class="rom">email chēyaṇḍi</span> <span class="g">— send the email</span></div>
+          <div><span class="rom">park chēstānu</span> <span class="g">— I'll park</span></div>
+          <div><span class="rom">wait chēyaṇḍi</span> <span class="g">— please wait</span></div>
+          <div><span class="rom">pani chēyaṇḍi</span> <span class="g">— the native pattern, “do the work”</span></div>
+        </div>
+      </div>
+
+      <div class="hack star">
+        <span class="tag">The other big one</span>
+        <h4>Any English adjective + <span class="rom">-gā</span></h4>
+        <p>The matching escape hatch for descriptions. Between this and <span class="rom">chēyi</span> you
+          are never fully stuck mid-sentence.</p>
+        <div class="ex">
+          <div><span class="rom">sweet gā undi</span> <span class="g">— it's sweet</span></div>
+          <div><span class="rom">fast gā veḷtunnāḍu</span> <span class="g">— he's going fast</span></div>
+          <div><span class="rom">beautiful gā undi</span> <span class="g">— it's beautiful</span></div>
+        </div>
+      </div>
+
+      <div class="hack">
+        <span class="tag">Politeness</span>
+        <h4><span class="rom">aṇḍi</span> attaches to almost anything</h4>
+        <p>Telugu keeps politeness in the ending, not in a separate word. There <i>is</i> a word for
+          “please” — <span class="rom">dayacēsi</span> — and you should basically never use it.</p>
+        <div class="ex">
+          <div><span class="rom">thanks aṇḍi</span> <span class="g">— the everyday thank-you</span></div>
+          <div><span class="rom">avunandi · lēdandi · sarē aṇḍi</span></div>
+          <div><span class="rom">rā → raṇḍi</span> <span class="g">— come → please come in</span></div>
+        </div>
+      </div>
+
+      <div class="hack">
+        <span class="tag">Vocabulary</span>
+        <h4>English nouns take a <span class="rom">-u</span> tail</h4>
+        <p>Then they pluralise and decline like any Telugu noun. English profession words are the
+          <i>normal</i> choice, not a fallback — nobody says <span class="rom">abhiyanta</span> for engineer.</p>
+        <div class="ex">
+          <div><span class="rom">car → kāru → kārlu</span></div>
+          <div><span class="rom">nēnu enjinīrni</span> <span class="g">— I'm an engineer</span></div>
+          <div><span class="rom">championlu</span> <span class="g">— champions</span></div>
+        </div>
+      </div>
+
+      <div class="hack star">
+        <span class="tag">When you're stuck</span>
+        <h4>Unsure of a verb form? Negate it.</h4>
+        <p>Two of the three negative tenses are <b>one single form for all eight persons</b>. No agreement,
+          no guessing. The negative costs you eight forms per verb where the positive costs twenty-four.</p>
+        <div class="ex">
+          <div><span class="rom">āḍalēdu</span> <span class="g">— didn't play · anyone, any number</span></div>
+          <div><span class="rom">āḍaḍaṁ lēdu</span> <span class="g">— isn't playing · same</span></div>
+        </div>
+      </div>
+
+      <div class="hack">
+        <span class="tag">Sentence building</span>
+        <h4>No “is / am / are” at all</h4>
+        <p>Put two words next to each other and stop. Add a person marker to the second one if the
+          subject is I, you-informal, or we.</p>
+        <div class="ex">
+          <div><span class="rom">Raj vidyārthi</span> <span class="g">— Raj is a student</span></div>
+          <div><span class="rom">idi kāru</span> <span class="g">— this is a car</span></div>
+          <div><span class="rom">nēnu vidyārthi<b>ni</b></span> <span class="g">— I am a student</span></div>
+        </div>
+      </div>
+
+      <div class="hack">
+        <span class="tag">Questions</span>
+        <h4>Add <span class="rom">-ā</span> to anything</h4>
+        <p>Any statement of any length becomes a yes/no question. No word order change, no auxiliary. The
+          final vowel gives way to the ā rather than sitting beside it.</p>
+        <div class="ex">
+          <div><span class="rom">bāgunnāru → bāgunnārā?</span></div>
+          <div><span class="rom">māṭlāḍutundi → māṭlāḍutundā?</span></div>
+        </div>
+      </div>
+
+      <div class="hack">
+        <span class="tag">Economy</span>
+        <h4>Drop the pronoun</h4>
+        <p>The verb ending already says who. <span class="rom">mīru</span> in the standard greeting is
+          optional, and usually dropped.</p>
+        <div class="ex">
+          <div><span class="rom">bāgunnārā?</span> <span class="g">— how are you?</span></div>
+          <div><span class="rom">bāgunnānu</span> <span class="g">— I'm fine</span></div>
+        </div>
+      </div>
+
+      <div class="hack">
+        <span class="tag">Frames</span>
+        <h4>Everything you want starts <span class="rom">nāku</span></h4>
+        <p>Liking, wanting, knowing, being hungry, having a headache — none of them have you as the
+          subject. Learn the frame once and a whole family opens.</p>
+        <div class="ex">
+          <div><span class="rom">nāku X aṇṭē iṣṭaṁ</span> <span class="g">— I like X</span></div>
+          <div><span class="rom">nāku X kāvāli</span> <span class="g">— I want X</span></div>
+          <div><span class="rom">nāku X vaddu</span> <span class="g">— I don't want X</span></div>
+        </div>
+      </div>
+
+      <div class="hack">
+        <span class="tag">Kinship</span>
+        <h4><span class="rom">pedda</span> / <span class="rom">chinna</span> build the family</h4>
+        <p>“Big” and “small” attach to parent words and generate most of the uncle-and-aunt vocabulary.
+          Grandmothers are just two words stuck together.</p>
+        <div class="ex">
+          <div><span class="rom">pedda + amma → peddamma</span> <span class="g">— mother's elder sister</span></div>
+          <div><span class="rom">amma + amma → ammamma</span> <span class="g">— maternal grandmother</span></div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="note win">
+      <b>The pattern behind the pattern</b>
+      <p>Telugu has two general-purpose adapters for English: <span class="rom">chēyi</span> makes it a
+        verb, <span class="rom">-gā</span> makes it a description. Code-mixing is the current colloquial
+        norm in Hyderabad, not sloppiness — <span class="rom">thanks aṇḍi</span> is what people say.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ SENTENCE SHAPE -->
+<section id="shape">
+  <div class="wrap">
+    <span class="eyebrow">Part two</span>
+    <h2>The shape of a sentence</h2>
+    <p class="sub">Four facts. Everything else in this page is detail hanging off them.</p>
+
+    <div class="scroll">
+      <table class="tbl">
+        <tr>
+          <td class="t"><b>The verb goes last.</b></td>
+          <td class="g">Always, in every clause. If you hear a verb in the middle, it's a compound or you
+            misheard. The question word sits <i>immediately before</i> the verb, not at the front:
+            <span class="rom">chārminār ekkaḍa undi?</span></td>
+        </tr>
+        <tr>
+          <td class="t"><b>Endings come after the noun.</b></td>
+          <td class="g">English puts the little word in front — <i>to</i> school, <i>in</i> the bus,
+            <i>with</i> Pooja. Telugu welds it on behind: <span class="rom">skūlki</span>,
+            <span class="rom">baslō</span>, <span class="rom">Pūjatō</span>. That's what “postposition” means.</td>
+        </tr>
+        <tr>
+          <td class="t"><b>Word order is free because it's marked.</b></td>
+          <td class="g">Not loose — <i>marked</i>. The endings say who did what, so the order is available
+            for emphasis instead. <span class="rom">Gīta bālni koṭṭindi</span> is “Gita hit the ball”;
+            <span class="rom">Gītani bāl koṭṭindi</span> is “the ball hit Gita”. Same words, same order,
+            one suffix moved.</td>
+        </tr>
+        <tr>
+          <td class="t"><b>Two vowels never touch.</b></td>
+          <td class="g">When a suffix would create a vowel clash, one vowel is deleted, the two merge, or a
+            <span class="rom">v</span> glides in between. This is why forms look irregular when they aren't:
+            <span class="rom">tinu + aṇḍi → tinaṇḍi</span>, <span class="rom">rā + aṇḍi → raṇḍi</span>,
+            <span class="rom">lē + aṇḍi → lēvaṇḍi</span>. It happens <i>across</i> words too at speed —
+            <span class="rom">nēnu ippuḍu → nēnippuḍu</span> — which is why native speech sounds like one
+            long word.</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ VERBS -->
+<section id="verbs">
+  <div class="wrap">
+    <span class="eyebrow">Part three</span>
+    <h2>Reading a verb ending</h2>
+    <p class="sub">A Telugu verb is three slots. Once you can hear the seam between them you can decode a
+      form you have never met — which is the whole point of this page.</p>
+
+    <div class="slots">
+      <div class="slot"><span class="n">1 · stem</span><span class="v">āḍ-</span>
+        <span class="d">The root verb, sometimes slightly reshaped. This is the dictionary word and the
+        informal command.</span></div>
+      <div class="slot"><span class="n">2 · tense</span><span class="v">-ā-<br>-tunnā-<br>-tā-</span>
+        <span class="d">Past · present · future-or-habit. Three markers, that's all.</span></div>
+      <div class="slot sp"><span class="n">3 · person</span><span class="v">-nu -vu -ḍu<br>-di -mu -ru -yi</span>
+        <span class="d">Who. Almost always the last syllable of the pronoun itself.</span></div>
+    </div>
+
+    <div class="note win">
+      <b>The one rule underneath all of it</b>
+      <p>The person marker <b>mirrors the last syllable of the pronoun</b>.
+        <span class="rom">nēnu → -ānu</span>. <span class="rom">nuvvu → -āvu</span>.
+        <span class="rom">vāḍu → -āḍu</span>. <span class="rom">mīru → -āru</span>. It holds for six of the
+        eight rows outright, and the exceptions are the same exceptions in every tense — so you learn them
+        once, not three times.</p>
+    </div>
+
+    <h3>The positive grid</h3>
+    <p class="sub">Shown on <span class="rom">āḍu</span>, “play”. Every regular verb behaves exactly like
+      this — swap the stem and you're done.</p>
+    <div class="scroll">
+    <table class="tbl">
+      <tr><th>Subject</th><th>Past</th><th>Present</th><th>Future / habit</th></tr>
+      <tr><td class="k">nēnu · I</td><td class="t">āḍ<b>ānu</b></td><td class="t">āḍ<b>utunnānu</b></td><td class="t">āḍ<b>utānu</b></td></tr>
+      <tr><td class="k">nuvvu · you</td><td class="t">āḍ<b>āvu</b></td><td class="t">āḍ<b>utunnāvu</b></td><td class="t">āḍ<b>utāvu</b></td></tr>
+      <tr><td class="k">atanu · he</td><td class="t">āḍ<b>āḍu</b></td><td class="t">āḍ<b>utunnāḍu</b></td><td class="t">āḍ<b>utāḍu</b></td></tr>
+      <tr><td class="k">āme · she / it</td><td class="t">āḍ<b>indi</b></td><td class="t">āḍ<b>utōndi</b></td><td class="t">āḍ<b>utundi</b></td></tr>
+      <tr><td class="k">mēmu · we</td><td class="t">āḍ<b>āmu</b></td><td class="t">āḍ<b>utunnāmu</b></td><td class="t">āḍ<b>utāmu</b></td></tr>
+      <tr><td class="k">mīru · you / they<br><span class="g">also āyana, āviḍa — respect</span></td><td class="t">āḍ<b>āru</b></td><td class="t">āḍ<b>utunnāru</b></td><td class="t">āḍ<b>utāru</b></td></tr>
+      <tr><td class="k">avi · they, non-human</td><td class="t">āḍ<b>āyi</b></td><td class="t">āḍ<b>utunnāyi</b></td><td class="t">āḍ<b>utāyi</b></td></tr>
+    </table>
+    </div>
+
+    <h3>The negative grid — much smaller than it looks</h3>
+    <div class="scroll">
+    <table class="tbl">
+      <tr><th>Subject</th><th>Past</th><th>Present</th><th>Won't / doesn't</th></tr>
+      <tr><td class="k">nēnu · I</td><td class="t">āḍalēdu</td><td class="t">āḍaḍaṁ lēdu</td><td class="t">āḍa<b>nu</b></td></tr>
+      <tr><td class="k">nuvvu · you</td><td class="t">↑ same</td><td class="t">↑ same</td><td class="t">āḍa<b>vu</b></td></tr>
+      <tr><td class="k">atanu · he</td><td class="t">↑</td><td class="t">↑</td><td class="t">āḍa<b>ḍu</b></td></tr>
+      <tr><td class="k">āme · she / it</td><td class="t">↑</td><td class="t">↑</td><td class="t">āḍa<b>du</b></td></tr>
+      <tr><td class="k">mēmu · we</td><td class="t">↑</td><td class="t">↑</td><td class="t">āḍa<b>mu</b></td></tr>
+      <tr><td class="k">mīru · you / they</td><td class="t">↑</td><td class="t">↑</td><td class="t">āḍa<b>ru</b></td></tr>
+      <tr><td class="k">avi · they, non-human</td><td class="t">↑</td><td class="t">↑</td><td class="t">āḍa<b>vu</b></td></tr>
+    </table>
+    </div>
+    <div class="note">
+      <b>Read the shape, not the contents</b>
+      <p>Two of the three columns are completely flat — one word for all eight subjects. Only the
+        future/habit column inflects, and it uses the bare
+        <span class="rom">-nu -vu -ḍu -du -mu -ru</span> set with no tense marker at all. This is the single
+        most useful structural fact in the whole course.</p>
+    </div>
+
+    <h3>The exceptions, which are always the same three</h3>
+    <div class="scroll">
+      <table class="tbl">
+        <tr><th>Row</th><th>You'd expect</th><th>Actually</th><th>Why</th></tr>
+        <tr><td class="k">she / it</td><td class="t">-adi</td><td class="t">-indi · -tōndi · -tundi</td>
+          <td class="g">Contracts. Feminine and non-human share this cell, which makes it the most-used
+            ending in the language.</td></tr>
+        <tr><td class="k">she / it, negative future</td><td class="t">-adi</td><td class="t">-adu</td>
+          <td class="g">Otherwise it would be identical to the pronoun <span class="rom">adi</span> sitting
+            right next to it.</td></tr>
+        <tr><td class="k">avi · they, non-human</td><td class="t">-avi</td><td class="t">-āyi</td>
+          <td class="g">Simply irregular. Its negative <span class="rom">-avu</span> collides with
+            <span class="rom">nuvvu</span>.</td></tr>
+      </table>
+    </div>
+
+    <h3>Six stem classes — the suffixes never change, the stem does</h3>
+    <div class="scroll">
+      <table class="tbl">
+        <tr><th>Class</th><th>Example</th><th>What happens</th></tr>
+        <tr><td class="k">1 · regular</td><td class="t">āḍu → āḍ-</td><td class="g">The stem is the root. Most verbs.</td></tr>
+        <tr><td class="k">2 · s-stem</td><td class="t">chēyi → chēs-</td><td class="g">Roots in <span class="rom">-yi</span> take an s, <b>positive only</b> — the negative keeps <span class="rom">chēya-</span>. Also <span class="rom">rāyi → rās-</span>, <span class="rom">chūḍu → chūs-</span>.</td></tr>
+        <tr><td class="k">3 · nasal</td><td class="t">tinu → tinn- / tiṇṭ-</td><td class="g">Doubles the n in the past; pulls the tense marker <b>retroflex</b> in the non-past — <span class="rom">tiṇṭunnānu</span>, not <span class="rom">tintunnānu</span>. Also <span class="rom">anu, vinu, uṇḍu</span>.</td></tr>
+        <tr><td class="k">4 · contracting</td><td class="t">veḷḷu → veḷ-</td><td class="g">Drops a syllable in speech: <span class="rom">veḷtānu</span>. Past and negative keep the full root. Also <span class="rom">cheppu → chep-</span>.</td></tr>
+        <tr><td class="k">5 · -ō reflexive</td><td class="t">kūrchō → kūrchun-</td><td class="g">The ō becomes <span class="rom">-un</span> in the positive; survives in the negative. Also <span class="rom">paḍukō, tīsukō, nērchukō</span>.</td></tr>
+        <tr><td class="k">6 · suppletive</td><td class="t">rā, come</td><td class="g">Store as words, not rules.</td></tr>
+      </table>
+    </div>
+
+    <h3>Commands, and the modals</h3>
+    <div class="scroll">
+      <table class="tbl">
+        <tr><th>Form</th><th>Ending</th><th>Example</th><th></th></tr>
+        <tr><td class="k">command, informal</td><td class="t">the bare root</td><td class="t">tinu</td><td class="g">eat! · to one person, close or much younger</td></tr>
+        <tr><td class="k">command, polite</td><td class="t">-aṇḍi</td><td class="t">tinaṇḍi</td><td class="g">your default. Polite and plural are the same form.</td></tr>
+        <tr><td class="k">don't</td><td class="t">-avaddu</td><td class="t">tinavaddu · tinavaddaṇḍi</td><td class="g">suffixes stack: root + negative + politeness</td></tr>
+        <tr><td class="k">can</td><td class="t">-gala- + person</td><td class="t">chēyagalanu</td><td class="g"><b>inflects</b></td></tr>
+        <tr><td class="k">cannot</td><td class="t">-lē- + person</td><td class="t">chēyalēnu</td><td class="g"><b>inflects</b></td></tr>
+        <tr><td class="k">must, should</td><td class="t">-āli</td><td class="t">chēyāli</td><td class="g">one form for everyone</td></tr>
+        <tr><td class="k">must not</td><td class="t">-kūḍadu</td><td class="t">chēyakūḍadu</td><td class="g">one form for everyone</td></tr>
+        <tr><td class="k">want to</td><td class="t">-ālani undi</td><td class="t">nāku chēyālani undi</td><td class="g">takes <span class="rom">nāku</span>, never <span class="rom">nēnu</span></td></tr>
+        <tr><td class="k">about to</td><td class="t">-bōtunnā- + person</td><td class="t">āḍabōtunnānu</td><td class="g">immediate future</td></tr>
+      </table>
+    </div>
+
+    <div class="note win">
+      <b><span class="rom">lēdu</span> is not a particle — it's a verb, and it conjugates</b>
+      <p><span class="rom">lēnu · lēvu · lēḍu · lēdu · lēmu · lēru</span>. Once you see that, three separate
+        things collapse into one: the negative past, <span class="rom">uṇḍu</span>'s negative, and
+        “cannot”. Same word doing the same job in all three.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ NOUNS -->
+<section id="nouns">
+  <div class="wrap">
+    <span class="eyebrow">Part four</span>
+    <h2>Reading a noun ending</h2>
+
+    <h3>Plurals: <span class="rom">-lu</span> / <span class="rom">-ulu</span></h3>
+    <p class="sub">The direct equivalent of English <i>-s</i>, and it works on English loanwords too.
+      <span class="rom">vidyārthi → vidyārthulu</span>, <span class="rom">kāru → kārlu</span>,
+      <span class="rom">paṇḍu → paṇḍlu</span>, <span class="rom">champion → championlu</span>. When the
+      subject is a plural non-human thing, the verb goes to <span class="rom">-āyi / unnāyi</span> —
+      <span class="rom">enni paṇḍlu unnāyi?</span></p>
+
+    <h3>The two that carry the sentence</h3>
+    <div class="pair">
+      <div>
+        <span class="n">-ki / -ku · dative</span>
+        <p><b>To, for, toward</b> — destination, recipient. And the subject of anything that
+          <i>happens to you</i>: liking, wanting, knowing, aching.</p>
+        <p><span class="rom">iṇḍiyāki veḷtunnānu</span> — going to India<br>
+           <span class="rom">Gītaki giphṭ ichchāḍu</span> — gave Gita a gift<br>
+           <span class="rom">nāku telugu rādu</span> — I don't know Telugu</p>
+        <p class="g">Written Telugu picks between the two spellings by what precedes; spoken treats them as
+          interchangeable, with <span class="rom">-ki</span> commoner.</p>
+      </div>
+      <div>
+        <span class="n">-ni / -nu · accusative</span>
+        <p><b>Marks the receiver of the action.</b> No English equivalent, because English uses position
+          instead. This is what frees the word order.</p>
+        <p><span class="rom">Gīta bālni koṭṭindi</span> — Gita hit the ball<br>
+           <span class="rom">Gītani bāl koṭṭindi</span> — the ball hit Gita</p>
+        <p class="g">Put it on the wrong noun and you get nonsense rather than an accent:
+          <span class="rom">abbāyiki skūlni pampānu</span> means “I sent the school to the boy.”</p>
+      </div>
+    </div>
+
+    <div class="note">
+      <b>On a pronoun, use the possessive stem — never the subject form</b>
+      <p>It's <span class="rom">nā + ku → nāku</span>, built on <span class="rom">nā</span> (“my”), not on
+        <span class="rom">nēnu</span> (“I”). <span class="rom">*nēnuku</span> does not exist. This holds for
+        <b>every</b> postposition — <span class="rom">nā tō</span>, <span class="rom">nā gurinchi</span>,
+        <span class="rom">nā kōsaṁ</span>, <span class="rom">nā daggara</span> — so one rule covers the
+        whole list and you never need a second table.</p>
+    </div>
+
+    <h3>The pronoun forms worth memorising outright</h3>
+    <p class="sub">Everything else is derivable. These aren't.</p>
+    <div class="scroll">
+    <table class="tbl">
+      <tr><th>Subject</th><th>to ___ (dative)</th><th>___ (object)</th></tr>
+      <tr><td class="k">nēnu</td><td class="t">nāku</td><td class="t">nannu <span class="g">suppletive</span></td></tr>
+      <tr><td class="k">nuvvu</td><td class="t">nīku</td><td class="t">ninnu <span class="g">suppletive</span></td></tr>
+      <tr><td class="k">mīru</td><td class="t">mīku</td><td class="t">mimmalni <span class="g">suppletive</span></td></tr>
+      <tr><td class="k">mēmu / manamu</td><td class="t">māku / manaku</td><td class="t">mammalni / manalni <span class="g">suppletive</span></td></tr>
+      <tr><td class="k">atanu · he</td><td class="t">ataniki</td><td class="t">atanini</td></tr>
+      <tr><td class="k">āme · she</td><td class="t">āmeki</td><td class="t">āmeni</td></tr>
+      <tr><td class="k">vāḷḷu · they</td><td class="t">vāḷḷaki</td><td class="t">vāḷḷani</td></tr>
+      <tr><td class="k">adi · it</td><td class="t">dāniki <span class="g">irregular stem</span></td><td class="t">dānini</td></tr>
+      <tr><td class="k">avi · those</td><td class="t">vāṭiki <span class="g">irregular stem</span></td><td class="t">vāṭini</td></tr>
+    </table>
+    </div>
+
+    <h3>The rest of the postpositions</h3>
+    <p class="sub">These behave like their English equivalents. The only difference is that they sit behind
+      the noun. Two of them are doing something sneakier — flagged.</p>
+    <div class="scroll">
+    <table class="tbl">
+      <tr><th>Ending</th><th>Script</th><th>Means</th><th>Example</th></tr>
+      <tr class="grp"><td colspan="4">The everyday six</td></tr>
+      <tr><td class="k">-lō</td><td class="te">లో</td><td class="t">in <i>and</i> at</td><td class="g">New York lō uṇṭānu — Telugu doesn't distinguish them</td></tr>
+      <tr><td class="k">-tō</td><td class="te">తో</td><td class="t">with</td><td class="g">chaṭnītō — with chutney</td></tr>
+      <tr><td class="k">nunchi</td><td class="te">నుంచి</td><td class="t">from</td><td class="g">India nunchi vastunnānu</td></tr>
+      <tr><td class="k">gurinchi</td><td class="te">గురించి</td><td class="t">about</td><td class="g">India gurinchi</td></tr>
+      <tr><td class="k">kōsaṁ</td><td class="te">కోసం</td><td class="t">for, for the sake of</td><td class="g">nā kōsaṁ — for me</td></tr>
+      <tr><td class="k">daggara</td><td class="te">దగ్గర</td><td class="t">near — <b>but see below</b></td><td class="g">skūl daggara — near the school</td></tr>
+      <tr class="grp"><td colspan="4">Place and time</td></tr>
+      <tr><td class="k">mīda</td><td class="te">మీద</td><td class="t">on, above</td><td class="g">balla mīda — on the table</td></tr>
+      <tr><td class="k">kinda</td><td class="te">కింద</td><td class="t">under, below</td><td class="g">balla kinda</td></tr>
+      <tr><td class="k">mundu</td><td class="te">ముందు</td><td class="t">in front of, before</td><td class="g">iṇṭi mundu</td></tr>
+      <tr><td class="k">venaka</td><td class="te">వెనక</td><td class="t">behind</td><td class="g">tana venaka</td></tr>
+      <tr><td class="k">lōpala</td><td class="te">లోపల</td><td class="t">inside</td><td class="g">iṇṭi lōpala</td></tr>
+      <tr><td class="k">bayaṭa</td><td class="te">బయట</td><td class="t">outside</td><td class="g">iṇṭi bayaṭa</td></tr>
+      <tr><td class="k">pakkana</td><td class="te">పక్కన</td><td class="t">beside — <b>use for people</b></td><td class="g">nā pakkana kūrchōṇḍi — sit beside me</td></tr>
+      <tr><td class="k">chuṭṭū</td><td class="te">చుట్టూ</td><td class="t">around</td><td class="g">iṇṭi chuṭṭū</td></tr>
+      <tr><td class="k">varaku</td><td class="te">వరకు</td><td class="t">until, up to</td><td class="g">rēpaṭi varaku — until tomorrow</td></tr>
+      <tr class="grp"><td colspan="4">Recognise, don't use</td></tr>
+      <tr><td class="k">yokka</td><td class="te">యొక్క</td><td class="t">'s</td><td class="g">Formal and written only. Say <span class="rom">Gīta kāru</span>, not <span class="rom">Gīta yokka kāru</span> — possession is just adjacency.</td></tr>
+      <tr><td class="k">tana</td><td class="te">తన</td><td class="t">his/her/their <i>own</i></td><td class="g">Points back at the subject. <span class="rom">Gīta tana annatō</span> = her own brother; <span class="rom">atani annatō</span> = someone else's.</td></tr>
+    </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ ADJECTIVES -->
+<section id="adj">
+  <div class="wrap">
+    <span class="eyebrow">Part five</span>
+    <h2>Adjectives and adverbs</h2>
+    <p class="sub">Telugu adjectives mostly aren't adjectives — they're nouns wearing a suffix, and
+      <b>which suffix depends on where the word sits</b>. Get this wrong and you produce a phrase that
+      isn't a phrase.</p>
+
+    <div class="pair">
+      <div>
+        <span class="n">After the noun · -gā</span>
+        <p>The predicate slot — “<b>it is</b> beautiful”. Needs <span class="rom">undi</span> after it.</p>
+        <p><span class="rom">puvvu andangā undi</span><br><span class="te">పువ్వు అందంగా ఉంది</span></p>
+      </div>
+      <div>
+        <span class="n">Before the noun · -aina</span>
+        <p>The attributive slot — “a beautiful <b>flower</b>”. No verb needed.</p>
+        <p><span class="rom">andamaina puvvu</span><br><span class="te">అందమైన పువ్వు</span></p>
+      </div>
+    </div>
+    <p style="margin-top:14px" class="sub">Both come off the same noun, <span class="rom">andaṁ</span>
+      (“beauty”). Neither is the adjective — the noun is. <span class="rom">-ani</span> is a third, smaller
+      ending doing the attributive job: <span class="rom">challagā undi</span> but
+      <span class="rom">challani nīḷḷu</span>, “cold water”.</p>
+
+    <div class="note">
+      <b>A dozen adjectives take no suffix at all</b>
+      <p><span class="rom">pedda, chinna, kotta, manchi, gaṭṭi, sanna, tīpi, vēḍi, kāraṁ, muriki, chavaka,
+        pēda, cheḍu</span> — these sit in front of a noun bare. <span class="rom">pedda illu</span>,
+        <span class="rom">kotta kāru</span>. There's no rule that predicts which class a word is in; learn
+        it with the word.</p>
+    </div>
+
+    <h3><span class="rom">-gā</span> is also how you make an adverb</h3>
+    <p class="sub">Same suffix, same logic — it says <i>how</i>. <span class="rom">tvaragā</span> quickly,
+      <span class="rom">nemmadigā</span> slowly, <span class="rom">bāgā</span> well. So
+      <span class="rom">Taj Mahal andangā undi</span> is literally “the Taj Mahal exists beautifully”, which
+      is why the verb is required: Telugu describes things by saying <b>how they exist</b>.</p>
+
+    <h3>The two “is” — and this one is socially loaded</h3>
+    <div class="scroll">
+    <table class="tbl">
+      <tr><th></th><th>Form</th><th>Claims</th><th>Example</th></tr>
+      <tr><td class="k">observation</td><td class="t">undi <span class="te">ఉంది</span></td>
+        <td class="g">It is that way <b>right now, as I look at it</b>.</td>
+        <td class="g">kāphī vēḍigā undi — this cup is hot</td></tr>
+      <tr><td class="k">property</td><td class="t">uṇṭundi <span class="te">ఉంటుంది</span></td>
+        <td class="g">It is that way <b>as a rule</b> — was, is, will be.</td>
+        <td class="g">Hyderabad vēḍigā uṇṭundi — the climate is hot</td></tr>
+    </table>
+    </div>
+    <div class="note">
+      <b>Where this will bite you</b>
+      <p><span class="rom">mīru andangā unnāru</span> is “you look beautiful today”.
+        <span class="rom">mīru andangā uṇṭāru</span> is “you are a beautiful person, always”. Same for tall,
+        clever, kind. Choosing wrong isn't a grammar error — it changes what you claimed.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ e i a -->
+<section id="eia">
+  <div class="wrap">
+    <span class="eyebrow">Part six</span>
+    <h2><span class="rom">e-</span> asks · <span class="rom">i-</span> is near · <span class="rom">a-</span> is far</h2>
+    <p class="sub">The most elegant pattern in the language, and completely exceptionless. Learn one
+      question word and you get two answers free. English has a broken fragment of this —
+      <i>where / here / there</i>, <i>this / that</i>. Telugu kept the whole thing.</p>
+
+    <div class="scroll">
+    <table class="tbl">
+      <tr><th></th><th>Ask · e-</th><th>Near · i-</th><th>Far · a-</th></tr>
+      <tr><td class="k">how</td><td class="t">elā <span class="te">ఎలా</span></td><td class="t">ilā <span class="te">ఇలా</span></td><td class="t">alā <span class="te">అలా</span></td></tr>
+      <tr><td class="k">where</td><td class="t">ekkaḍa <span class="te">ఎక్కడ</span></td><td class="t">ikkaḍa <span class="te">ఇక్కడ</span></td><td class="t">akkaḍa <span class="te">అక్కడ</span></td></tr>
+      <tr><td class="k">when</td><td class="t">eppuḍu <span class="te">ఎప్పుడు</span></td><td class="t">ippuḍu <span class="te">ఇప్పుడు</span></td><td class="t">appuḍu <span class="te">అప్పుడు</span></td></tr>
+      <tr><td class="k">how much</td><td class="t">enta <span class="te">ఎంత</span></td><td class="t">inta <span class="te">ఇంత</span></td><td class="t">anta <span class="te">అంత</span></td></tr>
+      <tr><td class="k">how many</td><td class="t">enni <span class="te">ఎన్ని</span></td><td class="t">inni <span class="te">ఇన్ని</span></td><td class="t">anni <span class="te">అన్ని</span></td></tr>
+      <tr><td class="k">why</td><td class="t">enduku <span class="te">ఎందుకు</span></td><td class="t">induku <span class="te">ఇందుకు</span></td><td class="t">anduku <span class="te">అందుకు</span></td></tr>
+      <tr><td class="k">which / this / that</td><td class="t">ēdi <span class="te">ఏది</span></td><td class="t">idi <span class="te">ఇది</span></td><td class="t">adi <span class="te">అది</span></td></tr>
+    </table>
+    </div>
+
+    <div class="note win">
+      <b>You already know four of these fourteen</b>
+      <p><span class="rom">ikkaḍa, ippuḍu, idi, adi</span> are all in your deck already, learned as
+        unrelated vocabulary. They're one system, and the other ten come free.</p>
+    </div>
+
+    <h3>The same shift runs through the pronouns</h3>
+    <p class="sub">Every third-person pronoun is the <b>far</b> form. Its near partner opens with
+      <span class="rom">i / ī</span> instead of <span class="rom">a / ā</span>. Short stays short, long stays
+      long, and neither the meaning nor the register changes.</p>
+    <p class="sub"><span class="rom">āyana→īyana · atanu→itanu · vāḍu→vīḍu · āviḍa→īviḍa · āme→īme ·
+      adi→idi · vāḷḷu→vīḷḷu · avi→ivi</span></p>
+
+    <h3>The other question words</h3>
+    <div class="scroll">
+      <table class="tbl">
+        <tr><td class="k">evaru <span class="te">ఎవరు</span></td><td class="g">who</td>
+            <td class="k">ēmiṭi <span class="te">ఏమిటి</span></td><td class="g">what — when there's <b>no verb</b>, and it goes at the end. <span class="rom">mī pēru ēmiṭi?</span></td></tr>
+        <tr><td class="k">ēmi <span class="te">ఏమి</span></td><td class="g">what — when there <b>is</b> a verb, sitting just before it. <span class="rom">mīru ēmi chēstāru?</span></td>
+            <td class="k">ē <span class="te">ఏ</span></td><td class="g">which — before a noun</td></tr>
+      </table>
+    </div>
+    <p class="sub" style="margin-top:12px"><b>Rule of thumb:</b> the question word goes immediately before
+      the verb, not at the front. The verb still comes last.</p>
+  </div>
+</section>
+
+<!-- ============================================ MISSING -->
+<section id="missing">
+  <div class="wrap">
+    <span class="eyebrow">Part seven</span>
+    <h2>Four English verbs Telugu simply doesn't have</h2>
+    <p class="sub">These aren't quirks to memorise separately. They're one design decision showing up four
+      times: <b>put the person in an oblique case and let <span class="rom">uṇḍu</span> do the work</b>.</p>
+
+    <div class="scroll">
+      <table class="tbl">
+        <tr><th>English</th><th>Telugu says</th><th>Literally</th></tr>
+        <tr><td class="t"><b>to be</b></td><td class="t">nothing at all</td><td class="g">“Raj student.” Two words side by side. <span class="rom">kādu</span> negates it.</td></tr>
+        <tr><td class="t"><b>to have</b></td><td class="t">nā daggara X undi</td><td class="g">“near me X exists”. With a <i>person</i>, <span class="rom">daggara</span> stops meaning near and means has.</td></tr>
+        <tr><td class="t"><b>to want</b></td><td class="t">nāku X kāvāli</td><td class="g">“to me X is wanted”. You're not the subject — it happens to you.</td></tr>
+        <tr><td class="t"><b>please</b></td><td class="t">the <span class="rom">-aṇḍi</span> ending</td><td class="g">Politeness is grammatical, not lexical. Redirect the instinct into the verb form.</td></tr>
+      </table>
+    </div>
+
+    <h3>And three more absences worth knowing</h3>
+    <div class="scroll">
+      <table class="tbl">
+        <tr><td class="k">no perfect tense</td><td class="g">“I have eaten” and “I ate” are the same form. Telugu doesn't need the distinction.</td></tr>
+        <tr><td class="k">no relative pronouns</td><td class="g">No <i>which</i> or <i>that</i> clauses. The verb becomes an adjective instead: <span class="rom">chimpina chokkā</span>, “a torn shirt” — literally “a tore shirt”. Coming later.</td></tr>
+        <tr><td class="k">no “where are you from?”</td><td class="g">You ask where someone <i>comes</i> from, in the habitual: <span class="rom">mīru ekkaḍa nunchi vastāru?</span> Switch to the present continuous and it means “where are you coming from right now” — one morpheme apart.</td></tr>
+      </table>
+    </div>
+
+    <div class="note">
+      <b>Three words where English has one “no”</b>
+      <p><span class="rom">lēdu</span> denies <b>existence</b> — there isn't any, I don't have it.
+        <span class="rom">vaddu</span> denies <b>wanting</b> — no thanks, don't.
+        <span class="rom">kādu</span> denies <b>identity</b> — that's not what it is. Picking wrong changes
+        what you denied. All three take <span class="rom">-aṇḍi</span>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ DECODER -->
+<section id="decoder">
+  <div class="wrap">
+    <span class="eyebrow">Part eight</span>
+    <h2>The full decoder</h2>
+    <p class="sub">You heard an ending and you can't place it. Find it here. Sorted by what the ending
+      attaches to, then alphabetically.</p>
+
+    <div class="scroll">
+    <table class="tbl">
+      <tr><th>Ending</th><th>Script</th><th>Tells you</th></tr>
+
+      <tr class="grp"><td colspan="3">On a noun — case and relation</td></tr>
+      <tr><td class="k">-ki / -ku</td><td class="te">కి / కు</td><td class="g">to, for · destination or recipient · and the subject of liking, wanting, knowing</td></tr>
+      <tr><td class="k">-lō</td><td class="te">లో</td><td class="g">in, at</td></tr>
+      <tr><td class="k">-lu / -ulu</td><td class="te">లు / ులు</td><td class="g">plural</td></tr>
+      <tr><td class="k">-ni / -nu</td><td class="te">ని / ను</td><td class="g">object — this noun is having the verb done to it</td></tr>
+      <tr><td class="k">-tō</td><td class="te">తో</td><td class="g">with</td></tr>
+      <tr><td class="k">-ū</td><td class="te">ూ</td><td class="g">and — attached to <b>both</b> items; verb goes plural</td></tr>
+      <tr><td class="k">-ō</td><td class="te">ో</td><td class="g">or — attached to <b>both</b> items; verb stays singular</td></tr>
+
+      <tr class="grp"><td colspan="3">On a noun — making a description</td></tr>
+      <tr><td class="k">-gā</td><td class="te">గా</td><td class="g">description <b>after</b> the noun, or an adverb · needs <span class="rom">undi</span></td></tr>
+      <tr><td class="k">-aina</td><td class="te">ైన</td><td class="g">description <b>before</b> the noun</td></tr>
+      <tr><td class="k">-ani</td><td class="te">ని</td><td class="g">same job as <span class="rom">-aina</span>, small closed set — <span class="rom">challani, pullani</span></td></tr>
+      <tr><td class="k">-di</td><td class="te">ది</td><td class="g">“the ___ one” — <span class="rom">nādi</span> mine, <span class="rom">manchidi</span> a good one. Can't sit before a noun.</td></tr>
+
+      <tr class="grp"><td colspan="3">On a verb — tense (then a person marker follows)</td></tr>
+      <tr><td class="k">-ā-</td><td class="te">ా</td><td class="g"><b>past</b> · āḍ<b>ā</b>nu, I played</td></tr>
+      <tr><td class="k">-tunnā- / -tunn-</td><td class="te">తున్నా</td><td class="g"><b>present continuous</b> · āḍu<b>tunnā</b>nu, I'm playing</td></tr>
+      <tr><td class="k">-tā- / -t-</td><td class="te">తా</td><td class="g"><b>future or habit</b> · āḍu<b>tā</b>nu, I'll play / I play</td></tr>
+      <tr><td class="k">-bōtunnā-</td><td class="te">బోతున్నా</td><td class="g"><b>about to</b> · āḍa<b>bōtunnā</b>nu</td></tr>
+      <tr><td class="k">-indi</td><td class="te">ింది</td><td class="g">past, <b>she or it</b> — the contracted cell</td></tr>
+      <tr><td class="k">-tōndi</td><td class="te">తోంది</td><td class="g">present, <b>she or it</b></td></tr>
+      <tr><td class="k">-tundi</td><td class="te">తుంది</td><td class="g">future/habit, <b>she or it</b></td></tr>
+
+      <tr class="grp"><td colspan="3">On a verb — who</td></tr>
+      <tr><td class="k">-nu</td><td class="te">ను</td><td class="g">I · from <span class="rom">nēnu</span></td></tr>
+      <tr><td class="k">-vu</td><td class="te">వు</td><td class="g">you informal · from <span class="rom">nuvvu</span> · also “they, non-human” in the negative</td></tr>
+      <tr><td class="k">-ḍu</td><td class="te">డు</td><td class="g">he · from <span class="rom">vāḍu</span></td></tr>
+      <tr><td class="k">-di</td><td class="te">ది</td><td class="g">she or it · from <span class="rom">adi</span></td></tr>
+      <tr><td class="k">-mu</td><td class="te">ము</td><td class="g">we · from <span class="rom">mēmu</span></td></tr>
+      <tr><td class="k">-ru</td><td class="te">రు</td><td class="g">you formal, they, <b>or one person you respect</b> · from <span class="rom">mīru</span></td></tr>
+      <tr><td class="k">-yi</td><td class="te">యి</td><td class="g">they, non-human · irregular</td></tr>
+
+      <tr class="grp"><td colspan="3">On a verb — negation and mood</td></tr>
+      <tr><td class="k">-alēdu</td><td class="te">లేదు</td><td class="g"><b>didn't</b> · one form for every subject</td></tr>
+      <tr><td class="k">-aḍaṁ lēdu</td><td class="te">డం లేదు</td><td class="g"><b>isn't ___ing</b> · one form for every subject</td></tr>
+      <tr><td class="k">-ḍaṁ</td><td class="te">డం</td><td class="g">verbal noun, “the doing” · a <b>noun</b>, so it can take case endings itself</td></tr>
+      <tr><td class="k">-aṇḍi</td><td class="te">ండి</td><td class="g">polite command · also the general politeness marker on anything</td></tr>
+      <tr><td class="k">-avaddu</td><td class="te">వద్దు</td><td class="g">don't</td></tr>
+      <tr><td class="k">-gala-</td><td class="te">గల</td><td class="g">can · <b>inflects for person</b></td></tr>
+      <tr><td class="k">-lē-</td><td class="te">లే</td><td class="g">cannot · <b>inflects for person</b></td></tr>
+      <tr><td class="k">-āli</td><td class="te">ాలి</td><td class="g">must, should · one form for everyone</td></tr>
+      <tr><td class="k">-kūḍadu</td><td class="te">కూడదు</td><td class="g">must not · one form for everyone</td></tr>
+      <tr><td class="k">-ālani undi</td><td class="te">ాలని ఉంది</td><td class="g">want to · takes <span class="rom">nāku</span></td></tr>
+      <tr><td class="k">-tē</td><td class="te">తే</td><td class="g">if · <span class="rom">chēstē, vastē</span></td></tr>
+
+      <tr class="grp"><td colspan="3">Particles and joiners — free words, spaced</td></tr>
+      <tr><td class="k">-ā</td><td class="te">ా</td><td class="g">turns any statement into a yes/no question</td></tr>
+      <tr><td class="k">ani</td><td class="te">అని</td><td class="g">quotative “that” · goes <b>after</b> the quoted words, and the quote stays in the original person</td></tr>
+      <tr><td class="k">aṇṭē</td><td class="te">అంటే</td><td class="g">as for, if one says · the hinge in <span class="rom">nāku X aṇṭē iṣṭaṁ</span>. Grammatically the conditional of <span class="rom">anu</span>, “to say”.</td></tr>
+      <tr><td class="k">kānī</td><td class="te">కానీ</td><td class="g">but</td></tr>
+      <tr><td class="k">kābaṭṭi</td><td class="te">కాబట్టి</td><td class="g">therefore, so · goes after the cause</td></tr>
+      <tr><td class="k">endukaṇṭē</td><td class="te">ఎందుకంటే</td><td class="g">because · literally <span class="rom">enduku</span> + <span class="rom">aṇṭē</span>, “if you ask why”</td></tr>
+      <tr><td class="k">mariyu</td><td class="te">మరియు</td><td class="g">and · the word, less common in speech than the <span class="rom">-ū</span> suffix</td></tr>
+      <tr><td class="k">lēdā</td><td class="te">లేదా</td><td class="g">or · between two named options</td></tr>
+      <tr><td class="k">kūḍā</td><td class="te">కూడా</td><td class="g">also, too</td></tr>
+      <tr><td class="k">chālā / koncheṁ</td><td class="te">చాలా / కొంచెం</td><td class="g">very, a lot / a little</td></tr>
+    </table>
+    </div>
+
+    <div class="note win">
+      <b>The one that keeps showing up</b>
+      <p><span class="rom">ani</span> and <span class="rom">aṇṭē</span> are the same particle family, and it
+        turns up everywhere: reported speech, <span class="rom">aṇṭē</span> in the liking frame,
+        <span class="rom">-ālani undi</span> for wanting, <span class="rom">endukaṇṭē</span> for because.
+        Five different jobs. If an ending has <span class="rom">an-</span> in it and you can't place it,
+        this is probably why.</p>
+    </div>
+  </div>
+</section>
+
+<div class="wrap foot">
+  Compiled from <a href="LEARNING_GUIDE/index.html">the twenty course lessons</a> — mostly 7–20, where the
+  grammar lives. For the full treatment of any line here, the lesson pages have the worked examples and the
+  self-tests. Verb paradigms in full: <a href="GRAMMAR_LAB/index.html">the Verb Lab</a>.
+</div>
+
+</body>
+</html>
