@@ -153,6 +153,7 @@
             <button class="btn small danger" data-del="${i}" type="button">Remove</button></div>`).join('')
       : '<p class="empty">Nothing saved yet. Analyse a text and press Save.</p>';
     renderTotals(saved);
+    renderChunkTotals(saved);
   }
 
   function renderTotals(saved) {
@@ -187,6 +188,106 @@
       [r.sources, r.n, r.surface, r.roman || '', r.gloss || '', r.order || '']));
   }
 
+  /* ---------- repeated chunks ---------- */
+  /* Kept off `current` deliberately: mining is re-run whenever the thresholds move, and caching
+     a result that the controls can invalidate is how the chip counts and the list came to
+     disagree on the vocabulary queue. One source of truth, recomputed. */
+  let mineText = '';
+
+  const badge = w => w.fresh === 0
+    ? '<span class="kind learn">learnable now</span>'
+    : `<span class="kind fresh">${w.fresh} new word${w.fresh === 1 ? '' : 's'}</span>`;
+
+  const slotHtml = (toks, slot) => toks
+    .map((t, i) => i === slot || t === Chunks.SLOT ? '<span class="slot">&nbsp;</span>' : esc(t))
+    .join(' ');
+
+  function renderMine() {
+    const el = $('#chunks');
+    if (!mineText) { el.hidden = true; return; }
+    el.hidden = false;
+    const minCount = +$('#m-count').value, minFillers = +$('#m-fillers').value;
+    $('#m-count-v').textContent = minCount + '\u00d7';
+    $('#m-fillers-v').textContent = minFillers + ' fillers';
+
+    const res = Chunks.mine(mineText, { minCount, minFillers });
+
+    $('#m-fixed').innerHTML = res.fixed.length
+      ? res.fixed.slice(0, 60).map(c =>
+          `<div class="chunk${c.words.learnable ? ' learn' : ''}">
+             <div class="chunk-te">${esc(c.toks.join(' '))}</div>
+             <div class="chunk-rom">${esc(c.roman)}</div>
+             <div class="chunk-meta"><span><b>${c.n}</b>\u00d7</span>
+               <span>${c.lines} line${c.lines === 1 ? '' : 's'}</span>
+               <span>${c.toks.length} words</span>${badge(c.words)}</div>
+           </div>`).join('')
+      : `<p class="mine-empty">Nothing repeats ${minCount} times or more. Either the text is short,
+           or it genuinely does not repeat itself — lower the threshold to see.</p>`;
+
+    $('#m-frames').innerHTML = res.frames.length
+      ? res.frames.slice(0, 40).map(f =>
+          `<div class="chunk${f.words.learnable ? ' learn' : ''}">
+             <div class="chunk-te">${slotHtml(f.toks, f.slot)}</div>
+             <div class="chunk-rom">${esc(f.roman)}</div>
+             <div class="chunk-meta">
+               <span class="kind ${f.kind}">${f.kind === 'inflection' ? 'verb form \u00b7 ' + esc(f.root) : 'lexical'}</span>
+               <span><b>${f.fillers.length}</b> fillers</span>
+               <span>${f.n}\u00d7 over ${f.lines} lines</span>${badge(f.words)}</div>
+             <div class="fillers">${f.fillers.slice(0, 12).map(([w, n]) =>
+               `<span class="filler">${esc(w)}<i>${n}</i></span>`).join('')}</div>
+           </div>`).join('')
+      : `<p class="mine-empty">No frame reaches ${minFillers} different fillers. Frames need a
+           text that says the same shape about several different things — drop the requirement to
+           2 and see what appears.</p>`;
+
+    /* Stashed for the CSV button and for saving with the source. */
+    $('#chunks').dataset.mined = JSON.stringify({
+      fixed: res.fixed.slice(0, 200).map(c => [c.toks.join(' '), c.roman, c.n, c.lines, c.words.fresh]),
+      frames: res.frames.slice(0, 100).map(f => [f.toks.join(' '), f.roman, f.kind, f.root,
+        f.fillers.length, f.n, f.fillers.slice(0, 12).map(x => x[0]).join(' / ')]),
+    });
+  }
+
+  ['#m-count', '#m-fillers'].forEach(sel =>
+    $(sel).addEventListener('input', renderMine));
+
+  $('#btn-csv-chunks').addEventListener('click', () => {
+    const m = JSON.parse($('#chunks').dataset.mined || 'null');
+    if (!m) return;
+    const name = (current ? current.name : 'text').replace(/\W+/g, '-');
+    download(`${name}-chunks.csv`, csv([
+      ['kind', 'chunk', 'romanization', 'slot_kind', 'root', 'fillers', 'count', 'lines', 'new_words'],
+      ...m.fixed.map(c => ['fixed', c[0], c[1], '', '', '', c[2], c[3], c[4]]),
+      ...m.frames.map(f => ['frame', f[0], f[1], f[2], f[3], f[6], f[5], '', '']),
+    ]));
+  });
+
+  /* ---------- chunks across sources ---------- */
+  function renderChunkTotals(saved) {
+    const withChunks = saved.filter(s => s.chunks && s.chunks.length);
+    if (withChunks.length < 2) {
+      $('#chunk-totals').innerHTML = `<p class="mine-empty">Needs at least two saved sources that
+        were mined. ${withChunks.length === 1 ? 'One so far.' : 'None yet.'} Analyse a text, press
+        Save, and repeat with another.</p>`;
+      return;
+    }
+    const agg = new Map();
+    withChunks.forEach(s => s.chunks.forEach(([te, rom, n]) => {
+      const e = agg.get(te) || { te, rom, n: 0, sources: 0 };
+      e.n += n; e.sources++; agg.set(te, e);
+    }));
+    const rows = [...agg.values()].filter(e => e.sources > 1)
+      .sort((a, b) => b.sources - a.sources || b.n - a.n);
+    $('#chunk-totals').innerHTML = rows.length
+      ? rows.slice(0, 60).map(e =>
+          `<div class="chunk"><div class="chunk-te">${esc(e.te)}</div>
+             <div class="chunk-rom">${esc(e.rom)}</div>
+             <div class="chunk-meta"><span><b>${e.sources}</b> sources</span>
+               <span>${e.n}\u00d7 in total</span></div></div>`).join('')
+      : `<p class="mine-empty">No chunk appears in more than one of your ${withChunks.length}
+           mined sources yet.</p>`;
+  }
+
   const csv = rows => rows.map(r => r.map(c =>
     /[",\n]/.test(String(c)) ? '"' + String(c).replace(/"/g, '""') + '"' : c).join(',')).join('\n');
 
@@ -205,6 +306,8 @@
     const a = analyse(raw);
     current = { name, ...a };
     renderCurrent();
+    mineText = raw;
+    renderMine();
     $('#result').scrollIntoView({ block: 'start' });
   });
 
@@ -218,6 +321,10 @@
                   rows: current.rows.map(r => ({ key: r.key, surface: r.surface, n: r.n,
                                                  telugu: r.telugu, order: r.order,
                                                  guid: r.guid, roman: r.roman, gloss: r.gloss })) };
+    /* The mined chunks ride along, so the cross-source view has something to compare. Only
+       the top fixed phrases — enough to spot an overlap, small enough for localStorage. */
+    const m = JSON.parse($('#chunks').dataset.mined || 'null');
+    if (m) rec.chunks = m.fixed.slice(0, 120).map(c => [c[0], c[1], c[2]]);
     if (i >= 0) saved[i] = rec; else saved.push(rec);
     write(saved); renderSaved();
   });
@@ -228,6 +335,10 @@
     if (o) {
       const s = saved[+o.dataset.open];
       current = { name: s.name, total: s.total, distinct: s.rows.length, rows: s.rows };
+      /* The text itself was never stored, so chunks cannot be recomputed for a reopened
+         source. Hide the panel rather than show the previous text's findings under this
+         source's name. */
+      mineText = ''; renderMine();
       renderCurrent(); $('#result').scrollIntoView({ block: 'start' });
     } else if (d) {
       saved.splice(+d.dataset.del, 1); write(saved); renderSaved();

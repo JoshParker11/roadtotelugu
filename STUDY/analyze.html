@@ -11,6 +11,37 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Young+Serif&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;700&amp;family=Noto+Sans+Telugu:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/study.css">
+<style>
+/* ---- chunk miner ---- */
+.mine-controls{display:flex;gap:18px;flex-wrap:wrap;align-items:flex-end;margin:4px 0 22px}
+.mine-controls .field{max-width:190px}
+.mine-controls input[type=range]{width:150px;accent-color:var(--amber)}
+.mine-controls .val{color:var(--amber);font-family:'JetBrains Mono',monospace;font-size:12.5px}
+.mine-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+@media(max-width:900px){.mine-grid{grid-template-columns:1fr}}
+.mine-col h3{margin-bottom:4px}
+.mine-col .sub{margin-bottom:14px}
+.chunk{border:1px solid var(--line);border-radius:12px;background:var(--ink-2);padding:12px 14px;margin-bottom:9px}
+.chunk.learn{border-color:rgba(143,163,126,.4)}
+.chunk-te{font-family:'Noto Sans Telugu','Inter',sans-serif;font-size:16px;line-height:1.5;color:var(--cream)}
+.chunk-rom{font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--amber);margin-top:3px;word-break:break-word}
+.chunk-meta{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:9px;
+            font-family:'JetBrains Mono',monospace;font-size:10.5px;color:var(--cream-dim)}
+.chunk-meta b{color:var(--cream)}
+.slot{display:inline-block;min-width:38px;text-align:center;border-bottom:2px solid var(--amber);
+      color:var(--amber);margin:0 3px}
+.kind{padding:2px 7px;border-radius:999px;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase}
+.kind.lexical{background:rgba(232,163,61,.16);color:var(--amber)}
+.kind.inflection{background:rgba(143,127,184,.18);color:var(--violet)}
+.kind.learn{background:rgba(143,163,126,.18);color:var(--moss)}
+.kind.fresh{background:rgba(217,108,71,.16);color:var(--flame)}
+.fillers{display:flex;gap:6px;flex-wrap:wrap;margin-top:9px;padding-top:9px;border-top:1px solid var(--line)}
+.filler{font-family:'Noto Sans Telugu','Inter',sans-serif;font-size:13px;background:var(--ink-3);
+        border-radius:7px;padding:2px 8px;color:var(--cream-dim)}
+.filler i{font-family:'JetBrains Mono',monospace;font-style:normal;font-size:10px;color:var(--amber);margin-left:5px}
+.mine-empty{color:var(--cream-dim);font-size:13.5px;border:1px dashed var(--line-strong);
+            border-radius:12px;padding:18px}
+</style>
 </head>
 <body>
 
@@ -69,6 +100,46 @@
   </div>
 </section>
 
+<section id="chunks" hidden>
+  <div class="wrap">
+    <h2>What this text says <em>over and over</em></h2>
+    <p class="sub">Two different findings. A <b>fixed phrase</b> is worth memorising as it stands.
+      A <b>frame</b> is worth more than any sentence in it, because it generates rather than
+      repeats — and the miner separates frames whose slot varies by <i>word</i> from ones whose
+      slot varies by <i>verb form</i>, since the second kind is a conjugation the Verb Lab
+      already drills.</p>
+
+    <div class="mine-controls">
+      <div class="field">
+        <label for="m-count">Seen at least</label>
+        <input type="range" id="m-count" min="2" max="8" step="1" value="2">
+        <span class="val" id="m-count-v">2×</span>
+      </div>
+      <div class="field">
+        <label for="m-fillers">Frame needs</label>
+        <input type="range" id="m-fillers" min="2" max="8" step="1" value="3">
+        <span class="val" id="m-fillers-v">3 fillers</span>
+      </div>
+      <button class="btn small" id="btn-csv-chunks" type="button">Export chunks as CSV</button>
+    </div>
+
+    <div class="mine-grid">
+      <div class="mine-col">
+        <h3 class="ophead">Fixed phrases</h3>
+        <p class="sub">Ranked by how many separate lines they turn up in — five occurrences across
+          five lines is a phrase the speaker reaches for; five inside one line is a chorus.</p>
+        <div id="m-fixed"></div>
+      </div>
+      <div class="mine-col">
+        <h3 class="ophead">Frames</h3>
+        <p class="sub">Ranked by how many different things fill the slot. Nine fillers is a
+          generator; two is a coincidence that happened twice.</p>
+        <div id="m-frames"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section>
   <div class="wrap">
     <h2>Saved sources</h2>
@@ -82,6 +153,10 @@
   <div class="wrap">
     <h2>Across everything</h2>
     <div id="totals"></div>
+    <h3 class="ophead" style="margin-top:34px">Chunks in more than one source</h3>
+    <p class="sub">The strongest signal the analyzer produces. A phrase two unrelated speakers
+      both reach for is the language talking, not the topic.</p>
+    <div id="chunk-totals"></div>
     <div class="btn-row" style="margin-top:14px">
       <button class="btn" id="btn-csv-all" type="button">Export all sources as CSV</button>
       <button class="btn danger" id="btn-clear" type="button">Clear saved sources</button>
@@ -115,7 +190,9 @@
 <script src="data/words.js"></script>
 <script src="assets/progress.js"></script>
 <script src="assets/te2rom.js"></script>
+<script src="data/stems.js"></script>
 <script src="assets/lex.js"></script>
+<script src="assets/chunks.js"></script>
 <script src="assets/analyze.js"></script>
 </body>
 </html>

@@ -15,10 +15,18 @@ const Lex = (() => {
   const fold = s => (s || '').toLowerCase().replace(/[āīūēōṭḍṇḷṁṣśṛ]/g, c => FOLD[c]).replace(/[^a-z]/g, '');
 
   /* Telugu first and as a run: its vowel signs and virama are combining marks that \w does
-     not match, so a plain \w+ shatters చేస్తాను into nine graphemes. */
-  const TOKEN = /[ఀ-౿]+|[^\W\d_]+(?:['’][^\W\d_]+)*|\d+|[^\w\s]+|\s+/gu;
+     not match, so a plain \w+ shatters చేస్తాను into nine graphemes.
+     ZWNJ and ZWJ are inside the run on purpose. They sit *within* a word — స్కూల్‌కి is one
+     word with a joiner before the case ending — but they live at U+200C, outside the Telugu
+     block, so leaving them out split that into స్కూల్ + ‌కి and neither half matched anything.
+     Keeping them in the class preserves the surface exactly; ZERO_WIDTH below removes them
+     from the *key*, so a word written with the joiner still matches a master entry written
+     without it. Both spellings occur in the masters. */
+  const ZERO_WIDTH = /[\u200B-\u200D\uFEFF]/g;
+  const TOKEN = /[ఀ-౿\u200C\u200D]+|[^\W\d_]+(?:['’][^\W\d_]+)*|\d+|[^\w\s]+|\s+/gu;
   const TELUGU = /[ఀ-౿]/;
   const isTelugu = s => TELUGU.test(s);
+  const bare = s => (s || '').replace(ZERO_WIDTH, '');
 
   let byScript = null, byRoman = null;
   function index() {
@@ -27,7 +35,7 @@ const Lex = (() => {
     const F = WORD_DATA.fields;
     WORD_DATA.words.forEach(row => {
       const w = {}; F.forEach((k, i) => w[k] = row[i]);
-      if (w.telugu) byScript.set(w.telugu.trim(), w);
+      if (w.telugu) byScript.set(bare(w.telugu.trim()), w);
       const f = fold((w.roman || '').split(' ')[0]);
       if (f && !byRoman.has(f)) byRoman.set(f, w);
     });
@@ -35,12 +43,12 @@ const Lex = (() => {
 
   function lookup(tok) {
     index();
-    return (isTelugu(tok) ? byScript.get(tok.trim()) : byRoman.get(fold(tok))) || null;
+    return (isTelugu(tok) ? byScript.get(bare(tok).trim()) : byRoman.get(fold(tok))) || null;
   }
 
   /* A stable key for remembering a word's status. Script keys on the script itself, since
      without te2rom there is nothing else to key on. */
-  const keyOf = tok => (isTelugu(tok) ? tok.trim() : fold(tok));
+  const keyOf = tok => (isTelugu(tok) ? bare(tok).trim() : fold(tok));
 
   function tokens(text) {
     return [...text.matchAll(TOKEN)].map(m => m[0]);
