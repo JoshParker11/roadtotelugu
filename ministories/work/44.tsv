@@ -1,0 +1,47 @@
+guid	num	part	seq	en	te	notes	status
+M80ab37c0979f	44	meta	1	Story Forty-four - Martin Lives Alone			todo
+Me35d761ad098	44	meta	2	Here is the same story told in a different way.	ఇదే కథను ఇప్పుడు వేరే విధంగా చెప్తున్నాను.		draft
+Mbbc621df2b75	44	story	1	Martin lives alone in a small apartment.			todo
+Mead526bb2f7f	44	story	2	He has to do all the housework alone.			todo
+Mee296b521250	44	story	3	But he works a lot, so he never has time to clean.			todo
+M602506db1df8	44	story	4	His clothes and dishes are always dirty.			todo
+Ma3efb3cbc8cb	44	story	5	He is trying to get dressed for work.			todo
+Mc4cae1410b8b	44	story	6	But he doesn't have any clean socks.			todo
+Mf8938ea70095	44	story	7	He only has a little time before work starts.			todo
+M00ce60e74e4c	44	story	8	He could try to wash them.			todo
+Mb914a7c8422f	44	story	9	He realizes that if he goes to a store before work, he can buy some new socks.			todo
+Me94f0b52f0d8	44	story	10	Instead, he decides to try washing all his clothes after work.			todo
+M5b5d7174b0ea	44	retell	1	I lived alone in a small apartment.			todo
+Mca7765764f97	44	retell	2	I had to do all the housework alone.			todo
+M88834674d3d0	44	retell	3	But I worked a lot, so I never had time to clean.			todo
+Mebc34e215c85	44	retell	4	My clothes and dishes were always dirty.			todo
+M4519e97e12fc	44	retell	5	I was trying to get dressed for work.			todo
+M787134be0841	44	retell	6	But I didn't have any clean socks.			todo
+Mc669352dcaf0	44	retell	7	I only had a little time before work started.			todo
+Mc44a835e4c33	44	retell	8	I realized that if I went to a store before work, I could buy some new socks.			todo
+Ma10ae5026708	44	retell	9	Instead, I decided to try washing my clothes after work.			todo
+M967a8b78c332	44	questions	1	One: Martin lives alone in a small apartment.			todo
+Mdbc5df97a229	44	questions	2	Does Martin live with someone?			todo
+M1b5c452a7274	44	questions	3	No, Martin doesn't live with anyone.			todo
+M6b10a5e2ca9f	44	questions	4	He lives alone in a small apartment.			todo
+M548024d3c569	44	questions	5	Two: Martin never has any time to clean.			todo
+Me98bd87421a6	44	questions	6	Does Martin ever have time to clean?			todo
+Mde652e34b6b8	44	questions	7	No, Martin never has any time to clean.			todo
+Mbaee408bd441	44	questions	8	Three: Martin is trying to get dressed for work.			todo
+M9fc4b9a43959	44	questions	9	What is Martin trying to do?			todo
+M0bdecc06b92d	44	questions	10	Martin is trying to get dressed for work.			todo
+M359596997b5d	44	questions	11	Four: Martin only has a little time before work starts.			todo
+Mca2e157defcf	44	questions	12	How much time does Martin have before work starts?			todo
+Mdb85d02a397e	44	questions	13	He only has a little time before work starts.			todo
+M0af1ac050f90	44	questions	14	Five: Martin had to do all the housework.			todo
+Mc27124bc9efd	44	questions	15	How much housework did Martin have to do?			todo
+M52c800afb080	44	questions	16	Martin had to do all the housework.			todo
+M2bc00fd76a8a	44	questions	17	Six: Martin's clothes and dishes were always dirty.			todo
+M872fbc4c0b71	44	questions	18	What was always dirty?			todo
+M9da326e51bf2	44	questions	19	Martin's clothes and dishes were always dirty.			todo
+M7fb2c1393285	44	questions	20	Seven: Martin didn't have any clean socks to wear to work.			todo
+M9f68a6191309	44	questions	21	What didn't Martin have?			todo
+M798354f64119	44	questions	22	He didn't have any clean socks to wear to work.			todo
+Macf05230f3c4	44	questions	23	Eight: Martin thought of going to the store before work started.			todo
+M2992ee030cf4	44	questions	24	When did Martin think of going to the store?			todo
+Ma861459b0796	44	questions	25	Martin thought of going to the store before work started.			todo

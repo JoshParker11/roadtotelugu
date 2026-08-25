@@ -1,0 +1,12 @@
+guid	num	part	seq	en	te	notes	status
+M98a83054b2b4	1	meta	1	Story One - Mike is a Cook !	కథ ఒకటి – మైక్ ఒక వంటవాడు!		draft
+Mbbdd5bcb2e81	1	story	1	Mike gets up at six o'clock every morning.	మైక్ ప్రతి ఉదయం ఆరు గంటలకు లేస్తాడు.		draft
+M8103f5ea619c	1	story	2	He makes breakfast and drinks a cup of coffee.	అతను టిఫిన్ చేసుకుని, ఒక కప్పు కాఫీ తాగుతాడు.	"RESOLVED: టిఫిన్ confirmed in data/master_words.tsv (""breakfast, English origin, fully Telugu now"") — exact match, no change needed. చేసుకుని (reflexive/self-benefactive) is the grammatically correct form for ""makes his OWN breakfast""; చేసి would be a plain non-reflexive ""does/makes"" and is not what English ""makes his breakfast"" means. Settled by deck precedent + grammar, not by a native speaker — still worth a glance, not worth stalling on."	draft
+Mf59192fd5d1f	1	story	3	He drives to work in his car.	అతను తన కారులో పనికి వెళ్తాడు.	"RESOLVED: kept as ""కారులో వెళ్తాడు"" (goes in his car), no explicit drive verb. Deck DOES have both డ్రైవ్ (borrowed) and నడుపు (native) for ""drive"" as a separate concept, so this is not a vocabulary gap — ""goes to work by car"" is simply the natural, unmarked way to say this in Telugu, the same way English rarely says ""he drives himself to work"" over ""he drives to work."" Not a loss of meaning."	draft
+M627972907910	1	story	4	His work starts at seven-thirty.	అతని పని ఏడున్నరకు మొదలవుతుంది.		draft
+Mf4bbe4bbc215	1	story	5	Mike is a cook at a restaurant.	మైక్ ఒక రెస్టారెంట్‌లో వంటవాడు.		draft
+M0fbf39d9b85f	1	story	6	He makes food for hungry customers.	అతను ఆకలితో ఉన్న కస్టమర్ల కోసం వంట చేస్తాడు.		draft
+M08a42eca7f0d	1	story	7	The customers come from many countries.	కస్టమర్లు చాలా దేశాల నుంచి వస్తారు.		draft
+M4987b661c11b	1	story	8	They speak many different languages.	వాళ్ళు చాలా వేర్వేరు భాషలు మాట్లాడతారు.		draft
+M423b6d65259a	1	story	9	Mike can meet many friendly people.	మైక్ స్నేహంగా ఉండే చాలా మందిని కలవగలడు.		draft
+M61d853bc7ae6	1	story	10	Mike is happy when he talks to his customers.	మైక్ తన కస్టమర్లతో మాట్లాడినప్పుడు సంతోషంగా ఉంటాడు.		draft

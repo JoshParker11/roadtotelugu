@@ -1,0 +1,48 @@
+guid	num	part	seq	en	te	notes	status
+Mdb4233436a63	9	meta	1	Story Nine - New Girlfriend			todo
+Me35d761ad098	9	meta	2	Here is the same story told in a different way.	ఇదే కథను ఇప్పుడు వేరే విధంగా చెప్తున్నాను.		draft
+M2753ec6eccc5	9	story	1	Andy has a new girlfriend.			todo
+M32d64f8f8729	9	story	2	His girlfriend's name is Sara.			todo
+M0aeb1df3d138	9	story	3	Andy wants to make dinner for Sara.			todo
+M1bdcc956d345	9	story	4	He goes to the grocery store.			todo
+M81730c8ba2fc	9	story	5	Andy gets a basket and a cart.			todo
+M3a98a38cc2de	9	story	6	He walks past the vegetable aisle.			todo
+M4cdcf40a9a42	9	story	7	He looks at the fish in the freezer.			todo
+Mbf1ef75b1da2	9	story	8	He stands near the salad counter.			todo
+Me1c78f14ccbd	9	story	9	Finally, he leaves the store.			todo
+Mc9ec4b647a18	9	story	10	Andy goes home and orders pizza.			todo
+Mef97cb1274e0	9	retell	1	I have a new girlfriend.			todo
+M82d544bd4cad	9	retell	2	Her name is Sara.			todo
+M99aba6676624	9	retell	3	I want to make dinner for Sara.			todo
+Mc2a9fc9e8bdb	9	retell	4	I go to the grocery store.			todo
+M4bf22d9bcaba	9	retell	5	I get a basket and a cart.			todo
+M6688e3298669	9	retell	6	I walk past the vegetable aisle.			todo
+M1844bed71a87	9	retell	7	I look at the fish in the freezer.			todo
+Mee76ed91938e	9	retell	8	I stand near the salad counter.			todo
+Mfdb9df31007d	9	retell	9	Finally, I leave the store.			todo
+Ma9cd9ef56b89	9	retell	10	I go home and order pizza.			todo
+M9d9c85daeced	9	questions	1	One: Andy has a new girlfriend named Sara.			todo
+M50988d91bcf4	9	questions	2	Does Andy have a new girlfriend?			todo
+Mef192e404fd6	9	questions	3	Yes, Andy has a new girlfriend.			todo
+Mfb44f4184cf6	9	questions	4	Her name is Sara.			todo
+M01fa0db04825	9	questions	5	Two: Andy wants to make Sara dinner.			todo
+Mec6277840763	9	questions	6	Does Andy want to make lunch for Sara?			todo
+M922f72894b63	9	questions	7	No, Andy does not want to make lunch for Sara.			todo
+M0108a5789a4f	9	questions	8	He wants to make her dinner.			todo
+M89c3e3bb66a7	9	questions	9	Three: Andy goes to the grocery store to buy food.			todo
+M87b2ef1f4ec8	9	questions	10	Does Andy go to the grocery store?			todo
+Mfbe0c93f1f66	9	questions	11	Yes, Andy goes to the grocery store to buy food.			todo
+M7ab04901b8bd	9	questions	12	Four: Andy walks past the vegetable section.			todo
+M3a39b175dfa9	9	questions	13	Does Andy buy vegetables?			todo
+M9095663d9d2a	9	questions	14	No, Andy does not buy vegetables.			todo
+M9ba36be862bd	9	questions	15	He walks past the vegetable section.			todo
+M2e542dba28e5	9	questions	16	Five: Andy looks at the fish in the freezer, but he doesn't buy any.			todo
+Mff400b8b774c	9	questions	17	Does Andy look at the fish?			todo
+M57bcc3dfe29b	9	questions	18	Yes, Andy looks at the fish in the freezer, but he doesn't buy any.			todo
+Mb4d82a8705bc	9	questions	19	Six: Andy finally leaves the store and goes home.			todo
+M37325a34a229	9	questions	20	Does Andy stay in the store?			todo
+M5f497442a4f6	9	questions	21	No, Andy finally leaves the store and goes home.			todo
+M2fb7582a070e	9	questions	22	Seven: Andy orders pizza instead.			todo
+Mb7990ea7c889	9	questions	23	Does Andy make dinner?			todo
+M28abdf69b613	9	questions	24	No, Andy does not make dinner.			todo
+M3fdf23f14caf	9	questions	25	He orders pizza instead.			todo

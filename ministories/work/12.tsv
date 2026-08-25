@@ -1,0 +1,53 @@
+guid	num	part	seq	en	te	notes	status
+M3b7ce1f59b86	12	meta	1	Story Twelve - Janet Buys a New Computer			todo
+Me35d761ad098	12	meta	2	Here is the same story told in a different way.	ఇదే కథను ఇప్పుడు వేరే విధంగా చెప్తున్నాను.		draft
+M11350edc1889	12	story	1	Janet uses the computer a lot.			todo
+M37bd0f9cab3e	12	story	2	But, she needs a new computer.			todo
+M5269d41f86bb	12	story	3	Her computer is old and slow.			todo
+M5295e76c766f	12	story	4	She goes to an electronic store.			todo
+Mc12180fcacb9	12	story	5	She sees many computers in the store.			todo
+Ma464d3f8b95d	12	story	6	She wants a big screen on her computer.			todo
+Mb17172429db8	12	story	7	And she wants a good keyboard.			todo
+M180fd9dc86d8	12	story	8	She sees a nice, blue computer.			todo
+Mf50083a0929c	12	story	9	She likes the screen, the keyboard, and the style.			todo
+Mddb920c4d1d7	12	story	10	She buys the computer with a credit card.			todo
+M51c6df5742c4	12	retell	1	I use the computer a lot.			todo
+Mcea9b46cbd60	12	retell	2	But, I need a new computer.			todo
+Mf5a4d3e45d1f	12	retell	3	My computer is old and slow.			todo
+Mc5dab7d908fd	12	retell	4	I go to an electronics store.			todo
+Mf7c9a3bda1a0	12	retell	5	I see many computers in the store.			todo
+M09765b233cf7	12	retell	6	I want a big screen on my computer.			todo
+M901c1fc51524	12	retell	7	And I want a good keyboard.			todo
+M21fc5d580c49	12	retell	8	I see a nice, blue computer.			todo
+M93cac5eb2669	12	retell	9	I like the screen, the keyboard, and the style.			todo
+M6322bb829292	12	retell	10	I buy the computer with a credit card.			todo
+M14d79d50c5fb	12	questions	1	One: Janet uses the computer a lot.			todo
+M51faa13f4077	12	questions	2	Does Janet use the computer a lot?			todo
+Mde7dd12d1d66	12	questions	3	Yes, she uses the computer a lot.			todo
+M6e597eba2d3d	12	questions	4	Two: Janet needs a new computer.			todo
+M1584d73c4b92	12	questions	5	Does Janet need a new computer?			todo
+Md73026229f49	12	questions	6	Yes, she needs a new computer.			todo
+M6b049968ff97	12	questions	7	Three: Janet's computer is old, and slow.			todo
+Mb0d21e1883e8	12	questions	8	Is Janet's computer new?			todo
+M9dfffc9a6860	12	questions	9	No, her computer is not new.			todo
+M92bae3ed0754	12	questions	10	It is old, and slow.			todo
+Me1b3ca6bef2b	12	questions	11	Four: Janet sees many computers in the electronics store.			todo
+M2be55a0ac00d	12	questions	12	Are there many computers in the store?			todo
+M818c12e722af	12	questions	13	Yes, Janet sees many computers in the electronics store.			todo
+M6ae34b5e14d5	12	questions	14	Five: Janet wants a big screen on her computer.			todo
+Mdae5d1832238	12	questions	15	Does Janet want a small screen?			todo
+M9ca77def381c	12	questions	16	No, Janet wants a big screen on her computer.			todo
+M19ea14549961	12	questions	17	Six: Janet wants a good keyboard for her computer.			todo
+M466c4dfe8d4a	12	questions	18	Does Janet want a good keyboard?			todo
+Mc62ac3e98313	12	questions	19	Yes, Janet wants a good keyboard for her computer.			todo
+Mde34d551f40c	12	questions	20	Seven: Janet sees a blue computer.			todo
+Mffb82ed122fb	12	questions	21	Does Janet see a black computer?			todo
+Mcd7bc0fa655c	12	questions	22	No, she does not see a black computer.			todo
+M54aec8d39ba3	12	questions	23	She sees a blue computer.			todo
+M425d60de6bac	12	questions	24	Eight: Janet likes the blue computer's screen, keyboard, and style.			todo
+Maa40e1d27e5b	12	questions	25	Does Janet like the blue computer?			todo
+M8d90894a8b6f	12	questions	26	Yes, Janet likes the blue computer's screen, keyboard, and style.			todo
+M684984c0da17	12	questions	27	Nine: Janet buys the computer with a credit card.			todo
+M469ac7710513	12	questions	28	Does Janet buy the computer with cash?			todo
+M5865d065c62b	12	questions	29	No, she doesn't use cash.			todo
+M49b758f93f20	12	questions	30	She buys it with a credit card.			todo

@@ -1,0 +1,50 @@
+guid	num	part	seq	en	te	notes	status
+M05fab376e8e6	22	meta	1	Story Twenty-two - Emma isn't feeling very well			todo
+Me35d761ad098	22	meta	2	Here is the same story told in a different way.	ఇదే కథను ఇప్పుడు వేరే విధంగా చెప్తున్నాను.		draft
+Ma5949b06df16	22	story	1	Emma isn't feeling very well.			todo
+Macd46e6c0ecd	22	story	2	She has a headache and a sore throat.			todo
+M54473dbbe09a	22	story	3	She is also sneezing a lot.			todo
+Mf1c98c8c7c4f	22	story	4	She decides to go to the doctor.			todo
+Md79f473fada6	22	story	5	She tells the doctor how she feels.			todo
+M7f13b2a5f812	22	story	6	The doctor tells Emma she has a cold.			todo
+Mcaa976852def	22	story	7	Emma asks the doctor for some medicine.			todo
+M9912e540d8f9	22	story	8	The doctor says Emma doesn't need medicine for a cold.			todo
+Md50343753763	22	story	9	The doctor tells Emma to sleep and drink water instead.			todo
+M246e5ecc598c	22	story	10	Emma isn't feeling better when she leaves the doctor.			todo
+M370eca1087d3	22	retell	1	I didn't feel very well.			todo
+Mdf88139890b2	22	retell	2	I had a headache and a sore throat.			todo
+M89227fe2eaa0	22	retell	3	I was also sneezing a lot.			todo
+M32fc5fc8c725	22	retell	4	I decided to go to the doctor.			todo
+Me7156ddc7fa1	22	retell	5	I told the doctor how I felt.			todo
+M00ae4ddba302	22	retell	6	The doctor told me I had a cold.			todo
+M92b40969e9b4	22	retell	7	I asked the doctor for some medicine.			todo
+M3b3308902c7a	22	retell	8	The doctor said I didn't need medicine for a cold.			todo
+M2cb034b552fe	22	retell	9	The doctor told me to sleep and drink water instead.			todo
+M41cd266f70ea	22	retell	10	I didn't feel better when I left the doctor.			todo
+Me1ae9799979e	22	questions	1	One: Emma isn't feeling well.			todo
+Mdfa5185cbfbe	22	questions	2	Is Emma feeling well?			todo
+Mc98eb9f968ca	22	questions	3	No, she isn't feeling well.			todo
+M9580f5ded5cd	22	questions	4	Two: Emma has a headache and a sore throat.			todo
+Md23d17b9596b	22	questions	5	What does she have?			todo
+M413dfea3308c	22	questions	6	She has a headache and a sore throat.			todo
+Mcd1cb01e1a22	22	questions	7	Three: Emma is sneezing a lot.			todo
+M437e0fca072d	22	questions	8	What is Emma doing a lot?			todo
+M4ba4344c06dc	22	questions	9	She is sneezing a lot.			todo
+M19a02ea0f9e2	22	questions	10	Four: Emma decides to go to the doctor.			todo
+Mf971d6c1562e	22	questions	11	What does Emma decide to do?			todo
+Mb591c7b311de	22	questions	12	She decides to go to the doctor.			todo
+Mc4f607fc20ec	22	questions	13	Five: Emma tells the doctor how she feels.			todo
+Md58e7f24b719	22	questions	14	What does she tell the doctor?			todo
+Mb2bf43dbea9c	22	questions	15	She tells the doctor how she feels.			todo
+M5cfb63a7a93f	22	questions	16	Six: The doctor told Emma that she has a cold.			todo
+Mdf17e0630fa4	22	questions	17	What did the doctor tell Emma?			todo
+M54c0b8d1a329	22	questions	18	The doctor told her that she has a cold.			todo
+M7172e5072f1f	22	questions	19	Seven: The doctor said Emma didn't need medicine for a cold.			todo
+M58ed470b4120	22	questions	20	Did the doctor say Emma needs medicine?			todo
+M75f3c0a7958d	22	questions	21	No, the doctor said Emma didn't need medicine for a cold.			todo
+M0d6eea8e77dc	22	questions	22	Eight: The doctor told Emma to sleep and drink water instead.			todo
+Ma92555899283	22	questions	23	What did the doctor tell Emma to do instead?			todo
+M5535784b81d7	22	questions	24	The doctor told Emma to sleep and drink water instead.			todo
+M5a70ea7d0e46	22	questions	25	Nine: Emma didn't feel better when she left the doctor.			todo
+M4d9acf52790d	22	questions	26	Did Emma feel better when she left the doctor?			todo
+Mb72b33bb19d6	22	questions	27	No, Emma didn't feel better when she left the doctor.			todo

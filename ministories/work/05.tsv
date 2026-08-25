@@ -1,0 +1,49 @@
+guid	num	part	seq	en	te	notes	status
+Md585b0658727	5	meta	1	Story Five - Jon Has Lots of Homework	కథ ఐదు – జాన్‌కు చాలా హోంవర్క్ ఉంది		draft
+Me35d761ad098	5	meta	2	Here is the same story told in a different way.	ఇదే కథను ఇప్పుడు వేరే విధంగా చెప్తున్నాను.		draft
+M902a6de03153	5	story	1	Jon is in high school.	జాన్ హైస్కూల్లో చదువుతున్నాడు.		draft
+M1738d7593777	5	story	2	He has lots of homework.	అతనికి చాలా హోంవర్క్ ఉంది.		draft
+M1d52df997c3c	5	story	3	Clare is a university student.	క్లేర్ యూనివర్సిటీ విద్యార్థిని.		draft
+M6f785000fb56	5	story	4	She has lots of homework, too.	ఆమెకు కూడా చాలా హోంవర్క్ ఉంది.		draft
+Mdd4ab580e417	5	story	5	Jon does not like homework.	జాన్‌కు హోంవర్క్ అంటే ఇష్టం లేదు.		draft
+Ma43404cd274b	5	story	6	He likes to play on his computer.	అతనికి తన కంప్యూటర్‌లో ఆడటం అంటే ఇష్టం.		draft
+M59c4ef223e95	5	story	7	Clare likes reading and writing.	క్లేర్‌కు చదవడం, రాయడం అంటే ఇష్టం.		draft
+Mae1475ed3503	5	story	8	She does her homework every day.	ఆమె ప్రతి రోజూ తన హోంవర్క్ చేస్తుంది.		draft
+M430f729e114b	5	story	9	Clare is Jon's older sister.	క్లేర్ జాన్ అక్క.	"RESOLVED: అక్క (""elder sister"") and చెల్లి (""younger sister"") both confirmed in data/master_words.tsv as distinct established terms — Telugu genuinely has no age-neutral ""sister,"" and అక్క is specifically correct since Clare is stated as Jon's OLDER sister. Direct precedent, not a guess."	draft
+Med5880a7ae78	5	story	10	She always makes him do his homework.	ఆమె ఎప్పుడూ అతనితో హోంవర్క్ చేయిస్తుంది.	"RESOLVED: చేయిస్తుంది (causative) kept. The Telugu causative is the standard, unmarked way to express ""make/have someone do something"" and carries no more force than English ""makes him do his homework"" already does — a sibling ensuring homework gets done, not coercion. The English itself says ""makes,"" so matching that force is correct, not an overstatement."	draft
+Mab793095c316	5	retell	1	I am in high school.	నేను హైస్కూల్లో చదువుతున్నాను.		draft
+M0f0d4738a9a3	5	retell	2	I have lots of homework.	నాకు చాలా హోంవర్క్ ఉంది.		draft
+M65c1ca6f20e9	5	retell	3	Clare is a university student.	క్లేర్ యూనివర్సిటీ విద్యార్థిని.		draft
+M7f1a9461d8f5	5	retell	4	She has lots of homework, too.	ఆమెకు కూడా చాలా హోంవర్క్ ఉంది.		draft
+M9588bbac3eef	5	retell	5	I do not like homework.	నాకు హోంవర్క్ అంటే ఇష్టం లేదు.		draft
+M24726d63a47c	5	retell	6	I like to play on my computer.	నాకు నా కంప్యూటర్‌లో ఆడటం అంటే ఇష్టం.		draft
+M73c93d1dfb8f	5	retell	7	Clare likes reading and writing.	క్లేర్‌కు చదవడం, రాయడం అంటే ఇష్టం.		draft
+Mfdccfbd52c74	5	retell	8	She does her homework every day.	ఆమె ప్రతి రోజూ తన హోంవర్క్ చేస్తుంది.		draft
+Mcb5ecc6ac627	5	retell	9	Clare is my older sister.	క్లేర్ మా అక్క.		draft
+Mf0fccec5ba3c	5	retell	10	She always makes me do my homework.	ఆమె ఎప్పుడూ నాతో హోంవర్క్ చేయిస్తుంది.		draft
+M0301635ed4ba	5	questions	1	One: Jon is a high school student.	ఒకటి: జాన్ హైస్కూల్ విద్యార్థి.		draft
+M2ee5c50cfcf1	5	questions	2	Is Jon a high school student?	జాన్ హైస్కూల్ విద్యార్థా?		draft
+Ma2d62327fd95	5	questions	3	Yes, Jon is a high school student.	అవును, జాన్ హైస్కూల్ విద్యార్థి.		draft
+M926a6ddad4a9	5	questions	4	Two: Jon has a lot of homework.	రెండు: జాన్‌కు చాలా హోంవర్క్ ఉంది.		draft
+Mc050b3c7bc11	5	questions	5	Does Jon have a lot of homework?	జాన్‌కు చాలా హోంవర్క్ ఉందా?		draft
+Mb4a5c5dc7a23	5	questions	6	Yes, Jon has a lot of homework.	అవును, జాన్‌కు చాలా హోంవర్క్ ఉంది.		draft
+Ma807b013d0f3	5	questions	7	Three: Clare is a university student.	మూడు: క్లేర్ యూనివర్సిటీ విద్యార్థిని.		draft
+Mbc87661aeb09	5	questions	8	Is Clare a high school student?	క్లేర్ హైస్కూల్ విద్యార్థినా?		draft
+M341d2d02b32b	5	questions	9	No, Clare is not a high school student.	లేదు, క్లేర్ హైస్కూల్ విద్యార్థిని కాదు.		draft
+M404f80195bf2	5	questions	10	She is a university student.	ఆమె యూనివర్సిటీ విద్యార్థిని.		draft
+Mb131de145fea	5	questions	11	Four: Jon likes playing on his computer.	నాలుగు: జాన్‌కు తన కంప్యూటర్‌లో ఆడటం అంటే ఇష్టం.		draft
+Mb210f37165a3	5	questions	12	Does Jon like playing on his computer?	జాన్‌కు తన కంప్యూటర్‌లో ఆడటం అంటే ఇష్టమా?		draft
+Ma3da152dc3ea	5	questions	13	Yes, Jon likes playing on his computer.	అవును, జాన్‌కు తన కంప్యూటర్‌లో ఆడటం అంటే ఇష్టం.		draft
+Mb5dc6c6c650a	5	questions	14	Five: Clare likes reading and writing.	ఐదు: క్లేర్‌కు చదవడం, రాయడం అంటే ఇష్టం.		draft
+M0e79c6bafa76	5	questions	15	Does Clare like watching movies?	క్లేర్‌కు సినిమాలు చూడటం అంటే ఇష్టమా?		draft
+Meda153d2fcc4	5	questions	16	No, Clare likes reading and writing.	లేదు, క్లేర్‌కు చదవడం, రాయడం అంటే ఇష్టం.		draft
+M448790f176a4	5	questions	17	Six: Clare does her homework every day.	ఆరు: క్లేర్ ప్రతి రోజూ తన హోంవర్క్ చేస్తుంది.		draft
+M656228cec7b4	5	questions	18	Does Clare do her homework every day?	క్లేర్ ప్రతి రోజూ తన హోంవర్క్ చేస్తుందా?		draft
+M0c6210b3d16d	5	questions	19	Yes, Clare does her homework every day.	అవును, క్లేర్ ప్రతి రోజూ తన హోంవర్క్ చేస్తుంది.		draft
+M7e5ef182eb99	5	questions	20	Seven: Clare is Jon's older sister.	ఏడు: క్లేర్ జాన్ అక్క.		draft
+M15b34115842d	5	questions	21	Are Jon and Clare related?	జాన్, క్లేర్ బంధువులా?		draft
+Mf9530400a8d8	5	questions	22	Yes, Jon and Clare are related.	అవును, జాన్, క్లేర్ బంధువులు.		draft
+Me8eb1d8d4dab	5	questions	23	Clare is Jon's older sister.	క్లేర్ జాన్ అక్క.		draft
+M7573e41adc24	5	questions	24	Eight: Clare makes Jon do his homework every day.	ఎనిమిది: క్లేర్ ప్రతి రోజూ జాన్‌తో హోంవర్క్ చేయిస్తుంది.		draft
+Mec1c434fed32	5	questions	25	Does Clare make Jon do his homework?	క్లేర్ జాన్‌తో హోంవర్క్ చేయిస్తుందా?		draft
+M5cdbf4f72aee	5	questions	26	Yes, Clare makes Jon do his homework every day.	అవును, క్లేర్ ప్రతి రోజూ జాన్‌తో హోంవర్క్ చేయిస్తుంది.		draft

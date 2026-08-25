@@ -1,0 +1,48 @@
+guid	num	part	seq	en	te	notes	status
+Me35d761ad098	21	meta	1	Here is the same story told in a different way.	ఇదే కథను ఇప్పుడు వేరే విధంగా చెప్తున్నాను.		draft
+Ma2fe1dd7bee2	21	story	1	Jerry likes comedy movies more than romance movies.			todo
+Ma95a1f35c2e8	21	story	2	Jerry is taking a day off from work			todo
+Mec047f98e7eb	21	story	3	He wants to go see a movie.			todo
+M63781aeb2082	21	story	4	Jerry likes comedy movies more than romance movies.			todo
+Mb445ed5cc8fb	21	story	5	And he doesn't like science fiction movies as much as action movies.			todo
+M5bc4b7306ff4	21	story	6	He is checking the list of new movies online.			todo
+M914ec6eae76a	21	story	7	There are five new movies playing.			todo
+M1c80dab201b6	21	story	8	Three of the new movies are romance movies.			todo
+M4bfa82bbea40	21	story	9	One of the movies is a science fiction movie.			todo
+Mf05ad1e7bfb9	21	story	10	One of the movies is a comedy.			todo
+M4516b96f8af0	21	story	11	Jerry is thinking about seeing the new comedy movie.			todo
+M5284929b6445	21	retell	1	I took a day off from work.			todo
+Meb5c3def59f0	21	retell	2	I wanted to go see a movie.			todo
+M5a1d929e028f	21	retell	3	I like comedy movies more than romance movies.			todo
+Md0eb47429137	21	retell	4	And I don't like science fiction movies as much as action movies.			todo
+Mc9c376406cae	21	retell	5	I checked the list of new movies online.			todo
+M9c18a65b7031	21	retell	6	There were five new movies playing.			todo
+M4c9faa7eeb43	21	retell	7	Three of the new movies were romance movies.			todo
+Me84b7a9bb6b2	21	retell	8	One of the movies was a science fiction movie.			todo
+M8fde3026c66c	21	retell	9	One of the movies was a comedy.			todo
+M10220d088a50	21	retell	10	I thought about going to see the new comedy movie.			todo
+M564f7060bc04	21	questions	1	One: Jerry has a day off from work.			todo
+Mbd8dafaff3bf	21	questions	2	Is Jerry working today?			todo
+M6504a9cbd243	21	questions	3	No, Jerry is not working.			todo
+Mb19145f12d65	21	questions	4	He has a day off from work.			todo
+Mdd7ed29a8b33	21	questions	5	Two: Jerry wants to go see a movie.			todo
+M579019ab422d	21	questions	6	What does Jerry want to go see?			todo
+Me88c2bbe139d	21	questions	7	He wants to go see a movie.			todo
+M90d295d56d6a	21	questions	8	Three: Jerry doesn't like romance movies or science fiction movies.			todo
+M18f8a094849c	21	questions	9	Does Jerry like romance movies?			todo
+M38cd7e07e963	21	questions	10	No, Jerry doesn't like romance movies or science fiction movies.			todo
+Mc44c70a5feea	21	questions	11	Four: Jerry likes comedy and action movies.			todo
+M4277277448b8	21	questions	12	What movies does Jerry like?			todo
+Mebe6ef25135c	21	questions	13	He likes comedy and action movies.			todo
+Mf52022eacebb	21	questions	14	Five: Jerry checked the list of new movies online.			todo
+M8cef148d7f29	21	questions	15	What list did Jerry check?			todo
+Mbba2ac5242b6	21	questions	16	Jerry checked the list of new movies online.			todo
+Mf4426b4db80b	21	questions	17	Six: There were five new movies playing.			todo
+M1880b50aad57	21	questions	18	Were there five new movies playing?			todo
+Mb0ff883f0a1c	21	questions	19	Yes, there were five new movies playing.			todo
+M4c6a31928217	21	questions	20	Seven: There was one science fiction movie playing.			todo
+M7f74517158e4	21	questions	21	Were there any science fiction movies playing?			todo
+M0e7333e911fd	21	questions	22	Yes, there was one science fiction movie playing.			todo
+M176331b69d8d	21	questions	23	Eight: Jerry decided to see the new comedy movie.			todo
+M6cafd4133270	21	questions	24	What movie did Jerry decide to see?			todo
+M7079f13409ea	21	questions	25	He decided to see the new comedy movie.			todo

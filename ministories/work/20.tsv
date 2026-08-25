@@ -1,0 +1,52 @@
+guid	num	part	seq	en	te	notes	status
+M6fb6ddb9a532	20	meta	1	Story Twenty - Alissa is trying to go to work			todo
+Me35d761ad098	20	meta	2	Here is the same story told in a different way.	ఇదే కథను ఇప్పుడు వేరే విధంగా చెప్తున్నాను.		draft
+M552555fd1a46	20	story	1	Alissa is trying to go to work.			todo
+Md7588876bc72	20	story	2	She is trying to start her car.			todo
+M133a0d610859	20	story	3	But it's too cold outside.			todo
+M2c751c1f33bc	20	story	4	So her car isn't starting.			todo
+M194517749373	20	story	5	She checks the bus schedule first.			todo
+Mff61c64b0c7d	20	story	6	The city buses are too slow.			todo
+M22e604732ecd	20	story	7	She checks the train schedule instead.			todo
+M714cbef5f28c	20	story	8	The trains are running on time.			todo
+M5854c9bb205a	20	story	9	She decides to take the train to work.			todo
+Mcdc410515c80	20	story	10	She hopes she won't be late for work.			todo
+Mcd2817c09ff4	20	retell	1	I needed to go to work.			todo
+M857e6b89c0a2	20	retell	2	I tried to start my car.			todo
+Ma37b91f6b582	20	retell	3	But it was too cold outside.			todo
+Me7e7b2fc2ce8	20	retell	4	So my car wouldn't start.			todo
+Mc31dce1522b3	20	retell	5	I checked the bus schedule first.			todo
+M0d41f729dc06	20	retell	6	The city buses are too slow.			todo
+M0c7c0a6862fa	20	retell	7	I checked the train schedule instead.			todo
+M808641150581	20	retell	8	The trains were running on time.			todo
+M3f550b27775a	20	retell	9	I decided to take the train to work.			todo
+Mffad7c996828	20	retell	10	I hoped I wouldn't be late for work.			todo
+M1c3562b01016	20	questions	1	One: Alissa is trying to go to work.			todo
+M6acdf4c570c2	20	questions	2	Is Alissa trying to go to work?			todo
+M4fa53d2c4cae	20	questions	3	Yes, Alissa is trying to go to work.			todo
+M54ae35bbbb7c	20	questions	4	Two: It's cold outside.			todo
+M06185c9bee3a	20	questions	5	Is it hot outside?			todo
+M1aa653e73971	20	questions	6	No, it's not hot outside.			todo
+Mb5a727896fca	20	questions	7	It's cold outside.			todo
+M405ba8c7566a	20	questions	8	Three: Alissa's car won't start because it's too cold outside.			todo
+M30e0452f315c	20	questions	9	Does Alissa's car start?			todo
+M2e6eb8582f2c	20	questions	10	No, Alissa's car won't start because it's too cold outside.			todo
+Mdbdf11b4d247	20	questions	11	Four: Alissa checks the bus schedule first.			todo
+Mf5987ffa76b5	20	questions	12	Does Alissa check the train schedule first?			todo
+M52371500639e	20	questions	13	No, she doesn't.			todo
+M4942951036bf	20	questions	14	Alissa checks the bus schedule first.			todo
+M5e31f351a96c	20	questions	15	Five: The city buses were too slow.			todo
+M8c2b5de572df	20	questions	16	Were the city buses slow?			todo
+M0e4bef7a16ec	20	questions	17	Yes, the city buses were too slow.			todo
+Mbfc08844e9f4	20	questions	18	Six: The trains were running on time.			todo
+Md660623e4ff3	20	questions	19	Were the trains running late?			todo
+M3a468db22c2d	20	questions	20	No, the trains were not running late.			todo
+Mb27718d453d3	20	questions	21	They were running on time.			todo
+Me491af414ff5	20	questions	22	Seven: Alissa decided to take the train to work.			todo
+Ma6d201dfdfa3	20	questions	23	Did Alissa decide to take the bus to work?			todo
+Ma100cb168635	20	questions	24	No, Alissa didn't decide to take the bus.			todo
+M89e908647136	20	questions	25	She decided to take the train to work.			todo
+M3a9fc3f884e6	20	questions	26	Eight: Alissa hoped she wouldn't be late for work.			todo
+Mc73e8db24330	20	questions	27	Did Alissa want to be late?			todo
+Mf247f9fafe3d	20	questions	28	No, she didn't want to be late.			todo
+M7a661f74d064	20	questions	29	She hoped she wouldn't be late for work.			todo

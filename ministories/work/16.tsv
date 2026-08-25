@@ -1,0 +1,49 @@
+guid	num	part	seq	en	te	notes	status
+Me0c7cf62564f	16	meta	1	Story Sixteen - Gene wants a new job			todo
+Me35d761ad098	16	meta	2	Here is the same story told in a different way.	ఇదే కథను ఇప్పుడు వేరే విధంగా చెప్తున్నాను.		draft
+M9627f27ca291	16	story	1	Gene wants a new job.			todo
+M7193649647fe	16	story	2	He doesn't like his office job.			todo
+M0fe846ba292c	16	story	3	He thinks his job is too boring.			todo
+M2a96d5a1f0a4	16	story	4	Gene wants a more exciting job.			todo
+Mad34778e3135	16	story	5	He looks for a new job online.			todo
+Mbfce2aa96b75	16	story	6	There are many jobs in restaurants.			todo
+Mdcb63dde6d5f	16	story	7	There are also many jobs in stores.			todo
+Mef419b3f0636	16	story	8	Gene can't cook very well.			todo
+Mecd7bb8dc799	16	story	9	But he likes shopping and talking to people.			todo
+M3fd4ebacb62a	16	story	10	Gene hopes he can find a job in a store.			todo
+Md663ed769d1b	16	retell	1	I want a new job.			todo
+Mb13aa275f159	16	retell	2	I don't like my office job.			todo
+Md78bfd111a09	16	retell	3	I think my job is too boring.			todo
+Mf593521fecb8	16	retell	4	I want a more exciting job.			todo
+M1ded8f9b367a	16	retell	5	I look for a new job online.			todo
+M073d1cf8cfc8	16	retell	6	There are many jobs in restaurants.			todo
+M0e9da884e84f	16	retell	7	There are also many jobs in stores.			todo
+M65d80c312a54	16	retell	8	I can't cook very well.			todo
+Maad22ecf9419	16	retell	9	But I like shopping and talking to people.			todo
+M7a84c21a868a	16	retell	10	I hope I can find a job in a store.			todo
+Md90012c09f08	16	questions	1	One: Gene wants a new job.			todo
+M979338685164	16	questions	2	Does Gene want a new job?			todo
+M2e572e52a50e	16	questions	3	Yes, Gene wants a new job.			todo
+M551bdf61f6ba	16	questions	4	Two: Gene thinks his job is too boring.			todo
+M7562b2c9c68c	16	questions	5	Does Gene like his office job?			todo
+Med212a7e893a	16	questions	6	No, he doesn't like his office job.			todo
+Mbae50c7b6b11	16	questions	7	He thinks his job is too boring.			todo
+M079f6ad35005	16	questions	8	Three: Gene wants a more exciting job.			todo
+Mc86880941e71	16	questions	9	Does Gene want a boring job?			todo
+Mc2edc9414956	16	questions	10	No, Gene wants a more exciting job.			todo
+M965ae3291d5e	16	questions	11	Four: Gene looks for a new job online.			todo
+Maddd6151d2ae	16	questions	12	Does Gene look for a job online?			todo
+M98dd03c22eff	16	questions	13	Yes, he looks for a new job online.			todo
+M9153c60b1371	16	questions	14	Five: There are many jobs in restaurants.			todo
+M25d9fb8b5ab5	16	questions	15	Are there many jobs in restaurants?			todo
+Mf52fc6ea5cd5	16	questions	16	Yes, there are many jobs in restaurants.			todo
+M464cdc8b04a6	16	questions	17	Six: Gene can't cook very well.			todo
+M488686f58f2d	16	questions	18	Can Gene cook well?			todo
+Mc6c13ae41730	16	questions	19	No, Gene can't cook very well.			todo
+M66cab42ca45a	16	questions	20	Seven: Gene likes shopping and talking to people.			todo
+M304b80dc0724	16	questions	21	Does Gene like talking to people?			todo
+Meb068f63e026	16	questions	22	Yes, Gene likes talking to people, and shopping.			todo
+M41b13b2cc2f7	16	questions	23	Eight: Gene wants to find a job in a store.			todo
+Me6e530cd482c	16	questions	24	Does Gene want a job in a restaurant?			todo
+M3b4ade31c9bc	16	questions	25	No, he doesn't want a job in a restaurant.			todo
+M29b132ddcbf1	16	questions	26	He wants to find a job in a store.			todo

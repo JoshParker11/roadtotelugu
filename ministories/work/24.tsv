@@ -1,0 +1,48 @@
+guid	num	part	seq	en	te	notes	status
+M2aaaeda39271	24	meta	1	Story Twenty-four - Carl is looking for a new job			todo
+Me35d761ad098	24	meta	2	Here is the same story told in a different way.	ఇదే కథను ఇప్పుడు వేరే విధంగా చెప్తున్నాను.		draft
+Mb33a8ee10802	24	story	1	Carl is looking for a new job.			todo
+Mfa952c54e93b	24	story	2	He has a job interview tomorrow.			todo
+M31f19a1b983f	24	story	3	He must look professional for his interview.			todo
+Mdc9aa06ba2eb	24	story	4	But Carl's clothes are very old.			todo
+Ma3f256deecd2	24	story	5	He is thinking about buying a new suit.			todo
+Md3a62ad103a5	24	story	6	Carl goes to the clothing store.			todo
+M1f2a86933990	24	story	7	He tries on some new suits.			todo
+M39d2c0934437	24	story	8	Finally, he buys a grey suit.			todo
+M580918788de7	24	story	9	Carl thinks he looks good in his new suit.			todo
+Mdd7fa2eac1a4	24	story	10	He's going to be ready for his interview tomorrow.			todo
+M28d7984c6022	24	retell	1	I was looking for a new job.			todo
+M88135a439c75	24	retell	2	I had a job interview yesterday.			todo
+Maa208cda2790	24	retell	3	I had to look professional for my interview.			todo
+Mbf04569c0b19	24	retell	4	But my clothes were very old.			todo
+Mc2f04058eb80	24	retell	5	I decided to buy a new suit.			todo
+M7dcefeebe4df	24	retell	6	I went to the clothing store.			todo
+M10616b18287a	24	retell	7	I tried on some new suits.			todo
+M2c7ffe7f5867	24	retell	8	Finally, I bought a grey suit.			todo
+M8d75782e08d8	24	retell	9	I thought I looked good in my new suit.			todo
+Md2c116327248	24	retell	10	I was ready for my interview.			todo
+M805c37029753	24	questions	1	One: Carl is looking for a new job.			todo
+M5e5e8d09531e	24	questions	2	What is Carl looking for?			todo
+M3b6ba2524b24	24	questions	3	He is looking for a new job.			todo
+M2b6fc84dfa8c	24	questions	4	Two: Carl has a job interview tomorrow.			todo
+M7d9967dc3e5e	24	questions	5	What does Carl have tomorrow?			todo
+M8dc495a4179c	24	questions	6	He has a job interview tomorrow.			todo
+Mc955eb8a2d7c	24	questions	7	Three: Carl's clothes are very old.			todo
+M5ef5da112682	24	questions	8	Are Carl's clothes new?			todo
+M7701887bd3e2	24	questions	9	No, Carl's clothes are not new.			todo
+M4fc032c7e53d	24	questions	10	They are very old.			todo
+M40162fc81267	24	questions	11	Four: Carl is thinking about buying a new suit.			todo
+M52e116aadc59	24	questions	12	What is Carl thinking about buying?			todo
+M519c6cf0c750	24	questions	13	Carl is thinking about buying a new suit.			todo
+Ma4c77bb65901	24	questions	14	Five: Carl tried on some new suits.			todo
+M2a5cd411084b	24	questions	15	What did Carl do?			todo
+M537f4972e4e8	24	questions	16	Carl tried on some new suits.			todo
+Md78af4be2ace	24	questions	17	Six: Carl finally bought a grey suit.			todo
+Md6598547aa4d	24	questions	18	What colour suit did Carl finally buy?			todo
+M73921efb676a	24	questions	19	Carl finally bought a grey suit.			todo
+M50d3e80d12c2	24	questions	20	Seven: Carl thought he looked good in his new suit.			todo
+Mfc8ad0c6575e	24	questions	21	How did Carl feel in his new suit?			todo
+M2c0a2bb5eba8	24	questions	22	Carl thought he looked good in his new suit.			todo
+M4f74c353f4c7	24	questions	23	Eight: Carl was ready for his interview.			todo
+M6ef3ef618ab6	24	questions	24	Was Carl ready for his interview?			todo
+Madeb0375ebf0	24	questions	25	Yes, Carl was ready for his interview.			todo

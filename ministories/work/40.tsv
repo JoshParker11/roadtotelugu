@@ -1,0 +1,45 @@
+guid	num	part	seq	en	te	notes	status
+Mebc07e4cb304	40	meta	1	Story Forty - Sharon Has a Big Family			todo
+Me35d761ad098	40	meta	2	Here is the same story told in a different way.	ఇదే కథను ఇప్పుడు వేరే విధంగా చెప్తున్నాను.		draft
+M17ea4594fb81	40	story	1	Sharon has many people in her family.			todo
+M2682e6287747	40	story	2	She has a brother, a sister, and many cousins.			todo
+Maa3f135517a6	40	story	3	Sharon's brother is older than her.			todo
+Mdb268e8cfffa	40	story	4	He is also louder and funnier than Sharon.			todo
+M97f774fcd6be	40	story	5	Sharon's sister is younger than her.			todo
+Mfee9b0e353d4	40	story	6	Sharon's sister is also shorter and more outgoing.			todo
+M9a2452abdfa9	40	story	7	Sharon's sister likes talking to people more than Sharon does.			todo
+M2b0b23247ce6	40	story	8	Although Sharon has many older cousins, she doesn't know them very well.			todo
+Mce48715edca8	40	story	9	They live farther away than her brother and sister.			todo
+Mc6ce578942b8	40	retell	1	I have many people in my family.			todo
+Mf8b1aff511c3	40	retell	2	I have a brother, a sister, and many cousins.			todo
+M72f9d4ce2c54	40	retell	3	My brother is older than me.			todo
+Mfe0ca453936c	40	retell	4	He is louder and funnier than me.			todo
+M0163d4e3e9d6	40	retell	5	My sister is younger than me.			todo
+Mfac0cb14e7f2	40	retell	6	My sister is also shorter and more outgoing.			todo
+M0553a9bf5fec	40	retell	7	My sister likes talking to people more than I do.			todo
+M450024115a41	40	retell	8	Although I have many older cousins, I don't know them very well.			todo
+Mca0131c8f77f	40	retell	9	They live farther away than my brother and sister.			todo
+Mb90e63cded6b	40	questions	1	One: Sharon has many people in her family.			todo
+M6a4ef20347dd	40	questions	2	Does Sharon have a big family?			todo
+M4241736404e4	40	questions	3	Yes, Sharon has many people in her family.			todo
+Me8f0f33f9d03	40	questions	4	Two: Sharon has one brother.			todo
+M39aa3c91fc50	40	questions	5	How many brothers does Sharon have?			todo
+M6d7d76cfdd85	40	questions	6	She has one brother.			todo
+M3cf0c348e6d3	40	questions	7	Three: Sharon's brother is older than her.			todo
+M5fdfcdfd0547	40	questions	8	Who is older, Sharon or her brother?			todo
+Maa2134c422b9	40	questions	9	Sharon's brother is older than her.			todo
+Me9dff15fb36b	40	questions	10	Four: Sharon's brother is louder than her.			todo
+Mf6fc0fdb331c	40	questions	11	Which person is louder, Sharon or her brother?			todo
+M1587ba65a468	40	questions	12	Sharon's brother is louder than her.			todo
+M7179ffe31acb	40	questions	13	Five: Sharon's sister is younger than her.			todo
+M4277fd868dfd	40	questions	14	Who is younger, Sharon or her sister?			todo
+M96a4f1a9ba64	40	questions	15	Sharon's sister is younger than her.			todo
+M7647174efc36	40	questions	16	Six: Sharon's sister is more outgoing than Sharon, so she likes talking to people more.			todo
+M003449dd3327	40	questions	17	Which person likes talking to people more, Sharon or her sister?			todo
+M2d8aa0baf3a9	40	questions	18	Sharon's sister is more outgoing than Sharon, so she likes talking to people more than Sharon does.			todo
+M165dbf9d592a	40	questions	19	Seven: Sharon has many older cousins.			todo
+M71180a019921	40	questions	20	Does Sharon have a few cousins?			todo
+Mc59a2e4882b7	40	questions	21	No, Sharon has many older cousins.			todo
+M80693d47be01	40	questions	22	Eight: Sharon's brother and sister live closer than her cousins.			todo
+Md42e691088d1	40	questions	23	Who lives closer, Sharon's cousins, or her brother and sister?			todo
+M5265e4416c36	40	questions	24	Sharon's brother and sister live closer than her cousins.			todo

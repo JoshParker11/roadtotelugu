@@ -1,0 +1,52 @@
+guid	num	part	seq	en	te	notes	status
+Mf10a1d4c0371	60	meta	1	Story Sixty - Anne Should Take an Umbrella			todo
+Me35d761ad098	60	meta	2	Here is the same story told in a different way.	ఇదే కథను ఇప్పుడు వేరే విధంగా చెప్తున్నాను.		draft
+Mf4376b61ce74	60	story	1	I think it might rain today because there are dark clouds in the sky.			todo
+M9e57a9c01a51	60	story	2	Even if it doesn't start raining,			todo
+Mc784ba8e820e	60	story	3	I'd better take my umbrella with me since I got soaked yesterday.			todo
+Mbcc9441377e2	60	story	4	Sometimes I decide not to take an umbrella.			todo
+Mf1d0d048a022	60	story	5	Sometimes I just forget to take one.			todo
+M84727870a08d	60	story	6	I often hesitate to take an umbrella with me, when I should.			todo
+M99b139e79326	60	story	7	This is because I know I often leave my umbrella behind somewhere when I do take one with me.			todo
+M0cbdb36d969c	60	story	8	In any case, it seems to me that whenever I don't take my umbrella, it rains and I end up getting wet.			todo
+M654760edf62f	60	story	9	Yesterday, for example, I thought it wouldn't rain, even though the forecast said there was a twenty percent chance of rain.			todo
+Mf27eaa686c84	60	story	10	I left the house without an umbrella, hoping for the best.			todo
+M7d456ccf54e7	60	story	11	But what do you know, it rained and I got drenched.			todo
+M5544feb527db	60	story	12	I am just going to have to be more careful.			todo
+Macc1d5d65785	60	story	13	I need to be more careful about taking an umbrella, and more careful about remembering to bring it back home.			todo
+Me064c010a3f2	60	retell	1	Anne thought it would rain last Monday because there were dark clouds in the sky.			todo
+Mda6bf1346b3e	60	retell	2	Even if it didn't start raining, she thought she'd better take her umbrella with her, since she had gotten soaked the previous day.			todo
+Mdabf5f348e98	60	retell	3	She often decided not to take an umbrella, or simply just forgot to take one.			todo
+M459ca5b56a85	60	retell	4	She often hesitated to take an umbrella with her, when she should have taken one.			todo
+M56c17e503c3b	60	retell	5	This was because she knew that she would often leave her umbrella behind somewhere when she did take one with her.			todo
+M2efffc9f8fb9	60	retell	6	In any case, it seemed to Anne that whenever she didn't take her umbrella, it rained and she would end up getting wet.			todo
+Mf7ffbaa26b59	60	retell	7	The other day, for example, she thought it wouldn't rain, even though the forecast had said there was a twenty percent chance of rain.			todo
+Mc5bde15829dd	60	retell	8	She had left the house without an umbrella, hoping for the best.			todo
+Mb100a47a898e	60	retell	9	But what do you know, it had rained and she got drenched.			todo
+Me6fe32d57130	60	retell	10	She thought to herself that she was just going to have to be more careful.			todo
+Mdefde6308772	60	retell	11	She was going to have to be more careful about taking an umbrella, and more careful about remembering to bring it back home.			todo
+M8ba93316f40c	60	retell	12	Life is full of difficult decisions.			todo
+Mb89f4bd98020	60	questions	1	One: I think it might rain today because there are dark clouds in the sky.			todo
+Ma2c27e10f9f3	60	questions	2	Why do I think it might rain?			todo
+Mef676452bece	60	questions	3	You think it might rain because there are dark clouds in the sky.			todo
+Mf3cb685b50aa	60	questions	4	Two: I'd better take my umbrella with me since I got soaked yesterday.			todo
+M193145086238	60	questions	5	Why had I better take my umbrella?			todo
+Mc22dbf5b91fc	60	questions	6	You should take your umbrella because you got soaked yesterday.			todo
+M6fc0eb847df4	60	questions	7	Three: I often hesitate to take an umbrella with me, when I should.			todo
+M4d7769632f82	60	questions	8	Am I always sure to take an umbrella with me?			todo
+Md9618b764391	60	questions	9	No, sometimes you hesitate to bring an umbrella with you.			todo
+M76edbc1844f2	60	questions	10	Four: This is because I know I often leave umbrellas behind somewhere when I do take one with me.			todo
+Mb0bdbc2aa08e	60	questions	11	What do I often do with my umbrella?			todo
+Mcdea069bcbd6	60	questions	12	You often leave your umbrella behind somewhere when you do take it with you.			todo
+M8fe399bc4ecc	60	questions	13	Five: In any case, it seemed to Anne that whenever she didn't take her umbrella, it would rain and she would end up getting wet.			todo
+M12804ce7b517	60	questions	14	What would happen to Anne when it would rain?			todo
+M911932894c12	60	questions	15	It would rain and she would end up getting wet.			todo
+M9b11b4a58f83	60	questions	16	Six: The other day, for example, she had thought it wouldn't rain, even though the forecast had said there was a twenty percent chance of rain.			todo
+M8d28a61f9a10	60	questions	17	What percent chance of rain had the forecast said there was?			todo
+M0f9b817c5c85	60	questions	18	The forecast had said there was a twenty percent chance of rain.			todo
+M93cad5439c57	60	questions	19	Seven: She thought to herself that she was just going to have to be more careful.			todo
+Mace0bd96a6db	60	questions	20	What was Anne going to have to be?			todo
+Md619ab2d20fd	60	questions	21	She was going to have to be more careful.			todo
+M80974432f6d3	60	questions	22	Eight: She was going to have to be more careful about taking an umbrella.			todo
+M8073745fcae8	60	questions	23	What was Anne going to have to be more careful about?			todo
+M52cfc113f27e	60	questions	24	She was going to have to be more careful about taking an umbrella.			todo

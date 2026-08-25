@@ -1,0 +1,35 @@
+guid	num	part	seq	en	te	notes	status
+M2e4b4f59026c	50	meta	1	Story Fifty - Marty Has Been Organizing His Schedule			todo
+Me35d761ad098	50	meta	2	Here is the same story told in a different way.	ఇదే కథను ఇప్పుడు వేరే విధంగా చెప్తున్నాను.		draft
+Mda70b3b786bc	50	story	1	Marty has been organizing his university schedule.			todo
+M9e0ffed9d7b5	50	story	2	He intends to graduate at the end of this year.			todo
+M5d67d5a02b51	50	story	3	Therefore, he has to select the appropriate number of classes in order to meet the requirements for his degree.			todo
+Mae62159c7264	50	story	4	One class he has selected is Sociology.			todo
+M95f46d112f02	50	story	5	Marty is majoring in Humanities.			todo
+Me193e07bb720	50	story	6	However, even though Sociology is a science class, Marty must take it to meet the degree requirements.			todo
+M32c778d8ff90	50	story	7	He's not sure why this is necessary.			todo
+M031dd965bf55	50	story	8	He hopes Sociology class won't be too boring.			todo
+Me4e216fa90dd	50	retell	1	The students have been organizing their university schedules.			todo
+M20ddfa5dfe10	50	retell	2	They intend to graduate at the end of this year.			todo
+M07261b95f47d	50	retell	3	Therefore, they have to select the appropriate number of classes in order to meet the requirements for their degrees.			todo
+Md62931cd4644	50	retell	4	One class some of them have selected is Sociology.			todo
+M312ede70adb7	50	retell	5	All the students are majoring in Humanities.			todo
+M4940896c2c5f	50	retell	6	However, even though Sociology is a science class, the students must take it to meet the degree requirements.			todo
+M6c45afcded8d	50	questions	1	One: Marty has been organizing his university schedule.			todo
+M4cbd47907a2d	50	questions	2	What has Marty been organizing?			todo
+M46be5dfd0153	50	questions	3	Marty has been organizing his university schedule.			todo
+M80cdae7407b1	50	questions	4	Two: He intends to graduate at the end of this year.			todo
+M811a1c6f4580	50	questions	5	When does he intend to graduate?			todo
+Md60937c285d9	50	questions	6	He intends to graduate at the end of this year.			todo
+M18e0e7313f53	50	questions	7	Three: Therefore, he has to select the appropriate number of classes.			todo
+M9dbef7db854f	50	questions	8	How many classes does he have to select?			todo
+M2a797a0a1533	50	questions	9	He has to select the appropriate number of classes.			todo
+M7d0fa8c663dd	50	questions	10	Four: One class he has selected is Sociology.			todo
+Mf6ea8a86e93d	50	questions	11	What is one class he has selected?			todo
+M91fa9f57e99d	50	questions	12	One class he has selected is Sociology.			todo
+Mba73d5a6d880	50	questions	13	Five: The students are majoring in Humanities.			todo
+Mec46a25acef1	50	questions	14	What are the students majoring in?			todo
+Me7117c5d72c8	50	questions	15	The students are majoring in Humanities.			todo
+M59138301e0a6	50	questions	16	Six: The students must take Sociology to meet the degree requirements.			todo
+Me382d93dac94	50	questions	17	Why must the students take Sociology?			todo
+M9b16263e0185	50	questions	18	The students must take Sociology to meet the degree requirements.			todo

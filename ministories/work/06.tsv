@@ -1,0 +1,49 @@
+guid	num	part	seq	en	te	notes	status
+Md9990f7df9f3	6	meta	1	Story Six - Jane and Fred's Night Routine			todo
+Me35d761ad098	6	meta	2	Here is the same story told in a different way.	ఇదే కథను ఇప్పుడు వేరే విధంగా చెప్తున్నాను.		draft
+Ma1109e049555	6	story	1	Jane and Fred are tired at night.			todo
+M275b9ea35d8b	6	story	2	They eat dinner together at seven.			todo
+M787bfa38e02b	6	story	3	Their son eats dinner with them.			todo
+M322c8beeeed2	6	story	4	They relax and watch TV together.			todo
+Mb5ad4d444fc9	6	story	5	Their son watches TV, too.			todo
+M59f071e47bc9	6	story	6	They put their son to bed at eight.			todo
+M2c882c11e313	6	story	7	Jane has a hot bath.			todo
+Mcc7a7827960a	6	story	8	Fred has a shower and brushes his teeth.			todo
+Mca4ae6193d71	6	story	9	Jane reads a book but falls asleep.			todo
+Mf8b1392efe4d	6	story	10	Fred also falls asleep soon after.			todo
+Md34e6a9281a5	6	retell	1	Fred and I are tired at night.			todo
+Mb408011fb1d7	6	retell	2	We eat dinner together at seven.			todo
+M871bc7a11fa6	6	retell	3	Our son eats dinner with us.			todo
+Md82c09f5f626	6	retell	4	We relax and watch TV together.			todo
+Mf3f5ba5cc9e7	6	retell	5	Our son watches TV, too.			todo
+Mb7dcfcea4ff0	6	retell	6	We put our son to bed at eight.			todo
+M4be33bb4a292	6	retell	7	I have a hot bath.			todo
+M751bc36481b0	6	retell	8	Fred has a shower and brushes his teeth.			todo
+M154b314861a3	6	retell	9	I read a book, but fall asleep.			todo
+Md878c5aeafd1	6	retell	10	Fred also falls asleep soon after.			todo
+Mb14acb68544f	6	questions	1	One: Fred and Jane are tired.			todo
+M3661ae1b3008	6	questions	2	Are Fred and Jane tired?			todo
+Md197a39beedd	6	questions	3	Yes, they are tired.			todo
+M5affe99e1c6e	6	questions	4	Two: They eat dinner at seven.			todo
+Mf302363e0fb0	6	questions	5	Do they eat dinner at six?			todo
+Md403e4c537df	6	questions	6	No, they do not eat dinner at six.			todo
+M94ff2a2dee81	6	questions	7	They eat at seven.			todo
+M9ebd94abe535	6	questions	8	Three: They have a son.			todo
+Mb9860a252913	6	questions	9	Do they have a daughter?			todo
+Mca65c5cebbdb	6	questions	10	No, they do not have a daughter, they have a son.			todo
+M4161f874b043	6	questions	11	Four: Their son watches TV with them.			todo
+M4c8e76bc58df	6	questions	12	Does their son watch TV?			todo
+Ma4aab4634adf	6	questions	13	Yes, their son watches TV with them.			todo
+M087117f86eb1	6	questions	14	Five: He goes to bed at eight.			todo
+M789395f2da47	6	questions	15	Does their son go to bed at nine?			todo
+Ma972b16cb96e	6	questions	16	No, he goes to bed at eight.			todo
+M5d01b2af0c5b	6	questions	17	Six: Jane has a hot bath.			todo
+M2e47f1aaa952	6	questions	18	Does Jane have a shower?			todo
+Mbccef7944790	6	questions	19	No, Jane doesn't have a shower.			todo
+M7d31879272d7	6	questions	20	She has a hot bath.			todo
+M8faf848524dc	6	questions	21	Seven: Fred has a shower and brushes his teeth.			todo
+Mdebd3f9ab6d0	6	questions	22	Does Fred brush his teeth?			todo
+M13c5e972c325	6	questions	23	Yes, Fred has a shower and brushes his teeth.			todo
+M866c62b8e32a	6	questions	24	Eight: Jane reads a book.			todo
+M983cd8956932	6	questions	25	Does Jane read a book?			todo
+M478ac50dccca	6	questions	26	Yes, she reads a book.			todo

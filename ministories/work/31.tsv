@@ -1,0 +1,56 @@
+guid	num	part	seq	en	te	notes	status
+M2cc433bc16d5	31	meta	1	Story Thirty-one - Rosie Visits Her Friend for Dinner			todo
+Me35d761ad098	31	meta	2	Here is the same story told in a different way.	ఇదే కథను ఇప్పుడు వేరే విధంగా చెప్తున్నాను.		draft
+Mbb6de031277f	31	story	1	Rosie's friend lives far away.			todo
+M60c6f43d2fb4	31	story	2	She has asked Rosie to come for dinner.			todo
+M1d790688939d	31	story	3	Rosie is happy to visit her friend.			todo
+M4f00ae8db028	31	story	4	Rosie has already bought a train ticket.			todo
+Mea9950c2b285	31	story	5	She travels by train to see her friend.			todo
+M003fc43044fe	31	story	6	Rosie's friend is very happy to see her.			todo
+M6ab82aeba687	31	story	7	Rosie's friend has been cooking a big dinner.			todo
+Mc7f32af6ac31	31	story	8	She has been cooking chicken, vegetables and dessert.			todo
+M4fd33c145046	31	story	9	But Rosie is allergic to chicken.			todo
+Ma4de1c7751b1	31	story	10	So Rosie only eats the vegetables and dessert.			todo
+M1bd8864828e9	31	retell	1	My friend moved far away.			todo
+M710dd33bebf8	31	retell	2	She had asked me to come for dinner recently.			todo
+Ma0e2ee28dc52	31	retell	3	I was happy to visit my friend.			todo
+Mf7b553e5933a	31	retell	4	I bought a train ticket.			todo
+M235927d33aed	31	retell	5	I traveled by train to see my friend.			todo
+M97c96daf8415	31	retell	6	My friend was very happy to see me.			todo
+M4ba1f1c24730	31	retell	7	My friend had been cooking a big dinner.			todo
+M4f3eb199445c	31	retell	8	She had been cooking chicken, vegetables, and dessert.			todo
+M665c7bdee1c0	31	retell	9	But I am allergic to chicken.			todo
+Mcce116640928	31	retell	10	So I only ate the vegetables and dessert.			todo
+M2c6bafc02d31	31	questions	1	One: Rosie's friend moved far away.			todo
+M99eeda0b6064	31	questions	2	Does Rosie's friend live close?			todo
+Mc74e736749de	31	questions	3	No, Rosie's friend does not live close.			todo
+Md3b3c82fa1dc	31	questions	4	Rosie's friend moved far away.			todo
+Mdc11872349c4	31	questions	5	Two: Rosie's friend had asked Rosie to come for dinner.			todo
+M32a968763738	31	questions	6	What had Rosie's friend asked?			todo
+Mcf435e200e02	31	questions	7	Rosie's friend had asked Rosie to come for dinner.			todo
+M78f203fa82aa	31	questions	8	Three: Rosie was happy to visit her friend.			todo
+M9ff864424181	31	questions	9	Was Rosie happy to visit her friend?			todo
+Mc624ef20c8af	31	questions	10	Yes, Rosie was happy to visit her friend.			todo
+M0eba3b2021c3	31	questions	11	Four: Rosie bought a train ticket.			todo
+Mcfd31b3bd275	31	questions	12	What did Rosie buy?			todo
+M8a49dbdde185	31	questions	13	Rosie bought a train ticket.			todo
+M47aea96647c6	31	questions	14	Five: Rosie traveled to see her friend.			todo
+Me4e7c2330487	31	questions	15	Where did Rosie travel?			todo
+M9d04fdc66700	31	questions	16	Rosie traveled to see her friend.			todo
+Me87231501298	31	questions	17	Six: Rosie's friend is very happy to see her.			todo
+Mb452c433821f	31	questions	18	Is Rosie's friend happy?			todo
+M03498ed3f6bf	31	questions	19	Yes, Rosie's friend is very happy to see her.			todo
+M43505d29049f	31	questions	20	Seven: Rosie's friend has been cooking a big dinner.			todo
+M0314edffb9ea	31	questions	21	What has Rosie's friend been cooking?			todo
+M656dd950047f	31	questions	22	Rosie's friend has been cooking a big dinner.			todo
+Mbf36bc6f9d7d	31	questions	23	Eight: Rosie's friend has been cooking chicken, vegetables, and dessert.			todo
+Mdd0d4d88609d	31	questions	24	Has Rosie's friend been cooking beef?			todo
+M074b9da5eb88	31	questions	25	No, Rosie's friend has not been cooking beef.			todo
+M26536fad33c3	31	questions	26	She has been cooking chicken, vegetables, and dessert.			todo
+M94bf3a92d8c5	31	questions	27	Nine: Rosie is allergic to chicken.			todo
+M95800ade331a	31	questions	28	Can Rosie eat chicken?			todo
+M7608f9d6c5c3	31	questions	29	No, Rosie can't eat chicken.			todo
+M3d4ecbbab7d9	31	questions	30	She is allergic to chicken.			todo
+M03dc4e21158f	31	questions	31	Ten: Rosie only eats the vegetables and dessert.			todo
+M65de55bd69f9	31	questions	32	What does Rosie eat?			todo
+M092e733a0209	31	questions	33	She only eats the vegetables and dessert, not the chicken.			todo

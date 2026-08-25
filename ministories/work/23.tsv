@@ -1,0 +1,51 @@
+guid	num	part	seq	en	te	notes	status
+Me6a079f056f8	23	meta	1	Story Twenty-three - Louie is a university student			todo
+Me35d761ad098	23	meta	2	Here is the same story told in a different way.	ఇదే కథను ఇప్పుడు వేరే విధంగా చెప్తున్నాను.		draft
+Md7faffd07f60	23	story	1	Louie is a university student.			todo
+Md6b292ca95cc	23	story	2	He is graduating this month.			todo
+M79c059fc934c	23	story	3	But first, he has to write some exams.			todo
+M3799a0c15343	23	story	4	Louie has to write six exams.			todo
+M3ce3aea02b0c	23	story	5	Louie has to study a lot for his exams.			todo
+Ma98855d102aa	23	story	6	This weekend, though, Louie's friend is having a birthday.			todo
+M09aa2bcef36c	23	story	7	Louie's friend wants him to come to his party.			todo
+Md9a9b83f35ce	23	story	8	Louie wants to go to his friend's party.			todo
+M1f7464e5fbc6	23	story	9	Finally, he decides to go to his friend's party.			todo
+M18dc0fdc0158	23	story	10	He is going to study for his exams after the party.			todo
+Mb0b0ca053f48	23	retell	1	I was a university student.			todo
+M4c3e56473766	23	retell	2	I was graduating that month.			todo
+M908a37673282	23	retell	3	But first, I had to write some exams.			todo
+M28e980b4cc09	23	retell	4	I had to write six exams.			todo
+M63a9eb80fc52	23	retell	5	I had to study a lot for my exams.			todo
+M932be04a217b	23	retell	6	This weekend, though, my friend had a birthday.			todo
+Me12ea31dae8a	23	retell	7	My friend wanted me to come to his party.			todo
+M0b7ae8384dc7	23	retell	8	I wanted to go to my friend's party.			todo
+Ma6d8e9f1c089	23	retell	9	Finally, I decided to go to my friend's party.			todo
+M2f7e52543b8a	23	retell	10	I studied for my exams after the party.			todo
+M88192bc60833	23	questions	1	One: Louie is a university student.			todo
+Mc7176064c72b	23	questions	2	What is Louie?			todo
+M4baa09632c72	23	questions	3	Louie is a university student.			todo
+M627d353670e3	23	questions	4	Two: Louie is graduating this month.			todo
+M2e2734421e97	23	questions	5	When is Louie graduating?			todo
+M9a894239f3b2	23	questions	6	Louie is graduating this month.			todo
+M0b1a9f4a0886	23	questions	7	Three: First, Louie has to write some exams.			todo
+M30ccfcb507b5	23	questions	8	What does Louie have to do first?			todo
+M50a94faf8c7e	23	questions	9	First, Louie has to write some exams.			todo
+M2ab6b8d73cc2	23	questions	10	Four: Louie has to write six exams.			todo
+Mfadaa42987c2	23	questions	11	Does Louie have to write nine exams?			todo
+M713bc2fd99f9	23	questions	12	No, Louie does not have to write nine exams.			todo
+M1e2e3e6914ae	23	questions	13	He has to write six exams.			todo
+M00f96f5bc296	23	questions	14	Five: Louie's friend had a birthday this weekend.			todo
+M29633da76b79	23	questions	15	What did Louie's friend have this weekend?			todo
+M849256acf634	23	questions	16	Louie's friend had a birthday this weekend.			todo
+Mc98d1deedfdd	23	questions	17	Six: Louie's friend wanted Louie to come to his party this weekend.			todo
+M3ac60ed25356	23	questions	18	What did Louie's friend want?			todo
+M12d774fdcab6	23	questions	19	Louie's friend wanted Louie to come to his party this weekend.			todo
+M23b2daef6adb	23	questions	20	Seven: Louie wanted to go to his friend's party.			todo
+M57252c2b9e8e	23	questions	21	Did Louie want to go to his friend's party?			todo
+M4bdaf8828f42	23	questions	22	Yes, Louie wanted to go to his friend's party.			todo
+Mf5e6f84827f8	23	questions	23	Eight: Louie decided to go to his friend's party.			todo
+Mc9fe99027fc2	23	questions	24	What did Louie decide?			todo
+M74c77deab109	23	questions	25	Louie decided to go to his friend's party.			todo
+M827147ce9b77	23	questions	26	Nine: Louie studied for his exams after the party.			todo
+M6711b14a5721	23	questions	27	When did Louie study for his exams?			todo
+M32be93b44560	23	questions	28	Louie studied for his exams after the party.			todo

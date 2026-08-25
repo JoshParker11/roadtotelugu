@@ -1,0 +1,48 @@
+guid	num	part	seq	en	te	notes	status
+Mfa39a6a2072a	10	meta	1	Story 10 - Birthday Party			todo
+Me35d761ad098	10	meta	2	Here is the same story told in a different way.	ఇదే కథను ఇప్పుడు వేరే విధంగా చెప్తున్నాను.		draft
+M2a38b73085aa	10	story	1	Jack is going to a birthday party.			todo
+M20fa50fb9e39	10	story	2	He needs to buy a present for Meg.			todo
+M6f739f8c80b8	10	story	3	Jack doesn't go to many parties, though.			todo
+Mc4370b816dfe	10	story	4	He is nervous and wonders what to buy.			todo
+Me12502a9b26a	10	story	5	Meg likes jewelry, animals, and the colour blue.			todo
+M4150762eccdc	10	story	6	Jack goes to a jewelry store.			todo
+M0d94335d781c	10	story	7	He sees a pretty, silver necklace.			todo
+Mc2d13d109437	10	story	8	The necklace has a blue cat on it.			todo
+Mb8229be9ebf6	10	story	9	Jack is happy, and he buys the necklace.			todo
+M1874e99e4548	10	story	10	He hopes Meg will like the necklace.			todo
+M1b5376159957	10	retell	1	I am going to a birthday party.			todo
+M245deef409d7	10	retell	2	I need to buy a present for Meg.			todo
+M6c1f8421789f	10	retell	3	I don't go to many parties, though.			todo
+M79ac4c7c27bd	10	retell	4	I am nervous and wonder what to buy.			todo
+M88033c5f4de5	10	retell	5	Meg likes jewelry, animals, and the colour blue.			todo
+M234490031237	10	retell	6	I go to a jewelry store.			todo
+M23e4495781c7	10	retell	7	I see a pretty, silver necklace.			todo
+M54fec6b0f575	10	retell	8	The necklace has a blue cat on it.			todo
+Mfe24828775ec	10	retell	9	I am happy, and I buy the necklace.			todo
+Mbbeed0a1875c	10	retell	10	I hope Meg will like the necklace.			todo
+Mddb5abe96515	10	questions	1	One: Jack is going to a birthday party for Meg.			todo
+Me209d39824f4	10	questions	2	Is Jack going to a birthday party?			todo
+M2891e8584298	10	questions	3	Yes, Jack is going to a birthday party for Meg.			todo
+Md461abd14166	10	questions	4	Two: Jack does not go to many parties, so he feels nervous.			todo
+M7942f87e814a	10	questions	5	Does Jack go to many parties?			todo
+Mec5b5ea75aaf	10	questions	6	No, Jack does not go to many parties, so he feels nervous.			todo
+M24a50133b3bf	10	questions	7	Three: Meg likes animals, and the colour blue.			todo
+M05dfef47f523	10	questions	8	Does Meg like animals?			todo
+M7fc9f6481688	10	questions	9	Yes, Meg likes animals, and she also likes the colour blue.			todo
+M2a0b5ad1c5d4	10	questions	10	Four: Jack goes to a jewelry store.			todo
+M7beb30dba59f	10	questions	11	Does Meg go to a jewelry store?			todo
+Mafbb6826ebcc	10	questions	12	No, Meg does not go to a jewelry store, but Jack does.			todo
+M18cf36d6a0f5	10	questions	13	Five: Jack sees a silver necklace.			todo
+Md24fe16a77a3	10	questions	14	Does Jack see a silver ring?			todo
+M288f488abb66	10	questions	15	No, he sees a silver necklace, not a ring.			todo
+Me7bc82a45a18	10	questions	16	Six: The necklace is silver.			todo
+M21e0c77f2357	10	questions	17	Is the necklace silver, or gold?			todo
+M273b0695c396	10	questions	18	The necklace is silver, not gold.			todo
+Mc62874c16cd7	10	questions	19	Seven: There is a blue cat on the necklace.			todo
+M0c0a79428b3b	10	questions	20	Is there a purple cat on the necklace?			todo
+M03b834b4c0ff	10	questions	21	No, there is not.			todo
+Ma66310e57da8	10	questions	22	There is a blue cat on the necklace.			todo
+Md9d52c6cf4bd	10	questions	23	Eight: Jack buys the necklace because he hopes Meg will like it.			todo
+Mc6089e2d4c68	10	questions	24	Does Jack buy the necklace?			todo
+M38ce5fa99897	10	questions	25	Yes, Jack buys the necklace because he hopes Meg will like it.			todo
