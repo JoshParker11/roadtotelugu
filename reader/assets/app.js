@@ -418,9 +418,15 @@
 
   /* ---------- right panel ---------- */
   function panelWords() {
-    /* In a story: that story's words in first-occurrence order. Elsewhere: the whole corpus. */
+    /* In a story: that story's words. Elsewhere: the whole corpus.
+       Sorted alphabetically, not by first occurrence — these lists are used to review and to
+       find a word again, and hunting for one in reading order means re-reading the story. Sorts
+       on the DISPLAYED form so the order matches what is on screen in whichever script is
+       selected; localeCompare keeps Telugu in its own collation rather than by code point. */
     const idxs = cur ? cur.words : LEX.map((_, i) => i);
-    return idxs.map(i => ({ i, l: LEX[i], eff: effOf(LEX[i].g) }));
+    return idxs
+      .map(i => ({ i, l: LEX[i], eff: effOf(LEX[i].g) }))
+      .sort((a, b) => disp(a.l.te).localeCompare(disp(b.l.te), undefined, { sensitivity: 'base' }));
   }
 
   function renderPanel() {
@@ -485,6 +491,10 @@
     panel.chipSel = 0;
     renderWordCard();
     sheetOpen();
+    /* Hearing the word is the point of clicking it, so do not make that a second tap. Silent on
+       failure: openWord fires on every word click, and a word with no clip yet would otherwise
+       toast on each one. The 🔊 button stays noisy, because there the user asked specifically. */
+    sayWord(g, true);
   }
   function closeWord() {
     panel.mode = 'lists'; panel.g = null; panel.line = null;
@@ -591,8 +601,16 @@
     $('#wc-say').addEventListener('click', () => sayWord(g));
     $$('#panel [data-set]').forEach(b => b.addEventListener('click', () => {
       const v = b.dataset.set;
-      WordLevels.set(g, effOf(g) === v ? null : v);   // clicking the active status clears it
+      const clearing = effOf(g) === v;                // clicking the active status clears it
+      WordLevels.set(g, clearing ? null : v);
       renderWordCard(); repaintTokens(); renderTop();
+      /* On a phone the sheet covers the text, so deciding a word should hand the page back
+         rather than needing a second tap to dismiss. Only for Recognized..Known — 'New' and
+         'Ignore' leave you looking at the card, and clearing a status means you are still
+         choosing. Matches the 900px CSS breakpoint where the panel becomes a bottom sheet. */
+      if (!clearing && ['2', '3', '4', 'k'].includes(v) && isPhone()) {
+        closeWord(); sheetClose();
+      }
     }));
     const ta = $('#wc-meaning');
     let deb = null;
@@ -611,11 +629,15 @@
   }
 
   let wordAudio = null;
-  function sayWord(g) {
+  function sayWord(g, silent) {
     if (wordAudio) wordAudio.pause();
     wordAudio = new Audio(`../ministories/audio/words/${g}.mp3`);
-    wordAudio.play().catch(() =>
-      toast('No clip for this word yet — run: python3 tools/ms_audio.py --words'));
+    /* Autoplay policy: this only ever runs inside a click handler, which counts as the user
+       gesture browsers require, so playback is allowed. The catch still matters for a missing
+       clip or a decode error. */
+    wordAudio.play().catch(() => {
+      if (!silent) toast('No clip for this word yet — run: python3 tools/ms_audio.py --words');
+    });
   }
 
   /* ---------- AI tab ---------- */
@@ -949,6 +971,9 @@
   }
 
   /* ---------- the panel as a bottom sheet on small screens ---------- */
+  /* Single source of truth for "is this the bottom-sheet layout", kept in step with the
+     max-width: 900px block in reader.css. */
+  const isPhone = () => window.matchMedia('(max-width: 900px)').matches;
   const sheetOpen = () => $('#panel').classList.add('open');
   const sheetClose = () => $('#panel').classList.remove('open');
   $('#panel-x').addEventListener('click', () => {
