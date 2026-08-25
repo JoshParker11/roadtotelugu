@@ -83,3 +83,9 @@ ministories/audio/*
 # Anki's own export filename for the word-audio round trip — same scratch status as Default.txt.
 # Already consumed by ms_hypertts_import.py --words; the clips in audio/words/ are the artifact.
 ministories/Telugu__*.txt
+
+# macOS/iCloud conflict copies ("W1234abcd 2.mp3"). This repo lives under ~/Documents, which
+# macOS syncs to iCloud by default, and a sync race during a bulk file copy leaves behind
+# byte-identical duplicates. 165 of them appeared during one word-audio import. They are junk,
+# but without this they show up as untracked files and can be swept into a commit by `git add -A`.
+* [0-9].mp3
