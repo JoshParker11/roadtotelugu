@@ -69,6 +69,7 @@ correspondence is the entire teaching content. Segmenting by paragraph would dis
 | | what it settles |
 |---|---|
 | **[README.md](README.md)** | Provenance, licensing rationale, the tool pipeline end to end |
+| **[PIPELINE.md](PIPELINE.md)** | The operating manual from here to done — per-story loop, word registry, deploy |
 | **[DECISIONS.md](DECISIONS.md)** | Eleven append-only entries — read all of them, they are short. #1 (names), #5 (feminine agreement), #6 (story 4's speaker change), #7 (no term glossary yet — see §8 below), #8 (audio vendor), #9–10 (the Language Reactor export, now secondary — see §6) |
 | **[CATALOG.tsv](CATALOG.tsv)** | All 62 lesson files mapped to 60 story numbers and their LingQ ids |
 | **[names.tsv](names.tsv)** | 87 real proper nouns (filtered from 294 candidates — title-case lesson headings produce false positives, see `tools/ms_names.py`'s own docstring) with agreed transliterations |
@@ -129,14 +130,22 @@ tracking, for free, with no new code. And `reader.js`'s audio model — one cont
 per-line timestamps — is exactly the shape `tools/ms_lr_export.py` already produces; that tool's
 output was aimed at the wrong destination, not built for nothing.
 
-**This was scoped but explicitly not started.** The user's call this session was to focus on
-translation volume and the word-explanation feature first, in chat, rather than write more
-Python. Wiring `ministories/` into `STUDY/`'s existing reader is real, bounded, valuable work —
-generate a `STUDY/data/reader/ministories.js` (or one per story) in the same shape `textbook.js`
-already uses — and it is the natural next engineering task whenever building resumes. It is not
-abandoned. It is paused.
+**Status: built.** The reading application now exists at `../reader/` (see `READER_BRIEF.md`
+for the spec it was built to, and `DECISIONS.md` #12 for what it shares with `STUDY/`'s reader
+and why it is a separate page rather than a modification of it). The short version: identity
+(guids), the shared known-store, both romanizers and the lr-export audio arithmetic are reused
+by import or by store; the page and the six-level scale are new. `STUDY/read.html` still works,
+still serves the podcast and family transcripts, and sees the same known-marks.
 
-## 8. The new thing: a Lexa-style contextual dictionary, not yet built
+## 8. The new thing: a Lexa-style contextual dictionary — first version now in the reader
+
+**Update: a first version ships in `../reader/`'s word panel** — Explain / Examples / Grammar
+tabs calling the model on demand with a user-supplied, browser-local key (the reader brief's
+explicit per-word opt-in variant of this plan; see `DECISIONS.md` #12), plus a Forms tab that
+renders the Verb Lab paradigm directly instead of asking a model. The prompt wording below has
+NOT yet been workshopped against real sentences the way this section prescribes — the prompts in
+`reader/assets/aidict.js` are a reasonable first cut and remain exactly the thing to iterate.
+The precompute-at-scale path stays the right call for anything shipped as static data.
 
 LingQ's own AI dictionary ("Lexa") uses named, user-editable prompt tabs — Explain / Examples /
 Grammar, each a template with `<WORD>` and `<CONTEXT>` placeholders, wrapped in one shared system

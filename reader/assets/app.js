@@ -1,0 +1,1088 @@
+/* The Mini Stories reader. LingQ's reading loop — blue word, click, decide, yellow fades as
+ * you learn — on this project's data and identity scheme.
+ *
+ * Canonical text is Telugu script, always. What is on screen is a render-time transform:
+ * Colloquial.romanize (chat spelling), Te2Rom.romanize (the literary scheme), or the script
+ * itself. Both romanizers are loaded from their existing homes, not copied — there is exactly
+ * one implementation of each rule in this repo and this page is one more caller.
+ *
+ * Word state lives in WordLevels (levels.js), keyed by the same content-hash guids as the
+ * word master and the old reader, which is what makes "known" portable across every text.
+ */
+(() => {
+  const $ = s => document.querySelector(s);
+  const $$ = s => [...document.querySelectorAll(s)];
+  const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const nf = n => n.toLocaleString('en-US');
+  const read = (k, d) => { try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch { return d; } };
+  const write = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} };
+  const ZW = /[​-‍﻿]/g;
+  const bareTe = s => (s || '').replace(ZW, '');
+  const clock = s => `${Math.floor((s || 0) / 60)}:${String(Math.floor((s || 0) % 60)).padStart(2, '0')}`;
+
+  const LEX = (window.MS_DATA && MS_DATA.lex) || [];
+  const STORIES = (window.MS_DATA && MS_DATA.stories) || [];
+  const BY_G = new Map(LEX.map((l, i) => [l.g, i]));
+  const FORMLABEL = { future: 'habitual / future', present: 'present continuous', past: 'past',
+    negFuture: 'negative future', negPast: 'negative past', negPresent: 'negative present',
+    immFuture: 'immediate future', impFam: 'imperative', impPol: 'polite imperative',
+    prohibFam: 'prohibitive', prohibPol: 'polite prohibitive', hort: "let's", must: 'must',
+    mustNot: 'must not', can: 'can', cannot: 'cannot', wantTo: 'want to',
+    dontWant: "don't want to", purpose: 'purposive', cond: 'conditional' };
+  const PARTLABEL = { story: 'Story', 'retell-intro': 'Retold', questions: 'Questions' };
+  const SECBREAK = { story: 1, 'retell-intro': 1, questions: 1 };
+
+  if (!STORIES.length) {
+    $('#pane').innerHTML = '<p class="pempty">No stories are baked yet. Run <code>python3 tools/build_ms_reader.py</code>.</p>';
+    return;
+  }
+
+  /* Distinct words per story, once. */
+  STORIES.forEach(s => {
+    s.words = [...new Set(s.lines.flatMap(ln => ln.t.filter(t => t[2] >= 0).map(t => t[2])))];
+  });
+
+  /* ---------- display transform ---------- */
+  let rom = read('rtt.msRom', 'iso');
+  if (!['coll', 'iso', 'te'].includes(rom)) rom = 'iso';
+  const romCache = new Map();
+  function disp(te) {
+    if (rom === 'te') return te;
+    const key = rom + ':' + te;
+    if (!romCache.has(key)) {
+      const b = bareTe(te);
+      romCache.set(key, rom === 'coll' ? Colloquial.romanize(b) : Te2Rom.romanize(b));
+    }
+    return romCache.get(key);
+  }
+  /* The secondary form shown under a headword: script when romanizing, ISO when in script. */
+  const dispAlt = te => rom === 'te' ? Te2Rom.romanize(bareTe(te)) : te;
+
+  /* ---------- state ---------- */
+  let view = 'library';                 // library | story | vocab | stats
+  let cur = null;                       // current story object
+  let showEn = read('rtt.msEn', true);
+  let sview = false, svIdx = 0;         // sentence view
+  let curLine = -1, loopOn = false;
+  const RATES = [0.7, 0.85, 1, 1.15, 1.3];
+  let rateIdx = 2;
+  let panel = { mode: 'lists', tab: 'lingqs', g: null, line: null, wtab: 'dict', aitab: 'explain' };
+  let vocab = { tab: 'all', sort: 'freq', q: '' };
+  let reviewState = null;
+
+  const effOf = g => WordLevels.effective(g);
+  const clsOf = eff => eff === null ? 'new' : eff === 'k' ? '' : eff === 'x' ? 'lvlx' : 'lvl' + eff;
+  const badgeOf = eff => {
+    const cls = eff === null ? 'new' : 'b' + eff;
+    const txt = eff === null ? '•' : eff === 'k' ? '✓' : eff === 'x' ? '✗' : eff;
+    return `<span class="badge ${cls}">${txt}</span>`;
+  };
+  /* For a Verb Lab conjugation, the actual English equivalent of the cell — "he will drink",
+     not just "a form of tāgu". The Lab's own cue() wrote these; we look the cell up by its
+     script, so nothing is re-derived. */
+  const equivCache = new Map();
+  function verbEquiv(l) {
+    if (!l.form || !l.lemma) return '';
+    if (equivCache.has(l.g)) return equivCache.get(l.g);
+    let out = '';
+    if (typeof VERBS !== 'undefined' && typeof cells === 'function') {
+      const v = VERBS.find(x => x.id === l.lemma);
+      if (v) {
+        const c = cells(v, [l.form]).find(c => c.tel === bareTe(l.te));
+        if (c) out = c.cue;
+      }
+    }
+    equivCache.set(l.g, out);
+    return out;
+  }
+  const glossOf = l => WordLevels.meaning(l.g) || l.en ||
+    (l.head ? (verbEquiv(l) ? `“${verbEquiv(l)}” — ${FORMLABEL[l.form] || l.form} of ${l.head[0]}`
+                            : `${FORMLABEL[l.form] || l.form || 'form'} of ${l.head[0]} — ${l.head[1]}`) : '');
+
+  /* ---------- toast ---------- */
+  let toastT = null;
+  function toast(msg) {
+    const t = $('#toast');
+    t.textContent = msg; t.classList.add('show');
+    clearTimeout(toastT); toastT = setTimeout(() => t.classList.remove('show'), 2600);
+  }
+
+  /* ---------- top bar ---------- */
+  function renderTop() {
+    const st = WordLevels.streak();
+    $('#streak').innerHTML = st ? `🔥 ${st}` : '';
+    const act = WordLevels.activityToday(), goal = WordLevels.goal();
+    const frac = Math.min(1, act / goal), r = 9, c = 2 * Math.PI * r;
+    $('#goalring').innerHTML =
+      `<svg width="24" height="24" viewBox="0 0 24 24">
+         <circle cx="12" cy="12" r="${r}" fill="none" stroke="#2c2c25" stroke-width="3.5"/>
+         <circle cx="12" cy="12" r="${r}" fill="none" stroke="#8fa37e" stroke-width="3.5"
+           stroke-linecap="round" stroke-dasharray="${(frac * c).toFixed(1)} ${c.toFixed(1)}"
+           transform="rotate(-90 12 12)"/>
+       </svg><span>${act}/${goal}</span>`;
+    $('#knowntotal').textContent = nf(WordLevels.knownTotal());
+    $$('#romseg button').forEach(b => b.classList.toggle('on', b.dataset.rom === rom));
+    $$('#topnav a').forEach(a => a.classList.toggle('on',
+      a.dataset.nav === (view === 'story' ? 'read' : view === 'library' ? 'read' : view)));
+  }
+
+  /* ---------- router ---------- */
+  function router() {
+    const h = location.hash;
+    const m = /^#\/story\/(\d+)/.exec(h);
+    closeReview();
+    document.querySelector('main').classList.toggle('withpanel', !h.startsWith('#/stats'));
+    $('#panel').hidden = h.startsWith('#/stats');
+    if (m && STORIES.some(s => s.num === +m[1])) {
+      view = 'story';
+      openStory(STORIES.find(s => s.num === +m[1]));
+    } else if (h.startsWith('#/vocab')) {
+      view = 'vocab'; cur = null; stopAudio(); renderVocab(); renderPanel();
+    } else if (h.startsWith('#/stats')) {
+      view = 'stats'; cur = null; stopAudio(); renderStats(); renderPanel();
+    } else {
+      view = 'library'; cur = null; stopAudio(); renderLibrary(); renderPanel();
+    }
+    renderTop();
+  }
+
+  /* ---------- library ---------- */
+  function storyStats(s) {
+    let known = 0, yellow = 0, blue = 0;
+    s.words.forEach(i => {
+      const e = effOf(LEX[i].g);
+      if (e === 'k' || e === 'x') known++;
+      else if (e === null) blue++;
+      else yellow++;
+    });
+    return { known, yellow, blue, total: s.words.length };
+  }
+
+  function renderLibrary() {
+    $('#playbar').hidden = true;
+    const cards = STORIES.map(s => {
+      const st = storyStats(s);
+      const pct = st.total ? Math.round(st.known / st.total * 100) : 0;
+      return `<button class="storycard" data-open="${s.num}">
+        <span class="snum">${s.num}</span>
+        <span class="meta"><b>${esc(disp(s.title.te) || s.title.en)}</b>
+          <span>${esc(MS_DATA.source)} · ${s.lines.length} sentences${s.dur ? ' · ' + clock(s.dur) : ''}</span></span>
+        <span class="wordbar"><span class="track">
+            <i style="flex:${st.known};background:var(--green)"></i>
+            <i style="flex:${st.yellow};background:var(--l1)"></i>
+            <i style="flex:${st.blue};background:var(--new-b)"></i>
+          </span><small>${pct}% known · ${st.blue} new</small></span>
+        ${WordLevels.isRead(s.num) ? '<span class="done">✓</span>' : ''}
+      </button>`;
+    }).join('');
+    $('#pane').innerHTML = `
+      <div class="libhead"><h1>Mini Stories</h1>
+        <p>${STORIES.length} of 60 stories translated, checked and voiced. The rest appear here
+           as they are translated.</p></div>${cards}`;
+    $$('#pane [data-open]').forEach(b =>
+      b.addEventListener('click', () => { location.hash = '#/story/' + b.dataset.open; }));
+  }
+
+  /* ---------- reading view ---------- */
+  function openStory(s) {
+    const changed = cur !== s;
+    cur = s; curLine = -1; sview = false; svIdx = 0;
+    panel = { mode: 'lists', tab: 'lingqs', g: null, line: null, wtab: 'dict', aitab: 'explain' };
+    renderStory();
+    renderPanel();
+    if (changed) setupAudio();
+  }
+
+  function tokenHTML(tok, li, ti) {
+    const [surface, kind, lx] = tok;
+    if (kind === 'p' || lx < 0) {
+      /* Romanized view: script punctuation-adjacent spacing survives; digits pass through. */
+      return esc(surface);
+    }
+    const eff = effOf(LEX[lx].g);
+    return `<span class="w ${clsOf(eff)}" data-l="${li}" data-t="${ti}">${esc(disp(surface))}</span>`;
+  }
+
+  function lineHTML(ln, li) {
+    const cue = ln.s != null
+      ? `<button class="cue" data-seek="${li}" title="Play from here">▶</button>` : '';
+    const en = showEn && ln.en && ln.p !== 'title'
+      ? `<span class="ren">${esc(ln.en)}</span>` : '';
+    return `<p class="rline${ln.p === 'title' || ln.p === 'retell-intro' ? ' meta' : ''}" data-li="${li}">
+      ${cue}<span class="rte">${ln.t.map((t, ti) => tokenHTML(t, li, ti)).join('')}</span>${en}</p>`;
+  }
+
+  function renderStory() {
+    const s = cur;
+    const st = storyStats(s);
+    const worked = st.total ? Math.round((st.total - st.blue) / st.total * 100) : 0;
+    let body = '';
+    let prevPart = null;
+    s.lines.forEach((ln, li) => {
+      if (li > 0 && ln.p !== prevPart && SECBREAK[ln.p]) {
+        const label = PARTLABEL[ln.p];
+        if (label && ln.p !== 'retell-intro') body += `<span class="seclabel">${label}</span>`;
+        if (ln.p === 'retell-intro') body += `<span class="seclabel">${PARTLABEL['retell-intro']}</span>`;
+      }
+      if (ln.p === 'retell') prevPart = 'retell-intro';   // intro + retell are one section
+      else prevPart = ln.p;
+      body += lineHTML(ln, li);
+    });
+
+    $('#pane').innerHTML = `
+      <div class="lessonbar">
+        <a href="#/" title="All stories">‹ Stories</a>
+        <span class="progress"><i style="width:${worked}%"></i></span>
+        <span style="color:var(--ink2);font-size:12.5px">${worked}% worked</span>
+      </div>
+      <div class="lessonhead">
+        <span class="snum">${s.num}</span>
+        <span class="meta"><b>${esc(disp(s.title.te) || s.title.en)}</b>
+          <span>${esc(MS_DATA.source)} — Telugu</span></span>
+        <span class="tools">
+          <button class="iconbtn${showEn ? ' on' : ''}" id="t-en" title="Show / hide English (Shift+T)">EN</button>
+          <button class="iconbtn" id="t-sv" title="Sentence view">☰</button>
+          <button class="iconbtn mobonly" id="t-words" title="Word lists">📖</button>
+        </span>
+      </div>
+      ${sview ? sentenceViewHTML() : `<div class="readtext" id="readtext">${body}</div>
+      <div class="finishrow">
+        <button class="finishbtn${WordLevels.isRead(s.num) ? ' done' : ''}" id="t-finish">
+          ✓ ${WordLevels.isRead(s.num) ? 'Lesson finished' : 'Finish lesson'}</button>
+      </div>`}`;
+
+    $('#t-en') && $('#t-en').addEventListener('click', () => {
+      showEn = !showEn; write('rtt.msEn', showEn); renderStory();
+    });
+    $('#t-sv').addEventListener('click', () => {
+      sview = !sview;
+      if (sview && curLine >= 0) svIdx = curLine;
+      renderStory();
+    });
+    $('#t-finish') && $('#t-finish').addEventListener('click', finishLesson);
+    $('#t-words').addEventListener('click', () => {
+      panel.mode = 'lists'; panel.g = null; renderPanel(); sheetOpen();
+    });
+    wireSentenceView();
+    paintPlaying();
+  }
+
+  function sentenceViewHTML() {
+    const ln = cur.lines[svIdx];
+    return `<div class="sview">
+      <p class="big">${ln.t.map((t, ti) => tokenHTML(t, svIdx, ti)).join('')}</p>
+      ${showEn && ln.en ? `<p class="ren">${esc(ln.en)}</p>` : ''}
+      <div class="navrow">
+        <button id="sv-prev" ${svIdx === 0 ? 'disabled' : ''}>‹ Previous</button>
+        <button id="sv-play" ${ln.s == null ? 'disabled' : ''}>▶ Play</button>
+        <button id="sv-next" ${svIdx === cur.lines.length - 1 ? 'disabled' : ''}>Next ›</button>
+      </div>
+      <p class="count">${svIdx + 1} / ${cur.lines.length}</p>
+    </div>`;
+  }
+  function wireSentenceView() {
+    if (!sview) return;
+    $('#sv-prev').addEventListener('click', () => { svIdx = Math.max(0, svIdx - 1); renderStory(); });
+    $('#sv-next').addEventListener('click', () => { svIdx = Math.min(cur.lines.length - 1, svIdx + 1); renderStory(); });
+    $('#sv-play').addEventListener('click', () => playLine(svIdx));
+  }
+
+  /* Status changed: recolour tokens in place instead of rebuilding the DOM under the cursor. */
+  function repaintTokens() {
+    if (!cur) return;
+    $$('#pane .w').forEach(el => {
+      const tok = cur.lines[+el.dataset.l].t[+el.dataset.t];
+      el.className = 'w ' + clsOf(effOf(LEX[tok[2]].g)) +
+        (el.classList.contains('focus') ? ' focus' : '');
+    });
+  }
+
+  function finishLesson() {
+    const s = cur;
+    const blues = s.words.filter(i => effOf(LEX[i].g) === null).map(i => LEX[i].g);
+    if (blues.length &&
+        !confirm(`Mark the ${blues.length} remaining new (blue) word${blues.length === 1 ? '' : 's'} in this lesson as known?\n\nThis is LingQ's page-complete behaviour: anything you didn't stop on, you knew.`)) {
+      return;
+    }
+    if (blues.length) WordLevels.setMany(blues, 'k');
+    WordLevels.setRead(s.num, true);
+    toast(blues.length ? `${blues.length} words marked known — lesson finished.` : 'Lesson finished.');
+    renderStory(); renderPanel(); renderTop();
+  }
+
+  /* ---------- audio ---------- */
+  const audio = new Audio();
+  audio.preload = 'metadata';
+  let pendingSeek = null;
+  audio.addEventListener('loadedmetadata', () => {
+    if (pendingSeek != null) { audio.currentTime = pendingSeek; pendingSeek = null; }
+  });
+  audio.addEventListener('error', () => {
+    if (cur && cur.audio) toast('Audio not found — it is generated locally, not committed.');
+  });
+  const syncPlayBtn = () => { $('#pb-play').textContent = audio.paused ? '▶' : '❚❚'; };
+  audio.addEventListener('play', syncPlayBtn);
+  audio.addEventListener('pause', syncPlayBtn);
+
+  function setupAudio() {
+    audio.pause();
+    $('#playbar').hidden = !cur || !cur.audio;
+    if (!cur || !cur.audio) return;
+    audio.src = cur.audio; pendingSeek = null; audio.load();
+    audio.playbackRate = RATES[rateIdx];
+    $('#pb-total').textContent = clock(cur.dur);
+    $('#pb-scrub').max = cur.dur || 100;
+    $('#pb-scrub').value = 0;
+    $('#pb-elapsed').textContent = '0:00';
+    syncPlayBtn();
+  }
+  function stopAudio() { audio.pause(); $('#playbar').hidden = true; }
+
+  function seekTo(t) {
+    if (audio.readyState >= 1) audio.currentTime = t; else pendingSeek = t;
+  }
+  function playLine(li) {
+    const ln = cur.lines[li];
+    if (ln.s == null) return;
+    curLine = li;
+    seekTo(ln.s);
+    audio.play().catch(() => toast('The browser blocked playback — press play once.'));
+    paintPlaying();
+  }
+
+  function lineAt(t) {
+    if (!cur) return -1;
+    for (let i = 0; i < cur.lines.length; i++) {
+      const ln = cur.lines[i];
+      if (ln.s != null && t >= ln.s - 0.01 && t < ln.e) return i;
+    }
+    return -1;
+  }
+
+  function paintPlaying() {
+    $$('.rline.playing').forEach(e => e.classList.remove('playing'));
+    const el = document.querySelector(`.rline[data-li="${curLine}"]`);
+    if (!el) return;
+    el.classList.add('playing');
+    const r = el.getBoundingClientRect();
+    if (r.top < 70 || r.bottom > innerHeight - 90) {
+      el.scrollIntoView({ block: 'center', behavior: 'smooth' });
+    }
+  }
+
+  audio.addEventListener('timeupdate', () => {
+    if (!cur || pendingSeek != null) return;
+    const t = audio.currentTime;
+    $('#pb-elapsed').textContent = clock(t);
+    $('#pb-scrub').value = t;
+    if (curLine >= 0 && loopOn && t >= cur.lines[curLine].e - 0.05) {
+      audio.currentTime = cur.lines[curLine].s;
+      return;
+    }
+    if (sview && curLine === svIdx && t >= cur.lines[svIdx].e - 0.05) {
+      audio.pause();
+      return;
+    }
+    const i = lineAt(t);
+    if (i !== curLine && i >= 0) {
+      curLine = i;
+      if (sview) { svIdx = i; renderStory(); } else paintPlaying();
+    }
+  });
+
+  $('#pb-play').addEventListener('click', () => {
+    if (audio.paused) {
+      if (curLine < 0) { const i = cur.lines.findIndex(l => l.s != null); if (i >= 0) return playLine(i); }
+      audio.play().catch(() => {});
+    } else audio.pause();
+  });
+  $('#pb-back').addEventListener('click', () => { audio.currentTime = Math.max(0, audio.currentTime - 5); });
+  $('#pb-fwd').addEventListener('click', () => { audio.currentTime = Math.min(cur ? cur.dur : 0, audio.currentTime + 5); });
+  $('#pb-loop').addEventListener('click', () => {
+    loopOn = !loopOn;
+    $('#pb-loop').classList.toggle('on', loopOn);
+  });
+  $('#pb-rate').addEventListener('click', () => {
+    rateIdx = (rateIdx + 1) % RATES.length;
+    audio.playbackRate = RATES[rateIdx];
+    $('#pb-rate').textContent = RATES[rateIdx] + '×';
+  });
+  $('#pb-scrub').addEventListener('input', e => { seekTo(+e.target.value); });
+
+  function step(d) {
+    if (!cur) return;
+    let i = (curLine < 0 ? (d > 0 ? -1 : cur.lines.length) : curLine) + d;
+    while (i >= 0 && i < cur.lines.length && cur.lines[i].s == null) i += d;
+    if (i >= 0 && i < cur.lines.length) playLine(i);
+  }
+
+  /* ---------- right panel ---------- */
+  function panelWords() {
+    /* In a story: that story's words in first-occurrence order. Elsewhere: the whole corpus. */
+    const idxs = cur ? cur.words : LEX.map((_, i) => i);
+    return idxs.map(i => ({ i, l: LEX[i], eff: effOf(LEX[i].g) }));
+  }
+
+  function renderPanel() {
+    if (view === 'stats') { $('#panelbody').innerHTML = ''; return; }
+    if (panel.mode === 'word' && panel.g) return renderWordCard();
+    if (view === 'vocab') { renderPanelForVocab(); return; }
+
+    const words = panelWords();
+    const groups = {
+      lingqs: words.filter(w => ['1', '2', '3', '4'].includes(w.eff)),
+      new: words.filter(w => w.eff === null),
+      all: words,
+    };
+    const rows = groups[panel.tab] || [];
+    const dueAll = LEX.filter(l => WordLevels.isDue(l.g));
+    const lessonLingqs = groups.lingqs;
+
+    $('#panelbody').innerHTML = `
+      <div class="ptabs">
+        <button data-ptab="lingqs" class="${panel.tab === 'lingqs' ? 'on' : ''}">LingQs (${groups.lingqs.length})</button>
+        <button data-ptab="new" class="${panel.tab === 'new' ? 'on' : ''}">New Words (${groups.new.length})</button>
+        <button data-ptab="all" class="${panel.tab === 'all' ? 'on' : ''}">All Words (${groups.all.length})</button>
+      </div>
+      <div class="plist">${rows.length ? rows.map(w => `
+        <button class="row" data-word="${esc(w.l.g)}">
+          ${badgeOf(w.eff)}<b>${esc(disp(w.l.te))}</b>
+          <span class="g">${esc(glossOf(w.l))}</span>
+        </button>`).join('')
+        : `<p class="pempty">${panel.tab === 'lingqs'
+            ? 'Nothing yet — click a blue word and give it a status (1–4).'
+            : 'Nothing here.'}</p>`}
+      </div>
+      <div class="pmenu">
+        <button id="pm-lesson">▤ Review ${cur ? 'Lesson' : 'LingQs'} <span class="n">${lessonLingqs.length}</span></button>
+        <button id="pm-due">◷ Review Due <span class="n">${dueAll.length}</span></button>
+        <button id="pm-vocab">☰ Vocabulary List</button>
+      </div>`;
+
+    $$('#panel [data-ptab]').forEach(b => b.addEventListener('click', () => {
+      panel.tab = b.dataset.ptab; renderPanel();
+    }));
+    $$('#panel [data-word]').forEach(b => b.addEventListener('click', () => openWord(b.dataset.word)));
+    $('#pm-lesson').addEventListener('click', () => startReview(lessonLingqs.map(w => w.l)));
+    $('#pm-due').addEventListener('click', () => startReview(dueAll));
+    $('#pm-vocab').addEventListener('click', () => { location.hash = '#/vocab'; });
+  }
+
+  /* Find the sentence a word occurs in, preferring the current story. */
+  function contextFor(g) {
+    const i = BY_G.get(g);
+    const pool = cur ? [cur, ...STORIES.filter(s => s !== cur)] : STORIES;
+    for (const s of pool) {
+      for (const ln of s.lines) {
+        if (ln.t.some(t => t[2] === i)) return ln;
+      }
+    }
+    return null;
+  }
+
+  function openWord(g, line) {
+    panel.mode = 'word'; panel.g = g; panel.line = line || contextFor(g);
+    panel.chipSel = 0;
+    renderWordCard();
+    sheetOpen();
+  }
+  function closeWord() {
+    panel.mode = 'lists'; panel.g = null; panel.line = null;
+    renderPanel();
+  }
+
+  function statusButtonsHTML(eff) {
+    const items = [['1', 'New', '1'], ['2', 'Recognized', '2'], ['3', 'Familiar', '3'],
+                   ['4', 'Learned', '4'], ['k', 'Known', 'K'], ['x', 'Ignore', 'X']];
+    return items.map(([v, label, key]) =>
+      `<button data-set="${v}" class="${eff === v ? 'on' : ''}" title="${label} (${key})">${
+        v === 'k' ? '✓' : v === 'x' ? '✗' : v} ${label}</button>`).join('');
+  }
+
+  function renderWordCard() {
+    const g = panel.g;
+    const l = LEX[BY_G.get(g)];
+    if (!l) return closeWord();
+    const eff = effOf(g);
+    const ln = panel.line;
+    const meaning = WordLevels.meaning(g);
+
+    /* Candidate meanings, LingQ's "popular meanings" slot filled from this repo's own data. */
+    const chips = [];
+    if (l.en) chips.push(l.en);
+    if (l.head) chips.push(verbEquiv(l) || `${FORMLABEL[l.form] || l.form}: ${l.head[1]}`);
+    if (l.p) chips.push(l.p.map(([a, b]) => `${a} (${b})`).join(' + '));
+    panel.chips = chips;
+
+    let body = '';
+    if (panel.wtab === 'dict') {
+      body = `
+        ${l.en ? `<p style="font-size:15px;margin:6px 0"><b>${esc(l.en)}</b></p>` : ''}
+        ${l.p ? `<p style="font-size:14px">${l.p.map(([a, b]) =>
+            `<b class="end">${esc(a)}</b> ${esc(b)}`).join(' &nbsp;+&nbsp; ')}
+            <br><small style="color:var(--ink2)">Split automatically — check it reads sensibly.</small></p>` : ''}
+        ${l.head ? `${verbEquiv(l)
+              ? `<p style="font-size:16px;margin:6px 0">= <b>“${esc(verbEquiv(l))}”</b></p>` : ''}
+            <p style="font-size:14px">${esc(FORMLABEL[l.form] || l.form)} of
+            <b>${esc(l.head[0])}</b> — ${esc(l.head[1])}</p>` : ''}
+        ${l.o ? `<p style="font-size:13px;color:var(--ink2)">Deck position ${nf(l.o)}</p>` : ''}
+        ${!l.en && !l.p && !l.head ? `<p style="font-size:14px;color:var(--ink2)">Not in the
+            word master — a real find. Save your own meaning above, or ask the dictionaries.</p>` : ''}
+        <label style="font:700 11px/1 Inter;letter-spacing:.1em;text-transform:uppercase;color:var(--ink2);display:block;margin-top:14px">Web dictionaries</label>
+        <div class="dictlinks">
+          <a href="https://en.wiktionary.org/wiki/${encodeURIComponent(bareTe(l.te))}" target="_blank" rel="noopener">Wiktionary ↗</a>
+          <a href="https://glosbe.com/te/en/${encodeURIComponent(bareTe(l.te))}" target="_blank" rel="noopener">Glosbe Telugu–English ↗</a>
+          <a href="https://translate.google.com/?sl=te&tl=en&text=${encodeURIComponent(bareTe(l.te))}" target="_blank" rel="noopener">Google Translate ↗</a>
+        </div>`;
+    } else if (panel.wtab === 'ai') {
+      body = aiTabHTML(l, ln);
+    } else {
+      body = formsTabHTML(l);
+    }
+
+    $('#panelbody').innerHTML = `
+      <button class="wc-back" id="wc-back">‹ ${cur ? 'Lesson words' : 'Words'}</button>
+      <div class="wc-head">
+        <h2 class="${rom === 'te' ? 'te' : ''}">${esc(disp(l.te))}</h2>
+        <button class="say" id="wc-say" title="Pronounce">🔊</button>
+        ${badgeOf(eff)}
+      </div>
+      <p class="wc-sub ${rom === 'te' ? '' : 'te'}">${esc(dispAlt(l.te))}${l.r && rom !== 'iso' ? ` · ${esc(l.r)}` : ''}</p>
+      <div class="wc-status">${statusButtonsHTML(eff)}</div>
+      <div class="wc-meaning">
+        <label>Saved meaning</label>
+        <textarea id="wc-meaning" placeholder="Type a meaning here">${esc(meaning)}</textarea>
+        ${chips.length ? `<div class="chips">${chips.map((c, i) =>
+          `<button data-chip="${i}" class="${i === (panel.chipSel || 0) ? 'sel' : ''}">${esc(c)}</button>`).join('')}</div>` : ''}
+      </div>
+      ${ln ? `<div class="wc-ctx"><div class="te-line">${esc(disp(bareTe(ln.t.map(t => t[0]).join(''))))}</div>${esc(ln.en)}</div>` : ''}
+      <div class="subtabs">
+        <button data-wtab="dict" class="${panel.wtab === 'dict' ? 'on' : ''}">Dictionary</button>
+        <button data-wtab="ai" class="${panel.wtab === 'ai' ? 'on' : ''}">AI</button>
+        <button data-wtab="forms" class="${panel.wtab === 'forms' ? 'on' : ''}">Forms</button>
+      </div>
+      <div id="wc-body">${body}</div>`;
+
+    $('#wc-back').addEventListener('click', closeWord);
+    $('#wc-say').addEventListener('click', () => sayWord(g));
+    $$('#panel [data-set]').forEach(b => b.addEventListener('click', () => {
+      const v = b.dataset.set;
+      WordLevels.set(g, effOf(g) === v ? null : v);   // clicking the active status clears it
+      renderWordCard(); repaintTokens(); renderTop();
+    }));
+    const ta = $('#wc-meaning');
+    let deb = null;
+    ta.addEventListener('input', () => {
+      clearTimeout(deb);
+      deb = setTimeout(() => WordLevels.setMeaning(g, ta.value), 400);
+    });
+    $$('#panel [data-chip]').forEach(b => b.addEventListener('click', () => {
+      WordLevels.setMeaning(g, chips[+b.dataset.chip]);
+      renderWordCard();
+    }));
+    $$('#panel [data-wtab]').forEach(b => b.addEventListener('click', () => {
+      panel.wtab = b.dataset.wtab; renderWordCard();
+    }));
+    wireAiTab(l, ln);
+  }
+
+  let wordAudio = null;
+  function sayWord(g) {
+    if (wordAudio) wordAudio.pause();
+    wordAudio = new Audio(`../ministories/audio/words/${g}.mp3`);
+    wordAudio.play().catch(() =>
+      toast('No clip for this word yet — run: python3 tools/ms_audio.py --words'));
+  }
+
+  /* ---------- AI tab ---------- */
+  function aiTabHTML(l, ln) {
+    if (!AiDict.hasKey()) {
+      return `<div class="aikey">
+        <p style="font-size:13.5px">On-demand explanations from <b>${esc(AiDict.MODEL)}</b>,
+          per word, per sentence, only when you ask. This needs <b>your own API key</b>: it is
+          stored only in this browser's localStorage, sent only to api.anthropic.com, and never
+          committed anywhere. Reasonable for a single-user tool; do not do this on a shared machine.</p>
+        <input type="password" id="ai-key" placeholder="sk-ant-…" autocomplete="off">
+        <p style="margin-top:8px"><button class="btn primary" id="ai-savekey">Save key</button></p>
+      </div>`;
+    }
+    const lineG = ln ? ln.g : 'nocx';
+    const tabs = ['explain', 'examples', 'grammar'];
+    const cached = AiDict.cached(panel.aitab, l.g, lineG);
+    return `
+      <div class="subtabs">${tabs.map(t =>
+        `<button data-aitab="${t}" class="${panel.aitab === t ? 'on' : ''}">${t[0].toUpperCase() + t.slice(1)}</button>`).join('')}</div>
+      <div id="ai-out">${cached
+        ? `<div class="aiout">${esc(cached)}</div>`
+        : `<p><button class="btn primary" id="ai-go">Generate ${panel.aitab}</button></p>`}</div>
+      <p class="ainote">Model output, not checked translation — nothing here has been through
+        check_ms.py. Cached in this browser after the first ask.
+        <button id="ai-forgetkey" style="color:var(--accent)">Remove key</button></p>`;
+  }
+
+  function wireAiTab(l, ln) {
+    const saveBtn = $('#ai-savekey');
+    if (saveBtn) {
+      saveBtn.addEventListener('click', () => {
+        const v = $('#ai-key').value.trim();
+        if (!v) return toast('Paste a key first.');
+        AiDict.setKey(v); renderWordCard();
+      });
+    }
+    $$('#panel [data-aitab]').forEach(b => b.addEventListener('click', () => {
+      panel.aitab = b.dataset.aitab; renderWordCard();
+    }));
+    const forget = $('#ai-forgetkey');
+    if (forget) forget.addEventListener('click', () => {
+      if (confirm('Remove the stored API key from this browser?')) { AiDict.setKey(''); renderWordCard(); }
+    });
+    const go = $('#ai-go');
+    if (go) {
+      go.addEventListener('click', async () => {
+        const lineG = ln ? ln.g : 'nocx';
+        const ctxTe = ln ? bareTe(ln.t.map(t => t[0]).join('')) : bareTe(l.te);
+        const out = $('#ai-out');
+        out.innerHTML = '<p style="color:var(--ink2);font-size:14px">Asking…</p>';
+        try {
+          const text = await AiDict.ask(panel.aitab, l.g, lineG, bareTe(l.te), ctxTe, ln ? ln.en : '');
+          out.innerHTML = `<div class="aiout">${esc(text)}</div>`;
+        } catch (e) {
+          out.innerHTML = `<p class="err">${
+            e.message === 'no-key' ? 'No key saved.' : esc(e.message)}</p>
+            <p><button class="btn" id="ai-go2">Try again</button></p>`;
+          const again = $('#ai-go2');
+          if (again) again.addEventListener('click', () => { panel.aitab = panel.aitab; renderWordCard(); });
+        }
+      });
+    }
+  }
+
+  /* ---------- Forms tab: the Verb Lab's actual paradigm, not a re-derivation ---------- */
+  function formsTabHTML(l) {
+    /* VERBS/cells are top-level consts in classic scripts — lexical globals, NOT window
+       properties. typeof is the only safe existence test. */
+    const haveLab = typeof VERBS !== 'undefined' && typeof cells === 'function';
+    const v = l.lemma && haveLab ? VERBS.find(x => x.id === l.lemma) : null;
+    if (!v) {
+      return `<p style="font-size:14px;color:var(--ink2)">${l.form
+        ? 'This form\'s verb is not in the Verb Lab\'s 54 roots yet.'
+        : 'Not recognized as a Verb Lab conjugation. Forms are shown for words the '
+          + 'conjugation engine already generates — nothing is re-derived here.'}</p>
+        <div class="dictlinks"><a href="../GRAMMAR_LAB/paradigms.html">Open the paradigm tables ↗</a></div>`;
+    }
+    const all = cells(v);
+    const byForm = new Map();
+    all.forEach(c => {
+      if (!byForm.has(c.form)) byForm.set(c.form, []);
+      byForm.get(c.form).push(c);
+    });
+    const target = bareTe(l.te);
+    const order = [...byForm.keys()].sort((a, b) =>
+      (byForm.get(a).some(c => c.tel === target) ? -1 : 0) - (byForm.get(b).some(c => c.tel === target) ? -1 : 0));
+    const rows = order.map(f => {
+      const cs = byForm.get(f);
+      const hit = cs.some(c => c.tel === target);
+      return `<tr${hit ? ' style="background:var(--l4)"' : ''}>
+        <td>${esc(FORMLABEL[f] || f)}</td>
+        <td class="cell">${cs.map(c =>
+          `<span style="margin-right:10px;white-space:nowrap${c.tel === target ? ';font-weight:800' : ''}">${
+            esc(rom === 'te' ? c.tel : rom === 'coll' ? Colloquial.romanize(c.tel) : c.rom)}</span>`).join('')}</td>
+      </tr>`;
+    }).join('');
+    return `<p style="font-size:14px">Paradigm of <b>${esc(rom === 'te' ? '' : v.id)}</b>
+        <span class="te">${esc(v.root[1])}</span> — ${esc(v.gloss)}, from the
+        <a href="../GRAMMAR_LAB/paradigms.html">Verb Lab</a>.</p>
+      <div style="overflow-x:auto"><table class="formtable">${rows}</table></div>`;
+  }
+
+  /* ---------- vocabulary view ---------- */
+  function renderVocab() {
+    $('#playbar').hidden = true;
+    const words = LEX.map((l, i) => ({ i, l, eff: effOf(l.g) }));
+    const groups = {
+      lingqs: words.filter(w => ['1', '2', '3', '4'].includes(w.eff)),
+      new: words.filter(w => w.eff === null),
+      known: words.filter(w => w.eff === 'k'),
+      all: words,
+    };
+    let rows = groups[vocab.tab] || words;
+    if (vocab.q) {
+      const q = vocab.q.toLowerCase();
+      rows = rows.filter(w => disp(w.l.te).toLowerCase().includes(q) ||
+        (w.l.en || '').toLowerCase().includes(q) || w.l.te.includes(vocab.q));
+    }
+    rows = [...rows];
+    if (vocab.sort === 'alpha') rows.sort((a, b) => disp(a.l.te).localeCompare(disp(b.l.te)));
+    else if (vocab.sort === 'freq') rows.sort((a, b) => b.l.n - a.l.n);
+    else rows.sort((a, b) => (a.l.f - b.l.f) || (b.l.n - a.l.n));
+
+    $('#pane').innerHTML = `
+      <div class="viewhead">
+        <h1>Vocabulary</h1><span class="sub">${nf(LEX.length)} distinct words across ${STORIES.length} stories</span>
+        <span class="tools">
+          <input type="search" id="v-q" placeholder="Search…" value="${esc(vocab.q)}"
+            style="border:1px solid var(--line);border-radius:8px;padding:6px 10px;font:inherit;font-size:13.5px">
+          <span class="seg">
+            <button data-sort="freq" class="${vocab.sort === 'freq' ? 'on' : ''}">Frequency</button>
+            <button data-sort="alpha" class="${vocab.sort === 'alpha' ? 'on' : ''}">A–Z</button>
+            <button data-sort="first" class="${vocab.sort === 'first' ? 'on' : ''}">First met</button>
+          </span>
+        </span>
+      </div>
+      <div class="ptabs">
+        <button data-vtab="lingqs" class="${vocab.tab === 'lingqs' ? 'on' : ''}">LingQs (${groups.lingqs.length})</button>
+        <button data-vtab="new" class="${vocab.tab === 'new' ? 'on' : ''}">New Words (${groups.new.length})</button>
+        <button data-vtab="known" class="${vocab.tab === 'known' ? 'on' : ''}">Known (${groups.known.length})</button>
+        <button data-vtab="all" class="${vocab.tab === 'all' ? 'on' : ''}">All Words (${groups.all.length})</button>
+      </div>
+      <table class="vtable"><tbody>${rows.map(w => `
+        <tr data-word="${esc(w.l.g)}">
+          <td style="width:24px">${badgeOf(w.eff)}</td>
+          <td class="te-col ${rom === 'te' ? 'te' : ''}">${esc(disp(w.l.te))}</td>
+          <td class="g-col">${esc(glossOf(w.l))}</td>
+          <td class="n-col">×${w.l.n} · story ${w.l.f}</td>
+        </tr>`).join('')}</tbody></table>`;
+
+    $$('#pane [data-vtab]').forEach(b => b.addEventListener('click', () => { vocab.tab = b.dataset.vtab; renderVocab(); }));
+    $$('#pane [data-sort]').forEach(b => b.addEventListener('click', () => { vocab.sort = b.dataset.sort; renderVocab(); }));
+    $('#v-q').addEventListener('input', e => { vocab.q = e.target.value; renderVocab(); $('#v-q').focus(); const v = $('#v-q'); v.setSelectionRange(v.value.length, v.value.length); });
+    $$('#pane [data-word]').forEach(tr => tr.addEventListener('click', () => openWord(tr.dataset.word)));
+    renderPanelForVocab();
+  }
+  function renderPanelForVocab() {
+    if (panel.mode === 'word' && panel.g) renderWordCard();
+    else $('#panelbody').innerHTML = '<p class="pempty">Tap a word to open its card.</p>';
+  }
+
+  /* ---------- stats view ---------- */
+  function renderStats() {
+    $('#playbar').hidden = true;
+    document.querySelector('main').classList.remove('withpanel');
+    const c = WordLevels.counts();
+    const lingqs = c[1] + c[2] + c[3] + c[4];
+    const snaps = WordLevels.snapshots();
+
+    $('#pane').innerHTML = `
+      <div class="viewhead"><h1>Stats</h1></div>
+      <div class="statcards">
+        <div class="statcard"><b>${nf(WordLevels.knownTotal())}</b><span>known words, all texts</span></div>
+        <div class="statcard"><b>${nf(lingqs)}</b><span>LingQs being learned</span></div>
+        <div class="statcard"><b>${WordLevels.activityToday()}/${WordLevels.goal()}</b>
+          <span>today · <button id="st-goal" style="color:var(--accent)">change goal</button></span></div>
+        <div class="statcard"><b>${WordLevels.streak() || '—'}</b><span>day streak</span></div>
+      </div>
+      <div class="statcards">
+        ${['1', '2', '3', '4', 'k', 'x'].map(l => `<div class="statcard">
+          <b>${nf(c[l])}</b><span>${badgeOf(l)} ${WordLevels.LABEL[l]}</span></div>`).join('')}
+      </div>
+      <div class="chartbox"><h3>Known words over time</h3>${chartHTML(snaps)}</div>`;
+
+    $('#st-goal').addEventListener('click', () => {
+      const v = prompt('Daily goal — words acted on per day:', WordLevels.goal());
+      if (v) { WordLevels.setGoal(v); renderStats(); renderTop(); }
+    });
+  }
+
+  function chartHTML(snaps) {
+    if (snaps.length < 2) {
+      return `<p class="empty">One snapshot per day this page is opened. Come back tomorrow and
+        a line starts here — history recording began today, there is nothing to reconstruct
+        backwards from.</p>`;
+    }
+    const W = 640, H = 200, P = 30;
+    const vals = snaps.map(([, v]) => v.k);
+    const max = Math.max(...vals, 1), min = Math.min(...vals, 0);
+    const x = i => P + i * (W - 2 * P) / (snaps.length - 1);
+    const y = v => H - P - (v - min) * (H - 2 * P) / Math.max(1, max - min);
+    const pts = vals.map((v, i) => `${x(i).toFixed(1)},${y(v).toFixed(1)}`).join(' ');
+    return `<svg viewBox="0 0 ${W} ${H}" style="width:100%;max-width:${W}px">
+      <polyline points="${pts}" fill="none" stroke="#8fa37e" stroke-width="2.5"/>
+      ${vals.map((v, i) => `<circle cx="${x(i).toFixed(1)}" cy="${y(v).toFixed(1)}" r="3" fill="#8fa37e"/>`).join('')}
+      <text x="${P}" y="${H - 8}" font-size="11" fill="#b9b3a4">${snaps[0][0]}</text>
+      <text x="${W - P}" y="${H - 8}" font-size="11" fill="#b9b3a4" text-anchor="end">${snaps[snaps.length - 1][0]}</text>
+      <text x="${P - 4}" y="${y(max) + 4}" font-size="11" fill="#b9b3a4" text-anchor="end">${nf(max)}</text>
+      <text x="${P - 4}" y="${y(min) + 4}" font-size="11" fill="#b9b3a4" text-anchor="end">${nf(min)}</text>
+    </svg>`;
+  }
+
+  /* ---------- review ---------- */
+  function startReview(lexEntries) {
+    if (!lexEntries.length) return toast('Nothing to review.');
+    reviewState = { queue: lexEntries.map(w => w.g || w.l && w.l.g).filter(Boolean), i: 0, revealed: false };
+    renderReview();
+  }
+  function closeReview() { reviewState = null; $('#overlay-root').innerHTML = ''; }
+
+  function renderReview() {
+    const rs = reviewState;
+    if (!rs) return;
+    if (rs.i >= rs.queue.length) {
+      $('#overlay-root').innerHTML = `<div class="overlay"><div class="rvcard">
+        <button class="close" id="rv-close">×</button>
+        <p class="rvdone">Done — ${rs.queue.length} word${rs.queue.length === 1 ? '' : 's'} reviewed.</p>
+      </div></div>`;
+      $('#rv-close').addEventListener('click', () => { closeReview(); renderPanel(); renderTop(); });
+      return;
+    }
+    const g = rs.queue[rs.i];
+    const l = LEX[BY_G.get(g)];
+    const eff = effOf(g);
+    $('#overlay-root').innerHTML = `<div class="overlay"><div class="rvcard">
+      <button class="close" id="rv-close">×</button>
+      <p class="count">${rs.i + 1} / ${rs.queue.length}</p>
+      <p class="term ${rom === 'te' ? 'te' : ''}">${esc(disp(l.te))}</p>
+      <p class="sub ${rom === 'te' ? '' : 'te'}">${esc(dispAlt(l.te))}</p>
+      <div class="answer">${rs.revealed
+        ? esc(glossOf(l) || '(no meaning saved yet)')
+        : '<span class="hint">space / enter to reveal</span>'}</div>
+      <div class="wc-status">${statusButtonsHTML(eff)}</div>
+      <p class="count"><kbd>1</kbd>–<kbd>4</kbd> rate · <kbd>K</kbd> known · <kbd>X</kbd> ignore · <kbd>Esc</kbd> quit</p>
+    </div></div>`;
+    $('#rv-close').addEventListener('click', () => { closeReview(); renderPanel(); renderTop(); });
+    $$('#overlay-root [data-set]').forEach(b => b.addEventListener('click', () => rateReview(b.dataset.set)));
+  }
+  function rateReview(v) {
+    const rs = reviewState;
+    WordLevels.set(rs.queue[rs.i], v);
+    rs.i++; rs.revealed = false;
+    renderReview(); repaintTokens();
+  }
+
+  /* ---------- events ---------- */
+  $('#pane').addEventListener('click', e => {
+    const cue = e.target.closest('.cue');
+    if (cue) { playLine(+cue.dataset.seek); return; }
+    const w = e.target.closest('.w');
+    if (!w || !cur) return;
+    $$('#pane .w.focus').forEach(el => el.classList.remove('focus'));
+    w.classList.add('focus');
+    const tok = cur.lines[+w.dataset.l].t[+w.dataset.t];
+    const g = LEX[tok[2]].g;
+    /* LingQ's core move: clicking a blue word creates the LingQ at status 1. Arrow/Tab
+       navigation deliberately does not — only the deliberate click/tap commits. */
+    if (effOf(g) === null) {
+      WordLevels.set(g, '1');
+      repaintTokens(); renderTop();
+    }
+    openWord(g, cur.lines[+w.dataset.l]);
+  });
+
+  $$('#romseg button').forEach(b => b.addEventListener('click', () => {
+    rom = b.dataset.rom;
+    write('rtt.msRom', rom);
+    renderTop();
+    if (view === 'story') { renderStory(); }
+    else if (view === 'vocab') renderVocab();
+    else if (view === 'library') renderLibrary();
+    renderPanel();
+  }));
+
+  /* Tab: jump to the next word not yet decided on — LingQ's core reading shortcut. */
+  function nextBlue() {
+    const spans = $$('#readtext .w');
+    if (!spans.length) return;
+    const cur_ = spans.findIndex(s => s.classList.contains('focus'));
+    for (let i = 1; i <= spans.length; i++) {
+      const el = spans[(cur_ + i) % spans.length];
+      if (el.classList.contains('new')) {
+        spans.forEach(s => s.classList.remove('focus'));
+        el.classList.add('focus');
+        el.scrollIntoView({ block: 'center', behavior: 'smooth' });
+        const tok = cur.lines[+el.dataset.l].t[+el.dataset.t];
+        openWord(LEX[tok[2]].g, cur.lines[+el.dataset.l]);
+        return;
+      }
+    }
+    toast('No blue words left in this lesson.');
+  }
+
+  /* Arrows walk the shaded words — anything still carrying a highlight, blue or yellow. */
+  function moveShaded(d) {
+    const spans = $$('#readtext .w').filter(s =>
+      s.classList.contains('new') || /(^| )lvl[1-4]( |$)/.test(s.className));
+    if (!spans.length) return;
+    const at = spans.findIndex(s => s.classList.contains('focus'));
+    const el = spans[(at + d + spans.length) % spans.length];
+    $$('#pane .w.focus').forEach(s => s.classList.remove('focus'));
+    el.classList.add('focus');
+    el.scrollIntoView({ block: 'center', behavior: 'smooth' });
+    const tok = cur.lines[+el.dataset.l].t[+el.dataset.t];
+    openWord(LEX[tok[2]].g, cur.lines[+el.dataset.l]);
+  }
+
+  function openDict(g) {
+    const l = LEX[BY_G.get(g)];
+    if (l) window.open('https://en.wiktionary.org/wiki/' + encodeURIComponent(bareTe(l.te)),
+                       '_blank', 'noopener');
+  }
+
+  /* ---------- text size ---------- */
+  let fontPx = read('rtt.msFont', 21);
+  const applyFont = () => document.documentElement.style.setProperty('--readsize', fontPx + 'px');
+  function bumpFont(d) {
+    fontPx = Math.max(15, Math.min(30, fontPx + d));
+    write('rtt.msFont', fontPx); applyFont();
+  }
+
+  /* ---------- the panel as a bottom sheet on small screens ---------- */
+  const sheetOpen = () => $('#panel').classList.add('open');
+  const sheetClose = () => $('#panel').classList.remove('open');
+  $('#panel-x').addEventListener('click', () => {
+    if (panel.mode === 'word') closeWord();
+    sheetClose();
+  });
+
+  /* ---------- keyboard help ---------- */
+  let helpOpen = false;
+  const KEYHELP = [
+    ['Reading', [
+      ['click / tap', 'blue word → LingQ at status 1, card opens'],
+      ['Tab or B', 'next blue word'],
+      ['← →', 'previous / next highlighted word'],
+      ['Shift + ← →', 'previous / next sentence'],
+      ['Space', 'play / pause'], ['A', 'replay this sentence'], ['L', 'loop sentence'],
+      ['Shift + T', 'show / hide English'], ['+ −', 'text size'],
+    ]],
+    ['Word card', [
+      ['1 – 4', 'New · Recognized · Familiar · Learned'],
+      ['K', 'known'], ['X', 'ignore'], ['0', 'clear'],
+      ['S', 'pronounce'], ['A', 'play its sentence'], ['D', 'open dictionary'],
+      ['H', 'edit the meaning'], ['↑ ↓ then E', 'pick a suggested meaning'],
+      ['Esc', 'close'],
+    ]],
+    ['Review', [['Space / Enter', 'reveal'], ['1–4 · K · X', 'rate and advance'], ['Esc', 'quit']]],
+  ];
+  function toggleHelp() {
+    helpOpen = !helpOpen;
+    if (!helpOpen) { $('#overlay-root').innerHTML = ''; return; }
+    $('#overlay-root').innerHTML = `<div class="overlay" id="help-ov"><div class="rvcard help">
+      <button class="close" id="help-close">×</button>
+      <h3>Keyboard</h3>
+      ${KEYHELP.map(([title, rows]) => `<div class="helpgroup"><h4>${title}</h4>
+        ${rows.map(([k, what]) => `<div class="helprow"><span class="keys">${
+          k.split(' ').map(p => /^(or|then|\/|·|\+|−|-)$/.test(p) ? ` ${p} ` : `<kbd>${p}</kbd>`).join('')
+        }</span><span>${what}</span></div>`).join('')}</div>`).join('')}
+    </div></div>`;
+    $('#help-close').addEventListener('click', toggleHelp);
+    $('#help-ov').addEventListener('click', e => { if (e.target.id === 'help-ov') toggleHelp(); });
+  }
+  $('#kbd-help').addEventListener('click', toggleHelp);
+
+  /* Some environments deliver the space key with an empty e.key; e.code is the reliable one. */
+  const isSpace = e => e.key === ' ' || e.code === 'Space';
+
+  document.addEventListener('keydown', e => {
+    const t = e.target;
+    if (t instanceof Element && t.matches('input, textarea')) {
+      if (e.key === 'Escape') t.blur();
+      return;
+    }
+    /* Review overlay swallows everything first. */
+    if (reviewState) {
+      if (e.key === 'Escape') { closeReview(); renderPanel(); renderTop(); return; }
+      if (reviewState.i >= reviewState.queue.length) {
+        if (isSpace(e) || e.key === 'Enter') { closeReview(); renderPanel(); renderTop(); e.preventDefault(); }
+        return;
+      }
+      if (isSpace(e) || e.key === 'Enter') { reviewState.revealed = true; renderReview(); e.preventDefault(); return; }
+      const map = { 1: '1', 2: '2', 3: '3', 4: '4', k: 'k', x: 'x' };
+      const v = map[e.key.toLowerCase()];
+      if (v) { rateReview(v); e.preventDefault(); }
+      return;
+    }
+
+    if (helpOpen) {
+      if (e.key === 'Escape' || e.key === '?') { e.preventDefault(); toggleHelp(); }
+      return;
+    }
+    if (e.key === '?') { e.preventDefault(); toggleHelp(); return; }
+    if (e.key === '+' || e.key === '=') { e.preventDefault(); bumpFont(1); return; }
+    if (e.key === '-') { e.preventDefault(); bumpFont(-1); return; }
+
+    if ((e.key === 'Tab' || e.key.toLowerCase() === 'b') && view === 'story' && !sview) {
+      e.preventDefault(); nextBlue(); return;
+    }
+
+    /* A word card is open: the six-level keys and LingQ's card shortcuts act on it. */
+    if (panel.mode === 'word' && panel.g) {
+      const map = { 1: '1', 2: '2', 3: '3', 4: '4', k: 'k', x: 'x' };
+      const v = map[e.key.toLowerCase()];
+      if (v) {
+        e.preventDefault();
+        WordLevels.set(panel.g, v);
+        repaintTokens(); renderTop();
+        if (view === 'story') nextBlue(); else renderWordCard();
+        return;
+      }
+      if (e.key === '0') { e.preventDefault(); WordLevels.set(panel.g, null); repaintTokens(); renderWordCard(); renderTop(); return; }
+      if (e.key === 'Escape') { e.preventDefault(); closeWord(); sheetClose(); return; }
+      const k = e.key.toLowerCase();
+      if (k === 's') { e.preventDefault(); sayWord(panel.g); return; }
+      if (k === 'd') { e.preventDefault(); openDict(panel.g); return; }
+      if (k === 'h') {
+        e.preventDefault();
+        if (effOf(panel.g) === null) { WordLevels.set(panel.g, '1'); repaintTokens(); renderTop(); renderWordCard(); }
+        const ta = $('#wc-meaning'); if (ta) ta.focus();
+        return;
+      }
+      if (e.key === 'ArrowUp' || e.key === 'ArrowDown') {
+        if (panel.chips && panel.chips.length) {
+          e.preventDefault();
+          const n = panel.chips.length;
+          panel.chipSel = ((panel.chipSel || 0) + (e.key === 'ArrowDown' ? 1 : -1) + n) % n;
+          $$('#panelbody [data-chip]').forEach((b, i) => b.classList.toggle('sel', i === panel.chipSel));
+          return;
+        }
+      }
+      if (k === 'e') {
+        if (panel.chips && panel.chips.length) {
+          e.preventDefault();
+          WordLevels.setMeaning(panel.g, panel.chips[panel.chipSel || 0]);
+          if (effOf(panel.g) === null) { WordLevels.set(panel.g, '1'); repaintTokens(); renderTop(); }
+          renderWordCard();
+          openDict(panel.g);
+          return;
+        }
+      }
+    }
+
+    if (view === 'story') {
+      if (e.key === 'T' && e.shiftKey) {
+        e.preventDefault();
+        showEn = !showEn; write('rtt.msEn', showEn); renderStory();
+        return;
+      }
+      /* Plain arrows walk shaded words (LingQ); Shift+arrows move through the sentences. */
+      if ((e.key === 'ArrowLeft' || e.key === 'ArrowRight') && !e.shiftKey && !sview) {
+        e.preventDefault(); moveShaded(e.key === 'ArrowRight' ? 1 : -1); return;
+      }
+      if ((e.key === 'ArrowLeft' || e.key === 'ArrowRight') && sview) {
+        e.preventDefault();
+        svIdx = Math.max(0, Math.min(cur.lines.length - 1, svIdx + (e.key === 'ArrowRight' ? 1 : -1)));
+        renderStory(); return;
+      }
+      if (e.key.toLowerCase() === 'a' && cur && cur.audio) {
+        e.preventDefault();
+        const li = panel.line ? cur.lines.indexOf(panel.line) : curLine;
+        if (li >= 0 && cur.lines[li].s != null) playLine(li);
+        return;
+      }
+      if (cur && cur.audio) {
+        if (isSpace(e)) { e.preventDefault(); $('#pb-play').click(); }
+        else if (e.key === 'ArrowLeft' && e.shiftKey) { e.preventDefault(); step(-1); }
+        else if (e.key === 'ArrowRight' && e.shiftKey) { e.preventDefault(); step(1); }
+        else if (e.key.toLowerCase() === 'l') { e.preventDefault(); $('#pb-loop').click(); }
+      }
+    }
+  });
+
+  /* Cross-tab / cross-page changes: recount, recolour. */
+  WordLevels.onChange(() => { renderTop(); repaintTokens(); });
+  Progress.onChange(() => { renderTop(); });
+
+  /* ---------- boot ---------- */
+  WordLevels.snapshot();          // today's history point, written on every open
+  applyFont();
+  window.addEventListener('hashchange', router);
+  router();
+})();

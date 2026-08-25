@@ -1,0 +1,192 @@
+1
+00:00:00,000 --> 00:00:03,120
+Story Five - Jon Has Lots of Homework
+
+2
+00:00:04,720 --> 00:00:06,856
+Jon is in high school.
+
+3
+00:00:07,456 --> 00:00:09,568
+He has lots of homework.
+
+4
+00:00:10,168 --> 00:00:12,376
+Clare is a university student.
+
+5
+00:00:12,976 --> 00:00:15,352
+She has lots of homework, too.
+
+6
+00:00:15,952 --> 00:00:18,520
+Jon does not like homework.
+
+7
+00:00:19,120 --> 00:00:22,144
+He likes to play on his computer.
+
+8
+00:00:22,744 --> 00:00:25,624
+Clare likes reading and writing.
+
+9
+00:00:26,224 --> 00:00:29,032
+She does her homework every day.
+
+10
+00:00:29,632 --> 00:00:31,000
+Clare is Jon's older sister.
+
+11
+00:00:31,600 --> 00:00:34,384
+She always makes him do his homework.
+
+12
+00:00:35,984 --> 00:00:38,936
+Here is the same story told in a different way.
+
+13
+00:00:40,536 --> 00:00:42,600
+I am in high school.
+
+14
+00:00:43,200 --> 00:00:45,192
+I have lots of homework.
+
+15
+00:00:45,792 --> 00:00:48,000
+Clare is a university student.
+
+16
+00:00:48,600 --> 00:00:50,976
+She has lots of homework, too.
+
+17
+00:00:51,576 --> 00:00:53,976
+I do not like homework.
+
+18
+00:00:54,576 --> 00:00:57,384
+I like to play on my computer.
+
+19
+00:00:57,984 --> 00:01:00,864
+Clare likes reading and writing.
+
+20
+00:01:01,464 --> 00:01:04,272
+She does her homework every day.
+
+21
+00:01:04,872 --> 00:01:06,072
+Clare is my older sister.
+
+22
+00:01:06,672 --> 00:01:09,384
+She always makes me do my homework.
+
+23
+00:01:10,984 --> 00:01:13,720
+One: Jon is a high school student.
+
+24
+00:01:14,320 --> 00:01:16,288
+Is Jon a high school student?
+
+25
+00:01:16,888 --> 00:01:19,552
+Yes, Jon is a high school student.
+
+26
+00:01:20,152 --> 00:01:22,960
+Two: Jon has a lot of homework.
+
+27
+00:01:23,560 --> 00:01:25,552
+Does Jon have a lot of homework?
+
+28
+00:01:26,152 --> 00:01:28,984
+Yes, Jon has a lot of homework.
+
+29
+00:01:29,584 --> 00:01:32,440
+Three: Clare is a university student.
+
+30
+00:01:33,040 --> 00:01:34,960
+Is Clare a high school student?
+
+31
+00:01:35,560 --> 00:01:38,488
+No, Clare is not a high school student.
+
+32
+00:01:39,088 --> 00:01:41,224
+She is a university student.
+
+33
+00:01:41,824 --> 00:01:45,760
+Four: Jon likes playing on his computer.
+
+34
+00:01:46,360 --> 00:01:49,408
+Does Jon like playing on his computer?
+
+35
+00:01:50,008 --> 00:01:53,776
+Yes, Jon likes playing on his computer.
+
+36
+00:01:54,376 --> 00:01:58,024
+Five: Clare likes reading and writing.
+
+37
+00:01:58,624 --> 00:02:01,192
+Does Clare like watching movies?
+
+38
+00:02:01,792 --> 00:02:05,368
+No, Clare likes reading and writing.
+
+39
+00:02:05,968 --> 00:02:09,424
+Six: Clare does her homework every day.
+
+40
+00:02:10,024 --> 00:02:12,736
+Does Clare do her homework every day?
+
+41
+00:02:13,336 --> 00:02:16,912
+Yes, Clare does her homework every day.
+
+42
+00:02:17,512 --> 00:02:19,552
+Seven: Clare is Jon's older sister.
+
+43
+00:02:20,152 --> 00:02:22,096
+Are Jon and Clare related?
+
+44
+00:02:22,696 --> 00:02:25,408
+Yes, Jon and Clare are related.
+
+45
+00:02:26,008 --> 00:02:27,376
+Clare is Jon's older sister.
+
+46
+00:02:27,976 --> 00:02:32,056
+Eight: Clare makes Jon do his homework every day.
+
+47
+00:02:32,656 --> 00:02:35,008
+Does Clare make Jon do his homework?
+
+48
+00:02:35,608 --> 00:02:39,544
+Yes, Clare makes Jon do his homework every day.
+

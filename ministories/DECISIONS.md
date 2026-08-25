@@ -226,3 +226,50 @@ rather than trusting the note. Fixed across all five occurrences of the phrase i
 naturalness judgment with no single-word deck precedent to test it against — the one genuine case
 in this batch where only a person's ear can settle it, not reasoning from the evidence already on
 hand. Full corpus re-checked clean (0 errors) after all ten resolutions.
+
+## 12. The reader is a new page that shares the old reader's state, not a rewrite of its UI
+
+Built per [READER_BRIEF.md](READER_BRIEF.md): `reader/` (index.html + assets), baked by
+`tools/build_ms_reader.py`, surfaced as the primary entry from the site's home page.
+
+**The brief said extend `STUDY/read.html`, and the resolution deserves stating rather than
+silence: the *machinery* is extended, the *page* is new.** The LingQ shape — six-level scale,
+blue/yellow highlighting, right-panel dictionary, goal ring — is a different product from the
+old reader's four-state mining UI, and bolting one onto the other would have broken the page
+that still serves the podcast and family transcripts. What is genuinely shared, by import or by
+store, is everything that must not fork:
+
+- **Identity**: every word keys on `ids.guid('W', script)` — verified to reproduce all 2,207
+  master guids. This is what makes a word known in one reader known in the other.
+- **Known-state**: `k` in the new six-level store (`rtt.msLevel`, levels.js) mirrors into
+  progress.js's `rtt.known` both ways, same one-state-crosses-over rule the old reader already
+  applied to "learning". Levels 1–4 and Ignore stay reader-local.
+- **Romanizers**: the page loads `STUDY/assets/te2rom.js` and `chrome-extension/src/colloquial.js`
+  from their existing paths. Zero new copies, so `check_te2rom.py` needed no changes. Baked data
+  is Telugu script only; romanization is a render-time display transform.
+- **Audio model and cue arithmetic**: `build_ms_reader.py` imports `sort_key` / `gap_before` /
+  `duration` from `ms_lr_export.py`, so baked seek offsets match `lr/story_NN.mp3` exactly
+  (verified against the SRT: max drift 4 ms). The lr export, aimed at Language Reactor and
+  orphaned when LR fell through (#9–10), turned out to be exactly the reader's audio source.
+- **Gloss resolution**: master lookup + Verb Lab `verbforms.json` + bound-suffix decomposition,
+  imported from `build_reader.py`. On stories 1–5: 62% of tokens glossed, 38% unresolved —
+  the unresolved ones being precisely the vocabulary worth mining.
+
+**Two things are deliberately new.** History (`rtt.msSnap`, one snapshot per day opened) because
+progress.js keeps only current state and a growth chart needs time. And the six-level scale
+itself, because the four existing states are a different model — mapping them would have been
+the mistake the brief warned about. New state logic was fault-injection tested (malformed JSON,
+invalid levels, junk snapshots, wrong types) before being trusted, per the project rule.
+
+**Word pronunciation** (LingQ plays a per-word clip): implemented as `ms_audio.py --words`,
+precomputing one Azure clip per distinct word from the manifest the baker writes
+(`word_audio.tsv`), rather than a live third-party call — same no-exposed-keys reasoning as #8.
+The reader degrades gracefully when clips are absent.
+
+**The AI dictionary is the one deviation from BRIEF §8's precompute-everything plan**, per the
+reader brief's explicit call: per-(word, sentence) explanations are generated on demand with a
+user-supplied key stored only in the browser's localStorage, cached after first ask. Explain /
+Examples / Grammar call the model; **Forms deliberately does not** — it renders the verb's
+actual paradigm from `GRAMMAR_LAB/data/verbs.js` + `engine.js` in the panel, because the Lab
+already generates those 2,911 forms and re-deriving them with a model would add a wrongness
+channel to the one place a checked answer already exists.

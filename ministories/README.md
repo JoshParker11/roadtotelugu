@@ -2,8 +2,9 @@
 
 **[BRIEF.md](BRIEF.md) — start here if picking this up cold**, especially for a fresh model or
 session. It has the current status, the open questions, and the mistakes a cold start makes by
-default. **[READER_BRIEF.md](READER_BRIEF.md)** is the build spec for the LingQ-style reading
-application — the kickoff prompt for whichever session builds it.
+default. **[PIPELINE.md](PIPELINE.md)** is the operating manual from here to done — the
+per-story loop, the word-registry plan, and how deploys reach the phone. **[READER_BRIEF.md](READER_BRIEF.md)**
+is the build spec the reader was built to (historical now — the reader exists at `../reader/`).
 
 The 62 LingQ Mini Stories, translated into Telugu and given real audio, read in a personal
 reading tool modeled on LingQ (built on the existing `../STUDY/` reader — see BRIEF.md §7, not
@@ -168,6 +169,25 @@ input has demonstrated nothing.
 produced 60% noise, and the two tests that fix it (does the word ever appear lowercase; is it
 ever not sentence-initial) both fail on Title Case lesson headings, which are therefore excluded.
 
+## The reader
+
+The LingQ-style reading application from [READER_BRIEF.md](READER_BRIEF.md) is built: `../reader/`
+(static, no framework, no backend), the primary entry from the site's home page. See
+DECISIONS.md #12 for what it shares with the old `../STUDY/` reader and why it is a separate
+page rather than a rewrite of that one.
+
+```bash
+python3 tools/build_ms_reader.py        # bake translated stories -> reader/data/ministories.js
+python3 tools/ms_lr_export.py --num N   # continuous per-story audio the reader seeks within
+python3 tools/ms_audio.py --words       # optional: per-word pronunciation clips (Azure key)
+python3 tools/serve.py                  # then open http://localhost:8123/reader/
+```
+
+Re-run `build_ms_reader.py` after translating a story (and `ms_lr_export.py` after voicing it);
+the story appears in the reader automatically. Word status lives in the browser's localStorage,
+keyed by the same guids as everything else; the vocabulary queue's backup drawer remains the way
+to move marks between devices.
+
 ## Still to build
 
 - Translation pass (see `../translate/STYLE.md` — register and dialect carry over unchanged;
@@ -234,5 +254,7 @@ Refuses to build a story with any segment still missing audio, and lists which g
 rather than producing a silently incomplete recording. See DECISIONS.md #9 for why story one
 needed content-based meta classification instead of its `seq` column, and why the concat step
 decodes and re-encodes rather than stream-copying.
-- Language Reactor import. Telugu **is** on their supported-language list, which is what makes
-  the whole downstream viable — worth confirming with one hand-made file before translating 62
+
+The same continuous mp3 + cue times are what `../reader/` plays — `build_ms_reader.py` imports
+this tool's ordering and gap arithmetic so the two can never disagree about where a sentence
+starts.

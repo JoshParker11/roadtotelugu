@@ -1,0 +1,188 @@
+1
+00:00:00,000 --> 00:00:02,808
+Story One - Mike is a Cook !
+
+2
+00:00:04,408 --> 00:00:07,456
+Mike gets up at six o'clock every morning.
+
+3
+00:00:08,056 --> 00:00:11,680
+He makes breakfast and drinks a cup of coffee.
+
+4
+00:00:12,280 --> 00:00:14,632
+He drives to work in his car.
+
+5
+00:00:15,232 --> 00:00:17,824
+His work starts at seven-thirty.
+
+6
+00:00:18,424 --> 00:00:20,848
+Mike is a cook at a restaurant.
+
+7
+00:00:21,448 --> 00:00:24,928
+He makes food for hungry customers.
+
+8
+00:00:25,528 --> 00:00:28,240
+The customers come from many countries.
+
+9
+00:00:28,840 --> 00:00:31,768
+They speak many different languages.
+
+10
+00:00:32,368 --> 00:00:35,464
+Mike can meet many friendly people.
+
+11
+00:00:36,064 --> 00:00:39,976
+Mike is happy when he talks to his customers.
+
+12
+00:00:41,576 --> 00:00:44,528
+Here is the same story told in a different way.
+
+13
+00:00:46,128 --> 00:00:49,128
+I get up at six o'clock every morning.
+
+14
+00:00:49,728 --> 00:00:53,256
+I make my breakfast and drink a cup of coffee.
+
+15
+00:00:53,856 --> 00:00:56,160
+I drive to work in my car.
+
+16
+00:00:56,760 --> 00:00:59,208
+My work starts at seven-thirty.
+
+17
+00:00:59,808 --> 00:01:02,328
+I am a cook at a restaurant.
+
+18
+00:01:02,928 --> 00:01:06,336
+I make food for hungry customers.
+
+19
+00:01:06,936 --> 00:01:10,224
+The customers come from many different countries.
+
+20
+00:01:10,824 --> 00:01:13,752
+They speak many different languages.
+
+21
+00:01:14,352 --> 00:01:17,472
+I can meet many friendly people.
+
+22
+00:01:19,072 --> 00:01:22,912
+One: Mike wakes up at six a.m. every morning.
+
+23
+00:01:23,512 --> 00:01:25,336
+Does Mike wake up early?
+
+24
+00:01:25,936 --> 00:01:29,656
+Yes, Mike wakes up at six a.m. every morning.
+
+25
+00:01:30,256 --> 00:01:33,328
+Two: Mike drinks a cup of coffee.
+
+26
+00:01:33,928 --> 00:01:35,488
+Does Mike drink tea?
+
+27
+00:01:36,088 --> 00:01:40,432
+No, Mike does not drink tea, he drinks a cup of coffee.
+
+28
+00:01:41,032 --> 00:01:44,032
+Three: Mike drives his car to work.
+
+29
+00:01:44,632 --> 00:01:46,912
+Does Mike drive his car to work?
+
+30
+00:01:47,512 --> 00:01:50,608
+Yes, Mike drives his car to work.
+
+31
+00:01:51,208 --> 00:01:54,976
+Four: Mike's work starts at seven-thirty a.m.
+
+32
+00:01:55,576 --> 00:01:58,576
+Does Mike's work start at seven a.m.?
+
+33
+00:01:59,176 --> 00:02:02,344
+No, Mike's work does not start at seven a.m.
+
+34
+00:02:02,944 --> 00:02:05,128
+It starts at seven thirty a.m.
+
+35
+00:02:05,728 --> 00:02:08,728
+Five: Mike is a cook at a restaurant.
+
+36
+00:02:09,328 --> 00:02:10,744
+Is Mike a cook?
+
+37
+00:02:11,344 --> 00:02:14,392
+Yes, Mike is a cook at a restaurant.
+
+38
+00:02:14,992 --> 00:02:19,072
+Six: The customers come from many different countries.
+
+39
+00:02:19,672 --> 00:02:22,192
+Are the customers from one country?
+
+40
+00:02:22,792 --> 00:02:25,840
+No, the customers are not from one country.
+
+41
+00:02:26,440 --> 00:02:29,488
+They are from many different countries.
+
+42
+00:02:30,088 --> 00:02:32,896
+Seven: The customers are friendly.
+
+43
+00:02:33,496 --> 00:02:35,464
+Are the customers friendly?
+
+44
+00:02:36,064 --> 00:02:38,848
+Yes, the customers are friendly.
+
+45
+00:02:39,448 --> 00:02:43,984
+Eight: Mike feels happy when he talks to the customers.
+
+46
+00:02:44,584 --> 00:02:48,112
+Does Mike feel happy when he talks to the customers?
+
+47
+00:02:48,712 --> 00:02:53,128
+Yes, Mike feels happy when he talks to the customers.
+

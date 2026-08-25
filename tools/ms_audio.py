@@ -124,6 +124,21 @@ def segments(num=None):
     return out
 
 
+def word_segments():
+    """One row per distinct word, from the manifest build_ms_reader.py writes.
+
+    The reader plays audio/words/<guid>.mp3 when a headword's speaker icon is clicked —
+    LingQ's per-word pronunciation, matched as behaviour but implemented as precomputed clips
+    (DECISIONS.md #8's own audio path) rather than a live third-party call from the browser.
+    Same guid scheme as everything else; the guids here are word guids (ids.guid('W', script)),
+    not segment guids, so the files land in their own subdirectory.
+    """
+    manifest = os.path.join(MS, 'word_audio.tsv')
+    if not os.path.exists(manifest):
+        sys.exit('No word manifest yet — run: python3 tools/build_ms_reader.py')
+    return rows_for(manifest)
+
+
 def estimate(num):
     segs = segments(num)
     pending = [r for r in segs if not os.path.exists(os.path.join(AUDIO, r['guid'] + '.mp3'))]
@@ -142,16 +157,29 @@ def main():
     ap.add_argument('--estimate', action='store_true', help='character count only, no audio')
     ap.add_argument('--voice', choices=VOICES, default='shruti')
     ap.add_argument('--force', action='store_true', help='regenerate files that already exist')
+    ap.add_argument('--words', action='store_true',
+                    help='per-word pronunciation clips from ministories/word_audio.tsv '
+                         'instead of sentence segments')
     args = ap.parse_args()
 
+    out_dir = os.path.join(AUDIO, 'words') if args.words else AUDIO
+
     if args.estimate:
+        if args.words:
+            rows = word_segments()
+            pending = [r for r in rows
+                       if not os.path.exists(os.path.join(out_dir, r['guid'] + '.mp3'))]
+            print(f'{len(rows)} distinct words, {len(rows) - len(pending)} already have clips, '
+                  f'{len(pending)} to generate '
+                  f'({sum(len(r["te"]) for r in pending)} characters)')
+            return
         return estimate(args.num)
 
-    segs = segments(args.num)
+    segs = word_segments() if args.words else segments(args.num)
     if not segs:
         print('No translated segments found for that scope.')
         return
-    os.makedirs(AUDIO, exist_ok=True)
+    os.makedirs(out_dir, exist_ok=True)
     key, region = creds()
     voice = VOICES[args.voice]
 
@@ -167,7 +195,7 @@ def main():
     tok, minted = token(key, region), time.time()
     made = skipped = 0
     for i, r in enumerate(segs, 1):
-        path = os.path.join(AUDIO, r['guid'] + '.mp3')
+        path = os.path.join(out_dir, r['guid'] + '.mp3')
         if os.path.exists(path) and not args.force:
             skipped += 1
             continue

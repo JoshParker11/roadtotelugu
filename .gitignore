@@ -59,9 +59,11 @@ ministories/source/
 ministories/hypertts_export.tsv
 ministories/*.export.tsv
 
-# Language Reactor export — concatenated per-story audio + dual SRT tracks. Large binary,
-# entirely regenerable from ministories/audio/ + work/*.tsv via tools/ms_lr_export.py.
-ministories/lr/
+# Continuous per-story audio + SRT tracks (tools/ms_lr_export.py) are COMMITTED, reversing the
+# earlier ignore: the reader streams lr/*.mp3, GitHub Pages serves only what is committed, and
+# the phone can't play audio that isn't hosted. It is our own Azure TTS of our own translation
+# (~2 MB/story), so nothing third-party ships. The per-segment clips below stay local — they
+# are the regenerable intermediates, not what the site plays.
 
 # A raw Anki plain-text export, dropped here mid-session as the intermediate artifact of the
 # HyperTTS audio path. Already consumed by tools/ms_hypertts_import.py; redundant with
