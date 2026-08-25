@@ -69,3 +69,17 @@ ministories/*.export.tsv
 # HyperTTS audio path. Already consumed by tools/ms_hypertts_import.py; redundant with
 # ministories/work/*.tsv from here on. Anki's own default deck/export name, not ours.
 ministories/Default.txt
+
+# Per-word pronunciation clips, un-ignored on the same reasoning as ministories/lr/: our own TTS
+# of our own translation, and GitHub Pages can only serve what is committed — the reader's
+# speaker button is dead on the phone otherwise. ~2.9 MB for stories 1-5's 267 words; distinct
+# words grow sublinearly, so the full 60 stories should land near 25-30 MB.
+# Three lines, because git will not descend into an excluded directory: un-exclude the parent,
+# re-exclude the per-segment clips directly inside it, then re-include only words/.
+!ministories/audio/
+ministories/audio/*
+!ministories/audio/words/
+
+# Anki's own export filename for the word-audio round trip — same scratch status as Default.txt.
+# Already consumed by ms_hypertts_import.py --words; the clips in audio/words/ are the artifact.
+ministories/Telugu__*.txt
