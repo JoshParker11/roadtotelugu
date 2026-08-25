@@ -509,6 +509,9 @@
 
     /* Candidate meanings, LingQ's "popular meanings" slot filled from this repo's own data. */
     const chips = [];
+    /* Registry glosses first: they are hand-written for this word in this corpus, where l.en is
+       the master's general gloss and l.p is an automatic split. Most-specific first. */
+    (l.sn || []).forEach(sn => { if (sn.g) chips.push(sn.g); });
     if (l.en) chips.push(l.en);
     if (l.head) chips.push(verbEquiv(l) || `${FORMLABEL[l.form] || l.form}: ${l.head[1]}`);
     if (l.p) chips.push(l.p.map(([a, b]) => `${a} (${b})`).join(' + '));
@@ -516,7 +519,28 @@
 
     let body = '';
     if (panel.wtab === 'dict') {
+      const senses = l.sn || [];
+      /* The word registry (ministories/vocab.tsv), rendered above everything else because it is
+         the only source written for this word in this sentence. A word can carry several senses;
+         sense 1 is the first one met in the corpus and leads. Nothing checks these explanations
+         for correctness, so a draft says so rather than implying review it has not had. */
+      const senseHTML = senses.length ? `
+        <div class="wc-senses">
+          ${senses.map((sn, i) => `
+            <div class="sense">
+              <p style="font-size:15px;margin:6px 0">
+                ${senses.length > 1 ? `<span style="color:var(--ink2)">${i + 1}.</span> ` : ''}
+                <b>${esc(sn.g)}</b>
+                ${sn.p ? ` <small style="color:var(--ink2)">· ${esc(sn.p)}</small>` : ''}
+              </p>
+              ${sn.x ? `<p style="font-size:14px;line-height:1.55">${esc(sn.x)}</p>` : ''}
+              ${sn.s === 'draft' ? `<p style="font-size:12px;color:var(--ink2)">
+                Draft — written for this project, not yet checked by a native speaker.</p>` : ''}
+            </div>`).join('')}
+        </div>` : '';
+
       body = `
+        ${senseHTML}
         ${l.en ? `<p style="font-size:15px;margin:6px 0"><b>${esc(l.en)}</b></p>` : ''}
         ${l.p ? `<p style="font-size:14px">${l.p.map(([a, b]) =>
             `<b class="end">${esc(a)}</b> ${esc(b)}`).join(' &nbsp;+&nbsp; ')}
@@ -526,7 +550,7 @@
             <p style="font-size:14px">${esc(FORMLABEL[l.form] || l.form)} of
             <b>${esc(l.head[0])}</b> — ${esc(l.head[1])}</p>` : ''}
         ${l.o ? `<p style="font-size:13px;color:var(--ink2)">Deck position ${nf(l.o)}</p>` : ''}
-        ${!l.en && !l.p && !l.head ? `<p style="font-size:14px;color:var(--ink2)">Not in the
+        ${!l.en && !l.p && !l.head && !senses.length ? `<p style="font-size:14px;color:var(--ink2)">Not in the
             word master — a real find. Save your own meaning above, or ask the dictionaries.</p>` : ''}
         <label style="font:700 11px/1 Inter;letter-spacing:.1em;text-transform:uppercase;color:var(--ink2);display:block;margin-top:14px">Web dictionaries</label>
         <div class="dictlinks">

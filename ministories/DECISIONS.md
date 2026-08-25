@@ -273,3 +273,55 @@ Examples / Grammar call the model; **Forms deliberately does not** — it render
 actual paradigm from `GRAMMAR_LAB/data/verbs.js` + `engine.js` in the panel, because the Lab
 already generates those 2,911 forms and re-deriving them with a model would add a wrongness
 channel to the one place a checked answer already exists.
+
+## 13. Word audio goes through HyperTTS too — there is no Azure key to get
+
+`ms_audio.py --words` assumes a personal Azure Speech resource. There isn't one, and there is no
+way to obtain one *through* HyperTTS: **HyperTTS Pro holds the provider credentials on Vocab.ai's
+own servers and proxies the requests — that is the entire product.** No personal key is ever
+issued to the subscriber, which is also why the local addon `config.json` contains no credentials.
+Checked directly rather than assumed.
+
+So `ms_hypertts_export.py --words` / `ms_hypertts_import.py --words` extend the same Anki round
+trip already used for the 232 sentence clips. Both audio paths still land in the same place, and
+nothing downstream knows or cares which produced a given file:
+
+| | sentences | words |
+|---|---|---|
+| direct Azure | `ms_audio.py --num N` | `ms_audio.py --words` |
+| via HyperTTS Pro | `ms_hypertts_export.py` → Anki → `ms_hypertts_import.py` | same, with `--words` |
+| lands in | `ministories/audio/<segment guid>.mp3` | `ministories/audio/words/<word guid>.mp3` |
+
+**A real bug was fixed on the way in.** `ms_hypertts_import.py`'s guid filter — which exists to
+ignore unrelated notes that Anki's whole-deck export sweeps up — accepted only `M` and `S`
+prefixes. Word guids are `W`. Every single word row would have been silently discarded as
+"foreign", reporting success while copying nothing. Caught by reading the filter before running
+it, not by running it.
+
+## 14. The word registry is filled from chat, not (yet) from the Batch API
+
+`PIPELINE.md` §2 specced `ms_vocab.py` around a Batch API job. What was actually built keys on the
+same patch-file pattern as `ms_apply.py`, so definitions can arrive from **either** an interactive
+session (where the judgment currently lives, and what the subscription already pays for) or a
+batch job later, with no second code path. `--pending` prints, for each word, the checked facts
+already known — master gloss, Verb Lab form, or stem+suffix split — *then* its first-occurrence
+sentence, so whoever writes the definition is correcting and extending known facts rather than
+recalling them cold.
+
+**Stories 1–5: all 151 previously-unresolved words now have a card** (267 distinct words total;
+the remaining 116 already resolve to a master gloss, a Verb Lab form, or a stem+suffix split, so
+they show something today and are the lower-value half). Every row is `status=draft` and says so
+on the card itself — nothing checks an explanation's correctness, and the card should not imply
+review it has not had.
+
+**The work turned out to be morphology, not lexicography.** The unresolved words were
+overwhelmingly inflected forms of stems the master already glosses — గంటలకు is గంట + ల + కు,
+కారులో is కారు + లో, లేస్తాడు is లేచు with a third-person-masculine ending. The useful card is not
+an invented dictionary equivalent; it is "here is the dictionary form, here is what each suffix is
+doing."
+
+Two integration gaps were found and closed, both invisible without checking: `build_ms_reader.py`
+never read `vocab.tsv` (Fable specced the merge but the file did not exist yet), and once it did,
+**nothing in `reader/assets/app.js` referenced the baked field** — 151 cards would have shipped
+into data that no code displayed. Verified by clicking a word in the running reader, not by
+trusting the build output.

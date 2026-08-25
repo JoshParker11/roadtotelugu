@@ -55,6 +55,7 @@ AUDIO = os.path.join(MS, 'audio')
 LR = os.path.join(MS, 'lr')
 OUT_JS = os.path.join(ROOT, 'reader', 'data', 'ministories.js')
 OUT_MANIFEST = os.path.join(MS, 'word_audio.tsv')
+VOCAB = os.path.join(MS, 'vocab.tsv')
 VERBFORMS = os.path.join(HERE, 'verbforms.json')
 
 # Mirrors lex.js TOKEN exactly: the Telugu run includes ZWNJ/ZWJ because they sit *inside*
@@ -107,6 +108,39 @@ def decompose(te, by_te_bare, suffixes):
         return row, [[row['roman'], row['english'][:60]],
                      ['-' + srow['roman'].lstrip('-'), srow['english'][:60]]]
     return None
+
+
+def load_vocab():
+    """guid -> [sense, ...] from ministories/vocab.tsv, in sense order.
+
+    The registry is optional: it may not exist yet, and it will always cover fewer words than the
+    corpus contains while it is being filled in. A missing file or a missing word means the card
+    falls back to whatever the resolver already worked out (master gloss, Verb Lab form, or
+    stem+suffix), which is exactly the behaviour before this existed.
+
+    Keys are shortened for the baked JSON because every byte here ships to the browser on every
+    page load: g=gloss, p=pos, x=explain, c=context segment guid, s=status. Status rides along so
+    the reader can mark a card as unreviewed — nothing checks an explanation's correctness, and
+    the card should not imply otherwise.
+    """
+    if not os.path.exists(VOCAB):
+        return {}
+    out = {}
+    with open(VOCAB, encoding='utf-8') as f:
+        for r in csv.DictReader(f, delimiter='\t'):
+            if not (r.get('guid') or '').strip():
+                continue
+            n = str(r.get('sense_no') or '1')
+            out.setdefault(r['guid'], []).append({
+                'n': int(n) if n.isdigit() else 1,
+                'g': r.get('gloss', ''), 'p': r.get('pos', ''), 'x': r.get('explain', ''),
+                'c': r.get('context_guid', ''), 's': r.get('status', 'draft')})
+    # Sense 1 is the first-met sense and must render first (DECISIONS.md: the registry only ever
+    # appends). ms_vocab.py already writes the file in that order, but a hand-edited or
+    # concatenated file should not be able to silently reorder a word's card.
+    for senses in out.values():
+        senses.sort(key=lambda d: d['n'])
+    return out
 
 
 class Resolver:
@@ -226,6 +260,16 @@ def main():
         l['n'] = freq.get(i, 0)
         l['f'] = first.get(i, 0)
 
+    # Merge the word registry. This is additive: a word with no row keeps exactly the card it
+    # had before, so the reader degrades gracefully while vocab.tsv is still being filled in.
+    vocab = load_vocab()
+    carded = 0
+    for l in rs.lex:
+        senses = vocab.get(l['g'])
+        if senses:
+            l['sn'] = senses
+            carded += 1
+
     data = {'generated': date.today().isoformat(),
             'source': 'LingQ Mini Stories',
             'lex': rs.lex, 'stories': stories}
@@ -256,6 +300,8 @@ def main():
                      ('s', 'stem + suffix'), ('w', 'unresolved')):
         n = kinds.get(k, 0)
         print(f'    {label:<16}{n:>6}  {n/tot*100:>4.0f}%' if tot else '')
+    pct = carded * 100 // max(1, len(rs.lex))
+    print(f'    registry card   {carded:>6}  {pct:>4}%  (ministories/vocab.tsv)')
     print(f'{os.path.relpath(OUT_MANIFEST, ROOT)}  {len(rs.lex)} rows '
           f'(feed to ms_audio.py --words for per-word clips)')
 

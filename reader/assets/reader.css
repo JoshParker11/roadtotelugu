@@ -398,3 +398,11 @@ main { padding-top: var(--top-h); }
   .rvcard { padding: 22px 18px; }
   .toast { bottom: calc(var(--play-h) + 24px); }
 }
+
+/* Word-registry senses (ministories/vocab.tsv) at the top of the Dictionary tab. Separated from
+   the resolver's own output below it so it reads as a written definition rather than a lookup. */
+.wc-senses { margin: 2px 0 12px }
+.wc-senses .sense + .sense {
+  margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--rule, #e6e3dc);
+}
+.wc-senses .sense p { margin: 4px 0 }

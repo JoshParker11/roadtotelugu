@@ -38,7 +38,9 @@ python3 tools/ms_lr_export.py --num N
 python3 tools/build_ms_reader.py
 
 # 6. New words got word-audio manifest rows in step 5 — voice the new ones (cheap, skips existing)
-python3 tools/ms_audio.py --words
+python3 tools/ms_audio.py --words              # needs an Azure key; if you have none, instead:
+python3 tools/ms_hypertts_export.py --words    #   -> Anki -> HyperTTS batch -> export
+python3 tools/ms_hypertts_import.py <export.txt> --words
 ```
 
 Then look at it locally (`python3 tools/serve.py` → <http://localhost:8123/reader/>), listen to
@@ -82,7 +84,19 @@ later story uses an already-registered word in a **new sense or construction**, 
 `sense_no` row* — never overwrite the existing one. First occurrence wins row 1; the registry
 only ever grows. A word's card shows all its senses, first-met first.
 
-**How to generate it: offline, via the Batch API, in `tools/ms_vocab.py` (to be written).**
+**Built, and filled from chat rather than the Batch API — see `DECISIONS.md` #14.**
+`tools/ms_vocab.py` exists and takes the same patch-file shape as `ms_apply.py`, so definitions
+can come from an interactive session now or a batch job later without a second code path:
+
+```bash
+python3 tools/ms_vocab.py --pending --limit 40   # words with no card, + the checked facts + context
+python3 tools/ms_vocab.py patch.tsv              # apply
+python3 tools/ms_vocab.py --stats                # coverage
+```
+
+Stories 1–5 are done: all 151 previously-unresolved words have a card, all `status=draft`.
+`build_ms_reader.py` merges the registry and the reader renders it at the top of the Dictionary
+tab. The original Batch API plan below still stands for scaling to 60 stories.
 The reasoning: this site is static and keyless by design; per-click live calls are the opt-in
 exception, not the default. The tool should:
 

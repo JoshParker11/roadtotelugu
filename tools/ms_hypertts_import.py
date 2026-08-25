@@ -33,13 +33,15 @@ ROOT = os.path.normpath(os.path.join(HERE, '..'))
 AUDIO = os.path.join(ROOT, 'ministories', 'audio')
 
 SOUND = re.compile(r'\[sound:([^\]]+)\]')
-# Our guids, always: ids.py emits 'M' or 'S' + 12 hex chars. A row that doesn't match this is
-# not one of ours — most likely a pre-existing card pulled in because Anki's plain-text export
-# works on a whole deck, not just the notes from one import. Seen on a real export: a single
-# unrelated vocabulary card ('I am working now.') sitting in the same file. Without this check
-# its first field would be read as a 'guid' and, had its audio-position column also happened to
-# contain a [sound:...] tag, copied into ministories/audio/ under a garbage filename.
-GUID = re.compile(r'^[MS][0-9a-f]{12}$')
+# Our guids: ids.py emits a one-letter prefix + 12 hex — 'M' for Mini Story segments, 'W' for
+# word headwords, 'S' for sentences elsewhere in the repo. A row that doesn't match is not one of
+# ours, most likely a pre-existing card swept in because Anki's plain-text export works on a whole
+# deck rather than just the notes from one import (seen on a real export: an unrelated vocabulary
+# card sitting in the same file). Without this check its first field would be read as a 'guid' and,
+# if its audio column happened to hold a [sound:...] tag, copied in under a garbage filename.
+# 'W' was missing from this class originally, which would have made a word-audio import silently
+# discard every row it was given — the filter is meant to reject foreign notes, not our own clips.
+GUID = re.compile(r'^[MSW][0-9a-f]{12}$')
 
 
 def find_media():
@@ -63,6 +65,8 @@ def main():
     ap.add_argument('exported', help='the file Anki wrote via Export Notes > Plain Text')
     ap.add_argument('--media', help='path to Anki\'s collection.media (auto-detected if omitted)')
     ap.add_argument('--force', action='store_true', help='overwrite audio already in the repo')
+    ap.add_argument('--words', action='store_true',
+                    help='these are per-headword clips; write them to audio/words/ instead')
     args = ap.parse_args()
 
     media = args.media or find_media()
@@ -73,7 +77,10 @@ def main():
         lines = [l for l in f if not l.startswith('#')]
     rows = list(csv.reader(lines, delimiter='\t'))
 
-    os.makedirs(AUDIO, exist_ok=True)
+    # Word clips live in their own subdirectory because they are keyed by WORD guid, not segment
+    # guid — two different id spaces that must not share a namespace on disk.
+    out_dir = os.path.join(AUDIO, 'words') if args.words else AUDIO
+    os.makedirs(out_dir, exist_ok=True)
     copied = skipped = no_audio = missing_file = bad_row = foreign = 0
     for row in rows:
         if len(row) < 3:
@@ -88,7 +95,7 @@ def main():
             no_audio += 1
             continue
         src = os.path.join(media, m.group(1))
-        dst = os.path.join(AUDIO, guid + '.mp3')
+        dst = os.path.join(out_dir, guid + '.mp3')
         if not os.path.exists(src):
             print(f'MISSING  {guid}  expected {m.group(1)} in collection.media, not found')
             missing_file += 1
@@ -99,6 +106,7 @@ def main():
         shutil.copyfile(src, dst)
         copied += 1
 
+    print(f'-> {out_dir}')
     print(f'copied {copied}, skipped {skipped} (already had audio), '
          f'{no_audio} had no [sound:...] tag yet, {missing_file} referenced a missing file, '
          f'{foreign} row(s) were not one of ours (foreign guid, ignored), '
