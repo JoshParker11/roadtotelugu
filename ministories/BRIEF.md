@@ -70,6 +70,7 @@ correspondence is the entire teaching content. Segmenting by paragraph would dis
 |---|---|
 | **[README.md](README.md)** | Provenance, licensing rationale, the tool pipeline end to end |
 | **[PIPELINE.md](PIPELINE.md)** | The operating manual from here to done — per-story loop, word registry, deploy |
+| **[TRANSLATION_PROMPT.md](TRANSLATION_PROMPT.md)** | The standing guardrails that go in front of every translation batch, plus the required output format and the open questions for a native speaker |
 | **[DECISIONS.md](DECISIONS.md)** | Eleven append-only entries — read all of them, they are short. #1 (names), #5 (feminine agreement), #6 (story 4's speaker change), #7 (no term glossary yet — see §8 below), #8 (audio vendor), #9–10 (the Language Reactor export, now secondary — see §6) |
 | **[CATALOG.tsv](CATALOG.tsv)** | All 62 lesson files mapped to 60 story numbers and their LingQ ids |
 | **[names.tsv](names.tsv)** | 87 real proper nouns (filtered from 294 candidates — title-case lesson headings produce false positives, see `tools/ms_names.py`'s own docstring) with agreed transliterations |

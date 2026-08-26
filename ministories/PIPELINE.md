@@ -14,6 +14,13 @@ the AI tab remaining the ad-hoc fallback for anything the baked card doesn't ans
 
 ---
 
+## 0. The standing translation guardrails
+
+Paste [TRANSLATION_PROMPT.md](TRANSLATION_PROMPT.md) §1 in front of every translation batch,
+whichever model does the work. It carries the register, the dative-experiencer rule, the
+structural rules the drill depends on, the fixed renderings settled so far, and the exact output
+format `ms_apply.py` expects back.
+
 ## 1. The per-story loop (repeat ×55)
 
 Each story is one pass through five tools, all idempotent, all guid-keyed. Nothing here is new;

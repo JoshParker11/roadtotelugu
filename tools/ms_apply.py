@@ -90,8 +90,15 @@ def apply_patch(path, force):
                 skipped += 1
                 continue
             for f in FIELDS:
-                if f in p and p[f] is not None:
-                    r[f] = p[f]
+                v = p.get(f)
+                # 'note' is accepted as an alias for 'notes'. A model handed a three-column
+                # spec will plausibly emit either, and that difference silently dropping every
+                # flag is exactly the failure this project cannot afford — an unflagged guess
+                # is indistinguishable from a confident correct answer.
+                if v is None and f == 'notes':
+                    v = p.get('note')
+                if v is not None:
+                    r[f] = v
             if not p.get('status'):
                 r['status'] = 'draft'
             applied += 1
