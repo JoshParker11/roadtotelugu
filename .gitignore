@@ -89,3 +89,7 @@ ministories/Telugu__*.txt
 # byte-identical duplicates. 165 of them appeared during one word-audio import. They are junk,
 # but without this they show up as untracked files and can be swept into a commit by `git add -A`.
 * [0-9].mp3
+
+# Generated translation batches. These embed LingQ's English, which is gitignored everywhere else
+# in this project (see ministories/source/), and are regenerable from work/*.tsv in one command.
+ministories/batch_*.txt

@@ -16,6 +16,16 @@ the AI tab remaining the ad-hoc fallback for anything the baked card doesn't ans
 
 ## 0. The standing translation guardrails
 
+```bash
+python3 tools/ms_batch.py --remaining     # what is left, and a suggested batch size
+python3 tools/ms_batch.py 6               # -> ministories/batch_6.txt, ready to paste
+```
+
+`ms_batch.py` writes the guardrails and the untranslated rows into one file, and prints the row
+count the reply must match. Use `work/*.tsv` as the source, never `source/api/*.json` — the raw
+LingQ payloads are unsegmented and carry no guid, and the guid is what lets a reply be applied
+without trusting that row order survived a copy-paste.
+
 Paste [TRANSLATION_PROMPT.md](TRANSLATION_PROMPT.md) §1 in front of every translation batch,
 whichever model does the work. It carries the register, the dative-experiencer rule, the
 structural rules the drill depends on, the fixed renderings settled so far, and the exact output
