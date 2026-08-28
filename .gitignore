@@ -93,3 +93,9 @@ ministories/Telugu__*.txt
 # Generated translation batches. These embed LingQ's English, which is gitignored everywhere else
 # in this project (see ministories/source/), and are regenerable from work/*.tsv in one command.
 ministories/batch_*.txt
+
+# The native-speaker review sheet and its rejoin map. Both embed LingQ's English, which is kept
+# out of this public repo everywhere else (see ministories/source/), and both regenerate from
+# work/*.tsv. The returned translations DO get committed — those are ours.
+ministories/native_review.tsv
+ministories/native_review_map.json
