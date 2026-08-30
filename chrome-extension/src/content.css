@@ -12,3 +12,18 @@
 /* In the panel the romanization replaces the script inline, so it inherits the host's layout
    and only shifts colour enough to read as an annotation. */
 .tr-rom-inline { font-family: inherit; }
+
+/* The same annotation in the standalone reader, where there is no video behind it. The shadow
+   that keeps it legible over a picture is only grime on a solid background. */
+.tr-rom.tr-reader {
+  text-shadow: none;
+  opacity: .82;
+  font-size: 0.78em;
+}
+/* Telugu quoted inside a sentence of English: the romanization follows the script rather than
+   replacing it, so it has to read as an aside and not as more of the sentence. */
+.tr-rom-after {
+  font-family: ui-monospace, "JetBrains Mono", Menlo, monospace;
+  font-size: 0.85em;
+  opacity: .75;
+}

@@ -21,6 +21,21 @@
   <label class="row"><input type="checkbox" id="panel"> <span>In the side panel (replaces the script)</span></label>
   <label class="row"><input type="checkbox" id="hideScriptInPanel"> <span>Hide the original script in the panel</span></label>
 
+  <h2>The Language Reactor site</h2>
+  <p class="hint">languagereactor.com itself — including the Mac “app”, which is a Chrome
+    shortcut to the same site and so runs this extension the same way. There is no video here,
+    so the two settings above do not apply.</p>
+  <label class="row"><input type="checkbox" id="reader"> <span>Romanize the reader</span></label>
+  <label class="row"><span>How</span>
+    <select id="readerMode">
+      <option value="under">Under each line, keeping the script</option>
+      <option value="replace">Instead of the script</option>
+    </select>
+  </label>
+  <p class="hint"><b>Under</b> is the default and the safe one: Language Reactor hangs
+    click-to-define, the known/unknown colouring and the save button off the element holding the
+    script, so replacing that text takes the dictionary with it.</p>
+
   <h2>Panel selector</h2>
   <p class="hint">Leave empty to scan the whole page outside the player. Language Reactor is a
     separate extension whose markup can change between releases, so nothing here hard-codes its

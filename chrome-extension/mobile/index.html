@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Telugu Romanizer — on the phone</title>
+<style>
+  :root {
+    --bg: #fbfaf7; --fg: #201d18; --dim: #6b6459; --line: #e2ddd2;
+    --card: #fff; --accent: #a86b12; --code-bg: #f2eee4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #191817; --fg: #e6e1d8; --dim: #9a9287; --line: #33302b;
+      --card: #211f1d; --accent: #e8a33d; --code-bg: #262320;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 24px 18px 64px; background: var(--bg); color: var(--fg);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    max-width: 40rem; margin-inline: auto; -webkit-text-size-adjust: 100%;
+  }
+  h1 { font-size: 1.5rem; margin: 0 0 .25rem; letter-spacing: -.01em; }
+  h2 { font-size: 1.05rem; margin: 2.25rem 0 .5rem; }
+  .sub { color: var(--dim); margin: 0 0 2rem; }
+  p, li { margin: .5rem 0; }
+  ol { padding-left: 1.25rem; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px; margin: 12px 0; }
+  .card h3 { margin: 0 0 2px; font-size: .95rem; }
+  .card .why { color: var(--dim); font-size: .875rem; margin: 0 0 10px; }
+  code, .mark {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .8rem;
+    background: var(--code-bg); border-radius: 7px;
+  }
+  .mark {
+    display: block; padding: 10px; word-break: break-all; white-space: pre-wrap;
+    border: 1px solid var(--line); color: var(--fg); user-select: all; -webkit-user-select: all;
+  }
+  button {
+    margin-top: 8px; width: 100%; padding: 11px; font: inherit; font-weight: 600;
+    color: var(--bg); background: var(--accent); border: 0; border-radius: 9px; cursor: pointer;
+  }
+  button:active { opacity: .8; }
+  .note { color: var(--dim); font-size: .9rem; border-left: 2px solid var(--line); padding-left: 12px; }
+  .te { font-size: 1.05rem; }
+  .rom { font-family: ui-monospace, Menlo, monospace; font-size: .82rem; color: var(--accent); }
+</style>
+
+<h1>Telugu Romanizer, on the phone</h1>
+<p class="sub">Neither phone can run the Chrome extension — Chrome for Android has never supported
+extensions, and Chrome for iOS has no extension API at all. A bookmark can do it instead.</p>
+
+<p>A bookmarklet is a bookmark whose address is a line of JavaScript rather than a web address.
+Tapping it doesn’t go anywhere: it runs that line on the page you are already looking at. Here,
+that line loads the romanizer into Language Reactor.</p>
+
+<div class="card">
+  <div class="te">అది ఏమిటి?</div>
+  <div class="rom">adi ēmiṭi?</div>
+</div>
+
+<h2>1 · Copy one of these</h2>
+
+<div class="card">
+  <h3>Telugu — project scheme</h3>
+  <p class="why">ā ī ū ē ō · ṭ ḍ ṇ ḷ. Maps back to exactly one spelling. Start here.</p>
+  <code class="mark" id="iso">javascript:(function(){var d=document,s=d.createElement('script');s.src='https://joshparker11.github.io/roadtotelugu/chrome-extension/mobile/loader.js?scheme=iso&v='+Date.now();d.head.appendChild(s);})()</code>
+  <button data-copy="iso">Copy</button>
+</div>
+
+<div class="card">
+  <h3>Telugu — colloquial</h3>
+  <p class="why">What people actually type: <i>nenu, kooda, thinu</i>. Lossy on purpose. Optional
+    second bookmark — tapping it while the first is running switches scheme.</p>
+  <code class="mark" id="coll">javascript:(function(){var d=document,s=d.createElement('script');s.src='https://joshparker11.github.io/roadtotelugu/chrome-extension/mobile/loader.js?scheme=colloquial&v='+Date.now();d.head.appendChild(s);})()</code>
+  <button data-copy="coll">Copy</button>
+</div>
+
+<h2>2 · Make it a bookmark (iPhone, Safari)</h2>
+<p>Safari won’t let you type a <code>javascript:</code> address directly, so you save an ordinary
+bookmark first and then edit it. This is the fiddly part, and it is once only.</p>
+<ol>
+  <li>On any page: <b>Share</b> → <b>Add Bookmark</b> → name it <b>Telugu</b> → Save.</li>
+  <li><b>Bookmarks</b> (open-book icon) → <b>Edit</b> → tap <b>Telugu</b>.</li>
+  <li>Select the whole address line, delete it, and <b>paste</b> what you copied above.</li>
+  <li><b>Done</b>.</li>
+</ol>
+
+<h2>3 · Use it</h2>
+<ol>
+  <li>Open Language Reactor and open one of your texts.</li>
+  <li><b>Bookmarks</b> → tap <b>Telugu</b>.</li>
+</ol>
+<p>Romanization appears under every line. It keeps working as you scroll, tap words and move
+between texts, because Language Reactor never actually reloads the page — so it’s one tap per
+session, not per text.</p>
+
+<p class="note"><b>Tapping it again turns it off</b>, and again turns it back on. Tapping the
+other scheme’s bookmark switches scheme in place. Nothing is ever written to your Language
+Reactor text: the romanization is added to what’s on screen, so your saved text and your Words
+list stay exactly as they were.</p>
+
+<h2>If nothing happens</h2>
+<p>Make sure the address really starts with <code>javascript:</code> — iOS sometimes helpfully
+strips it on paste. Re-editing the bookmark and pasting again fixes it. If you get an alert
+saying it couldn’t load a file, the phone is offline or GitHub Pages hasn’t finished deploying.</p>
+
+<h2>Android</h2>
+<p>Bookmarklets are unreliable across Android browsers — Firefox blocks <code>javascript:</code>
+from the address bar and Chrome needs an awkward workaround. The tablet is better served by a
+real Firefox add-on, which is a separate job.</p>
+
+<script>
+  document.querySelectorAll('button[data-copy]').forEach(b => {
+    b.addEventListener('click', async () => {
+      const text = document.getElementById(b.dataset.copy).textContent;
+      try {
+        await navigator.clipboard.writeText(text);
+        b.textContent = 'Copied';
+      } catch (e) {
+        // Clipboard access is refused in plenty of mobile contexts. The block above is
+        // user-select:all, so the fallback is the one that always works: select it yourself.
+        b.textContent = 'Press and hold the text above to copy';
+      }
+      setTimeout(() => { b.textContent = 'Copy'; }, 2500);
+    });
+  });
+</script>

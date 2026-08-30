@@ -1,8 +1,8 @@
 /* The popup is the fast path: the four switches worth flipping mid-video. Anything that needs
    typing lives in options.html instead. */
 const DEFAULTS = { enabled: true, scheme: 'iso', captions: true, panel: true,
-                   hideScriptInPanel: true, panelScale: 100 };
-const BOOLS = ['enabled', 'captions', 'panel', 'hideScriptInPanel'];
+                   hideScriptInPanel: true, panelScale: 100, reader: true };
+const BOOLS = ['enabled', 'captions', 'panel', 'hideScriptInPanel', 'reader'];
 
 chrome.storage.sync.get(DEFAULTS, o => {
   BOOLS.forEach(k => {

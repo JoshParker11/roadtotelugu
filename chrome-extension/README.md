@@ -1,9 +1,9 @@
 # Telugu Romanizer — Chrome extension
 
-Shows romanization for Telugu script on YouTube: a line under the player's captions, and in
-place of the script in a transcript side panel. Built to sit alongside
-[Language Reactor](https://www.languagereactor.com/), which does the dictionary and export work
-but has no romanization for Telugu.
+Shows romanization for Telugu script in the three places it is read: under the player's captions
+on YouTube, in place of the script in a transcript side panel, and under each line on
+[languagereactor.com](https://www.languagereactor.com/) itself. LR does the dictionary and export
+work and has no romanization for Telugu.
 
 ## Why it lives in this repo
 
@@ -20,6 +20,42 @@ cp STUDY/assets/te2rom.js chrome-extension/src/te2rom.js && python3 tools/check_
 
 Split it out later with `git subtree split --prefix=chrome-extension` if it ever needs its own
 repo. Until then, one checker covers all three.
+
+## The Language Reactor site, and the Mac “app”
+
+**The app is not an app.** `~/Applications/Chrome Apps.localized/Language Reactor.app` is a
+Chrome shortcut — its `Info.plist` carries `CrAppModeShortcutURL =
+https://www.languagereactor.com/phrasepump` and `CrBundleIdentifier = com.google.Chrome`, and the
+executable is Chrome's `app_mode_loader`. The window is a Chrome tab in a frame with no address
+bar, on the same profile, running the same extensions. So nothing here has to integrate with a
+desktop application: **matching the site in the manifest is the whole of it**, and the extension
+then works identically in the app window and in a normal tab.
+
+Reaching the settings from the app window: the puzzle-piece **Extensions** button in its title
+bar → Telugu Romanizer. `chrome://extensions` itself only opens in a real Chrome window.
+
+On the site there is no video, so the caption/panel split does not apply and a third pass runs
+instead. It treats the two shapes of Telugu differently:
+
+| what | treatment | why |
+|---|---|---|
+| a text row, Telugu only | romanization on its own line underneath | it is a line, like a caption |
+| Telugu quoted inside English prose | romanization inline, right after the word | a block under the paragraph lands nowhere near the word |
+
+Neither one **replaces** the script, which is the difference from the YouTube panel, and it is
+deliberate: LR hangs click-to-define, the known/unknown colouring and the save-word button off
+the element holding the script. Swap that text out and the dictionary goes with it — which is the
+entire reason to be on the site. *Settings → The Language Reactor site* has an **Instead of the
+script** mode if you ever want the old behaviour, and it is not the default.
+
+Two details that were bugs before they were tested, worth not reintroducing:
+
+- The Telugu-or-prose test is decided **once per element** and stored in `data-tr-shape`. The
+  moment romanization is added, every element contains Latin letters, so re-testing reclassifies
+  every row as prose on the next sweep.
+- `romanize()` passes Latin through untouched, so romanizing a *mixed* text node and appending
+  the result prints the entire English sentence a second time. Mixed nodes are split on their
+  Telugu runs; only the runs are annotated.
 
 ## Two schemes
 
@@ -39,6 +75,51 @@ become `e`, `ఠ` and `త` both `th` — so it reads naturally but cannot be lo
 round-tripped. Word-final long `ā` is written single (`kooda`, not `koodaa`), which the family
 transcripts settle: 28 occurrences of `kooda` and none of `koodaa`.
 
+## On the phone
+
+Neither phone can run this as an extension: Chrome for Android has never supported extensions and
+Chrome for iOS has no extension API. `mobile/` is the way round that — a **bookmarklet**, a
+bookmark whose address is a line of JavaScript, which loads `mobile/loader.js` into whatever page
+you are looking at.
+
+Setup instructions, and the two lines to copy, are the page itself:
+**<https://joshparker11.github.io/roadtotelugu/chrome-extension/mobile/>** — open it *on the
+phone*, because the awkward step is getting the text into a bookmark's address field.
+
+`loader.js` loads `src/te2rom.js`, `src/colloquial.js` and `src/content.js` **from the Pages
+deploy**, rather than bundling them. A bundle would be a fourth copy of the romanizer, and
+`check_te2rom.py` exists because three was already one too many. Fix `content.js`, push, and the
+phone has the fix on the next tap.
+
+What it replaces, and how:
+
+| Chrome gives the extension | the bookmarklet's substitute |
+|---|---|
+| `chrome.storage.sync` | `localStorage` on languagereactor.com's origin, per device |
+| the popup's switches | which of the two bookmarks you tap |
+| on/off | tapping the same bookmark again — it flips `enabled`, and `content.js` already reverts on a storage change |
+| `content_scripts.matches` | `window.__trReader`, set by the loader before `content.js` runs |
+
+That last one is why `content.js` checks `__trReader` as well as the hostname. A page cannot use
+it to hijack the extension: a content script has its own isolated `window`, so the desktop path
+only ever reads the hostname. Injected by the bookmarklet, `content.js` runs in page context
+instead, where the flag is visible — and reader mode is the right default there anyway, since
+tapping the bookmark *is* "annotate what I am reading".
+
+It works because **languagereactor.com sends no CSP** — no header, no meta tag — so a script
+element pointing at github.io is not blocked. If that ever changes, the page is simply
+un-annotated: the text lives in the LR account and is never modified, so there is nothing to
+lose.
+
+Tested against a mock of the My Texts reader served over HTTP, loading the real `src/` files:
+first tap annotates; second tap on the same bookmark reverts the page to its original text;
+third restores it; the other bookmark switches scheme in place; and content rendered later —
+Language Reactor is a single-page app and never reloads — is annotated with no further tap.
+**Not yet tested on a real phone against the real site.**
+
+**Android:** bookmarklets are unreliable there (Firefox blocks `javascript:` from the address
+bar, Chrome needs a workaround). The tablet wants a real Firefox add-on, which is a separate job.
+
 ## Installing it for yourself
 
 No store account needed, and nothing is published.
@@ -46,7 +127,10 @@ No store account needed, and nothing is published.
 1. Open `chrome://extensions`
 2. Turn on **Developer mode** (top right)
 3. **Load unpacked** → choose this `chrome-extension` folder
-4. Open a YouTube video with Telugu captions
+4. Open a YouTube video with Telugu captions, or a text on languagereactor.com
+
+The site match is new, so an **existing install has to be reloaded** before it appears there —
+the reload arrow on the extension card, then reopen the Language Reactor window.
 
 After editing any file, press the **reload** arrow on the extension card, then reload the
 YouTube tab.
@@ -101,6 +185,13 @@ row and its two or three ancestors. Everything above was inferred from screensho
 The caption selector (`.ytp-caption-segment`) is YouTube's own and stable. The panel behaviour
 has not been tested against a live Language Reactor install — that needs the extension
 running, which is your machine, not mine. Expect the first session to need the selector above.
+
+The **site** pass was tested against a mock of the reader's structure — rows of per-word spans, a
+translation column, a sidebar with prose — where lines, prose, re-render, scheme switching and
+the off switch all behaved, and turning it off restored the page byte for byte. A mock is not the
+real markup. The one thing to watch on the real page is whether the extra line under a row fits:
+if rows overlap or clip, LR is positioning them itself, and the answer is the same as the panel's
+— *Panel text size*, or **Instead of the script**.
 
 ## Publishing
 

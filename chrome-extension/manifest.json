@@ -2,9 +2,13 @@
   "manifest_version": 3,
   "name": "Telugu Romanizer",
   "version": "0.1.0",
-  "description": "Shows romanization under Telugu captions on YouTube, and in the Language Reactor panel.",
+  "description": "Shows romanization under Telugu captions on YouTube, and in the Language Reactor panel and reader.",
   "permissions": ["storage"],
-  "host_permissions": ["https://www.youtube.com/*"],
+  "host_permissions": [
+    "https://www.youtube.com/*",
+    "https://www.languagereactor.com/*",
+    "https://*.languagereactor.com/*"
+  ],
   "options_ui": {
     "page": "src/options.html",
     "open_in_tab": false
@@ -15,7 +19,11 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://www.youtube.com/*"],
+      "matches": [
+        "https://www.youtube.com/*",
+        "https://www.languagereactor.com/*",
+        "https://*.languagereactor.com/*"
+      ],
       "js": ["src/te2rom.js", "src/colloquial.js", "src/content.js"],
       "css": ["src/content.css"],
       "run_at": "document_idle"

@@ -1,4 +1,9 @@
-/* Annotate Telugu script on YouTube with romanization.
+/* Annotate Telugu script with romanization, on YouTube and on languagereactor.com.
+ *
+ * THE MAC "LANGUAGE REACTOR APP" IS NOT AN APP. It is a Chrome shortcut — its Info.plist says
+ * CrAppModeShortcutURL = https://www.languagereactor.com/phrasepump — so the window is a Chrome
+ * tab in a frame with no address bar, running the same profile and the same extensions. Nothing
+ * here needs to know it exists: matching the site in the manifest is what makes it work there.
  *
  * NOTHING HERE KNOWS LANGUAGE REACTOR'S CLASS NAMES, ON PURPOSE.
  * LR is a separate extension that can restructure its markup in any release, and a hard-coded
@@ -21,6 +26,18 @@
   const TELUGU = /[ఀ-౿]/;
   const MARK = 'data-tr-src';
   const PLAYER = '#movie_player, .html5-video-player, .ytp-caption-window-container';
+  const SHAPE = 'data-tr-shape';
+
+  /* The standalone site, where there is no video and so no caption/panel split: every Telugu
+     string on the page is reading material. It gets its own pass rather than falling through to
+     the panel one, because the panel pass *replaces* the script — see doReader.
+
+     __trReader is the mobile bookmarklet's way in (mobile/loader.js). It cannot be set from a
+     page against the extension's wishes: a content script has its own isolated `window`, so the
+     desktop path only ever reads the hostname. Injected by the bookmarklet this file runs in
+     page context instead, where the flag is visible — and reader is the right default there
+     anyway, since tapping the bookmark is a deliberate "annotate what I am reading". */
+  const LR = window.__trReader === true || /(^|\.)languagereactor\.com$/.test(location.hostname);
 
   const DEFAULTS = {
     enabled: true,
@@ -32,10 +49,15 @@
     hideScriptInPanel: true,
     relaxClipping: true,
     panelScale: 100,   // manual size for panel romanization, 60–100
+    reader: true,               // languagereactor.com itself
+    readerMode: 'under',        // 'under' | 'replace'
   };
 
   let opts = { ...DEFAULTS };
-  const seen = new WeakSet();
+  /* Reassigned, not just added to: revert() has to forget every node it ever annotated, or
+     switching scheme leaves the inline annotations off for good — the spans are removed but the
+     text nodes are still marked done. */
+  let seen = new WeakSet();
 
   const romanize = t => opts.scheme === 'colloquial'
     ? Colloquial.romanize(t) : Te2Rom.romanize(t);
@@ -48,10 +70,11 @@
         if (!n.nodeValue || !TELUGU.test(n.nodeValue)) return NodeFilter.FILTER_REJECT;
         const p = n.parentElement;
         if (!p) return NodeFilter.FILTER_REJECT;
-        if (p.closest('.tr-rom, .tr-rom-inline, script, style, textarea, input, [contenteditable]')) {
+        if (p.closest('.tr-rom, .tr-rom-inline, .tr-rom-after, script, style, textarea, input, [contenteditable]')) {
           return NodeFilter.FILTER_REJECT;
         }
-        if (!!p.closest(PLAYER) !== wantPlayer) return NodeFilter.FILTER_REJECT;
+        // null means the caller does not care which side of the player a node is on.
+        if (wantPlayer !== null && !!p.closest(PLAYER) !== wantPlayer) return NodeFilter.FILTER_REJECT;
         return NodeFilter.FILTER_ACCEPT;
       },
     });
@@ -232,6 +255,102 @@
     n.dataset.trUnclipped = '1';
   }
 
+  /* ---------- the standalone reader ---------- */
+  /* Two shapes of Telugu live on languagereactor.com and they want opposite treatment.
+
+     A row of the text is a *line* — Telugu one side, the translation the other — so it takes
+     romanization underneath, exactly the way a caption does. A sentence of English explanation
+     with one Telugu word quoted inside it is not a line, and hanging a block under that
+     paragraph puts the romanization several words away from what it romanizes; those get it
+     inline, immediately after the script. The test is only whether the block has Latin letters
+     in it, decided ONCE and remembered on the element: the moment romanization is added, every
+     box has Latin in it, and re-testing would reclassify every line as prose on the next sweep.
+
+     Neither shape replaces anything, which is the difference from the YouTube panel. On the
+     site the whole point of LR is that every word is clickable, and the click target is the
+     element holding the script — swap that text out and the dictionary, the colour-coded
+     knownness and the save-word buttons all go with it. */
+  function doReader(root) {
+    if (!opts.reader) return;
+    if (opts.readerMode === 'replace') return doPanel(root);
+
+    const scope = root && root.isConnected ? root : document.body;
+    const lines = new Map();
+
+    teluguNodes(scope, null).forEach(node => {
+      const box = lineBox(node);
+      if (!box) return;
+      let shape = box.getAttribute(SHAPE);
+      if (!shape) {
+        shape = /[A-Za-z]/.test(box.textContent) ? 'prose' : 'line';
+        box.setAttribute(SHAPE, shape);
+      }
+      if (shape === 'prose') { annotateInline(node); return; }
+      if (!lines.has(box)) lines.set(box, []);
+      lines.get(box).push(node);
+    });
+
+    lines.forEach((nodes, box) => {
+      const text = nodes.map(n => n.nodeValue.trim()).filter(Boolean).join(' ');
+      if (!text) return;
+      if (box.getAttribute(MARK) === text) return;   // same row, already done
+      box.setAttribute(MARK, text);
+
+      let line = box.querySelector(':scope > .tr-rom');
+      if (!line) {
+        line = document.createElement('div');
+        line.className = 'tr-rom tr-reader';
+        box.appendChild(line);
+      }
+      line.textContent = romanize(text);
+    });
+  }
+
+  /* Romanization as a sibling right after the script, for Telugu quoted inside English prose.
+     Tracked in the same WeakSet the panel uses: unlike a row, the text node survives, so
+     nothing else would stop the next sweep annotating it again.
+
+     A node that is nothing but Telugu is left alone and given a sibling. A node that mixes the
+     two — an explanation sentence with a word quoted inside it — has to be taken apart instead,
+     because romanize() passes Latin straight through: romanizing the whole node and appending
+     it printed the entire English sentence a second time. Only the Telugu runs get an
+     annotation; every other character is put back exactly as it was. */
+  const TELUGU_RUN = /[\u0C00-\u0C7F]+(?:[ \u200c\u200d][\u0C00-\u0C7F]+)*/g;
+
+  function annotateInline(node) {
+    if (seen.has(node)) return;
+    seen.add(node);
+    const text = node.nodeValue;
+
+    if (!/[A-Za-z]/.test(text)) {              // all Telugu: never touch the node itself
+      const rom = romanize(text);
+      if (rom === text) return;
+      node.parentNode.insertBefore(after(rom), node.nextSibling);
+      return;
+    }
+
+    const frag = document.createDocumentFragment();
+    let at = 0;
+    TELUGU_RUN.lastIndex = 0;
+    for (let m; (m = TELUGU_RUN.exec(text)); ) {
+      if (m.index > at) frag.append(text.slice(at, m.index));
+      const run = document.createTextNode(m[0]);
+      seen.add(run);
+      frag.append(run, after(romanize(m[0])));
+      at = m.index + m[0].length;
+    }
+    if (!at) return;                            // no run matched; leave it alone
+    if (at < text.length) frag.append(text.slice(at));
+    node.replaceWith(frag);
+  }
+
+  function after(rom) {
+    const span = document.createElement('span');
+    span.className = 'tr-rom-after';
+    span.textContent = ' ' + rom.trim();
+    return span;
+  }
+
   /* ---------- run loop ----------
    * The panel used to be updated on a debounced observer: wait 250ms after the last mutation,
    * then re-scan everything. Both halves of that were wrong.
@@ -258,15 +377,18 @@
       lastRun = Date.now();
       const roots = [...pending];
       pending.clear();
-      if (roots.length > 40) doPanel();          // a wholesale repaint; one sweep is cheaper
-      else roots.forEach(r => doPanel(r));
+      const pass = LR ? doReader : doPanel;
+      if (roots.length > 40) pass();             // a wholesale repaint; one sweep is cheaper
+      else roots.forEach(r => pass(r));
     }, wait);
   }
 
   function start() {
     stop();
     if (!opts.enabled) return;
-    timer = setInterval(doCaptions, 300);
+    // Captions are polled because they are re-rendered per cue. The reader is not: it changes
+    // only when the page does, which the observer below already reports.
+    if (!LR) timer = setInterval(doCaptions, 300);
     observer = new MutationObserver(muts => {
       for (const m of muts) {
         for (const n of m.addedNodes) {
@@ -279,6 +401,7 @@
       if (pending.size) schedule();
     });
     observer.observe(document.body, { childList: true, subtree: true, characterData: true });
+    if (LR) { doReader(); return; }
     doCaptions();
     doPanel();
   }
@@ -293,8 +416,11 @@
   /* Put the page back the way it was, so switching schemes does not need a reload — and a
      reload on YouTube loses your place in the video, which makes a setting feel expensive. */
   function revert() {
+    seen = new WeakSet();
     document.querySelectorAll('.tr-rom').forEach(e => e.remove());
     document.querySelectorAll('.tr-rom-inline').forEach(e => e.remove());
+    document.querySelectorAll('.tr-rom-after').forEach(e => e.remove());
+    document.querySelectorAll(`[${SHAPE}]`).forEach(e => e.removeAttribute(SHAPE));
     document.querySelectorAll('.tr-script').forEach(e => {
       e.replaceWith(document.createTextNode(e.textContent));
     });

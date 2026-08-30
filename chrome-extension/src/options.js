@@ -1,6 +1,7 @@
 const DEFAULTS = { enabled: true, scheme: 'iso', captions: true, panel: true,
-                   hideScriptInPanel: true, panelSelector: '' };
-const BOOLS = ['captions', 'panel', 'hideScriptInPanel'];
+                   hideScriptInPanel: true, panelSelector: '', reader: true,
+                   readerMode: 'under' };
+const BOOLS = ['captions', 'panel', 'hideScriptInPanel', 'reader'];
 
 /* A live sample, because "colloquial" means nothing until you see what it does to a word you
    recognise. These are all in the deck. */
@@ -32,6 +33,11 @@ chrome.storage.sync.get(DEFAULTS, o => {
     el.addEventListener('change', () => {
       chrome.storage.sync.set({ [k]: el.checked }); say('Saved.');
     });
+  });
+  const mode = document.getElementById('readerMode');
+  mode.value = o.readerMode || 'under';
+  mode.addEventListener('change', () => {
+    chrome.storage.sync.set({ readerMode: mode.value }); say('Saved.');
   });
   const sel = document.getElementById('panelSelector');
   sel.value = o.panelSelector || '';
