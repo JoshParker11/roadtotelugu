@@ -90,6 +90,17 @@ ministories/Telugu__*.txt
 # but without this they show up as untracked files and can be swept into a commit by `git add -A`.
 * [0-9].mp3
 
+# The same race, on source files rather than audio. Three appeared during one editing session
+# — "ic_ocr 2.py", "intensive 2.js" — byte-identical to their originals. Listed by extension
+# rather than as `* [0-9].*` so a real filename that happens to end in a digit is never hidden.
+* [0-9].js
+* [0-9].py
+* [0-9].tsv
+* [0-9].html
+* [0-9].css
+* [0-9].md
+* [0-9].json
+
 # Generated translation batches. These embed LingQ's English, which is gitignored everywhere else
 # in this project (see ministories/source/), and are regenerable from work/*.tsv in one command.
 ministories/batch_*.txt
