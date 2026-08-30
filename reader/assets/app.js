@@ -20,8 +20,34 @@
   const bareTe = s => (s || '').replace(ZW, '');
   const clock = s => `${Math.floor((s || 0) / 60)}:${String(Math.floor((s || 0) % 60)).padStart(2, '0')}`;
 
-  const LEX = (window.MS_DATA && MS_DATA.lex) || [];
-  const STORIES = (window.MS_DATA && MS_DATA.stories) || [];
+  /* Two baked datasets now — the mini stories and the Intensive Course lessons — merged into
+     one reading list. Each ships its own `lex`, and a line's tokens hold INDEXES into that
+     dataset's lex, so the second one's indexes have to be shifted by the length of the first.
+     Merging without the shift silently points every Intensive Course word at whatever mini
+     story word happens to sit at the same index, which reads as plausible nonsense rather
+     than as an error. `src` is carried per story so a story can say where it came from. */
+  const SETS = [window.MS_DATA, window.IC_DATA].filter(Boolean);
+  const LEX = [];
+  const STORIES = [];
+  for (const d of SETS) {
+    const off = LEX.length;
+    LEX.push(...(d.lex || []));
+    for (const st of (d.stories || [])) {
+      /* Unique across datasets. Both number their stories from 1, and the router matched
+         on the number alone — so #/story/1 found mini story 1 and every Intensive Course
+         lesson was unreachable behind its mini-story twin. The prefix comes from the source
+         rather than from array position, so adding a third dataset cannot silently reshuffle
+         which id means what. */
+      const pfx = /Intensive/.test(d.source || '') ? 'ic' : 'ms';
+      STORIES.push(Object.assign({}, st, {
+        id: pfx + st.num,
+        src: d.source,
+        lines: (st.lines || []).map(l => Object.assign({}, l, {
+          t: (l.t || []).map(([w, k, i]) => [w, k, i < 0 ? i : i + off]),
+        })),
+      }));
+    }
+  }
   const BY_G = new Map(LEX.map((l, i) => [l.g, i]));
   const FORMLABEL = { future: 'habitual / future', present: 'present continuous', past: 'past',
     negFuture: 'negative future', negPast: 'negative past', negPresent: 'negative present',
@@ -129,13 +155,13 @@
   /* ---------- router ---------- */
   function router() {
     const h = location.hash;
-    const m = /^#\/story\/(\d+)/.exec(h);
+    const m = /^#\/story\/([a-z]*\d+)/.exec(h);
     closeReview();
     document.querySelector('main').classList.toggle('withpanel', !h.startsWith('#/stats'));
     $('#panel').hidden = h.startsWith('#/stats');
-    if (m && STORIES.some(s => s.num === +m[1])) {
+    if (m && STORIES.some(s => s.id === m[1])) {
       view = 'story';
-      openStory(STORIES.find(s => s.num === +m[1]));
+      openStory(STORIES.find(s => s.id === m[1]));
     } else if (h.startsWith('#/vocab')) {
       view = 'vocab'; cur = null; stopAudio(); renderVocab(); renderPanel();
     } else if (h.startsWith('#/stats')) {
@@ -163,10 +189,10 @@
     const cards = STORIES.map(s => {
       const st = storyStats(s);
       const pct = st.total ? Math.round(st.known / st.total * 100) : 0;
-      return `<button class="storycard" data-open="${s.num}">
+      return `<button class="storycard" data-open="${s.id}">
         <span class="snum">${s.num}</span>
         <span class="meta"><b>${esc(disp(s.title.te) || s.title.en)}</b>
-          <span>${esc(MS_DATA.source)} · ${s.lines.length} sentences${s.dur ? ' · ' + clock(s.dur) : ''}</span></span>
+          <span>${esc(s.src || '')} · ${s.lines.length} ${s.src && s.src.indexOf('Intensive') >= 0 ? 'turns' : 'sentences'}${s.dur ? ' · ' + clock(s.dur) : ''}</span></span>
         <span class="wordbar"><span class="track">
             <i style="flex:${st.known};background:var(--green)"></i>
             <i style="flex:${st.yellow};background:var(--l1)"></i>
@@ -175,10 +201,16 @@
         ${WordLevels.isRead(s.num) ? '<span class="done">✓</span>' : ''}
       </button>`;
     }).join('');
+    /* The counts are derived, not written down. "11 of 60 stories" was a literal in the
+       markup and would have quietly gone stale the moment a second source appeared. */
+    const ms = STORIES.filter(s => s.id[0] === 'm').length;
+    const ic = STORIES.length - ms;
+    const bits = [];
+    if (ms) bits.push(`${ms} of 60 Mini Stories, translated, checked and voiced`);
+    if (ic) bits.push(`${ic} Intensive Course lesson${ic === 1 ? '' : 's'}`);
     $('#pane').innerHTML = `
-      <div class="libhead"><h1>Mini Stories</h1>
-        <p>${STORIES.length} of 60 stories translated, checked and voiced. The rest appear here
-           as they are translated.</p></div>${cards}`;
+      <div class="libhead"><h1>Reading</h1>
+        <p>${bits.join(' · ')}. More appear here as they are prepared.</p></div>${cards}`;
     $$('#pane [data-open]').forEach(b =>
       b.addEventListener('click', () => { location.hash = '#/story/' + b.dataset.open; }));
   }
@@ -238,7 +270,7 @@
       <div class="lessonhead">
         <span class="snum">${s.num}</span>
         <span class="meta"><b>${esc(disp(s.title.te) || s.title.en)}</b>
-          <span>${esc(MS_DATA.source)} — Telugu</span></span>
+          <span>${esc(s.src || '')} — Telugu</span></span>
         <span class="tools">
           <button class="iconbtn${showEn ? ' on' : ''}" id="t-en" title="Show / hide English (Shift+T)">EN</button>
           <button class="iconbtn" id="t-sv" title="Sentence view">☰</button>
