@@ -1,0 +1,21 @@
+lesson	seq	speaker	en	rom	legacy	keys	flags
+1	1	ÆæÿÑ	What is that?	ravi : adi ēmiṭi?	ÆæÿÑ : A¨ HÑ$sìý?	0:471.0	
+1	2	WÇ	That is a chair.	giri : adi kurcī.	WÇ : A¨ Mæü$Èa.	0:531.9	
+1	3	ÆæÿÑ	What is this?	ravi : idi ēmiṭi?	ÆæÿÑ : C¨ HÑ$sìý?	0:593.8	
+1	4	WÇ	This is a table.	giri : idi balla.	WÇ : C¨ ºËÏ.	1:180.0	
+1	5	ÆæÿÑ	This is a wall. That is a threshold. This is a paper. That is a pen. This is a book. That is a clock/watch. This is a dog.  That is a cat.	ravi : idi gōḍa.  adi vākili. idi kāyitaṁ.  adi kalaṁ. idi pustakaṁ. adi gaḍiyāraṁ. idi kukka.  adi pilli.	ÆæÿÑ : C¨ Vøyæþ.  A¨ ÐéMìüÍ. C¨ M>Æÿ$$™èþ….  A¨ MæüË…. C¨ ç³#çÜ¢Mæü…. A¨ VæüyìþÄæý*Ææÿ…. C¨ Mæü$MæüP.  A¨ í³ÍÏ.	1:241.9;1:303.8;1:365.7;1:381.1;1:458.4	
+1	6	WÇ	Which is the door? Which is the window?	giri : ēdi talupu?  ēdi kiṭikī?	WÇ : H¨ ™èþË$ç³#?  H¨ MìüsìýMîü?	1:520.3	
+1	7	ÆæÿÑ	This is the door? That is the window.	ravi : idi talupu.  adi kiṭikī.	ÆæÿÑ : C¨ ™èþË$ç³#.  A¨ MìüsìýMîü.	1:582.2	
+1	8	ÆæÿÑ	Who is he?	ravi : āyana evaru?	ÆæÿÑ : BÄæý$¯èþ GÐèþÆæÿ$?	2:179.6	
+1	9	Ë™èþ	He is a teacher.	lata : āyana māṣṭarugāru.	Ë™èþ : BÄæý$¯èþ Ðèþ*çÙtÆæÿ$V>Ææÿ$.	2:240.0	
+1	10	ÆæÿÑ	Who is she?	ravi : āme evaru?	ÆæÿÑ : BÐðþ$ GÐèþÆæÿ$?	2:300.3	
+1	11	Ë™èþ	She is a teacher?	lata : āme ṭīcarugāru.	Ë™èþ : BÐðþ$ sîý^èþÆæÿ$V>Ææÿ$.	2:360.6	
+1	12	ÆæÿÑ	Who is he and who is she?	ravi : īyana evaru?  īme evaru?	ÆæÿÑ : DÄæý$¯èþ GÐèþÆæÿ$?  DÐðþ$ GÐèþÆæÿ$?	2:420.9	
+1	13	Ë™èþ	He is the Principal. She is the doctor.	lata : īyana prinsipālgāru. īme ḍākṭarugāru.	Ë™èþ : DÄæý$¯èþ {í³°Þ´ëÌŒýV>Ææÿ$. DÐðþ$ yéMæütÆæÿ$V>Ææÿ$.	2:481.3;2:496.4	
+1	14	ÆæÿÑ	He is Mr. Ramarao. She is Ms. Leela.	ravi : āyana rāmārāvu gāru.  āme līlagāru.	ÆæÿÑ : BÄæý$¯èþ Æ>Ðèþ*Æ>Ðèþ#V>Ææÿ$.  BÐðþ$ ÎËV>Ææÿ$.	2:586.9	
+1	15	Ë™èþ	What is Mr. Ramarao? What is Ms. Leela?	lata : rāmārāvugāru evaru? līlagāru evaru?	Ë™èþ : Æ>Ðèþ*Æ>Ðèþ#V>Ææÿ$ GÐèþÆæÿ$? ÎËV>Ææÿ$ GÐèþÆæÿ$?	3:180.0;3:195.2	
+1	16	ÆæÿÑ	Ramarao is a doctor. Leela is a teacher.	ravi : rāmārāvu ḍākṭaru.  līla ṭīcaru.	ÆæÿÑ : Æ>Ðèþ*Æ>Ðèþ# yéMæütÆæÿ$.  ÎË sîý^èþÆæÿ$.	3:287.5	
+1	17	Ë™èþ	She is Kamala. He is Subbarao.	lata : īme kamala.  īyana subbārāvu.	Ë™èþ : DÐðþ$ MæüÐèþ$Ë.  DÄæý$¯èþ çÜ$»ê¾Æ>Ðèþ#.	3:349.2	
+1	18	ÆæÿÑ	Kamala is a student. Subbarao is a student.	ravi : kamala vidyārthini. subbārāvu vidyārthi.	ÆæÿÑ : MæüÐèþ$Ë Ñ§éÅÇ¦°. çÜ$»ê¾Æ>Ðèþ# Ñ§éÅÇ¦.	3:410.7;3:426.1	
+1	19	Ë™èþ	Who is Mohan? Who is Vijaya?	lata : evaru mōhan?  evaru vijaya?	Ë™èþ : GÐèþÆæÿ$ Ððþ*çßý¯Œþ?  GÐèþÆæÿ$ ÑfÄæý$?	3:518.5	
+1	20	ÆæÿÑ	He is Mohan. She is Vijaya.	ravi : āyana mōhan.  īme vijaya.	ÆæÿÑ : BÄæý$¯èþ Ððþ*çßý¯Œþ.  DÐðþ$ ÑfÄæý$.	3:580.0	
