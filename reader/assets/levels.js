@@ -1,10 +1,13 @@
 /* The six-level word scale, LingQ's model on this project's identity scheme.
  *
- *   (unmarked)   "new" — blue. Not a stored state; absence is the state.
- *   1 New        just LingQ'd — darkest yellow
- *   2 Recognized
+ *   (unmarked)   "new" — blue tint. Not a stored state; absence is the state.
+ *   1 New        just LingQ'd — blue, solid, with a border. LingQ calls this state New and
+ *                paints it blue, and a picker that labelled it New while colouring it amber
+ *                read as a different thing from what it is. Stronger than the unmarked tint
+ *                so the two stay apart: unmarked is never touched, 1 is seen and parked.
+ *   2 Recognized darkest amber
  *   3 Familiar
- *   4 Learned    lightest yellow
+ *   4 Learned    lightest amber
  *   k Known      no highlight
  *   x Ignored    no highlight, permanently silent (names, numbers)
  *

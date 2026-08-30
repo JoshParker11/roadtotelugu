@@ -20,7 +20,12 @@
   --red: #d96c47;
   --new: rgba(127, 178, 232, .16);
   --new-b: rgba(127, 178, 232, .38);
-  --l1: rgba(232, 163, 61, .44);
+  /* Level 1 is BLUE, not the darkest amber. LingQ calls this state "New" and paints it blue,
+     and the picker read as amber for a state the label calls new. It is a stronger blue than
+     an unmarked word's --new tint so the two stay distinguishable: unmarked means never
+     touched, level 1 means seen and deliberately parked at the bottom of the ladder. */
+  --l1: rgba(127, 178, 232, .40);
+  --l1-b: rgba(127, 178, 232, .72);
   --l2: rgba(232, 163, 61, .30);
   --l3: rgba(232, 163, 61, .19);
   --l4: rgba(232, 163, 61, .10);
@@ -164,7 +169,7 @@ main { padding-top: var(--top-h); }
 
 .w { border-radius: 4px; padding: 0 2px; cursor: pointer; }
 .w.new { background: var(--new); box-shadow: inset 0 0 0 1px var(--new-b); }
-.w.lvl1 { background: var(--l1); }
+.w.lvl1 { background: var(--l1); box-shadow: inset 0 0 0 1px var(--l1-b); }
 .w.lvl2 { background: var(--l2); }
 .w.lvl3 { background: var(--l3); }
 .w.lvl4 { background: var(--l4); }
@@ -219,8 +224,8 @@ main { padding-top: var(--top-h); }
   place-items: center; font: 800 11px/1 Inter, sans-serif; padding: 0 4px; color: var(--bg);
 }
 .badge.new { background: var(--blue); }
-.badge.b1 { background: #e8a33d; } .badge.b2 { background: #caa050; }
-.badge.b3 { background: #a9945e; } .badge.b4 { background: #86855f; }
+.badge.b1 { background: var(--blue); } .badge.b2 { background: #e8a33d; }
+.badge.b3 { background: #c19a55; } .badge.b4 { background: #9a8d63; }
 .badge.bk { background: var(--green); }
 .badge.bx { background: var(--bg3); color: var(--ink2); border: 1px solid var(--line-strong); }
 .pmenu { border-top: 1px solid var(--line); margin-top: 14px; padding-top: 8px; }
@@ -245,6 +250,9 @@ main { padding-top: var(--top-h); }
   font-weight: 700; font-size: 12.5px; color: var(--ink2);
 }
 .wc-status button.on { border-color: var(--amber); background: var(--amber); color: var(--bg); }
+.wc-status button[data-set="1"].on { border-color: var(--blue); background: var(--blue); }
+.wc-status button[data-set="1"]:hover { border-color: var(--blue); color: var(--blue); }
+.wc-status button[data-set="1"].on:hover { color: var(--bg); }
 .wc-status button:hover { border-color: var(--amber); color: var(--amber); }
 .wc-status button.on:hover { color: var(--bg); }
 .wc-meaning textarea {
@@ -350,7 +358,35 @@ main { padding-top: var(--top-h); }
 .rvcard .answer { min-height: 54px; margin: 18px 0; font-size: 17px; }
 .rvcard .answer .hint { color: var(--ink2); font-size: 14px; }
 .rvcard .wc-status { justify-content: center; }
-.rvdone { font-size: 18px; font-weight: 700; margin: 30px 0; }
+.rvdone { font-size: 18px; font-weight: 700; margin: 18px 0 14px; }
+
+/* The list that follows the cards. Wider than a flashcard because it is read, not flipped. */
+.rvcard.wide { max-width: 640px; text-align: left; }
+.rvlist { max-height: 58vh; overflow-y: auto; margin: 0 0 12px; }
+.rvrow {
+  display: grid; grid-template-columns: auto minmax(0, 1fr) minmax(0, 1fr) minmax(0, 2fr);
+  gap: 10px; align-items: baseline; width: 100%;
+  padding: 8px 10px; border-radius: 8px; cursor: pointer; text-align: left;
+}
+.rvrow:hover { background: var(--bg3); }
+.rvrow b { font-weight: 700; }
+.rvrow .alt { color: var(--ink2); font-size: 13px; }
+.rvrow .g { color: var(--ink2); font-size: 13px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+@media (max-width: 560px) {
+  .rvrow { grid-template-columns: auto minmax(0, 1fr); }
+  .rvrow .alt, .rvrow .g { grid-column: 2; }
+}
+
+/* The sentence view's review button — the one action on that screen that is not navigation. */
+.sview .navrow button.prim {
+  border-color: var(--amber); color: var(--amber); font-weight: 700;
+}
+.sview .navrow button.prim:hover:not(:disabled) { background: var(--amber); color: var(--bg); }
+.sview .navrow button.prim .n {
+  display: inline-block; min-width: 18px; padding: 0 5px; margin-left: 4px;
+  border-radius: 9px; background: var(--amber); color: var(--bg); font-size: 11.5px;
+}
+.sview .navrow button.prim:hover:not(:disabled) .n { background: var(--bg); color: var(--amber); }
 .rvcard.help { text-align: left; }
 .rvcard.help h3 { margin: 0 0 6px; font-size: 20px; }
 .helpgroup h4 {

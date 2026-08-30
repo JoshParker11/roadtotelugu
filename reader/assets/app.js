@@ -301,6 +301,7 @@
 
   function sentenceViewHTML() {
     const ln = cur.lines[svIdx];
+    const n = wordsOfLine(ln).filter(stillLearning).length;
     return `<div class="sview">
       <p class="big">${ln.t.map((t, ti) => tokenHTML(t, svIdx, ti)).join('')}</p>
       ${showEn && ln.en ? `<p class="ren">${esc(ln.en)}</p>` : ''}
@@ -309,7 +310,12 @@
         <button id="sv-play" ${ln.s == null ? 'disabled' : ''}>▶ Play</button>
         <button id="sv-next" ${svIdx === cur.lines.length - 1 ? 'disabled' : ''}>Next ›</button>
       </div>
-      <p class="count">${svIdx + 1} / ${cur.lines.length}</p>
+      <div class="navrow">
+        <button id="sv-review" class="prim" ${n ? '' : 'disabled'}>
+          ⚡ Review this sentence${n ? ` <span class="n">${n}</span>` : ''}</button>
+      </div>
+      <p class="count">${svIdx + 1} / ${cur.lines.length}${
+        n ? '' : ' · nothing left to review in this one'}</p>
     </div>`;
   }
   function wireSentenceView() {
@@ -317,6 +323,14 @@
     $('#sv-prev').addEventListener('click', () => { svIdx = Math.max(0, svIdx - 1); renderStory(); });
     $('#sv-next').addEventListener('click', () => { svIdx = Math.min(cur.lines.length - 1, svIdx + 1); renderStory(); });
     $('#sv-play').addEventListener('click', () => playLine(svIdx));
+    /* Cards for exactly the words in the sentence on screen, then the same words as a list.
+       Scoped to the sentence rather than the lesson on purpose: the value is that you have
+       just read them in context and still have that context in mind. */
+    $('#sv-review').addEventListener('click', () => {
+      const ln = cur.lines[svIdx];
+      startReview(wordsOfLine(ln).filter(stillLearning),
+                  { scope: `sentence ${svIdx + 1} of ${cur.lines.length}` });
+    });
   }
 
   /* Status changed: recolour tokens in place instead of rebuilding the DOM under the cursor. */
@@ -475,6 +489,7 @@
     const rows = groups[panel.tab] || [];
     const dueAll = LEX.filter(l => WordLevels.isDue(l.g));
     const lessonLingqs = groups.lingqs;
+    const lessonPool = words.filter(w => stillLearning(w.l));
 
     $('#panelbody').innerHTML = `
       <div class="ptabs">
@@ -492,7 +507,8 @@
             : 'Nothing here.'}</p>`}
       </div>
       <div class="pmenu">
-        <button id="pm-lesson">▤ Review ${cur ? 'Lesson' : 'LingQs'} <span class="n">${lessonLingqs.length}</span></button>
+        <button id="pm-lesson">▤ Review ${cur ? 'This Lesson' : 'LingQs'} <span class="n">${
+          cur ? lessonPool.length : lessonLingqs.length}</span></button>
         <button id="pm-due">◷ Review Due <span class="n">${dueAll.length}</span></button>
         <button id="pm-vocab">☰ Vocabulary List</button>
       </div>`;
@@ -501,8 +517,14 @@
       panel.tab = b.dataset.ptab; renderPanel();
     }));
     $$('#panel [data-word]').forEach(b => b.addEventListener('click', () => openWord(b.dataset.word)));
-    $('#pm-lesson').addEventListener('click', () => startReview(lessonLingqs.map(w => w.l)));
-    $('#pm-due').addEventListener('click', () => startReview(dueAll));
+    /* In a lesson this covers everything in the lesson still being learned, not only the
+       words already LingQ'd — "scoped to this lesson" is the point, and a lesson's new words
+       are exactly the ones worth a second pass. Outside a lesson there is no scope, so it
+       falls back to the LingQs it always was. */
+    $('#pm-lesson').addEventListener('click', () => startReview(
+      (cur ? lessonPool : lessonLingqs).map(w => w.l),
+      { scope: cur ? (cur.title.en || `lesson ${cur.num}`) : 'your LingQs' }));
+    $('#pm-due').addEventListener('click', () => startReview(dueAll, { scope: 'due today' }));
     $('#pm-vocab').addEventListener('click', () => { location.hash = '#/vocab'; });
   }
 
@@ -884,9 +906,35 @@
   }
 
   /* ---------- review ---------- */
-  function startReview(lexEntries) {
-    if (!lexEntries.length) return toast('Nothing to review.');
-    reviewState = { queue: lexEntries.map(w => w.g || w.l && w.l.g).filter(Boolean), i: 0, revealed: false };
+
+  /* The words of one line, deduplicated and in the order the panel lists them.
+
+     Alphabetical, not reading order, and on the DISPLAYED form — the same rule panelWords()
+     already follows, and for the same reason: this list is for finding a word again, and
+     reading order means re-reading the sentence to find it. */
+  function wordsOfLine(ln) {
+    const seen = new Set();
+    const out = [];
+    for (const [, , i] of (ln.t || [])) {
+      if (i < 0 || seen.has(i)) continue;
+      seen.add(i);
+      out.push(LEX[i]);
+    }
+    return out.sort((a, b) => disp(a.te).localeCompare(disp(b.te), undefined, { sensitivity: 'base' }));
+  }
+
+  /* Known and Ignored are dropped. Reviewing a word you have already retired is the fastest
+     way to make a review feel like busywork, and both states exist precisely to say "stop
+     showing me this". Everything else — unmarked and levels 1-4 — is still being learned. */
+  const stillLearning = l => !['k', 'x'].includes(effOf(l.g));
+
+  function startReview(lexEntries, opts) {
+    const list = lexEntries.filter(Boolean);
+    if (!list.length) return toast('Nothing to review.');
+    reviewState = {
+      queue: list.map(w => w.g || (w.l && w.l.g)).filter(Boolean),
+      i: 0, revealed: false, scope: (opts && opts.scope) || '',
+    };
     renderReview();
   }
   function closeReview() { reviewState = null; $('#overlay-root').innerHTML = ''; }
@@ -895,11 +943,30 @@
     const rs = reviewState;
     if (!rs) return;
     if (rs.i >= rs.queue.length) {
-      $('#overlay-root').innerHTML = `<div class="overlay"><div class="rvcard">
+      /* The list comes straight after the cards, on the same screen, rather than sending you
+         back to the panel to find it. That is the whole point of it: the words are still in
+         mind from the sentence you just read, and an alphabetical list of exactly those is
+         where the second pass is cheapest. Statuses are live here — rating a word in the list
+         is the same action as rating it on a card. */
+      const rows = rs.queue.map(g => LEX[BY_G.get(g)]).filter(Boolean)
+        .sort((a, b) => disp(a.te).localeCompare(disp(b.te), undefined, { sensitivity: 'base' }));
+      $('#overlay-root').innerHTML = `<div class="overlay"><div class="rvcard wide">
         <button class="close" id="rv-close">×</button>
-        <p class="rvdone">Done — ${rs.queue.length} word${rs.queue.length === 1 ? '' : 's'} reviewed.</p>
+        <p class="rvdone">${rs.queue.length} word${rs.queue.length === 1 ? '' : 's'} reviewed${
+          rs.scope ? ' — ' + esc(rs.scope) : ''}</p>
+        <div class="rvlist">${rows.map(l => `
+          <div class="rvrow" data-g="${esc(l.g)}">
+            ${badgeOf(effOf(l.g))}
+            <b class="${rom === 'te' ? 'te' : ''}">${esc(disp(l.te))}</b>
+            <span class="alt">${esc(dispAlt(l.te))}</span>
+            <span class="g">${esc(glossOf(l) || '—')}</span>
+          </div>`).join('')}</div>
+        <p class="count">Click a word to open it · <kbd>Esc</kbd> to close</p>
       </div></div>`;
       $('#rv-close').addEventListener('click', () => { closeReview(); renderPanel(); renderTop(); });
+      $$('#overlay-root .rvrow').forEach(r => r.addEventListener('click', () => {
+        closeReview(); openWord(r.dataset.g); renderTop();
+      }));
       return;
     }
     const g = rs.queue[rs.i];
