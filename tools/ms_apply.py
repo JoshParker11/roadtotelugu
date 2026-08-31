@@ -31,6 +31,7 @@ import csv
 import glob
 import os
 import sys
+from msfiles import work_tsvs
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.normpath(os.path.join(HERE, '..'))
@@ -55,7 +56,7 @@ def save(path, rows):
 def pending(num):
     cat = {r['id']: r for r in load(CATALOG)}
     todo = []
-    for path in sorted(glob.glob(os.path.join(WORK, '*.tsv'))):
+    for path in work_tsvs(WORK):
         sid = os.path.basename(path)[:-4]
         if num and int(cat[sid]['num']) != int(num):
             continue
@@ -77,7 +78,7 @@ def apply_patch(path, force):
         sys.exit('patch is empty')
     applied = skipped = 0
     unknown = set(patch)
-    for wpath in sorted(glob.glob(os.path.join(WORK, '*.tsv'))):
+    for wpath in work_tsvs(WORK):
         rows = load(wpath)
         dirty = False
         for r in rows:

@@ -46,6 +46,7 @@ import sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 from ms_segment import RETELL  # the one existing test for "this meta row is the
+from msfiles import work_tsvs
                                 # retell-intro line", already verified in ms_segment.py
 
 ROOT = os.path.normpath(os.path.join(HERE, '..'))
@@ -89,7 +90,7 @@ def rows_for(path):
 
 def story_rows(num, cat):
     rows = []
-    for path in sorted(glob.glob(os.path.join(WORK, '*.tsv'))):
+    for path in work_tsvs(WORK):
         sid = os.path.basename(path)[:-4]
         if int(cat[sid]['num']) == int(num):
             rows.extend(rows_for(path))

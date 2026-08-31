@@ -110,3 +110,5 @@ ministories/batch_*.txt
 # work/*.tsv. The returned translations DO get committed — those are ours.
 ministories/native_review.tsv
 ministories/native_review_map.json
+# Same reason: the query list quotes the English alongside the Telugu it asks about.
+ministories/native_queries.tsv

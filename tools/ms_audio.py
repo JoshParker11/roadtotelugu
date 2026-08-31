@@ -36,6 +36,7 @@ able to actually hear the story/retell/question structure, not just have it tech
 """
 import argparse
 import csv
+import hashlib
 import glob
 import os
 import sys
@@ -43,6 +44,7 @@ import time
 import urllib.error
 import urllib.request
 import xml.sax.saxutils as sx
+from msfiles import work_tsvs
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.normpath(os.path.join(HERE, '..'))
@@ -114,7 +116,7 @@ def synthesize(text, voice, tok, region):
 def segments(num=None):
     cat = {r['id']: r for r in rows_for(CATALOG)}
     out = []
-    for path in sorted(glob.glob(os.path.join(WORK, '*.tsv'))):
+    for path in work_tsvs(WORK):
         sid = os.path.basename(path)[:-4]
         if num and int(cat[sid]['num']) != int(num):
             continue
@@ -141,13 +143,49 @@ def word_segments():
 
 def estimate(num):
     segs = segments(num)
-    pending = [r for r in segs if not os.path.exists(os.path.join(AUDIO, r['guid'] + '.mp3'))]
+    pending = [r for r in segs if is_stale(r)]
     new_chars = sum(len(r['te']) for r in pending)
     print(f'{len(segs)} translated segment(s), {len(segs) - len(pending)} already have audio, '
           f'{len(pending)} to generate')
     print(f'{new_chars} Telugu characters still to synthesize')
     print('Check current Azure Speech pricing/free-tier limits in the portal before a large run — '
          'this script does not know your tier.')
+
+
+MANIFEST = os.path.join(MS, 'audio_manifest.tsv')
+
+
+def is_stale(r, out_dir=None):
+    """True when this segment has no clip, or has one made from different text."""
+    path = os.path.join(out_dir or AUDIO, r['guid'] + '.mp3')
+    if not os.path.exists(path):
+        return True
+    if not os.path.exists(MANIFEST):
+        return False                      # nothing recorded: assume the clip is current
+    with open(MANIFEST, encoding='utf-8') as f:
+        have = {row['guid']: row['te_sha1'] for row in csv.DictReader(f, delimiter='\t')}
+    want = hashlib.sha1(r['te'].strip().encode('utf-8')).hexdigest()[:16]
+    return have.get(r['guid']) != want
+
+
+def record_voiced(guid, te):
+    """Remember which text this clip actually speaks.
+
+    A segment id comes from the ENGLISH, so re-translating a line keeps its guid and keeps
+    pointing at the mp3 of the previous wording. Nothing about the file says which Telugu is
+    inside it, and the reader happily played the old draft under the new text for 423 lines
+    before anyone noticed. build_ms_reader.py reads this and withholds audio unless the hash
+    still matches, so the failure is now "no audio" instead of "wrong audio".
+    """
+    rows = {}
+    if os.path.exists(MANIFEST):
+        with open(MANIFEST, encoding='utf-8') as f:
+            rows = {r['guid']: r['te_sha1'] for r in csv.DictReader(f, delimiter='\t')}
+    rows[guid] = hashlib.sha1(te.strip().encode('utf-8')).hexdigest()[:16]
+    with open(MANIFEST, 'w', encoding='utf-8', newline='') as f:
+        w = csv.writer(f, delimiter='\t')
+        w.writerow(['guid', 'te_sha1'])
+        w.writerows(sorted(rows.items()))
 
 
 def main():
@@ -168,7 +206,7 @@ def main():
         if args.words:
             rows = word_segments()
             pending = [r for r in rows
-                       if not os.path.exists(os.path.join(out_dir, r['guid'] + '.mp3'))]
+                       if is_stale(r, out_dir)]
             print(f'{len(rows)} distinct words, {len(rows) - len(pending)} already have clips, '
                   f'{len(pending)} to generate '
                   f'({sum(len(r["te"]) for r in pending)} characters)')
@@ -196,7 +234,8 @@ def main():
     made = skipped = 0
     for i, r in enumerate(segs, 1):
         path = os.path.join(out_dir, r['guid'] + '.mp3')
-        if os.path.exists(path) and not args.force:
+        # Stale counts as missing: a clip of the previous translation is not this line's audio.
+        if not is_stale(r, out_dir) and not args.force:
             skipped += 1
             continue
         if time.time() - minted > 540:            # tokens expire at 10 min; refresh at 9
@@ -204,6 +243,7 @@ def main():
         audio = synthesize(r['te'], voice, tok, region)
         with open(path, 'wb') as f:
             f.write(audio)
+        record_voiced(r['guid'], r['te'])
         made += 1
         print(f'{i:>4}/{len(segs)} {r["guid"]}  {r["te"][:40]}')
         time.sleep(PAUSE)

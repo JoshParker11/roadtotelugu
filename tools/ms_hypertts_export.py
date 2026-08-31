@@ -43,6 +43,7 @@ import argparse
 import csv
 import glob
 import os
+from msfiles import work_tsvs
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.normpath(os.path.join(HERE, '..'))
@@ -103,7 +104,7 @@ def main():
         cat = {r['id']: r for r in csv.DictReader(f, delimiter='\t')}
 
     seen, rows, dupes = {}, [], 0
-    for path in sorted(glob.glob(os.path.join(WORK, '*.tsv'))):
+    for path in work_tsvs(WORK):
         sid = os.path.basename(path)[:-4]
         if args.num and int(cat[sid]['num']) != int(args.num):
             continue

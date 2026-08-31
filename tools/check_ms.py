@@ -40,6 +40,7 @@ import os
 import re
 import sys
 import unicodedata
+from msfiles import work_tsvs
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.normpath(os.path.join(HERE, '..'))
@@ -48,7 +49,11 @@ WORK = os.path.join(MS, 'work')
 CATALOG = os.path.join(MS, 'CATALOG.tsv')
 NAMES = os.path.join(MS, 'names.tsv')
 
-STATUSES = ('todo', 'draft', 'query', 'checked', 'done')
+# `native` is a source, not a stage: the row is the native speaker's own translation rather
+# than a draft of ours that someone later verified. Worth keeping distinct from `checked` —
+# "who wrote this" and "has anyone checked it" are different questions, and after a native
+# batch lands the first one is the more useful filter.
+STATUSES = ('todo', 'draft', 'query', 'checked', 'done', 'native')
 TELUGU = re.compile(r'[ఀ-౿]')
 LATIN = re.compile(r'[A-Za-z]')
 
@@ -81,7 +86,11 @@ FIRST_PERSON = {'నేను', 'నా', 'నాకు', 'నన్ను', '�
 # pronoun on one side and a pronoun-or-name on the other is a person shift by definition,
 # whatever the surface forms look like. That general rule is what the first version lacked:
 # it special-cased a handful of pairs and reported the rest as findings.
-PRONOUNS = set('నేను నా నాకు నన్ను నాతో నాది నాలో మేము మా మాకు మమ్మల్ని మాతో మనం మన అతను అతని అతనికి అతనిని అతనితో ఆమె ఆమెకు ఆమెను ఆమెతో ఆమెది తను తన తనకు తనని తనతో వాడు వాళ్ళు వాళ్లు వారు వాళ్ళకు వాళ్లకు వాళ్ళను వాళ్లను వాళ్ళతో వాళ్లతో అది ఇది'.split())
+PRONOUNS = set('నేను నా నాకు నన్ను నాతో నాది నాలో మేము మా మాకు మమ్మల్ని మాతో మనం మన అతను అతని అతనికి అతనిని అతనితో ఆమె ఆమెకు ఆమెను ఆమెతో ఆమెది తను తన తనకు తనని తనతో వాడు వాళ్ళు వాళ్లు వారు వాళ్ళకు వాళ్లకు వాళ్ళను వాళ్లను వాళ్ళతో వాళ్లతో అది ఇది '
+                'వాళ్ళ వాళ్ల వారి వారితో వారికి వారిని మావాళ్ళు వాళ్ళిద్దరూ'.split())
+# The second line is what the native translations added. The list was assembled against model
+# output, which used a narrower set of forms — genitive వాళ్ళ and instrumental వారితో never
+# appeared in it, so both read as findings the first time a human wrote them.
 
 # Case suffixes that attach to a transliterated name. A name in the story becomes a pronoun
 # in the retell, and usually carries a case marker on one or both sides (డస్టిన్‌కు / నాకు),
@@ -113,6 +122,11 @@ ENDING_PAIRS = {frozenset(p) for p in [
     # fuller forms above and stopping there is why three 3pl->1pl verbs were reported.
     ('రు', 'ము'), ('రు', 'ం'),
     ('ంది', 'న్నాను'), ('ంది', 'ంటాను'), ('ాడు', 'ాను'), ('డు', 'ను'),
+    # Past tense, which the model drafts never used and a human translator does throughout:
+    # వెళ్ళింది / వెళ్ళాను, ప్రయత్నించింది / ప్రయత్నించాను, పోయింది / పోయాను.
+    ('ింది', 'ాను'), ('ది', 'ాను'),
+    ('ారు', 'ుతాము'), ('రు', 'ుతాము'),      # నిద్రపుచ్చారు / నిద్రపుచ్చుతాము
+    ('ి', 'ిని'),                            # విద్యార్థి / విద్యార్థిని
 ]}
 
 
@@ -352,7 +366,7 @@ def main():
     findings, meta_te, checked = [], {}, 0
     by_story = {}
 
-    for path in sorted(glob.glob(os.path.join(WORK, '*.tsv'))):
+    for path in work_tsvs(WORK):
         sid = os.path.basename(path)[:-4]
         if args.num and int(cat[sid]['num']) != args.num:
             continue
@@ -379,7 +393,7 @@ def main():
     if args.warn and os.path.exists(NAMES):
         allnames = {r['name']: r['te'] for r in rows_for(NAMES)}
         used = set()
-        for path in glob.glob(os.path.join(WORK, '*.tsv')):
+        for path in work_tsvs(WORK):
             for r in rows_for(path):
                 if r['te'].strip() and r['part'] != 'meta':
                     for w in re.findall(r'\b[A-Z][a-z]+\b', r['en']):

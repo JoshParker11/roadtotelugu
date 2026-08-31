@@ -34,6 +34,7 @@ import glob
 import os
 import re
 import sys
+from msfiles import work_tsvs
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.normpath(os.path.join(HERE, '..'))
@@ -84,7 +85,7 @@ def collect(nums):
     cat = {r['id']: r for r in rows_for(CATALOG)}
     want = set(nums)
     out = []
-    for path in sorted(glob.glob(os.path.join(WORK, '*.tsv'))):
+    for path in work_tsvs(WORK):
         sid = os.path.basename(path)[:-4]
         if int(cat[sid]['num']) not in want:
             continue
@@ -97,7 +98,7 @@ def collect(nums):
 def remaining():
     cat = {r['id']: r for r in rows_for(CATALOG)}
     per = {}
-    for path in sorted(glob.glob(os.path.join(WORK, '*.tsv'))):
+    for path in work_tsvs(WORK):
         sid = os.path.basename(path)[:-4]
         n = int(cat[sid]['num'])
         for r in rows_for(path):

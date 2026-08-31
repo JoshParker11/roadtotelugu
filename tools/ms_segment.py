@@ -48,6 +48,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.normpath(os.path.join(HERE, '..'))
 sys.path.insert(0, HERE)
 from ids import guid
+from msfiles import work_tsvs
 
 MS = os.path.join(ROOT, 'ministories')
 API = os.path.join(MS, 'source', 'api')
@@ -228,7 +229,7 @@ def main():
     if args.report:
         have_api = len(glob.glob(os.path.join(API, '*.json')))
         have_paste = len(glob.glob(os.path.join(PASTE, '*.txt')))
-        done = sorted(os.path.basename(p)[:-4] for p in glob.glob(os.path.join(WORK, '*.tsv')))
+        done = sorted(os.path.basename(p)[:-4] for p in work_tsvs(WORK))
         print(f'catalog       {len(rows)} lessons')
         print(f'api dumps     {max(0, have_api - 1)}')
         print(f'pasted files  {have_paste}')

@@ -42,6 +42,7 @@ import glob
 import os
 import re
 import sys
+from msfiles import work_tsvs
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.normpath(os.path.join(HERE, '..'))
@@ -67,7 +68,7 @@ WORD = re.compile(r"\b([A-Za-z][a-z]+)\b")
 
 def scan():
     upper, lower, initial, where = {}, set(), {}, {}
-    for path in sorted(glob.glob(os.path.join(WORK, '*.tsv'))):
+    for path in work_tsvs(WORK):
         sid = os.path.basename(path)[:-4]
         with open(path, encoding='utf-8') as f:
             for r in csv.DictReader(f, delimiter='\t'):
