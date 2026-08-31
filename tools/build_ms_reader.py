@@ -33,6 +33,7 @@ rule lex.js already applies, so a word written with the joiner and one written w
 an identity. Master lookups go through a stripped index for the same reason.
 """
 import csv
+import hashlib
 import glob
 import json
 import os
@@ -197,6 +198,30 @@ class Resolver:
         return out
 
 
+AUDIO_MANIFEST = os.path.join(MS, 'audio_manifest.tsv')
+_voiced = None
+
+
+def voiced_text_hashes():
+    """guid -> hash of the Telugu the existing clip actually speaks."""
+    global _voiced
+    if _voiced is None:
+        _voiced = {}
+        if os.path.exists(AUDIO_MANIFEST):
+            with open(AUDIO_MANIFEST, encoding='utf-8') as f:
+                for row in csv.DictReader(f, delimiter='\t'):
+                    _voiced[row['guid']] = row['te_sha1']
+    return _voiced
+
+
+def voiced_matches(r):
+    """True when a clip exists for this segment AND was made from this exact text."""
+    if not os.path.exists(os.path.join(AUDIO, r['guid'] + '.mp3')):
+        return False
+    want = hashlib.sha1(r['te'].strip().encode('utf-8')).hexdigest()[:16]
+    return voiced_text_hashes().get(r['guid']) == want
+
+
 def part_tag(r):
     if r['part'] != 'meta':
         return r['part']
@@ -208,7 +233,14 @@ def bake_story(num, cat, rs):
     if not rows or any(not r['te'].strip() for r in rows):
         return None                                # untranslated (or partially) — skip
 
-    have_audio = all(os.path.exists(os.path.join(AUDIO, r['guid'] + '.mp3')) for r in rows)
+    # A CLIP EXISTING IS NOT A CLIP THAT SAYS THIS SENTENCE.
+    # Segment ids are derived from the ENGLISH, so re-translating a line leaves its guid — and
+    # therefore its mp3 filename — untouched. When the native-speaker batch landed, 423 lines
+    # changed and every one kept pointing at audio of the previous draft: the reader showed
+    # మైక్ ప్రతీ ఉదయం 6 గంటలకు నిద్ర లేస్తాడు and played "...ప్రతి ఉదయం ఆరు గంటలకు లేస్తాడు".
+    # Silently wrong audio is worse than no audio, so the manifest records the hash of the text
+    # each clip was synthesised from and the story only gets audio when every line still matches.
+    have_audio = all(voiced_matches(r) for r in rows)
     lr_mp3 = os.path.join(LR, f'story_{int(num):02d}.mp3')
     have_audio = have_audio and os.path.exists(lr_mp3)
 
