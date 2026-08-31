@@ -1,21 +1,21 @@
-lesson	seq	speaker	en	rom	legacy	keys	flags
-30	1		WHAT VEGETABLES		CÐóþÓâæý Ò$ C…sZÏ	0:383.8	prose no-rom
-30	2		DID YOU COOK		Mæü*ÆæÿÌôýÑ$sìý?	0:408.2	prose no-rom
-30	3				çßýÌZ! BM>ÔèýÐé-×ìý ÑfÄæý$Ðéyæþ Móü…{§æþÐóþ$¯é? M>çÜ¢ Ðèþ*	0:449.2	prose no-en no-rom
-30	4				AÐèþ*ÃÆÿ$$° ¿Zf¯é°Mìü ÐðþâæýÏÐèþ$¯èþ…yìþ ¯éÄæý$¯é, ÆóÿyìþÄñý*ÌZ!	0:462.8	prose no-en no-rom
-30	5				Ðèþ$¯èþ… Æøl °^ðþa¯èþË$	1:233.6	prose no-en no-rom
-30	6				¡çÜ$Mæü$Æ>Ðèþr… C…sìýÐéâæý$Ï	1:243.8	prose no-en no-rom
-30	7				¡çÜ$Mæü$´ùÐèþr… ¯éMóüÒ$	1:253.9	prose no-en no-rom
-30	8		REVIEW 5		CÌê °ÌZayæþ… ^éÌê	1:263.9	prose no-rom
-30	9		REVIEW 5		»êV>Ìôý§æþ$ Ðèþ¨¯é!	1:264.1	prose no-rom
-30	10		REVIEW 5		MæüçÙt… Ðèþ¨¯èþV>Ææÿ*!	1:274.8	prose no-rom
-30	11				Cç³šyæþ$ ^ðþç³š! Ò$	1:448.4	prose no-en no-rom
-30	12				C…sZÏ Mæü*ÆæÿÌôýÑ$sìý?	1:458.5	prose no-en no-rom
-30	13				CÌê çÜ*tË$ Æøl C…sZÏMîü	1:466.0	prose no-en no-rom
-30	14		Hello! Is it Vijayawada Radio Station? Please tell		FâZÏ HH	1:468.7	prose no-rom
-30	15		Hello! Is it Vijayawada Radio Station? Please tell		ºÄæý$rMîü Ððþ$$Äæý$År…, G…yæþMæü$	1:476.2	prose no-rom
-30	16		Hello! Is it Vijayawada Radio Station? Please tell my daughter through the radio to go and eat her		íÜ°Ðèþ*Ë$	1:478.8	prose no-rom
-30	17		my daughter through the radio to go and eat her		Vöyæþ$Mæü$ ç³r$tMøÐèþr… G…™ø	1:486.3	prose no-rom
-30	18		my daughter through the radio to go and eat her lunch.		E¯é²Æÿ$$?	1:489.0	prose no-rom
-30	19		lunch.		MæüçÙt…V> E…¨ MæüÐèþ$Ìê!	1:496.5	prose no-rom
-30	20				^èþ*yæþ$! »ñýOr   òÜ„æü¯èþ$…¨.  ÐéâæýÏ…§æþÇ± JMóüÝëÇ »ñýOsìýMìü ç³…ç³Mæü$!	2:180.7	prose no-en no-rom
+guid	lesson	seq	speaker	en	rom	legacy	keys	flags
+I2f4dd11eda85	30	1		WHAT VEGETABLES		CÐóþÓâæý Ò$ C…sZÏ	0:383.8	prose no-rom
+I1b13bf846fa9	30	2		DID YOU COOK		Mæü*ÆæÿÌôýÑ$sìý?	0:408.2	prose no-rom
+I4cf69343bb4f	30	3				çßýÌZ! BM>ÔèýÐé-×ìý ÑfÄæý$Ðéyæþ Móü…{§æþÐóþ$¯é? M>çÜ¢ Ðèþ*	0:449.2	prose no-en no-rom
+Ie6c9ae5a5b50	30	4				AÐèþ*ÃÆÿ$$° ¿Zf¯é°Mìü ÐðþâæýÏÐèþ$¯èþ…yìþ ¯éÄæý$¯é, ÆóÿyìþÄñý*ÌZ!	0:462.8	prose no-en no-rom
+Icba7eb75db47	30	5				Ðèþ$¯èþ… Æøl °^ðþa¯èþË$	1:233.6	prose no-en no-rom
+I309e946a53ed	30	6				¡çÜ$Mæü$Æ>Ðèþr… C…sìýÐéâæý$Ï	1:243.8	prose no-en no-rom
+I0d7100e79e89	30	7				¡çÜ$Mæü$´ùÐèþr… ¯éMóüÒ$	1:253.9	prose no-en no-rom
+Ic473575f8364	30	8		REVIEW 5		CÌê °ÌZayæþ… ^éÌê	1:263.9	prose no-rom
+Ic473575f8364	30	9		REVIEW 5		»êV>Ìôý§æþ$ Ðèþ¨¯é!	1:264.1	prose no-rom
+Ic473575f8364	30	10		REVIEW 5		MæüçÙt… Ðèþ¨¯èþV>Ææÿ*!	1:274.8	prose no-rom
+Ie5d864aebfe2	30	11				Cç³šyæþ$ ^ðþç³š! Ò$	1:448.4	prose no-en no-rom
+Ie6399085b152	30	12				C…sZÏ Mæü*ÆæÿÌôýÑ$sìý?	1:458.5	prose no-en no-rom
+Icbadb042aa1d	30	13				CÌê çÜ*tË$ Æøl C…sZÏMîü	1:466.0	prose no-en no-rom
+Ic582e98fece5	30	14		Hello! Is it Vijayawada Radio Station? Please tell		FâZÏ HH	1:468.7	prose no-rom
+Ic582e98fece5	30	15		Hello! Is it Vijayawada Radio Station? Please tell		ºÄæý$rMîü Ððþ$$Äæý$År…, G…yæþMæü$	1:476.2	prose no-rom
+Iedeb2b575b7f	30	16		Hello! Is it Vijayawada Radio Station? Please tell my daughter through the radio to go and eat her		íÜ°Ðèþ*Ë$	1:478.8	prose no-rom
+I88cfa2010b64	30	17		my daughter through the radio to go and eat her		Vöyæþ$Mæü$ ç³r$tMøÐèþr… G…™ø	1:486.3	prose no-rom
+Iaa3d8f0815c0	30	18		my daughter through the radio to go and eat her lunch.		E¯é²Æÿ$$?	1:489.0	prose no-rom
+Icbf7d01839b3	30	19		lunch.		MæüçÙt…V> E…¨ MæüÐèþ$Ìê!	1:496.5	prose no-rom
+Iaeeaed4257fe	30	20				^èþ*yæþ$! »ñýOr   òÜ„æü¯èþ$…¨.  ÐéâæýÏ…§æþÇ± JMóüÝëÇ »ñýOsìýMìü ç³…ç³Mæü$!	2:180.7	prose no-en no-rom

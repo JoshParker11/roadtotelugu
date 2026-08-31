@@ -1,36 +1,36 @@
-lesson	seq	speaker	en	te	te_src	rom	legacy	keys	flags
-4	1	çÜÆæÿâæý	Vijaya! What are these?	సరళ : విజయా! ఇవి ఏమిటి?	rom	saraḷa : vijayā! ivi ēmiṭi?	çÜÆæÿâæý : ÑfÄæý*! CÑ HÑ$sìý?	0:469.4	
-4	2	ÑfÄæý$	They are tables/benches. Sit in this chair.	విజయ : ఇవి బల్లలు. నువ్వు ఈ కుర్చీలో కూర్చో.	rom	vijaya : ivi ballalu. nuvvu ī kurcīlō kūrcō.	ÑfÄæý$ : CÑ ºËÏË$. ¯èþ$Ðèþ#Ó D Mæü$ÈaÌZ Mæü*Æøa.	0:528.6;0:543.4	
-4	3	çÜÆæÿâæý	How many tables/benches are these?	సరళ : ఇవి ఎన్ని బల్లలు?	rom	saraḷa : ivi enni ballalu?	çÜÆæÿâæý : CÑ G°² ºËÏË$?	1:180.0	
-4	4	ÑfÄæý$	These are two tables/benches.	విజయ : ఇవి రెండు బల్లలు.	rom	vijaya : ivi reṁḍu ballalu.	ÑfÄæý$ : CÑ Æðÿ…yæþ$ ºËÏË$.	1:242.7	
-4	5	çÜÆæÿâæý	These are two tables. That is one table. How many tables are in total?	సరళ : ఇవి రెండు బల్లలు. అది ఒక బల్ల. మొత్తం ఎన్ని బల్లలు?	rom	saraḷa : ivi reṁḍu ballalu. adi oka balla. mottaṁ enni ballalu?	çÜÆæÿâæý : CÑ Æðÿ…yæþ$ ºËÏË$. A¨ JMæü ºËÏ. Ððþ$$™èþ¢… G°² ºËÏË$?	1:305.2;1:320.8	
-4	6	ÑfÄæý$	They are three tables in total.	విజయ : మొత్తం మూడు బల్లలు.	rom	vijaya : mottaṁ mūḍu ballalu.	ÑfÄæý$ : Ððþ$$™èþ¢… Ðèþ$*yæþ$ ºËÏË$.	1:414.8	
-4	7	çÜÆæÿâæý	Where are these benches?	సరళ : ఈ బల్లలు ఎక్కడ ఉన్నాయి?	rom	saraḷa : ī ballalu ekkaḍa unnāyi?	çÜÆæÿâæý : D ºËÏË$ GMæüPyæþ E¯é²Æÿ$$?	1:477.3	
-4	8	ÑfÄæý$	They are in the room. How many are those chairs?	విజయ : గదిలో ఉన్నాయి? అవి ఎన్ని కుర్చీలు?	rom	vijaya : gadilō unnāyi? avi enni kurcīlu?	ÑfÄæý$ : Væü¨ÌZ E¯é²Æÿ$$. AÑ G°² Mæü$ÈaË$?	1:539.8;1:555.4	ocr-differs
-4	9	çÜÆæÿâæý	They are three chairs?	సరళ : అవి మూడు కుర్చీలు.	rom	saraḷa : avi mūḍu kurcīlu.	çÜÆæÿâæý : AÑ Ðèþ$*yæþ$ Mæü$ÈaË$.	2:179.2	
-4	10	ÑfÄæý$	Where are those chairs?	విజయ : ఆ కుర్చీలు ఎక్కడ ఉన్నాయి?	rom	vijaya : ā kurcīlu ekkaḍa unnāyi?	ÑfÄæý$ : B Mæü$ÈaË$ GMæüPyæþ E¯é²Æÿ$$?	2:236.8	ocr-differs
-4	11	çÜÆæÿâæý	Those chairs are near the wall.	సరళ : ఆ కుర్చీలు గోడ దగ్గర ఉన్నాయి.	rom	saraḷa : ā kurcīlu gōḍa daggara unnāyi.	çÜÆæÿâæý : B Mæü$ÈaË$ Vøyæþ §æþVæüYÆæÿ E¯é²Æÿ$$.	2:294.2	
-4	12	ÑfÄæý$	What are they?	విజయ : అవి ఏమిటి?	rom	vijaya : avi ēmiṭi?	ÑfÄæý$ : AÑ HÑ$sìý?	2:351.7	
-4	13	çÜÆæÿâæý	Which ones?	సరళ : ఏవి?	rom	saraḷa : ēvi?	çÜÆæÿâæý : HÑ?	2:409.3	
-4	14	ÑfÄæý$	look!They are in that chair.	విజయ : ఆ కుర్చీలో ఉన్నాయి. చూడు.	rom	vijaya : ā kurcīlō unnāyi. cūḍu.	ÑfÄæý$ : B Mæü$ÈaÌZ E¯é²Æÿ$$, ^èþ*yæþ$.	2:466.7	ocr-differs
-4	15	çÜÆæÿâæý	They are pens.	సరళ : అవి కలాలు.	rom	saraḷa : avi kalālu.	çÜÆæÿâæý : AÑ MæüÌêË$.	2:524.2	
-4	16	ÑfÄæý$	How many pens are they?	విజయ : అవి ఎన్ని కలాలు?	rom	vijaya : avi enni kalālu?	ÑfÄæý$ : AÑ G°² MæüÌêË$?	2:581.8	
-4	17	çÜÆæÿâæý	They are four pens.	సరళ : అవి నాలుగు కలాలు.	rom	saraḷa : avi nālugu kalālu.	çÜÆæÿâæý : AÑ ¯éË$Væü$ MæüÌêË$.	3:179.6	
-4	18	ÑfÄæý$	There is one more pen on that box.	విజయ : ఆ పెట్టె మీద ఇంకొక కలం ఉంది.	rom	vijaya : ā peṭṭe mīda iṁkoka kalaṁ uṁdi.	ÑfÄæý$ : B ò³sñýt Ò$§æþ C…MöMæü MæüË… E…¨.	3:238.6	
-4	19	çÜÆæÿâæý	On which box?	సరళ : ఏ పెట్టె మీద?	rom	saraḷa : ē peṭṭe mīda?	çÜÆæÿâæý : H ò³sñýt Ò$§æþ?	3:312.7	ocr-differs
-4	20	ÑfÄæý$	On this box.	విజయ : ఈ పెట్టె మీద.	rom	vijaya : ī peṭṭe mīda.	ÑfÄæý$ : D ò³sñýt Ò$§æþ.	3:371.7	ocr-differs
-4	21	çÜÆæÿâæý	Yes. There is one more pen on that box.	సరళ : అవును. ఆ పెట్టె మీద ఇంకొక కలం ఉంది.	rom	saraḷa : avunu. ā peṭṭe mīda iṁkoka kalaṁ uṁdi.	çÜÆæÿâæý : AÐèþ#¯èþ$. B ò³sñýt Ò$§æþ C…MöMæü MæüË… E…¨.	3:431.0;3:445.8	ocr-differs
-4	22	ÑfÄæý$	How many pens are they in total?	విజయ : అవి మొత్తం ఎన్ని కలాలు?	rom	vijaya : avi mottaṁ enni kalālu?	ÑfÄæý$ : AÑ Ððþ$$™èþ¢… G°² MæüÌêË$?	3:519.9	
-4	23	çÜÆæÿâæý	They are five pens in total.	సరళ : అవి మొత్తం ఐదు కలాలు.	rom	saraḷa : avi mottaṁ aidu kalālu.	çÜÆæÿâæý : AÑ Ððþ$$™èþ¢… I§æþ$ MæüÌêË$.	3:579.0	
-4	24	ÑfÄæý$	What are those?	విజయ : అవి ఏమిటి?	rom	vijaya : avi ēmiṭi?	ÑfÄæý$ : AÑ HÑ$sìý?	4:178.9	
-4	25	çÜÆæÿâæý	Those are books.	సరళ : అవి పుస్తకాలు.	rom	saraḷa : avi pustakālu.	çÜÆæÿâæý : AÑ ç³#çÜ¢M>Ë$.	4:234.8	ocr-differs
-4	26	ÑfÄæý$	Are those books are on the table?	విజయ : ఆ పుస్తకాలు బల్లమీద ఉన్నాయా?	rom	vijaya : ā pustakālu ballamīda unnāyā?	ÑfÄæý$ : B ç³#çÜ¢M>Ë$ ºËÏÒ$§æþ E¯é²Äæý*?	4:290.6	
-4	27	çÜÆæÿâæý	All those books are not on the table. Some are on the table, and some are under the table.	సరళ : ఆ పుస్తకాలు అన్నీ బల్ల మీద లేవు. కొన్ని బల్ల మీద ఉన్నాయి; కొన్ని బల్ల కింద ఉన్నాయి.	rom	saraḷa : ā pustakālu annī balla mīda lēvu. konni balla mīda unnāyi; konni balla kiṁda unnāyi.	çÜÆæÿâæý : B ç³#çÜ¢M>Ë$ A±² ºËÏÒ$§æþ ÌôýÐèþ#. Mö°² ºËÏ Ò$§æþ E¯é²Æÿ$$. Mö°² ºËÏ Mìü…§æþ E¯é²Æÿ$$.	4:360.4;4:374.2;4:388.2	ocr-differs
-4	28	ÑfÄæý$	Count those books.	విజయ : ఆ పుస్తకాలు లెక్కపెట్టు.	rom	vijaya : ā pustakālu lekkapeṭṭu.	ÑfÄæý$ : B ç³#çÜ¢M>Ë$ ÌñýMæüP ò³r$t.	4:499.8	
-4	29	çÜÆæÿâæý	One, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen and fifteen. These are fifteen books.	సరళ : ఒకటి, రెండు, మూడు, నాలుగు,ఐదు, ఆరు, ఏడు, ఎనిమిది, తొమ్మిది, పది, పదకొండు, పన్నెండు, పదమూడు, పధ్నాలుగు, పదిహేను. ఇవి పదిహేను పుస్తకాలు.	rom	saraḷa : okaṭi, reṁḍu, mūḍu, nālugu,aidu, āru, ēḍu, enimidi, tommidi, padi, padakoṁḍu, panneṁḍu, padamūḍu, padhnālugu, padihēnu. ivi padihēnu pustakālu.	çÜÆæÿâæý : JMæüsìý, Æðÿ…yæþ$, Ðèþ$*yæþ$, ¯éË$Væü$, I§æþ$, BÆæÿ$, Hyæþ$, G°Ñ$¨, ™öÑ$Ã¨, ç³¨, ç³§æþMö…yæþ$, ç³¯ðþ²…yæþ$, ç³§æþÐèþ$*yæþ$, ç³«§é²Ë$Væü$, ç³¨õßý¯èþ$. CÑ ç³¨õßý¯èþ$ ç³#çÜ¢M>Ë$.	4:555.6;4:569.6;4:583.6;4:597.4;4:612.0	ocr-differs
-4	30	ÑfÄæý$	Is your pen on the book?	విజయ : నీ కలం పుస్తకం మీద ఉందా?	rom	vijaya : nī kalaṁ pustakaṁ mīda uṁdā?	ÑfÄæý$ : ± MæüË… ç³#çÜ¢Mæü… Ò$§æþ E…§é?	5:327.5	ocr-differs
-4	31	çÜÆæÿâæý	My pen is not on the book. It is by the side of the book.	సరళ : నా కలం పుస్తకం మీద లేదు. పుస్తకం పక్కన ఉంది.	rom	saraḷa : nā kalaṁ pustakaṁ mīda lēdu. pustakaṁ pakkana uṁdi.	çÜÆæÿâæý : ¯é MæüË… ç³#çÜ¢Mæü… Ò$§æþ Ìôý§æþ$. ç³#çÜ¢Mæü… ç³MæüP¯èþ E…¨.	5:401.4;5:416.2	
-4	32	ÑfÄæý$	How many are these books? How many are those books?	విజయ : ఈ పుస్తకాలు ఎన్ని? ఆ పుస్తకాలు ఎన్ని?	rom	vijaya : ī pustakālu enni? ā pustakālu enni?	ÑfÄæý$ : D ç³#çÜ¢M>Ë$ G°²? B ç³#çÜ¢M>Ë$ G°²?	5:519.9;5:534.5	ocr-differs
-4	33	çÜÆæÿâæý	These are two. Those are three.	సరళ : ఇవి రెండు; అవి మూడు.	rom	saraḷa : ivi reṁḍu; avi mūḍu.	çÜÆæÿâæý : CÑ Æðÿ…yæþ$; AÑ Ðèþ$*yæþ$.	6:180.2	
-4	34	ÑfÄæý$	How many are in total?	విజయ : మొత్తం ఎన్ని?	rom	vijaya : mottaṁ enni?	ÑfÄæý$ : Ððþ$$™èþ¢… G°²?	6:236.6	
-4	35	çÜÆæÿâæý	Five.	సరళ : అఈదు.	rom	saraḷa : aīdu.	çÜÆæÿâæý : I§æþ$.	6:295.8	
+guid	lesson	seq	speaker	en	te	te_src	rom	legacy	keys	flags
+Id7b9ddcc1a1c	4	1	çÜÆæÿâæý	Vijaya! What are these?	సరళ : విజయా! ఇవి ఏమిటి?	rom	saraḷa : vijayā! ivi ēmiṭi?	çÜÆæÿâæý : ÑfÄæý*! CÑ HÑ$sìý?	0:469.4	
+Ib5399388e959	4	2	ÑfÄæý$	They are tables/benches. Sit in this chair.	విజయ : ఇవి బల్లలు. నువ్వు ఈ కుర్చీలో కూర్చో.	rom	vijaya : ivi ballalu. nuvvu ī kurcīlō kūrcō.	ÑfÄæý$ : CÑ ºËÏË$. ¯èþ$Ðèþ#Ó D Mæü$ÈaÌZ Mæü*Æøa.	0:528.6;0:543.4	
+I572cff2b4275	4	3	çÜÆæÿâæý	How many tables/benches are these?	సరళ : ఇవి ఎన్ని బల్లలు?	rom	saraḷa : ivi enni ballalu?	çÜÆæÿâæý : CÑ G°² ºËÏË$?	1:180.0	
+Ib6c3755cbbf8	4	4	ÑfÄæý$	These are two tables/benches.	విజయ : ఇవి రెండు బల్లలు.	rom	vijaya : ivi reṁḍu ballalu.	ÑfÄæý$ : CÑ Æðÿ…yæþ$ ºËÏË$.	1:242.7	
+I791020137eb2	4	5	çÜÆæÿâæý	These are two tables. That is one table. How many tables are in total?	సరళ : ఇవి రెండు బల్లలు. అది ఒక బల్ల. మొత్తం ఎన్ని బల్లలు?	rom	saraḷa : ivi reṁḍu ballalu. adi oka balla. mottaṁ enni ballalu?	çÜÆæÿâæý : CÑ Æðÿ…yæþ$ ºËÏË$. A¨ JMæü ºËÏ. Ððþ$$™èþ¢… G°² ºËÏË$?	1:305.2;1:320.8	
+I86b13fc697f6	4	6	ÑfÄæý$	They are three tables in total.	విజయ : మొత్తం మూడు బల్లలు.	rom	vijaya : mottaṁ mūḍu ballalu.	ÑfÄæý$ : Ððþ$$™èþ¢… Ðèþ$*yæþ$ ºËÏË$.	1:414.8	
+Icdde29ce5eec	4	7	çÜÆæÿâæý	Where are these benches?	సరళ : ఈ బల్లలు ఎక్కడ ఉన్నాయి?	rom	saraḷa : ī ballalu ekkaḍa unnāyi?	çÜÆæÿâæý : D ºËÏË$ GMæüPyæþ E¯é²Æÿ$$?	1:477.3	
+I9f76fd051813	4	8	ÑfÄæý$	They are in the room. How many are those chairs?	విజయ : గదిలో ఉన్నాయి? అవి ఎన్ని కుర్చీలు?	rom	vijaya : gadilō unnāyi? avi enni kurcīlu?	ÑfÄæý$ : Væü¨ÌZ E¯é²Æÿ$$. AÑ G°² Mæü$ÈaË$?	1:539.8;1:555.4	ocr-differs
+Id15c55c76773	4	9	çÜÆæÿâæý	They are three chairs?	సరళ : అవి మూడు కుర్చీలు.	rom	saraḷa : avi mūḍu kurcīlu.	çÜÆæÿâæý : AÑ Ðèþ$*yæþ$ Mæü$ÈaË$.	2:179.2	
+I74b3095c82db	4	10	ÑfÄæý$	Where are those chairs?	విజయ : ఆ కుర్చీలు ఎక్కడ ఉన్నాయి?	rom	vijaya : ā kurcīlu ekkaḍa unnāyi?	ÑfÄæý$ : B Mæü$ÈaË$ GMæüPyæþ E¯é²Æÿ$$?	2:236.8	ocr-differs
+Ie5188281f8ba	4	11	çÜÆæÿâæý	Those chairs are near the wall.	సరళ : ఆ కుర్చీలు గోడ దగ్గర ఉన్నాయి.	rom	saraḷa : ā kurcīlu gōḍa daggara unnāyi.	çÜÆæÿâæý : B Mæü$ÈaË$ Vøyæþ §æþVæüYÆæÿ E¯é²Æÿ$$.	2:294.2	
+I864ac0f4b7ea	4	12	ÑfÄæý$	What are they?	విజయ : అవి ఏమిటి?	rom	vijaya : avi ēmiṭi?	ÑfÄæý$ : AÑ HÑ$sìý?	2:351.7	
+I51ec7b27e65a	4	13	çÜÆæÿâæý	Which ones?	సరళ : ఏవి?	rom	saraḷa : ēvi?	çÜÆæÿâæý : HÑ?	2:409.3	
+I7a213950e6e0	4	14	ÑfÄæý$	look!They are in that chair.	విజయ : ఆ కుర్చీలో ఉన్నాయి. చూడు.	rom	vijaya : ā kurcīlō unnāyi. cūḍu.	ÑfÄæý$ : B Mæü$ÈaÌZ E¯é²Æÿ$$, ^èþ*yæþ$.	2:466.7	ocr-differs
+I1292e7fdf4b4	4	15	çÜÆæÿâæý	They are pens.	సరళ : అవి కలాలు.	rom	saraḷa : avi kalālu.	çÜÆæÿâæý : AÑ MæüÌêË$.	2:524.2	
+Ia748309cc1d7	4	16	ÑfÄæý$	How many pens are they?	విజయ : అవి ఎన్ని కలాలు?	rom	vijaya : avi enni kalālu?	ÑfÄæý$ : AÑ G°² MæüÌêË$?	2:581.8	
+I830cf198fe64	4	17	çÜÆæÿâæý	They are four pens.	సరళ : అవి నాలుగు కలాలు.	rom	saraḷa : avi nālugu kalālu.	çÜÆæÿâæý : AÑ ¯éË$Væü$ MæüÌêË$.	3:179.6	
+I618c50b40a31	4	18	ÑfÄæý$	There is one more pen on that box.	విజయ : ఆ పెట్టె మీద ఇంకొక కలం ఉంది.	rom	vijaya : ā peṭṭe mīda iṁkoka kalaṁ uṁdi.	ÑfÄæý$ : B ò³sñýt Ò$§æþ C…MöMæü MæüË… E…¨.	3:238.6	
+Ie6addcfc0c79	4	19	çÜÆæÿâæý	On which box?	సరళ : ఏ పెట్టె మీద?	rom	saraḷa : ē peṭṭe mīda?	çÜÆæÿâæý : H ò³sñýt Ò$§æþ?	3:312.7	ocr-differs
+I92ac5c61c747	4	20	ÑfÄæý$	On this box.	విజయ : ఈ పెట్టె మీద.	rom	vijaya : ī peṭṭe mīda.	ÑfÄæý$ : D ò³sñýt Ò$§æþ.	3:371.7	ocr-differs
+I063d0557e424	4	21	çÜÆæÿâæý	Yes. There is one more pen on that box.	సరళ : అవును. ఆ పెట్టె మీద ఇంకొక కలం ఉంది.	rom	saraḷa : avunu. ā peṭṭe mīda iṁkoka kalaṁ uṁdi.	çÜÆæÿâæý : AÐèþ#¯èþ$. B ò³sñýt Ò$§æþ C…MöMæü MæüË… E…¨.	3:431.0;3:445.8	ocr-differs
+I38a53b437db7	4	22	ÑfÄæý$	How many pens are they in total?	విజయ : అవి మొత్తం ఎన్ని కలాలు?	rom	vijaya : avi mottaṁ enni kalālu?	ÑfÄæý$ : AÑ Ððþ$$™èþ¢… G°² MæüÌêË$?	3:519.9	
+Id8c9bc1f96de	4	23	çÜÆæÿâæý	They are five pens in total.	సరళ : అవి మొత్తం ఐదు కలాలు.	rom	saraḷa : avi mottaṁ aidu kalālu.	çÜÆæÿâæý : AÑ Ððþ$$™èþ¢… I§æþ$ MæüÌêË$.	3:579.0	
+I2a4c59a7e035	4	24	ÑfÄæý$	What are those?	విజయ : అవి ఏమిటి?	rom	vijaya : avi ēmiṭi?	ÑfÄæý$ : AÑ HÑ$sìý?	4:178.9	
+Ib8d97662b7b9	4	25	çÜÆæÿâæý	Those are books.	సరళ : అవి పుస్తకాలు.	rom	saraḷa : avi pustakālu.	çÜÆæÿâæý : AÑ ç³#çÜ¢M>Ë$.	4:234.8	ocr-differs
+I204bf139a596	4	26	ÑfÄæý$	Are those books are on the table?	విజయ : ఆ పుస్తకాలు బల్లమీద ఉన్నాయా?	rom	vijaya : ā pustakālu ballamīda unnāyā?	ÑfÄæý$ : B ç³#çÜ¢M>Ë$ ºËÏÒ$§æþ E¯é²Äæý*?	4:290.6	
+Ib76cf0c8b165	4	27	çÜÆæÿâæý	All those books are not on the table. Some are on the table, and some are under the table.	సరళ : ఆ పుస్తకాలు అన్నీ బల్ల మీద లేవు. కొన్ని బల్ల మీద ఉన్నాయి; కొన్ని బల్ల కింద ఉన్నాయి.	rom	saraḷa : ā pustakālu annī balla mīda lēvu. konni balla mīda unnāyi; konni balla kiṁda unnāyi.	çÜÆæÿâæý : B ç³#çÜ¢M>Ë$ A±² ºËÏÒ$§æþ ÌôýÐèþ#. Mö°² ºËÏ Ò$§æþ E¯é²Æÿ$$. Mö°² ºËÏ Mìü…§æþ E¯é²Æÿ$$.	4:360.4;4:374.2;4:388.2	ocr-differs
+I400693aa5a83	4	28	ÑfÄæý$	Count those books.	విజయ : ఆ పుస్తకాలు లెక్కపెట్టు.	rom	vijaya : ā pustakālu lekkapeṭṭu.	ÑfÄæý$ : B ç³#çÜ¢M>Ë$ ÌñýMæüP ò³r$t.	4:499.8	
+I1f776930634c	4	29	çÜÆæÿâæý	One, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen and fifteen. These are fifteen books.	సరళ : ఒకటి, రెండు, మూడు, నాలుగు,ఐదు, ఆరు, ఏడు, ఎనిమిది, తొమ్మిది, పది, పదకొండు, పన్నెండు, పదమూడు, పధ్నాలుగు, పదిహేను. ఇవి పదిహేను పుస్తకాలు.	rom	saraḷa : okaṭi, reṁḍu, mūḍu, nālugu,aidu, āru, ēḍu, enimidi, tommidi, padi, padakoṁḍu, panneṁḍu, padamūḍu, padhnālugu, padihēnu. ivi padihēnu pustakālu.	çÜÆæÿâæý : JMæüsìý, Æðÿ…yæþ$, Ðèþ$*yæþ$, ¯éË$Væü$, I§æþ$, BÆæÿ$, Hyæþ$, G°Ñ$¨, ™öÑ$Ã¨, ç³¨, ç³§æþMö…yæþ$, ç³¯ðþ²…yæþ$, ç³§æþÐèþ$*yæþ$, ç³«§é²Ë$Væü$, ç³¨õßý¯èþ$. CÑ ç³¨õßý¯èþ$ ç³#çÜ¢M>Ë$.	4:555.6;4:569.6;4:583.6;4:597.4;4:612.0	ocr-differs
+If0bfa00db01a	4	30	ÑfÄæý$	Is your pen on the book?	విజయ : నీ కలం పుస్తకం మీద ఉందా?	rom	vijaya : nī kalaṁ pustakaṁ mīda uṁdā?	ÑfÄæý$ : ± MæüË… ç³#çÜ¢Mæü… Ò$§æþ E…§é?	5:327.5	ocr-differs
+Icd9f19024987	4	31	çÜÆæÿâæý	My pen is not on the book. It is by the side of the book.	సరళ : నా కలం పుస్తకం మీద లేదు. పుస్తకం పక్కన ఉంది.	rom	saraḷa : nā kalaṁ pustakaṁ mīda lēdu. pustakaṁ pakkana uṁdi.	çÜÆæÿâæý : ¯é MæüË… ç³#çÜ¢Mæü… Ò$§æþ Ìôý§æþ$. ç³#çÜ¢Mæü… ç³MæüP¯èþ E…¨.	5:401.4;5:416.2	
+I8901148e2335	4	32	ÑfÄæý$	How many are these books? How many are those books?	విజయ : ఈ పుస్తకాలు ఎన్ని? ఆ పుస్తకాలు ఎన్ని?	rom	vijaya : ī pustakālu enni? ā pustakālu enni?	ÑfÄæý$ : D ç³#çÜ¢M>Ë$ G°²? B ç³#çÜ¢M>Ë$ G°²?	5:519.9;5:534.5	ocr-differs
+Ie90a8ee0c967	4	33	çÜÆæÿâæý	These are two. Those are three.	సరళ : ఇవి రెండు; అవి మూడు.	rom	saraḷa : ivi reṁḍu; avi mūḍu.	çÜÆæÿâæý : CÑ Æðÿ…yæþ$; AÑ Ðèþ$*yæþ$.	6:180.2	
+Iad3af36b6827	4	34	ÑfÄæý$	How many are in total?	విజయ : మొత్తం ఎన్ని?	rom	vijaya : mottaṁ enni?	ÑfÄæý$ : Ððþ$$™èþ¢… G°²?	6:236.6	
+I557ff1e907a0	4	35	çÜÆæÿâæý	Five.	సరళ : అఈదు.	rom	saraḷa : aīdu.	çÜÆæÿâæý : I§æþ$.	6:295.8	

@@ -52,6 +52,8 @@ except ImportError:
     sys.exit('pymupdf is needed: pip3 install pymupdf')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, HERE)
+from ids import guid
 ROOT = os.path.normpath(os.path.join(HERE, '..'))
 OUT = os.path.join(ROOT, 'intensive', 'raw')
 PDFS = os.path.expanduser(
@@ -254,9 +256,13 @@ def rows_for(path, num):
             flags.append('no-rom')
         elif not CLEAN.match(rom):
             flags.append('unmapped-glyph')
-        rows.append({'lesson': num, 'seq': i, 'speaker': t['speaker'], 'en': en, 'rom': rom,
-                     'legacy': legacy, 'keys': ';'.join(t.get('keys', [])),
-                     'flags': ' '.join(flags)})
+        # Keyed on the ENGLISH, like the mini stories, so re-reading the page with a better
+        # OCR pass does not renumber every segment and orphan its audio. What that costs is
+        # that a clip can outlive the text it was made from, which is what the audio manifest
+        # is for — see build_ms_reader.voiced_matches.
+        rows.append({'guid': guid('I', '', en or legacy), 'lesson': num, 'seq': i,
+                     'speaker': t['speaker'], 'en': en, 'rom': rom, 'legacy': legacy,
+                     'keys': ';'.join(t.get('keys', [])), 'flags': ' '.join(flags)})
     return rows
 
 
@@ -408,8 +414,8 @@ def main():
             p = os.path.join(OUT, f'lesson-{num:02d}.tsv')
             with open(p, 'w', encoding='utf-8', newline='') as f:
                 w = csv.DictWriter(f, delimiter='\t',
-                                   fieldnames=['lesson', 'seq', 'speaker', 'en', 'rom',
-                                               'legacy', 'keys', 'flags'])
+                                   fieldnames=['guid', 'lesson', 'seq', 'speaker', 'en',
+                                               'rom', 'legacy', 'keys', 'flags'])
                 w.writeheader()
                 w.writerows(rows)
 

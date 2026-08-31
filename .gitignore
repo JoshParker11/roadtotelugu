@@ -57,6 +57,8 @@ ministories/source/
 # Scratch export/import files for the HyperTTS audio path — regenerated from work/*.tsv, not a
 # source of truth. See ministories/README.md "Audio via HyperTTS".
 ministories/hypertts_export.tsv
+# Same thing for the course: a generated hand-off file, regenerable in one command.
+intensive/hypertts_export.tsv
 ministories/*.export.tsv
 
 # Continuous per-story audio + SRT tracks (tools/ms_lr_export.py) are COMMITTED, reversing the
@@ -100,6 +102,11 @@ ministories/Telugu__*.txt
 * [0-9].css
 * [0-9].md
 * [0-9].json
+# ...and the DIRECTORY form, which the file patterns miss entirely. iCloud duplicated
+# `intensive/raw`, `intensive/work`, `reader/assets` and `reader/data` as empty husks named
+# "raw 2" and so on. Empty is the harmless case; a populated one would have been read by every
+# tool that walks these directories.
+*[!0-9] [0-9]/
 
 # Generated translation batches. These embed LingQ's English, which is gitignored everywhere else
 # in this project (see ministories/source/), and are regenerable from work/*.tsv in one command.

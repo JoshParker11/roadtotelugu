@@ -1,50 +1,50 @@
-lesson	seq	speaker	en	rom	legacy	keys	flags
-5	1	Æ>k	Leela! How many are they?	rāju : līlā! vāḷlu eṁtamaṁdi?	Æ>k : ÎÌê! Ðéâæý$Ï G…™èþÐèþ$…¨?	0:478.1	
-5	2	ÎË	They are six.	līla : vāḷlu āruguru.	ÎË : Ðéâæý$Ï BÆæÿ$Væü$Ææÿ$.	0:539.0	
-5	3	Æ>k	I am one. He is one. How many are we?	rāju : nēnu okaṇṇi.  īyana okaru. mēṁ eṁtamaṁdimi?	Æ>k : ¯óþ¯èþ$ JMæü×ìý~. DÄæý$¯èþ JMæüÆæÿ$ Ðóþ$… G…™èþÐèþ$…¨Ñ$?	0:599.9;0:615.1	
-5	4	ÎË	You are two.	līla : mīru iddaru.	ÎË : Ò$Ææÿ$ C§æþªÆæÿ$.	1:253.4	
-5	5	Æ>k	We are two. You are one. How many are we?	rāju : mēṁ iddaraṁ. nuvvu okatevi. manaṁ eṁta maṁdimi?	Æ>k : Ðóþ$… C§æþªÆæÿ…. ¯èþ$Ðèþ#Ó JMæü™ðþÑ. Ðèþ$¯èþ… G…™èþ Ðèþ$…¨Ñ$?	1:312.7;1:327.5	
-5	6	ÎË	We are three.	līla : manaṁ mugguraṁ	ÎË : Ðèþ$¯èþ… Ðèþ$$Væü$YÆæÿ….	1:418.6	
-5	7	Æ>k	He is one, she is one. How many are they?	rāju : itanu okaḍu. īme okate. vīḷlu eṁtamaṁdi?	Æ>k : C™èþ¯èþ$ JMæüyæþ$. DÐðþ$ JMæü™ðþ. Òâæý$Ï G…™èþ Ðèþ$…¨?	1:480.3;1:494.9	
-5	8	ÎË	They are two.	līla : vāḷlu iddaru.	ÎË : Ðéâæý$Ï C§æþªÆæÿ$	1:586.3	
-5	9	Æ>k	They are two. He is one. She is one. How many are they in total?	rāju : vāḷlu iddaru; āyana okaru; āme okaru; vāḷlu mottaṁ eṁtamaṁdi?	Æ>k : Ðéâæý$Ï C§æþªÆæÿ$; BÄæý$¯èþ JMæüÆæÿ$. BÐðþ$ JMæüÆæÿ$. Ðéâæý$Ï Ððþ$$™èþ¢… G…™èþÐèþ$…¨?	2:179.8;2:195.0;2:210.2	
-5	10	ÎË	They are four. You are one How many are you?	līla : vāḷlu naluguru. nuvvu okaḍivi. mīru eṁtamaṁdi?	ÎË : Ðéâæý$Ï ¯èþË$Væü$Ææÿ$. ¯èþ$Ðèþ#Ó JMæüyìþÑ Ò$Ææÿ$ G…™èþÐèþ$…¨?	2:334.4;2:349.6	
-5	11	Æ>k	We are five.	rāju : mēṁ aiduguraṁ.	Æ>k : Ðóþ$… I§æþ$Væü$Ææÿ….	2:440.9	
-5	12	ÎË	You are five. These are two. How many are you in total?	līla : mīru aiduguru. vīḷlu iddaru. mīru mottaṁ eṁtamaṁdi?	ÎË : Ò$Ææÿ$ I§æþ$Væü$Ææÿ$. Òâæý$Ï C§æþªÆæÿ$. Ò$Ææÿ$ Ððþ$$™èþ¢… G…™èþÐèþ$…¨?	2:501.8;2:517.1	
-5	13	Æ>k	we are seven.	rāju : mēṁ ēḍuguraṁ.	Æ>k : Ðóþ$… Hyæþ$Væü$Ææÿ….	3:179.8	
-5	14	ÎË	You are seven. I am one. We are eight in total.	līla : mīru ēḍuguru. nēnu okateni. manaṁ mottaṁ enimidimaṁdimi.	ÎË : Ò$Ææÿ$ Hyæþ$Væü$Ææÿ$. ¯óþ¯èþ$ JMæü™ðþ°. Ðèþ$¯èþ… Ððþ$$™èþ¢… G°Ñ$¨Ðèþ$…¨Ñ$.	3:240.6;3:255.9	
-5	15	Æ>k	We are eight. She is one. We are nine in total.	rāju : manaṁ enimidimaṁdimi. īme okaru. manaṁ mottaṁ tommidimaṁdimi.	Æ>k : Ðèþ$¯èþ… G°Ñ$¨Ðèþ$…¨Ñ$. DÐðþ$ JMæüÆæÿ$. Ðèþ$¯èþ… Ððþ$$™èþ¢… ™öÑ$Ã¨Ðèþ$…¨Ñ$.	3:362.4;3:377.6;3:392.9	
-5	16	VøÑ…§æþ$	You are nine. I am one. We are ten.	gōviṁdu: mīru tommidimaṁdi. nēnu okaṇṇi. manaṁ padimaṁdimi.	VøÑ…§æþ$ : Ò$Ææÿ$ ™öÑ$Ã¨Ðèþ$…¨. ¯óþ¯èþ$ JMæü×ìý~. Ðèþ$¯èþ… ç³¨Ðèþ$…¨Ñ$.	3:499.4;3:514.6	
-5	17	´ëÆæÿÓ†	You are ten. Those are eleven These are twelve. We are fifteen.	pārvathi : mīru padimaṁdi. vāḷlu padakoṁḍumaṁdi. vīḷlu panneṁḍumaṁdi. mēṁ padihēnumaṁdimi.	´ëÆæÿÓ† : Ò$Ææÿ$ ç³¨Ðèþ$…¨. Ðéâæý$Ï ç³§æþMö…yæþ$Ðèþ$…¨. Òâæý$Ï ç³¯ðþ²…yæþ$Ðèþ$…¨. Ðóþ$… ç³¨õßý¯èþ$Ðèþ$…¨Ñ$.	4:179.6;4:194.4;4:209.4;4:224.2	
-5	18	Ðèþ*çÙtÆæÿ$	Geetha! Who are you?	māṣṭaru : gītā! nuvvu evarivi?	Ðèþ*çÙtÆæÿ$ : X™é! ¯èþ$Ðèþ#Ó GÐèþÇÑ?	4:355.5	
-5	19	X™èþ	I am a student (female).	gīta : nēnu vidyārthinini.	X™èþ : ¯óþ¯èþ$ Ñ§éÅÇ¦°°.	4:415.0	
-5	20	Ðèþ*çÙtÆæÿ$	Ramu! Who are you?	māṣṭaru : rāmū! nuvvu evarivi?	Ðèþ*çÙtÆæÿ$ : Æ>Ðèþ$*! ¯èþ$Ðèþ#Ó GÐèþÇÑ?	4:474.4	
-5	21	Æ>Ðèþ$$	I am a student (male).	rāmu : nēnu vidyārthini.	Æ>Ðèþ$$ : ¯óþ¯èþ$ Ñ§éÅÇ¦°.	4:534.1	
-5	22	Ðèþ*çÙtÆæÿ$	He is a student. She is a student How many students are they?	māṣṭaru : atanū oka vidyārthi. āme oka vidyārthini. vāḷḷu eṁtamaṁdi vidyārthulu?	Ðèþ*çÙtÆæÿ$ : A™èþ¯èþ$ JMæü Ñ§éÅÇ¦. BÐðþ$ JMæü Ñ§éÅÇ¦°. Ðéâæý$Ï G…™èþÐèþ$…¨ Ñ§éÅÆæÿ$¦Ë$?	4:593.6;4:608.4;4:623.6	
-5	23	ïÜ™èþ	They are two students.	sīta : vāḷlu iddaru vidyārthulu.	ïÜ™èþ : Ðéâæý$å C§æþªÆæÿ$ Ñ§éÅÆæÿ$¦Ë$.	5:271.1	
-5	24	Ðèþ*çÙtÆæÿ$	Ramu! You are a student (male). Geetha! you are a student (female). Who are you (pl.)? We are students.	māṣṭaru : rāmū! nuvvu vidyārthivi. gītā! nuvvu vidyārthinivi. mīru evaru? gīta, rāmu : mēṁ vidyārthulaṁ.	Ðèþ*çÙtÆæÿ$ : Æ>Ðèþ$*! ¯èþ$Ðèþ#Ó Ñ§éÅÇ¦Ñ. X™é! ¯èþ$Ðèþ#Ó Ñ§éÅÇ¦°Ñ. Ò$Ææÿ$ GÐèþÆæÿ$? X™èþ, Æ>Ðèþ$$: Ðóþ$… Ñ§éÅÆæÿ$¦Ë….	5:332.0;5:347.2;5:453.7	
-5	25	Ðèþ*çÙtÆæÿ$	Seetha! Geetha! Who are you? We are students (female)	māṣṭaru : sītā! gītā! mīru evaru? sīta, gīta: mēṁ vidyārthinulaṁ.	Ðèþ*çÙtÆæÿ$ : ïÜ™é! X™é! Ò$Ææÿ$ GÐèþÆæÿ$? ïÜ™èþ, X™èþ: Ðóþ$… Ñ§éÅÇ¦¯èþ$Ë….	5:514.6;5:575.5	
-5	26	Ðèþ*çÙtÆæÿ$	Ravi! Ramu! Who are you? We are students (male).	māṣṭaru : ravī! Rāmū! mīru evaru? ravi, rāmu: mēṁ vidyārthulaṁ	Ðèþ*çÙtÆæÿ$ : ÆæÿÒ! Æ>Ðèþ$*! Ò$Ææÿ$ GÐèþÆæÿ$? ÆæÿÑ, Æ>Ðèþ$$: Ðóþ$… Ñ§éÅÆæÿ$¦Ë…	6:180.6;6:241.5	unmapped-glyph
-5	27	Ðèþ*çÙtÆæÿ$	Ravi! Who are Seetha and Geetha? They are students (female)	māṣṭaru : ravī! sītā gītā evaru? ravi : vāḷlu vidyārthinulu	Ðèþ*çÙtÆæÿ$ : ÆæÿÒ! ïÜ™é X™é GÐèþÆæÿ$? ÆæÿÑ : Ðéâæý$å Ñ§éÅÇ¦¯èþ$Ë$.	6:302.3;6:363.2	
-5	28	Ðèþ*çÙtÆæÿ$	Seetha! Who are Ravi and Ramu?	māṣṭaru : sītā! ravī rāmū evaru?	Ðèþ*çÙtÆæÿ$ : ïÜ™é! ÆæÿÒ Æ>Ðèþ$* GÐèþÆæÿ$?	6:424.1	
-5	29	ïÜ™èþ	They are students (male).	sīta : vāḷlu vidyārthulu.	ïÜ™èþ : Ðéâæý$å Ñ§éÅÆæÿ$¦Ë$.	6:485.0	
-5	30	Ðèþ*çÙtÆæÿ$	Ravi! Ramu! Who is your teacher? You are our teacher.	māṣṭaru : ravī! rāmū! mī māṣṭarugāru evaru. ravi, rāmu: mīru mā māṣṭarugāru.	Ðèþ*çÙtÆæÿ$ : ÆæÿÒ! Æ>Ðèþ$*! Ò$ Ðèþ*çÙtÆæÿ$V>Ææÿ$ GÐèþÆæÿ$? ÆæÿÑ, Æ>Ðèþ$$: Ò$Ææÿ$ Ðèþ* Ðèþ*çÙtÆæÿ$V>Ææÿ$.	6:545.9;6:561.1;7:179.2	
-5	31	Ðèþ*çÙtÆæÿ$	Seetha! Whose students are you?	māṣṭaru : sītā! mīru evari vidyārthulu?	Ðèþ*çÙtÆæÿ$ : ïÜ™é! Ò$Ææÿ$ GÐèþÇ Ñ§éÅÆæÿ$¦Ë$?	7:236.8	
-5	32	ïÜ™èþ	We are your students.	sīta : mēṁ mī vidyārthuluṁ.	ïÜ™èþ : Ðóþ$… Ò$ Ñ§éÅÆæÿ$¦Ë….	7:294.2	
-5	33	Ðèþ*çÙtÆæÿ$	Who am I?	māṣṭaru : nēnu evarini?	Ðèþ*çÙtÆæÿ$ : ¯óþ¯èþ$ GÐèþÇ°?	7:351.7	
-5	34	ïÜ™èþ	You are our teacher.	sīta : mīru mā māṣṭarugāru.	ïÜ™èþ : Ò$Ææÿ$ Ðèþ* Ðèþ*çÙtÆæÿ$V>Ææÿ$.	7:409.3	
-5	35	Ðèþ*çÙtÆæÿ$	Whose teacher is he?	māṣṭaru : īyana evari māṣṭaru?	Ðèþ*çÙtÆæÿ$ : DÄæý$¯èþ GÐèþÇ Ðèþ*çÙtÆæÿ$?	7:466.7	
-5	36	ïÜ™èþ	He is also our teacher.	sīta : āyana kūḍā mā māṣṭarugārē.	ïÜ™èþ : BÄæý$¯èþ Mæü*yé Ðèþ* Ðèþ*çÙtÆæÿ$V>Æóÿ.	7:524.2	
-5	37	Ðèþ*çÙtÆæÿ$	Who are we?	māṣṭaru : mēṁ evarimi?	Ðèþ*çÙtÆæÿ$ : Ðóþ$… GÐèþÇÑ$?	7:581.8	
-5	38	ïÜ™èþ	You are our teachers.	sīta : mīru mā māṣṭarlu.	ïÜ™èþ : Ò$Ææÿ$ Ðèþ* Ðèþ*çÙtÆæÿ$Ï.	8:179.2	
-5	39	Ðèþ*çÙtÆæÿ$	Whose class-room is this?	māṣṭaru : idi evari klāsu?	Ðèþ*çÙtÆæÿ$ : C¨ GÐèþÇ M>ÏçÜ$?	8:236.8	
-5	40	ïÜ™èþ	This is their class-room.	sīta : idi vāḷla klāsu.	ïÜ™èþ : C¨ ÐéâæýÏ M>ÏçÜ$.	8:294.2	
-5	41	Ðèþ*çÙtÆæÿ$	Who are they (prox.)	māṣṭaru : vīḷlu evaru?	Ðèþ*çÙtÆæÿ$ : Òâæý$Ï GÐèþÆæÿ$?	8:351.7	
-5	42	ïÜ™èþ	They (prox.) are our friends.	sīta : vīḷḷu mā snēhitulu.	ïÜ™èþ : Òâæý$Ï Ðèþ* õÜ²íßý™èþ$Ë$?	8:409.3	
-5	43	Ðèþ*çÙtÆæÿ$	Whose class is that?	māṣṭaru : adi evari klāsu	Ðèþ*çÙtÆæÿ$ : A¨ GÐèþÇ M>ÏçÜ$?	8:466.7	
-5	44	ïÜ™èþ	That is their (prox.) class room.	sīta : adi vīḷla klāsu.	ïÜ™èþ : A¨ ÒâæýÏ M>ÏçÜ$.	8:524.2	
-5	45	Ðèþ*çÙtÆæÿ$	Whose school is this?	māṣṭaru : idi evari skūlu?	Ðèþ*çÙtÆæÿ$ : C¨ GÐèþÇ çÜ*PË$?	8:581.8	
-5	46	ïÜ™èþ	This is our school. I am an Andhra. Ramu is an Andhra. Who are we?	sīta : idi mana skūlu. ravi : nēnu āṁdhruṇṇi. rāmu āṁdhruḍu. mēṁ evarimi?	ïÜ™èþ : C¨ Ðèþ$¯èþ çÜ*PË$. ÆæÿÑ : ¯óþ¯èþ$ B…{«§æþ$×ìý~. Æ>Ðèþ$$ B…{«§æþ$yæþ$. Ðóþ$… GÐèþÇÑ$?	9:180.4;9:253.4;9:268.6	
-5	47	Vøí³	You are Andhras. Yes, I and Ramu are Andhras. Telugu is our mother-tongue. Gopi! What is your mother- tongue.	gōpi : mīru āṁdhrulu. ravi : avunu. nēnū rāmū āṁdhrulaṁ. telugu mā mātRbhāṣa. gōpī! nī mātRbhāṣa ēdi?	Vøí³ : Ò$Ææÿ$ B…{«§æþ$Ë$. ÆæÿÑ : AÐèþ#¯èþ$. ¯óþ¯èþ* Æ>Ðèþ$* B…{«§æþ$Ë…. ™ðþË$Væü$ Ðèþ* Ðèþ*™èþ–¿êçÙ. Vøï³! ± Ðèþ*™èþ–¿êçÙ H¨?	9:375.2;9:436.1;9:451.3;9:466.5	unmapped-glyph
-5	48	Vøí³	My mother-tongue is Kannada. Yes, I am an Indian. You are an Indian. You are Indians. We are Indians.	gōpi : nā mātRbhāṣa kannaḍaṁ. ravi : nēnu bhāratīyuṇṇi. nuvvu bhāratīyuḍivi. mīru bhāratīyulu. manaṁ bhāratīyulaṁ.	Vøí³ : ¯é Ðèþ*™èþ–¿êçÙ Mæü¯èþ²yæþ…. ÆæÿÑ : ¯óþ¯èþ$ ¿êÆæÿ¡Äæý$$×ìý~. ¯èþ$Ðèþ#Ó ¿êÆæÿ¡Äæý$$yìþÑ. Ò$Ææÿ$ ¿êÆæÿ¡Äæý$$Ë$ Ðèþ$¯èþ… ¿êÆæÿ¡Äæý$$Ë….	9:573.1;10:179.6;10:194.2;10:209.0	unmapped-glyph
-5	49	Vøí³	Kannada, Telugu, Tamil, Malayalam, Oriya, Hindi are all our languages. India is our country.	gōpi : kannaḍaṁ, telugu, tamiḷaṁ, malayāḷaṁ, oriyā, hiṁdī mana bhāṣalē. ravi : bhāratadēśaṁ mana dēśaṁ.	Vøí³ : Mæü¯èþ²yæþ…, ™ðþË$Væü$, ™èþÑ$âæý…, Ðèþ$ËÄæý*âæý…, JÇÄæý*, íßý…© Ðèþ$¯èþ ¿êçÙÌôý. ÆæÿÑ : ¿êÆæÿ™èþ§óþÔèý… Ðèþ$¯èþ §óþÔèý….	10:312.7;10:327.5;10:342.3;10:445.8	
+guid	lesson	seq	speaker	en	rom	legacy	keys	flags
+Ifc19c1fd251a	5	1	Æ>k	Leela! How many are they?	rāju : līlā! vāḷlu eṁtamaṁdi?	Æ>k : ÎÌê! Ðéâæý$Ï G…™èþÐèþ$…¨?	0:478.1	
+I4972d201ac7d	5	2	ÎË	They are six.	līla : vāḷlu āruguru.	ÎË : Ðéâæý$Ï BÆæÿ$Væü$Ææÿ$.	0:539.0	
+Ie36639c99b38	5	3	Æ>k	I am one. He is one. How many are we?	rāju : nēnu okaṇṇi.  īyana okaru. mēṁ eṁtamaṁdimi?	Æ>k : ¯óþ¯èþ$ JMæü×ìý~. DÄæý$¯èþ JMæüÆæÿ$ Ðóþ$… G…™èþÐèþ$…¨Ñ$?	0:599.9;0:615.1	
+I541646942fd0	5	4	ÎË	You are two.	līla : mīru iddaru.	ÎË : Ò$Ææÿ$ C§æþªÆæÿ$.	1:253.4	
+Ia46282c76da9	5	5	Æ>k	We are two. You are one. How many are we?	rāju : mēṁ iddaraṁ. nuvvu okatevi. manaṁ eṁta maṁdimi?	Æ>k : Ðóþ$… C§æþªÆæÿ…. ¯èþ$Ðèþ#Ó JMæü™ðþÑ. Ðèþ$¯èþ… G…™èþ Ðèþ$…¨Ñ$?	1:312.7;1:327.5	
+Id7629a7637be	5	6	ÎË	We are three.	līla : manaṁ mugguraṁ	ÎË : Ðèþ$¯èþ… Ðèþ$$Væü$YÆæÿ….	1:418.6	
+Ib9f925bbcc21	5	7	Æ>k	He is one, she is one. How many are they?	rāju : itanu okaḍu. īme okate. vīḷlu eṁtamaṁdi?	Æ>k : C™èþ¯èþ$ JMæüyæþ$. DÐðþ$ JMæü™ðþ. Òâæý$Ï G…™èþ Ðèþ$…¨?	1:480.3;1:494.9	
+I7690a380482a	5	8	ÎË	They are two.	līla : vāḷlu iddaru.	ÎË : Ðéâæý$Ï C§æþªÆæÿ$	1:586.3	
+I1000da908074	5	9	Æ>k	They are two. He is one. She is one. How many are they in total?	rāju : vāḷlu iddaru; āyana okaru; āme okaru; vāḷlu mottaṁ eṁtamaṁdi?	Æ>k : Ðéâæý$Ï C§æþªÆæÿ$; BÄæý$¯èþ JMæüÆæÿ$. BÐðþ$ JMæüÆæÿ$. Ðéâæý$Ï Ððþ$$™èþ¢… G…™èþÐèþ$…¨?	2:179.8;2:195.0;2:210.2	
+Iac4450bd96f6	5	10	ÎË	They are four. You are one How many are you?	līla : vāḷlu naluguru. nuvvu okaḍivi. mīru eṁtamaṁdi?	ÎË : Ðéâæý$Ï ¯èþË$Væü$Ææÿ$. ¯èþ$Ðèþ#Ó JMæüyìþÑ Ò$Ææÿ$ G…™èþÐèþ$…¨?	2:334.4;2:349.6	
+I147d0607198a	5	11	Æ>k	We are five.	rāju : mēṁ aiduguraṁ.	Æ>k : Ðóþ$… I§æþ$Væü$Ææÿ….	2:440.9	
+I30213b88d557	5	12	ÎË	You are five. These are two. How many are you in total?	līla : mīru aiduguru. vīḷlu iddaru. mīru mottaṁ eṁtamaṁdi?	ÎË : Ò$Ææÿ$ I§æþ$Væü$Ææÿ$. Òâæý$Ï C§æþªÆæÿ$. Ò$Ææÿ$ Ððþ$$™èþ¢… G…™èþÐèþ$…¨?	2:501.8;2:517.1	
+I803147770f43	5	13	Æ>k	we are seven.	rāju : mēṁ ēḍuguraṁ.	Æ>k : Ðóþ$… Hyæþ$Væü$Ææÿ….	3:179.8	
+I46cad583aeb1	5	14	ÎË	You are seven. I am one. We are eight in total.	līla : mīru ēḍuguru. nēnu okateni. manaṁ mottaṁ enimidimaṁdimi.	ÎË : Ò$Ææÿ$ Hyæþ$Væü$Ææÿ$. ¯óþ¯èþ$ JMæü™ðþ°. Ðèþ$¯èþ… Ððþ$$™èþ¢… G°Ñ$¨Ðèþ$…¨Ñ$.	3:240.6;3:255.9	
+I7eb037502215	5	15	Æ>k	We are eight. She is one. We are nine in total.	rāju : manaṁ enimidimaṁdimi. īme okaru. manaṁ mottaṁ tommidimaṁdimi.	Æ>k : Ðèþ$¯èþ… G°Ñ$¨Ðèþ$…¨Ñ$. DÐðþ$ JMæüÆæÿ$. Ðèþ$¯èþ… Ððþ$$™èþ¢… ™öÑ$Ã¨Ðèþ$…¨Ñ$.	3:362.4;3:377.6;3:392.9	
+I679516e6ebe1	5	16	VøÑ…§æþ$	You are nine. I am one. We are ten.	gōviṁdu: mīru tommidimaṁdi. nēnu okaṇṇi. manaṁ padimaṁdimi.	VøÑ…§æþ$ : Ò$Ææÿ$ ™öÑ$Ã¨Ðèþ$…¨. ¯óþ¯èþ$ JMæü×ìý~. Ðèþ$¯èþ… ç³¨Ðèþ$…¨Ñ$.	3:499.4;3:514.6	
+I2b02706ba3ba	5	17	´ëÆæÿÓ†	You are ten. Those are eleven These are twelve. We are fifteen.	pārvathi : mīru padimaṁdi. vāḷlu padakoṁḍumaṁdi. vīḷlu panneṁḍumaṁdi. mēṁ padihēnumaṁdimi.	´ëÆæÿÓ† : Ò$Ææÿ$ ç³¨Ðèþ$…¨. Ðéâæý$Ï ç³§æþMö…yæþ$Ðèþ$…¨. Òâæý$Ï ç³¯ðþ²…yæþ$Ðèþ$…¨. Ðóþ$… ç³¨õßý¯èþ$Ðèþ$…¨Ñ$.	4:179.6;4:194.4;4:209.4;4:224.2	
+I319a0570af8f	5	18	Ðèþ*çÙtÆæÿ$	Geetha! Who are you?	māṣṭaru : gītā! nuvvu evarivi?	Ðèþ*çÙtÆæÿ$ : X™é! ¯èþ$Ðèþ#Ó GÐèþÇÑ?	4:355.5	
+I5dbdc6934688	5	19	X™èþ	I am a student (female).	gīta : nēnu vidyārthinini.	X™èþ : ¯óþ¯èþ$ Ñ§éÅÇ¦°°.	4:415.0	
+Id43f30971327	5	20	Ðèþ*çÙtÆæÿ$	Ramu! Who are you?	māṣṭaru : rāmū! nuvvu evarivi?	Ðèþ*çÙtÆæÿ$ : Æ>Ðèþ$*! ¯èþ$Ðèþ#Ó GÐèþÇÑ?	4:474.4	
+I02dcabd2365a	5	21	Æ>Ðèþ$$	I am a student (male).	rāmu : nēnu vidyārthini.	Æ>Ðèþ$$ : ¯óþ¯èþ$ Ñ§éÅÇ¦°.	4:534.1	
+I25fe5896c836	5	22	Ðèþ*çÙtÆæÿ$	He is a student. She is a student How many students are they?	māṣṭaru : atanū oka vidyārthi. āme oka vidyārthini. vāḷḷu eṁtamaṁdi vidyārthulu?	Ðèþ*çÙtÆæÿ$ : A™èþ¯èþ$ JMæü Ñ§éÅÇ¦. BÐðþ$ JMæü Ñ§éÅÇ¦°. Ðéâæý$Ï G…™èþÐèþ$…¨ Ñ§éÅÆæÿ$¦Ë$?	4:593.6;4:608.4;4:623.6	
+Ifd519b27f7e8	5	23	ïÜ™èþ	They are two students.	sīta : vāḷlu iddaru vidyārthulu.	ïÜ™èþ : Ðéâæý$å C§æþªÆæÿ$ Ñ§éÅÆæÿ$¦Ë$.	5:271.1	
+Id5b214ca3ed5	5	24	Ðèþ*çÙtÆæÿ$	Ramu! You are a student (male). Geetha! you are a student (female). Who are you (pl.)? We are students.	māṣṭaru : rāmū! nuvvu vidyārthivi. gītā! nuvvu vidyārthinivi. mīru evaru? gīta, rāmu : mēṁ vidyārthulaṁ.	Ðèþ*çÙtÆæÿ$ : Æ>Ðèþ$*! ¯èþ$Ðèþ#Ó Ñ§éÅÇ¦Ñ. X™é! ¯èþ$Ðèþ#Ó Ñ§éÅÇ¦°Ñ. Ò$Ææÿ$ GÐèþÆæÿ$? X™èþ, Æ>Ðèþ$$: Ðóþ$… Ñ§éÅÆæÿ$¦Ë….	5:332.0;5:347.2;5:453.7	
+Ibfcfb1fe7dc6	5	25	Ðèþ*çÙtÆæÿ$	Seetha! Geetha! Who are you? We are students (female)	māṣṭaru : sītā! gītā! mīru evaru? sīta, gīta: mēṁ vidyārthinulaṁ.	Ðèþ*çÙtÆæÿ$ : ïÜ™é! X™é! Ò$Ææÿ$ GÐèþÆæÿ$? ïÜ™èþ, X™èþ: Ðóþ$… Ñ§éÅÇ¦¯èþ$Ë….	5:514.6;5:575.5	
+I86dd55540357	5	26	Ðèþ*çÙtÆæÿ$	Ravi! Ramu! Who are you? We are students (male).	māṣṭaru : ravī! Rāmū! mīru evaru? ravi, rāmu: mēṁ vidyārthulaṁ	Ðèþ*çÙtÆæÿ$ : ÆæÿÒ! Æ>Ðèþ$*! Ò$Ææÿ$ GÐèþÆæÿ$? ÆæÿÑ, Æ>Ðèþ$$: Ðóþ$… Ñ§éÅÆæÿ$¦Ë…	6:180.6;6:241.5	unmapped-glyph
+Ifb91b6fc84c2	5	27	Ðèþ*çÙtÆæÿ$	Ravi! Who are Seetha and Geetha? They are students (female)	māṣṭaru : ravī! sītā gītā evaru? ravi : vāḷlu vidyārthinulu	Ðèþ*çÙtÆæÿ$ : ÆæÿÒ! ïÜ™é X™é GÐèþÆæÿ$? ÆæÿÑ : Ðéâæý$å Ñ§éÅÇ¦¯èþ$Ë$.	6:302.3;6:363.2	
+I4f834a1abd1d	5	28	Ðèþ*çÙtÆæÿ$	Seetha! Who are Ravi and Ramu?	māṣṭaru : sītā! ravī rāmū evaru?	Ðèþ*çÙtÆæÿ$ : ïÜ™é! ÆæÿÒ Æ>Ðèþ$* GÐèþÆæÿ$?	6:424.1	
+Id1baf0ab18de	5	29	ïÜ™èþ	They are students (male).	sīta : vāḷlu vidyārthulu.	ïÜ™èþ : Ðéâæý$å Ñ§éÅÆæÿ$¦Ë$.	6:485.0	
+I150650ee13b0	5	30	Ðèþ*çÙtÆæÿ$	Ravi! Ramu! Who is your teacher? You are our teacher.	māṣṭaru : ravī! rāmū! mī māṣṭarugāru evaru. ravi, rāmu: mīru mā māṣṭarugāru.	Ðèþ*çÙtÆæÿ$ : ÆæÿÒ! Æ>Ðèþ$*! Ò$ Ðèþ*çÙtÆæÿ$V>Ææÿ$ GÐèþÆæÿ$? ÆæÿÑ, Æ>Ðèþ$$: Ò$Ææÿ$ Ðèþ* Ðèþ*çÙtÆæÿ$V>Ææÿ$.	6:545.9;6:561.1;7:179.2	
+Id5509b3f8b48	5	31	Ðèþ*çÙtÆæÿ$	Seetha! Whose students are you?	māṣṭaru : sītā! mīru evari vidyārthulu?	Ðèþ*çÙtÆæÿ$ : ïÜ™é! Ò$Ææÿ$ GÐèþÇ Ñ§éÅÆæÿ$¦Ë$?	7:236.8	
+Iec803e01c0b1	5	32	ïÜ™èþ	We are your students.	sīta : mēṁ mī vidyārthuluṁ.	ïÜ™èþ : Ðóþ$… Ò$ Ñ§éÅÆæÿ$¦Ë….	7:294.2	
+I991439137547	5	33	Ðèþ*çÙtÆæÿ$	Who am I?	māṣṭaru : nēnu evarini?	Ðèþ*çÙtÆæÿ$ : ¯óþ¯èþ$ GÐèþÇ°?	7:351.7	
+Ic84239c87c2e	5	34	ïÜ™èþ	You are our teacher.	sīta : mīru mā māṣṭarugāru.	ïÜ™èþ : Ò$Ææÿ$ Ðèþ* Ðèþ*çÙtÆæÿ$V>Ææÿ$.	7:409.3	
+I08045844b8c3	5	35	Ðèþ*çÙtÆæÿ$	Whose teacher is he?	māṣṭaru : īyana evari māṣṭaru?	Ðèþ*çÙtÆæÿ$ : DÄæý$¯èþ GÐèþÇ Ðèþ*çÙtÆæÿ$?	7:466.7	
+I142d6654af27	5	36	ïÜ™èþ	He is also our teacher.	sīta : āyana kūḍā mā māṣṭarugārē.	ïÜ™èþ : BÄæý$¯èþ Mæü*yé Ðèþ* Ðèþ*çÙtÆæÿ$V>Æóÿ.	7:524.2	
+Ifb938f183157	5	37	Ðèþ*çÙtÆæÿ$	Who are we?	māṣṭaru : mēṁ evarimi?	Ðèþ*çÙtÆæÿ$ : Ðóþ$… GÐèþÇÑ$?	7:581.8	
+I7c909a292217	5	38	ïÜ™èþ	You are our teachers.	sīta : mīru mā māṣṭarlu.	ïÜ™èþ : Ò$Ææÿ$ Ðèþ* Ðèþ*çÙtÆæÿ$Ï.	8:179.2	
+Id062b2af6d85	5	39	Ðèþ*çÙtÆæÿ$	Whose class-room is this?	māṣṭaru : idi evari klāsu?	Ðèþ*çÙtÆæÿ$ : C¨ GÐèþÇ M>ÏçÜ$?	8:236.8	
+I4697eda1b5fd	5	40	ïÜ™èþ	This is their class-room.	sīta : idi vāḷla klāsu.	ïÜ™èþ : C¨ ÐéâæýÏ M>ÏçÜ$.	8:294.2	
+Id393408c1a71	5	41	Ðèþ*çÙtÆæÿ$	Who are they (prox.)	māṣṭaru : vīḷlu evaru?	Ðèþ*çÙtÆæÿ$ : Òâæý$Ï GÐèþÆæÿ$?	8:351.7	
+I8a77d51c139f	5	42	ïÜ™èþ	They (prox.) are our friends.	sīta : vīḷḷu mā snēhitulu.	ïÜ™èþ : Òâæý$Ï Ðèþ* õÜ²íßý™èþ$Ë$?	8:409.3	
+Ide755ba8a4f2	5	43	Ðèþ*çÙtÆæÿ$	Whose class is that?	māṣṭaru : adi evari klāsu	Ðèþ*çÙtÆæÿ$ : A¨ GÐèþÇ M>ÏçÜ$?	8:466.7	
+I26109fba25b4	5	44	ïÜ™èþ	That is their (prox.) class room.	sīta : adi vīḷla klāsu.	ïÜ™èþ : A¨ ÒâæýÏ M>ÏçÜ$.	8:524.2	
+I65f439f611d7	5	45	Ðèþ*çÙtÆæÿ$	Whose school is this?	māṣṭaru : idi evari skūlu?	Ðèþ*çÙtÆæÿ$ : C¨ GÐèþÇ çÜ*PË$?	8:581.8	
+I4a2465483174	5	46	ïÜ™èþ	This is our school. I am an Andhra. Ramu is an Andhra. Who are we?	sīta : idi mana skūlu. ravi : nēnu āṁdhruṇṇi. rāmu āṁdhruḍu. mēṁ evarimi?	ïÜ™èþ : C¨ Ðèþ$¯èþ çÜ*PË$. ÆæÿÑ : ¯óþ¯èþ$ B…{«§æþ$×ìý~. Æ>Ðèþ$$ B…{«§æþ$yæþ$. Ðóþ$… GÐèþÇÑ$?	9:180.4;9:253.4;9:268.6	
+Iff71cf5439b0	5	47	Vøí³	You are Andhras. Yes, I and Ramu are Andhras. Telugu is our mother-tongue. Gopi! What is your mother- tongue.	gōpi : mīru āṁdhrulu. ravi : avunu. nēnū rāmū āṁdhrulaṁ. telugu mā mātRbhāṣa. gōpī! nī mātRbhāṣa ēdi?	Vøí³ : Ò$Ææÿ$ B…{«§æþ$Ë$. ÆæÿÑ : AÐèþ#¯èþ$. ¯óþ¯èþ* Æ>Ðèþ$* B…{«§æþ$Ë…. ™ðþË$Væü$ Ðèþ* Ðèþ*™èþ–¿êçÙ. Vøï³! ± Ðèþ*™èþ–¿êçÙ H¨?	9:375.2;9:436.1;9:451.3;9:466.5	unmapped-glyph
+Ifdfdc2dd8cb1	5	48	Vøí³	My mother-tongue is Kannada. Yes, I am an Indian. You are an Indian. You are Indians. We are Indians.	gōpi : nā mātRbhāṣa kannaḍaṁ. ravi : nēnu bhāratīyuṇṇi. nuvvu bhāratīyuḍivi. mīru bhāratīyulu. manaṁ bhāratīyulaṁ.	Vøí³ : ¯é Ðèþ*™èþ–¿êçÙ Mæü¯èþ²yæþ…. ÆæÿÑ : ¯óþ¯èþ$ ¿êÆæÿ¡Äæý$$×ìý~. ¯èþ$Ðèþ#Ó ¿êÆæÿ¡Äæý$$yìþÑ. Ò$Ææÿ$ ¿êÆæÿ¡Äæý$$Ë$ Ðèþ$¯èþ… ¿êÆæÿ¡Äæý$$Ë….	9:573.1;10:179.6;10:194.2;10:209.0	unmapped-glyph
+Iaa6194265d2d	5	49	Vøí³	Kannada, Telugu, Tamil, Malayalam, Oriya, Hindi are all our languages. India is our country.	gōpi : kannaḍaṁ, telugu, tamiḷaṁ, malayāḷaṁ, oriyā, hiṁdī mana bhāṣalē. ravi : bhāratadēśaṁ mana dēśaṁ.	Vøí³ : Mæü¯èþ²yæþ…, ™ðþË$Væü$, ™èþÑ$âæý…, Ðèþ$ËÄæý*âæý…, JÇÄæý*, íßý…© Ðèþ$¯èþ ¿êçÙÌôý. ÆæÿÑ : ¿êÆæÿ™èþ§óþÔèý… Ðèþ$¯èþ §óþÔèý….	10:312.7;10:327.5;10:342.3;10:445.8	

@@ -1,37 +1,37 @@
-lesson	seq	speaker	en	te	te_src	rom	legacy	keys	flags
-12	1	ÆæÿÑ	Hey!  What are the vegetables available with you?	రవి. : ఏవుయ్యా! కూరగాయలు ఏం ఉన్నాయి?	ocr		ÆæÿÑ : HÐèþ$Äæý*Å! Mæü*ÆæÿV>Äæý$Ë$ H… E¯é²Æÿ$$?	0:445.6;0:460.8	no-rom
-12	2	Mört™èþ¯èþ$	Please come, sir!  Fresh veg- etables are available.	కొట్టతను : రండి సార్‌! తాజా 'కూరగాయలున్నాయి.	ocr		Mört™èþ¯èþ$ : Ææÿ…yìþ ÝëÆŠÿ!  ™égê Mæü*ÆæÿV>Äæý$Ë$¯é²Æÿ$$.	0:491.3;0:506.5	no-rom
-12	3	ÆæÿÑ	Are brinjals available?	రవి. : వంకాయలున్నాయా?	ocr		ÆæÿÑ : Ðèþ…M>Äæý$Ë$¯é²Äæý*?	0:537.0	no-rom
-12	4	Mört™èþ¯èþ$	Brinjal, , tomato, beans, cucumber and cabbage are available, sir.	బీరకాయ్	rom	bīrakāy	Mört™èþ¯èþ$ : Ðèþ…M>Äæý$Ë*, ½ÆæÿM>Äæý$Ë*, sŸÐóþ$sZË*, _Mæü$Pyæþ$M>Äæý$Ë*, §øçÜM>Äæý$Ë*, Móü»ôýi E¯é²Äæý$…yîþ!	0:567.4;0:582.6;0:597.9	ocr-differs
-12	5	ÆæÿÑ	What are the potherbs available?	రవి... : ఆకుకూరలు ఏం ఉన్నాయి?	ocr		ÆæÿÑ : BMæü$Mæü*ÆæÿË$ H… E¯é²Æÿ$$?	1:179.8	no-rom
-12	6	Mört™èþ¯èþ$	are available, sir. The is fresh. Please take it.	Tఓటకూరా పాలకూరా, స్పినఛ్ గోన్గూరా గోన్గూర	rom	Tōṭakūrā pālakūrā, spinach gōngūrā gōngūra	Mört™èþ¯èþ$ : ™ørMæü*Æ>, ´ëËMæü*Æ>, º^èþaÍMæü*Æ>, Vø…Væü*Æ> E¯é²Äæý$…yîþ. Vø…Væü*Ææÿ ™égê¨. ¡çÜ$Mø…yìþ.	1:210.0;1:225.0;1:240.0	unmapped-glyph ocr-differs
-12	7	ÆæÿÑ	Don't you have green chillies?	రవి... : పచ్చిమిరపకాయలు లేవా?	ocr		ÆæÿÑ : ç³_aÑ$Ææÿç³M>Äæý$Ë$ ÌôýÐé?	1:270.1	no-rom
-12	8	Mört™èþ¯èþ$	We have them, sir!  Here they are!	కొట్టతను : ఉన్నాయండీ! ఇవిగో.	ocr		Mört™èþ¯èþ$ : E¯é²Äæý$…yîþ! CÑVø.	1:300.3	no-rom
-12	9	ÆæÿÑ	What is the price of brinjal?	రవి. : వంకాయలు ఎంత?	ocr		ÆæÿÑ : Ðèþ…M>Äæý$Ë$ G…™èþ?	1:330.4	no-rom
-12	10	Mört™èþ¯èþ$	Rs. 12 a K.G., sir.	కొట్టతను : కిలో పన్నెండు రూపాయలండీ.	ocr		Mört™èþ¯èþ$ : MìüÌZ ç³¯ðþ²…yæþ$ Ææÿ*´ëÄæý$Ë…yîþ.	1:360.4	no-rom
-12	11	ÆæÿÑ		Bఈరకాయ్	rom	Bīrakāy	ÆæÿÑ : ½ÆæÿM>Äæý$Ë$ ?	1:390.4	no-en unmapped-glyph ocr-differs
-12	12	Mört™èþ¯èþ$	Rs. 11.50 a K.G.	కొట్టతను : కిలో పదకొండున్నర.	ocr		Mört™èþ¯èþ$ : MìüÌZ ç³§æþMö…yæþ$¯èþ²Ææÿ.	1:420.7	no-rom
-12	13	ÆæÿÑ	How much does the cabbage cost?	రవి. :కేబేజీ ఎంత?	ocr		ÆæÿÑ : Móü»ô i G…™èþ?	1:450.7	no-rom
-12	14	Mört™èþ¯èþ$	Rs. 10 a K.G.	కొట్టతను : కిలో పది రూపాయలు.	ocr		Mört™èþ¯èþ$ : MìüÌZ ç³¨ Ææÿ*´ëÄæý$Ë$.	1:480.7	no-rom
-12	15	ÆæÿÑ	Give me a K.G. of brinjal, two K.Gs. of	బీరకాయ్	rom	bīrakāy	ÆæÿÑ : Ðèþ…M>Äæý$Ë$ JMæü MìüÌZ, ½ÆæÿM>Äæý$Ë$ Æðÿ…yæþ$ MìüÌZË$ CÐèþ#Ó.	1:511.0;1:526.0	ocr-differs
-12	16	Mört™èþ¯èþ$	Please take them.	కొట్టతను : తీసుకోండి.	ocr		Mört™èþ¯èþ$ : ¡çÜ$Mø…yìþ.	1:556.0	no-rom
-12	17	ÆæÿÑ	Don't put those ones.  Put good ones.	రవి. : ఆకాయలు వెయ్యకు. మంచివి వెయ్యి.	ocr		ÆæÿÑ :  B M>Äæý$Ë$ ÐðþÄæý$ÅMæü$. Ðèþ$…_Ñ ÐðþÆÿ$$Å.	1:586.3	no-rom
-12	18	Mört™èþ¯èþ$	These are good, sir.	కొట్టతను : ఇవి బాగున్నాయండి.	ocr		Mört™èþ¯èþ$ :  CÑ »êVæü$¯é²Äæý$…yìþ.	1:616.3	no-rom
-12	19	ÆæÿÑ	Give a K.G. of cabbage also.	రవి : కేబీజీ కూడా ఒక కిలో ఇవ్వు.	ocr		ÆæÿÑ : Móü½i Mæü*yé JMæü MìüÌZ CÐèþ#Ó.	2:179.8	no-rom
-12	20	Mört™èþ¯èþ$	This cabbage is weighing one and a half K.G., sir!	కొట్టతను : కేబీజీ ఒకటిన్నర కిలో ఉందండీ!	ocr		Mört™èþ¯èþ$ : Móü½i JMæüsìý¯èþ²Ææÿ MìüÌZ E…§æþ…yîþ!	2:210.2	no-rom
-12	21	ÆæÿÑ	Okay, give it. Give me a quarter K.G. of green chillies. Add 50 grams of ginger too.	రవి : సరే, ఇవ్వు. పచ్చిమిరపకాయలు పావుకిలో ఇవ్వు. అల్లం కూడా యాభ్జె గ్రాములు ఇవ్వు.	ocr		ÆæÿÑ : çÜÆóÿ, CÐèþ#Ó.  ç³_aÑ$Ææÿç³M>Äæý$Ë$ ´ëÐèþ#MìüÌZ CÐèþ#Ó.  AËÏ… Mæü*yé Äæý*¿ñýO {V>Ðèþ$$Ë$ CÐèþ#Ó.	2:240.7;2:255.9;2:271.1	no-rom
-12	22	Mört™èþ¯èþ$	It is, in total, Rs. 59, sir!	కొట్టతను : మొత్తం యాభైతొమ్మిది రూపాయలు. సార్‌	ocr		Mört™èþ¯èþ$ : Ððþ$$™èþ¢… Äæý*¿ñýO™öÑ$Ã¨ Ææÿ*´ëÄæý$Ë$ ÝëÆŠÿ.	2:301.5;2:316.8	no-rom
-12	23	ÆæÿÑ	Take it. Is there any city bus now?	రవి : ఇదిగో, తీసుకో. ఇప్పుడు సిటీ బస్సు ఉందా?	ocr		ÆæÿÑ : C¨Vø, ¡çÜ$Mø.  Cç³šyæþ$ íÜsîý ºçÜ$Þ E…§é?	2:347.2;2:362.4	no-rom
-12	24	Mört™èþ¯èþ$	No, sir! What is the time now, sir!	కొట్టతను : లేదు సార్‌. ఇప్పుడు టైం ఎంత సార్‌	ocr		Mört™èþ¯èþ$ : Ìôý§æþ$ ÝëÆŠÿ. Cç³šyæþ$ sñýO… G…™èþ ÝëÆŠÿ.	2:392.9;2:408.1	no-rom
-12	25	ÆæÿÑ	Seven and three quarters.	రవి : ఏడు ముప్పావు.	ocr		ÆæÿÑ : Hyæþ$ Ðèþ$$´ëµÐèþ#.	2:438.6	no-rom
-12	26	çÜ$Væü$×ý	Padma! How do you do?	సుగుణ : పద్మా బాగున్నావా?	ocr		çÜ$Væü$×ý : ç³§éÃ!  »êVæü$¯é²Ðé?	2:481.1	no-rom
-12	27	ç³§æþÃ	Fine. How are you? Come on, sit.	పద్మ: ఆ! మీరందరూ బాగున్నారా? రా, కూర్చో.	ocr		ç³§æþÃ : B! Ò$Ææÿ…§æþÆæÿ* »êVæü$¯é²Æ>? Æ>, Mæü*Æøa.	2:511.6	no-rom
-12	28	çÜ$Væü$×ý	Where is your friend's house?	సుగుణ : మీ స్నేహితురాలి ఇల్లెక్కడ?	ocr		çÜ$Væü$×ý : Ò$ õÜ²íßý™èþ$Æ>Í CÌñýÏMæüPyæþ?	2:542.0	no-rom
-12	29	ç³§æþÃ	Whose house?	పద్మ : ఎవరిల్లు?	ocr		ç³§æþÃ : GÐèþÇË$Ï?	2:572.5	no-rom
-12	30	çÜ$Væü$×ý	Vijaya's house.	సుగుణ : విజయ ఇల్లు.	ocr		çÜ$Væü$×ý : ÑfÄæý$ CË$Ï.	2:602.9	no-rom
-12	31	ç³§æþÃ	It is near Saroja's house. Their houses are near our school.	పద్మ : సరోజ ఇంటి దగ్గర. వాళ్ళ ఇళ్ళు మన స్కూలు దగ్గరే!	ocr		ç³§æþÃ : çÜÆøf C…sìý §æþVæüYÆæÿ. Ðéâæýå Câæý$å Ðèþ$¯èþ çÜ*PË$ §æþVæüYÆóÿ!	3:179.8;3:195.0	no-rom
-12	32	çÜ$Væü$×ý	Is Saroja's house near our school?	సుగుణ : సరోజ ఇల్లు మన స్కూలు 'దగ్గరేనా?	ocr		çÜ$Væü$×ý : çÜÆøf CË$Ï Ðèþ$¯èþ çÜ*PË$ §æþVæüYÆóÿ¯é?	3:225.5;3:240.7	no-rom
-12	33	ç³§æþÃ	Yes.Whose books are these? Yours?	పద్మ : అవును. ఈ పుస్తకాలు ఎవరివి? నీవేనా?	ocr		ç³§æþÃ : AÐèþ#¯èþ$. D ç³#çÜ¢M>Ë$ GÐèþÇÑ? ±Ðóþ¯é?	3:271.1;3:286.4	no-rom
-12	34	çÜ$Væü$×ý	Not mine. Some of them are my younger brother's. Some of them are his friend's.	సుగుణ : నావికావు. కొన్ని మా తమ్ముడివి. కొన్నివాడి స్నేహితుడివి.	ocr		çÜ$Væü$×ý : ¯éÑM>Ðèþ#.  Mö°² Ðèþ* ™èþÐèþ$$ÃyìþÑ. Mö°² Ðéyìþ õÜ²íßý™èþ$yìþÑ.	3:316.8;3:332.0	no-rom
-12	35	ç³§æþÃ	Where are their schools?	పద్మ : వాళ్ళ స్కూళ్ళు ఎక్కడ ?	ocr		ç³§æþÃ : Ðéâæýå çÜ*Pâæý$å GMæüPyæþ ?	3:362.5	no-rom
-12	36	çÜ$Væü$×ý	They are from the same school.	సుగుణ : వాళ్ళిద్దరి స్కూలూ ఒక్కటే.	ocr		çÜ$Væü$×ý : Ðéãå§æþªÇ çÜ*PË* JMæüPsôý.	3:392.9	no-rom
+guid	lesson	seq	speaker	en	te	te_src	rom	legacy	keys	flags
+I9d4d300d74d0	12	1	ÆæÿÑ	Hey!  What are the vegetables available with you?	రవి. : ఏవుయ్యా! కూరగాయలు ఏం ఉన్నాయి?	ocr		ÆæÿÑ : HÐèþ$Äæý*Å! Mæü*ÆæÿV>Äæý$Ë$ H… E¯é²Æÿ$$?	0:445.6;0:460.8	no-rom
+I12da40d44771	12	2	Mört™èþ¯èþ$	Please come, sir!  Fresh veg- etables are available.	కొట్టతను : రండి సార్‌! తాజా 'కూరగాయలున్నాయి.	ocr		Mört™èþ¯èþ$ : Ææÿ…yìþ ÝëÆŠÿ!  ™égê Mæü*ÆæÿV>Äæý$Ë$¯é²Æÿ$$.	0:491.3;0:506.5	no-rom
+I9d7c96d93988	12	3	ÆæÿÑ	Are brinjals available?	రవి. : వంకాయలున్నాయా?	ocr		ÆæÿÑ : Ðèþ…M>Äæý$Ë$¯é²Äæý*?	0:537.0	no-rom
+I0beaf1a0a929	12	4	Mört™èþ¯èþ$	Brinjal, , tomato, beans, cucumber and cabbage are available, sir.	బీరకాయ్	rom	bīrakāy	Mört™èþ¯èþ$ : Ðèþ…M>Äæý$Ë*, ½ÆæÿM>Äæý$Ë*, sŸÐóþ$sZË*, _Mæü$Pyæþ$M>Äæý$Ë*, §øçÜM>Äæý$Ë*, Móü»ôýi E¯é²Äæý$…yîþ!	0:567.4;0:582.6;0:597.9	ocr-differs
+I2b38de2261db	12	5	ÆæÿÑ	What are the potherbs available?	రవి... : ఆకుకూరలు ఏం ఉన్నాయి?	ocr		ÆæÿÑ : BMæü$Mæü*ÆæÿË$ H… E¯é²Æÿ$$?	1:179.8	no-rom
+I7d7d63d0570c	12	6	Mört™èþ¯èþ$	are available, sir. The is fresh. Please take it.	Tఓటకూరా పాలకూరా, స్పినఛ్ గోన్గూరా గోన్గూర	rom	Tōṭakūrā pālakūrā, spinach gōngūrā gōngūra	Mört™èþ¯èþ$ : ™ørMæü*Æ>, ´ëËMæü*Æ>, º^èþaÍMæü*Æ>, Vø…Væü*Æ> E¯é²Äæý$…yîþ. Vø…Væü*Ææÿ ™égê¨. ¡çÜ$Mø…yìþ.	1:210.0;1:225.0;1:240.0	unmapped-glyph ocr-differs
+Ibcf747aded85	12	7	ÆæÿÑ	Don't you have green chillies?	రవి... : పచ్చిమిరపకాయలు లేవా?	ocr		ÆæÿÑ : ç³_aÑ$Ææÿç³M>Äæý$Ë$ ÌôýÐé?	1:270.1	no-rom
+I41081d9b3b2e	12	8	Mört™èþ¯èþ$	We have them, sir!  Here they are!	కొట్టతను : ఉన్నాయండీ! ఇవిగో.	ocr		Mört™èþ¯èþ$ : E¯é²Äæý$…yîþ! CÑVø.	1:300.3	no-rom
+I1087eccdb0f5	12	9	ÆæÿÑ	What is the price of brinjal?	రవి. : వంకాయలు ఎంత?	ocr		ÆæÿÑ : Ðèþ…M>Äæý$Ë$ G…™èþ?	1:330.4	no-rom
+I48bec818ca2f	12	10	Mört™èþ¯èþ$	Rs. 12 a K.G., sir.	కొట్టతను : కిలో పన్నెండు రూపాయలండీ.	ocr		Mört™èþ¯èþ$ : MìüÌZ ç³¯ðþ²…yæþ$ Ææÿ*´ëÄæý$Ë…yîþ.	1:360.4	no-rom
+I3d0bb8c886b7	12	11	ÆæÿÑ		Bఈరకాయ్	rom	Bīrakāy	ÆæÿÑ : ½ÆæÿM>Äæý$Ë$ ?	1:390.4	no-en unmapped-glyph ocr-differs
+Id5709e39bd64	12	12	Mört™èþ¯èþ$	Rs. 11.50 a K.G.	కొట్టతను : కిలో పదకొండున్నర.	ocr		Mört™èþ¯èþ$ : MìüÌZ ç³§æþMö…yæþ$¯èþ²Ææÿ.	1:420.7	no-rom
+Iee6be1983332	12	13	ÆæÿÑ	How much does the cabbage cost?	రవి. :కేబేజీ ఎంత?	ocr		ÆæÿÑ : Móü»ô i G…™èþ?	1:450.7	no-rom
+Id5709e39bd64	12	14	Mört™èþ¯èþ$	Rs. 10 a K.G.	కొట్టతను : కిలో పది రూపాయలు.	ocr		Mört™èþ¯èþ$ : MìüÌZ ç³¨ Ææÿ*´ëÄæý$Ë$.	1:480.7	no-rom
+If723f9016bb9	12	15	ÆæÿÑ	Give me a K.G. of brinjal, two K.Gs. of	బీరకాయ్	rom	bīrakāy	ÆæÿÑ : Ðèþ…M>Äæý$Ë$ JMæü MìüÌZ, ½ÆæÿM>Äæý$Ë$ Æðÿ…yæþ$ MìüÌZË$ CÐèþ#Ó.	1:511.0;1:526.0	ocr-differs
+Ideabe8e3b0fa	12	16	Mört™èþ¯èþ$	Please take them.	కొట్టతను : తీసుకోండి.	ocr		Mört™èþ¯èþ$ : ¡çÜ$Mø…yìþ.	1:556.0	no-rom
+Id5df77db40cd	12	17	ÆæÿÑ	Don't put those ones.  Put good ones.	రవి. : ఆకాయలు వెయ్యకు. మంచివి వెయ్యి.	ocr		ÆæÿÑ :  B M>Äæý$Ë$ ÐðþÄæý$ÅMæü$. Ðèþ$…_Ñ ÐðþÆÿ$$Å.	1:586.3	no-rom
+Ib19beaa320d2	12	18	Mört™èþ¯èþ$	These are good, sir.	కొట్టతను : ఇవి బాగున్నాయండి.	ocr		Mört™èþ¯èþ$ :  CÑ »êVæü$¯é²Äæý$…yìþ.	1:616.3	no-rom
+I11461621fc64	12	19	ÆæÿÑ	Give a K.G. of cabbage also.	రవి : కేబీజీ కూడా ఒక కిలో ఇవ్వు.	ocr		ÆæÿÑ : Móü½i Mæü*yé JMæü MìüÌZ CÐèþ#Ó.	2:179.8	no-rom
+Ida12c1b37eb0	12	20	Mört™èþ¯èþ$	This cabbage is weighing one and a half K.G., sir!	కొట్టతను : కేబీజీ ఒకటిన్నర కిలో ఉందండీ!	ocr		Mört™èþ¯èþ$ : Móü½i JMæüsìý¯èþ²Ææÿ MìüÌZ E…§æþ…yîþ!	2:210.2	no-rom
+Ic9ce206bb073	12	21	ÆæÿÑ	Okay, give it. Give me a quarter K.G. of green chillies. Add 50 grams of ginger too.	రవి : సరే, ఇవ్వు. పచ్చిమిరపకాయలు పావుకిలో ఇవ్వు. అల్లం కూడా యాభ్జె గ్రాములు ఇవ్వు.	ocr		ÆæÿÑ : çÜÆóÿ, CÐèþ#Ó.  ç³_aÑ$Ææÿç³M>Äæý$Ë$ ´ëÐèþ#MìüÌZ CÐèþ#Ó.  AËÏ… Mæü*yé Äæý*¿ñýO {V>Ðèþ$$Ë$ CÐèþ#Ó.	2:240.7;2:255.9;2:271.1	no-rom
+Ia95263c2d7d0	12	22	Mört™èþ¯èþ$	It is, in total, Rs. 59, sir!	కొట్టతను : మొత్తం యాభైతొమ్మిది రూపాయలు. సార్‌	ocr		Mört™èþ¯èþ$ : Ððþ$$™èþ¢… Äæý*¿ñýO™öÑ$Ã¨ Ææÿ*´ëÄæý$Ë$ ÝëÆŠÿ.	2:301.5;2:316.8	no-rom
+I360fac365e89	12	23	ÆæÿÑ	Take it. Is there any city bus now?	రవి : ఇదిగో, తీసుకో. ఇప్పుడు సిటీ బస్సు ఉందా?	ocr		ÆæÿÑ : C¨Vø, ¡çÜ$Mø.  Cç³šyæþ$ íÜsîý ºçÜ$Þ E…§é?	2:347.2;2:362.4	no-rom
+Ie8b1c239041a	12	24	Mört™èþ¯èþ$	No, sir! What is the time now, sir!	కొట్టతను : లేదు సార్‌. ఇప్పుడు టైం ఎంత సార్‌	ocr		Mört™èþ¯èþ$ : Ìôý§æþ$ ÝëÆŠÿ. Cç³šyæþ$ sñýO… G…™èþ ÝëÆŠÿ.	2:392.9;2:408.1	no-rom
+Ie499fc22c738	12	25	ÆæÿÑ	Seven and three quarters.	రవి : ఏడు ముప్పావు.	ocr		ÆæÿÑ : Hyæþ$ Ðèþ$$´ëµÐèþ#.	2:438.6	no-rom
+Ic9877f895e00	12	26	çÜ$Væü$×ý	Padma! How do you do?	సుగుణ : పద్మా బాగున్నావా?	ocr		çÜ$Væü$×ý : ç³§éÃ!  »êVæü$¯é²Ðé?	2:481.1	no-rom
+Ieb31496b6a5c	12	27	ç³§æþÃ	Fine. How are you? Come on, sit.	పద్మ: ఆ! మీరందరూ బాగున్నారా? రా, కూర్చో.	ocr		ç³§æþÃ : B! Ò$Ææÿ…§æþÆæÿ* »êVæü$¯é²Æ>? Æ>, Mæü*Æøa.	2:511.6	no-rom
+I1985e67ac8e8	12	28	çÜ$Væü$×ý	Where is your friend's house?	సుగుణ : మీ స్నేహితురాలి ఇల్లెక్కడ?	ocr		çÜ$Væü$×ý : Ò$ õÜ²íßý™èþ$Æ>Í CÌñýÏMæüPyæþ?	2:542.0	no-rom
+Ibffbab4ebf26	12	29	ç³§æþÃ	Whose house?	పద్మ : ఎవరిల్లు?	ocr		ç³§æþÃ : GÐèþÇË$Ï?	2:572.5	no-rom
+If41e9187f13f	12	30	çÜ$Væü$×ý	Vijaya's house.	సుగుణ : విజయ ఇల్లు.	ocr		çÜ$Væü$×ý : ÑfÄæý$ CË$Ï.	2:602.9	no-rom
+If728d49ae166	12	31	ç³§æþÃ	It is near Saroja's house. Their houses are near our school.	పద్మ : సరోజ ఇంటి దగ్గర. వాళ్ళ ఇళ్ళు మన స్కూలు దగ్గరే!	ocr		ç³§æþÃ : çÜÆøf C…sìý §æþVæüYÆæÿ. Ðéâæýå Câæý$å Ðèþ$¯èþ çÜ*PË$ §æþVæüYÆóÿ!	3:179.8;3:195.0	no-rom
+I31e1dffb2bb1	12	32	çÜ$Væü$×ý	Is Saroja's house near our school?	సుగుణ : సరోజ ఇల్లు మన స్కూలు 'దగ్గరేనా?	ocr		çÜ$Væü$×ý : çÜÆøf CË$Ï Ðèþ$¯èþ çÜ*PË$ §æþVæüYÆóÿ¯é?	3:225.5;3:240.7	no-rom
+Id59cb22cf437	12	33	ç³§æþÃ	Yes.Whose books are these? Yours?	పద్మ : అవును. ఈ పుస్తకాలు ఎవరివి? నీవేనా?	ocr		ç³§æþÃ : AÐèþ#¯èþ$. D ç³#çÜ¢M>Ë$ GÐèþÇÑ? ±Ðóþ¯é?	3:271.1;3:286.4	no-rom
+I4ec3da2c22c8	12	34	çÜ$Væü$×ý	Not mine. Some of them are my younger brother's. Some of them are his friend's.	సుగుణ : నావికావు. కొన్ని మా తమ్ముడివి. కొన్నివాడి స్నేహితుడివి.	ocr		çÜ$Væü$×ý : ¯éÑM>Ðèþ#.  Mö°² Ðèþ* ™èþÐèþ$$ÃyìþÑ. Mö°² Ðéyìþ õÜ²íßý™èþ$yìþÑ.	3:316.8;3:332.0	no-rom
+Ia4d07edd6ef8	12	35	ç³§æþÃ	Where are their schools?	పద్మ : వాళ్ళ స్కూళ్ళు ఎక్కడ ?	ocr		ç³§æþÃ : Ðéâæýå çÜ*Pâæý$å GMæüPyæþ ?	3:362.5	no-rom
+Ic048e3ab7dfd	12	36	çÜ$Væü$×ý	They are from the same school.	సుగుణ : వాళ్ళిద్దరి స్కూలూ ఒక్కటే.	ocr		çÜ$Væü$×ý : Ðéãå§æþªÇ çÜ*PË* JMæüPsôý.	3:392.9	no-rom

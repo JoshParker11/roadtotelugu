@@ -1,34 +1,34 @@
-lesson	seq	speaker	en	te	te_src	rom	legacy	keys	flags
-20	1	Vøí³	Ravi!  You should do me a favour.	గోపి : రవీ! నువ్వు నాకొక సహాయం చెయ్యాలి	ocr		Vøí³ : ÆæÿÒ! ¯èþ$Ðèþ#Ó ¯éMöMæü çÜàÄæý$… ^ðþÄæý*ÅÍ	0:435.5;0:450.7	no-rom
-20	2	ÆæÿÑ	What is it?	రవి: ఏమిటి?	ocr		ÆæÿÑ : HÑ$sìý?	0:481.1	no-rom
-20	3	Vøí³	There is Telugu film in Gayatri talkies.	గోపి. : ఏమీలేదు. గాయత్రీ టాకీసులో తెలుగు సినిమా ఉంది.	ocr		Vøí³ : HÒ$Ìôý§æþ$. V>Äæý${¡ sêMîüçÜ$ÌZ ™ðþË$Væü$ íÜ°Ðèþ* E…¨.	0:511.6;0:526.8	no-rom
-20	4	ÆæÿÑ	What about, then?	రవి. : అయితే ఏమిటి?	ocr		ÆæÿÑ : AÆÿ$$™óþ HÑ$sìý?	0:557.3	no-rom
-20	5	Vøí³	I have to go to that cinema.	గోపి : ఆ సినిమాకు పోవాలి.	ocr		Vøí³ : B íÜ°Ðèþ*Mæü$ ´ùÐéÍ.	0:587.7	no-rom
-20	6	ÆæÿÑ	Go then!	రవి: పో	ocr		ÆæÿÑ : ´ù!	0:618.2	no-rom
-20	7	Vøí³	You should also come with me.	గోపి: నువ్వు కూడా నాతో రావాలి.	ocr		Vøí³ : ¯èþ$Ðèþ#Ó Mæü*yé ¯é™ø Æ>ÐéÍ.	1:179.8	no-rom
-20	8	ÆæÿÑ	Why should I?	రవి. 2 నేనెందుకు?	ocr		ÆæÿÑ : ¯óþ¯ðþ…§æþ$Mæü$?	1:210.2	no-rom
-20	9	Vøí³	To see the cinema.	గోపి : ఎందుకేమిటి? సినిమాకు.	ocr		Vøí³ : G…§æþ$MóüÑ$sìý? íÜ°Ðèþ*Mæü$.	1:240.7	no-rom
-20	10	ÆæÿÑ	I have work.	రవి: ఇప్పుడు నాకు పని ఉంది.	ocr		ÆæÿÑ : Cç³šyæþ$ ¯éMæü$ ç³° E…¨.	1:271.1	no-rom
-20	11	Vøí³	What work?	గోపి : ఏం పని?	ocr		Vøí³ : H… ç³°?	1:301.5	no-rom
-20	12	ÆæÿÑ	I have to speak with the teacher.  I have to take a book (from him). Talk tomorrow.  Take the book	రవి. : మాష్టారుగారితో మాట్లాడాలి. ఒక పుస్తకం తీసుకోవాలి.	ocr		ÆæÿÑ : Ðèþ*ÚëtÆæÿ$V>Ç™ø Ðèþ*sêÏyéÍ.  JMæü ç³#çÜ¢Mæü… ¡çÜ$MøÐéÍ.	1:332.0;1:347.2	no-rom
-20	13	Vøí³	tomorrow.	గోపి. : రేపు మాట్లాడు. పుస్తకం రేపు తీసుకో,	ocr		Vøí³ : Æóÿç³# Ðèþ*sêÏyæþ$. ç³#çÜ¢Mæü… Æóÿç³# ¡çÜ$Mø.	1:377.7	no-rom
-20	14	ÆæÿÑ	There are some more things to do.  I have to go Rama’s house.  I have to see her fa- ther.  I have to talk to him. I have also to see Rama’s brother.	రవి. : ఇంకా వేరే పనులు కూడా ఉన్నాయి. రమ ఇంటికి వెళ్లాలి; వాళ్ళ నాన్న గారిని చూడాలి. ఆయనతో మాట్లాడాలి. రమ తమ్ముణ్ణి కూడా చూడాలి.	ocr		ÆæÿÑ : C…M> ÐóþÆóÿ ç³¯èþ$Ë$ Mæü*yé E¯é²Æÿ$$. ÆæÿÐèþ$ C…sìýMìü ÐðþâêÏÍ; Ðéâæýå ¯é¯èþ² V>Ç° ^èþ*yéÍ.  BÄæý$¯èþ™ø Ðèþ*sêÏyéÍ.  ÆæÿÐèþ$ ™èþÐèþ$$Ã×ìý~ Mæü*yé ^èþ*yéÍ.	1:408.1;1:423.3;1:438.6;1:453.8;1:469.0	no-rom
-20	15	Vøí³	See them tomorrow.  Do all those things tomorrow.	గోపి : వాళ్ళను రేపు చూడు. ఆ పనులు రేపు చెయ్యి.	ocr		Vøí³ : Ðéâæýå¯èþ$ Æóÿç³# ^èþ*yæþ$.  B ç³¯èþ$Ë$ Æóÿç³# ^ðþÆÿ$$Å.	1:499.5;1:514.7	no-rom
-20	16	ÆæÿÑ	I have to do them today itself. You go to the cinema.  I have to bring their dog here.	రవి: ఇవ్వేళే చెయ్యాలి... సినిమాకు నువ్వు వెళ్లు. నేను వాళ్ల కుక్కను ఇక్కడికి తీసుకురావాలి. -.	ocr		ÆæÿÑ : CÐóþÓâôý ^ðþÄæý*ÅÍ.  íÜ°Ðèþ*Mæü$ ¯èþ$Ðèþ#Ó Ððþâæý$Ï.  ¯óþ¯èþ$ ÐéâæýÏ Mæü$MæüP¯èþ$ CMæüPyìþMìü ¡çÜ$Mæü$Æ>ÐéÍ. þ	1:545.1;1:560.3;1:575.6;1:590.8	no-rom
-20	17	Vøí³	I don’t have money.	గోపి : నా దగ్గర డబ్బులు లేవు.	ocr		Vøí³ : ¯é §æþVæüYÆæÿ yæþº$¾Ë$ ÌôýÐèþ#.	1:606.0	no-rom
-20	18	ÆæÿÑ	Oh!  Is that the matter?  I have money.  Take it.	రవి : అదావిషయం? నా దగ్గర ఉన్నాయి. తీసుకో!	ocr		ÆæÿÑ : A§é ÑçÙÄæý$…?  ¯é §æþVæüYÆæÿ E¯é²Æÿ$$.  ¡çÜ$Mø!	2:179.8;2:195.0	no-rom
-20	19	Vøí³	You also come with me.	గోపి: నువ్వు గూడా రా పరవాలేదు.	ocr		Vøí³ : ¯èþ$Ðèþ#Ó Væü*yé Æ>, ç³ÆæÿÐéÌôý§æþ$.	2:225.4	no-rom
-20	20	ÆæÿÑ	It’s not possible to me.  You can go.	రవి. 2 నాకు వీలు లేదు; నువ్వు వెళ్లు	ocr		ÆæÿÑ : ¯éMæü$ ÒË$ Ìôý§æþ$; ¯èþ$Ðèþ#Ó Ððþâæý$Ï.	2:255.9	no-rom
-20	21	Vøí³	First let’s go to the mess.  We have to eat food.  Haven’t we?	గోపి : ముందు మెస్సుకు పద. అన్నం తినాలి కదా!	ocr		Vøí³ : Ðèþ$$…§æþ$ Ððþ$çÜ$ÞMæü$ ç³§æþ.  A¯èþ²… †¯éÍ Mæü§é!	2:286.3;2:301.5	no-rom
-20	22	ÔèýÆæÿÃ	Narayana!  This plate is not clean.  Wash it again.	శర్మ: నారాయణా! ఈ కంచం బాగాలేదు. మళ్ళీ కడుగు.	ocr		ÔèýÆæÿÃ : ¯éÆ>Äæý$×ê!  D Mæü…^èþ… »êV>Ìôý§æþ$. Ðèþ$äå Mæüyæþ$Væü$.	2:332.0;2:347.2	no-rom
-20	23	Ææÿ†Æ>ÐŒþ$	What Narayana!  Only three chapathies for me?	'రతిరామ్‌ : ఏమిటి నారాయణా! నాకు మూడు చపాతీలేనా!	ocr		Ææÿ†Æ>ÐŒþ$ : HÑ$sìý ¯éÆ>Äæý$×ê!  ¯éMæü$ Ðèþ$*yæþ$ ^èþ´ë¡Ìôý¯é!	2:377.7;2:392.9	no-rom
-20	24	¯éÆ>	Today we have only few chapathies, sir.	నారా: ఇవ్వాళ చపాతీలు కొంచెమే ఉన్నాయండీ.	ocr		¯éÆ> : CÐéÓâæý ^èþ´ë¡Ë$ Mö…^ðþÐóþ$ E¯é²Äæý$…yîþ.	2:423.3;2:438.6	no-rom
-20	25	Ææÿ†	I am not concerned with that.  I need at least ten chapaties a day.  Bring them.	రతి. : అదినాకు అనవసరం. నాకు రోజుకు కనీసం పది చపాతీలు కావాలి; తీసుకురా!	ocr		Ææÿ† : A¨¯éMæü$ A¯èþÐèþçÜÆæÿ….  ¯éMæü$ ÆøkMæü$ Mæü±çÜ… ç³¨ ^èþ´ë¡Ë$ M>ÐéÍ; ¡çÜ$Mæü$Æ>!	2:469.0;2:484.2;2:499.5	no-rom
-20	26	¯éÆ>	Then, ask the mess secretary.	నారా. : అయితే మెస్సు సెక్రటరీని అడగండి.	ocr		¯éÆ> : AÆÿ$$™óþ Ððþ$çÜ$Þ òÜ{MðürÈ° AyæþVæü…yìþ.	2:529.9	no-rom
-20	27	Ææÿ†	Mehakar singh!  Will three chapathies be sufficient for you?	రతి: మెహకార్‌ సింగ్‌! నీకు మూడు చపాతీలు చాలా?	ocr		Ææÿ† : Ððþ$çßýM>ÆŠÿ íÜ…VŠü!  ±Mæü$ Ðèþ$*yæþ$ ^èþ´ë¡Ë$ ^éÌê?	2:560.3;2:575.6	no-rom
-20	28	Ððþ$çßý	Don’t ask me anything.  There is the secretary.  Ask him.	మెహ : నన్నుఏమీ అడగకు. అడుగో మెస్సు సెక్రెటరీ. ఆయనను అడుగు.	ocr		Ððþ$çßý : ¯èþ¯èþ$² HÒ$ AyæþVæüMæü$.  Ayæþ$Vø Ððþ$çÜ$Þ òÜ{MðürÈ. BÄæý$¯èþ¯èþ$ Ayæþ$Væü$.	2:606.0;2:621.2	no-rom
-20	29	¯èþ…§æþMæü$Ðèþ*ÆŠÿ	Ratiram, be quiet.	నందకుమార్‌ : ఊర్కో రతిరామ్‌!	ocr		¯èþ…§æþMæü$Ðèþ*ÆŠÿ :  FÆøP, Ææÿ†Æ>ÐŒþ$!	3:179.8	no-rom
-20	30	ÔèýÆæÿÃ	Ratiram!  Do one thing.  You take my chapathies.	శర్మ : రతిరమ్‌! ఒకపనిచెయ్యి. నా చపాతీలు తీసుకో!	ocr		ÔèýÆæÿÃ : Ææÿ†Æ>ÐŒþ$!  JMæü ç³°^ðþÆÿ$$Å.  ¯é ^èþ´ë¡Ë$ ¡çÜ$Mø!	3:210.2;3:225.4	no-rom
-20	31	Ææÿ†	I don’t need any of your chapaties.	రతి. : నీ చపాతీలు ఒకటి కూడా నాకు అకర్లేదు.	ocr		Ææÿ† : ± ^èþ´ë¡Ë$ JMæüsìý Mæü*yé ¯éMæü$ AMæüPÆóÿÏ§æþ$.	3:255.9;3:271.1	no-rom
-20	32	ÔèýÆæÿÃ	Then, go and ask the secretary only.	శర్మ: అయితే పో, సెక్రైటరీనే అడుగు.	ocr		ÔèýÆæÿÃ : AÆÿ$$™óþ ´ù, òÜ{MðürÈ¯óþ Ayæþ$Væü$.	3:301.5	no-rom
-20	33	Ææÿ†	Yes (I will).  Narayana! I don’t want if it is three chapathies. Take them away!	రతి: ఆ| నారాయణా! మూడు చపాతీలు అయితే నాకు అక్షర్లేదు. తీసుకోపో!	ocr		Ææÿ† : B!  ¯éÆ>Äæý$×ê!  Ðèþ$*yæþ$ ^èþ´ë¡Ë$ AÆÿ$$™óþ ¯éMæü$ AMæüPÆóÿÏ§æþ$.  ¡çÜ$Mø´ù!	3:332.0;3:347.2	no-rom ocr-suspect
+guid	lesson	seq	speaker	en	te	te_src	rom	legacy	keys	flags
+I900622da0ee2	20	1	Vøí³	Ravi!  You should do me a favour.	గోపి : రవీ! నువ్వు నాకొక సహాయం చెయ్యాలి	ocr		Vøí³ : ÆæÿÒ! ¯èþ$Ðèþ#Ó ¯éMöMæü çÜàÄæý$… ^ðþÄæý*ÅÍ	0:435.5;0:450.7	no-rom
+I345499d94f8f	20	2	ÆæÿÑ	What is it?	రవి: ఏమిటి?	ocr		ÆæÿÑ : HÑ$sìý?	0:481.1	no-rom
+Ida7fb1eca37c	20	3	Vøí³	There is Telugu film in Gayatri talkies.	గోపి. : ఏమీలేదు. గాయత్రీ టాకీసులో తెలుగు సినిమా ఉంది.	ocr		Vøí³ : HÒ$Ìôý§æþ$. V>Äæý${¡ sêMîüçÜ$ÌZ ™ðþË$Væü$ íÜ°Ðèþ* E…¨.	0:511.6;0:526.8	no-rom
+Iba446ed81f9c	20	4	ÆæÿÑ	What about, then?	రవి. : అయితే ఏమిటి?	ocr		ÆæÿÑ : AÆÿ$$™óþ HÑ$sìý?	0:557.3	no-rom
+I2345d13ecc4b	20	5	Vøí³	I have to go to that cinema.	గోపి : ఆ సినిమాకు పోవాలి.	ocr		Vøí³ : B íÜ°Ðèþ*Mæü$ ´ùÐéÍ.	0:587.7	no-rom
+Ie698e794debc	20	6	ÆæÿÑ	Go then!	రవి: పో	ocr		ÆæÿÑ : ´ù!	0:618.2	no-rom
+Ieb93eb249855	20	7	Vøí³	You should also come with me.	గోపి: నువ్వు కూడా నాతో రావాలి.	ocr		Vøí³ : ¯èþ$Ðèþ#Ó Mæü*yé ¯é™ø Æ>ÐéÍ.	1:179.8	no-rom
+I2b5b2a1aa01f	20	8	ÆæÿÑ	Why should I?	రవి. 2 నేనెందుకు?	ocr		ÆæÿÑ : ¯óþ¯ðþ…§æþ$Mæü$?	1:210.2	no-rom
+I0fee1f331f6a	20	9	Vøí³	To see the cinema.	గోపి : ఎందుకేమిటి? సినిమాకు.	ocr		Vøí³ : G…§æþ$MóüÑ$sìý? íÜ°Ðèþ*Mæü$.	1:240.7	no-rom
+Iac8dc7eff3dd	20	10	ÆæÿÑ	I have work.	రవి: ఇప్పుడు నాకు పని ఉంది.	ocr		ÆæÿÑ : Cç³šyæþ$ ¯éMæü$ ç³° E…¨.	1:271.1	no-rom
+Ib2854944a7a9	20	11	Vøí³	What work?	గోపి : ఏం పని?	ocr		Vøí³ : H… ç³°?	1:301.5	no-rom
+I07150d19cb90	20	12	ÆæÿÑ	I have to speak with the teacher.  I have to take a book (from him). Talk tomorrow.  Take the book	రవి. : మాష్టారుగారితో మాట్లాడాలి. ఒక పుస్తకం తీసుకోవాలి.	ocr		ÆæÿÑ : Ðèþ*ÚëtÆæÿ$V>Ç™ø Ðèþ*sêÏyéÍ.  JMæü ç³#çÜ¢Mæü… ¡çÜ$MøÐéÍ.	1:332.0;1:347.2	no-rom
+Ic6f35d6c0d43	20	13	Vøí³	tomorrow.	గోపి. : రేపు మాట్లాడు. పుస్తకం రేపు తీసుకో,	ocr		Vøí³ : Æóÿç³# Ðèþ*sêÏyæþ$. ç³#çÜ¢Mæü… Æóÿç³# ¡çÜ$Mø.	1:377.7	no-rom
+I51974d8acfbb	20	14	ÆæÿÑ	There are some more things to do.  I have to go Rama’s house.  I have to see her fa- ther.  I have to talk to him. I have also to see Rama’s brother.	రవి. : ఇంకా వేరే పనులు కూడా ఉన్నాయి. రమ ఇంటికి వెళ్లాలి; వాళ్ళ నాన్న గారిని చూడాలి. ఆయనతో మాట్లాడాలి. రమ తమ్ముణ్ణి కూడా చూడాలి.	ocr		ÆæÿÑ : C…M> ÐóþÆóÿ ç³¯èþ$Ë$ Mæü*yé E¯é²Æÿ$$. ÆæÿÐèþ$ C…sìýMìü ÐðþâêÏÍ; Ðéâæýå ¯é¯èþ² V>Ç° ^èþ*yéÍ.  BÄæý$¯èþ™ø Ðèþ*sêÏyéÍ.  ÆæÿÐèþ$ ™èþÐèþ$$Ã×ìý~ Mæü*yé ^èþ*yéÍ.	1:408.1;1:423.3;1:438.6;1:453.8;1:469.0	no-rom
+I0da3a1c01dd7	20	15	Vøí³	See them tomorrow.  Do all those things tomorrow.	గోపి : వాళ్ళను రేపు చూడు. ఆ పనులు రేపు చెయ్యి.	ocr		Vøí³ : Ðéâæýå¯èþ$ Æóÿç³# ^èþ*yæþ$.  B ç³¯èþ$Ë$ Æóÿç³# ^ðþÆÿ$$Å.	1:499.5;1:514.7	no-rom
+I6616ffd94573	20	16	ÆæÿÑ	I have to do them today itself. You go to the cinema.  I have to bring their dog here.	రవి: ఇవ్వేళే చెయ్యాలి... సినిమాకు నువ్వు వెళ్లు. నేను వాళ్ల కుక్కను ఇక్కడికి తీసుకురావాలి. -.	ocr		ÆæÿÑ : CÐóþÓâôý ^ðþÄæý*ÅÍ.  íÜ°Ðèþ*Mæü$ ¯èþ$Ðèþ#Ó Ððþâæý$Ï.  ¯óþ¯èþ$ ÐéâæýÏ Mæü$MæüP¯èþ$ CMæüPyìþMìü ¡çÜ$Mæü$Æ>ÐéÍ. þ	1:545.1;1:560.3;1:575.6;1:590.8	no-rom
+I24af2ffd1e86	20	17	Vøí³	I don’t have money.	గోపి : నా దగ్గర డబ్బులు లేవు.	ocr		Vøí³ : ¯é §æþVæüYÆæÿ yæþº$¾Ë$ ÌôýÐèþ#.	1:606.0	no-rom
+Id8abf3f11664	20	18	ÆæÿÑ	Oh!  Is that the matter?  I have money.  Take it.	రవి : అదావిషయం? నా దగ్గర ఉన్నాయి. తీసుకో!	ocr		ÆæÿÑ : A§é ÑçÙÄæý$…?  ¯é §æþVæüYÆæÿ E¯é²Æÿ$$.  ¡çÜ$Mø!	2:179.8;2:195.0	no-rom
+I416e1d0e92a3	20	19	Vøí³	You also come with me.	గోపి: నువ్వు గూడా రా పరవాలేదు.	ocr		Vøí³ : ¯èþ$Ðèþ#Ó Væü*yé Æ>, ç³ÆæÿÐéÌôý§æþ$.	2:225.4	no-rom
+I8a2e567c9607	20	20	ÆæÿÑ	It’s not possible to me.  You can go.	రవి. 2 నాకు వీలు లేదు; నువ్వు వెళ్లు	ocr		ÆæÿÑ : ¯éMæü$ ÒË$ Ìôý§æþ$; ¯èþ$Ðèþ#Ó Ððþâæý$Ï.	2:255.9	no-rom
+I2600d7a29ccc	20	21	Vøí³	First let’s go to the mess.  We have to eat food.  Haven’t we?	గోపి : ముందు మెస్సుకు పద. అన్నం తినాలి కదా!	ocr		Vøí³ : Ðèþ$$…§æþ$ Ððþ$çÜ$ÞMæü$ ç³§æþ.  A¯èþ²… †¯éÍ Mæü§é!	2:286.3;2:301.5	no-rom
+I745e92a635f2	20	22	ÔèýÆæÿÃ	Narayana!  This plate is not clean.  Wash it again.	శర్మ: నారాయణా! ఈ కంచం బాగాలేదు. మళ్ళీ కడుగు.	ocr		ÔèýÆæÿÃ : ¯éÆ>Äæý$×ê!  D Mæü…^èþ… »êV>Ìôý§æþ$. Ðèþ$äå Mæüyæþ$Væü$.	2:332.0;2:347.2	no-rom
+I404880e2c2d2	20	23	Ææÿ†Æ>ÐŒþ$	What Narayana!  Only three chapathies for me?	'రతిరామ్‌ : ఏమిటి నారాయణా! నాకు మూడు చపాతీలేనా!	ocr		Ææÿ†Æ>ÐŒþ$ : HÑ$sìý ¯éÆ>Äæý$×ê!  ¯éMæü$ Ðèþ$*yæþ$ ^èþ´ë¡Ìôý¯é!	2:377.7;2:392.9	no-rom
+I60b784326f25	20	24	¯éÆ>	Today we have only few chapathies, sir.	నారా: ఇవ్వాళ చపాతీలు కొంచెమే ఉన్నాయండీ.	ocr		¯éÆ> : CÐéÓâæý ^èþ´ë¡Ë$ Mö…^ðþÐóþ$ E¯é²Äæý$…yîþ.	2:423.3;2:438.6	no-rom
+Ia506832415b5	20	25	Ææÿ†	I am not concerned with that.  I need at least ten chapaties a day.  Bring them.	రతి. : అదినాకు అనవసరం. నాకు రోజుకు కనీసం పది చపాతీలు కావాలి; తీసుకురా!	ocr		Ææÿ† : A¨¯éMæü$ A¯èþÐèþçÜÆæÿ….  ¯éMæü$ ÆøkMæü$ Mæü±çÜ… ç³¨ ^èþ´ë¡Ë$ M>ÐéÍ; ¡çÜ$Mæü$Æ>!	2:469.0;2:484.2;2:499.5	no-rom
+I5a1f82781b28	20	26	¯éÆ>	Then, ask the mess secretary.	నారా. : అయితే మెస్సు సెక్రటరీని అడగండి.	ocr		¯éÆ> : AÆÿ$$™óþ Ððþ$çÜ$Þ òÜ{MðürÈ° AyæþVæü…yìþ.	2:529.9	no-rom
+Ifcc8db47afa8	20	27	Ææÿ†	Mehakar singh!  Will three chapathies be sufficient for you?	రతి: మెహకార్‌ సింగ్‌! నీకు మూడు చపాతీలు చాలా?	ocr		Ææÿ† : Ððþ$çßýM>ÆŠÿ íÜ…VŠü!  ±Mæü$ Ðèþ$*yæþ$ ^èþ´ë¡Ë$ ^éÌê?	2:560.3;2:575.6	no-rom
+I8d8c45ba5ae6	20	28	Ððþ$çßý	Don’t ask me anything.  There is the secretary.  Ask him.	మెహ : నన్నుఏమీ అడగకు. అడుగో మెస్సు సెక్రెటరీ. ఆయనను అడుగు.	ocr		Ððþ$çßý : ¯èþ¯èþ$² HÒ$ AyæþVæüMæü$.  Ayæþ$Vø Ððþ$çÜ$Þ òÜ{MðürÈ. BÄæý$¯èþ¯èþ$ Ayæþ$Væü$.	2:606.0;2:621.2	no-rom
+Ie61a1ce4e5dc	20	29	¯èþ…§æþMæü$Ðèþ*ÆŠÿ	Ratiram, be quiet.	నందకుమార్‌ : ఊర్కో రతిరామ్‌!	ocr		¯èþ…§æþMæü$Ðèþ*ÆŠÿ :  FÆøP, Ææÿ†Æ>ÐŒþ$!	3:179.8	no-rom
+I5518ff15ca50	20	30	ÔèýÆæÿÃ	Ratiram!  Do one thing.  You take my chapathies.	శర్మ : రతిరమ్‌! ఒకపనిచెయ్యి. నా చపాతీలు తీసుకో!	ocr		ÔèýÆæÿÃ : Ææÿ†Æ>ÐŒþ$!  JMæü ç³°^ðþÆÿ$$Å.  ¯é ^èþ´ë¡Ë$ ¡çÜ$Mø!	3:210.2;3:225.4	no-rom
+Ib61b6c0afdf0	20	31	Ææÿ†	I don’t need any of your chapaties.	రతి. : నీ చపాతీలు ఒకటి కూడా నాకు అకర్లేదు.	ocr		Ææÿ† : ± ^èþ´ë¡Ë$ JMæüsìý Mæü*yé ¯éMæü$ AMæüPÆóÿÏ§æþ$.	3:255.9;3:271.1	no-rom
+I325d95c07577	20	32	ÔèýÆæÿÃ	Then, go and ask the secretary only.	శర్మ: అయితే పో, సెక్రైటరీనే అడుగు.	ocr		ÔèýÆæÿÃ : AÆÿ$$™óþ ´ù, òÜ{MðürÈ¯óþ Ayæþ$Væü$.	3:301.5	no-rom
+Icfc97914bdc9	20	33	Ææÿ†	Yes (I will).  Narayana! I don’t want if it is three chapathies. Take them away!	రతి: ఆ| నారాయణా! మూడు చపాతీలు అయితే నాకు అక్షర్లేదు. తీసుకోపో!	ocr		Ææÿ† : B!  ¯éÆ>Äæý$×ê!  Ðèþ$*yæþ$ ^èþ´ë¡Ë$ AÆÿ$$™óþ ¯éMæü$ AMæüPÆóÿÏ§æþ$.  ¡çÜ$Mø´ù!	3:332.0;3:347.2	no-rom ocr-suspect

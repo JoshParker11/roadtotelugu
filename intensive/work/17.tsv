@@ -1,48 +1,48 @@
-lesson	seq	speaker	en	te	te_src	rom	legacy	keys	flags
-17	1	çÜÆæÿÓÆŠÿ	What do you want, sir?	సర్వర్‌: ఏం కావాలండీ?	ocr		çÜÆæÿÓÆŠÿ : H… M>ÐéË…yîþ?	0:436.7	no-rom
-17	2	Ðèþ$à´ë{™èþ	I want three minapattus.	మహాపాత్ర : నాకు మూడు మినపట్లు కావాలి.	ocr		Ðèþ$à´ë{™èþ :  ¯éMæü$ Ðèþ$*yæþ$ Ñ$¯èþç³r$Ï M>ÐéÍ.	0:467.1	no-rom
-17	3	Ææÿ†Æ>ÐŒþ$	Three minapattus!	రతిరామ్‌.. : మూడు మినపట్లా?	ocr		Ææÿ†Æ>ÐŒþ$ : Ðèþ$*yæþ$ Ñ$¯èþç³sêÏ?	0:497.6	no-rom
-17	4	Ðèþ$à.	Yes.  The minapattu in this hotel is very small.  One or two are not sufficient for me.	మహా. : అవును. ఈ హోటల్లో మినపట్టు చాలా చిన్నది. నాకు ఒకటీ రెండూ చాలవు.	ocr		Ðèþ$à. : AÐèþ#¯èþ$.  D çßZrÌZÏ Ñ$¯èþç³r$t ^éÌê _¯èþ²¨.  ¯éMæü$ JMæüsîý Æðÿ…yæþ* ^éËÐèþ#.	0:528.0;0:543.3;0:558.5	no-rom
-17	5	A…fÄæý$Å	Alright.  Bring three minapattus for him; coffee for us, and milk for the child.	అంజయ్య : సరే] ఆయనకు మూడు మినపట్లు తీసుకురా! మాకు కాఫీ; పాపకు పాలు.	ocr		A…fÄæý$Å : çÜÆóÿ!  BÄæý$¯èþMæü$ Ðèþ$*yæþ$ Ñ$¯èþç³r$Ï ¡çÜ$Mæü$Æ>!  Ðèþ*Mæü$ M>ïœ; ´ëç³Mæü$ ´ëË$.	0:588.9;0:604.1;0:619.4	no-rom ocr-suspect
-17	6	Ææÿ†Æ>ÐŒþ$	Is this child your daughter?	రతిరామ్‌. : ఈ పాప మీ అమ్మాయా?	ocr		Ææÿ†Æ>ÐŒþ$ : D ´ëç³ Ò$ AÐèþ*ÃÄæý*?	1:179.8	no-rom
-17	7	A…fÄæý$Å	Yes.	అంజయ్య : అవును.	ocr		A…fÄæý$Å :  AÐèþ#¯èþ$.	1:209.4	no-rom
-17	8	Ææÿ†Æ>ÐŒþ$	What is your name, dear?	రతిరామ్‌. : పాపా నీ పేరేమిటమ్మా?	ocr		Ææÿ†Æ>ÐŒþ$ :  ´ë´ë!  ± õ³ÆóÿÑ$rÐèþ*Ã?	1:239.0	no-rom
-17	9	´ëç³	Jyothi.	పాప: జ్యోతి.	ocr		´ëç³ : gZÅ†.	1:268.6	no-rom
-17	10	Ææÿ†Æ>ÐŒþ$	A nice name.	రతిరామ్‌ : మంచి పేరు.	ocr		Ææÿ†Æ>ÐŒþ$ :  Ðèþ$…_ õ³Ææÿ$.	1:298.3	no-rom
-17	11	A…fÄæý$Å	Mr. Ratiram!  You are from Haryana.  Aren't you?  How many days' journey is it from your place to this place?	అంజయ్య : రతిరామ్‌గారూ! మీది హర్యానా కదూ! మీ ఊరినించి ఇక్కడికి ఎన్ని రోజుల ప్రయాణం?	ocr		A…fÄæý$Å : Ææÿ†Æ>ÐŒþ$V>Ææÿ*!  Ò$¨ çßýÆ>Å¯é Mæü§æþ*!  Ò$ FÇ°…_ CMæüPyìþMìü G°² ÆøkË {ç³Äæý*×ý…?	1:327.9;1:342.7;1:357.5	no-rom
-17	12	Ææÿ†Æ>ÐŒþ$	It is two nights and three days' journey, sir!	రతిరామ్‌ : రెండు రాత్రిళ్ళు మూడు పగళ్ళ 'ప్రయాణమండీ!	ocr		Ææÿ†Æ>ÐŒþ$ :  Æðÿ…yæþ$ Æ>{†âæý$å Ðèþ$*yæþ$ ç³Væüâæýå {ç³Äæý*×ýÐèþ$…yîþ!	1:387.0;1:401.8	no-rom
-17	13	A…fÄæý$Å	So, your place is far from here!	అంజయ్య : అయితే మీ ఊరు ఇకృజ్ణించి చాలా దూరమన్నమాట!	ocr		A…fÄæý$Å : AÆÿ$$™óþ Ò$ FÆæÿ$ CMæüP×ìý~…_ ^éÌê §æþ*ÆæÿÐèþ$¯èþ²Ðèþ*r!	1:431.4;1:446.2	no-rom
-17	14	Ææÿ†Æ>ÐŒþ$	Yes, sir!  It's about thousand miles.  The train journey is about eight hundred and eighty miles.  After that, it is one hundred and twenty miles by bus.	'రతిరామ్‌ : అవునండీ! దాదాపు వెయ్యి మైళ్ళు. సుమారు ఎనిమిది వందల ఎనభై వెళ్ళు ర్షెలు ప్రయాణం. అక్కణ్ణించి నూట ఇరవై మైళ్ళు బస్సు ప్రయాణం.	ocr		Ææÿ†Æ>ÐŒþ$ :  AÐèþ#¯èþ…yîþ!  §é§éç³# ÐðþÆÿ$$Å Ððþ$Oâæý$å. çÜ$Ðèþ*Ææÿ$ G°Ñ$¨ Ðèþ…§æþË G¯èþ¿ñýO Ððþ$Oâæý$å ÆðÿOË$ {ç³Äæý*×ý…. AMæüP×ìý~…_ ¯èþ*r CÆæÿÐðþO Ððþ$Oâæý$å ºçÜ$Þ {ç³Äæý*×ý….	1:475.9;1:490.7;1:505.5;1:520.3;1:535.1	no-rom
-17	15	A…fÄæý$Å	Mr. Mahapatra!  Your native place is in Orissa.  Isn't it?	అంజయ్య : మహాపాత్ర గారూ! మీ ఊరు ఒరిస్సాలో ఉంది కదూ!	ocr		A…fÄæý$Å : Ðèþ$à´ë{™èþ V>Ææÿ*!  Ò$ FÆæÿ$ JÇÝëÞÌZ E…¨ Mæü§æþ*!	1:564.6;1:579.4	no-rom
-17	16	Ðèþ$à´ë{™èþ	Yes, sir!	మహాపాత్ర : అవునండీ.	ocr		Ðèþ$à´ë{™èþ : AÐèþ#¯èþ…yîþ.	1:609.4	no-rom
-17	17	A…fÄæý$Å	What is the distance to your place from here?	అంజయ్య : మీ ఊరికి ఇక్కణ్ణించి ఎంత దూరం?	ocr		A…fÄæý$Å : Ò$ FÇMìü CMæüP×ìý~…_ G…™èþ §æþ*Ææÿ…?	2:178.9;2:192.9	no-rom
-17	18	çÐèþ$à´ë{™èþ	Four hundred and ninetyone miles.	మహాపాత్ర : నాలుగు వందల తొంభై ఒక్క మైళ్ళు.	ocr		çÐèþ$à´ë{™èþ : ¯éË$Væü$ Ðèþ…§æþË ™ö…¿ñýO JMæüP Ððþ$Oâæý$å.	2:220.8;2:234.8	no-rom
-17	19	A…fÄæý$Å	Is it two days' journey?	అంజయ్య : రెండు రోజుల ప్రయాణమా?	ocr		A…fÄæý$Å : Æðÿ…yæþ$ ÆøkË {ç³Äæý*×ýÐèþ*?	2:262.6	no-rom
-17	20	Ðèþ$à´ë{™èþ	We don't need two days, sir!  It is only a night and a day. Hari!  How far is your place from here?	మహాపాత్ర : రెండు రోజులు అక్షర్లేదండీ! ఒక రాత్రీ ఒక పగలూ చాలు. హరీ! మీ ఊరికి ఇక్కణ్జించి ఎంత దూరం?	ocr		Ðèþ$à´ë{™èþ : Æðÿ…yæþ$ ÆøkË$ AMæüPÆóÿÏ§æþ…yîþ!  JMæü Æ>{¡ JMæü ç³VæüË* ^éË$.  çßýÈ! Ò$ FÇMìü CMæüP×ìý~…_ G…™èþ §æþ*Ææÿ…?	2:290.6;2:304.6;2:318.4;2:332.4	no-rom
-17	21	çßýÇ	About three hundred kilometers, and one kilometer for my house from the railway sta- tion.	హరి : సుమారు మూడు వందల కిలోమీటర్లు. రైలొస్టేషన్‌ నించి ఇంటికి ఒక కిలోమీటరు.	ocr		çßýÇ : çÜ$Ðèþ*Ææÿ$ Ðèþ$*yæþ$ Ðèþ…§æþË MìüÌZÒ$rÆæÿ$Ï. ÆðÿOÌŒýõÜtçÙ¯Œþ °…_ C…sìýMìü JMæü MìüÌZÒ$rÆæÿ$.	2:360.4;2:374.2;2:388.2	no-rom
-17	22	Ðèþ$à´ë{™èþ	What is the fare?	మహాపాత్ర : ట్కొట్టు ఎంత?	ocr		Ðèþ$à´ë{™èþ : sìýMðüPr$t G…™èþ?	2:416.2	no-rom
-17	23	Ðèþ$*Ç¢	Roughly one hundred and fifty rupees.	మూర్తి : సుమారు నూటయాభై రూపాయలు.	ocr		Ðèþ$*Ç¢ : çÜ$Ðèþ*Ææÿ$ ¯èþ*rÄæý*¿ñýO Ææÿ*´ëÄæý$Ë$.	2:444.0	no-rom
-17	24	Ææÿ†Æ>ÐŒþ$	Mr. Anjayya!  How many days' journey to your place?	'రతిరామ్‌ : అంజయ్యగారూ! మీ ఊరికి ఎన్ని రోజుల ప్రయాణం?	ocr		Ææÿ†Æ>ÐŒþ$ :  A…fÄæý$ÅV>Ææÿ*! Ò$ FÇMìü G°² ÆøkË {ç³Äæý*×ý…?	2:472.0;2:485.8	no-rom
-17	25	A…fÄæý$Å	This itself is my home-town.	అంజయ్య : మా ఊరు ఇదే!	ocr		A…fÄæý$Å : Ðèþ* FÆæÿ$ C§óþ!	2:513.8	no-rom
-17	26	Ææÿ†Æ>ÐŒþ$	I see!  How far is your house?	'రతిరామ్‌ :_అలాగా! అయితే, మీ ఇంటికి ఎంత దూరం?	ocr		Ææÿ†Æ>ÐŒþ$ :  AÌêV>!  AÆÿ$$™óþ, Ò$ C…sìýMìü G…™èþ §æþ*Ææÿ…?	2:541.6;2:555.6	no-rom
-17	27	A…fÄæý$Å	From where, sir?	అంజయ్య : ఎక్కణ్ణించండీ!	ocr		A…fÄæý$Å : GMæüP×ìý~…^èþ…yîþ!	2:583.6	no-rom
-17	28	Ææÿ†Æ>ÐŒþ$	From here.	'రతిరామ్‌ : ఇకృజ్ణించేనండీ!	ocr		Ææÿ†Æ>ÐŒþ$ :  CMæüP×ìý~…^óþ¯èþ…yîþ!	2:612.2	no-rom
-17	29	A…fÄæý$Å	It's very near.  About a furlong.	అంజయ్య : చాలా దగ్గర. సుమారు ఒక ఫ్రర్గాంగు.	ocr		A…fÄæý$Å : ^éÌê §æþVæüYÆæÿ.  çÜ$Ðèþ*Ææÿ$ JMæü çœÆ>Ï…Væü$.	3:179.8;3:194.8	no-rom
-17	30	çÜÆæÿÓÆŠÿ	Here is coffee, sir!  Papa!  This milk is for you.	సర్వర్‌: ఇదుగోనండీ కాఫీ. పాపా, ఇవిగో నీకు పాలు.	ocr		çÜÆæÿÓÆŠÿ : C§æþ$Vø¯èþ…yîþ M>ïœ.  ´ë´ë, CÑVø ±Mæü$ ´ëË$.	3:209.4;3:224.2	no-rom
-17	31	Ðèþ$à´ë{™èþ	Ratiram!  How is the coffee?  Is it good?	మహాపాత్ర : రతిరామ్‌! కాఫీ ఎలా ఉంది? బాగున్నదా?	ocr		Ðèþ$à´ë{™èþ : Ææÿ†Æ>ÐŒþ$!  M>ïœ GÌê E…¨? »êVæü$¯èþ²§é?	3:253.8;3:268.7	no-rom
-17	32	Ææÿ†Æ>ÐŒþ$	It's not good.  It is bitter.  Is the milk good, dear?	రతిరామ్‌ : బాగా లేదు. చేదుగా ఉన్నది. ఏమమ్మా! పాలు బాగున్నాయా?	ocr		Ææÿ†Æ>ÐŒþ$ :  »êV> Ìôý§æþ$.  ^óþ§æþ$V> E¯èþ²¨. HÐèþ$Ðèþ*Ã!  ´ëË$ »êVæü$¯é²Äæý*?	3:298.3;3:313.1	no-rom
-17	33	´ëç³	It's not sweet, sir!  It is insipid.	పాప : తియ్యగా లేవండీ! చప్పగా ఉన్నాయి.	ocr		´ëç³ : †Äæý$ÅV> ÌôýÐèþ…yîþ!  ^èþç³µV> E¯é²Æÿ$$.	3:342.7;3:357.6	no-rom
-17	34	A…fÄæý$Å	Hey, you!  Is this coffee or decoction?	అంజయ్య. : ఏమయ్యా! ఇది కాఫీనా? 'కషాయమా?	ocr		A…fÄæý$Å : HÐèþ$Äæý*Å!  C¨ M>ïœ¯é? MæüÚëÄæý$Ðèþ*?	3:387.0;3:401.8	no-rom
-17	35	çÜÆæÿÓÆŠÿ	Which one, sir?	సర్వర్‌: ఏదండీ?	ocr		çÜÆæÿÓÆŠÿ : H§æþ…yîþ?	3:431.4	no-rom
-17	36	A…fÄæý$Å	This one! Why is this so bitter? Don't you have sugar in your hotel?	అంజయ్య : ఇదేనయ్యా! _ ఇంత చేదుగా ఉందేం? పంచదార లేదా మీ హోటల్లో?	ocr		A…fÄæý$Å : C§óþ¯èþÄæý*Å!  C…™èþ ^óþ§æþ$V> E…§óþ…?  ç³…^èþ§éÆæÿ Ìôý§é Ò$ çßZrÌZÏ?	3:461.1;3:475.9;3:490.7	no-rom
-17	37	°…VæüÄæý$Å	It's all right for me.	నింగయ్య : నాకు బాగానే ఉంది.	ocr		°…VæüÄæý$Å : ¯éMæü$ »êV>¯óþ E…¨.	3:520.3	no-rom
-17	38	A…fÄæý$Å	It is your habit to have coffee without sugar.  You may not need sugar.  But I need it.	అంజయ్య : నీకు చేదు కాఫీ అలవాటు. నీకు పంచదార అక్షర్లేదు... నాకు కావాలి.	ocr		A…fÄæý$Å : ±Mæü$ ^óþ§æþ$ M>ïœ AËÐér$. ±Mæü$ ç³…^èþ§éÆæÿ AMæüPÆóÿÏ§æþ$.  ¯éMæü$ M>ÐéÍ.	3:549.8;3:564.6;3:579.4	no-rom
-17	39	°…VæüÄæý$Å	I am not accustomed to sweets.	నింగయ్య : నాకు తీపి అలవాటు లేదు.	ocr		°…VæüÄæý$Å : ¯éMæü$ ¡í³ AËÐér$ Ìôý§æþ$.	3:609.4	no-rom
-17	40	´ëç³	I too need sugar.	పాప: నాకు కూడా కావాలి పంచదార.	ocr		´ëç³ : ¯éMæü$ Mæü*yé M>ÐéÍ ç³…^èþ§éÆæÿ.	4:179.8	no-rom
-17	41	A…fÄæý$Å	All right, my dear	అంజయ్య : సరేనమ్మా!	ocr		A…fÄæý$Å : çÜÆóÿ¯èþÐèþ*Ã!	4:208.8	no-rom
-17	42	çÜÆæÿÓÆŠÿ	Here is sugar, sir!	సర్వర్‌: ఇదుగోనండీ పంచదార.	ocr		çÜÆæÿÓÆŠÿ : C§æþ$Vø¯èþ…yîþ ç³…^èþ§éÆæÿ.	4:237.6	no-rom
-17	43	A…fÄæý$Å	I don't need that much sugar. Half of it is sufficient.	అంజయ్య : అంత పంచదార అక్ష్లేదు. సగం చాలు.	ocr		A…fÄæý$Å : A…™èþ ç³…^èþ§éÆæÿ AMæüPÆóÿÏ§æþ$.  çÜVæü… ^éË$.	4:266.2;4:280.6	no-rom
-17	44	´ëç³	I too don't need that much.  Half of it is fine.	పాప. : నాకు కూడా అంత అక్లేదు; సగం చాలు.	ocr		´ëç³ : ¯éMæü$ Mæü*yé A…™èþ AMæüPÆóÿÏ§æþ$; çÜVæü… ^éË$.	4:309.5;4:323.9	no-rom
-17	45	Ææÿ†Æ>ÐŒþ$	Half of it is not enough for me.	రతిరామ్‌ : నాకు సగం చాలదు.	ocr		Ææÿ†Æ>ÐŒþ$ : ¯éMæü$ çÜVæü… ^éË§æþ$.	4:352.5	no-rom
-17	46	A…fÄæý$Å	Now it is good.	అంజయ్య : ఇప్పుడు బాగుంది.	ocr		A…fÄæý$Å : Cç³šyæþ$ »êVæü$…¨.	4:381.3	no-rom
-17	47	Ææÿ†Æ>ÐŒþ$	It's very good, indeed. . The larger the tree, the greater the breeze.	రతిరామ్‌ : చాలా బాగుంది. 'ఎంత చెట్టు కంత గాలి.	ocr		Ææÿ†Æ>ÐŒþ$ : ^éÌê »êVæü$…¨. G…™èþ ^ðþr$t Mæü…™èþ V>Í	4:410.3;4:556.6	no-rom
+guid	lesson	seq	speaker	en	te	te_src	rom	legacy	keys	flags
+I0aeaf2eda0e2	17	1	çÜÆæÿÓÆŠÿ	What do you want, sir?	సర్వర్‌: ఏం కావాలండీ?	ocr		çÜÆæÿÓÆŠÿ : H… M>ÐéË…yîþ?	0:436.7	no-rom
+Ic6a1a6023a06	17	2	Ðèþ$à´ë{™èþ	I want three minapattus.	మహాపాత్ర : నాకు మూడు మినపట్లు కావాలి.	ocr		Ðèþ$à´ë{™èþ :  ¯éMæü$ Ðèþ$*yæþ$ Ñ$¯èþç³r$Ï M>ÐéÍ.	0:467.1	no-rom
+Ida3fb328a52d	17	3	Ææÿ†Æ>ÐŒþ$	Three minapattus!	రతిరామ్‌.. : మూడు మినపట్లా?	ocr		Ææÿ†Æ>ÐŒþ$ : Ðèþ$*yæþ$ Ñ$¯èþç³sêÏ?	0:497.6	no-rom
+Ibf85209fa314	17	4	Ðèþ$à.	Yes.  The minapattu in this hotel is very small.  One or two are not sufficient for me.	మహా. : అవును. ఈ హోటల్లో మినపట్టు చాలా చిన్నది. నాకు ఒకటీ రెండూ చాలవు.	ocr		Ðèþ$à. : AÐèþ#¯èþ$.  D çßZrÌZÏ Ñ$¯èþç³r$t ^éÌê _¯èþ²¨.  ¯éMæü$ JMæüsîý Æðÿ…yæþ* ^éËÐèþ#.	0:528.0;0:543.3;0:558.5	no-rom
+Ifedf29b30cbf	17	5	A…fÄæý$Å	Alright.  Bring three minapattus for him; coffee for us, and milk for the child.	అంజయ్య : సరే] ఆయనకు మూడు మినపట్లు తీసుకురా! మాకు కాఫీ; పాపకు పాలు.	ocr		A…fÄæý$Å : çÜÆóÿ!  BÄæý$¯èþMæü$ Ðèþ$*yæþ$ Ñ$¯èþç³r$Ï ¡çÜ$Mæü$Æ>!  Ðèþ*Mæü$ M>ïœ; ´ëç³Mæü$ ´ëË$.	0:588.9;0:604.1;0:619.4	no-rom ocr-suspect
+Ia0b485ee8bef	17	6	Ææÿ†Æ>ÐŒþ$	Is this child your daughter?	రతిరామ్‌. : ఈ పాప మీ అమ్మాయా?	ocr		Ææÿ†Æ>ÐŒþ$ : D ´ëç³ Ò$ AÐèþ*ÃÄæý*?	1:179.8	no-rom
+I36a8b09f1b1e	17	7	A…fÄæý$Å	Yes.	అంజయ్య : అవును.	ocr		A…fÄæý$Å :  AÐèþ#¯èþ$.	1:209.4	no-rom
+Ic53d430e3499	17	8	Ææÿ†Æ>ÐŒþ$	What is your name, dear?	రతిరామ్‌. : పాపా నీ పేరేమిటమ్మా?	ocr		Ææÿ†Æ>ÐŒþ$ :  ´ë´ë!  ± õ³ÆóÿÑ$rÐèþ*Ã?	1:239.0	no-rom
+I4560e16cc932	17	9	´ëç³	Jyothi.	పాప: జ్యోతి.	ocr		´ëç³ : gZÅ†.	1:268.6	no-rom
+I6a3c50cd1ea7	17	10	Ææÿ†Æ>ÐŒþ$	A nice name.	రతిరామ్‌ : మంచి పేరు.	ocr		Ææÿ†Æ>ÐŒþ$ :  Ðèþ$…_ õ³Ææÿ$.	1:298.3	no-rom
+I1ef201952cec	17	11	A…fÄæý$Å	Mr. Ratiram!  You are from Haryana.  Aren't you?  How many days' journey is it from your place to this place?	అంజయ్య : రతిరామ్‌గారూ! మీది హర్యానా కదూ! మీ ఊరినించి ఇక్కడికి ఎన్ని రోజుల ప్రయాణం?	ocr		A…fÄæý$Å : Ææÿ†Æ>ÐŒþ$V>Ææÿ*!  Ò$¨ çßýÆ>Å¯é Mæü§æþ*!  Ò$ FÇ°…_ CMæüPyìþMìü G°² ÆøkË {ç³Äæý*×ý…?	1:327.9;1:342.7;1:357.5	no-rom
+I4252f62fbb52	17	12	Ææÿ†Æ>ÐŒþ$	It is two nights and three days' journey, sir!	రతిరామ్‌ : రెండు రాత్రిళ్ళు మూడు పగళ్ళ 'ప్రయాణమండీ!	ocr		Ææÿ†Æ>ÐŒþ$ :  Æðÿ…yæþ$ Æ>{†âæý$å Ðèþ$*yæþ$ ç³Væüâæýå {ç³Äæý*×ýÐèþ$…yîþ!	1:387.0;1:401.8	no-rom
+Idc031509cb3e	17	13	A…fÄæý$Å	So, your place is far from here!	అంజయ్య : అయితే మీ ఊరు ఇకృజ్ణించి చాలా దూరమన్నమాట!	ocr		A…fÄæý$Å : AÆÿ$$™óþ Ò$ FÆæÿ$ CMæüP×ìý~…_ ^éÌê §æþ*ÆæÿÐèþ$¯èþ²Ðèþ*r!	1:431.4;1:446.2	no-rom
+I0556f5f49fe6	17	14	Ææÿ†Æ>ÐŒþ$	Yes, sir!  It's about thousand miles.  The train journey is about eight hundred and eighty miles.  After that, it is one hundred and twenty miles by bus.	'రతిరామ్‌ : అవునండీ! దాదాపు వెయ్యి మైళ్ళు. సుమారు ఎనిమిది వందల ఎనభై వెళ్ళు ర్షెలు ప్రయాణం. అక్కణ్ణించి నూట ఇరవై మైళ్ళు బస్సు ప్రయాణం.	ocr		Ææÿ†Æ>ÐŒþ$ :  AÐèþ#¯èþ…yîþ!  §é§éç³# ÐðþÆÿ$$Å Ððþ$Oâæý$å. çÜ$Ðèþ*Ææÿ$ G°Ñ$¨ Ðèþ…§æþË G¯èþ¿ñýO Ððþ$Oâæý$å ÆðÿOË$ {ç³Äæý*×ý…. AMæüP×ìý~…_ ¯èþ*r CÆæÿÐðþO Ððþ$Oâæý$å ºçÜ$Þ {ç³Äæý*×ý….	1:475.9;1:490.7;1:505.5;1:520.3;1:535.1	no-rom
+I5f64017f157c	17	15	A…fÄæý$Å	Mr. Mahapatra!  Your native place is in Orissa.  Isn't it?	అంజయ్య : మహాపాత్ర గారూ! మీ ఊరు ఒరిస్సాలో ఉంది కదూ!	ocr		A…fÄæý$Å : Ðèþ$à´ë{™èþ V>Ææÿ*!  Ò$ FÆæÿ$ JÇÝëÞÌZ E…¨ Mæü§æþ*!	1:564.6;1:579.4	no-rom
+Id8715be559f4	17	16	Ðèþ$à´ë{™èþ	Yes, sir!	మహాపాత్ర : అవునండీ.	ocr		Ðèþ$à´ë{™èþ : AÐèþ#¯èþ…yîþ.	1:609.4	no-rom
+I1f69f5c75ea6	17	17	A…fÄæý$Å	What is the distance to your place from here?	అంజయ్య : మీ ఊరికి ఇక్కణ్ణించి ఎంత దూరం?	ocr		A…fÄæý$Å : Ò$ FÇMìü CMæüP×ìý~…_ G…™èþ §æþ*Ææÿ…?	2:178.9;2:192.9	no-rom
+Ic5fbf05fc338	17	18	çÐèþ$à´ë{™èþ	Four hundred and ninetyone miles.	మహాపాత్ర : నాలుగు వందల తొంభై ఒక్క మైళ్ళు.	ocr		çÐèþ$à´ë{™èþ : ¯éË$Væü$ Ðèþ…§æþË ™ö…¿ñýO JMæüP Ððþ$Oâæý$å.	2:220.8;2:234.8	no-rom
+I2e5d9b858e3e	17	19	A…fÄæý$Å	Is it two days' journey?	అంజయ్య : రెండు రోజుల ప్రయాణమా?	ocr		A…fÄæý$Å : Æðÿ…yæþ$ ÆøkË {ç³Äæý*×ýÐèþ*?	2:262.6	no-rom
+I91a6a009cc91	17	20	Ðèþ$à´ë{™èþ	We don't need two days, sir!  It is only a night and a day. Hari!  How far is your place from here?	మహాపాత్ర : రెండు రోజులు అక్షర్లేదండీ! ఒక రాత్రీ ఒక పగలూ చాలు. హరీ! మీ ఊరికి ఇక్కణ్జించి ఎంత దూరం?	ocr		Ðèþ$à´ë{™èþ : Æðÿ…yæþ$ ÆøkË$ AMæüPÆóÿÏ§æþ…yîþ!  JMæü Æ>{¡ JMæü ç³VæüË* ^éË$.  çßýÈ! Ò$ FÇMìü CMæüP×ìý~…_ G…™èþ §æþ*Ææÿ…?	2:290.6;2:304.6;2:318.4;2:332.4	no-rom
+If64d252b1bc2	17	21	çßýÇ	About three hundred kilometers, and one kilometer for my house from the railway sta- tion.	హరి : సుమారు మూడు వందల కిలోమీటర్లు. రైలొస్టేషన్‌ నించి ఇంటికి ఒక కిలోమీటరు.	ocr		çßýÇ : çÜ$Ðèþ*Ææÿ$ Ðèþ$*yæþ$ Ðèþ…§æþË MìüÌZÒ$rÆæÿ$Ï. ÆðÿOÌŒýõÜtçÙ¯Œþ °…_ C…sìýMìü JMæü MìüÌZÒ$rÆæÿ$.	2:360.4;2:374.2;2:388.2	no-rom
+I3c22f389e841	17	22	Ðèþ$à´ë{™èþ	What is the fare?	మహాపాత్ర : ట్కొట్టు ఎంత?	ocr		Ðèþ$à´ë{™èþ : sìýMðüPr$t G…™èþ?	2:416.2	no-rom
+I8a90e0aaa47e	17	23	Ðèþ$*Ç¢	Roughly one hundred and fifty rupees.	మూర్తి : సుమారు నూటయాభై రూపాయలు.	ocr		Ðèþ$*Ç¢ : çÜ$Ðèþ*Ææÿ$ ¯èþ*rÄæý*¿ñýO Ææÿ*´ëÄæý$Ë$.	2:444.0	no-rom
+Icfb7376c2b61	17	24	Ææÿ†Æ>ÐŒþ$	Mr. Anjayya!  How many days' journey to your place?	'రతిరామ్‌ : అంజయ్యగారూ! మీ ఊరికి ఎన్ని రోజుల ప్రయాణం?	ocr		Ææÿ†Æ>ÐŒþ$ :  A…fÄæý$ÅV>Ææÿ*! Ò$ FÇMìü G°² ÆøkË {ç³Äæý*×ý…?	2:472.0;2:485.8	no-rom
+I7e95baf3574e	17	25	A…fÄæý$Å	This itself is my home-town.	అంజయ్య : మా ఊరు ఇదే!	ocr		A…fÄæý$Å : Ðèþ* FÆæÿ$ C§óþ!	2:513.8	no-rom
+I8b7311ac8b46	17	26	Ææÿ†Æ>ÐŒþ$	I see!  How far is your house?	'రతిరామ్‌ :_అలాగా! అయితే, మీ ఇంటికి ఎంత దూరం?	ocr		Ææÿ†Æ>ÐŒþ$ :  AÌêV>!  AÆÿ$$™óþ, Ò$ C…sìýMìü G…™èþ §æþ*Ææÿ…?	2:541.6;2:555.6	no-rom
+Ie077dae9bbfb	17	27	A…fÄæý$Å	From where, sir?	అంజయ్య : ఎక్కణ్ణించండీ!	ocr		A…fÄæý$Å : GMæüP×ìý~…^èþ…yîþ!	2:583.6	no-rom
+I95f431b2df89	17	28	Ææÿ†Æ>ÐŒþ$	From here.	'రతిరామ్‌ : ఇకృజ్ణించేనండీ!	ocr		Ææÿ†Æ>ÐŒþ$ :  CMæüP×ìý~…^óþ¯èþ…yîþ!	2:612.2	no-rom
+I85283d06100c	17	29	A…fÄæý$Å	It's very near.  About a furlong.	అంజయ్య : చాలా దగ్గర. సుమారు ఒక ఫ్రర్గాంగు.	ocr		A…fÄæý$Å : ^éÌê §æþVæüYÆæÿ.  çÜ$Ðèþ*Ææÿ$ JMæü çœÆ>Ï…Væü$.	3:179.8;3:194.8	no-rom
+I7ffb6eac9959	17	30	çÜÆæÿÓÆŠÿ	Here is coffee, sir!  Papa!  This milk is for you.	సర్వర్‌: ఇదుగోనండీ కాఫీ. పాపా, ఇవిగో నీకు పాలు.	ocr		çÜÆæÿÓÆŠÿ : C§æþ$Vø¯èþ…yîþ M>ïœ.  ´ë´ë, CÑVø ±Mæü$ ´ëË$.	3:209.4;3:224.2	no-rom
+Ib1e3e2c1755f	17	31	Ðèþ$à´ë{™èþ	Ratiram!  How is the coffee?  Is it good?	మహాపాత్ర : రతిరామ్‌! కాఫీ ఎలా ఉంది? బాగున్నదా?	ocr		Ðèþ$à´ë{™èþ : Ææÿ†Æ>ÐŒþ$!  M>ïœ GÌê E…¨? »êVæü$¯èþ²§é?	3:253.8;3:268.7	no-rom
+I8d0ca77b9f94	17	32	Ææÿ†Æ>ÐŒþ$	It's not good.  It is bitter.  Is the milk good, dear?	రతిరామ్‌ : బాగా లేదు. చేదుగా ఉన్నది. ఏమమ్మా! పాలు బాగున్నాయా?	ocr		Ææÿ†Æ>ÐŒþ$ :  »êV> Ìôý§æþ$.  ^óþ§æþ$V> E¯èþ²¨. HÐèþ$Ðèþ*Ã!  ´ëË$ »êVæü$¯é²Äæý*?	3:298.3;3:313.1	no-rom
+I43e283334821	17	33	´ëç³	It's not sweet, sir!  It is insipid.	పాప : తియ్యగా లేవండీ! చప్పగా ఉన్నాయి.	ocr		´ëç³ : †Äæý$ÅV> ÌôýÐèþ…yîþ!  ^èþç³µV> E¯é²Æÿ$$.	3:342.7;3:357.6	no-rom
+I816e95f96d4a	17	34	A…fÄæý$Å	Hey, you!  Is this coffee or decoction?	అంజయ్య. : ఏమయ్యా! ఇది కాఫీనా? 'కషాయమా?	ocr		A…fÄæý$Å : HÐèþ$Äæý*Å!  C¨ M>ïœ¯é? MæüÚëÄæý$Ðèþ*?	3:387.0;3:401.8	no-rom
+I3a2c75158d2d	17	35	çÜÆæÿÓÆŠÿ	Which one, sir?	సర్వర్‌: ఏదండీ?	ocr		çÜÆæÿÓÆŠÿ : H§æþ…yîþ?	3:431.4	no-rom
+I0aa6a1702558	17	36	A…fÄæý$Å	This one! Why is this so bitter? Don't you have sugar in your hotel?	అంజయ్య : ఇదేనయ్యా! _ ఇంత చేదుగా ఉందేం? పంచదార లేదా మీ హోటల్లో?	ocr		A…fÄæý$Å : C§óþ¯èþÄæý*Å!  C…™èþ ^óþ§æþ$V> E…§óþ…?  ç³…^èþ§éÆæÿ Ìôý§é Ò$ çßZrÌZÏ?	3:461.1;3:475.9;3:490.7	no-rom
+I722d254703a4	17	37	°…VæüÄæý$Å	It's all right for me.	నింగయ్య : నాకు బాగానే ఉంది.	ocr		°…VæüÄæý$Å : ¯éMæü$ »êV>¯óþ E…¨.	3:520.3	no-rom
+Icdc39a4d867a	17	38	A…fÄæý$Å	It is your habit to have coffee without sugar.  You may not need sugar.  But I need it.	అంజయ్య : నీకు చేదు కాఫీ అలవాటు. నీకు పంచదార అక్షర్లేదు... నాకు కావాలి.	ocr		A…fÄæý$Å : ±Mæü$ ^óþ§æþ$ M>ïœ AËÐér$. ±Mæü$ ç³…^èþ§éÆæÿ AMæüPÆóÿÏ§æþ$.  ¯éMæü$ M>ÐéÍ.	3:549.8;3:564.6;3:579.4	no-rom
+Ia81511096986	17	39	°…VæüÄæý$Å	I am not accustomed to sweets.	నింగయ్య : నాకు తీపి అలవాటు లేదు.	ocr		°…VæüÄæý$Å : ¯éMæü$ ¡í³ AËÐér$ Ìôý§æþ$.	3:609.4	no-rom
+I4c0bc1af93c9	17	40	´ëç³	I too need sugar.	పాప: నాకు కూడా కావాలి పంచదార.	ocr		´ëç³ : ¯éMæü$ Mæü*yé M>ÐéÍ ç³…^èþ§éÆæÿ.	4:179.8	no-rom
+I0b25cdd04c7a	17	41	A…fÄæý$Å	All right, my dear	అంజయ్య : సరేనమ్మా!	ocr		A…fÄæý$Å : çÜÆóÿ¯èþÐèþ*Ã!	4:208.8	no-rom
+I3a4eca8e5590	17	42	çÜÆæÿÓÆŠÿ	Here is sugar, sir!	సర్వర్‌: ఇదుగోనండీ పంచదార.	ocr		çÜÆæÿÓÆŠÿ : C§æþ$Vø¯èþ…yîþ ç³…^èþ§éÆæÿ.	4:237.6	no-rom
+If17413ac33c5	17	43	A…fÄæý$Å	I don't need that much sugar. Half of it is sufficient.	అంజయ్య : అంత పంచదార అక్ష్లేదు. సగం చాలు.	ocr		A…fÄæý$Å : A…™èþ ç³…^èþ§éÆæÿ AMæüPÆóÿÏ§æþ$.  çÜVæü… ^éË$.	4:266.2;4:280.6	no-rom
+I0918cc2cfd9b	17	44	´ëç³	I too don't need that much.  Half of it is fine.	పాప. : నాకు కూడా అంత అక్లేదు; సగం చాలు.	ocr		´ëç³ : ¯éMæü$ Mæü*yé A…™èþ AMæüPÆóÿÏ§æþ$; çÜVæü… ^éË$.	4:309.5;4:323.9	no-rom
+Ia175a677efad	17	45	Ææÿ†Æ>ÐŒþ$	Half of it is not enough for me.	రతిరామ్‌ : నాకు సగం చాలదు.	ocr		Ææÿ†Æ>ÐŒþ$ : ¯éMæü$ çÜVæü… ^éË§æþ$.	4:352.5	no-rom
+I022d8b427626	17	46	A…fÄæý$Å	Now it is good.	అంజయ్య : ఇప్పుడు బాగుంది.	ocr		A…fÄæý$Å : Cç³šyæþ$ »êVæü$…¨.	4:381.3	no-rom
+I59e3b799cf8c	17	47	Ææÿ†Æ>ÐŒþ$	It's very good, indeed. . The larger the tree, the greater the breeze.	రతిరామ్‌ : చాలా బాగుంది. 'ఎంత చెట్టు కంత గాలి.	ocr		Ææÿ†Æ>ÐŒþ$ : ^éÌê »êVæü$…¨. G…™èþ ^ðþr$t Mæü…™èþ V>Í	4:410.3;4:556.6	no-rom

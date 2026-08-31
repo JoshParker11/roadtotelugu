@@ -1,24 +1,24 @@
-lesson	seq	speaker	en	rom	legacy	keys	flags
-16	1	çÜÆæÿÓÆŠÿ	Sir, What tiffin do you want?		çÜÆæÿÓÆŠÿ : HÐèþ$…yîþ!  Ò$Mæü$ sìýíœ¯Œþ H… M>ÐéÍ?	0:436.7;0:451.9	no-rom
-16	2	ÔèýÆæÿÃ	First I need water.  Then only tiffin.		ÔèýÆæÿÃ : Ðèþ$$…§æþ$ Ðèþ$…_±âæý$å M>ÐéÍ. ™èþÆ>Ó™èþ sìýíœ¯Œþ.	0:482.4;0:497.6	no-rom
-16	3	çÜÆæÿÓÆŠÿ	Water is here.		çÜÆæÿÓÆŠÿ : CÑVø, Ðèþ$…_±âæý$å.  CMæüPyóþ E¯é²Æÿ$$.	0:528.0;0:543.3	no-rom
-16	4	ÔèýÆæÿÃ	This water is not cold.		ÔèýÆæÿÃ : D ±âæý$å ^èþËÏV> ÌôýÐèþ#.	0:573.7	no-rom
-16	5	Ææÿ†Æ>ÐŒþ$	What tiffin is available?		Ææÿ†Æ>ÐŒþ$: sìýíœ¯Œþ HÐèþ$$…¨?	0:604.1	no-rom
-16	6	çÜÆæÿÓÆŠÿ	There are idli, puri, minapattu, pesarattu and upma		çÜÆæÿÓÆŠÿ : CyîþÏ ç³NÈ Ñ$¯èþç³r*t ò³çÜÆæÿr*t E¯é²Æÿ$$.	1:179.8;1:194.4	no-rom
-16	7	f¯èþ™éíÜ…VŠü	Is idlli hot?		f¯èþ™éíÜ…VŠü:  CyîþÏ ÐóþyìþV> E…§é?	1:223.2	no-rom
-16	8	çÜÆæÿÓÆŠÿ	No sir. Puri is hot. Minapattu and pesarattu are also hot.		çÜÆæÿÓÆŠÿ : Ìôý§æþ…yîþ.  ç³NÈ ÐóþyìþV> E…¨. Ñ$¯èþç³r*t ò³çÜÆæÿr*t Mæü*yé ÐóþyìþV> E¯é²Æÿ$$.	1:252.0;1:266.2;1:280.6	no-rom
-16	9	Ææÿ†Æ>ÐŒþ$	Hey Janatasing!  Do you want minapattu or pesarattu?		Ææÿ†Æ>ÐŒþ$: H… f¯èþ™éíÜ…VŠü!  ±Mæü$ Ñ$¯èþç³r$t M>ÐéÌê?  ò³çÜÆæÿr$t M>ÐéÌê?	1:309.4;1:323.8	no-rom
-16	10	f¯èþ™éíÜ…VŠü	I want two hot pesarattus but not minapattu .  What do you want Mrutyunjay?		f¯èþ™éíÜ…VŠü : ¯éMæü$ Æðÿ…yæþ$ Ðóþyìþ ò³çÜÆæÿr$Ï M>ÐéÍ. Ñ$¯èþç³r$t J§æþ$ª.  ±Móü… M>ÐéÍ Ðèþ$–™èþ$Å…fÄŒý$?	1:352.5;1:366.9;1:381.3	no-rom
-16	11	Ðèþ$–™èþ$Å…fÄŒý$	I want idli		Ðèþ$–™èþ$Å…fÄŒý$ :  ¯éMæü$ CyîþÏ M>ÐéÍ.	1:410.1	no-rom
-16	12	çÜÆæÿÓÆŠÿ	Idli is cold, sir.		çÜÆæÿÓÆŠÿ :  CyîþÏ ^èþËÏV> E¯èþ²§æþ…yîþ.	1:438.7	no-rom
-16	13	Ðèþ$–™èþ$Å…fÄŒý$	Then I want upma		Ðèþ$–™èþ$Å…fÄŒý$ : AÆÿ$$™óþ E´ëÃ M>ÐéÍ.	1:467.5	no-rom
-16	14	çÜÆæÿÓÆŠÿ	What do you want, sir?		çÜÆæÿÓÆŠÿ : Ò$Móü… M>ÐéÍ?	1:496.4	no-rom
-16	15	Ææÿ†Æ>ÐŒþ$	I want milk.		Ææÿ†Æ>ÐŒþ$: ¯éMæü$ ´ëË$ M>ÐéÍ.	1:525.0	no-rom
-16	16	çÜÆæÿÓÆŠÿ	Milk is not available, sir.  Coffee and tea are available.  Bourn- vita is also available.  What do you want among these?		çÜÆæÿÓÆŠÿ : ´ëË$ ÌôýÐèþ…yîþ.  M>ïœ E…¨; sîý E…¨.  »ZÆæÿ²Òsê Mæü*yé E¯èþ²¨. ÒsìýÌZ Ò$Móü… M>ÐéÍ?	1:553.8;1:568.2;1:583.0	no-rom
-16	17	Ææÿ†Æ>ÐŒþ$	I don't want anything.  I want milk.		Ææÿ†Æ>ÐŒþ$: ¯éMæü$ HÒ$ Ðèþ§æþ$ª.  ´ëÌôý M>ÐéÍ.	2:179.2	no-rom
-16	18	çÜÆæÿÓÆŠÿ	Milk is not available, sir.		çÜÆæÿÓÆŠÿ : ´ëË$ ÌôýÐèþ…yîþ.	2:208.0	no-rom
-16	19	Ææÿ†Æ>ÐŒþ$	Then I need only cold water.		Ææÿ†Æ>ÐŒþ$: AÆÿ$$™óþ ^èþËÏ° Ðèþ$…_±âæý$å M>ÐéÍ.	2:236.8	no-rom
-16	20	ÔèýÆæÿÃ	The drinking water available in this hotel is not cold.		ÔèýÆæÿÃ : D çßZrÌZÏ Ðèþ$…_±âæý$å ^èþËÏV> ÌôýÐèþ#.	2:265.4	no-rom
-16	21	Ðèþ$–™èþ$Å…fÄŒý$	All of us are here .  Then who is there in the class?		Ðèþ$–™èþ$Å…fÄŒý$ : Ðèþ$¯èþ… A…§æþÆæÿ… CMæüPyóþ E¯é²…. Ðèþ$Ç M>ÏçÜ$ÌZ GÐèþÆæÿ$¯é²Ææÿ$?	2:294.2;2:308.6	no-rom
-16	22	Ææÿ†Æ>ÐŒþ$	Nobody is there.  Something is reddish on that paper.  What is it?		Ææÿ†Æ>ÐŒþ$: GÐèþÆæÿ* ÌôýÆæÿ$.  B M>Æÿ$$™èþ… Ò$§æþ G{ÆæÿV> E…¨: HÑ$r¨?	2:337.3;2:351.7	no-rom
-16	23	ÔèýÆæÿÃ	It is a modern painting.		ÔèýÆæÿÃ : A¨ JMæü Ððþ*yæþÆæÿ¯Œþ ò³Æÿ$$…sìý…VŠü.	2:380.5	no-rom
+guid	lesson	seq	speaker	en	rom	legacy	keys	flags
+Ic5e79e80cfb6	16	1	çÜÆæÿÓÆŠÿ	Sir, What tiffin do you want?		çÜÆæÿÓÆŠÿ : HÐèþ$…yîþ!  Ò$Mæü$ sìýíœ¯Œþ H… M>ÐéÍ?	0:436.7;0:451.9	no-rom
+I0847cd0fd842	16	2	ÔèýÆæÿÃ	First I need water.  Then only tiffin.		ÔèýÆæÿÃ : Ðèþ$$…§æþ$ Ðèþ$…_±âæý$å M>ÐéÍ. ™èþÆ>Ó™èþ sìýíœ¯Œþ.	0:482.4;0:497.6	no-rom
+I5884e0ab8f1f	16	3	çÜÆæÿÓÆŠÿ	Water is here.		çÜÆæÿÓÆŠÿ : CÑVø, Ðèþ$…_±âæý$å.  CMæüPyóþ E¯é²Æÿ$$.	0:528.0;0:543.3	no-rom
+Iaed0b471a36e	16	4	ÔèýÆæÿÃ	This water is not cold.		ÔèýÆæÿÃ : D ±âæý$å ^èþËÏV> ÌôýÐèþ#.	0:573.7	no-rom
+I7814c249a46b	16	5	Ææÿ†Æ>ÐŒþ$	What tiffin is available?		Ææÿ†Æ>ÐŒþ$: sìýíœ¯Œþ HÐèþ$$…¨?	0:604.1	no-rom
+I8ae96bcb6c84	16	6	çÜÆæÿÓÆŠÿ	There are idli, puri, minapattu, pesarattu and upma		çÜÆæÿÓÆŠÿ : CyîþÏ ç³NÈ Ñ$¯èþç³r*t ò³çÜÆæÿr*t E¯é²Æÿ$$.	1:179.8;1:194.4	no-rom
+I43e1783cf375	16	7	f¯èþ™éíÜ…VŠü	Is idlli hot?		f¯èþ™éíÜ…VŠü:  CyîþÏ ÐóþyìþV> E…§é?	1:223.2	no-rom
+I022fdf571bda	16	8	çÜÆæÿÓÆŠÿ	No sir. Puri is hot. Minapattu and pesarattu are also hot.		çÜÆæÿÓÆŠÿ : Ìôý§æþ…yîþ.  ç³NÈ ÐóþyìþV> E…¨. Ñ$¯èþç³r*t ò³çÜÆæÿr*t Mæü*yé ÐóþyìþV> E¯é²Æÿ$$.	1:252.0;1:266.2;1:280.6	no-rom
+I4cad8ad57578	16	9	Ææÿ†Æ>ÐŒþ$	Hey Janatasing!  Do you want minapattu or pesarattu?		Ææÿ†Æ>ÐŒþ$: H… f¯èþ™éíÜ…VŠü!  ±Mæü$ Ñ$¯èþç³r$t M>ÐéÌê?  ò³çÜÆæÿr$t M>ÐéÌê?	1:309.4;1:323.8	no-rom
+Ib5e499505114	16	10	f¯èþ™éíÜ…VŠü	I want two hot pesarattus but not minapattu .  What do you want Mrutyunjay?		f¯èþ™éíÜ…VŠü : ¯éMæü$ Æðÿ…yæþ$ Ðóþyìþ ò³çÜÆæÿr$Ï M>ÐéÍ. Ñ$¯èþç³r$t J§æþ$ª.  ±Móü… M>ÐéÍ Ðèþ$–™èþ$Å…fÄŒý$?	1:352.5;1:366.9;1:381.3	no-rom
+I2506eb3506c6	16	11	Ðèþ$–™èþ$Å…fÄŒý$	I want idli		Ðèþ$–™èþ$Å…fÄŒý$ :  ¯éMæü$ CyîþÏ M>ÐéÍ.	1:410.1	no-rom
+Id645c6110ca1	16	12	çÜÆæÿÓÆŠÿ	Idli is cold, sir.		çÜÆæÿÓÆŠÿ :  CyîþÏ ^èþËÏV> E¯èþ²§æþ…yîþ.	1:438.7	no-rom
+Ic1108555d69e	16	13	Ðèþ$–™èþ$Å…fÄŒý$	Then I want upma		Ðèþ$–™èþ$Å…fÄŒý$ : AÆÿ$$™óþ E´ëÃ M>ÐéÍ.	1:467.5	no-rom
+I0aeaf2eda0e2	16	14	çÜÆæÿÓÆŠÿ	What do you want, sir?		çÜÆæÿÓÆŠÿ : Ò$Móü… M>ÐéÍ?	1:496.4	no-rom
+I37708cd3f9c1	16	15	Ææÿ†Æ>ÐŒþ$	I want milk.		Ææÿ†Æ>ÐŒþ$: ¯éMæü$ ´ëË$ M>ÐéÍ.	1:525.0	no-rom
+I18587ebad6c3	16	16	çÜÆæÿÓÆŠÿ	Milk is not available, sir.  Coffee and tea are available.  Bourn- vita is also available.  What do you want among these?		çÜÆæÿÓÆŠÿ : ´ëË$ ÌôýÐèþ…yîþ.  M>ïœ E…¨; sîý E…¨.  »ZÆæÿ²Òsê Mæü*yé E¯èþ²¨. ÒsìýÌZ Ò$Móü… M>ÐéÍ?	1:553.8;1:568.2;1:583.0	no-rom
+Ieeb47cc03e81	16	17	Ææÿ†Æ>ÐŒþ$	I don't want anything.  I want milk.		Ææÿ†Æ>ÐŒþ$: ¯éMæü$ HÒ$ Ðèþ§æþ$ª.  ´ëÌôý M>ÐéÍ.	2:179.2	no-rom
+I266990cd6b4f	16	18	çÜÆæÿÓÆŠÿ	Milk is not available, sir.		çÜÆæÿÓÆŠÿ : ´ëË$ ÌôýÐèþ…yîþ.	2:208.0	no-rom
+Ia24c57e50cbb	16	19	Ææÿ†Æ>ÐŒþ$	Then I need only cold water.		Ææÿ†Æ>ÐŒþ$: AÆÿ$$™óþ ^èþËÏ° Ðèþ$…_±âæý$å M>ÐéÍ.	2:236.8	no-rom
+I861fd59a3def	16	20	ÔèýÆæÿÃ	The drinking water available in this hotel is not cold.		ÔèýÆæÿÃ : D çßZrÌZÏ Ðèþ$…_±âæý$å ^èþËÏV> ÌôýÐèþ#.	2:265.4	no-rom
+I1149df3b931e	16	21	Ðèþ$–™èþ$Å…fÄŒý$	All of us are here .  Then who is there in the class?		Ðèþ$–™èþ$Å…fÄŒý$ : Ðèþ$¯èþ… A…§æþÆæÿ… CMæüPyóþ E¯é²…. Ðèþ$Ç M>ÏçÜ$ÌZ GÐèþÆæÿ$¯é²Ææÿ$?	2:294.2;2:308.6	no-rom
+I0a8ba85c7ff8	16	22	Ææÿ†Æ>ÐŒþ$	Nobody is there.  Something is reddish on that paper.  What is it?		Ææÿ†Æ>ÐŒþ$: GÐèþÆæÿ* ÌôýÆæÿ$.  B M>Æÿ$$™èþ… Ò$§æþ G{ÆæÿV> E…¨: HÑ$r¨?	2:337.3;2:351.7	no-rom
+I48479e488519	16	23	ÔèýÆæÿÃ	It is a modern painting.		ÔèýÆæÿÃ : A¨ JMæü Ððþ*yæþÆæÿ¯Œþ ò³Æÿ$$…sìý…VŠü.	2:380.5	no-rom

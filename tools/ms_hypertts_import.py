@@ -22,6 +22,7 @@ is more than one; --media skips the search entirely once you know the path.
 """
 import argparse
 import csv
+import hashlib
 import glob
 import os
 import re
@@ -67,6 +68,8 @@ def main():
     ap.add_argument('--force', action='store_true', help='overwrite audio already in the repo')
     ap.add_argument('--words', action='store_true',
                     help='these are per-headword clips; write them to audio/words/ instead')
+    ap.add_argument('--dest', help='write into this audio directory instead of ministories/audio '
+                                   '(use intensive/audio for the Intensive Course)')
     args = ap.parse_args()
 
     media = args.media or find_media()
@@ -79,14 +82,17 @@ def main():
 
     # Word clips live in their own subdirectory because they are keyed by WORD guid, not segment
     # guid — two different id spaces that must not share a namespace on disk.
-    out_dir = os.path.join(AUDIO, 'words') if args.words else AUDIO
+    base = os.path.abspath(args.dest) if args.dest else AUDIO
+    out_dir = os.path.join(base, 'words') if args.words else base
     os.makedirs(out_dir, exist_ok=True)
     copied = skipped = no_audio = missing_file = bad_row = foreign = 0
+    voiced_text = {}
     for row in rows:
         if len(row) < 3:
             bad_row += 1
             continue
         guid, _telugu, audio = row[0].strip(), row[1], row[2]
+        voiced_text[guid] = _telugu
         if not GUID.match(guid):
             foreign += 1     # not one of ours — see the GUID comment above
             continue
@@ -107,6 +113,26 @@ def main():
         copied += 1
 
     print(f'-> {out_dir}')
+
+    # The clip alone does not say which Telugu is inside it, and a segment id is derived from
+    # the English, so a re-translated line keeps pointing at the old audio. Recording the text
+    # each clip was made from is what lets build_ms_reader withhold audio that has gone stale
+    # instead of playing the previous wording under the new text.
+    if copied and not args.words:
+        man = os.path.join(base, 'audio_manifest.tsv') if args.dest else \
+              os.path.join(os.path.dirname(AUDIO), 'audio_manifest.tsv')
+        prev = {}
+        if os.path.exists(man):
+            with open(man, encoding='utf-8') as f:
+                prev = {r['guid']: r['te_sha1'] for r in csv.DictReader(f, delimiter='\t')}
+        for g, te in voiced_text.items():
+            prev[g] = hashlib.sha1((te or '').strip().encode('utf-8')).hexdigest()[:16]
+        with open(man, 'w', encoding='utf-8', newline='') as f:
+            w = csv.writer(f, delimiter='\t')
+            w.writerow(['guid', 'te_sha1'])
+            w.writerows(sorted(prev.items()))
+        print(f'audio manifest updated: {os.path.relpath(man, ROOT)}')
+
     print(f'copied {copied}, skipped {skipped} (already had audio), '
          f'{no_audio} had no [sound:...] tag yet, {missing_file} referenced a missing file, '
          f'{foreign} row(s) were not one of ours (foreign guid, ignored), '

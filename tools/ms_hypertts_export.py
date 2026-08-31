@@ -44,6 +44,7 @@ import csv
 import glob
 import os
 from msfiles import work_tsvs
+import ms_audio
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.normpath(os.path.join(HERE, '..'))
@@ -95,6 +96,8 @@ def main():
     ap.add_argument('--num', help='only this story number')
     ap.add_argument('--words', action='store_true',
                     help='export the distinct-word manifest instead of sentence segments')
+    ap.add_argument('--all', action='store_true',
+                    help='export every translated segment, current clips included')
     args = ap.parse_args()
 
     if args.words:
@@ -103,7 +106,7 @@ def main():
     with open(CATALOG, encoding='utf-8') as f:
         cat = {r['id']: r for r in csv.DictReader(f, delimiter='\t')}
 
-    seen, rows, dupes = {}, [], 0
+    seen, rows, dupes, have = {}, [], 0, 0
     for path in work_tsvs(WORK):
         sid = os.path.basename(path)[:-4]
         if args.num and int(cat[sid]['num']) != int(args.num):
@@ -116,8 +119,17 @@ def main():
                     dupes += 1
                     continue
                 seen[r['guid']] = True
+                # Stale counts as missing, the same rule ms_audio.py uses: a clip made from
+                # the previous translation is not this line's audio. Without this the export
+                # looked complete after the native batch while every clip said something else.
+                if not args.all and not ms_audio.is_stale(r):
+                    have += 1
+                    continue
                 rows.append((r['guid'], r['te'], '', r['en']))
 
+    if have:
+        print(f'{have} segment(s) already have a current clip — not re-exported '
+              f'(--all overrides)')
     if not rows:
         print('Nothing translated yet in that scope.')
         return

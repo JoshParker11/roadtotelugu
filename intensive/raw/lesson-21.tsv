@@ -1,32 +1,32 @@
-lesson	seq	speaker	en	rom	legacy	keys	flags
-21	1	MæüÐèþ$Ë	Ravi!  See that monkey.  It is jumping from this branch to that branch and from that branch to this branch.  Whose mango grove is this?		MæüÐèþ$Ë : ÆæÿÒ! B Mø†° ^èþ*yæþ$.  B MöÐèþ$Ã Ò$¨ °…_ D MöÐèþ$ÃÒ$¨Mìü D MöÐèþ$ÃÒ$¨°…_ B MöÐèþ$ÃÒ$¨Mìü §æþ*Mæü$™ø…¨.  D Ðèþ*Ñ$yìþ ™ør GÐèþ-Ç-¨?	0:434.9;0:449.7;0:464.5;0:479.3;0:494.1	no-rom
-21	2	ÆæÿÑ	Ours only.  Do you want mangoes.		ÆæÿÑ : Ðèþ*§óþ.  Ò$Mæü$ Ðèþ*Ñ$yìþ M>Äæý$Ë$ M>ÐéÌê?	0:523.8;0:538.6	no-rom
-21	3	ÑÐèþ$Ë	One is enough for me.		ÑÐèþ$Ë : ¯éMæü$ JMæü M>Äæý$ ^éË$.	0:568.2	no-rom
-21	4	MæüÐèþ$Ë	Ravi!  You climb the tree and pluck the mangoes.		MæüÐèþ$Ë : ¯èþ$Ðèþ#Ó ^ðþr$t GMæü$P ÆæÿÒ! M>Äæý$Ë$ MöÆÿ$$Å.	0:597.8;0:612.5	no-rom
-21	5	Ððþ*çßý¯Œþ	I am climbing it.		Ððþ*çßý¯Œþ : ¯óþ¯èþ$ GMæü$P™èþ$¯é²¯èþ$.	1:179.6	no-rom
-21	6	ÆæÿÑ	Be careful.  Climb slowly.  Rock that branch.		ÆæÿÑ : gê{Væü™èþ¢!  Ððþ$ËÏV> GMæü$P.  B MöÐèþ$Ã¯èþ$ Fç³#.	1:209.0;1:223.8	no-rom
-21	7	Ððþ*çßý¯Œþ	I am rocking it.		Ððþ*çßý¯Œþ : Fç³#™èþ$¯é²¯èþ$.	1:253.4	no-rom
-21	8	ÆæÿÑ	Which branch are you rocking? That small branch doesn’t have any mangoes.  Rock that big branch.		ÆæÿÑ : H MöÐèþ$Ã¯èþ$ Fç³#™èþ$¯é²Ðèþ#?  B _¯èþ² MöÐèþ$ÃMæü$ Ðèþ*Ñ$yìþ M>Äæý$Ë$ ÌôýÐèþ#.  B ò³§æþª MöÐèþ$Ã¯èþ$ Fç³#.	1:283.1;1:297.9;1:312.7	no-rom
-21	9	Ððþ*çßý¯Œþ	Okay.  Are the fruits falling down?		Ððþ*çßý¯Œþ : çÜÆóÿ, M>Äæý$Ë$ Æ>Ë$™èþ$¯é²Äæý*?	1:342.3	no-rom
-21	10	ÑÐèþ$Ë	Yes, They are.		ÑÐèþ$Ë : B! Æ>Ë$™èþ$¯é²Æÿ$$.	1:371.8	no-rom
-21	11	Ððþ*çßý¯Œþ	Are you picking up all the mangoes?		Ððþ*çßý¯Œþ : M>Äæý$Ë±² Ò$Ææÿ$ HÆæÿ$™èþ$¯é²Æ>?	1:401.4	no-rom
-21	12	MæüÐèþ$Ë	Yes, we are.		MæüÐèþ$Ë : B HÆæÿ$™èþ$¯é²….	1:431.0	no-rom
-21	13	Ððþ*çßý¯Œþ	Who is picking them up?		Ððþ*çßý¯Œþ : GÐèþÆæÿ$ HÆæÿ$™èþ$¯é²Ææÿ$?	1:460.6	no-rom
-21	14	MæüÐèþ$Ë	I am picking up.  Ravi is picking. Vimala is also picking.		MæüÐèþ$Ë : ¯óþ¯èþ$ HÆæÿ$™èþ$¯é²¯èþ$.  ÆæÿÑ HÆæÿ$™èþ$ &¯é²yæþ$.  ÑÐèþ$ËVæü*yé HÆæÿ$™ø…¨.	1:491.3;1:506.5	no-rom
-21	15	Ððþ*çßý¯Œþ	I am getting down from the tree. Are the mangoes sufficient?		Ððþ*çßý¯Œþ : ¯óþ¯èþ$ ^ðþr$tÒ$¨¯èþ$…_ ¨Væü$™èþ$¯é²¯èþ$. M>Äæý$Ë$ ^éÌê?	1:536.1;1:550.7	no-rom
-21	16	ÆæÿÑ	Yes.  Come down.  Be careful. The branch is breaking down.		ÆæÿÑ : B! ^éË$.  Mìü…¨Mìü Æ>!  gê{Væü™èþ¢. MöÐèþ$Ã ÑÆæÿ$Væü$™ø…¨.	1:580.4;1:595.2	no-rom
-21	17	Ððþ*çßý¯Œþ	It’s all right.  I am getting down the branch carefully. Hey!  Ramarao.  There was a boy who looked like you. Where (Which side) are you going?		Ððþ*çßý¯Œþ : ç³ÆæÿÐéÌôý§æþ$.  gê{Væü™èþ¢V>¯óþ ¨Væü$™èþ$¯é²¯èþ$. Ððþ…MæürÆ>Ðèþ$Äæý$Å : HÐðþ*ÄŒý$, Æ>Ðèþ*Æ>ÐŒþ! AMæüPyæþ JMæü Mæü${Æ>yæþ$ ±ÌêVóü E¯é²yøÄŒý$!  Gr$ Ððþâæý$¢¯é²Ðèþ#?	2:179.2;2:193.4;2:233.9;2:248.1;2:262.4	no-rom
-21	18	Æ>Ðèþ*	I am going to the railway station, sir.  My mother is arriving. She is bringing my elder sister from Guntur.		Æ>Ðèþ* : ÆðÿOË$ õÜtçÙ¯èþ$Mæü$ Ððþâæý$¢¯é²¯èþ…yîþ! Ðèþ* AÐèþ$ÃV>Ææÿ$ ÐèþçÜ$¢¯é²Ææÿ$. Væü$…r*Ææÿ$ °…_ Ðèþ* AMæüPÄæý$Å¯èþ$ ¡çÜ$MöçÜ$¢¯é²Ææÿ$.	2:290.8;2:305.0;2:319.2;2:333.4	no-rom
-21	19	Ððþ…Mæür	Come on, let’s go!  I am also going to the station.  What are you studying now?		Ððþ…Mæür: ç³§æþ, ¯óþ¯èþ$Væü*yé õÜtçÙ¯èþ$Móü Ððþâæý$¢¯é²¯èþ$. Cç³šyæþ$ ¯èþ$Ðèþ#Ó H… ^èþ§æþ$Ðèþ#™èþ$¯é²Ðèþ#?	2:361.8;2:376.0;2:390.2	no-rom
-21	20	Æ>Ðèþ*	I am studying B.E.		Æ>Ðèþ* : ¼.C. ^èþ§æþ$Ðèþ#™èþ$¯é²¯èþ$.	2:418.6	no-rom
-21	21	Ððþ…Mæür	Your father is striving hard to educate you.  You (should) also work hard.  Study well.		Ððþ…Mæür: ± ^èþ§æþ$Ðèþ#MøçÜ… Ò$ ¯é¯èþ²V>Ææÿ$ ^éÌê MæüçÙtç³yæþ$™èþ$¯é²Ææÿ$.  ¯èþ$Ðèþ#Ó Mæü*yé MæüçÙtç³yæþ$.  »êV>^èþ§æþ$Ðèþ#.	2:447.0;2:461.2;2:475.4	no-rom
-21	22	Æ>Ðèþ*	See, sir.  Some boy is running in that direction.		Æ>Ðèþ* : ^èþ*yæþ…yìþ, GÐèþÆø Mæü${Æ>yæþ$ Ar$ ç³ÇVðü™èþ$¢™èþ$¯é²yæþ$.	2:503.8;2:518.0	no-rom
-21	23	Ððþ…Mæür	Yes.  He looks like a thief.  He is running away.  You go and inform that policeman.		Ððþ…Mæür: AÐèþ#¯èþ$.  §ö…VæüÌêV> E¯é²yæþ$. ´ëÇ´ù™èþ$¯é²yæþ$.  Ayæþ$Vø B ´ùÎçÜ$Mæü$ ^ðþç³š, Ððþâæý$Ï.	2:546.4;2:560.6;2:574.8	no-rom
-21	24	Æ>Ðèþ*	No need, sir.  The police are also running after him.		Æ>Ðèþ* : AMæüPÆóÿÏ§æþ…yîþ!  ´ùÎçÜ$Ë$Væü*yé ÐéyìþMøçÜ… ç³ÇVðü™èþ$¢™èþ$¯é²Ææÿ…yîþ!	2:603.2;2:617.4	no-rom
-21	25	Ððþ…Mæür	Look here .  That thief is coming in this direction.  You also run. Catch him.		Ððþ…Mæür: Ayæþ$Vø ^èþ*yæþ$.  B §ö…Væü Cr$ ÐèþçÜ$¢¯é²yæþ$.  ¯èþ$Ðèþ#Ó Væü*yé ç³ÇVðü™èþ$¢! ç³r$tMø!	3:179.6;3:194.2;3:209.0	no-rom
-21	26	Æ>Ðèþ*	No need, sir.  The police are taking him away.  Come on; let’s go, sir!		Æ>Ðèþ* : AMæüPÆóÿÏ§æþ…yîþ! ´ùÎçÜ$Ë$ Ðé×ìý~ ¡çÜ$Mæü$´ù™èþ$¯é²Ææÿ$.  Æ>…yìþ.	3:238.6;3:253.4	no-rom
-21	27	Ððþ…Mæür	People are going in a hurry.  Is the train arriving?		Ððþ…Mæür: f¯èþ… çßýyéÐèþ#yìþV> Ððþâæý$¢¯é²Ææÿ$. º…yìþ ÐèþÝù¢…§é?	3:283.1;3:297.9	no-rom
-21	28	Æ>Ðèþ*	Yes, sir.  He is asking you something.		Æ>Ðèþ* : AÐèþ#¯èþ…yîþ!  ^èþ*yæþ…yìþ.  BÄæý$¯èþ Ñ$Ðèþ$ÃÍ² H§ø Ayæþ$Væü$™èþ$¯é²Ææÿ$.	3:327.5;3:342.3	no-rom
-21	29	Ððþ…Mæür	What do you want please?		Ððþ…Mæür: H… M>ÐéË…yîþ!	3:371.8	no-rom
-21	30	ÔóýQÆŠÿ	Are you Mr. Venkataramaiah? I am Sekhar.		ÔóýQÆŠÿ : Ò$Æóÿ¯é Ððþ…MæürÆ>Ðèþ$Äæý$ÅV>Ææÿ$? ¯óþ¯èþ$ ÔóýQÇ².	3:401.4;3:416.2	no-rom
-21	31	Ððþ…Mæür	I am coming here only for you. Come on; let us go.		Ððþ…Mæür: Ò$ MøçÜÐóþ$ ÐèþçÜ$¢¯é²¯èþ$.	3:445.8	no-rom
+guid	lesson	seq	speaker	en	rom	legacy	keys	flags
+Id67b7582e324	21	1	MæüÐèþ$Ë	Ravi!  See that monkey.  It is jumping from this branch to that branch and from that branch to this branch.  Whose mango grove is this?		MæüÐèþ$Ë : ÆæÿÒ! B Mø†° ^èþ*yæþ$.  B MöÐèþ$Ã Ò$¨ °…_ D MöÐèþ$ÃÒ$¨Mìü D MöÐèþ$ÃÒ$¨°…_ B MöÐèþ$ÃÒ$¨Mìü §æþ*Mæü$™ø…¨.  D Ðèþ*Ñ$yìþ ™ør GÐèþ-Ç-¨?	0:434.9;0:449.7;0:464.5;0:479.3;0:494.1	no-rom
+I0377c944773c	21	2	ÆæÿÑ	Ours only.  Do you want mangoes.		ÆæÿÑ : Ðèþ*§óþ.  Ò$Mæü$ Ðèþ*Ñ$yìþ M>Äæý$Ë$ M>ÐéÌê?	0:523.8;0:538.6	no-rom
+I0ef22cb3980b	21	3	ÑÐèþ$Ë	One is enough for me.		ÑÐèþ$Ë : ¯éMæü$ JMæü M>Äæý$ ^éË$.	0:568.2	no-rom
+Ibbdb2b6356c6	21	4	MæüÐèþ$Ë	Ravi!  You climb the tree and pluck the mangoes.		MæüÐèþ$Ë : ¯èþ$Ðèþ#Ó ^ðþr$t GMæü$P ÆæÿÒ! M>Äæý$Ë$ MöÆÿ$$Å.	0:597.8;0:612.5	no-rom
+Ic93086e8bb69	21	5	Ððþ*çßý¯Œþ	I am climbing it.		Ððþ*çßý¯Œþ : ¯óþ¯èþ$ GMæü$P™èþ$¯é²¯èþ$.	1:179.6	no-rom
+I91550ee77cf8	21	6	ÆæÿÑ	Be careful.  Climb slowly.  Rock that branch.		ÆæÿÑ : gê{Væü™èþ¢!  Ððþ$ËÏV> GMæü$P.  B MöÐèþ$Ã¯èþ$ Fç³#.	1:209.0;1:223.8	no-rom
+Ie62a7ce41042	21	7	Ððþ*çßý¯Œþ	I am rocking it.		Ððþ*çßý¯Œþ : Fç³#™èþ$¯é²¯èþ$.	1:253.4	no-rom
+I9d70742810cb	21	8	ÆæÿÑ	Which branch are you rocking? That small branch doesn’t have any mangoes.  Rock that big branch.		ÆæÿÑ : H MöÐèþ$Ã¯èþ$ Fç³#™èþ$¯é²Ðèþ#?  B _¯èþ² MöÐèþ$ÃMæü$ Ðèþ*Ñ$yìþ M>Äæý$Ë$ ÌôýÐèþ#.  B ò³§æþª MöÐèþ$Ã¯èþ$ Fç³#.	1:283.1;1:297.9;1:312.7	no-rom
+Ia2709f34723d	21	9	Ððþ*çßý¯Œþ	Okay.  Are the fruits falling down?		Ððþ*çßý¯Œþ : çÜÆóÿ, M>Äæý$Ë$ Æ>Ë$™èþ$¯é²Äæý*?	1:342.3	no-rom
+I91fdd65468ce	21	10	ÑÐèþ$Ë	Yes, They are.		ÑÐèþ$Ë : B! Æ>Ë$™èþ$¯é²Æÿ$$.	1:371.8	no-rom
+Iab476eac7431	21	11	Ððþ*çßý¯Œþ	Are you picking up all the mangoes?		Ððþ*çßý¯Œþ : M>Äæý$Ë±² Ò$Ææÿ$ HÆæÿ$™èþ$¯é²Æ>?	1:401.4	no-rom
+Iab0a6cfe0620	21	12	MæüÐèþ$Ë	Yes, we are.		MæüÐèþ$Ë : B HÆæÿ$™èþ$¯é²….	1:431.0	no-rom
+I91d99b4bbc01	21	13	Ððþ*çßý¯Œþ	Who is picking them up?		Ððþ*çßý¯Œþ : GÐèþÆæÿ$ HÆæÿ$™èþ$¯é²Ææÿ$?	1:460.6	no-rom
+Id7f045033aca	21	14	MæüÐèþ$Ë	I am picking up.  Ravi is picking. Vimala is also picking.		MæüÐèþ$Ë : ¯óþ¯èþ$ HÆæÿ$™èþ$¯é²¯èþ$.  ÆæÿÑ HÆæÿ$™èþ$ &¯é²yæþ$.  ÑÐèþ$ËVæü*yé HÆæÿ$™ø…¨.	1:491.3;1:506.5	no-rom
+Ie49616087519	21	15	Ððþ*çßý¯Œþ	I am getting down from the tree. Are the mangoes sufficient?		Ððþ*çßý¯Œþ : ¯óþ¯èþ$ ^ðþr$tÒ$¨¯èþ$…_ ¨Væü$™èþ$¯é²¯èþ$. M>Äæý$Ë$ ^éÌê?	1:536.1;1:550.7	no-rom
+I7eb773e4f94b	21	16	ÆæÿÑ	Yes.  Come down.  Be careful. The branch is breaking down.		ÆæÿÑ : B! ^éË$.  Mìü…¨Mìü Æ>!  gê{Væü™èþ¢. MöÐèþ$Ã ÑÆæÿ$Væü$™ø…¨.	1:580.4;1:595.2	no-rom
+I6944bcf95798	21	17	Ððþ*çßý¯Œþ	It’s all right.  I am getting down the branch carefully. Hey!  Ramarao.  There was a boy who looked like you. Where (Which side) are you going?		Ððþ*çßý¯Œþ : ç³ÆæÿÐéÌôý§æþ$.  gê{Væü™èþ¢V>¯óþ ¨Væü$™èþ$¯é²¯èþ$. Ððþ…MæürÆ>Ðèþ$Äæý$Å : HÐðþ*ÄŒý$, Æ>Ðèþ*Æ>ÐŒþ! AMæüPyæþ JMæü Mæü${Æ>yæþ$ ±ÌêVóü E¯é²yøÄŒý$!  Gr$ Ððþâæý$¢¯é²Ðèþ#?	2:179.2;2:193.4;2:233.9;2:248.1;2:262.4	no-rom
+I7ce34aed3d03	21	18	Æ>Ðèþ*	I am going to the railway station, sir.  My mother is arriving. She is bringing my elder sister from Guntur.		Æ>Ðèþ* : ÆðÿOË$ õÜtçÙ¯èþ$Mæü$ Ððþâæý$¢¯é²¯èþ…yîþ! Ðèþ* AÐèþ$ÃV>Ææÿ$ ÐèþçÜ$¢¯é²Ææÿ$. Væü$…r*Ææÿ$ °…_ Ðèþ* AMæüPÄæý$Å¯èþ$ ¡çÜ$MöçÜ$¢¯é²Ææÿ$.	2:290.8;2:305.0;2:319.2;2:333.4	no-rom
+Idd892d94ea53	21	19	Ððþ…Mæür	Come on, let’s go!  I am also going to the station.  What are you studying now?		Ððþ…Mæür: ç³§æþ, ¯óþ¯èþ$Væü*yé õÜtçÙ¯èþ$Móü Ððþâæý$¢¯é²¯èþ$. Cç³šyæþ$ ¯èþ$Ðèþ#Ó H… ^èþ§æþ$Ðèþ#™èþ$¯é²Ðèþ#?	2:361.8;2:376.0;2:390.2	no-rom
+If4ff34521efe	21	20	Æ>Ðèþ*	I am studying B.E.		Æ>Ðèþ* : ¼.C. ^èþ§æþ$Ðèþ#™èþ$¯é²¯èþ$.	2:418.6	no-rom
+Ia2461ea51c9b	21	21	Ððþ…Mæür	Your father is striving hard to educate you.  You (should) also work hard.  Study well.		Ððþ…Mæür: ± ^èþ§æþ$Ðèþ#MøçÜ… Ò$ ¯é¯èþ²V>Ææÿ$ ^éÌê MæüçÙtç³yæþ$™èþ$¯é²Ææÿ$.  ¯èþ$Ðèþ#Ó Mæü*yé MæüçÙtç³yæþ$.  »êV>^èþ§æþ$Ðèþ#.	2:447.0;2:461.2;2:475.4	no-rom
+I6941d78e7ef1	21	22	Æ>Ðèþ*	See, sir.  Some boy is running in that direction.		Æ>Ðèþ* : ^èþ*yæþ…yìþ, GÐèþÆø Mæü${Æ>yæþ$ Ar$ ç³ÇVðü™èþ$¢™èþ$¯é²yæþ$.	2:503.8;2:518.0	no-rom
+I3191987dd1a9	21	23	Ððþ…Mæür	Yes.  He looks like a thief.  He is running away.  You go and inform that policeman.		Ððþ…Mæür: AÐèþ#¯èþ$.  §ö…VæüÌêV> E¯é²yæþ$. ´ëÇ´ù™èþ$¯é²yæþ$.  Ayæþ$Vø B ´ùÎçÜ$Mæü$ ^ðþç³š, Ððþâæý$Ï.	2:546.4;2:560.6;2:574.8	no-rom
+I80c9e7e4c3f3	21	24	Æ>Ðèþ*	No need, sir.  The police are also running after him.		Æ>Ðèþ* : AMæüPÆóÿÏ§æþ…yîþ!  ´ùÎçÜ$Ë$Væü*yé ÐéyìþMøçÜ… ç³ÇVðü™èþ$¢™èþ$¯é²Ææÿ…yîþ!	2:603.2;2:617.4	no-rom
+Iaabccbace44a	21	25	Ððþ…Mæür	Look here .  That thief is coming in this direction.  You also run. Catch him.		Ððþ…Mæür: Ayæþ$Vø ^èþ*yæþ$.  B §ö…Væü Cr$ ÐèþçÜ$¢¯é²yæþ$.  ¯èþ$Ðèþ#Ó Væü*yé ç³ÇVðü™èþ$¢! ç³r$tMø!	3:179.6;3:194.2;3:209.0	no-rom
+I6abfd9ef4358	21	26	Æ>Ðèþ*	No need, sir.  The police are taking him away.  Come on; let’s go, sir!		Æ>Ðèþ* : AMæüPÆóÿÏ§æþ…yîþ! ´ùÎçÜ$Ë$ Ðé×ìý~ ¡çÜ$Mæü$´ù™èþ$¯é²Ææÿ$.  Æ>…yìþ.	3:238.6;3:253.4	no-rom
+I5bf21b029824	21	27	Ððþ…Mæür	People are going in a hurry.  Is the train arriving?		Ððþ…Mæür: f¯èþ… çßýyéÐèþ#yìþV> Ððþâæý$¢¯é²Ææÿ$. º…yìþ ÐèþÝù¢…§é?	3:283.1;3:297.9	no-rom
+Iec9efc529a79	21	28	Æ>Ðèþ*	Yes, sir.  He is asking you something.		Æ>Ðèþ* : AÐèþ#¯èþ…yîþ!  ^èþ*yæþ…yìþ.  BÄæý$¯èþ Ñ$Ðèþ$ÃÍ² H§ø Ayæþ$Væü$™èþ$¯é²Ææÿ$.	3:327.5;3:342.3	no-rom
+Ifac61f4fc225	21	29	Ððþ…Mæür	What do you want please?		Ððþ…Mæür: H… M>ÐéË…yîþ!	3:371.8	no-rom
+I0f4237a0cdbd	21	30	ÔóýQÆŠÿ	Are you Mr. Venkataramaiah? I am Sekhar.		ÔóýQÆŠÿ : Ò$Æóÿ¯é Ððþ…MæürÆ>Ðèþ$Äæý$ÅV>Ææÿ$? ¯óþ¯èþ$ ÔóýQÇ².	3:401.4;3:416.2	no-rom
+Iec6bdbb9289a	21	31	Ððþ…Mæür	I am coming here only for you. Come on; let us go.		Ððþ…Mæür: Ò$ MøçÜÐóþ$ ÐèþçÜ$¢¯é²¯èþ$.	3:445.8	no-rom

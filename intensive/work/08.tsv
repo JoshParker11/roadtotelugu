@@ -1,45 +1,45 @@
-lesson	seq	speaker	en	te	te_src	rom	legacy	keys	flags
-8	1	AÆæÿ$×ý	Hello, Madam! How are you doing?	అరుణ : ఏమండీ! బాగున్నారా!	ocr		AÆæÿ$×ý : HÐèþ$…yîþ! »êVæü$¯é²Æ>!	0:447.0	no-rom
-8	2	MæüÆæÿ$×ý	Come on, Aruna! How are you? Are you fine?	కరుణ : రా అరుణా! నువ్వెలా ఉన్నావు? “బాగున్నావా?	ocr		MæüÆæÿ$×ý : Æ> AÆæÿ$×ê! ¯èþ$ÐðþÓÌê E¯é²Ðèþ#? »êVæü$¯é²Ðé?	0:477.5;0:492.7	no-rom
-8	3	AÆæÿ$×ý	I am fine. Are all of you fine?	అరుణ : బాగున్నాను. మీరందరూ బాగున్నారా?	ocr		AÆæÿ$×ý :  »êVæü$¯é²¯èþ$. Ò$Ææÿ…§æþÆæÿ* »êVæü$¯é²Æ>?	0:523.2	no-rom
-8	4	MæüÆæÿ$×ý	Yes!  How is your father?	కరుణ : ఆ| మీ నాన్నగారెలా ఉన్నారు?	ocr		MæüÆæÿ$×ý : B! Ò$ ¯é¯èþ²V>ÆðÿÌê E¯é²Ææÿ$?	0:553.6	no-rom ocr-suspect
-8	5	AÆæÿ$×ý	He is fine.	అరుణ : బాగున్నారు.	ocr		AÆæÿ$×ý : »êVæü$¯é²Ææÿ$.	0:584.0	no-rom
-8	6	MæüÆæÿ$×ý	Sit. How is your younger brother?	కరుణ : కూర్చో. మీ తమ్ముడెలా ఉన్నాడు?	ocr		MæüÆæÿ$×ý : Mæü*Æøa. Ò$ ™èþÐèþ$$ÃyðþÌê E¯é²yæþ$?	0:614.5	no-rom
-8	7	AÆæÿ$×ý	He is fine. How is your baby?	అరుణ : బాగున్నాడు. మీ పాప బాగుందా?	ocr		AÆæÿ$×ý : »êVæü$¯é²yæþ$. Ò$ ´ëç³ »êVæü$…§é?	1:179.8	no-rom
-8	8	´ëç³	I am fine. Please don't sit in that chair. That is not all-right. Please sit in this chair.	'పాప : బాగున్నానండీ! ఆ కుర్చీలో కూర్చోకండి.. అది సరిగా లేదు. ఈ కుర్చీలో కూర్చోండి.	ocr		´ëç³ : »êVæü$¯é²¯èþ…yîþ! B Mæü$ÈaÌZ Mæü*ÆøaMæü…yìþ. A¨ çÜÇV> Ìôý§æþ$. D Mæü$ÈaÌZ Mæü*Æøa…yìþ.	1:210.2;1:225.4;1:240.7	no-rom
-8	9	AÆæÿ$×ý	Papa! come here. Take this doll.	అరుణ : పాపా! ఇలారా! ఈ బొమ్మ తీసుకో.	ocr		AÆæÿ$×ý : ´ë´ë! CÌêÆ>! D »ŸÐèþ$Ã ¡çÜ$Mø.	1:271.1	no-rom
-8	10	MæüÆæÿ$×ý	Go! Take it!	కరుణ : వెళ్లు తీసుకో.	ocr		MæüÆæÿ$×ý : Ððþâæý$Ï, ¡çÜ$Mø.	1:301.5	no-rom
-8	11	AÆæÿ$×ý	What are those books?	అరుణ : అవి ఏం పుస్తకాలండీ?	ocr		AÆæÿ$×ý : AÑ H… ç³#çÜ¢M>Ë…yîþ?	1:332.0	no-rom
-8	12	MæüÆæÿ$×ý	Those two are Telugu novels, these two are English novels.	కరుణ : అవి రెండూ తెలుగు నవలలు. ఇవి రెండూ ఇంగ్లీషు నవలలు.	ocr		MæüÆæÿ$×ý : AÑ Æðÿ…yæþ* ™ðþË$Væü$ ¯èþÐèþËË$. CÑ Æðÿ…yæþ* C…XÏçÙ$ ¯èþÐèþËË$.	1:362.4;1:377.7	no-rom
-8	13	AÆæÿ$×ý	Are these the Telugu novels?	అరుణ : ఇవేనా తెలుగు నవలలు? కరుణ : అవును. వీటి పేర్లు మంచిమనను,	ocr		AÆæÿ$×ý : CÐóþ¯é ™ðþË$Væü$ ¯èþÐèþËË$? Ðèþ$…_Ðèþ$¯èþçÜ$	1:408.1;1:434.5	no-rom
-8	14	MæüÆæÿ$×ý	Yes, Their names are (Good Heart) and (The life).	జితం	ocr		MæüÆæÿ$×ý : AÐèþ#¯èþ$. Òsìý õ³Ææÿ$Ï , iÑ-™èþ… -.	1:438.6;1:449.7;1:453.8	no-rom
-8	15	AÆæÿ$×ý	Who are the authors of those books?	అరుణ : వాటి రచయితలు ఎవరు?	ocr		AÆæÿ$×ý : Ðésìý Ææÿ^èþÆÿ$$™èþË$ GÐèþÆæÿ$?	1:484.2	no-rom
-8	16	MæüÆæÿ$×ý	These books are written by the same author, Aruna! Gopala - rao. Papa! Turn on that light. Turn on the fan also. Open the window shutters.	కరుణ : వీటి రదయిత ఒకరే అరుణా! గోపాలరావ్ర!, పాపా! ఆ లైటు వెయ్యమ్మా! ఫాను కూడా వెయ్యి! కిటికీ తలుపులు తియ్యి.	ocr		MæüÆæÿ$×ý : Òsìý Ææÿ^èþÆÿ$$™èþ JMæüÆóÿ AÆæÿ$×ê! Vø´ëËÆ>Ðèþ#! ´ë´ë! B ÌñýOr$ ÐðþÄæý$ÅÐèþ*Ã! ¸ë¯èþ$ Mæü*yé ÐðþÆÿ$$Å! MìüsìýMîü ™èþË$ç³#Ë$ †Æÿ$$Å.	1:514.7;1:529.9;1:545.1	no-rom
-8	17	AÆæÿ$×ý	Papa don't turn on the fan. It is cold. Shut the windows also.	అరుణ : ఫాను వెయ్యకు పాపా! చలిగా ఉంది. కిటికీలు కూడా ముయ్యి.	ocr		AÆæÿ$×ý : ¸ë¯èþ$ ÐðþÄæý$ÅMæü$ ´ë´ë! ^èþÍV> E…¨. MìüsìýMîüË$ Mæü*yé Ðèþ$$Æÿ$$Å.	1:590.8;1:606.0	no-rom
-8	18	MæüÆæÿ$×ý	Don't shut the window shutters so harsh, dear! shut them gently.	కరుణ : కిటికీ తలుపులు గట్టిగా వెయ్యకమ్మా! మెల్లగా వెయ్యి!	ocr		MæüÆæÿ$×ý : MìüsìýMîü ™èþË$ç³#Ë$ VæüsìýtV> ÐðþÄæý$ÅMæüÐèþ*Ã! Ððþ$ËÏV> ÐðþÆÿ$$Å!	2:179.6;2:194.2	no-rom
-8	19	AÆæÿ$×ý	Is Gopalarao the writer of those books?	అరుణ : గోపాలరావేనా వాటి రచయిత?	ocr		AÆæÿ$×ý : Vø´ëËÆ>Ðóþ¯é Ðésìý Ææÿ^èþÆÿ$$™èþ?	2:223.8	no-rom
-8	20	MæüÆæÿ$×ý	He is also a good poet.	కరుణ : ఆయన మంచి కవి కూడా!	ocr		MæüÆæÿ$×ý : BÄæý$¯èþ Ðèþ$…_ MæüÑ Mæü*yé!	2:253.4	no-rom
-8	21	AÆæÿ$×ý	Are those two his novels?	అరుణ : ఆ రెండూ ఆయన నవలలేనా?	ocr		AÆæÿ$×ý : B Æðÿ…yæþ* BÄæý$¯èþ ¯èþÐèþËÌôý¯é?	2:283.0	no-rom
-8	22	MæüÆæÿ$×ý	Yes. His younger brother is also a good poet.	కరుణ : ఆ! ఆయన తమ్ముడు కూడా మంచి కవి.	ocr		MæüÆæÿ$×ý : B! BÄæý$¯èþ ™èþÐèþ$$Ãyæþ$ Mæü*yé Ðèþ$…_ MæüÑ.	2:312.7;2:327.5	no-rom
-8	23	AÆæÿ$×ý	A poet? or a writer?	అరుణ : కవా? రచయితా?	ocr		AÆæÿ$×ý : MæüÐé? Ææÿ^èþÆÿ$$™é?	2:357.1	no-rom
-8	24	MæüÆæÿ$×ý	He is both. His novel is (The whirlpool).	కరుణ. : రెండూ! అతని నవల పేరు	ocr		MæüÆæÿ$×ý : Æðÿ…yæþ*! A™èþ° ¯èþÐèþË õ³Ææÿ$ çÜ$yìþVæü$…yæþ…	2:386.5;2:397.3	no-rom
-8	25	AÆæÿ$×ý	Are those two writers?	అరుణ : వాళ్లిద్దరూ రచయితలేనా?.	ocr		AÆæÿ$×ý : ÐéãÏ§æþªÆæÿ* Ææÿ^èþÆÿ$$™èþÌôý¯é?	2:431.0	no-rom
-8	26	MæüÆæÿ$×ý	Poets also.	కరుణ : కవులు కూడా!	ocr		MæüÆæÿ$×ý : MæüÐèþ#Ë$ Mæü*yé!	2:460.6	no-rom
-8	27	AÆæÿ$×ý	My brother is also a poet. Papa! Are the dolls nice?	అరుణ : మా తమ్ముడూ కవే! పాపా! బొమ్మలు, బాగున్నాయా?	ocr		AÆæÿ$×ý : Ðèþ* ™èþÐèþ$$Ãyæþ* MæüÐóþ! ´ë´ë! »ŸÐèþ$ÃË$ »êVæü$¯é²Äæý*?	2:490.2;2:505.1	no-rom
-8	28	´ë´ë	Nice, madam!	పాపా : బాగున్నాయండీ!	ocr		´ë´ë : »êVæü$¯é²Äæý$…yîþ!	2:534.5	no-rom
-8	29	AÆæÿ$×ý	Come here. Tell me your name. Sit by my side. dear!	అరుణ : ఇలారా! నీ పేరు చెప్పు! నా పక్కన 'కూర్చోమ్మా!	ocr		AÆæÿ$×ý : CÌêÆ>! ± õ³Ææÿ$ ^ðþç³š! ¯é ç³MæüP¯èþ Mæü*ÆøaÐèþ*Ã!	2:564.1;2:578.9	no-rom
-8	30	MæüÆæÿ$×ý	Go dear! Tell her your name.	కరుణ : వెళ్లమ్మా! నీ పేరు చెప్పు.	ocr		MæüÆæÿ$×ý : ÐðþâæýÏÐèþ*Ã! ± õ³Ææÿ$ ^ðþç³š.	2:608.6	no-rom
-8	31	´ëç³	My name is Lata. See this photograph, I am also in that. Is it nice?	పాప : నా పేరు అత. ఈ ఫోటో చూడండి. నేను కూడా ఉన్నాను, బాగుందా?	ocr		´ëç³ : ¯é õ³Ææÿ$ Ë™èþ. D ¸ùsZ ^èþ*yæþ…yìþ. ¯óþ¯èþ$ Mæü*yé E¯é²¯èþ$, »êVæü$…§é?	3:179.8;3:195.0	no-rom
-8	32	AÆæÿ$×ý	It is nice. Who are these four, Papa?	అరుణ : బాగుంది. వీళ్లు నలుగురూ ఎవరు. పాపా?	ocr		AÆæÿ$×ý : »êVæü$…¨. Òâæý$Ï ¯èþË$Væü$Ææÿ* GÐèþÆæÿ$ ´ë´ë?	3:225.4;3:240.7	no-rom
-8	33	´ëç³	She is my friend, Girija.	పాప : ఈమె నా స్నేహితురాలు, గిరిజ.	ocr		´ëç³ : DÐðþ$ ¯é õÜ²íßý™èþ$Æ>Ë$, WÇf.	3:271.1	no-rom
-8	34	AÆæÿ$×ý	Oh! Is she Girija?				AÆæÿ$×ý : KçßZ! DÐèþ* ( ) WÇf?	3:301.5	no-rom no-te
-8	35	´ëç³	yes.	పాప : అవును.	ocr		´ëç³ : AÐèþ#¯èþ$.	3:332.0	no-rom
-8	36	AÆæÿ$×ý	Are they younger sisters of your friend?	అరుణ : వాళ్లు నీ స్నేహితురాలి చెల్లెళ్ల?	ocr		AÆæÿ$×ý : Ðéâæý$Ï ± õÜ²íßý™èþ$Æ>Í ^ðþÌñýÏâêÏ?	3:362.4	no-rom
-8	37	´ëç³	These two are Girija's younger sisters. This is Rama Girija's younger sister. That is Uma, Girija's cousin. This is Suguna, a friend of Girija's sister. All these four are my friends.	పాప : వీళ్లు ఇద్దరూ గిరిజ చెల్లెళ్లు ఈమె రమ. గిరిజ సొంత చెల్లెలు. ఆమె ఉమ. గిరిజ పెదనాన్నగారి కూతురు. ఈమె సుగుణ. గిరిజ చెల్లెలి స్నేహితురాలు. వీళ్లు నలుగురూ నా స్నేహితురాళ్ళు.	ocr		´ëç³ : Òâæý$Ï C§æþªÆæÿ* WÇf ^ðþÌñýÏâæý$Ï. DÐðþ$ ÆæÿÐèþ$. WÇf Ý÷…™èþ ^ðþÌñýÏË$. BÐðþ$ EÐèþ$. WÇf ò³§æþ¯é¯èþ²V>Ç Mæü*™èþ$Ææÿ$. DÐðþ$ çÜ$Væü$×ý. WÇf ^ðþÌñýÏÍ õÜ²íßý™èþ$Æ>Ë$. Òâæý$Ï ¯èþË$Væü$Ææÿ* ¯é õÜ²íßý™èþ$Æ>âæý$å.	3:392.9;3:408.1;3:423.3;3:438.5;3:453.8	no-rom
-8	38	AÆæÿ$×ý	Where are their houses?	అరుణ : వాళ్ల ఇళ్లు ఎక్కడ?	ocr		AÆæÿ$×ý : ÐéâæýÏ Câæý$Ï GMæüPyæþ?	3:484.2	no-rom
-8	39	´ëç³	Near Saroja's house. Saroja's house number is sixteen. Their house number is seventeen.	పాప : మా సరోజ ఇంటి దగ్గర. సరోజ ఇంటి నంబరు పదహారు. వీళ్ల ఇంటి నెంబరు పదిహేడు.	ocr		´ëç³ : Ðèþ* çÜÆøf C…sìý §æþVæüYÆæÿ. çÜÆøf C…sìý ¯èþ…ºÆæÿ$ ç³§æþàÆæÿ$. ÒâæýÏ C…sìý ¯ðþ…ºÆæÿ$ ç³¨õßýyæþ$.	3:514.7;3:529.9;3:545.1	no-rom
-8	40	AÆæÿ$×ý	When is your Delhi tour. madam?	అరుణ : మీ ఢిల్లీ ప్రయాణం ఎప్పుడండీ?	ocr		AÆæÿ$×ý : Ò$ ÉìþÎÏ {ç³Äæý*×ý… Gç³šyæþ…yîþ?	3:575.5	no-rom
-8	41	MæüÆæÿ$×ý	In December.	కరుణ : డిసెంబరులోనమ్మా!	ocr		MæüÆæÿ$×ý : yìþòÜ…ºÆæÿ$ÌZ¯èþÐèþ*Ã!	3:606.0	no-rom
-8	42	AÆæÿ$×ý	Delhi tour in December! Don't go in the December. It's cold. Go in October.	అరుణ : డిసెంబరులో ఢిల్లీ ప్రయాణమా! డిసెంబరులో వెళ్లకండి. చలి ఎక్కువ. అక్టోబరులో వెళ్లండి.	ocr		AÆæÿ$×ý : yìþòÜ…ºÆæÿ$ÌZ ÉìþÎÏ {ç³Äæý*×ýÐèþ*! yìþòÜ…ºÆæÿ$ÌZ ÐðþâæýÏMæü…yìþ. ^èþÍ GMæü$PÐèþ. AMøtºÆæÿ$ÌZ ÐðþâæýÏ…yìþ.	4:179.2;4:194.4;4:209.6	no-rom
-8	43	MæüÆæÿ$×ý	There is no problem. The cold is not much in the first week of December. When are your examinations?	కరుణ : పరవాలేదు. డిసెంబరు మొదటి, వారంలో తక్కువే! మీ పరీక్షలు 'ఎప్పుడమ్మా?	ocr		MæüÆæÿ$×ý : ç³ÆæÿÐéÌôý§æþ$. yìþòÜ…ºÆæÿ$ Ððþ$$§æþsìý ÐéÆæÿ…ÌZ ™èþMæü$PÐóþ! Ò$ ç³È„æüË$ Gç³šyæþÐèþ*Ã?	4:240.0;4:255.3;4:270.5	no-rom
-8	44	AÆæÿ$×ý	They are in the last week of March, madam.	అరుణ : మార్చి చివరి వారంలోనండీ!	ocr		AÆæÿ$×ý : Ðèþ*Ça _ÐèþÇ ÐéÆæÿ…ÌZ-¯èþ…-yîþ!	4:300.9	no-rom
+guid	lesson	seq	speaker	en	te	te_src	rom	legacy	keys	flags
+I24f15a19da80	8	1	AÆæÿ$×ý	Hello, Madam! How are you doing?	అరుణ : ఏమండీ! బాగున్నారా!	ocr		AÆæÿ$×ý : HÐèþ$…yîþ! »êVæü$¯é²Æ>!	0:447.0	no-rom
+Id58e08c54668	8	2	MæüÆæÿ$×ý	Come on, Aruna! How are you? Are you fine?	కరుణ : రా అరుణా! నువ్వెలా ఉన్నావు? “బాగున్నావా?	ocr		MæüÆæÿ$×ý : Æ> AÆæÿ$×ê! ¯èþ$ÐðþÓÌê E¯é²Ðèþ#? »êVæü$¯é²Ðé?	0:477.5;0:492.7	no-rom
+I8681ccb6a1ac	8	3	AÆæÿ$×ý	I am fine. Are all of you fine?	అరుణ : బాగున్నాను. మీరందరూ బాగున్నారా?	ocr		AÆæÿ$×ý :  »êVæü$¯é²¯èþ$. Ò$Ææÿ…§æþÆæÿ* »êVæü$¯é²Æ>?	0:523.2	no-rom
+I89b847a8f4cd	8	4	MæüÆæÿ$×ý	Yes!  How is your father?	కరుణ : ఆ| మీ నాన్నగారెలా ఉన్నారు?	ocr		MæüÆæÿ$×ý : B! Ò$ ¯é¯èþ²V>ÆðÿÌê E¯é²Ææÿ$?	0:553.6	no-rom ocr-suspect
+Iba03eacacbc6	8	5	AÆæÿ$×ý	He is fine.	అరుణ : బాగున్నారు.	ocr		AÆæÿ$×ý : »êVæü$¯é²Ææÿ$.	0:584.0	no-rom
+Idad53f1a9109	8	6	MæüÆæÿ$×ý	Sit. How is your younger brother?	కరుణ : కూర్చో. మీ తమ్ముడెలా ఉన్నాడు?	ocr		MæüÆæÿ$×ý : Mæü*Æøa. Ò$ ™èþÐèþ$$ÃyðþÌê E¯é²yæþ$?	0:614.5	no-rom
+I027f015276a3	8	7	AÆæÿ$×ý	He is fine. How is your baby?	అరుణ : బాగున్నాడు. మీ పాప బాగుందా?	ocr		AÆæÿ$×ý : »êVæü$¯é²yæþ$. Ò$ ´ëç³ »êVæü$…§é?	1:179.8	no-rom
+Ied9a85d1eb21	8	8	´ëç³	I am fine. Please don't sit in that chair. That is not all-right. Please sit in this chair.	'పాప : బాగున్నానండీ! ఆ కుర్చీలో కూర్చోకండి.. అది సరిగా లేదు. ఈ కుర్చీలో కూర్చోండి.	ocr		´ëç³ : »êVæü$¯é²¯èþ…yîþ! B Mæü$ÈaÌZ Mæü*ÆøaMæü…yìþ. A¨ çÜÇV> Ìôý§æþ$. D Mæü$ÈaÌZ Mæü*Æøa…yìþ.	1:210.2;1:225.4;1:240.7	no-rom
+If073ffdb894f	8	9	AÆæÿ$×ý	Papa! come here. Take this doll.	అరుణ : పాపా! ఇలారా! ఈ బొమ్మ తీసుకో.	ocr		AÆæÿ$×ý : ´ë´ë! CÌêÆ>! D »ŸÐèþ$Ã ¡çÜ$Mø.	1:271.1	no-rom
+Ib9c3f1f99d58	8	10	MæüÆæÿ$×ý	Go! Take it!	కరుణ : వెళ్లు తీసుకో.	ocr		MæüÆæÿ$×ý : Ððþâæý$Ï, ¡çÜ$Mø.	1:301.5	no-rom
+I11cc7d366a18	8	11	AÆæÿ$×ý	What are those books?	అరుణ : అవి ఏం పుస్తకాలండీ?	ocr		AÆæÿ$×ý : AÑ H… ç³#çÜ¢M>Ë…yîþ?	1:332.0	no-rom
+Ia1bfae4d2433	8	12	MæüÆæÿ$×ý	Those two are Telugu novels, these two are English novels.	కరుణ : అవి రెండూ తెలుగు నవలలు. ఇవి రెండూ ఇంగ్లీషు నవలలు.	ocr		MæüÆæÿ$×ý : AÑ Æðÿ…yæþ* ™ðþË$Væü$ ¯èþÐèþËË$. CÑ Æðÿ…yæþ* C…XÏçÙ$ ¯èþÐèþËË$.	1:362.4;1:377.7	no-rom
+I3c785cfb510b	8	13	AÆæÿ$×ý	Are these the Telugu novels?	అరుణ : ఇవేనా తెలుగు నవలలు? కరుణ : అవును. వీటి పేర్లు మంచిమనను,	ocr		AÆæÿ$×ý : CÐóþ¯é ™ðþË$Væü$ ¯èþÐèþËË$? Ðèþ$…_Ðèþ$¯èþçÜ$	1:408.1;1:434.5	no-rom
+Ibac0f0274085	8	14	MæüÆæÿ$×ý	Yes, Their names are (Good Heart) and (The life).	జితం	ocr		MæüÆæÿ$×ý : AÐèþ#¯èþ$. Òsìý õ³Ææÿ$Ï , iÑ-™èþ… -.	1:438.6;1:449.7;1:453.8	no-rom
+I99cbb9b8d5a8	8	15	AÆæÿ$×ý	Who are the authors of those books?	అరుణ : వాటి రచయితలు ఎవరు?	ocr		AÆæÿ$×ý : Ðésìý Ææÿ^èþÆÿ$$™èþË$ GÐèþÆæÿ$?	1:484.2	no-rom
+Ie9ff3c1c8394	8	16	MæüÆæÿ$×ý	These books are written by the same author, Aruna! Gopala - rao. Papa! Turn on that light. Turn on the fan also. Open the window shutters.	కరుణ : వీటి రదయిత ఒకరే అరుణా! గోపాలరావ్ర!, పాపా! ఆ లైటు వెయ్యమ్మా! ఫాను కూడా వెయ్యి! కిటికీ తలుపులు తియ్యి.	ocr		MæüÆæÿ$×ý : Òsìý Ææÿ^èþÆÿ$$™èþ JMæüÆóÿ AÆæÿ$×ê! Vø´ëËÆ>Ðèþ#! ´ë´ë! B ÌñýOr$ ÐðþÄæý$ÅÐèþ*Ã! ¸ë¯èþ$ Mæü*yé ÐðþÆÿ$$Å! MìüsìýMîü ™èþË$ç³#Ë$ †Æÿ$$Å.	1:514.7;1:529.9;1:545.1	no-rom
+Icf9340b4d265	8	17	AÆæÿ$×ý	Papa don't turn on the fan. It is cold. Shut the windows also.	అరుణ : ఫాను వెయ్యకు పాపా! చలిగా ఉంది. కిటికీలు కూడా ముయ్యి.	ocr		AÆæÿ$×ý : ¸ë¯èþ$ ÐðþÄæý$ÅMæü$ ´ë´ë! ^èþÍV> E…¨. MìüsìýMîüË$ Mæü*yé Ðèþ$$Æÿ$$Å.	1:590.8;1:606.0	no-rom
+I586c4e57e747	8	18	MæüÆæÿ$×ý	Don't shut the window shutters so harsh, dear! shut them gently.	కరుణ : కిటికీ తలుపులు గట్టిగా వెయ్యకమ్మా! మెల్లగా వెయ్యి!	ocr		MæüÆæÿ$×ý : MìüsìýMîü ™èþË$ç³#Ë$ VæüsìýtV> ÐðþÄæý$ÅMæüÐèþ*Ã! Ððþ$ËÏV> ÐðþÆÿ$$Å!	2:179.6;2:194.2	no-rom
+I89b68d71ed2f	8	19	AÆæÿ$×ý	Is Gopalarao the writer of those books?	అరుణ : గోపాలరావేనా వాటి రచయిత?	ocr		AÆæÿ$×ý : Vø´ëËÆ>Ðóþ¯é Ðésìý Ææÿ^èþÆÿ$$™èþ?	2:223.8	no-rom
+Icbd588f06ae7	8	20	MæüÆæÿ$×ý	He is also a good poet.	కరుణ : ఆయన మంచి కవి కూడా!	ocr		MæüÆæÿ$×ý : BÄæý$¯èþ Ðèþ$…_ MæüÑ Mæü*yé!	2:253.4	no-rom
+Ib89086eb65b4	8	21	AÆæÿ$×ý	Are those two his novels?	అరుణ : ఆ రెండూ ఆయన నవలలేనా?	ocr		AÆæÿ$×ý : B Æðÿ…yæþ* BÄæý$¯èþ ¯èþÐèþËÌôý¯é?	2:283.0	no-rom
+Ie412a6151e8e	8	22	MæüÆæÿ$×ý	Yes. His younger brother is also a good poet.	కరుణ : ఆ! ఆయన తమ్ముడు కూడా మంచి కవి.	ocr		MæüÆæÿ$×ý : B! BÄæý$¯èþ ™èþÐèþ$$Ãyæþ$ Mæü*yé Ðèþ$…_ MæüÑ.	2:312.7;2:327.5	no-rom
+I8eb17f6f1f54	8	23	AÆæÿ$×ý	A poet? or a writer?	అరుణ : కవా? రచయితా?	ocr		AÆæÿ$×ý : MæüÐé? Ææÿ^èþÆÿ$$™é?	2:357.1	no-rom
+If9493de39657	8	24	MæüÆæÿ$×ý	He is both. His novel is (The whirlpool).	కరుణ. : రెండూ! అతని నవల పేరు	ocr		MæüÆæÿ$×ý : Æðÿ…yæþ*! A™èþ° ¯èþÐèþË õ³Ææÿ$ çÜ$yìþVæü$…yæþ…	2:386.5;2:397.3	no-rom
+I99df71e1e86f	8	25	AÆæÿ$×ý	Are those two writers?	అరుణ : వాళ్లిద్దరూ రచయితలేనా?.	ocr		AÆæÿ$×ý : ÐéãÏ§æþªÆæÿ* Ææÿ^èþÆÿ$$™èþÌôý¯é?	2:431.0	no-rom
+Iae4fe1e8f615	8	26	MæüÆæÿ$×ý	Poets also.	కరుణ : కవులు కూడా!	ocr		MæüÆæÿ$×ý : MæüÐèþ#Ë$ Mæü*yé!	2:460.6	no-rom
+Ie29d4ea657a6	8	27	AÆæÿ$×ý	My brother is also a poet. Papa! Are the dolls nice?	అరుణ : మా తమ్ముడూ కవే! పాపా! బొమ్మలు, బాగున్నాయా?	ocr		AÆæÿ$×ý : Ðèþ* ™èþÐèþ$$Ãyæþ* MæüÐóþ! ´ë´ë! »ŸÐèþ$ÃË$ »êVæü$¯é²Äæý*?	2:490.2;2:505.1	no-rom
+Ib9588f7eb639	8	28	´ë´ë	Nice, madam!	పాపా : బాగున్నాయండీ!	ocr		´ë´ë : »êVæü$¯é²Äæý$…yîþ!	2:534.5	no-rom
+I7f1d6aaf4bc5	8	29	AÆæÿ$×ý	Come here. Tell me your name. Sit by my side. dear!	అరుణ : ఇలారా! నీ పేరు చెప్పు! నా పక్కన 'కూర్చోమ్మా!	ocr		AÆæÿ$×ý : CÌêÆ>! ± õ³Ææÿ$ ^ðþç³š! ¯é ç³MæüP¯èþ Mæü*ÆøaÐèþ*Ã!	2:564.1;2:578.9	no-rom
+I4b8066c92632	8	30	MæüÆæÿ$×ý	Go dear! Tell her your name.	కరుణ : వెళ్లమ్మా! నీ పేరు చెప్పు.	ocr		MæüÆæÿ$×ý : ÐðþâæýÏÐèþ*Ã! ± õ³Ææÿ$ ^ðþç³š.	2:608.6	no-rom
+I467c999fc5a3	8	31	´ëç³	My name is Lata. See this photograph, I am also in that. Is it nice?	పాప : నా పేరు అత. ఈ ఫోటో చూడండి. నేను కూడా ఉన్నాను, బాగుందా?	ocr		´ëç³ : ¯é õ³Ææÿ$ Ë™èþ. D ¸ùsZ ^èþ*yæþ…yìþ. ¯óþ¯èþ$ Mæü*yé E¯é²¯èþ$, »êVæü$…§é?	3:179.8;3:195.0	no-rom
+If50723df9196	8	32	AÆæÿ$×ý	It is nice. Who are these four, Papa?	అరుణ : బాగుంది. వీళ్లు నలుగురూ ఎవరు. పాపా?	ocr		AÆæÿ$×ý : »êVæü$…¨. Òâæý$Ï ¯èþË$Væü$Ææÿ* GÐèþÆæÿ$ ´ë´ë?	3:225.4;3:240.7	no-rom
+I2d23e5094c69	8	33	´ëç³	She is my friend, Girija.	పాప : ఈమె నా స్నేహితురాలు, గిరిజ.	ocr		´ëç³ : DÐðþ$ ¯é õÜ²íßý™èþ$Æ>Ë$, WÇf.	3:271.1	no-rom
+I346d22959510	8	34	AÆæÿ$×ý	Oh! Is she Girija?				AÆæÿ$×ý : KçßZ! DÐèþ* ( ) WÇf?	3:301.5	no-rom no-te
+I36a8b09f1b1e	8	35	´ëç³	yes.	పాప : అవును.	ocr		´ëç³ : AÐèþ#¯èþ$.	3:332.0	no-rom
+Ibc69b29058e2	8	36	AÆæÿ$×ý	Are they younger sisters of your friend?	అరుణ : వాళ్లు నీ స్నేహితురాలి చెల్లెళ్ల?	ocr		AÆæÿ$×ý : Ðéâæý$Ï ± õÜ²íßý™èþ$Æ>Í ^ðþÌñýÏâêÏ?	3:362.4	no-rom
+Ic930ab12e6ea	8	37	´ëç³	These two are Girija's younger sisters. This is Rama Girija's younger sister. That is Uma, Girija's cousin. This is Suguna, a friend of Girija's sister. All these four are my friends.	పాప : వీళ్లు ఇద్దరూ గిరిజ చెల్లెళ్లు ఈమె రమ. గిరిజ సొంత చెల్లెలు. ఆమె ఉమ. గిరిజ పెదనాన్నగారి కూతురు. ఈమె సుగుణ. గిరిజ చెల్లెలి స్నేహితురాలు. వీళ్లు నలుగురూ నా స్నేహితురాళ్ళు.	ocr		´ëç³ : Òâæý$Ï C§æþªÆæÿ* WÇf ^ðþÌñýÏâæý$Ï. DÐðþ$ ÆæÿÐèþ$. WÇf Ý÷…™èþ ^ðþÌñýÏË$. BÐðþ$ EÐèþ$. WÇf ò³§æþ¯é¯èþ²V>Ç Mæü*™èþ$Ææÿ$. DÐðþ$ çÜ$Væü$×ý. WÇf ^ðþÌñýÏÍ õÜ²íßý™èþ$Æ>Ë$. Òâæý$Ï ¯èþË$Væü$Ææÿ* ¯é õÜ²íßý™èþ$Æ>âæý$å.	3:392.9;3:408.1;3:423.3;3:438.5;3:453.8	no-rom
+Icb06e743eec7	8	38	AÆæÿ$×ý	Where are their houses?	అరుణ : వాళ్ల ఇళ్లు ఎక్కడ?	ocr		AÆæÿ$×ý : ÐéâæýÏ Câæý$Ï GMæüPyæþ?	3:484.2	no-rom
+Ic598cc50d02b	8	39	´ëç³	Near Saroja's house. Saroja's house number is sixteen. Their house number is seventeen.	పాప : మా సరోజ ఇంటి దగ్గర. సరోజ ఇంటి నంబరు పదహారు. వీళ్ల ఇంటి నెంబరు పదిహేడు.	ocr		´ëç³ : Ðèþ* çÜÆøf C…sìý §æþVæüYÆæÿ. çÜÆøf C…sìý ¯èþ…ºÆæÿ$ ç³§æþàÆæÿ$. ÒâæýÏ C…sìý ¯ðþ…ºÆæÿ$ ç³¨õßýyæþ$.	3:514.7;3:529.9;3:545.1	no-rom
+I2a8743dd4347	8	40	AÆæÿ$×ý	When is your Delhi tour. madam?	అరుణ : మీ ఢిల్లీ ప్రయాణం ఎప్పుడండీ?	ocr		AÆæÿ$×ý : Ò$ ÉìþÎÏ {ç³Äæý*×ý… Gç³šyæþ…yîþ?	3:575.5	no-rom
+I76f233dbff3c	8	41	MæüÆæÿ$×ý	In December.	కరుణ : డిసెంబరులోనమ్మా!	ocr		MæüÆæÿ$×ý : yìþòÜ…ºÆæÿ$ÌZ¯èþÐèþ*Ã!	3:606.0	no-rom
+Ibe941c88e508	8	42	AÆæÿ$×ý	Delhi tour in December! Don't go in the December. It's cold. Go in October.	అరుణ : డిసెంబరులో ఢిల్లీ ప్రయాణమా! డిసెంబరులో వెళ్లకండి. చలి ఎక్కువ. అక్టోబరులో వెళ్లండి.	ocr		AÆæÿ$×ý : yìþòÜ…ºÆæÿ$ÌZ ÉìþÎÏ {ç³Äæý*×ýÐèþ*! yìþòÜ…ºÆæÿ$ÌZ ÐðþâæýÏMæü…yìþ. ^èþÍ GMæü$PÐèþ. AMøtºÆæÿ$ÌZ ÐðþâæýÏ…yìþ.	4:179.2;4:194.4;4:209.6	no-rom
+I6aa297ab1973	8	43	MæüÆæÿ$×ý	There is no problem. The cold is not much in the first week of December. When are your examinations?	కరుణ : పరవాలేదు. డిసెంబరు మొదటి, వారంలో తక్కువే! మీ పరీక్షలు 'ఎప్పుడమ్మా?	ocr		MæüÆæÿ$×ý : ç³ÆæÿÐéÌôý§æþ$. yìþòÜ…ºÆæÿ$ Ððþ$$§æþsìý ÐéÆæÿ…ÌZ ™èþMæü$PÐóþ! Ò$ ç³È„æüË$ Gç³šyæþÐèþ*Ã?	4:240.0;4:255.3;4:270.5	no-rom
+I3e6d790f9961	8	44	AÆæÿ$×ý	They are in the last week of March, madam.	అరుణ : మార్చి చివరి వారంలోనండీ!	ocr		AÆæÿ$×ý : Ðèþ*Ça _ÐèþÇ ÐéÆæÿ…ÌZ-¯èþ…-yîþ!	4:300.9	no-rom

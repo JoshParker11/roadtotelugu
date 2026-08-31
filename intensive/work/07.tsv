@@ -1,38 +1,38 @@
-lesson	seq	speaker	en	te	te_src	rom	legacy	keys	flags
-7	1	Æ>Ðèþ*Æ>Ðèþ#	Come on Purushottam! sit there. Take this coffee.	రామారావు : రా, పురుషోత్తం! అలా కూర్చో! కాఫీ తీసుకో!	ocr		Æ>Ðèþ*Æ>Ðèþ# : Æ>, ç³#Ææÿ$Úù™èþ¢…!  AÌê Mæü*Æøa! M>ïœ ¡çÜ$Mø!	0:447.4;0:462.7	no-rom
-7	2	ç³#Ææÿ$Úù™èþ¢…	Who is this boy, Ramarao?	పురుషోత్తం : ఈ అబ్బాయి ఎవరు, రామారావు?	ocr		ç³#Ææÿ$Úù™èþ¢… : D A»ê¾Æÿ$$ GÐèþÆæÿ$, Æ>Ðèþ*Æ>Ðèþ#?	0:493.1	no-rom
-7	3	Æ>Ðèþ*	He is my younger brother's son. His name is Ravi.	రామా : వాడు మా తమ్ముడి కొడుకు. వాడి పేరు రవి.	ocr		Æ>Ðèþ* : Ðéyæþ$ Ðèþ* ™èþÐèþ$$Ãyìþ Möyæþ$Mæü$. Ðéyìþ õ³Ææÿ$ ÆæÿÑ.	0:523.6;0:538.8	no-rom
-7	4	ç³#Ææÿ$	Where is your younger brother?	పురు : మీ తమ్ముడు ఎక్కడున్నాడు?	ocr		ç³#Ææÿ$ : Ò$ ™èþÐèþ$$Ãyæþ$ GMæüPyæþ$¯é²yæþ$?	0:569.2	no-rom
-7	5	Æ>Ðèþ*	Now he is not here. He is in America.	రామా : ఇప్పుడు ఇక్కడ లేడు. వాడు అమెరికాలో ఉన్నాడు.	ocr		Æ>Ðèþ* : Cç³šyæþ$ CMæüPyæþ Ìôýyæþ$. Ðéyæþ$ AÐðþ$ÇM>ÌZ E¯é²yæþ$.	0:599.7;0:614.9	no-rom
-7	6	ç³#Ææÿ$	I see! Who is that boy?	పురు : అలాగా! ఆ అబ్బాయి ఎవరు?	ocr		ç³#Ææÿ$ : AÌêV>! B A»ê¾Æÿ$$ GÐèþÆæÿ$?	1:179.2	no-rom
-7	7	Æ>Ðèþ*	He is my son. His name is Ramu.	రామా : వీడు మా అబ్బాయి. వీడి పేరు రాము.	ocr		Æ>Ðèþ* : Òyæþ$ Ðèþ* A»ê¾Æÿ$$. Òyìþ õ³Ææÿ$ Æ>Ðèþ$$.	1:207.8	no-rom
-7	8	ç³#Ææÿ$	Who are those girls?	పురు : ఆ అమ్మాయిలు ఎవరు?	ocr		ç³#Ææÿ$ : B AÐèþ*ÃÆÿ$$Ë$ GÐèþÆæÿ$?	1:236.4	no-rom
-7	9	Æ>Ðèþ*	That is my youngerbrother's daughter. Her name is Sarala. This is my daughter. Her name is Girija.	రామా : అది మా తమ్ముడి కూతురు. దాని పేరు సరళ. ఇది మా అమ్మాయి. దీని పేరు గిరిజ.	ocr		Æ>Ðèþ* : A¨ Ðèþ* ™èþÐèþ$$Ãyìþ Mæü*™èþ$Ææÿ$. §é° õ³Ææÿ$ çÜÆæÿâæý. C¨ Ðèþ* AÐèþ*ÃÆÿ$$. ©° õ³Ææÿ$ WÇf.	1:264.8;1:279.2;1:293.4	no-rom
-7	10	ç³#Ææÿ$	Papa! What doll is this? and what doll is that?	పురు : పాపా! ఇది ఏం బొమ్మ? అది ఏం బొమ్మ?	ocr		ç³#Ææÿ$ : ´ë´ë! C¨ H… »ŸÐèþ$Ã? A¨ H… »ŸÐèþ$Ã?	1:322.0;1:336.2	no-rom
-7	11	WÇf	This is an elephant-doll, sir! That is monkey-doll.	గిరిజ : ఇది ఏనుగు బొమ్మండి! అది కోతి బొమ్మ!	ocr		WÇf : C¨ H¯èþ$Væü$ »ŸÐèþ$Ã…yìþ! A¨ Mø† »ŸÐèþ$Ã!	1:364.9;1:379.3	no-rom
-7	12	ç³#Ææÿ$	Babu! What is this doll?	పురు : బాబూ! ఈ బొమ్మ ఏమిటి?	ocr		ç³#Ææÿ$ : »êº*! D »ŸÐèþ$Ã HÑ$sìý?	1:407.7	no-rom
-7	13	Æ>Ðèþ$$	That is a tiger-doll, sir! Sarala! Where is your lion-doll?	రాము : అది పులి బొమ్మండీ! సరళా! నీ సింహం బొమ్మ ఏది?	ocr		Æ>Ðèþ$$ : A¨ ç³#Í »ŸÐèþ$Ã…yîþ! çÜÆæÿâê! ± íÜ…çßý… »ŸÐèþ$Ã H¨?	1:436.3;1:450.7	no-rom
-7	14	çÜÆæÿâæý	There it is my lion-doll!	సరళ : అదుగో, నా సింహం బొమ్మ!	ocr		çÜÆæÿâæý : A§æþ$Vø, ¯é íÜ…çßý… »ŸÐèþ$Ã!	1:479.3	no-rom
-7	15	ÆæÿÑ	Here is my father's photograph, Sir! He is in America. I see! Give me! (Let me see it!)	రవి : ఇదుగోనండి, మా నాన్నగారి ఫోటో! మా నాన్నగారు అమెరికాలో ఉన్నారు.	ocr		ÆæÿÑ : C§æþ$Vø¯èþ…yìþ, Ðèþ* ¯é¯èþ²V>Ç ¸ùsZ! Ðèþ* ¯é¯èþ²V>Ææÿ$ AÐðþ$ÇM>ÌZ E¯é²Ææÿ$.	1:507.7;1:522.1	no-rom
-7	16	ç³#Ææÿ$	Who is/are there in this pho- tograph?	పురు : అలాగా! ఏది ఇలా ఇవ్వు! ఈ ఫోటోలో ఎవరున్నారు?	ocr		ç³#Ææÿ$ : AÌêV>! H¨ CÌê CÐèþ#Ó! D ¸ùsZÌZ GÐèþÆæÿ$¯é²Ææÿ$?	1:550.7;1:564.9	no-rom
-7	17	ÆæÿÑ	Take it, sir! see. My father and my mother are in that photograph. I am not there. My sister is also not there.	రవి : తీసుకోండి. చూడండి. మా నాన్నగారూ మా అమ్మా ఉన్నారు ఆ ఫోటోలో. నేను లేను. మా చెల్లెలు కూడా లేదు.	ocr		ÆæÿÑ : ¡çÜ$Mø…yìþ. ^èþ*yæþ…yìþ. Ðèþ* ¯é¯èþ²V>Ææÿ* Ðèþ* AÐèþ*Ã E¯é²Ææÿ$ B ¸ùsZÌZ. ¯óþ¯èþ$ Ìôý¯èþ$. Ðèþ* ^ðþÌñýÏË$ Mæü*yé Ìôý§æþ$.	1:593.6;1:607.8;1:622.2	no-rom
-7	18	çÜÆæÿâæý	I am there in that photograph.	సరళ : ఆ ఫోటోలో నేనున్నాను.	ocr		çÜÆæÿâæý : B ¸ùsZÌZ ¯óþ¯èþ$¯é²¯èþ$.	2:179.6	no-rom
-7	19	ÆæÿÑ	You are not there. Nor I am. Both of us are not there. We are in another photograph.	రవి : నువ్వు లేవు. నేనూ లేను. మనం ఇద్దరం లేం. మనం ఇంకొక ఫోటోలో ఉన్నాం.	ocr		ÆæÿÑ : ¯èþ$Ðèþ#Ó ÌôýÐèþ#. ¯óþ¯èþ* Ìôý¯èþ$. Ðèþ$¯èþ… C§æþªÆæÿ… Ìôý…. Ðèþ$¯èþ… C…MöMæü ¸ùsZÌZ E¯é²….	2:209.0;2:223.8	no-rom
-7	20	ç³#Ææÿ$	Why are you and your sister not there in this photograph?	పురు : ఈ ఫోటోలో నువ్వూ మీ చెల్లెలూ ఎందుకు లేరు?	ocr		ç³#Ææÿ$ : D ¸ùsZÌZ ¯èþ$ÐèþNÓ Ò$ ^ðþÌñýÏË* G…§æþ$Mæü$ ÌôýÆæÿ$?	2:253.4;2:268.3	no-rom
-7	21	ÆæÿÑ	At that time we were not here. We were in Guntur. Were you in Guntur at that time?	రవి : అప్పుడు మేం ఇక్కడ లేం; గుంటూరులో ఉన్నాం.	ocr		ÆæÿÑ :  Aç³šyæþ$ Ðóþ$… CMæüPyæþ Ìôý…; Væü$…r*Ææÿ$ÌZ E¯é²….	2:297.9;2:312.7	no-rom
-7	22	ç³#Ææÿ$	Why were you there?	పురు : అప్పుడు మీరు గుంటూరులో ఉన్నారా? అక్కడ ఎందుకున్నారు?	ocr		ç³#Ææÿ$ : Aç³šyæþ$ Ò$Ææÿ$ Væü$…r*Ææÿ$ÌZ E¯é²Æ>? AMæüPyæþ G…§æþ$Mæü$¯é²Ææÿ$?	2:342.3;2:357.1	no-rom
-7	23	çÜÆæÿâæý	Look at this photograph, sir! I am in this. He is not there.	సరళ : ఈ ఫోటోలో చూడండి. నేనున్నాను. వాడులేడు.	ocr		çÜÆæÿâæý : D ¸ùsZÌZ ^èþ*yæþ…yìþ. ¯óþ¯èþ$¯é²¯èþ$. Ðéyæþ$Ìôýyæþ$.	2:386.6;2:401.4	no-rom
-7	24	ç³#Ææÿ$	You are in that photograph, He is in this photograph.	పురు : ఆ ఫోటోలో నువ్వున్నావు ; ఈ ఫోటోలో అతనున్నాడు.	ocr		ç³#Ææÿ$ :  B ¸ùsZÌZ ¯èþ$Ðèþ#Ó¯é²Ðèþ# ; D ¸ùsZÌZ A™èþ¯èþ$¯é²yæþ$.	2:431.0;2:445.8	no-rom
-7	25	çÜÆæÿâæý	Look here! Mother and father are not there in this photo- graph. We are there. Mother is in that photograph.	సరళ : ఇలా చూడు, ఈ ఫోటోలో అమ్మా నాన్నగారు లేరు. మనం ఉన్నాం. ఆ ఫోటోలో అమ్మ ఉంది.	ocr		çÜÆæÿâæý : CÌê ^èþ*yæþ$, D ¸ùsZÌZ AÐèþ*Ã ¯é¯èþ²V>Ææÿ$ ÌôýÆæÿ$. Ðèþ$¯èþ… E¯é²…. B ¸ùsZÌZ AÐèþ$Ã E…¨.	2:475.5;2:490.3;2:505.1	no-rom
-7	26	ç³#Ææÿ$	All of you come here. Take these dolls.	పురు : మీరు అందరూ ఇలా రండి. ఈ బొమ్మలు, తీసుకోండి.	ocr		ç³#Ææÿ$ : Ò$Ææÿ$ A…§æþÆæÿ* CÌê Ææÿ…yìþ. D »ŸÐèþ$ÃË$ ¡çÜ$Mø…yìþ.	2:534.5;2:549.4	no-rom
-7	27	Æ>Ðèþ*	Ravi! Where are your birthday clothes?	రామా : రవీ! నీ పుట్టినరోజు బట్టలు ఏవి?	ocr		Æ>Ðèþ* : ÆæÿÒ! ± ç³#sìýt¯èþÆøk ºrtË$ HÑ?	2:579.0	no-rom
-7	28	ÆæÿÑ	Here are my birthday clothes.	రవి : ఇవిగో నా పుట్టినరోజు బట్టలు.	ocr		ÆæÿÑ : CÑVø ¯é ç³#sìýt¯èþÆøk ºrtË$.	2:608.6	no-rom
-7	29	ç³#Ææÿ$	When is your birthday?	పురు : నీ పుట్టినరోజు ఎప్పుడు?	ocr		ç³#Ææÿ$ : ± ç³#sìýt¯èþÆøk Gç³šyæþ$?	3:179.6	no-rom
-7	30	ÆæÿÑ	Today!	రవి: ఇవ్వేశే!	ocr		ÆæÿÑ : CÐóþÓâôý!	3:209.0	no-rom
-7	31	ç³#Ææÿ$	Is today your birthday?.1	పురు : ఇవ్వేళ నీ పుట్టిన రోజా?	ocr		ç³#Ææÿ$ : CÐóþÓâæý ± ç³#sìýt¯èþ Æøgê?	3:238.6	no-rom
-7	32	ÆæÿÑ	Yes. There is my elder sister. To- morrow is her birthday.	రవి : అవును. అదుగో మా అక్కయ్య. దాని పుట్టినరోజు రేపు.	ocr		ÆæÿÑ : AÐèþ#¯èþ$. A§æþ$Vø Ðèþ* AMæüPÄæý$Å. §é° ç³#sìýt¯èþÆøk Æóÿç³#.	3:268.2;3:283.1	no-rom
-7	33	ç³#Ææÿ$	Where are your sister's birthday clothes	పురు : మీ అక్కయ్య పుట్టినరోజు బట్టలు ఏవి?	ocr		ç³#Ææÿ$ :  Ò$ AMæüPÄæý$Å ç³#sìýt¯èþÆøk ºrtË$ HÑ?	3:312.7;3:327.5	no-rom
-7	34	ÆæÿÑ	There they are!	రవి : అవిగో!	ocr		ÆæÿÑ : AÑVø!	3:357.1	no-rom
-7	35	ç³#Ææÿ$	Where is your younger sister?	పురు : మీ చెల్లెలు ఏది?	ocr		ç³#Ææÿ$ : Ò$ ^ðþÌñýÏË$ H¨?	3:386.6	no-rom
-7	36	ÆæÿÑ	Here she is!	రవి : ఇదుగో!	ocr		ÆæÿÑ : C§æþ$Vø!	3:416.2	no-rom
-7	37	ç³#Ææÿ$	Papa! Take this doll.	పురు : పాపా ఈ బొమ్మ తీసుకో.	ocr		ç³#Ææÿ$ : ´ë´ë! D »ŸÐèþ$Ã ¡çÜ$Mø.	3:445.8	no-rom
+guid	lesson	seq	speaker	en	te	te_src	rom	legacy	keys	flags
+Ie57005fbcbc6	7	1	Æ>Ðèþ*Æ>Ðèþ#	Come on Purushottam! sit there. Take this coffee.	రామారావు : రా, పురుషోత్తం! అలా కూర్చో! కాఫీ తీసుకో!	ocr		Æ>Ðèþ*Æ>Ðèþ# : Æ>, ç³#Ææÿ$Úù™èþ¢…!  AÌê Mæü*Æøa! M>ïœ ¡çÜ$Mø!	0:447.4;0:462.7	no-rom
+Id7b8e42dd92a	7	2	ç³#Ææÿ$Úù™èþ¢…	Who is this boy, Ramarao?	పురుషోత్తం : ఈ అబ్బాయి ఎవరు, రామారావు?	ocr		ç³#Ææÿ$Úù™èþ¢… : D A»ê¾Æÿ$$ GÐèþÆæÿ$, Æ>Ðèþ*Æ>Ðèþ#?	0:493.1	no-rom
+Ia311ac35c46b	7	3	Æ>Ðèþ*	He is my younger brother's son. His name is Ravi.	రామా : వాడు మా తమ్ముడి కొడుకు. వాడి పేరు రవి.	ocr		Æ>Ðèþ* : Ðéyæþ$ Ðèþ* ™èþÐèþ$$Ãyìþ Möyæþ$Mæü$. Ðéyìþ õ³Ææÿ$ ÆæÿÑ.	0:523.6;0:538.8	no-rom
+I7c69d9811ef6	7	4	ç³#Ææÿ$	Where is your younger brother?	పురు : మీ తమ్ముడు ఎక్కడున్నాడు?	ocr		ç³#Ææÿ$ : Ò$ ™èþÐèþ$$Ãyæþ$ GMæüPyæþ$¯é²yæþ$?	0:569.2	no-rom
+I4b40e0cb4c67	7	5	Æ>Ðèþ*	Now he is not here. He is in America.	రామా : ఇప్పుడు ఇక్కడ లేడు. వాడు అమెరికాలో ఉన్నాడు.	ocr		Æ>Ðèþ* : Cç³šyæþ$ CMæüPyæþ Ìôýyæþ$. Ðéyæþ$ AÐðþ$ÇM>ÌZ E¯é²yæþ$.	0:599.7;0:614.9	no-rom
+Id64d33328191	7	6	ç³#Ææÿ$	I see! Who is that boy?	పురు : అలాగా! ఆ అబ్బాయి ఎవరు?	ocr		ç³#Ææÿ$ : AÌêV>! B A»ê¾Æÿ$$ GÐèþÆæÿ$?	1:179.2	no-rom
+Ie18b9e6c026e	7	7	Æ>Ðèþ*	He is my son. His name is Ramu.	రామా : వీడు మా అబ్బాయి. వీడి పేరు రాము.	ocr		Æ>Ðèþ* : Òyæþ$ Ðèþ* A»ê¾Æÿ$$. Òyìþ õ³Ææÿ$ Æ>Ðèþ$$.	1:207.8	no-rom
+Ic12fc9f300d8	7	8	ç³#Ææÿ$	Who are those girls?	పురు : ఆ అమ్మాయిలు ఎవరు?	ocr		ç³#Ææÿ$ : B AÐèþ*ÃÆÿ$$Ë$ GÐèþÆæÿ$?	1:236.4	no-rom
+I8de9dc7f1c3d	7	9	Æ>Ðèþ*	That is my youngerbrother's daughter. Her name is Sarala. This is my daughter. Her name is Girija.	రామా : అది మా తమ్ముడి కూతురు. దాని పేరు సరళ. ఇది మా అమ్మాయి. దీని పేరు గిరిజ.	ocr		Æ>Ðèþ* : A¨ Ðèþ* ™èþÐèþ$$Ãyìþ Mæü*™èþ$Ææÿ$. §é° õ³Ææÿ$ çÜÆæÿâæý. C¨ Ðèþ* AÐèþ*ÃÆÿ$$. ©° õ³Ææÿ$ WÇf.	1:264.8;1:279.2;1:293.4	no-rom
+I25af3373083e	7	10	ç³#Ææÿ$	Papa! What doll is this? and what doll is that?	పురు : పాపా! ఇది ఏం బొమ్మ? అది ఏం బొమ్మ?	ocr		ç³#Ææÿ$ : ´ë´ë! C¨ H… »ŸÐèþ$Ã? A¨ H… »ŸÐèþ$Ã?	1:322.0;1:336.2	no-rom
+I8149bd003458	7	11	WÇf	This is an elephant-doll, sir! That is monkey-doll.	గిరిజ : ఇది ఏనుగు బొమ్మండి! అది కోతి బొమ్మ!	ocr		WÇf : C¨ H¯èþ$Væü$ »ŸÐèþ$Ã…yìþ! A¨ Mø† »ŸÐèþ$Ã!	1:364.9;1:379.3	no-rom
+I6f021e400030	7	12	ç³#Ææÿ$	Babu! What is this doll?	పురు : బాబూ! ఈ బొమ్మ ఏమిటి?	ocr		ç³#Ææÿ$ : »êº*! D »ŸÐèþ$Ã HÑ$sìý?	1:407.7	no-rom
+I07211ed2dda5	7	13	Æ>Ðèþ$$	That is a tiger-doll, sir! Sarala! Where is your lion-doll?	రాము : అది పులి బొమ్మండీ! సరళా! నీ సింహం బొమ్మ ఏది?	ocr		Æ>Ðèþ$$ : A¨ ç³#Í »ŸÐèþ$Ã…yîþ! çÜÆæÿâê! ± íÜ…çßý… »ŸÐèþ$Ã H¨?	1:436.3;1:450.7	no-rom
+I17bdcf1a7e4d	7	14	çÜÆæÿâæý	There it is my lion-doll!	సరళ : అదుగో, నా సింహం బొమ్మ!	ocr		çÜÆæÿâæý : A§æþ$Vø, ¯é íÜ…çßý… »ŸÐèþ$Ã!	1:479.3	no-rom
+Ide270bef8164	7	15	ÆæÿÑ	Here is my father's photograph, Sir! He is in America. I see! Give me! (Let me see it!)	రవి : ఇదుగోనండి, మా నాన్నగారి ఫోటో! మా నాన్నగారు అమెరికాలో ఉన్నారు.	ocr		ÆæÿÑ : C§æþ$Vø¯èþ…yìþ, Ðèþ* ¯é¯èþ²V>Ç ¸ùsZ! Ðèþ* ¯é¯èþ²V>Ææÿ$ AÐðþ$ÇM>ÌZ E¯é²Ææÿ$.	1:507.7;1:522.1	no-rom
+Ic680cdc62ebf	7	16	ç³#Ææÿ$	Who is/are there in this pho- tograph?	పురు : అలాగా! ఏది ఇలా ఇవ్వు! ఈ ఫోటోలో ఎవరున్నారు?	ocr		ç³#Ææÿ$ : AÌêV>! H¨ CÌê CÐèþ#Ó! D ¸ùsZÌZ GÐèþÆæÿ$¯é²Ææÿ$?	1:550.7;1:564.9	no-rom
+I03ae0f8e8b35	7	17	ÆæÿÑ	Take it, sir! see. My father and my mother are in that photograph. I am not there. My sister is also not there.	రవి : తీసుకోండి. చూడండి. మా నాన్నగారూ మా అమ్మా ఉన్నారు ఆ ఫోటోలో. నేను లేను. మా చెల్లెలు కూడా లేదు.	ocr		ÆæÿÑ : ¡çÜ$Mø…yìþ. ^èþ*yæþ…yìþ. Ðèþ* ¯é¯èþ²V>Ææÿ* Ðèþ* AÐèþ*Ã E¯é²Ææÿ$ B ¸ùsZÌZ. ¯óþ¯èþ$ Ìôý¯èþ$. Ðèþ* ^ðþÌñýÏË$ Mæü*yé Ìôý§æþ$.	1:593.6;1:607.8;1:622.2	no-rom
+I13ef402f2bfb	7	18	çÜÆæÿâæý	I am there in that photograph.	సరళ : ఆ ఫోటోలో నేనున్నాను.	ocr		çÜÆæÿâæý : B ¸ùsZÌZ ¯óþ¯èþ$¯é²¯èþ$.	2:179.6	no-rom
+I14243ece8388	7	19	ÆæÿÑ	You are not there. Nor I am. Both of us are not there. We are in another photograph.	రవి : నువ్వు లేవు. నేనూ లేను. మనం ఇద్దరం లేం. మనం ఇంకొక ఫోటోలో ఉన్నాం.	ocr		ÆæÿÑ : ¯èþ$Ðèþ#Ó ÌôýÐèþ#. ¯óþ¯èþ* Ìôý¯èþ$. Ðèþ$¯èþ… C§æþªÆæÿ… Ìôý…. Ðèþ$¯èþ… C…MöMæü ¸ùsZÌZ E¯é²….	2:209.0;2:223.8	no-rom
+Ieadec304a050	7	20	ç³#Ææÿ$	Why are you and your sister not there in this photograph?	పురు : ఈ ఫోటోలో నువ్వూ మీ చెల్లెలూ ఎందుకు లేరు?	ocr		ç³#Ææÿ$ : D ¸ùsZÌZ ¯èþ$ÐèþNÓ Ò$ ^ðþÌñýÏË* G…§æþ$Mæü$ ÌôýÆæÿ$?	2:253.4;2:268.3	no-rom
+I2363c0cb2203	7	21	ÆæÿÑ	At that time we were not here. We were in Guntur. Were you in Guntur at that time?	రవి : అప్పుడు మేం ఇక్కడ లేం; గుంటూరులో ఉన్నాం.	ocr		ÆæÿÑ :  Aç³šyæþ$ Ðóþ$… CMæüPyæþ Ìôý…; Væü$…r*Ææÿ$ÌZ E¯é²….	2:297.9;2:312.7	no-rom
+I1d987e2d5054	7	22	ç³#Ææÿ$	Why were you there?	పురు : అప్పుడు మీరు గుంటూరులో ఉన్నారా? అక్కడ ఎందుకున్నారు?	ocr		ç³#Ææÿ$ : Aç³šyæþ$ Ò$Ææÿ$ Væü$…r*Ææÿ$ÌZ E¯é²Æ>? AMæüPyæþ G…§æþ$Mæü$¯é²Ææÿ$?	2:342.3;2:357.1	no-rom
+I596e248d89c9	7	23	çÜÆæÿâæý	Look at this photograph, sir! I am in this. He is not there.	సరళ : ఈ ఫోటోలో చూడండి. నేనున్నాను. వాడులేడు.	ocr		çÜÆæÿâæý : D ¸ùsZÌZ ^èþ*yæþ…yìþ. ¯óþ¯èþ$¯é²¯èþ$. Ðéyæþ$Ìôýyæþ$.	2:386.6;2:401.4	no-rom
+I7dfa4ea2536b	7	24	ç³#Ææÿ$	You are in that photograph, He is in this photograph.	పురు : ఆ ఫోటోలో నువ్వున్నావు ; ఈ ఫోటోలో అతనున్నాడు.	ocr		ç³#Ææÿ$ :  B ¸ùsZÌZ ¯èþ$Ðèþ#Ó¯é²Ðèþ# ; D ¸ùsZÌZ A™èþ¯èþ$¯é²yæþ$.	2:431.0;2:445.8	no-rom
+Ib43644c7060d	7	25	çÜÆæÿâæý	Look here! Mother and father are not there in this photo- graph. We are there. Mother is in that photograph.	సరళ : ఇలా చూడు, ఈ ఫోటోలో అమ్మా నాన్నగారు లేరు. మనం ఉన్నాం. ఆ ఫోటోలో అమ్మ ఉంది.	ocr		çÜÆæÿâæý : CÌê ^èþ*yæþ$, D ¸ùsZÌZ AÐèþ*Ã ¯é¯èþ²V>Ææÿ$ ÌôýÆæÿ$. Ðèþ$¯èþ… E¯é²…. B ¸ùsZÌZ AÐèþ$Ã E…¨.	2:475.5;2:490.3;2:505.1	no-rom
+I23655afdc838	7	26	ç³#Ææÿ$	All of you come here. Take these dolls.	పురు : మీరు అందరూ ఇలా రండి. ఈ బొమ్మలు, తీసుకోండి.	ocr		ç³#Ææÿ$ : Ò$Ææÿ$ A…§æþÆæÿ* CÌê Ææÿ…yìþ. D »ŸÐèþ$ÃË$ ¡çÜ$Mø…yìþ.	2:534.5;2:549.4	no-rom
+Ice9e7483ee20	7	27	Æ>Ðèþ*	Ravi! Where are your birthday clothes?	రామా : రవీ! నీ పుట్టినరోజు బట్టలు ఏవి?	ocr		Æ>Ðèþ* : ÆæÿÒ! ± ç³#sìýt¯èþÆøk ºrtË$ HÑ?	2:579.0	no-rom
+I9684ffc1c72c	7	28	ÆæÿÑ	Here are my birthday clothes.	రవి : ఇవిగో నా పుట్టినరోజు బట్టలు.	ocr		ÆæÿÑ : CÑVø ¯é ç³#sìýt¯èþÆøk ºrtË$.	2:608.6	no-rom
+Ic66401298aa2	7	29	ç³#Ææÿ$	When is your birthday?	పురు : నీ పుట్టినరోజు ఎప్పుడు?	ocr		ç³#Ææÿ$ : ± ç³#sìýt¯èþÆøk Gç³šyæþ$?	3:179.6	no-rom
+Id4380db21dc1	7	30	ÆæÿÑ	Today!	రవి: ఇవ్వేశే!	ocr		ÆæÿÑ : CÐóþÓâôý!	3:209.0	no-rom
+I9e0dfaffe990	7	31	ç³#Ææÿ$	Is today your birthday?.1	పురు : ఇవ్వేళ నీ పుట్టిన రోజా?	ocr		ç³#Ææÿ$ : CÐóþÓâæý ± ç³#sìýt¯èþ Æøgê?	3:238.6	no-rom
+I2f02afa8c0e0	7	32	ÆæÿÑ	Yes. There is my elder sister. To- morrow is her birthday.	రవి : అవును. అదుగో మా అక్కయ్య. దాని పుట్టినరోజు రేపు.	ocr		ÆæÿÑ : AÐèþ#¯èþ$. A§æþ$Vø Ðèþ* AMæüPÄæý$Å. §é° ç³#sìýt¯èþÆøk Æóÿç³#.	3:268.2;3:283.1	no-rom
+If5747d2c5411	7	33	ç³#Ææÿ$	Where are your sister's birthday clothes	పురు : మీ అక్కయ్య పుట్టినరోజు బట్టలు ఏవి?	ocr		ç³#Ææÿ$ :  Ò$ AMæüPÄæý$Å ç³#sìýt¯èþÆøk ºrtË$ HÑ?	3:312.7;3:327.5	no-rom
+Ib61e3aab03b1	7	34	ÆæÿÑ	There they are!	రవి : అవిగో!	ocr		ÆæÿÑ : AÑVø!	3:357.1	no-rom
+I4a8c1a1c1a13	7	35	ç³#Ææÿ$	Where is your younger sister?	పురు : మీ చెల్లెలు ఏది?	ocr		ç³#Ææÿ$ : Ò$ ^ðþÌñýÏË$ H¨?	3:386.6	no-rom
+Ib08aba8ffa7f	7	36	ÆæÿÑ	Here she is!	రవి : ఇదుగో!	ocr		ÆæÿÑ : C§æþ$Vø!	3:416.2	no-rom
+Ia63bbba8c523	7	37	ç³#Ææÿ$	Papa! Take this doll.	పురు : పాపా ఈ బొమ్మ తీసుకో.	ocr		ç³#Ææÿ$ : ´ë´ë! D »ŸÐèþ$Ã ¡çÜ$Mø.	3:445.8	no-rom

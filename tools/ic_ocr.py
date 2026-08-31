@@ -353,8 +353,8 @@ def cmd_build(args):
                 r['flags'] = (r.get('flags', '') + ' ocr-suspect').strip()
         with open(os.path.join(work, f'{num}.tsv'), 'w', encoding='utf-8', newline='') as f:
             w = csv.DictWriter(f, delimiter='\t',
-                               fieldnames=['lesson', 'seq', 'speaker', 'en', 'te', 'te_src',
-                                           'rom', 'legacy', 'keys', 'flags'])
+                               fieldnames=['guid', 'lesson', 'seq', 'speaker', 'en', 'te',
+                                           'te_src', 'rom', 'legacy', 'keys', 'flags'])
             w.writeheader()
             w.writerows(rows)
         done += 1

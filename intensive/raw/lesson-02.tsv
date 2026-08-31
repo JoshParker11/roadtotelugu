@@ -1,24 +1,24 @@
-lesson	seq	speaker	en	rom	legacy	keys	flags
-2	1	WÇ	Hello, sir!	giri : namaskāramaṁḍī.	WÇ : ¯èþÐèþ$ÝëPÆæÿÐèþ$…yîþ!	0:465.5	
-2	2	Æ>Ðèþ#	Hello! Who are you?	rāvu : namaskāraṁ. mīru evaru?	Æ>Ðèþ# : ¯èþÐèþ$ÝëPÆæÿ…. Ò$Ææÿ$ GÐèþÆæÿ$?	0:526.4	
-2	3	WÇ	I am a Kannada student He is a Telugu student. He is a Tamil Student. She is a Telugu Student. She is a Malayalam Student.	giri : nēnu kannaḍa vidyārthini. itanu telugu vidyārthi. atanu tamiḷa vidyārthi. āme telugu vidyārthini. īme malayāḷa vidyārthini.	WÇ : ¯óþ¯èþ$ Mæü¯èþ²yæþ Ñ§éÅÇ¦°. C™èþ¯èþ$ ™ðþË$Væü$ Ñ§éÅÇ¦. A™èþ¯èþ$ ™èþÑ$âæý Ñ§éÅÇ¦. BÐðþ$ ™ðþË$Væü$ Ñ§éÅÇ¦°. DÐðþ$ Ðèþ$ËÄæý*âæý Ñ§éÅÇ¦°.	0:584.0;1:179.2;1:236.8;1:294.2;1:351.7	
-2	4	Æ>Ðèþ#	My name is Ramarao. His name is Mr. Sarma. His name is Rajaram.	ravu : nā pēru rāmārāvu. īyana pēru śarmagāru. āyana pēru rājārām.	Æ>Ðèþ# : ¯éõ³Ææÿ$ Æ>Ðèþ*Æ>Ðèþ#. DÄæý$¯èþ õ³Ææÿ$ ÔèýÆæÿÃV>Ææÿ$. BÄæý$¯èþ õ³Ææÿ$ Æ>gêÆ>ÐŒþ$.	1:409.3;1:466.7;1:524.2	
-2	5	VúÇ	Namaskaram Sir! My name is Gowri. I am a Hindi student. Her name is Sarala. Her name is Girija.	gauri : namaskāramaṁḍī. nā pēru gauri. nēnu hiṁdī vidyārthinini. īme pēru saraḷa. āme pēru girija.	VúÇ : ¯èþÐèþ$ÝëPÆæÿÐèþ$…yîþ! ¯é õ³Ææÿ$ VúÇ. ¯óþ¯èþ$ íßý…© Ñ§éÅÇ¦°°. DÐðþ$ õ³Ææÿ$ çÜÆæÿâæý. BÐðþ$ õ³Ææÿ$ WÇf.	1:581.8;2:180.0;2:240.8	
-2	6	Æ>Ðèþ#	Whose name is Girija?	rāvu : evari pēru girija?	Æ>Ðèþ# : GÐèþÇ õ³Ææÿ$ WÇf?	2:301.7	
-2	7	WÇf	My name, Sir!	girija : nā pēraṁḍī.	WÇf : ¯é õ³Ææÿ…yîþ!	2:362.6	
-2	8	Æ>Ðèþ#	What is your name, Sir?	? rāvu : mī pērēmiṭanḍī?	Æ>Ðèþ# : Ò$ õ³ÆóÿÑ$r…yîþ?	2:423.5	
-2	9	WÇ	My name is Giri. His name is Ravi. His name is Sankar.	giri : nā pēru giri. itani pēru ravi. atani pēru śa©kar.	WÇ : ¯é õ³Ææÿ$ WÇ. C™èþ° õ³Ææÿ$ ÆæÿÑ. A™èþ° õ³Ææÿ$ Ôèý…MæüÆŠÿ.	2:484.4;2:499.6	unmapped-glyph
-2	10	Æ>Ðèþ#	Whose name is Ravi?	rāvu : evari pēru ravi?	Æ>Ðèþ# : GÐèþÇ õ³Ææÿ$ ÆæÿÑ?	2:590.9	
-2	11	WÇ	His name, Sir!	giri : itani pēraṁḍī!	WÇ : C™èþ° õ³Ææÿ…yîþ!	3:179.8	
-2	12	VúÇ	Who/what are you, Sir?	_ra da§S>r? gowri : mīrevaranḍī?	VúÇ : Ò$ÆðÿÐèþÆæÿ…yîþ?	3:240.8	unmapped-glyph
-2	13	Æ>Ðèþ#	Hello, Mr. Rajaram! please tell. Who am I?	rāvu : ēmaṁḍī, rājārāmgārū! cheppaṁḍi. nēnevarini?	Æ>Ðèþ# : HÐèþ$…yîþ, Æ>gêÆ>ÐŒþ$V>Ææÿ*! ^ðþç³µ…yìþ. ¯óþ¯ðþÐèþÇ°?	3:301.7;3:317.0	
-2	14	Æ>gêÆ>ÐŒþ$	You are the Principal.	rājārām : mīru prinsipālgāru.	Æ>gêÆ>ÐŒþ$ : Ò$Ææÿ$ {í³°Þ´ëÌŒýV>Ææÿ$	3:393.1	
-2	15	Vøí³	Sir!  Coffee!	gopi : sār! kāfi!	Vøí³ : ÝëÆŠÿ! M>ïœ!	3:453.9	
-2	16	VúÇ	Who is he, Sir?	gowri : atanevaraṁḍī?	VúÇ : A™èþ¯ðþÐèþÆæÿ…yîþ?	3:514.8	
-2	17	Æ>Ðèþ#	Mister! Tell, Who are you?	ṁ ṣnw rāvu : ēmayyā! ceppu nuvvevarivi?	Æ>Ðèþ# : HÐèþ$Äæý*Å! ^ðþç³š. ¯èþ$ÐðþÓÐèþÇÑ?	3:575.7	
-2	18	Vøí³	I am an attender.	gopi : nēnu aṭeṁḍarni.	Vøí³ : ¯óþ¯èþ$ Asñý…yæþÇ².	4:179.4	
-2	19	Æ>gêÆ>ÐŒþ$	He is an attender.	rājārām : atanu aṭeṁḍaru.	Æ>gêÆ>ÐŒþ$ : A™èþ¯èþ$ Asñý…yæþÆæÿ$.	4:240.4	
-2	20	Æ>Ðèþ#	You are an attender. Tell your name too.	ṁ ṣnw rāvu : nuvvu aṭeṁḍaruvi. nī pēru  kūḍā ceppu.	Æ>Ðèþ# : ¯èþ$Ðèþ#Ó Asñý…yæþÆæÿ$Ñ. ± õ³Ææÿ$ Mæü*yé ^ðþç³š.	4:301.7;4:317.0	
-2	21	Vøí³	My name is Gopi.	gōpi : nā pēru gōpi.	Vøí³ : ¯é õ³Ææÿ$ Vøí³.	4:408.5	
-2	22	Æ>Ðèþ#	What is that? who is he?	rāvu : adēmiṭi? āyānevaru?	Æ>Ðèþ# : A§óþÑ$sìý? BÄæý$¯ðþÐèþÆæÿ$?	4:469.4	
-2	23	Vøí³	That is coffee. He is a teacher.	gōpi : adi kāfī. āyana māṣṭarugāru.	Vøí³ : A¨ M>ïœ. BÄæý$¯èþ Ðèþ*çÙtÆæÿ$V>Ææÿ$.	4:530.2;4:545.5	
+guid	lesson	seq	speaker	en	rom	legacy	keys	flags
+Ifa170566d3f1	2	1	WÇ	Hello, sir!	giri : namaskāramaṁḍī.	WÇ : ¯èþÐèþ$ÝëPÆæÿÐèþ$…yîþ!	0:465.5	
+I05465b345b53	2	2	Æ>Ðèþ#	Hello! Who are you?	rāvu : namaskāraṁ. mīru evaru?	Æ>Ðèþ# : ¯èþÐèþ$ÝëPÆæÿ…. Ò$Ææÿ$ GÐèþÆæÿ$?	0:526.4	
+I2f42c5260d32	2	3	WÇ	I am a Kannada student He is a Telugu student. He is a Tamil Student. She is a Telugu Student. She is a Malayalam Student.	giri : nēnu kannaḍa vidyārthini. itanu telugu vidyārthi. atanu tamiḷa vidyārthi. āme telugu vidyārthini. īme malayāḷa vidyārthini.	WÇ : ¯óþ¯èþ$ Mæü¯èþ²yæþ Ñ§éÅÇ¦°. C™èþ¯èþ$ ™ðþË$Væü$ Ñ§éÅÇ¦. A™èþ¯èþ$ ™èþÑ$âæý Ñ§éÅÇ¦. BÐðþ$ ™ðþË$Væü$ Ñ§éÅÇ¦°. DÐðþ$ Ðèþ$ËÄæý*âæý Ñ§éÅÇ¦°.	0:584.0;1:179.2;1:236.8;1:294.2;1:351.7	
+I3003e039745d	2	4	Æ>Ðèþ#	My name is Ramarao. His name is Mr. Sarma. His name is Rajaram.	ravu : nā pēru rāmārāvu. īyana pēru śarmagāru. āyana pēru rājārām.	Æ>Ðèþ# : ¯éõ³Ææÿ$ Æ>Ðèþ*Æ>Ðèþ#. DÄæý$¯èþ õ³Ææÿ$ ÔèýÆæÿÃV>Ææÿ$. BÄæý$¯èþ õ³Ææÿ$ Æ>gêÆ>ÐŒþ$.	1:409.3;1:466.7;1:524.2	
+I69d6116bfa1c	2	5	VúÇ	Namaskaram Sir! My name is Gowri. I am a Hindi student. Her name is Sarala. Her name is Girija.	gauri : namaskāramaṁḍī. nā pēru gauri. nēnu hiṁdī vidyārthinini. īme pēru saraḷa. āme pēru girija.	VúÇ : ¯èþÐèþ$ÝëPÆæÿÐèþ$…yîþ! ¯é õ³Ææÿ$ VúÇ. ¯óþ¯èþ$ íßý…© Ñ§éÅÇ¦°°. DÐðþ$ õ³Ææÿ$ çÜÆæÿâæý. BÐðþ$ õ³Ææÿ$ WÇf.	1:581.8;2:180.0;2:240.8	
+Id5985da21d38	2	6	Æ>Ðèþ#	Whose name is Girija?	rāvu : evari pēru girija?	Æ>Ðèþ# : GÐèþÇ õ³Ææÿ$ WÇf?	2:301.7	
+I3bf5ff492b83	2	7	WÇf	My name, Sir!	girija : nā pēraṁḍī.	WÇf : ¯é õ³Ææÿ…yîþ!	2:362.6	
+I7b6f43f40fb7	2	8	Æ>Ðèþ#	What is your name, Sir?	? rāvu : mī pērēmiṭanḍī?	Æ>Ðèþ# : Ò$ õ³ÆóÿÑ$r…yîþ?	2:423.5	
+I2444eb955647	2	9	WÇ	My name is Giri. His name is Ravi. His name is Sankar.	giri : nā pēru giri. itani pēru ravi. atani pēru śa©kar.	WÇ : ¯é õ³Ææÿ$ WÇ. C™èþ° õ³Ææÿ$ ÆæÿÑ. A™èþ° õ³Ææÿ$ Ôèý…MæüÆŠÿ.	2:484.4;2:499.6	unmapped-glyph
+I7344a7f5a0c2	2	10	Æ>Ðèþ#	Whose name is Ravi?	rāvu : evari pēru ravi?	Æ>Ðèþ# : GÐèþÇ õ³Ææÿ$ ÆæÿÑ?	2:590.9	
+I73e423032153	2	11	WÇ	His name, Sir!	giri : itani pēraṁḍī!	WÇ : C™èþ° õ³Ææÿ…yîþ!	3:179.8	
+Ief30651d9ca9	2	12	VúÇ	Who/what are you, Sir?	_ra da§S>r? gowri : mīrevaranḍī?	VúÇ : Ò$ÆðÿÐèþÆæÿ…yîþ?	3:240.8	unmapped-glyph
+I7fc679bc3a28	2	13	Æ>Ðèþ#	Hello, Mr. Rajaram! please tell. Who am I?	rāvu : ēmaṁḍī, rājārāmgārū! cheppaṁḍi. nēnevarini?	Æ>Ðèþ# : HÐèþ$…yîþ, Æ>gêÆ>ÐŒþ$V>Ææÿ*! ^ðþç³µ…yìþ. ¯óþ¯ðþÐèþÇ°?	3:301.7;3:317.0	
+I489ddce82dfc	2	14	Æ>gêÆ>ÐŒþ$	You are the Principal.	rājārām : mīru prinsipālgāru.	Æ>gêÆ>ÐŒþ$ : Ò$Ææÿ$ {í³°Þ´ëÌŒýV>Ææÿ$	3:393.1	
+I543c6ad924ab	2	15	Vøí³	Sir!  Coffee!	gopi : sār! kāfi!	Vøí³ : ÝëÆŠÿ! M>ïœ!	3:453.9	
+I8672a4da51ae	2	16	VúÇ	Who is he, Sir?	gowri : atanevaraṁḍī?	VúÇ : A™èþ¯ðþÐèþÆæÿ…yîþ?	3:514.8	
+Ib57fde47c176	2	17	Æ>Ðèþ#	Mister! Tell, Who are you?	ṁ ṣnw rāvu : ēmayyā! ceppu nuvvevarivi?	Æ>Ðèþ# : HÐèþ$Äæý*Å! ^ðþç³š. ¯èþ$ÐðþÓÐèþÇÑ?	3:575.7	
+I3c3927ea82df	2	18	Vøí³	I am an attender.	gopi : nēnu aṭeṁḍarni.	Vøí³ : ¯óþ¯èþ$ Asñý…yæþÇ².	4:179.4	
+Ie9c7aafa5761	2	19	Æ>gêÆ>ÐŒþ$	He is an attender.	rājārām : atanu aṭeṁḍaru.	Æ>gêÆ>ÐŒþ$ : A™èþ¯èþ$ Asñý…yæþÆæÿ$.	4:240.4	
+I308c8e51c825	2	20	Æ>Ðèþ#	You are an attender. Tell your name too.	ṁ ṣnw rāvu : nuvvu aṭeṁḍaruvi. nī pēru  kūḍā ceppu.	Æ>Ðèþ# : ¯èþ$Ðèþ#Ó Asñý…yæþÆæÿ$Ñ. ± õ³Ææÿ$ Mæü*yé ^ðþç³š.	4:301.7;4:317.0	
+Iedf7fc031788	2	21	Vøí³	My name is Gopi.	gōpi : nā pēru gōpi.	Vøí³ : ¯é õ³Ææÿ$ Vøí³.	4:408.5	
+Iaeb68435d2cc	2	22	Æ>Ðèþ#	What is that? who is he?	rāvu : adēmiṭi? āyānevaru?	Æ>Ðèþ# : A§óþÑ$sìý? BÄæý$¯ðþÐèþÆæÿ$?	4:469.4	
+I15f94297a4f7	2	23	Vøí³	That is coffee. He is a teacher.	gōpi : adi kāfī. āyana māṣṭarugāru.	Vøí³ : A¨ M>ïœ. BÄæý$¯èþ Ðèþ*çÙtÆæÿ$V>Ææÿ$.	4:530.2;4:545.5	

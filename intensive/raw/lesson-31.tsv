@@ -1,28 +1,28 @@
-lesson	seq	speaker	en	rom	legacy	keys	flags
-31	1	ÆæÿÑ	Gopi!  What is the book you are reading?		ÆæÿÑ : Vøï³! ¯èþ$Ðèþ#Ó ^èþ§æþ$Ðèþ#™èþ$¯èþ² ç³#çÜ¢Mæü… HÑ$sìý?	0:436.8;0:452.4	no-rom
-31	2	Vøí³			Vøí³ : .......................................	0:484.0	no-en no-rom
-31	3	ÆæÿÑ	Are you not able to listen?  What are you reading while eating?		ÆæÿÑ : Ñ°í³…^èþr…Ìôý§é?  A¯èþ²… †…r* HÑ$sìý ^èþ§æþ$Ðèþ#™èþ$¯é²Ðèþ#?	0:515.4;0:531.1	no-rom
-31	4	Vøí³	I am not reading while eating.  I am eating my food as I am reading.		Vøí³ : A¯èþ²… †…r* ^èþ§æþÐèþr…Ìôý§æþ$; ^èþ§æþ$Ðèþ#™èþ* A¯èþ²… †…r$¯é²¯èþ$.	0:562.7;0:578.4	no-rom
-31	5	ÆæÿÑ	Both are the same.  Don’t read the novel while you are eating.		ÆæÿÑ : Æðÿ…yæþ* JMæüsôý!  AsêÏ A¯èþ²… †…r* ¯èþÐèþË ^èþ§æþÐèþMæü$.	0:610.0;0:625.7	no-rom
-31	6	Vøí³	Why?		Vøí³ : H…?	1:160.8	no-rom
-31	7	ÆæÿÑ	Reading the novel while eating is not good.		ÆæÿÑ : A¯èþ²… †…r* ¯èþÐèþË ^èþ§æþÐèþr… Ðèþ$…_¨ M>§æþ$.	1:193.5;1:210.1	no-rom
-31	8	Vøí³	This is not a novel.  Are you not able to see properly?		Vøí³ : C¨ ¯èþÐèþË M>§æþ$.  ±Mæü$ çÜÇV>Y Mæü°í³…^èþr…Ìôý ?	1:243.2;1:260.7	no-rom
-31	9	ÆæÿÑ	I see it properly.  That is a novel. You are lying.		ÆæÿÑ : Mæü°í³çÜ$¢¯èþ²¨.  A¨ ¯èþÐèþÌôý! Aº§æþ®Ðèþ*yæþ$™èþ$¯é²Ðèþ#.	1:294.0;1:310.6	no-rom
-31	10	Vøí³	What?  Say it aloud.  It is not audible what you are saying.		Vøí³ : HÑ$sìý?  VæüsìýtV> ^ðþç³š.  ¯èþ$Ðèþ#Ó A…r$¯èþ² Ðèþ*rË$ ¯éMæü$ Ñ°í³…&- -^èþr… Ìôý§æþ$.	1:343.8;1:360.3;1:376.9	no-rom
-31	11	ÆæÿÑ	I am talking aloud only.  My words are audible to every- body.  All are listening to them also.  You are reading a novel. That is why you are not able to hear.  First you stop read- ing  the novel.  Eat your food. Later read the novel.  Are you stopping or not?  What are you thinking?		ÆæÿÑ : ¯óþ¯èþ$ VæüsìýtV>¯óþ Ðèþ*sêÏyæþ$™èþ$¯é²¯èþ$. ¯é Ðèþ*rË$ A…§æþÇMîü Ñ°í³çÜ$¢& ¯é²Æÿ$$.  A…§æþÆæÿ* Ñ…r$¯é²Ææÿ$ Mæü*yé!  ¯èþ$Ðèþ#Ó ¯èþÐèþË ^èþ§æþ$Ðèþ#™èþ$¯é²Ðèþ#. A…§æþ$Móü ±Mæü$ Ñ°í³…^èþr…Ìôý§æþ$. ¯èþÐèþË ^èþ§æþÐèþr… Bç³#.  Ðèþ$$…§æþ$ A¯èþ²… †¯èþ$.  ™èþÆ>Ó™èþ ¯èþÐèþË ^èþ§æþ$Ðèþ#. Bç³#™èþ$¯é²Ðé Ìôý§é?  HÑ$sìý BÌZ_çÜ$¢¯é²Ðèþ#?	1:410.1;1:426.6;1:443.2;1:459.8;1:476.4;1:492.9;1:509.5;1:526.1;1:542.7	no-rom
-31	12	Vøí³	I am not thinking anything.		Vøí³ : ¯óþ¯èþ$ HÒ$ BÌZ_…^èþr…Ìôý§æþ$.	1:575.8	no-rom
-31	13	ÆæÿÑ	All right!  First tell me this. Where are you going this evening?		ÆæÿÑ : çÜÆóÿ!  Ðèþ$$…§æþ$ ¯éMîü ÑçÙÄæý$… ^ðþç³š. ¯èþ$Ðèþ#Ó ÝëÄæý$…{™èþ… GMæüPyìþMìü Ððþâæý$¢¯é²Ðèþ#?	1:609.0;1:625.5;1:642.1	no-rom
-31	14	Vøí³	I am not going anywhere.		Vøí³ : GMæüPyìþMîü Ððþâæýår…Ìôý§æþ$.	2:160.6	no-rom
-31	15	ÆæÿÑ	Then, ask Giri to come here before 6 o’clock in the evening.		ÆæÿÑ : AÆÿ$$™óþ WÇ° ÝëÄæý$…{™èþ… BÆæÿ$ Væü…rË ÌZV> CMæüPyìþMìü ÆæÿÐèþ$Ã¯èþ$.	2:193.5;2:209.8	no-rom
-31	16	Vøí³	He is not free today.  It is not only this day.  He is not free even tomorrow.		Vøí³ : CÐóþÓâæý ÐéyìþMìü AçÜË$ ¡ÇMæü Ìôý§æþ$. CÐóþÓâôý M>§æþ$; Æóÿç³# Mæü*yé ÐéyìþMìü ¡ÇMæü Ìôý§æþ$.	2:242.5;2:258.9;2:275.3	no-rom
-31	17	ÆæÿÑ	Why?		ÆæÿÑ : G…§æþ$Mæü$?	2:308.2	no-rom
-31	18	Vøí³	He have many things to do.		Vøí³ : ÐéyìþMìü HÐø ç³¯èþ$Ë$ E¯é²Æÿ$$.	2:340.9	no-rom
-31	19	ÆæÿÑ	All right.  My book is with him. Ask him to send it to me tomorrow morning.  I am going.		ÆæÿÑ : çÜÆóÿ!  ¯é ç³#çÜ¢Mæü… Ðéyìþ §æþVæüYÆæÿ E…¨. A¨ Æóÿç³# ´÷§æþ$ª¯èþ ç³…í³…^èþÐèþ$¯èþ$. ¯óþ¯èþ$ Ððþâæý$¢¯é²¯èþ$.	2:373.6;2:389.9;2:406.5	no-rom
-31	20	Ðèþ$$Ææÿã	Brother!  Ask Ravi to wait for a while.		Ðèþ$$Ææÿã: A¯èþ²Äæý*Å!  ÆæÿÑ° Mö…^ðþ… õÜç³# E…yæþÐèþ$¯èþ$.	2:439.2;2:455.6	no-rom
-31	21	Vøí³	Ravi!  My brother is asking you to wait for some time.  Hold on.		Vøí³ : ÆæÿÒ!  °¯èþ$² Ðèþ* ™èþÐèþ$$Ãyæþ$ E…yæþ& Ðèþ$…r$¯é²yæþ$; BVæü$.	2:488.3;2:504.8	no-rom
-31	22	ÆæÿÑ	Why?		ÆæÿÑ : G…§æþ$Mæü$?	2:537.5	no-rom
-31	23	Vøí³	May be, he is coming with you.		Vøí³ : Ðéyæþ$ Mæü*yé ÐèþçÜ$¢¯é²yóþÐðþ*!	2:570.2	no-rom
-31	24	ÆæÿÑ	Murali!  Are you also coming?		ÆæÿÑ : Ðèþ$$Ææÿä!  ¯èþ$Ðèþ#Ó Mæü*yé ÐèþçÜ$¢¯é²Ðé?	2:603.2	no-rom
-31	25	Ðèþ$$Ææÿã	It is not possible for me to go out now.  Give some tickets for our college drama to Giri also. Ask him to take one ticket, and to give the remaining tick- ets to his friends.		Ðèþ$$Ææÿã: Cç³šyæþ$ ¯óþ¯èþ$ Æ>Ðèþsê°Mìü ÒË$ Ìôý§æþ$.  Ðèþ$¯èþ M>Ìôýi ¯érM>°Mìü  WÇMìü Væü*yé Mö°² sìýMðüPr$Ï CÐèþ#Ó. Ðé×ìý~ JMæü sìýMðüPr$t ¡çÜ$MøÐèþ$¯èþ$.  Ñ$WÍ¯èþÑ Ðéyìþ õÜ²íßý™èþ$ËMæü$ CÐèþÓÐèþ$¯èþ$.	2:635.9;3:160.3;3:176.9;3:193.5;3:210.1	no-rom
-31	26	ÆæÿÑ	Okay!		ÆæÿÑ : AsêÏVóü!	3:243.2	no-rom
-31	27	Ðèþ$$Ææÿã	One more thing.  Ask him to go to the Railway Station this evening.  The drama troupe is coming by the 6 o’clock train. I asked Murthi also to go to the station.  He too will go there. I can’t  see. Please take off your hat! I can’t hear you at all. Please speak up, sir! Ear Clinic No, please put it back on! Why must I always stand in front? Today ask mummy to stand there!		Ðèþ$$Ææÿã: C…MöMæü çÜ…Væü†.  Ðé×ìý~ CÐóþÓâæý ÝëÄæý$…{™èþ… õÜtçÙ¯èþ$Mæü$ ´÷Ðèþ$Ã¯èþ$. ¯érMæü…Ðéâæý$å BÆæÿ$ Væü…rË ÆðÿOÌZÏ ÐèþçÜ$¢¯é²Ææÿ$.  Ðèþ$*Ç¢° Mæü*yé õÜtçÙ¯èþ$Mæü$ ÐðþâæýåÐèþ$¯é²¯èþ$.  Ðéyæþ$ Mæü*yé Ððþâê¢yæþ$. Mæü°í³…^èþr… Ìôý§æþ$ Mö…^ðþ… sZï³ Ò$Ææÿ$ A…r$¯èþ² Ðèþ*rË$ AçÜË$ †Äæý$Å…yìþ! Ñ°í³…^èþr… Ìôý§æþ$ Mö…^ðþ… VæüsìýtV> Ðèþ*sêÏyæþ…yìþ yéMæütÆŠÿ! ò³r$tMø ¯éÄæý$¯é!! ¯óþ¯óþ Gç³šyæþ* Ðèþ$$…§æþ$ °ÌZaÐéÌê? DÐéâæý Ðèþ$Ò$Ã° Ðèþ$$…§æþ$ °ÌZaÐèþ$¯èþ$!	3:276.4;3:292.9;3:309.5;3:326.1;3:342.7;3:359.2;3:404.0;3:417.0;3:419.2;3:429.8;3:432.0;3:445.0;3:529.9;3:542.7;4:166.6	no-rom
+guid	lesson	seq	speaker	en	rom	legacy	keys	flags
+I36db9e93097f	31	1	ÆæÿÑ	Gopi!  What is the book you are reading?		ÆæÿÑ : Vøï³! ¯èþ$Ðèþ#Ó ^èþ§æþ$Ðèþ#™èþ$¯èþ² ç³#çÜ¢Mæü… HÑ$sìý?	0:436.8;0:452.4	no-rom
+Iebc86392e24f	31	2	Vøí³			Vøí³ : .......................................	0:484.0	no-en no-rom
+Icc1891f03323	31	3	ÆæÿÑ	Are you not able to listen?  What are you reading while eating?		ÆæÿÑ : Ñ°í³…^èþr…Ìôý§é?  A¯èþ²… †…r* HÑ$sìý ^èþ§æþ$Ðèþ#™èþ$¯é²Ðèþ#?	0:515.4;0:531.1	no-rom
+I335ed2e786d1	31	4	Vøí³	I am not reading while eating.  I am eating my food as I am reading.		Vøí³ : A¯èþ²… †…r* ^èþ§æþÐèþr…Ìôý§æþ$; ^èþ§æþ$Ðèþ#™èþ* A¯èþ²… †…r$¯é²¯èþ$.	0:562.7;0:578.4	no-rom
+I430c841b2f51	31	5	ÆæÿÑ	Both are the same.  Don’t read the novel while you are eating.		ÆæÿÑ : Æðÿ…yæþ* JMæüsôý!  AsêÏ A¯èþ²… †…r* ¯èþÐèþË ^èþ§æþÐèþMæü$.	0:610.0;0:625.7	no-rom
+I9621c9375583	31	6	Vøí³	Why?		Vøí³ : H…?	1:160.8	no-rom
+I17f8faac9a68	31	7	ÆæÿÑ	Reading the novel while eating is not good.		ÆæÿÑ : A¯èþ²… †…r* ¯èþÐèþË ^èþ§æþÐèþr… Ðèþ$…_¨ M>§æþ$.	1:193.5;1:210.1	no-rom
+I43683da385e3	31	8	Vøí³	This is not a novel.  Are you not able to see properly?		Vøí³ : C¨ ¯èþÐèþË M>§æþ$.  ±Mæü$ çÜÇV>Y Mæü°í³…^èþr…Ìôý ?	1:243.2;1:260.7	no-rom
+If472aee29a79	31	9	ÆæÿÑ	I see it properly.  That is a novel. You are lying.		ÆæÿÑ : Mæü°í³çÜ$¢¯èþ²¨.  A¨ ¯èþÐèþÌôý! Aº§æþ®Ðèþ*yæþ$™èþ$¯é²Ðèþ#.	1:294.0;1:310.6	no-rom
+I965f5606210e	31	10	Vøí³	What?  Say it aloud.  It is not audible what you are saying.		Vøí³ : HÑ$sìý?  VæüsìýtV> ^ðþç³š.  ¯èþ$Ðèþ#Ó A…r$¯èþ² Ðèþ*rË$ ¯éMæü$ Ñ°í³…&- -^èþr… Ìôý§æþ$.	1:343.8;1:360.3;1:376.9	no-rom
+I08e941014cbf	31	11	ÆæÿÑ	I am talking aloud only.  My words are audible to every- body.  All are listening to them also.  You are reading a novel. That is why you are not able to hear.  First you stop read- ing  the novel.  Eat your food. Later read the novel.  Are you stopping or not?  What are you thinking?		ÆæÿÑ : ¯óþ¯èþ$ VæüsìýtV>¯óþ Ðèþ*sêÏyæþ$™èþ$¯é²¯èþ$. ¯é Ðèþ*rË$ A…§æþÇMîü Ñ°í³çÜ$¢& ¯é²Æÿ$$.  A…§æþÆæÿ* Ñ…r$¯é²Ææÿ$ Mæü*yé!  ¯èþ$Ðèþ#Ó ¯èþÐèþË ^èþ§æþ$Ðèþ#™èþ$¯é²Ðèþ#. A…§æþ$Móü ±Mæü$ Ñ°í³…^èþr…Ìôý§æþ$. ¯èþÐèþË ^èþ§æþÐèþr… Bç³#.  Ðèþ$$…§æþ$ A¯èþ²… †¯èþ$.  ™èþÆ>Ó™èþ ¯èþÐèþË ^èþ§æþ$Ðèþ#. Bç³#™èþ$¯é²Ðé Ìôý§é?  HÑ$sìý BÌZ_çÜ$¢¯é²Ðèþ#?	1:410.1;1:426.6;1:443.2;1:459.8;1:476.4;1:492.9;1:509.5;1:526.1;1:542.7	no-rom
+I005dab0498a4	31	12	Vøí³	I am not thinking anything.		Vøí³ : ¯óþ¯èþ$ HÒ$ BÌZ_…^èþr…Ìôý§æþ$.	1:575.8	no-rom
+Ib0c5a65b017f	31	13	ÆæÿÑ	All right!  First tell me this. Where are you going this evening?		ÆæÿÑ : çÜÆóÿ!  Ðèþ$$…§æþ$ ¯éMîü ÑçÙÄæý$… ^ðþç³š. ¯èþ$Ðèþ#Ó ÝëÄæý$…{™èþ… GMæüPyìþMìü Ððþâæý$¢¯é²Ðèþ#?	1:609.0;1:625.5;1:642.1	no-rom
+Iee8eb609ac43	31	14	Vøí³	I am not going anywhere.		Vøí³ : GMæüPyìþMîü Ððþâæýår…Ìôý§æþ$.	2:160.6	no-rom
+I75825d719a71	31	15	ÆæÿÑ	Then, ask Giri to come here before 6 o’clock in the evening.		ÆæÿÑ : AÆÿ$$™óþ WÇ° ÝëÄæý$…{™èþ… BÆæÿ$ Væü…rË ÌZV> CMæüPyìþMìü ÆæÿÐèþ$Ã¯èþ$.	2:193.5;2:209.8	no-rom
+I6a2b489ef7f3	31	16	Vøí³	He is not free today.  It is not only this day.  He is not free even tomorrow.		Vøí³ : CÐóþÓâæý ÐéyìþMìü AçÜË$ ¡ÇMæü Ìôý§æþ$. CÐóþÓâôý M>§æþ$; Æóÿç³# Mæü*yé ÐéyìþMìü ¡ÇMæü Ìôý§æþ$.	2:242.5;2:258.9;2:275.3	no-rom
+I9621c9375583	31	17	ÆæÿÑ	Why?		ÆæÿÑ : G…§æþ$Mæü$?	2:308.2	no-rom
+I98126463dd45	31	18	Vøí³	He have many things to do.		Vøí³ : ÐéyìþMìü HÐø ç³¯èþ$Ë$ E¯é²Æÿ$$.	2:340.9	no-rom
+I167b84611cdc	31	19	ÆæÿÑ	All right.  My book is with him. Ask him to send it to me tomorrow morning.  I am going.		ÆæÿÑ : çÜÆóÿ!  ¯é ç³#çÜ¢Mæü… Ðéyìþ §æþVæüYÆæÿ E…¨. A¨ Æóÿç³# ´÷§æþ$ª¯èþ ç³…í³…^èþÐèþ$¯èþ$. ¯óþ¯èþ$ Ððþâæý$¢¯é²¯èþ$.	2:373.6;2:389.9;2:406.5	no-rom
+I64878e5f15f9	31	20	Ðèþ$$Ææÿã	Brother!  Ask Ravi to wait for a while.		Ðèþ$$Ææÿã: A¯èþ²Äæý*Å!  ÆæÿÑ° Mö…^ðþ… õÜç³# E…yæþÐèþ$¯èþ$.	2:439.2;2:455.6	no-rom
+I6727ffff27b2	31	21	Vøí³	Ravi!  My brother is asking you to wait for some time.  Hold on.		Vøí³ : ÆæÿÒ!  °¯èþ$² Ðèþ* ™èþÐèþ$$Ãyæþ$ E…yæþ& Ðèþ$…r$¯é²yæþ$; BVæü$.	2:488.3;2:504.8	no-rom
+I9621c9375583	31	22	ÆæÿÑ	Why?		ÆæÿÑ : G…§æþ$Mæü$?	2:537.5	no-rom
+I1058effd9cd3	31	23	Vøí³	May be, he is coming with you.		Vøí³ : Ðéyæþ$ Mæü*yé ÐèþçÜ$¢¯é²yóþÐðþ*!	2:570.2	no-rom
+I956ebb771b5d	31	24	ÆæÿÑ	Murali!  Are you also coming?		ÆæÿÑ : Ðèþ$$Ææÿä!  ¯èþ$Ðèþ#Ó Mæü*yé ÐèþçÜ$¢¯é²Ðé?	2:603.2	no-rom
+I421727b9ee61	31	25	Ðèþ$$Ææÿã	It is not possible for me to go out now.  Give some tickets for our college drama to Giri also. Ask him to take one ticket, and to give the remaining tick- ets to his friends.		Ðèþ$$Ææÿã: Cç³šyæþ$ ¯óþ¯èþ$ Æ>Ðèþsê°Mìü ÒË$ Ìôý§æþ$.  Ðèþ$¯èþ M>Ìôýi ¯érM>°Mìü  WÇMìü Væü*yé Mö°² sìýMðüPr$Ï CÐèþ#Ó. Ðé×ìý~ JMæü sìýMðüPr$t ¡çÜ$MøÐèþ$¯èþ$.  Ñ$WÍ¯èþÑ Ðéyìþ õÜ²íßý™èþ$ËMæü$ CÐèþÓÐèþ$¯èþ$.	2:635.9;3:160.3;3:176.9;3:193.5;3:210.1	no-rom
+Id6d614a58483	31	26	ÆæÿÑ	Okay!		ÆæÿÑ : AsêÏVóü!	3:243.2	no-rom
+I2f20fade1acb	31	27	Ðèþ$$Ææÿã	One more thing.  Ask him to go to the Railway Station this evening.  The drama troupe is coming by the 6 o’clock train. I asked Murthi also to go to the station.  He too will go there. I can’t  see. Please take off your hat! I can’t hear you at all. Please speak up, sir! Ear Clinic No, please put it back on! Why must I always stand in front? Today ask mummy to stand there!		Ðèþ$$Ææÿã: C…MöMæü çÜ…Væü†.  Ðé×ìý~ CÐóþÓâæý ÝëÄæý$…{™èþ… õÜtçÙ¯èþ$Mæü$ ´÷Ðèþ$Ã¯èþ$. ¯érMæü…Ðéâæý$å BÆæÿ$ Væü…rË ÆðÿOÌZÏ ÐèþçÜ$¢¯é²Ææÿ$.  Ðèþ$*Ç¢° Mæü*yé õÜtçÙ¯èþ$Mæü$ ÐðþâæýåÐèþ$¯é²¯èþ$.  Ðéyæþ$ Mæü*yé Ððþâê¢yæþ$. Mæü°í³…^èþr… Ìôý§æþ$ Mö…^ðþ… sZï³ Ò$Ææÿ$ A…r$¯èþ² Ðèþ*rË$ AçÜË$ †Äæý$Å…yìþ! Ñ°í³…^èþr… Ìôý§æþ$ Mö…^ðþ… VæüsìýtV> Ðèþ*sêÏyæþ…yìþ yéMæütÆŠÿ! ò³r$tMø ¯éÄæý$¯é!! ¯óþ¯óþ Gç³šyæþ* Ðèþ$$…§æþ$ °ÌZaÐéÌê? DÐéâæý Ðèþ$Ò$Ã° Ðèþ$$…§æþ$ °ÌZaÐèþ$¯èþ$!	3:276.4;3:292.9;3:309.5;3:326.1;3:342.7;3:359.2;3:404.0;3:417.0;3:419.2;3:429.8;3:432.0;3:445.0;3:529.9;3:542.7;4:166.6	no-rom

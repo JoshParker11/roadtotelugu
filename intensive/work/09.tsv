@@ -1,53 +1,53 @@
-lesson	seq	speaker	en	te	te_src	rom	legacy	keys	flags
-9	1	™é™èþÄæý$Å	Children! What is there in this box?	తాతయ్య : పిల్లలూ! ఈ పెట్టెలో ఏం ఉంది?	ocr		™é™èþÄæý$Å : í³ËÏË*! D ò³sñýtÌZ H… E…¨?	0:446.0	no-rom
-9	2	çÜ$Ðèþ$	A book.	సుమ : పుస్తకం ఉంది.	ocr		çÜ$Ðèþ$ : ç³#çÜ¢Mæü… E…¨.	0:475.7	no-rom
-9	3	™é™èþÄæý$Å	Whose book is that?	తాతయ్య : ఆ పుస్తకం ఎవరిది?	ocr		™é™èþÄæý$Å : B ç³#çÜ¢Mæü… GÐèþÇ¨?	0:505.3	no-rom
-9	4	çÜ$Ðèþ$	It is Ravi's.	సుమ : రవిది.	ocr		çÜ$Ðèþ$ : ÆæÿÑ¨.	0:534.9	no-rom
-9	5	™é™èþÄæý$Å	Where is Ravi?	తాతయ్య : రవి ఏడి?	ocr		™é™èþÄæý$Å : ÆæÿÑ Hyìþ?	0:564.5	no-rom
-9	6	çÜ$Ðèþ$	He is there.	సుమ : అడుగో, అక్కడున్నాడు.	ocr		çÜ$Ðèþ$ : Ayæþ$Vø, AMæüPyæþ$¯é²yæþ$.	0:594.2	no-rom
-9	7	™é™èþ	Whose book is that?	తాత : ఆ పుస్తకం ఎవరిది?	ocr		™é™èþ : B ç³#çÜ¢Mæü… GÐèþÇ¨?	0:623.6	no-rom
-9	8	çÜ$Ðèþ$	It is Gopi's	సుమ : గోపిది.	ocr		çÜ$Ðèþ$ : Vøí³¨.	1:179.8	no-rom
-9	9	™é™èþ	Where is Gopi?	తాత: గోప్‌ ఏడి?	ocr		™é™èþ : Vøí³ Hyìþ?	1:210.2	no-rom
-9	10	çÜ$Ðèþ$	He is here. Isn't he?	సుమ : ఇడుగో, ఇక్కడే ఉన్నాడు కదా!	ocr		çÜ$Ðèþ$ : Cyæþ$Vø, CMæüPyóþ E¯é²yæþ$ Mæü§é!	1:240.7	no-rom
-9	11	™é™èþ	Whose pens are these?	తాత : ఈ కలాలు ఎవరివి?	ocr		™é™èþ : D MæüÌêË$ GÐèþÇÑ?	1:271.1	no-rom
-9	12	çÜ$Ðèþ$	One is Kamala's and one is Vinod's.	సుమ : ఒకటి కమలది; ఒకటి వినోద్‌ది.	ocr		çÜ$Ðèþ$ : JMæüsìý MæüÐèþ$Ë¨; JMæüsìý Ñ¯ø§Šþ¨.	1:301.5	no-rom
-9	13	™é™èþ	Where are those two?	తాత : వాళ్ళిద్దరూ ఏరి?	ocr		™é™èþ : Ðéãå§æþªÆæÿ* HÇ?	1:332.0	no-rom
-9	14	çÜ$Ðèþ$	There, they are!	సుమ : అరుగో!	ocr		çÜ$Ðèþ$ : AÆæÿ$Vø!	1:362.4	no-rom
-9	15	™é™èþ	Whose bag is this?	తాత : ఈ సంచి ఎవరిది?	ocr		™é™èþ : D çÜ…_ GÐèþÇ¨?	1:392.9	no-rom
-9	16	çÜ$Ðèþ$	Mine.	సుమ : నాది	ocr		çÜ$Ðèþ$ : ¯é¨	1:423.3	no-rom
-9	17	™é™èþ	What are there in this bag?	తాత : ఈ సంచిలో ఏం ఉన్నాయి?	ocr		™é™èþ : D çÜ…_ÌZ H… E¯é²Æÿ$$?	1:453.8	no-rom
-9	18	çÜ$Ðèþ$	Flowers.	సుమ : పూలున్నాయి.	ocr		çÜ$Ðèþ$ : ç³NË$¯é²Æÿ$$.	1:484.2	no-rom
-9	19	™é™èþ	Whose flowers are they?	తాత : ఆ పూలు ఎవరివి?	ocr		™é™èþ : B ç³NË$ GÐèþÇÑ?	1:514.7	no-rom
-9	20	çÜ$Ðèþ$	One flower is mine. One flower is vijaya's. And one flower is Sarala's.	సుమ : ఒక పువ్వు నాది; ఒక పువ్వు విజయది; ఒక పువ్వు సరళది.	ocr		çÜ$Ðèþ$ : JMæü ç³#Ðèþ#Ó ¯é¨; JMæü ç³#Ðèþ#Ó ÑfÄæý$¨; JMæü ç³#Ðèþ#Ó çÜÆæÿâæý¨.	1:545.1;1:560.3	no-rom
-9	21	™é™èþ	Where are they?	తాత : వాళ్లు ఏరి?	ocr		™é™èþ : Ðéâæý$Ï HÇ?	1:590.8	no-rom
-9	22	çÜ$Ðèþ$	Here, they are!	సుమ : ఇదుగో!	ocr		çÜ$Ðèþ$ : C§æþ$Vø!	1:621.2	no-rom
-9	23	™é™èþ	Whose doll is this?	తాత : ఈ బొమ్మ ఎవరిది?	ocr		™é™èþ : D »ŸÐèþ$Ã GÐèþÇ¨?	2:179.8	no-rom
-9	24	çÜ$Ðèþ$	It is mine.	సుమ : నాది.	ocr		çÜ$Ðèþ$ : ¯é¨.	2:210.2	no-rom
-9	25	ÑfÄæý$	It is not yours. It is his.	విజయ : నీది కాదు; వాడిది.	ocr		ÑfÄæý$ : ±¨ M>§æþ$; Ðéyìþ¨.	2:240.7	no-rom
-9	26	çÜÆæÿâæý	It is not his. It is my brother's.	సరళ : వాడిది కాదు; మా అన్నయ్యది.	ocr		çÜÆæÿâæý : Ðéyìþ¨ M>§æþ$; Ðèþ* A¯èþ²Äæý$Å¨.	2:271.1	no-rom
-9	27	™é™èþ	Whose box is this?	తాత : ఈ పెట్టె ఎవరిది?	ocr		™é™èþ : D ò³sñýt GÐèþÇ¨?	2:301.5	no-rom
-9	28	çÜÆæÿâæý	It is my grandmother's.	సరళ : నాయనమ్నది.	ocr		çÜÆæÿâæý : ¯éÄæý$¯èþÐèþ$Ã¨.	2:332.0	no-rom
-9	29	™é™èþ	Whose shirt is this?	తాత: ఈ చొక్కా ఎవరిది?	ocr		™é™èþ :  D ^öM>P GÐèþÇ¨?	2:362.4	no-rom
-9	30	Vøí³	It is my brother-in-law's	గోపి : మా బావగారిది.	ocr		Vøí³ : Ðèþ* »êÐèþV>Ç¨.	2:392.9	no-rom
-9	31	™é™èþ	Where is your brother-in-law?	తాత : మీ బావగారు ఏరి?	ocr		™é™èþ : Ò$ »êÐèþV>Ææÿ$ HÇ?	2:423.3	no-rom
-9	32	Vøí³	There, he is!	గోపి : అరుగో!	ocr		Vøí³ : AÆæÿ$Vø!	2:453.8	no-rom
-9	33	™é™èþ	Okay!  Now some important questions.	తాత : సరే! ఇప్పుడు కొన్ని ముఖ్యమైన ప్ర్నలు.	ocr		™é™èþ : çÜÆóÿ! Cç³šyæþ$ Mö°² Ðèþ$$QÅÐðþ$O¯èþ {ç³Ôèý²Ë$.	2:484.2;2:499.5	no-rom
-9	34	çÜÆæÿâæý	How many more questions are there, grandfather?	సరళ : ఇంకా ఎన్ని ప్రశ్నలు తాతయ్యా?	ocr		çÜÆæÿâæý : C…M> G°² {ç³Ôèý²Ë$ ™é™èþÄæý*Å?	2:529.9	no-rom
-9	35	Vøí³	Why all these questions, grand- father?	గోపి : ఈ ప్రశ్నలన్నీ ఎందుకు తాతయ్యా?	ocr		Vøí³ : D {ç³Ôèý²Ë±² G…§æþ$Mæü$ ™é™èþÄæý*Å?	2:560.3	no-rom
-9	36	™é™èþ	The first question: What date is tomorrow? The second ques- tion:  Whose birthday is that? Tell me.	తాత : ఒకటో ప్రశ్న రేపు ఎన్నో తారీకు? రెండో ప్రశ్న ఎవరి పుట్టినరోజు? చెప్పండి.	ocr		™é™èþ : JMæüsZ {ç³Ôèý²: Æóÿç³# G¯ø² ™éÈMæü$? Æðÿ…yø {ç³Ôèý²: GÐèþÇ ç³#sìýt¯èþÆøk? ^ðþç³µ…yìþ.	2:590.8;2:606.0;2:621.2	no-rom
-9	37	çÜ$Ðèþ$	Tomorrow is second. This is the month of October. It is Ma- hatma Gandhi's birthday to- morrow.	సుమ : రేపు రెండో తారీకు. ఇది అక్టోబరు నెల. రేపు మహాత్మాగాంధీ పుట్టినరోజు.	ocr		çÜ$Ðèþ$ : Æóÿç³# Æðÿ…yø ™éÈMæü$. C¨ AMøtºÆæÿ$ ¯ðþË. Æóÿç³# Ðèþ$à™éÃV>…«© ç³#sìýt¯èþÆøk.	3:179.8;3:195.0;3:210.2	no-rom
-9	38	ÑfÄæý$	Tomorrow is Gandhi Jayanti. Yes. Today is October the first. And it is our grandfather's birthday!	విజయ : అవును. రేపు గాంధీజయంతి. ఇవ్వేళ అక్టోబరు ఒకటో తారీకు. మన తాతయ్య పుట్టినరోజు.	ocr		ÑfÄæý$ : AÐèþ#¯èþ$. Æóÿç³# V>…«©fÄæý$…†. CÐóþÓâæý AMøtºÆæÿ$ JMæüsZ ™éÈMæü$. Ðèþ$¯èþ ™é™èþÄæý$Å ç³#sìýt¯èþÆøk.	3:240.7;3:255.9;3:271.1	no-rom
-9	39	çÜ$Ðèþ$	Yes. Today is our grandfather's birthday. Then where are the chocolates, grandfather?	సుమ : అవును, ఇవ్వేళ మన తాతయ్య పుట్టినరోజు. తాతయ్యా! మరి చాక్లెట్లు ఏవి?	ocr		çÜ$Ðèþ$ : AÐèþ#¯èþ$, CÐóþÓâæý Ðèþ$¯èþ ™é™èþÄæý$Å ç³#sìýt¯èþÆøk. ™é™èþÄæý*Å! Ðèþ$Ç ^éMðüÏr$Ï HÑ?	3:301.5;3:316.8;3:332.0	no-rom
-9	40	™é™èþ	Here, they are!	తాత : ఇవిగో!	ocr		™é™èþ : CÑVø!	3:362.4	no-rom
-9	41	ÑfÄæý$	The Chocolates are tasty!  What is the cost of them grandfa- ther?	విజయ : చాక్లెట్లు బాగున్నాయి: వీటి ఖరీదు ఎంత తాతయ్య?	ocr		ÑfÄæý$ : ^éMðüÏr$Ï »êVæü$¯é²Æÿ$$: Òsìý QÈ§æþ$ G…™èþ ™é™èþÄæý$Å?	3:392.9;3:408.1	no-rom
-9	42	™é™èþÄæý$Å	All together, sixteen rupees.	తాతయ్య : మొత్తం పదహారు రూపాయలు.	ocr		™é™èþÄæý$Å : Ððþ$$™èþ¢… ç³§æþàÆæÿ$ Ææÿ*´ëÄæý$Ë$.	3:438.6	no-rom
-9	43	ÑfÄæý$	What is the cost of each chocolate?	విజయ : ఒక్కొక్క చాక్లెట్టు ఎంత?	ocr		ÑfÄæý$ : JMöPMæüP ^éMðüÏr$t G…™èþ?	3:469.0	no-rom
-9	44	™é™èþ	Each one was one rupee.	తాత : ఒక్కొక్ళటి ఒక రూపాయి.	ocr		™é™èþ : JMöPMæüPsìý JMæü Ææÿ*´ëÆÿ$$.	3:499.5	no-rom
-9	45	çÜ$Ðèþ$	You have a new bag! What is the cost of this bag?	సుమ : నీ దగ్గర కొత్త సంచి ఉందే! ఈ సంచి, ఖరీదు ఎంత?	ocr		çÜ$Ðèþ$ : ± §æþVæüYÆæÿ Mö™èþ¢ çÜ…_ E…§óþ! D çÜ…_ QÈ§æþ$ G…™èþ?	3:529.9;3:545.1	no-rom
-9	46	™é™èþ	It is seventeen rupees.	తాత : దీని ఖరీదు పదిహేడు రూపాయలు.	ocr		™é™èþ : ©° QÈ§æþ$ ç³¨õßýyæþ$ Ææÿ*´ëÄæý$Ë$.	3:575.6	no-rom
-9	47	çÜ$Ðèþ$	What is the cost of your new pen?	సుమ : నీ కొత్త కలం ఖరీదు ఎంత?	ocr		çÜ$Ðèþ$ : ± Mö™èþ¢ MæüË… QÈ§æþ$ G…™èþ?	3:606.0	no-rom
-9	48	™é™èþ	This is not a new pen. It is an old pen. Its cost was eighteen rupees.	తాత : ఇది కొత్త కలం కాదు పాత కలమే? దీని ఖరీదు పద్ధెనిమిది రూపాయలు.	ocr		™é™èþ : C¨ Mö™èþ¢ MæüË… M>§æþ$ ´ë™èþ MæüËÐóþ$? ©° QÈ§æþ$ ç³§ðþ®°Ñ$¨ Ææÿ*´ëÄæý$Ë$.	4:179.8;4:195.0	no-rom
-9	49	ÑfÄæý$	When is my birthday, grandfa- ther?	విజయ : నా పుట్టిన రోజెప్పుడు తాతయ్యా?	ocr		ÑfÄæý$ : ¯é ç³#sìýt¯èþ Æøgñýç³šyæþ$ ™é™èþÄæý*Å?	4:225.4	no-rom
-9	50	™é™èþ	Your birthday is in January.	తాత : నీ పుట్టినరోజు జనవరిలో.	ocr		™é™èþ : ± ç³#sìýt¯èþÆøk f¯èþÐèþÇÌZ.	4:255.9	no-rom
-9	51	ÑfÄæý$	What date is it?	విజయ : ఎన్నో తారీకు?	ocr		ÑfÄæý$ : G¯ø² ™éÈMæü$?	4:286.3	no-rom
-9	52	™é™èþ	It is on eighteenth. Her birthday is on sixteenth February.	తాత : పద్దెనిమిదో తారీకు. దీని పుట్టినరోజు ఫిబ్రవరి పదహారో తారీకు.	ocr		™é™èþ : ç³§ðþ®°Ñ$§ø ™éÈMæü$. ©° ç³#sìýt¯èþÆøk íœ{ºÐèþÇ ç³§æþàÆø ™éÈMæü$.	4:316.8;4:332.0	no-rom
+guid	lesson	seq	speaker	en	te	te_src	rom	legacy	keys	flags
+I7ea1563d0092	9	1	™é™èþÄæý$Å	Children! What is there in this box?	తాతయ్య : పిల్లలూ! ఈ పెట్టెలో ఏం ఉంది?	ocr		™é™èþÄæý$Å : í³ËÏË*! D ò³sñýtÌZ H… E…¨?	0:446.0	no-rom
+I50d3db7138ac	9	2	çÜ$Ðèþ$	A book.	సుమ : పుస్తకం ఉంది.	ocr		çÜ$Ðèþ$ : ç³#çÜ¢Mæü… E…¨.	0:475.7	no-rom
+Ib3f900d78ca2	9	3	™é™èþÄæý$Å	Whose book is that?	తాతయ్య : ఆ పుస్తకం ఎవరిది?	ocr		™é™èþÄæý$Å : B ç³#çÜ¢Mæü… GÐèþÇ¨?	0:505.3	no-rom
+Ia9406c2aea05	9	4	çÜ$Ðèþ$	It is Ravi's.	సుమ : రవిది.	ocr		çÜ$Ðèþ$ : ÆæÿÑ¨.	0:534.9	no-rom
+Ia6e55f9a83b2	9	5	™é™èþÄæý$Å	Where is Ravi?	తాతయ్య : రవి ఏడి?	ocr		™é™èþÄæý$Å : ÆæÿÑ Hyìþ?	0:564.5	no-rom
+I7747e98553fe	9	6	çÜ$Ðèþ$	He is there.	సుమ : అడుగో, అక్కడున్నాడు.	ocr		çÜ$Ðèþ$ : Ayæþ$Vø, AMæüPyæþ$¯é²yæþ$.	0:594.2	no-rom
+Ib3f900d78ca2	9	7	™é™èþ	Whose book is that?	తాత : ఆ పుస్తకం ఎవరిది?	ocr		™é™èþ : B ç³#çÜ¢Mæü… GÐèþÇ¨?	0:623.6	no-rom
+Idaa3db0e5d42	9	8	çÜ$Ðèþ$	It is Gopi's	సుమ : గోపిది.	ocr		çÜ$Ðèþ$ : Vøí³¨.	1:179.8	no-rom
+I3b4cd15dc56f	9	9	™é™èþ	Where is Gopi?	తాత: గోప్‌ ఏడి?	ocr		™é™èþ : Vøí³ Hyìþ?	1:210.2	no-rom
+Id3b5a28fde6c	9	10	çÜ$Ðèþ$	He is here. Isn't he?	సుమ : ఇడుగో, ఇక్కడే ఉన్నాడు కదా!	ocr		çÜ$Ðèþ$ : Cyæþ$Vø, CMæüPyóþ E¯é²yæþ$ Mæü§é!	1:240.7	no-rom
+I185253479fc5	9	11	™é™èþ	Whose pens are these?	తాత : ఈ కలాలు ఎవరివి?	ocr		™é™èþ : D MæüÌêË$ GÐèþÇÑ?	1:271.1	no-rom
+Idbe8faa6cba3	9	12	çÜ$Ðèþ$	One is Kamala's and one is Vinod's.	సుమ : ఒకటి కమలది; ఒకటి వినోద్‌ది.	ocr		çÜ$Ðèþ$ : JMæüsìý MæüÐèþ$Ë¨; JMæüsìý Ñ¯ø§Šþ¨.	1:301.5	no-rom
+Ib841c44c8326	9	13	™é™èþ	Where are those two?	తాత : వాళ్ళిద్దరూ ఏరి?	ocr		™é™èþ : Ðéãå§æþªÆæÿ* HÇ?	1:332.0	no-rom
+Ib61e3aab03b1	9	14	çÜ$Ðèþ$	There, they are!	సుమ : అరుగో!	ocr		çÜ$Ðèþ$ : AÆæÿ$Vø!	1:362.4	no-rom
+I35bff4806b4e	9	15	™é™èþ	Whose bag is this?	తాత : ఈ సంచి ఎవరిది?	ocr		™é™èþ : D çÜ…_ GÐèþÇ¨?	1:392.9	no-rom
+Idefbf26fb195	9	16	çÜ$Ðèþ$	Mine.	సుమ : నాది	ocr		çÜ$Ðèþ$ : ¯é¨	1:423.3	no-rom
+If823e9b836bd	9	17	™é™èþ	What are there in this bag?	తాత : ఈ సంచిలో ఏం ఉన్నాయి?	ocr		™é™èþ : D çÜ…_ÌZ H… E¯é²Æÿ$$?	1:453.8	no-rom
+I1ef9fbbb1b66	9	18	çÜ$Ðèþ$	Flowers.	సుమ : పూలున్నాయి.	ocr		çÜ$Ðèþ$ : ç³NË$¯é²Æÿ$$.	1:484.2	no-rom
+I237f3e06d4f1	9	19	™é™èþ	Whose flowers are they?	తాత : ఆ పూలు ఎవరివి?	ocr		™é™èþ : B ç³NË$ GÐèþÇÑ?	1:514.7	no-rom
+I2d73aae67441	9	20	çÜ$Ðèþ$	One flower is mine. One flower is vijaya's. And one flower is Sarala's.	సుమ : ఒక పువ్వు నాది; ఒక పువ్వు విజయది; ఒక పువ్వు సరళది.	ocr		çÜ$Ðèþ$ : JMæü ç³#Ðèþ#Ó ¯é¨; JMæü ç³#Ðèþ#Ó ÑfÄæý$¨; JMæü ç³#Ðèþ#Ó çÜÆæÿâæý¨.	1:545.1;1:560.3	no-rom
+I2b9d5464d76b	9	21	™é™èþ	Where are they?	తాత : వాళ్లు ఏరి?	ocr		™é™èþ : Ðéâæý$Ï HÇ?	1:590.8	no-rom
+I56371bf53f39	9	22	çÜ$Ðèþ$	Here, they are!	సుమ : ఇదుగో!	ocr		çÜ$Ðèþ$ : C§æþ$Vø!	1:621.2	no-rom
+I19f2189b32f7	9	23	™é™èþ	Whose doll is this?	తాత : ఈ బొమ్మ ఎవరిది?	ocr		™é™èþ : D »ŸÐèþ$Ã GÐèþÇ¨?	2:179.8	no-rom
+I2d5ba3ba5a01	9	24	çÜ$Ðèþ$	It is mine.	సుమ : నాది.	ocr		çÜ$Ðèþ$ : ¯é¨.	2:210.2	no-rom
+I93ff558d8c7c	9	25	ÑfÄæý$	It is not yours. It is his.	విజయ : నీది కాదు; వాడిది.	ocr		ÑfÄæý$ : ±¨ M>§æþ$; Ðéyìþ¨.	2:240.7	no-rom
+Iec7a5e635261	9	26	çÜÆæÿâæý	It is not his. It is my brother's.	సరళ : వాడిది కాదు; మా అన్నయ్యది.	ocr		çÜÆæÿâæý : Ðéyìþ¨ M>§æþ$; Ðèþ* A¯èþ²Äæý$Å¨.	2:271.1	no-rom
+If121862f45f5	9	27	™é™èþ	Whose box is this?	తాత : ఈ పెట్టె ఎవరిది?	ocr		™é™èþ : D ò³sñýt GÐèþÇ¨?	2:301.5	no-rom
+I79897d1dc704	9	28	çÜÆæÿâæý	It is my grandmother's.	సరళ : నాయనమ్నది.	ocr		çÜÆæÿâæý : ¯éÄæý$¯èþÐèþ$Ã¨.	2:332.0	no-rom
+I94bd80ace59d	9	29	™é™èþ	Whose shirt is this?	తాత: ఈ చొక్కా ఎవరిది?	ocr		™é™èþ :  D ^öM>P GÐèþÇ¨?	2:362.4	no-rom
+I77a23eb26541	9	30	Vøí³	It is my brother-in-law's	గోపి : మా బావగారిది.	ocr		Vøí³ : Ðèþ* »êÐèþV>Ç¨.	2:392.9	no-rom
+Ifd07b7f98f4b	9	31	™é™èþ	Where is your brother-in-law?	తాత : మీ బావగారు ఏరి?	ocr		™é™èþ : Ò$ »êÐèþV>Ææÿ$ HÇ?	2:423.3	no-rom
+I5c66fa89592a	9	32	Vøí³	There, he is!	గోపి : అరుగో!	ocr		Vøí³ : AÆæÿ$Vø!	2:453.8	no-rom
+I29ce9c013d74	9	33	™é™èþ	Okay!  Now some important questions.	తాత : సరే! ఇప్పుడు కొన్ని ముఖ్యమైన ప్ర్నలు.	ocr		™é™èþ : çÜÆóÿ! Cç³šyæþ$ Mö°² Ðèþ$$QÅÐðþ$O¯èþ {ç³Ôèý²Ë$.	2:484.2;2:499.5	no-rom
+I33d3c4bd390e	9	34	çÜÆæÿâæý	How many more questions are there, grandfather?	సరళ : ఇంకా ఎన్ని ప్రశ్నలు తాతయ్యా?	ocr		çÜÆæÿâæý : C…M> G°² {ç³Ôèý²Ë$ ™é™èþÄæý*Å?	2:529.9	no-rom
+I925105cd1c20	9	35	Vøí³	Why all these questions, grand- father?	గోపి : ఈ ప్రశ్నలన్నీ ఎందుకు తాతయ్యా?	ocr		Vøí³ : D {ç³Ôèý²Ë±² G…§æþ$Mæü$ ™é™èþÄæý*Å?	2:560.3	no-rom
+I851b7046392e	9	36	™é™èþ	The first question: What date is tomorrow? The second ques- tion:  Whose birthday is that? Tell me.	తాత : ఒకటో ప్రశ్న రేపు ఎన్నో తారీకు? రెండో ప్రశ్న ఎవరి పుట్టినరోజు? చెప్పండి.	ocr		™é™èþ : JMæüsZ {ç³Ôèý²: Æóÿç³# G¯ø² ™éÈMæü$? Æðÿ…yø {ç³Ôèý²: GÐèþÇ ç³#sìýt¯èþÆøk? ^ðþç³µ…yìþ.	2:590.8;2:606.0;2:621.2	no-rom
+I85a39693c48b	9	37	çÜ$Ðèþ$	Tomorrow is second. This is the month of October. It is Ma- hatma Gandhi's birthday to- morrow.	సుమ : రేపు రెండో తారీకు. ఇది అక్టోబరు నెల. రేపు మహాత్మాగాంధీ పుట్టినరోజు.	ocr		çÜ$Ðèþ$ : Æóÿç³# Æðÿ…yø ™éÈMæü$. C¨ AMøtºÆæÿ$ ¯ðþË. Æóÿç³# Ðèþ$à™éÃV>…«© ç³#sìýt¯èþÆøk.	3:179.8;3:195.0;3:210.2	no-rom
+Ifd028a3d94ce	9	38	ÑfÄæý$	Tomorrow is Gandhi Jayanti. Yes. Today is October the first. And it is our grandfather's birthday!	విజయ : అవును. రేపు గాంధీజయంతి. ఇవ్వేళ అక్టోబరు ఒకటో తారీకు. మన తాతయ్య పుట్టినరోజు.	ocr		ÑfÄæý$ : AÐèþ#¯èþ$. Æóÿç³# V>…«©fÄæý$…†. CÐóþÓâæý AMøtºÆæÿ$ JMæüsZ ™éÈMæü$. Ðèþ$¯èþ ™é™èþÄæý$Å ç³#sìýt¯èþÆøk.	3:240.7;3:255.9;3:271.1	no-rom
+I54d346876caf	9	39	çÜ$Ðèþ$	Yes. Today is our grandfather's birthday. Then where are the chocolates, grandfather?	సుమ : అవును, ఇవ్వేళ మన తాతయ్య పుట్టినరోజు. తాతయ్యా! మరి చాక్లెట్లు ఏవి?	ocr		çÜ$Ðèþ$ : AÐèþ#¯èþ$, CÐóþÓâæý Ðèþ$¯èþ ™é™èþÄæý$Å ç³#sìýt¯èþÆøk. ™é™èþÄæý*Å! Ðèþ$Ç ^éMðüÏr$Ï HÑ?	3:301.5;3:316.8;3:332.0	no-rom
+I56371bf53f39	9	40	™é™èþ	Here, they are!	తాత : ఇవిగో!	ocr		™é™èþ : CÑVø!	3:362.4	no-rom
+Ie27d0a081c51	9	41	ÑfÄæý$	The Chocolates are tasty!  What is the cost of them grandfa- ther?	విజయ : చాక్లెట్లు బాగున్నాయి: వీటి ఖరీదు ఎంత తాతయ్య?	ocr		ÑfÄæý$ : ^éMðüÏr$Ï »êVæü$¯é²Æÿ$$: Òsìý QÈ§æþ$ G…™èþ ™é™èþÄæý$Å?	3:392.9;3:408.1	no-rom
+Ic20e00af8572	9	42	™é™èþÄæý$Å	All together, sixteen rupees.	తాతయ్య : మొత్తం పదహారు రూపాయలు.	ocr		™é™èþÄæý$Å : Ððþ$$™èþ¢… ç³§æþàÆæÿ$ Ææÿ*´ëÄæý$Ë$.	3:438.6	no-rom
+Ie738b37029e4	9	43	ÑfÄæý$	What is the cost of each chocolate?	విజయ : ఒక్కొక్క చాక్లెట్టు ఎంత?	ocr		ÑfÄæý$ : JMöPMæüP ^éMðüÏr$t G…™èþ?	3:469.0	no-rom
+I05c94d877f3b	9	44	™é™èþ	Each one was one rupee.	తాత : ఒక్కొక్ళటి ఒక రూపాయి.	ocr		™é™èþ : JMöPMæüPsìý JMæü Ææÿ*´ëÆÿ$$.	3:499.5	no-rom
+I5b21f0a81f58	9	45	çÜ$Ðèþ$	You have a new bag! What is the cost of this bag?	సుమ : నీ దగ్గర కొత్త సంచి ఉందే! ఈ సంచి, ఖరీదు ఎంత?	ocr		çÜ$Ðèþ$ : ± §æþVæüYÆæÿ Mö™èþ¢ çÜ…_ E…§óþ! D çÜ…_ QÈ§æþ$ G…™èþ?	3:529.9;3:545.1	no-rom
+I44b6910a6c12	9	46	™é™èþ	It is seventeen rupees.	తాత : దీని ఖరీదు పదిహేడు రూపాయలు.	ocr		™é™èþ : ©° QÈ§æþ$ ç³¨õßýyæþ$ Ææÿ*´ëÄæý$Ë$.	3:575.6	no-rom
+I27a1dc06a1b8	9	47	çÜ$Ðèþ$	What is the cost of your new pen?	సుమ : నీ కొత్త కలం ఖరీదు ఎంత?	ocr		çÜ$Ðèþ$ : ± Mö™èþ¢ MæüË… QÈ§æþ$ G…™èþ?	3:606.0	no-rom
+I69171c3a1016	9	48	™é™èþ	This is not a new pen. It is an old pen. Its cost was eighteen rupees.	తాత : ఇది కొత్త కలం కాదు పాత కలమే? దీని ఖరీదు పద్ధెనిమిది రూపాయలు.	ocr		™é™èþ : C¨ Mö™èþ¢ MæüË… M>§æþ$ ´ë™èþ MæüËÐóþ$? ©° QÈ§æþ$ ç³§ðþ®°Ñ$¨ Ææÿ*´ëÄæý$Ë$.	4:179.8;4:195.0	no-rom
+Ida84a8263f53	9	49	ÑfÄæý$	When is my birthday, grandfa- ther?	విజయ : నా పుట్టిన రోజెప్పుడు తాతయ్యా?	ocr		ÑfÄæý$ : ¯é ç³#sìýt¯èþ Æøgñýç³šyæþ$ ™é™èþÄæý*Å?	4:225.4	no-rom
+Id5107b59d20d	9	50	™é™èþ	Your birthday is in January.	తాత : నీ పుట్టినరోజు జనవరిలో.	ocr		™é™èþ : ± ç³#sìýt¯èþÆøk f¯èþÐèþÇÌZ.	4:255.9	no-rom
+I5f1ad176be98	9	51	ÑfÄæý$	What date is it?	విజయ : ఎన్నో తారీకు?	ocr		ÑfÄæý$ : G¯ø² ™éÈMæü$?	4:286.3	no-rom
+I98be54a963e2	9	52	™é™èþ	It is on eighteenth. Her birthday is on sixteenth February.	తాత : పద్దెనిమిదో తారీకు. దీని పుట్టినరోజు ఫిబ్రవరి పదహారో తారీకు.	ocr		™é™èþ : ç³§ðþ®°Ñ$§ø ™éÈMæü$. ©° ç³#sìýt¯èþÆøk íœ{ºÐèþÇ ç³§æþàÆø ™éÈMæü$.	4:316.8;4:332.0	no-rom

@@ -1,48 +1,48 @@
-lesson	seq	speaker	en	rom	legacy	keys	flags
-13	1	Ðèþ$*Ç¢	Ravi!  Is Venkateswarlu your teacher?		Ðèþ$*Ç¢ : ÆæÿÒ! Ððþ…MæüsôýÔèýÓÆæÿ$Ï Ò$ Ðèþ*çÙtÆ>?	0:434.0	no-rom
-13	2	ÆæÿÑ	Yes.		ÆæÿÑ : AÐèþ#¯èþ$.	0:462.9	no-rom
-13	3	Ðèþ$*Ç¢	What is his native place?		Ðèþ$*Ç¢ : Ðéâæýå¨ H FÆæÿ$?	0:491.5	no-rom
-13	4	ÆæÿÑ	Eluru.  He has a house in this town also.		ÆæÿÑ : HË*Ææÿ$.  D FâZå Mæü*yé BÄæý$¯èþMæü$ JMæü CË$Ï E…¨.	0:520.3;0:534.7	no-rom
-13	5	Ðèþ$*Ç¢	How many houses does he have?		Ðèþ$*Ç¢ : A™èþ°Mìü G°² Câæý$å E¯é²Æÿ$$?	0:563.5	no-rom
-13	6	ÆæÿÑ	He has two houses.  One is here and the other is in Eluru.		ÆæÿÑ : Æðÿ…yæþ$ Câæý$å E¯é²Æÿ$$.  JMæüsìý CMæüPyæþ E…¨.  JMæü  HË*Ææÿ$ÌZ E…¨.	0:592.2;0:606.6;0:621.6	no-rom
-13	7	Ðèþ$*Ç¢	So, he has houses in two places? How many children does he have?		Ðèþ$*Ç¢ : A™èþ°Mìü Æðÿ…yæþ$ FâæýåÌZ Câæý$å E¯é²Äæý*?  A™èþ°Mìü G…™èþÐèþ$…¨ í³ËÏË$?	1:180.4;1:195.6;1:210.8	no-rom
-13	8	ÆæÿÑ	He has no children.		ÆæÿÑ : BÄæý$¯èþMæü$ í³ËÏË$ ÌôýÆæÿ$.	1:241.3	no-rom
-13	9	Ðèþ$*Ç¢	Narayana is Venkateswarlu’s younger brother.  Isn’t he?  How many children does he have?		Ðèþ$*Ç¢ : ¯éÆ>Äæý$×ý Ððþ…MæüsôýÔèýÓÆæÿ$Ï ™èþÐèþ$$Ãyæþ$ Mæü§æþ*?  A™èþ°Mìü G…™èþÐèþ$…¨ í³ËÏË$?	1:271.7;1:286.9;1:302.2	no-rom
-13	10	ÆæÿÑ	Four children.		ÆæÿÑ : ¯èþË$Væü$Ææÿ$.	1:332.6	no-rom
-13	11	Ðèþ$*Ç¢	Are they grown up or young?		Ðèþ$*Ç¢ : ò³§æþª í³ËÏÌê?  _¯èþ² í³ËÏÌê?	1:363.0	no-rom
-13	12	ÆæÿÑ	All of them are grown up.		ÆæÿÑ : A…§æþÆæÿ* ò³§æþª í³ËÏÌôý!	1:393.5	no-rom
-13	13	Ðèþ$*Ç¢	How many of them are girls and how many of them are boys?		Ðèþ$*Ç¢ : Byæþí³ËÏÌñý…™èþÐèþ$…¨?  Ðèþ$Væüí³ËÏ Ìñý…™èþÐèþ$…¨?	1:423.9;1:439.2	no-rom
-13	14	ÆæÿÑ	Two girls and two boys.		ÆæÿÑ : C§æþªÆæÿÐèþ*ÃÆÿ$$Ë*, C§æþªÆæÿ»ê¾Æÿ$$Ë*.	1:469.6	no-rom
-13	15	Ðèþ$*Ç¢	How old are they?		Ðèþ$*Ç¢ : ÐéâæýåMæü$ G¯óþ²âæý$å?	1:500.1	no-rom
-13	16	ÆæÿÑ	The eldest daughter is 31.  She has a daughter and a son.  The younger daughter is 25 years old.  The elder son is 28 years old.  He has good education. But he does not have a job. The younger one is 22.		ÆæÿÑ : ò³§æþªÐèþ*ÃÆÿ$$Mìü Ðèþ$$ò³Oü¹JMæüsZ Hyæþ$. BÐðþ$Mæü$ JMæü Byæþí³ÌêÏ, JMæü Ðèþ$Væü í³ËÏÐéyæþ*.  _¯èþ²Ðèþ*ÃÆÿ$$Mìü CÆæÿÐðþO I§ø çÜ…Ðèþ™èþÞÆæÿ….  ò³§æþª»ê¾Æÿ$$Mìü CÆæÿÐðþO G°Ñ$§óþâæý$å.  A™èþ°Mìü Ðèþ$…_ ^èþ§æþ$Ðèþ# E…¨.  M>° E§øÅVæü… Ìôý§æþ$. _¯èþ²»ê¾Æÿ$$Mìü CÆæÿÐðþOÆðÿ…yóþâæý$å.	1:530.5;1:545.7;1:561.0;1:576.2;1:591.4;1:606.6;1:621.8	no-rom
-13	17	Ðèþ$*Ç¢	The eldest daughter is a writer. Isn’t she?		Ðèþ$*Ç¢ : ò³§æþªÐèþ*ÃÆÿ$$ Ææÿ^èþÆÿ$${† Mæü§æþ*!	2:179.8	no-rom
-13	18	ÆæÿÑ	Yes.  She is one of the top writers in Telugu.  She is a very good woman..		ÆæÿÑ : AÐèþ#¯èþ$. ™ðþË$Væü$ÌZ ò³§æþª Ææÿ^èþÆÿ$${™èþ$ ËÌZ BÐðþ$ JMæü™ðþ.  BÐðþ$ ^éÌê Ðèþ$…_¨.	2:210.2;2:225.4;2:240.7	no-rom
-13	19	Ðèþ$*Ç¢	Is Venkateswarlu a good man?		Ðèþ$*Ç¢ : Ððþ…MæüsôýÔèýÓÆæÿ$Ï Ðèþ$…_Ðéyóþ¯é?	2:271.1	no-rom
-13	20	ÆæÿÑ	Yes.  He is also a very good man.		ÆæÿÑ : B!  BÄæý$¯èþ Mæü*yé ^éÌê Ðèþ$…_Ðéyæþ$.	2:301.5;2:316.8	no-rom
-13	21	Ðèþ$*Ç¢	And his brother?		Ðèþ$*Ç¢ : BÄæý$¯èþ ™èþÐèþ$$Ãyæþ$?	2:347.2	no-rom
-13	22	ÆæÿÑ	He is also a good man.  His children are good persons. They are all nice people.		ÆæÿÑ : BÄæý$¯èþ Mæü*yé Ðèþ$…_Ðéyóþ!  BÄæý$¯èþ í³ËÏË* Ðèþ$…_Ðéâôýå.  Ðéâæýå…§æþÆæÿ* Ðèþ$…_Ðéâæý$å.	2:377.7;2:392.9;2:408.1	no-rom
-13	23	Ðèþ$*Ç¢	Give this letter to Venkateswarlu. I have a degree! Do you have a job? I am handsome!		Ðèþ$*Ç¢ : D E™èþ¢Ææÿ… Ððþ…MæüsôýÔèýÓÆæÿ$ÏMæü$ CÐèþ#Ó. ¯éMæü$ yìþ{X E¯èþ²¨! ¯éMæü$ A…§æþ… E¯èþ²¨!	2:438.6;2:483.8;2:488.7	no-rom
-13	24	Vøí³	Giri!  How many marks did you get in Telugu?		Vøí³ : WÈ!  ±Mæü$ ™ðþË$Væü$ÌZ G°² Ðèþ*Ææÿ$PË$?	3:179.8;3:195.0	no-rom
-13	25	WÇ	I got sixtyfour percent.		WÇ : ¯éMæü$ ¯èþ*sìýMìü AÆæÿÐðþO¯éË$Væü$.	3:210.2	no-rom
-13	26	Vøí³	How many did Hari get and how many did Raju?		Vøí³ : çßýÇMìü G°²?  Æ>kMæü$ G°²?	3:240.7	no-rom
-13	27	WÇ	Hari got 70.   Raju got 72.		WÇ : çßýÇMìü yðþ»ñýOüÂ.  Æ>kMæü$ yðþ»ñýOüÂÆðÿ…yæþ$.	3:271.1	no-rom
-13	28	Vøí³	How many did Susila get and how many did Gowri.		Vøí³ : çÜ$ÖËMðü°²?  VúÇMðü°²?	3:301.5	no-rom
-13	29	WÇ	Susila got 80 and Gowri 81.		WÇ : çÜ$ÖËMæü$ G¯èþ¿ñýO.  VúÇMìü G¯èþ¿ñýOJMæüsìý.	3:332.0	no-rom
-13	30	Vøí³	Hello, Mr. Sarma!  How many marks did you get in mathematics?		Vøí³ : HÐèþ$…yîþ ÔèýÆæÿÃV>Ææÿ*!  Ò$Mæü$ ÌñýMæüPËÌZ G°² Ðèþ*Ææÿ$PË$?	3:362.4;3:377.7	no-rom
-13	31	ÔèýÆæÿÃ	I got cent percent.		ÔèýÆæÿÃ : ¯èþ*sìýMìü ¯èþ*Ææÿ$ Ðèþ*Ææÿ$PË$.	3:408.1	no-rom
-13	32	Vøí³	How many in science?		Vøí³ : òÜO¯èþ$ÞÌZ G°²?	3:438.6	no-rom
-13	33	ÔèýÆæÿÃ	Ninetysix.		ÔèýÆæÿÃ : ™ö…¿ñýOBÆæÿ$.	3:469.0	no-rom
-13	34	çÜ$º¾Äæý$Å	Hello, Mr. Giri!  How many brothers are you?		çÜ$º¾Äæý$Å : HÐèþ$…yîþ! WÇV>Ææÿ*  Ò$Ææÿ$ G…™èþÐèþ$…¨ A¯èþ²§æþÐèþ$$ÃË$?	3:511.6;3:526.8	no-rom
-13	35	WÇ	I have no brothers, sir!  I am only one.		WÇ : ¯éMæü$ A¯èþ²§æþÐèþ$$ÃË$ ÌôýÆæÿ…yîþ!  ¯óþ¯èþ$ JMæü×ôý~.	3:557.2;3:572.5	no-rom
-13	36	çÜ$º¾Äæý$Å	Ms. Sarala! How many sisters are you?		çÜ$º¾Äæý$Å : çÜÆæÿâæýV>Ææÿ*!  Ò$Ææÿ$ G…™èþÐèþ$…¨ AMæüPgñýÌñýÏâæý$å?	3:602.9;3:618.1	no-rom
-13	37	çÜÆæÿâæý	I too have no sisters, sir!  I am also (only) one.		çÜÆæÿâæý : ¯éMæü$ Mæü*yé AMæüPgñýÌñýÏâæý$å ÌôýÆæÿ…yîþ. ¯óþ¯èþ* JMæü™ðþ¯óþ!	4:179.8;4:195.0	no-rom
-13	38	çÜ$º¾Äæý$Å	Hello, sir!  How many brothers are you?		çÜ$º¾Äæý$Å : HÐèþ$…yîþ! Æ>Ðèþ*Æ>Ðèþ#V>Ææÿ*!  Ò$Ææÿ$ G…™èþÐèþ$…¨ A¯èþ²§æþÐèþ$$ÃË$?	4:225.4;4:240.7	no-rom
-13	39	Æ>Ðèþ*Æ>Ðèþ#	We are three.  I don’t have elder brothers.  I have two younger brothers.		Æ>Ðèþ*Æ>Ðèþ# :  Ðóþ$… Ðèþ$$Væü$YÆæÿ….  ¯éMæü$ A¯èþ²Ë$ ÌôýÆæÿ$.  C§æþªÆæÿ$ ™èþÐèþ$$Ãâæý$å.	4:271.1;4:286.3	no-rom
-13	40	çÜ$º¾Äæý$Å	Do you have sisters?		çÜ$º¾Äæý$Å : Ò$Mæü$ AMæüPgñýÌñýÏâæý$å E¯é²Æ>?	4:316.8	no-rom
-13	41	Æ>Ðèþ*Æ>Ðèþ#	I don’t have elder sisters, sir.  I have two younger sisters.		Æ>Ðèþ*Æ>Ðèþ# : AMæüPË$ ÌôýÆæÿ…yîþ.  C§æþªÆæÿ$ ^ðþÌñýÏâæý$å.	4:347.2	no-rom
-13	42	çÜ$º¾Äæý$Å	Are your sisters here?		çÜ$º¾Äæý$Å : Ò$ ^ðþÌñýÏâæý$å CMæüPyóþ E¯é²Æ>?	4:377.7	no-rom
-13	43	Æ>Ðèþ*Æ>Ðèþ#	One is not here at present.  She is at my uncle’s house in Vijayawada.		Æ>Ðèþ*Æ>Ðèþ# : JMæü ^ðþÌñýÏË$ {ç³çÜ$¢™èþ… CMæüPyæþ Ìôý§æþ$.  ÑfÄæý$ÐéyæþÌZ Ðèþ* »ê»êÆÿ$$ V>Ç…sZÏ E…¨.	4:408.1;4:423.3;4:438.6	no-rom
-13	44	çÜ$º¾Äæý$Å	Doesn’t your uncle have children?		çÜ$º¾Äæý$Å :  Ò$ »ê»êÆÿ$$V>ÇMìü í³ËÏË$ ÌôýÆ>?	4:469.0	no-rom
-13	45	Æ>Ðèþ*Æ>Ðèþ#	He has male children, and not female children.		Æ>Ðèþ*Æ>Ðèþ# : Ðèþ$Væüí³ËÏË$¯é²Ææÿ…yîþ; Byæþí³ËÏË$ ÌôýÆæÿ$.	4:499.5;4:514.7	no-rom
-13	46	çÜ$º¾Äæý$Å	Then, your uncle has sons and not daughters!		çÜ$º¾Äæý$Å : AÆÿ$$™óþ Ò$ »ê»êÆÿ$$V>ÇMìü Möyæþ$Mæü$Ë$ E¯é²Ææÿ$ M>° Mæü*™èþ$âæý$å ÌôýÆæÿ¯èþ²Ðèþ*r!	4:545.1;4:560.3;4:575.6	no-rom
-13	47	Æ>Ðèþ*Æ>Ðèþ#	Yes, sir!  He has two sons.		Æ>Ðèþ*Æ>Ðèþ# : AÐèþ#¯èþ…yîþ BÄæý$¯èþMæü$ C§æþªÆæÿ$ Möyæþ$Mæü$Ë$.	4:606.0;4:621.2	no-rom
+guid	lesson	seq	speaker	en	rom	legacy	keys	flags
+I110d04db0373	13	1	Ðèþ$*Ç¢	Ravi!  Is Venkateswarlu your teacher?		Ðèþ$*Ç¢ : ÆæÿÒ! Ððþ…MæüsôýÔèýÓÆæÿ$Ï Ò$ Ðèþ*çÙtÆ>?	0:434.0	no-rom
+I36a8b09f1b1e	13	2	ÆæÿÑ	Yes.		ÆæÿÑ : AÐèþ#¯èþ$.	0:462.9	no-rom
+I238c6ee52568	13	3	Ðèþ$*Ç¢	What is his native place?		Ðèþ$*Ç¢ : Ðéâæýå¨ H FÆæÿ$?	0:491.5	no-rom
+I699a8dac2826	13	4	ÆæÿÑ	Eluru.  He has a house in this town also.		ÆæÿÑ : HË*Ææÿ$.  D FâZå Mæü*yé BÄæý$¯èþMæü$ JMæü CË$Ï E…¨.	0:520.3;0:534.7	no-rom
+If66ea1fac829	13	5	Ðèþ$*Ç¢	How many houses does he have?		Ðèþ$*Ç¢ : A™èþ°Mìü G°² Câæý$å E¯é²Æÿ$$?	0:563.5	no-rom
+I9660ced912ac	13	6	ÆæÿÑ	He has two houses.  One is here and the other is in Eluru.		ÆæÿÑ : Æðÿ…yæþ$ Câæý$å E¯é²Æÿ$$.  JMæüsìý CMæüPyæþ E…¨.  JMæü  HË*Ææÿ$ÌZ E…¨.	0:592.2;0:606.6;0:621.6	no-rom
+I1643c3bf1648	13	7	Ðèþ$*Ç¢	So, he has houses in two places? How many children does he have?		Ðèþ$*Ç¢ : A™èþ°Mìü Æðÿ…yæþ$ FâæýåÌZ Câæý$å E¯é²Äæý*?  A™èþ°Mìü G…™èþÐèþ$…¨ í³ËÏË$?	1:180.4;1:195.6;1:210.8	no-rom
+I3eba6a4c8a40	13	8	ÆæÿÑ	He has no children.		ÆæÿÑ : BÄæý$¯èþMæü$ í³ËÏË$ ÌôýÆæÿ$.	1:241.3	no-rom
+I72b34d4665ed	13	9	Ðèþ$*Ç¢	Narayana is Venkateswarlu’s younger brother.  Isn’t he?  How many children does he have?		Ðèþ$*Ç¢ : ¯éÆ>Äæý$×ý Ððþ…MæüsôýÔèýÓÆæÿ$Ï ™èþÐèþ$$Ãyæþ$ Mæü§æþ*?  A™èþ°Mìü G…™èþÐèþ$…¨ í³ËÏË$?	1:271.7;1:286.9;1:302.2	no-rom
+I93aa6d64d5d5	13	10	ÆæÿÑ	Four children.		ÆæÿÑ : ¯èþË$Væü$Ææÿ$.	1:332.6	no-rom
+Ibe810005bdf6	13	11	Ðèþ$*Ç¢	Are they grown up or young?		Ðèþ$*Ç¢ : ò³§æþª í³ËÏÌê?  _¯èþ² í³ËÏÌê?	1:363.0	no-rom
+Icad69c4133d5	13	12	ÆæÿÑ	All of them are grown up.		ÆæÿÑ : A…§æþÆæÿ* ò³§æþª í³ËÏÌôý!	1:393.5	no-rom
+Iac290cd33b13	13	13	Ðèþ$*Ç¢	How many of them are girls and how many of them are boys?		Ðèþ$*Ç¢ : Byæþí³ËÏÌñý…™èþÐèþ$…¨?  Ðèþ$Væüí³ËÏ Ìñý…™èþÐèþ$…¨?	1:423.9;1:439.2	no-rom
+I766f1a4aeed5	13	14	ÆæÿÑ	Two girls and two boys.		ÆæÿÑ : C§æþªÆæÿÐèþ*ÃÆÿ$$Ë*, C§æþªÆæÿ»ê¾Æÿ$$Ë*.	1:469.6	no-rom
+I4101b486afed	13	15	Ðèþ$*Ç¢	How old are they?		Ðèþ$*Ç¢ : ÐéâæýåMæü$ G¯óþ²âæý$å?	1:500.1	no-rom
+Ia39ce6579953	13	16	ÆæÿÑ	The eldest daughter is 31.  She has a daughter and a son.  The younger daughter is 25 years old.  The elder son is 28 years old.  He has good education. But he does not have a job. The younger one is 22.		ÆæÿÑ : ò³§æþªÐèþ*ÃÆÿ$$Mìü Ðèþ$$ò³Oü¹JMæüsZ Hyæþ$. BÐðþ$Mæü$ JMæü Byæþí³ÌêÏ, JMæü Ðèþ$Væü í³ËÏÐéyæþ*.  _¯èþ²Ðèþ*ÃÆÿ$$Mìü CÆæÿÐðþO I§ø çÜ…Ðèþ™èþÞÆæÿ….  ò³§æþª»ê¾Æÿ$$Mìü CÆæÿÐðþO G°Ñ$§óþâæý$å.  A™èþ°Mìü Ðèþ$…_ ^èþ§æþ$Ðèþ# E…¨.  M>° E§øÅVæü… Ìôý§æþ$. _¯èþ²»ê¾Æÿ$$Mìü CÆæÿÐðþOÆðÿ…yóþâæý$å.	1:530.5;1:545.7;1:561.0;1:576.2;1:591.4;1:606.6;1:621.8	no-rom
+I42b16b21f998	13	17	Ðèþ$*Ç¢	The eldest daughter is a writer. Isn’t she?		Ðèþ$*Ç¢ : ò³§æþªÐèþ*ÃÆÿ$$ Ææÿ^èþÆÿ$${† Mæü§æþ*!	2:179.8	no-rom
+I71689cf34a96	13	18	ÆæÿÑ	Yes.  She is one of the top writers in Telugu.  She is a very good woman..		ÆæÿÑ : AÐèþ#¯èþ$. ™ðþË$Væü$ÌZ ò³§æþª Ææÿ^èþÆÿ$${™èþ$ ËÌZ BÐðþ$ JMæü™ðþ.  BÐðþ$ ^éÌê Ðèþ$…_¨.	2:210.2;2:225.4;2:240.7	no-rom
+I865a055613b7	13	19	Ðèþ$*Ç¢	Is Venkateswarlu a good man?		Ðèþ$*Ç¢ : Ððþ…MæüsôýÔèýÓÆæÿ$Ï Ðèþ$…_Ðéyóþ¯é?	2:271.1	no-rom
+I51f75ee44e38	13	20	ÆæÿÑ	Yes.  He is also a very good man.		ÆæÿÑ : B!  BÄæý$¯èþ Mæü*yé ^éÌê Ðèþ$…_Ðéyæþ$.	2:301.5;2:316.8	no-rom
+I25fa97f5cbcf	13	21	Ðèþ$*Ç¢	And his brother?		Ðèþ$*Ç¢ : BÄæý$¯èþ ™èþÐèþ$$Ãyæþ$?	2:347.2	no-rom
+Iad8f4b252bcb	13	22	ÆæÿÑ	He is also a good man.  His children are good persons. They are all nice people.		ÆæÿÑ : BÄæý$¯èþ Mæü*yé Ðèþ$…_Ðéyóþ!  BÄæý$¯èþ í³ËÏË* Ðèþ$…_Ðéâôýå.  Ðéâæýå…§æþÆæÿ* Ðèþ$…_Ðéâæý$å.	2:377.7;2:392.9;2:408.1	no-rom
+Icaf1113f6ce8	13	23	Ðèþ$*Ç¢	Give this letter to Venkateswarlu. I have a degree! Do you have a job? I am handsome!		Ðèþ$*Ç¢ : D E™èþ¢Ææÿ… Ððþ…MæüsôýÔèýÓÆæÿ$ÏMæü$ CÐèþ#Ó. ¯éMæü$ yìþ{X E¯èþ²¨! ¯éMæü$ A…§æþ… E¯èþ²¨!	2:438.6;2:483.8;2:488.7	no-rom
+I67a30f80ccf4	13	24	Vøí³	Giri!  How many marks did you get in Telugu?		Vøí³ : WÈ!  ±Mæü$ ™ðþË$Væü$ÌZ G°² Ðèþ*Ææÿ$PË$?	3:179.8;3:195.0	no-rom
+I554847be1613	13	25	WÇ	I got sixtyfour percent.		WÇ : ¯éMæü$ ¯èþ*sìýMìü AÆæÿÐðþO¯éË$Væü$.	3:210.2	no-rom
+I842efd098ddf	13	26	Vøí³	How many did Hari get and how many did Raju?		Vøí³ : çßýÇMìü G°²?  Æ>kMæü$ G°²?	3:240.7	no-rom
+Iffbe54118d95	13	27	WÇ	Hari got 70.   Raju got 72.		WÇ : çßýÇMìü yðþ»ñýOüÂ.  Æ>kMæü$ yðþ»ñýOüÂÆðÿ…yæþ$.	3:271.1	no-rom
+I3a816256ebff	13	28	Vøí³	How many did Susila get and how many did Gowri.		Vøí³ : çÜ$ÖËMðü°²?  VúÇMðü°²?	3:301.5	no-rom
+I434bea5c2538	13	29	WÇ	Susila got 80 and Gowri 81.		WÇ : çÜ$ÖËMæü$ G¯èþ¿ñýO.  VúÇMìü G¯èþ¿ñýOJMæüsìý.	3:332.0	no-rom
+I586d862a96d3	13	30	Vøí³	Hello, Mr. Sarma!  How many marks did you get in mathematics?		Vøí³ : HÐèþ$…yîþ ÔèýÆæÿÃV>Ææÿ*!  Ò$Mæü$ ÌñýMæüPËÌZ G°² Ðèþ*Ææÿ$PË$?	3:362.4;3:377.7	no-rom
+I89f80346bb47	13	31	ÔèýÆæÿÃ	I got cent percent.		ÔèýÆæÿÃ : ¯èþ*sìýMìü ¯èþ*Ææÿ$ Ðèþ*Ææÿ$PË$.	3:408.1	no-rom
+I5d5787687f9d	13	32	Vøí³	How many in science?		Vøí³ : òÜO¯èþ$ÞÌZ G°²?	3:438.6	no-rom
+Id101be948b7c	13	33	ÔèýÆæÿÃ	Ninetysix.		ÔèýÆæÿÃ : ™ö…¿ñýOBÆæÿ$.	3:469.0	no-rom
+Icf874b94af9e	13	34	çÜ$º¾Äæý$Å	Hello, Mr. Giri!  How many brothers are you?		çÜ$º¾Äæý$Å : HÐèþ$…yîþ! WÇV>Ææÿ*  Ò$Ææÿ$ G…™èþÐèþ$…¨ A¯èþ²§æþÐèþ$$ÃË$?	3:511.6;3:526.8	no-rom
+Ifd09e2f91ad6	13	35	WÇ	I have no brothers, sir!  I am only one.		WÇ : ¯éMæü$ A¯èþ²§æþÐèþ$$ÃË$ ÌôýÆæÿ…yîþ!  ¯óþ¯èþ$ JMæü×ôý~.	3:557.2;3:572.5	no-rom
+I85dab9ef44a9	13	36	çÜ$º¾Äæý$Å	Ms. Sarala! How many sisters are you?		çÜ$º¾Äæý$Å : çÜÆæÿâæýV>Ææÿ*!  Ò$Ææÿ$ G…™èþÐèþ$…¨ AMæüPgñýÌñýÏâæý$å?	3:602.9;3:618.1	no-rom
+I9a431a727706	13	37	çÜÆæÿâæý	I too have no sisters, sir!  I am also (only) one.		çÜÆæÿâæý : ¯éMæü$ Mæü*yé AMæüPgñýÌñýÏâæý$å ÌôýÆæÿ…yîþ. ¯óþ¯èþ* JMæü™ðþ¯óþ!	4:179.8;4:195.0	no-rom
+I739bd34af719	13	38	çÜ$º¾Äæý$Å	Hello, sir!  How many brothers are you?		çÜ$º¾Äæý$Å : HÐèþ$…yîþ! Æ>Ðèþ*Æ>Ðèþ#V>Ææÿ*!  Ò$Ææÿ$ G…™èþÐèþ$…¨ A¯èþ²§æþÐèþ$$ÃË$?	4:225.4;4:240.7	no-rom
+I7580c46b7468	13	39	Æ>Ðèþ*Æ>Ðèþ#	We are three.  I don’t have elder brothers.  I have two younger brothers.		Æ>Ðèþ*Æ>Ðèþ# :  Ðóþ$… Ðèþ$$Væü$YÆæÿ….  ¯éMæü$ A¯èþ²Ë$ ÌôýÆæÿ$.  C§æþªÆæÿ$ ™èþÐèþ$$Ãâæý$å.	4:271.1;4:286.3	no-rom
+I6d6055888377	13	40	çÜ$º¾Äæý$Å	Do you have sisters?		çÜ$º¾Äæý$Å : Ò$Mæü$ AMæüPgñýÌñýÏâæý$å E¯é²Æ>?	4:316.8	no-rom
+I0715cbcdcaf9	13	41	Æ>Ðèþ*Æ>Ðèþ#	I don’t have elder sisters, sir.  I have two younger sisters.		Æ>Ðèþ*Æ>Ðèþ# : AMæüPË$ ÌôýÆæÿ…yîþ.  C§æþªÆæÿ$ ^ðþÌñýÏâæý$å.	4:347.2	no-rom
+I221508aecded	13	42	çÜ$º¾Äæý$Å	Are your sisters here?		çÜ$º¾Äæý$Å : Ò$ ^ðþÌñýÏâæý$å CMæüPyóþ E¯é²Æ>?	4:377.7	no-rom
+I31a0edde1915	13	43	Æ>Ðèþ*Æ>Ðèþ#	One is not here at present.  She is at my uncle’s house in Vijayawada.		Æ>Ðèþ*Æ>Ðèþ# : JMæü ^ðþÌñýÏË$ {ç³çÜ$¢™èþ… CMæüPyæþ Ìôý§æþ$.  ÑfÄæý$ÐéyæþÌZ Ðèþ* »ê»êÆÿ$$ V>Ç…sZÏ E…¨.	4:408.1;4:423.3;4:438.6	no-rom
+Iaa18133fb555	13	44	çÜ$º¾Äæý$Å	Doesn’t your uncle have children?		çÜ$º¾Äæý$Å :  Ò$ »ê»êÆÿ$$V>ÇMìü í³ËÏË$ ÌôýÆ>?	4:469.0	no-rom
+I659db40bc62e	13	45	Æ>Ðèþ*Æ>Ðèþ#	He has male children, and not female children.		Æ>Ðèþ*Æ>Ðèþ# : Ðèþ$Væüí³ËÏË$¯é²Ææÿ…yîþ; Byæþí³ËÏË$ ÌôýÆæÿ$.	4:499.5;4:514.7	no-rom
+I83a1f013f124	13	46	çÜ$º¾Äæý$Å	Then, your uncle has sons and not daughters!		çÜ$º¾Äæý$Å : AÆÿ$$™óþ Ò$ »ê»êÆÿ$$V>ÇMìü Möyæþ$Mæü$Ë$ E¯é²Ææÿ$ M>° Mæü*™èþ$âæý$å ÌôýÆæÿ¯èþ²Ðèþ*r!	4:545.1;4:560.3;4:575.6	no-rom
+Ifa1498b116a7	13	47	Æ>Ðèþ*Æ>Ðèþ#	Yes, sir!  He has two sons.		Æ>Ðèþ*Æ>Ðèþ# : AÐèþ#¯èþ…yîþ BÄæý$¯èþMæü$ C§æþªÆæÿ$ Möyæþ$Mæü$Ë$.	4:606.0;4:621.2	no-rom
