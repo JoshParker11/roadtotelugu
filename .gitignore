@@ -126,3 +126,6 @@ ministories/mini_stories_*.tsv
 ministories/work.zip
 # Same reason: the query list quotes the English alongside the Telugu it asks about.
 ministories/native_queries.tsv
+
+# The id of the last glossing batch, remembered so --collect needs no copy-paste.
+intensive/.batch_id

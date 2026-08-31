@@ -39,6 +39,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.normpath(os.path.join(HERE, '..'))
 IC = os.path.join(ROOT, 'intensive')
 CARDS = os.path.join(IC, 'vocab.tsv')
+BATCH_ID = os.path.join(IC, '.batch_id')     # so --collect needs no copy-paste
 READER = os.path.join(ROOT, 'reader', 'data', 'intensive.js')
 MODEL = 'claude-opus-5'
 
@@ -147,15 +148,21 @@ def cmd_submit(args):
     c = client()
     batch = c.messages.batches.create(
         requests=[Request(custom_id=r['custom_id'], params=r['params']) for r in reqs])
+    with open(BATCH_ID, 'w', encoding='utf-8') as f:
+        f.write(batch.id + '\n')
     print(f'submitted {len(reqs)} requests\n  batch id: {batch.id}\n  status: {batch.processing_status}')
-    print(f'\ncollect with:\n  python3 tools/ic_gloss_batch.py --collect {batch.id}')
+    print('\nwhen it has finished (usually well under an hour):')
+    print('  python3 tools/ic_gloss_batch.py --collect')
 
 
 def cmd_collect(args):
     c = client()
     batch = c.messages.batches.retrieve(args.collect)
     if batch.processing_status != 'ended':
-        print(f'batch {args.collect} is {batch.processing_status} — not ready')
+        counts = getattr(batch, 'request_counts', None)
+        print(f'batch {args.collect} is {batch.processing_status} — not ready yet')
+        if counts:
+            print(f'  {counts}')
         return
     by_te = {}
     with open(READER, encoding='utf-8') as f:
@@ -203,12 +210,17 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--plan', action='store_true')
     ap.add_argument('--submit', action='store_true')
-    ap.add_argument('--collect', metavar='BATCH_ID')
+    ap.add_argument('--collect', nargs='?', const='', metavar='BATCH_ID',
+                    help='ingest results; the id is remembered from --submit')
     ap.add_argument('--limit', type=int, default=0)
     ap.add_argument('--model', default=MODEL)
     args = ap.parse_args()
     MODEL = args.model
-    if args.collect:
+    if args.collect is not None:
+        if not args.collect:
+            if not os.path.exists(BATCH_ID):
+                sys.exit('no remembered batch id — pass it: --collect <batch_id>')
+            args.collect = open(BATCH_ID, encoding='utf-8').read().strip()
         cmd_collect(args)
     elif args.submit:
         cmd_submit(args)
