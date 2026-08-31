@@ -110,5 +110,10 @@ ministories/batch_*.txt
 # work/*.tsv. The returned translations DO get committed — those are ours.
 ministories/native_review.tsv
 ministories/native_review_map.json
+# The blank sheet sent out for translation — same English, same reason. It is generated from
+# work/*.tsv and comes back as the returned sheet, so neither end belongs in the repo.
+ministories/mini_stories_*.tsv
+# A working archive, not a source. Nothing reads it.
+ministories/work.zip
 # Same reason: the query list quotes the English alongside the Telugu it asks about.
 ministories/native_queries.tsv

@@ -34,7 +34,12 @@ VERBFORMS = json.load(open(os.path.join(HERE, 'verbforms.json'), encoding='utf-8
 # Bound morphemes: real and worth learning, but they are suffixes, not free-standing words.
 # A flashcard "in = లో" teaches a preposition Telugu does not have.
 BOUND = {'గా','న','తో','కు','కి','లో','ది','ను','నుండి','వరకు','లాగా','పై','చే','యొక్క','కూడా',
-         'ండి','డం','తున్నా','లు','బోతున్నాను'}
+         'ండి','డం','తున్నా','లు','బోతున్నాను',
+         # Telugu stacks case on number, and these two are what the stack needs: the oblique
+         # plural -ల that -లు becomes before another suffix, and the -ని the accusative takes
+         # after some stems. Without them గంటలకు (గంట + ల + కు) and ఆహారాన్ని decompose to
+         # nothing and the reader shows a wall of words with no meaning at all.
+         'ల','ని'}
 
 # Inflected endings that mark a finite verb rather than a dictionary headword.
 INFLECTED_END = ('ింది','ాడు','ారు','ాను','ావు','ాము','ాయి','ుంది','ండి','తాను','తాడు','న్నాను','న్నారు')

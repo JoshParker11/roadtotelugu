@@ -95,19 +95,38 @@ def load_suffixes(by_te_bare):
     return sorted(out, key=lambda x: -len(x[0]))
 
 
-def decompose(te, by_te_bare, suffixes):
-    """Known stem + known bound suffix, one layer deep — build_reader's rule, on script keys."""
+MAX_SUFFIXES = 3
+
+
+def decompose(te, by_te_bare, suffixes, depth=MAX_SUFFIXES):
+    """Known stem plus known bound suffixes, peeled from the right.
+
+    RECURSIVE, because Telugu stacks. `కస్టమర్లకు` is కస్టమర్ + లు + కు — a plural and then a
+    dative — and stopping after one suffix left it, and every other two-suffix form in the
+    corpus, with no gloss at all. Peeling up to three still only ever composes pieces the
+    master glosses, so nothing here is invented: the card says which stem and which suffixes,
+    each in the master's own words.
+
+    Longest suffix first at every layer, and a stem that is itself a known word wins
+    immediately — otherwise `వాళ్ళకు` would peel to a two-character remainder that happens to
+    be in the master and mean something else entirely.
+    """
+    row = by_te_bare.get(te)
+    if row is not None:
+        return row, [[row['roman'], row['english'][:60]]]
+    if depth <= 0:
+        return None
     for suf, srow in suffixes:
         if len(te) <= len(suf) or not te.endswith(suf):
             continue
         stem = te[:-len(suf)]
         if len(stem) < 2:
             continue
-        row = by_te_bare.get(stem)
-        if row is None:
+        got = decompose(stem, by_te_bare, suffixes, depth - 1)
+        if got is None:
             continue
-        return row, [[row['roman'], row['english'][:60]],
-                     ['-' + srow['roman'].lstrip('-'), srow['english'][:60]]]
+        base, parts = got
+        return base, parts + [['-' + srow['roman'].lstrip('-'), srow['english'][:60]]]
     return None
 
 
@@ -230,8 +249,18 @@ def part_tag(r):
 
 def bake_story(num, cat, rs):
     rows = story_rows(num, cat)
-    if not rows or any(not r['te'].strip() for r in rows):
-        return None                                # untranslated (or partially) — skip
+    if not rows:
+        return None
+    # A MISSING TITLE IS NOT A REASON TO WITHHOLD THE STORY.
+    # This used to require every row, title included, and stories 6, 7 and 8 each sat out with
+    # 47 translated sentences and one untranslated heading — the native-speaker sheet carried
+    # the bodies and no titles. The body is the material; the title has an English fallback in
+    # the reader already. Composing three Telugu headings here to satisfy a guard would be
+    # exactly the novel Telugu this project does not write.
+    body = [r for r in rows if r['part'] != 'meta']
+    if not body or any(not r['te'].strip() for r in body):
+        return None                                # the story itself is unfinished — skip
+    rows = [r for r in rows if r['te'].strip() or r['part'] != 'meta']
 
     # A CLIP EXISTING IS NOT A CLIP THAT SAYS THIS SENTENCE.
     # Segment ids are derived from the ENGLISH, so re-translating a line leaves its guid — and

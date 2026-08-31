@@ -598,7 +598,7 @@ W0596	W9d171e748a46	కూర్చుంటాను	kūrchuṇṭānu	I will s
 W0597	W5c36a176bf9c	కొనడం	konaḍaṁ	To Buy							29	book1000	Konadam			1277	86
 W0598	Wcba950e208f8	కూర్చుంటుంది	kūrchuṇṭundi	he/she/it sits (3rd person)	KOOR-choon-toon-dih		Verb Drill	కూర్చో			30	anki	kuurchuMTuMdi	inflected verbform	future of కూర్చో	1278	86
 W0599	Waf51173ac3ef	త్రాగి	trāgi	Drinking							30	book1000	Traagu			1279	86
-W0600	W0a5b1297e9ab	కు	ku	to							31	top1000		bound-suffix			
+W0600	W0a5b1297e9ab	కు	ku	-ku — to, for (dative; goes after the noun)							31	core-gaps,top1000	ku	bound-suffix multi-gloss	also: to		
 W0601	W39f778e52c27	అర్థంచేసుకో	arthanchēsukō	Understand							32	book1000	Artham cesuko			1280	86
 W0602	Wf164c24ed98a	ఉన్నాను	unnānu	I am / I exist (present)	OON-naa-noo		Essential Verbs Existence & State	ఉండు			33	anki,top1000	unnaanu	inflected multi-gloss verbform	past of ఉండు · also: am (I am); I was / I stayed (past); am	199	14
 W0603	Wd72c8bed7cd3	ఉన్నారు	unnāru	are (you-formal are)	OON-naa-roo		Essential Verbs Existence & State	ఉండు			34	anki	unnaaru	inflected verbform	past of ఉండు	157	11
@@ -2195,22 +2195,25 @@ W2193	W0b8a5020ab21	అందరికి	andariki	to everyone								core-gaps	
 W2194	W36b93912c107	బిజీ	bijī	busy (English loan)								core-gaps	biji			391	27
 W2195	W6ed9d663c699	టైం	ṭaiṁ	time (English loan)								core-gaps	ṭaiṁ			168	12
 W2196	W72f216e0ae91	ఎగ్జాం	egjāṁ	exam (English loan)								core-gaps	egjāṁ			517	35
-W2197	W2bd7da965c6c	పైకి	paiki	upward / above								anki	paiki			501	34
-W2198	W93ec7a10c386	చుక్క	chukka	dot / small star								anki	cukka			2088	140
-W2199	W23c21c10b4be	నక్షత్రం	nakṣatraṁ	star / constellation								anki	nakṣatraṁ			2089	140
-W2200	W2b034c12c7b3	వెయిటర్	veyiṭar	waiter								anki	veyiṭar			2090	140
-W2201	Wf81ebfb2e1b1	నిలబడటానికి	nilabaḍaṭāniki	to stand								anki	Nilabaḍaṭāniki			2091	140
-W2202	W29bf72c4d055	లెక్కించు	lekkinchu	to count								anki	lekkin̄cu			2092	140
-W2203	Wf4bc7789d368	నూట ఒకటి	nūṭa okaṭi	101								anki	nūṭa okaṭi	phrase		2093	140
-W2204	Wbf3c8848b65b	పార్క్	pārk	park								anki	Paark	english-respelled			
-W2205	Wb5b6e5259473	దూకడం	dūkaḍaṁ	to jump								anki	Dūkaḍaṁ			2094	140
-W2206	Wd07c29ae2e3b	సెప్టెంబర్	sepṭembar	September								anki	sepeṭembar	english-respelled			
-W2207	W298aef82337f	లోతులేని	lōtulēni	shallow								anki	lōtulēni			2095	140
-W2208	W5797ecc316ca	కరుగుట	karuguṭa	to melt								anki	karuguṭa			2096	140
-W2209	W6249f47264bf	ముద్దుపెట్టుట	muddupeṭṭuṭa	to kiss								anki	muddupeṭṭuṭa			2097	140
-W2210	Wa6b1d0c254ff	తాకుట	tākuṭa	to touch								anki	tākuṭa			2098	140
-W2211	W8c2169493120	లైంగిక క్రియ	laingika kriya	sex (the act) - sexual act								anki	laingi‍ka kriya	phrase		2099	140
-W2212	W82f8d1621a36	వివాహం	vivāhaṁ	marriage								anki	vivāhaṁ			2100	140
-W2213	W91d0b25520d4	జనవరి	janavari	January								anki	janavari			2101	141
-W2214	W37b9dd8b7d2e	క్రీడ	krīḍa	sport								anki	krīḍa			2102	141
-W2215	W2e74e6c9bf10	ఆరోగ్యమైన	ārōgyamaina	healthy								anki	ārōgyamaina			2103	141
+W2197	Wa28f29286275	ను	nu	-nu — marks the direct object (accusative)								core-gaps	nu	bound-suffix			
+W2198	W993a1dee5d81	ని	ni	-ni — marks the direct object, after stems ending -i or -u								core-gaps	ni	bound-suffix			
+W2199	W13b7a7843062	ల	la	-la — the plural -lu in its oblique form, used before another suffix								core-gaps	la	bound-suffix			
+W2200	W2bd7da965c6c	పైకి	paiki	upward / above								anki	paiki			501	34
+W2201	W93ec7a10c386	చుక్క	chukka	dot / small star								anki	cukka			2088	140
+W2202	W23c21c10b4be	నక్షత్రం	nakṣatraṁ	star / constellation								anki	nakṣatraṁ			2089	140
+W2203	W2b034c12c7b3	వెయిటర్	veyiṭar	waiter								anki	veyiṭar			2090	140
+W2204	Wf81ebfb2e1b1	నిలబడటానికి	nilabaḍaṭāniki	to stand								anki	Nilabaḍaṭāniki			2091	140
+W2205	W29bf72c4d055	లెక్కించు	lekkinchu	to count								anki	lekkin̄cu			2092	140
+W2206	Wf4bc7789d368	నూట ఒకటి	nūṭa okaṭi	101								anki	nūṭa okaṭi	phrase		2093	140
+W2207	Wbf3c8848b65b	పార్క్	pārk	park								anki	Paark	english-respelled			
+W2208	Wb5b6e5259473	దూకడం	dūkaḍaṁ	to jump								anki	Dūkaḍaṁ			2094	140
+W2209	Wd07c29ae2e3b	సెప్టెంబర్	sepṭembar	September								anki	sepeṭembar	english-respelled			
+W2210	W298aef82337f	లోతులేని	lōtulēni	shallow								anki	lōtulēni			2095	140
+W2211	W5797ecc316ca	కరుగుట	karuguṭa	to melt								anki	karuguṭa			2096	140
+W2212	W6249f47264bf	ముద్దుపెట్టుట	muddupeṭṭuṭa	to kiss								anki	muddupeṭṭuṭa			2097	140
+W2213	Wa6b1d0c254ff	తాకుట	tākuṭa	to touch								anki	tākuṭa			2098	140
+W2214	W8c2169493120	లైంగిక క్రియ	laingika kriya	sex (the act) - sexual act								anki	laingi‍ka kriya	phrase		2099	140
+W2215	W82f8d1621a36	వివాహం	vivāhaṁ	marriage								anki	vivāhaṁ			2100	140
+W2216	W91d0b25520d4	జనవరి	janavari	January								anki	janavari			2101	141
+W2217	W37b9dd8b7d2e	క్రీడ	krīḍa	sport								anki	krīḍa			2102	141
+W2218	W2e74e6c9bf10	ఆరోగ్యమైన	ārōgyamaina	healthy								anki	ārōgyamaina			2103	141

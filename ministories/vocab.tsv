@@ -1,17 +1,41 @@
 guid	te	sense_no	gloss	pos	explain	context_guid	status
 W6a13c1ec8fa5	అంతేకాక	1	besides, moreover	conjunction	Literally 'not only that' — అంతే 'that much' plus కాక 'not being'. It links an additional point to what came before.	M3a4fc6ec99e8	draft
+Wa2af3903749a	అడిగాను	1	I asked	verb	past, 1sg of అడుగు	M8076b4cb29dc	draft
+Wfdc1ca9c7bfb	అడిగింది	1	she asked	verb	past, 3sg fem of అడుగు	Mffda6cc3408f	draft
 W183e7f689f3f	అతనితో	1	with him	pronoun + case	అతను 'he' takes the oblique stem అతని before -తో 'with'. In a causative sentence this marks the person made to act.	Med5880a7ae78	draft
+W061e7d242878	అనుకుంటాడా	1	does he think?	verb	3sg masc + the -ā question ending	M2e772bf4841b	draft
+W181929469ac2	అనుకుంటాడు	1	he thinks	verb	habitual/future, 3sg masc of అనుకో	M3dd487b29236	draft
+Weaf85738360f	అనుకుంటున్నాడా	1	is he thinking of …?	verb	present continuous + the -ā question ending	Mda60d45bba13	draft
+W52628d60fa05	అనుకుంటున్నాడు	1	he is thinking, he wants to	verb	present continuous, 3sg masc of అనుకో	Mf67855827c10	draft
+Wd3254db99688	అనుకుంటోందా	1	is she thinking of …?	verb	present continuous + the -ā question ending	M77d0600b5e5d	draft
+W16f569d28e1f	అనుకుంటోంది	1	she is thinking, she wants	verb	present continuous, 3sg fem of అనుకో	Mfcbd2d509080	draft
+Wb94ac3309d69	అయ్యి	1	having become	verbal participle of అగు		M322c8beeeed2	draft
+W7a7857bca50c	అలసిపోయాము	1	we got tired	verb	past, 1pl of అలసిపో	Md34e6a9281a5	draft
+W18a419859f5f	అలసిపోయారా	1	did they get tired?	verb	past, 3pl + the -ā question ending	M3661ae1b3008	draft
+W48719ae31ec4	అలసిపోయారు	1	they got tired	verb	past, 3pl of అలసిపో	Ma1109e049555	draft
+W28620a622aa7	అవుతుందా	1	does it become? / is it time?	verb	3sg + the -ā question ending	M085190c727ce	draft
 Wccc424311519	ఆకలితో	1	with hunger, hungry	noun + case	ఆకలి 'hunger' with -తో 'with'. Telugu describes this state as accompaniment — literally 'with hunger' — where English uses an adjective.	M0fbf39d9b85f	draft
 W4ac7b621b4dd	ఆడటం	1	playing (the act of playing)	verbal noun	ఆడు 'to play' with -టం, which makes a verbal noun — the equivalent of English '-ing' used as a noun. It can then take case endings and act as a subject or object, as in ఆడటం ఇష్టం 'likes playing'.	Ma43404cd274b	draft
+We20a72864445	ఆడుకోవడం	1	playing	verbal noun of ఆడుకో		M24726d63a47c	draft
+Wb2be95db204d	ఆడుకోవడమంటే	1	as for playing	verbal noun ఆడుకోవడం + అంటే		Ma43404cd274b	draft
 W3d16b3d25104	ఆదా	1	saving	noun	Used with చేయు as ఆదా చేయు 'to save (money)'. Telugu forms a great many verbs by pairing a noun like this with చేయు 'do' or అవు 'become'.	Md45a97459e69	draft
 W6b72d39f33e6	ఆమెకు	1	to her / for her	pronoun + case	ఆమె 'she' with the dative -కు. As with names, this is the form used for the person experiencing something: ఆమెకు ఇష్టం is 'she likes it', literally 'to her it is a liking'.	Mcc6aaae188a9	draft
 Waef6f98d6a78	ఆలోచిస్తున్నాడా	1	is he thinking?	verb + question	ఆలోచిస్తున్నాడు 'he is thinking' (present continuous) plus the question marker.	M1293c455d81a	draft
+Wfbc478378a74	ఆహారాన్ని	1	food (as object)	noun	ఆహారం in the accusative	M0fbf39d9b85f	draft
+W46a53227ba44	ఇంగ్లీషు	1	English (the subject)	noun (English loanword)		M77383f958096	draft
 We29055da4751	ఇంగ్లీష్	1	English (the language)	proper noun	The language name as borrowed and used in ordinary speech.	M77383f958096	draft
+W353f5a99d940	ఇంటి	1	of the house, home	noun	ఇల్లు in its oblique form	Md45a97459e69	draft
 W73e28d7b1aa7	ఇంట్లోనూ	1	at home too	noun + case + additive	The oblique stem ఇంట్‌ of ఇల్లు 'house', plus the locative -లో, plus -నూ 'also'. Note ఇల్లు changes shape before endings — an irregularity worth memorising, since the word is very common.	M9368104310c4	draft
 W00597bb4f26b	ఇంట్లోనే	1	at home itself / right at home	noun + case + emphatic	ఇల్లు 'house' takes the oblique stem ఇంట్‌, adds the locative -లో, then the emphatic -ఏ. That final vowel means 'precisely, none other' — staying *at home* rather than going anywhere.	Md45a97459e69	draft
+Wd81914c67a6e	ఇష్టపడడం	1	liking	verbal noun of ఇష్టపడు		Mc451ce690e3e	draft
+W808d8266612a	ఇష్టపడుతారు	1	they like	verb	habitual/future, 3pl of ఇష్టపడు	Mcdabfe3c889f	draft
 W028d7b0dd1ab	ఇష్టమా	1	is it liked? / do (you) like?	noun + question	ఇష్టం 'liking, fondness' with the yes/no question marker -ఆ. Adding this single vowel to the end of a statement turns it into a question, with no change in word order.	M0716d6b78157	draft
 W6777293c98c1	ఉంటాడా	1	is he (habitually)?	verb + question	ఉంటాడు 'he is' plus the question marker. The final -ఆ is Telugu's yes/no question marker: attach it to the end of a statement and the word order does not change at all.	M7b3af6a49af0	draft
+W4528a655c978	ఉంటాయని	1	that they are	"ఉంటాయి + -అని ""that"", reporting a thought"		M3dd487b29236	draft
+W306ac79f1a00	ఉంటాయి	1	they are, they stay	verb	habitual/future, 3pl of ఉండు	M4c23f3a7efc3	draft
 W18e282764ee3	ఉంటారా	1	are they (habitually)?	verb + question	ఉంటారు 'they are' plus the question marker. The final -ఆ is Telugu's yes/no question marker: attach it to the end of a statement and the word order does not change at all.	M6b17c310bdff	draft
+Wde2037608a48	ఉంటుందా	1	is there? / does it stay?	verb	3sg + the -ā question ending	Mc050b3c7bc11	draft
+W5adb5c590dc7	ఉంటూ	1	staying, while being	progressive participle of ఉండు		Md45a97459e69	draft
 W3765258ae6a5	ఉండాలనుకుంటున్నాడా	1	does he want to stay?	verb + question	The whole 'wants to' chain — ఉండాలి 'must stay' + అని + అనుకుంటున్నాడు 'he is thinking' — with the question marker on the end. Only the last element takes it, however long the chain.	Mda60d45bba13	draft
 W958e0cff425c	ఉండాలనుకోవడం	1	wanting to stay	verbal noun	The same 'wants to' chain turned into a noun with -డం, so it can be negated as a whole: ఉండాలనుకోవడం లేదు, 'there is no wanting to stay'.	Mc451ce690e3e	draft
 Wf82b639bd850	ఉండి	1	having stayed / being	verb form	The conjunctive participle of ఉండు 'to be, to stay'. Telugu chains actions with this form instead of repeating a finite verb: ఇంట్లోనే ఉండి ... చేయాలని is 'staying at home and ...'. Only the last verb in such a chain carries person and tense.	Md45a97459e69	draft
@@ -20,6 +44,12 @@ W3a64bd760544	ఉందా	1	is there? / does (he) have?	verb + question	ఉం�
 W8bb8e1813fc1	ఉత్సాహంగా	1	excited, enthusiastically	adverb	ఉత్సాహం 'enthusiasm, excitement' with the adverbial -గా, pairing with ఉండటం to describe a state: ఉత్సాహంగా ఉన్నాడు 'he is excited'.	Mf084dcfb8769	draft
 W4c2a40859a1f	ఉన్న	1	who is / that are	verb (relative participle)	The relative participle of ఉండు 'to be'. Telugu has no relative pronouns; instead the verb takes this form and sits directly before the noun it modifies: ఆకలితో ఉన్న కస్టమర్లు, 'customers who are hungry'.	M0fbf39d9b85f	draft
 W14ab01d1d3ed	ఉన్నాడా	1	is he?	verb + question	ఉన్నాడు 'he is' plus the question marker. ఉన్నాడు describes a state right now, where ఉంటాడు describes what is generally so.	M593a2efb7f86	draft
+W14c9683fa581	ఉన్నాయా	1	are there?	verb	3pl + the -ā question ending	Me0dfe90a2214	draft
+W4d509109b075	ఎక్కడి	1	of where, which place	interrogative, oblique		M571f3bd4aec8	draft
+W1b90731bae13	ఎక్కడికైనా	1	anywhere, somewhere or other	adverb	ఎక్కడికి + ఐనా	Mf67855827c10	draft
+Wf8ec7931de62	ఎదురుచూస్తూ	1	waiting for, looking forward to	progressive participle of ఎదురుచూడు		M085190c727ce	draft
+W2cb72ba27d43	ఎన్నో	1	so many	determiner		Mc17383fe0c2c	draft
+W1a227616ceb1	ఏడున్నర	1	half past seven	number	"ఏడు ""seven"" + అన్నర ""and a half"""	M627972907910	draft
 Wb6efaf8ebfd0	ఏడున్నరకు	1	at seven-thirty	time expression + case	ఏడు 'seven' plus అన్నర 'and a half', with the dative -కు for clock time. Telugu builds half-hours with this -అన్నర rather than a separate word for 'thirty'.	M627972907910	draft
 We932d263cd9d	ఏమీకి	1	to Amy	proper noun + case	The name ఏమీ with the dative -కి. -కి rather than -కు because the name ends in a front vowel — the two are the same ending, chosen by the preceding sound.	M539a50ee5949	draft
 W85762ef3ac41	ఒకరికొకరు	1	each other	pronoun	Literally 'one to one' — ఒకరు 'one person' in the dative, then ఒకరు again. Telugu builds the reciprocal by repeating the word rather than with a separate pronoun like English 'each other'.	M8e2da61aa171	draft
@@ -27,89 +57,187 @@ W507b955eda56	కంప్యూటర్‌లో	1	on the computer	noun + case
 Wf06ffd3e44e9	కథను	1	the story (as object)	noun	కథ 'story' with the accusative ending -ను, which marks it as the thing being acted on. Telugu adds -ను/-ని to definite or animate objects; an indefinite object often takes no ending at all. Dictionary form: కథ.	Me35d761ad098	draft
 W87a0c2de24e3	కనిపిస్తుందా	1	is (it) seen? / does (she) see?	verb + question	కనిపిస్తుంది 'it appears, is visible' plus the question marker. Telugu often frames seeing this way — the thing seen is the subject and the seer takes the dative.	M97a5dafb9b60	draft
 Wfcff32def61a	కప్పు	1	cup	noun	A borrowing from English 'cup', long naturalised.	M8103f5ea619c	draft
+We1bdbe3a26bc	కరెన్	1	Karen	name		M9368104310c4	draft
+W5fa1ed11edbd	కరేన్	1	Karen	name		M07ea382e5598	draft
 W5c9c0c0d76e1	కలవగలడు	1	he can meet	verb (abilitative)	కలువు 'to meet' with -గల-, which marks ability, plus the third-person masculine ending. This -గల- is Telugu's 'can': it slots between the stem and the person ending, so కలవగలను is 'I can meet'.	M423b6d65259a	draft
 W6f63f4b3799d	కలవగలను	1	I can meet	verb (abilitative)	కలువు with the ability marker -గల- and the first-person ending -ను.	Mee411d64c4b4	draft
+W13250ab92d66	కలుస్తూ	1	meeting, while meeting	progressive participle of కలువు		M423b6d65259a	draft
+W1aff8c59023c	కష్టపడి	1	having worked hard	verbal participle of కష్టపడు		M3bd5efcd318b	draft
 W143fa091efc4	కస్టమర్ల	1	of the customers	noun (oblique plural)	కస్టమర్ with the oblique plural -ల, the form used before another ending or postposition — here before కోసం 'for'.	M0fbf39d9b85f	draft
+W8668eb07c60e	కస్టమర్లందరూ	1	all the customers	"కస్టమర్లు + అందరూ ""all"""		M48331453b7ae	draft
 Wf71e2fa0c9f4	కస్టమర్లతో	1	with the customers	noun + case	కస్టమర్ plus the plural -ల plus -తో 'with'. Telugu stacks these in a fixed order: stem, number, then case.	M61d853bc7ae6	draft
 Wdd06537e0681	కస్టమర్లు	1	customers	noun (plural)	కస్టమర్ 'customer' with the plural ending -లు. The borrowed singular takes native Telugu plural and case endings exactly as a Telugu noun would.	M08a42eca7f0d	draft
+W5c21c5bd4da9	కాదా	1	is it not?	the negative copula కాదు + the -ā question ending		M24793f8237ff	draft
 W4a30ae01ec58	కారులో	1	in the car / by car	noun + case	కారు 'car' with the locative -లో. Telugu uses this for the means of travel where English says 'by car'.	Mf59192fd5d1f	draft
 We7c1f37a6cf7	కారెన్	1	Karen (name)	proper noun	The English name Karen in Telugu script, inflecting like any noun: కారెన్‌కు 'to Karen'.	Me3678dd86cc1	draft
 W8fe494a77fec	కారెన్‌కు	1	to Karen / for Karen	proper noun + case	కారెన్ plus the dative ending -కు. Telugu uses the dative far more widely than English 'to' — it also marks the experiencer of a feeling, so కారెన్‌కు విసుగ్గా ఉంటుంది is literally 'to Karen it is boring', i.e. Karen is bored.	M9368104310c4	draft
+W6301767746d0	కావాలనుకుంటోందా	1	does she want …?	verb	present continuous + the -ā question ending	M29ceae1528af	draft
+W08c5d42bc429	కావాలనుకుంటోంది	1	she wants	verb	present continuous, 3sg fem — కావాలి + అనుకో	Mcc6aaae188a9	draft
 W7570545864c9	కావాలా	1	is (it) wanted?	verb + question	కావాలి 'is wanted, is needed' plus the question marker. What is wanted is the grammatical subject and the wanter takes the dative, so కారెన్‌కు ... కావాలా is 'to Karen, is ... wanted?'	M29ceae1528af	draft
+Waa3ab9c1483c	కాసేపటికి	1	after a little while	adverb	కాసేపు + the dative -కి	Mf8b1392efe4d	draft
+W6a6f3772f1c6	కూడుకున్నదా	1	does it involve …?	verb + the -ā question ending		M6efd4f432e33	draft
+Wa280bb879cc3	కూడుకున్నది	1	one that involves	verb	"""ఖర్చుతో కూడుకున్నది"" = involves expense"	M7a1fd0c7247a	draft
+W9ede62fb6911	కూతురంటే	1	as for the daughter	noun	కూతురు + అంటే, the subject of a liking	Mce4b56c68cc6	draft
+W99b3ef0e4169	కూతురికి	1	to the daughter	noun	కూతురు + the dative -కి	M77383f958096	draft
 W265d9f30a53d	కూతురుకు	1	to the daughter	noun + case	కూతురు 'daughter' with the dative -కు, here in the possession pattern: కూతురుకు ... ఉన్నారు, 'the daughter has ...'.	M80f643e0f3e3	draft
 Wae9bacc2c376	కొంటాను	1	I buy	verb	కొను 'to buy' with the first-person ending -తాను.	Mc44ea721d1e0	draft
 W95e0c882f201	కొంటుందా	1	does she buy?	verb + question	కొంటుంది 'she buys' plus the question marker.	Mac12e1ef7451	draft
 W7f334302fd32	కొంటుంది	1	she buys	verb	కొను 'to buy' with -తుంది, the third-person ending for a feminine or neuter subject in the habitual/future. The masculine counterpart would be కొంటాడు.	Me3678dd86cc1	draft
 Wff9fab5b2463	కొంత	1	some, a certain amount	adjective	Used before a noun for an unspecified quantity. The related కొంతమంది means 'some people'.	M320089b3af04	draft
+Wc21b899c7de0	కొడుతోందా	1	is it striking?	verb	present continuous + the -ā question ending	M0f8f2db95b4c	draft
+W0f6f26765b37	కొడుతోంది	1	it is striking	verb	"present continuous; with బోర్ = ""is bored"""	M9368104310c4	draft
+W2c487878fc39	కొద్ది	1	a little, few	adjective		M69cc47ab15ba	draft
+W585da234372a	కొద్దిసేపు	1	for a short while	adverb	"కొద్ది ""little"" + సేపు ""time"""	M1886460a1de1	draft
+W8a9346b995fc	కొనలేదు	1	she did not buy	verb	negative past of కొను	M8924d40fd969	draft
+W334685eaaa8e	కొనాలి	1	must buy, wants to buy	verb	obligative of కొను	Mfcbd2d509080	draft
+W2c2a2c60d4ec	కొనుక్కుందా	1	did she buy?	verb	past, 3sg fem + the -ā question ending	Mac12e1ef7451	draft
+Wcdeeae813af4	కొనుక్కుంది	1	she bought (for herself)	verb	past, 3sg fem of కొనుక్కో	M22b50a16e585	draft
+Wba9619e7d9f7	కొనుక్కుని	1	having bought (for oneself)	verbal participle of కొనుక్కో		Md48077c0312d	draft
+W2bf88999a86e	కొన్నదా	1	did she buy?	verb	past, 3sg fem + the -ā question ending	Ma9a6422738b9	draft
+W016932eadab0	కొన్నాను	1	I bought	verb	past, 1sg of కొను	Mc44ea721d1e0	draft
 W0f8b824e6a66	క్లేర్	1	Clare (name)	proper noun	The English name Clare in Telugu script. Like other borrowed names it takes ordinary case endings — క్లేర్‌కు 'to Clare'.	M1d52df997c3c	draft
 W87abed4d078d	క్లేర్‌కు	1	to Clare / for Clare	proper noun + case	క్లేర్ with the dative -కు, for the recipient or the experiencer of a state.	M59c4ef223e95	draft
 W95f6e1203567	ఖరీదు	1	price; expensive	noun	Names the cost of something, and by extension is used predicatively for 'expensive': చాలా ఖరీదు, 'costs a lot'.	M8fa446324119	draft
 W7fd5ea05246a	ఖరీదైనది	1	is expensive / an expensive one	adjective (nominalised)	ఖరీదు 'price, cost' plus -ఐన, which makes an adjective, plus -ది, which turns that adjective back into a standalone noun-like predicate. Telugu often ends an equational sentence with this -ది where English would just use 'is'.	M7a1fd0c7247a	draft
+W9eb4b02e1b67	ఖరీదైనవా	1	are they expensive?	adjective + the -ā question ending		M91a90dcb3fe8	draft
+W5952f6f8b816	ఖరీదైనవి	1	expensive ones	adjective	"ఖరీదు ""price"" + -ఐన"	M24c17cc19219	draft
 W74cc81bfd399	గంటలకు	1	at ... o'clock	noun + case	గంట 'hour' with the plural -ల and the dative -కు. Telugu tells clock time with the dative: ఆరు గంటలకు is 'at six o'clock'. The dative here marks a point in time rather than a recipient.	Mbbdd5bcb2e81	draft
 Wd25d7a3051db	గణితం	1	mathematics	noun	The native Telugu word for mathematics. Everyday school speech often uses the borrowed మ్యాథ్స్ instead; both are current.	M539a50ee5949	draft
 W5f13c30646da	చదవడం	1	reading (the act of)	verbal noun	చదువు 'to read' with -డం, which makes a verbal noun. Like ఆడటం 'playing', it can head a phrase and take case endings — చదవడం ఇష్టం, 'likes reading'.	M59c4ef223e95	draft
+W898c3f8198cc	చదువుకుంటూ	1	studying (for oneself)	progressive participle of చదువుకో		Md45a97459e69	draft
 W776ef0c868a2	చదువుకుని	1	having studied	verb form	చదువు 'to read, to study' with the reflexive -కొని and the conjunctive ending — 'having studied (for oneself)'. The conjunctive participle chains actions; only the final verb in the chain carries tense and person.	Md45a97459e69	draft
 W5748accef602	చదువుకోవాలని	1	that (one) should study	verb form	చదువుకొను 'to study (for oneself)' in its obligative form with the quotative అని, giving the content of the decision.	M0908d6845eea	draft
 Wf9ef943536b0	చదువుతాము	1	we study	verb	చదువు 'to study' with -తాము, first person plural.	M600055516098	draft
+W097e7820e015	చదువుతుందా	1	does she read?	verb	habitual/future, 3sg fem + the -ā question ending	M983cd8956932	draft
+Wae9b96b4c849	చదువుతూ	1	studying, while studying	progressive participle of చదువు		M3bd5efcd318b	draft
 Wc0135b1bf0cf	చూడటం	1	watching (the act of)	verbal noun	చూడు 'to see, watch' with the verbal-noun -టం, the same ending as ఆడటం 'playing'.	M0e79c6bafa76	draft
+Wc740924efb03	చూడడం	1	watching, seeing	verbal noun of చూడు		M0e79c6bafa76	draft
+W09eaf39d1e19	చూశాడు	1	he watched	verb	past, 3sg masc of చూడు	Mb5ad4d444fc9	draft
+W6c868e4a278b	చూశాను	1	I saw	verb	past, 1sg of చూడు	M63c45edd2d86	draft
+W18b0271afe51	చూశారు	1	they watched	verb	past, 3pl of చూడు	M322c8beeeed2	draft
+Wadcad479dcaf	చూసిందా	1	did she see?	verb	past, 3sg fem + the -ā question ending	M97a5dafb9b60	draft
+Wab6e5076b622	చూస్తాడా	1	does he watch?	verb	habitual/future, 3sg masc + the -ā question ending	M4c8e76bc58df	draft
+W0548abdad23f	చూస్తాము	1	we watch	verb	habitual/future, 1pl of చూడు	Md82c09f5f626	draft
+W7ee513466115	చెప్పబడింది	1	it was told	verb	passive past, from చెప్పు	Me35d761ad098	draft
+Wb518e860ce6f	చేత	1	by (the one made to act)	postposition	marks who is made to do something	Med5880a7ae78	draft
+W72834506e724	చేయడం	1	doing, making	verbal noun of చేయు		M8db5cc76b64f	draft
 Wa09d4e67cd43	చేయనవసరం	1	need to do	verb + noun	చేయ-, the bare stem of చేయు, with అవసరం 'necessity'. It usually appears negated — చేయనవసరం లేదు, 'there is no need to do', i.e. doesn't have to.	Mbbbb7d4eb1d8	draft
 W27f7eb9c8a8d	చేయాలని	1	intending to do / that (one) should do	verb form	చేయాలి 'must do' with the quotative అని. This pairing introduces an intention or a purpose, and is what the preceding clause is 'about' when it ends in నిర్ణయించుకుంటాడు 'decides'.	Md45a97459e69	draft
 Wc09f97aabb8d	చేయిస్తుందా	1	does she make (someone) do?	verb + question	చేయిస్తుంది, the causative, plus the question marker.	Mec1c434fed32	draft
 W9a08bbf6b6c6	చేయిస్తుంది	1	she makes (someone) do	verb (causative)	చేయు 'to do' in its causative form: -ఇంచు/-ఇస్తు inserts a second participant who causes the action. The person made to act takes -తో: జాన్‌తో హోంవర్క్ చేయిస్తుంది, 'she makes Jon do the homework'. This causative is fully productive across Telugu verbs.	Med5880a7ae78	draft
+Wf862a0dc7475	చేయిస్తూ	1	making (someone) do	causative progressive participle of చేయు		Med5880a7ae78	draft
+Wba0f9e1204ad	చేశాను	1	I did, I made	verb	past, 1sg of చేయు	M4be33bb4a292	draft
+W74b43afbf3ad	చేసి	1	having made, having done	verbal participle of చేయు		M8103f5ea619c	draft
+Wbf6c1fadc690	చేసిందా	1	did she do it?	verb	past, 3sg fem + the -ā question ending	M2e47f1aaa952	draft
 W12358fbae973	చేసుకుంటాము	1	we do (for ourselves)	verb (reflexive)	The first-person plural of చేసుకుంటారు.	Me8120b031b8e	draft
 W70256ce11e7a	చేసుకుంటారు	1	they do (for themselves)	verb (reflexive)	చేయు with the reflexive -కొను and the third-person plural ending. The reflexive is what makes ఒకరికొకరు సహాయం చేసుకుంటారు mean they help *each other* rather than someone else.	M8e2da61aa171	draft
 W4ce0e6f82870	చేసుకుని	1	having made (for oneself)	verb form	చేయు 'to do, make' with the reflexive -కొను and the conjunctive ending. The reflexive marks the action as done for one's own benefit, which is why it fits 'makes his breakfast' better than plain చేసి would.	M8103f5ea619c	draft
+Wba743105f80f	చేస్తాడా	1	does he do it?	verb	habitual/future, 3sg masc + the -ā question ending	Mab1851287176	draft
 W146d8dcbef8e	చేస్తుందా	1	does she do?	verb + question	చేస్తుంది 'she does' plus the question marker. The final -ఆ is Telugu's yes/no question marker: attach it to the end of a statement and the word order does not change at all.	M25bb1a29b316	draft
 W3b2886cfc6d9	చౌకైనదా	1	is it cheap?	adjective + question	చౌకైనది 'is a cheap one' plus the question marker.	M6efd4f432e33	draft
 W81117507e5c5	చౌకైనది	1	is cheap / a cheap one	adjective (nominalised)	చౌక 'cheap' with -ఐన making an adjective and -ది making it a standalone predicate — the same construction as ఖరీదైనది, its opposite.	M6c6fae2e0c55	draft
 W8164eb7027c3	జాన్	1	Jon (name)	proper noun	The English name Jon in Telugu script, inflecting like any noun: జాన్‌కు 'to Jon'.	M902a6de03153	draft
 W640e1741f6d1	జాన్‌కు	1	to Jon / for Jon	proper noun + case	జాన్ with the dative -కు. Used for the recipient, and for the one experiencing a state: జాన్‌కు హోంవర్క్ ఉంది, 'Jon has homework', literally 'to Jon there is homework'.	Md585b0658727	draft
 Wddfb6d3741b1	జాన్‌తో	1	with Jon	proper noun + case	జాన్ with -తో 'with'. In a causative sentence this same -తో marks the person who is made to do something, not a companion.	M7573e41adc24	draft
+Wf5311522b9f0	జూలీ	1	Julie	name		Mb2d2d6db1cbc	draft
 W593afc65da53	జూలీనా	1	is (it) Julie?	proper noun + question	The name జూలీ plus the question marker, with -న- inserted between the two vowels so they do not collide — a regular Telugu adjustment.	Mb2d2d6db1cbc	draft
+W643ab6117c29	జేన్	1	Jane	name		Ma1109e049555	draft
+Wd201d5e58e32	జేమ్స్	1	James	name		M1d59e95edc36	draft
+W6cbc0e741c8a	జోన్	1	Jon	name		M902a6de03153	draft
 W8005087ffa34	టికెట్లు	1	tickets	noun (plural)	The borrowed టికెట్ with the native plural -లు.	M8fa446324119	draft
 W0dcaa9db4bd2	టీచర్లకు	1	to the teachers	noun + case	టీచర్ 'teacher' with the plural -ల and the dative -కు. Used in the experiencer pattern: టీచర్లకు ... ఇష్టం, 'the teachers like ...'.	Mce4b56c68cc6	draft
+W784d579fcd44	టీవి	1	TV	noun (English loanword)		M322c8beeeed2	draft
+W80edacf78ffd	టైట్	1	tight	adjective (English loanword)		M1703a55a9aba	draft
 W57a57adcf03d	డస్టిన్	1	Dustin (name)	proper noun	The English name Dustin in Telugu script, inflecting normally: డస్టిన్‌కు 'to Dustin'.	Maa888281458f	draft
 W08c8fc8a32d9	డస్టిన్‌కు	1	to Dustin / for Dustin	proper noun + case	డస్టిన్ with the dative -కు, used both for 'to Dustin' and for Dustin as the one experiencing something — డస్టిన్‌కు ఫ్రెంచ్ రాదు, 'French doesn't come to Dustin', i.e. he doesn't speak French.	M3a4fc6ec99e8	draft
 Wc0da00a6cf79	తాగుతాడా	1	does he drink?	verb + question	తాగుతాడు 'he drinks' plus the question marker. The final -ఆ is Telugu's yes/no question marker: attach it to the end of a statement and the word order does not change at all.	Mbd3ee2218620	draft
+W20369dfdd940	తింటారా	1	do they eat?	verb	habitual/future, 3pl + the -ā question ending	Mf302363e0fb0	draft
+We3a429dec03d	తిన్నాము	1	we ate	verb	past, 1pl of తిను	Mb408011fb1d7	draft
+W4e69c1a2ba73	తీసుకుంటాడా	1	does he take?	verb	habitual/future, 3sg masc + the -ā question ending	M69cc47ab15ba	draft
+W73acad3a3d0a	తెలియడం	1	knowing	verbal noun of తెలియు		Mc95bb54fa503	draft
 W33c019b799ef	తెలియదు	1	(he) doesn't know	verb (negative)	తెలియు 'to be known' with the negative -దు. Knowledge is expressed impersonally: the thing known is the subject and the knower takes the dative, so అతనికి తెలియదు is 'to him it is not known'.	M571f3bd4aec8	draft
+Wd5719e15b1c3	తోముకున్నాడా	1	did he brush?	verb	past, 3sg masc + the -ā question ending	Mdebd3f9ab6d0	draft
+W3024ca222f72	తోముకున్నాడు	1	he brushed (his own)	verb	past, 3sg masc of తోముకో	Mcc7a7827960a	draft
+W2e1727369260	దుకాణానికి	1	to the shop	noun	దుకాణం + the dative -కి	M5b7c78898e4d	draft
+Wa46ab8a5195b	దుకాణాన్ని	1	the shop (as object)	noun	దుకాణం in the accusative	M07ea382e5598	draft
 W55e4fd8ef5e2	దేశాల	1	of countries	noun (oblique plural)	దేశం 'country' with the plural -ల in its oblique form — the shape a plural takes before another ending or postposition. Here it precedes నుంచి 'from': చాలా దేశాల నుంచి, 'from many countries'. Note the plural is -ల, not the -లు that ends a standalone plural.	M08a42eca7f0d	draft
+We6e4dfdc5a6f	దొరికిందా	1	did (he) get it?	verb	past + the -ā question ending	Mafcb398ca6a3	draft
 W505c02906d35	నడుచుకుంటూ	1	walking along	verb form	నడుచు 'to walk' with the reflexive -కొను and the durative -తూ, describing an action ongoing while something else happens. -తూ is Telugu's 'while X-ing'.	M07ea382e5598	draft
 W666551c24fdb	నాతో	1	with me	pronoun + case	నేను 'I' takes the oblique నా before -తో 'with'.	Mf0fccec5ba3c	draft
+W7653c2efe407	నిద్రపుచ్చారు	1	they put (someone) to sleep	verb	past, 3pl, causative of నిద్రపో	M59f071e47bc9	draft
+Wc959d6ab2406	నిద్రపుచ్చుతాము	1	we put (someone) to sleep	verb	habitual/future, 1pl, causative	Mb7dcfcea4ff0	draft
+Wa7f3baf21efa	నిద్రపోయాడు	1	he fell asleep	verb	past, 3sg masc of నిద్రపో	Mf8b1392efe4d	draft
 Wcb0fa2dd414e	నిర్ణయించుకుంటాడా	1	does he decide?	verb + question	నిర్ణయించుకుంటాడు 'he decides' plus the question marker.	M0908d6845eea	draft
 W8d5c2c5f6e53	నిర్ణయించుకుంటాడు	1	he decides	verb (reflexive)	నిర్ణయించు 'to decide' with the reflexive -కొను, marking that the decision is for and about himself. Telugu uses this reflexive far more than English does.	Md45a97459e69	draft
 W2451aec024a2	నిర్ణయించుకుంటాను	1	I decide	verb (reflexive)	నిర్ణయించుకొను 'to decide (for oneself)' with the first-person ending.	M2a1ea9d37bca	draft
+W08626e1c0ed0	నిర్ణయించుకున్నాడా	1	did he decide?	verb	past, 3sg masc + the -ā question ending	M0908d6845eea	draft
+W87b0034dbf37	నిర్ణయించుకున్నాడు	1	he decided	verb	past, 3sg masc of నిర్ణయించుకో	Md45a97459e69	draft
+Wa1d20608c654	నిర్ణయించుకున్నాను	1	I decided	verb	past, 1sg of నిర్ణయించుకో	M2a1ea9d37bca	draft
 Wbc6e8d996f5e	నీళ్లంటే	1	as for water	noun + topic marker	నీళ్లు 'water' (grammatically plural in Telugu) plus అంటే, literally 'if (one) says'. It marks the topic of a feeling: నీళ్లంటే భయం is 'as for water, (there is) fear' — the standard way to say someone is afraid of something.	M713259958e19	draft
+W5eb6d4441ec6	నుండే	1	from (that one only)	postposition నుండి with emphatic -ē		Mf8ae7903f203	draft
 Wc61a50ce98b7	నేనంటే	1	as for me	pronoun + topic marker	నేను 'I' plus అంటే 'if (one) says', marking the topic. నేనంటే ఇష్టం is 'as for me, (there is) liking' — the standard frame for saying someone likes a person.	M952313ce5074	draft
+Wc131b4226612	నేర్చుకుంటూ	1	learning, while learning	progressive participle of నేర్చుకో		Me345949a099e	draft
+W734d09de3d15	నేర్చుకోవాలని	1	that (he) should learn	verb	"నేర్చుకో + -ఆలని ""in order to / that one should"""	M0908d6845eea	draft
+Wfe9bc29f8e44	పట్టునే	1	right at, staying put at	"""ఇంటి పట్టునే"" = at home and nowhere else"		Md45a97459e69	draft
+W66c85615925c	పడుకుంటాడా	1	does he go to bed?	verb	habitual/future, 3sg masc + the -ā question ending	M789395f2da47	draft
 Wc41b4fca790c	పనికి	1	to work	noun + case	పని 'work, task' with the dative -కి, marking destination. Note -కి rather than -కు: the choice follows the preceding vowel, with -కి after front vowels like the ి of పని.	Mf59192fd5d1f	draft
 Wee26078c04f7	పనిలో	1	at work	noun + case	పని 'work' with the locative -లో.	Mcc07cf468ad2	draft
 Wed90f96bfb2e	పనిలోనూ	1	at work too	noun + case + additive	పని 'work' plus the locative -లో plus -నూ 'also'. The -నూ ending pairs across a list: పనిలోనూ ఇంట్లోనూ is 'both at work and at home'.	M9368104310c4	draft
 W8268cf72913f	పనులు	1	tasks, things to do	noun (plural)	పని 'work, task' with the plural -లు. The singular means work in general; the plural counts individual tasks.	M25bb1a29b316	draft
+Wc994594b7a20	పాటు	1	for (a stretch of time)	postposition	"""రెండు వారాల పాటు"" = for two weeks"	Mbbbb7d4eb1d8	draft
 W20137fb3189b	పిల్లిని	1	the cat (as object)	noun + case	పిల్లి 'cat' with the accusative -ని. Animate objects reliably take this ending in Telugu, where an inanimate one might not. Dictionary form: పిల్లి.	Me3678dd86cc1	draft
+W3e60ae803251	పెంపుడు	1	pet, domesticated	adjective	"""పెంపుడు జంతువుల దుకాణం"" = pet store"	M07ea382e5598	draft
 W7add418d0241	పెట్	1	pet	noun	The English word 'pet', used here in the compound పెట్ షాప్ 'pet shop'. Borrowed compounds like this are usual in urban speech.	M07ea382e5598	draft
+W04b698142a98	పెట్టి	1	having put down	verbal participle of పెట్టు		M705be85ecff0	draft
+W77bd35f2204b	పెడతాడు	1	he puts, he serves	verb	habitual/future, 3sg masc of పెట్టు	M0fbf39d9b85f	draft
 W1b9e3bad6ebc	పొద్దున్నే	1	early in the morning	adverb	పొద్దున 'morning' with the emphatic -ఏ, giving 'in the morning itself', i.e. early. That final -ఏ meaning 'precisely, none other' is the same one in ఇంట్లోనే.	M0f902e9fb9fd	draft
+W17dc9900a9b3	పోయాను	1	I went	verb	past, 1sg of పో	M154b314861a3	draft
+Wca1f1ad348d2	పోయింది	1	she went / it went	verb	past, 3sg fem-neut of పో	Mca4ae6193d71	draft
+Wd002c3e78947	ప్రజలను	1	people (as object)	noun	ప్రజలు in the accusative	M423b6d65259a	draft
+Wddaa51eafdef	ప్రతిరోజూ	1	every day	adverb	"ప్రతి ""every"" + రోజు ""day"" + emphatic -ū"	Maf14de3ce522	draft
+W5477dc44009b	ప్రతీ	1	every, each	determiner		Mbbdd5bcb2e81	draft
+W181ed15c20dd	ప్రయత్నించాను	1	I tried	verb	past, 1sg of ప్రయత్నించు	M8db5cc76b64f	draft
+Wb4203cd2eb33	ప్రయత్నించింది	1	she tried	verb	past, 3sg fem of ప్రయత్నించు	M5efe61fbec49	draft
 W98e18a345d96	ప్రయత్నిస్తాను	1	I try	verb	ప్రయత్నించు 'to try' with -తాను, first person singular.	M8db5cc76b64f	draft
 W96f417856224	ప్రయత్నిస్తుంది	1	she tries	verb	ప్రయత్నించు 'to try' with -తుంది, third person feminine/neuter. What is tried takes the dative: ...చేయడానికి ప్రయత్నిస్తుంది, 'tries to do ...'.	M5efe61fbec49	draft
 W8b09796fd65c	ఫ్రాన్స్	1	France	proper noun	The country name in Telugu script, inflecting like any noun: ఫ్రాన్స్‌కు 'to France'.	M7a1fd0c7247a	draft
 Wd01476c3bc80	ఫ్రాన్స్‌కు	1	to France	proper noun + case	ఫ్రాన్స్ with the dative -కు marking destination.	M83772bc567b4	draft
 Wdddb0bc9a9d0	ఫ్రెంచ్	1	French (the language)	proper noun	The language name borrowed from English. Telugu names languages with this borrowed form in ordinary speech, and pairs them with రావడం 'to come' rather than 'to speak' when talking about ability.	M3a4fc6ec99e8	draft
+W92f5931b8c61	ఫ్రెండ్స్	1	friends	noun (English loanword)		M80f643e0f3e3	draft
+W716454c39316	ఫ్రెడ్	1	Fred	name		Ma1109e049555	draft
 W5c1fb1799b1d	బంధువులా	1	are (they) relatives?	noun + question	బంధువులు 'relatives' plus the question marker.	M15b34115842d	draft
 W2b8418f8552b	బంధువులు	1	relatives	noun (plural)	బంధువు 'relative' with the plural -లు. Covers kin generally, without specifying the relationship.	Mf9530400a8d8	draft
+W1548911c5410	బూట్లు	1	shoes	noun	the native Telugu word; the stories also use షూలు	Mfcbd2d509080	draft
 W78aa13fd753b	బెస్ట్	1	best	adjective	The English word, used here in బెస్ట్ ఫ్రెండ్. This borrowing is at least as common in casual speech as the more literary ప్రాణ స్నేహితురాలు.	Mfc0fc617abdd	draft
+W193a0d2f15b8	బోరింగ్గా	1	boringly, as boring	adverb	"English ""boring"" + -గా"	M4c23f3a7efc3	draft
+W668351b78da8	బోర్	1	bored, boring	noun (English loanword)	"""బోర్ కొడుతోంది"" = it is boring"	M9368104310c4	draft
+W45170ec366c6	బ్రేకఫాస్ట్	1	breakfast	noun (English loanword)		M8103f5ea619c	draft
+W618d9eb032f9	బ్రేకులు	1	breaks	noun	"English ""break"" with the Telugu plural -లు"	M4a6944980e04	draft
+W0062c5bd2c65	బ్రేక్స్	1	breaks	noun (English loanword, English plural)		M140564b292fe	draft
 W79d4de419088	భాషలు	1	languages	noun (plural)	భాష 'language' with the plural -లు.	M4987b661c11b	draft
 Wa159277c2443	మందిని	1	people (as object)	counter + case	మంది, the counter used for people, with the accusative -ని. Telugu counts humans with మంది rather than a bare number: చాలా మందిని, 'many people' as an object.	M423b6d65259a	draft
+Wc42d48737c04	మరి	1	and then, moreover	conjunction		Ma923edb76519	draft
+We26744bbf91c	మరో	1	another, a different	determiner		Me35d761ad098	draft
+We7cda23731a4	మాట్లాడడం	1	speaking	verbal noun of మాట్లాడు		M3a4fc6ec99e8	draft
 Wd2769c21f2d0	మాట్లాడతారు	1	they speak	verb	మాట్లాడు 'to speak' with -తారు, third person plural habitual.	M4987b661c11b	draft
 W79f056c2498f	మాట్లాడినప్పుడు	1	when (he) talks / talked	verb form	మాట్లాడు 'to speak' with the past participle -ిన and అప్పుడు 'at the time'. Telugu builds 'when X' clauses this way rather than with a conjunction — the -ిన form is not really past here, it simply marks the event the timing hangs on.	M61d853bc7ae6	draft
+Wd4516048a296	మాట్లాడేటప్పుడు	1	when (he) talks	verb	"""at the time of speaking"", from మాట్లాడు"	M61d853bc7ae6	draft
 W4ad4f07ca052	మైక్	1	Mike (name)	proper noun	The English name Mike written in Telugu script, so the sound is preserved rather than the spelling. Names are transliterated in this project rather than left in Latin letters, which means they inflect like any Telugu noun: మైక్‌కి 'to Mike'.	M98a83054b2b4	draft
 Wc1bf07f968b4	మొదట	1	first, at first	adverb	Marks the first item in a sequence of events. Pairs with తర్వాత 'afterwards, then'.	M5efe61fbec49	draft
 W28807c73efb7	మొదలవుతుందా	1	does it start?	verb + question	మొదలవుతుంది 'it starts' plus the question marker. The final -ఆ is Telugu's yes/no question marker: attach it to the end of a statement and the word order does not change at all.	M96b243709e02	draft
 We1941d2a764b	మొదలవుతుంది	1	(it) begins / starts	verb	మొదలు 'beginning' with అవుతుంది '(it) becomes' — Telugu forms many verbs by pairing a noun with అవు 'become' or చేయి 'do'. The -ుంది ending is third person singular for a non-masculine subject, which is why 'work' takes it here.	M627972907910	draft
 W51aada42fdaf	మొదలవ్వదు	1	(it) doesn't start	verb (negative)	The negative of మొదలవుతుంది. Telugu negates by replacing the tense ending rather than adding a separate word — there is no equivalent of 'does not' standing on its own.	M0632720d2580	draft
+Wd964d9901e5e	మ్యాథ్స్	1	maths	noun (English loanword)		M539a50ee5949	draft
 W55b99e14da64	యూనివర్సిటీ	1	university	noun	Borrowed from English and used as an ordinary noun.	M1d52df997c3c	draft
+Wd940468a4af5	యేమి	1	Amy	name	"the translator writes it this way; a learner may read it as ఏమి ""what"""	Mfc0fc617abdd	draft
+W9eac7aa2c72e	యేమికి	1	to Amy, Amy (as experiencer)	name + the dative -కి		M539a50ee5949	draft
 Wf8984884123d	రాణిస్తాము	1	we do well	verb	రాణించు 'to excel' with the first-person plural ending.	M600055516098	draft
 W15ddd4a2cb4a	రాణిస్తారు	1	they do well, they excel	verb	రాణించు 'to shine, to excel' with -తారు, third person plural. Also the polite form for a single person.	M3bd5efcd318b	draft
 Wc1017f35a948	రాణిస్తుందా	1	does she do well?	verb + question	రాణిస్తుంది 'she does well' plus the question marker.	M9ee5a507ebab	draft
 W179e138e4a2a	రుచిగా	1	tasty, deliciously	adverb	రుచి 'taste' with the adverbial -గా, pairing with ఉండటం: రుచిగా ఉండదు, 'it is not tasty'.	M078b1e383017	draft
+W5bbed7f5b46f	రెస్టారెంట్	1	restaurant	noun (English loanword)		M408d4f952b07	draft
 Wba870771c8da	రెస్టారెంట్‌లో	1	in a restaurant	noun + case	The borrowed రెస్టారెంట్ with the locative -లో 'in, at'. Consonant-final loanwords take native case endings unchanged.	Mf4bbe4bbc215	draft
+Wfe814c92fefc	లీసా	1	Lisa	name		Mfcbd2d509080	draft
 W4a63b6fd5117	లేస్తాడా	1	does he get up?	verb + question	లేస్తాడు 'he gets up' plus the question marker. The final -ఆ is Telugu's yes/no question marker: attach it to the end of a statement and the word order does not change at all.	M0f902e9fb9fd	draft
 We728d7fed3d8	లేస్తాడు	1	he gets up	verb	లేచు 'to rise, get up' with -స్తాడు, third person masculine in the habitual/future. Telugu uses one tense for both habit and future; context distinguishes them.	Mbbdd5bcb2e81	draft
 Wb6a64b2b290f	లేస్తాను	1	I get up	verb	లేచు 'to rise' with -తాను, first person singular. The third-person counterpart is లేస్తాడు.	M9cd5b204912c	draft
@@ -118,14 +246,24 @@ W72c6a9ccf898	వంటమనిషి	1	cook	noun	వంట 'cooking' plus మ�
 W43dbaca33bf0	వంటవాడా	1	is (he) a cook?	noun + question	వంటవాడు plus the question marker. Because Telugu needs no copula, questioning an equational sentence means attaching -ఆ straight to the predicate noun.	Mdb4fa346e775	draft
 Weac86004fbbd	వంటవాడిని	1	I am a cook	noun (predicative, 1sg)	వంటవాడు 'cook' in the form used when the speaker is the one being described. Telugu marks the predicate noun for person in an equational sentence: వంటవాడు 'he is a cook' becomes వంటవాడిని 'I am a cook'.	M167a4c61499e	draft
 Wee21e097041c	వంటవాడు	1	cook (male)	noun	వంట 'cooking' plus -వాడు, the masculine agent suffix — literally 'cooking-man'. The feminine counterpart is వంటమనిషి or వంటది depending on region. -వాడు is a productive way to name someone by what they do.	M98a83054b2b4	draft
+Wa26a2dae6837	వండి	1	having cooked	verbal participle of వండు		M0fbf39d9b85f	draft
+W370d4e9dc6cc	వండిన	1	cooked, that (she) cooked	verbal adjective of వండు		M078b1e383017	draft
 W033cb402c505	వచ్చా	1	does (he) know it? / did it come?	verb + question	వచ్చు 'to come' with the question marker. In the language-ability idiom, ఫ్రెంచ్ వచ్చా is 'does French come (to him)?', i.e. does he speak French — the same రావడం idiom as రాదు.	M7f1e8f8f1792	draft
 Wfdbe5fa6bb8d	వస్తారా	1	do they come?	verb + question	వస్తారు 'they come' plus the question marker. The final -ఆ is Telugu's yes/no question marker: attach it to the end of a statement and the word order does not change at all.	Mf8ae7903f203	draft
+W4a1df8c120d5	వాడా	1	is he …?	the -వాడు agent ending + the -ā question ending		Mdb4fa346e775	draft
+We4909113b5cd	వారాల	1	of weeks	noun	వారాలు in its oblique form	Mbbbb7d4eb1d8	draft
 Wc289b9382714	వారాలు	1	weeks	noun (plural)	వారం 'week' with the plural -లు.	Mbbbb7d4eb1d8	draft
 Wcdea2143510c	విద్యార్థా	1	is (he) a student?	noun + question	విద్యార్థి 'student' plus the question marker.	M2ee5c50cfcf1	draft
 Wa4233c04d3d6	విద్యార్థినా	1	is (she) a student?	noun + question	విద్యార్థిని 'female student' plus the question marker. The final -ఆ is Telugu's yes/no question marker: attach it to the end of a statement and the word order does not change at all.	Mab6ac69cd3ee	draft
 Wc917c8c7f2f7	విద్యార్థిని	1	female student	noun	The feminine counterpart of విద్యార్థి 'student'. Telugu marks gender on many agent nouns this way, and the verb agrees with it. Note the trap: this looks identical to a noun carrying the accusative -ని, but here the ending is part of the word itself.	M6d461fc21aeb	draft
 W1872f6818621	విధంగా	1	in a (certain) way	adverb	విధం 'manner, way' plus -గా, the suffix that turns a noun or adjective into an adverb. వేరే విధంగా is 'in a different way'. This -గా is one of the most productive endings in the language — the same move gives సంతోషంగా 'happily' and స్నేహంగా 'in a friendly way'.	Me35d761ad098	draft
+W8bb7c0d7a3c6	విమాన	1	air-, aeroplane	noun used before another noun	విమానం	M8fa446324119	draft
+W7f87fdcecc49	వివిధ	1	various, different	adjective		M4987b661c11b	draft
+W77e3a5fac257	విశ్వవిద్యాలయ	1	university	noun used before another noun	విశ్వవిద్యాలయం	M1d52df997c3c	draft
 W84ebaba94936	విసుగ్గా	1	bored / tediously	adverb	విసుగు 'boredom' with the adverbial -గా. It appears with ఉండటం in the dative-experiencer pattern: someone-కు విసుగ్గా ఉంటుంది, 'to them it is boring'. Telugu expresses this state as something happening to a person, not something they do.	M9368104310c4	draft
+W02db57fa7410	వెళతాడా	1	does he go?	verb	3sg masc + the -ā question ending	Mdc4c92341135	draft
+Wab4839777360	వెళతాడు	1	he goes	verb	habitual/future, 3sg masc of వెళ్ళు	Mf59192fd5d1f	draft
+W60f454eb55aa	వెళతాను	1	I go	verb	habitual/future, 1sg of వెళ్ళు	M8e4a8bb082b5	draft
 Wca8452e002b5	వెళ్తాడా	1	does he go?	verb + question	వెళ్తాడు 'he goes' plus the question marker. The final -ఆ is Telugu's yes/no question marker: attach it to the end of a statement and the word order does not change at all.	Mdc4c92341135	draft
 W68bb1eba3e54	వెళ్తుందా	1	does she go?	verb + question	వెళ్తుంది 'she goes' plus the question marker.	M4858a3dc0b78	draft
 Wa041343e8fbb	వెళ్తూ	1	while going	verb form	వెళ్ళు 'to go' with the durative -తూ. Chains with another verb to say two things happened at once: నడుచుకుంటూ వెళ్తూ ... చూస్తుంది, 'walking along, she sees ...'.	M07ea382e5598	draft
@@ -133,19 +271,48 @@ Wf8030fb3a3ed	వెళ్లాలని	1	that (one) should go	verb form	వ�
 Wd2267df5ead0	వెళ్లాలనుకుంటున్నాడు	1	he wants to go	verb (compound)	Three pieces fused: వెళ్ళాలి 'must/should go', the quotative అని, and అనుకుంటున్నాడు 'he is thinking'. Literally 'he is thinking that he should go'. This is the ordinary Telugu way to say 'wants to' for an action — there is no single verb for 'want' with a verbal complement.	Maa888281458f	draft
 Wdf2c2ab82e1a	వెళ్లాలనుకుంటున్నాను	1	I want to go	verb (compound)	The first-person form of వెళ్లాలనుకుంటున్నాడు: వెళ్ళాలి + అని + అనుకుంటున్నాను 'I am thinking'. Only the final verb changes for person — the rest of the chain stays fixed.	M4a72b5a605dd	draft
 W1d0f1228f97f	వెళ్లాలో	1	where to go (in an embedded question)	verb form	వెళ్ళాలి 'must go' with the ending -ఓ, which marks an embedded or indirect question. ఎక్కడికి వెళ్ళాలో తెలియదు is 'doesn't know where to go' — the -ఓ is what lets a question sit inside a larger sentence.	M571f3bd4aec8	draft
+W9510e4b82343	వెళ్లాల్సిన	1	having to go, required to go	verbal adjective of వెళ్ళు		Mbbbb7d4eb1d8	draft
+Wa77af0c6fe4b	వెళ్లిపోయాను	1	I went away, I left	verb	past, 1sg of వెళ్ళిపో	M5677e548b074	draft
+W7da630aeb7fb	వెళ్లొచ్చా	1	may (he) go?	వెళ్లొచ్చు + the -ā question ending		Ma7f10cb65670	draft
+W55e302a3b4b7	వెళ్లొచ్చు	1	may go, can go	verb	"వెళ్ళు + -వచ్చు ""may/can"""	Mac48ede3581e	draft
+Wb20fbb49a45e	వెళ్ళడం	1	going	verbal noun of వెళ్ళు		M7a1fd0c7247a	draft
+W739098d679c6	వెళ్ళిపోయింది	1	she went away, she left	verb	past, 3sg fem of వెళ్ళిపో	M705be85ecff0	draft
+W023bd1f21bfc	వేడినీటి	1	of hot water	noun	"వేడి ""hot"" + నీళ్ళు ""water"", oblique"	M4be33bb4a292	draft
+W0f1b10898b44	వేడినీటితో	1	with hot water	noun వేడినీళ్ళు + the instrumental -తో		M5d01b2af0c5b	draft
 W01f2b9c52a29	వేర్వేరు	1	different, various	adjective	A reduplicated form of వేరు 'separate, other'. Doubling a word is a common Telugu way of intensifying or pluralising a sense — here 'separate-separate', i.e. several different ones.	M4987b661c11b	draft
+Wf3a9010fbc46	వేసుకుంది	1	she put on, she tried on	verb	past, 3sg fem of వేసుకో	M4cd60ed12d49	draft
+W3f7cc1310a13	వేసుకుని	1	having put on	verbal participle of వేసుకో		Mee7786b1a4ba	draft
+Wac5c32e66e86	వేసుకున్నాను	1	I put on, I tried on	verb	past, 1sg of వేసుకో	Mf1701ee15795	draft
+W0dbc43f45937	వేసుకోలేదు	1	she did not put on	verb	negative past of వేసుకో	Maa3ff726e56f	draft
+W2fb27a546482	వ్రాయడం	1	writing	verbal noun of వ్రాయు		Mb5dc6c6c650a	draft
+W27310bcdbfbb	వ్రాయడమంటే	1	as for writing	verbal noun వ్రాయడం + అంటే		M59c4ef223e95	draft
+We3aa85ba3e30	శీతాకాల	1	winter	noun used before another noun	శీతాకాలం	Mf084dcfb8769	draft
 Wf5f7a041781c	శీతాకాలం	1	winter	noun	శీత 'cold' plus కాలం 'season, time' — a transparent compound. The same కాలం builds వేసవికాలం 'summer' and వర్షాకాలం 'rainy season'.	Mf084dcfb8769	draft
 W32afbc9ec16e	షాప్‌లో	1	in the shop	noun + case	షాప్ 'shop' with the locative -లో.	M5b64a1c2fa80	draft
+W46c8efac7282	సంతోషపడుతాడా	1	does he feel happy?	verb	3sg masc + the -ā question ending	M7b3af6a49af0	draft
+W28ace4e15416	సంతోషపడుతాడు	1	he feels happy	verb	habitual/future, 3sg masc	M61d853bc7ae6	draft
+W823fbc066791	సమావేశాలంటే	1	as for the meetings	సమావేశాలు + అంటే		M487e6850a5f3	draft
+W295de9fc406c	సమావేశాలు	1	meetings	noun	plural of సమావేశం	M3dd487b29236	draft
+Wca9878a6ed6e	సమావేశాలుంటాయా	1	are there meetings?	సమావేశాలు + ఉంటాయి + the -ā question ending		M7ec96a75c858	draft
+W0bdf7405a1c6	సమావేశాలుంటాయి	1	there are meetings	"సమావేశాలు ""meetings"" + ఉంటాయి ""there are"""		M65fae952cf36	draft
+W06d4ffb042de	సమావేశాలున్నాయి	1	there are meetings	"సమావేశాలు + ఉన్నాయి ""there are"""		M8ca364fb9547	draft
+W3acf67a7f760	సరిగ్గా	1	exactly, properly	adverb		M571f3bd4aec8	draft
 W90f020740fd6	సినిమాలు	1	movies	noun (plural)	సినిమా with the plural -లు.	M0e79c6bafa76	draft
 W8f4f6c298968	సెలవుకు	1	for a holiday / on vacation	noun + case	సెలవు 'leave, holiday' with the dative -కు, marking purpose — going *for* a vacation.	Maa888281458f	draft
 W62eb9742fa5a	సెలవుల	1	of the holidays	noun (oblique plural)	సెలవు 'leave, holiday' with the oblique plural -ల, here before గురించి 'about': సెలవుల గురించి, 'about the holidays'.	Mf084dcfb8769	draft
 W57e285d7d904	సెలవులో	1	during the holiday	noun + case	సెలవు 'holiday' with the locative -లో, here marking a period of time rather than a place.	Me345949a099e	draft
+Wf481bb3e9553	సెలవుల్లో	1	during the holidays	noun	"సెలవులు + -లో ""in"""	Me345949a099e	draft
+W182f5989992f	సేపు	1	a stretch of time	noun	"""చాలా సేపు"" = for a long while"	M140564b292fe	draft
+W1da3f8665cde	సౌకర్యంగా	1	comfortably, comfortable	adverb	"సౌకర్యం ""comfort"" + -గా"	Mf7f521152fbd	draft
 Wa64876039335	స్కూలు	1	school	noun	The borrowed 'school' with the vowel Telugu adds to consonant-final loanwords. Both స్కూల్ and స్కూలు occur; the fuller form appears before case endings.	Me9dfa9af5f02	draft
 We0fef98c5d87	స్కూలుకు	1	to school	noun + case	స్కూలు 'school' with the dative -కు marking destination. Telugu adds a vowel to the borrowed స్కూల్ before the ending, giving స్కూలు-, which is a regular adaptation of consonant-final loanwords.	Maf14de3ce522	draft
 W23decfe9b44f	స్కూల్లో	1	in school / at school	noun + case	స్కూల్ 'school' with the locative -లో 'in, at'. -లో is the general 'inside/at' ending and attaches to borrowed and native nouns alike.	M41dc51e5bffe	draft
+W876879ec4757	స్నానం	1	a bath, a wash	noun	"""స్నానం చేయు"" = to bathe"	M2c882c11e313	draft
 W74e42baeb872	స్నేహంగా	1	in a friendly way	adverb	స్నేహం 'friendship' with the adverbial -గా. Telugu often builds a manner adverb from an abstract noun this way where English would reach for an adjective like 'friendly'.	M423b6d65259a	draft
 W362b73bc71c9	స్నేహితులు	1	friends	noun (plural)	స్నేహితుడు 'friend (male)' with the plural -లు. Used for a mixed or unspecified group; the feminine singular is స్నేహితురాలు.	M80f643e0f3e3	draft
 W3e79fb4fc9b6	హాబీ	1	hobby	noun	The English word borrowed directly. Telugu has వ్యాపకం, but that reads literary; హాబీ is what is actually said in conversation.	Mcc6aaae188a9	draft
+W2218ca19abdb	హిస్టరీ	1	history (the subject)	noun (English loanword)		M77383f958096	draft
+Wc4d9db5676ef	హై	1	high	adjective (English loanword)	"in ""హై స్కూల్"""	M902a6de03153	draft
 W85a8f060c727	హైస్కూల్	1	high school	noun	The English compound borrowed whole.	M0301635ed4ba	draft
 W6982c3de579a	హైస్కూల్‌లో	1	in high school	noun + case	హైస్కూల్ with the locative -లో.	M902a6de03153	draft
 W7c118149c399	హోంవర్క్	1	homework	noun	The English word borrowed whole and written in Telugu script. Everyday spoken Telugu takes many school and office terms this way. It behaves as an ordinary noun and accepts case endings: హోంవర్క్‌లో 'in the homework'.	Md585b0658727	draft
