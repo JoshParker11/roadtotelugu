@@ -244,6 +244,16 @@ main { padding-top: var(--top-h); }
 .wc-head h2 { margin: 0; font-size: 24px; font-family: Inter, 'Noto Sans Telugu', sans-serif; font-weight: 700; }
 .wc-head .say { font-size: 18px; color: var(--amber); }
 .wc-sub { color: var(--ink2); margin: 2px 0 12px; font-size: 15px; }
+/* Sentence / whole-lesson switch above the word lists. Sits apart from .ptabs because it
+   answers a different question — which words, not which of them. */
+.pscope { display: flex; gap: 6px; padding: 10px 12px 0; }
+.pscope button {
+  flex: 1; padding: 6px 8px; font-size: 12px; font-weight: 600;
+  border: 1px solid var(--line-strong); border-radius: 7px; color: var(--ink2);
+}
+.pscope button.on { border-color: var(--amber); color: var(--amber); background: var(--bg3); }
+.pscope button:hover:not(.on) { color: var(--ink); }
+
 .wc-status { display: flex; gap: 6px; margin: 10px 0 16px; flex-wrap: wrap; }
 .wc-status button {
   border: 1px solid var(--line-strong); border-radius: 8px; padding: 7px 10px;

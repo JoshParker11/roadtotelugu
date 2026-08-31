@@ -92,7 +92,8 @@
   let curLine = -1, loopOn = false;
   const RATES = [0.7, 0.85, 1, 1.15, 1.3];
   let rateIdx = 2;
-  let panel = { mode: 'lists', tab: 'lingqs', g: null, line: null, wtab: 'dict', aitab: 'explain' };
+  let panel = { mode: 'lists', tab: 'lingqs', g: null, line: null, wtab: 'dict', aitab: 'explain',
+                scope: 'lesson' };
   let vocab = { tab: 'all', sort: 'freq', q: '' };
   let reviewState = null;
 
@@ -222,7 +223,8 @@
   function openStory(s) {
     const changed = cur !== s;
     cur = s; curLine = -1; sview = false; svIdx = 0;
-    panel = { mode: 'lists', tab: 'lingqs', g: null, line: null, wtab: 'dict', aitab: 'explain' };
+    panel = { mode: 'lists', tab: 'lingqs', g: null, line: null, wtab: 'dict', aitab: 'explain',
+              scope: 'lesson' };
     renderStory();
     renderPanel();
     if (changed) setupAudio();
@@ -293,6 +295,10 @@
       sview = !sview;
       if (sview && curLine >= 0) svIdx = curLine;
       renderStory();
+      // The panel owns the sentence/lesson switch, and entering sentence view is exactly when
+      // that switch starts existing. Without this it only appeared once something else
+      // happened to redraw the panel.
+      renderPanel();
     });
     $('#t-finish') && $('#t-finish').addEventListener('click', finishLesson);
     $('#t-words').addEventListener('click', () => {
@@ -323,8 +329,11 @@
   }
   function wireSentenceView() {
     if (!sview) return;
-    $('#sv-prev').addEventListener('click', () => { svIdx = Math.max(0, svIdx - 1); renderStory(); });
-    $('#sv-next').addEventListener('click', () => { svIdx = Math.min(cur.lines.length - 1, svIdx + 1); renderStory(); });
+    /* The panel has to follow. When it is scoped to the sentence, moving to the next one and
+       leaving the previous sentence's word list on screen is worse than not having the feature. */
+    const go = i => { svIdx = i; renderStory(); renderPanel(); };
+    $('#sv-prev').addEventListener('click', () => go(Math.max(0, svIdx - 1)));
+    $('#sv-next').addEventListener('click', () => go(Math.min(cur.lines.length - 1, svIdx + 1)));
     $('#sv-play').addEventListener('click', () => playLine(svIdx));
     /* Cards for exactly the words in the sentence on screen, then the same words as a list.
        Scoped to the sentence rather than the lesson on purpose: the value is that you have
@@ -466,12 +475,27 @@
   }
 
   /* ---------- right panel ---------- */
+  /* True when the panel is showing one sentence rather than the whole lesson. Only possible
+     in sentence view — there is no "current sentence" to scope to while reading the page. */
+  const sentenceScope = () => sview && cur && panel.scope === 'sentence';
+
   function panelWords() {
-    /* In a story: that story's words. Elsewhere: the whole corpus.
+    /* In a story: that story's words, or just the sentence on screen when scoped to it.
+       Elsewhere: the whole corpus.
        Sorted alphabetically, not by first occurrence — these lists are used to review and to
        find a word again, and hunting for one in reading order means re-reading the story. Sorts
        on the DISPLAYED form so the order matches what is on screen in whichever script is
        selected; localeCompare keeps Telugu in its own collation rather than by code point. */
+    if (sentenceScope()) {
+      const seen = new Set();
+      const idx = [];
+      for (const [, , i] of (cur.lines[svIdx].t || [])) {
+        if (i >= 0 && !seen.has(i)) { seen.add(i); idx.push(i); }
+      }
+      return idx
+        .map(i => ({ i, l: LEX[i], eff: effOf(LEX[i].g) }))
+        .sort((a, b) => disp(a.l.te).localeCompare(disp(b.l.te), undefined, { sensitivity: 'base' }));
+    }
     const idxs = cur ? cur.words : LEX.map((_, i) => i);
     return idxs
       .map(i => ({ i, l: LEX[i], eff: effOf(LEX[i].g) }))
@@ -494,7 +518,14 @@
     const lessonLingqs = groups.lingqs;
     const lessonPool = words.filter(w => stillLearning(w.l));
 
-    $('#panelbody').innerHTML = `
+    const scoper = (sview && cur) ? `
+      <div class="pscope">
+        <button data-pscope="sentence" class="${panel.scope === 'sentence' ? 'on' : ''}"
+          >Sentence ${svIdx + 1}</button>
+        <button data-pscope="lesson" class="${panel.scope === 'lesson' ? 'on' : ''}"
+          >Whole lesson</button>
+      </div>` : '';
+    $('#panelbody').innerHTML = scoper + `
       <div class="ptabs">
         <button data-ptab="lingqs" class="${panel.tab === 'lingqs' ? 'on' : ''}">LingQs (${groups.lingqs.length})</button>
         <button data-ptab="new" class="${panel.tab === 'new' ? 'on' : ''}">New Words (${groups.new.length})</button>
@@ -510,7 +541,8 @@
             : 'Nothing here.'}</p>`}
       </div>
       <div class="pmenu">
-        <button id="pm-lesson">▤ Review ${cur ? 'This Lesson' : 'LingQs'} <span class="n">${
+        <button id="pm-lesson">▤ Review ${
+          sentenceScope() ? 'This Sentence' : cur ? 'This Lesson' : 'LingQs'} <span class="n">${
           cur ? lessonPool.length : lessonLingqs.length}</span></button>
         <button id="pm-due">◷ Review Due <span class="n">${dueAll.length}</span></button>
         <button id="pm-vocab">☰ Vocabulary List</button>
@@ -519,6 +551,9 @@
     $$('#panel [data-ptab]').forEach(b => b.addEventListener('click', () => {
       panel.tab = b.dataset.ptab; renderPanel();
     }));
+    $$('#panel [data-pscope]').forEach(b => b.addEventListener('click', () => {
+      panel.scope = b.dataset.pscope; renderPanel();
+    }));
     $$('#panel [data-word]').forEach(b => b.addEventListener('click', () => openWord(b.dataset.word)));
     /* In a lesson this covers everything in the lesson still being learned, not only the
        words already LingQ'd — "scoped to this lesson" is the point, and a lesson's new words
@@ -526,7 +561,8 @@
        falls back to the LingQs it always was. */
     $('#pm-lesson').addEventListener('click', () => startReview(
       (cur ? lessonPool : lessonLingqs).map(w => w.l),
-      { scope: cur ? (cur.title.en || `lesson ${cur.num}`) : 'your LingQs' }));
+      { scope: sentenceScope() ? `sentence ${svIdx + 1} of ${cur.lines.length}`
+               : cur ? (cur.title.en || `lesson ${cur.num}`) : 'your LingQs' }));
     $('#pm-due').addEventListener('click', () => startReview(dueAll, { scope: 'due today' }));
     $('#pm-vocab').addEventListener('click', () => { location.hash = '#/vocab'; });
   }
