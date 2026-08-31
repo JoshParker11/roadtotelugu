@@ -206,7 +206,10 @@
     const ms = STORIES.filter(s => s.id[0] === 'm').length;
     const ic = STORIES.length - ms;
     const bits = [];
-    if (ms) bits.push(`${ms} of 60 Mini Stories, translated, checked and voiced`);
+    /* "voiced" is derived, not asserted. It was a literal, and it went stale the moment the
+       native translations arrived and their audio stopped matching the text. */
+    const voiced = STORIES.filter(s => s.id[0] === 'm' && s.audio).length;
+    if (ms) bits.push(`${ms} of 60 Mini Stories${voiced ? `, ${voiced} voiced` : ' — audio pending re-recording'}`);
     if (ic) bits.push(`${ic} Intensive Course lesson${ic === 1 ? '' : 's'}`);
     $('#pane').innerHTML = `
       <div class="libhead"><h1>Reading</h1>
