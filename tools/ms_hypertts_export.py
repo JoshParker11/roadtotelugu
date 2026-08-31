@@ -51,7 +51,11 @@ ROOT = os.path.normpath(os.path.join(HERE, '..'))
 MS = os.path.join(ROOT, 'ministories')
 WORK = os.path.join(MS, 'work')
 CATALOG = os.path.join(MS, 'CATALOG.tsv')
-OUT = os.path.join(MS, 'hypertts_export.tsv')
+# Separate files, because they are two separate Anki batches and you need both at once.
+# One path meant --words silently overwrote the sentence export you had just generated, and
+# the loss is invisible: the file is still there, still valid, just holding the other batch.
+OUT = os.path.join(MS, 'hypertts_sentences.tsv')
+OUT_WORDS = os.path.join(MS, 'hypertts_words.tsv')
 WORD_MANIFEST = os.path.join(MS, 'word_audio.tsv')
 AUDIO = os.path.join(MS, 'audio')
 
@@ -81,12 +85,12 @@ def export_words():
         print(f'All {len(rows)} words already have clips — nothing to export.')
         return
 
-    with open(OUT, 'w', encoding='utf-8', newline='') as f:
+    with open(OUT_WORDS, 'w', encoding='utf-8', newline='') as f:
         f.write('#separator:tab\n#html:false\n#columns:guid\ttelugu\taudio\tenglish\n')
         w = csv.writer(f, delimiter='\t', lineterminator='\n')
         w.writerows(pending)
 
-    print(f'{len(pending)} word(s) -> {OUT}   ({have} already had clips, skipped)')
+    print(f'{len(pending)} word(s) -> {OUT_WORDS}   ({have} already had clips, skipped)')
     print('Same Anki round trip as sentences (see ministories/README.md), then:')
     print('  python3 tools/ms_hypertts_import.py <export.txt> --words')
 

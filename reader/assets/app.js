@@ -236,6 +236,10 @@
       /* Romanized view: script punctuation-adjacent spacing survives; digits pass through. */
       return esc(surface);
     }
+    /* OCR debris is on the page but it is not a word. Rendering it as a clickable blue token
+       invites a lookup for a string that was never written, and counts it against the lesson's
+       known-word progress. It stays visible — it is what the page says — but inert. */
+    if (LEX[lx].junk) return `<span class="junk" title="unreadable — OCR debris">${esc(disp(surface))}</span>`;
     const eff = effOf(LEX[lx].g);
     return `<span class="w ${clsOf(eff)}" data-l="${li}" data-t="${ti}">${esc(disp(surface))}</span>`;
   }
@@ -490,7 +494,7 @@
       const seen = new Set();
       const idx = [];
       for (const [, , i] of (cur.lines[svIdx].t || [])) {
-        if (i >= 0 && !seen.has(i)) { seen.add(i); idx.push(i); }
+        if (i >= 0 && !seen.has(i) && !LEX[i].junk) { seen.add(i); idx.push(i); }
       }
       return idx
         .map(i => ({ i, l: LEX[i], eff: effOf(LEX[i].g) }))
@@ -498,6 +502,7 @@
     }
     const idxs = cur ? cur.words : LEX.map((_, i) => i);
     return idxs
+      .filter(i => !LEX[i].junk)            // not words; see tokenHTML
       .map(i => ({ i, l: LEX[i], eff: effOf(LEX[i].g) }))
       .sort((a, b) => disp(a.l.te).localeCompare(disp(b.l.te), undefined, { sensitivity: 'base' }));
   }

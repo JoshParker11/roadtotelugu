@@ -36,7 +36,9 @@ IC = os.path.join(ROOT, 'intensive')
 WORK = os.path.join(IC, 'work')
 AUDIO = os.path.join(IC, 'audio')
 MANIFEST = os.path.join(IC, 'audio_manifest.tsv')
-OUT = os.path.join(IC, 'hypertts_export.tsv')
+OUT = os.path.join(IC, 'hypertts_sentences.tsv')
+OUT_WORDS = os.path.join(IC, 'hypertts_words.tsv')
+WORD_MANIFEST = os.path.join(IC, 'word_audio.tsv')
 
 
 def voiced():
@@ -64,11 +66,44 @@ def parse_lessons(spec):
     return out
 
 
+LIMIT = [0]
+
+
+def export_words():
+    """The per-headword clips, from the manifest build_ic_reader.py writes."""
+    if not os.path.exists(WORD_MANIFEST):
+        sys.exit(f'no {os.path.relpath(WORD_MANIFEST, ROOT)} — run build_ic_reader.py first')
+    wdir = os.path.join(AUDIO, 'words')
+    rows, have = [], 0
+    with open(WORD_MANIFEST, encoding='utf-8') as f:
+        for r in csv.DictReader(f, delimiter='\t'):
+            if os.path.exists(os.path.join(wdir, r['guid'] + '.mp3')):
+                have += 1
+                continue
+            rows.append((r['guid'], r['te'], '', ''))
+    if not rows:
+        print('Every word already has a clip.')
+        return
+    # 4,208 words is not one Anki import. --limit takes the next N that still need a clip, so
+    # repeating the command after each round trip walks the whole list without bookkeeping.
+    total = len(rows)
+    if LIMIT[0]:
+        rows = rows[:LIMIT[0]]
+    with open(OUT_WORDS, 'w', encoding='utf-8', newline='') as f:
+        f.write('#separator:tab\n#html:false\n#columns:guid\ttelugu\taudio\tenglish\n')
+        csv.writer(f, delimiter='\t', lineterminator='\n').writerows(rows)
+    print(f'{len(rows)} word(s) -> {os.path.relpath(OUT_WORDS, ROOT)}   '
+          f'({have} already had clips, {total - len(rows)} still queued after this batch)')
+    print('  python3 tools/ms_hypertts_import.py <export.txt> --words --dest intensive/audio')
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--words', action='store_true')
     ap.add_argument('--lessons')
     ap.add_argument('--all', action='store_true')
+    ap.add_argument('--limit', type=int, default=0,
+                    help='with --words: export only the next N that still need a clip')
     ap.add_argument('--verified', action='store_true',
                     help='only turns whose Telugu came from the book, not from OCR')
     args = ap.parse_args()
@@ -95,8 +130,8 @@ def main():
                 rows.append((r['guid'], r['te'], '', r['en']))
 
     if args.words:
-        sys.exit('--words needs a distinct-word manifest for the course; '
-                 'build_ic_reader.py does not write one yet (see status.py NEXT).')
+        LIMIT[0] = args.limit
+        return export_words()
     if skipped:
         print(f'{skipped} turn(s) already have a current clip — not re-exported (--all overrides)')
     if unverified:

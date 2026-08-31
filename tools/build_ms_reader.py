@@ -178,6 +178,9 @@ class Resolver:
         # An optional extra glossary, set by the caller. build_ic_reader fills it with the
         # Intensive Course's own published VOCABULARY lists; the mini stories leave it empty.
         self.book = {}
+        # Surface forms that are OCR debris rather than words. Marked so the reader can say so
+        # instead of offering a lookup for a string that was never on the page.
+        self.junk = set()
 
     def slot(self, g, entry):
         if g not in self.lexidx:
@@ -185,6 +188,36 @@ class Resolver:
             entry['g'] = g
             self.lex.append(entry)
         return self.lexidx[g]
+
+    # The vocative lengthens a name's final vowel — రవి is రవీ when you call him, నాన్నగారు
+    # is నాన్నగారూ. It is the single most common shape among the words the book leaves
+    # unglossed, because the book lists the citation form and the dialogue shouts the name.
+    VOCATIVE = {'ీ': 'ి', 'ూ': 'ు', 'ా': '', 'ే': 'ె', 'ో': 'ొ'}
+
+    def book_form(self, te):
+        """A word the book glosses, wearing a suffix or a vocative.
+
+        The glossary holds citation forms; the dialogue inflects them. Decompose against the
+        BOOK as well as the master and 636 more words get the publisher's own meaning instead
+        of nothing — and the card says which headword and which ending, so it teaches the
+        morphology rather than hiding it.
+        """
+        if not self.book:
+            return None
+        short = self.VOCATIVE.get(te[-1:])
+        if short is not None:
+            base = te[:-1] + short
+            if base in self.book:
+                return (self.book[base], [[base, self.book[base][:60]], ['(calling)', 'vocative']])
+        for suf, srow in self.suffixes:
+            if len(te) <= len(suf) or not te.endswith(suf):
+                continue
+            stem = te[:-len(suf)]
+            if stem in self.book:
+                return (self.book[stem],
+                        [[stem, self.book[stem][:60]],
+                         ['-' + srow['roman'].lstrip('-'), srow['english'][:60]]])
+        return None
 
     def resolve_line(self, text):
         out = []
@@ -216,9 +249,16 @@ class Resolver:
                      'o': 0, 'p': parts}
                 out.append([piece, 's', self.slot(g, e)])
                 continue
+            if b in self.junk:
+                out.append([piece, 'j', self.slot(g, {'te': b, 'en': '', 'o': 0, 'junk': 1})])
+                continue
             bg = self.book.get(b) if self.book else None
             if bg:
                 out.append([piece, 't', self.slot(g, {'te': b, 'en': bg, 'o': 0})])
+                continue
+            got = self.book_form(b)
+            if got is not None:
+                out.append([piece, 's', self.slot(g, {'te': b, 'en': got[0], 'o': 0, 'p': got[1]})])
                 continue
             out.append([piece, 'w', self.slot(g, {'te': b, 'en': '', 'o': 0})])
         return out

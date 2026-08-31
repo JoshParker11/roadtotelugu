@@ -56,9 +56,11 @@ ministories/source/
 
 # Scratch export/import files for the HyperTTS audio path — regenerated from work/*.tsv, not a
 # source of truth. See ministories/README.md "Audio via HyperTTS".
-ministories/hypertts_export.tsv
+ministories/hypertts_sentences.tsv
+ministories/hypertts_words.tsv
 # Same thing for the course: a generated hand-off file, regenerable in one command.
-intensive/hypertts_export.tsv
+intensive/hypertts_sentences.tsv
+intensive/hypertts_words.tsv
 ministories/*.export.tsv
 
 # Continuous per-story audio + SRT tracks (tools/ms_lr_export.py) are COMMITTED, reversing the

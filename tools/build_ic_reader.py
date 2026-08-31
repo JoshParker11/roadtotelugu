@@ -46,8 +46,12 @@ from ids import guid
 
 WORK = os.path.join(ROOT, 'intensive', 'work')
 VOCAB = os.path.join(ROOT, 'intensive', 'raw', 'vocab.tsv')
+# Hand-written cards for words the book's own glossary does not cover — the course's
+# equivalent of ministories/vocab.tsv, and the same honest status: nothing checks them.
+CARDS = os.path.join(ROOT, 'intensive', 'vocab.tsv')
 TITLES = os.path.join(ROOT, 'intensive', 'raw', 'titles.tsv')
 OUT_JS = os.path.join(ROOT, 'reader', 'data', 'intensive.js')
+OUT_WORDS = os.path.join(ROOT, 'intensive', 'word_audio.tsv')
 
 
 ZW = '\u200c\u200d'
@@ -106,6 +110,29 @@ def speaker_names():
     return {n for n, c in names.items() if c >= 3 and n}
 
 
+def written_cards():
+    """guid-free gloss cards keyed on the Telugu, plus the words marked as OCR debris.
+
+    `status=ocr-junk` is not a definition; it is a note that the "word" is a misreading and
+    should never have been a headword. Marking them is what keeps them out of the audio
+    manifest and out of any future definition batch — glossing OCR debris would be inventing a
+    meaning for a word that does not exist.
+    """
+    glosses, junk = {}, set()
+    if not os.path.exists(CARDS):
+        return glosses, junk
+    with open(CARDS, encoding='utf-8') as f:
+        for r in csv.DictReader(f, delimiter='\t'):
+            k = key(r['te'])
+            if not k:
+                continue
+            if (r.get('status') or '').strip() == 'ocr-junk':
+                junk.add(k)
+            elif r.get('gloss', '').strip():
+                glosses[k] = r['gloss'].strip()
+    return glosses, junk
+
+
 def parse_lessons(spec):
     out = set()
     for part in spec.split(','):
@@ -162,6 +189,9 @@ def main():
     rs.book = book_glosses()
     for n in speaker_names():
         rs.book.setdefault(n, 'a speaker in these dialogues (name)')
+    written, junk = written_cards()
+    rs.book.update(written)              # hand-written cards win over a derived name gloss
+    rs.junk = junk
     tmap = titles()
     stories = [s for s in (bake(n, rs, tmap, args.all) for n in nums) if s]
     if not stories:
@@ -176,11 +206,20 @@ def main():
         f.write('window.IC_DATA = ' +
                 json.dumps(data, ensure_ascii=False, separators=(',', ':')) + ';\n')
 
+    # The distinct-word manifest, same shape and same purpose as the mini stories': it is what
+    # the per-headword pronunciation clips are generated from. build_ms_reader has always
+    # written one; this side did not, which is why --words had nothing to export.
+    with open(OUT_WORDS, 'w', encoding='utf-8', newline='') as f:
+        w = csv.writer(f, delimiter='\t')
+        w.writerow(['guid', 'te'])
+        w.writerows((l['g'], l['te']) for l in rs.lex)
+
     turns = sum(len(s['lines']) for s in stories)
     ocr = sum(1 for s in stories for l in s['lines'] if l.get('ocr'))
     print(f'{len(stories)} lessons · {turns} turns · {len(rs.lex)} distinct words '
           f'-> reader/data/intensive.js')
     print(f'  {turns - ocr} from the book\'s own romanization, {ocr} from OCR')
+    print(f'{len(rs.lex)} distinct words -> {os.path.relpath(OUT_WORDS, ROOT)}')
 
 
 if __name__ == '__main__':
