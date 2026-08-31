@@ -29,8 +29,10 @@ ic_ocr.py --build). Lessons 7-64 are OCR at ~93% word accuracy, which is good en
 and not good enough to study unreviewed. `--all` includes them and marks them.
 """
 import argparse
+import collections
 import csv
 import datetime
+import re
 import json
 import os
 import sys
@@ -43,8 +45,65 @@ from build_ms_reader import Resolver
 from ids import guid
 
 WORK = os.path.join(ROOT, 'intensive', 'work')
+VOCAB = os.path.join(ROOT, 'intensive', 'raw', 'vocab.tsv')
 TITLES = os.path.join(ROOT, 'intensive', 'raw', 'titles.tsv')
 OUT_JS = os.path.join(ROOT, 'reader', 'data', 'intensive.js')
+
+
+ZW = '\u200c\u200d'
+STRIP = ' .,;:!?()\'"\u2018\u2019\u201c\u201d-'
+
+
+def key(te):
+    """Match key: the word without joiners or edge punctuation.
+
+    OCR keeps the comma it saw after హాస్టలు, and the full stop after కాయితం, so a raw
+    comparison misses exactly the words the book bothered to gloss.
+    """
+    return (te or '').strip(STRIP).translate({ord(c): None for c in ZW})
+
+
+def book_glosses():
+    """The book's own VOCABULARY lists, keyed for lookup — see tools/ic_vocab.py.
+
+    These are the publisher's glosses for the words the book chose to teach. Preferred over
+    anything derived, and the reason all 64 lessons can go in the reader without 3,251 words
+    showing no meaning.
+    """
+    out = {}
+    if not os.path.exists(VOCAB):
+        return out
+    with open(VOCAB, encoding='utf-8') as f:
+        for r in csv.DictReader(f, delimiter='\t'):
+            k = key(r['te'])
+            if k and r['en'].strip():
+                out.setdefault(k, r['en'].strip())
+    return out
+
+
+def speaker_names():
+    """Every name that opens a turn, as `<name> :` in the decoded Telugu.
+
+    The book is dialogue, so a large share of its distinct words are the handful of people
+    speaking — రవి, గిరి, లత, రామారావు. They will never appear in a VOCABULARY list because
+    the book does not gloss its own characters, and left alone they are the single biggest
+    block of words in the reader with no meaning attached.
+
+    Taken from the text rather than from a hand-kept list: whoever speaks is whoever the
+    extractor found before the colon, so a name cannot go missing when a later lesson
+    introduces one.
+    """
+    names = collections.Counter()
+    for fn in sorted(os.listdir(WORK)):
+        if not fn.endswith('.tsv'):
+            continue
+        with open(os.path.join(WORK, fn), encoding='utf-8') as f:
+            for r in csv.DictReader(f, delimiter='\t'):
+                m = re.match(r'^\s*(\S{2,20})\s*:', r.get('te') or '')
+                if m:
+                    names[key(m.group(1))] += 1
+    # Once is a mis-split or an OCR slip; a real speaker recurs.
+    return {n for n, c in names.items() if c >= 3 and n}
 
 
 def parse_lessons(spec):
@@ -100,6 +159,9 @@ def main():
 
     nums = parse_lessons('1-64' if args.all else args.lessons)
     rs = Resolver()
+    rs.book = book_glosses()
+    for n in speaker_names():
+        rs.book.setdefault(n, 'a speaker in these dialogues (name)')
     tmap = titles()
     stories = [s for s in (bake(n, rs, tmap, args.all) for n in nums) if s]
     if not stories:

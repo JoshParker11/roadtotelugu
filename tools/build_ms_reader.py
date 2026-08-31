@@ -175,6 +175,9 @@ class Resolver:
         self.suffixes = load_suffixes(self.by_te)
         self.lex = []          # global across all stories
         self.lexidx = {}       # guid -> index
+        # An optional extra glossary, set by the caller. build_ic_reader fills it with the
+        # Intensive Course's own published VOCABULARY lists; the mini stories leave it empty.
+        self.book = {}
 
     def slot(self, g, entry):
         if g not in self.lexidx:
@@ -212,6 +215,10 @@ class Resolver:
                 e = {'te': b, 'en': ' + '.join(f'{a} ({x})' for a, x in parts),
                      'o': 0, 'p': parts}
                 out.append([piece, 's', self.slot(g, e)])
+                continue
+            bg = self.book.get(b) if self.book else None
+            if bg:
+                out.append([piece, 't', self.slot(g, {'te': b, 'en': bg, 'o': 0})])
                 continue
             out.append([piece, 'w', self.slot(g, {'te': b, 'en': '', 'o': 0})])
         return out

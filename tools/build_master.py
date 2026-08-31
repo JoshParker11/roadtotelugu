@@ -39,7 +39,10 @@ BOUND = {'గా','న','తో','కు','కి','లో','ది','ను','�
          # plural -ల that -లు becomes before another suffix, and the -ని the accusative takes
          # after some stems. Without them గంటలకు (గంట + ల + కు) and ఆహారాన్ని decompose to
          # nothing and the reader shows a wall of words with no meaning at all.
-         'ల','ని'}
+         'ల','ని',
+         # The honorific. మాష్టరుగారు, డాక్టరుగారు, లీలగారు are all X + గారు, and the book's
+         # dialogue is full of them — without this each one is a separate unglossed word.
+         'గారు'}
 
 # Inflected endings that mark a finite verb rather than a dictionary headword.
 INFLECTED_END = ('ింది','ాడు','ారు','ాను','ావు','ాము','ాయి','ుంది','ండి','తాను','తాడు','న్నాను','న్నారు')
