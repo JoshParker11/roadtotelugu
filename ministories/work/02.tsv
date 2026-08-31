@@ -1,48 +1,48 @@
 guid	num	part	seq	en	te	notes	status
 Maa888281458f	2	meta	1	Story Two: Dustin Wants to Take a Vacation	కథ రెండు: డస్టిన్ సెలవుకు వెళ్లాలనుకుంటున్నాడు		draft
-Me35d761ad098	2	meta	2	Here is the same story told in a different way.	ఇదే కథను ఇప్పుడు వేరే విధంగా చెప్తున్నాను.		draft
-Mf084dcfb8769	2	story	1	Dustin is excited about his winter holiday.	డస్టిన్ తన శీతాకాలం సెలవుల గురించి ఉత్సాహంగా ఉన్నాడు.		draft
-M320089b3af04	2	story	2	He has some time off this winter.	ఈ శీతాకాలంలో అతనికి కొంత సెలవు ఉంది.		draft
-Mbbbb7d4eb1d8	2	story	3	He doesn't have to work for two weeks.	అతను రెండు వారాలు పని చేయనవసరం లేదు.		draft
-Mf67855827c10	2	story	4	He wants to go on vacation.	అతను సెలవుకు వెళ్లాలనుకుంటున్నాడు.		draft
-M571f3bd4aec8	2	story	5	But, he is not sure where to go.	కానీ, ఎక్కడికి వెళ్లాలో అతనికి ఇంకా తెలియదు.		draft
-M83772bc567b4	2	story	6	He thinks of going to France.	అతను ఫ్రాన్స్‌కు వెళ్లాలని ఆలోచిస్తాడు.		draft
-M7a1fd0c7247a	2	story	7	But France is expensive.	కానీ ఫ్రాన్స్ ఖరీదైనది.		draft
-M8fa446324119	2	story	8	The airplane tickets cost a lot.	విమానం టికెట్లు చాలా ఖరీదు.		draft
-M3a4fc6ec99e8	2	story	9	And Dustin doesn't speak French.	అంతేకాక డస్టిన్‌కు ఫ్రెంచ్ రాదు.	"RESOLVED: రాదు confirmed in data/master_words.tsv itself annotated ""used for 'I don't know [a language]'"" — this is exactly the idiom used here, direct precedent, not a guess."	draft
-Md45a97459e69	2	story	10	He decides to stay at home, study, and save money.	అతను ఇంట్లోనే ఉండి, చదువుకుని, డబ్బు ఆదా చేయాలని నిర్ణయించుకుంటాడు.		draft
-M062440fabbb7	2	retell	1	I am excited about the winter holiday.	నేను శీతాకాలం సెలవుల గురించి ఉత్సాహంగా ఉన్నాను.		draft
-Mbbbfefa3cdb8	2	retell	2	I have some time off this winter.	ఈ శీతాకాలంలో నాకు కొంత సెలవు ఉంది.		draft
-M167e8bb867c4	2	retell	3	I don't have to work for two weeks.	నేను రెండు వారాలు పని చేయనవసరం లేదు.		draft
-M4a72b5a605dd	2	retell	4	I want to go on vacation.	నేను సెలవుకు వెళ్లాలనుకుంటున్నాను.		draft
-M7883a0ee1745	2	retell	5	I am thinking of where to go.	ఎక్కడికి వెళ్లాలో నేను ఆలోచిస్తున్నాను.		draft
-Mf4c52f6b71fb	2	retell	6	I want to go to France.	నేను ఫ్రాన్స్‌కు వెళ్లాలనుకుంటున్నాను.		draft
-M0dffd39211f5	2	retell	7	But France is expensive.	కానీ ఫ్రాన్స్ ఖరీదైనది.		draft
-M8b46a3c35fbb	2	retell	8	The airplane tickets cost a lot.	విమానం టికెట్లు చాలా ఖరీదు.		draft
-M966db9c88cab	2	retell	9	And I don't speak French.	అంతేకాక నాకు ఫ్రెంచ్ రాదు.		draft
-M2a1ea9d37bca	2	retell	10	I decide to stay home, study French, and save money.	నేను ఇంట్లోనే ఉండి, ఫ్రెంచ్ చదువుకుని, డబ్బు ఆదా చేయాలని నిర్ణయించుకుంటాను.		draft
-Me638855b2ccf	2	questions	1	One: Dustin is excited about his winter holidays.	ఒకటి: డస్టిన్ తన శీతాకాలం సెలవుల గురించి ఉత్సాహంగా ఉన్నాడు.		draft
-M593a2efb7f86	2	questions	2	Is Dustin excited?	డస్టిన్ ఉత్సాహంగా ఉన్నాడా?		draft
-M1c2be9177ba2	2	questions	3	Yes, Dustin is excited about his winter holidays.	అవును, డస్టిన్ తన శీతాకాలం సెలవుల గురించి ఉత్సాహంగా ఉన్నాడు.		draft
-M8ae172068b27	2	questions	4	Two: Dustin has time off in the winter.	రెండు: డస్టిన్‌కు శీతాకాలంలో సెలవు ఉంది.		draft
-Mafcb398ca6a3	2	questions	5	Does Dustin have free time in the winter?	డస్టిన్‌కు శీతాకాలంలో ఖాళీ సమయం ఉందా?		draft
-M826648ae44a2	2	questions	6	Yes, Dustin has time off in the winter.	అవును, డస్టిన్‌కు శీతాకాలంలో సెలవు ఉంది.		draft
-M32ec5345f6db	2	questions	7	Three: Dustin wants to go on vacation.	మూడు: డస్టిన్ సెలవుకు వెళ్లాలనుకుంటున్నాడు.		draft
-Mda60d45bba13	2	questions	8	Does Dustin want to stay home?	డస్టిన్ ఇంట్లో ఉండాలనుకుంటున్నాడా?		draft
-Mc451ce690e3e	2	questions	9	No, Dustin does not want to stay home.	లేదు, డస్టిన్ ఇంట్లో ఉండాలనుకోవడం లేదు.		draft
-Md70f0a331f3c	2	questions	10	He wants to go on vacation.	అతను సెలవుకు వెళ్లాలనుకుంటున్నాడు.		draft
-Mc95bb54fa503	2	questions	11	Four: Dustin doesn't know where to go.	నాలుగు: ఎక్కడికి వెళ్లాలో డస్టిన్‌కు తెలియదు.		draft
-M17456384490a	2	questions	12	Does Dustin know where to go?	ఎక్కడికి వెళ్లాలో డస్టిన్‌కు తెలుసా?		draft
-Mb78b5019352c	2	questions	13	No, Dustin doesn't know where to go.	లేదు, ఎక్కడికి వెళ్లాలో డస్టిన్‌కు తెలియదు.		draft
-M1293c455d81a	2	questions	14	Is Dustin thinking about going to France?	డస్టిన్ ఫ్రాన్స్‌కు వెళ్లాలని ఆలోచిస్తున్నాడా?		draft
-Mf4bfbdcff6b3	2	questions	15	Yes, Dustin is thinking about going to France for his vacation.	అవును, డస్టిన్ తన సెలవుకు ఫ్రాన్స్‌కు వెళ్లాలని ఆలోచిస్తున్నాడు.		draft
-M0a200094bf9f	2	questions	16	Six: France is expensive.	ఆరు: ఫ్రాన్స్ ఖరీదైనది.		draft
-M6efd4f432e33	2	questions	17	Is France cheap?	ఫ్రాన్స్ చౌకైనదా?		draft
-M6c6fae2e0c55	2	questions	18	No, France is not cheap.	లేదు, ఫ్రాన్స్ చౌకైనది కాదు.		draft
-Mcd289716fe11	2	questions	19	France is expensive.	ఫ్రాన్స్ ఖరీదైనది.		draft
-Mb6c961c08d49	2	questions	20	Seven: Dustin does not speak French.	ఏడు: డస్టిన్‌కు ఫ్రెంచ్ రాదు.		draft
-M7f1e8f8f1792	2	questions	21	Does Dustin speak French?	డస్టిన్‌కు ఫ్రెంచ్ వచ్చా?		draft
-M66a89fed6c77	2	questions	22	No, Dustin does not speak French.	లేదు, డస్టిన్‌కు ఫ్రెంచ్ రాదు.		draft
-Mef6cf0b7abbb	2	questions	23	Eight: Dustin decides to stay home, study French, and save money.	ఎనిమిది: డస్టిన్ ఇంట్లోనే ఉండి, ఫ్రెంచ్ చదువుకుని, డబ్బు ఆదా చేయాలని నిర్ణయించుకుంటాడు.		draft
-M0908d6845eea	2	questions	24	Does Dustin decide to stay home and study French?	డస్టిన్ ఇంట్లోనే ఉండి ఫ్రెంచ్ చదువుకోవాలని నిర్ణయించుకుంటాడా?		draft
-Me345949a099e	2	questions	25	Yes, he decides to stay home, study French, and save money during his vacation.	అవును, అతను తన సెలవులో ఇంట్లోనే ఉండి, ఫ్రెంచ్ చదువుకుని, డబ్బు ఆదా చేయాలని నిర్ణయించుకుంటాడు.		draft
+Me35d761ad098	2	meta	2	Here is the same story told in a different way.	ఇదే కథ మరో విధంగా చెప్పబడింది.		native
+Mf084dcfb8769	2	story	1	Dustin is excited about his winter holiday.	శీతాకాల సెలవుతో డస్టిన్ ఉత్సాహంగా ఉన్నాడు		native
+M320089b3af04	2	story	2	He has some time off this winter.	ఈ శీతాకాలంలో అతనికి కొంత విశ్రాంతి దొరికింది		native
+Mbbbb7d4eb1d8	2	story	3	He doesn't have to work for two weeks.	అతను రెండు వారాల పాటు పనికి వెళ్లాల్సిన అవసరం లేదు		native
+Mf67855827c10	2	story	4	He wants to go on vacation.	అతను సెలవులకు ఎక్కడికైనా వెళ్లాలని అనుకుంటున్నాడు.		native
+M571f3bd4aec8	2	story	5	But, he is not sure where to go.	కానీ అతను ఎక్కడి వెళ్లాలో సరిగ్గా తెలియదు		native
+M83772bc567b4	2	story	6	He thinks of going to France.	అతను ఫ్రాన్స్ కి వెళ్లాలని ఆలోచిస్తున్నాడు		native
+M7a1fd0c7247a	2	story	7	But France is expensive.	కానీ ఫ్రాన్స్ కి వెళ్ళడం చాలా ఖర్చుతో కూడుకున్నది		native
+M8fa446324119	2	story	8	The airplane tickets cost a lot.	విమాన టికెట్ల ధర ఎక్కువ		native
+M3a4fc6ec99e8	2	story	9	And Dustin doesn't speak French.	అంతేకాక డస్టిన్ కు ఫ్రెంచ్ మాట్లాడడం రాదు	"RESOLVED: రాదు confirmed in data/master_words.tsv itself annotated ""used for 'I don't know [a language]'"" — this is exactly the idiom used here, direct precedent, not a guess."	native
+Md45a97459e69	2	story	10	He decides to stay at home, study, and save money.	అతను ఇంటి పట్టునే ఉంటూ, చదువుకుంటూ, డబ్బు ఆదా చేయాలని నిర్ణయించుకున్నాడు		native
+M062440fabbb7	2	retell	1	I am excited about the winter holiday.	శీతాకాల సెలవుతో నేను ఉత్సాహంగా ఉన్నాను		native
+Mbbbfefa3cdb8	2	retell	2	I have some time off this winter.	ఈ శీతాకాలంలో నాకు కొంత విశ్రాంతి దొరికింది		native
+M167e8bb867c4	2	retell	3	I don't have to work for two weeks.	నేను రెండు వారాల పాటు పనికి వెళ్లాల్సిన అవసరం లేదు		native
+M4a72b5a605dd	2	retell	4	I want to go on vacation.	నేను సెలవులకు ఎక్కడికైనా వెళ్లాలని అనుకుంటున్నాడు.		native
+M7883a0ee1745	2	retell	5	I am thinking of where to go.	ఎక్కడికి వెళ్లాలో ఆలోచిస్తున్నాను		native
+Mf4c52f6b71fb	2	retell	6	I want to go to France.	ఫ్రాన్స్ కి వెళ్లాలని అనుకుంటున్నాను		native
+M0dffd39211f5	2	retell	7	But France is expensive.	కానీ ఫ్రాన్స్ కి వెళ్ళడం చాలా ఖర్చుతో కూడుకున్నది		native
+M8b46a3c35fbb	2	retell	8	The airplane tickets cost a lot.	విమాన టికెట్ల ధర ఎక్కువ		native
+M966db9c88cab	2	retell	9	And I don't speak French.	కానీ నాకు ఫ్రెంచ్ మాట్లాడడం రాదు		native
+M2a1ea9d37bca	2	retell	10	I decide to stay home, study French, and save money.	ఇంటి పట్టునే ఉంటూ, చదువుకుంటూ, డబ్బు ఆదా చేయాలని నిర్ణయించుకున్నాను		native
+Me638855b2ccf	2	questions	1	One: Dustin is excited about his winter holidays.	ఒకటి: శీతాకాల సెలవుతో డస్టిన్ ఉత్సాహంగా ఉన్నాడు		native
+M593a2efb7f86	2	questions	2	Is Dustin excited?	డస్టిన్ ఉత్సాహంగా ఉన్నాడా?		native
+M1c2be9177ba2	2	questions	3	Yes, Dustin is excited about his winter holidays.	అవును, ఈ శీతాకాల సెలవుతో డస్టిన్ ఉత్సాహంగా ఉన్నాడు		native
+M8ae172068b27	2	questions	4	Two: Dustin has time off in the winter.	రెండు: ఈ శీతాకాలంలో అతనికి కొంత విశ్రాంతి దొరికింది		native
+Mafcb398ca6a3	2	questions	5	Does Dustin have free time in the winter?	ఈ శీతాకాలంలో డస్టిన్ కు కొంత విశ్రాంతి దొరికిందా?		native
+M826648ae44a2	2	questions	6	Yes, Dustin has time off in the winter.	అవును, ఈ శీతాకాలంలో డస్టిన్ కు కొంత విశ్రాంతి దొరికింది		native
+M32ec5345f6db	2	questions	7	Three: Dustin wants to go on vacation.	మూడు: డస్టిన్ సెలవులకు ఎక్కడికైనా వెళ్లాలని అనుకుంటున్నాడు.		native
+Mda60d45bba13	2	questions	8	Does Dustin want to stay home?	డస్టిన్ సెలవులకు ఎక్కడికైనా వెళ్లాలని అనుకుంటున్నాడా?		native
+Mc451ce690e3e	2	questions	9	No, Dustin does not want to stay home.	కాదు, డస్టిన్ ఇంట్లో ఉండడానికి ఇష్టపడడం లేదు		native
+Md70f0a331f3c	2	questions	10	He wants to go on vacation.	అతను సెలవులకు ఎక్కడికైనా వెళ్లాలని అనుకుంటున్నాడు.		native
+Mc95bb54fa503	2	questions	11	Four: Dustin doesn't know where to go.	నాలుగు: డస్టిన్ కి ఎక్కడికి వెళ్లాలో తెలియడం లేదు		native
+M17456384490a	2	questions	12	Does Dustin know where to go?	ఎక్కడికి వెళ్లాలో డస్టిన్ కి తెలుసా?		native
+Mb78b5019352c	2	questions	13	No, Dustin doesn't know where to go.	కాదు, ఎక్కడికి వెళ్లాలో డస్టిన్ కి తెలియదు		native
+M1293c455d81a	2	questions	14	Is Dustin thinking about going to France?	ఫ్రాన్స్ కి వెళ్లాలని డస్టిన్ ఆలోచిస్తున్నాడా?		native
+Mf4bfbdcff6b3	2	questions	15	Yes, Dustin is thinking about going to France for his vacation.	అవును, సెలవులకు ఫ్రాన్స్ కి వెళ్లాలని డస్టిన్ ఆలోచిస్తున్నాడు		native
+M0a200094bf9f	2	questions	16	Six: France is expensive.	ఆరు: ఫ్రాన్స్ కి వెళ్ళడం ఖర్చుతో కూడుకున్నది		native
+M6efd4f432e33	2	questions	17	Is France cheap?	ఫ్రాన్స్ కి వెళ్ళడం చాలా తక్కువ ఖర్చుతో కూడుకున్నదా?		native
+M6c6fae2e0c55	2	questions	18	No, France is not cheap.	కాదు, ఫ్రాన్స్ కి వెళ్ళడం చాలా తక్కువ ఖర్చుతో కూడుకున్నది కాదు		native
+Mcd289716fe11	2	questions	19	France is expensive.	ఫ్రాన్స్ కి వెళ్ళడం ఖర్చుతో కూడుకున్నది		native
+Mb6c961c08d49	2	questions	20	Seven: Dustin does not speak French.	ఏడు: డస్టిన్ కి ఫ్రెంచ్ మాట్లాడడం రాదు		native
+M7f1e8f8f1792	2	questions	21	Does Dustin speak French?	డస్టిన్ కి ఫ్రెంచ్ మాట్లాడడం వచ్చా?		native
+M66a89fed6c77	2	questions	22	No, Dustin does not speak French.	కాదు, డస్టిన్ కి ఫ్రెంచ్ మాట్లాడడం రాదు		native
+Mef6cf0b7abbb	2	questions	23	Eight: Dustin decides to stay home, study French, and save money.	ఎనిమిది: డస్టిన్ ఇంటి పట్టునే ఉంటూ, చదువుకుంటూ, డబ్బు ఆదా చేయాలని నిర్ణయించుకున్నాడు		native
+M0908d6845eea	2	questions	24	Does Dustin decide to stay home and study French?	డస్టిన్ ఇంటి పట్టునే ఉంటూ, ఫ్రెంచ్ నేర్చుకోవాలని నిర్ణయించుకున్నాడా?		native
+Me345949a099e	2	questions	25	Yes, he decides to stay home, study French, and save money during his vacation.	అవును, డస్టిన్ ఈ సెలవుల్లో ఇంటి పట్టునే ఉంటూ, ఫ్రెంచ్ నేర్చుకుంటూ, డబ్బు ఆదా చేయాలని నిర్ణయించుకున్నాడు		native

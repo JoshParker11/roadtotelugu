@@ -1,5 +1,5 @@
 name	kind	te	count	lessons	notes
-James	person		41	07,30	
+James	person	జేమ్స్	41	07,30	from the native translation
 Rosie	person		40	31	
 Louie	person		35	23	
 Sharon	person		34	40	
@@ -9,7 +9,7 @@ Saul	person		30	13
 Max	person		29	35	
 Bill	person		28	27,57	
 Tom	person		28	34	
-Karen	person	కారెన్	27	03	
+Karen	person	కరేన్	27	03	from the native translation
 Kelly	person		27	14	
 Allen	person		26	41	
 Carl	person		26	24	
@@ -29,14 +29,14 @@ Jen	person		20	38
 Marco	person		20	17	
 Ben	person		19	43	
 Jerry	person		19	21	
-Jon	person	జాన్	19	05	
+Jon	person	జోన్	19	05	from the native translation
 Kyle	person		18	19	
 Jack	person		17	10	
 Alex	person		16	26	
 Brad	person		16	11	
 Emily	person		16	15	
 George	person		16	13,55,59	
-Lisa	person		16	08	
+Lisa	person	లీసా	16	08	from the native translation
 Adam	person		15	37	
 Adrian	person		15	39	
 Alissa	person		15	20	
@@ -48,13 +48,13 @@ Layne	person		12	29
 Thai	lang		12	34	
 Canada	place		11	27	
 Erika	person		11	42	
-Fred	person		11	06	
+Fred	person	ఫ్రెడ్	11	06	from the native translation
 Mom	kin		11	19,26,35	
 France	place	ఫ్రాన్స్	10	02	
-Jane	person		10	06	
+Jane	person	జేన్	10	06	from the native translation
 Mara	person		10	15	
 Sociology	subject		10	50	
-Amy	person	ఏమీ	9	04	
+Amy	person	యేమి	9	04	"the translator writes యేమి throughout; QUERY — a learner reads that as ఏమి ""what"""
 Kevin	person		9	51	
 Mariah	person		9	54	
 Stella	person		9	28	

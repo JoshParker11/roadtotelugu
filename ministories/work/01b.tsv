@@ -1,11 +1,11 @@
 guid	num	part	seq	en	te	notes	status
-Me35d761ad098	1	meta	1	Here is the same story told in a different way.	ఇదే కథను ఇప్పుడు వేరే విధంగా చెప్తున్నాను.	"STILL OPEN — the one item most worth an actual native check. This is a whole-sentence naturalness judgment (""ఇదే కథను ఇప్పుడు వేరే విధంగా చెప్తున్నాను"") with no single-word deck precedent to test it against, and it is spoken in all 60 lessons' audio — getting it wrong costs one correction, but only a person can hear whether it actually sounds like natural spoken narration versus stiff translation-Telugu."	query
-M9cd5b204912c	1	retell	1	I get up at six o'clock every morning.	నేను ప్రతి ఉదయం ఆరు గంటలకు లేస్తాను.		draft
-M2ba76920909e	1	retell	2	I make my breakfast and drink a cup of coffee.	నేను టిఫిన్ చేసుకుని, ఒక కప్పు కాఫీ తాగుతాను.		draft
-M8e4a8bb082b5	1	retell	3	I drive to work in my car.	నేను నా కారులో పనికి వెళ్తాను.		draft
-Meb9fdf63f693	1	retell	4	My work starts at seven-thirty.	నా పని ఏడున్నరకు మొదలవుతుంది.		draft
-M167a4c61499e	1	retell	5	I am a cook at a restaurant.	నేను ఒక రెస్టారెంట్‌లో వంటవాడిని.		draft
-M4b7a96aa72d0	1	retell	6	I make food for hungry customers.	నేను ఆకలితో ఉన్న కస్టమర్ల కోసం వంట చేస్తాను.		draft
-M48e79168cf31	1	retell	7	The customers come from many different countries.	కస్టమర్లు చాలా వేర్వేరు దేశాల నుంచి వస్తారు.		draft
-M414cbb68dfa5	1	retell	8	They speak many different languages.	వాళ్ళు చాలా వేర్వేరు భాషలు మాట్లాడతారు.		draft
-Mee411d64c4b4	1	retell	9	I can meet many friendly people.	నేను స్నేహంగా ఉండే చాలా మందిని కలవగలను.		draft
+Me35d761ad098	1	meta	1	Here is the same story told in a different way.	ఇదే కథ మరో విధంగా చెప్పబడింది.	"STILL OPEN — the one item most worth an actual native check. This is a whole-sentence naturalness judgment (""ఇదే కథను ఇప్పుడు వేరే విధంగా చెప్తున్నాను"") with no single-word deck precedent to test it against, and it is spoken in all 60 lessons' audio — getting it wrong costs one correction, but only a person can hear whether it actually sounds like natural spoken narration versus stiff translation-Telugu."	native
+M9cd5b204912c	1	retell	1	I get up at six o'clock every morning.	నేను ప్రతీ ఉదయం ఆరు గంటలకు నిద్ర లేస్తాను		native
+M2ba76920909e	1	retell	2	I make my breakfast and drink a cup of coffee.	నేను నా బ్రేకఫాస్ట్ చేసి, ఒక కప్పు కాఫీ తాగుతాను		native
+M8e4a8bb082b5	1	retell	3	I drive to work in my car.	నేను కారులో పనికి వెళతాను		native
+Meb9fdf63f693	1	retell	4	My work starts at seven-thirty.	నా పని ఏడున్నర గంటలకు మొదలవుతుంది		native
+M167a4c61499e	1	retell	5	I am a cook at a restaurant.	నేను రెస్టారెంట్లో ఒక వంటవాడిని.		native
+M4b7a96aa72d0	1	retell	6	I make food for hungry customers.	ఆకలితో ఉన్న కస్టమర్లకు నేను ఆహారాన్ని వండి పెడతాను		native
+M48e79168cf31	1	retell	7	The customers come from many different countries.	అనేక దేశాల నుండి కస్టమర్లు వస్తారు		native
+M414cbb68dfa5	1	retell	8	They speak many different languages.	వాళ్ళు వివిధ భాషలు మాట్లాడుతారు		native
+Mee411d64c4b4	1	retell	9	I can meet many friendly people.	చాలా మంది సరదాగా ఉన్న ప్రజలను కలుస్తూ ఉంటాను		native

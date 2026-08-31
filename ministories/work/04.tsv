@@ -1,45 +1,45 @@
 guid	num	part	seq	en	te	notes	status
 M6d461fc21aeb	4	meta	1	Story Four: My Daughter is a Good Student	కథ నాలుగు: నా కూతురు మంచి విద్యార్థిని		draft
-Me35d761ad098	4	meta	2	Here is the same story told in a different way.	ఇదే కథను ఇప్పుడు వేరే విధంగా చెప్తున్నాను.		draft
-Maf14de3ce522	4	story	1	My daughter goes to school every day.	నా కూతురు ప్రతి రోజూ స్కూలుకు వెళ్తుంది.		draft
-Me9dfa9af5f02	4	story	2	She likes school very much.	ఆమెకు స్కూలు అంటే చాలా ఇష్టం.		draft
-M41dc51e5bffe	4	story	3	She is a good student at school.	ఆమె స్కూల్లో మంచి విద్యార్థిని.		draft
-Mce4b56c68cc6	4	story	4	The teachers like my daughter a lot.	టీచర్లకు నా కూతురు అంటే చాలా ఇష్టం.		draft
-M80f643e0f3e3	4	story	5	My daughter also has many friends.	నా కూతురుకు చాలా మంది స్నేహితులు కూడా ఉన్నారు.		draft
-Mfc0fc617abdd	4	story	6	Her best friend is Amy.	ఆమె బెస్ట్ ఫ్రెండ్ ఏమీ.	"CHANGED from ప్రాణ స్నేహితురాలు to బెస్ట్ ఫ్రెండ్ (same change made consistently across all 5 occurrences of this phrase in story 4). Deck confirms స్నేహితురాలు (plain ""friend, female"") but has no ""best friend"" compound either way. In actual casual Hyderabad speech ""బెస్ట్ ఫ్రెండ్"" (direct borrowing) is at least as common as, arguably more common than, the more literary ప్రాణ స్నేహితురాలు (""friend of my soul"") — closer to the register this project committed to. Closest call of the ten open questions: both are genuinely correct Telugu, differing in flavor, not right/wrong. Worth a native's actual preference."	draft
-M539a50ee5949	4	story	7	Amy likes math and science.	ఏమీకి గణితం, సైన్స్ అంటే ఇష్టం.	RESOLVED: సైన్స్ (borrowed) and చరిత్ర (native) BOTH confirmed in data/master_words.tsv, exactly matching the mixed borrowed/native pattern already chosen — direct precedent for 2 of 4 terms. గణితం (math) and ఇంగ్లీష్ (the language name) have no viable alternative rendering in ordinary speech either way, so this settles cleanly.	draft
-M77383f958096	4	story	8	My daughter likes English and History.	నా కూతురుకు ఇంగ్లీష్, చరిత్ర అంటే ఇష్టం.		draft
-M8e2da61aa171	4	story	9	They help each other with homework.	వాళ్ళు హోంవర్క్‌లో ఒకరికొకరు సహాయం చేసుకుంటారు.		draft
-M3bd5efcd318b	4	story	10	They study hard and do well in school.	వాళ్ళు బాగా చదువుతారు, స్కూల్లో బాగా రాణిస్తారు.		draft
-M1ce57cf5fb8d	4	retell	1	I go to school every day.	నేను ప్రతి రోజూ స్కూలుకు వెళ్తాను.		draft
-M0f7b18e561d1	4	retell	2	I like school very much.	నాకు స్కూలు అంటే చాలా ఇష్టం.		draft
-M35cb8c4ef3af	4	retell	3	I am a good student at school.	నేను స్కూల్లో మంచి విద్యార్థిని.		draft
-M952313ce5074	4	retell	4	My teachers like me a lot.	మా టీచర్లకు నేనంటే చాలా ఇష్టం.		draft
-Me37bac4abc34	4	retell	5	I also have many friends.	నాకు చాలా మంది స్నేహితులు కూడా ఉన్నారు.		draft
-M325df838e405	4	retell	6	My best friend is Amy.	నా బెస్ట్ ఫ్రెండ్ ఏమీ.	"CHANGED from ప్రాణ స్నేహితురాలు to బెస్ట్ ఫ్రెండ్ (same change made consistently across all 5 occurrences of this phrase in story 4). Deck confirms స్నేహితురాలు (plain ""friend, female"") but has no ""best friend"" compound either way. In actual casual Hyderabad speech ""బెస్ట్ ఫ్రెండ్"" (direct borrowing) is at least as common as, arguably more common than, the more literary ప్రాణ స్నేహితురాలు (""friend of my soul"") — closer to the register this project committed to. Closest call of the ten open questions: both are genuinely correct Telugu, differing in flavor, not right/wrong. Worth a native's actual preference."	draft
-M5fa338ee705e	4	retell	7	She likes Math and Science.	ఆమెకు గణితం, సైన్స్ అంటే ఇష్టం.		draft
-Me8f5d3c811a0	4	retell	8	I like English and History.	నాకు ఇంగ్లీష్, చరిత్ర అంటే ఇష్టం.		draft
-Me8120b031b8e	4	retell	9	We help each other with homework.	మేము హోంవర్క్‌లో ఒకరికొకరు సహాయం చేసుకుంటాము.		draft
-M600055516098	4	retell	10	We study hard and do well in school.	మేము బాగా చదువుతాము, స్కూల్లో బాగా రాణిస్తాము.		draft
-M55c3d5f454d7	4	questions	1	One: The daughter goes to school every day.	ఒకటి: కూతురు ప్రతి రోజూ స్కూలుకు వెళ్తుంది.		draft
-M4858a3dc0b78	4	questions	2	Does the daughter go to school every day?	కూతురు ప్రతి రోజూ స్కూలుకు వెళ్తుందా?		draft
-M81e7bdcbf5b1	4	questions	3	Yes, she goes to school every day.	అవును, ఆమె ప్రతి రోజూ స్కూలుకు వెళ్తుంది.		draft
-M944a2568215a	4	questions	4	Two: The daughter likes school.	రెండు: కూతురుకు స్కూలు అంటే ఇష్టం.		draft
-Mf566b4607efc	4	questions	5	Does the daughter like school?	కూతురుకు స్కూలు అంటే ఇష్టమా?		draft
-M5d6e7e722ec0	4	questions	6	Yes, she likes school.	అవును, ఆమెకు స్కూలు అంటే ఇష్టం.		draft
-Mb44a42902f46	4	questions	7	Three: The daughter is a good student.	మూడు: కూతురు మంచి విద్యార్థిని.		draft
-Mab6ac69cd3ee	4	questions	8	Is the daughter a bad student?	కూతురు చెడ్డ విద్యార్థినా?		draft
-M527aa7b9a193	4	questions	9	No, the daughter is not a bad student.	లేదు, కూతురు చెడ్డ విద్యార్థిని కాదు.		draft
-Me7d027d50f27	4	questions	10	She is a good student.	ఆమె మంచి విద్యార్థిని.		draft
-Mb78f1b3fb3b5	4	questions	11	Four: The teachers like the daughter.	నాలుగు: టీచర్లకు కూతురు అంటే ఇష్టం.		draft
-M515c092fc84f	4	questions	12	Do the teachers like the daughter?	టీచర్లకు కూతురు అంటే ఇష్టమా?		draft
-Mcdabfe3c889f	4	questions	13	Yes, the teachers like her.	అవును, టీచర్లకు ఆమె అంటే ఇష్టం.		draft
-M9f8d83091bd6	4	questions	14	Five: Her best friend is named Amy.	ఐదు: ఆమె బెస్ట్ ఫ్రెండ్ పేరు ఏమీ.	"CHANGED from ప్రాణ స్నేహితురాలు to బెస్ట్ ఫ్రెండ్ (same change made consistently across all 5 occurrences of this phrase in story 4). Deck confirms స్నేహితురాలు (plain ""friend, female"") but has no ""best friend"" compound either way. In actual casual Hyderabad speech ""బెస్ట్ ఫ్రెండ్"" (direct borrowing) is at least as common as, arguably more common than, the more literary ప్రాణ స్నేహితురాలు (""friend of my soul"") — closer to the register this project committed to. Closest call of the ten open questions: both are genuinely correct Telugu, differing in flavor, not right/wrong. Worth a native's actual preference."	draft
-Mb2d2d6db1cbc	4	questions	15	Is her best friend named Julie?	ఆమె బెస్ట్ ఫ్రెండ్ పేరు జూలీనా?	"CHANGED from ప్రాణ స్నేహితురాలు to బెస్ట్ ఫ్రెండ్ (same change made consistently across all 5 occurrences of this phrase in story 4). Deck confirms స్నేహితురాలు (plain ""friend, female"") but has no ""best friend"" compound either way. In actual casual Hyderabad speech ""బెస్ట్ ఫ్రెండ్"" (direct borrowing) is at least as common as, arguably more common than, the more literary ప్రాణ స్నేహితురాలు (""friend of my soul"") — closer to the register this project committed to. Closest call of the ten open questions: both are genuinely correct Telugu, differing in flavor, not right/wrong. Worth a native's actual preference."	draft
-M8c4cced3b8d6	4	questions	16	No, her best friend is named Amy.	లేదు, ఆమె బెస్ట్ ఫ్రెండ్ పేరు ఏమీ.	"CHANGED from ప్రాణ స్నేహితురాలు to బెస్ట్ ఫ్రెండ్ (same change made consistently across all 5 occurrences of this phrase in story 4). Deck confirms స్నేహితురాలు (plain ""friend, female"") but has no ""best friend"" compound either way. In actual casual Hyderabad speech ""బెస్ట్ ఫ్రెండ్"" (direct borrowing) is at least as common as, arguably more common than, the more literary ప్రాణ స్నేహితురాలు (""friend of my soul"") — closer to the register this project committed to. Closest call of the ten open questions: both are genuinely correct Telugu, differing in flavor, not right/wrong. Worth a native's actual preference."	draft
-M1e1c4fbe3dcb	4	questions	17	Six: Amy likes math and science.	ఆరు: ఏమీకి గణితం, సైన్స్ అంటే ఇష్టం.		draft
-M778832704e29	4	questions	18	Does Amy like English and history?	ఏమీకి ఇంగ్లీష్, చరిత్ర అంటే ఇష్టమా?		draft
-M2b60baa095bc	4	questions	19	No, she likes math and science.	లేదు, ఆమెకు గణితం, సైన్స్ అంటే ఇష్టం.		draft
-M448c59446a1a	4	questions	20	Seven: The daughter and Amy do well in school.	ఏడు: కూతురు, ఏమీ స్కూల్లో బాగా రాణిస్తారు.		draft
-M9ee5a507ebab	4	questions	21	Does the daughter do well in school?	కూతురు స్కూల్లో బాగా రాణిస్తుందా?		draft
-M179ee1a0c740	4	questions	22	Yes, the daughter and Amy do well in school.	అవును, కూతురు, ఏమీ స్కూల్లో బాగా రాణిస్తారు.		draft
+Me35d761ad098	4	meta	2	Here is the same story told in a different way.	ఇదే కథ మరో విధంగా చెప్పబడింది.		native
+Maf14de3ce522	4	story	1	My daughter goes to school every day.	నా కూతురు ప్రతిరోజూ స్కూలుకు వెళ్తుంది		native
+Me9dfa9af5f02	4	story	2	She likes school very much.	ఆమెకు స్కూల్ అంటే చాలా ఇష్టం		native
+M41dc51e5bffe	4	story	3	She is a good student at school.	స్కూల్లో ఆమె మంచి విద్యార్థి		native
+Mce4b56c68cc6	4	story	4	The teachers like my daughter a lot.	నా కూతురంటే టీచర్ కు చాలా ఇష్టం		native
+M80f643e0f3e3	4	story	5	My daughter also has many friends.	నా కూతురుకి చాలా మంది ఫ్రెండ్స్ ఉన్నారు		native
+Mfc0fc617abdd	4	story	6	Her best friend is Amy.	ఆమె బెస్ట్ ఫ్రెండ్ యేమి	"CHANGED from ప్రాణ స్నేహితురాలు to బెస్ట్ ఫ్రెండ్ (same change made consistently across all 5 occurrences of this phrase in story 4). Deck confirms స్నేహితురాలు (plain ""friend, female"") but has no ""best friend"" compound either way. In actual casual Hyderabad speech ""బెస్ట్ ఫ్రెండ్"" (direct borrowing) is at least as common as, arguably more common than, the more literary ప్రాణ స్నేహితురాలు (""friend of my soul"") — closer to the register this project committed to. Closest call of the ten open questions: both are genuinely correct Telugu, differing in flavor, not right/wrong. Worth a native's actual preference."	native
+M539a50ee5949	4	story	7	Amy likes math and science.	యేమికి మ్యాథ్స్, సైన్స్ అంటే ఇష్టం	RESOLVED: సైన్స్ (borrowed) and చరిత్ర (native) BOTH confirmed in data/master_words.tsv, exactly matching the mixed borrowed/native pattern already chosen — direct precedent for 2 of 4 terms. గణితం (math) and ఇంగ్లీష్ (the language name) have no viable alternative rendering in ordinary speech either way, so this settles cleanly.	native
+M77383f958096	4	story	8	My daughter likes English and History.	నా కూతురికి ఇంగ్లీషు, హిస్టరీ అంటే ఇష్టం		native
+M8e2da61aa171	4	story	9	They help each other with homework.	హోంవర్క్ లో వాళ్ళు ఒకరికొకరు సహాయం చేసుకుంటారు		native
+M3bd5efcd318b	4	story	10	They study hard and do well in school.	వాళ్ళు కష్టపడి చదువుతూ స్కూల్లో బాగా రాణిస్తారు		native
+M1ce57cf5fb8d	4	retell	1	I go to school every day.	నేను ప్రతి రోజూ స్కూలుకు వెళ్తాను		native
+M0f7b18e561d1	4	retell	2	I like school very much.	నాకు స్కూల్ అంటే చాలా ఇష్టం		native
+M35cb8c4ef3af	4	retell	3	I am a good student at school.	నేను స్కూల్లో మంచి విద్యార్థిని		native
+M952313ce5074	4	retell	4	My teachers like me a lot.	నేనంటే మా టీచర్లకు చాలా ఇష్టం		native
+Me37bac4abc34	4	retell	5	I also have many friends.	నాకు చాలా మంది ఫ్రెండ్స్ కూడా ఉన్నారు		native
+M325df838e405	4	retell	6	My best friend is Amy.	నా బెస్ట్ ఫ్రెండ్ యేమి	"CHANGED from ప్రాణ స్నేహితురాలు to బెస్ట్ ఫ్రెండ్ (same change made consistently across all 5 occurrences of this phrase in story 4). Deck confirms స్నేహితురాలు (plain ""friend, female"") but has no ""best friend"" compound either way. In actual casual Hyderabad speech ""బెస్ట్ ఫ్రెండ్"" (direct borrowing) is at least as common as, arguably more common than, the more literary ప్రాణ స్నేహితురాలు (""friend of my soul"") — closer to the register this project committed to. Closest call of the ten open questions: both are genuinely correct Telugu, differing in flavor, not right/wrong. Worth a native's actual preference."	native
+M5fa338ee705e	4	retell	7	She likes Math and Science.	ఆమెకు మ్యాథ్స్ మరియు సైన్స్ అంటే ఇష్టం		native
+Me8f5d3c811a0	4	retell	8	I like English and History.	నాకు ఇంగ్లీష్ మరియు హిస్టరీ అంటే ఇష్టం		native
+Me8120b031b8e	4	retell	9	We help each other with homework.	హోంవర్క్ లో మేము ఒకరికొకరు సహాయం చేసుకుంటాము		native
+M600055516098	4	retell	10	We study hard and do well in school.	మేము కష్టపడి చదువుతూ స్కూల్లో బాగా రాణిస్తాము		native
+M55c3d5f454d7	4	questions	1	One: The daughter goes to school every day.	ఒకటి: ప్రతిరోజూ స్కూలుకు వెళ్తుంది		native
+M4858a3dc0b78	4	questions	2	Does the daughter go to school every day?	కూతురు ప్రతిరోజూ స్కూలుకు వెళ్తుందా?		native
+M81e7bdcbf5b1	4	questions	3	Yes, she goes to school every day.	అవును, ఆమె ప్రతిరోజూ స్కూలుకు వెళ్తుంది		native
+M944a2568215a	4	questions	4	Two: The daughter likes school.	రెండు: కూతురికి స్కూల్ అంటే ఇష్టం		native
+Mf566b4607efc	4	questions	5	Does the daughter like school?	కూతురికి స్కూల్ అంటే ఇష్టమా?		native
+M5d6e7e722ec0	4	questions	6	Yes, she likes school.	అవును, ఆమెకు స్కూల్ అంటే ఇష్టం		native
+Mb44a42902f46	4	questions	7	Three: The daughter is a good student.	మూడు: కూతురు మంచి విద్యార్థిని		native
+Mab6ac69cd3ee	4	questions	8	Is the daughter a bad student?	కూతురు చెడ్డ విద్యార్థినా?		native
+M527aa7b9a193	4	questions	9	No, the daughter is not a bad student.	కాదు, కూతురు చెడ్డ విద్యార్థిని కాదు		native
+Me7d027d50f27	4	questions	10	She is a good student.	ఆమె ఒక మంచి విద్యార్థిని		native
+Mb78f1b3fb3b5	4	questions	11	Four: The teachers like the daughter.	నాలుగు: కూతురంటే టీచర్లకు చాలా ఇష్టం		native
+M515c092fc84f	4	questions	12	Do the teachers like the daughter?	టీచర్లకు కూతురంటే ఇష్టమా?		native
+Mcdabfe3c889f	4	questions	13	Yes, the teachers like her.	అవును, ఆమెను టీచర్లు ఇష్టపడుతారు		native
+M9f8d83091bd6	4	questions	14	Five: Her best friend is named Amy.	ఐదు: ఆమె బెస్ట్ ఫ్రెండ్ పేరు యేమి	"CHANGED from ప్రాణ స్నేహితురాలు to బెస్ట్ ఫ్రెండ్ (same change made consistently across all 5 occurrences of this phrase in story 4). Deck confirms స్నేహితురాలు (plain ""friend, female"") but has no ""best friend"" compound either way. In actual casual Hyderabad speech ""బెస్ట్ ఫ్రెండ్"" (direct borrowing) is at least as common as, arguably more common than, the more literary ప్రాణ స్నేహితురాలు (""friend of my soul"") — closer to the register this project committed to. Closest call of the ten open questions: both are genuinely correct Telugu, differing in flavor, not right/wrong. Worth a native's actual preference."	native
+Mb2d2d6db1cbc	4	questions	15	Is her best friend named Julie?	ఆమె బెస్ట్ ఫ్రెండ్ పేరు జూలీ నా?	"CHANGED from ప్రాణ స్నేహితురాలు to బెస్ట్ ఫ్రెండ్ (same change made consistently across all 5 occurrences of this phrase in story 4). Deck confirms స్నేహితురాలు (plain ""friend, female"") but has no ""best friend"" compound either way. In actual casual Hyderabad speech ""బెస్ట్ ఫ్రెండ్"" (direct borrowing) is at least as common as, arguably more common than, the more literary ప్రాణ స్నేహితురాలు (""friend of my soul"") — closer to the register this project committed to. Closest call of the ten open questions: both are genuinely correct Telugu, differing in flavor, not right/wrong. Worth a native's actual preference."	native
+M8c4cced3b8d6	4	questions	16	No, her best friend is named Amy.	కాదు, ఆమె బెస్ట్ ఫ్రెండ్ పేరు యేమి	"CHANGED from ప్రాణ స్నేహితురాలు to బెస్ట్ ఫ్రెండ్ (same change made consistently across all 5 occurrences of this phrase in story 4). Deck confirms స్నేహితురాలు (plain ""friend, female"") but has no ""best friend"" compound either way. In actual casual Hyderabad speech ""బెస్ట్ ఫ్రెండ్"" (direct borrowing) is at least as common as, arguably more common than, the more literary ప్రాణ స్నేహితురాలు (""friend of my soul"") — closer to the register this project committed to. Closest call of the ten open questions: both are genuinely correct Telugu, differing in flavor, not right/wrong. Worth a native's actual preference."	native
+M1e1c4fbe3dcb	4	questions	17	Six: Amy likes math and science.	ఆరు: యేమికి మ్యాథ్స్ మరియు సైన్స్ అంటే ఇష్టం		native
+M778832704e29	4	questions	18	Does Amy like English and history?	యేమికి ఇంగ్లీష్ మరియు హిస్టరీ అంటే ఇష్టమా?		native
+M2b60baa095bc	4	questions	19	No, she likes math and science.	కాదు, ఆమెకు మ్యాథ్స్ మరియు సైన్స్ అంటే ఇష్టం		native
+M448c59446a1a	4	questions	20	Seven: The daughter and Amy do well in school.	ఏడు: కూతురు మరియు యేమి స్కూల్లో బాగా రాణిస్తారు		native
+M9ee5a507ebab	4	questions	21	Does the daughter do well in school?	కూతురు స్కూల్లో బాగా రాణిస్తుందా?		native
+M179ee1a0c740	4	questions	22	Yes, the daughter and Amy do well in school.	అవును, కూతురు మరియు యేమి స్కూల్లో బాగా రాణిస్తారు		native

@@ -1,27 +1,27 @@
 guid	num	part	seq	en	te	notes	status
-M30e25e747236	1	questions	1	One: Mike wakes up at six a.m. every morning.	ఒకటి: మైక్ ప్రతి ఉదయం ఆరు గంటలకు లేస్తాడు.		draft
-M0f902e9fb9fd	1	questions	2	Does Mike wake up early?	మైక్ పొద్దున్నే లేస్తాడా?		draft
-M2a36e960c6d4	1	questions	3	Yes, Mike wakes up at six a.m. every morning.	అవును, మైక్ ప్రతి ఉదయం ఆరు గంటలకు లేస్తాడు.		draft
-Mbf4ab7051a77	1	questions	4	Two: Mike drinks a cup of coffee.	రెండు: మైక్ ఒక కప్పు కాఫీ తాగుతాడు.		draft
-Mbd3ee2218620	1	questions	5	Does Mike drink tea?	మైక్ టీ తాగుతాడా?		draft
-Mfdc43ee204db	1	questions	6	No, Mike does not drink tea, he drinks a cup of coffee.	లేదు, మైక్ టీ తాగడు, అతను ఒక కప్పు కాఫీ తాగుతాడు.		draft
-M562b409bf372	1	questions	7	Three: Mike drives his car to work.	మూడు: మైక్ తన కారులో పనికి వెళ్తాడు.		draft
-Mdc4c92341135	1	questions	8	Does Mike drive his car to work?	మైక్ తన కారులో పనికి వెళ్తాడా?		draft
-Mdf1b1ac0ca92	1	questions	9	Yes, Mike drives his car to work.	అవును, మైక్ తన కారులో పనికి వెళ్తాడు.		draft
-M8425ad26f6d3	1	questions	10	Four: Mike's work starts at seven-thirty a.m.	నాలుగు: మైక్ పని ఉదయం ఏడున్నరకు మొదలవుతుంది.		draft
-M96b243709e02	1	questions	11	Does Mike's work start at seven a.m.?	మైక్ పని ఉదయం ఏడు గంటలకు మొదలవుతుందా?		draft
-M0632720d2580	1	questions	12	No, Mike's work does not start at seven a.m.	లేదు, మైక్ పని ఏడు గంటలకు మొదలవ్వదు.		draft
-Mdd47c8e25a5b	1	questions	13	It starts at seven thirty a.m.	అది ఏడున్నరకు మొదలవుతుంది.		draft
-M408d4f952b07	1	questions	14	Five: Mike is a cook at a restaurant.	ఐదు: మైక్ ఒక రెస్టారెంట్‌లో వంటవాడు.		draft
-Mdb4fa346e775	1	questions	15	Is Mike a cook?	మైక్ వంటవాడా?		draft
-M41bbc0d622a3	1	questions	16	Yes, Mike is a cook at a restaurant.	అవును, మైక్ ఒక రెస్టారెంట్‌లో వంటవాడు.		draft
-M96abcc01f33b	1	questions	17	Six: The customers come from many different countries.	ఆరు: కస్టమర్లు చాలా వేర్వేరు దేశాల నుంచి వస్తారు.		draft
-Mf8ae7903f203	1	questions	18	Are the customers from one country?	కస్టమర్లు ఒకే దేశం నుంచి వస్తారా?		draft
-Mb133f1336423	1	questions	19	No, the customers are not from one country.	లేదు, కస్టమర్లు ఒకే దేశం నుంచి రారు.		draft
-Mb2ebe86424e8	1	questions	20	They are from many different countries.	వాళ్ళు చాలా వేర్వేరు దేశాల నుంచి వస్తారు.		draft
-Md273a9ba31e6	1	questions	21	Seven: The customers are friendly.	ఏడు: కస్టమర్లు స్నేహంగా ఉంటారు.		draft
-M6b17c310bdff	1	questions	22	Are the customers friendly?	కస్టమర్లు స్నేహంగా ఉంటారా?		draft
-M8ccb628a9e14	1	questions	23	Yes, the customers are friendly.	అవును, కస్టమర్లు స్నేహంగా ఉంటారు.		draft
-Mbbad9d2ce752	1	questions	24	Eight: Mike feels happy when he talks to the customers.	ఎనిమిది: మైక్ కస్టమర్లతో మాట్లాడినప్పుడు సంతోషంగా ఉంటాడు.		draft
-M7b3af6a49af0	1	questions	25	Does Mike feel happy when he talks to the customers?	మైక్ కస్టమర్లతో మాట్లాడినప్పుడు సంతోషంగా ఉంటాడా?		draft
-M70702e6197ba	1	questions	26	Yes, Mike feels happy when he talks to the customers.	అవును, మైక్ కస్టమర్లతో మాట్లాడినప్పుడు సంతోషంగా ఉంటాడు.		draft
+M30e25e747236	1	questions	1	One: Mike wakes up at six a.m. every morning.	ఒకటి: మైక్ ప్రతీ ఉదయం ఆరు గంటలకు నిద్ర లేస్తాడు		native
+M0f902e9fb9fd	1	questions	2	Does Mike wake up early?	మైక్ త్వరగా నిద్ర లేస్తాడా?		native
+M2a36e960c6d4	1	questions	3	Yes, Mike wakes up at six a.m. every morning.	అవును, మైక్ ప్రతీ ఉదయం ఆరు గంటలకు నిద్ర లేస్తాడు		native
+Mbf4ab7051a77	1	questions	4	Two: Mike drinks a cup of coffee.	రెండు: మైక్ ఒక కప్పు కాఫీ తాగుతాడు.		native
+Mbd3ee2218620	1	questions	5	Does Mike drink tea?	మైక్ టీ తాగుతాడా?		native
+Mfdc43ee204db	1	questions	6	No, Mike does not drink tea, he drinks a cup of coffee.	లేదు, మైక్ టీ తాగడు, అతను కాఫీ మాత్రమే తాగుతాడు		native
+M562b409bf372	1	questions	7	Three: Mike drives his car to work.	మూడు: మైక్ తన పనికి కారులో వెళతాడు		native
+Mdc4c92341135	1	questions	8	Does Mike drive his car to work?	మైక్ కారులో పనికి వెళతాడా?		native
+Mdf1b1ac0ca92	1	questions	9	Yes, Mike drives his car to work.	అవును, మైక్ కారులో పనికి వెళతాడు		native
+M8425ad26f6d3	1	questions	10	Four: Mike's work starts at seven-thirty a.m.	నాలుగు: పొద్దున ఏడున్నర గంటలకు మైక్ పని మొదలవుతుంది		native
+M96b243709e02	1	questions	11	Does Mike's work start at seven a.m.?	పొద్దున ఏడు గంటలకు మైక్ పని మొదలవుతుందా?		native
+M0632720d2580	1	questions	12	No, Mike's work does not start at seven a.m.	కాదు, పొద్దున ఏడున్నర గంటలకు మైక్ పని మొదలవుతుంది		native
+Mdd47c8e25a5b	1	questions	13	It starts at seven thirty a.m.	అది ఏడున్నర గంటలకు మొదలవుతుంది		native
+M408d4f952b07	1	questions	14	Five: Mike is a cook at a restaurant.	ఐదు: రెస్టారెంట్ లో మైక్ ఒక వంటవాడు		native
+Mdb4fa346e775	1	questions	15	Is Mike a cook?	మైక్ వంట వాడా?		native
+M41bbc0d622a3	1	questions	16	Yes, Mike is a cook at a restaurant.	అవును, రెస్టారెంట్ లో మైక్ ఒక వంటవాడు		native
+M96abcc01f33b	1	questions	17	Six: The customers come from many different countries.	ఆరు: చాలా దేశాల నుండి కస్టమర్లు వస్తారు		native
+Mf8ae7903f203	1	questions	18	Are the customers from one country?	ఒక దేశం నుండే కస్టమర్లు వస్తారా?		native
+Mb133f1336423	1	questions	19	No, the customers are not from one country.	కాదు, అనేక దేశాల నుండి కస్టమర్లు వస్తారు		native
+Mb2ebe86424e8	1	questions	20	They are from many different countries.	వాళ్ళు అనేక దేశాల నుండి వస్తారు		native
+Md273a9ba31e6	1	questions	21	Seven: The customers are friendly.	ఏడు: కస్టమర్లు సరదాగా ఉంటారు		native
+M6b17c310bdff	1	questions	22	Are the customers friendly?	కస్టమర్లు సరదాగా ఉంటారా?		native
+M8ccb628a9e14	1	questions	23	Yes, the customers are friendly.	అవును, కస్టమర్లు సరదాగా ఉంటారు		native
+Mbbad9d2ce752	1	questions	24	Eight: Mike feels happy when he talks to the customers.	ఎనిమిది: మైక్ తన కస్టమర్లతో మాట్లాడేటప్పుడు చాలా సంతోషపడుతాడు		native
+M7b3af6a49af0	1	questions	25	Does Mike feel happy when he talks to the customers?	మైక్ తన కస్టమర్లతో మాట్లాడేటప్పుడు మైక్ చాలా సంతోషపడుతాడా?		native
+M70702e6197ba	1	questions	26	Yes, Mike feels happy when he talks to the customers.	అవును, మైక్ తన కస్టమర్లతో మాట్లాడేటప్పుడు చాలా సంతోషపడుతాడు		native

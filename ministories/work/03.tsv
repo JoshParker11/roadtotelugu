@@ -1,51 +1,51 @@
 guid	num	part	seq	en	te	notes	status
 Me3678dd86cc1	3	meta	1	Story Three: Karen Gets a Cat	కథ మూడు: కారెన్ ఒక పిల్లిని కొంటుంది		draft
-Me35d761ad098	3	meta	2	Here is the same story told in a different way.	ఇదే కథను ఇప్పుడు వేరే విధంగా చెప్తున్నాను.		draft
-M9368104310c4	3	story	1	Karen is bored at work and at home.	కారెన్‌కు పనిలోనూ ఇంట్లోనూ విసుగ్గా ఉంటుంది.	"RESOLVED: విసుగు (""boredom/tiredness"") confirmed in data/master_words.tsv. The dative-subject construction (to-her it-is-boring, not she performs boredom) is standard Telugu grammar for psychological/experiential states, not an idiom choice — settled."	draft
-M46f332d7701f	3	story	2	She does the same thing every day.	ఆమె ప్రతి రోజూ అదే పని చేస్తుంది.		draft
-Mcc6aaae188a9	3	story	3	She wants a new hobby.	ఆమెకు ఒక కొత్త హాబీ కావాలి.	RESOLVED toward హాబీ, kept as written. Not in the deck either way, so this is resolved by the project's own register commitment (STYLE.md-equivalent: వ్యావహారికం, matching how people actually talk) rather than by hard precedent — హాబీ is the ordinary conversational choice, వ్యాపకం reads literary. Weaker evidence than the deck-confirmed items above; revisit if a native reader disagrees.	draft
-M5efe61fbec49	3	story	4	First, she tries to cook.	మొదట, ఆమె వంట చేయడానికి ప్రయత్నిస్తుంది.		draft
-M078b1e383017	3	story	5	But her food does not taste good.	కానీ ఆమె వంట రుచిగా ఉండదు.		draft
-Md4ed22ac8504	3	story	6	Then, she tries to swim.	తర్వాత, ఆమె ఈత కొట్టడానికి ప్రయత్నిస్తుంది.		draft
-M713259958e19	3	story	7	But she is afraid of water.	కానీ ఆమెకు నీళ్లంటే భయం.		draft
-M07ea382e5598	3	story	8	Karen walks home and sees a pet store.	కారెన్ ఇంటికి నడుచుకుంటూ వెళ్తూ ఒక పెట్ షాప్ చూస్తుంది.		draft
-M5b64a1c2fa80	3	story	9	In the pet store, she sees a cat!	ఆ పెట్ షాప్‌లో ఆమెకు ఒక పిల్లి కనిపిస్తుంది!		draft
-Md48077c0312d	3	story	10	Karen buys the cat and is now very happy.	కారెన్ ఆ పిల్లిని కొంటుంది, ఇప్పుడు చాలా సంతోషంగా ఉంది.		draft
-Me807a4c85472	3	retell	1	I am bored at work and at home.	నాకు పనిలోనూ ఇంట్లోనూ విసుగ్గా ఉంటుంది.		draft
-M6951f255c768	3	retell	2	I do the same thing every day.	నేను ప్రతి రోజూ అదే పని చేస్తాను.		draft
-Mc897922bc2ff	3	retell	3	I want a new hobby.	నాకు ఒక కొత్త హాబీ కావాలి.		draft
-M8db5cc76b64f	3	retell	4	First, I try to cook.	మొదట, నేను వంట చేయడానికి ప్రయత్నిస్తాను.		draft
-Mb7401a2fc5dd	3	retell	5	But my food does not taste good.	కానీ నా వంట రుచిగా ఉండదు.		draft
-M0e16df645baf	3	retell	6	Then, I try to swim.	తర్వాత, నేను ఈత కొట్టడానికి ప్రయత్నిస్తాను.		draft
-Mbdf8cce8eb64	3	retell	7	But I am afraid of water.	కానీ నాకు నీళ్లంటే భయం.		draft
-M63c45edd2d86	3	retell	8	I walk home and see a pet store.	నేను ఇంటికి నడుచుకుంటూ వెళ్తూ ఒక పెట్ షాప్ చూస్తాను.		draft
-Ma2575b27117f	3	retell	9	In the pet store, I see a cat!	ఆ పెట్ షాప్‌లో నాకు ఒక పిల్లి కనిపిస్తుంది!		draft
-Mc44ea721d1e0	3	retell	10	I buy the cat and am now very happy.	నేను ఆ పిల్లిని కొంటాను, ఇప్పుడు చాలా సంతోషంగా ఉన్నాను.		draft
-M42d7f47b568b	3	questions	1	One: Karen is bored at work, and at home.	ఒకటి: కారెన్‌కు పనిలోనూ ఇంట్లోనూ విసుగ్గా ఉంటుంది.		draft
-Mcc07cf468ad2	3	questions	2	Is Karen happy at work?	కారెన్ పనిలో సంతోషంగా ఉందా?		draft
-Maa1860f48e23	3	questions	3	No, Karen is not happy at work.	లేదు, కారెన్ పనిలో సంతోషంగా లేదు.		draft
-Mac052d8b611f	3	questions	4	She is bored at work, and at home.	ఆమెకు పనిలోనూ ఇంట్లోనూ విసుగ్గా ఉంటుంది.		draft
-Mb044ba00a8e4	3	questions	5	Two: Karen does the same thing every day.	రెండు: కారెన్ ప్రతి రోజూ అదే పని చేస్తుంది.		draft
-M25bb1a29b316	3	questions	6	Does Karen do many new things?	కారెన్ చాలా కొత్త పనులు చేస్తుందా?		draft
-M0b9dcb426a7a	3	questions	7	No, Karen does the same thing every day.	లేదు, కారెన్ ప్రతి రోజూ అదే పని చేస్తుంది.		draft
-M652ab12b31a9	3	questions	8	Three: Karen wants a new hobby.	మూడు: కారెన్‌కు ఒక కొత్త హాబీ కావాలి.		draft
-M29ceae1528af	3	questions	9	Does Karen want a new hobby?	కారెన్‌కు ఒక కొత్త హాబీ కావాలా?		draft
-Mce8659ff976b	3	questions	10	Yes, Karen wants a new hobby.	అవును, కారెన్‌కు ఒక కొత్త హాబీ కావాలి.		draft
-M947da0e86fb8	3	questions	11	Four: Karen's food does not taste good.	నాలుగు: కారెన్ వంట రుచిగా ఉండదు.		draft
-M24793f8237ff	3	questions	12	Is Karen a good cook?	కారెన్ మంచి వంటమనిషా?		draft
-M87434ff51efb	3	questions	13	No, Karen is not a good cook.	లేదు, కారెన్ మంచి వంటమనిషి కాదు.		draft
-Me73299e1566b	3	questions	14	Her food does not taste good.	ఆమె వంట రుచిగా ఉండదు.		draft
-Mb800ceea6986	3	questions	15	Five: Karen is afraid of water.	ఐదు: కారెన్‌కు నీళ్లంటే భయం.		draft
-M0716d6b78157	3	questions	16	Does Karen like swimming?	కారెన్‌కు ఈత అంటే ఇష్టమా?		draft
-Mf1001124a770	3	questions	17	No, Karen does not like swimming.	లేదు, కారెన్‌కు ఈత అంటే ఇష్టం లేదు.		draft
-M108393791c68	3	questions	18	She is afraid of water.	ఆమెకు నీళ్లంటే భయం.		draft
-M16036378df64	3	questions	19	Six: Karen sees a cat in a pet store.	ఆరు: కారెన్‌కు ఒక పెట్ షాప్‌లో పిల్లి కనిపిస్తుంది.		draft
-M97a5dafb9b60	3	questions	20	Does Karen see a cat in a store?	కారెన్‌కు ఒక షాప్‌లో పిల్లి కనిపిస్తుందా?		draft
-M70c71b8f1bc9	3	questions	21	Yes, Karen sees a cat in a pet store.	అవును, కారెన్‌కు ఒక పెట్ షాప్‌లో పిల్లి కనిపిస్తుంది.		draft
-M22b50a16e585	3	questions	22	Seven: Karen buys the cat from the pet store.	ఏడు: కారెన్ ఆ పెట్ షాప్ నుంచి పిల్లిని కొంటుంది.		draft
-Mac12e1ef7451	3	questions	23	Does Karen buy the cat?	కారెన్ ఆ పిల్లిని కొంటుందా?		draft
-M425dfc28cbb5	3	questions	24	Yes, Karen buys the cat from the pet store.	అవును, కారెన్ ఆ పెట్ షాప్ నుంచి పిల్లిని కొంటుంది.		draft
-M36aac71299e8	3	questions	25	Eight: Karen is now very happy because she has a cat.	ఎనిమిది: పిల్లి ఉంది కాబట్టి కారెన్ ఇప్పుడు చాలా సంతోషంగా ఉంది.		draft
-M0f8f2db95b4c	3	questions	26	Is Karen bored now?	కారెన్‌కు ఇప్పుడు విసుగ్గా ఉందా?		draft
-M962625c7a538	3	questions	27	No, Karen is not bored.	లేదు, కారెన్‌కు విసుగ్గా లేదు.		draft
-Mf6a78b87d9ec	3	questions	28	She is now very happy because she has a cat.	పిల్లి ఉంది కాబట్టి ఆమె ఇప్పుడు చాలా సంతోషంగా ఉంది.		draft
+Me35d761ad098	3	meta	2	Here is the same story told in a different way.	ఇదే కథ మరో విధంగా చెప్పబడింది.		native
+M9368104310c4	3	story	1	Karen is bored at work and at home.	కరెన్ కు పనిలోనూ, ఇంట్లోనూ బోర్ కొడుతోంది	"RESOLVED: విసుగు (""boredom/tiredness"") confirmed in data/master_words.tsv. The dative-subject construction (to-her it-is-boring, not she performs boredom) is standard Telugu grammar for psychological/experiential states, not an idiom choice — settled."	native
+M46f332d7701f	3	story	2	She does the same thing every day.	ఆమె ప్రతి రోజూ అదే పని చేస్తుంది		native
+Mcc6aaae188a9	3	story	3	She wants a new hobby.	ఆమెకు కొత్త హాబీ కావాలనుకుంటోంది	RESOLVED toward హాబీ, kept as written. Not in the deck either way, so this is resolved by the project's own register commitment (STYLE.md-equivalent: వ్యావహారికం, matching how people actually talk) rather than by hard precedent — హాబీ is the ordinary conversational choice, వ్యాపకం reads literary. Weaker evidence than the deck-confirmed items above; revisit if a native reader disagrees.	native
+M5efe61fbec49	3	story	4	First, she tries to cook.	మొదటిగా, ఆమె వంట చేయడానికి ప్రయత్నించింది		native
+M078b1e383017	3	story	5	But her food does not taste good.	కానీ ఆమె వండిన వంట రుచిగా లేదు		native
+Md4ed22ac8504	3	story	6	Then, she tries to swim.	తర్వాత ఆమె ఈత కొట్టడం ప్రయత్నించింది		native
+M713259958e19	3	story	7	But she is afraid of water.	కానీ ఆమెకు నీళ్ళు అంటే భయం		native
+M07ea382e5598	3	story	8	Karen walks home and sees a pet store.	కరేన్ ఇంటికి నడుచుకుని వెళ్తూ ఒక పెంపుడు జంతువుల దుకాణాన్ని చూసింది		native
+M5b64a1c2fa80	3	story	9	In the pet store, she sees a cat!	జంతువుల దుకాణంలో ఆమె ఒక పిల్లి చూసింది		native
+Md48077c0312d	3	story	10	Karen buys the cat and is now very happy.	కరేన్ ఒక పిల్లిని కొనుక్కుని చాలా సంతోషంగా ఉంది		native
+Me807a4c85472	3	retell	1	I am bored at work and at home.	నాకు పనిలోనూ, ఇంట్లోనూ బోర్ కొడుతోంది		native
+M6951f255c768	3	retell	2	I do the same thing every day.	నేను ప్రతి రోజూ అదే పని చేస్తాను		native
+Mc897922bc2ff	3	retell	3	I want a new hobby.	నాకు ఒక కొత్త హాబీ కావాలి		native
+M8db5cc76b64f	3	retell	4	First, I try to cook.	మొదటిగా, నేను వంట చేయడం ప్రయత్నించాను		native
+Mb7401a2fc5dd	3	retell	5	But my food does not taste good.	కానీ నేను వండిన వంట రుచిగా లేదు		native
+M0e16df645baf	3	retell	6	Then, I try to swim.	తర్వాత నేను ఈత కొట్టడం ప్రయత్నించాను		native
+Mbdf8cce8eb64	3	retell	7	But I am afraid of water.	కానీ నాకు నీళ్లంటే భయం		native
+M63c45edd2d86	3	retell	8	I walk home and see a pet store.	నేను ఇంటికి నడుచుకుంటూ వెళ్తూ ఒక పెంపుడు జంతువుల దుకాణాన్ని చూశాను		native
+Ma2575b27117f	3	retell	9	In the pet store, I see a cat!	పెంపుడు జంతువుల దుకాణంలో నేను ఒక పిల్లిని చూశాను		native
+Mc44ea721d1e0	3	retell	10	I buy the cat and am now very happy.	నేను ఒక పిల్లిని కొన్నాను, ఇప్పుడు నేను చాలా సంతోషంగా ఉన్నాను		native
+M42d7f47b568b	3	questions	1	One: Karen is bored at work, and at home.	ఒకటి: కరేన్ కు పనిలోనూ, ఇంట్లోనూ బోర్ కొడుతోంది		native
+Mcc07cf468ad2	3	questions	2	Is Karen happy at work?	కరేన్ పనిలో సంతోషంగా ఉందా?		native
+Maa1860f48e23	3	questions	3	No, Karen is not happy at work.	లేదు, కరేన్ ఆమె పనిలో సంతోషంగా లేదు		native
+Mac052d8b611f	3	questions	4	She is bored at work, and at home.	కరేన్ కు పనిలోనూ, ఇంట్లోనూ బోర్ కొడుతోంది		native
+Mb044ba00a8e4	3	questions	5	Two: Karen does the same thing every day.	రెండు: కరేన్ ప్రతి రోజూ అదే పని చేస్తుంది		native
+M25bb1a29b316	3	questions	6	Does Karen do many new things?	కరేన్ చాలా పనులు చేస్తుందా?		native
+M0b9dcb426a7a	3	questions	7	No, Karen does the same thing every day.	కాదు, కరేన్ ప్రతి రోజూ అదే పని చేస్తుంది		native
+M652ab12b31a9	3	questions	8	Three: Karen wants a new hobby.	మూడు: కరేన్ కొత్త హాబీ కావాలనుకుంటోంది		native
+M29ceae1528af	3	questions	9	Does Karen want a new hobby?	కరేన్ కొత్త హాబీ కావాలనుకుంటోందా?		native
+Mce8659ff976b	3	questions	10	Yes, Karen wants a new hobby.	అవును, కరేన్ కొత్త హాబీ కావాలనుకుంటోంది		native
+M947da0e86fb8	3	questions	11	Four: Karen's food does not taste good.	నాలుగు: కరేన్ వండిన వంట రుచిగా లేదు		native
+M24793f8237ff	3	questions	12	Is Karen a good cook?	కరేన్ మంచి వంట మనిషి కాదా?		native
+M87434ff51efb	3	questions	13	No, Karen is not a good cook.	కాదు, కరేన్ మంచి వంట మనిషి కాదు		native
+Me73299e1566b	3	questions	14	Her food does not taste good.	ఆమె వండిన వంట రుచిగా ఉండదు		native
+Mb800ceea6986	3	questions	15	Five: Karen is afraid of water.	ఐదు: కరేన్ కు నీళ్లంటే భయం		native
+M0716d6b78157	3	questions	16	Does Karen like swimming?	కరేన్ కు ఈత కొట్టడం అంటే ఇష్టమా?		native
+Mf1001124a770	3	questions	17	No, Karen does not like swimming.	కాదు, కరేన్ కు ఈత కొట్టడం అంటే ఇష్టం లేదు		native
+M108393791c68	3	questions	18	She is afraid of water.	ఆమెకు నీళ్లంటే భయం		native
+M16036378df64	3	questions	19	Six: Karen sees a cat in a pet store.	ఆరు: పెంపుడు జంతువుల దుకాణంలో కరేన్ ఒక పిల్లిని చూసింది		native
+M97a5dafb9b60	3	questions	20	Does Karen see a cat in a store?	పెంపుడు జంతువుల దుకాణంలో కరేన్ ఒక పిల్లిని చూసిందా?		native
+M70c71b8f1bc9	3	questions	21	Yes, Karen sees a cat in a pet store.	అవును, పెంపుడు జంతువుల దుకాణంలో కరేన్ ఒక పిల్లిని చూసింది		native
+M22b50a16e585	3	questions	22	Seven: Karen buys the cat from the pet store.	ఏడు: పెంపుడు జంతువుల దుకాణంలో కరేన్ ఒక పిల్లిని కొనుక్కుంది		native
+Mac12e1ef7451	3	questions	23	Does Karen buy the cat?	కరేన్ ఒక పిల్లిని కొనుక్కుందా?		native
+M425dfc28cbb5	3	questions	24	Yes, Karen buys the cat from the pet store.	అవును, పెంపుడు జంతువుల దుకాణంలో కరేన్ ఒక పిల్లిని కొనుక్కుంది		native
+M36aac71299e8	3	questions	25	Eight: Karen is now very happy because she has a cat.	ఎనిమిది: ఆమెతో పిల్లి ఉంది కాబట్టి కరేన్ ఇప్పుడు చాలా సంతోషంగా ఉంది		native
+M0f8f2db95b4c	3	questions	26	Is Karen bored now?	కరేన్ కు ఇప్పుడు బోర్ కొడుతోందా?		native
+M962625c7a538	3	questions	27	No, Karen is not bored.	కాదు, కరేన్ కు ఇప్పుడు బోర్ కొట్టడం లేదు		native
+Mf6a78b87d9ec	3	questions	28	She is now very happy because she has a cat.	ఆమెకు పిల్లి ఉంది కాబట్టి ఇప్పుడు చాలా సంతోషంగా ఉంది		native

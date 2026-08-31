@@ -1,52 +1,52 @@
 guid	num	part	seq	en	te	notes	status
 M85c78f97db2e	8	meta	1	Story Eight - Lisa Goes Shoe Shopping			todo
-Me35d761ad098	8	meta	2	Here is the same story told in a different way.	ఇదే కథను ఇప్పుడు వేరే విధంగా చెప్తున్నాను.		draft
-Mfcbd2d509080	8	story	1	Lisa wants to buy new shoes.			todo
-M5b7c78898e4d	8	story	2	She goes to a shoe store.			todo
-Mc17383fe0c2c	8	story	3	There are many pretty shoes there.			todo
-M4cd60ed12d49	8	story	4	Lisa tries on a blue pair of shoes.			todo
-M1703a55a9aba	8	story	5	The blue shoes are too tight.			todo
-M9fbfdc1165c3	8	story	6	She tries on a black pair of shoes.			todo
-Mf7f521152fbd	8	story	7	These shoes are very comfortable.			todo
-Mffda6cc3408f	8	story	8	Lisa asks how much the black shoes cost.			todo
-M0e4f08e8db29	8	story	9	The black shoes are four hundred and fifty dollars.			todo
-M705be85ecff0	8	story	10	Lisa sadly puts the shoes down and leaves.			todo
-M4ed43b04b016	8	retell	1	I want to buy new shoes.			todo
-M4e74b6f6d32c	8	retell	2	I go to a shoe store.			todo
-Mbc547847811c	8	retell	3	There are many pretty shoes there.			todo
-Mf1701ee15795	8	retell	4	I try on a blue pair of shoes.			todo
-Mdd05756bca58	8	retell	5	The blue shoes are too tight.			todo
-Mbccd02371cc4	8	retell	6	I try on a black pair of shoes.			todo
-M79f7c4382bff	8	retell	7	These shoes are very comfortable.			todo
-M8076b4cb29dc	8	retell	8	I ask how much the black shoes cost.			todo
-Mde05696e1440	8	retell	9	The black shoes are four hundred and fifty dollars.			todo
-M5677e548b074	8	retell	10	I sadly put the shoes down and leave.			todo
-Mb9f7c7b8a057	8	questions	1	One: Lisa wants to buy new shoes.			todo
-M77d0600b5e5d	8	questions	2	Does Lisa want to buy new shoes?			todo
-Mdc91d2829143	8	questions	3	Yes, Lisa wants to buy new shoes.			todo
-M14f8f640c1bf	8	questions	4	Two: There are many pretty shoes in the shoe store.			todo
-Me0dfe90a2214	8	questions	5	Are there many shoes in the shoe store?			todo
-Mf74abb7fb7b1	8	questions	6	Yes, there are many pretty shoes in the shoe store.			todo
-Mee7786b1a4ba	8	questions	7	Three: Lisa tries on a blue and a black pair of shoes.			todo
-M79ba349f7720	8	questions	8	Does Lisa try on two pairs of shoes?			todo
-M4082487d6eaf	8	questions	9	Yes, Lisa tries on two pairs of shoes.			todo
-M0efc0bb58474	8	questions	10	She tries on a blue and a black pair.			todo
-M0623bd7a7983	8	questions	11	Four: First, Lisa tries a pair of blue shoes.			todo
-M612900c411cf	8	questions	12	Does Lisa try a pair of red shoes first?			todo
-Maa3ff726e56f	8	questions	13	No, Lisa does not try a pair of red shoes.			todo
-Mdea47018ffed	8	questions	14	She tries a pair of blue shoes.			todo
-Mce302cbe6c7a	8	questions	15	Five: The blue shoes are too tight.			todo
-M47f3b0ba133c	8	questions	16	Are the blue shoes comfortable?			todo
-M38ccc77e0365	8	questions	17	No, the blue shoes are not comfortable.			todo
-Mb295ed4d0ea7	8	questions	18	They are too tight.			todo
-M032de294833b	8	questions	19	Six: The black shoes are very comfortable.			todo
-Mbaec38d48384	8	questions	20	Are the black shoes comfortable?			todo
-M07814daf94f5	8	questions	21	Yes, the black shoes are very comfortable.			todo
-M1bcb73f8341f	8	questions	22	Seven: The black shoes are four hundred and fifty dollars.			todo
-M91a90dcb3fe8	8	questions	23	Are the black shoes expensive?			todo
-M24c17cc19219	8	questions	24	Yes, the black shoes are expensive.			todo
-Maba697dd015b	8	questions	25	They are four hundred and fifty dollars.			todo
-M7323cb40a649	8	questions	26	Eight: Lisa puts down the shoes and leaves the store.			todo
-Ma9a6422738b9	8	questions	27	Does Lisa buy the shoes?			todo
-M8924d40fd969	8	questions	28	No, Lisa does not buy the shoes.			todo
-Md5331c73467c	8	questions	29	She puts them down and leaves the store.			todo
+Me35d761ad098	8	meta	2	Here is the same story told in a different way.	ఇదే కథ మరో విధంగా చెప్పబడింది.		native
+Mfcbd2d509080	8	story	1	Lisa wants to buy new shoes.	లీసా కొత్త బూట్లు కొనాలి అనుకుంటోంది		native
+M5b7c78898e4d	8	story	2	She goes to a shoe store.	ఆమె ఒక షూ దుకాణానికి వెళ్ళింది		native
+Mc17383fe0c2c	8	story	3	There are many pretty shoes there.	అక్కడ ఎన్నో మంచి షూలు ఉన్నాయి		native
+M4cd60ed12d49	8	story	4	Lisa tries on a blue pair of shoes.	లీసా ఒక జత నీలం రంగు షూలను వేసుకుంది		native
+M1703a55a9aba	8	story	5	The blue shoes are too tight.	నీలం రంగు షూలు చాలా టైట్ గా ఉన్నాయి		native
+M9fbfdc1165c3	8	story	6	She tries on a black pair of shoes.	ఆమె నలుపు రంగు షూలు వేసుకుంది		native
+Mf7f521152fbd	8	story	7	These shoes are very comfortable.	ఆ షూలు చాలా సౌకర్యంగా ఉన్నాయి		native
+Mffda6cc3408f	8	story	8	Lisa asks how much the black shoes cost.	నలుపు రంగు షూల ధర ఎంత అని, లీసా అడిగింది		native
+M0e4f08e8db29	8	story	9	The black shoes are four hundred and fifty dollars.	నలుపు రంగు షూల ధర నాలుగు వందల యాభై డాలర్లు		native
+M705be85ecff0	8	story	10	Lisa sadly puts the shoes down and leaves.	లీసా బాధగా ఆ షూలను కిందకు పెట్టి వెళ్ళిపోయింది		native
+M4ed43b04b016	8	retell	1	I want to buy new shoes.	నేను కొత్త షూలు కొనాలి అనుకుంటున్నాను		native
+M4e74b6f6d32c	8	retell	2	I go to a shoe store.	నేను ఒక షూల దుకాణానికి వెళ్ళాను		native
+Mbc547847811c	8	retell	3	There are many pretty shoes there.	అక్కడ ఎన్నో మంచి షూలు ఉన్నాయి		native
+Mf1701ee15795	8	retell	4	I try on a blue pair of shoes.	నేను ఒక జత నీలం రంగు షూలను వేసుకున్నాను		native
+Mdd05756bca58	8	retell	5	The blue shoes are too tight.	నీలం రంగు షూలు చాలా టైట్ గా ఉన్నాయి		native
+Mbccd02371cc4	8	retell	6	I try on a black pair of shoes.	నేను నలుపు రంగు షూలు వేసుకున్నాను		native
+M79f7c4382bff	8	retell	7	These shoes are very comfortable.	ఆ షూలు చాలా సౌకర్యంగా ఉన్నాయి		native
+M8076b4cb29dc	8	retell	8	I ask how much the black shoes cost.	నలుపు రంగు షూల ధర ఎంత అని అడిగాను		native
+Mde05696e1440	8	retell	9	The black shoes are four hundred and fifty dollars.	నలుపు రంగు షూల ధర నాలుగు వందల యాభై డాలర్లు		native
+M5677e548b074	8	retell	10	I sadly put the shoes down and leave.	నేను బాధగా ఆ షూలను కిందకు పెట్టి వెళ్లిపోయాను		native
+Mb9f7c7b8a057	8	questions	1	One: Lisa wants to buy new shoes.	ఒకటి: లీసా కొత్త షూలు కొనాలి అనుకుంటోంది		native
+M77d0600b5e5d	8	questions	2	Does Lisa want to buy new shoes?	లీసా కొత్త షూలు కొనాలి అనుకుంటోందా?		native
+Mdc91d2829143	8	questions	3	Yes, Lisa wants to buy new shoes.	అవును, లీసా కొత్త షూలు కొనాలి అనుకుంటోంది		native
+M14f8f640c1bf	8	questions	4	Two: There are many pretty shoes in the shoe store.	రెండు: ఆ షూల దుకాణంలో ఎన్నో మంచి షూలు ఉన్నాయి		native
+Me0dfe90a2214	8	questions	5	Are there many shoes in the shoe store?	ఆ షూల దుకాణంలో ఎన్నో మంచి షూలు ఉన్నాయా?		native
+Mf74abb7fb7b1	8	questions	6	Yes, there are many pretty shoes in the shoe store.	అవును, ఆ షూల దుకాణంలో ఎన్నో మంచి షూలు ఉన్నాయి		native
+Mee7786b1a4ba	8	questions	7	Three: Lisa tries on a blue and a black pair of shoes.	మూడు: లీసా ఒక జత నీలం రంగు షూలను, ఒక జత నలుపు రంగు షూలను వేసుకుని చూసింది		native
+M79ba349f7720	8	questions	8	Does Lisa try on two pairs of shoes?	లీసా రెండు జతల షూలను వేసుకుని చూసిందా?		native
+M4082487d6eaf	8	questions	9	Yes, Lisa tries on two pairs of shoes.	అవును, లీసా రెండు జతల షూలను వేసుకుని చూసింది		native
+M0efc0bb58474	8	questions	10	She tries on a blue and a black pair.	ఆమె ఒక జత నీలం రంగు షూలను, ఒక జత నలుపు రంగు షూలను వేసుకుని చూసింది		native
+M0623bd7a7983	8	questions	11	Four: First, Lisa tries a pair of blue shoes.	నాలుగు: మొదట, లీసా ఒక జత నీలం రంగు షూలను వేసుకుని చూసింది		native
+M612900c411cf	8	questions	12	Does Lisa try a pair of red shoes first?	లీసా మొదట ఎరుపు రంగు షూలను వేసుకుని చూసిందా?		native
+Maa3ff726e56f	8	questions	13	No, Lisa does not try a pair of red shoes.	కాదు, లీసా ఎరుపు రంగు షూలను వేసుకోలేదు		native
+Mdea47018ffed	8	questions	14	She tries a pair of blue shoes.	ఆమె ఒక జత నీలం రంగు షూలను వేసుకుని చూసింది		native
+Mce302cbe6c7a	8	questions	15	Five: The blue shoes are too tight.	ఐదు: నీలం రంగు షూలు చాలా టైట్ గా ఉన్నాయి		native
+M47f3b0ba133c	8	questions	16	Are the blue shoes comfortable?	నీలం రంగు షూలు సౌకర్యంగా ఉన్నాయా?		native
+M38ccc77e0365	8	questions	17	No, the blue shoes are not comfortable.	కాదు, నీలం రంగు షూలు సౌకర్యంగా లేవు		native
+Mb295ed4d0ea7	8	questions	18	They are too tight.	అవి చాలా టైట్ గా ఉన్నాయి.		native
+M032de294833b	8	questions	19	Six: The black shoes are very comfortable.	ఆరు: నలుపు రంగు షూలు చాలా సౌకర్యంగా ఉన్నాయి		native
+Mbaec38d48384	8	questions	20	Are the black shoes comfortable?	నలుపు రంగు షూలు చాలా సౌకర్యంగా ఉన్నాయా?		native
+M07814daf94f5	8	questions	21	Yes, the black shoes are very comfortable.	అవును, నలుపు రంగు షూలు చాలా సౌకర్యంగా ఉన్నాయి		native
+M1bcb73f8341f	8	questions	22	Seven: The black shoes are four hundred and fifty dollars.	ఏడు: నలుపు రంగు షూల ధర నాలుగు వందల యాభై డాలర్లు		native
+M91a90dcb3fe8	8	questions	23	Are the black shoes expensive?	నలుపు రంగు షూలు చాలా ఖరీదైనవా?		native
+M24c17cc19219	8	questions	24	Yes, the black shoes are expensive.	అవును, నలుపు రంగు షూలు చాలా ఖరీదైనవి		native
+Maba697dd015b	8	questions	25	They are four hundred and fifty dollars.	వాటి ధర నాలుగు వందల యాభై డాలర్లు		native
+M7323cb40a649	8	questions	26	Eight: Lisa puts down the shoes and leaves the store.	ఎనిమిది: లీసా ఆ షూలను కిందకు పెట్టి, దుకాణం నుండి వెళ్ళిపోయింది		native
+Ma9a6422738b9	8	questions	27	Does Lisa buy the shoes?	లీసా షూలను కొన్నదా?		native
+M8924d40fd969	8	questions	28	No, Lisa does not buy the shoes.	లేదు, లీసా షూలను కొనలేదు		native
+Md5331c73467c	8	questions	29	She puts them down and leaves the store.	ఆమె ఆ షూలను కిందకు పెట్టి, దుకాణం నుండి వెళ్ళిపోయింది		native

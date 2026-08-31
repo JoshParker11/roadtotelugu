@@ -1,45 +1,45 @@
 guid	num	part	seq	en	te	notes	status
 Mae2fcd80e6ab	7	meta	1	Story Seven - James in the Office			todo
-Me35d761ad098	7	meta	2	Here is the same story told in a different way.	ఇదే కథను ఇప్పుడు వేరే విధంగా చెప్తున్నాను.		draft
-M1d59e95edc36	7	story	1	James works in an office.			todo
-M2049844ad725	7	story	2	He is very busy every day.			todo
-M65fae952cf36	7	story	3	He has many meetings with his customers.			todo
-M487e6850a5f3	7	story	4	James does not like these meetings.			todo
-M4c23f3a7efc3	7	story	5	He thinks they are very boring.			todo
-Md01de9cd1480	7	story	6	Some customers are friendly to James.			todo
-Ma923edb76519	7	story	7	Some customers are not nice, though.			todo
-M140564b292fe	7	story	8	James takes long lunch breaks.			todo
-Mac48ede3581e	7	story	9	He can go home at five.			todo
-M085190c727ce	7	story	10	He waits every day for five to come.			todo
-M71afdc88f645	7	retell	1	I work in an office.			todo
-Md9d6fe753b51	7	retell	2	I am very busy every day.			todo
-M8ca364fb9547	7	retell	3	I have many meetings with my customers.			todo
-M992af046c94d	7	retell	4	I do not like these meetings.			todo
-M5e7609e0f06b	7	retell	5	I think they are very boring.			todo
-M4ac79fb19e63	7	retell	6	Some customers are friendly to me.			todo
-Mc5778712b868	7	retell	7	Some customers are not nice, though.			todo
-M4a6944980e04	7	retell	8	I take long lunch breaks.			todo
-Mb9a825c51b30	7	retell	9	I can go home at five.			todo
-M9cc2913e57d7	7	retell	10	I wait every day for five to come.			todo
-M1ec3d10c213b	7	questions	1	One: James works in an office.			todo
-Mab1851287176	7	questions	2	Does James work at a school?			todo
-M78a47cc92a67	7	questions	3	No, James works in an office.			todo
-M2ecf837f1a43	7	questions	4	Two: James is very busy every day.			todo
-Md455a1980741	7	questions	5	Is James very busy?			todo
-M0f73ad055ff7	7	questions	6	Yes, James is very busy every day.			todo
-M8b647f23a4bc	7	questions	7	Three: James has many meetings with his customers.			todo
-M7ec96a75c858	7	questions	8	Does James have a few meetings?			todo
-Ma443c0ea0b79	7	questions	9	No, James has many meetings with his customers.			todo
-M3dd487b29236	7	questions	10	Four: James thinks the meetings are boring.			todo
-M2e772bf4841b	7	questions	11	Does James think the meetings are boring?			todo
-M9b0e85b3a1c5	7	questions	12	Yes, James thinks the meetings are boring.			todo
-M77c00c85dd38	7	questions	13	Five: Some of the customers are friendly.			todo
-M48331453b7ae	7	questions	14	Are all the customers friendly?			todo
-M38149392d3c4	7	questions	15	No, some of the customers are friendly.			todo
-Ma369369953e4	7	questions	16	Six: James takes long lunch breaks.			todo
-M69cc47ab15ba	7	questions	17	Does James take short lunch breaks?			todo
-M1886460a1de1	7	questions	18	No, he does not take short breaks.			todo
-Mad66469f1dbd	7	questions	19	He takes long lunch breaks.			todo
-M6b4d8abe9603	7	questions	20	Seven: James can go home at five.			todo
-Ma7f10cb65670	7	questions	21	Can James go home at four?			todo
-Mc09054b43a9d	7	questions	22	No, he can go home at five.			todo
+Me35d761ad098	7	meta	2	Here is the same story told in a different way.	ఇదే కథ మరో విధంగా చెప్పబడింది.		native
+M1d59e95edc36	7	story	1	James works in an office.	జేమ్స్ ఆఫీస్ లో పని చేస్తాడు		native
+M2049844ad725	7	story	2	He is very busy every day.	అతను ప్రతిరోజూ బిజీగా ఉంటాడు		native
+M65fae952cf36	7	story	3	He has many meetings with his customers.	కస్టమర్లతో అతనికి చాలా సమావేశాలుంటాయి		native
+M487e6850a5f3	7	story	4	James does not like these meetings.	జేమ్స్ కి ఈ సమావేశాలంటే ఇష్టం లేదు		native
+M4c23f3a7efc3	7	story	5	He thinks they are very boring.	అవి అతనికి చాలా బోరింగ్గా ఉంటాయి		native
+Md01de9cd1480	7	story	6	Some customers are friendly to James.	కొంతమంది కస్టమర్లు జేమ్స్ తో సరదాగా ఉంటారు		native
+Ma923edb76519	7	story	7	Some customers are not nice, though.	మరి కొంతమంది కస్టమర్లు అంత మంచిగా ఉండరు		native
+M140564b292fe	7	story	8	James takes long lunch breaks.	జేమ్స్ ఎక్కువ సేపు లంచ్ బ్రేక్స్ తీసుకుంటాడు		native
+Mac48ede3581e	7	story	9	He can go home at five.	అతను ఐదు గంటలకు ఇంటికి వెళ్లొచ్చు		native
+M085190c727ce	7	story	10	He waits every day for five to come.	ఐదు గంటలు ఎప్పుడు అవుతుందా అని అతను ప్రతిరోజూ ఎదురుచూస్తూ ఉంటాడు		native
+M71afdc88f645	7	retell	1	I work in an office.	నేను ఒక ఆఫీస్ లో పని చేస్తాను		native
+Md9d6fe753b51	7	retell	2	I am very busy every day.	నేను ప్రతిరోజూ బిజీగా ఉంటాను		native
+M8ca364fb9547	7	retell	3	I have many meetings with my customers.	నా కస్టమర్లతో నాకు చాలా సమావేశాలున్నాయి		native
+M992af046c94d	7	retell	4	I do not like these meetings.	నాకు ఈ సమావేశాలంటే ఇష్టం లేదు		native
+M5e7609e0f06b	7	retell	5	I think they are very boring.	అవి నాకు చాలా బోరింగ్గా ఉంటాయి		native
+M4ac79fb19e63	7	retell	6	Some customers are friendly to me.	కొంతమంది కస్టమర్లు నాతో సరదాగా ఉంటారు		native
+Mc5778712b868	7	retell	7	Some customers are not nice, though.	మరి కొంతమంది కస్టమర్లు అంత మంచిగా ఉండరు		native
+M4a6944980e04	7	retell	8	I take long lunch breaks.	నేను చాలా సేపు లంచ్ బ్రేకులు తీసుకుంటాను		native
+Mb9a825c51b30	7	retell	9	I can go home at five.	నేను ఐదు గంటలకు ఇంటికి వెళ్లొచ్చు		native
+M9cc2913e57d7	7	retell	10	I wait every day for five to come.	ఐదు గంటలు ఎప్పుడు అవుతుందా అని నేను ప్రతిరోజూ ఎదురుచూస్తూ ఉంటాను		native
+M1ec3d10c213b	7	questions	1	One: James works in an office.	ఒకటి: జేమ్స్ ఒక ఆఫీస్ లో పని చేస్తాడు		native
+Mab1851287176	7	questions	2	Does James work at a school?	జేమ్స్ స్కూల్లో పని చేస్తాడా?		native
+M78a47cc92a67	7	questions	3	No, James works in an office.	కాదు, జేమ్స్ ఒక ఆఫీస్ లో పని చేస్తాడు		native
+M2ecf837f1a43	7	questions	4	Two: James is very busy every day.	రెండు: జేమ్స్ ప్రతిరోజూ బిజీగా ఉంటాడు		native
+Md455a1980741	7	questions	5	Is James very busy?	జేమ్స్ చాలా బిజీగా ఉంటాడా?		native
+M0f73ad055ff7	7	questions	6	Yes, James is very busy every day.	అవును, జేమ్స్ ప్రతిరోజూ బిజీగా ఉంటాడు		native
+M8b647f23a4bc	7	questions	7	Three: James has many meetings with his customers.	మూడు: జేమ్స్ కి కస్టమర్లతో చాలా సమావేశాలుంటాయి		native
+M7ec96a75c858	7	questions	8	Does James have a few meetings?	జేమ్స్ కి తక్కువ సమావేశాలుంటాయా?		native
+Ma443c0ea0b79	7	questions	9	No, James has many meetings with his customers.	కాదు, జేమ్స్ కి కస్టమర్లతో చాలా సమావేశాలుంటాయి		native
+M3dd487b29236	7	questions	10	Four: James thinks the meetings are boring.	నాలుగు: సమావేశాలు బోరింగ్గా ఉంటాయని జేమ్స్ అనుకుంటాడు		native
+M2e772bf4841b	7	questions	11	Does James think the meetings are boring?	సమావేశాలు బోరింగ్గా ఉంటాయని జేమ్స్ అనుకుంటాడా?		native
+M9b0e85b3a1c5	7	questions	12	Yes, James thinks the meetings are boring.	అవును, సమావేశాలు బోరింగ్గా ఉంటాయని జేమ్స్ అనుకుంటాడు		native
+M77c00c85dd38	7	questions	13	Five: Some of the customers are friendly.	ఐదు: కొంతమంది కస్టమర్లు సరదాగా ఉంటారు		native
+M48331453b7ae	7	questions	14	Are all the customers friendly?	కస్టమర్లందరూ సరదాగా ఉంటారా?		native
+M38149392d3c4	7	questions	15	No, some of the customers are friendly.	లేదు, కొంతమంది కస్టమర్లు సరదాగా ఉంటారు		native
+Ma369369953e4	7	questions	16	Six: James takes long lunch breaks.	ఆరు: జేమ్స్ చాలా సేపు లంచ్ బ్రేక్స్ తీసుకుంటాడు		native
+M69cc47ab15ba	7	questions	17	Does James take short lunch breaks?	జేమ్స్ కొద్ది సేపు లంచ్ బ్రేక్స్ తీసుకుంటాడా?		native
+M1886460a1de1	7	questions	18	No, he does not take short breaks.	కాదు, అతను కొద్దిసేపు బ్రేక్స్ తీసుకోడు		native
+Mad66469f1dbd	7	questions	19	He takes long lunch breaks.	అతను చాలా సేపు లంచ్ బ్రేక్స్ తీసుకుంటాడు		native
+M6b4d8abe9603	7	questions	20	Seven: James can go home at five.	ఏడు: జేమ్స్ ఐదు గంటలకు ఇంటికి వెళ్లొచ్చు		native
+Ma7f10cb65670	7	questions	21	Can James go home at four?	జేమ్స్ నాలుగు గంటలకు ఇంటికి వెళ్లొచ్చా?		native
+Mc09054b43a9d	7	questions	22	No, he can go home at five.	లేదు, అతను ఐదు గంటలకు ఇంటికి వెళ్లొచ్చు		native
