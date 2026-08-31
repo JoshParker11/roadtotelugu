@@ -102,7 +102,13 @@ def requests_for(items):
             'custom_id': l['g'],
             'params': {
                 'model': MODEL,
-                'max_tokens': 200,
+                # NOT 200. Thinking is ON BY DEFAULT on Opus 5 — unlike 4.7/4.8 — and
+                # thinking tokens count against max_tokens. At 200 the model can spend the
+                # whole budget reasoning and hit the cap before emitting a single character
+                # of JSON: stop_reason 'max_tokens', nothing parseable, and the word silently
+                # dropped. Output is billed on tokens actually produced, so a high ceiling on
+                # a task that answers in twenty tokens costs nothing and removes the failure.
+                'max_tokens': 2000,
                 'system': SYSTEM,
                 'output_config': {'format': SCHEMA, 'effort': 'low'},
                 'messages': [{'role': 'user', 'content':
@@ -182,6 +188,14 @@ def describe(batch):
     return f'{batch.processing_status} · {pct} · ' + ', '.join(bits)
 
 
+def cmd_cancel(args):
+    """Stop a running batch. Only completed requests are billed, so cancelling early is cheap."""
+    bid = resolve_id(args.cancel)
+    b = client().messages.batches.cancel(bid)
+    print(f'{bid}\n  {describe(b)}')
+    print('  cancelling — requests already finished are still billed and still collectable')
+
+
 def cmd_status(args):
     """Where the batch is, without touching vocab.tsv."""
     bid = resolve_id(args.status)
@@ -222,14 +236,21 @@ def cmd_collect(args):
     for l in json.loads(s[i:s.index('\n', i)].rstrip(';'))['lex']:
         by_te[l['g']] = l['te']
 
-    rows, errors = [], 0
+    rows, errors, truncated = [], 0, 0
     # Results come back in ANY order — key on custom_id, never on position.
     for res in c.messages.batches.results(args.collect):
         if res.result.type != 'succeeded':
             errors += 1
             continue
+        msg = res.result.message
+        # Counted separately from a parse failure: hitting the cap means the answer was cut
+        # off, which is a settings problem to fix and rerun, not a word that cannot be glossed.
+        if msg.stop_reason == 'max_tokens':
+            truncated += 1
+            continue
+        text = ''.join(b.text for b in msg.content if getattr(b, 'type', '') == 'text')
         try:
-            payload = json.loads(res.result.message.content[0].text)
+            payload = json.loads(text)
         except Exception:
             errors += 1
             continue
@@ -252,7 +273,9 @@ def cmd_collect(args):
         w.writeheader(); w.writerows(existing + added)
     print(f'{len(added)} new cards ({sum(1 for r in added if r["status"] == "ocr-junk")} '
           f'marked ocr-junk), {len(rows) - len(added)} already had a hand-written card, '
-          f'{errors} failed')
+          f'{errors} unparseable, {truncated} cut off at max_tokens')
+    if truncated:
+        print(f'  {truncated} hit the token cap — raise max_tokens and rerun those')
     print('then: python3 tools/build_ic_reader.py --all')
 
 
@@ -267,11 +290,14 @@ def main():
                     help='how far along the batch is; touches nothing')
     ap.add_argument('--wait', nargs='?', const='', metavar='BATCH_ID',
                     help='poll every 30s until it ends, then collect')
+    ap.add_argument('--cancel', nargs='?', const='', metavar='BATCH_ID')
     ap.add_argument('--limit', type=int, default=0)
     ap.add_argument('--model', default=MODEL)
     args = ap.parse_args()
     MODEL = args.model
-    if args.status is not None:
+    if args.cancel is not None:
+        cmd_cancel(args)
+    elif args.status is not None:
         cmd_status(args)
     elif args.wait is not None:
         cmd_wait(args)
