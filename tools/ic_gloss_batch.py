@@ -155,6 +155,57 @@ def cmd_submit(args):
     print('  python3 tools/ic_gloss_batch.py --collect')
 
 
+def resolve_id(given):
+    if given:
+        return given
+    if not os.path.exists(BATCH_ID):
+        sys.exit('no remembered batch id — pass one explicitly')
+    return open(BATCH_ID, encoding='utf-8').read().strip()
+
+
+def describe(batch):
+    c = getattr(batch, 'request_counts', None)
+    if not c:
+        return batch.processing_status
+    done = c.succeeded + c.errored + c.canceled + c.expired
+    total = done + c.processing
+    pct = f'{done / total:.0%}' if total else '—'
+    bits = [f'{c.succeeded} done']
+    if c.errored:
+        bits.append(f'{c.errored} errored')
+    if c.expired:
+        bits.append(f'{c.expired} expired')
+    if c.canceled:
+        bits.append(f'{c.canceled} canceled')
+    if c.processing:
+        bits.append(f'{c.processing} still running')
+    return f'{batch.processing_status} · {pct} · ' + ', '.join(bits)
+
+
+def cmd_status(args):
+    """Where the batch is, without touching vocab.tsv."""
+    bid = resolve_id(args.status)
+    b = client().messages.batches.retrieve(bid)
+    print(f'{bid}\n  {describe(b)}')
+    if b.processing_status == 'ended':
+        print('\nready — python3 tools/ic_gloss_batch.py --collect')
+
+
+def cmd_wait(args):
+    """Poll until it ends, then ingest. The one command you can walk away from."""
+    import time
+    bid = resolve_id(args.wait)
+    c = client()
+    while True:
+        b = c.messages.batches.retrieve(bid)
+        print(f'  {describe(b)}', flush=True)
+        if b.processing_status == 'ended':
+            break
+        time.sleep(30)
+    args.collect = bid
+    cmd_collect(args)
+
+
 def cmd_collect(args):
     c = client()
     batch = c.messages.batches.retrieve(args.collect)
@@ -212,11 +263,19 @@ def main():
     ap.add_argument('--submit', action='store_true')
     ap.add_argument('--collect', nargs='?', const='', metavar='BATCH_ID',
                     help='ingest results; the id is remembered from --submit')
+    ap.add_argument('--status', nargs='?', const='', metavar='BATCH_ID',
+                    help='how far along the batch is; touches nothing')
+    ap.add_argument('--wait', nargs='?', const='', metavar='BATCH_ID',
+                    help='poll every 30s until it ends, then collect')
     ap.add_argument('--limit', type=int, default=0)
     ap.add_argument('--model', default=MODEL)
     args = ap.parse_args()
     MODEL = args.model
-    if args.collect is not None:
+    if args.status is not None:
+        cmd_status(args)
+    elif args.wait is not None:
+        cmd_wait(args)
+    elif args.collect is not None:
         if not args.collect:
             if not os.path.exists(BATCH_ID):
                 sys.exit('no remembered batch id — pass it: --collect <batch_id>')
