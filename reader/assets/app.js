@@ -1110,6 +1110,27 @@
     openWord(LEX[ln.t[+el.dataset.t][2]].g, ln);
   }
 
+  /* One word to the right, and on to the next sentence at the end of this one.
+
+     RATING IS A CURSOR, NOT A SEARCH. Rating used to call nextBlue, which looks for the next
+     word still needing a decision — so re-rating the first word of a sentence whose words were
+     all already rated found nothing nearby and leapt several sentences ahead. Correct by its
+     own rule and useless in practice: you were revising this sentence, not looking for work.
+
+     Skipping ahead is still available and still wanted — it is Tab / B, which is where a
+     search belongs. Two gestures, one each. */
+  function nextWord() {
+    if (!sview) return nextBlue();
+    const spans = $$('.sview .w');
+    const at = spans.findIndex(s => s.classList.contains('focus'));
+    if (at >= 0 && at + 1 < spans.length) return focusWord(spans[at + 1]);
+    if (svIdx + 1 >= cur.lines.length) return toast('End of the lesson.');
+    svIdx += 1;
+    renderStory(); renderPanel();
+    const first = $$('.sview .w')[0];
+    if (first) focusWord(first);
+  }
+
   function nextBlue() {
     const spans = $$((sview ? '.sview' : '#readtext') + ' .w');
     const at = spans.findIndex(s => s.classList.contains('focus'));
@@ -1255,7 +1276,7 @@
         e.preventDefault();
         WordLevels.set(panel.g, v);
         repaintTokens(); renderTop();
-        if (view === 'story') nextBlue(); else renderWordCard();
+        if (view === 'story') nextWord(); else renderWordCard();
         return;
       }
       if (e.key === '0') { e.preventDefault(); WordLevels.set(panel.g, null); repaintTokens(); renderWordCard(); renderTop(); return; }
