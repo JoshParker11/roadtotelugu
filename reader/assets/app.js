@@ -186,15 +186,23 @@
   }
 
   /* ---------- library ---------- */
+  /* Four buckets, not three, because level 1 is blue now.
+     The bar used to be known / levels-1-to-4 / untouched, with the middle segment painted
+     var(--l1). When level 1 became blue to match LingQ, --l1 turned into the same blue as
+     --new-b and the middle segment stopped being visible against the last one — so a lesson
+     read as only "known" and "new", with no way to see how much had been tried at all.
+     Level 1 keeps its own segment in the solid blue, so touched and untouched stay apart. */
   function storyStats(s) {
-    let known = 0, yellow = 0, blue = 0;
+    let known = 0, learning = 0, first = 0, blue = 0;
     s.words.forEach(i => {
       const e = effOf(LEX[i].g);
       if (e === 'k' || e === 'x') known++;
       else if (e === null) blue++;
-      else yellow++;
+      else if (e === '1') first++;
+      else learning++;
     });
-    return { known, yellow, blue, total: s.words.length };
+    return { known, learning, first, blue, total: s.words.length,
+             tried: known + learning + first };
   }
 
   function renderLibrary() {
@@ -202,15 +210,18 @@
     const cards = STORIES.map(s => {
       const st = storyStats(s);
       const pct = st.total ? Math.round(st.known / st.total * 100) : 0;
+      // "seen" answers the question the bar is for: how much of this have I touched at all.
+      const tried = st.total ? Math.round(st.tried / st.total * 100) : 0;
       return `<button class="storycard" data-open="${s.id}">
         <span class="snum">${s.num}</span>
         <span class="meta"><b>${esc(disp(s.title.te) || s.title.en)}</b>
           <span>${esc(s.src || '')} · ${s.lines.length} ${s.src && s.src.indexOf('Intensive') >= 0 ? 'turns' : 'sentences'}${s.dur ? ' · ' + clock(s.dur) : ''}</span></span>
         <span class="wordbar"><span class="track">
             <i style="flex:${st.known};background:var(--green)"></i>
-            <i style="flex:${st.yellow};background:var(--l1)"></i>
+            <i style="flex:${st.learning};background:var(--amber)"></i>
+            <i style="flex:${st.first};background:var(--blue)"></i>
             <i style="flex:${st.blue};background:var(--new-b)"></i>
-          </span><small>${pct}% known · ${st.blue} new</small></span>
+          </span><small>${pct}% known · ${tried}% seen · ${st.blue} new</small></span>
         ${WordLevels.isRead(s.num) ? '<span class="done">✓</span>' : ''}
       </button>`;
     }).join('');
