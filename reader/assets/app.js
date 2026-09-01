@@ -1092,18 +1092,43 @@
   }));
 
   /* Tab: jump to the next word not yet decided on — LingQ's core reading shortcut. */
+  /* Move to the next word still waiting on a decision, and open it.
+
+     THE CONTAINER IS NOT ALWAYS #readtext. Sentence view renders into .sview, so this used to
+     find no spans there and return without moving — rating a word by keyboard in sentence view
+     left the focus where it was, which is exactly where you want it to advance.
+
+     In sentence view it walks the sentence in front of you and then steps to the next sentence
+     that still has one, so a whole lesson can be cleared without touching the mouse. It does
+     not wrap: reaching the end should say so rather than quietly starting again and looking
+     like nothing happened. */
+  function focusWord(el) {
+    $$('#pane .w.focus').forEach(s => s.classList.remove('focus'));
+    el.classList.add('focus');
+    el.scrollIntoView({ block: 'center', behavior: 'smooth' });
+    const ln = cur.lines[+el.dataset.l];
+    openWord(LEX[ln.t[+el.dataset.t][2]].g, ln);
+  }
+
   function nextBlue() {
-    const spans = $$('#readtext .w');
-    if (!spans.length) return;
-    const cur_ = spans.findIndex(s => s.classList.contains('focus'));
-    for (let i = 1; i <= spans.length; i++) {
-      const el = spans[(cur_ + i) % spans.length];
-      if (el.classList.contains('new')) {
-        spans.forEach(s => s.classList.remove('focus'));
-        el.classList.add('focus');
-        el.scrollIntoView({ block: 'center', behavior: 'smooth' });
-        const tok = cur.lines[+el.dataset.l].t[+el.dataset.t];
-        openWord(LEX[tok[2]].g, cur.lines[+el.dataset.l]);
+    const spans = $$((sview ? '.sview' : '#readtext') + ' .w');
+    const at = spans.findIndex(s => s.classList.contains('focus'));
+    for (let i = at + 1; i < spans.length; i++) {
+      if (spans[i].classList.contains('new')) return focusWord(spans[i]);
+    }
+    if (!sview) {
+      // The reading view shows the whole lesson, so wrapping is how you catch what you skipped.
+      for (let i = 0; i <= at && i < spans.length; i++) {
+        if (spans[i].classList.contains('new')) return focusWord(spans[i]);
+      }
+      return toast('No blue words left in this lesson.');
+    }
+    for (let j = svIdx + 1; j < cur.lines.length; j++) {
+      if (cur.lines[j].t.some(t => t[2] >= 0 && effOf(LEX[t[2]].g) === null)) {
+        svIdx = j;
+        renderStory(); renderPanel();
+        const next = $$('.sview .w').find(el => el.classList.contains('new'));
+        if (next) focusWord(next);
         return;
       }
     }
@@ -1216,7 +1241,9 @@
     if (e.key === '+' || e.key === '=') { e.preventDefault(); bumpFont(1); return; }
     if (e.key === '-') { e.preventDefault(); bumpFont(-1); return; }
 
-    if ((e.key === 'Tab' || e.key.toLowerCase() === 'b') && view === 'story' && !sview) {
+    // sview is no longer excluded: nextBlue walks the sentence and rolls to the next one, so
+    // Tab is the same "go to the next word that needs a decision" gesture in both views.
+    if ((e.key === 'Tab' || e.key.toLowerCase() === 'b') && view === 'story') {
       e.preventDefault(); nextBlue(); return;
     }
 
