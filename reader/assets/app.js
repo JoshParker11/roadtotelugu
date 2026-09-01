@@ -122,7 +122,19 @@
     equivCache.set(l.g, out);
     return out;
   }
+  /* Every place a meaning is shown, in one order — your own saved note, the baked gloss, the
+     registry card, the stem-and-suffix breakdown, then the verb's dictionary form.
+
+     THE LISTS AND THE CARD USED TO DISAGREE. This knew about `en` and verb forms but not about
+     `sn` (a registry definition) or `p` (a decomposition), while the word card rendered both in
+     sections of their own. So 230 of the mini stories' 444 words showed a full definition when
+     clicked and nothing at all in the sentence list, the lesson list and the vocabulary table —
+     the words most worth reviewing, since a registry card is written for exactly the words
+     nothing else could gloss. Mirrors build_ms_reader.best_gloss so the reader and the Anki
+     export cannot disagree either. */
   const glossOf = l => WordLevels.meaning(l.g) || l.en ||
+    (l.sn && l.sn.length ? l.sn.map(x => x.g).filter(Boolean).join('; ') : '') ||
+    (l.p && l.p.length ? l.p.map(x => `${x[0]} (${x[1]})`).join(' + ') : '') ||
     (l.head ? (verbEquiv(l) ? `“${verbEquiv(l)}” — ${FORMLABEL[l.form] || l.form} of ${l.head[0]}`
                             : `${FORMLABEL[l.form] || l.form || 'form'} of ${l.head[0]} — ${l.head[1]}`) : '');
 
