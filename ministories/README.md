@@ -208,8 +208,17 @@ no personal key to extract; that's by design, not a gap. The cost is one manual 
 Anki GUI per batch instead of an unattended script:
 
 ```bash
-python3 tools/ms_hypertts_export.py            # -> ministories/hypertts_export.tsv
+python3 tools/ms_hypertts_export.py            # -> ministories/hypertts_sentences.tsv
+python3 tools/ms_hypertts_export.py --words    # -> ministories/hypertts_words.tsv
 ```
+
+Sentences and words are separate files and separate Anki batches — they are keyed by different
+id spaces (segment guid vs word guid) and must not share a note type. They were one file once,
+and generating either quietly destroyed the other.
+
+**Only what needs a clip is exported.** A segment whose audio was made from a translation that
+has since changed counts as missing, not done — see `ministories/audio_manifest.tsv`. Pass
+`--all` to export everything regardless.
 
 1. In Anki, **Import File** → the exported TSV → create/target a note type with four fields, in
    this order: `guid`, `telugu`, `audio`, `english`. `guid` and `telugu` are Anki's Front/Back
@@ -221,7 +230,8 @@ python3 tools/ms_hypertts_export.py            # -> ministories/hypertts_export.
    it on the whole imported batch.
 3. **File → Export → Notes in Plain Text**, same note type, all four fields, tab-separated.
 4. ```bash
-   python3 tools/ms_hypertts_import.py path/to/that/export.txt
+   python3 tools/ms_hypertts_import.py path/to/that/export.txt          # sentences
+   python3 tools/ms_hypertts_import.py path/to/that/export.txt --words  # word clips
    ```
    Copies each `[sound:...]` file out of Anki's `collection.media` into
    `ministories/audio/<guid>.mp3` by matching the `guid` column — Anki's media folder is never
@@ -229,6 +239,19 @@ python3 tools/ms_hypertts_export.py            # -> ministories/hypertts_export.
 
 Delete the scratch Anki deck once the audio is copied out; it has served its purpose and the
 guid-keyed files in `ministories/audio/` are the thing that matters from here on.
+
+**The Intensive Course rides the same path**, with its own tools and its own destination:
+
+```bash
+python3 tools/ic_hypertts_export.py --lessons 1-6 --verified   # -> intensive/hypertts_sentences.tsv
+python3 tools/ic_hypertts_export.py --words --limit 500        # -> intensive/hypertts_words.tsv
+python3 tools/ms_hypertts_import.py <export.txt> --dest intensive/audio
+```
+
+`--dest` is not optional there: without it the clips land in `ministories/audio/` and neither
+corpus finds them. `--verified` restricts the export to turns whose Telugu came from the book's
+own romanization; the rest is OCR at ~93%, and voicing a line nobody has read means paying to
+synthesize a wrong sentence and then hearing it as though it were right.
 
 ## Language Reactor import
 
