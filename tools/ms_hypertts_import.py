@@ -61,6 +61,26 @@ def find_media():
     return candidates[0]
 
 
+def manifest_path(base):
+    """The manifest sits BESIDE the audio directory, never inside it.
+
+    One function so the reader and the writer cannot disagree about where it lives — they did,
+    which made every clip look current because the file the check opened was never there.
+    """
+    return os.path.join(os.path.dirname(os.path.normpath(base)), 'audio_manifest.tsv')
+
+
+def _stale(dst, guid, telugu, base):
+    """True when the clip on disk was made from different text than this row carries."""
+    man = manifest_path(base)
+    if not os.path.exists(man):
+        return False                     # nothing recorded — assume what is there is current
+    with open(man, encoding='utf-8') as f:
+        have = {r['guid']: r['te_sha1'] for r in csv.DictReader(f, delimiter='\t')}
+    want = hashlib.sha1((telugu or '').strip().encode('utf-8')).hexdigest()[:16]
+    return have.get(guid) != want
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('exported', help='the file Anki wrote via Export Notes > Plain Text')
@@ -92,7 +112,6 @@ def main():
             bad_row += 1
             continue
         guid, _telugu, audio = row[0].strip(), row[1], row[2]
-        voiced_text[guid] = _telugu
         if not GUID.match(guid):
             foreign += 1     # not one of ours — see the GUID comment above
             continue
@@ -106,10 +125,18 @@ def main():
             print(f'MISSING  {guid}  expected {m.group(1)} in collection.media, not found')
             missing_file += 1
             continue
-        if os.path.exists(dst) and not args.force:
+        # STALE IS NOT DONE. Skipping on file existence alone is what left 291 segments
+        # holding audio of the previous translation while the export had correctly asked for
+        # new clips: the file was there, so the import declined to replace it. A clip counts
+        # as present only if the manifest says it was made from the text we are importing now.
+        if os.path.exists(dst) and not args.force and not _stale(dst, guid, _telugu, base):
             skipped += 1
             continue
         shutil.copyfile(src, dst)
+        # Recorded HERE, after the copy — not when the row was parsed. Recording on parse
+        # marked skipped rows as voiced with text their file does not contain, which made the
+        # manifest assert the opposite of the truth for 291 segments.
+        voiced_text[guid] = _telugu
         copied += 1
 
     print(f'-> {out_dir}')
@@ -119,8 +146,7 @@ def main():
     # each clip was made from is what lets build_ms_reader withhold audio that has gone stale
     # instead of playing the previous wording under the new text.
     if copied and not args.words:
-        man = os.path.join(base, 'audio_manifest.tsv') if args.dest else \
-              os.path.join(os.path.dirname(AUDIO), 'audio_manifest.tsv')
+        man = manifest_path(base)
         prev = {}
         if os.path.exists(man):
             with open(man, encoding='utf-8') as f:

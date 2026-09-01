@@ -3,174 +3,174 @@
 Story Four: My Daughter is a Good Student
 
 2
-00:00:04,912 --> 00:00:07,744
+00:00:04,912 --> 00:00:07,720
 My daughter goes to school every day.
 
 3
-00:00:08,344 --> 00:00:10,672
+00:00:08,320 --> 00:00:10,672
 She likes school very much.
 
 4
-00:00:11,272 --> 00:00:13,624
+00:00:11,272 --> 00:00:13,576
 She is a good student at school.
 
 5
-00:00:14,224 --> 00:00:16,888
+00:00:14,176 --> 00:00:16,696
 The teachers like my daughter a lot.
 
 6
-00:00:17,488 --> 00:00:20,656
+00:00:17,296 --> 00:00:19,984
 My daughter also has many friends.
 
 7
-00:00:21,256 --> 00:00:23,464
+00:00:20,584 --> 00:00:22,288
 Her best friend is Amy.
 
 8
-00:00:24,064 --> 00:00:26,896
+00:00:22,888 --> 00:00:25,672
 Amy likes math and science.
 
 9
-00:00:27,496 --> 00:00:30,664
+00:00:26,272 --> 00:00:29,560
 My daughter likes English and History.
 
 10
-00:00:31,264 --> 00:00:34,576
+00:00:30,160 --> 00:00:33,520
 They help each other with homework.
 
 11
-00:00:35,176 --> 00:00:38,920
+00:00:34,120 --> 00:00:37,672
 They study hard and do well in school.
 
 12
-00:00:40,520 --> 00:00:43,472
+00:00:39,272 --> 00:00:41,840
 Here is the same story told in a different way.
 
 13
-00:00:45,072 --> 00:00:47,544
+00:00:43,440 --> 00:00:45,912
 I go to school every day.
 
 14
-00:00:48,144 --> 00:00:50,448
+00:00:46,512 --> 00:00:48,816
 I like school very much.
 
 15
-00:00:51,048 --> 00:00:53,472
+00:00:49,416 --> 00:00:51,840
 I am a good student at school.
 
 16
-00:00:54,072 --> 00:00:56,568
+00:00:52,440 --> 00:00:54,960
 My teachers like me a lot.
 
 17
-00:00:57,168 --> 00:00:59,880
+00:00:55,560 --> 00:00:58,056
 I also have many friends.
 
 18
-00:01:00,480 --> 00:01:02,688
+00:00:58,656 --> 00:01:00,312
 My best friend is Amy.
 
 19
-00:01:03,288 --> 00:01:06,000
+00:01:00,912 --> 00:01:03,792
 She likes Math and Science.
 
 20
-00:01:06,600 --> 00:01:09,360
+00:01:04,392 --> 00:01:07,296
 I like English and History.
 
 21
-00:01:09,960 --> 00:01:13,296
+00:01:07,896 --> 00:01:11,232
 We help each other with homework.
 
 22
-00:01:13,896 --> 00:01:17,664
+00:01:11,832 --> 00:01:15,336
 We study hard and do well in school.
 
 23
-00:01:19,264 --> 00:01:22,648
+00:01:16,936 --> 00:01:19,840
 One: The daughter goes to school every day.
 
 24
-00:01:23,248 --> 00:01:25,720
+00:01:20,440 --> 00:01:22,840
 Does the daughter go to school every day?
 
 25
-00:01:26,320 --> 00:01:29,488
+00:01:23,440 --> 00:01:26,512
 Yes, she goes to school every day.
 
 26
-00:01:30,088 --> 00:01:32,872
+00:01:27,112 --> 00:01:29,920
 Two: The daughter likes school.
 
 27
-00:01:33,472 --> 00:01:35,560
+00:01:30,520 --> 00:01:32,584
 Does the daughter like school?
 
 28
-00:01:36,160 --> 00:01:38,872
+00:01:33,184 --> 00:01:35,968
 Yes, she likes school.
 
 29
-00:01:39,472 --> 00:01:42,040
+00:01:36,568 --> 00:01:39,136
 Three: The daughter is a good student.
 
 30
-00:01:42,640 --> 00:01:44,488
+00:01:39,736 --> 00:01:41,584
 Is the daughter a bad student?
 
 31
-00:01:45,088 --> 00:01:47,896
+00:01:42,184 --> 00:01:44,992
 No, the daughter is not a bad student.
 
 32
-00:01:48,496 --> 00:01:50,296
+00:01:45,592 --> 00:01:47,656
 She is a good student.
 
 33
-00:01:50,896 --> 00:01:53,896
+00:01:48,256 --> 00:01:51,496
 Four: The teachers like the daughter.
 
 34
-00:01:54,496 --> 00:01:56,632
+00:01:52,096 --> 00:01:54,136
 Do the teachers like the daughter?
 
 35
-00:01:57,232 --> 00:01:59,920
+00:01:54,736 --> 00:01:57,520
 Yes, the teachers like her.
 
 36
-00:02:00,520 --> 00:02:03,904
+00:01:58,120 --> 00:02:00,904
 Five: Her best friend is named Amy.
 
 37
-00:02:04,504 --> 00:02:07,168
+00:02:01,504 --> 00:02:03,760
 Is her best friend named Julie?
 
 38
-00:02:07,768 --> 00:02:10,960
+00:02:04,360 --> 00:02:07,024
 No, her best friend is named Amy.
 
 39
-00:02:11,560 --> 00:02:15,136
+00:02:07,624 --> 00:02:11,224
 Six: Amy likes math and science.
 
 40
-00:02:15,736 --> 00:02:18,616
+00:02:11,824 --> 00:02:14,800
 Does Amy like English and history?
 
 41
-00:02:19,216 --> 00:02:22,576
+00:02:15,400 --> 00:02:18,928
 No, she likes math and science.
 
 42
-00:02:23,176 --> 00:02:27,016
+00:02:19,528 --> 00:02:23,320
 Seven: The daughter and Amy do well in school.
 
 43
-00:02:27,616 --> 00:02:29,944
+00:02:23,920 --> 00:02:26,248
 Does the daughter do well in school?
 
 44
-00:02:30,544 --> 00:02:34,288
+00:02:26,848 --> 00:02:30,616
 Yes, the daughter and Amy do well in school.
 

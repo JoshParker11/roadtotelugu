@@ -3,186 +3,186 @@
 Story Two: Dustin Wants to Take a Vacation
 
 2
-00:00:04,960 --> 00:00:08,968
+00:00:04,960 --> 00:00:08,344
 Dustin is excited about his winter holiday.
 
 3
-00:00:09,568 --> 00:00:12,592
+00:00:08,944 --> 00:00:12,400
 He has some time off this winter.
 
 4
-00:00:13,192 --> 00:00:16,072
+00:00:12,1000 --> 00:00:16,696
 He doesn't have to work for two weeks.
 
 5
-00:00:16,672 --> 00:00:18,976
+00:00:17,296 --> 00:00:20,680
 He wants to go on vacation.
 
 6
-00:00:19,576 --> 00:00:23,008
+00:00:21,280 --> 00:00:24,376
 But, he is not sure where to go.
 
 7
-00:00:23,608 --> 00:00:26,296
+00:00:24,976 --> 00:00:27,712
 He thinks of going to France.
 
 8
-00:00:26,896 --> 00:00:28,936
+00:00:28,312 --> 00:00:31,744
 But France is expensive.
 
 9
-00:00:29,536 --> 00:00:31,864
+00:00:32,344 --> 00:00:34,456
 The airplane tickets cost a lot.
 
 10
-00:00:32,464 --> 00:00:34,888
+00:00:35,056 --> 00:00:38,224
 And Dustin doesn't speak French.
 
 11
-00:00:35,488 --> 00:00:40,624
+00:00:38,824 --> 00:00:44,320
 He decides to stay at home, study, and save money.
 
 12
-00:00:42,224 --> 00:00:45,176
+00:00:45,920 --> 00:00:48,488
 Here is the same story told in a different way.
 
 13
-00:00:46,776 --> 00:00:50,280
+00:00:50,088 --> 00:00:53,232
 I am excited about the winter holiday.
 
 14
-00:00:50,880 --> 00:00:53,856
+00:00:53,832 --> 00:00:57,192
 I have some time off this winter.
 
 15
-00:00:54,456 --> 00:00:57,360
+00:00:57,792 --> 00:01:01,512
 I don't have to work for two weeks.
 
 16
-00:00:57,960 --> 00:01:00,192
+00:01:02,112 --> 00:01:05,448
 I want to go on vacation.
 
 17
-00:01:00,792 --> 00:01:03,456
+00:01:06,048 --> 00:01:08,352
 I am thinking of where to go.
 
 18
-00:01:04,056 --> 00:01:06,312
+00:01:08,952 --> 00:01:11,208
 I want to go to France.
 
 19
-00:01:06,912 --> 00:01:08,952
+00:01:11,808 --> 00:01:15,240
 But France is expensive.
 
 20
-00:01:09,552 --> 00:01:11,880
+00:01:15,840 --> 00:01:17,952
 The airplane tickets cost a lot.
 
 21
-00:01:12,480 --> 00:01:14,664
+00:01:18,552 --> 00:01:21,192
 And I don't speak French.
 
 22
-00:01:15,264 --> 00:01:20,784
+00:01:21,792 --> 00:01:26,928
 I decide to stay home, study French, and save money.
 
 23
-00:01:22,384 --> 00:01:27,184
+00:01:28,528 --> 00:01:32,680
 One: Dustin is excited about his winter holidays.
 
 24
-00:01:27,784 --> 00:01:29,752
+00:01:33,280 --> 00:01:35,248
 Is Dustin excited?
 
 25
-00:01:30,352 --> 00:01:35,032
+00:01:35,848 --> 00:01:40,048
 Yes, Dustin is excited about his winter holidays.
 
 26
-00:01:35,632 --> 00:01:38,992
+00:01:40,648 --> 00:01:44,728
 Two: Dustin has time off in the winter.
 
 27
-00:01:39,592 --> 00:01:42,568
+00:01:45,328 --> 00:01:48,832
 Does Dustin have free time in the winter?
 
 28
-00:01:43,168 --> 00:01:46,552
+00:01:49,432 --> 00:01:53,728
 Yes, Dustin has time off in the winter.
 
 29
-00:01:47,152 --> 00:01:50,272
+00:01:54,328 --> 00:01:58,648
 Three: Dustin wants to go on vacation.
 
 30
-00:01:50,872 --> 00:01:53,200
+00:01:59,248 --> 00:02:02,680
 Does Dustin want to stay home?
 
 31
-00:01:53,800 --> 00:01:56,992
+00:02:03,280 --> 00:02:06,880
 No, Dustin does not want to stay home.
 
 32
-00:01:57,592 --> 00:01:59,896
+00:02:07,480 --> 00:02:10,864
 He wants to go on vacation.
 
 33
-00:02:00,496 --> 00:02:03,832
+00:02:11,464 --> 00:02:15,160
 Four: Dustin doesn't know where to go.
 
 34
-00:02:04,432 --> 00:02:06,784
+00:02:15,760 --> 00:02:18,160
 Does Dustin know where to go?
 
 35
-00:02:07,384 --> 00:02:10,528
+00:02:18,760 --> 00:02:21,976
 No, Dustin doesn't know where to go.
 
 36
-00:02:11,128 --> 00:02:13,936
+00:02:22,576 --> 00:02:25,408
 Is Dustin thinking about going to France?
 
 37
-00:02:14,536 --> 00:02:18,880
+00:02:26,008 --> 00:02:30,256
 Yes, Dustin is thinking about going to France for his vacation.
 
 38
-00:02:19,480 --> 00:02:21,736
+00:02:30,856 --> 00:02:34,096
 Six: France is expensive.
 
 39
-00:02:22,336 --> 00:02:23,800
+00:02:34,696 --> 00:02:38,128
 Is France cheap?
 
 40
-00:02:24,400 --> 00:02:26,920
+00:02:38,728 --> 00:02:43,144
 No, France is not cheap.
 
 41
-00:02:27,520 --> 00:02:29,152
+00:02:43,744 --> 00:02:46,360
 France is expensive.
 
 42
-00:02:29,752 --> 00:02:32,152
+00:02:46,960 --> 00:02:50,152
 Seven: Dustin does not speak French.
 
 43
-00:02:32,752 --> 00:02:34,432
+00:02:50,752 --> 00:02:53,128
 Does Dustin speak French?
 
 44
-00:02:35,032 --> 00:02:37,384
+00:02:53,728 --> 00:02:56,800
 No, Dustin does not speak French.
 
 45
-00:02:37,984 --> 00:02:44,776
+00:02:57,400 --> 00:03:03,928
 Eight: Dustin decides to stay home, study French, and save money.
 
 46
-00:02:45,376 --> 00:02:49,408
+00:03:04,528 --> 00:03:09,112
 Does Dustin decide to stay home and study French?
 
 47
-00:02:50,008 --> 00:02:57,040
+00:03:09,712 --> 00:03:17,248
 Yes, he decides to stay home, study French, and save money during his vacation.
 

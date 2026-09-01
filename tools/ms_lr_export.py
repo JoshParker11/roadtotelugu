@@ -94,6 +94,12 @@ def story_rows(num, cat):
         sid = os.path.basename(path)[:-4]
         if int(cat[sid]['num']) == int(num):
             rows.extend(rows_for(path))
+    # An untranslated title is not a reason to withhold the recording, and it must be dropped
+    # HERE as well as in build_ms_reader.bake_story — the reader takes its seek offsets from
+    # this function's ordering, so if the two disagree about which rows exist, every timing
+    # after the missing one points at the wrong sentence. Stories 6, 7 and 8 each sat out over
+    # a single untranslated heading.
+    rows = [r for r in rows if r['te'].strip() or r['part'] != 'meta']
     rows.sort(key=sort_key)
     return rows
 
