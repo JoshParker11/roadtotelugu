@@ -41,7 +41,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.normpath(os.path.join(HERE, '..'))
 sys.path.insert(0, HERE)
 
-from build_ms_reader import Resolver
+from build_ms_reader import Resolver, best_gloss
 from ids import guid
 
 WORK = os.path.join(ROOT, 'intensive', 'work')
@@ -243,8 +243,8 @@ def main():
     voiceable = [l for l in rs.lex if not l.get('junk')]
     with open(OUT_WORDS, 'w', encoding='utf-8', newline='') as f:
         w = csv.writer(f, delimiter='\t')
-        w.writerow(['guid', 'te'])
-        w.writerows((l['g'], l['te']) for l in voiceable)
+        w.writerow(['guid', 'te', 'en'])
+        w.writerows((l['g'], l['te'], best_gloss(l)) for l in voiceable)
 
     turns = sum(len(s['lines']) for s in stories)
     ocr = sum(1 for s in stories for l in s['lines'] if l.get('ocr'))

@@ -80,7 +80,7 @@ def export_words():
             if os.path.exists(os.path.join(wdir, r['guid'] + '.mp3')):
                 have += 1
                 continue
-            rows.append((r['guid'], r['te'], '', ''))
+            rows.append((r['guid'], r['te'], '', r.get('en', '')))
     if not rows:
         print('Every word already has a clip.')
         return

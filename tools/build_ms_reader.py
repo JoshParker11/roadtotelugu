@@ -288,6 +288,25 @@ def voiced_matches(r):
     return voiced_text_hashes().get(r['guid']) == want
 
 
+def best_gloss(l):
+    """The meaning the reader would show for this word, as plain text.
+
+    Same order the card uses: a saved meaning, then a registry sense, then the stem-and-suffix
+    breakdown, then the dictionary form a verb came from. Without this the word manifest is
+    guid and Telugu only, and the Anki batch shows you 4,000 rows of script with nothing to
+    check them against — which is the one job the English column in that file has.
+    """
+    if (l.get('en') or '').strip():
+        return l['en'].strip()
+    if l.get('sn'):
+        return '; '.join(x.get('g', '') for x in l['sn'] if x.get('g'))[:120]
+    if l.get('p'):
+        return ' + '.join(f'{a} ({b})' for a, b in l['p'])[:120]
+    if l.get('head'):
+        return f'{l["head"][0]} — {l["head"][1]}'[:120]
+    return ''
+
+
 def part_tag(r):
     if r['part'] != 'meta':
         return r['part']
@@ -389,9 +408,9 @@ def main():
                 json.dumps(data, ensure_ascii=False, separators=(',', ':')) + ';\n')
 
     with open(OUT_MANIFEST, 'w', encoding='utf-8') as f:
-        f.write('guid\tte\n')
+        f.write('guid\tte\ten\n')
         for l in rs.lex:
-            f.write(f"{l['g']}\t{l['te']}\n")
+            f.write(f"{l['g']}\t{l['te']}\t{best_gloss(l)}\n")
 
     voiced = sum(1 for s in stories if s['audio'])
     print(f'{os.path.relpath(OUT_JS, ROOT)}  {os.path.getsize(OUT_JS)/1024:.0f} KB')

@@ -79,7 +79,7 @@ def export_words():
         if os.path.exists(os.path.join(wdir, r['guid'] + '.mp3')):
             have += 1
             continue
-        pending.append((r['guid'], r['te'], '', ''))
+        pending.append((r['guid'], r['te'], '', r.get('en', '')))
 
     if not pending:
         print(f'All {len(rows)} words already have clips — nothing to export.')
