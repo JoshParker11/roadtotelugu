@@ -729,13 +729,26 @@
   let wordAudio = null;
   function sayWord(g, silent) {
     if (wordAudio) wordAudio.pause();
-    wordAudio = new Audio(`../ministories/audio/words/${g}.mp3`);
+    /* Each corpus keeps its own word clips, and the path was hardcoded to the mini stories —
+       so every speaker button in the Intensive Course asked ministories for a file it does not
+       have. A word guid is a hash of its Telugu, so the SAME word is the same id in both
+       corpora: whichever directory holds it, the clip is the right one. Try the corpus in
+       front of you first, then the other, before deciding there is no clip. */
+    const dirs = (cur && cur.id && cur.id[0] === 'i')
+      ? ['../intensive/audio/words', '../ministories/audio/words']
+      : ['../ministories/audio/words', '../intensive/audio/words'];
     /* Autoplay policy: this only ever runs inside a click handler, which counts as the user
        gesture browsers require, so playback is allowed. The catch still matters for a missing
        clip or a decode error. */
-    wordAudio.play().catch(() => {
-      if (!silent) toast('No clip for this word yet — run: python3 tools/ms_audio.py --words');
-    });
+    const tryDir = i => {
+      if (i >= dirs.length) {
+        if (!silent) toast('No clip for this word yet.');
+        return;
+      }
+      wordAudio = new Audio(`${dirs[i]}/${g}.mp3`);
+      wordAudio.play().catch(() => tryDir(i + 1));
+    };
+    tryDir(0);
   }
 
   /* ---------- AI tab ---------- */

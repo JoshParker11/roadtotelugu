@@ -85,9 +85,48 @@ def _stale(dst, guid, telugu, base):
     return have.get(guid) != want
 
 
+def rows_from_anki(profile=None):
+    """Read the notes straight out of Anki's collection, skipping the export step.
+
+    WHY THIS EXISTS
+    "File > Export > Notes in Plain Text" is a hand-driven step with several silent failure
+    modes, and two of them have already cost a round trip: an export whose field order came
+    from a different note type, and an export of 41 bytes — three header lines and no notes at
+    all, because the dialog had nothing selected. The audio was generated and attached both
+    times; only the handover failed.
+
+    The collection is a SQLite database. Fields are \x1f-separated, the guid is the first, and
+    the [sound:] tag is wherever HyperTTS put it — so it is searched for rather than assumed to
+    be column three. Read from a COPY: Anki keeps the live file open, and this must never be
+    the process that touches it.
+    """
+    import shutil as _sh, sqlite3, tempfile
+    base = profile or os.path.join(os.path.expanduser('~'), 'Library', 'Application Support',
+                                   'Anki2', 'User 1')
+    src = os.path.join(base, 'collection.anki2')
+    if not os.path.exists(src):
+        sys.exit(f'no Anki collection at {src} — pass --profile <dir>')
+    tmp = os.path.join(tempfile.mkdtemp(), 'collection.anki2')
+    _sh.copy2(src, tmp)
+    db = sqlite3.connect(f'file:{tmp}?mode=ro', uri=True)
+    out = []
+    for (flds,) in db.execute('select flds from notes'):
+        f = flds.split('\x1f')
+        if not f or not GUID.match(f[0].strip()):
+            continue
+        sound = next((x for x in f if SOUND.search(x)), '')
+        out.append([f[0].strip(), f[1] if len(f) > 1 else '', sound])
+    db.close()
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('exported', help='the file Anki wrote via Export Notes > Plain Text')
+    ap.add_argument('exported', nargs='?',
+                    help='the file Anki wrote via Export Notes > Plain Text')
+    ap.add_argument('--from-anki', action='store_true',
+                    help="read Anki's collection directly instead of an export file")
+    ap.add_argument('--profile', help='Anki profile directory (default: User 1)')
     ap.add_argument('--media', help='path to Anki\'s collection.media (auto-detected if omitted)')
     ap.add_argument('--force', action='store_true', help='overwrite audio already in the repo')
     ap.add_argument('--words', action='store_true',
@@ -100,9 +139,26 @@ def main():
     if not os.path.isdir(media):
         sys.exit(f'{media} is not a directory')
 
-    with open(args.exported, encoding='utf-8') as f:
-        lines = [l for l in f if not l.startswith('#')]
-    rows = list(csv.reader(lines, delimiter='\t'))
+    if args.from_anki:
+        rows = rows_from_anki(args.profile)
+        # THE COLLECTION HOLDS EVERY CORPUS AT ONCE, so reading it directly has to filter by
+        # what the destination is for. An export file was implicitly one batch; this is not.
+        # Without the filter, --words swept mini-story segments and course sentences into
+        # audio/words/ under ids that directory's reader will never look up.
+        want = 'W' if args.words else 'MI'
+        before = len(rows)
+        rows = [r for r in rows if r[0][:1] in want]
+        print(f'{before} note(s) in the collection · {len(rows)} match this destination '
+              f'({"word" if args.words else "segment"} ids)')
+    else:
+        if not args.exported:
+            sys.exit('give an export file, or pass --from-anki to read the collection directly')
+        with open(args.exported, encoding='utf-8') as f:
+            lines = [l for l in f if not l.startswith('#')]
+        rows = list(csv.reader(lines, delimiter='\t'))
+        if not rows:
+            sys.exit(f'{args.exported} contains no notes — the export dialog produced only '
+                     'headers. Re-export with the notes selected, or use --from-anki.')
 
     # Word clips live in their own subdirectory because they are keyed by WORD guid, not segment
     # guid — two different id spaces that must not share a namespace on disk.
