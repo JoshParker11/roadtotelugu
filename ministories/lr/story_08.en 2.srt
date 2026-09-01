@@ -1,0 +1,200 @@
+1
+00:00:00,000 --> 00:00:02,832
+Lisa wants to buy new shoes.
+
+2
+00:00:03,432 --> 00:00:05,832
+She goes to a shoe store.
+
+3
+00:00:06,432 --> 00:00:08,784
+There are many pretty shoes there.
+
+4
+00:00:09,384 --> 00:00:12,600
+Lisa tries on a blue pair of shoes.
+
+5
+00:00:13,200 --> 00:00:16,032
+The blue shoes are too tight.
+
+6
+00:00:16,632 --> 00:00:19,128
+She tries on a black pair of shoes.
+
+7
+00:00:19,728 --> 00:00:22,176
+These shoes are very comfortable.
+
+8
+00:00:22,776 --> 00:00:26,544
+Lisa asks how much the black shoes cost.
+
+9
+00:00:27,144 --> 00:00:30,840
+The black shoes are four hundred and fifty dollars.
+
+10
+00:00:31,440 --> 00:00:34,992
+Lisa sadly puts the shoes down and leaves.
+
+11
+00:00:36,592 --> 00:00:39,160
+Here is the same story told in a different way.
+
+12
+00:00:40,760 --> 00:00:43,424
+I want to buy new shoes.
+
+13
+00:00:44,024 --> 00:00:46,544
+I go to a shoe store.
+
+14
+00:00:47,144 --> 00:00:49,496
+There are many pretty shoes there.
+
+15
+00:00:50,096 --> 00:00:53,240
+I try on a blue pair of shoes.
+
+16
+00:00:53,840 --> 00:00:56,672
+The blue shoes are too tight.
+
+17
+00:00:57,272 --> 00:00:59,912
+I try on a black pair of shoes.
+
+18
+00:01:00,512 --> 00:01:02,960
+These shoes are very comfortable.
+
+19
+00:01:03,560 --> 00:01:06,680
+I ask how much the black shoes cost.
+
+20
+00:01:07,280 --> 00:01:10,976
+The black shoes are four hundred and fifty dollars.
+
+21
+00:01:11,576 --> 00:01:14,960
+I sadly put the shoes down and leave.
+
+22
+00:01:16,560 --> 00:01:20,088
+One: Lisa wants to buy new shoes.
+
+23
+00:01:20,688 --> 00:01:23,376
+Does Lisa want to buy new shoes?
+
+24
+00:01:23,976 --> 00:01:27,456
+Yes, Lisa wants to buy new shoes.
+
+25
+00:01:28,056 --> 00:01:31,896
+Two: There are many pretty shoes in the shoe store.
+
+26
+00:01:32,496 --> 00:01:35,520
+Are there many shoes in the shoe store?
+
+27
+00:01:36,120 --> 00:01:40,032
+Yes, there are many pretty shoes in the shoe store.
+
+28
+00:01:40,632 --> 00:01:47,328
+Three: Lisa tries on a blue and a black pair of shoes.
+
+29
+00:01:47,928 --> 00:01:50,808
+Does Lisa try on two pairs of shoes?
+
+30
+00:01:51,408 --> 00:01:55,080
+Yes, Lisa tries on two pairs of shoes.
+
+31
+00:01:55,680 --> 00:02:01,272
+She tries on a blue and a black pair.
+
+32
+00:02:01,872 --> 00:02:07,080
+Four: First, Lisa tries a pair of blue shoes.
+
+33
+00:02:07,680 --> 00:02:11,064
+Does Lisa try a pair of red shoes first?
+
+34
+00:02:11,664 --> 00:02:14,1000
+No, Lisa does not try a pair of red shoes.
+
+35
+00:02:15,600 --> 00:02:19,056
+She tries a pair of blue shoes.
+
+36
+00:02:19,656 --> 00:02:23,112
+Five: The blue shoes are too tight.
+
+37
+00:02:23,712 --> 00:02:26,280
+Are the blue shoes comfortable?
+
+38
+00:02:26,880 --> 00:02:30,096
+No, the blue shoes are not comfortable.
+
+39
+00:02:30,696 --> 00:02:32,640
+They are too tight.
+
+40
+00:02:33,240 --> 00:02:37,056
+Six: The black shoes are very comfortable.
+
+41
+00:02:37,656 --> 00:02:40,632
+Are the black shoes comfortable?
+
+42
+00:02:41,232 --> 00:02:44,952
+Yes, the black shoes are very comfortable.
+
+43
+00:02:45,552 --> 00:02:50,016
+Seven: The black shoes are four hundred and fifty dollars.
+
+44
+00:02:50,616 --> 00:02:53,232
+Are the black shoes expensive?
+
+45
+00:02:53,832 --> 00:02:57,216
+Yes, the black shoes are expensive.
+
+46
+00:02:57,816 --> 00:03:00,744
+They are four hundred and fifty dollars.
+
+47
+00:03:01,344 --> 00:03:06,360
+Eight: Lisa puts down the shoes and leaves the store.
+
+48
+00:03:06,960 --> 00:03:08,640
+Does Lisa buy the shoes?
+
+49
+00:03:09,240 --> 00:03:11,688
+No, Lisa does not buy the shoes.
+
+50
+00:03:12,288 --> 00:03:16,200
+She puts them down and leaves the store.
+

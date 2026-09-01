@@ -52,6 +52,7 @@ CARDS = os.path.join(ROOT, 'intensive', 'vocab.tsv')
 TITLES = os.path.join(ROOT, 'intensive', 'raw', 'titles.tsv')
 OUT_JS = os.path.join(ROOT, 'reader', 'data', 'intensive.js')
 OUT_WORDS = os.path.join(ROOT, 'intensive', 'word_audio.tsv')
+CUES = os.path.join(ROOT, 'intensive', 'audio_cues.tsv')
 
 
 ZW = '\u200c\u200d'
@@ -151,7 +152,24 @@ def titles():
         return {int(r['lesson']): r['title'] for r in csv.DictReader(f, delimiter='\t')}
 
 
-def bake(num, rs, tmap, allow_ocr):
+def cues():
+    """guid -> (start, end, lesson total), written by ic_audio_build.py.
+
+    Read rather than recomputed. build_ms_reader recomputes the mini stories' offsets from
+    ms_lr_export's functions, and the two silently disagreed the moment one of them changed
+    which rows it included — every timing after the missing row pointed at the wrong sentence.
+    One arithmetic, written down once.
+    """
+    out = {}
+    if not os.path.exists(CUES):
+        return out
+    with open(CUES, encoding='utf-8') as f:
+        for r in csv.DictReader(f, delimiter='\t'):
+            out[r['guid']] = (float(r['start']), float(r['end']), float(r['total']))
+    return out
+
+
+def bake(num, rs, tmap, allow_ocr, cue=None):
     path = os.path.join(WORK, f'{num:02d}.tsv')
     if not os.path.exists(path):
         return None
@@ -162,10 +180,15 @@ def bake(num, rs, tmap, allow_ocr):
     if not rows:
         return None
 
-    lines = []
+    cue = cue or {}
+    lines, total = [], 0.0
     for r in rows:
         ln = {'g': guid('S', r['te']), 'p': 'turn',
               't': rs.resolve_line(r['te']), 'en': r['en']}
+        c = cue.get(r.get('guid') or '')
+        if c:
+            ln['s'], ln['e'] = c[0], c[1]
+            total = c[2]
         if r.get('speaker'):
             ln['sp'] = r['speaker']
         # The reader shows this as a caution on the line. `rom` means the book itself said what
@@ -174,8 +197,12 @@ def bake(num, rs, tmap, allow_ocr):
             ln['ocr'] = 1
         lines.append(ln)
 
+    # Audio only when EVERY turn has a cue. A lesson with half its turns voiced would play the
+    # right sound at the wrong moments for the other half, which is worse than staying silent.
+    voiced = all('s' in l for l in lines) and total > 0
     return {'num': num, 'title': {'te': '', 'en': tmap.get(num) or f'Lesson {num}'},
-            'audio': '', 'dur': 0, 'lines': lines}
+            'audio': f'../intensive/lr/lesson_{num:02d}.mp3' if voiced else '',
+            'dur': total if voiced else 0, 'lines': lines}
 
 
 def main():
@@ -193,7 +220,8 @@ def main():
     rs.book.update(written)              # hand-written cards win over a derived name gloss
     rs.junk = junk
     tmap = titles()
-    stories = [s for s in (bake(n, rs, tmap, args.all) for n in nums) if s]
+    cue = cues()
+    stories = [s for s in (bake(n, rs, tmap, args.all, cue) for n in nums) if s]
     if not stories:
         sys.exit('nothing to bake')
 
@@ -220,6 +248,7 @@ def main():
           f'-> reader/data/intensive.js')
     print(f'  {turns - ocr} from the book\'s own romanization, {ocr} from OCR')
     print(f'{len(rs.lex)} distinct words -> {os.path.relpath(OUT_WORDS, ROOT)}')
+    print(f'{sum(1 for s in stories if s["audio"])} lesson(s) with audio')
 
 
 if __name__ == '__main__':

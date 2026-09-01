@@ -1,0 +1,176 @@
+#separator:tab
+#html:true
+#tags column:5
+I73e723fcf08f	రవి : అది ఏమిటి?	[sound:hypertts-1bd87c257804a9479048a6b9442f00c292cfd0038f84763eaa9af724.mp3]	What is that?	
+I19295bb697b3	గిరి : అది కుర్చీ.	[sound:hypertts-d821f22e9406370770ac6e3cfe5ee364994c6e55ad6693d25b014424.mp3]	That is a chair.	
+Ib1ba3bfbfc7b	రవి : ఇది ఏమిటి?	[sound:hypertts-c1084c735f2a2f19ed1349e72c0b69465def33017f1b946f240b3af0.mp3]	What is this?	
+I2c69f19981a1	గిరి : ఇది బల్ల.	[sound:hypertts-8106d5c09c84bf31c463fa63c55cc1d3d59b3e9fb7d8b2d9914b8fdd.mp3]	This is a table.	
+I42902f2c3dc4	రవి : ఇది గోడ.  అది వాకిలి. ఇది కాయితం.  అది కలం. ఇది పుస్తకం. అది గడియారం. ఇది కుక్క.  అది పిల్లి.	[sound:hypertts-55749370bc216625437e0723aaa873d50cb11876728240485c5a8bd3.mp3]	This is a wall. That is a threshold. This is a paper. That is a pen. This is a book. That is a clock/watch. This is a dog.  That is a cat.	
+Ibe79ef813c76	గిరి : ఏది తలుపు?  ఏది కిటికీ?	[sound:hypertts-8bafcbe347906ed8c085ad8ed1eb427b824a573d9753a4a3e43ce283.mp3]	Which is the door? Which is the window?	
+I3a19bdfaadee	రవి : ఇది తలుపు.  అది కిటికీ.	[sound:hypertts-7e951e76a100ba7f267374e1817181f9c0181332da4008375b0f8708.mp3]	This is the door? That is the window.	
+Ieff0ea10e840	రవి : ఆయన ఎవరు?	[sound:hypertts-4d0ecac13318a4b74f09ced595955ed740b5040faea07c859a5671a9.mp3]	Who is he?	
+I93a7cfc78b4d	లత : ఆయన మాష్టరుగారు.	[sound:hypertts-ed2dee53ebd7d9def6b506abd190296cd8572078cf4c1a239bddfd01.mp3]	He is a teacher.	
+Ic74a27688304	రవి : ఆమె ఎవరు?	[sound:hypertts-dbd3184941fadbc07595db1a4017a003e0743db8538087ac52c95bfe.mp3]	Who is she?	
+I6db8b2dbe5f1	లత : ఆమె టీచరుగారు.	[sound:hypertts-114dde0a497ce7f1a18499c1f3d6d13a2ba905b556ea14bc5b7cafcb.mp3]	She is a teacher?	
+Iddc0160d859f	రవి : ఈయన ఎవరు?  ఈమె ఎవరు?	[sound:hypertts-beae3bc25e4dcb30cf7213163b852533578932578efbffc086a84f17.mp3]	Who is he and who is she?	
+I5ec19d8debde	లత : ఈయన ప్రిన్సిపాల్గారు. ఈమె డాక్టరుగారు.	[sound:hypertts-4e8f01d67d3968b8269c848527b8acaf8944e7b454cfeeee6bb91e07.mp3]	He is the Principal. She is the doctor.	
+I25fdc6c74966	రవి : ఆయన రామారావు గారు.  ఆమె లీలగారు.	[sound:hypertts-74e75ae025b09cd1ea5e7bbb94a20083e56932377d7d2302fa5eac47.mp3]	He is Mr. Ramarao. She is Ms. Leela.	
+Ia2c0b732f9c3	లత : రామారావుగారు ఎవరు? లీలగారు ఎవరు?	[sound:hypertts-836636a244ce70920d1de07f9c42fdc6f8e766f94028f3b063f6bf66.mp3]	What is Mr. Ramarao? What is Ms. Leela?	
+I7e1c87015269	రవి : రామారావు డాక్టరు.  లీల టీచరు.	[sound:hypertts-52f6dd3489334b2ab1b7e549a397a0e87e06395eec641053f6717117.mp3]	Ramarao is a doctor. Leela is a teacher.	
+I05a7832f5191	లత : ఈమె కమల.  ఈయన సుబ్బారావు.	[sound:hypertts-53691b43c8178a729c5b3e2ff3fd196c7c6bbe9533c8ed3c94745ffa.mp3]	She is Kamala. He is Subbarao.	
+If46bb67acb5e	రవి : కమల విద్యార్థిని. సుబ్బారావు విద్యార్థి.	[sound:hypertts-2008749718a9c4f90f1857cc9a75a8292b2216cb2588c565406fc97e.mp3]	Kamala is a student. Subbarao is a student.	
+Ida14c78a86ba	లత : ఎవరు మోహన్?  ఎవరు విజయ?	[sound:hypertts-caaa20edd714713d0cfdfa56e2f736cec4f513a11c877024cf206d54.mp3]	Who is Mohan? Who is Vijaya?	
+I5f3c2651d69d	రవి : ఆయన మోహన్.  ఈమె విజయ.	[sound:hypertts-446c302b2b3a1a9f736559c20c514313b8fb7f4b0deeb6a722ea7418.mp3]	He is Mohan. She is Vijaya.	
+Ifa170566d3f1	గిరి : నమస్కారమండీ.	[sound:hypertts-098a967dff32955ea89a5c062c49933301bf11c4d34c1df6cb40be90.mp3]	Hello, sir!	
+I05465b345b53	రావు : నమస్కారం. మీరు ఎవరు?	[sound:hypertts-e7c66df367eff3448b47ade5edea5223a326e1dcab5179a7cd7a0f9c.mp3]	Hello! Who are you?	
+I2f42c5260d32	గిరి : నేను కన్నడ విద్యార్థిని. ఇతను తెలుగు విద్యార్థి. అతను తమిళ విద్యార్థి. ఆమె తెలుగు విద్యార్థిని. ఈమె మలయాళ విద్యార్థిని.	[sound:hypertts-d2dcd6ac6a797711fd9495f3c789724e17c16a3f59cf53f496769012.mp3]	I am a Kannada student He is a Telugu student. He is a Tamil Student. She is a Telugu Student. She is a Malayalam Student.	
+I3003e039745d	రవు : నా పేరు రామారావు. ఈయన పేరు శర్మగారు. ఆయన పేరు రాజారామ్.	[sound:hypertts-05085787a4d2d31a5fc6c7bc60acb3a09599a11634af1f67b206fcfc.mp3]	My name is Ramarao. His name is Mr. Sarma. His name is Rajaram.	
+I69d6116bfa1c	గౌరి : నమస్కారమండీ. నా పేరు గౌరి. నేను హిందీ విద్యార్థినిని. ఈమె పేరు సరళ. ఆమె పేరు గిరిజ.	[sound:hypertts-699d4f88a2f557d1a73937496073dd9affd8754c05a77983403d17dc.mp3]	Namaskaram Sir! My name is Gowri. I am a Hindi student. Her name is Sarala. Her name is Girija.	
+Id5985da21d38	రావు : ఎవరి పేరు గిరిజ?	[sound:hypertts-3334fdf20b4a381386fd7632771a556c22fae751962ccb79791d59b1.mp3]	Whose name is Girija?	
+I3bf5ff492b83	గిరిజ : నా పేరండీ.	[sound:hypertts-568f961f53d09ca54de25850a8a510386e222d1c33ca57b2bb8b7c6d.mp3]	My name, Sir!	
+I7b6f43f40fb7	? రావు : మీ పేరేమిటన్డీ?	[sound:hypertts-336405f2f3d534f4fd1187000f70a96a61abaad19997bbe0d554280c.mp3]	What is your name, Sir?	
+I2444eb955647	గిరి : నా పేరు గిరి. ఇతని పేరు రవి. అతని పేరు శ©కర్.	[sound:hypertts-533d801adc6dac3b1151b6fe5b3d0cab40a2c025e453259cd4683519.mp3]	My name is Giri. His name is Ravi. His name is Sankar.	
+I7344a7f5a0c2	రావు : ఎవరి పేరు రవి?	[sound:hypertts-8be6b9277d59b5a6f6b9f3a2dcb39a1eb0d6bea135f1f092b4aaf21f.mp3]	Whose name is Ravi?	
+I73e423032153	గిరి : ఇతని పేరండీ!	[sound:hypertts-118b440420ecc1b9c4dd50bef43bf345f39cbbfde4fde9b5428a5f8e.mp3]	His name, Sir!	
+Ief30651d9ca9	_ర ద§S&gt;ర్? గొwరి : మీరెవరన్డీ?	[sound:hypertts-093c558d20fcb4bced827b919f54303875dd8f7e5abee27e52e16a22.mp3]	Who/what are you, Sir?	
+I7fc679bc3a28	రావు : ఏమండీ, రాజారామ్గారూ! ఛెప్పండి. నేనెవరిని?	[sound:hypertts-90830cb6e7e6d484adb554714033d2b201fb4644cfafa4b3050bbd69.mp3]	Hello, Mr. Rajaram! please tell. Who am I?	
+I489ddce82dfc	రాజారామ్ : మీరు ప్రిన్సిపాల్గారు.	[sound:hypertts-bc9f5f4234de81e59c20c60c6544fa9864f1411a1e87715ee4d647be.mp3]	You are the Principal.	
+I543c6ad924ab	గొపి : సార్! కాfఇ!	[sound:hypertts-b3e8e5f69c234e903180e66b96054a477f4c0ac3f9cd7c386d767744.mp3]	Sir!  Coffee!	
+I8672a4da51ae	గొwరి : అతనెవరండీ?	[sound:hypertts-62cebc1e25cf983ff3eda621d0ff453d20e5015f960b035cf5a05e1f.mp3]	Who is he, Sir?	
+Ib57fde47c176	ం ష్న్w రావు : ఏమయ్యా! చెప్పు నువ్వెవరివి?	[sound:hypertts-d30a5dc947900d3fc3699079fb4061550add364c81fa09c671ad8859.mp3]	Mister! Tell, Who are you?	
+I3c3927ea82df	గొపి : నేను అటెండర్ని.	[sound:hypertts-3e1fe71adc3e5ac050a9f9fbaa28c2ffa47c93979eb60fe3609afe2c.mp3]	I am an attender.	
+Ie9c7aafa5761	రాజారామ్ : అతను అటెండరు.	[sound:hypertts-dfc2857bf204d56b403018de8006ba0664ca777e463478c5b5e92538.mp3]	He is an attender.	
+I308c8e51c825	ం ష్న్w రావు : నువ్వు అటెండరువి. నీ పేరు  కూడా చెప్పు.	[sound:hypertts-ffbe516d29b3af8c04cb82a54357a5d9ab1bf0eac153256bc7e29258.mp3]	You are an attender. Tell your name too.	
+Iedf7fc031788	గోపి : నా పేరు గోపి.	[sound:hypertts-ac8bc209060f57858d932f55cbba6941b5780232ce97a618edd79a7b.mp3]	My name is Gopi.	
+Iaeb68435d2cc	రావు : అదేమిటి? ఆయానెవరు?	[sound:hypertts-3d075b7439f66f7861fe39069cd2e55598150437111d8e7ce1c1b777.mp3]	What is that? who is he?	
+I15f94297a4f7	గోపి : అది కాfఈ. ఆయన మాష్టరుగారు.	[sound:hypertts-a5bbafe47630759786fa0729c5c31a0ec4e4c4b463fee8d511795803.mp3]	That is coffee. He is a teacher.	
+I03425fc38efd	పాప : ఇది జవహర్లాల్ నెహ్రూ fఓటో ఈయన తండ్రి పేరు మోతీలాల్. తల్లి పేరు స్వరూపరాణీ. కమల జవహర్లాల్ నెహ్రూ భార్య. ఇందిర జవహర్లాల్ నెహ్రూ కూతురు. ఆమె మోతిలాల్ మనవరాలు. ఆమె భర్త పేరు fఇరోz గాంధి. రాజీవ్ ఇందిరాగాంధీ కొడుకు. ఆయన నెహ్రూ మనవడు.	[sound:hypertts-3dc7f61518837549488a494c2b0bfed2a8ee163d1dcc9b024f0c4f2b.mp3]	Jawaharlal Nehru. His father’s name is Motilal. His mother’s name is Swaroopa Rani. Kamala is Jawaharlal Nehru’s wife. Indira is Jawaharlal Nehru’s daughter. She is Motilal’s grand- daughter. Her husband’s name is Feroz Gandhi Rajeev is Indira Gandhi’s son. He is Nehru’s grandson.	
+Ie69cb316736d	రామమూర్తి : రా వినోద్! ఇదే నా స్నేహితుడి ఇల్లు.	[sound:hypertts-e0671b6aa85f0d39e1b063fccd0748a035dd5ed1153ac6903feaaf3d.mp3]	Come, Vinod! This is my friend’s house.	
+I25c45d255945	వినోద్ : ఈ పాప ఎవరు? నీ స్నేహితుడి కూతురా?	[sound:hypertts-62ce3bb3adc00ab65a113683b3feb7bc1ca7be52cec7e755859674c5.mp3]	Who is this girl? Your friend’s daughter?	
+I0b56ae0ba3c1	రామ : అవును. కూర్చో.	[sound:hypertts-cb4529f3eb5e92f18d370bbb3fe5515985d4c0be26a25ff34eeb1492.mp3]	Yes. Sit!	
+Icf51b814610e	Pఆపా! వినోద్ : పాపా! అది ఏం పుస్తకం?	[sound:hypertts-6e637c19b9418db7e8c3ca398f6daf24edffc5e60f0c595663ccaea2.mp3]	What is that book?	
+I22bee5e38cc1	పాప : ఇది నా తెలుగు పుస్తకమండీ. అది ఇంగ్లీషు పుస్తకం.	[sound:hypertts-8ba40a9f811bb10e4102e6f02134f8aff60c7fdcdaf3fe565b6055d8.mp3]	This is my Telugu book, sir! and that is my English book.	
+I67b444269340	వినోద్ : దాని పేరేమిటి?	[sound:hypertts-51e56735733d343fbd9e79542d0fcc6335ce8121512a449b5dac302e.mp3]	What is its name?	
+I0b58458b8023	పాప : దేని పేరండీ?	[sound:hypertts-cbb29ebf94288fa5210b92782613aa0f3251815d5a33cd84abaa229f.mp3]	Whose name, sir?	
+Ib5b593bff975	వినోద్ : దీని పేరు.	[sound:hypertts-6d2fe41059ddcf27ecdcb7ae0c758baec3913ebe5ad4ae3ea3572635.mp3]	This one’s	
+I542d847928fb	పాప : తెలుగు పుస్తకం పేరా? దీని పేరు  జవహర్ అండీ!	[sound:hypertts-bc07776d6bdb1f940b14cc500030084ec2f7da16ff076eaf1b63f215.mp3]	The name of the Telugu book: It is ‘Jawahar’ sir!	
+Iaa26cf78399b	వినోద్ :అలాగా! ఇది ఎవరి పుస్తకం?	[sound:hypertts-6300ca1bdb609393b827008362a193d7da2b27d7e17ad461f2194946.mp3]	I see!  Whose book is this?	
+I9a7b6c6b82c6	పాప : ఇది నా పుస్తకం కాదండీ. ఇది నా స్నేహితురాలి పుస్తకం.	[sound:hypertts-d58d72dd0f3d84948eea2cc756057fe58147732aa0471e7fb434fb27.mp3]	This is not my book, sir! This is my friend’s book.	
+I8151c6d712ab	వినోద్ :నీ స్నేహితురాలి పేరేమిటి?	[sound:hypertts-8996329f01d644b61185812c19e66a47eef3b1de0df8a9194e6d5575.mp3]	What is your friend’s name?	
+If7c45af77d51	పాప : గిరిజ.	[sound:hypertts-b0c586680076f7a6df56d11d392816f90c2db61467123bea0bb47545.mp3]	Girija.	
+I66e66bd30f43	రామ : రా వినోద్! అతనే నా స్నేహితుడు రాఘవరావు. అదే అతని గది.	[sound:hypertts-9d51ec3063a071575b266527e99761d8ea3f63ea8bd91f44b50d2555.mp3]	Come on, Vinod: He is my friend Raghavarao. That is his room.	
+I7c86d50a0374	వినోద్ :నమస్కారమండీ!	[sound:hypertts-27b9facd315408f1e407bf522bf9792a333927188470df319a5e3cb2.mp3]	Namaskaram, sir!	
+Ic449703e0ea9	రాఘవరావు : నమస్కారం. ఈయన ఎవరు రామ్మూర్తీ?	[sound:hypertts-0ef26aeb615e6ac16aad199ff610a7828df8cb020851ccc5976816d9.mp3]	Namaskaram.  Who is he, Ramamurti?	
+I217f5c86f53c	రామ : ఇతను తెలుగు విద్యార్థి. పేరు వినోద్.	[sound:hypertts-cbf9b805e42a99ca55eaae0f0dd4afa6aecf1528090ff163ae879d97.mp3]	He is Telugu student. His name is Vinod.	
+I956be91bb085	రాఘవ : రాండి కూర్చోండి.	[sound:hypertts-fc51d3b5e6ef1eef0dfa22dc62abfdd71c395a5ed54beecb30bbccd3.mp3]	Please come and sit.	
+I30badefdaa98	రామ : కూర్చో వినోద్!	[sound:hypertts-8395b5943393a8ea5166fc680ad44f19b97461132040e64cbeb992be.mp3]	Sit, Vinod!.	
+I0623874b50c0	రామ : వారు రాఘవరావు నాన్నగారు. వారి పేరు సారథిగారు.	[sound:hypertts-b5772a13c677333ee79e151391265bbb738b6f900847d53ee8ec9973.mp3]	He is Raghavarao’s father.  His name is Mr. Sarathi.	
+I0d7b47b665be	వినోద్ :వీరు?	[sound:hypertts-96b05dd8ebcb876d8cf7ccd4f6d4219e97521c36e44794ac2c6c0b35.mp3]	And, she?	
+I8e6b8f5d8a4c	రామ : రాఘవరావు అమ్మగారు. వీరి పేరు అనసూయగారు.	[sound:hypertts-4edc251ee103958ff9336a0b459cf4ca719ce21b7f2d8d4667afb8ba.mp3]	Raghavarao’s mother.  Her name is Mrs. Anasuya.	
+I389c032996b0	సారథి : రాఘవా! ఇతనెవరు? వెంకట్రావా?	[sound:hypertts-ecb2ae2bc20dbea4213dad6ad6cebd9efaa417f3c72e66b913ea3e24.mp3]	Raghava! Who is he? Is he Venkatrao?	
+I406631063d12	రాఘవ : వెంకట్రావు కాదు నాన్నగారూ! రామ్మూర్తి శివయ్యగారి కొడుకు.	[sound:hypertts-3c15983a39c1014cbed6a0b53e0833dc11cf17d236a0444f75b311e9.mp3]	Father, he is not Venkatrao. He is Rammurti. Mr. Sivayya’s son.	
+I716877b78db2	సారథి : మీ తాతగారి పేరేమిటి బాబూ!	[sound:hypertts-c38b05c7d1c75cdb5e53bb3a43306c62d954e20318663b7cc990b32b.mp3]	What is your grandfather’s. name, dear!	
+Ifd973a2f860e	రామ : గంగాధరంగారు. సారథి : అలాగా! నువ్వు గంగాధరం -గారి మనవడివా!	[sound:hypertts-20c618d65a3bd806cb0e86b10f5f839ac6c43e9ad8fc16db99dc4a27.mp3]	Mr. Gangadharam. I See! Are you. Mr. Ganga- dharam’s. grandson?	
+Ifd3f5b372477	రామ : అవునండీ!	[sound:hypertts-7f64881ef95ebe6e19abea89abeb49a3d3e3236b87b2af95bd6eef8d.mp3]	Yes, sir! I am Mr. Sarathi’s grand-	
+Ic93468a287bc	పాప : నేను సారథి గారి మనవరాలిని.	[sound:hypertts-9c557fec431e1f60d2db3caeb10202d8cfbc4e276343ccb317bd7b95.mp3]	daughter.	
+Id7b9ddcc1a1c	సరళ : విజయా! ఇవి ఏమిటి?	[sound:hypertts-79a6dd4f847e65d67367a96d9913dd07ad53a82cba56df3081e1c12f.mp3]	Vijaya! What are these?	
+Ib5399388e959	విజయ : ఇవి బల్లలు. నువ్వు ఈ కుర్చీలో కూర్చో.	[sound:hypertts-1fe7f8488c671198c42022805ad05386dc0d8471f47a5e3bb938f8d4.mp3]	They are tables/benches. Sit in this chair.	
+I572cff2b4275	సరళ : ఇవి ఎన్ని బల్లలు?	[sound:hypertts-891da4bb3ea5697532ee9736be1a57a1c1bc625dca78b82ee8b0987a.mp3]	How many tables/benches are these?	
+Ib6c3755cbbf8	విజయ : ఇవి రెండు బల్లలు.	[sound:hypertts-88c1aef83cc183ec3f6253ac967e7f15600340bc05c1d8f6aa6625b9.mp3]	These are two tables/benches.	
+I791020137eb2	సరళ : ఇవి రెండు బల్లలు. అది ఒక బల్ల. మొత్తం ఎన్ని బల్లలు?	[sound:hypertts-93d2ce0dcad64080d79c9de7789383453ba9e6db6c36d92d451c9b9f.mp3]	These are two tables. That is one table. How many tables are in total?	
+I86b13fc697f6	విజయ : మొత్తం మూడు బల్లలు.	[sound:hypertts-1c0475ae1a67fe95c35e9bf94c020c15c50e9f9b0ec044e9372d6f57.mp3]	They are three tables in total.	
+Icdde29ce5eec	సరళ : ఈ బల్లలు ఎక్కడ ఉన్నాయి?	[sound:hypertts-24481da90d5e3ec18413454f170635b6980d7b350516fa951f1a549d.mp3]	Where are these benches?	
+I9f76fd051813	విజయ : గదిలో ఉన్నాయి? అవి ఎన్ని కుర్చీలు?	[sound:hypertts-accc2f7aefa1562933df974f2b20817237b1c4253a7443f404d4d30d.mp3]	They are in the room. How many are those chairs?	
+Id15c55c76773	సరళ : అవి మూడు కుర్చీలు.	[sound:hypertts-ce4d04465c3a33345fb00de80d9e059fc0e589a133a9125c6cbbc96b.mp3]	They are three chairs?	
+I74b3095c82db	విజయ : ఆ కుర్చీలు ఎక్కడ ఉన్నాయి?	[sound:hypertts-1df0b732abd924c8f3cc1d7ac2fe818b6d0ea02518676b306c17a7df.mp3]	Where are those chairs?	
+Ie5188281f8ba	సరళ : ఆ కుర్చీలు గోడ దగ్గర ఉన్నాయి.	[sound:hypertts-445c6f53d6867a5c188b4e60cd32bad115b3ccd11309f5e9895231e8.mp3]	Those chairs are near the wall.	
+I864ac0f4b7ea	విజయ : అవి ఏమిటి?	[sound:hypertts-9fc63f43cf2eb01d2688417ca65c488d6b82c8cd15d4127f12a8e747.mp3]	What are they?	
+I51ec7b27e65a	సరళ : ఏవి?	[sound:hypertts-a8afb13a49f8f4ed1cb6102b6fc796bbafc6478565c9ede4ebe24a66.mp3]	Which ones?	
+I7a213950e6e0	విజయ : ఆ కుర్చీలో ఉన్నాయి. చూడు.	[sound:hypertts-195e62d2b5dc22d281ba94ad9c8b78a35f8bddb83ba35f708b3bde13.mp3]	look!They are in that chair.	
+I1292e7fdf4b4	సరళ : అవి కలాలు.	[sound:hypertts-62e57144f1f4a6dc0fa4b0d05db24921e2c2cfa5d31b87ea8fd3c931.mp3]	They are pens.	
+Ia748309cc1d7	విజయ : అవి ఎన్ని కలాలు?	[sound:hypertts-7cda45468cc91dc42c0084f89a117fc19d61b42c0e7ae0a5907df457.mp3]	How many pens are they?	
+I830cf198fe64	సరళ : అవి నాలుగు కలాలు.	[sound:hypertts-ca1d590e6e02eae84ced1c1ebc3ccaa00cbb5fdcf75b706b0b86ad1c.mp3]	They are four pens.	
+I618c50b40a31	విజయ : ఆ పెట్టె మీద ఇంకొక కలం ఉంది.	[sound:hypertts-1851097d0f18a1b66e3c2a5e4cf09d84aebef854a2fe83ab9b54f7a1.mp3]	There is one more pen on that box.	
+Ie6addcfc0c79	సరళ : ఏ పెట్టె మీద?	[sound:hypertts-39d913ce5d35b8115f12d6ab53064607e0cb702cfe4a431c18e48788.mp3]	On which box?	
+I92ac5c61c747	విజయ : ఈ పెట్టె మీద.	[sound:hypertts-95b94563892fe4436a6d9445cf38b18b15562533f74084566802bd9e.mp3]	On this box.	
+I063d0557e424	సరళ : అవును. ఆ పెట్టె మీద ఇంకొక కలం ఉంది.	[sound:hypertts-9db189cd2f58f5a5814ae5cebec9b8293b7f4d4ef84ec14cd8549c8e.mp3]	Yes. There is one more pen on that box.	
+I38a53b437db7	విజయ : అవి మొత్తం ఎన్ని కలాలు?	[sound:hypertts-ceabd93a64b3133fefd0d536a88e294acc8b8dfb2ccf59e505480d60.mp3]	How many pens are they in total?	
+Id8c9bc1f96de	సరళ : అవి మొత్తం ఐదు కలాలు.	[sound:hypertts-ff8ff3a05e12c0e8ebc0fcd86dbb1aae6ffab5115f3ac7822e2adfc7.mp3]	They are five pens in total.	
+I2a4c59a7e035	విజయ : అవి ఏమిటి?	[sound:hypertts-9fc63f43cf2eb01d2688417ca65c488d6b82c8cd15d4127f12a8e747.mp3]	What are those?	
+Ib8d97662b7b9	సరళ : అవి పుస్తకాలు.	[sound:hypertts-ac61236563ecdea84c3737cb4d4a416eccd885493a39a4f418a69d56.mp3]	Those are books.	
+I204bf139a596	విజయ : ఆ పుస్తకాలు బల్లమీద ఉన్నాయా?	[sound:hypertts-3761e1d11861d727e469fead0c09b6a4a1079c2fa8e9b22495235a17.mp3]	Are those books are on the table?	
+Ib76cf0c8b165	సరళ : ఆ పుస్తకాలు అన్నీ బల్ల మీద లేవు. కొన్ని బల్ల మీద ఉన్నాయి; కొన్ని బల్ల కింద ఉన్నాయి.	[sound:hypertts-61ad0c6c2d28f09561922bb59361e9f752688d90741b66fc09fb9bd9.mp3]	All those books are not on the table. Some are on the table, and some are under the table.	
+I400693aa5a83	విజయ : ఆ పుస్తకాలు లెక్కపెట్టు.	[sound:hypertts-b11d69e72ae699b5c3b5ab83e6fbfdd25d464faddf5b78fdee04c39a.mp3]	Count those books.	
+I1f776930634c	సరళ : ఒకటి, రెండు, మూడు, నాలుగు,ఐదు, ఆరు, ఏడు, ఎనిమిది, తొమ్మిది, పది, పదకొండు, పన్నెండు, పదమూడు, పధ్నాలుగు, పదిహేను. ఇవి పదిహేను పుస్తకాలు.	[sound:hypertts-16a59e0b3cfc57f7c070819b6d92a2b1a04013a10e43488d8ee83bc3.mp3]	One, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen and fifteen. These are fifteen books.	
+If0bfa00db01a	విజయ : నీ కలం పుస్తకం మీద ఉందా?	[sound:hypertts-a9bd81cd6b7987e4e6084bb39be97afb7e4a76420d14a3c7f00c9799.mp3]	Is your pen on the book?	
+Icd9f19024987	సరళ : నా కలం పుస్తకం మీద లేదు. పుస్తకం పక్కన ఉంది.	[sound:hypertts-a93611d9870eabd8880f77fd2df7962cbc33f77962b664ae6da89655.mp3]	My pen is not on the book. It is by the side of the book.	
+I8901148e2335	విజయ : ఈ పుస్తకాలు ఎన్ని? ఆ పుస్తకాలు ఎన్ని?	[sound:hypertts-ffa5b807e606c8912fd1d3afbd901636285e43e7f25b6db9ab52ae94.mp3]	How many are these books? How many are those books?	
+Ie90a8ee0c967	సరళ : ఇవి రెండు; అవి మూడు.	[sound:hypertts-77c4ecfa1544673a8611c6a6b2edc898ca323bf7bd8355a82e06d6dd.mp3]	These are two. Those are three.	
+Iad3af36b6827	విజయ : మొత్తం ఎన్ని?	[sound:hypertts-a7d956a17a2bc1dea0f1b8dac0c7b2f08e9673e6af2de5052e95a9f2.mp3]	How many are in total?	
+I557ff1e907a0	సరళ : అఈదు.	[sound:hypertts-411e8e0b25f4167b9fa727034f3c32aa31cc546d44c9b6cf96778ca3.mp3]	Five.	
+Ifc19c1fd251a	రాజు : లీలా! వాళ్లు ఎంతమంది?	[sound:hypertts-2fe006be474d066604d9e6e561ba18300b258dfeb234763a57212fb2.mp3]	Leela! How many are they?	
+I4972d201ac7d	లీల : వాళ్లు ఆరుగురు.	[sound:hypertts-dcbfed434a38619be8a363f175b29a61f5f488b0edd145eb7f5644f5.mp3]	They are six.	
+Ie36639c99b38	రాజు : నేను ఒకణ్ణి.  ఈయన ఒకరు. మేం ఎంతమందిమి?	[sound:hypertts-f8c9691e0f764648d498b00fb53ab461be5aedf7c95b77dfd698f04c.mp3]	I am one. He is one. How many are we?	
+I541646942fd0	లీల : మీరు ఇద్దరు.	[sound:hypertts-43c941dcef561a825fa6ff19c1d25bcf90ae395c6820bb0c4b71aac9.mp3]	You are two.	
+Ia46282c76da9	రాజు : మేం ఇద్దరం. నువ్వు ఒకతెవి. మనం ఎంత మందిమి?	[sound:hypertts-b363042985c415f8e848d053d28b3d134d7695bf9791541a282c6807.mp3]	We are two. You are one. How many are we?	
+Id7629a7637be	లీల : మనం ముగ్గురం	[sound:hypertts-74638f7fac0e6883d30e27347cfe4c745808b62cbdd643d8bbd66e12.mp3]	We are three.	
+Ib9f925bbcc21	రాజు : ఇతను ఒకడు. ఈమె ఒకతె. వీళ్లు ఎంతమంది?	[sound:hypertts-6ff1a6fd2558ed985c114a674f6bf52dcedcd78e53298dac2ef937b1.mp3]	He is one, she is one. How many are they?	
+I7690a380482a	లీల : వాళ్లు ఇద్దరు.	[sound:hypertts-76f8728b4285a220af7d2b5d5dfc753ac798e50ceb91cf94c09f4316.mp3]	They are two.	
+I1000da908074	రాజు : వాళ్లు ఇద్దరు; ఆయన ఒకరు; ఆమె ఒకరు; వాళ్లు మొత్తం ఎంతమంది?	[sound:hypertts-c7807ebee829309f0172e0ab52ffdcc8f2ed21c91b70ec715415e480.mp3]	They are two. He is one. She is one. How many are they in total?	
+Iac4450bd96f6	లీల : వాళ్లు నలుగురు. నువ్వు ఒకడివి. మీరు ఎంతమంది?	[sound:hypertts-1f244abe05ed51affd78abb7b852e2a1f1afc0b1960d2a7cf337ccb7.mp3]	They are four. You are one How many are you?	
+I147d0607198a	రాజు : మేం ఐదుగురం.	[sound:hypertts-e3ead015aca301d0022fcf6f73b1eeae4cb9b67c72d49ee7f03e9412.mp3]	We are five.	
+I30213b88d557	లీల : మీరు ఐదుగురు. వీళ్లు ఇద్దరు. మీరు మొత్తం ఎంతమంది?	[sound:hypertts-fb25a6baaab9c08c7b34be9450d0eccb70e0a1180e45ac614421699b.mp3]	You are five. These are two. How many are you in total?	
+I803147770f43	రాజు : మేం ఏడుగురం.	[sound:hypertts-491456507abb4c674d40907befbe90dcb659d615a9c32008ca95f7f0.mp3]	we are seven.	
+I46cad583aeb1	లీల : మీరు ఏడుగురు. నేను ఒకతెని. మనం మొత్తం ఎనిమిదిమందిమి.	[sound:hypertts-c0ac61dbe808cda132849f4cd7c74d74f9cf3aa126ee426fc21218d7.mp3]	You are seven. I am one. We are eight in total.	
+I7eb037502215	రాజు : మనం ఎనిమిదిమందిమి. ఈమె ఒకరు. మనం మొత్తం తొమ్మిదిమందిమి.	[sound:hypertts-2d03532d832e186539599df755c6dd3c1787f0b40ed9abc5c0e56e4f.mp3]	We are eight. She is one. We are nine in total.	
+I679516e6ebe1	గోవిందు: మీరు తొమ్మిదిమంది. నేను ఒకణ్ణి. మనం పదిమందిమి.	[sound:hypertts-4c831ce2acdecaa25a1bdfc81c3fc0b1211c886f8667dab55604d6d9.mp3]	You are nine. I am one. We are ten.	
+I2b02706ba3ba	పార్వథి : మీరు పదిమంది. వాళ్లు పదకొండుమంది. వీళ్లు పన్నెండుమంది. మేం పదిహేనుమందిమి.	[sound:hypertts-73af42ba48c5f8764adee618f5008e68e4de53718868c2502a572ddb.mp3]	You are ten. Those are eleven These are twelve. We are fifteen.	
+I319a0570af8f	మాష్టరు : గీతా! నువ్వు ఎవరివి?	[sound:hypertts-48710e0a6d571b5b34fb35fecfa2a87c17931cdebc80e4fee7219e87.mp3]	Geetha! Who are you?	
+I5dbdc6934688	గీత : నేను విద్యార్థినిని.	[sound:hypertts-e56ef48334ec9fb45dee9422dd7fb4422496330587cfd92a21b10a77.mp3]	I am a student (female).	
+Id43f30971327	మాష్టరు : రామూ! నువ్వు ఎవరివి?	[sound:hypertts-e4b2429b2e5d0e3fbb04df06fcf6a78e3afe688fd731f4de492d52d9.mp3]	Ramu! Who are you?	
+I02dcabd2365a	రాము : నేను విద్యార్థిని.	[sound:hypertts-c3e8447937f1f0f698a034d42830adcb3a27f4cc6ea58176c24a4f15.mp3]	I am a student (male).	
+I25fe5896c836	మాష్టరు : అతనూ ఒక విద్యార్థి. ఆమె ఒక విద్యార్థిని. వాళ్ళు ఎంతమంది విద్యార్థులు?	[sound:hypertts-de9b74294b797ced47cf79e181542448b9502cd98e0e824af8ca7bd1.mp3]	He is a student. She is a student How many students are they?	
+Ifd519b27f7e8	సీత : వాళ్లు ఇద్దరు విద్యార్థులు.	[sound:hypertts-9e5c386f6eb879d28cdf56785ccc8c46f50ca3ca9015c464cbd9a219.mp3]	They are two students.	
+Id5b214ca3ed5	మాష్టరు : రామూ! నువ్వు విద్యార్థివి. గీతా! నువ్వు విద్యార్థినివి. మీరు ఎవరు? గీత, రాము : మేం విద్యార్థులం.	[sound:hypertts-727b320b887e912fa84605824a6a39512eeffe8081ff7cc1cf77793a.mp3]	Ramu! You are a student (male). Geetha! you are a student (female). Who are you (pl.)? We are students.	
+Ibfcfb1fe7dc6	మాష్టరు : సీతా! గీతా! మీరు ఎవరు? సీత, గీత: మేం విద్యార్థినులం.	[sound:hypertts-0e9d46aa82ac1ef10aea817d20e3743b0813e7809f6a98abd028f091.mp3]	Seetha! Geetha! Who are you? We are students (female)	
+I86dd55540357	మాష్టరు : రవీ! Rఆమూ! మీరు ఎవరు? రవి, రాము: మేం విద్యార్థులం	[sound:hypertts-2f87e82f0c0edca19b1955e33f77585d6c4fedd5e64e7d02ad7a894e.mp3]	Ravi! Ramu! Who are you? We are students (male).	
+Ifb91b6fc84c2	మాష్టరు : రవీ! సీతా గీతా ఎవరు? రవి : వాళ్లు విద్యార్థినులు	[sound:hypertts-26e5b6edacc1206a3326e5043caa039ea7ca53d1163449c9c9cf58c0.mp3]	Ravi! Who are Seetha and Geetha? They are students (female)	
+I4f834a1abd1d	మాష్టరు : సీతా! రవీ రామూ ఎవరు?	[sound:hypertts-97f4d13f9f14449dc4446f1acbdb4c8a224b08da8bb272f87f259c07.mp3]	Seetha! Who are Ravi and Ramu?	
+Id1baf0ab18de	సీత : వాళ్లు విద్యార్థులు.	[sound:hypertts-70dbcb956b8841f5cd57d08915fbd56b0fdba0e7db0777a469b84982.mp3]	They are students (male).	
+I150650ee13b0	మాష్టరు : రవీ! రామూ! మీ మాష్టరుగారు ఎవరు. రవి, రాము: మీరు మా మాష్టరుగారు.	[sound:hypertts-33264acf86d0d8b05fe417147bf8ff72ddc0243cbf5f3283b24ff2a1.mp3]	Ravi! Ramu! Who is your teacher? You are our teacher.	
+Id5509b3f8b48	మాష్టరు : సీతా! మీరు ఎవరి విద్యార్థులు?	[sound:hypertts-48a523e52f83f113b6bc1c0a4403904aeb47b9b22a7e1406c8d848a4.mp3]	Seetha! Whose students are you?	
+Iec803e01c0b1	సీత : మేం మీ విద్యార్థులుం.	[sound:hypertts-7c2ffcfc449b168126da4075c9a9956180be71d1d9e966c1f88c0e33.mp3]	We are your students.	
+I991439137547	మాష్టరు : నేను ఎవరిని?	[sound:hypertts-0f8101fbb60f622a1bea8ee2dfbfe4902b3e8354682c8a6dc0f8f4d2.mp3]	Who am I?	
+Ic84239c87c2e	సీత : మీరు మా మాష్టరుగారు.	[sound:hypertts-d67917288bfa7e52de84d78f4875142cabf257b8634e4655dbbf86eb.mp3]	You are our teacher.	
+I08045844b8c3	మాష్టరు : ఈయన ఎవరి మాష్టరు?	[sound:hypertts-3f5d7b5fe37da4cc17ad24bcc478f2991463998cc0fe8745c90061b0.mp3]	Whose teacher is he?	
+I142d6654af27	సీత : ఆయన కూడా మా మాష్టరుగారే.	[sound:hypertts-f1bad0f8dd9bb8eea01859907c488f8ab355190ad765a094c0039899.mp3]	He is also our teacher.	
+Ifb938f183157	మాష్టరు : మేం ఎవరిమి?	[sound:hypertts-b639a5fb73ac5d3aadd833590b57f7a8d098842ca4d9c4d796b585f7.mp3]	Who are we?	
+I7c909a292217	సీత : మీరు మా మాష్టర్లు.	[sound:hypertts-874645a9a45261bfb830dbbdef294b94bda16e54aee86e7d02d00eb8.mp3]	You are our teachers.	
+Id062b2af6d85	మాష్టరు : ఇది ఎవరి క్లాసు?	[sound:hypertts-2a4ea6c9636c05ec7a49a2e1f803660c3ccfeea9fa71e265763a444d.mp3]	Whose class-room is this?	
+I4697eda1b5fd	సీత : ఇది వాళ్ల క్లాసు.	[sound:hypertts-84258e7f09fdcd13aac912b83564eceff61bae7378e2cad72050163b.mp3]	This is their class-room.	
+Id393408c1a71	మాష్టరు : వీళ్లు ఎవరు?	[sound:hypertts-b55a1d2126c5e95c7a42e8166db604e8dd0ee1a81c6fd086bc250228.mp3]	Who are they (prox.)	
+I8a77d51c139f	సీత : వీళ్ళు మా స్నేహితులు.	[sound:hypertts-d60c55009034e1312d09abcc96339608441f0c991d7e1fb30f032438.mp3]	They (prox.) are our friends.	
+Ide755ba8a4f2	మాష్టరు : అది ఎవరి క్లాసు	[sound:hypertts-6ba65b33874b6c7fd45a2a85273852a70da0e05b570eda5774b6a92a.mp3]	Whose class is that?	
+I26109fba25b4	సీత : అది వీళ్ల క్లాసు.	[sound:hypertts-ee6bede6612856dedac6fb5831242be8c33dbf5382a506a734b571bf.mp3]	That is their (prox.) class room.	
+I65f439f611d7	మాష్టరు : ఇది ఎవరి స్కూలు?	[sound:hypertts-cf1e98a16240561672f71a2fb3993b23df97bea8fe3f31e40b332aea.mp3]	Whose school is this?	
+I4a2465483174	సీత : ఇది మన స్కూలు. రవి : నేను ఆంధ్రుణ్ణి. రాము ఆంధ్రుడు. మేం ఎవరిమి?	[sound:hypertts-b1d651d40796d33e683ad4dcc2a196ed0a8e0904d9c28589b34edc03.mp3]	This is our school. I am an Andhra. Ramu is an Andhra. Who are we?	
+Iff71cf5439b0	గోపి : మీరు ఆంధ్రులు. రవి : అవును. నేనూ రామూ ఆంధ్రులం. తెలుగు మా మాత్Rభాష. గోపీ! నీ మాత్Rభాష ఏది?	[sound:hypertts-5b05bb94147195fe0b95d99d0dbb504301a0603eddb248652b9c5db9.mp3]	You are Andhras. Yes, I and Ramu are Andhras. Telugu is our mother-tongue. Gopi! What is your mother- tongue.	
+Ifdfdc2dd8cb1	గోపి : నా మాత్Rభాష కన్నడం. రవి : నేను భారతీయుణ్ణి. నువ్వు భారతీయుడివి. మీరు భారతీయులు. మనం భారతీయులం.	[sound:hypertts-37560145e0d0d4cefd66cebb6ebe1619d5553c0b239055e1fd23df25.mp3]	My mother-tongue is Kannada. Yes, I am an Indian. You are an Indian. You are Indians. We are Indians.	
+Iaa6194265d2d	గోపి : కన్నడం, తెలుగు, తమిళం, మలయాళం, ఒరియా, హిందీ మన భాషలే. రవి : భారతదేశం మన దేశం.	[sound:hypertts-a39fa553bfe511abe858784740145d20c7fb2a612a31cf9f1dbfdb8b.mp3]	Kannada, Telugu, Tamil, Malayalam, Oriya, Hindi are all our languages. India is our country.	
+Ibfaee19c2e60	సుబ్బారావు: నీ దగ్గర కన్యాశుల్కం ఉందా? గోపి : ఉంది. ఆ బల్ల మీద ఉంది, చూడు.	[sound:hypertts-7c28ab7d36fbd556ef3c7264c7f4aa994da8a8343cc309d81317a1f4.mp3]	Do you have kanyasulkam with you? Yes I have. It is there on the table, Look.	
+I43a26506575c	సుబ్బా : ఇది కన్యాశుల్కం కాదు, గోపీ! గోపి : ఆ అలమరలో చూడూ; గడియారం పక్కన	[sound:hypertts-77c5652fcbc1d806cbf79d7280bfeaf3178e69b72faaee660f2dba2a.mp3]	This is not Kanyasulkam, Gopi! See in that cup-board. Next to the time-piece.	
+I047b1b3ed06e	సుబ్బా : ఇది కన్యాశుల్కమే. గోపి : తీసుకొ.	[sound:hypertts-ac1e5a3d2c5701fef010189b528f0529b09ae0e387e98189f73c66b4.mp3]	This is Kanyasulkam Take it.	
+I940579421346	సుబ్బా : ఇది ఎవరి పుస్తకం? గోపి : నా స్నేహితుడి పుస్తకం.	[sound:hypertts-066a15f1a5dcf26eb953bf3fa8e67cd25a928dffbefbf7686680fc36.mp3]	"Whose book is this? My friend&#x27;s book."	
+Ic93dcd12de8a	సుబ్బా : ఎవరి పుస్తకం? ప్రసాద్ పుస్తకమా? గోపి : ప్రసాద్ పుస్తకం కాదు. రవి పుస్తకం.	[sound:hypertts-ecd04e52d57347649f8943db97d2ba28d5f8095b89939fde4ba59846.mp3]	"Whose book? Is it Prasad&#x27;s book? Not Prasad&#x27;s book. It is Ravi&#x27;s book."	
+Ic386744b030a	సుబ్బా : అలాగా! వీరు ఎవరు? గోపి : మా నాన్నగారు.	[sound:hypertts-edd069912a19e82a72fb1ddbc702b99f97d4d3302c93ca143f56f2da.mp3]	I see! who is this gentleman? My father.	
+Ic53d430e3499	రామయ్య : నీ పేరేమిటి బాబూ!	[sound:hypertts-e36dfb23ff1f488cd033e1b77cd111b12b42039ec40a86e55c891b56.mp3]	What is your name, dear!	
+I8fc38af2255d	సుబ్బా : నా పేరు సుబ్బారావండీ! మా నాన్నగారి పేరు విశ్వనాథంగారు.	[sound:hypertts-ac69f37002491d1287c8dbbd4c524358d14792e03e2aaa590968be9b.mp3]	"My name is Subbarao, Sir! My father&#x27;s name is Mr. Viswanatham"	
+I609e7857adaa	రామయ్య : అలాగా! మీరు ఎంతమంది అన్నదమ్ములు?	[sound:hypertts-085e6320ab213c911776f83327fbcc9706006b68fd91a8c20e908d66.mp3]	I see! How many brothers are you?	
+I6eedc5bcac96	సుబ్బా : మేం ముగ్గురమండీ! మా అన్నయ్యా, నేనూ, మా తమ్ముడూ.	[sound:hypertts-fc56b0c94dc7647b129b33028766e604d0bdf6be738dc70a65de5795.mp3]	We are three, sir! My elder brother, myself and my younger brother.	
+I3d4aea660dfd	రామయ్య : మీ అన్నయ్య పేరేమిటి?	[sound:hypertts-967008f8826faf98d4a75fe513e8165722691544d1a898526ecbfdd8.mp3]	"What is your elder brother&#x27;s name?"	
+I35103606fbe7	సుబ్బా : వెన్కటేశ్వర్లు.	[sound:hypertts-8bb16886482426b5afe73ecd38a81f5fd3a644587b756cd3852fe3a5.mp3]	Venkateswarlu.	
+I42f96ce8dde1	రామయ్య : మీ తమ్ముడి పేరు?	[sound:hypertts-ff2473b07c73cab85ddb645893b1826bd02d2517ae3ded80c42ab48a.mp3]	"And your younger brother&#x27;s name?"	
+Ib0c7012ab7c1	సుబ్బా : గోవిందు.	[sound:hypertts-cdb5efb2f155c6d66e07b407d60c8cd3bf4516ca8ae94b2daa08c4da.mp3]	Govind.	
+I9b9b2aa9cedc	రామయ్య : గోపీ! పోష్టాfఈసు ఎక్కడుంది? గోపి : బస్టాండు దగ్గరుంది నాన్నగారూ!	[sound:hypertts-6fa9d295598ee5362aa63c2f9179a857647d1f4eaae9aa073e1f392a.mp3]	Gopi! Where is the post-office? It is near Bus-stand father!	
+I25bbf0ba198d	రామయ్య : రెండు కవర్లు తీసుకురా.	[sound:hypertts-778b0c8cfc62ddafc4a6190946323c2c3510f3c4a4fdf3475e0c1fbc.mp3]	Bring two envelopes.	
+Ib6542d9d88f3	సుబ్బా : కవర్లు నా దగ్గర ఉన్నాయి, తీసుకోండి.	[sound:hypertts-fa64aa876913ee899bfaf22832d860af5ea3370052d9f661a1b83aea.mp3]	I have envelopes with me. Please take them.	

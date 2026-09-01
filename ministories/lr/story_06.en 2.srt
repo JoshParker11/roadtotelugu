@@ -1,0 +1,188 @@
+1
+00:00:00,000 --> 00:00:02,616
+Jane and Fred are tired at night.
+
+2
+00:00:03,216 --> 00:00:05,760
+They eat dinner together at seven.
+
+3
+00:00:06,360 --> 00:00:09,336
+Their son eats dinner with them.
+
+4
+00:00:09,936 --> 00:00:12,864
+They relax and watch TV together.
+
+5
+00:00:13,464 --> 00:00:15,720
+Their son watches TV, too.
+
+6
+00:00:16,320 --> 00:00:19,896
+They put their son to bed at eight.
+
+7
+00:00:20,496 --> 00:00:23,160
+Jane has a hot bath.
+
+8
+00:00:23,760 --> 00:00:26,496
+Fred has a shower and brushes his teeth.
+
+9
+00:00:27,096 --> 00:00:29,784
+Jane reads a book but falls asleep.
+
+10
+00:00:30,384 --> 00:00:33,432
+Fred also falls asleep soon after.
+
+11
+00:00:35,032 --> 00:00:37,600
+Here is the same story told in a different way.
+
+12
+00:00:39,200 --> 00:00:41,984
+Fred and I are tired at night.
+
+13
+00:00:42,584 --> 00:00:45,536
+We eat dinner together at seven.
+
+14
+00:00:46,136 --> 00:00:48,848
+Our son eats dinner with us.
+
+15
+00:00:49,448 --> 00:00:52,400
+We relax and watch TV together.
+
+16
+00:00:53,000 --> 00:00:55,256
+Our son watches TV, too.
+
+17
+00:00:55,856 --> 00:00:59,216
+We put our son to bed at eight.
+
+18
+00:00:59,816 --> 00:01:02,144
+I have a hot bath.
+
+19
+00:01:02,744 --> 00:01:05,480
+Fred has a shower and brushes his teeth.
+
+20
+00:01:06,080 --> 00:01:08,696
+I read a book, but fall asleep.
+
+21
+00:01:09,296 --> 00:01:12,344
+Fred also falls asleep soon after.
+
+22
+00:01:13,944 --> 00:01:17,136
+One: Fred and Jane are tired.
+
+23
+00:01:17,736 --> 00:01:19,992
+Are Fred and Jane tired?
+
+24
+00:01:20,592 --> 00:01:22,752
+Yes, they are tired.
+
+25
+00:01:23,352 --> 00:01:26,640
+Two: They eat dinner at seven.
+
+26
+00:01:27,240 --> 00:01:29,808
+Do they eat dinner at six?
+
+27
+00:01:30,408 --> 00:01:33,456
+No, they do not eat dinner at six.
+
+28
+00:01:34,056 --> 00:01:36,216
+They eat at seven.
+
+29
+00:01:36,816 --> 00:01:39,432
+Three: They have a son.
+
+30
+00:01:40,032 --> 00:01:41,808
+Do they have a daughter?
+
+31
+00:01:42,408 --> 00:01:45,984
+No, they do not have a daughter, they have a son.
+
+32
+00:01:46,584 --> 00:01:50,688
+Four: Their son watches TV with them.
+
+33
+00:01:51,288 --> 00:01:53,304
+Does their son watch TV?
+
+34
+00:01:53,904 --> 00:01:57,768
+Yes, their son watches TV with them.
+
+35
+00:01:58,368 --> 00:02:01,440
+Five: He goes to bed at eight.
+
+36
+00:02:02,040 --> 00:02:04,752
+Does their son go to bed at nine?
+
+37
+00:02:05,352 --> 00:02:08,352
+No, he goes to bed at eight.
+
+38
+00:02:08,952 --> 00:02:12,240
+Six: Jane has a hot bath.
+
+39
+00:02:12,840 --> 00:02:14,616
+Does Jane have a shower?
+
+40
+00:02:15,216 --> 00:02:17,640
+No, Jane doesn't have a shower.
+
+41
+00:02:18,240 --> 00:02:20,784
+She has a hot bath.
+
+42
+00:02:21,384 --> 00:02:24,864
+Seven: Fred has a shower and brushes his teeth.
+
+43
+00:02:25,464 --> 00:02:27,240
+Does Fred brush his teeth?
+
+44
+00:02:27,840 --> 00:02:31,296
+Yes, Fred has a shower and brushes his teeth.
+
+45
+00:02:31,896 --> 00:02:34,776
+Eight: Jane reads a book.
+
+46
+00:02:35,376 --> 00:02:37,344
+Does Jane read a book?
+
+47
+00:02:37,944 --> 00:02:40,536
+Yes, she reads a book.
+

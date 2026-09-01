@@ -42,7 +42,11 @@ SOUND = re.compile(r'\[sound:([^\]]+)\]')
 # if its audio column happened to hold a [sound:...] tag, copied in under a garbage filename.
 # 'W' was missing from this class originally, which would have made a word-audio import silently
 # discard every row it was given — the filter is meant to reject foreign notes, not our own clips.
-GUID = re.compile(r'^[MSW][0-9a-f]{12}$')
+# Then 'I' was added for the Intensive Course and this rejected all 173 rows of the first import,
+# the same failure a second time. So the letter is no longer enumerated: the SHAPE is what
+# identifies one of ours, and a new corpus must not require editing a file it has nothing to do
+# with. A foreign Anki note's first field is a word or a sentence, not a capital plus twelve hex.
+GUID = re.compile(r'^[A-Z][0-9a-f]{12}$')
 
 
 def find_media():
