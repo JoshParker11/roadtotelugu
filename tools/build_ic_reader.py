@@ -237,17 +237,22 @@ def main():
     # The distinct-word manifest, same shape and same purpose as the mini stories': it is what
     # the per-headword pronunciation clips are generated from. build_ms_reader has always
     # written one; this side did not, which is why --words had nothing to export.
+    # OCR debris is left out. The reader renders it inert with no speaker button, so a clip
+    # for it could never be played — generating one is paying to synthesise a string that was
+    # never on the page, and then storing it forever.
+    voiceable = [l for l in rs.lex if not l.get('junk')]
     with open(OUT_WORDS, 'w', encoding='utf-8', newline='') as f:
         w = csv.writer(f, delimiter='\t')
         w.writerow(['guid', 'te'])
-        w.writerows((l['g'], l['te']) for l in rs.lex)
+        w.writerows((l['g'], l['te']) for l in voiceable)
 
     turns = sum(len(s['lines']) for s in stories)
     ocr = sum(1 for s in stories for l in s['lines'] if l.get('ocr'))
     print(f'{len(stories)} lessons · {turns} turns · {len(rs.lex)} distinct words '
           f'-> reader/data/intensive.js')
     print(f'  {turns - ocr} from the book\'s own romanization, {ocr} from OCR')
-    print(f'{len(rs.lex)} distinct words -> {os.path.relpath(OUT_WORDS, ROOT)}')
+    print(f'{len(voiceable)} voiceable words -> {os.path.relpath(OUT_WORDS, ROOT)}'
+          f'   ({len(rs.lex) - len(voiceable)} OCR-debris entries left out)')
     print(f'{sum(1 for s in stories if s["audio"])} lesson(s) with audio')
 
 
