@@ -376,6 +376,23 @@ main { padding-top: var(--top-h); }
 
 /* The list that follows the cards. Wider than a flashcard because it is read, not flipped. */
 .rvcard.wide { max-width: 640px; text-align: left; }
+.rvcard.sync h3 { margin: 0 0 6px; }
+.synchelp { color: var(--ink2); font-size: 13px; margin: 0 0 16px; }
+.syncrow { margin: 0 0 18px; }
+.syncrow > b { display: block; font-size: 12.5px; margin: 0 0 6px; }
+.syncrow textarea {
+  width: 100%; font-family: ui-monospace, Menlo, monospace; font-size: 11.5px;
+  padding: 8px 10px; border: 1px solid var(--line-strong); border-radius: 8px;
+  background: var(--bg3); color: var(--ink); resize: vertical; word-break: break-all;
+}
+.syncbtns { display: flex; gap: 8px; margin-top: 8px; align-items: center; flex-wrap: wrap; }
+.syncbtns button, .syncupload {
+  padding: 7px 12px; font: inherit; font-size: 12.5px; font-weight: 600; cursor: pointer;
+  border: 1px solid var(--line-strong); border-radius: 8px; color: var(--ink2); background: none;
+}
+.syncbtns button:hover:not(:disabled), .syncupload:hover { border-color: var(--amber); color: var(--amber); }
+.syncbtns button:disabled { opacity: .45; cursor: default; }
+.syncplan { font-size: 12.5px; color: var(--ink2); margin: 10px 0 0; line-height: 1.5; }
 .rvlist { max-height: 58vh; overflow-y: auto; margin: 0 0 12px; }
 .rvrow {
   display: grid; grid-template-columns: auto minmax(0, 1fr) minmax(0, 1fr) minmax(0, 2fr);

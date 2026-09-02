@@ -959,6 +959,80 @@
     else $('#panelbody').innerHTML = '<p class="pempty">Tap a word to open its card.</p>';
   }
 
+  /* ---------- sync between devices ---------- */
+  function syncPanel() {
+    $('#overlay-root').innerHTML = `<div class="overlay" id="sync-ov"><div class="rvcard wide sync">
+      <button class="close" id="sync-close">×</button>
+      <h3>Sync between devices</h3>
+      <p class="synchelp">Copy the code from one device and paste it into the other. It merges —
+        nothing is overwritten, and it is safe to run in either direction or twice.</p>
+      <div class="syncrow">
+        <b>This device</b>
+        <textarea id="sync-out" readonly rows="3" placeholder="generating…"></textarea>
+        <div class="syncbtns">
+          <button id="sync-copy">Copy code</button>
+          <button id="sync-file">Save as file</button>
+        </div>
+      </div>
+      <div class="syncrow">
+        <b>Paste a code from another device</b>
+        <textarea id="sync-in" rows="3" placeholder="RTT1z.…"></textarea>
+        <div class="syncbtns">
+          <button id="sync-check">Check it</button>
+          <button id="sync-apply" disabled>Merge</button>
+          <label class="syncupload">Load file<input type="file" id="sync-upload" accept=".txt,text/plain" hidden></label>
+        </div>
+        <p class="syncplan" id="sync-plan"></p>
+      </div>
+    </div></div>`;
+
+    Sync.exportCode().then(c => { $('#sync-out').value = c; })
+      .catch(() => { $('#sync-out').value = ''; $('#sync-out').placeholder = 'Could not build a code.'; });
+
+    let pending = null;
+    const say = m => { $('#sync-plan').textContent = m; };
+
+    $('#sync-close').addEventListener('click', () => { $('#overlay-root').innerHTML = ''; });
+    $('#sync-ov').addEventListener('click', e => { if (e.target.id === 'sync-ov') $('#overlay-root').innerHTML = ''; });
+    $('#sync-copy').addEventListener('click', async () => {
+      const t = $('#sync-out');
+      try { await navigator.clipboard.writeText(t.value); toast('Code copied.'); }
+      catch { t.select(); toast('Press ⌘C to copy.'); }
+    });
+    $('#sync-file').addEventListener('click', () => {
+      const blob = new Blob([$('#sync-out').value], { type: 'text/plain' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = `telugu-sync-${new Date().toISOString().slice(0, 10)}.txt`;
+      a.click(); URL.revokeObjectURL(a.href);
+    });
+    $('#sync-upload').addEventListener('change', async e => {
+      const f = e.target.files && e.target.files[0];
+      if (f) { $('#sync-in').value = (await f.text()).trim(); $('#sync-check').click(); }
+    });
+    /* Check before merge, always. An import is the one action here that can surprise you, so
+       it states what it would change and waits. */
+    $('#sync-check').addEventListener('click', async () => {
+      pending = null; $('#sync-apply').disabled = true;
+      try {
+        const parsed = await Sync.parse($('#sync-in').value);
+        const p = Sync.plan(parsed);
+        pending = parsed;
+        $('#sync-apply').disabled = false;
+        say(`From ${p.from.replace('T', ' ').replace('Z', '')} · ${p.theirTotal} words there, `
+          + `${p.myTotal} here. Merging adds ${p.added}, moves ${p.advanced} further along, `
+          + `leaves ${p.kept} as they are${p.notes ? `, and brings ${p.notes} note(s)` : ''}.`);
+      } catch (err) { say(err.message); }
+    });
+    $('#sync-apply').addEventListener('click', () => {
+      if (!pending) return;
+      const p = Sync.merge(pending);
+      $('#overlay-root').innerHTML = '';
+      toast(`Merged — ${p.added} added, ${p.advanced} advanced.`);
+      renderStats(); renderTop();
+    });
+  }
+
   /* ---------- stats view ---------- */
   function renderStats() {
     $('#playbar').hidden = true;
@@ -968,7 +1042,9 @@
     const snaps = WordLevels.snapshots();
 
     $('#pane').innerHTML = `
-      <div class="viewhead"><h1>Stats</h1></div>
+      <div class="viewhead"><h1>Stats</h1>
+        <span class="tools"><button class="iconbtn" id="st-sync" title="Sync between devices">⇄ Sync</button></span>
+      </div>
       <div class="statcards">
         <div class="statcard"><b>${nf(WordLevels.knownTotal())}</b><span>known words, all texts</span></div>
         <div class="statcard"><b>${nf(lingqs)}</b><span>LingQs being learned</span></div>
@@ -982,6 +1058,7 @@
       </div>
       <div class="chartbox"><h3>Known words over time</h3>${chartHTML(snaps)}</div>`;
 
+    $('#st-sync').addEventListener('click', syncPanel);
     $('#st-goal').addEventListener('click', () => {
       const v = prompt('Daily goal — words acted on per day:', WordLevels.goal());
       if (v) { WordLevels.setGoal(v); renderStats(); renderTop(); }
