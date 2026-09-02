@@ -84,6 +84,15 @@ ministories/Default.txt
 ministories/audio/*
 !ministories/audio/words/
 
+# The course's word clips, on the same reasoning and needing the same three lines: git will not
+# descend into an excluded directory, so un-exclude the parent, re-exclude the per-turn clips
+# directly inside it, then re-include only words/. The per-turn clips stay out because the
+# reader plays intensive/lr/lesson_NN.mp3, which is built from them and is committed; the word
+# clips go in because the speaker button is dead on the phone otherwise.
+!intensive/audio/
+intensive/audio/*
+!intensive/audio/words/
+
 # Anki's own export filename for the word-audio round trip — same scratch status as Default.txt.
 # Already consumed by ms_hypertts_import.py --words; the clips in audio/words/ are the artifact.
 ministories/Telugu__*.txt
