@@ -31,7 +31,11 @@
   const STORIES = [];
   for (const d of SETS) {
     const off = LEX.length;
-    LEX.push(...(d.lex || []));
+    // Which corpus each word came from. The two datasets each build their own lexicon, so a
+    // word occurring in both has an entry in each — same guid, same meaning, two rows. The
+    // vocabulary table listed both, which is why the known list looked doubled.
+    const tag = /Intensive/.test(d.source || '') ? 'ic' : 'ms';
+    LEX.push(...(d.lex || []).map(l => Object.assign({ corpus: tag }, l)));
     for (const st of (d.stories || [])) {
       /* Unique across datasets. Both number their stories from 1, and the router matched
          on the number alone — so #/story/1 found mini story 1 and every Intensive Course
@@ -876,9 +880,30 @@
   }
 
   /* ---------- vocabulary view ---------- */
+  /* Where a word was first met, in words rather than a bare number. "story undefined" came
+     from printing build_ms_reader's `f` for course words, which never had one. */
+  function sourceLabel(w) {
+    const bits = [];
+    const name = (l) => l.corpus === 'ic' ? `lesson ${l.f}` : `story ${l.f}`;
+    if (w.l.f) bits.push(name(w.l));
+    if (w.also && w.also.f && w.also.corpus !== w.l.corpus) bits.push(name(w.also));
+    return bits.join(' · ') || '—';
+  }
+
   function renderVocab() {
     $('#playbar').hidden = true;
-    const words = LEX.map((l, i) => ({ i, l, eff: effOf(l.g) }));
+    /* One row per WORD, not per lexicon entry. A word in both corpora has an entry in each,
+       and listing both showed every shared word twice — once labelled with a mini story and
+       once "story undefined", because only build_ms_reader recorded a first-met number.
+       Merged here rather than at load: the token arrays index into their own dataset's lex, so
+       the arrays themselves cannot be collapsed. */
+    const byGuid = new Map();
+    LEX.forEach((l, i) => {
+      const seen = byGuid.get(l.g);
+      if (seen) { seen.also = l; return; }
+      byGuid.set(l.g, { i, l, eff: effOf(l.g) });
+    });
+    const words = [...byGuid.values()];
     const groups = {
       lingqs: words.filter(w => ['1', '2', '3', '4'].includes(w.eff)),
       new: words.filter(w => w.eff === null),
@@ -898,7 +923,7 @@
 
     $('#pane').innerHTML = `
       <div class="viewhead">
-        <h1>Vocabulary</h1><span class="sub">${nf(LEX.length)} distinct words across ${STORIES.length} stories</span>
+        <h1>Vocabulary</h1><span class="sub">${nf(words.length)} distinct words across ${STORIES.length} texts</span>
         <span class="tools">
           <input type="search" id="v-q" placeholder="Search…" value="${esc(vocab.q)}"
             style="border:1px solid var(--line);border-radius:8px;padding:6px 10px;font:inherit;font-size:13.5px">
@@ -920,7 +945,7 @@
           <td style="width:24px">${badgeOf(w.eff)}</td>
           <td class="te-col ${rom === 'te' ? 'te' : ''}">${esc(disp(w.l.te))}</td>
           <td class="g-col">${esc(glossOf(w.l))}</td>
-          <td class="n-col">×${w.l.n} · story ${w.l.f}</td>
+          <td class="n-col">×${w.l.n} · ${sourceLabel(w)}</td>
         </tr>`).join('')}</tbody></table>`;
 
     $$('#pane [data-vtab]').forEach(b => b.addEventListener('click', () => { vocab.tab = b.dataset.vtab; renderVocab(); }));
@@ -1081,15 +1106,20 @@
     if (!w || !cur) return;
     $$('#pane .w.focus').forEach(el => el.classList.remove('focus'));
     w.classList.add('focus');
-    const tok = cur.lines[+w.dataset.l].t[+w.dataset.t];
+    /* Remember which line you were reading. Only playback used to set this, so switching to
+       sentence view always landed on sentence one however far down the lesson you had read. */
+    curLine = +w.dataset.l;
+    const tok = cur.lines[curLine].t[+w.dataset.t];
     const g = LEX[tok[2]].g;
-    /* LingQ's core move: clicking a blue word creates the LingQ at status 1. Arrow/Tab
-       navigation deliberately does not — only the deliberate click/tap commits. */
+    /* LingQ's core move: clicking an untouched word commits it. Level 2, not 1 — level 1 is
+       blue now, so marking a pale-blue word level 1 turns it solid blue and reads as nothing
+       having happened. Amber is the point: a word you have touched should look touched.
+       Arrow/Tab navigation deliberately does not commit; only the click does. */
     if (effOf(g) === null) {
-      WordLevels.set(g, '1');
+      WordLevels.set(g, '2');
       repaintTokens(); renderTop();
     }
-    openWord(g, cur.lines[+w.dataset.l]);
+    openWord(g, cur.lines[curLine]);
   });
 
   $$('#romseg button').forEach(b => b.addEventListener('click', () => {

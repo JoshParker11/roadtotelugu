@@ -225,6 +225,25 @@ def main():
     if not stories:
         sys.exit('nothing to bake')
 
+    # Which lesson each word is first met in. build_ms_reader records the same thing as `f`
+    # for its stories, and the vocabulary table prints it — without it every course word read
+    # "story undefined".
+    # ...and how often it occurs, which the vocabulary table prints as "×N" and sorts by.
+    # Neither was recorded here, so every course word read "×undefined · story undefined".
+    first, count = {}, collections.Counter()
+    for st in stories:
+        for ln in st['lines']:
+            for _, _, ix in ln['t']:
+                if ix < 0:
+                    continue
+                g = rs.lex[ix]['g']
+                count[g] += 1
+                if g not in first:
+                    first[g] = st['num']
+    for l in rs.lex:
+        l['f'] = first.get(l['g'], 0)
+        l['n'] = count.get(l['g'], 0)
+
     data = {'generated': datetime.date.today().isoformat(),
             'source': 'An Intensive Course in Telugu',
             'lex': rs.lex, 'stories': stories}
