@@ -1138,10 +1138,22 @@
   const drillMode = () => { try { return localStorage.getItem(DRILL_MODE) || 'recog'; } catch { return 'recog'; } };
   const setDrillMode = m => { try { localStorage.setItem(DRILL_MODE, m); } catch {} };
 
+  /* Fisher-Yates, in place. Every lap is shuffled because the panel's list is alphabetical
+     and a fixed order teaches the order: the card you just answered becomes the cue for the
+     next one, and a word you only know in third position is a word you do not know. */
+  function shuffled(a) {
+    const out = a.slice();
+    for (let i = out.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [out[i], out[j]] = [out[j], out[i]];
+    }
+    return out;
+  }
+
   function startDrill(entries, opts) {
     const q = entries.map(w => w.g || (w.l && w.l.g)).filter(Boolean);
     if (!q.length) return toast('No words to drill here.');
-    drill = { queue: q.slice(), again: [], lap: 1, revealed: false, landed: 0,
+    drill = { queue: shuffled(q), again: [], lap: 1, revealed: false, landed: 0,
               total: q.length, mode: drillMode(), scope: (opts && opts.scope) || '' };
     renderDrill();
   }
@@ -1150,7 +1162,7 @@
   function renderDrill() {
     if (!drill) return;
     if (!drill.queue.length && drill.again.length) {      // next lap
-      drill.queue = drill.again; drill.again = []; drill.lap++;
+      drill.queue = shuffled(drill.again); drill.again = []; drill.lap++;
     }
     if (!drill.queue.length) {
       $('#overlay-root').innerHTML = `<div class="overlay"><div class="rvcard">
