@@ -42,6 +42,7 @@ from ids import guid
 
 SRC = os.path.join(ROOT, 'translate', 'source', 'hp1_en.txt')
 WORK = os.path.join(ROOT, 'translate', 'work')
+TEXT = os.path.join(ROOT, 'translate', 'source', 'chapters')
 
 COLS = ['guid', 'ch', 'para', 'kind', 'en', 'te', 'notes', 'status']
 
@@ -82,7 +83,16 @@ def split_chapters(paras):
       1. CHAPTER TWO / THE VANISHING GLASS          — the normal case
       2. THE MIDNIGHT DUEL                          — chapter nine lost its CHAPTER marker
       3. CHAPTER SEVENTEEN / THE MAN WITH TWO FACES It was...  — title glued to the first line
+
+    Shape 2 is a GUESS, and only a defensible one when the file gives us nothing better. An
+    all-caps paragraph inside a chapter is not rare in this book — Hogwarts' equipment list,
+    the Daily Prophet's headlines and Dumbledore's Chocolate Frog card are all set in caps —
+    so a source WITH intact CHAPTER markers must be read by those markers alone. Trusting the
+    caps heuristic on such a file found 23 chapters in a 17-chapter novel, cutting a new
+    "chapter" at UNIFORM, COURSE BOOKS, OTHER EQUIPMENT and GRINGOTTS BREAK-IN LATEST.
     """
+    marked = sum(1 for p in paras if MARKER.match(p))
+    caps_starts_chapter = marked < 2
     chapters, n, title, body = [], 0, None, []
 
     def flush():
@@ -103,7 +113,7 @@ def split_chapters(paras):
             if extra:
                 body.append(extra)
             started = True
-        elif CAPS.match(p) and '"' not in p:
+        elif caps_starts_chapter and CAPS.match(p) and '"' not in p:
             # A bare title. Only believable as a chapter start once we are already in the book.
             flush()
             n, body = (n + 1) if n else 1, []
@@ -125,6 +135,25 @@ def take_title(p):
     if m:
         return m.group(1).strip(), m.group(2).strip()
     return p.strip(), ''
+
+
+def write_chapter_text(num, title, body):
+    """One plain-text file per chapter, alongside the TSV.
+
+    The TSV is the translation workspace; this is the chapter as something to READ — to hand to
+    a model, to diff against, to check a paragraph in without opening a spreadsheet. Paragraphs
+    are one per line separated by a blank line, which is the shape read_source() already parses,
+    so a chapter file can be fed back through this segmenter unchanged.
+
+    Gitignored with the rest of source/: this is the novel, in copyright.
+    """
+    os.makedirs(TEXT, exist_ok=True)
+    path = os.path.join(TEXT, f'ch{num:02d}.txt')
+    with open(path, 'w', encoding='utf-8') as f:
+        f.write(f'CHAPTER {WORDNUM[num - 1]}\n\n{title}\n\n')
+        f.write('\n\n'.join(body))
+        f.write('\n')
+    return path
 
 
 def existing(path):
@@ -171,9 +200,14 @@ def main():
     os.makedirs(WORK, exist_ok=True)
     chapters = split_chapters(read_source())
     print(f'{len(chapters)} chapters')
+    if len(chapters) != 17:
+        print(f'  !! expected 17 — check the chapter markers in {os.path.relpath(SRC, ROOT)}')
 
     total_dropped = []
     for num, title, body in chapters:
+        if args.ch and num != args.ch:
+            continue
+        write_chapter_text(num, title, body)
         res = write_chapter(num, title, body, args.ch)
         if not res:
             continue
