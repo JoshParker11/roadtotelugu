@@ -53,6 +53,14 @@
     }
   }
   const BY_G = new Map(LEX.map((l, i) => [l.g, i]));
+  /* Every index a guid occupies, because a word in both corpora has an entry in each and
+     BY_G — a plain Map — keeps only the last. Lines reference their own dataset's index, so
+     looking for a word's sentence by the single surviving index searches the wrong corpus:
+     asking for కథ's example in a mini story returned a lesson about songs. */
+  const ALL_IDX = new Map();
+  LEX.forEach((l, i) => {
+    const a = ALL_IDX.get(l.g); if (a) a.push(i); else ALL_IDX.set(l.g, [i]);
+  });
   const FORMLABEL = { future: 'habitual / future', present: 'present continuous', past: 'past',
     negFuture: 'negative future', negPast: 'negative past', negPresent: 'negative present',
     immFuture: 'immediate future', impFam: 'imperative', impPol: 'polite imperative',
@@ -576,6 +584,9 @@
         <button id="pm-lesson">▤ Review ${
           sentenceScope() ? 'This Sentence' : cur ? 'This Lesson' : 'LingQs'} <span class="n">${
           cur ? lessonPool.length : lessonLingqs.length}</span></button>
+        <button id="pm-drill">⚡ Drill ${
+          sentenceScope() ? 'This Sentence' : cur ? 'This Text' : 'All Words'} <span class="n">${
+          (cur ? lessonPool : lessonLingqs).length}</span></button>
         <button id="pm-due">◷ Review Due <span class="n">${dueAll.length}</span></button>
         <button id="pm-vocab">☰ Vocabulary List</button>
       </div>`;
@@ -595,20 +606,40 @@
       (cur ? lessonPool : lessonLingqs).map(w => w.l),
       { scope: sentenceScope() ? `sentence ${svIdx + 1} of ${cur.lines.length}`
                : cur ? (cur.title.en || `lesson ${cur.num}`) : 'your LingQs' }));
+    /* Scoped to whatever the list above is showing, so the switch already on screen picks
+       between one sentence and the whole text. Known and Ignored are excluded the same way
+       review excludes them — this is a warm-up for what you are about to read, not a parade
+       of words you retired. */
+    $('#pm-drill').addEventListener('click', () => startDrill(
+      (cur ? lessonPool : lessonLingqs).map(w => w.l),
+      { scope: sentenceScope() ? `sentence ${svIdx + 1} of ${cur.lines.length}`
+               : cur ? (cur.title.en || `text ${cur.num}`) : 'all words' }));
     $('#pm-due').addEventListener('click', () => startReview(dueAll, { scope: 'due today' }));
     $('#pm-vocab').addEventListener('click', () => { location.hash = '#/vocab'; });
   }
 
-  /* Find the sentence a word occurs in, preferring the current story. */
+  /* The sentence to show for a word: in the text you are reading if it occurs there, and the
+     shortest one, because a forty-word turn is a bad example of a single word. */
   function contextFor(g) {
-    const i = BY_G.get(g);
-    const pool = cur ? [cur, ...STORIES.filter(s => s !== cur)] : STORIES;
-    for (const s of pool) {
+    const idx = ALL_IDX.get(g) || [];
+    if (!idx.length) return null;
+    const has = ln => ln.t.some(t => idx.includes(t[2]));
+    const shortest = s => {
+      let best = null;
       for (const ln of s.lines) {
-        if (ln.t.some(t => t[2] === i)) return ln;
+        if (!has(ln)) continue;
+        if (!best || ln.t.length < best.t.length) best = ln;
       }
+      return best;
+    };
+    if (cur) { const here = shortest(cur); if (here) return here; }
+    let best = null;
+    for (const s of STORIES) {
+      if (s === cur) continue;
+      const c = shortest(s);
+      if (c && (!best || c.t.length < best.t.length)) best = c;
     }
-    return null;
+    return best;
   }
 
   function openWord(g, line) {
@@ -1087,6 +1118,128 @@
     </svg>`;
   }
 
+  /* ---------- drill: one text, cycled until every word lands ----------
+   *
+   * NOT THE SRS. Review Due schedules a word days out and moves on; this is the pass you make
+   * before reading a text, and it is finished when the whole list has landed TODAY. So there
+   * is no interval, no daily cap, and nothing is written to a word's level — failing a card
+   * here means "show it to me again in a minute", not "I have forgotten this word".
+   *
+   * THE CYCLE. Miss a card and it goes to the back, behind everything still unseen, so you
+   * always meet the rest of the list before meeting it again. When the queue empties, whatever
+   * you missed becomes the next lap. Laps repeat until nothing is left.
+   *
+   * WHICH WAY THE AUDIO POINTS. Recognition plays the clip as the card appears — hearing it is
+   * part of what you are being asked to understand. Production does not, and cannot: the
+   * answer is the Telugu, and playing it first is just telling you.
+   */
+  let drill = null;
+  const DRILL_MODE = 'rtt.drillMode';
+  const drillMode = () => { try { return localStorage.getItem(DRILL_MODE) || 'recog'; } catch { return 'recog'; } };
+  const setDrillMode = m => { try { localStorage.setItem(DRILL_MODE, m); } catch {} };
+
+  function startDrill(entries, opts) {
+    const q = entries.map(w => w.g || (w.l && w.l.g)).filter(Boolean);
+    if (!q.length) return toast('No words to drill here.');
+    drill = { queue: q.slice(), again: [], lap: 1, revealed: false, landed: 0,
+              total: q.length, mode: drillMode(), scope: (opts && opts.scope) || '' };
+    renderDrill();
+  }
+  function closeDrill() { drill = null; $('#overlay-root').innerHTML = ''; }
+
+  function renderDrill() {
+    if (!drill) return;
+    if (!drill.queue.length && drill.again.length) {      // next lap
+      drill.queue = drill.again; drill.again = []; drill.lap++;
+    }
+    if (!drill.queue.length) {
+      $('#overlay-root').innerHTML = `<div class="overlay"><div class="rvcard">
+        <button class="close" id="dr-close">×</button>
+        <p class="rvdone">All ${drill.total} landed${drill.lap > 1 ? ` — ${drill.lap} laps` : ''}.</p>
+        <p class="count">${esc(drill.scope)}</p>
+      </div></div>`;
+      $('#dr-close').addEventListener('click', () => { closeDrill(); renderPanel(); });
+      return;
+    }
+    const g = drill.queue[0];
+    const l = LEX[BY_G.get(g)];
+    if (!l) { drill.queue.shift(); return renderDrill(); }
+    const ln = contextFor(g);
+    const prod = drill.mode === 'prod';
+    const gloss = glossOf(l) || '(no meaning saved)';
+
+    /* The prompt side. Recognition asks what the Telugu means; production asks you to produce
+       it from the English. The example sentence rides along on the recognition side only —
+       on the production side it contains the answer. */
+    const front = prod
+      ? `<p class="term">${esc(gloss)}</p>`
+      : `<p class="term ${rom === 'te' ? 'te' : ''}">${esc(disp(l.te))}</p>
+         <p class="sub ${rom === 'te' ? '' : 'te'}">${esc(dispAlt(l.te))}</p>`;
+    const back = prod
+      ? `<p class="term ${rom === 'te' ? 'te' : ''}">${esc(disp(l.te))}</p>
+         <p class="sub ${rom === 'te' ? '' : 'te'}">${esc(dispAlt(l.te))}</p>`
+      : `<p class="answer-gloss">${esc(gloss)}</p>`;
+    /* Punctuation and whitespace pass through untransformed, exactly as tokenHTML does —
+       running a space through disp() romanizes it away and the sentence arrives as one
+       unbroken string. */
+    const idx = ALL_IDX.get(g) || [];
+    const example = ln && (!prod || drill.revealed)
+      ? `<div class="drill-eg">${ln.t.map(t => {
+            if (t[1] === 'p' || t[2] < 0) return esc(t[0]);
+            const cls = idx.includes(t[2]) ? 'eg-target' : '';
+            return `<span class="${cls}">${esc(disp(t[0]))}</span>`;
+          }).join('')}${ln.en ? `<span class="eg-en">${esc(ln.en)}</span>` : ''}</div>`
+      : '';
+
+    $('#overlay-root').innerHTML = `<div class="overlay"><div class="rvcard drill">
+      <button class="close" id="dr-close">×</button>
+      <div class="drill-top">
+        <span class="count">${drill.landed}/${drill.total} landed · lap ${drill.lap}
+          ${drill.again.length ? `· ${drill.again.length} to revisit` : ''}</span>
+        <span class="seg drill-mode">
+          <button data-dmode="recog" class="${prod ? '' : 'on'}">Recognise</button>
+          <button data-dmode="prod" class="${prod ? 'on' : ''}">Produce</button>
+        </span>
+      </div>
+      ${front}
+      <div class="answer">${drill.revealed ? back : '<span class="hint">space / enter to reveal</span>'}</div>
+      ${example}
+      <div class="drill-btns">
+        <button id="dr-say" title="Play the clip (S)">🔊</button>
+        ${drill.revealed
+          ? `<button id="dr-again" class="again">Again</button>
+             <button id="dr-got" class="got">Understood</button>`
+          : `<button id="dr-reveal" class="got">Reveal</button>`}
+      </div>
+      <p class="count"><kbd>space</kbd> reveal · <kbd>1</kbd> again · <kbd>2</kbd> understood · <kbd>S</kbd> audio</p>
+    </div></div>`;
+
+    if (!prod && !drill.revealed) sayWord(g, true);
+    $('#dr-close').addEventListener('click', () => { closeDrill(); renderPanel(); });
+    $('#dr-say').addEventListener('click', () => sayWord(g));
+    $$('#overlay-root [data-dmode]').forEach(b => b.addEventListener('click', () => {
+      drill.mode = b.dataset.dmode; setDrillMode(drill.mode); drill.revealed = false; renderDrill();
+    }));
+    const rv = $('#dr-reveal'); if (rv) rv.addEventListener('click', drillReveal);
+    const ag = $('#dr-again'); if (ag) ag.addEventListener('click', () => drillAnswer(false));
+    const gt = $('#dr-got'); if (gt) gt.addEventListener('click', () => drillAnswer(true));
+  }
+
+  function drillReveal() {
+    if (!drill) return;
+    drill.revealed = true;
+    const g = drill.queue[0];
+    renderDrill();
+    if (drill.mode === 'prod') sayWord(g, true);   // now it is the answer, so say it
+  }
+  function drillAnswer(got) {
+    if (!drill) return;
+    const g = drill.queue.shift();
+    if (got) drill.landed++; else drill.again.push(g);
+    drill.revealed = false;
+    renderDrill();
+  }
+
   /* ---------- review ---------- */
 
   /* The words of one line, deduplicated and in the order the panel lists them.
@@ -1332,6 +1485,8 @@
       ['Esc', 'close'],
     ]],
     ['Review', [['Space / Enter', 'reveal'], ['1–4 · K · X', 'rate and advance'], ['Esc', 'quit']]],
+    ['Drill', [['Space / Enter', 'reveal, then understood'], ['1', 'again — show it later this lap'],
+               ['2', 'understood'], ['S', 'play the clip'], ['Esc', 'quit']]],
   ];
   function toggleHelp() {
     helpOpen = !helpOpen;
@@ -1358,6 +1513,23 @@
       if (e.key === 'Escape') t.blur();
       return;
     }
+    /* The drill owns the keyboard while it is open. */
+    if (drill) {
+      if (e.key === 'Escape') { closeDrill(); renderPanel(); return; }
+      if (e.key.toLowerCase() === 's') { e.preventDefault(); sayWord(drill.queue[0]); return; }
+      if (!drill.queue.length) {
+        if (isSpace(e) || e.key === 'Enter') { closeDrill(); renderPanel(); e.preventDefault(); }
+        return;
+      }
+      if (!drill.revealed) {
+        if (isSpace(e) || e.key === 'Enter') { e.preventDefault(); drillReveal(); }
+        return;
+      }
+      if (e.key === '1') { e.preventDefault(); drillAnswer(false); return; }
+      if (e.key === '2' || isSpace(e) || e.key === 'Enter') { e.preventDefault(); drillAnswer(true); return; }
+      return;
+    }
+
     /* Review overlay swallows everything first. */
     if (reviewState) {
       if (e.key === 'Escape') { closeReview(); renderPanel(); renderTop(); return; }

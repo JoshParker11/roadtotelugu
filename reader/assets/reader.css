@@ -376,6 +376,29 @@ main { padding-top: var(--top-h); }
 
 /* The list that follows the cards. Wider than a flashcard because it is read, not flipped. */
 .rvcard.wide { max-width: 640px; text-align: left; }
+
+/* The drill card. Wider than a flashcard because the example sentence sits on it. */
+.rvcard.drill { max-width: 560px; }
+.drill-top { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 18px; }
+.drill-top .count { margin: 0; text-align: left; }
+.seg.drill-mode button { font-size: 11.5px; padding: 4px 9px; }
+.answer-gloss { font-size: 17px; font-weight: 600; margin: 0; }
+.drill-eg {
+  margin: 16px 0 4px; padding: 11px 13px; border-radius: 9px;
+  background: var(--bg3); font-size: 15px; line-height: 1.65; text-align: left;
+}
+.drill-eg .eg-target { background: var(--l1); border-radius: 3px; padding: 0 2px; font-weight: 700; }
+.drill-eg .eg-en { display: block; margin-top: 6px; color: var(--ink2); font-size: 13px; }
+.drill-btns { display: flex; gap: 8px; justify-content: center; margin: 18px 0 6px; }
+.drill-btns button {
+  padding: 9px 18px; font: inherit; font-size: 13.5px; font-weight: 700; cursor: pointer;
+  border: 1px solid var(--line-strong); border-radius: 9px; color: var(--ink2); background: none;
+}
+.drill-btns button#dr-say { padding: 9px 12px; }
+.drill-btns button.got { border-color: var(--green); color: var(--green); }
+.drill-btns button.got:hover { background: var(--green); color: var(--bg); }
+.drill-btns button.again { border-color: var(--amber); color: var(--amber); }
+.drill-btns button.again:hover { background: var(--amber); color: var(--bg); }
 .rvcard.sync h3 { margin: 0 0 6px; }
 .synchelp { color: var(--ink2); font-size: 13px; margin: 0 0 16px; }
 .syncrow { margin: 0 0 18px; }
