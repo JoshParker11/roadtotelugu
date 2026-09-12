@@ -138,3 +138,13 @@ ministories/native_queries.tsv
 
 # The id of the last glossing batch, remembered so --collect needs no copy-paste.
 intensive/.batch_id
+
+# Imported outside resources — a podcast episode, an audiobook chapter, a video. Each directory
+# holds someone else's audio and someone else's transcript, which is the same call already made
+# for sources/local/, ministories/source/ and translate/source/. Only the README and the tool
+# that walks these directories are committed. meta.json carries a `rights` field so the question
+# is answered before the effort is spent, not after.
+# Two lines, because git will not descend into an excluded directory: exclude the contents, then
+# re-include the README that explains them.
+imports/*
+!imports/README.md

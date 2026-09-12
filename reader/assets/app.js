@@ -29,12 +29,20 @@
   const SETS = [window.MS_DATA, window.IC_DATA].filter(Boolean);
   const LEX = [];
   const STORIES = [];
+  const UNIT = new Map();
   for (const d of SETS) {
     const off = LEX.length;
-    // Which corpus each word came from. The two datasets each build their own lexicon, so a
-    // word occurring in both has an entry in each — same guid, same meaning, two rows. The
-    // vocabulary table listed both, which is why the known list looked doubled.
-    const tag = /Intensive/.test(d.source || '') ? 'ic' : 'ms';
+    /* Which corpus each word came from. The two datasets each build their own lexicon, so a
+       word occurring in both has an entry in each — same guid, same meaning, two rows. The
+       vocabulary table listed both, which is why the known list looked doubled.
+
+       A dataset names its own tag. This used to be `/Intensive/.test(d.source)`, which is a
+       two-corpus test wearing a general one's clothes: every third dataset comes back 'ms',
+       takes the mini stories' id prefix, and its story 1 becomes unreachable behind theirs —
+       the exact bug that regex was written to fix, one dataset later. */
+    const tag = d.tag || (/Intensive/.test(d.source || '') ? 'ic' : 'ms');
+    /* What one item of this corpus is called, for labels like "lesson 4" and "episode 2". */
+    UNIT.set(tag, d.unit || (tag === 'ic' ? 'lesson' : 'story'));
     LEX.push(...(d.lex || []).map(l => Object.assign({ corpus: tag }, l)));
     for (const st of (d.stories || [])) {
       /* Unique across datasets. Both number their stories from 1, and the router matched
@@ -42,9 +50,8 @@
          lesson was unreachable behind its mini-story twin. The prefix comes from the source
          rather than from array position, so adding a third dataset cannot silently reshuffle
          which id means what. */
-      const pfx = /Intensive/.test(d.source || '') ? 'ic' : 'ms';
       STORIES.push(Object.assign({}, st, {
-        id: pfx + st.num,
+        id: tag + st.num,
         src: d.source,
         lines: (st.lines || []).map(l => Object.assign({}, l, {
           t: (l.t || []).map(([w, k, i]) => [w, k, i < 0 ? i : i + off]),
@@ -915,7 +922,7 @@
      from printing build_ms_reader's `f` for course words, which never had one. */
   function sourceLabel(w) {
     const bits = [];
-    const name = (l) => l.corpus === 'ic' ? `lesson ${l.f}` : `story ${l.f}`;
+    const name = (l) => `${UNIT.get(l.corpus) || 'item'} ${l.f}`;
     if (w.l.f) bits.push(name(w.l));
     if (w.also && w.also.f && w.also.corpus !== w.l.corpus) bits.push(name(w.also));
     return bits.join(' · ') || '—';
