@@ -109,10 +109,32 @@ const WordLevels = (() => {
   }
 
   /* ---- lessons read ---- */
-  const isRead = num => !!read(K.read)[num];
-  function setRead(num, on) {
+  /* Keyed by story ID, not by number. Every corpus numbers its items from 1, so a bare number
+     meant three different things at once: finishing mini story 1 also ticked Intensive lesson 1
+     and any imported chapter 1. A pre-existing collision between the two original corpora that
+     only became visible when a third arrived.
+
+     Bare numeric keys already on disk are migrated to the mini stories, because that is what
+     the key meant when it was written and a collided write cannot be attributed after the
+     fact. Done on read and written back once, so it also normalises whatever a sync merge
+     brings in from a device that has not updated. */
+  function readMap() {
     const m = read(K.read);
-    if (on) m[num] = today(); else delete m[num];
+    let moved = 0;
+    for (const k of Object.keys(m)) {
+      if (/^\d+$/.test(k)) {
+        if (!('ms' + k in m)) m['ms' + k] = m[k];
+        delete m[k];
+        moved++;
+      }
+    }
+    if (moved) write(K.read, m);
+    return m;
+  }
+  const isRead = id => !!readMap()[id];
+  function setRead(id, on) {
+    const m = readMap();
+    if (on) m[id] = today(); else delete m[id];
     write(K.read, m); fire();
   }
 

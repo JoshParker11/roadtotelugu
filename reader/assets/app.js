@@ -20,13 +20,17 @@
   const bareTe = s => (s || '').replace(ZW, '');
   const clock = s => `${Math.floor((s || 0) / 60)}:${String(Math.floor((s || 0) % 60)).padStart(2, '0')}`;
 
-  /* Two baked datasets now — the mini stories and the Intensive Course lessons — merged into
-     one reading list. Each ships its own `lex`, and a line's tokens hold INDEXES into that
-     dataset's lex, so the second one's indexes have to be shifted by the length of the first.
-     Merging without the shift silently points every Intensive Course word at whatever mini
-     story word happens to sit at the same index, which reads as plausible nonsense rather
-     than as an error. `src` is carried per story so a story can say where it came from. */
-  const SETS = [window.MS_DATA, window.IC_DATA].filter(Boolean);
+  /* The baked datasets, merged into one reading list. Each ships its own `lex`, and a line's
+     tokens hold INDEXES into that dataset's lex, so every dataset after the first has to have
+     its indexes shifted by the running total. Merging without the shift silently points each
+     word at whatever word happens to sit at the same index in the first dataset, which reads
+     as plausible nonsense rather than as an error. `src` is carried per story so a story can
+     say where it came from.
+
+     Imported resources are appended, one per `tools/import_resource.py build`. Order matters
+     only for the offsets, which are computed, so a dataset can be added or dropped here
+     without touching anything else. */
+  const SETS = [window.MS_DATA, window.IC_DATA, window.HP1_DISCUSSION_DATA].filter(Boolean);
   const LEX = [];
   const STORIES = [];
   const UNIT = new Map();
@@ -52,6 +56,7 @@
          which id means what. */
       STORIES.push(Object.assign({}, st, {
         id: tag + st.num,
+        tag,
         src: d.source,
         lines: (st.lines || []).map(l => Object.assign({}, l, {
           t: (l.t || []).map(([w, k, i]) => [w, k, i < 0 ? i : i + off]),
@@ -187,7 +192,11 @@
   /* ---------- router ---------- */
   function router() {
     const h = location.hash;
-    const m = /^#\/story\/([a-z]*\d+)/.exec(h);
+    /* The whole id, letters and digits together — it is only ever compared against a story's
+       id, never taken apart. `[a-z]*\d+` could not express a tag with a digit in it, so
+       #/story/hp1d1 matched the prefix "hp1", found no story and silently fell back to the
+       library, which looks identical to a bad link. */
+    const m = /^#\/story\/([a-z0-9]+)/.exec(h);
     closeReview();
     document.querySelector('main').classList.toggle('withpanel', !h.startsWith('#/stats'));
     $('#panel').hidden = h.startsWith('#/stats');
@@ -241,19 +250,27 @@
             <i style="flex:${st.first};background:var(--blue)"></i>
             <i style="flex:${st.blue};background:var(--new-b)"></i>
           </span><small>${pct}% known · ${tried}% seen · ${st.blue} new</small></span>
-        ${WordLevels.isRead(s.num) ? '<span class="done">✓</span>' : ''}
+        ${WordLevels.isRead(s.id) ? '<span class="done">✓</span>' : ''}
       </button>`;
     }).join('');
     /* The counts are derived, not written down. "11 of 60 stories" was a literal in the
        markup and would have quietly gone stale the moment a second source appeared. */
-    const ms = STORIES.filter(s => s.id[0] === 'm').length;
-    const ic = STORIES.length - ms;
+    /* Counted per corpus by tag. `STORIES.length - ms` credited every later dataset to the
+       Intensive Course, so importing one chapter advertised 65 course lessons. */
+    const of = t => STORIES.filter(s => s.tag === t);
+    const ms = of('ms').length;
+    const ic = of('ic').length;
     const bits = [];
     /* "voiced" is derived, not asserted. It was a literal, and it went stale the moment the
        native translations arrived and their audio stopped matching the text. */
-    const voiced = STORIES.filter(s => s.id[0] === 'm' && s.audio).length;
+    const voiced = of('ms').filter(s => s.audio).length;
     if (ms) bits.push(`${ms} of 60 Mini Stories${voiced ? `, ${voiced} voiced` : ' — audio pending re-recording'}`);
     if (ic) bits.push(`${ic} Intensive Course lesson${ic === 1 ? '' : 's'}`);
+    for (const tag of new Set(STORIES.map(s => s.tag))) {
+      if (tag === 'ms' || tag === 'ic') continue;
+      const n = of(tag).length, unit = UNIT.get(tag) || 'item';
+      bits.push(`${n} imported ${unit}${n === 1 ? '' : 's'}`);
+    }
     $('#pane').innerHTML = `
       <div class="libhead"><h1>Reading</h1>
         <p>${bits.join(' · ')}. More appear here as they are prepared.</p></div>${cards}`;
@@ -330,8 +347,8 @@
       </div>
       ${sview ? sentenceViewHTML() : `<div class="readtext" id="readtext">${body}</div>
       <div class="finishrow">
-        <button class="finishbtn${WordLevels.isRead(s.num) ? ' done' : ''}" id="t-finish">
-          ✓ ${WordLevels.isRead(s.num) ? 'Lesson finished' : 'Finish lesson'}</button>
+        <button class="finishbtn${WordLevels.isRead(s.id) ? ' done' : ''}" id="t-finish">
+          ✓ ${WordLevels.isRead(s.id) ? 'Lesson finished' : 'Finish lesson'}</button>
       </div>`}`;
 
     $('#t-en') && $('#t-en').addEventListener('click', () => {
@@ -409,7 +426,7 @@
       return;
     }
     if (blues.length) WordLevels.setMany(blues, 'k');
-    WordLevels.setRead(s.num, true);
+    WordLevels.setRead(s.id, true);
     toast(blues.length ? `${blues.length} words marked known — lesson finished.` : 'Lesson finished.');
     renderStory(); renderPanel(); renderTop();
   }

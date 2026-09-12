@@ -189,6 +189,31 @@ def sentences_of(text):
     return out
 
 
+def lines_of(text, max_chars=220):
+    """One segment per transcript line.
+
+    A third transcript shape, and the commonest one a generated discussion produces: no blank
+    lines, no speaker labels, one utterance per line, and sentence-final punctuation on only
+    some of them. Neither of the other two readers handles it — sentences_of() sees a single
+    paragraph and merges every unpunctuated turn into its neighbour, and there are no cues to
+    segment from. The line break is the only structure the file has, so it is the one to trust.
+
+    A long line is still split on sentence enders, because a 200-character turn holding three
+    sentences is three things to read.
+    """
+    out = []
+    for raw in text.split('\n'):
+        line = ' '.join(raw.split())
+        if not line:
+            continue
+        parts = SENT_END.split(line) if len(line) > max_chars else [line]
+        for part in parts:
+            part = part.strip()
+            if part:
+                out.append(part)
+    return out
+
+
 def build_rows(slug, triples):
     """[(text, start, end)] -> segment rows, carrying hand-entered columns forward by guid.
 
@@ -217,19 +242,24 @@ def build_rows(slug, triples):
     return rows, prior
 
 
-def warn_undersplit(rows, slug):
+def warn_undersplit(rows, slug, by_line=False):
     """Say so when the transcript had no sentence punctuation to split on.
 
     Silence here would be the bad kind: the pipeline runs, the file appears, and the damage —
     three minutes of audio behind one timestamp — only shows up as a reader that feels wrong
     to use.
+
+    Not in --lines mode, though. There the line is the unit by instruction, so a turn ending
+    without a full stop is the expected shape and not a symptom of anything. Warning about it
+    anyway is how a warning stops being read: it fired on 57 of 141 correct segments and
+    recommended captions that do not exist.
     """
     te = [r for r in rows if r['kind'] == 'te']
     if not te:
         return
     long_ones = [r for r in te if len(r['te']) > 200]
     unpunctuated = [r for r in te if not re.search(r'[.?!।॥]$', r['te'])]
-    if len(unpunctuated) > len(te) * 0.4:
+    if not by_line and len(unpunctuated) > len(te) * 0.4:
         print(f'  !! {len(unpunctuated)}/{len(te)} segments do not end in sentence punctuation.')
         print('     The transcript has little or none, so these are paragraph blocks, not')
         print('     sentences. If you have captions, re-run with --from-captions: cue timings')
@@ -315,7 +345,7 @@ def cmd_segment(args):
         raise SystemExit(f'cannot decode {tp}')
     text = unicodedata.normalize('NFC', text.replace('\r\n', '\n').replace('\r', '\n'))
 
-    sents = sentences_of(text)
+    sents = lines_of(text) if args.lines else sentences_of(text)
     if not sents:
         raise SystemExit('transcript produced no sentences')
 
@@ -328,7 +358,7 @@ def cmd_segment(args):
 
     te = sum(1 for r in rows if r['kind'] == 'te')
     print(f'{args.slug}: {len(rows)} segments  ({te} Telugu, {len(rows) - te} other)')
-    warn_undersplit(rows, args.slug)
+    warn_undersplit(rows, args.slug, by_line=args.lines)
     if carried:
         print(f'  {carried} translations carried forward')
     if timed:
@@ -459,6 +489,111 @@ def align_from_captions(rows, cues):
     return hits
 
 
+SILENCE = re.compile(r'silence_(start|end):\s*(-?[\d.]+)')
+
+
+def speech_runs(path, noise=-40, gap=0.35):
+    """-> ([(start, end)] of speech, total duration)
+
+    ffmpeg's silencedetect reports at INFO level, so it must not be run under `-v error` —
+    that returns zero gaps on any input and looks exactly like an audio file with no pauses.
+    Cost an hour once; hence this note.
+
+    -40dB rather than the usual -30: generated audio is loudness-compressed and has no true
+    digital silence, so a strict threshold finds nothing. 0.35s rather than 0.2 because the
+    target is a turn boundary, not the stop before a consonant.
+    """
+    total = audio_duration(path)
+    if total is None:
+        return [], None
+    out = subprocess.run(
+        ['ffmpeg', '-hide_banner', '-i', path, '-af',
+         f'silencedetect=noise={noise}dB:d={gap}', '-f', 'null', '-'],
+        capture_output=True, text=True)
+    marks = SILENCE.findall(out.stderr or '')
+    silences, start = [], None
+    for kind, val in marks:
+        t = float(val)
+        if kind == 'start':
+            start = t
+        elif start is not None:
+            silences.append((start, min(t, total)))
+            start = None
+    if start is not None:
+        silences.append((start, total))
+    # Invert: everything not silent is speech.
+    runs, cursor = [], 0.0
+    for a, b in silences:
+        if a > cursor:
+            runs.append((cursor, a))
+        cursor = max(cursor, b)
+    if cursor < total:
+        runs.append((cursor, total))
+    return [r for r in runs if r[1] - r[0] > 0.05], total
+
+
+MIN_SPAN = 0.35
+
+
+def align_anchored(rows, runs, silences_mid, tol=1.5):
+    """Spread segments over the SPEECH, then snap each boundary to a real pause.
+
+    Two improvements over spreading over the whole timeline, and the second matters more:
+
+      1. Silence is removed from the budget, so a long pause no longer pushes every later
+         segment late by the length of the pause.
+      2. Boundaries snap to detected pauses. That bounds the error instead of letting it
+         accumulate: a segment can be wrong about where it starts, but it cannot drag the
+         next forty with it. Character weight only has to be right about which pause is the
+         likely one, not about the exact second.
+    """
+    speech = sum(b - a for a, b in runs) or 1.0
+    weights = [max(1, len(fold_te(r['te']) or r['en'])) for r in rows]
+    total_w = sum(weights)
+
+    def wall(offset):
+        """Speech-time offset -> wall-clock time, stepping over the silences."""
+        left = offset
+        for a, b in runs:
+            span = b - a
+            if left <= span:
+                return a + left
+            left -= span
+        return runs[-1][1] if runs else offset
+
+    # A pause can be claimed by only one boundary, and a boundary can only move forward.
+    #
+    # Snapping each boundary to its nearest pause independently let two adjacent boundaries
+    # choose the SAME pause, which collapses the segment between them to zero length. Nothing
+    # downstream can repair that: giving the collapsed segment a minimum duration necessarily
+    # runs it past where the next one starts, so the timeline overlaps and clicking a line
+    # plays its neighbour. Both symptoms — 8 overlaps and 8 zero-length segments — were the one
+    # cause, so the constraint belongs here rather than in a pass afterwards.
+    used = set()
+    acc, bounds, prev = 0.0, [0.0], 0.0
+    for w in weights:
+        acc += w
+        raw = wall(acc / total_w * speech)
+        near = [(abs(m - raw), m) for m in silences_mid
+                if m > prev + MIN_SPAN and m not in used]
+        near.sort()
+        if near and near[0][0] <= tol:
+            t = near[0][1]
+            used.add(t)
+        else:
+            # No pause available: keep the computed position, forced past the previous
+            # boundary. Monotonic by construction, since the offsets only increase.
+            t = max(raw, prev + MIN_SPAN)
+        bounds.append(t)
+        prev = t
+
+    for i, r in enumerate(rows):
+        r['start'], r['end'] = f'{bounds[i]:.2f}', f'{bounds[i + 1]:.2f}'
+        if r['status'] == 'est':
+            r['status'] = 'todo'
+    return len(rows)
+
+
 def align_proportional(rows, duration):
     """Spread the audio across the segments by character weight.
 
@@ -508,6 +643,26 @@ def cmd_align(args):
     dur = audio_duration(audio)
     if dur is None:
         raise SystemExit(f'ffprobe could not read a duration from {os.path.basename(audio)}')
+
+    if not args.proportional:
+        runs, total = speech_runs(audio, noise=args.noise, gap=args.gap)
+        if len(runs) >= max(4, len(rows) // 4):
+            mids = []
+            for (a1, b1), (a2, _b2) in zip(runs, runs[1:]):
+                mids.append((b1 + a2) / 2)
+            n = align_anchored(rows, runs, mids)
+            write_segments(args.slug, rows)
+            speech = sum(b - a for a, b in runs)
+            print(f'{args.slug}: {os.path.basename(audio)} is {dur / 60:.1f} min')
+            print(f'  {len(runs)} speech runs, {len(mids)} pauses, '
+                  f'{speech / dur * 100:.0f}% speech')
+            print(f'  {n} segments spread over the speech and snapped to pauses '
+                  f'({len(rows)} segments vs {len(mids)} pauses)')
+            print('  Still derived, not measured — good to the nearest pause, which for a')
+            print('  turn-per-line transcript is usually the right one.')
+            return
+        print(f'  only {len(runs)} speech runs found — falling back to plain character weight')
+
     n = align_proportional(rows, dur)
     write_segments(args.slug, rows)
     print(f'{args.slug}: {os.path.basename(audio)} is {dur / 60:.1f} min')
@@ -631,6 +786,134 @@ def cmd_analyze(args):
     print(f'  wrote {os.path.relpath(p, ROOT)}')
 
 
+# ---------------------------------------------------------------- build
+
+def gloss_table():
+    """Telugu surface form -> (gloss, pos), from every source in the project that has one."""
+    out = {}
+    def take(path, te_col, gloss_col, pos_col):
+        if not os.path.exists(path):
+            return
+        with open(path, encoding='utf-8', newline='') as f:
+            for r in csv.DictReader(f, delimiter='\t'):
+                te = (r.get(te_col) or '').strip()
+                g = (r.get(gloss_col) or '').strip()
+                if te and g and te not in out:
+                    out[te] = (g, (r.get(pos_col) or '').strip())
+    take(os.path.join(ROOT, 'ministories', 'vocab.tsv'), 'te', 'gloss', 'pos')
+    take(os.path.join(ROOT, 'intensive', 'vocab.tsv'), 'te', 'gloss', 'pos')
+    take(os.path.join(ROOT, 'data', 'master_words.tsv'), 'telugu', 'english', 'pos')
+    return out
+
+
+def cmd_build(args):
+    """segments.tsv -> reader/data/<slug>.js, in the shape the reader already consumes.
+
+    Word identity is the whole reason this is short. ids.guid('W', form) is what both existing
+    corpora already key their lexicons by, so a word met here mints the guid it already has —
+    which means the level you gave it in a mini story, its SRS date and its pronunciation clip
+    all carry over with no mapping table. A corpus-local id would have thrown that away and
+    presented every familiar word as new.
+    """
+    meta = load_meta(args.slug)
+    rows = [r for r in read_segments(args.slug) if r['kind'] == 'te' and r['te'].strip()]
+    if not rows:
+        raise SystemExit(f'nothing to build — run segment first')
+    if meta.get('rights') == 'local-only' and not args.force:
+        raise SystemExit(
+            f'meta.json says rights=local-only, so this dataset is not built for the site.\n'
+            f'  reader/data/ is committed and GitHub Pages serves what is committed.\n'
+            f'  If the recording really is yours to publish, set "rights" and re-run;\n'
+            f'  to build it anyway for local use only, pass --force.')
+
+    glosses = gloss_table()
+    # First pass: count every Telugu form so the lexicon can carry an occurrence count.
+    counts = Counter()
+    for r in rows:
+        for tok in TOKEN.findall(r['te']):
+            if TELUGU.search(tok):
+                counts[tok] += 1
+
+    lex, idx_of = [], {}
+    for form in counts:
+        g, pos = glosses.get(form, ('', ''))
+        idx_of[form] = len(lex)
+        entry = {'te': form, 'g': guid('W', form), 'n': counts[form],
+                 'f': 1, 'o': len(lex)}
+        if g:
+            entry['en'] = g
+        if pos:
+            entry['p'] = pos
+        lex.append(entry)
+
+    lines = []
+    for r in rows:
+        toks = []
+        for tok in TOKEN.findall(r['te']):
+            if TELUGU.search(tok):
+                toks.append([tok, 'w', idx_of[tok]])
+            else:
+                toks.append([tok, 'p', -1])
+        line = {'g': r['guid'], 'p': 'discussion', 't': toks}
+        if r['en'].strip():
+            line['en'] = r['en'].strip()
+        if r['start']:
+            line['s'] = round(float(r['start']), 2)
+        if r['end']:
+            line['e'] = round(float(r['end']), 2)
+        lines.append(line)
+
+    audio_rel = ''
+    if args.audio:
+        audio_rel = args.audio
+    else:
+        found = find_one(args.slug, AUDIO_EXT, 'audio')
+        if found:
+            audio_rel = f'../{os.path.relpath(found, ROOT)}'
+
+    story = {'num': 1, 'title': {'te': meta.get('title', args.slug),
+                                 'en': meta.get('title_en', meta.get('title', args.slug))},
+             'lines': lines}
+    if audio_rel:
+        story['audio'] = audio_rel
+        dur = None
+        f2 = find_one(args.slug, AUDIO_EXT, 'audio')
+        if f2:
+            dur = audio_duration(f2)
+        if dur:
+            story['dur'] = round(dur, 2)
+
+    data = {
+        'generated': __import__('datetime').date.today().isoformat(),
+        'source': meta.get('title', args.slug),
+        'tag': meta.get('tag') or args.slug.replace('-', '')[:6],
+        'unit': meta.get('unit', 'episode'),
+        'lex': lex,
+        'stories': [story],
+    }
+    var = args.var or (re.sub(r'[^A-Za-z0-9]', '_', args.slug).upper() + '_DATA')
+    out = os.path.join(ROOT, 'reader', 'data', f'{args.slug}.js')
+    with open(out, 'w', encoding='utf-8') as f:
+        f.write(f'/* Generated by tools/import_resource.py. Do not edit. */\n')
+        f.write(f'window.{var} = ')
+        json.dump(data, f, ensure_ascii=False, separators=(',', ':'))
+        f.write(';\n')
+
+    glossed = sum(1 for l in lex if l.get('en'))
+    tokens = sum(counts.values())
+    known_tok = sum(c for w, c in counts.items() if w in glosses)
+    print(f'{args.slug}: wrote {os.path.relpath(out, ROOT)}')
+    print(f'  {len(lines)} lines, {tokens:,} tokens, {len(lex):,} word forms')
+    print(f'  {glossed:,} forms have a definition ({known_tok / tokens * 100:.1f}% of tokens)')
+    print(f'  window.{var}  tag={data["tag"]}  unit={data["unit"]}')
+    if audio_rel:
+        print(f'  audio {audio_rel}')
+    print()
+    print('  Add to reader/index.html, before assets/app.js:')
+    print(f'    <script src="data/{args.slug}.js"></script>')
+    print(f'  and to the SETS line in reader/assets/app.js:  window.{var}')
+
+
 # ---------------------------------------------------------------- status
 
 def cmd_status(args):
@@ -672,6 +955,9 @@ def main():
     p.add_argument('slug')
     p.add_argument('--from-captions', action='store_true',
                    help='segment from the .vtt/.srt instead, which also times every segment')
+    p.add_argument('--lines', action='store_true',
+                   help='one segment per transcript line — for a turn-per-line transcript '
+                        'with no blank lines and patchy punctuation')
     p.add_argument('--max-chars', type=int, default=140,
                    help='longest segment when punctuation gives no break (default 140)')
     p.set_defaults(fn=cmd_segment)
@@ -679,12 +965,22 @@ def main():
     p = sub.add_parser('align', help='give segments timings, from captions or by estimate')
     p.add_argument('slug')
     p.add_argument('--proportional', action='store_true',
-                   help='estimate by character weight even if captions exist')
+                   help='plain character weight — skip captions and pause snapping')
+    p.add_argument('--noise', type=int, default=-40, help='silence threshold in dB')
+    p.add_argument('--gap', type=float, default=0.35, help='shortest gap counted as a pause')
     p.set_defaults(fn=cmd_align)
 
     p = sub.add_parser('analyze', help='vocabulary coverage report')
     p.add_argument('slug')
     p.set_defaults(fn=cmd_analyze)
+
+    p = sub.add_parser('build', help='segments.tsv -> reader/data/<slug>.js')
+    p.add_argument('slug')
+    p.add_argument('--var', default='', help='window global to assign (default <SLUG>_DATA)')
+    p.add_argument('--audio', default='', help='audio path as the reader should request it')
+    p.add_argument('--force', action='store_true',
+                   help='build even though rights=local-only (for local use)')
+    p.set_defaults(fn=cmd_build)
 
     p = sub.add_parser('status', help='every resource and how far along it is')
     p.set_defaults(fn=cmd_status)
