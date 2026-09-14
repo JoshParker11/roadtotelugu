@@ -36,6 +36,7 @@ no: study it locally, serve it from a local checkout, and keep it out of the Pag
 """
 import argparse
 import csv
+import difflib
 import json
 import os
 import re
@@ -534,64 +535,317 @@ def speech_runs(path, noise=-40, gap=0.35):
 
 MIN_SPAN = 0.35
 
+# ---------------------------------------------------------------- alignment from ASR
 
-def align_anchored(rows, runs, silences_mid, tol=1.5):
-    """Spread segments over the SPEECH, then snap each boundary to a real pause.
+ASR_MODEL = 'large-v3-turbo'
 
-    Two improvements over spreading over the whole timeline, and the second matters more:
 
-      1. Silence is removed from the budget, so a long pause no longer pushes every later
-         segment late by the length of the pause.
-      2. Boundaries snap to detected pauses. That bounds the error instead of letting it
-         accumulate: a segment can be wrong about where it starts, but it cannot drag the
-         next forty with it. Character weight only has to be right about which pause is the
-         likely one, not about the exact second.
+def asr_words(slug, audio, model=ASR_MODEL, force=False):
+    """Recognise the audio, cached. -> [(word, start, end)]
+
+    WHY RECOGNITION AT ALL, WHEN WE ALREADY HAVE THE TRANSCRIPT
+    Because the transcript says WHAT is spoken and never WHEN. Every timing before this was
+    derived from character counts and then judged by how well duration tracked character
+    count — a measurement of its own assumption, which cannot detect being two turns out. The
+    audio has to be consulted, and consulting it means recognising it.
+
+    The recognition is wrong in detail and that is fine. It heard సాధారనంగా where the
+    transcript reads సాధారణంగా, పద్ధదిలో for పద్ధతిలో. An anchor does not need the spelling to
+    be right; it needs to be wrong at a known second.
+
+    Model choice is not incidental: `small` returned 19 Telugu words out of 98 for two and a
+    half minutes, the rest nonsense and stray Persian, while large-v3-turbo returned 138 of 138
+    at roughly real time. Below turbo, Telugu is not worth attempting.
     """
-    speech = sum(b - a for a, b in runs) or 1.0
-    weights = [max(1, len(fold_te(r['te']) or r['en'])) for r in rows]
-    total_w = sum(weights)
+    cache = os.path.join(res_dir(slug), 'asr_words.json')
+    if os.path.exists(cache) and not force:
+        with open(cache, encoding='utf-8') as f:
+            return [(w['w'], w['s'], w['e']) for w in json.load(f)]
+    try:
+        from faster_whisper import WhisperModel
+    except ImportError:
+        raise SystemExit(
+            'ASR alignment needs faster-whisper, which is not installed:\n'
+            '    python3 -m pip install faster-whisper\n'
+            f'  Then re-run. The recognised words are cached in {os.path.relpath(cache, ROOT)},\n'
+            '  so this cost is paid once per resource.')
+    print(f'  recognising with {model} — roughly real time, so ~{"?" } minutes')
+    m = WhisperModel(model, device='cpu', compute_type='int8')
+    segs, _info = m.transcribe(audio, language='te', word_timestamps=True,
+                               vad_filter=True, beam_size=1)
+    out = []
+    for seg in segs:
+        for w in (seg.words or []):
+            out.append({'w': w.word.strip(), 's': round(w.start, 3), 'e': round(w.end, 3)})
+    with open(cache, 'w', encoding='utf-8') as f:
+        json.dump(out, f, ensure_ascii=False)
+    return [(w['w'], w['s'], w['e']) for w in out]
 
-    def wall(offset):
-        """Speech-time offset -> wall-clock time, stepping over the silences."""
-        left = offset
-        for a, b in runs:
-            span = b - a
-            if left <= span:
-                return a + left
-            left -= span
-        return runs[-1][1] if runs else offset
 
-    # A pause can be claimed by only one boundary, and a boundary can only move forward.
-    #
-    # Snapping each boundary to its nearest pause independently let two adjacent boundaries
-    # choose the SAME pause, which collapses the segment between them to zero length. Nothing
-    # downstream can repair that: giving the collapsed segment a minimum duration necessarily
-    # runs it past where the next one starts, so the timeline overlaps and clicking a line
-    # plays its neighbour. Both symptoms — 8 overlaps and 8 zero-length segments — were the one
-    # cause, so the constraint belongs here rather than in a pass afterwards.
-    used = set()
-    acc, bounds, prev = 0.0, [0.0], 0.0
-    for w in weights:
-        acc += w
-        raw = wall(acc / total_w * speech)
-        near = [(abs(m - raw), m) for m in silences_mid
-                if m > prev + MIN_SPAN and m not in used]
-        near.sort()
-        if near and near[0][0] <= tol:
-            t = near[0][1]
-            used.add(t)
-        else:
-            # No pause available: keep the computed position, forced past the previous
-            # boundary. Monotonic by construction, since the offsets only increase.
-            t = max(raw, prev + MIN_SPAN)
-        bounds.append(t)
-        prev = t
+def extra_runs(slug):
+    """Additional recognitions of the same audio, if any were saved.
 
+    asr_words2.json, asr_words3.json … Pooling independent runs densifies the anchors: two
+    recognitions mis-hear different words, so each matches the transcript where the other
+    failed, and the chain picks the best of both wherever they compete.
+    """
+    out = []
+    for i in range(2, 6):
+        p = os.path.join(res_dir(slug), f'asr_words{i}.json')
+        if os.path.exists(p):
+            with open(p, encoding='utf-8') as f:
+                out.append([(w['w'], w['s'], w['e']) for w in json.load(f)])
+    return out
+
+
+def _char_timeline(words):
+    """[(word, start, end)] -> (Telugu-only string, a time for each character)
+
+    A word's characters are spread evenly inside its own span. Sub-word precision is not real,
+    but an anchor only has to name the right second.
+    """
+    chars, times = [], []
+    for w, st, en in words:
+        te = [c for c in w if TELUGU.match(c)]
+        if not te:
+            continue
+        span = max(en - st, 0.01)
+        for i, c in enumerate(te):
+            chars.append(c)
+            times.append(st + span * (i + 0.5) / len(te))
+    return ''.join(chars), times
+
+
+def _line_chars(rows):
+    chars, lines = [], []
     for i, r in enumerate(rows):
-        r['start'], r['end'] = f'{bounds[i]:.2f}', f'{bounds[i + 1]:.2f}'
-        if r['status'] == 'est':
-            r['status'] = 'todo'
-    return len(rows)
+        for c in r['te']:
+            if TELUGU.match(c):
+                chars.append(c)
+                lines.append(i)
+    return ''.join(chars), lines
+
+
+def _lis(pairs):
+    """Longest non-decreasing-in-time subsequence of (line, time), by patience sorting.
+
+    Anchors come from difflib's matching blocks, which are already monotonic — but a block can
+    still be a coincidence, and Telugu's common syllables make short coincidences frequent. A
+    greedy "drop anything earlier than the last kept" pass is at the mercy of its first
+    survivor: one early stray time near the end of the file silently rejects everything after
+    it. Keeping the longest consistent chain instead discards the stray and not the file.
+    """
+    if not pairs:
+        return []
+    import bisect
+    tails, back, idx = [], [-1] * len(pairs), []
+    for i, (_line, t) in enumerate(pairs):
+        j = bisect.bisect_right(tails, t)
+        if j == len(tails):
+            tails.append(t)
+            idx.append(i)
+        else:
+            tails[j] = t
+            idx[j] = i
+        back[i] = idx[j - 1] if j else -1
+    out, k = [], idx[len(tails) - 1]
+    while k != -1:
+        out.append(pairs[k])
+        k = back[k]
+    out.reverse()
+    return out
+
+
+# The fastest speech worth believing, in Telugu characters per second. The measured median for
+# this material is about 12.7, so 25 is roughly double — - generous for an excited speaker and
+# still nowhere near the impossible.
+# How much faster than its own average this material is ever allowed to be, between two
+# anchors. Derived per resource rather than fixed: the ceiling that matters is relative to how
+# fast the speaker actually talks, and a number tuned on one recording is a number wrong on the
+# next. 1.2 was chosen by measurement — see rate_ceiling().
+RATE_SLACK = 1.2
+
+
+def rate_ceiling(rows, total, slack=RATE_SLACK):
+    """The fastest plausible characters-per-second for THIS recording.
+
+    Transcript characters over audio seconds is the average rate, and it needs no alignment to
+    compute — it is a property of the two inputs. The ceiling is that average times a little
+    slack, because a real stretch of speech runs somewhat above average and nothing runs far
+    above it.
+
+    Measured, not guessed. Sweeping the ceiling and scoring each result by cutting 22 spans out
+    of the audio and recognising them blind: a ceiling of 25 c/s scored 69.6% mean similarity
+    with 5 of 22 lines under 40%, while 15 c/s scored 82.4% with none. This recording averages
+    12.3 c/s, so the winning ceiling was 1.2x its average — generous enough for fast speech,
+    tight enough to reject the anchor pairs that ask 349 characters to be spoken in a tenth of
+    a second.
+    """
+    chars = sum(len(''.join(c for c in r['te'] if TELUGU.match(c))) for r in rows)
+    if not total or not chars:
+        return 25.0
+    return max(6.0, chars / total * slack)
+
+
+def plausible_chain(blocks, max_cps):
+    """Keep the largest set of match blocks that could describe real speech.
+
+    Blocks are (transcript position, size, start time, end time) — normalised, so blocks found
+    by DIFFERENT recognitions of the same audio can be pooled and competed against each other.
+    Two runs disagree about spelling in different places, so their anchors land in different
+    places, and the union covers more of the transcript than either alone. Where they overlap
+    the chain simply cannot take both, since it requires the next block to begin after the
+    previous one ends.
+
+    THE FAILURE THIS EXISTS TO STOP
+    Recognition skips things — it loses the thread, and the next block it matches sits almost
+    at the same second as the last one while the transcript between them holds hundreds of
+    characters. Interpolating across that pair asks 349 characters to be spoken in 0.11
+    seconds, and the lines between collapse to nothing. Eight such pairs in this one recording,
+    and they caused all 24 of the zero-length spans.
+
+    Being monotone is not enough to be possible, which is why an ordering filter missed this.
+    The constraint is a rate: characters between two blocks over seconds between them must stay
+    under MAX_CPS. Blocks are chosen to maximise matched characters subject to it — a
+    longest-path walk, so dropping one bad block never costs the rest of the file.
+    """
+    blocks = sorted(blocks, key=lambda b: (b[0], b[2]))
+    n = len(blocks)
+    if not n:
+        return []
+    best = [0] * n
+    prev = [-1] * n
+
+    def ok(i, j):
+        bi, si, _tsi, tei = blocks[i]
+        bj, _sj, tsj, _tej = blocks[j]
+        if bj < bi + si:                       # overlapping transcript positions
+            return False
+        gap_chars = bj - (bi + si)
+        gap_time = tsj - tei
+        if gap_time < -0.05:
+            return False
+        return gap_time >= gap_chars / max_cps - 0.25
+
+    for j in range(n):
+        best[j] = blocks[j][1]
+        for i in range(j):
+            if best[i] + blocks[j][1] > best[j] and ok(i, j):
+                best[j] = best[i] + blocks[j][1]
+                prev[j] = i
+    tail = max(range(n), key=lambda i: best[i])
+    chain = []
+    while tail != -1:
+        chain.append(blocks[tail])
+        tail = prev[tail]
+    chain.reverse()
+    return chain
+
+
+def blocks_of(words, tr_c, min_block):
+    """One recognition -> normalised match blocks against the transcript characters."""
+    asr_c, asr_t = _char_timeline(words)
+    if not asr_c:
+        return []
+    sm = difflib.SequenceMatcher(None, asr_c, tr_c, autojunk=False)
+    out = []
+    for a, b, size in sm.get_matching_blocks():
+        if size >= min_block:
+            out.append((b, size, asr_t[a], asr_t[a + size - 1]))
+    return out
+
+
+def align_from_asr(rows, runs, total, min_block=6, slack=RATE_SLACK):
+    """Time every line by matching recognised characters against transcript characters.
+
+    Character level, not word level: a Telugu word carries its postpositions and case endings
+    inside it, so వాళ్ళకి and వాళ్ళు never match as tokens while sharing a stem that matches
+    exactly. autojunk must be off — it discards any character occurring in over 1% of a long
+    sequence, which in Telugu is most of the alphabet.
+
+    THE MAPPING IS POSITION -> TIME, NOT LINE -> TIME
+    Every matched character supplies a pair: this far into the transcript, that second of
+    audio. Fitting a monotone curve through those pairs and reading each line's boundary off
+    it uses all the evidence and needs no per-line bookkeeping.
+
+    The first attempt did keep that bookkeeping — a line's start became its first matched
+    character and its end its last — and it was wrong in a way that looked right. A line
+    anchored by a single six-character match collapsed to the width of the MATCH rather than
+    the width of the LINE: line 110 was given 0.4 seconds for forty characters. "91 of 141
+    lines anchored" was true and told you nothing, because it counted anchors rather than
+    checking the spans they produced. Cutting the audio at each span and recognising it again
+    is what caught it.
+    """
+    tr_c, tr_line = _line_chars(rows)
+    max_cps = rate_ceiling(rows, total, slack)
+    blocks = []
+    for words in runs:
+        blocks += blocks_of(words, tr_c, min_block)
+    if not blocks:
+        return None, 'no matching character runs'
+    chain = plausible_chain(blocks, max_cps)
+    # A block's characters are spread evenly across its own span; the block is contiguous in
+    # both sequences, so this is exact up to the recognition's own word timing.
+    pts = []
+    for b, size, ts, te in chain:
+        step = (te - ts) / max(size - 1, 1)
+        for k in range(size):
+            pts.append((b + k, ts + step * k))
+    if len(pts) < 20:
+        return None, f'only {len(pts)} matched characters survived the rate check'
+
+    # Where each line begins, measured in transcript characters.
+    at = [0]
+    for r in rows:
+        at.append(at[-1] + len(''.join(c for c in r['te'] if TELUGU.match(c))))
+
+    def time_at(pos):
+        """Monotone piecewise-linear read-off, extrapolating at both ends."""
+        lo, hi = 0, len(pts) - 1
+        if pos <= pts[0][0]:
+            p0, p1 = pts[0], pts[min(1, hi)]
+            if p1[0] == p0[0]:
+                return p0[1]
+            rate = (p1[1] - p0[1]) / (p1[0] - p0[0])
+            return max(0.0, p0[1] - (p0[0] - pos) * rate)
+        if pos >= pts[hi][0]:
+            p0, p1 = pts[max(hi - 1, 0)], pts[hi]
+            if p1[0] == p0[0]:
+                return p1[1]
+            rate = (p1[1] - p0[1]) / (p1[0] - p0[0])
+            return min(total, p1[1] + (pos - p1[0]) * rate)
+        while hi - lo > 1:
+            mid = (lo + hi) // 2
+            if pts[mid][0] <= pos:
+                lo = mid
+            else:
+                hi = mid
+        p0, p1 = pts[lo], pts[hi]
+        if p1[0] == p0[0]:
+            return p0[1]
+        f = (pos - p0[0]) / (p1[0] - p0[0])
+        return p0[1] + f * (p1[1] - p0[1])
+
+    bounds = [time_at(p) for p in at]
+    bounds[0] = min(bounds[0], bounds[1] if len(bounds) > 1 else 0.0)
+    bounds[-1] = total
+    for i in range(1, len(bounds)):
+        if bounds[i] < bounds[i - 1]:
+            bounds[i] = bounds[i - 1]
+
+    # A minimum span is a constraint on the SHARED boundary, not on one row's end. Three times
+    # now the same bug: widen row i's end past row i+1's start and the timeline overlaps, because
+    # both read the same number. Push the boundary itself forward and let it cascade; 141 lines
+    # at 0.35 s is 49 seconds against 946, so the cascade cannot run out of room.
+    for i in range(1, len(bounds)):
+        if bounds[i] < bounds[i - 1] + MIN_SPAN:
+            bounds[i] = min(bounds[i - 1] + MIN_SPAN, total)
+    for i in range(len(rows)):
+        rows[i]['start'], rows[i]['end'] = f'{bounds[i]:.2f}', f'{bounds[i + 1]:.2f}'
+        if rows[i]['status'] in ('', 'todo', 'est'):
+            rows[i]['status'] = 'timed'
+    hit = len({tr_line[p] for p, _ in pts})
+    return (hit, max_cps), None
 
 
 def align_proportional(rows, duration):
@@ -624,6 +878,27 @@ def cmd_align(args):
 
     audio = find_one(args.slug, AUDIO_EXT, 'audio')
     caps = find_one(args.slug, CAPTION_EXT, 'caption')
+
+    if args.asr:
+        if not audio:
+            raise SystemExit('no audio file to recognise')
+        total = audio_duration(audio)
+        runs = [asr_words(args.slug, audio, model=args.model, force=args.reasr)]
+        runs += extra_runs(args.slug)
+        got, err = align_from_asr(rows, runs, total, min_block=args.min_block,
+                                  slack=args.slack)
+        if err:
+            raise SystemExit(f'ASR alignment failed: {err}')
+        hit, max_cps = got
+        write_segments(args.slug, rows)
+        print(f'{args.slug}: {sum(len(r) for r in runs)} words recognised '
+              f'across {len(runs)} recognition{"" if len(runs) == 1 else "s"}')
+        print(f'  {hit}/{len(rows)} lines have characters matched in the audio; the rest are')
+        print(f'  interpolated between the nearest matches, by character count.')
+        print(f'  rate ceiling {max_cps:.1f} chars/sec ({args.slack}x this recording\'s average)')
+        print('  Anchored lines rest on evidence. Verify before trusting the whole file:')
+        print('  cut a few spans out and recognise them again — counting anchors proved nothing.')
+        return
 
     if caps and not args.proportional:
         cues = read_captions(caps)
@@ -968,6 +1243,16 @@ def main():
                    help='plain character weight — skip captions and pause snapping')
     p.add_argument('--noise', type=int, default=-40, help='silence threshold in dB')
     p.add_argument('--gap', type=float, default=0.35, help='shortest gap counted as a pause')
+    p.add_argument('--asr', action='store_true',
+                   help='recognise the audio and align the transcript to it — the only mode '
+                        'that consults the audio rather than estimating from text')
+    p.add_argument('--model', default=ASR_MODEL, help='faster-whisper model')
+    p.add_argument('--reasr', action='store_true', help='re-recognise, ignoring the cache')
+    p.add_argument('--min-block', type=int, default=6,
+                   help='shortest matching character run treated as an anchor')
+    p.add_argument('--slack', type=float, default=RATE_SLACK,
+                   help='how far above its own average rate the audio may run between two '
+                        'anchors (1.2 measured best; raise for uneven speech)')
     p.set_defaults(fn=cmd_align)
 
     p = sub.add_parser('analyze', help='vocabulary coverage report')

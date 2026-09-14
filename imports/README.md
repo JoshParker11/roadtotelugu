@@ -67,10 +67,45 @@ One trap, recorded because it cost an hour: ffmpeg's `silencedetect` reports at 
 running it under `-v error` returns zero gaps on any input and looks exactly like audio with no
 pauses in it.
 
-Forced alignment from the audio itself would remove the need for captions entirely, and is the
-obvious next addition: `pip install openai-whisper`, transcribe with word timestamps, then
-match that against the known transcript. Not installed here (~1.5 GB of model), so the tool
-doesn't pretend to offer it.
+## `align --asr` — the only mode that consults the audio
+
+Everything above estimates timings from the text and never listens. That is a real limit, and
+it is worth being precise about how it failed: the chapter-1 discussion, aligned by pause
+snapping, was off by a **median 4.33 s**, with **51 of 141 lines a full line or more out of
+place**. It measured well at the time because the check — how closely duration tracked
+character count — was the aligner's own assumption restated. A number like that can only
+confirm itself.
+
+```bash
+python3 -m pip install faster-whisper
+python3 tools/import_resource.py align <slug> --asr
+```
+
+Recognition supplies the missing half. What it hears is wrong in detail — `సాధారనంగా` for
+`సాధారణంగా` — but it is wrong at a known second, which is all an anchor has to be. Matching is
+at character level because a Telugu word carries its case endings inside it: `వాళ్ళకి` and
+`వాళ్ళు` never match as tokens while sharing a stem that matches exactly. Every matched
+character gives a position-to-time pair, and each line's boundary is read off the curve fitted
+through them.
+
+Notes worth keeping:
+
+- **Model size is not negotiable.** `small` returned 19 Telugu words out of 98 for two and a
+  half minutes, the rest nonsense and stray Persian. `large-v3-turbo` returned 138 of 138, at
+  roughly real time. Below turbo, Telugu is not worth attempting.
+- **Recognitions pool.** Save a second run as `asr_words2.json` and it is used too. Two runs
+  mishear different words, so each anchors where the other failed: 84 anchored lines became
+  105, and measured accuracy rose from 64% to 70%.
+- **The rate ceiling does the real work.** Recognition skips stretches, and the next block it
+  matches can sit a tenth of a second after the last while the transcript between them holds
+  349 characters. Interpolating across that crushes those lines to nothing. Anchor pairs are
+  therefore rejected unless the implied speed stays under `rate_ceiling()` — the recording's
+  own average times `--slack` (1.2). Sweeping that ceiling and scoring each result blind: 25
+  chars/sec gave 69.6% mean similarity with 5 of 22 lines under 40%; the derived 14.7 gave
+  **82.4% with none**.
+- **Verify by re-recognising spans, never by counting anchors.** "91 of 141 lines anchored" was
+  true while line 110 held 0.4 seconds of audio for forty characters. Cut a span out, recognise
+  it blind, compare: that is the only check here that has ever caught anything.
 
 ## What `analyze` tells you
 
