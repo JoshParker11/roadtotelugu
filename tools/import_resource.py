@@ -1061,6 +1061,155 @@ def cmd_analyze(args):
     print(f'  wrote {os.path.relpath(p, ROOT)}')
 
 
+# ---------------------------------------------------------------- annotate
+
+VOCAB_COLS = ['guid', 'te', 'sense_no', 'gloss', 'pos', 'parts', 'explain', 'context_guid',
+              'status']
+MAX_SENSES = 3
+
+
+def vocab_path(slug):
+    return os.path.join(res_dir(slug), 'vocab.tsv')
+
+
+def read_vocab(slug):
+    p = vocab_path(slug)
+    if not os.path.exists(p):
+        return []
+    with open(p, encoding='utf-8', newline='') as f:
+        return list(csv.DictReader(f, delimiter='\t'))
+
+
+def parts_of(w):
+    """Morphology as `text|label + text|label`.
+
+    Kept structured rather than folded into the prose note, because the reader has a slot that
+    renders a split as bold part plus label — the same slot the mini stories fill with their
+    automatic splits.
+    """
+    out = []
+    for p in (w.get('parts') or []):
+        t, lab = (p.get('text') or '').strip(), (p.get('label') or '').strip()
+        if t:
+            out.append(f'{t}|{lab}'.replace(' + ', ' plus '))
+    return ' + '.join(out)
+
+
+def explain_of(w):
+    """The prose note for a word, without its morphology — that travels in `parts`."""
+    bits = []
+    if w.get('note'):
+        bits.append(w['note'].strip())
+    if w.get('status') == 'uncertain':
+        bits.append('Marked uncertain by the annotator — the form as written is unclear.')
+    return ' '.join(b for b in bits if b)
+
+
+def cmd_annotate(args):
+    """Load a generated annotation file into this resource's word registry and translations.
+
+    WHAT IS TAKEN AND WHAT IS REFUSED
+    Taken: the per-word meaning and morphology, and the per-line English. Both fill slots the
+    reader already renders and the resource had empty — this recording had definitions for 305
+    of its 1,022 word forms and English for none of its 141 lines.
+
+    Refused: the annotator's REPAIRS. It proposes corrected Telugu where it thinks the
+    transcript is wrong — నిజే read as నిజమే — and 45 of the 141 translations rest on such a
+    proposed reading rather than on the words actually in the transcript. Writing those back
+    would replace what was said with what a model guessed was meant, which is the one thing
+    this project does not do with Telugu. The proposals are recorded in the notes column, where
+    they can inform a correction, and the transcript is left alone.
+
+    Every gloss lands as status=draft, so the reader prints "not yet checked by a native
+    speaker" under it. The annotation says so of itself: its own verification note reports the
+    glosses are contextual analysis, not individually dictionary-verified, with no audio and no
+    native review.
+    """
+    meta = load_meta(args.slug)
+    rows = read_segments(args.slug)
+    if not rows:
+        raise SystemExit('no segments — run segment first')
+    with open(args.file, encoding='utf-8') as f:
+        ann = json.load(f)
+    entries = ann.get('entries') or []
+
+    # The annotation must describe THIS text. A mismatch means it was generated from a
+    # different transcript, and every line number in it would point at the wrong words.
+    if len(entries) != len(rows):
+        raise SystemExit(f'{len(entries)} annotated entries vs {len(rows)} segments — '
+                         f'these describe different texts')
+    bad = [i for i, (e, r) in enumerate(zip(entries, rows))
+           if (e.get('original') or '').strip() != r['te'].strip()]
+    if bad and not args.force:
+        raise SystemExit(f'{len(bad)} lines differ from the segments (first: line {bad[0] + 1}).\n'
+                         f'  The annotation describes a different version of the transcript.\n'
+                         f'  Re-annotate, or pass --force to take only the lines that match.')
+
+    # ---- per-line English
+    filled = proposed = 0
+    for e, r in zip(entries, rows):
+        if (e.get('original') or '').strip() != r['te'].strip():
+            continue
+        tr = (e.get('translation') or '').strip()
+        if tr and (not r['en'].strip() or args.overwrite):
+            r['en'] = tr
+            filled += 1
+        notes = []
+        if e.get('translationBasis') == 'proposed-reading':
+            proposed += 1
+            notes.append('translation rests on a proposed reading, not the text as written')
+        for rep in (e.get('repairs') or []):
+            notes.append(f"suggested reading: {rep.get('from')} -> {rep.get('to')} "
+                         f"({rep.get('confidence')})")
+        if e.get('status') in ('repair', 'audio-needed'):
+            notes.append(f"annotator status: {e['status']}")
+        if notes and not r['notes'].strip():
+            r['notes'] = ' | '.join(notes)
+    write_segments(args.slug, rows)
+
+    # ---- word registry
+    by_form = {}
+    for e, r in zip(entries, rows):
+        for w in (e.get('words') or []):
+            te = (w.get('te') or '').strip()
+            meaning = (w.get('meaning') or '').strip()
+            if not te or not meaning or not TELUGU.search(te):
+                continue
+            senses = by_form.setdefault(te, {})
+            rec = senses.setdefault(meaning, {'n': 0, 'w': w, 'ctx': r['guid']})
+            rec['n'] += 1
+            # Prefer the richest annotation of this meaning as its explanation.
+            if len(explain_of(w)) + len(parts_of(w)) > \
+                    len(explain_of(rec['w'])) + len(parts_of(rec['w'])):
+                rec['w'] = w
+
+    out = []
+    for te in sorted(by_form):
+        ranked = sorted(by_form[te].items(), key=lambda kv: -kv[1]['n'])[:MAX_SENSES]
+        for i, (meaning, rec) in enumerate(ranked, 1):
+            out.append({
+                'guid': guid('W', te), 'te': te, 'sense_no': i, 'gloss': meaning,
+                'pos': '', 'parts': parts_of(rec['w']), 'explain': explain_of(rec['w']),
+                'context_guid': rec['ctx'], 'status': 'draft',
+            })
+    with open(vocab_path(args.slug), 'w', encoding='utf-8', newline='') as f:
+        wr = csv.DictWriter(f, VOCAB_COLS, delimiter='\t', lineterminator='\n')
+        wr.writeheader()
+        wr.writerows(out)
+
+    forms = len(by_form)
+    multi = sum(1 for te in by_form if len(by_form[te]) > 1)
+    print(f'{args.slug}: {len(entries)} annotated lines')
+    print(f'  {filled} lines given English'
+          f'{f" ({proposed} rest on a proposed reading — recorded in notes)" if proposed else ""}')
+    print(f'  {forms:,} word forms, {len(out):,} senses written to '
+          f'{os.path.relpath(vocab_path(args.slug), ROOT)}')
+    print(f'  {multi} forms carry more than one sense (kept up to {MAX_SENSES}, commonest first)')
+    print('  all senses status=draft — the annotation is unreviewed by its own account')
+    meta['annotated'] = ann.get('assembled') or True
+    save_meta(args.slug, meta)
+
+
 # ---------------------------------------------------------------- build
 
 def gloss_table():
@@ -1109,16 +1258,36 @@ def cmd_build(args):
             if TELUGU.search(tok):
                 counts[tok] += 1
 
+    # This resource's own registry leads: it was written for these words in these sentences,
+    # where the project-wide tables hold a general gloss for the form wherever it appears.
+    local = {}
+    for r in read_vocab(args.slug):
+        local.setdefault(r['te'], []).append(r)
+    for v in local.values():
+        v.sort(key=lambda r: int(r.get('sense_no') or 1))
+
     lex, idx_of = [], {}
     for form in counts:
-        g, pos = glosses.get(form, ('', ''))
         idx_of[form] = len(lex)
         entry = {'te': form, 'g': guid('W', form), 'n': counts[form],
                  'f': 1, 'o': len(lex)}
-        if g:
-            entry['en'] = g
-        if pos:
-            entry['p'] = pos
+        senses = local.get(form) or []
+        if senses:
+            entry['sn'] = [{'g': r['gloss'], 'p': r.get('pos', ''), 'x': r.get('explain', ''),
+                            'c': r.get('context_guid', ''), 's': r.get('status', 'draft')}
+                           for r in senses]
+            entry['en'] = senses[0]['gloss']
+            # `p` is a LIST of [part, label]; the reader maps over it. Assigning the part-of-
+            # speech STRING here put 116 entries in a shape that threw TypeError the moment
+            # their word card opened — invisible until a card was actually clicked.
+            split = [seg.split('|', 1) for seg in (senses[0].get('parts') or '').split(' + ')
+                     if '|' in seg]
+            if len(split) > 1:
+                entry['p'] = [[a, b] for a, b in split]
+        else:
+            g, _pos = glosses.get(form, ('', ''))
+            if g:
+                entry['en'] = g
         lex.append(entry)
 
     lines = []
@@ -1258,6 +1427,15 @@ def main():
     p = sub.add_parser('analyze', help='vocabulary coverage report')
     p.add_argument('slug')
     p.set_defaults(fn=cmd_analyze)
+
+    p = sub.add_parser('annotate', help='load a generated annotations.json into this resource')
+    p.add_argument('slug')
+    p.add_argument('file', help='path to annotations.json')
+    p.add_argument('--overwrite', action='store_true',
+                   help='replace English already present, rather than only filling blanks')
+    p.add_argument('--force', action='store_true',
+                   help='accept an annotation whose lines do not all match the segments')
+    p.set_defaults(fn=cmd_annotate)
 
     p = sub.add_parser('build', help='segments.tsv -> reader/data/<slug>.js')
     p.add_argument('slug')

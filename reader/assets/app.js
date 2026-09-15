@@ -734,7 +734,8 @@
         ${l.en ? `<p style="font-size:15px;margin:6px 0"><b>${esc(l.en)}</b></p>` : ''}
         ${l.p ? `<p style="font-size:14px">${l.p.map(([a, b]) =>
             `<b class="end">${esc(a)}</b> ${esc(b)}`).join(' &nbsp;+&nbsp; ')}
-            <br><small style="color:var(--ink2)">Split automatically — check it reads sensibly.</small></p>` : ''}
+            <br><small style="color:var(--ink2)">Split into parts — not checked by a native
+            speaker.</small></p>` : ''}
         ${l.head ? `${verbEquiv(l)
               ? `<p style="font-size:16px;margin:6px 0">= <b>“${esc(verbEquiv(l))}”</b></p>` : ''}
             <p style="font-size:14px">${esc(FORMLABEL[l.form] || l.form)} of

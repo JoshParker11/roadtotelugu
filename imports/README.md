@@ -107,6 +107,36 @@ Notes worth keeping:
   true while line 110 held 0.4 seconds of audio for forty characters. Cut a span out, recognise
   it blind, compare: that is the only check here that has ever caught anything.
 
+## `annotate` — loading a generated annotation file
+
+If you have a per-line annotation of the transcript (meanings, morphology, translations),
+`annotate` loads it into the resource:
+
+```bash
+python3 tools/import_resource.py annotate <slug> path/to/annotations.json
+```
+
+It fills the `en` column in `segments.tsv` from the per-line translations, and writes a word
+registry to `imports/<slug>/vocab.tsv` — one row per sense, commonest sense first, up to three
+per form. `build` then prefers that registry over the project-wide tables, because it was
+written for these words in these sentences rather than for the form wherever it appears. On the
+chapter-1 discussion this took definitions from 305 of 1,022 forms to all 1,022, and English
+from none of 141 lines to all of them.
+
+**What it refuses to take.** An annotator of this kind proposes *repairs* — corrected Telugu
+where it believes the transcript is wrong, `నిజే` read as `నిజమే`. On this file 45 of 141
+translations rested on such a proposed reading rather than on the words actually present.
+Writing those back would replace what was said with what a model guessed was meant, which is
+the one thing this project does not do with Telugu. The proposals are recorded in the segment's
+`notes` column, where they can inform a correction you make deliberately; the transcript is
+left alone.
+
+It also refuses an annotation whose lines do not match the segments, since every line number in
+it would then point at the wrong words. Every sense lands as `status=draft`, so the reader
+prints "not yet checked by a native speaker" beneath it — which the annotation says of itself,
+its own verification note reporting contextual analysis with no dictionary check, no audio and
+no native review.
+
 ## What `analyze` tells you
 
 It writes `report.md` next to the segments:
