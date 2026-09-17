@@ -502,3 +502,28 @@ main { padding-top: var(--top-h); }
 .offnote { color: var(--ink2); font-size: 13px; margin: 4px 0 10px; }
 .offstat { color: var(--ink2); font-size: 13px; align-self: center; }
 .syncbtns .n { opacity: .7; font-variant-numeric: tabular-nums; }
+
+/* Library sections: a corpus heading, and chapter subheadings inside a book. */
+.libsec { font: 700 13px/1 Inter; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--ink2); margin: 28px 2px 10px; display: flex; align-items: baseline; gap: 10px; }
+.libsec:first-of-type { margin-top: 8px; }
+.libsec small, .libgroup small { font: 500 12px/1 Inter; letter-spacing: 0;
+  text-transform: none; color: var(--ink2); opacity: .75; }
+.libgroup { font: 600 15px/1.2 'Young Serif', Georgia, serif; letter-spacing: 0;
+  text-transform: none; color: var(--ink); margin: 18px 2px 8px; display: flex;
+  align-items: baseline; gap: 10px; }
+
+/* Word card: what this word is doing HERE, before anything about the form in general. */
+.wc-occ, .wc-base, .wc-parts { border-top: 1px solid var(--line); padding-top: 10px; margin-top: 12px; }
+.wc-occ:first-child { border-top: 0; padding-top: 0; margin-top: 0; }
+.wc-occ label, .wc-base label, .wc-parts label { font: 700 11px/1 Inter; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--ink2); display: block; margin-bottom: 6px; }
+.occ-gloss { font-size: 17px; margin: 2px 0 6px; }
+.occ-en, .occ-role { font-size: 14px; margin: 4px 0; color: var(--ink); }
+.occ-role small, .wc-base small { color: var(--ink2); font-size: 12px; margin-left: 6px; }
+.occ-cx { font-size: 13px; margin: 8px 0 0; color: var(--ink2); line-height: 1.5; }
+.occ-cx b { color: var(--ink); }
+.wc-parts .part { font-size: 14px; margin: 6px 0; line-height: 1.5; }
+.wc-parts .part small { display: block; color: var(--ink2); font-size: 12px; }
+.wc-hint { font-size: 12px; color: var(--ink2); margin: 8px 0 0; }
+.needrev { font-style: normal; font-size: 11px; color: var(--amber); margin-left: 6px; }

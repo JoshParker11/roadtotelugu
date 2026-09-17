@@ -30,10 +30,17 @@
      Imported resources are appended, one per `tools/import_resource.py build`. Order matters
      only for the offsets, which are computed, so a dataset can be added or dropped here
      without touching anything else. */
-  const SETS = [window.MS_DATA, window.IC_DATA, window.HP1_DISCUSSION_DATA].filter(Boolean);
+  const SETS = [window.MS_DATA, window.IC_DATA, window.HP1_DISCUSSION_DATA,
+                     window.POA_DATA].filter(Boolean);
   const LEX = [];
   const STORIES = [];
+  const OCC = [];
+  const CX = [];
   const UNIT = new Map();
+  /* What a dataset calls itself on the library page, and how its items subdivide. A book of
+     three chapters is one heading with three subheadings, not thirty-six loose cards. */
+  const COLLECTION = new Map();
+  const GROUPS = new Map();
   for (const d of SETS) {
     const off = LEX.length;
     /* Which corpus each word came from. The two datasets each build their own lexicon, so a
@@ -47,6 +54,14 @@
     const tag = d.tag || (/Intensive/.test(d.source || '') ? 'ic' : 'ms');
     /* What one item of this corpus is called, for labels like "lesson 4" and "episode 2". */
     UNIT.set(tag, d.unit || (tag === 'ic' ? 'lesson' : 'story'));
+    if (d.collection) COLLECTION.set(tag, d.collection);
+    if (d.groups) GROUPS.set(tag, new Map(d.groups.map(g => [g.n, g.en])));
+    /* Occurrence and construction tables are per dataset and indexed from their own tokens,
+       so they need the same offsetting the lexicon gets. */
+    const ooff = OCC.length, coff = CX.length;
+    OCC.push(...(d.occ || []).map(r => Object.assign({}, r,
+      r.cx ? { cx: r.cx.map(i => i + coff) } : {})));
+    CX.push(...(d.cx || []));
     LEX.push(...(d.lex || []).map(l => Object.assign({ corpus: tag }, l)));
     for (const st of (d.stories || [])) {
       /* Unique across datasets. Both number their stories from 1, and the router matched
@@ -59,7 +74,14 @@
         tag,
         src: d.source,
         lines: (st.lines || []).map(l => Object.assign({}, l, {
-          t: (l.t || []).map(([w, k, i]) => [w, k, i < 0 ? i : i + off]),
+          /* A fourth element is the occurrence index. Datasets built before occurrences
+             existed have three, and a missing fourth reads as "no occurrence data" — the
+             old behaviour exactly. */
+          t: (l.t || []).map(t => {
+            const [w, k, i, oi] = t;
+            const idx = i < 0 ? i : i + off;
+            return t.length > 3 && oi >= 0 ? [w, k, idx, oi + ooff] : [w, k, idx];
+          }),
         })),
       }));
     }
@@ -233,30 +255,67 @@
              tried: known + learning + first };
   }
 
+  /* The name a corpus goes by as a library heading. The two original corpora predate the
+     `collection` field, so their names stay here; anything imported names itself. */
+  const SECTION_NAME = { ms: 'Mini Stories', ic: 'Intensive Course' };
+  function sectionName(tag) {
+    const c = COLLECTION.get(tag);
+    return SECTION_NAME[tag] || (c && (c.short || c.en)) || 'Imported';
+  }
+  /* "8 storys" — a bare +s is wrong for the only unit noun that needed it. */
+  const plural = (n, word) => n === 1 ? word
+    : /[^aeiou]y$/.test(word) ? word.slice(0, -1) + 'ies' : word + 's';
+
+  function storyCard(s, showSource) {
+    const st = storyStats(s);
+    const pct = st.total ? Math.round(st.known / st.total * 100) : 0;
+    // "seen" answers the question the bar is for: how much of this have I touched at all.
+    const tried = st.total ? Math.round(st.tried / st.total * 100) : 0;
+    const noun = (s.src && s.src.indexOf('Intensive') >= 0) ? 'turns' : 'sentences';
+    const bits = [];
+    if (showSource && s.src) bits.push(esc(s.src));
+    bits.push(`${s.lines.length} ${noun}`);
+    if (s.dur) bits.push(clock(s.dur));
+    return `<button class="storycard" data-open="${s.id}">
+      <span class="snum">${s.num}</span>
+      <span class="meta"><b>${esc(disp(s.title.te) || s.title.en)}</b>
+        <span>${bits.join(' · ')}</span></span>
+      <span class="wordbar"><span class="track">
+          <i style="flex:${st.known};background:var(--green)"></i>
+          <i style="flex:${st.learning};background:var(--amber)"></i>
+          <i style="flex:${st.first};background:var(--blue)"></i>
+          <i style="flex:${st.blue};background:var(--new-b)"></i>
+        </span><small>${pct}% known · ${tried}% seen · ${st.blue} new</small></span>
+      ${WordLevels.isRead(s.id) ? '<span class="done">✓</span>' : ''}
+    </button>`;
+  }
+
   function renderLibrary() {
     $('#playbar').hidden = true;
-    const cards = STORIES.map(s => {
-      const st = storyStats(s);
-      const pct = st.total ? Math.round(st.known / st.total * 100) : 0;
-      // "seen" answers the question the bar is for: how much of this have I touched at all.
-      const tried = st.total ? Math.round(st.tried / st.total * 100) : 0;
-      return `<button class="storycard" data-open="${s.id}">
-        <span class="snum">${s.num}</span>
-        <span class="meta"><b>${esc(disp(s.title.te) || s.title.en)}</b>
-          <span>${esc(s.src || '')} · ${s.lines.length} ${s.src && s.src.indexOf('Intensive') >= 0 ? 'turns' : 'sentences'}${s.dur ? ' · ' + clock(s.dur) : ''}</span></span>
-        <span class="wordbar"><span class="track">
-            <i style="flex:${st.known};background:var(--green)"></i>
-            <i style="flex:${st.learning};background:var(--amber)"></i>
-            <i style="flex:${st.first};background:var(--blue)"></i>
-            <i style="flex:${st.blue};background:var(--new-b)"></i>
-          </span><small>${pct}% known · ${tried}% seen · ${st.blue} new</small></span>
-        ${WordLevels.isRead(s.id) ? '<span class="done">✓</span>' : ''}
-      </button>`;
-    }).join('');
+    /* Grouped by corpus, in dataset order, and subdivided where a corpus says how. Thirty-six
+       scenes of one book listed flat among the mini stories is a list you scroll past rather
+       than read. */
+    const tags = [...new Set(STORIES.map(s => s.tag))];
+    const sections = tags.map(tag => {
+      const mine = STORIES.filter(s => s.tag === tag);
+      const groups = GROUPS.get(tag);
+      const body = groups && groups.size > 1
+        ? [...groups.entries()].map(([n, title]) => {
+            const inGroup = mine.filter(s => s.ch === n);
+            if (!inGroup.length) return '';
+            return `<h3 class="libgroup">${esc(title)}
+              <small>${inGroup.length} ${plural(inGroup.length, UNIT.get(tag) || 'part')}</small></h3>
+              ${inGroup.map(s => storyCard(s, false)).join('')}`;
+          }).join('')
+        : mine.map(s => storyCard(s, true)).join('');
+      return { tag, n: mine.length, html: `
+        <h2 class="libsec">${esc(sectionName(tag))}
+          <small>${mine.length} ${plural(mine.length, UNIT.get(tag) || 'item')}</small>
+        </h2>${body}` };
+    });
+
     /* The counts are derived, not written down. "11 of 60 stories" was a literal in the
        markup and would have quietly gone stale the moment a second source appeared. */
-    /* Counted per corpus by tag. `STORIES.length - ms` credited every later dataset to the
-       Intensive Course, so importing one chapter advertised 65 course lessons. */
     const of = t => STORIES.filter(s => s.tag === t);
     const ms = of('ms').length;
     const ic = of('ic').length;
@@ -266,14 +325,15 @@
     const voiced = of('ms').filter(s => s.audio).length;
     if (ms) bits.push(`${ms} of 60 Mini Stories${voiced ? `, ${voiced} voiced` : ' — audio pending re-recording'}`);
     if (ic) bits.push(`${ic} Intensive Course lesson${ic === 1 ? '' : 's'}`);
-    for (const tag of new Set(STORIES.map(s => s.tag))) {
+    for (const tag of tags) {
       if (tag === 'ms' || tag === 'ic') continue;
       const n = of(tag).length, unit = UNIT.get(tag) || 'item';
-      bits.push(`${n} imported ${unit}${n === 1 ? '' : 's'}`);
+      bits.push(`${n} ${plural(n, unit)} in ${sectionName(tag)}`);
     }
     $('#pane').innerHTML = `
       <div class="libhead"><h1>Reading</h1>
-        <p>${bits.join(' · ')}. More appear here as they are prepared.</p></div>${cards}`;
+        <p>${bits.join(' · ')}. More appear here as they are prepared.</p></div>
+      ${sections.map(s => s.html).join('')}`;
     $$('#pane [data-open]').forEach(b =>
       b.addEventListener('click', () => { location.hash = '#/story/' + b.dataset.open; }));
   }
@@ -666,8 +726,11 @@
     return best;
   }
 
-  function openWord(g, line) {
+  function openWord(g, line, occ) {
     panel.mode = 'word'; panel.g = g; panel.line = line || contextFor(g);
+    /* Which occurrence was clicked. The card leads with THIS word in THIS sentence when it
+       knows; opened from a list there is no occurrence and it falls back to the form. */
+    panel.occ = (typeof occ === 'number' && occ >= 0) ? occ : null;
     panel.chipSel = 0;
     renderWordCard();
     sheetOpen();
@@ -677,7 +740,7 @@
     sayWord(g, true);
   }
   function closeWord() {
-    panel.mode = 'lists'; panel.g = null; panel.line = null;
+    panel.mode = 'lists'; panel.g = null; panel.line = null; panel.occ = null;
     renderPanel();
   }
 
@@ -687,6 +750,84 @@
     return items.map(([v, label, key]) =>
       `<button data-set="${v}" class="${eff === v ? 'on' : ''}" title="${label} (${key})">${
         v === 'k' ? '✓' : v === 'x' ? '✗' : v} ${label}</button>`).join('');
+  }
+
+  /* Plain English before the technical term, which is the graded-reader project's rule and a
+     good one: a label is only an explanation to someone who already knows it. */
+  const ROLE_PLAIN = {
+    predicate: 'the main thing being said about the subject',
+    subject: 'who or what is doing it',
+    object: 'what it is being done to',
+    experiencer: 'the one who feels or has it',
+    recipient: 'who gets it',
+    goal: 'where it is heading',
+    source: 'where it comes from',
+    location: 'where it happens',
+    time: 'when it happens',
+    manner: 'how it happens',
+    modifier: 'describes another word here',
+    connector: 'joins parts of the sentence',
+    other: '',
+  };
+  const PART_PLAIN = {
+    stem: 'the base the rest attaches to',
+    case: 'marks the role in the sentence',
+    derivation: 'turns it into a different kind of word',
+    number: 'singular or plural',
+    linker: 'a joining sound, no meaning of its own',
+    compound_member: 'one half of a compound',
+    polarity: 'makes it negative',
+    tense_aspect: 'when it happens',
+    person_agreement: 'agrees with who is doing it',
+    mood: 'the attitude — wishing, ordering, supposing',
+    clitic: 'a small attached particle',
+    unresolved: 'not analysed yet',
+  };
+  const tidy = (s) => (s || '').replace(/_/g, ' ');
+
+  /* The occurrence block: what this word is doing HERE, ahead of anything about the form in
+     general. Their review of the earlier import found the opposite order — a note from some
+     other sentence leading the card — and that is what this exists to prevent. */
+  function occurrenceHTML(o) {
+    if (!o) return '';
+    const cx = (o.cx || []).map(i => CX[i]).filter(Boolean);
+    const role = o.r ? (ROLE_PLAIN[o.r] || '') : '';
+    return `<div class="wc-occ">
+      <label>In this sentence</label>
+      ${o.g ? `<p class="occ-gloss"><b>${esc(o.g)}</b></p>` : ''}
+      ${o.ep ? `<p class="occ-en">matches <b>“${esc(o.ep)}”</b> in the English</p>` : ''}
+      ${o.r ? `<p class="occ-role">${role ? esc(role) : ''}
+          <small>${esc(tidy(o.r))}</small></p>` : ''}
+      ${cx.map(c => `<p class="occ-cx"><b>${esc(c.l)}</b> — ${esc(c.x)}</p>`).join('')}
+    </div>`;
+  }
+
+  function baseWordHTML(l) {
+    if (!l.lm || !l.lm.te) return '';
+    const same = l.lm.te === l.te;
+    if (same && !l.lm.p) return '';
+    return `<div class="wc-base">
+      <label>${same ? 'Dictionary form' : 'Base word'}</label>
+      <p><b>${esc(disp(l.lm.te))}</b>${l.lm.en ? ` — ${esc(l.lm.en)}` : ''}
+        ${l.lm.p ? `<small>${esc(tidy(l.lm.p))}</small>` : ''}</p>
+      ${same ? '' : `<p class="wc-hint">This is the form you would look up.</p>`}
+    </div>`;
+  }
+
+  function structuredPartsHTML(l) {
+    if (!l.pt || l.pt.length < 2) return '';
+    const needs = l.pt.some(p => p[3]);
+    return `<div class="wc-parts">
+      <label>How this form is built</label>
+      ${l.pt.map(([t, lab, cat, rev]) => `<p class="part">
+          <b class="end">${esc(disp(t))}</b>
+          <span>${esc(lab || PART_PLAIN[cat] || tidy(cat))}</span>
+          ${cat && PART_PLAIN[cat] ? `<small>${esc(PART_PLAIN[cat])}</small>` : ''}
+          ${rev ? '<em class="needrev">unreviewed</em>' : ''}
+        </p>`).join('')}
+      ${needs ? `<p class="wc-hint">Parts marked unreviewed are a draft analysis — plausible,
+        not checked.</p>` : ''}
+    </div>`;
   }
 
   function renderWordCard() {
@@ -729,10 +870,14 @@
             </div>`).join('')}
         </div>` : '';
 
+      const occRec = (typeof panel.occ === 'number') ? OCC[panel.occ] : null;
       body = `
+        ${occurrenceHTML(occRec)}
+        ${baseWordHTML(l)}
+        ${structuredPartsHTML(l)}
         ${senseHTML}
         ${l.en ? `<p style="font-size:15px;margin:6px 0"><b>${esc(l.en)}</b></p>` : ''}
-        ${l.p ? `<p style="font-size:14px">${l.p.map(([a, b]) =>
+        ${l.p && !l.pt ? `<p style="font-size:14px">${l.p.map(([a, b]) =>
             `<b class="end">${esc(a)}</b> ${esc(b)}`).join(' &nbsp;+&nbsp; ')}
             <br><small style="color:var(--ink2)">Split into parts — not checked by a native
             speaker.</small></p>` : ''}
@@ -1585,7 +1730,7 @@
       WordLevels.set(g, '2');
       repaintTokens(); renderTop();
     }
-    openWord(g, cur.lines[curLine]);
+    openWord(g, cur.lines[curLine], tok && tok[3]);
   });
 
   $$('#romseg button').forEach(b => b.addEventListener('click', () => {
@@ -1614,7 +1759,7 @@
     el.classList.add('focus');
     el.scrollIntoView({ block: 'center', behavior: 'smooth' });
     const ln = cur.lines[+el.dataset.l];
-    openWord(LEX[ln.t[+el.dataset.t][2]].g, ln);
+    openWord(LEX[ln.t[+el.dataset.t][2]].g, ln, ln.t[+el.dataset.t][3]);
   }
 
   /* One word to the right, and on to the next sentence at the end of this one.
@@ -1674,7 +1819,7 @@
     el.classList.add('focus');
     el.scrollIntoView({ block: 'center', behavior: 'smooth' });
     const tok = cur.lines[+el.dataset.l].t[+el.dataset.t];
-    openWord(LEX[tok[2]].g, cur.lines[+el.dataset.l]);
+    openWord(LEX[tok[2]].g, cur.lines[+el.dataset.l], tok[3]);
   }
 
   function openDict(g) {

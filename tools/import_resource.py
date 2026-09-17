@@ -1335,6 +1335,11 @@ def cmd_build(args):
         'lex': lex,
         'stories': [story],
     }
+    # The library heading for this corpus. Without one it is filed under "Imported", which is
+    # a category rather than a name.
+    if meta.get('collection'):
+        data['collection'] = {'en': meta['collection'],
+                              'short': meta.get('collection_short') or meta['collection']}
     var = args.var or (re.sub(r'[^A-Za-z0-9]', '_', args.slug).upper() + '_DATA')
     out = os.path.join(ROOT, 'reader', 'data', f'{args.slug}.js')
     with open(out, 'w', encoding='utf-8') as f:
