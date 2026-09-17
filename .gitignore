@@ -148,3 +148,8 @@ intensive/.batch_id
 # re-include the README that explains them.
 imports/*
 !imports/README.md
+
+# Generated HyperTTS hand-off files for imported datasets — regenerable in one command from
+# the baked dataset, same scratch status as ministories/hypertts_*.tsv.
+*_hypertts_words.tsv
+*_hypertts_sentences.tsv

@@ -41,6 +41,8 @@
      three chapters is one heading with three subheadings, not thirty-six loose cards. */
   const COLLECTION = new Map();
   const GROUPS = new Map();
+  const CLIPS = new Map([['ms', '../ministories/audio/words'],
+                         ['ic', '../intensive/audio/words']]);
   for (const d of SETS) {
     const off = LEX.length;
     /* Which corpus each word came from. The two datasets each build their own lexicon, so a
@@ -55,6 +57,9 @@
     /* What one item of this corpus is called, for labels like "lesson 4" and "episode 2". */
     UNIT.set(tag, d.unit || (tag === 'ic' ? 'lesson' : 'story'));
     if (d.collection) COLLECTION.set(tag, d.collection);
+    /* Where this corpus keeps its per-word clips. Hardcoding the two original directories
+       meant a third corpus could never have pronunciation audio at all. */
+    if (d.clips) CLIPS.set(tag, d.clips);
     if (d.groups) GROUPS.set(tag, new Map(d.groups.map(g => [g.n, g.en])));
     /* Occurrence and construction tables are per dataset and indexed from their own tokens,
        so they need the same offsetting the lexicon gets. */
@@ -962,9 +967,10 @@
        have. A word guid is a hash of its Telugu, so the SAME word is the same id in both
        corpora: whichever directory holds it, the clip is the right one. Try the corpus in
        front of you first, then the other, before deciding there is no clip. */
-    const dirs = (cur && cur.id && cur.id[0] === 'i')
-      ? ['../intensive/audio/words', '../ministories/audio/words']
-      : ['../ministories/audio/words', '../intensive/audio/words'];
+    /* The corpus in front of you first, then every other directory we know of. A word guid is
+       a hash of its spelling, so whichever corpus recorded it, the clip is the right clip. */
+    const mine = cur && cur.tag && CLIPS.get(cur.tag);
+    const dirs = [...new Set([mine, ...CLIPS.values()].filter(Boolean))];
     /* Autoplay policy: this only ever runs inside a click handler, which counts as the user
        gesture browsers require, so playback is allowed. The catch still matters for a missing
        clip or a decode error. */

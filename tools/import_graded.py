@@ -274,6 +274,7 @@ def build(src, chapters, book_title, tag, unit):
         'tag': tag,
         'unit': unit,
         'collection': {'en': book_title, 'short': 'Prisoner of Azkaban'},
+        'clips': '../poa/audio/words',
         'groups': [{'n': n, 'en': t} for n, t in sorted(ch_titles.items())],
         'status': 'draft',
         'lex': b.lex,
