@@ -496,3 +496,9 @@ main { padding-top: var(--top-h); }
   margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--rule, #e6e3dc);
 }
 .wc-senses .sense p { margin: 4px 0 }
+
+/* Offline panel — same shell as the sync panel, which it sits beside on Stats. */
+.syncrow.offset { border-top: 1px solid var(--line); padding-top: 14px; }
+.offnote { color: var(--ink2); font-size: 13px; margin: 4px 0 10px; }
+.offstat { color: var(--ink2); font-size: 13px; align-self: center; }
+.syncbtns .n { opacity: .7; font-variant-numeric: tabular-nums; }

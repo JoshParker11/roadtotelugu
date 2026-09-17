@@ -12,6 +12,17 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Young+Serif&amp;family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;600&amp;family=Noto+Sans+Telugu:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/reader.css">
+<link rel="manifest" href="../manifest.webmanifest">
+<script>
+/* Offline support. Registered at scope '../' because the reader loads its fonts, datasets
+   and audio from directories above itself, and a worker only sees its own scope. */
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('../sw.js', { scope: '../' }).catch(() => {});
+  });
+}
+</script>
+<link rel="apple-touch-icon" href="../assets/icon-192.png">
 </head>
 <body>
 

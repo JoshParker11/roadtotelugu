@@ -1089,6 +1089,196 @@
     });
   }
 
+  /* ---------- offline ---------- */
+
+  /* Unversioned, and the same name sw.js uses. Audio never changes once generated, so it must
+     survive a code update — a versioned name would re-download a flight's worth of audio
+     because a stylesheet moved. */
+  const AUDIO_CACHE = 'rtt-audio';
+  const abs = (u) => new URL(u, location.href).toString();
+
+  const trackUrls = () => STORIES.filter(s => s.audio).map(s => abs(s.audio));
+
+  /* Word clips for one text, as ALTERNATIVES per word: a guid is a hash of the Telugu, so the
+     same word is the same file in whichever corpus recorded it, and only one of the two
+     directories will have it. Trying both is how sayWord() already works. */
+  function clipUrls(story) {
+    const seen = new Set();
+    const out = [];
+    for (const ln of (story.lines || [])) {
+      for (const t of (ln.t || [])) {
+        const l = t[2] >= 0 && LEX[t[2]];
+        if (!l || seen.has(l.g)) continue;
+        seen.add(l.g);
+        const dirs = l.corpus === 'ic'
+          ? ['../intensive/audio/words', '../ministories/audio/words']
+          : ['../ministories/audio/words', '../intensive/audio/words'];
+        out.push(dirs.map(d => abs(`${d}/${l.g}.mp3`)));
+      }
+    }
+    return out;
+  }
+
+  async function cachedCount(items) {
+    if (!('caches' in window)) return 0;
+    const cache = await caches.open(AUDIO_CACHE);
+    let n = 0;
+    for (const item of items) {
+      for (const u of (Array.isArray(item) ? item : [item])) {
+        if (await cache.match(u)) { n++; break; }
+      }
+    }
+    return n;
+  }
+
+  /* Fetch into the cache with a few requests in flight. Six, not sixty: a phone on hotel wifi
+     with sixty parallel requests starts dropping them.
+
+     A DOWNLOAD THAT QUIETLY LOSES A FILE IS WORSE THAN ONE THAT FAILS LOUDLY
+     The first version swallowed every error and counted the item as done, so it reported
+     "✓ 14 stored" for 15 tracks and the missing one — story 3, which fetched perfectly when
+     asked again — would simply have been silent on the plane. So: a 404 means the clip does
+     not exist, which is normal and expected for most words; anything else is a transport
+     failure, gets retried, and if it still fails it is REPORTED rather than counted. */
+  async function cacheAll(items, onProgress) {
+    const cache = await caches.open(AUDIO_CACHE);
+    const queue = items.map((it, i) => [i, it]);
+    const failed = [];
+    let done = 0, ok = 0, absent = 0;
+
+    const attempt = async (u) => {
+      if (await cache.match(u)) return 'ok';
+      const res = await fetch(u);
+      if (res && res.ok) { await cache.put(u, res.clone()); return 'ok'; }
+      if (res && res.status === 404) return 'absent';
+      throw new Error(`HTTP ${res && res.status}`);
+    };
+
+    const worker = async () => {
+      while (queue.length) {
+        const [, item] = queue.shift();
+        const alts = Array.isArray(item) ? item : [item];
+        let state = 'absent';
+        for (const u of alts) {
+          let last = null;
+          for (let tries = 0; tries < 3; tries++) {
+            try { state = await attempt(u); last = null; break; }
+            catch (e) { last = e; await new Promise(r => setTimeout(r, 200 * (tries + 1))); }
+          }
+          if (last) { state = 'failed'; }
+          if (state === 'ok') break;
+          if (state === 'failed') break;
+        }
+        if (state === 'ok') ok++;
+        else if (state === 'failed') failed.push(alts[0]);
+        else absent++;
+        onProgress(++done, items.length, ok);
+      }
+    };
+    await Promise.all(Array.from({ length: 6 }, worker));
+    return { ok, absent, failed };
+  }
+
+  const mb = (b) => `${(b / 1048576).toFixed(0)} MB`;
+
+  const sourceName = (s) => {
+    const t = s.title;
+    const raw = (t && (t.te || t.en)) || `${UNIT.get(s.tag) || 'text'} ${s.num}`;
+    return raw.length > 34 ? raw.slice(0, 33) + '…' : raw;
+  };
+
+  function offlinePanel() {
+    /* Split by corpus rather than offering "this text": the button lives on Stats, where no
+       text is open, so a per-text row would almost never appear. Splitting also lets the
+       course's word clips — 147 MB of the 158 — be declined on their own. */
+    const sets = [
+      { id: 'tracks', label: 'Sentence audio, every text', items: trackUrls(),
+        note: 'The continuous track behind each story, lesson and episode. The one to take.' },
+    ];
+    for (const tag of new Set(STORIES.map(s => s.tag))) {
+      const texts = STORIES.filter(s => s.tag === tag);
+      const items = texts.flatMap(clipUrls);
+      if (!items.length) continue;
+      const unit = UNIT.get(tag) || 'text';
+      sets.push({
+        id: 'clips-' + tag,
+        label: `Word clips — ${unit === 'story' ? 'mini stories' : unit === 'lesson'
+                  ? 'the course' : unit + 's'}`,
+        items,
+        note: 'One clip per word, for the speaker button and the drill. Words with no clip yet '
+            + 'are skipped, so fewer files arrive than are listed.',
+      });
+    }
+    if (cur) {
+      sets.push({ id: 'clips-cur', label: `Word clips — just ${sourceName(cur)}`,
+                  items: clipUrls(cur), note: 'A smaller slice, if you only need this one.' });
+    }
+
+    $('#overlay-root').innerHTML = `<div class="overlay" id="off-ov"><div class="rvcard wide sync">
+      <button class="close" id="off-close">×</button>
+      <h3>Offline</h3>
+      <p class="synchelp">Reading, vocabulary, the drill and your progress already work with no
+        signal — the app and all its texts are stored the first time you visit. Audio is too
+        big to store without asking, so download what you want here.</p>
+      <div class="syncrow" id="off-store"></div>
+      ${sets.map(s => `
+        <div class="syncrow offset" data-set="${s.id}">
+          <b>${esc(s.label)}</b>
+          <p class="offnote">${esc(s.note)}</p>
+          <div class="syncbtns">
+            <button data-dl="${s.id}">Download <span class="n">${s.items.length}</span> files</button>
+            <span class="offstat" id="off-stat-${s.id}">checking…</span>
+          </div>
+        </div>`).join('')}
+      <div class="syncbtns">
+        <button id="off-clear">Remove downloaded audio</button>
+      </div>
+    </div></div>`;
+
+    const byId = Object.fromEntries(sets.map(s => [s.id, s]));
+    $('#off-close').addEventListener('click', () => { $('#overlay-root').innerHTML = ''; });
+
+    const showStore = async () => {
+      if (!navigator.storage || !navigator.storage.estimate) return;
+      const { usage } = await navigator.storage.estimate();
+      $('#off-store').innerHTML = `<b>Stored on this device</b>
+        <p class="offnote">${mb(usage || 0)} in total.</p>`;
+    };
+    showStore();
+
+    for (const s of sets) {
+      cachedCount(s.items).then(n => {
+        const el = $(`#off-stat-${s.id}`);
+        if (el) el.textContent = n >= s.items.length && s.items.length
+          ? '✓ all downloaded' : n ? `${n} of ${s.items.length} already here` : '';
+      });
+    }
+
+    $$('#overlay-root [data-dl]').forEach(b => b.addEventListener('click', async () => {
+      const set = byId[b.dataset.dl];
+      const stat = $(`#off-stat-${set.id}`);
+      b.disabled = true;
+      const r = await cacheAll(set.items, (done, total, ok) => {
+        stat.textContent = `${done} of ${total}… (${ok} stored)`;
+      });
+      const n = await cachedCount(set.items);
+      /* Say what is missing and why, because the whole point of this panel is knowing what you
+         have before the signal goes. */
+      stat.textContent = r.failed.length
+        ? `${n} stored · ${r.failed.length} FAILED — tap Download again`
+        : `✓ ${n} stored${r.absent ? ` · ${r.absent} have no clip yet` : ''}`;
+      stat.style.color = r.failed.length ? 'var(--amber)' : '';
+      b.disabled = false;
+      showStore();
+    }));
+
+    $('#off-clear').addEventListener('click', async () => {
+      await caches.delete(AUDIO_CACHE);
+      toast('Downloaded audio removed.');
+      offlinePanel();
+    });
+  }
+
   /* ---------- stats view ---------- */
   function renderStats() {
     $('#playbar').hidden = true;
@@ -1099,7 +1289,7 @@
 
     $('#pane').innerHTML = `
       <div class="viewhead"><h1>Stats</h1>
-        <span class="tools"><button class="iconbtn" id="st-sync" title="Sync between devices">⇄ Sync</button></span>
+        <span class="tools"><button class="iconbtn" id="st-offline" title="Use without a signal">⤓ Offline</button><button class="iconbtn" id="st-sync" title="Sync between devices">⇄ Sync</button></span>
       </div>
       <div class="statcards">
         <div class="statcard"><b>${nf(WordLevels.knownTotal())}</b><span>known words, all texts</span></div>
@@ -1115,6 +1305,7 @@
       <div class="chartbox"><h3>Known words over time</h3>${chartHTML(snaps)}</div>`;
 
     $('#st-sync').addEventListener('click', syncPanel);
+    $('#st-offline').addEventListener('click', offlinePanel);
     $('#st-goal').addEventListener('click', () => {
       const v = prompt('Daily goal — words acted on per day:', WordLevels.goal());
       if (v) { WordLevels.setGoal(v); renderStats(); renderTop(); }
