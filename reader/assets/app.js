@@ -1099,12 +1099,18 @@
 
   const trackUrls = () => STORIES.filter(s => s.audio).map(s => abs(s.audio));
 
-  /* Word clips for one text, as ALTERNATIVES per word: a guid is a hash of the Telugu, so the
-     same word is the same file in whichever corpus recorded it, and only one of the two
-     directories will have it. Trying both is how sayWord() already works. */
-  function clipUrls(story) {
-    const seen = new Set();
+  /* Word clips for one or more texts, as ALTERNATIVES per word: a guid is a hash of the
+     Telugu, so the same word is the same file in whichever corpus recorded it, and only one of
+     the two directories will have it. Trying both is how sayWord() already works.
+
+     Deduplicated across every text passed in, not within each one. Per-story deduplication
+     counted a word once per story it appears in, so the panel offered "671 files" for the mini
+     stories' 444 distinct clips and its progress counter ran against an inflated total. The
+     download itself was fine — a repeat is a cache hit — but a number you cannot trust is
+     worse than no number when you are deciding what to take on a plane. */
+  function clipUrls(stories, seen = new Set()) {
     const out = [];
+    for (const story of [].concat(stories)) {
     for (const ln of (story.lines || [])) {
       for (const t of (ln.t || [])) {
         const l = t[2] >= 0 && LEX[t[2]];
@@ -1115,6 +1121,7 @@
           : ['../ministories/audio/words', '../intensive/audio/words'];
         out.push(dirs.map(d => abs(`${d}/${l.g}.mp3`)));
       }
+    }
     }
     return out;
   }
@@ -1197,7 +1204,7 @@
     ];
     for (const tag of new Set(STORIES.map(s => s.tag))) {
       const texts = STORIES.filter(s => s.tag === tag);
-      const items = texts.flatMap(clipUrls);
+      const items = clipUrls(texts);
       if (!items.length) continue;
       const unit = UNIT.get(tag) || 'text';
       sets.push({
@@ -1211,7 +1218,8 @@
     }
     if (cur) {
       sets.push({ id: 'clips-cur', label: `Word clips — just ${sourceName(cur)}`,
-                  items: clipUrls(cur), note: 'A smaller slice, if you only need this one.' });
+                  items: clipUrls([cur]),
+                  note: 'A smaller slice, if you only need this one.' });
     }
 
     $('#overlay-root').innerHTML = `<div class="overlay" id="off-ov"><div class="rvcard wide sync">
