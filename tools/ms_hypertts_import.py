@@ -22,6 +22,7 @@ is more than one; --media skips the search entirely once you know the path.
 """
 import argparse
 import csv
+import json
 import hashlib
 import glob
 import os
@@ -47,6 +48,35 @@ SOUND = re.compile(r'\[sound:([^\]]+)\]')
 # identifies one of ours, and a new corpus must not require editing a file it has nothing to do
 # with. A foreign Anki note's first field is a word or a sentence, not a capital plus twelve hex.
 GUID = re.compile(r'^[A-Z][0-9a-f]{12}$')
+
+
+def load_guids(path, words):
+    """The exact set of guids this import should accept.
+
+    WHY THIS BEATS EVERY LETTER HEURISTIC
+    One Anki collection holds every corpus, and 'W' is the word prefix for all of them, so no
+    prefix test can tell a graded-reader word from a mini-story word. It does not have to: the
+    hand-off TSV that produced the batch already lists precisely what belongs in it. Pass that
+    file and a whole-deck "select all, export" is filtered exactly, with no risk of writing one
+    corpus's clips into another's directory.
+
+    A reader dataset .js works too — lexicon guids with --words, line guids without.
+    """
+    full = path if os.path.isabs(path) else os.path.join(ROOT, path)
+    if full.endswith('.js'):
+        raw = open(full, encoding='utf-8').read()
+        i = raw.index('=', raw.index('window.')) + 1
+        body = raw[i:].strip().rstrip(';')
+        data = json.loads(body)
+        if words:
+            return {l['g'] for l in data.get('lex', [])}
+        return {ln['g'] for st in data.get('stories', []) for ln in st.get('lines', [])}
+    out = set()
+    with open(full, encoding='utf-8') as f:
+        for row in csv.reader((l for l in f if not l.startswith('#')), delimiter='\t'):
+            if row and GUID.match(row[0].strip()):
+                out.add(row[0].strip())
+    return out
 
 
 def find_media():
@@ -131,6 +161,9 @@ def main():
     ap.add_argument('--force', action='store_true', help='overwrite audio already in the repo')
     ap.add_argument('--words', action='store_true',
                     help='these are per-headword clips; write them to audio/words/ instead')
+    ap.add_argument('--guids', help='accept only these guids — pass the hand-off TSV you '
+                                    'imported into Anki, or a reader dataset .js. Makes a '
+                                    '"select all and export" of a shared deck safe.')
     ap.add_argument('--dest', help='write into this audio directory instead of ministories/audio '
                                    '(use intensive/audio for the Intensive Course)')
     args = ap.parse_args()
@@ -139,17 +172,34 @@ def main():
     if not os.path.isdir(media):
         sys.exit(f'{media} is not a directory')
 
+    allowed = load_guids(args.guids, args.words) if args.guids else None
+    if allowed is not None:
+        print(f'{len(allowed)} guid(s) named by {os.path.basename(args.guids)}')
+
     if args.from_anki:
         rows = rows_from_anki(args.profile)
         # THE COLLECTION HOLDS EVERY CORPUS AT ONCE, so reading it directly has to filter by
         # what the destination is for. An export file was implicitly one batch; this is not.
         # Without the filter, --words swept mini-story segments and course sentences into
         # audio/words/ under ids that directory's reader will never look up.
-        want = 'W' if args.words else 'MI'
         before = len(rows)
-        rows = [r for r in rows if r[0][:1] in want]
-        print(f'{before} note(s) in the collection · {len(rows)} match this destination '
-              f'({"word" if args.words else "segment"} ids)')
+        if allowed is not None:
+            rows = [r for r in rows if r[0].strip() in allowed]
+            print(f'{before} note(s) in the collection · {len(rows)} named by '
+                  f'{os.path.basename(args.guids)}')
+        else:
+            # NOT an enumerated letter list. The comment on GUID above records this bug twice
+            # already — 'W' missing rejected every word, then 'I' missing rejected all 173
+            # rows of the first course import — and its conclusion was that a new corpus must
+            # not require editing this file. `want = 'MI'` quietly broke that promise and would
+            # have rejected all 925 graded-reader sentences, whose ids begin 'S'. So: words are
+            # 'W' and a segment is anything else of our shape. Prefer --guids, which needs no
+            # heuristic at all.
+            rows = [r for r in rows
+                    if (r[0][:1] == 'W') == bool(args.words)]
+            print(f'{before} note(s) in the collection · {len(rows)} match this destination '
+                  f'({"word" if args.words else "segment"} ids)')
+            print('  (letter heuristic — pass --guids <the export tsv> to be exact)')
     else:
         if not args.exported:
             sys.exit('give an export file, or pass --from-anki to read the collection directly')
