@@ -155,7 +155,26 @@ def parts_of(analysis):
     return out
 
 
-def build(src, chapters, book_title, tag, unit):
+def load_cues(path):
+    """guid -> (start, end, track total), from tools/reader_lr_build.py.
+
+    Measured from each sentence clip's own duration, so unlike every other corpus here these
+    offsets are exact rather than inferred.
+    """
+    if not path or not os.path.exists(path):
+        return {}
+    import csv as _csv
+    out = {}
+    with open(path, encoding='utf-8', newline='') as f:
+        for r in _csv.DictReader(f, delimiter='\t'):
+            try:
+                out[r['guid']] = (float(r['start']), float(r['end']), float(r['total']))
+            except (TypeError, ValueError):
+                continue
+    return out
+
+
+def build(src, chapters, book_title, tag, unit, cues=None, tracks=''):
     b = Build()
     chs = [c for c in chapter_dirs(src) if not chapters or c[0] in chapters]
     if not chs:
@@ -250,6 +269,9 @@ def build(src, chapters, book_title, tag, unit):
                     toks.append([surface, 'w', li, oi] if oi >= 0 else [surface, 'w', li])
                 line = {'g': guid('S', te) if te else guid('S', '', sn['id']),
                         'p': meta['id'], 't': toks}
+                cue = (cues or {}).get(line['g'])
+                if cue:
+                    line['s'], line['e'] = round(cue[0], 2), round(cue[1], 2)
                 if sn.get('simplifiedEnglish'):
                     line['en'] = sn['simplifiedEnglish']
                 rom = (sn.get('romanization') or {}).get('text')
@@ -257,12 +279,17 @@ def build(src, chapters, book_title, tag, unit):
                     line['rom'] = rom
                 lines.append(line)
 
-            b.stories.append({
+            story = {
                 'num': story_num, 'ch': ch_num,
                 'title': {'te': meta.get('titleTe') or '', 'en': meta.get('titleEn') or meta['id']},
                 'summary': meta.get('summaryEn') or '',
                 'lines': lines,
-            })
+            }
+            timed = [l for l in lines if 's' in l]
+            if timed and tracks:
+                story['audio'] = f'{tracks.rstrip("/")}/section_{story_num:02d}.mp3'
+                story['dur'] = round((cues or {}).get(timed[0]['g'], (0, 0, 0))[2], 2)
+            b.stories.append(story)
 
     for surface, i in b.lex_at.items():
         b.lex[i]['n'] = b.counts[surface]
@@ -293,10 +320,15 @@ def main():
     ap.add_argument('--tag', default='poa')
     ap.add_argument('--unit', default='section')
     ap.add_argument('--title', default='Harry Potter and the Prisoner of Azkaban')
+    ap.add_argument('--cues', default='', help='cue TSV from tools/reader_lr_build.py')
+    ap.add_argument('--tracks', default='', help='track path as the reader requests it, '
+                                                 'e.g. ../poa/lr')
     args = ap.parse_args()
 
     chapters = {int(x) for x in args.chapters.split(',') if x.strip()}
-    data = build(os.path.expanduser(args.src), chapters, args.title, args.tag, args.unit)
+    cues = load_cues(os.path.join(ROOT, args.cues) if args.cues else '')
+    data = build(os.path.expanduser(args.src), chapters, args.title, args.tag, args.unit,
+                 cues=cues, tracks=args.tracks)
 
     out = os.path.join(ROOT, args.out)
     os.makedirs(os.path.dirname(out), exist_ok=True)
@@ -320,6 +352,10 @@ def main():
           f'{with_parts:,} with a morphology split')
     print(f'  {latin:,} of those are protected Latin, now clickable rather than inert')
     print(f'  {len(data["occ"]):,} occurrences, {len(data["cx"])} constructions')
+    voiced = sum(1 for s in data['stories'] if s.get('audio'))
+    timedl = sum(1 for s in data['stories'] for l in s['lines'] if 's' in l)
+    if cues:
+        print(f'  {voiced} sections with a track, {timedl} lines timed from measured clips')
     print(f'  window.{args.var}  tag={data["tag"]}  unit={data["unit"]}  status={data["status"]}')
 
 

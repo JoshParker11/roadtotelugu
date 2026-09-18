@@ -153,3 +153,17 @@ imports/*
 # the baked dataset, same scratch status as ministories/hypertts_*.tsv.
 *_hypertts_words.tsv
 *_hypertts_sentences.tsv
+
+# The graded readers' audio. Same division the other two corpora make: the joined per-section
+# tracks and the word clips are committed because GitHub Pages serves only what is committed
+# and the phone can play nothing else; the 925 per-sentence clips they were built from stay
+# local, being the regenerable intermediate (tools/reader_lr_build.py rebuilds the tracks from
+# them, and ms_hypertts_import.py refills them from an Anki export).
+# Three lines, because git will not descend into an excluded directory: un-exclude the parent,
+# re-exclude the per-sentence clips directly inside it, then re-include words/.
+!poa/audio/
+poa/audio/*
+!poa/audio/words/
+
+# The Anki exports the clips came from — large, and regenerable by re-running the batch.
+imports/hp_poa/

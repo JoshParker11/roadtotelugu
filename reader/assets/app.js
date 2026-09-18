@@ -1360,8 +1360,9 @@
       const unit = UNIT.get(tag) || 'text';
       sets.push({
         id: 'clips-' + tag,
-        label: `Word clips — ${unit === 'story' ? 'mini stories' : unit === 'lesson'
-                  ? 'the course' : unit + 's'}`,
+        /* The collection's name, not its unit noun — "Word clips — sections" says nothing
+           about which corpus it is. */
+        label: `Word clips — ${sectionName(tag)}`,
         items,
         note: 'One clip per word, for the speaker button and the drill. Words with no clip yet '
             + 'are skipped, so fewer files arrive than are listed.',

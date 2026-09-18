@@ -17,7 +17,7 @@
    offline player is silent. So a media request is served by holding the FULL response in the
    cache and slicing it here, synthesising the 206 the player expects. */
 
-const SHELL = 'rtt-shell-v2';
+const SHELL = 'rtt-shell-v3';
 const AUDIO = 'rtt-audio';          // unversioned on purpose — see above
 
 const at = (p) => new URL(p, self.registration.scope).toString();
