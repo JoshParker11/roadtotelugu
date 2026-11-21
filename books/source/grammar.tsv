@@ -1,0 +1,44 @@
+id	title	form	explain
+adv-gaa	Adverb maker -గా	-గా (-gaa)	Turns a noun or adjective into an adverb, like English -ly. రహస్యం "secret" → రహస్యంగా "secretly"; మెల్ల "slow" → మెల్లగా "slowly".
+adj-aina	Adjective maker -ఐన / -మైన	-మైన (-maina)	Turns a noun into an adjective that sits before another noun: "which is X". నిజం "truth" → నిజమైన "real"; ప్రత్యేకం → ప్రత్యేకమైన "special".
+pl-lu	Plural -లు	-లు / -ళ్లు (-lu / -llu)	Marks plural. Stems ending in -టి or -డు often change before it: దుప్పటి → దుప్పట్లు, వాడు → వాళ్లు, పన్ను → పళ్లు.
+obl	Oblique stem	stem change before a suffix	Many nouns and pronouns change shape before a case ending or postposition. అతను → అతని-కి, చెయ్యి → చేతి-లో, అది → దాని-ని, పళ్లు → పళ్ల మధ్య. Learn the oblique with the word.
+dat-ki	Dative -కి / -కు	-కి / -కు (-ki / -ku)	"to, for". Also marks the person who EXPERIENCES something: likes, needs, hears, feels. అతనికి ఇష్టం = "to him (is) liking" = he likes. Direction too: పైకి "upward".
+loc-lo	Locative -లో	-లో (-lo)	"in, inside, during". చేతిలో "in the hand", దారిలో "on the way", గుర్తించటంలో "in recognising".
+acc-ni	Object marker -ని / -ను	-ని / -ను (-ni / -nu)	Marks a definite direct object, usually people and specific things. Unspecific inanimate objects often go without it (ఇంక్ బాటిల్ మూత తిప్పి).
+abl-nunchi	From -నుంచి	-నుంచి (-nunchi)	"from". మీద + నుంచి = "from over", here "right over (the head)".
+inst-tho	With -తో	-తో (-tho)	"with": accompaniment, instrument, or manner. నొప్పితో "with pain".
+comp-kanna	Comparison కన్నా	X కన్నా (kannaa)	"than X". The thing compared against comes first, in the oblique: అన్నిటి కన్నా "than all (others)" → "more than any other".
+top-ante	అంటే "as for / that is"	X అంటే (ante)	Literally "if (you) say X". Sets up a topic: "as for X". X అంటే ఇష్టం = "likes X"; X అంటే భయం = "afraid of X". Also in ఏంటంటే "what it is, is…" and ఎందుకంటే "because".
+postp	Postpositions	noun + మీద / కింద / పైన / కోసం …	Telugu puts these AFTER the noun, where English puts prepositions before: బెడ్ మీద "on the bed", దింబు కింద "under the pillow", ఇంక్ బాటిల్ కోసం "for the ink bottle".
+hab-past	Past habitual "used to"	stem + -ఏ- + person (-ఏవాడు, -ఏది, -ఏవాళ్లు)	Repeated or ongoing action in the past: "used to / would". అనుకునేవాడు "he used to want", భయపడేవాళ్లు "they used to be afraid". The person ending is a pronoun: వాడు he, ది it, వాళ్లు they.
+neg-kaadu	కాదు "is not"	X కాదు (kaadu)	Negates "being X". After a habitual (ఉండేది కాదు) it gives "never used to be".
+inf-aali	-ఆలి "must / should"	stem + -ఆలి (-aali)	Obligation or desire. చేయాలి = "(one) should do". With అని + అనుకొను it means "want to": చేయాలని అనుకునేవాడు "he used to want to do".
+aalsi-vachu	-ఆల్సి వచ్చు "had to (forced)"	stem + -ఆల్సి + వచ్చు	"Came to have to X": an obligation forced by circumstance. చేయాల్సి వచ్చేది "(he) used to have to do"; ఉండాల్సి వస్తుంది "(he) would have to stay".
+quot-ani	Quotative అని	… అని (ani)	Closes a quoted thought, wish, or name. Works like English "that" after think/say/want: యూజ్ అవుతుందని అనిపించిన "which seemed (that) it would be of use"; దొరుకుతుందా అని వెతుకుతూ "searching (thinking) 'will it be found?'".
+ppl-i	Conjunctive participle -ఇ	stem + -ఇ / -ఉకుని (-i / -ukuni)	"having done X, (and then)…". Chains actions where English uses "and" or "-ing": తిప్పి తీసి, ముంచి, … మొదలు పెట్టాడు = "unscrewed, dipped, and began". Only the last verb carries tense.
+refl-konu	-కొను "for oneself"	stem + -కొను → -కుని, -కున్న-	Adds "on/for oneself": పట్టు "grab" → పట్టుకొను "hold"; కప్పు "cover" → కప్పుకొను "cover oneself"; పెట్టు "put" → పెట్టుకొను "put (in front of) oneself".
+perf-state	-ఉకుని ఉన్నాడు "was (in the state of)"	participle + ఉన్నాడు	A participle followed by ఉండు describes a resulting state: పడుకుని … ఉన్నాడు = "was lying (having lain down)".
+rel-ina	Past relative participle -ఇన	stem + -ఇన (-ina)	Makes a verb into a "which/that was …ed" modifier before a noun: మిగిలిన టైమ్ "the remaining time"; తెరిచి పెట్టిన బుక్ "the book that was set open".
+rel-e	Non-past relative participle -ఏ	stem + -ఏ (-e)	"which does / which will" before a noun: హెల్ప్ అయ్యే విషయం "a thing that would help"; బాత్రూమ్‌కి వెళ్లే దారి "the way that goes to the bathroom".
+rel-neg	Negative relative -ని	stem + -ని (లేని)	"which does not / which has no" before a noun: మ్యాజిక్ లేని వాళ్లు "people who have no magic".
+prog	Present progressive -తున్న- / -తోంది	stem + -తున్న- / -తో-	Ongoing action: "is …ing". పెడుతున్న "which is putting", అరుస్తున్న "shrieking". Telugu narration often slips into present for vividness.
+past-3m	Past tense, "he" -ఆడు	stem + -ఆడు (-aadu)	Simple past for a male third person: జరిపాడు "he moved", చదివాడు "he read", పెట్టాడు "he put".
+past-3n	Past tense, "she / it" -ఇంది	stem + -ఇంది (-indi)	Simple past for "it" AND for "she": ఆగింది "it stopped", పట్టుబడింది "she got caught". Telugu groups women with neuter in the singular verb.
+fut-hab	Future / habitual -తుంది, -తారు	stem + -తు- + person	Covers both "will" and "generally does": దొరుకుతుంది "it will be found", అంటారు "they call / people say", వస్తుంది "it will come".
+cont-uu	Simultaneous -తూ "while …ing"	stem + -తూ (-thuu)	An action happening alongside the main verb: వెతుకుతూ "while searching", వింటూ "while listening", ఎంజాయ్ చేస్తూ "while enjoying".
+q-aa	Yes/no question -ఆ	… + -ఆ (-aa)	Tacking -ఆ onto the end makes a yes/no question: దొరుకుతుంది "it will be found" → దొరుకుతుందా "will it be found?". Inside a sentence + అని, it's "whether".
+conc-inaa	-ఐనా "even if / any-"	stem/question word + -ఐనా / -ఇనా	On a verb: "even if" (పట్టుకున్నా "even if they caught"). On a question word: "any-" (ఏమైనా "anything", ఎప్పుడైనా "ever, any time").
+cond-te	Conditional -తే "if"	stem + -తే (-the)	"if / when X happens": వినిపిస్తే "if (it) is heard". అంటే is the same ending on అను "say".
+ger-tam	Verbal noun -టం / -డం	stem + -టం / -డం (-tam / -dam)	Makes a verb into a noun: "…ing". కాల్చటం "burning", రాయడం "writing". It then takes case endings like any noun: రాయడానికి, గుర్తించటంలో.
+purp-daaniki	Purpose -డానికి "in order to"	stem + -డానికి (-daaniki)	Verbal noun + dative = "for doing" → "in order to": రాయడానికి "in order to write".
+emph-e	Emphatic -ఏ	… + -ఏ (-e)	Stresses "that very one / only that": కప్పోర్డ్‌లోనే "in the cupboard itself", వాళ్లనే "them (precisely)", కావాలనే "quite deliberately".
+incl-kuudaa	కూడా "also, even"	X కూడా (koodaa)	"also / too / even", placed AFTER the word it applies to: ఒక విజర్డ్ కూడా "a wizard too".
+like-laaga	లాగా "like"	X లాగా (laagaa)	"like X, in the manner of X": టెంట్ లాగా "like a tent".
+caus	Causative -ఇంచు / -పించు	stem + -ఇంచు / -పించు	"make (someone/something) X". విను "hear" → వినిపించు "make heard" = "be audible"; అను "think" → అనిపించు "make think" = "seem". With these the person goes in -కి.
+neg-kundaa	-కుండా "without"	stem + -కుండా (-kundaa)	"without doing / without being". X-కు తక్కువ కాకుండా = "without being less than X" = "no less than X".
+asif-attu	-అట్టు "as if"	relative participle + -అట్టు (-attu)	"as though / in the manner of". అరుస్తున్నట్టు నటించు = "act as though shrieking" = pretend to shriek.
+padu-passive	-పడు "get …ed"	stem + పడు	పడు "fall, undergo" after a verb gives a passive-like sense: పట్టుబడు "get caught". Also with nouns: భయపడు "be afraid" (fall into fear).
+loanverb	English word + అవు / చేయు	loan + అవు (become) / చేయు (do)	Colloquial Telugu borrows English verbs and nouns by adding అవు or చేయు: ఎంజాయ్ చేయు "enjoy", లాక్ అవు "get locked", యూజ్ అవు "be of use", హెల్ప్ అవు "help".
+redup	Reduplication	X X	Doubling a word spreads or distributes it: రకం "kind" → రకరకాల "all kinds of"; మధ్య మధ్యలో "every now and then".
+cause-conj	Reason words	ఎందుకంటే … / … కాబట్టి / … వల్ల	ఎందుకంటే "because" opens the reason; కాబట్టి "so, since" closes it (reason first, then కాబట్టి); X వల్ల = "because of X".
